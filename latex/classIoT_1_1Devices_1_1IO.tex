@@ -1,0 +1,109 @@
+\hypertarget{classIoT_1_1Devices_1_1IO}{}\doxysection{IoT\+::Devices\+::IO Class Reference}
+\label{classIoT_1_1Devices_1_1IO}\index{IoT::Devices::IO@{IoT::Devices::IO}}
+
+
+{\ttfamily \#include $<$I\+O.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::IO\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::IO\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1IO_aa0e88814072cda5cc3842b1aa407e6f4}{IO}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1IO_a9553d442fea136f505fc1ac4de8f54f2}{$\sim$\+IO}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{IO}}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1IO_a32fcb43509e30487392b9d9df2820f80}{state}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{IO}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1IO_a73f49885895bc302878542ce4ed3a38f}{set}} (bool \mbox{\hyperlink{classIoT_1_1Devices_1_1IO_a32fcb43509e30487392b9d9df2820f80}{state}})=0
+\begin{DoxyCompactList}\small\item\em Returns the current state of the pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IO_a26a6310036a2425f593b39514d7d661b}{state\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The interface for general purpose input/output (G\+P\+IO) ports.
+
+This class represents a single G\+P\+IO pin. Mapping to physical pins is configured when setting up the specific \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{IO}} implementation class, typically using a configuration file.
+
+Implementations supporting dynamically changing pin directions should expose a string property named \char`\"{}direction\char`\"{} that takes the values \char`\"{}in\char`\"{} and \char`\"{}out\char`\"{}. 
+
+Definition at line 32 of file I\+O.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IO_aa0e88814072cda5cc3842b1aa407e6f4}\label{classIoT_1_1Devices_1_1IO_aa0e88814072cda5cc3842b1aa407e6f4}} 
+\index{IoT::Devices::IO@{IoT::Devices::IO}!IO@{IO}}
+\index{IO@{IO}!IoT::Devices::IO@{IoT::Devices::IO}}
+\doxysubsubsection{\texorpdfstring{IO()}{IO()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+I\+O\+::\+IO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fired when the state of the interrupt-\/capable input pin has changed.
+
+For this event to be fired, the I/O device must support interrupt-\/capable input pins, and those pins must be configured to trigger interrupts, by an implementation-\/specific means.
+
+Only a pin configured as input will trigger the event. \mbox{\Hypertarget{classIoT_1_1Devices_1_1IO_a9553d442fea136f505fc1ac4de8f54f2}\label{classIoT_1_1Devices_1_1IO_a9553d442fea136f505fc1ac4de8f54f2}} 
+\index{IoT::Devices::IO@{IoT::Devices::IO}!````~IO@{$\sim$IO}}
+\index{````~IO@{$\sim$IO}!IoT::Devices::IO@{IoT::Devices::IO}}
+\doxysubsubsection{\texorpdfstring{$\sim$IO()}{~IO()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+I\+O\+::$\sim$\+IO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{IO}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IO_a73f49885895bc302878542ce4ed3a38f}\label{classIoT_1_1Devices_1_1IO_a73f49885895bc302878542ce4ed3a38f}} 
+\index{IoT::Devices::IO@{IoT::Devices::IO}!set@{set}}
+\index{set@{set}!IoT::Devices::IO@{IoT::Devices::IO}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+I\+O\+::set (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the current state of the pin. 
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IO_a32fcb43509e30487392b9d9df2820f80}\label{classIoT_1_1Devices_1_1IO_a32fcb43509e30487392b9d9df2820f80}} 
+\index{IoT::Devices::IO@{IoT::Devices::IO}!state@{state}}
+\index{state@{state}!IoT::Devices::IO@{IoT::Devices::IO}}
+\doxysubsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+I\+O\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{IO}}. 
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IO_a26a6310036a2425f593b39514d7d661b}\label{classIoT_1_1Devices_1_1IO_a26a6310036a2425f593b39514d7d661b}} 
+\index{IoT::Devices::IO@{IoT::Devices::IO}!stateChanged@{stateChanged}}
+\index{stateChanged@{stateChanged}!IoT::Devices::IO@{IoT::Devices::IO}}
+\doxysubsubsection{\texorpdfstring{stateChanged}{stateChanged}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool$>$ Io\+T\+::\+Devices\+::\+I\+O\+::state\+Changed}
+
+
+
+Definition at line 46 of file I\+O.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{IO_8h}{I\+O.\+h}}\end{DoxyCompactItemize}

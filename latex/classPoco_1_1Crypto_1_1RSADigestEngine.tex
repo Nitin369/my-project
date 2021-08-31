@@ -1,0 +1,177 @@
+\hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine}{}\doxysection{Poco\+::Crypto\+::R\+S\+A\+Digest\+Engine Class Reference}
+\label{classPoco_1_1Crypto_1_1RSADigestEngine}\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}
+
+
+{\ttfamily \#include $<$R\+S\+A\+Digest\+Engine.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Crypto\+::R\+S\+A\+Digest\+Engine\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Crypto\+::R\+S\+A\+Digest\+Engine\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242}{Digest\+Type}} \{ \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242abf3ce29a67c0959ae128b45abc8607bc}{D\+I\+G\+E\+S\+T\+\_\+\+M\+D5}}, 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242ab8dee5c8641e3dcaf04caee1372907ce}{D\+I\+G\+E\+S\+T\+\_\+\+S\+H\+A1}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a632a6363264847575c0d32a1580123c7}{R\+S\+A\+Digest\+Engine}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey}{R\+S\+A\+Key}} \&key, \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242}{Digest\+Type}} digest\+Type=\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242ab8dee5c8641e3dcaf04caee1372907ce}{D\+I\+G\+E\+S\+T\+\_\+\+S\+H\+A1}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a24373128087f7d3374a8e99b52dca505}{R\+S\+A\+Digest\+Engine}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey}{R\+S\+A\+Key}} \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_adb241f807310eae47370c2ff3db112c3}{$\sim$\+R\+S\+A\+Digest\+Engine}} ()
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_ac75476174ba911ec6f3d4e940aa7e5b1}{digest\+Length}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine}{R\+S\+A\+Digest\+Engine}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_ab23da3081fe1f414c44f3b5be6c9c0e7}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Returns the length of the digest in bytes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DigestEngine_a8e6e74183768a08e8f00112e5c6c055e}{Digest\+Engine\+::\+Digest}} \& \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a07b107cfcdbc940e5565686fd4c5f6ac}{digest}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DigestEngine_a8e6e74183768a08e8f00112e5c6c055e}{Digest\+Engine\+::\+Digest}} \& \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a6ea3bf84db0dcf2cf6d3c391ef233df0}{signature}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_acc3ccf1b489369a48e84708e4a5f7794}{verify}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DigestEngine_a8e6e74183768a08e8f00112e5c6c055e}{Digest\+Engine\+::\+Digest}} \&\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a6ea3bf84db0dcf2cf6d3c391ef233df0}{signature}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a9170227e1efb3890b03965eb1a03019d}{update\+Impl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$data, std\+::size\+\_\+t length)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class implements a \mbox{\hyperlink{classPoco_1_1DigestEngine}{Poco\+::\+Digest\+Engine}} that can be used to compute a secure digital signature.
+
+First another \mbox{\hyperlink{classPoco_1_1Crypto_1_1DigestEngine}{Poco\+::\+Crypto\+::\+Digest\+Engine}} is created and used to compute a cryptographic hash of the data to be signed. Then, the hash value is encrypted, using the R\+SA private key.
+
+To verify a signature, pass it to the \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_acc3ccf1b489369a48e84708e4a5f7794}{verify()}} member function. It will decrypt the signature using the R\+SA public key and compare the resulting hash with the actual hash of the data. 
+
+Definition at line 33 of file R\+S\+A\+Digest\+Engine.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242}\label{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242}} 
+\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}!DigestType@{DigestType}}
+\index{DigestType@{DigestType}!Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}
+\doxysubsubsection{\texorpdfstring{DigestType}{DigestType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242}{Poco\+::\+Crypto\+::\+R\+S\+A\+Digest\+Engine\+::\+Digest\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIGEST\_MD5@{DIGEST\_MD5}!Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}!DIGEST\_MD5@{DIGEST\_MD5}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242abf3ce29a67c0959ae128b45abc8607bc}\label{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242abf3ce29a67c0959ae128b45abc8607bc}} 
+D\+I\+G\+E\+S\+T\+\_\+\+M\+D5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIGEST\_SHA1@{DIGEST\_SHA1}!Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}!DIGEST\_SHA1@{DIGEST\_SHA1}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242ab8dee5c8641e3dcaf04caee1372907ce}\label{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242ab8dee5c8641e3dcaf04caee1372907ce}} 
+D\+I\+G\+E\+S\+T\+\_\+\+S\+H\+A1&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 48 of file R\+S\+A\+Digest\+Engine.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine_a632a6363264847575c0d32a1580123c7}\label{classPoco_1_1Crypto_1_1RSADigestEngine_a632a6363264847575c0d32a1580123c7}} 
+\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}!RSADigestEngine@{RSADigestEngine}}
+\index{RSADigestEngine@{RSADigestEngine}!Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}
+\doxysubsubsection{\texorpdfstring{RSADigestEngine()}{RSADigestEngine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+R\+S\+A\+Digest\+Engine\+::\+R\+S\+A\+Digest\+Engine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey}{R\+S\+A\+Key}} \&}]{key,  }\item[{\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242}{Digest\+Type}}}]{digest\+Type = {\ttfamily \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine_a45af7ad9d7b04a84c9b29dd12eafa242ab8dee5c8641e3dcaf04caee1372907ce}{D\+I\+G\+E\+S\+T\+\_\+\+S\+H\+A1}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine_a24373128087f7d3374a8e99b52dca505}\label{classPoco_1_1Crypto_1_1RSADigestEngine_a24373128087f7d3374a8e99b52dca505}} 
+\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}!RSADigestEngine@{RSADigestEngine}}
+\index{RSADigestEngine@{RSADigestEngine}!Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}
+\doxysubsubsection{\texorpdfstring{RSADigestEngine()}{RSADigestEngine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+R\+S\+A\+Digest\+Engine\+::\+R\+S\+A\+Digest\+Engine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey}{R\+S\+A\+Key}} \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine}{R\+S\+A\+Digest\+Engine}} with the given R\+SA key, using the M\+D5 or S\+H\+A-\/1 hash algorithm. Kept for backward compatibility \mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine_adb241f807310eae47370c2ff3db112c3}\label{classPoco_1_1Crypto_1_1RSADigestEngine_adb241f807310eae47370c2ff3db112c3}} 
+\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}!````~RSADigestEngine@{$\sim$RSADigestEngine}}
+\index{````~RSADigestEngine@{$\sim$RSADigestEngine}!Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$RSADigestEngine()}{~RSADigestEngine()}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+R\+S\+A\+Digest\+Engine\+::$\sim$\+R\+S\+A\+Digest\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine}{R\+S\+A\+Digest\+Engine}} with the given R\+SA key, using the hash algorithm with the given name (e.\+g., \char`\"{}\+M\+D5\char`\"{}, \char`\"{}\+S\+H\+A1\char`\"{}, \char`\"{}\+S\+H\+A256\char`\"{}, \char`\"{}\+S\+H\+A512\char`\"{}, etc.). See the Open\+S\+SL documentation for a list of supported digest algorithms.
+
+Throws a Poco\+::\+Not\+Found\+Exception if no algorithm with the given name exists. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine_a07b107cfcdbc940e5565686fd4c5f6ac}\label{classPoco_1_1Crypto_1_1RSADigestEngine_a07b107cfcdbc940e5565686fd4c5f6ac}} 
+\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}!digest@{digest}}
+\index{digest@{digest}!Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}
+\doxysubsubsection{\texorpdfstring{digest()}{digest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DigestEngine_a8e6e74183768a08e8f00112e5c6c055e}{Digest\+Engine\+::\+Digest}}\& Poco\+::\+Crypto\+::\+R\+S\+A\+Digest\+Engine\+::digest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Resets the engine so that a new digest can be computed. 
+
+Implements \mbox{\hyperlink{classPoco_1_1DigestEngine_acbb5e07fd2f4ae327c3a6897867e07f3}{Poco\+::\+Digest\+Engine}}.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine_ac75476174ba911ec6f3d4e940aa7e5b1}\label{classPoco_1_1Crypto_1_1RSADigestEngine_ac75476174ba911ec6f3d4e940aa7e5b1}} 
+\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}!digestLength@{digestLength}}
+\index{digestLength@{digestLength}!Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}
+\doxysubsubsection{\texorpdfstring{digestLength()}{digestLength()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Crypto\+::\+R\+S\+A\+Digest\+Engine\+::digest\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSADigestEngine}{R\+S\+A\+Digest\+Engine}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1DigestEngine_a971c0aa31b67436f710841a87ac4d5ca}{Poco\+::\+Digest\+Engine}}.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine_ab23da3081fe1f414c44f3b5be6c9c0e7}\label{classPoco_1_1Crypto_1_1RSADigestEngine_ab23da3081fe1f414c44f3b5be6c9c0e7}} 
+\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}!reset@{reset}}
+\index{reset@{reset}!Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Poco\+::\+Crypto\+::\+R\+S\+A\+Digest\+Engine\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the length of the digest in bytes. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1DigestEngine_ac6e2b8d7740b289e9432ae673823ae0f}{Poco\+::\+Digest\+Engine}}.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine_a6ea3bf84db0dcf2cf6d3c391ef233df0}\label{classPoco_1_1Crypto_1_1RSADigestEngine_a6ea3bf84db0dcf2cf6d3c391ef233df0}} 
+\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}!signature@{signature}}
+\index{signature@{signature}!Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}
+\doxysubsubsection{\texorpdfstring{signature()}{signature()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DigestEngine_a8e6e74183768a08e8f00112e5c6c055e}{Digest\+Engine\+::\+Digest}}\& Poco\+::\+Crypto\+::\+R\+S\+A\+Digest\+Engine\+::signature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Finishes the computation of the digest (the first time it\textquotesingle{}s called) and returns the message digest.
+
+Can be called multiple times. \mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine_a9170227e1efb3890b03965eb1a03019d}\label{classPoco_1_1Crypto_1_1RSADigestEngine_a9170227e1efb3890b03965eb1a03019d}} 
+\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}!updateImpl@{updateImpl}}
+\index{updateImpl@{updateImpl}!Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}
+\doxysubsubsection{\texorpdfstring{updateImpl()}{updateImpl()}}
+{\footnotesize\ttfamily void Poco\+::\+Crypto\+::\+R\+S\+A\+Digest\+Engine\+::update\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Verifies the data against the signature.
+
+Returns true if the signature can be verified, false otherwise. 
+
+Implements \mbox{\hyperlink{classPoco_1_1DigestEngine_a172d52d2fd5c279b4571f6cd5b57fccf}{Poco\+::\+Digest\+Engine}}.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSADigestEngine_acc3ccf1b489369a48e84708e4a5f7794}\label{classPoco_1_1Crypto_1_1RSADigestEngine_acc3ccf1b489369a48e84708e4a5f7794}} 
+\index{Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}!verify@{verify}}
+\index{verify@{verify}!Poco::Crypto::RSADigestEngine@{Poco::Crypto::RSADigestEngine}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily bool Poco\+::\+Crypto\+::\+R\+S\+A\+Digest\+Engine\+::verify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DigestEngine_a8e6e74183768a08e8f00112e5c6c055e}{Digest\+Engine\+::\+Digest}} \&}]{signature }\end{DoxyParamCaption})}
+
+Signs the digest using the R\+SA algorithm and the private key (the first time it\textquotesingle{}s called) and returns the result.
+
+Can be called multiple times. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Crypto/\mbox{\hyperlink{RSADigestEngine_8h}{R\+S\+A\+Digest\+Engine.\+h}}\end{DoxyCompactItemize}

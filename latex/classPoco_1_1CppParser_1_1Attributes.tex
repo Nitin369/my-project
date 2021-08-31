@@ -1,0 +1,241 @@
+\hypertarget{classPoco_1_1CppParser_1_1Attributes}{}\doxysection{Poco\+::Cpp\+Parser\+::Attributes Class Reference}
+\label{classPoco_1_1CppParser_1_1Attributes}\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+
+
+{\ttfamily \#include $<$Attributes.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_a85a58ea07f12b2f10e6fff01a1b1ceb7}{Attr\+Map}}
+\item 
+typedef Attr\+Map\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_abdabeeaf920a759170adf4bcc9937973}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_a739595c34f94725d3e487a4bfd266d38}{Attributes}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_a32bc1f91b51bc8ee31c74fb6cf7588f1}{Attributes}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}} \&attrs)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_a41cd483b6fc50750c73d35e8d1f0a07c}{$\sim$\+Attributes}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}} object by copying another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}} \& \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_a3ab098b06c125caee27c6f88e7e1eff1}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}} \&attrs)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_a801c3e3ed5982aebbc57edbf8093f84f}{has}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_a131ef8fd9e78042beaf230435f7d828b}{get\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if an attribute with the given name exists. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_ad0db8b140ca057366c048055b43bbe11}{get\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&default\+Value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_a89af8d3bb66364c3771302402ace5c96}{get\+Int}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_a9cd4e6d19ccb5e7b47bcd95bc131711d}{get\+Int}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, int default\+Value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_af97be9023bafae35f8184026db6c5149}{get\+Bool}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_a6862ec13de9bf7f5d5700686af7bca50}{get\+Bool}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool default\+Value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_ac685998a41d0a0ffe1ea324b1264d4cb}{set}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_ad0f1d0034b094ef2675606f453daae6a}{remove}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Sets the value of an attribute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_ac62c4e8291d6ecbab8257554df6abd31}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::string \& \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_abb353dd9e1f59abc18fabddcc02f5220}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_abdabeeaf920a759170adf4bcc9937973}{Iterator}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_ac7f1414222c7ca8e8cfc93be63cdf5f0}{begin}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_abdabeeaf920a759170adf4bcc9937973}{Iterator}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_aa2d6b861a28d8373b960644210399e30}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_aef92cb024b33a6272ca5a5c459352ed4}{clear}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class stores attributes for a symbol table entry. \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}} are simple name-\/value pairs, where both name and values are strings. 
+
+Definition at line 31 of file Attributes.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_a85a58ea07f12b2f10e6fff01a1b1ceb7}\label{classPoco_1_1CppParser_1_1Attributes_a85a58ea07f12b2f10e6fff01a1b1ceb7}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!AttrMap@{AttrMap}}
+\index{AttrMap@{AttrMap}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{AttrMap}{AttrMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, std\+::string$>$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_a85a58ea07f12b2f10e6fff01a1b1ceb7}{Poco\+::\+Cpp\+Parser\+::\+Attributes\+::\+Attr\+Map}}}
+
+
+
+Definition at line 37 of file Attributes.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_abdabeeaf920a759170adf4bcc9937973}\label{classPoco_1_1CppParser_1_1Attributes_abdabeeaf920a759170adf4bcc9937973}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily typedef Attr\+Map\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_abdabeeaf920a759170adf4bcc9937973}{Poco\+::\+Cpp\+Parser\+::\+Attributes\+::\+Iterator}}}
+
+
+
+Definition at line 38 of file Attributes.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_a739595c34f94725d3e487a4bfd266d38}\label{classPoco_1_1CppParser_1_1Attributes_a739595c34f94725d3e487a4bfd266d38}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!Attributes@{Attributes}}
+\index{Attributes@{Attributes}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{Attributes()}{Attributes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Cpp\+Parser\+::\+Attributes\+::\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_a32bc1f91b51bc8ee31c74fb6cf7588f1}\label{classPoco_1_1CppParser_1_1Attributes_a32bc1f91b51bc8ee31c74fb6cf7588f1}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!Attributes@{Attributes}}
+\index{Attributes@{Attributes}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{Attributes()}{Attributes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Cpp\+Parser\+::\+Attributes\+::\+Attributes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}} \&}]{attrs }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}} object. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_a41cd483b6fc50750c73d35e8d1f0a07c}\label{classPoco_1_1CppParser_1_1Attributes_a41cd483b6fc50750c73d35e8d1f0a07c}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!````~Attributes@{$\sim$Attributes}}
+\index{````~Attributes@{$\sim$Attributes}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{$\sim$Attributes()}{~Attributes()}}
+{\footnotesize\ttfamily Poco\+::\+Cpp\+Parser\+::\+Attributes\+::$\sim$\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}} object by copying another one. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_ac7f1414222c7ca8e8cfc93be63cdf5f0}\label{classPoco_1_1CppParser_1_1Attributes_ac7f1414222c7ca8e8cfc93be63cdf5f0}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!begin@{begin}}
+\index{begin@{begin}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_abdabeeaf920a759170adf4bcc9937973}{Attributes\+::\+Iterator}} Poco\+::\+Cpp\+Parser\+::\+Attributes\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 110 of file Attributes.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_aef92cb024b33a6272ca5a5c459352ed4}\label{classPoco_1_1CppParser_1_1Attributes_aef92cb024b33a6272ca5a5c459352ed4}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!clear@{clear}}
+\index{clear@{clear}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Attributes\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_aa2d6b861a28d8373b960644210399e30}\label{classPoco_1_1CppParser_1_1Attributes_aa2d6b861a28d8373b960644210399e30}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!end@{end}}
+\index{end@{end}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes_abdabeeaf920a759170adf4bcc9937973}{Attributes\+::\+Iterator}} Poco\+::\+Cpp\+Parser\+::\+Attributes\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 116 of file Attributes.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_af97be9023bafae35f8184026db6c5149}\label{classPoco_1_1CppParser_1_1Attributes_af97be9023bafae35f8184026db6c5149}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!getBool@{getBool}}
+\index{getBool@{getBool}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{getBool()}{getBool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Cpp\+Parser\+::\+Attributes\+::get\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+Returns the attribute\textquotesingle{}s value as an integer, if it exists. Returns the default\+Value if the attribute does not exist.
+
+Throws a Poco\+::\+Syntax\+Exception if the stored value is not an integer. \mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_a6862ec13de9bf7f5d5700686af7bca50}\label{classPoco_1_1CppParser_1_1Attributes_a6862ec13de9bf7f5d5700686af7bca50}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!getBool@{getBool}}
+\index{getBool@{getBool}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{getBool()}{getBool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Cpp\+Parser\+::\+Attributes\+::get\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{default\+Value }\end{DoxyParamCaption}) const}
+
+Returns the attribute\textquotesingle{}s value as a boolean. The returned value is \textquotesingle{}true\textquotesingle{}, iff the stored value is not \char`\"{}false\char`\"{}.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the attribute does not exist. \mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_a89af8d3bb66364c3771302402ace5c96}\label{classPoco_1_1CppParser_1_1Attributes_a89af8d3bb66364c3771302402ace5c96}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!getInt@{getInt}}
+\index{getInt@{getInt}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{getInt()}{getInt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Poco\+::\+Cpp\+Parser\+::\+Attributes\+::get\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+Returns the attribute\textquotesingle{}s value as a string, if it exists. Returns the default\+Value if the attribute does not exist. \mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_a9cd4e6d19ccb5e7b47bcd95bc131711d}\label{classPoco_1_1CppParser_1_1Attributes_a9cd4e6d19ccb5e7b47bcd95bc131711d}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!getInt@{getInt}}
+\index{getInt@{getInt}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{getInt()}{getInt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Poco\+::\+Cpp\+Parser\+::\+Attributes\+::get\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{int}]{default\+Value }\end{DoxyParamCaption}) const}
+
+Returns the attribute\textquotesingle{}s value as an integer.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the attribute does not exist. Throws a Poco\+::\+Syntax\+Exception if the stored value is not an integer. \mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_a131ef8fd9e78042beaf230435f7d828b}\label{classPoco_1_1CppParser_1_1Attributes_a131ef8fd9e78042beaf230435f7d828b}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!getString@{getString}}
+\index{getString@{getString}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{getString()}{getString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Cpp\+Parser\+::\+Attributes\+::get\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if an attribute with the given name exists. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_ad0db8b140ca057366c048055b43bbe11}\label{classPoco_1_1CppParser_1_1Attributes_ad0db8b140ca057366c048055b43bbe11}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!getString@{getString}}
+\index{getString@{getString}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{getString()}{getString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Cpp\+Parser\+::\+Attributes\+::get\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{default\+Value }\end{DoxyParamCaption}) const}
+
+Returns the attribute\textquotesingle{}s value as a string.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the attribute does not exist. \mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_a801c3e3ed5982aebbc57edbf8093f84f}\label{classPoco_1_1CppParser_1_1Attributes_a801c3e3ed5982aebbc57edbf8093f84f}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!has@{has}}
+\index{has@{has}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily bool Poco\+::\+Cpp\+Parser\+::\+Attributes\+::has (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_a3ab098b06c125caee27c6f88e7e1eff1}\label{classPoco_1_1CppParser_1_1Attributes_a3ab098b06c125caee27c6f88e7e1eff1}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}}\& Poco\+::\+Cpp\+Parser\+::\+Attributes\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}} \&}]{attrs }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Attributes}{Attributes}} object. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_abb353dd9e1f59abc18fabddcc02f5220}\label{classPoco_1_1CppParser_1_1Attributes_abb353dd9e1f59abc18fabddcc02f5220}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string\& Poco\+::\+Cpp\+Parser\+::\+Attributes\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_ac62c4e8291d6ecbab8257554df6abd31}\label{classPoco_1_1CppParser_1_1Attributes_ac62c4e8291d6ecbab8257554df6abd31}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Cpp\+Parser\+::\+Attributes\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+Removes the attribute with the given name. Does nothing if the attribute does not exist. \mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_ad0f1d0034b094ef2675606f453daae6a}\label{classPoco_1_1CppParser_1_1Attributes_ad0f1d0034b094ef2675606f453daae6a}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!remove@{remove}}
+\index{remove@{remove}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Attributes\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Sets the value of an attribute. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Attributes_ac685998a41d0a0ffe1ea324b1264d4cb}\label{classPoco_1_1CppParser_1_1Attributes_ac685998a41d0a0ffe1ea324b1264d4cb}} 
+\index{Poco::CppParser::Attributes@{Poco::CppParser::Attributes}!set@{set}}
+\index{set@{set}!Poco::CppParser::Attributes@{Poco::CppParser::Attributes}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Attributes\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})}
+
+Returns the attribute\textquotesingle{}s value as a boolean, if it exists. The returned value is \textquotesingle{}true\textquotesingle{}, iff the stored value is not \char`\"{}false\char`\"{}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Cpp\+Parser/\mbox{\hyperlink{CppParser_2Attributes_8h}{Attributes.\+h}}\end{DoxyCompactItemize}

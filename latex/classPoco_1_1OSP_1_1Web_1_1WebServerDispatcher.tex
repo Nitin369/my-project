@@ -1,0 +1,619 @@
+\hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher}{}\doxysection{Poco\+::O\+SP\+::Web\+::Web\+Server\+Dispatcher Class Reference}
+\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher}\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+
+
+{\ttfamily \#include $<$Web\+Server\+Dispatcher.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::O\+SP\+::Web\+::Web\+Server\+Dispatcher\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::O\+SP\+::Web\+::Web\+Server\+Dispatcher\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathInfo}{Path\+Info}}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity}{Path\+Security}}
+\begin{DoxyCompactList}\small\item\em Security attributes for a registered path. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} struct is used to specify a path mapping for a bundle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466}{Specialization\+Mode}} \{ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466af20aa30c506dcaf6b86401c29fe2e8d6}{S\+M\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466a90e2cc13960b28dd917aa0bb10149908}{S\+M\+\_\+\+O\+W\+N\+ER}} = 1, 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466a1e8589dcdf028583ab326080650fae5b}{S\+M\+\_\+\+A\+LL}} = 2
+ \}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandlerFactory}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+Handler\+Factory}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab4011cdf46b08f2e30ea61cd460feb2d}{Request\+Handler\+Factory\+Ptr}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1RegularExpression}{Poco\+::\+Regular\+Expression}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa18ff5cbe20b6405ff1e18a2d4de87bf}{Regular\+Expression\+Ptr}}
+\item 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1f9e1667b0e35bafc7c74d2acf21f5a9}{Path\+Map}}
+\item 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathInfo}{Path\+Info}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_add946dd36bb24bbf9fa3c1d47c035b6d}{Path\+Info\+Map}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a662fbf62c4ce787483c624c734731bf2}{Pattern\+Vec}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebFilter}{Web\+Filter}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a3327c1f9c409e8cc0a39781ca2a7f797}{Web\+Filter\+Ptr}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebFilterFactory}{Web\+Filter\+Factory}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_afdc885ea820f1441935f9a33c53b4e6f}{Web\+Filter\+Factory\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab3b2c97e98948a6ca1be62bf281f088a}{Web\+Server\+Dispatcher}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}} p\+Context, \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1MediaTypeMapper_a4c9432e69cba5d82aa20d26edce9abea}{Media\+Type\+Mapper\+::\+Ptr}} p\+Media\+Type\+Mapper, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&auth\+Service\+Name, bool compress\+Responses, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::set$<$ std\+::string $>$ \&compressed\+Media\+Types, bool cache\+Resources=false)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a554873b06c82caf799f3fdc95e820c3f}{$\sim$\+Web\+Server\+Dispatcher}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher}{Web\+Server\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a172f20fcb909204143ce7895474f5826}{add\+Virtual\+Path}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} \&virtual\+Path)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher}{Web\+Server\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aea65b95690dbe4ae65484ca870f8c422}{remove\+Virtual\+Path}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&virtual\+Path)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a5e01726e3816964580964c5f01837c13}{list\+Virtual\+Paths}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_add946dd36bb24bbf9fa3c1d47c035b6d}{Path\+Info\+Map}} \&paths) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab52f0c96e8d844182ece44a36889dd51}{virtual\+Path\+Mappings}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1f9e1667b0e35bafc7c74d2acf21f5a9}{Path\+Map}} \&mappings) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1f9a2b9ad8bb109dfdd82e3e040cdf89}{remove\+Bundle}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa8a8ef8b0df6aec17b806e8e42ee4e13}{uncache\+Bundle\+Resources}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle)
+\begin{DoxyCompactList}\small\item\em Removes all mappings from the given bundle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ae3515dd9588cbe275e53323e5e5352d1}{handle\+Request}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response}} \&response, bool secure)
+\begin{DoxyCompactList}\small\item\em Removes all cached resources from the given bundle form the cache. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1ThreadPool}{Poco\+::\+Thread\+Pool}} \& \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a63457e0b0546495d4d28ecc97aa6ef54}{thread\+Pool}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a2004d0d64dd52ab02c8a3e318a165d2a}{add\+Filter}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&media\+Type, \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_afdc885ea820f1441935f9a33c53b4e6f}{Web\+Filter\+Factory\+Ptr}} p\+Filter\+Factory, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebFilter_a810024e35c70abc9fbe6a218781518ce}{Web\+Filter\+::\+Args}} \&args)
+\begin{DoxyCompactList}\small\item\em Returns the thread pool for use by \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a195c6534407dfbad7bac37ec2f60a3af}{remove\+Filter}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&media\+Type)
+\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a972821f456fa101f573e6abd0ecf7594}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Removes the filter for the given media\+Type. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aacd17cc6e52e3f12306bffecb59b0013}{isA}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&other\+Type) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aebddcd3c981034eb6300ff5c12df144c}{S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+A\+ME}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a34733a85f66d0c631478e14076616dfb}{on\+Bundle\+Stopping}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleEvent}{Bundle\+Event}} \&ev)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} \& \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab08f9a8f0c61c2448a9095fbfcf92cd2}{map\+Path}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&method) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_af1f9bca6b1215349030c6540e7f8d0e7}{send\+Resource}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&vpath, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&res\+Path, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&res\+Base, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&index, \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle, bool can\+Cache)
+\item 
+std\+::istream $\ast$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a6995e2c3e2c53907f0438a9b54538b31}{find\+Resource}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&base, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&res, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&index, std\+::string \&media\+Type, std\+::string \&resolved\+Path, bool can\+Cache) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sends a bundle resource as response. \end{DoxyCompactList}\item 
+std\+::istream $\ast$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a51d8bfcf3616a309521eb05689145440}{get\+Cached\+Resource}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, bool can\+Cache) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a2106a13e233ee18fe6fb0989366e4860}{authorize}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} \&v\+Path, std\+::string \&username) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a8f114bb3b82ca763d2cbb06a9f1961f3}{authorize\+Session}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} \&v\+Path, std\+::string \&username) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Authorizes the request. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1295c793ccaf16d83ef9d5e4a8f00f86}{authorize\+Basic}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} \&v\+Path, std\+::string \&username) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Authorizes the request using a session-\/based authentication. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa1c72beabb647472b57f50c377cb12a9}{send\+Found}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Authorizes the request using a H\+T\+TP Basic Authentication. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1f82142b2562a1dfdc43b66c142464dc}{send\+Not\+Found}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Sends a 302 Found response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_af76d40459ac1eddcb3f4ac46f2ed0659}{send\+Not\+Authorized}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Sends a 404 Not Found error response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a96ad78c87c8ea6226129a4cde2fdb076}{send\+Forbidden}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Sends a 401 Unauthorized error response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ac59ec24adb4fd7d89aa494d539c991b2}{send\+Bad\+Request}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Sends a 403 Forbidden error response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a2417b785512758f8a65cfcac7e3a7c5b}{send\+Method\+Not\+Allowed}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Sends a 404 Not Found error response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a3db77c63ba4d2aef6fcfccc2aba9631b}{send\+Internal\+Error}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Sends a 405 Method Not Allowed error response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a81ef5734da34c015b72ef1d5312b745e}{send\+Response}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPResponse_a150cc2b05826d90ccffd2c123c2b404d}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Response\+::\+H\+T\+T\+P\+Status}} status, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Sends a 500 Internal Server \mbox{\hyperlink{classPoco_1_1Error}{Error}} response. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Auth_1_1AuthService_ac0c725f1bc357d6a95612514f4ea6d87}{Poco\+::\+O\+S\+P\+::\+Auth\+::\+Auth\+Service\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ad2d183da9ed14559d85e2d0c2b6e6a0e}{auth\+Service}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns a H\+T\+M\+L-\/ized version of the given string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionManager_a0130eaf4b8271e153473ce22c3052600}{Web\+Session\+Manager\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ad037dedc13460e81198080f43043f8e5}{session\+Manager}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_af5f68639efd6cbcc6ae0006dfe073cf1}{format\+Message}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&message\+Id, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&arg1=std\+::string(), \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&arg2=std\+::string())
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionManager}{Web\+Session\+Manager}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_af7830501e6f2075ab4d7389a8c7756e9}{should\+Compress\+Media\+Type}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&media\+Type) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a3327c1f9c409e8cc0a39781ca2a7f797}{Web\+Filter\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ae3dc481b55f3dc61cdd2ce674d535a23}{find\+Filter}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&media\+Type)
+\begin{DoxyCompactList}\small\item\em Returns true iff content with the given media type should be compressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab309f0d30345ab44d39b55df76e85a10}{log\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response}} \&response, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&username)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a48738dfdb835f0f4abc5319511ecf145}{normalize\+Path}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em When a bundle is stopped, all of its request handlers and mappings are automatically disabled. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab51cd04c90ed1028338401142aef67f3}{clean\+Path}} (std\+::string \&path)
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa65780c877699ac9b8f9412224af8d6d}{htmlize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Sends a standard status/error response. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher}{Web\+Server\+Dispatcher}} is some sort of meta H\+T\+T\+P\+Request\+Handler\+Factory. It groups together several other H\+T\+T\+P\+Request\+Handler\+Factory instances and distributes requests to them according to the registered request handler extension points (see the \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerExtensionPoint}{Web\+Server\+Extension\+Point}} class). 
+
+Definition at line 50 of file Web\+Server\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_add946dd36bb24bbf9fa3c1d47c035b6d}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_add946dd36bb24bbf9fa3c1d47c035b6d}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!PathInfoMap@{PathInfoMap}}
+\index{PathInfoMap@{PathInfoMap}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{PathInfoMap}{PathInfoMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathInfo}{Path\+Info}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_add946dd36bb24bbf9fa3c1d47c035b6d}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Path\+Info\+Map}}}
+
+
+
+Definition at line 142 of file Web\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1f9e1667b0e35bafc7c74d2acf21f5a9}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1f9e1667b0e35bafc7c74d2acf21f5a9}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!PathMap@{PathMap}}
+\index{PathMap@{PathMap}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{PathMap}{PathMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1f9e1667b0e35bafc7c74d2acf21f5a9}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Path\+Map}}}
+
+
+
+Definition at line 141 of file Web\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a662fbf62c4ce787483c624c734731bf2}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a662fbf62c4ce787483c624c734731bf2}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!PatternVec@{PatternVec}}
+\index{PatternVec@{PatternVec}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{PatternVec}{PatternVec}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a662fbf62c4ce787483c624c734731bf2}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Pattern\+Vec}}}
+
+
+
+Definition at line 143 of file Web\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa18ff5cbe20b6405ff1e18a2d4de87bf}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa18ff5cbe20b6405ff1e18a2d4de87bf}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!RegularExpressionPtr@{RegularExpressionPtr}}
+\index{RegularExpressionPtr@{RegularExpressionPtr}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{RegularExpressionPtr}{RegularExpressionPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1RegularExpression}{Poco\+::\+Regular\+Expression}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa18ff5cbe20b6405ff1e18a2d4de87bf}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Regular\+Expression\+Ptr}}}
+
+
+
+Definition at line 66 of file Web\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab4011cdf46b08f2e30ea61cd460feb2d}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab4011cdf46b08f2e30ea61cd460feb2d}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!RequestHandlerFactoryPtr@{RequestHandlerFactoryPtr}}
+\index{RequestHandlerFactoryPtr@{RequestHandlerFactoryPtr}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{RequestHandlerFactoryPtr}{RequestHandlerFactoryPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandlerFactory}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+Handler\+Factory}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab4011cdf46b08f2e30ea61cd460feb2d}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Request\+Handler\+Factory\+Ptr}}}
+
+
+
+Definition at line 65 of file Web\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_afdc885ea820f1441935f9a33c53b4e6f}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_afdc885ea820f1441935f9a33c53b4e6f}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!WebFilterFactoryPtr@{WebFilterFactoryPtr}}
+\index{WebFilterFactoryPtr@{WebFilterFactoryPtr}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{WebFilterFactoryPtr}{WebFilterFactoryPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebFilterFactory}{Web\+Filter\+Factory}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_afdc885ea820f1441935f9a33c53b4e6f}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Web\+Filter\+Factory\+Ptr}}}
+
+
+
+Definition at line 146 of file Web\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a3327c1f9c409e8cc0a39781ca2a7f797}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a3327c1f9c409e8cc0a39781ca2a7f797}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!WebFilterPtr@{WebFilterPtr}}
+\index{WebFilterPtr@{WebFilterPtr}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{WebFilterPtr}{WebFilterPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebFilter}{Web\+Filter}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a3327c1f9c409e8cc0a39781ca2a7f797}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Web\+Filter\+Ptr}}}
+
+
+
+Definition at line 145 of file Web\+Server\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!SpecializationMode@{SpecializationMode}}
+\index{SpecializationMode@{SpecializationMode}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{SpecializationMode}{SpecializationMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Specialization\+Mode}}}
+
+A bundle that registers a resource mapping or request handler for a certain path can specify whether other bundles can register subdirectories of this directory. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SM\_NONE@{SM\_NONE}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!SM\_NONE@{SM\_NONE}}}\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466af20aa30c506dcaf6b86401c29fe2e8d6}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466af20aa30c506dcaf6b86401c29fe2e8d6}} 
+S\+M\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SM\_OWNER@{SM\_OWNER}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!SM\_OWNER@{SM\_OWNER}}}\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466a90e2cc13960b28dd917aa0bb10149908}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466a90e2cc13960b28dd917aa0bb10149908}} 
+S\+M\+\_\+\+O\+W\+N\+ER&No one can register subdirectories. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SM\_ALL@{SM\_ALL}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!SM\_ALL@{SM\_ALL}}}\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466a1e8589dcdf028583ab326080650fae5b}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466a1e8589dcdf028583ab326080650fae5b}} 
+S\+M\+\_\+\+A\+LL&Only the owner bundle can register subdirectories. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 56 of file Web\+Server\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab3b2c97e98948a6ca1be62bf281f088a}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab3b2c97e98948a6ca1be62bf281f088a}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!WebServerDispatcher@{WebServerDispatcher}}
+\index{WebServerDispatcher@{WebServerDispatcher}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{WebServerDispatcher()}{WebServerDispatcher()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Web\+Server\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}}}]{p\+Context,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1MediaTypeMapper_a4c9432e69cba5d82aa20d26edce9abea}{Media\+Type\+Mapper\+::\+Ptr}}}]{p\+Media\+Type\+Mapper,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{auth\+Service\+Name,  }\item[{bool}]{compress\+Responses,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::set$<$ std\+::string $>$ \&}]{compressed\+Media\+Types,  }\item[{bool}]{cache\+Resources = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a554873b06c82caf799f3fdc95e820c3f}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a554873b06c82caf799f3fdc95e820c3f}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!````~WebServerDispatcher@{$\sim$WebServerDispatcher}}
+\index{````~WebServerDispatcher@{$\sim$WebServerDispatcher}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$WebServerDispatcher()}{~WebServerDispatcher()}}
+{\footnotesize\ttfamily virtual Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::$\sim$\+Web\+Server\+Dispatcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher}{Web\+Server\+Dispatcher}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a2004d0d64dd52ab02c8a3e318a165d2a}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a2004d0d64dd52ab02c8a3e318a165d2a}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!addFilter@{addFilter}}
+\index{addFilter@{addFilter}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{addFilter()}{addFilter()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::add\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{media\+Type,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_afdc885ea820f1441935f9a33c53b4e6f}{Web\+Filter\+Factory\+Ptr}}}]{p\+Filter\+Factory,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebFilter_a810024e35c70abc9fbe6a218781518ce}{Web\+Filter\+::\+Args}} \&}]{args }\end{DoxyParamCaption})}
+
+
+
+Returns the thread pool for use by \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server}}. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a172f20fcb909204143ce7895474f5826}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a172f20fcb909204143ce7895474f5826}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!addVirtualPath@{addVirtualPath}}
+\index{addVirtualPath@{addVirtualPath}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{addVirtualPath()}{addVirtualPath()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::add\+Virtual\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} \&}]{virtual\+Path }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher}{Web\+Server\+Dispatcher}}. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a2106a13e233ee18fe6fb0989366e4860}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a2106a13e233ee18fe6fb0989366e4860}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!authorize@{authorize}}
+\index{authorize@{authorize}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{authorize()}{authorize()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::authorize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} \&}]{v\+Path,  }\item[{std\+::string \&}]{username }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Removes unnecessary characters (such as trailing dots) from the path and checks for illegal or dangerous characters.
+
+Returns true if the path is okay, false otherwise. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1295c793ccaf16d83ef9d5e4a8f00f86}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1295c793ccaf16d83ef9d5e4a8f00f86}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!authorizeBasic@{authorizeBasic}}
+\index{authorizeBasic@{authorizeBasic}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{authorizeBasic()}{authorizeBasic()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::authorize\+Basic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} \&}]{v\+Path,  }\item[{std\+::string \&}]{username }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Authorizes the request using a session-\/based authentication. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a8f114bb3b82ca763d2cbb06a9f1961f3}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a8f114bb3b82ca763d2cbb06a9f1961f3}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!authorizeSession@{authorizeSession}}
+\index{authorizeSession@{authorizeSession}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{authorizeSession()}{authorizeSession()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::authorize\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} \&}]{v\+Path,  }\item[{std\+::string \&}]{username }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Authorizes the request. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ad2d183da9ed14559d85e2d0c2b6e6a0e}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ad2d183da9ed14559d85e2d0c2b6e6a0e}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!authService@{authService}}
+\index{authService@{authService}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{authService()}{authService()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Auth_1_1AuthService_ac0c725f1bc357d6a95612514f4ea6d87}{Poco\+::\+O\+S\+P\+::\+Auth\+::\+Auth\+Service\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::auth\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns a H\+T\+M\+L-\/ized version of the given string. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab51cd04c90ed1028338401142aef67f3}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab51cd04c90ed1028338401142aef67f3}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!cleanPath@{cleanPath}}
+\index{cleanPath@{cleanPath}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{cleanPath()}{cleanPath()}}
+{\footnotesize\ttfamily static bool Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::clean\+Path (\begin{DoxyParamCaption}\item[{std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Returns a resource stream for the given path, or a null pointer if no matching resource exists. If caching is enabled both globally and for the specific resource, attempts to cache the resource. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ae3dc481b55f3dc61cdd2ce674d535a23}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ae3dc481b55f3dc61cdd2ce674d535a23}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!findFilter@{findFilter}}
+\index{findFilter@{findFilter}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{findFilter()}{findFilter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a3327c1f9c409e8cc0a39781ca2a7f797}{Web\+Filter\+Ptr}} Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::find\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{media\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns true iff content with the given media type should be compressed. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a6995e2c3e2c53907f0438a9b54538b31}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a6995e2c3e2c53907f0438a9b54538b31}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!findResource@{findResource}}
+\index{findResource@{findResource}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{findResource()}{findResource()}}
+{\footnotesize\ttfamily std\+::istream$\ast$ Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::find\+Resource (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}}}]{p\+Bundle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{base,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{res,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{index,  }\item[{std\+::string \&}]{media\+Type,  }\item[{std\+::string \&}]{resolved\+Path,  }\item[{bool}]{can\+Cache }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sends a bundle resource as response. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_af5f68639efd6cbcc6ae0006dfe073cf1}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_af5f68639efd6cbcc6ae0006dfe073cf1}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!formatMessage@{formatMessage}}
+\index{formatMessage@{formatMessage}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{formatMessage()}{formatMessage()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::format\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{message\+Id,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{arg1 = {\ttfamily std\+:\+:string()},  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{arg2 = {\ttfamily std\+:\+:string()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns a pointer to the \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionManager}{Web\+Session\+Manager}}. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a51d8bfcf3616a309521eb05689145440}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a51d8bfcf3616a309521eb05689145440}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!getCachedResource@{getCachedResource}}
+\index{getCachedResource@{getCachedResource}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{getCachedResource()}{getCachedResource()}}
+{\footnotesize\ttfamily std\+::istream$\ast$ Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::get\+Cached\+Resource (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}}}]{p\+Bundle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{bool}]{can\+Cache }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns a resource stream for the given path, or a null pointer if no matching resource exists. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ae3515dd9588cbe275e53323e5e5352d1}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ae3515dd9588cbe275e53323e5e5352d1}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!handleRequest@{handleRequest}}
+\index{handleRequest@{handleRequest}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{handleRequest()}{handleRequest()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::handle\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response}} \&}]{response,  }\item[{bool}]{secure }\end{DoxyParamCaption})}
+
+
+
+Removes all cached resources from the given bundle form the cache. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa65780c877699ac9b8f9412224af8d6d}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa65780c877699ac9b8f9412224af8d6d}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!htmlize@{htmlize}}
+\index{htmlize@{htmlize}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{htmlize()}{htmlize()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::htmlize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Sends a standard status/error response. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aacd17cc6e52e3f12306bffecb59b0013}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aacd17cc6e52e3f12306bffecb59b0013}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!isA@{isA}}
+\index{isA@{isA}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{isA()}{isA()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::isA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&}]{other\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the type information for the object\textquotesingle{}s class.
+
+Subclasses must override this member function.
+
+The implementation of \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aacd17cc6e52e3f12306bffecb59b0013}{is\+A()}} is usually as follows\+: const std\+::type\+\_\+info\& My\+Service\+::type() const \{ return typeid(\+My\+Service); \}
+
+If a service class implements a service interface, the type information for the interface class should be returned instead\+: const std\+::type\+\_\+info\& My\+Service\+Impl\+::type() const \{ return typeid(\+My\+Service); \} 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a46c8cf8f6356230490f9ba59a5cb40e2}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a5e01726e3816964580964c5f01837c13}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a5e01726e3816964580964c5f01837c13}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!listVirtualPaths@{listVirtualPaths}}
+\index{listVirtualPaths@{listVirtualPaths}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{listVirtualPaths()}{listVirtualPaths()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::list\+Virtual\+Paths (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_add946dd36bb24bbf9fa3c1d47c035b6d}{Path\+Info\+Map}} \&}]{paths }\end{DoxyParamCaption}) const}
+
+Removes a path mapping from the path mapping table.
+
+Throws a Not\+Found\+Exception if the given path does not exist. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab309f0d30345ab44d39b55df76e85a10}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab309f0d30345ab44d39b55df76e85a10}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!logRequest@{logRequest}}
+\index{logRequest@{logRequest}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{logRequest()}{logRequest()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::log\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response}} \&}]{response,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{username }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns a \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebFilter}{Web\+Filter}} instance for the given media\+Type, or a null pointer if no \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebFilterFactory}{Web\+Filter\+Factory}} has been registered for the given media\+Type. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab08f9a8f0c61c2448a9095fbfcf92cd2}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab08f9a8f0c61c2448a9095fbfcf92cd2}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!mapPath@{mapPath}}
+\index{mapPath@{mapPath}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{mapPath()}{mapPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}}\& Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::map\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{method }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates normalized path for internal storage. The normalized path always starts and ends with a slash. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a48738dfdb835f0f4abc5319511ecf145}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a48738dfdb835f0f4abc5319511ecf145}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!normalizePath@{normalizePath}}
+\index{normalizePath@{normalizePath}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{normalizePath()}{normalizePath()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::normalize\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+When a bundle is stopped, all of its request handlers and mappings are automatically disabled. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a34733a85f66d0c631478e14076616dfb}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a34733a85f66d0c631478e14076616dfb}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!onBundleStopping@{onBundleStopping}}
+\index{onBundleStopping@{onBundleStopping}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{onBundleStopping()}{onBundleStopping()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::on\+Bundle\+Stopping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleEvent}{Bundle\+Event}} \&}]{ev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1f9a2b9ad8bb109dfdd82e3e040cdf89}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1f9a2b9ad8bb109dfdd82e3e040cdf89}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!removeBundle@{removeBundle}}
+\index{removeBundle@{removeBundle}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{removeBundle()}{removeBundle()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::remove\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}}}]{p\+Bundle }\end{DoxyParamCaption})}
+
+Returns all path mappings. This member function creates a full copy of the internal path map. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a195c6534407dfbad7bac37ec2f60a3af}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a195c6534407dfbad7bac37ec2f60a3af}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!removeFilter@{removeFilter}}
+\index{removeFilter@{removeFilter}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{removeFilter()}{removeFilter()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::remove\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{media\+Type }\end{DoxyParamCaption})}
+
+Adds a filter factory for the given media type.
+
+Throws a Poco\+::\+Exists\+Exception if a filter already exists for the given media\+Type. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aea65b95690dbe4ae65484ca870f8c422}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aea65b95690dbe4ae65484ca870f8c422}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!removeVirtualPath@{removeVirtualPath}}
+\index{removeVirtualPath@{removeVirtualPath}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{removeVirtualPath()}{removeVirtualPath()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::remove\+Virtual\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{virtual\+Path }\end{DoxyParamCaption})}
+
+Adds the given \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}} to the path mapping table.
+
+Throws an Exists\+Exception if a mapping for the given path already exists. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ac59ec24adb4fd7d89aa494d539c991b2}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ac59ec24adb4fd7d89aa494d539c991b2}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!sendBadRequest@{sendBadRequest}}
+\index{sendBadRequest@{sendBadRequest}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{sendBadRequest()}{sendBadRequest()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::send\+Bad\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sends a 403 Forbidden error response. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a96ad78c87c8ea6226129a4cde2fdb076}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a96ad78c87c8ea6226129a4cde2fdb076}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!sendForbidden@{sendForbidden}}
+\index{sendForbidden@{sendForbidden}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{sendForbidden()}{sendForbidden()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::send\+Forbidden (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sends a 401 Unauthorized error response. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa1c72beabb647472b57f50c377cb12a9}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa1c72beabb647472b57f50c377cb12a9}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!sendFound@{sendFound}}
+\index{sendFound@{sendFound}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{sendFound()}{sendFound()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::send\+Found (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Authorizes the request using a H\+T\+TP Basic Authentication. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a3db77c63ba4d2aef6fcfccc2aba9631b}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a3db77c63ba4d2aef6fcfccc2aba9631b}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!sendInternalError@{sendInternalError}}
+\index{sendInternalError@{sendInternalError}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{sendInternalError()}{sendInternalError()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::send\+Internal\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sends a 405 Method Not Allowed error response. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a2417b785512758f8a65cfcac7e3a7c5b}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a2417b785512758f8a65cfcac7e3a7c5b}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!sendMethodNotAllowed@{sendMethodNotAllowed}}
+\index{sendMethodNotAllowed@{sendMethodNotAllowed}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{sendMethodNotAllowed()}{sendMethodNotAllowed()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::send\+Method\+Not\+Allowed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sends a 404 Not Found error response. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_af76d40459ac1eddcb3f4ac46f2ed0659}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_af76d40459ac1eddcb3f4ac46f2ed0659}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!sendNotAuthorized@{sendNotAuthorized}}
+\index{sendNotAuthorized@{sendNotAuthorized}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{sendNotAuthorized()}{sendNotAuthorized()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::send\+Not\+Authorized (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sends a 404 Not Found error response. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1f82142b2562a1dfdc43b66c142464dc}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1f82142b2562a1dfdc43b66c142464dc}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!sendNotFound@{sendNotFound}}
+\index{sendNotFound@{sendNotFound}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{sendNotFound()}{sendNotFound()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::send\+Not\+Found (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sends a 302 Found response. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_af1f9bca6b1215349030c6540e7f8d0e7}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_af1f9bca6b1215349030c6540e7f8d0e7}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!sendResource@{sendResource}}
+\index{sendResource@{sendResource}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{sendResource()}{sendResource()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::send\+Resource (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{vpath,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{res\+Path,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{res\+Base,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{index,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}}}]{p\+Bundle,  }\item[{bool}]{can\+Cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Maps a \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} to a \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1VirtualPath}{Virtual\+Path}}.
+
+Throws a Not\+Found\+Exception if no suitable mapping can be found. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a81ef5734da34c015b72ef1d5312b745e}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a81ef5734da34c015b72ef1d5312b745e}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!sendResponse@{sendResponse}}
+\index{sendResponse@{sendResponse}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{sendResponse()}{sendResponse()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::send\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPResponse_a150cc2b05826d90ccffd2c123c2b404d}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Response\+::\+H\+T\+T\+P\+Status}}}]{status,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sends a 500 Internal Server \mbox{\hyperlink{classPoco_1_1Error}{Error}} response. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ad037dedc13460e81198080f43043f8e5}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ad037dedc13460e81198080f43043f8e5}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!sessionManager@{sessionManager}}
+\index{sessionManager@{sessionManager}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{sessionManager()}{sessionManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionManager_a0130eaf4b8271e153473ce22c3052600}{Web\+Session\+Manager\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::session\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns a pointer to the auth service, if it is available, or null otherwise. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_af7830501e6f2075ab4d7389a8c7756e9}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_af7830501e6f2075ab4d7389a8c7756e9}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!shouldCompressMediaType@{shouldCompressMediaType}}
+\index{shouldCompressMediaType@{shouldCompressMediaType}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{shouldCompressMediaType()}{shouldCompressMediaType()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::should\+Compress\+Media\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{media\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reads a message from the bundle.\+properties resource and replaces placeholders \$1 and \$2 with arg1 and arg2, respectively. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a63457e0b0546495d4d28ecc97aa6ef54}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a63457e0b0546495d4d28ecc97aa6ef54}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!threadPool@{threadPool}}
+\index{threadPool@{threadPool}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{threadPool()}{threadPool()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1ThreadPool}{Poco\+::\+Thread\+Pool}} \& Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::thread\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Handles the given request. Secure specifies whether the request has been sent over a secure (H\+T\+T\+PS) connection. 
+
+Definition at line 323 of file Web\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a972821f456fa101f573e6abd0ecf7594}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a972821f456fa101f573e6abd0ecf7594}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!type@{type}}
+\index{type@{type}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info\& Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes the filter for the given media\+Type. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a71ff82992f3ecfa2de28d647b15eede8}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa8a8ef8b0df6aec17b806e8e42ee4e13}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aa8a8ef8b0df6aec17b806e8e42ee4e13}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!uncacheBundleResources@{uncacheBundleResources}}
+\index{uncacheBundleResources@{uncacheBundleResources}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{uncacheBundleResources()}{uncacheBundleResources()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::uncache\+Bundle\+Resources (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}}}]{p\+Bundle }\end{DoxyParamCaption})}
+
+
+
+Removes all mappings from the given bundle. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab52f0c96e8d844182ece44a36889dd51}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_ab52f0c96e8d844182ece44a36889dd51}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!virtualPathMappings@{virtualPathMappings}}
+\index{virtualPathMappings@{virtualPathMappings}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{virtualPathMappings()}{virtualPathMappings()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::virtual\+Path\+Mappings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a1f9e1667b0e35bafc7c74d2acf21f5a9}{Path\+Map}} \&}]{mappings }\end{DoxyParamCaption}) const}
+
+Returns a map containing all virtual paths (key) that are not patterns and not marked as hidden, and their descriptions (value). 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aebddcd3c981034eb6300ff5c12df144c}\label{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_aebddcd3c981034eb6300ff5c12df144c}} 
+\index{Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}!SERVICE\_NAME@{SERVICE\_NAME}}
+\index{SERVICE\_NAME@{SERVICE\_NAME}!Poco::OSP::Web::WebServerDispatcher@{Poco::OSP::Web::WebServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{SERVICE\_NAME}{SERVICE\_NAME}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+A\+ME\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 197 of file Web\+Server\+Dispatcher.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\+Web/\mbox{\hyperlink{WebServerDispatcher_8h}{Web\+Server\+Dispatcher.\+h}}\end{DoxyCompactItemize}

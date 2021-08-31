@@ -1,0 +1,80 @@
+\hypertarget{structIoT_1_1XBee_1_1ReceivePacket}{}\doxysection{IoT\+::X\+Bee\+::Receive\+Packet Struct Reference}
+\label{structIoT_1_1XBee_1_1ReceivePacket}\index{IoT::XBee::ReceivePacket@{IoT::XBee::ReceivePacket}}
+
+
+{\ttfamily \#include $<$X\+Bee\+Node.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1XBee_1_1ReceivePacket_a380c9f3078eb4b2d66b695d025fd4f45}{device\+Or\+Network\+Address}}
+\item 
+Poco\+::\+U\+Int8 \mbox{\hyperlink{structIoT_1_1XBee_1_1ReceivePacket_aa2e1336305dfb107a6e1ca472f0b771d}{rssi}}
+\item 
+Poco\+::\+U\+Int8 \mbox{\hyperlink{structIoT_1_1XBee_1_1ReceivePacket_ac8461e243866fe34986bf187979a3281}{options}}
+\item 
+std\+::vector$<$ Poco\+::\+U\+Int8 $>$ \mbox{\hyperlink{structIoT_1_1XBee_1_1ReceivePacket_ab0debc25e2d93911f84fb8a9643a9d69}{payload}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+When the module receives an RF packet, it is sent out the U\+A\+RT using this message type. \begin{DoxyVerb}Frame Type: 0x80, 0x81, 0x82 or 0x83 
+\end{DoxyVerb}
+ 
+
+Definition at line 114 of file X\+Bee\+Node.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1ReceivePacket_a380c9f3078eb4b2d66b695d025fd4f45}\label{structIoT_1_1XBee_1_1ReceivePacket_a380c9f3078eb4b2d66b695d025fd4f45}} 
+\index{IoT::XBee::ReceivePacket@{IoT::XBee::ReceivePacket}!deviceOrNetworkAddress@{deviceOrNetworkAddress}}
+\index{deviceOrNetworkAddress@{deviceOrNetworkAddress}!IoT::XBee::ReceivePacket@{IoT::XBee::ReceivePacket}}
+\doxysubsubsection{\texorpdfstring{deviceOrNetworkAddress}{deviceOrNetworkAddress}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+X\+Bee\+::\+Receive\+Packet\+::device\+Or\+Network\+Address}
+
+
+
+Definition at line 119 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1ReceivePacket_ac8461e243866fe34986bf187979a3281}\label{structIoT_1_1XBee_1_1ReceivePacket_ac8461e243866fe34986bf187979a3281}} 
+\index{IoT::XBee::ReceivePacket@{IoT::XBee::ReceivePacket}!options@{options}}
+\index{options@{options}!IoT::XBee::ReceivePacket@{IoT::XBee::ReceivePacket}}
+\doxysubsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int8 Io\+T\+::\+X\+Bee\+::\+Receive\+Packet\+::options}
+
+Received Signal Strength Indicator -\/ Hexadecimal equivalent of (-\/d\+Bm) value. For example\+: If RX signal strength = -\/40 d\+Bm, “0x28” (40 decimal) is returned. 
+
+Definition at line 127 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1ReceivePacket_ab0debc25e2d93911f84fb8a9643a9d69}\label{structIoT_1_1XBee_1_1ReceivePacket_ab0debc25e2d93911f84fb8a9643a9d69}} 
+\index{IoT::XBee::ReceivePacket@{IoT::XBee::ReceivePacket}!payload@{payload}}
+\index{payload@{payload}!IoT::XBee::ReceivePacket@{IoT::XBee::ReceivePacket}}
+\doxysubsubsection{\texorpdfstring{payload}{payload}}
+{\footnotesize\ttfamily std\+::vector$<$Poco\+::\+U\+Int8$>$ Io\+T\+::\+X\+Bee\+::\+Receive\+Packet\+::payload}
+
+Option flags\+:
+\begin{DoxyItemize}
+\item bit 0 \mbox{[}reserved\mbox{]}
+\item bit 1 = Address broadcast
+\item bit 2 = P\+AN broadcast
+\item bits 3-\/7 \mbox{[}reserved\mbox{]} 
+\end{DoxyItemize}
+
+Definition at line 134 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1ReceivePacket_aa2e1336305dfb107a6e1ca472f0b771d}\label{structIoT_1_1XBee_1_1ReceivePacket_aa2e1336305dfb107a6e1ca472f0b771d}} 
+\index{IoT::XBee::ReceivePacket@{IoT::XBee::ReceivePacket}!rssi@{rssi}}
+\index{rssi@{rssi}!IoT::XBee::ReceivePacket@{IoT::XBee::ReceivePacket}}
+\doxysubsubsection{\texorpdfstring{rssi}{rssi}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int8 Io\+T\+::\+X\+Bee\+::\+Receive\+Packet\+::rssi}
+
+Hexadecimal text representation of 64-\/bit address of the destination device, or 16-\/bit network address. 
+
+Definition at line 123 of file X\+Bee\+Node.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+X\+Bee/\mbox{\hyperlink{XBeeNode_8h}{X\+Bee\+Node.\+h}}\end{DoxyCompactItemize}

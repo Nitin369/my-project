@@ -1,0 +1,172 @@
+\hypertarget{classPoco_1_1InflatingStreamBuf}{}\doxysection{Poco\+::Inflating\+Stream\+Buf Class Reference}
+\label{classPoco_1_1InflatingStreamBuf}\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}
+
+
+{\ttfamily \#include $<$Inflating\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Inflating\+Stream\+Buf\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Inflating\+Stream\+Buf\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7b}{Stream\+Type}} \{ \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7baab2dfd094f00f0ff115f19d8a89e7dac}{S\+T\+R\+E\+A\+M\+\_\+\+Z\+L\+IB}}, 
+\mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7bad8eab994ffa5973d97949fbee00b4fa2}{S\+T\+R\+E\+A\+M\+\_\+\+G\+Z\+IP}}, 
+\mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7baac322f4681eeb2d197e9c2abd96a8921}{S\+T\+R\+E\+A\+M\+\_\+\+Z\+IP}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a423e88cf36faa361516aff7c829f4c49}{Inflating\+Stream\+Buf}} (std\+::istream \&istr, \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7b}{Stream\+Type}} type)
+\item 
+\mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a3d6a5643fc20b9d03373b932704ff6b9}{Inflating\+Stream\+Buf}} (std\+::istream \&istr, int window\+Bits)
+\item 
+\mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a96beaa1df2097bae9e8e7b461b25a445}{Inflating\+Stream\+Buf}} (std\+::ostream \&ostr, \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7b}{Stream\+Type}} type)
+\item 
+\mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a11ada94dad0d202557b72b3ab62e7962}{Inflating\+Stream\+Buf}} (std\+::ostream \&ostr, int window\+Bits)
+\item 
+\mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_adee235dd2f698e4e08a4609818e66433}{$\sim$\+Inflating\+Stream\+Buf}} ()
+\item 
+int \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a407f572893f12db2e246db629a82e3d3}{close}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf}{Inflating\+Stream\+Buf}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_ae6ee7fd0fed2dcccbaa377df478c2d2c}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_acd3f7c61764b793ece9aa228aa377752}{read\+From\+Device}} (char $\ast$buffer, std\+::streamsize length)
+\begin{DoxyCompactList}\small\item\em Resets the stream buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a2448370d8f978c394eebb5fe2e292d4b}{write\+To\+Device}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$buffer, std\+::streamsize length)
+\item 
+int \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_ae0e7a562233dbc865481f325c5aadf29}{sync}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is the streambuf class used by \mbox{\hyperlink{classPoco_1_1InflatingInputStream}{Inflating\+Input\+Stream}} and \mbox{\hyperlink{classPoco_1_1InflatingOutputStream}{Inflating\+Output\+Stream}}. The actual work is delegated to zlib (see \href{http://zlib.net}{\texttt{ http\+://zlib.\+net}}). Both zlib (deflate) streams and gzip streams are supported. Output streams should always call \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a407f572893f12db2e246db629a82e3d3}{close()}} to ensure proper completion of decompression. 
+
+Definition at line 37 of file Inflating\+Stream.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7b}\label{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7b}} 
+\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!StreamType@{StreamType}}
+\index{StreamType@{StreamType}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{StreamType}{StreamType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7b}{Poco\+::\+Inflating\+Stream\+Buf\+::\+Stream\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STREAM\_ZLIB@{STREAM\_ZLIB}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!STREAM\_ZLIB@{STREAM\_ZLIB}}}\mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7baab2dfd094f00f0ff115f19d8a89e7dac}\label{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7baab2dfd094f00f0ff115f19d8a89e7dac}} 
+S\+T\+R\+E\+A\+M\+\_\+\+Z\+L\+IB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STREAM\_GZIP@{STREAM\_GZIP}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!STREAM\_GZIP@{STREAM\_GZIP}}}\mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7bad8eab994ffa5973d97949fbee00b4fa2}\label{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7bad8eab994ffa5973d97949fbee00b4fa2}} 
+S\+T\+R\+E\+A\+M\+\_\+\+G\+Z\+IP&Expect a zlib header, use Adler-\/32 checksum. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STREAM\_ZIP@{STREAM\_ZIP}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!STREAM\_ZIP@{STREAM\_ZIP}}}\mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7baac322f4681eeb2d197e9c2abd96a8921}\label{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7baac322f4681eeb2d197e9c2abd96a8921}} 
+S\+T\+R\+E\+A\+M\+\_\+\+Z\+IP&Expect a gzip header, use C\+R\+C-\/32 checksum. S\+T\+R\+E\+A\+M\+\_\+\+Z\+IP is handled as S\+T\+R\+E\+A\+M\+\_\+\+Z\+L\+IB, except that we do not check the A\+D\+L\+E\+R32 value (must be checked by caller) \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 45 of file Inflating\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_a423e88cf36faa361516aff7c829f4c49}\label{classPoco_1_1InflatingStreamBuf_a423e88cf36faa361516aff7c829f4c49}} 
+\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!InflatingStreamBuf@{InflatingStreamBuf}}
+\index{InflatingStreamBuf@{InflatingStreamBuf}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{InflatingStreamBuf()}{InflatingStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Poco\+::\+Inflating\+Stream\+Buf\+::\+Inflating\+Stream\+Buf (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{\mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7b}{Stream\+Type}}}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_a3d6a5643fc20b9d03373b932704ff6b9}\label{classPoco_1_1InflatingStreamBuf_a3d6a5643fc20b9d03373b932704ff6b9}} 
+\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!InflatingStreamBuf@{InflatingStreamBuf}}
+\index{InflatingStreamBuf@{InflatingStreamBuf}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{InflatingStreamBuf()}{InflatingStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Poco\+::\+Inflating\+Stream\+Buf\+::\+Inflating\+Stream\+Buf (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{int}]{window\+Bits }\end{DoxyParamCaption})}
+
+Creates an \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf}{Inflating\+Stream\+Buf}} for expanding the compressed data read from the give input stream. \mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_a96beaa1df2097bae9e8e7b461b25a445}\label{classPoco_1_1InflatingStreamBuf_a96beaa1df2097bae9e8e7b461b25a445}} 
+\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!InflatingStreamBuf@{InflatingStreamBuf}}
+\index{InflatingStreamBuf@{InflatingStreamBuf}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{InflatingStreamBuf()}{InflatingStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Poco\+::\+Inflating\+Stream\+Buf\+::\+Inflating\+Stream\+Buf (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{\mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7b}{Stream\+Type}}}]{type }\end{DoxyParamCaption})}
+
+Creates an \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf}{Inflating\+Stream\+Buf}} for expanding the compressed data read from the given input stream.
+
+Please refer to the zlib documentation of \mbox{\hyperlink{zlib_8h_a611fc206e69f34e812ca8b590982fdd5}{inflate\+Init2()}} for a description of the window\+Bits parameter. \mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_a11ada94dad0d202557b72b3ab62e7962}\label{classPoco_1_1InflatingStreamBuf_a11ada94dad0d202557b72b3ab62e7962}} 
+\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!InflatingStreamBuf@{InflatingStreamBuf}}
+\index{InflatingStreamBuf@{InflatingStreamBuf}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{InflatingStreamBuf()}{InflatingStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Poco\+::\+Inflating\+Stream\+Buf\+::\+Inflating\+Stream\+Buf (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{int}]{window\+Bits }\end{DoxyParamCaption})}
+
+Creates an \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf}{Inflating\+Stream\+Buf}} for expanding the compressed data passed through and forwarding it to the given output stream. \mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_adee235dd2f698e4e08a4609818e66433}\label{classPoco_1_1InflatingStreamBuf_adee235dd2f698e4e08a4609818e66433}} 
+\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!````~InflatingStreamBuf@{$\sim$InflatingStreamBuf}}
+\index{````~InflatingStreamBuf@{$\sim$InflatingStreamBuf}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{$\sim$InflatingStreamBuf()}{~InflatingStreamBuf()}}
+{\footnotesize\ttfamily Poco\+::\+Inflating\+Stream\+Buf\+::$\sim$\+Inflating\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates an \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf}{Inflating\+Stream\+Buf}} for expanding the compressed data passed through and forwarding it to the given output stream.
+
+Please refer to the zlib documentation of \mbox{\hyperlink{zlib_8h_a611fc206e69f34e812ca8b590982fdd5}{inflate\+Init2()}} for a description of the window\+Bits parameter. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_a407f572893f12db2e246db629a82e3d3}\label{classPoco_1_1InflatingStreamBuf_a407f572893f12db2e246db629a82e3d3}} 
+\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!close@{close}}
+\index{close@{close}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily int Poco\+::\+Inflating\+Stream\+Buf\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf}{Inflating\+Stream\+Buf}}. 
+
+\mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_acd3f7c61764b793ece9aa228aa377752}\label{classPoco_1_1InflatingStreamBuf_acd3f7c61764b793ece9aa228aa377752}} 
+\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!readFromDevice@{readFromDevice}}
+\index{readFromDevice@{readFromDevice}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{readFromDevice()}{readFromDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Inflating\+Stream\+Buf\+::read\+From\+Device (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Resets the stream buffer. 
+
+\mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_ae6ee7fd0fed2dcccbaa377df478c2d2c}\label{classPoco_1_1InflatingStreamBuf_ae6ee7fd0fed2dcccbaa377df478c2d2c}} 
+\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!reset@{reset}}
+\index{reset@{reset}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Poco\+::\+Inflating\+Stream\+Buf\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Finishes up the stream.
+
+Must be called when inflating to an output stream. \mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_ae0e7a562233dbc865481f325c5aadf29}\label{classPoco_1_1InflatingStreamBuf_ae0e7a562233dbc865481f325c5aadf29}} 
+\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!sync@{sync}}
+\index{sync@{sync}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{sync()}{sync()}}
+{\footnotesize\ttfamily int Poco\+::\+Inflating\+Stream\+Buf\+::sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a5b7ffded1b2b978a22e6fda28384d586}{Poco\+::\+Basic\+Buffered\+Stream\+Buf$<$ ch, tr, ba $>$}}.
+
+\mbox{\Hypertarget{classPoco_1_1InflatingStreamBuf_a2448370d8f978c394eebb5fe2e292d4b}\label{classPoco_1_1InflatingStreamBuf_a2448370d8f978c394eebb5fe2e292d4b}} 
+\index{Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}!writeToDevice@{writeToDevice}}
+\index{writeToDevice@{writeToDevice}!Poco::InflatingStreamBuf@{Poco::InflatingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{writeToDevice()}{writeToDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Inflating\+Stream\+Buf\+::write\+To\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{InflatingStream_8h}{Inflating\+Stream.\+h}}\end{DoxyCompactItemize}

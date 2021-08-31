@@ -1,0 +1,164 @@
+\hypertarget{classIoT_1_1MQTT_1_1MQTTClientServerHelper}{}\doxysection{IoT\+::M\+Q\+TT\+::M\+Q\+T\+T\+Client\+Server\+Helper Class Reference}
+\label{classIoT_1_1MQTT_1_1MQTTClientServerHelper}\index{IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}}
+
+
+{\ttfamily \#include $<$M\+Q\+T\+T\+Client\+Server\+Helper.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}} \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper_ac368d0dad39faa267c13cc16843c8f1b}{Service}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper_a52860c79902e88d837e8178d476c9cec}{M\+Q\+T\+T\+Client\+Server\+Helper}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper_a8efaf52313f74cccb48292a64579f98e}{$\sim$\+M\+Q\+T\+T\+Client\+Server\+Helper}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper}{M\+Q\+T\+T\+Client\+Server\+Helper}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientRemoteObject}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Remote\+Object}} $>$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper_a3e1015562f9dc9d4ca147493694eaa15}{create\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper}{M\+Q\+T\+T\+Client\+Server\+Helper}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper_ac69013b0a565fc1c35796ee33ecea4a8}{enable\+Events}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\begin{DoxyCompactList}\small\item\em Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}} instance. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper_ad367b235a0c1b8c6d9cfc4e771d7e90f}{register\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper_aff7891b5aac67efb1a35404a2768b7ce}{register\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientRemoteObject}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Remote\+Object}} $>$ p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper_aa4dd41ce719c1eeba997bb0438082f1a}{shutdown}} ()
+\item 
+static void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper_a0f3e1e21c06d1d5bcf2ea794d18cabb1}{unregister\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\begin{DoxyCompactList}\small\item\em Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}} from the O\+RB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The interface for \mbox{\hyperlink{namespaceIoT_1_1MQTT}{M\+Q\+TT}} clients. \begin{DoxyVerb}Implementations are expected to receive their client ID and
+server URI via an implementation defined configuration mechanism.
+Once configured, a MQTTClient always uses the same client ID and
+connects to the same server. A MQTT client should automatically
+attempt to reconnect if the connection to the server is lost. 
+\end{DoxyVerb}
+ 
+
+Definition at line 34 of file M\+Q\+T\+T\+Client\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientServerHelper_ac368d0dad39faa267c13cc16843c8f1b}\label{classIoT_1_1MQTT_1_1MQTTClientServerHelper_ac368d0dad39faa267c13cc16843c8f1b}} 
+\index{IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}!Service@{Service}}
+\index{Service@{Service}!IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}}
+\doxysubsubsection{\texorpdfstring{Service}{Service}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}} \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper_ac368d0dad39faa267c13cc16843c8f1b}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Server\+Helper\+::\+Service}}}
+
+
+
+Definition at line 44 of file M\+Q\+T\+T\+Client\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientServerHelper_a52860c79902e88d837e8178d476c9cec}\label{classIoT_1_1MQTT_1_1MQTTClientServerHelper_a52860c79902e88d837e8178d476c9cec}} 
+\index{IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}!MQTTClientServerHelper@{MQTTClientServerHelper}}
+\index{MQTTClientServerHelper@{MQTTClientServerHelper}!IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}}
+\doxysubsubsection{\texorpdfstring{MQTTClientServerHelper()}{MQTTClientServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Server\+Helper\+::\+M\+Q\+T\+T\+Client\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientServerHelper_a8efaf52313f74cccb48292a64579f98e}\label{classIoT_1_1MQTT_1_1MQTTClientServerHelper_a8efaf52313f74cccb48292a64579f98e}} 
+\index{IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}!````~MQTTClientServerHelper@{$\sim$MQTTClientServerHelper}}
+\index{````~MQTTClientServerHelper@{$\sim$MQTTClientServerHelper}!IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}}
+\doxysubsubsection{\texorpdfstring{$\sim$MQTTClientServerHelper()}{~MQTTClientServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Server\+Helper\+::$\sim$\+M\+Q\+T\+T\+Client\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper}{M\+Q\+T\+T\+Client\+Server\+Helper}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientServerHelper_a3e1015562f9dc9d4ca147493694eaa15}\label{classIoT_1_1MQTT_1_1MQTTClientServerHelper_a3e1015562f9dc9d4ca147493694eaa15}} 
+\index{IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}!createRemoteObject@{createRemoteObject}}
+\index{createRemoteObject@{createRemoteObject}!IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}}
+\doxysubsubsection{\texorpdfstring{createRemoteObject()}{createRemoteObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientRemoteObject}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Remote\+Object}} $>$ Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Server\+Helper\+::create\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientServerHelper}{M\+Q\+T\+T\+Client\+Server\+Helper}}. 
+
+
+
+Definition at line 100 of file M\+Q\+T\+T\+Client\+Server\+Helper.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientServerHelper_ac69013b0a565fc1c35796ee33ecea4a8}\label{classIoT_1_1MQTT_1_1MQTTClientServerHelper_ac69013b0a565fc1c35796ee33ecea4a8}} 
+\index{IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}!enableEvents@{enableEvents}}
+\index{enableEvents@{enableEvents}!IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}}
+\doxysubsubsection{\texorpdfstring{enableEvents()}{enableEvents()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Server\+Helper\+::enable\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}} instance. 
+
+
+
+Definition at line 106 of file M\+Q\+T\+T\+Client\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientServerHelper_ad367b235a0c1b8c6d9cfc4e771d7e90f}\label{classIoT_1_1MQTT_1_1MQTTClientServerHelper_ad367b235a0c1b8c6d9cfc4e771d7e90f}} 
+\index{IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}!registerObject@{registerObject}}
+\index{registerObject@{registerObject}!IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerObject()}{registerObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Server\+Helper\+::register\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Enables remote events for the Remote\+Object identified by the given U\+RI.
+
+Events will be delivered using the Transport for the given protocol. Can be called multiple times for the same U\+RI with different protocols. 
+
+Definition at line 112 of file M\+Q\+T\+T\+Client\+Server\+Helper.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientServerHelper_aff7891b5aac67efb1a35404a2768b7ce}\label{classIoT_1_1MQTT_1_1MQTTClientServerHelper_aff7891b5aac67efb1a35404a2768b7ce}} 
+\index{IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}!registerRemoteObject@{registerRemoteObject}}
+\index{registerRemoteObject@{registerRemoteObject}!IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerRemoteObject()}{registerRemoteObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Server\+Helper\+::register\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientRemoteObject}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Remote\+Object}} $>$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}} instance and registers it with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. 
+
+Definition at line 118 of file M\+Q\+T\+T\+Client\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientServerHelper_aa4dd41ce719c1eeba997bb0438082f1a}\label{classIoT_1_1MQTT_1_1MQTTClientServerHelper_aa4dd41ce719c1eeba997bb0438082f1a}} 
+\index{IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily static void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Server\+Helper\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers the given Remote\+Object with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. \mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientServerHelper_a0f3e1e21c06d1d5bcf2ea794d18cabb1}\label{classIoT_1_1MQTT_1_1MQTTClientServerHelper_a0f3e1e21c06d1d5bcf2ea794d18cabb1}} 
+\index{IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}!unregisterObject@{unregisterObject}}
+\index{unregisterObject@{unregisterObject}!IoT::MQTT::MQTTClientServerHelper@{IoT::MQTT::MQTTClientServerHelper}}
+\doxysubsubsection{\texorpdfstring{unregisterObject()}{unregisterObject()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Server\+Helper\+::unregister\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}} from the O\+RB. 
+
+
+
+Definition at line 124 of file M\+Q\+T\+T\+Client\+Server\+Helper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+M\+Q\+T\+T/\mbox{\hyperlink{MQTTClientServerHelper_8h}{M\+Q\+T\+T\+Client\+Server\+Helper.\+h}}\end{DoxyCompactItemize}

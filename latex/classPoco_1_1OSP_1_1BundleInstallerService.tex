@@ -1,0 +1,177 @@
+\hypertarget{classPoco_1_1OSP_1_1BundleInstallerService}{}\doxysection{Poco\+::O\+SP\+::Bundle\+Installer\+Service Class Reference}
+\label{classPoco_1_1OSP_1_1BundleInstallerService}\index{Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}}
+
+
+{\ttfamily \#include $<$Bundle\+Installer\+Service.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::O\+SP\+::Bundle\+Installer\+Service\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::O\+SP\+::Bundle\+Installer\+Service\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService}{Bundle\+Installer\+Service}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_a42676162522cff56b078173172630d4d}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_aa9f5a4f49f0acdd6345ede495eabc7f6}{Bundle\+Installer\+Service}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleRepository}{Bundle\+Repository}} \&repository)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_a4d36b584699699530089596e3fb9ac21}{install\+Bundle}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_a5beecc8e573e45d436ece179571bbc5a}{install\+Bundle}} (std\+::istream \&istr)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_a3a1f5a2b39d4ac88adbbb455f504225b}{replace\+Bundle}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&symbolic\+Name, std\+::istream \&istr)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_ad1097f62c8ec6909dd9ae0cc898e373c}{replace\+Bundle}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&symbolic\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_aae18cce565338d30e8bd13d60e14035e}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_ab73ad8ff9ec5e486cb2136506a7cdea4}{isA}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&other\+Type) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_a42676162522cff56b078173172630d4d}{Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_a5a7d527a7a2c3f9da943d58a6077dc0b}{Const\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_af90e6578f57a4b94247e6b2739f6e239}{S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+A\+ME}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_a756359c41d403aacb53fef3184ae5b50}{$\sim$\+Bundle\+Installer\+Service}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService}{Bundle\+Installer\+Service}} allows a bundle to install other bundles, either from a stream or from a \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}.
+
+The service name of the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService}{Bundle\+Installer\+Service}} is \char`\"{}osp.\+core.\+installer\char`\"{}. 
+
+Definition at line 36 of file Bundle\+Installer\+Service.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleInstallerService_a42676162522cff56b078173172630d4d}\label{classPoco_1_1OSP_1_1BundleInstallerService_a42676162522cff56b078173172630d4d}} 
+\index{Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService}{Bundle\+Installer\+Service}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_a42676162522cff56b078173172630d4d}{Poco\+::\+O\+S\+P\+::\+Bundle\+Installer\+Service\+::\+Ptr}}}
+
+
+
+Definition at line 45 of file Bundle\+Installer\+Service.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleInstallerService_aa9f5a4f49f0acdd6345ede495eabc7f6}\label{classPoco_1_1OSP_1_1BundleInstallerService_aa9f5a4f49f0acdd6345ede495eabc7f6}} 
+\index{Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}!BundleInstallerService@{BundleInstallerService}}
+\index{BundleInstallerService@{BundleInstallerService}!Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}}
+\doxysubsubsection{\texorpdfstring{BundleInstallerService()}{BundleInstallerService()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Bundle\+Installer\+Service\+::\+Bundle\+Installer\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleRepository}{Bundle\+Repository}} \&}]{repository }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleInstallerService_a756359c41d403aacb53fef3184ae5b50}\label{classPoco_1_1OSP_1_1BundleInstallerService_a756359c41d403aacb53fef3184ae5b50}} 
+\index{Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}!````~BundleInstallerService@{$\sim$BundleInstallerService}}
+\index{````~BundleInstallerService@{$\sim$BundleInstallerService}!Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}}
+\doxysubsubsection{\texorpdfstring{$\sim$BundleInstallerService()}{~BundleInstallerService()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Bundle\+Installer\+Service\+::$\sim$\+Bundle\+Installer\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleInstallerService_a4d36b584699699530089596e3fb9ac21}\label{classPoco_1_1OSP_1_1BundleInstallerService_a4d36b584699699530089596e3fb9ac21}} 
+\index{Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}!installBundle@{installBundle}}
+\index{installBundle@{installBundle}!Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}}
+\doxysubsubsection{\texorpdfstring{installBundle()}{installBundle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Bundle\+Installer\+Service\+::install\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService}{Bundle\+Installer\+Service}}, using the given \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleRepository}{Bundle\+Repository}}. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleInstallerService_a5beecc8e573e45d436ece179571bbc5a}\label{classPoco_1_1OSP_1_1BundleInstallerService_a5beecc8e573e45d436ece179571bbc5a}} 
+\index{Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}!installBundle@{installBundle}}
+\index{installBundle@{installBundle}!Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}}
+\doxysubsubsection{\texorpdfstring{installBundle()}{installBundle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Bundle\+Installer\+Service\+::install\+Bundle (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})}
+
+Installs a bundle from the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. The \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{Poco\+::\+U\+R\+I\+Stream\+Opener}} class is used to open a stream for the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}.
+
+Returns a pointer to the installed bundle. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleInstallerService_ab73ad8ff9ec5e486cb2136506a7cdea4}\label{classPoco_1_1OSP_1_1BundleInstallerService_ab73ad8ff9ec5e486cb2136506a7cdea4}} 
+\index{Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}!isA@{isA}}
+\index{isA@{isA}!Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}}
+\doxysubsubsection{\texorpdfstring{isA()}{isA()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Bundle\+Installer\+Service\+::isA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&}]{other\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the type information for the object\textquotesingle{}s class.
+
+Subclasses must override this member function.
+
+The implementation of \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_ab73ad8ff9ec5e486cb2136506a7cdea4}{is\+A()}} is usually as follows\+: const std\+::type\+\_\+info\& My\+Service\+::type() const \{ return typeid(\+My\+Service); \}
+
+If a service class implements a service interface, the type information for the interface class should be returned instead\+: const std\+::type\+\_\+info\& My\+Service\+Impl\+::type() const \{ return typeid(\+My\+Service); \} 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a46c8cf8f6356230490f9ba59a5cb40e2}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleInstallerService_ad1097f62c8ec6909dd9ae0cc898e373c}\label{classPoco_1_1OSP_1_1BundleInstallerService_ad1097f62c8ec6909dd9ae0cc898e373c}} 
+\index{Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}!replaceBundle@{replaceBundle}}
+\index{replaceBundle@{replaceBundle}!Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}}
+\doxysubsubsection{\texorpdfstring{replaceBundle()}{replaceBundle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Bundle\+Installer\+Service\+::replace\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{symbolic\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})}
+
+Upgrades or replaces a bundle from the given stream.
+
+Returns a pointer to the installed bundle. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleInstallerService_a3a1f5a2b39d4ac88adbbb455f504225b}\label{classPoco_1_1OSP_1_1BundleInstallerService_a3a1f5a2b39d4ac88adbbb455f504225b}} 
+\index{Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}!replaceBundle@{replaceBundle}}
+\index{replaceBundle@{replaceBundle}!Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}}
+\doxysubsubsection{\texorpdfstring{replaceBundle()}{replaceBundle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Bundle\+Installer\+Service\+::replace\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{symbolic\+Name,  }\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})}
+
+Installs a bundle from the given stream.
+
+Returns a pointer to the installed bundle. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleInstallerService_aae18cce565338d30e8bd13d60e14035e}\label{classPoco_1_1OSP_1_1BundleInstallerService_aae18cce565338d30e8bd13d60e14035e}} 
+\index{Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}!type@{type}}
+\index{type@{type}!Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info\& Poco\+::\+O\+S\+P\+::\+Bundle\+Installer\+Service\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a71ff82992f3ecfa2de28d647b15eede8}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleInstallerService_a5a7d527a7a2c3f9da943d58a6077dc0b}\label{classPoco_1_1OSP_1_1BundleInstallerService_a5a7d527a7a2c3f9da943d58a6077dc0b}} 
+\index{Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}!ConstPtr@{ConstPtr}}
+\index{ConstPtr@{ConstPtr}!Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}}
+\doxysubsubsection{\texorpdfstring{ConstPtr}{ConstPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleInstallerService_a42676162522cff56b078173172630d4d}{Ptr}} Poco\+::\+O\+S\+P\+::\+Bundle\+Installer\+Service\+::\+Const\+Ptr}
+
+
+
+Definition at line 46 of file Bundle\+Installer\+Service.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleInstallerService_af90e6578f57a4b94247e6b2739f6e239}\label{classPoco_1_1OSP_1_1BundleInstallerService_af90e6578f57a4b94247e6b2739f6e239}} 
+\index{Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}!SERVICE\_NAME@{SERVICE\_NAME}}
+\index{SERVICE\_NAME@{SERVICE\_NAME}!Poco::OSP::BundleInstallerService@{Poco::OSP::BundleInstallerService}}
+\doxysubsubsection{\texorpdfstring{SERVICE\_NAME}{SERVICE\_NAME}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+O\+S\+P\+::\+Bundle\+Installer\+Service\+::\+S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+A\+ME\hspace{0.3cm}{\ttfamily [static]}}
+
+Upgrades or replaces a bundle from the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. The \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{Poco\+::\+U\+R\+I\+Stream\+Opener}} class is used to open a stream for the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}.
+
+Returns a pointer to the installed bundle. 
+
+Definition at line 76 of file Bundle\+Installer\+Service.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{BundleInstallerService_8h}{Bundle\+Installer\+Service.\+h}}\end{DoxyCompactItemize}

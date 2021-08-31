@@ -1,0 +1,163 @@
+\hypertarget{classIoT_1_1Devices_1_1AccelerometerServerHelper}{}\doxysection{IoT\+::Devices\+::Accelerometer\+Server\+Helper Class Reference}
+\label{classIoT_1_1Devices_1_1AccelerometerServerHelper}\index{IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}}
+
+
+The interface for three-\/axis Accelerometers.  
+
+
+
+
+{\ttfamily \#include $<$Accelerometer\+Server\+Helper.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper_af2243a5afae6c7c052d2aeb8c6284407}{Service}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper_ad35ebc5c063e39de350f963e5993f6a2}{Accelerometer\+Server\+Helper}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper_aee6cef0099d804bb1517eb86094cfa8f}{$\sim$\+Accelerometer\+Server\+Helper}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper}{Accelerometer\+Server\+Helper}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject}{Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper_a756b6149dd8708786c90d8cc0f740e9e}{create\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper}{Accelerometer\+Server\+Helper}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper_ae73acbdc9c54b01cd338a4b092c5be0a}{enable\+Events}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\begin{DoxyCompactList}\small\item\em Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} instance. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper_a6897a34bee0f7cdd20fd90dc2297b169}{register\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper_a1459e0d7ea78e81605d1f3e9bb2f0f18}{register\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject}{Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object}} $>$ p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper_a9c9198eaf1e6059011529c038fce67bd}{shutdown}} ()
+\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper_a032b364ea9912f9bb64f62bbda350029}{unregister\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\begin{DoxyCompactList}\small\item\em Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} from the O\+RB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The interface for three-\/axis Accelerometers. 
+
+Definition at line 34 of file Accelerometer\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerServerHelper_af2243a5afae6c7c052d2aeb8c6284407}\label{classIoT_1_1Devices_1_1AccelerometerServerHelper_af2243a5afae6c7c052d2aeb8c6284407}} 
+\index{IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}!Service@{Service}}
+\index{Service@{Service}!IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}}
+\doxysubsubsection{\texorpdfstring{Service}{Service}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper_af2243a5afae6c7c052d2aeb8c6284407}{Io\+T\+::\+Devices\+::\+Accelerometer\+Server\+Helper\+::\+Service}}}
+
+
+
+Definition at line 38 of file Accelerometer\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerServerHelper_ad35ebc5c063e39de350f963e5993f6a2}\label{classIoT_1_1Devices_1_1AccelerometerServerHelper_ad35ebc5c063e39de350f963e5993f6a2}} 
+\index{IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}!AccelerometerServerHelper@{AccelerometerServerHelper}}
+\index{AccelerometerServerHelper@{AccelerometerServerHelper}!IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}}
+\doxysubsubsection{\texorpdfstring{AccelerometerServerHelper()}{AccelerometerServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Accelerometer\+Server\+Helper\+::\+Accelerometer\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerServerHelper_aee6cef0099d804bb1517eb86094cfa8f}\label{classIoT_1_1Devices_1_1AccelerometerServerHelper_aee6cef0099d804bb1517eb86094cfa8f}} 
+\index{IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}!````~AccelerometerServerHelper@{$\sim$AccelerometerServerHelper}}
+\index{````~AccelerometerServerHelper@{$\sim$AccelerometerServerHelper}!IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}}
+\doxysubsubsection{\texorpdfstring{$\sim$AccelerometerServerHelper()}{~AccelerometerServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Accelerometer\+Server\+Helper\+::$\sim$\+Accelerometer\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper}{Accelerometer\+Server\+Helper}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerServerHelper_a756b6149dd8708786c90d8cc0f740e9e}\label{classIoT_1_1Devices_1_1AccelerometerServerHelper_a756b6149dd8708786c90d8cc0f740e9e}} 
+\index{IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}!createRemoteObject@{createRemoteObject}}
+\index{createRemoteObject@{createRemoteObject}!IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}}
+\doxysubsubsection{\texorpdfstring{createRemoteObject()}{createRemoteObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject}{Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object}} $>$ Io\+T\+::\+Devices\+::\+Accelerometer\+Server\+Helper\+::create\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerServerHelper}{Accelerometer\+Server\+Helper}}. 
+
+
+
+Definition at line 94 of file Accelerometer\+Server\+Helper.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerServerHelper_ae73acbdc9c54b01cd338a4b092c5be0a}\label{classIoT_1_1Devices_1_1AccelerometerServerHelper_ae73acbdc9c54b01cd338a4b092c5be0a}} 
+\index{IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}!enableEvents@{enableEvents}}
+\index{enableEvents@{enableEvents}!IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}}
+\doxysubsubsection{\texorpdfstring{enableEvents()}{enableEvents()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Accelerometer\+Server\+Helper\+::enable\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} instance. 
+
+
+
+Definition at line 100 of file Accelerometer\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerServerHelper_a6897a34bee0f7cdd20fd90dc2297b169}\label{classIoT_1_1Devices_1_1AccelerometerServerHelper_a6897a34bee0f7cdd20fd90dc2297b169}} 
+\index{IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}!registerObject@{registerObject}}
+\index{registerObject@{registerObject}!IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerObject()}{registerObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Devices\+::\+Accelerometer\+Server\+Helper\+::register\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Enables remote events for the Remote\+Object identified by the given U\+RI.
+
+Events will be delivered using the Transport for the given protocol. Can be called multiple times for the same U\+RI with different protocols. 
+
+Definition at line 106 of file Accelerometer\+Server\+Helper.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerServerHelper_a1459e0d7ea78e81605d1f3e9bb2f0f18}\label{classIoT_1_1Devices_1_1AccelerometerServerHelper_a1459e0d7ea78e81605d1f3e9bb2f0f18}} 
+\index{IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}!registerRemoteObject@{registerRemoteObject}}
+\index{registerRemoteObject@{registerRemoteObject}!IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerRemoteObject()}{registerRemoteObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Devices\+::\+Accelerometer\+Server\+Helper\+::register\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject}{Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object}} $>$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} instance and registers it with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. 
+
+Definition at line 112 of file Accelerometer\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerServerHelper_a9c9198eaf1e6059011529c038fce67bd}\label{classIoT_1_1Devices_1_1AccelerometerServerHelper_a9c9198eaf1e6059011529c038fce67bd}} 
+\index{IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily static void Io\+T\+::\+Devices\+::\+Accelerometer\+Server\+Helper\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers the given Remote\+Object with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. \mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerServerHelper_a032b364ea9912f9bb64f62bbda350029}\label{classIoT_1_1Devices_1_1AccelerometerServerHelper_a032b364ea9912f9bb64f62bbda350029}} 
+\index{IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}!unregisterObject@{unregisterObject}}
+\index{unregisterObject@{unregisterObject}!IoT::Devices::AccelerometerServerHelper@{IoT::Devices::AccelerometerServerHelper}}
+\doxysubsubsection{\texorpdfstring{unregisterObject()}{unregisterObject()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Accelerometer\+Server\+Helper\+::unregister\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} from the O\+RB. 
+
+
+
+Definition at line 118 of file Accelerometer\+Server\+Helper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{AccelerometerServerHelper_8h}{Accelerometer\+Server\+Helper.\+h}}\end{DoxyCompactItemize}

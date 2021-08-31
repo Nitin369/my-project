@@ -1,0 +1,119 @@
+\hypertarget{ModbusMaster_8h}{}\doxysection{App\+Frame\+Work/include/\+Io\+T/\+Modbus/\+Modbus\+Master.h File Reference}
+\label{ModbusMaster_8h}\index{AppFrameWork/include/IoT/Modbus/ModbusMaster.h@{AppFrameWork/include/IoT/Modbus/ModbusMaster.h}}
+{\ttfamily \#include \char`\"{}Io\+T/\+Modbus/\+Modbus.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Poco/\+Basic\+Event.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for Modbus\+Master.\+h\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ModbusMessage}{Io\+T\+::\+Modbus\+::\+Modbus\+Message}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1GenericMessage}{Io\+T\+::\+Modbus\+::\+Generic\+Message}}
+\begin{DoxyCompactList}\small\item\em A generic \mbox{\hyperlink{namespaceIoT_1_1Modbus}{Modbus}} frame. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ModbusExceptionMessage}{Io\+T\+::\+Modbus\+::\+Modbus\+Exception\+Message}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespaceIoT_1_1Modbus}{Modbus}} Exception Message. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadCoilsRequest}{Io\+T\+::\+Modbus\+::\+Read\+Coils\+Request}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadCoilsResponse}{Io\+T\+::\+Modbus\+::\+Read\+Coils\+Response}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadDiscreteInputsRequest}{Io\+T\+::\+Modbus\+::\+Read\+Discrete\+Inputs\+Request}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadDiscreteInputsResponse}{Io\+T\+::\+Modbus\+::\+Read\+Discrete\+Inputs\+Response}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadHoldingRegistersRequest}{Io\+T\+::\+Modbus\+::\+Read\+Holding\+Registers\+Request}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadHoldingRegistersResponse}{Io\+T\+::\+Modbus\+::\+Read\+Holding\+Registers\+Response}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadInputRegistersRequest}{Io\+T\+::\+Modbus\+::\+Read\+Input\+Registers\+Request}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadInputRegistersResponse}{Io\+T\+::\+Modbus\+::\+Read\+Input\+Registers\+Response}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteSingleCoilRequest}{Io\+T\+::\+Modbus\+::\+Write\+Single\+Coil\+Request}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteSingleCoilResponse}{Io\+T\+::\+Modbus\+::\+Write\+Single\+Coil\+Response}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteSingleRegisterRequest}{Io\+T\+::\+Modbus\+::\+Write\+Single\+Register\+Request}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteSingleRegisterResponse}{Io\+T\+::\+Modbus\+::\+Write\+Single\+Register\+Response}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadExceptionStatusRequest}{Io\+T\+::\+Modbus\+::\+Read\+Exception\+Status\+Request}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadExceptionStatusResponse}{Io\+T\+::\+Modbus\+::\+Read\+Exception\+Status\+Response}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteMultipleCoilsRequest}{Io\+T\+::\+Modbus\+::\+Write\+Multiple\+Coils\+Request}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteMultipleCoilsResponse}{Io\+T\+::\+Modbus\+::\+Write\+Multiple\+Coils\+Response}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteMultipleRegistersRequest}{Io\+T\+::\+Modbus\+::\+Write\+Multiple\+Registers\+Request}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteMultipleRegistersResponse}{Io\+T\+::\+Modbus\+::\+Write\+Multiple\+Registers\+Response}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1MaskWriteRegisterRequest}{Io\+T\+::\+Modbus\+::\+Mask\+Write\+Register\+Request}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1MaskWriteRegisterResponse}{Io\+T\+::\+Modbus\+::\+Mask\+Write\+Register\+Response}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadWriteMultipleRegistersRequest}{Io\+T\+::\+Modbus\+::\+Read\+Write\+Multiple\+Registers\+Request}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadWriteMultipleRegistersResponse}{Io\+T\+::\+Modbus\+::\+Read\+Write\+Multiple\+Registers\+Response}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadFIFOQueueRequest}{Io\+T\+::\+Modbus\+::\+Read\+F\+I\+F\+O\+Queue\+Request}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadFIFOQueueResponse}{Io\+T\+::\+Modbus\+::\+Read\+F\+I\+F\+O\+Queue\+Response}}
+\item 
+class \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceIoT}{IoT}}
+\begin{DoxyCompactList}\small\item\em Definition of the U\+D\+P\+Endpoint interface. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespaceIoT_1_1Modbus}{Io\+T\+::\+Modbus}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691ce}{Io\+T\+::\+Modbus\+::\+Function\+Codes}} \{ \newline
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea8121b06f4c15dc93907d1f21e297a156}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+R\+E\+A\+D\+\_\+\+C\+O\+I\+LS}} = 0x01, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea475671980bbebcae85dea7798fedaa5f}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+R\+E\+A\+D\+\_\+\+D\+I\+S\+C\+R\+E\+T\+E\+\_\+\+I\+N\+P\+U\+TS}} = 0x02, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea4ed63ac2e9d0d04b4081dbd99386e361}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+R\+E\+A\+D\+\_\+\+H\+O\+L\+D\+I\+N\+G\+\_\+\+R\+E\+G\+I\+S\+T\+E\+RS}} = 0x03, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea15094a746a88ae65fdb2d13936f91565}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+R\+E\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+R\+E\+G\+I\+S\+T\+E\+RS}} = 0x04, 
+\newline
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea8da9d1ead92b74c0d0478c9434d9f113}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+W\+R\+I\+T\+E\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+C\+O\+IL}} = 0x05, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691ceaf699954be4216436acd623c92a545d19}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+W\+R\+I\+T\+E\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+R\+E\+G\+I\+S\+T\+ER}} = 0x06, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea0f94f507dc65ead614aa5ddc9c8adcd9}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+R\+E\+A\+D\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+US}} = 0x07, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea1c180947b9cd888976ee9093c3587221}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+D\+I\+A\+G\+N\+O\+S\+T\+I\+CS}} = 0x08, 
+\newline
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea6bc7e58b3019f42e30d897868125cadb}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+G\+E\+T\+\_\+\+C\+O\+M\+M\+\_\+\+E\+V\+E\+N\+T\+\_\+\+C\+O\+U\+N\+T\+ER}} = 0x0B, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691ceaa4fbf7b2e9df15cfa41222bb7c8b72f4}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+G\+E\+T\+\_\+\+C\+O\+M\+M\+\_\+\+E\+V\+E\+N\+T\+\_\+\+L\+OG}} = 0x0C, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691ceacfab28f58b95dd62f00a457c7d50bcc0}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+C\+O\+I\+LS}} = 0x0F, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea6b6e45bc42113c07bff05e9673dfe81b}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+RS}} = 0x10, 
+\newline
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea75d832781d18adfe9ddcaec1c00a7ff5}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+ID}} = 0x11, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea96e756b004fac648b68848f8f156f6e5}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+R\+E\+A\+D\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+C\+O\+RD}} = 0x14, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea1450af41f834635df8a2502b2b87411c}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+W\+R\+I\+T\+E\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+C\+O\+RD}} = 0x15, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea46648f72401804ea5308adb94c7e796d}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+M\+A\+S\+K\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+G\+I\+S\+T\+ER}} = 0x16, 
+\newline
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691ceabb9221d4e5797ba4f2aa660d0251aec8}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+R\+E\+G\+I\+S\+T\+E\+RS}} = 0x17, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cead0d0fb100961b5772f4a86013f046889}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+R\+E\+A\+D\+\_\+\+F\+I\+F\+O\+\_\+\+Q\+U\+E\+UE}} = 0x18, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691cea05ea4b2abaaa0d21a8317bad3ec549a9}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+E\+N\+C\+A\+P\+S\+U\+L\+A\+T\+E\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+T\+R\+A\+N\+S\+P\+O\+RT}} = 0x2B, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691ceab86bf95e3fa40b62953de7c316a0d677}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+M\+A\+SK}} = 0x80, 
+\newline
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a581425766f8e129242edd8a636f691ceaca4d85832b4b28f7bf34324a9d45c8ca}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+C\+O\+D\+E\+\_\+\+M\+A\+SK}} = 0x7F
+ \}
+\item 
+enum \mbox{\hyperlink{namespaceIoT_1_1Modbus_a35b62a129b23a89244b517b42be71edd}{Io\+T\+::\+Modbus\+::\+Exception\+Codes}} \{ \newline
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a35b62a129b23a89244b517b42be71edda5cf514cdffa73e076b1010531eaf4d12}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+E\+X\+C\+\_\+\+I\+L\+L\+E\+G\+A\+L\+\_\+\+F\+U\+N\+C\+T\+I\+ON}} = 0x01, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a35b62a129b23a89244b517b42be71eddac6c834d388dac002d810fc0c0d0c109b}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+E\+X\+C\+\_\+\+I\+L\+L\+E\+G\+A\+L\+\_\+\+D\+A\+T\+A\+\_\+\+A\+D\+D\+R\+E\+SS}} = 0x02, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a35b62a129b23a89244b517b42be71edda466e59864fd67514a3db1f506e93d99e}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+E\+X\+C\+\_\+\+I\+L\+L\+E\+G\+A\+L\+\_\+\+D\+A\+T\+A\+\_\+\+V\+A\+L\+UE}} = 0x03, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a35b62a129b23a89244b517b42be71eddadb2524858ad304e6324067d608fe38a1}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+E\+X\+C\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} = 0x04, 
+\newline
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a35b62a129b23a89244b517b42be71edda8f4d02a70470ce56e8be89e85589d403}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+E\+X\+C\+\_\+\+A\+C\+K\+N\+O\+W\+L\+E\+D\+GE}} = 0x05, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a35b62a129b23a89244b517b42be71eddaa740845a0140d67aa201658e64bf8c59}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+E\+X\+C\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+B\+U\+SY}} = 0x06, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a35b62a129b23a89244b517b42be71edda0c57b92dc74716e5451c0cb26886cd05}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+E\+X\+C\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+P\+A\+R\+I\+T\+Y\+\_\+\+E\+R\+R\+OR}} = 0x08, 
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a35b62a129b23a89244b517b42be71edda083eae7914318d79a9cf41679a0688bf}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+E\+X\+C\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+P\+A\+T\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}} = 0x0A, 
+\newline
+\mbox{\hyperlink{namespaceIoT_1_1Modbus_a35b62a129b23a89244b517b42be71edda767cb8fa5c5e4da28cdd5fa81723c03b}{Io\+T\+::\+Modbus\+::\+M\+O\+D\+B\+U\+S\+\_\+\+E\+X\+C\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+T\+O\+\_\+\+R\+E\+S\+P\+O\+ND}} = 0x0B
+ \}
+\end{DoxyCompactItemize}

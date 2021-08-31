@@ -1,0 +1,432 @@
+\hypertarget{classPoco_1_1Net_1_1HTTPSession}{}\doxysection{Poco\+::Net\+::H\+T\+T\+P\+Session Class Reference}
+\label{classPoco_1_1Net_1_1HTTPSession}\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+Session.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::H\+T\+T\+P\+Session\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a4bb8d1f27a6a2cfdb30dfa32775ba27ca7bc48abc88c649b13f10ea2acd5eb40e}{H\+T\+T\+P\+\_\+\+P\+O\+RT}} = 80
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a0f26e56231626324cda47a77764de1f1}{set\+Keep\+Alive}} (bool keep\+Alive)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a5e256ffa0ebcf858313c19b66f0237b8}{get\+Keep\+Alive}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_ac3b0e50de429e8fd4f5dc4a29a7f462d}{set\+Timeout}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout)
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a53513a8292c059fde84315cd77cbb1da}{get\+Timeout}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the timeout for the H\+T\+TP session. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_aa86d1fc3fea4d65a522ef7dbbd160a22}{connected}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the timeout for the H\+T\+TP session. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a9ac3b8330254494361f77154237175e5}{abort}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the underlying socket is connected. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Exception}{Poco\+::\+Exception}} $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_af129fb7e044498220f7bdc174aa36754}{network\+Exception}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a173eb4f77be8506fd70ae55eef7b870e}{attach\+Session\+Data}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&data)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_abaf374cb873d125048778e65712b51fc}{session\+Data}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a23b4bff0b82e6ae1163493829191c7c9}{detach\+Socket}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a182567e432a2641121f20753721cb476}{socket}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a88015e458df0965f55e2577b4902a10e}{drain\+Buffer}} (\mbox{\hyperlink{classPoco_1_1Buffer}{Poco\+::\+Buffer}}$<$ char $>$ \&buffer)
+\begin{DoxyCompactList}\small\item\em Returns a reference to the underlying socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_aac36adc32fb7b22abf494733707518cb}{H\+T\+T\+P\+Session}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_abaec059900b33126240489e249c1a926}{H\+T\+T\+P\+Session}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a182567e432a2641121f20753721cb476}{socket}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a89db2dcfebccbf33f43e9d27094a1f4c}{H\+T\+T\+P\+Session}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a182567e432a2641121f20753721cb476}{socket}}, bool keep\+Alive)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a920f5f65f4aa0698ed708cac49545dc3}{$\sim$\+H\+T\+T\+P\+Session}} ()
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a820bcbed4147f4bb2f99539ab53d174d}{get}} ()
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_ab94b6d69b827a552caf567862f96e2fe}{peek}} ()
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a6875dc9399fdbe3aa1eb0d364cbb3f03}{read}} (char $\ast$buffer, std\+::streamsize length)
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a1caa7029dcf1266db4bc4a5cc363c8e0}{write}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$buffer, std\+::streamsize length)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a30aa9bdf25c31303b9c069d5c926d152}{receive}} (char $\ast$buffer, int length)
+\begin{DoxyCompactList}\small\item\em Writes data to the socket. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_ad089729b720424ce8b0c1272cbce333a}{buffered}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Reads up to length bytes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_aa40c1ada2a7b6f53614d69c47511f8e8}{refill}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of bytes in the buffer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_af17a521622971969cb591a4a37b19fc3}{connect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&address)
+\begin{DoxyCompactList}\small\item\em Refills the internal buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_ac72cad836b2904ff29893fce46f22ede}{attach\+Socket}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a182567e432a2641121f20753721cb476}{socket}})
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a5c0150fffac13de77e83b81cea30813b}{close}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a49c55e08b257d07b57b8cb7e764c4ade}{set\+Exception}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Exception}{Poco\+::\+Exception}} \&exc)
+\begin{DoxyCompactList}\small\item\em Closes the underlying socket. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a09215e39a1d3679d2cfb0654c30510c2}{clear\+Exception}} ()
+\begin{DoxyCompactList}\small\item\em Stores a clone of the exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_aabc13ff468a03685e2d345b493161961}{H\+T\+T\+P\+Stream\+Buf}}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_ad414b903bf6f13c9bbbe12284a3c5fce}{H\+T\+T\+P\+Header\+Stream\+Buf}}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a3254a807d29f37ce894332920181a250}{H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf}}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_aff1fa14a9db273c6adf9702b9d85b592}{H\+T\+T\+P\+Chunked\+Stream\+Buf}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession}{H\+T\+T\+P\+Session}} implements basic H\+T\+TP session management for both H\+T\+TP clients and H\+T\+TP servers.
+
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession}{H\+T\+T\+P\+Session}} implements buffering for H\+T\+TP connections, as well as specific support for the various H\+T\+TP stream classes.
+
+This class can not be instantiated. \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} or \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession}{H\+T\+T\+P\+Server\+Session}} must be used instead. 
+
+Definition at line 36 of file H\+T\+T\+P\+Session.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a4bb8d1f27a6a2cfdb30dfa32775ba27c}\label{classPoco_1_1Net_1_1HTTPSession_a4bb8d1f27a6a2cfdb30dfa32775ba27c}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+Returns the data attached with \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a173eb4f77be8506fd70ae55eef7b870e}{attach\+Session\+Data()}}, or an empty \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} if no user data has been attached. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HTTP\_PORT@{HTTP\_PORT}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!HTTP\_PORT@{HTTP\_PORT}}}\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a4bb8d1f27a6a2cfdb30dfa32775ba27ca7bc48abc88c649b13f10ea2acd5eb40e}\label{classPoco_1_1Net_1_1HTTPSession_a4bb8d1f27a6a2cfdb30dfa32775ba27ca7bc48abc88c649b13f10ea2acd5eb40e}} 
+H\+T\+T\+P\+\_\+\+P\+O\+RT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 91 of file H\+T\+T\+P\+Session.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_aac36adc32fb7b22abf494733707518cb}\label{classPoco_1_1Net_1_1HTTPSession_aac36adc32fb7b22abf494733707518cb}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!HTTPSession@{HTTPSession}}
+\index{HTTPSession@{HTTPSession}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{HTTPSession()}{HTTPSession()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::\+H\+T\+T\+P\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Copies all bytes remaining in the internal buffer to the given \mbox{\hyperlink{classPoco_1_1Buffer}{Poco\+::\+Buffer}}, resizing it as necessary.
+
+This is usually used together with \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a23b4bff0b82e6ae1163493829191c7c9}{detach\+Socket()}} to obtain any data already read from the socket, but not yet processed. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_abaec059900b33126240489e249c1a926}\label{classPoco_1_1Net_1_1HTTPSession_abaec059900b33126240489e249c1a926}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!HTTPSession@{HTTPSession}}
+\index{HTTPSession@{HTTPSession}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{HTTPSession()}{HTTPSession()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::\+H\+T\+T\+P\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&}]{socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates a H\+T\+TP session using an unconnected stream socket. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a89db2dcfebccbf33f43e9d27094a1f4c}\label{classPoco_1_1Net_1_1HTTPSession_a89db2dcfebccbf33f43e9d27094a1f4c}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!HTTPSession@{HTTPSession}}
+\index{HTTPSession@{HTTPSession}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{HTTPSession()}{HTTPSession()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::\+H\+T\+T\+P\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&}]{socket,  }\item[{bool}]{keep\+Alive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates a H\+T\+TP session using the given socket. The session takes ownership of the socket and closes it when it\textquotesingle{}s no longer used. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a920f5f65f4aa0698ed708cac49545dc3}\label{classPoco_1_1Net_1_1HTTPSession_a920f5f65f4aa0698ed708cac49545dc3}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!````~HTTPSession@{$\sim$HTTPSession}}
+\index{````~HTTPSession@{$\sim$HTTPSession}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{$\sim$HTTPSession()}{~HTTPSession()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::$\sim$\+H\+T\+T\+P\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Creates a H\+T\+TP session using the given socket. The session takes ownership of the socket and closes it when it\textquotesingle{}s no longer used. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a9ac3b8330254494361f77154237175e5}\label{classPoco_1_1Net_1_1HTTPSession_a9ac3b8330254494361f77154237175e5}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!abort@{abort}}
+\index{abort@{abort}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{abort()}{abort()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::abort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns true if the underlying socket is connected. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSClientSession_ae6c16d986f7f12c909be1dd61271fc7b}{Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Client\+Session}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a173eb4f77be8506fd70ae55eef7b870e}\label{classPoco_1_1Net_1_1HTTPSession_a173eb4f77be8506fd70ae55eef7b870e}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!attachSessionData@{attachSessionData}}
+\index{attachSessionData@{attachSessionData}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{attachSessionData()}{attachSessionData()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::attach\+Session\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&}]{data }\end{DoxyParamCaption})}
+
+If sending or receiving data over the underlying socket connection resulted in an exception, a pointer to this exception is returned.
+
+Otherwise, N\+U\+LL is returned. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_ac72cad836b2904ff29893fce46f22ede}\label{classPoco_1_1Net_1_1HTTPSession_ac72cad836b2904ff29893fce46f22ede}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!attachSocket@{attachSocket}}
+\index{attachSocket@{attachSocket}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{attachSocket()}{attachSocket()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::attach\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&}]{socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Connects the underlying socket to the given address and sets the socket\textquotesingle{}s receive timeout. ~\newline
+ \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_ad089729b720424ce8b0c1272cbce333a}\label{classPoco_1_1Net_1_1HTTPSession_ad089729b720424ce8b0c1272cbce333a}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!buffered@{buffered}}
+\index{buffered@{buffered}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{buffered()}{buffered()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::buffered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Reads up to length bytes. 
+
+
+
+Definition at line 232 of file H\+T\+T\+P\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a09215e39a1d3679d2cfb0654c30510c2}\label{classPoco_1_1Net_1_1HTTPSession_a09215e39a1d3679d2cfb0654c30510c2}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!clearException@{clearException}}
+\index{clearException@{clearException}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{clearException()}{clearException()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::clear\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Stores a clone of the exception. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a5c0150fffac13de77e83b81cea30813b}\label{classPoco_1_1Net_1_1HTTPSession_a5c0150fffac13de77e83b81cea30813b}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!close@{close}}
+\index{close@{close}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Attaches a socket to the session, replacing the previously attached socket. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_af17a521622971969cb591a4a37b19fc3}\label{classPoco_1_1Net_1_1HTTPSession_af17a521622971969cb591a4a37b19fc3}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!connect@{connect}}
+\index{connect@{connect}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Refills the internal buffer. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSClientSession_a95b1fd2051ff7b1fa21cd3147de52fb2}{Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Client\+Session}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_aa86d1fc3fea4d65a522ef7dbbd160a22}\label{classPoco_1_1Net_1_1HTTPSession_aa86d1fc3fea4d65a522ef7dbbd160a22}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!connected@{connected}}
+\index{connected@{connected}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{connected()}{connected()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the timeout for the H\+T\+TP session. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a23b4bff0b82e6ae1163493829191c7c9}\label{classPoco_1_1Net_1_1HTTPSession_a23b4bff0b82e6ae1163493829191c7c9}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!detachSocket@{detachSocket}}
+\index{detachSocket@{detachSocket}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{detachSocket()}{detachSocket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::detach\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a88015e458df0965f55e2577b4902a10e}\label{classPoco_1_1Net_1_1HTTPSession_a88015e458df0965f55e2577b4902a10e}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!drainBuffer@{drainBuffer}}
+\index{drainBuffer@{drainBuffer}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{drainBuffer()}{drainBuffer()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::drain\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Buffer}{Poco\+::\+Buffer}}$<$ char $>$ \&}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the underlying socket. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a820bcbed4147f4bb2f99539ab53d174d}\label{classPoco_1_1Net_1_1HTTPSession_a820bcbed4147f4bb2f99539ab53d174d}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!get@{get}}
+\index{get@{get}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession}{H\+T\+T\+P\+Session}} and closes the underlying socket. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a5e256ffa0ebcf858313c19b66f0237b8}\label{classPoco_1_1Net_1_1HTTPSession_a5e256ffa0ebcf858313c19b66f0237b8}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!getKeepAlive@{getKeepAlive}}
+\index{getKeepAlive@{getKeepAlive}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{getKeepAlive()}{getKeepAlive()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::get\+Keep\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the keep-\/alive flag for this session.
+
+If the keep-\/alive flag is enabled, persistent H\+T\+T\+P/1.\+1 connections are supported. 
+
+Definition at line 208 of file H\+T\+T\+P\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a53513a8292c059fde84315cd77cbb1da}\label{classPoco_1_1Net_1_1HTTPSession_a53513a8292c059fde84315cd77cbb1da}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!getTimeout@{getTimeout}}
+\index{getTimeout@{getTimeout}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{getTimeout()}{getTimeout()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::get\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the timeout for the H\+T\+TP session. 
+
+
+
+Definition at line 214 of file H\+T\+T\+P\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_af129fb7e044498220f7bdc174aa36754}\label{classPoco_1_1Net_1_1HTTPSession_af129fb7e044498220f7bdc174aa36754}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!networkException@{networkException}}
+\index{networkException@{networkException}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{networkException()}{networkException()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Exception}{Poco\+::\+Exception}} $\ast$ Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::network\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Aborts a session in progress by shutting down and closing the underlying socket. 
+
+Definition at line 226 of file H\+T\+T\+P\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_ab94b6d69b827a552caf567862f96e2fe}\label{classPoco_1_1Net_1_1HTTPSession_ab94b6d69b827a552caf567862f96e2fe}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!peek@{peek}}
+\index{peek@{peek}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the next byte in the buffer. Reads more data from the socket if there are no bytes left in the buffer. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a6875dc9399fdbe3aa1eb0d364cbb3f03}\label{classPoco_1_1Net_1_1HTTPSession_a6875dc9399fdbe3aa1eb0d364cbb3f03}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!read@{read}}
+\index{read@{read}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::read (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Peeks at the next character in the buffer. Reads more data from the socket if there are no bytes left in the buffer. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSClientSession_a6548ef7f69cc60b6cf149f087737d1b2}{Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Client\+Session}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a30aa9bdf25c31303b9c069d5c926d152}\label{classPoco_1_1Net_1_1HTTPSession_a30aa9bdf25c31303b9c069d5c926d152}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!receive@{receive}}
+\index{receive@{receive}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::receive (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Writes data to the socket. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_aa40c1ada2a7b6f53614d69c47511f8e8}\label{classPoco_1_1Net_1_1HTTPSession_aa40c1ada2a7b6f53614d69c47511f8e8}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!refill@{refill}}
+\index{refill@{refill}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{refill()}{refill()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::refill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the number of bytes in the buffer. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_abaf374cb873d125048778e65712b51fc}\label{classPoco_1_1Net_1_1HTTPSession_abaf374cb873d125048778e65712b51fc}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!sessionData@{sessionData}}
+\index{sessionData@{sessionData}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{sessionData()}{sessionData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::session\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Allows to attach an application-\/specific data item to the session.
+
+On the server side, this can be used to manage data that must be maintained over the entire lifetime of a persistent connection (that is, multiple requests sent over the same connection). 
+
+Definition at line 238 of file H\+T\+T\+P\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a49c55e08b257d07b57b8cb7e764c4ade}\label{classPoco_1_1Net_1_1HTTPSession_a49c55e08b257d07b57b8cb7e764c4ade}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!setException@{setException}}
+\index{setException@{setException}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{setException()}{setException()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::set\+Exception (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Exception}{Poco\+::\+Exception}} \&}]{exc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Closes the underlying socket. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a0f26e56231626324cda47a77764de1f1}\label{classPoco_1_1Net_1_1HTTPSession_a0f26e56231626324cda47a77764de1f1}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!setKeepAlive@{setKeepAlive}}
+\index{setKeepAlive@{setKeepAlive}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{setKeepAlive()}{setKeepAlive()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::set\+Keep\+Alive (\begin{DoxyParamCaption}\item[{bool}]{keep\+Alive }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_ac3b0e50de429e8fd4f5dc4a29a7f462d}\label{classPoco_1_1Net_1_1HTTPSession_ac3b0e50de429e8fd4f5dc4a29a7f462d}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!setTimeout@{setTimeout}}
+\index{setTimeout@{setTimeout}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{setTimeout()}{setTimeout()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::set\+Timeout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout }\end{DoxyParamCaption})}
+
+Returns the value of the keep-\/alive flag for this session. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a182567e432a2641121f20753721cb476}\label{classPoco_1_1Net_1_1HTTPSession_a182567e432a2641121f20753721cb476}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!socket@{socket}}
+\index{socket@{socket}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{socket()}{socket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Detaches the socket from the session.
+
+The socket is returned, and a new, uninitialized socket is attached to the session. 
+
+Definition at line 220 of file H\+T\+T\+P\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a1caa7029dcf1266db4bc4a5cc363c8e0}\label{classPoco_1_1Net_1_1HTTPSession_a1caa7029dcf1266db4bc4a5cc363c8e0}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!write@{write}}
+\index{write@{write}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Reads up to length bytes.
+
+If there is data in the buffer, this data is returned. Otherwise, data is read from the socket to avoid unnecessary buffering. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_ab777183142f73b28e223c8f963a1ff89}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_aff1fa14a9db273c6adf9702b9d85b592}\label{classPoco_1_1Net_1_1HTTPSession_aff1fa14a9db273c6adf9702b9d85b592}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!HTTPChunkedStreamBuf@{HTTPChunkedStreamBuf}}
+\index{HTTPChunkedStreamBuf@{HTTPChunkedStreamBuf}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{HTTPChunkedStreamBuf}{HTTPChunkedStreamBuf}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPChunkedStreamBuf}{H\+T\+T\+P\+Chunked\+Stream\+Buf}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 201 of file H\+T\+T\+P\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_a3254a807d29f37ce894332920181a250}\label{classPoco_1_1Net_1_1HTTPSession_a3254a807d29f37ce894332920181a250}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!HTTPFixedLengthStreamBuf@{HTTPFixedLengthStreamBuf}}
+\index{HTTPFixedLengthStreamBuf@{HTTPFixedLengthStreamBuf}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{HTTPFixedLengthStreamBuf}{HTTPFixedLengthStreamBuf}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf}{H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 200 of file H\+T\+T\+P\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_ad414b903bf6f13c9bbbe12284a3c5fce}\label{classPoco_1_1Net_1_1HTTPSession_ad414b903bf6f13c9bbbe12284a3c5fce}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!HTTPHeaderStreamBuf@{HTTPHeaderStreamBuf}}
+\index{HTTPHeaderStreamBuf@{HTTPHeaderStreamBuf}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{HTTPHeaderStreamBuf}{HTTPHeaderStreamBuf}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPHeaderStreamBuf}{H\+T\+T\+P\+Header\+Stream\+Buf}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 199 of file H\+T\+T\+P\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSession_aabc13ff468a03685e2d345b493161961}\label{classPoco_1_1Net_1_1HTTPSession_aabc13ff468a03685e2d345b493161961}} 
+\index{Poco::Net::HTTPSession@{Poco::Net::HTTPSession}!HTTPStreamBuf@{HTTPStreamBuf}}
+\index{HTTPStreamBuf@{HTTPStreamBuf}!Poco::Net::HTTPSession@{Poco::Net::HTTPSession}}
+\doxysubsubsection{\texorpdfstring{HTTPStreamBuf}{HTTPStreamBuf}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPStreamBuf}{H\+T\+T\+P\+Stream\+Buf}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 198 of file H\+T\+T\+P\+Session.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{HTTPSession_8h}{H\+T\+T\+P\+Session.\+h}}\end{DoxyCompactItemize}

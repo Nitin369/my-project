@@ -1,0 +1,610 @@
+\hypertarget{classPoco_1_1AbstractCache}{}\doxysection{Poco\+::Abstract\+Cache$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$ Class Template Reference}
+\label{classPoco_1_1AbstractCache}\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+
+
+An \mbox{\hyperlink{classPoco_1_1AbstractCache}{Abstract\+Cache}} is the interface of all caches.  
+
+
+
+
+{\ttfamily \#include $<$Abstract\+Cache.\+h$>$}
+
+
+
+Collaboration diagram for Poco\+::Abstract\+Cache$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ T\+Key, \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Value $>$ $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache_ad4c2640e970cfd70318cba782115b5e5}{Data\+Holder}}
+\item 
+typedef Data\+Holder\+::iterator \mbox{\hyperlink{classPoco_1_1AbstractCache_a45cebd8415fed1d9943e09c288177ae0}{Iterator}}
+\item 
+typedef Data\+Holder\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1AbstractCache_a12c298250774e4b89d536d33bcb305de}{Const\+Iterator}}
+\item 
+typedef std\+::set$<$ T\+Key $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache_a12affb93161834fb51509f901efbeb07}{Key\+Set}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1AbstractCache_a62858e5d47375aa82c0efd73966bd895}{Abstract\+Cache}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1AbstractCache_a1e538cd94295d379f58e03401179c00d}{Abstract\+Cache}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Strategy \&strat)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1AbstractCache_a7e7960e135a006c8121db183c3b40f07}{$\sim$\+Abstract\+Cache}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_aec30fe5fe6534f78a518e58b3db39f0d}{add}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Value \&val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_af5da250a27adc5d6893dde7a4d058f78}{update}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Value \&val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_a704a63b05c661fa33b99808e71e9faf9}{add}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key, \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Value $>$ val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_add4e0066165634dc4eb7da6874703485}{update}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key, \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Value $>$ val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_a05d4fef6daeb548f72ba1eee68844e05}{remove}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1AbstractCache_a01c6602942831da6368f4a7e43c54f45}{has}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if the cache contains a value for the key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Value $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache_a7f812c1ea00ed55ed9364c28cd32cb33}{get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key)
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_a680ca7f1dae7c1a7d28e56e2741863fd}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Removes all elements from the cache. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1AbstractCache_a8c680a8d18da5455bc26687a0ee42aed}{size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of cached elements. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_a428e64599e2c4f1d90b5fc117a39f6f5}{force\+Replace}} ()
+\item 
+std\+::set$<$ T\+Key $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache_a1679e8f78520a9164e57410763df3a6b}{get\+All\+Keys}} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of all keys stored in the cache. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1KeyValueArgs}{Key\+Value\+Args}}$<$ T\+Key, T\+Value $>$, T\+Event\+Mutex $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache_a9e6dacd1d0a5c6c9b928b122c5556b71}{Add}}
+\item 
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1KeyValueArgs}{Key\+Value\+Args}}$<$ T\+Key, T\+Value $>$, T\+Event\+Mutex $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache_abd71cf5c91de5ef92943d3606f0000f4}{Update}}
+\item 
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key, T\+Event\+Mutex $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache_a80e5687984364d3fca7a4f8fc0f06090}{Remove}}
+\item 
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key, T\+Event\+Mutex $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache_a84d972d581e866deeb23c33811970da1}{Get}}
+\item 
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1EventArgs}{Event\+Args}}, T\+Event\+Mutex $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache_aa2ef8f74e3437f93b67607e67d0683bf}{Clear}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_aa0e5d6076f277d4b66a80709a4b61f6f}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em Sets up event registration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_ac82eea981641fa3a3a752832c159145b}{uninitialize}} ()
+\begin{DoxyCompactList}\small\item\em Reverts event registration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_af9a03842b3131fb513f3c52d2b124705}{do\+Add}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Value \&val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_a134a4e02bb5c558d0c7781619fa90d3b}{do\+Add}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key, \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Value $>$ \&val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_a83a640c9a3be9709cadb7b0e45540ec4}{do\+Update}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Value \&val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_a9eb42e862464346fa5851d6c3bd1ba20}{do\+Update}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key, \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Value $>$ \&val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_a9e1339dcd40b9d4014939901740bb884}{do\+Remove}} (\mbox{\hyperlink{classPoco_1_1AbstractCache_a45cebd8415fed1d9943e09c288177ae0}{Iterator}} it)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1AbstractCache_a0982ea3cc47f33658af8df0fb2f2782f}{do\+Has}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if the cache contains a value for the key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Value $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache_a91c9f90cf85a0fe56b36481f7b5a27ee}{do\+Get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key)
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_af448360c5daf01d19275c46de21e0dfd}{do\+Clear}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1AbstractCache_a2972a7235b638d35b290507dd873f254}{do\+Replace}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$ \mbox{\hyperlink{classPoco_1_1ValidArgs}{Valid\+Args}}$<$ T\+Key $>$ $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache_a9dd0651d24a6a7852f54f957ab1fc217}{Is\+Valid}}
+\item 
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$ \mbox{\hyperlink{classPoco_1_1AbstractCache_a12affb93161834fb51509f901efbeb07}{Key\+Set}} $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache_aa05a557df2c4dbde6e3e157a5ff77b20}{Replace}}
+\item 
+T\+Strategy \mbox{\hyperlink{classPoco_1_1AbstractCache_af1b79976e32909c8b7ad57b659a98e74}{\+\_\+strategy}}
+\item 
+\mbox{\hyperlink{classPoco_1_1AbstractCache_ad4c2640e970cfd70318cba782115b5e5}{Data\+Holder}} \mbox{\hyperlink{classPoco_1_1AbstractCache_a67c2547d9b9c9a31cc2cde6209bbe240}{\+\_\+data}}
+\item 
+T\+Mutex \mbox{\hyperlink{classPoco_1_1AbstractCache_a35619365ac7e7c7ecffe261dc74dd358}{\+\_\+mutex}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Key, class T\+Value, class T\+Strategy, class T\+Mutex = Fast\+Mutex, class T\+Event\+Mutex = Fast\+Mutex$>$\newline
+class Poco\+::\+Abstract\+Cache$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$}
+
+An \mbox{\hyperlink{classPoco_1_1AbstractCache}{Abstract\+Cache}} is the interface of all caches. 
+
+Definition at line 40 of file Abstract\+Cache.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a12c298250774e4b89d536d33bcb305de}\label{classPoco_1_1AbstractCache_a12c298250774e4b89d536d33bcb305de}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!ConstIterator@{ConstIterator}}
+\index{ConstIterator@{ConstIterator}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{ConstIterator}{ConstIterator}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+typedef Data\+Holder\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::\mbox{\hyperlink{classPoco_1_1AbstractCache_a12c298250774e4b89d536d33bcb305de}{Const\+Iterator}}}
+
+
+
+Definition at line 52 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_ad4c2640e970cfd70318cba782115b5e5}\label{classPoco_1_1AbstractCache_ad4c2640e970cfd70318cba782115b5e5}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!DataHolder@{DataHolder}}
+\index{DataHolder@{DataHolder}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{DataHolder}{DataHolder}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+typedef std\+::map$<$T\+Key, \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$T\+Value $>$ $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::\mbox{\hyperlink{classPoco_1_1AbstractCache_ad4c2640e970cfd70318cba782115b5e5}{Data\+Holder}}}
+
+
+
+Definition at line 50 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a45cebd8415fed1d9943e09c288177ae0}\label{classPoco_1_1AbstractCache_a45cebd8415fed1d9943e09c288177ae0}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+typedef Data\+Holder\+::iterator \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::\mbox{\hyperlink{classPoco_1_1AbstractCache_a45cebd8415fed1d9943e09c288177ae0}{Iterator}}}
+
+
+
+Definition at line 51 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a12affb93161834fb51509f901efbeb07}\label{classPoco_1_1AbstractCache_a12affb93161834fb51509f901efbeb07}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!KeySet@{KeySet}}
+\index{KeySet@{KeySet}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{KeySet}{KeySet}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+typedef std\+::set$<$T\+Key$>$ \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::\mbox{\hyperlink{classPoco_1_1AbstractCache_a12affb93161834fb51509f901efbeb07}{Key\+Set}}}
+
+
+
+Definition at line 53 of file Abstract\+Cache.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a62858e5d47375aa82c0efd73966bd895}\label{classPoco_1_1AbstractCache_a62858e5d47375aa82c0efd73966bd895}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!AbstractCache@{AbstractCache}}
+\index{AbstractCache@{AbstractCache}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{AbstractCache()}{AbstractCache()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::\mbox{\hyperlink{classPoco_1_1AbstractCache}{Abstract\+Cache}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 55 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a1e538cd94295d379f58e03401179c00d}\label{classPoco_1_1AbstractCache_a1e538cd94295d379f58e03401179c00d}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!AbstractCache@{AbstractCache}}
+\index{AbstractCache@{AbstractCache}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{AbstractCache()}{AbstractCache()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::\mbox{\hyperlink{classPoco_1_1AbstractCache}{Abstract\+Cache}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Strategy \&}]{strat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 60 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a7e7960e135a006c8121db183c3b40f07}\label{classPoco_1_1AbstractCache_a7e7960e135a006c8121db183c3b40f07}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!````~AbstractCache@{$\sim$AbstractCache}}
+\index{````~AbstractCache@{$\sim$AbstractCache}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$AbstractCache()}{~AbstractCache()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+virtual \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1AbstractCache}{Abstract\+Cache}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 65 of file Abstract\+Cache.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_aec30fe5fe6534f78a518e58b3db39f0d}\label{classPoco_1_1AbstractCache_aec30fe5fe6534f78a518e58b3db39f0d}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!add@{add}}
+\index{add@{add}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Value \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds the key value pair to the cache. If for the key already an entry exists, it will be overwritten. 
+
+Definition at line 77 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a704a63b05c661fa33b99808e71e9faf9}\label{classPoco_1_1AbstractCache_a704a63b05c661fa33b99808e71e9faf9}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!add@{add}}
+\index{add@{add}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key,  }\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Value $>$}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds the key value pair to the cache. Note that adding a N\+U\+LL \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}} will fail! If for the key already an entry exists, it will be overwritten, ie. first a remove event is thrown, then a add event 
+
+Definition at line 96 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a680ca7f1dae7c1a7d28e56e2741863fd}\label{classPoco_1_1AbstractCache_a680ca7f1dae7c1a7d28e56e2741863fd}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!clear@{clear}}
+\index{clear@{clear}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes all elements from the cache. 
+
+
+
+Definition at line 141 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_af9a03842b3131fb513f3c52d2b124705}\label{classPoco_1_1AbstractCache_af9a03842b3131fb513f3c52d2b124705}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!doAdd@{doAdd}}
+\index{doAdd@{doAdd}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{doAdd()}{doAdd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::do\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Value \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Adds the key value pair to the cache. If for the key already an entry exists, it will be overwritten. 
+
+Definition at line 209 of file Abstract\+Cache.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a134a4e02bb5c558d0c7781619fa90d3b}\label{classPoco_1_1AbstractCache_a134a4e02bb5c558d0c7781619fa90d3b}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!doAdd@{doAdd}}
+\index{doAdd@{doAdd}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{doAdd()}{doAdd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::do\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key,  }\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Value $>$ \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Adds the key value pair to the cache. If for the key already an entry exists, it will be overwritten. 
+
+Definition at line 223 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_af448360c5daf01d19275c46de21e0dfd}\label{classPoco_1_1AbstractCache_af448360c5daf01d19275c46de21e0dfd}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!doClear@{doClear}}
+\index{doClear@{doClear}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{doClear()}{doClear()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::do\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 333 of file Abstract\+Cache.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a91c9f90cf85a0fe56b36481f7b5a27ee}\label{classPoco_1_1AbstractCache_a91c9f90cf85a0fe56b36481f7b5a27ee}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!doGet@{doGet}}
+\index{doGet@{doGet}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{doGet()}{doGet()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$T\+Value$>$ \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::do\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns a \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}} of the cache entry, returns 0 if for the key no value was found 
+
+Definition at line 305 of file Abstract\+Cache.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a0982ea3cc47f33658af8df0fb2f2782f}\label{classPoco_1_1AbstractCache_a0982ea3cc47f33658af8df0fb2f2782f}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!doHas@{doHas}}
+\index{doHas@{doHas}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{doHas()}{doHas()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+bool \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::do\+Has (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns true if the cache contains a value for the key. 
+
+
+
+Definition at line 288 of file Abstract\+Cache.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a9e1339dcd40b9d4014939901740bb884}\label{classPoco_1_1AbstractCache_a9e1339dcd40b9d4014939901740bb884}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!doRemove@{doRemove}}
+\index{doRemove@{doRemove}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{doRemove()}{doRemove()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::do\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1AbstractCache_a45cebd8415fed1d9943e09c288177ae0}{Iterator}}}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Removes an entry from the cache. If the entry is not found the remove is ignored. 
+
+Definition at line 277 of file Abstract\+Cache.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a2972a7235b638d35b290507dd873f254}\label{classPoco_1_1AbstractCache_a2972a7235b638d35b290507dd873f254}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!doReplace@{doReplace}}
+\index{doReplace@{doReplace}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{doReplace()}{doReplace()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::do\+Replace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 340 of file Abstract\+Cache.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a83a640c9a3be9709cadb7b0e45540ec4}\label{classPoco_1_1AbstractCache_a83a640c9a3be9709cadb7b0e45540ec4}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!doUpdate@{doUpdate}}
+\index{doUpdate@{doUpdate}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{doUpdate()}{doUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::do\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Value \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Adds the key value pair to the cache. If for the key already an entry exists, it will be overwritten. 
+
+Definition at line 237 of file Abstract\+Cache.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a9eb42e862464346fa5851d6c3bd1ba20}\label{classPoco_1_1AbstractCache_a9eb42e862464346fa5851d6c3bd1ba20}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!doUpdate@{doUpdate}}
+\index{doUpdate@{doUpdate}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{doUpdate()}{doUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::do\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key,  }\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Value $>$ \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Adds the key value pair to the cache. If for the key already an entry exists, it will be overwritten. 
+
+Definition at line 257 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a428e64599e2c4f1d90b5fc117a39f6f5}\label{classPoco_1_1AbstractCache_a428e64599e2c4f1d90b5fc117a39f6f5}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!forceReplace@{forceReplace}}
+\index{forceReplace@{forceReplace}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{forceReplace()}{forceReplace()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::force\+Replace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Forces cache replacement. Note that \mbox{\hyperlink{namespacePoco}{Poco}}\textquotesingle{}s cache strategy use for efficiency reason no background thread which periodically triggers cache replacement. Cache Replacement is only started when the cache is modified from outside, i.\+e. add is called, or when a user tries to access an cache element via get. In some cases, i.\+e. expire based caching where for a long time no access to the cache happens, it might be desirable to be able to trigger cache replacement manually. 
+
+Definition at line 156 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a7f812c1ea00ed55ed9364c28cd32cb33}\label{classPoco_1_1AbstractCache_a7f812c1ea00ed55ed9364c28cd32cb33}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!get@{get}}
+\index{get@{get}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$T\+Value$>$ \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}} of the value. The Shared\+Pointer will remain valid even when cache replacement removes the element. If for the key no value exists, an empty \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}} is returned. 
+
+Definition at line 132 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a1679e8f78520a9164e57410763df3a6b}\label{classPoco_1_1AbstractCache_a1679e8f78520a9164e57410763df3a6b}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!getAllKeys@{getAllKeys}}
+\index{getAllKeys@{getAllKeys}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{getAllKeys()}{getAllKeys()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+std\+::set$<$T\+Key$>$ \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::get\+All\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a copy of all keys stored in the cache. 
+
+
+
+Definition at line 167 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a01c6602942831da6368f4a7e43c54f45}\label{classPoco_1_1AbstractCache_a01c6602942831da6368f4a7e43c54f45}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!has@{has}}
+\index{has@{has}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+bool \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::has (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if the cache contains a value for the key. 
+
+
+
+Definition at line 125 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_aa0e5d6076f277d4b66a80709a4b61f6f}\label{classPoco_1_1AbstractCache_aa0e5d6076f277d4b66a80709a4b61f6f}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!initialize@{initialize}}
+\index{initialize@{initialize}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Sets up event registration. 
+
+
+
+Definition at line 185 of file Abstract\+Cache.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a05d4fef6daeb548f72ba1eee68844e05}\label{classPoco_1_1AbstractCache_a05d4fef6daeb548f72ba1eee68844e05}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!remove@{remove}}
+\index{remove@{remove}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Removes an entry from the cache. If the entry is not found, the remove is ignored. 
+
+Definition at line 116 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a8c680a8d18da5455bc26687a0ee42aed}\label{classPoco_1_1AbstractCache_a8c680a8d18da5455bc26687a0ee42aed}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!size@{size}}
+\index{size@{size}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of cached elements. 
+
+
+
+Definition at line 148 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_ac82eea981641fa3a3a752832c159145b}\label{classPoco_1_1AbstractCache_ac82eea981641fa3a3a752832c159145b}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!uninitialize@{uninitialize}}
+\index{uninitialize@{uninitialize}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{uninitialize()}{uninitialize()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::uninitialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Reverts event registration. 
+
+
+
+Definition at line 197 of file Abstract\+Cache.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_af5da250a27adc5d6893dde7a4d058f78}\label{classPoco_1_1AbstractCache_af5da250a27adc5d6893dde7a4d058f78}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!update@{update}}
+\index{update@{update}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Value \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds the key value pair to the cache. Note that adding a N\+U\+LL \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}} will fail! If for the key already an entry exists, it will be overwritten. The difference to add is that no remove or add events are thrown in this case, just a simply silent update is performed If the key doesnot exist the behavior is equal to add, ie. an add event is thrown 
+
+Definition at line 85 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_add4e0066165634dc4eb7da6874703485}\label{classPoco_1_1AbstractCache_add4e0066165634dc4eb7da6874703485}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!update@{update}}
+\index{update@{update}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+void \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key,  }\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Value $>$}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds the key value pair to the cache. Note that adding a N\+U\+LL \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}} will fail! If for the key already an entry exists, it will be overwritten. The difference to add is that no remove or add events are thrown in this case, just an Update is thrown If the key doesnot exist the behavior is equal to add, ie. an add event is thrown 
+
+Definition at line 105 of file Abstract\+Cache.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a67c2547d9b9c9a31cc2cde6209bbe240}\label{classPoco_1_1AbstractCache_a67c2547d9b9c9a31cc2cde6209bbe240}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!\_data@{\_data}}
+\index{\_data@{\_data}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1AbstractCache_ad4c2640e970cfd70318cba782115b5e5}{Data\+Holder}} \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::\+\_\+data\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 356 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a35619365ac7e7c7ecffe261dc74dd358}\label{classPoco_1_1AbstractCache_a35619365ac7e7c7ecffe261dc74dd358}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!\_mutex@{\_mutex}}
+\index{\_mutex@{\_mutex}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{\_mutex}{\_mutex}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+T\+Mutex \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::\+\_\+mutex\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 357 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_af1b79976e32909c8b7ad57b659a98e74}\label{classPoco_1_1AbstractCache_af1b79976e32909c8b7ad57b659a98e74}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!\_strategy@{\_strategy}}
+\index{\_strategy@{\_strategy}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{\_strategy}{\_strategy}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+T\+Strategy \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::\+\_\+strategy\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 355 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a9e6dacd1d0a5c6c9b928b122c5556b71}\label{classPoco_1_1AbstractCache_a9e6dacd1d0a5c6c9b928b122c5556b71}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!Add@{Add}}
+\index{Add@{Add}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{Add}{Add}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1KeyValueArgs}{Key\+Value\+Args}}$<$T\+Key, T\+Value $>$, T\+Event\+Mutex $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::Add}
+
+
+
+Definition at line 44 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_aa2ef8f74e3437f93b67607e67d0683bf}\label{classPoco_1_1AbstractCache_aa2ef8f74e3437f93b67607e67d0683bf}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{Clear}{Clear}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1EventArgs}{Event\+Args}}, T\+Event\+Mutex$>$ \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::Clear}
+
+
+
+Definition at line 48 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a84d972d581e866deeb23c33811970da1}\label{classPoco_1_1AbstractCache_a84d972d581e866deeb23c33811970da1}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!Get@{Get}}
+\index{Get@{Get}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{Get}{Get}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key, T\+Event\+Mutex$>$ \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::Get}
+
+
+
+Definition at line 47 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a9dd0651d24a6a7852f54f957ab1fc217}\label{classPoco_1_1AbstractCache_a9dd0651d24a6a7852f54f957ab1fc217}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{IsValid}{IsValid}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$\mbox{\hyperlink{classPoco_1_1ValidArgs}{Valid\+Args}}$<$T\+Key$>$ $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::Is\+Valid\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 182 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_a80e5687984364d3fca7a4f8fc0f06090}\label{classPoco_1_1AbstractCache_a80e5687984364d3fca7a4f8fc0f06090}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!Remove@{Remove}}
+\index{Remove@{Remove}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{Remove}{Remove}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key, T\+Event\+Mutex$>$ \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::Remove}
+
+
+
+Definition at line 46 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_aa05a557df2c4dbde6e3e157a5ff77b20}\label{classPoco_1_1AbstractCache_aa05a557df2c4dbde6e3e157a5ff77b20}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!Replace@{Replace}}
+\index{Replace@{Replace}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{Replace}{Replace}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$\mbox{\hyperlink{classPoco_1_1AbstractCache_a12affb93161834fb51509f901efbeb07}{Key\+Set}}$>$ \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::Replace\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 183 of file Abstract\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractCache_abd71cf5c91de5ef92943d3606f0000f4}\label{classPoco_1_1AbstractCache_abd71cf5c91de5ef92943d3606f0000f4}} 
+\index{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}!Update@{Update}}
+\index{Update@{Update}!Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$@{Poco::AbstractCache$<$ TKey, TValue, TStrategy, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{Update}{Update}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Strategy , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1FIFOEvent}{F\+I\+F\+O\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1KeyValueArgs}{Key\+Value\+Args}}$<$T\+Key, T\+Value $>$, T\+Event\+Mutex $>$ \mbox{\hyperlink{classPoco_1_1AbstractCache}{Poco\+::\+Abstract\+Cache}}$<$ T\+Key, T\+Value, T\+Strategy, T\+Mutex, T\+Event\+Mutex $>$\+::Update}
+
+
+
+Definition at line 45 of file Abstract\+Cache.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{AbstractCache_8h}{Abstract\+Cache.\+h}}\end{DoxyCompactItemize}

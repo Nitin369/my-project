@@ -1,0 +1,193 @@
+\hypertarget{classPoco_1_1OSP_1_1ServiceRegistry}{}\doxysection{Poco\+::O\+SP\+::Service\+Registry Class Reference}
+\label{classPoco_1_1OSP_1_1ServiceRegistry}\index{Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}}
+
+
+{\ttfamily \#include $<$Service\+Registry.\+h$>$}
+
+
+
+Collaboration diagram for Poco\+::O\+SP\+::Service\+Registry\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry_a2e016961e06ecab58f547c66c5ac13b4}{Service\+Registry}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry_a384fb0096eb08212f06229fb2c97216a}{$\sim$\+Service\+Registry}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry}{Service\+Registry}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRef_ab9940b5aefd6802ccd385d9f7bdb52c9}{Service\+Ref\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry_a43e9724815a62009c23ac7d3b553b975}{register\+Service}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_ae37f76a4fc067928d4ace33c617920bd}{Service\+::\+Ptr}} p\+Service, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} \&props)
+\begin{DoxyCompactList}\small\item\em Fired whenever a service has been unregistered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry_a2ab748b36e44f7a190ef11cee8d93cff}{unregister\+Service}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry_ad9bf290837c62fe26cfa9e74e9e4ee21}{unregister\+Service}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRef_ab9940b5aefd6802ccd385d9f7bdb52c9}{Service\+Ref\+::\+Ptr}} p\+Service\+Ref)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRef_acb7738ac4ee26f30a426f59e46b76e91}{Service\+Ref\+::\+Const\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry_a541fb18c991c7c0c27bd9fec1f3efaaf}{find\+By\+Name}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Unregisters the service specified by p\+Service\+Ref. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry_a3ad0f47bf10c62e6061cf93247bbb055}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&query, std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRef_ab9940b5aefd6802ccd385d9f7bdb52c9}{Service\+Ref\+::\+Ptr}} $>$ \&results) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceEvent}{Service\+Event}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry_a989fb59fc5cbe055a2260451ed7f3dab}{service\+Registered}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry}{Service\+Registry}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceEvent}{Service\+Event}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry_a8401bd2e05a91f7d51f1c23c7c3dc884}{service\+Unregistered}}
+\begin{DoxyCompactList}\small\item\em Fired whenever a new service has been registered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry_a71f03328fa919dd4d19a4276f46d1742}{P\+R\+O\+P\+\_\+\+N\+A\+ME}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry_abb190c96d2c10c34eeeb4ac8f78fb90a}{P\+R\+O\+P\+\_\+\+T\+Y\+PE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry}{Service\+Registry}} allows a bundle to provide services to other bundle, and to find services provided by other bundles.
+
+A bundle can provide and register arbitrary services in the form of interface classes. Every service a bundle provides must be implemented in a class derived from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service}{Service}}. \mbox{\hyperlink{classPoco_1_1OSP_1_1Service}{Service}} objects are reference counted.
+
+A service can be implemented and registered as a singleton, meaning there exists exacty one instance of the service providing services to all bundles in the system. Alternatively, a service can be implemented and registered using a service factory. A service factory provides a unique instance of the service class to everyone requesting the \mbox{\hyperlink{classPoco_1_1OSP_1_1Service}{Service}} object.
+
+If a service is to be registered using a service factory, a corresponding subclass of \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceFactory}{Service\+Factory}} must be implemented for the \mbox{\hyperlink{classPoco_1_1OSP_1_1Service}{Service}} class. An instance of the \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceFactory}{Service\+Factory}} must then be registered instead of the \mbox{\hyperlink{classPoco_1_1OSP_1_1Service}{Service}} object itself. 
+
+Definition at line 41 of file Service\+Registry.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceRegistry_a2e016961e06ecab58f547c66c5ac13b4}\label{classPoco_1_1OSP_1_1ServiceRegistry_a2e016961e06ecab58f547c66c5ac13b4}} 
+\index{Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}!ServiceRegistry@{ServiceRegistry}}
+\index{ServiceRegistry@{ServiceRegistry}!Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}}
+\doxysubsubsection{\texorpdfstring{ServiceRegistry()}{ServiceRegistry()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Service\+Registry\+::\+Service\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceRegistry_a384fb0096eb08212f06229fb2c97216a}\label{classPoco_1_1OSP_1_1ServiceRegistry_a384fb0096eb08212f06229fb2c97216a}} 
+\index{Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}!````~ServiceRegistry@{$\sim$ServiceRegistry}}
+\index{````~ServiceRegistry@{$\sim$ServiceRegistry}!Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}}
+\doxysubsubsection{\texorpdfstring{$\sim$ServiceRegistry()}{~ServiceRegistry()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Service\+Registry\+::$\sim$\+Service\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry}{Service\+Registry}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceRegistry_a3ad0f47bf10c62e6061cf93247bbb055}\label{classPoco_1_1OSP_1_1ServiceRegistry_a3ad0f47bf10c62e6061cf93247bbb055}} 
+\index{Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}!find@{find}}
+\index{find@{find}!Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+O\+S\+P\+::\+Service\+Registry\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{query,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRef_ab9940b5aefd6802ccd385d9f7bdb52c9}{Service\+Ref\+::\+Ptr}} $>$ \&}]{results }\end{DoxyParamCaption}) const}
+
+Looks up a service with the given name.
+
+Returns a \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRef}{Service\+Ref}} for the given service, or a N\+U\+LL pointer if the service does not exist. \mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceRegistry_a541fb18c991c7c0c27bd9fec1f3efaaf}\label{classPoco_1_1OSP_1_1ServiceRegistry_a541fb18c991c7c0c27bd9fec1f3efaaf}} 
+\index{Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}!findByName@{findByName}}
+\index{findByName@{findByName}!Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}}
+\doxysubsubsection{\texorpdfstring{findByName()}{findByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRef_acb7738ac4ee26f30a426f59e46b76e91}{Service\+Ref\+::\+Const\+Ptr}} Poco\+::\+O\+S\+P\+::\+Service\+Registry\+::find\+By\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Unregisters the service specified by p\+Service\+Ref. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceRegistry_a43e9724815a62009c23ac7d3b553b975}\label{classPoco_1_1OSP_1_1ServiceRegistry_a43e9724815a62009c23ac7d3b553b975}} 
+\index{Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}!registerService@{registerService}}
+\index{registerService@{registerService}!Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}}
+\doxysubsubsection{\texorpdfstring{registerService()}{registerService()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRef_ab9940b5aefd6802ccd385d9f7bdb52c9}{Service\+Ref\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Service\+Registry\+::register\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Service_ae37f76a4fc067928d4ace33c617920bd}{Service\+::\+Ptr}}}]{p\+Service,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} \&}]{props }\end{DoxyParamCaption})}
+
+
+
+Fired whenever a service has been unregistered. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceRegistry_a2ab748b36e44f7a190ef11cee8d93cff}\label{classPoco_1_1OSP_1_1ServiceRegistry_a2ab748b36e44f7a190ef11cee8d93cff}} 
+\index{Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}!unregisterService@{unregisterService}}
+\index{unregisterService@{unregisterService}!Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}}
+\doxysubsubsection{\texorpdfstring{unregisterService()}{unregisterService()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Service\+Registry\+::unregister\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Registers the service object given in p\+Service under the given name, and with the given service properties.
+
+Returns a \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRef}{Service\+Ref}} object for the registered service that can later be used to update the service properties.
+
+Throws a Poco\+::\+Exists\+Exception if a service with that name has already been registered. \mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceRegistry_ad9bf290837c62fe26cfa9e74e9e4ee21}\label{classPoco_1_1OSP_1_1ServiceRegistry_ad9bf290837c62fe26cfa9e74e9e4ee21}} 
+\index{Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}!unregisterService@{unregisterService}}
+\index{unregisterService@{unregisterService}!Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}}
+\doxysubsubsection{\texorpdfstring{unregisterService()}{unregisterService()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Service\+Registry\+::unregister\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRef_ab9940b5aefd6802ccd385d9f7bdb52c9}{Service\+Ref\+::\+Ptr}}}]{p\+Service\+Ref }\end{DoxyParamCaption})}
+
+Unregisters the service with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if no service with the given name exists. 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceRegistry_a71f03328fa919dd4d19a4276f46d1742}\label{classPoco_1_1OSP_1_1ServiceRegistry_a71f03328fa919dd4d19a4276f46d1742}} 
+\index{Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}!PROP\_NAME@{PROP\_NAME}}
+\index{PROP\_NAME@{PROP\_NAME}!Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}}
+\doxysubsubsection{\texorpdfstring{PROP\_NAME}{PROP\_NAME}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+O\+S\+P\+::\+Service\+Registry\+::\+P\+R\+O\+P\+\_\+\+N\+A\+ME\hspace{0.3cm}{\ttfamily [static]}}
+
+Looks up a service(s) with the properties specified by the given query.
+
+The string given in query must be a valid query expression according to the syntax given below.
+
+Fills the given results vector with \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRef}{Service\+Ref}} objects matching the given query and returns the number of matches found.
+
+The query language syntax is as follows\+: expr \+::= and\+Expr \mbox{[}\char`\"{}$\vert$$\vert$\char`\"{} and\+Expr\mbox{]} and\+Expr \+::= rel\+Expr \mbox{[}\char`\"{}\&\&\char`\"{} rel\+Expr\mbox{]} rel\+Expr \+::= \mbox{[}\char`\"{}!\char`\"{}\mbox{]} (id \mbox{[}rel\+Op value $\vert$ \char`\"{}=$\sim$\char`\"{} match\+Expr\mbox{]}) $\vert$ sub\+Expr sub\+Expr \+::= \char`\"{}(\char`\"{} expr \char`\"{})\char`\"{} rel\+Op \+::= \char`\"{}==\char`\"{} $\vert$ \char`\"{}!=\char`\"{} $\vert$ \char`\"{}$<$\char`\"{} $\vert$ \char`\"{}$<$=\char`\"{} $\vert$ \char`\"{}$>$\char`\"{} $\vert$ \char`\"{}$>$=\char`\"{} value \+::= num\+Literal $\vert$ bool\+Literal $\vert$ string\+Literal num\+Literal \+::= \mbox{[}sign\mbox{]} digit$\ast$\char`\"{}.\char`\"{}digit$\ast$\mbox{[}\char`\"{}\+E\char`\"{}\mbox{[}\char`\"{}+\char`\"{} $\vert$ \char`\"{}-\/\char`\"{}\mbox{]}digit$\ast$\mbox{]} bool\+Literal \+::= \char`\"{}true\char`\"{} $\vert$ \char`\"{}false\char`\"{} string\+Literal \+::= \textquotesingle{}\char`\"{}\textquotesingle{} char$\ast$ \textquotesingle{}\char`\"{}\textquotesingle{} match\+Expr \+::= string\+Literal $\vert$ reg\+Expr reg\+Expr \+::= delim char+ delim /$\ast$ valid Perl regular expression, enclosed in delim $\ast$/ delim \+::= \char`\"{}/\char`\"{} $\vert$ \char`\"{}\#\char`\"{}
+
+Examples for valid queries\+:
+\begin{DoxyItemize}
+\item name == \char`\"{}com.\+appinf.\+osp.\+sample.\+service\char`\"{} -\/ a simple string comparison for equality.
+\item major\+Version $>$ 1 \&\& minor\+Version $>$= 5 -\/ numeric comparisons and logical A\+ND.
+\item name =$\sim$ \char`\"{}com.\+appinf.\+osp.$\ast$\char`\"{} \&\& some\+Property -\/ simple pattern matching and test for existence of some\+Property.
+\item some\+Property =$\sim$ /\mbox{[}0-\/9\mbox{]}+/ -\/ regular expression matching. ~\newline
+ 
+\end{DoxyItemize}
+
+Definition at line 135 of file Service\+Registry.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceRegistry_abb190c96d2c10c34eeeb4ac8f78fb90a}\label{classPoco_1_1OSP_1_1ServiceRegistry_abb190c96d2c10c34eeeb4ac8f78fb90a}} 
+\index{Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}!PROP\_TYPE@{PROP\_TYPE}}
+\index{PROP\_TYPE@{PROP\_TYPE}!Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}}
+\doxysubsubsection{\texorpdfstring{PROP\_TYPE}{PROP\_TYPE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+O\+S\+P\+::\+Service\+Registry\+::\+P\+R\+O\+P\+\_\+\+T\+Y\+PE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 136 of file Service\+Registry.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceRegistry_a989fb59fc5cbe055a2260451ed7f3dab}\label{classPoco_1_1OSP_1_1ServiceRegistry_a989fb59fc5cbe055a2260451ed7f3dab}} 
+\index{Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}!serviceRegistered@{serviceRegistered}}
+\index{serviceRegistered@{serviceRegistered}!Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}}
+\doxysubsubsection{\texorpdfstring{serviceRegistered}{serviceRegistered}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceEvent}{Service\+Event}}$>$ Poco\+::\+O\+S\+P\+::\+Service\+Registry\+::service\+Registered}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry}{Service\+Registry}}. 
+
+
+
+Definition at line 71 of file Service\+Registry.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceRegistry_a8401bd2e05a91f7d51f1c23c7c3dc884}\label{classPoco_1_1OSP_1_1ServiceRegistry_a8401bd2e05a91f7d51f1c23c7c3dc884}} 
+\index{Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}!serviceUnregistered@{serviceUnregistered}}
+\index{serviceUnregistered@{serviceUnregistered}!Poco::OSP::ServiceRegistry@{Poco::OSP::ServiceRegistry}}
+\doxysubsubsection{\texorpdfstring{serviceUnregistered}{serviceUnregistered}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceEvent}{Service\+Event}}$>$ Poco\+::\+O\+S\+P\+::\+Service\+Registry\+::service\+Unregistered}
+
+
+
+Fired whenever a new service has been registered. 
+
+
+
+Definition at line 74 of file Service\+Registry.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{ServiceRegistry_8h}{Service\+Registry.\+h}}\end{DoxyCompactItemize}

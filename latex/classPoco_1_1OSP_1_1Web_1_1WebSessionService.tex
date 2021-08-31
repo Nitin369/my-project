@@ -1,0 +1,175 @@
+\hypertarget{classPoco_1_1OSP_1_1Web_1_1WebSessionService}{}\doxysection{Poco\+::O\+SP\+::Web\+::Web\+Session\+Service$<$ Request $>$ Class Template Reference}
+\label{classPoco_1_1OSP_1_1Web_1_1WebSessionService}\index{Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}}
+
+
+{\ttfamily \#include $<$Web\+Session\+Service.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::O\+SP\+::Web\+::Web\+Session\+Service$<$ Request $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::O\+SP\+::Web\+::Web\+Session\+Service$<$ Request $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession_a015e7ae50fad645def5a1251e3b2c42d}{Web\+Session\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a2488c849817f6280f11e00510e2f1542}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&app\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Request \&request)=0
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession_a015e7ae50fad645def5a1251e3b2c42d}{Web\+Session\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a07381daddf3aa943ecc05251779e3c06}{get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&app\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Request \&request, int expire\+Seconds, \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}} p\+Context)=0
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession_a015e7ae50fad645def5a1251e3b2c42d}{Web\+Session\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService_ab2224528ad0c87d98aca404fc9221b73}{create}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&app\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Request \&request, int expire\+Seconds, \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}} p\+Context)=0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a5203b909136b3aa2876f893a875366aa}{remove}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession_a015e7ae50fad645def5a1251e3b2c42d}{Web\+Session\+::\+Ptr}} ptr)=0
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService_ac7d799f1af299fd7f06935d37df640a1}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a63d177f4bb5141c097dffc90b7dd070a}{isA}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&other\+Type) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a8b0ef004615c429d33fb3e2a42aa19e7}{Web\+Session\+Service}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService_ae95eefc17e49e929e6b24d69e335ffea}{$\sim$\+Web\+Session\+Service}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Request$>$\newline
+class Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Service$<$ Request $>$}
+
+A \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService}{Web\+Session\+Service}} manages \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession}{Web\+Session}} objects. \begin{DoxyVerb}How an implementation of the WebSessionService actually
+associates WebSession objects with user sessions in a
+web browser is up to the implementation. A typical way
+to do this would be to set a cookie referencing the
+WebSession in the user's web browser.
+
+Sessions are always associated with a certain application.
+This allows for different applications running in one OSP
+container to each have their own session object.
+
+Application names should follow the usual OSP reverse-DNS
+naming schema. Specifying an empty application name is valid. 
+\end{DoxyVerb}
+ 
+
+Definition at line 35 of file Web\+Session\+Service.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a8b0ef004615c429d33fb3e2a42aa19e7}\label{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a8b0ef004615c429d33fb3e2a42aa19e7}} 
+\index{Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}!WebSessionService@{WebSessionService}}
+\index{WebSessionService@{WebSessionService}!Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}}
+\doxysubsubsection{\texorpdfstring{WebSessionService()}{WebSessionService()}}
+{\footnotesize\ttfamily template$<$class Request $>$ \\
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Service}}$<$ Request $>$\+::\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService}{Web\+Session\+Service}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 83 of file Web\+Session\+Service.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebSessionService_ae95eefc17e49e929e6b24d69e335ffea}\label{classPoco_1_1OSP_1_1Web_1_1WebSessionService_ae95eefc17e49e929e6b24d69e335ffea}} 
+\index{Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}!````~WebSessionService@{$\sim$WebSessionService}}
+\index{````~WebSessionService@{$\sim$WebSessionService}!Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$WebSessionService()}{~WebSessionService()}}
+{\footnotesize\ttfamily template$<$class Request $>$ \\
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Service}}$<$ Request $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService}{Web\+Session\+Service}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 87 of file Web\+Session\+Service.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebSessionService_ab2224528ad0c87d98aca404fc9221b73}\label{classPoco_1_1OSP_1_1Web_1_1WebSessionService_ab2224528ad0c87d98aca404fc9221b73}} 
+\index{Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}!create@{create}}
+\index{create@{create}!Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily template$<$class Request $>$ \\
+virtual \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession_a015e7ae50fad645def5a1251e3b2c42d}{Web\+Session\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Service}}$<$ Request $>$\+::create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{app\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Request \&}]{request,  }\item[{int}]{expire\+Seconds,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}}}]{p\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return a \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession}{Web\+Session}} object for the application specified by app\+Name and the given H\+T\+TP request. If no session is associated with the given request, a new session is created with the given expiration time. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionManager_aeb17adc30aa1cd6301faf31fca10a755}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Manager}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a2488c849817f6280f11e00510e2f1542}\label{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a2488c849817f6280f11e00510e2f1542}} 
+\index{Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}!find@{find}}
+\index{find@{find}!Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$class Request $>$ \\
+virtual \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession_a015e7ae50fad645def5a1251e3b2c42d}{Web\+Session\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Service}}$<$ Request $>$\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{app\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Request \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionManager_a24a4065a0e54dc94f2c1a44bdced740c}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Manager}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a07381daddf3aa943ecc05251779e3c06}\label{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a07381daddf3aa943ecc05251779e3c06}} 
+\index{Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}!get@{get}}
+\index{get@{get}!Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$class Request $>$ \\
+virtual \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession_a015e7ae50fad645def5a1251e3b2c42d}{Web\+Session\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Service}}$<$ Request $>$\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{app\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Request \&}]{request,  }\item[{int}]{expire\+Seconds,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}}}]{p\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return a \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession}{Web\+Session}} object for the application specified by app\+Name and the given H\+T\+TP request if one exists, or a null pointer otherwise. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionManager_a101b2a6f979128ace800fe4c35a8fa0d}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Manager}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a63d177f4bb5141c097dffc90b7dd070a}\label{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a63d177f4bb5141c097dffc90b7dd070a}} 
+\index{Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}!isA@{isA}}
+\index{isA@{isA}!Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}}
+\doxysubsubsection{\texorpdfstring{isA()}{isA()}}
+{\footnotesize\ttfamily template$<$class Request $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Service}}$<$ Request $>$\+::isA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&}]{other\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the type information for the object\textquotesingle{}s class.
+
+Subclasses must override this member function.
+
+The implementation of \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a63d177f4bb5141c097dffc90b7dd070a}{is\+A()}} is usually as follows\+: const std\+::type\+\_\+info\& My\+Service\+::type() const \{ return typeid(\+My\+Service); \}
+
+If a service class implements a service interface, the type information for the interface class should be returned instead\+: const std\+::type\+\_\+info\& My\+Service\+Impl\+::type() const \{ return typeid(\+My\+Service); \} 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a46c8cf8f6356230490f9ba59a5cb40e2}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+
+
+Definition at line 76 of file Web\+Session\+Service.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a5203b909136b3aa2876f893a875366aa}\label{classPoco_1_1OSP_1_1Web_1_1WebSessionService_a5203b909136b3aa2876f893a875366aa}} 
+\index{Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}!remove@{remove}}
+\index{remove@{remove}!Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$class Request $>$ \\
+virtual void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Service}}$<$ Request $>$\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession_a015e7ae50fad645def5a1251e3b2c42d}{Web\+Session\+::\+Ptr}}}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a new \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession}{Web\+Session}} object with the given expiration time for the application given by app\+Name and the given H\+T\+TP request, and associates the \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSession}{Web\+Session}} with the browser\textquotesingle{}s user session. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionManager_a8b1bbc39a35d682d2301da06b16265e5}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Manager}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebSessionService_ac7d799f1af299fd7f06935d37df640a1}\label{classPoco_1_1OSP_1_1Web_1_1WebSessionService_ac7d799f1af299fd7f06935d37df640a1}} 
+\index{Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}!type@{type}}
+\index{type@{type}!Poco::OSP::Web::WebSessionService$<$ Request $>$@{Poco::OSP::Web::WebSessionService$<$ Request $>$}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily template$<$class Request $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info\& \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebSessionService}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Session\+Service}}$<$ Request $>$\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes a session from the manager, if it exists. Does nothing if the session is not known to the session manager. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a71ff82992f3ecfa2de28d647b15eede8}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+
+
+Definition at line 71 of file Web\+Session\+Service.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\+Web/\mbox{\hyperlink{WebSessionService_8h}{Web\+Session\+Service.\+h}}\end{DoxyCompactItemize}

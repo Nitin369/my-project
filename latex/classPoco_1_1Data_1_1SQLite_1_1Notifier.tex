@@ -1,0 +1,446 @@
+\hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier}{}\doxysection{Poco\+::Data\+::S\+Q\+Lite\+::Notifier Class Reference}
+\label{classPoco_1_1Data_1_1SQLite_1_1Notifier}\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+
+
+{\ttfamily \#include $<$Notifier.\+h$>$}
+
+
+
+Collaboration diagram for Poco\+::Data\+::S\+Q\+Lite\+::Notifier\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}{Enabled\+Event\+Type}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ void $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}{Event}}
+\begin{DoxyCompactList}\small\item\em A type definition for events-\/enabled bitmap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a167695ad96df00654588fd5ff2591a74}{Notifier}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \&session, \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}{Enabled\+Event\+Type}} enabled=\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6de5008bc929bb0b16acdc7519445e46}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+P\+D\+A\+TE}}$\vert$\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_ac5c9eeb8d4e0e8bc15f60448ed2e8e2c}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+C\+O\+M\+M\+IT}}$\vert$\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4a90e061b434c9f9752cc9e89f1152dd}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+R\+O\+L\+L\+B\+A\+CK}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_af7272abdde4d4f8534e7b17da8430f0f}{Notifier}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \&session, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Any}} \&value, \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}{Enabled\+Event\+Type}} enabled=\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6de5008bc929bb0b16acdc7519445e46}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+P\+D\+A\+TE}}$\vert$\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_ac5c9eeb8d4e0e8bc15f60448ed2e8e2c}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+C\+O\+M\+M\+IT}}$\vert$\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4a90e061b434c9f9752cc9e89f1152dd}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+R\+O\+L\+L\+B\+A\+CK}})
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier}{Notifier}} and enables all callbacks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a7e4d110f9e45ee1da70c8b692ed603e7}{$\sim$\+Notifier}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier}{Notifier}}, assigns the value to the internal storage and and enables all callbacks. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a62afd5b529c21611dd3a4b3d8534d7e8}{enable\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Disables all callbacks and destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier}{Notifier}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_afe9790b90bbb03103718dc10af2bd126}{disable\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Enables update callbacks. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4089cf40b59bea40b60a12ca1ec957c9}{update\+Enabled}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Disables update callbacks. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a757aa1ed90c1d0d5aca3a7e74cc46ad2}{enable\+Commit}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if update callbacks are enabled, false otherwise. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a5ddde55cf45905234d993cd2c96e829e}{disable\+Commit}} ()
+\begin{DoxyCompactList}\small\item\em Enables commit callbacks. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_af7521eb5f8a0dbaacf3fbb13f53a72a7}{commit\+Enabled}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Disables commit callbacks. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6dc35b7084214e5aa96cc14d0f9575ef}{enable\+Rollback}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if update callbacks are enabled, false otherwise. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6c7a2ab46666118a9962ea0fc916891f}{disable\+Rollback}} ()
+\begin{DoxyCompactList}\small\item\em Enables rollback callbacks. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a463f1f36337f3fc1cb6f128791b28ec8}{rollback\+Enabled}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Disables rollback callbacks. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a482371637a87c582078b36a141848e86}{enable\+All}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if rollback callbacks are enabled, false otherwise. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a37edb621f9164a48d43c69acecd6fde2}{disable\+All}} ()
+\begin{DoxyCompactList}\small\item\em Enables all callbacks. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a0e12c609d72eb4da3b455eae48f67d66}{operator==}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier}{Notifier}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Rollback callback event dispatcher. \end{DoxyCompactList}\item 
+Poco\+::\+Int64 \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4f4c59a4970889a844d7b08272f112fe}{get\+Row}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a0f0b73ffa0ff70e1ffdeaf1a28aa7c52}{set\+Row}} (Poco\+::\+Int64 row)
+\begin{DoxyCompactList}\small\item\em Returns the row number. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Poco\+::\+Dynamic\+::\+Var}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a5919d99ec3f90f20ebdb14fc562b9ad6}{get\+Value}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the row number. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a782a997aa650a10d8ddebb85a07e7ac3}{set\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&val)
+\begin{DoxyCompactList}\small\item\em Returns the value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a41838b8c69a05b332dfbef4838dfc2c2}{sqlite\+Update\+Callback\+Fn}} (void $\ast$p\+Val, int op\+Code, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$p\+DB, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$p\+Table, Poco\+::\+Int64 row)
+\begin{DoxyCompactList}\small\item\em Disables all callbacks. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_ab8300e989766e6139ae78ebed53ad59a}{sqlite\+Commit\+Callback\+Fn}} (void $\ast$p\+Val)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6ff328d77bfc95790dc34a609c2883a4}{sqlite\+Rollback\+Callback\+Fn}} (void $\ast$p\+Val)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}{Event}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a676d9e547a704bb86859f8ce4cb1da43}{update}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}{Event}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a20e8ee35d0051c1bcec7dfcddb5a258f}{insert}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}{Event}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_aa6b85d74298f8f25905f87ca832e4941}{erase}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}{Event}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a0b97818a864d9002ccf0d149aac30895}{commit}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}{Event}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a8aab79ee0ec775d7b1d39f3024f78e4c}{rollback}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}{Enabled\+Event\+Type}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6de5008bc929bb0b16acdc7519445e46}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+P\+D\+A\+TE}} = 1
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}{Enabled\+Event\+Type}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_ac5c9eeb8d4e0e8bc15f60448ed2e8e2c}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+C\+O\+M\+M\+IT}} = 2
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}{Enabled\+Event\+Type}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4a90e061b434c9f9752cc9e89f1152dd}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+R\+O\+L\+L\+B\+A\+CK}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier}{Notifier}} is a wrapper for \mbox{\hyperlink{namespacePoco_1_1Data_1_1SQLite}{S\+Q\+Lite}} callback calls. It supports event callbacks for insert, update, delete, commit and rollback events. While (un)registering callbacks is thread-\/safe, execution of the callbacks themselves are not; it is the user\textquotesingle{}s responsibility to ensure the thread-\/safey of the functions they provide as callback target. Additionally, commit callbacks may prevent database transactions from succeeding (see sqlite\+Commit\+Callback\+Fn documentation for details).
+
+There can be only one set of callbacks per session (i.\+e. registering a new callback automatically unregisters the previous one). All callbacks are registered and enabled at \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier}{Notifier}} contruction time and can be disabled at a later point time. 
+
+Definition at line 38 of file Notifier.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!EnabledEventType@{EnabledEventType}}
+\index{EnabledEventType@{EnabledEventType}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{EnabledEventType}{EnabledEventType}}
+{\footnotesize\ttfamily typedef unsigned char \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::\+Enabled\+Event\+Type}}}
+
+
+
+Definition at line 53 of file Notifier.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!Event@{Event}}
+\index{Event@{Event}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{Event}{Event}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$void$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::\+Event}}}
+
+
+
+A type definition for events-\/enabled bitmap. 
+
+
+
+Definition at line 56 of file Notifier.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a167695ad96df00654588fd5ff2591a74}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a167695ad96df00654588fd5ff2591a74}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!Notifier@{Notifier}}
+\index{Notifier@{Notifier}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{Notifier()}{Notifier()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::\+Notifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \&}]{session,  }\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}{Enabled\+Event\+Type}}}]{enabled = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6de5008bc929bb0b16acdc7519445e46}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+P\+D\+A\+TE}}$\vert$\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_ac5c9eeb8d4e0e8bc15f60448ed2e8e2c}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+C\+O\+M\+M\+IT}}$\vert$\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4a90e061b434c9f9752cc9e89f1152dd}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+R\+O\+L\+L\+B\+A\+CK}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_af7272abdde4d4f8534e7b17da8430f0f}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_af7272abdde4d4f8534e7b17da8430f0f}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!Notifier@{Notifier}}
+\index{Notifier@{Notifier}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{Notifier()}{Notifier()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::\+Notifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \&}]{session,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Any}} \&}]{value,  }\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}{Enabled\+Event\+Type}}}]{enabled = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6de5008bc929bb0b16acdc7519445e46}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+P\+D\+A\+TE}}$\vert$\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_ac5c9eeb8d4e0e8bc15f60448ed2e8e2c}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+C\+O\+M\+M\+IT}}$\vert$\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4a90e061b434c9f9752cc9e89f1152dd}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+R\+O\+L\+L\+B\+A\+CK}}} }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier}{Notifier}} and enables all callbacks. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a7e4d110f9e45ee1da70c8b692ed603e7}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a7e4d110f9e45ee1da70c8b692ed603e7}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!````~Notifier@{$\sim$Notifier}}
+\index{````~Notifier@{$\sim$Notifier}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{$\sim$Notifier()}{~Notifier()}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::$\sim$\+Notifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier}{Notifier}}, assigns the value to the internal storage and and enables all callbacks. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_af7521eb5f8a0dbaacf3fbb13f53a72a7}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_af7521eb5f8a0dbaacf3fbb13f53a72a7}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!commitEnabled@{commitEnabled}}
+\index{commitEnabled@{commitEnabled}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{commitEnabled()}{commitEnabled()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::commit\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Disables commit callbacks. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a37edb621f9164a48d43c69acecd6fde2}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a37edb621f9164a48d43c69acecd6fde2}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!disableAll@{disableAll}}
+\index{disableAll@{disableAll}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{disableAll()}{disableAll()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::disable\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enables all callbacks. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a5ddde55cf45905234d993cd2c96e829e}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a5ddde55cf45905234d993cd2c96e829e}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!disableCommit@{disableCommit}}
+\index{disableCommit@{disableCommit}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{disableCommit()}{disableCommit()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::disable\+Commit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enables commit callbacks. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6c7a2ab46666118a9962ea0fc916891f}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6c7a2ab46666118a9962ea0fc916891f}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!disableRollback@{disableRollback}}
+\index{disableRollback@{disableRollback}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{disableRollback()}{disableRollback()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::disable\+Rollback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enables rollback callbacks. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_afe9790b90bbb03103718dc10af2bd126}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_afe9790b90bbb03103718dc10af2bd126}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!disableUpdate@{disableUpdate}}
+\index{disableUpdate@{disableUpdate}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{disableUpdate()}{disableUpdate()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::disable\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enables update callbacks. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a482371637a87c582078b36a141848e86}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a482371637a87c582078b36a141848e86}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!enableAll@{enableAll}}
+\index{enableAll@{enableAll}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{enableAll()}{enableAll()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::enable\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if rollback callbacks are enabled, false otherwise. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a757aa1ed90c1d0d5aca3a7e74cc46ad2}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a757aa1ed90c1d0d5aca3a7e74cc46ad2}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!enableCommit@{enableCommit}}
+\index{enableCommit@{enableCommit}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{enableCommit()}{enableCommit()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::enable\+Commit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if update callbacks are enabled, false otherwise. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6dc35b7084214e5aa96cc14d0f9575ef}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6dc35b7084214e5aa96cc14d0f9575ef}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!enableRollback@{enableRollback}}
+\index{enableRollback@{enableRollback}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{enableRollback()}{enableRollback()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::enable\+Rollback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if update callbacks are enabled, false otherwise. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a62afd5b529c21611dd3a4b3d8534d7e8}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a62afd5b529c21611dd3a4b3d8534d7e8}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!enableUpdate@{enableUpdate}}
+\index{enableUpdate@{enableUpdate}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{enableUpdate()}{enableUpdate()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::enable\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disables all callbacks and destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier}{Notifier}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4f4c59a4970889a844d7b08272f112fe}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4f4c59a4970889a844d7b08272f112fe}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!getRow@{getRow}}
+\index{getRow@{getRow}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{getRow()}{getRow()}}
+{\footnotesize\ttfamily Poco\+::\+Int64 Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::get\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Equality operator. Compares value, row and database handles and returns true iff all are equal. 
+
+Definition at line 175 of file Notifier.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a5919d99ec3f90f20ebdb14fc562b9ad6}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a5919d99ec3f90f20ebdb14fc562b9ad6}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!getValue@{getValue}}
+\index{getValue@{getValue}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Poco\+::\+Dynamic\+::\+Var}} \& Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the row number. 
+
+
+
+Definition at line 188 of file Notifier.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a0e12c609d72eb4da3b455eae48f67d66}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a0e12c609d72eb4da3b455eae48f67d66}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!operator==@{operator==}}
+\index{operator==@{operator==}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier}{Notifier}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Rollback callback event dispatcher. 
+
+
+
+Definition at line 167 of file Notifier.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a463f1f36337f3fc1cb6f128791b28ec8}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a463f1f36337f3fc1cb6f128791b28ec8}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!rollbackEnabled@{rollbackEnabled}}
+\index{rollbackEnabled@{rollbackEnabled}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{rollbackEnabled()}{rollbackEnabled()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::rollback\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Disables rollback callbacks. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a0f0b73ffa0ff70e1ffdeaf1a28aa7c52}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a0f0b73ffa0ff70e1ffdeaf1a28aa7c52}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!setRow@{setRow}}
+\index{setRow@{setRow}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{setRow()}{setRow()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::set\+Row (\begin{DoxyParamCaption}\item[{Poco\+::\+Int64}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the row number. 
+
+Sets the row number. 
+
+Definition at line 181 of file Notifier.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a782a997aa650a10d8ddebb85a07e7ac3}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a782a997aa650a10d8ddebb85a07e7ac3}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!setValue@{setValue}}
+\index{setValue@{setValue}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::set\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the value. 
+
+Sets the value. 
+
+Definition at line 144 of file Notifier.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_ab8300e989766e6139ae78ebed53ad59a}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_ab8300e989766e6139ae78ebed53ad59a}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!sqliteCommitCallbackFn@{sqliteCommitCallbackFn}}
+\index{sqliteCommitCallbackFn@{sqliteCommitCallbackFn}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{sqliteCommitCallbackFn()}{sqliteCommitCallbackFn()}}
+{\footnotesize\ttfamily static int Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::sqlite\+Commit\+Callback\+Fn (\begin{DoxyParamCaption}\item[{void $\ast$}]{p\+Val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Update callback event dispatcher. Determines the type of the event, updates the row number and triggers the event. \mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6ff328d77bfc95790dc34a609c2883a4}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6ff328d77bfc95790dc34a609c2883a4}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!sqliteRollbackCallbackFn@{sqliteRollbackCallbackFn}}
+\index{sqliteRollbackCallbackFn@{sqliteRollbackCallbackFn}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{sqliteRollbackCallbackFn()}{sqliteRollbackCallbackFn()}}
+{\footnotesize\ttfamily static void Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::sqlite\+Rollback\+Callback\+Fn (\begin{DoxyParamCaption}\item[{void $\ast$}]{p\+Val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Commit callback event dispatcher. If an exception occurs, it is catched inside this function, non-\/zero value is returned, which causes \mbox{\hyperlink{namespacePoco_1_1Data_1_1SQLite}{S\+Q\+Lite}} engine to turn commit into a rollback. Therefore, callers should check for return value -\/ if it is zero, callback completed succesfuly and transaction was committed. \mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a41838b8c69a05b332dfbef4838dfc2c2}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a41838b8c69a05b332dfbef4838dfc2c2}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!sqliteUpdateCallbackFn@{sqliteUpdateCallbackFn}}
+\index{sqliteUpdateCallbackFn@{sqliteUpdateCallbackFn}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{sqliteUpdateCallbackFn()}{sqliteUpdateCallbackFn()}}
+{\footnotesize\ttfamily static void Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::sqlite\+Update\+Callback\+Fn (\begin{DoxyParamCaption}\item[{void $\ast$}]{p\+Val,  }\item[{int}]{op\+Code,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{p\+DB,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{p\+Table,  }\item[{Poco\+::\+Int64}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Disables all callbacks. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4089cf40b59bea40b60a12ca1ec957c9}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4089cf40b59bea40b60a12ca1ec957c9}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!updateEnabled@{updateEnabled}}
+\index{updateEnabled@{updateEnabled}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{updateEnabled()}{updateEnabled()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::update\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Disables update callbacks. 
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a0b97818a864d9002ccf0d149aac30895}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a0b97818a864d9002ccf0d149aac30895}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!commit@{commit}}
+\index{commit@{commit}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{commit}{commit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}{Event}} Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::commit}
+
+
+
+Definition at line 64 of file Notifier.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_aa6b85d74298f8f25905f87ca832e4941}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_aa6b85d74298f8f25905f87ca832e4941}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!erase@{erase}}
+\index{erase@{erase}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{erase}{erase}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}{Event}} Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::erase}
+
+
+
+Definition at line 63 of file Notifier.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a20e8ee35d0051c1bcec7dfcddb5a258f}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a20e8ee35d0051c1bcec7dfcddb5a258f}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!insert@{insert}}
+\index{insert@{insert}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{insert}{insert}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}{Event}} Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::insert}
+
+
+
+Definition at line 62 of file Notifier.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a8aab79ee0ec775d7b1d39f3024f78e4c}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a8aab79ee0ec775d7b1d39f3024f78e4c}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!rollback@{rollback}}
+\index{rollback@{rollback}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{rollback}{rollback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}{Event}} Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::rollback}
+
+
+
+Definition at line 65 of file Notifier.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_ac5c9eeb8d4e0e8bc15f60448ed2e8e2c}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_ac5c9eeb8d4e0e8bc15f60448ed2e8e2c}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!SQLITE\_NOTIFY\_COMMIT@{SQLITE\_NOTIFY\_COMMIT}}
+\index{SQLITE\_NOTIFY\_COMMIT@{SQLITE\_NOTIFY\_COMMIT}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_NOTIFY\_COMMIT}{SQLITE\_NOTIFY\_COMMIT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}{Enabled\+Event\+Type}} Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::\+S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+C\+O\+M\+M\+IT = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 69 of file Notifier.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4a90e061b434c9f9752cc9e89f1152dd}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a4a90e061b434c9f9752cc9e89f1152dd}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!SQLITE\_NOTIFY\_ROLLBACK@{SQLITE\_NOTIFY\_ROLLBACK}}
+\index{SQLITE\_NOTIFY\_ROLLBACK@{SQLITE\_NOTIFY\_ROLLBACK}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_NOTIFY\_ROLLBACK}{SQLITE\_NOTIFY\_ROLLBACK}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}{Enabled\+Event\+Type}} Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::\+S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+R\+O\+L\+L\+B\+A\+CK = 4\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 70 of file Notifier.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6de5008bc929bb0b16acdc7519445e46}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a6de5008bc929bb0b16acdc7519445e46}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!SQLITE\_NOTIFY\_UPDATE@{SQLITE\_NOTIFY\_UPDATE}}
+\index{SQLITE\_NOTIFY\_UPDATE@{SQLITE\_NOTIFY\_UPDATE}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_NOTIFY\_UPDATE}{SQLITE\_NOTIFY\_UPDATE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a02217555e18e4724c7060c118f5dd564}{Enabled\+Event\+Type}} Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::\+S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+P\+D\+A\+TE = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 68 of file Notifier.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1Notifier_a676d9e547a704bb86859f8ce4cb1da43}\label{classPoco_1_1Data_1_1SQLite_1_1Notifier_a676d9e547a704bb86859f8ce4cb1da43}} 
+\index{Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}!update@{update}}
+\index{update@{update}!Poco::Data::SQLite::Notifier@{Poco::Data::SQLite::Notifier}}
+\doxysubsubsection{\texorpdfstring{update}{update}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1Notifier_a73ce3c96beed380e4a13a459fa28130c}{Event}} Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Notifier\+::update}
+
+
+
+Definition at line 61 of file Notifier.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\+S\+Q\+Lite/\mbox{\hyperlink{Notifier_8h}{Notifier.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\hypertarget{classPoco_1_1Net_1_1StreamSocketImpl}{}\doxysection{Poco\+::Net\+::Stream\+Socket\+Impl Class Reference}
+\label{classPoco_1_1Net_1_1StreamSocketImpl}\index{Poco::Net::StreamSocketImpl@{Poco::Net::StreamSocketImpl}}
+
+
+This class implements a T\+CP socket.  
+
+
+
+
+{\ttfamily \#include $<$Stream\+Socket\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::Stream\+Socket\+Impl\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::Stream\+Socket\+Impl\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl_a931af87ecbf7c5e0446f21aeb2f11d40}{Stream\+Socket\+Impl}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl_aa70fa7a50e97dd0e9bfd70e4ebf5d78a}{Stream\+Socket\+Impl}} (\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress_a048c8fc29019f4722f2cdb5ba752d9b6}{I\+P\+Address\+::\+Family}} address\+Family)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl}{Stream\+Socket\+Impl}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl_a4e5d642f0fb4a3902fff0ac9421e3cf2}{Stream\+Socket\+Impl}} (poco\+\_\+socket\+\_\+t \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a39dc408f5d254af81ee85767d9fc4cdc}{sockfd}})
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl_ac8940d8ebe49ecd929f7e1dcd0a4c47a}{send\+Bytes}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$buffer, int length, int flags=0)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl}{Stream\+Socket\+Impl}} using the given native socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl_a9c522f3140f8080d1de0267de7ac6047}{$\sim$\+Stream\+Socket\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class implements a T\+CP socket. 
+
+Definition at line 31 of file Stream\+Socket\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocketImpl_a931af87ecbf7c5e0446f21aeb2f11d40}\label{classPoco_1_1Net_1_1StreamSocketImpl_a931af87ecbf7c5e0446f21aeb2f11d40}} 
+\index{Poco::Net::StreamSocketImpl@{Poco::Net::StreamSocketImpl}!StreamSocketImpl@{StreamSocketImpl}}
+\index{StreamSocketImpl@{StreamSocketImpl}!Poco::Net::StreamSocketImpl@{Poco::Net::StreamSocketImpl}}
+\doxysubsubsection{\texorpdfstring{StreamSocketImpl()}{StreamSocketImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Stream\+Socket\+Impl\+::\+Stream\+Socket\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocketImpl_aa70fa7a50e97dd0e9bfd70e4ebf5d78a}\label{classPoco_1_1Net_1_1StreamSocketImpl_aa70fa7a50e97dd0e9bfd70e4ebf5d78a}} 
+\index{Poco::Net::StreamSocketImpl@{Poco::Net::StreamSocketImpl}!StreamSocketImpl@{StreamSocketImpl}}
+\index{StreamSocketImpl@{StreamSocketImpl}!Poco::Net::StreamSocketImpl@{Poco::Net::StreamSocketImpl}}
+\doxysubsubsection{\texorpdfstring{StreamSocketImpl()}{StreamSocketImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Stream\+Socket\+Impl\+::\+Stream\+Socket\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress_a048c8fc29019f4722f2cdb5ba752d9b6}{I\+P\+Address\+::\+Family}}}]{address\+Family }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl}{Stream\+Socket\+Impl}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocketImpl_a4e5d642f0fb4a3902fff0ac9421e3cf2}\label{classPoco_1_1Net_1_1StreamSocketImpl_a4e5d642f0fb4a3902fff0ac9421e3cf2}} 
+\index{Poco::Net::StreamSocketImpl@{Poco::Net::StreamSocketImpl}!StreamSocketImpl@{StreamSocketImpl}}
+\index{StreamSocketImpl@{StreamSocketImpl}!Poco::Net::StreamSocketImpl@{Poco::Net::StreamSocketImpl}}
+\doxysubsubsection{\texorpdfstring{StreamSocketImpl()}{StreamSocketImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Stream\+Socket\+Impl\+::\+Stream\+Socket\+Impl (\begin{DoxyParamCaption}\item[{poco\+\_\+socket\+\_\+t}]{sockfd }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}}, with the underlying socket initialized for the given address family. \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocketImpl_a9c522f3140f8080d1de0267de7ac6047}\label{classPoco_1_1Net_1_1StreamSocketImpl_a9c522f3140f8080d1de0267de7ac6047}} 
+\index{Poco::Net::StreamSocketImpl@{Poco::Net::StreamSocketImpl}!````~StreamSocketImpl@{$\sim$StreamSocketImpl}}
+\index{````~StreamSocketImpl@{$\sim$StreamSocketImpl}!Poco::Net::StreamSocketImpl@{Poco::Net::StreamSocketImpl}}
+\doxysubsubsection{\texorpdfstring{$\sim$StreamSocketImpl()}{~StreamSocketImpl()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+Stream\+Socket\+Impl\+::$\sim$\+Stream\+Socket\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Ensures that all data in buffer is sent if the socket is blocking. In case of a non-\/blocking socket, sends as many bytes as possible.
+
+Returns the number of bytes sent. The return value may also be negative to denote some special condition. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocketImpl_ac8940d8ebe49ecd929f7e1dcd0a4c47a}\label{classPoco_1_1Net_1_1StreamSocketImpl_ac8940d8ebe49ecd929f7e1dcd0a4c47a}} 
+\index{Poco::Net::StreamSocketImpl@{Poco::Net::StreamSocketImpl}!sendBytes@{sendBytes}}
+\index{sendBytes@{sendBytes}!Poco::Net::StreamSocketImpl@{Poco::Net::StreamSocketImpl}}
+\doxysubsubsection{\texorpdfstring{sendBytes()}{sendBytes()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Net\+::\+Stream\+Socket\+Impl\+::send\+Bytes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl}{Stream\+Socket\+Impl}} using the given native socket. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aa59d3c72d02155d6075cb3b681e691f0}{Poco\+::\+Net\+::\+Socket\+Impl}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_ab6a9bcbc6f105e733a3b6097a4bc2888}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_af7ce7cde53cfad634b2a94c0e2066c1e}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{StreamSocketImpl_8h}{Stream\+Socket\+Impl.\+h}}\end{DoxyCompactItemize}

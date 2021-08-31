@@ -1,0 +1,530 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer}{}\doxysection{Poco\+::Remoting\+NG\+::Binary\+Deserializer Class Reference}
+\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer}\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+
+
+{\ttfamily \#include $<$Binary\+Deserializer.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::Binary\+Deserializer\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::Binary\+Deserializer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a354d77d87133f7017634bb9aa5259c70}{Binary\+Deserializer}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a885a867f4a2b0e6da8513fa77dfad706}{$\sim$\+Binary\+Deserializer}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer}{Binary\+Deserializer}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a735d94e358e80119be8da7e6022d3d2f}{deserialize\+End\+Point}} (std\+::string \&oid, std\+::string \&tid)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer}{Binary\+Deserializer}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a091d2d3f6ecd909d1b2fdc9730f1f10f}{deserialize\+Token}} ()
+\begin{DoxyCompactList}\small\item\em Serializes the object and type ID of the service object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_aa05c1dfb85a9b07166a5703592802169}{find\+Message}} (std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a9093f8ec658ca3616bbf29c682405af5}{deserialize\+Message\+Begin}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}} type)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ae4d7a664ae186a9a3e5602dd519ff3ba}{deserialize\+Message\+End}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}} type)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a8cbb7f723f59b15eeb923d2f277864dc}{deserialize\+Struct\+Begin}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory)
+\begin{DoxyCompactList}\small\item\em End deserialization of a message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a7a448cb026fe6ff89ca40fa7da651e3b}{deserialize\+Struct\+End}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a851bee7ea0bbe017400b3664ba13115f}{deserialize\+Sequence\+Begin}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, Poco\+::\+U\+Int32 \&length\+Hint)
+\begin{DoxyCompactList}\small\item\em End deserialization of a complex (structured) object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ae499d831f4e205fa5dac4f3c8f08ceba}{deserialize\+Sequence\+End}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a1f858296fd57922b389e1493362e4f7e}{deserialize\+Nullable\+Begin}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, bool \&is\+Null)
+\begin{DoxyCompactList}\small\item\em End deserialization of a vector or other sequence. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ab964ab2994e0c17fda3c4391421b1667}{deserialize\+Nullable\+End}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a947b9ed41a8ffdec663f3cf11b35a29c}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, Poco\+::\+Int8 \&value)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a62e09774dc4f1d529874f702e59b299f}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, Poco\+::\+U\+Int8 \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize an Int8. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ab97b460f6fcd638b200d7eb5b6a063a3}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, Poco\+::\+Int16 \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize an U\+Int8. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a1a57c2c24b7d025eeaa6067d6f7771e7}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, Poco\+::\+U\+Int16 \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize an Int16. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a44b224cf29aec78972a82f437da2d5b4}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, Poco\+::\+Int32 \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize an U\+Int16. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_aa67f6b27f181af78470902822b9617db}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, Poco\+::\+U\+Int32 \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize an Int32. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a7bb96d669195c96e22ff207d2c5da163}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, long \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize an U\+Int32. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ab757364b2f412ef4194b7b8579638abd}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, unsigned long \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize a long. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a2b4084aa383cba244866171ad32f4564}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, Poco\+::\+Int64 \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize an unsigned long. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a01d96444fe87d8a180032579030b1834}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, Poco\+::\+U\+Int64 \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize an Int64. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_aa22a6a0de09e5809d4a78cc122b5f875}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, float \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize an U\+Int64. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a2aa31d2106b4abf59040c47533dada30}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, double \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize a float. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a4222f0dd98c2c5740502f8585a0638b6}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, bool \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize a double. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a172279d590f023087ed25c8a75f20cf5}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, char \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize a boolean. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a274e40664acd753ab916209845243c39}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize a single character. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a203985ec31717082c52cc766afe839ad}{deserialize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool is\+Mandatory, std\+::vector$<$ char $>$ \&value)
+\begin{DoxyCompactList}\small\item\em Deserialize a std\+::string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a0adfc1f1eecd4a53c1bbbbcf7033674a}{reset\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ac0d9571661cca7c3e48744122cc04112}{setup\+Impl}} (std\+::istream \&istr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A generic \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}} using a proprietary binary serialization format based on the \mbox{\hyperlink{classPoco_1_1BinaryReader}{Poco\+::\+Binary\+Reader}} class. The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer}{Binary\+Deserializer}} is used in conjunction with the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinarySerializer}{Binary\+Serializer}} class.
+
+Please see the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinarySerializer}{Binary\+Serializer}} class for more information. 
+
+Definition at line 34 of file Binary\+Deserializer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a354d77d87133f7017634bb9aa5259c70}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a354d77d87133f7017634bb9aa5259c70}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!BinaryDeserializer@{BinaryDeserializer}}
+\index{BinaryDeserializer@{BinaryDeserializer}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{BinaryDeserializer()}{BinaryDeserializer()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::\+Binary\+Deserializer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a885a867f4a2b0e6da8513fa77dfad706}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a885a867f4a2b0e6da8513fa77dfad706}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!````~BinaryDeserializer@{$\sim$BinaryDeserializer}}
+\index{````~BinaryDeserializer@{$\sim$BinaryDeserializer}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{$\sim$BinaryDeserializer()}{~BinaryDeserializer()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::$\sim$\+Binary\+Deserializer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer}{Binary\+Deserializer}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a4222f0dd98c2c5740502f8585a0638b6}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a4222f0dd98c2c5740502f8585a0638b6}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{bool \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize a double. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a0400e89acf6c4d88da00fba70ffede3d}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a172279d590f023087ed25c8a75f20cf5}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a172279d590f023087ed25c8a75f20cf5}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{char \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize a boolean. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_abdff0c9f61e0267da6f6d019be32c4c8}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a2aa31d2106b4abf59040c47533dada30}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a2aa31d2106b4abf59040c47533dada30}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [3/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{double \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize a float. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a250c106acd757b044185e3c675946752}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_aa22a6a0de09e5809d4a78cc122b5f875}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_aa22a6a0de09e5809d4a78cc122b5f875}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [4/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{float \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize an U\+Int64. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a740ec7e6063ead39b1a675435194e3d7}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a7bb96d669195c96e22ff207d2c5da163}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a7bb96d669195c96e22ff207d2c5da163}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [5/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{long \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize an U\+Int32. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_af0ad0a3b3e538daa27b09dc57f30a3d6}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ab97b460f6fcd638b200d7eb5b6a063a3}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ab97b460f6fcd638b200d7eb5b6a063a3}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [6/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{Poco\+::\+Int16 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize an U\+Int8. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_aa165397c369ceba077271fd5f754692c}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a44b224cf29aec78972a82f437da2d5b4}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a44b224cf29aec78972a82f437da2d5b4}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [7/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{Poco\+::\+Int32 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize an U\+Int16. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_aa8629389e22095501f8b82bbb64ecfce}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a2b4084aa383cba244866171ad32f4564}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a2b4084aa383cba244866171ad32f4564}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [8/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{Poco\+::\+Int64 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize an unsigned long. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_ae7a798f67b93df1b39d52fb2478d6dea}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a947b9ed41a8ffdec663f3cf11b35a29c}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a947b9ed41a8ffdec663f3cf11b35a29c}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [9/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{Poco\+::\+Int8 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+End deserialization of an \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}.
+
+The default implementation calls \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ab964ab2994e0c17fda3c4391421b1667}{deserialize\+Nullable\+End()}}. 
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_aefcff95c9b5ab543cae7f61f856ba5f8}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a1a57c2c24b7d025eeaa6067d6f7771e7}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a1a57c2c24b7d025eeaa6067d6f7771e7}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [10/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{Poco\+::\+U\+Int16 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize an Int16. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_ab325d4782735b39f96c992a65d7cc370}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_aa67f6b27f181af78470902822b9617db}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_aa67f6b27f181af78470902822b9617db}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [11/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{Poco\+::\+U\+Int32 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize an Int32. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a1ae50176e5d9e53cee812e270dffc7c6}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a01d96444fe87d8a180032579030b1834}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a01d96444fe87d8a180032579030b1834}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [12/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{Poco\+::\+U\+Int64 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize an Int64. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a1fd99cc147f13fa9c281aa4c74fedff2}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a62e09774dc4f1d529874f702e59b299f}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a62e09774dc4f1d529874f702e59b299f}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [13/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{Poco\+::\+U\+Int8 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize an Int8. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_aeffd3f9833eb7c783b355c969b46ecdc}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a274e40664acd753ab916209845243c39}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a274e40664acd753ab916209845243c39}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [14/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize a single character. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a73a29c3bde85112c4ba021108dd76eba}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a203985ec31717082c52cc766afe839ad}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a203985ec31717082c52cc766afe839ad}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [15/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{std\+::vector$<$ char $>$ \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize a std\+::string. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_afa4b356c01684bbfdab9ba3ba69ff5a0}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ab757364b2f412ef4194b7b8579638abd}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ab757364b2f412ef4194b7b8579638abd}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [16/16]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{unsigned long \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize a long. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a7c539f81ec7b9beaa4317f3d088f38ec}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a735d94e358e80119be8da7e6022d3d2f}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a735d94e358e80119be8da7e6022d3d2f}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserializeEndPoint@{deserializeEndPoint}}
+\index{deserializeEndPoint@{deserializeEndPoint}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserializeEndPoint()}{deserializeEndPoint()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize\+End\+Point (\begin{DoxyParamCaption}\item[{std\+::string \&}]{oid,  }\item[{std\+::string \&}]{tid }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer}{Binary\+Deserializer}}. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a9093f8ec658ca3616bbf29c682405af5}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a9093f8ec658ca3616bbf29c682405af5}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserializeMessageBegin@{deserializeMessageBegin}}
+\index{deserializeMessageBegin@{deserializeMessageBegin}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserializeMessageBegin()}{deserializeMessageBegin()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize\+Message\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reads from the stream until the message has been found. Returns the type of the message and the name of the found message.
+
+Used on the skeleton side to deserialize incoming requests. Will not be called by a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}} when deserializing a reply.
+
+The name returned by this method must be passed to \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a9093f8ec658ca3616bbf29c682405af5}{deserialize\+Message\+Begin()}}.
+
+This method must be implemented in such a way that it can be called multiple times in succession, until \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a9093f8ec658ca3616bbf29c682405af5}{deserialize\+Message\+Begin()}} is called. 
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a65b20a600e4f5a838faf851b719ae75d}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ae4d7a664ae186a9a3e5602dd519ff3ba}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ae4d7a664ae186a9a3e5602dd519ff3ba}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserializeMessageEnd@{deserializeMessageEnd}}
+\index{deserializeMessageEnd@{deserializeMessageEnd}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserializeMessageEnd()}{deserializeMessageEnd()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize\+Message\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Begin deserialization of a message.
+
+If the message is a fault, it will be deserialized an an appropriate exception will be thrown. 
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a38d61a6aa237f441e3b13624eac78e1f}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a1f858296fd57922b389e1493362e4f7e}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a1f858296fd57922b389e1493362e4f7e}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserializeNullableBegin@{deserializeNullableBegin}}
+\index{deserializeNullableBegin@{deserializeNullableBegin}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserializeNullableBegin()}{deserializeNullableBegin()}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize\+Nullable\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{bool \&}]{is\+Null }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+End deserialization of a vector or other sequence. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a9a2d517bcf48e96d133ffffc508a479e}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ab964ab2994e0c17fda3c4391421b1667}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ab964ab2994e0c17fda3c4391421b1667}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserializeNullableEnd@{deserializeNullableEnd}}
+\index{deserializeNullableEnd@{deserializeNullableEnd}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserializeNullableEnd()}{deserializeNullableEnd()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize\+Nullable\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Begin deserialization of a \mbox{\hyperlink{classPoco_1_1Nullable}{Nullable}} or pointer which may be N\+U\+LL.
+
+Returns true if the element with the given name was found. If the element was not found and is\+Mandatory is true, an exception may be thrown (depending on whether the serialization format can distinguish between a N\+U\+LL and a missing value). Is\+Null will be set accordingly.
+
+Note that if this method returns false or sets is\+Null to true, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ab964ab2994e0c17fda3c4391421b1667}{deserialize\+Nullable\+End()}} will not be called. 
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_ac7269d22c5dd2f8a04e3bc28e9876200}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a851bee7ea0bbe017400b3664ba13115f}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a851bee7ea0bbe017400b3664ba13115f}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserializeSequenceBegin@{deserializeSequenceBegin}}
+\index{deserializeSequenceBegin@{deserializeSequenceBegin}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserializeSequenceBegin()}{deserializeSequenceBegin()}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize\+Sequence\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory,  }\item[{Poco\+::\+U\+Int32 \&}]{length\+Hint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+End deserialization of a complex (structured) object. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a3c5c0ffaac33043e9e56f4b45430d8ce}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ae499d831f4e205fa5dac4f3c8f08ceba}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ae499d831f4e205fa5dac4f3c8f08ceba}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserializeSequenceEnd@{deserializeSequenceEnd}}
+\index{deserializeSequenceEnd@{deserializeSequenceEnd}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserializeSequenceEnd()}{deserializeSequenceEnd()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize\+Sequence\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Begin deserialization of a vector or other sequence.
+
+Returns true if the element with the given name was found. If the element was not found and is\+Mandatory is true, an exception may be thrown (depending on whether the serialization format can distinguish between an empty and a missing sequence).
+
+Note that if this method returns false, deserialize\+Vector\+Begin() will not be called. If size\+Hint is greater than 0, it will be used to reserve space in the result vector. 
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a850333ce5f3ea5a21478378b68b366dd}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a8cbb7f723f59b15eeb923d2f277864dc}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a8cbb7f723f59b15eeb923d2f277864dc}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserializeStructBegin@{deserializeStructBegin}}
+\index{deserializeStructBegin@{deserializeStructBegin}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserializeStructBegin()}{deserializeStructBegin()}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize\+Struct\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{is\+Mandatory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+End deserialization of a message. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a8434cd405e674487f5f72cc779e9c533}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a7a448cb026fe6ff89ca40fa7da651e3b}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a7a448cb026fe6ff89ca40fa7da651e3b}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserializeStructEnd@{deserializeStructEnd}}
+\index{deserializeStructEnd@{deserializeStructEnd}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserializeStructEnd()}{deserializeStructEnd()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize\+Struct\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Begin deserialization of a complex (structured) object.
+
+Returns true if the element with the given name was found. If the element was not found and is\+Mandatory is true, an exception will be thrown.
+
+Note that if this method returns false, deserialize\+Complex\+Type\+End() will not be called. 
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a3393122a78e3feecc605e27e1754af34}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a091d2d3f6ecd909d1b2fdc9730f1f10f}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a091d2d3f6ecd909d1b2fdc9730f1f10f}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!deserializeToken@{deserializeToken}}
+\index{deserializeToken@{deserializeToken}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserializeToken()}{deserializeToken()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::deserialize\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Serializes the object and type ID of the service object. 
+
+Deserializes the given value, which must be a type directly supported by \mbox{\hyperlink{classPoco_1_1BinaryReader}{Poco\+::\+Binary\+Reader}}. 
+
+Definition at line 53 of file Binary\+Deserializer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_aa05c1dfb85a9b07166a5703592802169}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_aa05c1dfb85a9b07166a5703592802169}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!findMessage@{findMessage}}
+\index{findMessage@{findMessage}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{findMessage()}{findMessage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}} Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::find\+Message (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set up the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}} for reading from the given input stream.
+
+This must be called before any of the deserialize$\ast$() methods. 
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_aec58eaccd6f754de65c69a7d132a025d}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a0adfc1f1eecd4a53c1bbbbcf7033674a}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a0adfc1f1eecd4a53c1bbbbcf7033674a}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!resetImpl@{resetImpl}}
+\index{resetImpl@{resetImpl}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{resetImpl()}{resetImpl()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::reset\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_ad510e0b7adebca5fafc774c297445be4}{Poco\+::\+Remoting\+N\+G\+::\+Serializer\+Base}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ac0d9571661cca7c3e48744122cc04112}\label{classPoco_1_1RemotingNG_1_1BinaryDeserializer_ac0d9571661cca7c3e48744122cc04112}} 
+\index{Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}!setupImpl@{setupImpl}}
+\index{setupImpl@{setupImpl}!Poco::RemotingNG::BinaryDeserializer@{Poco::RemotingNG::BinaryDeserializer}}
+\doxysubsubsection{\texorpdfstring{setupImpl()}{setupImpl()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Binary\+Deserializer\+::setup\+Impl (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+For X\+M\+L-\/based transports, this method allows for deserialization of data either as element content (default) or attribute value.
+
+The rule that deserializers follow is to first call \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_a2807dcb2238dc1f27e63164a3ac99ffd}{push\+Attribute()}} for every variable to be deserialized as attribute, then call \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1BinaryDeserializer_a9093f8ec658ca3616bbf29c682405af5}{deserialize\+Message\+Begin()}} or deserialize\+Struct\+Start() for the element containing the attributes.
+
+Example\+: The following code\+: \begin{DoxyVerb}ser.pushAttribute("", "attr1", true);
+ser.pushAttribute("", "attr2", true);
+ser.deserializeStructBegin("complexType", true);
+ser.deserialize("attr1", attr1, true); 
+ser.deserialize("attr2", attr2, true); 
+ser.deserialize("variable", variable, true); 
+ser.deserializeStructEnd("complexType"); 
+\end{DoxyVerb}
+
+
+will read this \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} fragment\+: $<$complex\+Type attr1=\char`\"{}foo\char`\"{} attr2=\char`\"{}bar\char`\"{}$>$$<$variable$>$42$<$/variable$>$...$<$/complex\+Type$>$
+
+Should be overridden by subclasses supporting attributes. The default implementation does nothing. 
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_afe8ee5301dd13991f0078665fa0967e3}{Poco\+::\+Remoting\+N\+G\+::\+Deserializer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{BinaryDeserializer_8h}{Binary\+Deserializer.\+h}}\end{DoxyCompactItemize}

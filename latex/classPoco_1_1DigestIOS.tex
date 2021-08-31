@@ -1,0 +1,96 @@
+\hypertarget{classPoco_1_1DigestIOS}{}\doxysection{Poco\+::Digest\+I\+OS Class Reference}
+\label{classPoco_1_1DigestIOS}\index{Poco::DigestIOS@{Poco::DigestIOS}}
+
+
+{\ttfamily \#include $<$Digest\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Digest\+I\+OS\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Digest\+I\+OS\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1DigestIOS_a090b5ffbb2436b72b9923c159610c55b}{Digest\+I\+OS}} (\mbox{\hyperlink{classPoco_1_1DigestEngine}{Digest\+Engine}} \&eng)
+\item 
+\mbox{\hyperlink{classPoco_1_1DigestIOS_a871c3626fee051c023e4f82b0be974b2}{Digest\+I\+OS}} (\mbox{\hyperlink{classPoco_1_1DigestEngine}{Digest\+Engine}} \&eng, std\+::istream \&istr)
+\item 
+\mbox{\hyperlink{classPoco_1_1DigestIOS_ab6e896c993170cf327003fb91ca9e5f4}{Digest\+I\+OS}} (\mbox{\hyperlink{classPoco_1_1DigestEngine}{Digest\+Engine}} \&eng, std\+::ostream \&ostr)
+\item 
+\mbox{\hyperlink{classPoco_1_1DigestIOS_acff4e68bcc00413b6d4661eebf9e056d}{$\sim$\+Digest\+I\+OS}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1DigestBuf}{Digest\+Buf}} $\ast$ \mbox{\hyperlink{classPoco_1_1DigestIOS_a82d2fdb9c6f78fa0ea23c7318355d891}{rdbuf}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1DigestBuf}{Digest\+Buf}} \mbox{\hyperlink{classPoco_1_1DigestIOS_ab446da95a7e56739d444ccf93d6fea9f}{\+\_\+buf}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for \mbox{\hyperlink{classPoco_1_1DigestInputStream}{Digest\+Input\+Stream}} and \mbox{\hyperlink{classPoco_1_1DigestOutputStream}{Digest\+Output\+Stream}}. \begin{DoxyVerb}This class is needed to ensure the correct initialization
+order of the stream buffer and base classes. 
+\end{DoxyVerb}
+ 
+
+Definition at line 54 of file Digest\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1DigestIOS_a090b5ffbb2436b72b9923c159610c55b}\label{classPoco_1_1DigestIOS_a090b5ffbb2436b72b9923c159610c55b}} 
+\index{Poco::DigestIOS@{Poco::DigestIOS}!DigestIOS@{DigestIOS}}
+\index{DigestIOS@{DigestIOS}!Poco::DigestIOS@{Poco::DigestIOS}}
+\doxysubsubsection{\texorpdfstring{DigestIOS()}{DigestIOS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Digest\+I\+O\+S\+::\+Digest\+I\+OS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1DigestEngine}{Digest\+Engine}} \&}]{eng }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1DigestIOS_a871c3626fee051c023e4f82b0be974b2}\label{classPoco_1_1DigestIOS_a871c3626fee051c023e4f82b0be974b2}} 
+\index{Poco::DigestIOS@{Poco::DigestIOS}!DigestIOS@{DigestIOS}}
+\index{DigestIOS@{DigestIOS}!Poco::DigestIOS@{Poco::DigestIOS}}
+\doxysubsubsection{\texorpdfstring{DigestIOS()}{DigestIOS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Digest\+I\+O\+S\+::\+Digest\+I\+OS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1DigestEngine}{Digest\+Engine}} \&}]{eng,  }\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1DigestIOS_ab6e896c993170cf327003fb91ca9e5f4}\label{classPoco_1_1DigestIOS_ab6e896c993170cf327003fb91ca9e5f4}} 
+\index{Poco::DigestIOS@{Poco::DigestIOS}!DigestIOS@{DigestIOS}}
+\index{DigestIOS@{DigestIOS}!Poco::DigestIOS@{Poco::DigestIOS}}
+\doxysubsubsection{\texorpdfstring{DigestIOS()}{DigestIOS()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Digest\+I\+O\+S\+::\+Digest\+I\+OS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1DigestEngine}{Digest\+Engine}} \&}]{eng,  }\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1DigestIOS_acff4e68bcc00413b6d4661eebf9e056d}\label{classPoco_1_1DigestIOS_acff4e68bcc00413b6d4661eebf9e056d}} 
+\index{Poco::DigestIOS@{Poco::DigestIOS}!````~DigestIOS@{$\sim$DigestIOS}}
+\index{````~DigestIOS@{$\sim$DigestIOS}!Poco::DigestIOS@{Poco::DigestIOS}}
+\doxysubsubsection{\texorpdfstring{$\sim$DigestIOS()}{~DigestIOS()}}
+{\footnotesize\ttfamily Poco\+::\+Digest\+I\+O\+S\+::$\sim$\+Digest\+I\+OS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1DigestIOS_a82d2fdb9c6f78fa0ea23c7318355d891}\label{classPoco_1_1DigestIOS_a82d2fdb9c6f78fa0ea23c7318355d891}} 
+\index{Poco::DigestIOS@{Poco::DigestIOS}!rdbuf@{rdbuf}}
+\index{rdbuf@{rdbuf}!Poco::DigestIOS@{Poco::DigestIOS}}
+\doxysubsubsection{\texorpdfstring{rdbuf()}{rdbuf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1DigestBuf}{Digest\+Buf}}$\ast$ Poco\+::\+Digest\+I\+O\+S\+::rdbuf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1DigestIOS_ab446da95a7e56739d444ccf93d6fea9f}\label{classPoco_1_1DigestIOS_ab446da95a7e56739d444ccf93d6fea9f}} 
+\index{Poco::DigestIOS@{Poco::DigestIOS}!\_buf@{\_buf}}
+\index{\_buf@{\_buf}!Poco::DigestIOS@{Poco::DigestIOS}}
+\doxysubsubsection{\texorpdfstring{\_buf}{\_buf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1DigestBuf}{Digest\+Buf}} Poco\+::\+Digest\+I\+O\+S\+::\+\_\+buf\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 68 of file Digest\+Stream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{DigestStream_8h}{Digest\+Stream.\+h}}\end{DoxyCompactItemize}

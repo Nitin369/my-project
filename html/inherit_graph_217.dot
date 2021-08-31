@@ -1,0 +1,20 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Poco::AbstractStrategy\l\< TKey, TValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AbstractStrategy.html",tooltip="An AbstractStrategy is the interface for all strategies."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Poco::ExpireStrategy\l\< TKey, TValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ExpireStrategy.html",tooltip="An ExpireStrategy implements time based expiration of cache entries."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Poco::AccessExpireStrategy\l\< TKey, TValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AccessExpireStrategy.html",tooltip="An AccessExpireStrategy implements time and access based expiration of cache entries."];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Poco::LRUStrategy\<\l TKey, TValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1LRUStrategy.html",tooltip="An LRUStrategy implements least recently used cache replacement."];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Poco::StrategyCollection\l\< TKey, TValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1StrategyCollection.html",tooltip="An StrategyCollection is a decorator masking n collections as a single one."];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Poco::UniqueAccessExpire\lStrategy\< TKey, TValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1UniqueAccessExpireStrategy.html",tooltip=" "];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Poco::UniqueExpireStrategy\l\< TKey, TValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1UniqueExpireStrategy.html",tooltip=" "];
+}

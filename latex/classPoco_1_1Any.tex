@@ -1,0 +1,211 @@
+\hypertarget{classPoco_1_1Any}{}\doxysection{Poco\+::Any Class Reference}
+\label{classPoco_1_1Any}\index{Poco::Any@{Poco::Any}}
+
+
+{\ttfamily \#include $<$Any.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Any_ac5744002e072bf78cad18f6850be36f2}{Any}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty any type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Value\+Type $>$ }\\\mbox{\hyperlink{classPoco_1_1Any_a6272658e4e23b59da7aa90afd1b11f69}{Any}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value\+Type \&value)
+\item 
+\mbox{\hyperlink{classPoco_1_1Any_a68293069280b233d26c6e6feba2b49f1}{Any}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Any}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor, works with both empty and initialized \mbox{\hyperlink{classPoco_1_1Any}{Any}} values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Any_a038fff55800a4602f19d85c458285b8a}{$\sim$\+Any}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Any}{Any}} \& \mbox{\hyperlink{classPoco_1_1Any_a4cf7ac92d4a20354233c452ad26c8a76}{swap}} (\mbox{\hyperlink{classPoco_1_1Any}{Any}} \&other)
+\item 
+{\footnotesize template$<$typename Value\+Type $>$ }\\\mbox{\hyperlink{classPoco_1_1Any}{Any}} \& \mbox{\hyperlink{classPoco_1_1Any_a8490c5b33991ec8cbcf43ac67f7eb978}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value\+Type \&rhs)
+\item 
+\mbox{\hyperlink{classPoco_1_1Any}{Any}} \& \mbox{\hyperlink{classPoco_1_1Any_a981994356ece2366f588b2e5e9d88540}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Any}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Assignment operator for \mbox{\hyperlink{classPoco_1_1Any}{Any}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Any_a1058a57722be58cd8dc829ec5613a35f}{empty}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if the \mbox{\hyperlink{classPoco_1_1Any}{Any}} is empty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& \mbox{\hyperlink{classPoco_1_1Any_aa4148f21e717bc99f649e6d2103c2d2c}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Value\+Type $>$ }\\Value\+Type $\ast$ \mbox{\hyperlink{classPoco_1_1Any_ae610eb3a4908be238f4b765715660503}{Any\+Cast}} (\mbox{\hyperlink{classPoco_1_1Any}{Any}} $\ast$)
+\item 
+{\footnotesize template$<$typename Value\+Type $>$ }\\Value\+Type $\ast$ \mbox{\hyperlink{classPoco_1_1Any_afb1b94e29cb5ca44636656f1a94b1b2d}{Unsafe\+Any\+Cast}} (\mbox{\hyperlink{classPoco_1_1Any}{Any}} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An \mbox{\hyperlink{classPoco_1_1Any}{Any}} class represents a general type and is capable of storing any type, supporting type-\/safe extraction of the internally stored data.
+
+Code taken from the Boost 1.\+33.\+1 library. Original copyright by Kevlin Henney. Modified for \mbox{\hyperlink{namespacePoco}{Poco}} by Applied Informatics.
+
+Modified for small object optimization support (optionally supported through conditional compilation) by Alex Fabijanic. 
+
+Definition at line 153 of file Any.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Any_ac5744002e072bf78cad18f6850be36f2}\label{classPoco_1_1Any_ac5744002e072bf78cad18f6850be36f2}} 
+\index{Poco::Any@{Poco::Any}!Any@{Any}}
+\index{Any@{Any}!Poco::Any@{Poco::Any}}
+\doxysubsubsection{\texorpdfstring{Any()}{Any()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Any\+::\+Any (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an empty any type. 
+
+
+
+Definition at line 167 of file Any.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Any_a6272658e4e23b59da7aa90afd1b11f69}\label{classPoco_1_1Any_a6272658e4e23b59da7aa90afd1b11f69}} 
+\index{Poco::Any@{Poco::Any}!Any@{Any}}
+\index{Any@{Any}!Poco::Any@{Poco::Any}}
+\doxysubsubsection{\texorpdfstring{Any()}{Any()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+Poco\+::\+Any\+::\+Any (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value\+Type \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates an any which stores the init parameter inside.
+
+Example\+: \mbox{\hyperlink{classPoco_1_1Any}{Any}} a(13); \mbox{\hyperlink{classPoco_1_1Any}{Any}} a(string(\char`\"{}12345\char`\"{})); 
+
+Definition at line 173 of file Any.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Any_a68293069280b233d26c6e6feba2b49f1}\label{classPoco_1_1Any_a68293069280b233d26c6e6feba2b49f1}} 
+\index{Poco::Any@{Poco::Any}!Any@{Any}}
+\index{Any@{Any}!Poco::Any@{Poco::Any}}
+\doxysubsubsection{\texorpdfstring{Any()}{Any()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Any\+::\+Any (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Any}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor, works with both empty and initialized \mbox{\hyperlink{classPoco_1_1Any}{Any}} values. 
+
+
+
+Definition at line 183 of file Any.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Any_a038fff55800a4602f19d85c458285b8a}\label{classPoco_1_1Any_a038fff55800a4602f19d85c458285b8a}} 
+\index{Poco::Any@{Poco::Any}!````~Any@{$\sim$Any}}
+\index{````~Any@{$\sim$Any}!Poco::Any@{Poco::Any}}
+\doxysubsubsection{\texorpdfstring{$\sim$Any()}{~Any()}}
+{\footnotesize\ttfamily Poco\+::\+Any\+::$\sim$\+Any (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destructor. If \mbox{\hyperlink{classPoco_1_1Any}{Any}} is locally held, calls Value\+Holder destructor; otherwise, deletes the placeholder from the heap. 
+
+Definition at line 190 of file Any.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Any_a1058a57722be58cd8dc829ec5613a35f}\label{classPoco_1_1Any_a1058a57722be58cd8dc829ec5613a35f}} 
+\index{Poco::Any@{Poco::Any}!empty@{empty}}
+\index{empty@{empty}!Poco::Any@{Poco::Any}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool Poco\+::\+Any\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if the \mbox{\hyperlink{classPoco_1_1Any}{Any}} is empty. 
+
+
+
+Definition at line 258 of file Any.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Any_a981994356ece2366f588b2e5e9d88540}\label{classPoco_1_1Any_a981994356ece2366f588b2e5e9d88540}} 
+\index{Poco::Any@{Poco::Any}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Any@{Poco::Any}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Any}{Any}}\& Poco\+::\+Any\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Any}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator for \mbox{\hyperlink{classPoco_1_1Any}{Any}}. 
+
+
+
+Definition at line 247 of file Any.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Any_a8490c5b33991ec8cbcf43ac67f7eb978}\label{classPoco_1_1Any_a8490c5b33991ec8cbcf43ac67f7eb978}} 
+\index{Poco::Any@{Poco::Any}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Any@{Poco::Any}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+\mbox{\hyperlink{classPoco_1_1Any}{Any}}\& Poco\+::\+Any\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value\+Type \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Assignment operator for all types != \mbox{\hyperlink{classPoco_1_1Any}{Any}}.
+
+Example\+: \mbox{\hyperlink{classPoco_1_1Any}{Any}} a = 13; \mbox{\hyperlink{classPoco_1_1Any}{Any}} a = string(\char`\"{}12345\char`\"{}); 
+
+Definition at line 236 of file Any.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Any_a4cf7ac92d4a20354233c452ad26c8a76}\label{classPoco_1_1Any_a4cf7ac92d4a20354233c452ad26c8a76}} 
+\index{Poco::Any@{Poco::Any}!swap@{swap}}
+\index{swap@{swap}!Poco::Any@{Poco::Any}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Any}{Any}}\& Poco\+::\+Any\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Any}{Any}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Swaps the content of the two Anys.
+
+When small object optimizaton is enabled, swap only has no-\/throw guarantee when both ($\ast$this and other) objects are allocated on the heap. 
+
+Definition at line 203 of file Any.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Any_aa4148f21e717bc99f649e6d2103c2d2c}\label{classPoco_1_1Any_aa4148f21e717bc99f649e6d2103c2d2c}} 
+\index{Poco::Any@{Poco::Any}!type@{type}}
+\index{type@{type}!Poco::Any@{Poco::Any}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info\& Poco\+::\+Any\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the type information of the stored content. If the \mbox{\hyperlink{classPoco_1_1Any}{Any}} is empty typeid(void) is returned. It is recommended to always query an \mbox{\hyperlink{classPoco_1_1Any}{Any}} for its type info before trying to extract data via an Any\+Cast/\+Ref\+Any\+Cast. 
+
+Definition at line 265 of file Any.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Any_ae610eb3a4908be238f4b765715660503}\label{classPoco_1_1Any_ae610eb3a4908be238f4b765715660503}} 
+\index{Poco::Any@{Poco::Any}!AnyCast@{AnyCast}}
+\index{AnyCast@{AnyCast}!Poco::Any@{Poco::Any}}
+\doxysubsubsection{\texorpdfstring{AnyCast}{AnyCast}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+Value\+Type$\ast$ Any\+Cast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Any}{Any}} $\ast$}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Any\+Cast operator used to extract the Value\+Type from an Any$\ast$. Will return a pointer to the stored value.
+
+Example Usage\+: My\+Type$\ast$ p\+Tmp = Any\+Cast$<$\+My\+Type$\ast$$>$(p\+Any). Will return N\+U\+LL if the cast fails, i.\+e. types don\textquotesingle{}t match. 
+
+Definition at line 485 of file Any.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Any_afb1b94e29cb5ca44636656f1a94b1b2d}\label{classPoco_1_1Any_afb1b94e29cb5ca44636656f1a94b1b2d}} 
+\index{Poco::Any@{Poco::Any}!UnsafeAnyCast@{UnsafeAnyCast}}
+\index{UnsafeAnyCast@{UnsafeAnyCast}!Poco::Any@{Poco::Any}}
+\doxysubsubsection{\texorpdfstring{UnsafeAnyCast}{UnsafeAnyCast}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+Value\+Type$\ast$ Unsafe\+Any\+Cast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Any}{Any}} $\ast$}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+The \char`\"{}unsafe\char`\"{} versions of Any\+Cast are not part of the public interface and may be removed at any time. They are required where we know what type is stored in the any and can\textquotesingle{}t use typeid() comparison, e.\+g., when our types may travel across different shared libraries. 
+
+Definition at line 575 of file Any.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Any_8h}{Any.\+h}}\end{DoxyCompactItemize}

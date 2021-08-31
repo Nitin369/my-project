@@ -1,0 +1,161 @@
+\hypertarget{classPoco_1_1CppParser_1_1Variable}{}\doxysection{Poco\+::Cpp\+Parser\+::Variable Class Reference}
+\label{classPoco_1_1CppParser_1_1Variable}\index{Poco::CppParser::Variable@{Poco::CppParser::Variable}}
+
+
+This class represents (member) variable declaration.  
+
+
+
+
+{\ttfamily \#include $<$Variable.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Cpp\+Parser\+::Variable\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Cpp\+Parser\+::Variable\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981d}{Flags}} \{ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981da014bbb8ee4c7195e31844dccc6441562}{V\+A\+R\+\_\+\+S\+T\+A\+T\+IC}} = 1, 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981da5be0870919c5c2cedd995cfdac029135}{V\+A\+R\+\_\+\+M\+U\+T\+A\+B\+LE}} = 2, 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981dad4bb8c60507d0b05c75d4a7768c17ddc}{V\+A\+R\+\_\+\+V\+O\+L\+A\+T\+I\+LE}} = 4, 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981da190f44d73af4f2cf4acf84e3adfc116b}{V\+A\+R\+\_\+\+C\+O\+N\+ST}} = 8
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable_a96f3ec143df669c2fa896ea0da0d1595}{Variable}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&decl, \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}} $\ast$p\+Name\+Space)
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable_a0db038e09e5fe35f1710cd241a8ea011}{$\sim$\+Variable}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable}{Variable}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable_aec8b12424099bf5f3f900d0320267d3c}{flags}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable}{Variable}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable_a58959ff104157030bb3aa2a2b950f23a}{is\+Pointer}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the variable\textquotesingle{}s flags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a67448d9c53f4abcae2a53711ad0e23d4}{Symbol\+::\+Kind}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable_a9e4fbdbc007faf244cf1204b98e0bc01}{kind}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff the variable holds a pointer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable_a67cffead8c2062d4747b46056cd21b24}{decl\+Type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class represents (member) variable declaration. 
+
+Definition at line 31 of file Variable.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981d}\label{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981d}} 
+\index{Poco::CppParser::Variable@{Poco::CppParser::Variable}!Flags@{Flags}}
+\index{Flags@{Flags}!Poco::CppParser::Variable@{Poco::CppParser::Variable}}
+\doxysubsubsection{\texorpdfstring{Flags}{Flags}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981d}{Poco\+::\+Cpp\+Parser\+::\+Variable\+::\+Flags}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VAR\_STATIC@{VAR\_STATIC}!Poco::CppParser::Variable@{Poco::CppParser::Variable}}\index{Poco::CppParser::Variable@{Poco::CppParser::Variable}!VAR\_STATIC@{VAR\_STATIC}}}\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981da014bbb8ee4c7195e31844dccc6441562}\label{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981da014bbb8ee4c7195e31844dccc6441562}} 
+V\+A\+R\+\_\+\+S\+T\+A\+T\+IC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VAR\_MUTABLE@{VAR\_MUTABLE}!Poco::CppParser::Variable@{Poco::CppParser::Variable}}\index{Poco::CppParser::Variable@{Poco::CppParser::Variable}!VAR\_MUTABLE@{VAR\_MUTABLE}}}\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981da5be0870919c5c2cedd995cfdac029135}\label{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981da5be0870919c5c2cedd995cfdac029135}} 
+V\+A\+R\+\_\+\+M\+U\+T\+A\+B\+LE&The variable is static. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VAR\_VOLATILE@{VAR\_VOLATILE}!Poco::CppParser::Variable@{Poco::CppParser::Variable}}\index{Poco::CppParser::Variable@{Poco::CppParser::Variable}!VAR\_VOLATILE@{VAR\_VOLATILE}}}\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981dad4bb8c60507d0b05c75d4a7768c17ddc}\label{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981dad4bb8c60507d0b05c75d4a7768c17ddc}} 
+V\+A\+R\+\_\+\+V\+O\+L\+A\+T\+I\+LE&The variable is mutable. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VAR\_CONST@{VAR\_CONST}!Poco::CppParser::Variable@{Poco::CppParser::Variable}}\index{Poco::CppParser::Variable@{Poco::CppParser::Variable}!VAR\_CONST@{VAR\_CONST}}}\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981da190f44d73af4f2cf4acf84e3adfc116b}\label{classPoco_1_1CppParser_1_1Variable_a3a1d122b990ad746251fe28ed8a4981da190f44d73af4f2cf4acf84e3adfc116b}} 
+V\+A\+R\+\_\+\+C\+O\+N\+ST&The variable is volatile. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 35 of file Variable.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Variable_a96f3ec143df669c2fa896ea0da0d1595}\label{classPoco_1_1CppParser_1_1Variable_a96f3ec143df669c2fa896ea0da0d1595}} 
+\index{Poco::CppParser::Variable@{Poco::CppParser::Variable}!Variable@{Variable}}
+\index{Variable@{Variable}!Poco::CppParser::Variable@{Poco::CppParser::Variable}}
+\doxysubsubsection{\texorpdfstring{Variable()}{Variable()}}
+{\footnotesize\ttfamily Poco\+::\+Cpp\+Parser\+::\+Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{decl,  }\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}} $\ast$}]{p\+Name\+Space }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Variable_a0db038e09e5fe35f1710cd241a8ea011}\label{classPoco_1_1CppParser_1_1Variable_a0db038e09e5fe35f1710cd241a8ea011}} 
+\index{Poco::CppParser::Variable@{Poco::CppParser::Variable}!````~Variable@{$\sim$Variable}}
+\index{````~Variable@{$\sim$Variable}!Poco::CppParser::Variable@{Poco::CppParser::Variable}}
+\doxysubsubsection{\texorpdfstring{$\sim$Variable()}{~Variable()}}
+{\footnotesize\ttfamily Poco\+::\+Cpp\+Parser\+::\+Variable\+::$\sim$\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable}{Variable}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Variable_a67cffead8c2062d4747b46056cd21b24}\label{classPoco_1_1CppParser_1_1Variable_a67cffead8c2062d4747b46056cd21b24}} 
+\index{Poco::CppParser::Variable@{Poco::CppParser::Variable}!declType@{declType}}
+\index{declType@{declType}!Poco::CppParser::Variable@{Poco::CppParser::Variable}}
+\doxysubsubsection{\texorpdfstring{declType()}{declType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Cpp\+Parser\+::\+Variable\+::decl\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 85 of file Variable.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Variable_aec8b12424099bf5f3f900d0320267d3c}\label{classPoco_1_1CppParser_1_1Variable_aec8b12424099bf5f3f900d0320267d3c}} 
+\index{Poco::CppParser::Variable@{Poco::CppParser::Variable}!flags@{flags}}
+\index{flags@{flags}!Poco::CppParser::Variable@{Poco::CppParser::Variable}}
+\doxysubsubsection{\texorpdfstring{flags()}{flags()}}
+{\footnotesize\ttfamily int Poco\+::\+Cpp\+Parser\+::\+Variable\+::flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable}{Variable}}. 
+
+
+
+Definition at line 73 of file Variable.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Variable_a58959ff104157030bb3aa2a2b950f23a}\label{classPoco_1_1CppParser_1_1Variable_a58959ff104157030bb3aa2a2b950f23a}} 
+\index{Poco::CppParser::Variable@{Poco::CppParser::Variable}!isPointer@{isPointer}}
+\index{isPointer@{isPointer}!Poco::CppParser::Variable@{Poco::CppParser::Variable}}
+\doxysubsubsection{\texorpdfstring{isPointer()}{isPointer()}}
+{\footnotesize\ttfamily bool Poco\+::\+Cpp\+Parser\+::\+Variable\+::is\+Pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the variable\textquotesingle{}s flags. 
+
+
+
+Definition at line 79 of file Variable.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Variable_a9e4fbdbc007faf244cf1204b98e0bc01}\label{classPoco_1_1CppParser_1_1Variable_a9e4fbdbc007faf244cf1204b98e0bc01}} 
+\index{Poco::CppParser::Variable@{Poco::CppParser::Variable}!kind@{kind}}
+\index{kind@{kind}!Poco::CppParser::Variable@{Poco::CppParser::Variable}}
+\doxysubsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a67448d9c53f4abcae2a53711ad0e23d4}{Symbol\+::\+Kind}} Poco\+::\+Cpp\+Parser\+::\+Variable\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns true iff the variable holds a pointer. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a6708cf40021563dcd93bb275bf87296c}{Poco\+::\+Cpp\+Parser\+::\+Symbol}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Cpp\+Parser/\mbox{\hyperlink{Variable_8h}{Variable.\+h}}\end{DoxyCompactItemize}

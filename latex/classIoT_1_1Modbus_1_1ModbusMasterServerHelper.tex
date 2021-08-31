@@ -1,0 +1,182 @@
+\hypertarget{classIoT_1_1Modbus_1_1ModbusMasterServerHelper}{}\doxysection{IoT\+::Modbus\+::Modbus\+Master\+Server\+Helper Class Reference}
+\label{classIoT_1_1Modbus_1_1ModbusMasterServerHelper}\index{IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}}
+
+
+{\ttfamily \#include $<$Modbus\+Master\+Server\+Helper.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a1d736f38f6ebc37d5a050a17dd86daed}{Service}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a88119a9bf2ccc52a1b0c6ac35656663c}{Modbus\+Master\+Server\+Helper}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a51a99ff7ce4f093466e62b96b0e65b2c}{$\sim$\+Modbus\+Master\+Server\+Helper}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper}{Modbus\+Master\+Server\+Helper}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject}{Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object}} $>$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a814f47c5b4e3264b4a0ddbee3bdbdeb2}{create\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper}{Modbus\+Master\+Server\+Helper}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_abd7ef37f53125a61a475978356f45500}{enable\+Events}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\begin{DoxyCompactList}\small\item\em Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} instance. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a792bc92f0efcb8e8a9dd35f27e6255e4}{register\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_ad5c0ecb04eb943c8b1e64b5c1ff46bfd}{register\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject}{Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object}} $>$ p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a2f8dc64f40cf87870fd45911c85f665d}{shutdown}} ()
+\item 
+static void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a9120e6f060a153b5c6457c07507aa061}{unregister\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\begin{DoxyCompactList}\small\item\em Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} from the O\+RB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class defines the interface for \mbox{\hyperlink{namespaceIoT_1_1Modbus}{Modbus}} clients. \begin{DoxyVerb}The interface supports two basic modes of operation:
+   - Asynchronous requests: One of the sendXXXRequest() methods is used
+     to send a request to the device. The method returns as soon as the
+     request has been sent over the wire. The device's response is
+     reported asynchronously via an appropriate XXXResponseReceived event.
+   - Synchronous requests: After sending the request, the method waits
+     for the response from the device and directly returns it to the caller.
+     In case no response is received within the specified timeout, a
+     Poco::TimeoutException is thrown. If an exception message is received
+     from the device, a ModbusException is thrown. If an incomplete or invalid
+     message is received, a Poco::ProtocolException is thrown.
+
+Note that asynchronous and synchronous (blocking) mode cannot be used
+simultaneously. Calling one of the asynchronous request methods will enable
+asynchronous mode. Calling one of the synchronous request methods will
+disable asynchronous mode. Switching to synchronous mode while a response
+to an asynchronous request is pending will lead to undefined results,
+including possible mismatch of requests and responses.
+
+In asynchronous operation, requests are associated with a transaction ID,
+to tell apart multiple concurrent transactions. Transaction IDs are not guaranteed
+to be unique for subsequent requests. In fact, for Modbus RTU, which does not
+allow multiple simultaneous requests, the transaction ID will always be zero. 
+\end{DoxyVerb}
+ 
+
+Definition at line 34 of file Modbus\+Master\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a1d736f38f6ebc37d5a050a17dd86daed}\label{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a1d736f38f6ebc37d5a050a17dd86daed}} 
+\index{IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}!Service@{Service}}
+\index{Service@{Service}!IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}}
+\doxysubsubsection{\texorpdfstring{Service}{Service}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a1d736f38f6ebc37d5a050a17dd86daed}{Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Server\+Helper\+::\+Service}}}
+
+
+
+Definition at line 62 of file Modbus\+Master\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a88119a9bf2ccc52a1b0c6ac35656663c}\label{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a88119a9bf2ccc52a1b0c6ac35656663c}} 
+\index{IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}!ModbusMasterServerHelper@{ModbusMasterServerHelper}}
+\index{ModbusMasterServerHelper@{ModbusMasterServerHelper}!IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}}
+\doxysubsubsection{\texorpdfstring{ModbusMasterServerHelper()}{ModbusMasterServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Server\+Helper\+::\+Modbus\+Master\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a51a99ff7ce4f093466e62b96b0e65b2c}\label{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a51a99ff7ce4f093466e62b96b0e65b2c}} 
+\index{IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}!````~ModbusMasterServerHelper@{$\sim$ModbusMasterServerHelper}}
+\index{````~ModbusMasterServerHelper@{$\sim$ModbusMasterServerHelper}!IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}}
+\doxysubsubsection{\texorpdfstring{$\sim$ModbusMasterServerHelper()}{~ModbusMasterServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Server\+Helper\+::$\sim$\+Modbus\+Master\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper}{Modbus\+Master\+Server\+Helper}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a814f47c5b4e3264b4a0ddbee3bdbdeb2}\label{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a814f47c5b4e3264b4a0ddbee3bdbdeb2}} 
+\index{IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}!createRemoteObject@{createRemoteObject}}
+\index{createRemoteObject@{createRemoteObject}!IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}}
+\doxysubsubsection{\texorpdfstring{createRemoteObject()}{createRemoteObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject}{Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object}} $>$ Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Server\+Helper\+::create\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterServerHelper}{Modbus\+Master\+Server\+Helper}}. 
+
+
+
+Definition at line 118 of file Modbus\+Master\+Server\+Helper.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_abd7ef37f53125a61a475978356f45500}\label{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_abd7ef37f53125a61a475978356f45500}} 
+\index{IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}!enableEvents@{enableEvents}}
+\index{enableEvents@{enableEvents}!IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}}
+\doxysubsubsection{\texorpdfstring{enableEvents()}{enableEvents()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Server\+Helper\+::enable\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} instance. 
+
+
+
+Definition at line 124 of file Modbus\+Master\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a792bc92f0efcb8e8a9dd35f27e6255e4}\label{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a792bc92f0efcb8e8a9dd35f27e6255e4}} 
+\index{IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}!registerObject@{registerObject}}
+\index{registerObject@{registerObject}!IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerObject()}{registerObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Server\+Helper\+::register\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Enables remote events for the Remote\+Object identified by the given U\+RI.
+
+Events will be delivered using the Transport for the given protocol. Can be called multiple times for the same U\+RI with different protocols. 
+
+Definition at line 130 of file Modbus\+Master\+Server\+Helper.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_ad5c0ecb04eb943c8b1e64b5c1ff46bfd}\label{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_ad5c0ecb04eb943c8b1e64b5c1ff46bfd}} 
+\index{IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}!registerRemoteObject@{registerRemoteObject}}
+\index{registerRemoteObject@{registerRemoteObject}!IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerRemoteObject()}{registerRemoteObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Server\+Helper\+::register\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject}{Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object}} $>$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} instance and registers it with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. 
+
+Definition at line 136 of file Modbus\+Master\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a2f8dc64f40cf87870fd45911c85f665d}\label{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a2f8dc64f40cf87870fd45911c85f665d}} 
+\index{IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily static void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Server\+Helper\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers the given Remote\+Object with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. \mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a9120e6f060a153b5c6457c07507aa061}\label{classIoT_1_1Modbus_1_1ModbusMasterServerHelper_a9120e6f060a153b5c6457c07507aa061}} 
+\index{IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}!unregisterObject@{unregisterObject}}
+\index{unregisterObject@{unregisterObject}!IoT::Modbus::ModbusMasterServerHelper@{IoT::Modbus::ModbusMasterServerHelper}}
+\doxysubsubsection{\texorpdfstring{unregisterObject()}{unregisterObject()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Server\+Helper\+::unregister\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} from the O\+RB. 
+
+
+
+Definition at line 142 of file Modbus\+Master\+Server\+Helper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Modbus/\mbox{\hyperlink{ModbusMasterServerHelper_8h}{Modbus\+Master\+Server\+Helper.\+h}}\end{DoxyCompactItemize}

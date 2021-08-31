@@ -1,0 +1,104 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1Timer}{}\doxysection{Poco\+::Remoting\+NG\+::T\+CP\+::Timer Class Reference}
+\label{classPoco_1_1RemotingNG_1_1TCP_1_1Timer}\index{Poco::RemotingNG::TCP::Timer@{Poco::RemotingNG::TCP::Timer}}
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::T\+CP\+::Timer\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::T\+CP\+::Timer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_a03d117382f1ccc834fb37fa68903bb0e}{Timer}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_ad0c21c3aacdfe8a01b4fe64c2d4b71d3}{$\sim$\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer}{Timer}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_a83d103286fa65c6238741e181637ff9a}{cancel}} (bool wait=false)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer}{Timer}}, cancelling all pending tasks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_acd8b9bdafe8d7fae90922a57467d6670}{schedule\+At\+Fixed\+Rate}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1TimerTask_a426574478b4c3086a0cfd837d4d67def}{Timer\+Task\+::\+Ptr}} p\+Task, long delay, long interval)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_afefcee8e17ea3ec8a1cf2049c4549b8b}{run}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer}{Timer}} allows to schedule tasks (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1TimerTask}{Timer\+Task}} objects) for future execution in a background thread. Tasks may be scheduled for one-\/time execution, or for repeated execution at regular intervals.
+
+The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer}{Timer}} object creates a thread that executes all scheduled tasks sequentially. Therefore, tasks should complete their work as quickly as possible, otherwise subsequent tasks may be delayed.
+
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer}{Timer}} is save for multithreaded use -\/ multiple threads can schedule new tasks simultaneously.
+
+This is a simplified version of the \mbox{\hyperlink{classPoco_1_1Util_1_1Timer}{Poco\+::\+Util\+::\+Timer}} class. 
+
+Definition at line 73 of file Timer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_a03d117382f1ccc834fb37fa68903bb0e}\label{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_a03d117382f1ccc834fb37fa68903bb0e}} 
+\index{Poco::RemotingNG::TCP::Timer@{Poco::RemotingNG::TCP::Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Poco::RemotingNG::TCP::Timer@{Poco::RemotingNG::TCP::Timer}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Timer\+::\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_ad0c21c3aacdfe8a01b4fe64c2d4b71d3}\label{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_ad0c21c3aacdfe8a01b4fe64c2d4b71d3}} 
+\index{Poco::RemotingNG::TCP::Timer@{Poco::RemotingNG::TCP::Timer}!````~Timer@{$\sim$Timer}}
+\index{````~Timer@{$\sim$Timer}!Poco::RemotingNG::TCP::Timer@{Poco::RemotingNG::TCP::Timer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Timer()}{~Timer()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Timer\+::$\sim$\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer}{Timer}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_a83d103286fa65c6238741e181637ff9a}\label{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_a83d103286fa65c6238741e181637ff9a}} 
+\index{Poco::RemotingNG::TCP::Timer@{Poco::RemotingNG::TCP::Timer}!cancel@{cancel}}
+\index{cancel@{cancel}!Poco::RemotingNG::TCP::Timer@{Poco::RemotingNG::TCP::Timer}}
+\doxysubsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Timer\+::cancel (\begin{DoxyParamCaption}\item[{bool}]{wait = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer}{Timer}}, cancelling all pending tasks. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_afefcee8e17ea3ec8a1cf2049c4549b8b}\label{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_afefcee8e17ea3ec8a1cf2049c4549b8b}} 
+\index{Poco::RemotingNG::TCP::Timer@{Poco::RemotingNG::TCP::Timer}!run@{run}}
+\index{run@{run}!Poco::RemotingNG::TCP::Timer@{Poco::RemotingNG::TCP::Timer}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Timer\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Schedules a task for periodic execution at a fixed rate.
+
+The task is first executed after the given delay. Subsequently, the task is executed periodically every number of milliseconds specified by interval.
+
+If task execution takes longer than the given interval, further executions are delayed. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Runnable_ad89816e81207bf5f1e52d5df860d11d4}{Poco\+::\+Runnable}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_acd8b9bdafe8d7fae90922a57467d6670}\label{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_acd8b9bdafe8d7fae90922a57467d6670}} 
+\index{Poco::RemotingNG::TCP::Timer@{Poco::RemotingNG::TCP::Timer}!scheduleAtFixedRate@{scheduleAtFixedRate}}
+\index{scheduleAtFixedRate@{scheduleAtFixedRate}!Poco::RemotingNG::TCP::Timer@{Poco::RemotingNG::TCP::Timer}}
+\doxysubsubsection{\texorpdfstring{scheduleAtFixedRate()}{scheduleAtFixedRate()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Timer\+::schedule\+At\+Fixed\+Rate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1TimerTask_a426574478b4c3086a0cfd837d4d67def}{Timer\+Task\+::\+Ptr}}}]{p\+Task,  }\item[{long}]{delay,  }\item[{long}]{interval }\end{DoxyParamCaption})}
+
+Cancels all pending tasks.
+
+If a task is currently running, it is allowed to finish.
+
+\mbox{\hyperlink{classPoco_1_1Task}{Task}} cancellation is done asynchronously. If wait is false, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Timer_a83d103286fa65c6238741e181637ff9a}{cancel()}} returns immediately and the task queue will be purged as soon as the currently running task finishes. If wait is true, waits until the queue has been purged. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\+T\+C\+P/\mbox{\hyperlink{RemotingNG_2TCP_2Timer_8h}{Timer.\+h}}\end{DoxyCompactItemize}

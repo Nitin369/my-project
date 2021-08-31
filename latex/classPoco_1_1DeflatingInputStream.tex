@@ -1,0 +1,59 @@
+\hypertarget{classPoco_1_1DeflatingInputStream}{}\doxysection{Poco\+::Deflating\+Input\+Stream Class Reference}
+\label{classPoco_1_1DeflatingInputStream}\index{Poco::DeflatingInputStream@{Poco::DeflatingInputStream}}
+
+
+{\ttfamily \#include $<$Deflating\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Deflating\+Input\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Deflating\+Input\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1DeflatingInputStream_abacfb16375dfd259ead9dc547c663177}{Deflating\+Input\+Stream}} (std\+::istream \&istr, \mbox{\hyperlink{classPoco_1_1DeflatingStreamBuf_a2c66cb1fa4d7a4f3aaca878a242e6e1f}{Deflating\+Stream\+Buf\+::\+Stream\+Type}} type=\mbox{\hyperlink{classPoco_1_1DeflatingStreamBuf_a2c66cb1fa4d7a4f3aaca878a242e6e1fa484f07be91f3a6bc08bb5f711ff0311e}{Deflating\+Stream\+Buf\+::\+S\+T\+R\+E\+A\+M\+\_\+\+Z\+L\+IB}}, int level=\mbox{\hyperlink{zlib_8h_af5387baee05124298e431ebe6fe96b17}{Z\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+ON}})
+\item 
+\mbox{\hyperlink{classPoco_1_1DeflatingInputStream_a5545eb2372f32774f85046e5fb4efe92}{Deflating\+Input\+Stream}} (std\+::istream \&istr, int window\+Bits, int level)
+\item 
+\mbox{\hyperlink{classPoco_1_1DeflatingInputStream_a8cda8121c3ef803dc1db9272fe29afaa}{$\sim$\+Deflating\+Input\+Stream}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This stream compresses all data passing through it using zlib\textquotesingle{}s deflate algorithm. 
+
+Definition at line 179 of file Deflating\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1DeflatingInputStream_abacfb16375dfd259ead9dc547c663177}\label{classPoco_1_1DeflatingInputStream_abacfb16375dfd259ead9dc547c663177}} 
+\index{Poco::DeflatingInputStream@{Poco::DeflatingInputStream}!DeflatingInputStream@{DeflatingInputStream}}
+\index{DeflatingInputStream@{DeflatingInputStream}!Poco::DeflatingInputStream@{Poco::DeflatingInputStream}}
+\doxysubsubsection{\texorpdfstring{DeflatingInputStream()}{DeflatingInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Deflating\+Input\+Stream\+::\+Deflating\+Input\+Stream (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{\mbox{\hyperlink{classPoco_1_1DeflatingStreamBuf_a2c66cb1fa4d7a4f3aaca878a242e6e1f}{Deflating\+Stream\+Buf\+::\+Stream\+Type}}}]{type = {\ttfamily \mbox{\hyperlink{classPoco_1_1DeflatingStreamBuf_a2c66cb1fa4d7a4f3aaca878a242e6e1fa484f07be91f3a6bc08bb5f711ff0311e}{Deflating\+Stream\+Buf\+::\+S\+T\+R\+E\+A\+M\+\_\+\+Z\+L\+IB}}},  }\item[{int}]{level = {\ttfamily \mbox{\hyperlink{zlib_8h_af5387baee05124298e431ebe6fe96b17}{Z\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+ON}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1DeflatingInputStream_a5545eb2372f32774f85046e5fb4efe92}\label{classPoco_1_1DeflatingInputStream_a5545eb2372f32774f85046e5fb4efe92}} 
+\index{Poco::DeflatingInputStream@{Poco::DeflatingInputStream}!DeflatingInputStream@{DeflatingInputStream}}
+\index{DeflatingInputStream@{DeflatingInputStream}!Poco::DeflatingInputStream@{Poco::DeflatingInputStream}}
+\doxysubsubsection{\texorpdfstring{DeflatingInputStream()}{DeflatingInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Deflating\+Input\+Stream\+::\+Deflating\+Input\+Stream (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{int}]{window\+Bits,  }\item[{int}]{level }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1DeflatingIOS}{Deflating\+I\+OS}} for compressing data read from the given input stream. \mbox{\Hypertarget{classPoco_1_1DeflatingInputStream_a8cda8121c3ef803dc1db9272fe29afaa}\label{classPoco_1_1DeflatingInputStream_a8cda8121c3ef803dc1db9272fe29afaa}} 
+\index{Poco::DeflatingInputStream@{Poco::DeflatingInputStream}!````~DeflatingInputStream@{$\sim$DeflatingInputStream}}
+\index{````~DeflatingInputStream@{$\sim$DeflatingInputStream}!Poco::DeflatingInputStream@{Poco::DeflatingInputStream}}
+\doxysubsubsection{\texorpdfstring{$\sim$DeflatingInputStream()}{~DeflatingInputStream()}}
+{\footnotesize\ttfamily Poco\+::\+Deflating\+Input\+Stream\+::$\sim$\+Deflating\+Input\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1DeflatingIOS}{Deflating\+I\+OS}} for compressing data read from the given input stream.
+
+Please refer to the zlib documentation of \mbox{\hyperlink{zlib_8h_a59b575a521efe7ea0d3b9dd3c8d315c1}{deflate\+Init2()}} for a description of the window\+Bits parameter. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{DeflatingStream_8h}{Deflating\+Stream.\+h}}\end{DoxyCompactItemize}

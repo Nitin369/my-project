@@ -1,0 +1,264 @@
+\hypertarget{classPoco_1_1XML_1_1TreeWalker}{}\doxysection{Poco\+::X\+ML\+::Tree\+Walker Class Reference}
+\label{classPoco_1_1XML_1_1TreeWalker}\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+
+
+{\ttfamily \#include $<$Tree\+Walker.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a06f00c4162881c568a6daf56018dd322}{Tree\+Walker}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$\mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_abb98ce1dacef7613a925974d956401ae}{root}}, unsigned long \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_aab6e801d4ecdee912140648066a37536}{what\+To\+Show}}, \mbox{\hyperlink{classPoco_1_1XML_1_1NodeFilter}{Node\+Filter}} $\ast$p\+Filter=0)
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a10f2dd4855d30ad4a1aa8b842020a564}{Tree\+Walker}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} \&walker)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} over the subtree rooted at the specified node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a877ce26f13f6d64e44e1d076e6bbb526}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} \&walker)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} by copying another \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a493daea0e79c6b6c7c1d76a5c491650a}{$\sim$\+Tree\+Walker}} ()
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_abb98ce1dacef7613a925974d956401ae}{root}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}. \end{DoxyCompactList}\item 
+unsigned long \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_aab6e801d4ecdee912140648066a37536}{what\+To\+Show}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em The root node of the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}, as specified when it was created. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1NodeFilter}{Node\+Filter}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_ac1c3c8fb49833ed881f74407380dc6fc}{filter}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_ae4651e5b7b0ff49d8e452db94fb7306a}{expand\+Entity\+References}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classPoco_1_1XML_1_1NodeFilter}{Node\+Filter}} used to screen nodes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a88337f2000c09f9aedb8f9cb4cc88fbb}{current\+Node}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a4682378a3d5ef542a56941638cdf61b7}{get\+Current\+Node}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a7f19801df2800e13f7a05ad891f2408c}{set\+Current\+Node}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$p\+Node)
+\begin{DoxyCompactList}\small\item\em See \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a88337f2000c09f9aedb8f9cb4cc88fbb}{current\+Node()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_af349cbfc7c9f5ed94550f8ea757ed459}{parent\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Sets the current node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a84155ea6bfa6a18f9bca3c3d48cbe3c7}{first\+Child}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_ab61f5740aedea426b8e8544dcb959fe8}{last\+Child}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a9996b9a422f94e5af37659011157d48a}{previous\+Sibling}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a19cd64a80f2e737aff5a6b88f26b3271}{next\+Sibling}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_ad91366ac20471901f05cacbd8e7d43be}{previous\+Node}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a15a4f9e26c5e07cfb34c44b2307c75f5}{next\+Node}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a06853267c716f5054fa77cc3c3336b09}{accept}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$p\+Node) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a126962305aca96ed46db0f9095d6c6a2}{next}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$p\+Node) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_aa9b1356ebbb30ec9a7bb8efb237bd8d2}{previous}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$p\+Node) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} objects are used to navigate a document tree or subtree using the view of the document defined by their what\+To\+Show flags and filter (if any). \mbox{\hyperlink{classPoco_1_1Any}{Any}} function which performs navigation using a \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} will automatically support any view defined by a \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}.
+
+Omitting nodes from the logical view of a subtree can result in a structure that is substantially different from the same subtree in the complete, unfiltered document. Nodes that are siblings in the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} view may be children of different, widely separated nodes in the original view. For instance, consider a \mbox{\hyperlink{classPoco_1_1XML_1_1NodeFilter}{Node\+Filter}} that skips all nodes except for \mbox{\hyperlink{classPoco_1_1XML_1_1Text}{Text}} nodes and the root node of a document. In the logical view that results, all text nodes will be siblings and appear as direct children of the root node, no matter how deeply nested the structure of the original document.
+
+A \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} can be directly instantiated using one of its constructors -\/ the Document\+Traversal interface is not needed and therefore not implemented. Unlike most other D\+OM classes, \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} supports value semantics.
+
+If the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}\textquotesingle{}s current node is removed from the document, the result of calling any of the movement methods is undefined. This behavior does not conform to the D\+OM Level 2 Traversal specification. 
+
+Definition at line 35 of file Tree\+Walker.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a06f00c4162881c568a6daf56018dd322}\label{classPoco_1_1XML_1_1TreeWalker_a06f00c4162881c568a6daf56018dd322}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!TreeWalker@{TreeWalker}}
+\index{TreeWalker@{TreeWalker}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{TreeWalker()}{TreeWalker()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::\+Tree\+Walker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$}]{root,  }\item[{unsigned long}]{what\+To\+Show,  }\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1NodeFilter}{Node\+Filter}} $\ast$}]{p\+Filter = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a10f2dd4855d30ad4a1aa8b842020a564}\label{classPoco_1_1XML_1_1TreeWalker_a10f2dd4855d30ad4a1aa8b842020a564}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!TreeWalker@{TreeWalker}}
+\index{TreeWalker@{TreeWalker}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{TreeWalker()}{TreeWalker()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::\+Tree\+Walker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} \&}]{walker }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} over the subtree rooted at the specified node. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a493daea0e79c6b6c7c1d76a5c491650a}\label{classPoco_1_1XML_1_1TreeWalker_a493daea0e79c6b6c7c1d76a5c491650a}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!````~TreeWalker@{$\sim$TreeWalker}}
+\index{````~TreeWalker@{$\sim$TreeWalker}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{$\sim$TreeWalker()}{~TreeWalker()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::$\sim$\+Tree\+Walker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Assignment operator. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a06853267c716f5054fa77cc3c3336b09}\label{classPoco_1_1XML_1_1TreeWalker_a06853267c716f5054fa77cc3c3336b09}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!accept@{accept}}
+\index{accept@{accept}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily int Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$}]{p\+Node }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Moves the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} to the next visible node in document order relative to the current node, and returns the new node. If the current node has no next node, or if the search for next\+Node attempts to step upward from the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}\textquotesingle{}s root node, returns null, and retains the current node. \mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a88337f2000c09f9aedb8f9cb4cc88fbb}\label{classPoco_1_1XML_1_1TreeWalker_a88337f2000c09f9aedb8f9cb4cc88fbb}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!currentNode@{currentNode}}
+\index{currentNode@{currentNode}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{currentNode()}{currentNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::current\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+The value of this flag determines whether the children of entity reference nodes are visible to the iterator. If false, they and their descendants will be rejected. Note that this rejection takes precedence over what\+To\+Show and the filter. Also note that this is currently the only situation where Node\+Iterators may reject a complete subtree rather than skipping individual nodes.
+
+To produce a view of the document that has entity references expanded and does not expose the entity reference node itself, use the what\+To\+Show flags to hide the entity reference node and set expand\+Entity\+References to true when creating the iterator. To produce a view of the document that has entity reference nodes but no entity expansion, use the what\+To\+Show flags to show the entity reference node and set expand\+Entity\+References to false.
+
+This implementation does not support entity reference expansion and thus always returns false. 
+
+Definition at line 198 of file Tree\+Walker.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_ae4651e5b7b0ff49d8e452db94fb7306a}\label{classPoco_1_1XML_1_1TreeWalker_ae4651e5b7b0ff49d8e452db94fb7306a}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!expandEntityReferences@{expandEntityReferences}}
+\index{expandEntityReferences@{expandEntityReferences}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{expandEntityReferences()}{expandEntityReferences()}}
+{\footnotesize\ttfamily bool Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::expand\+Entity\+References (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The \mbox{\hyperlink{classPoco_1_1XML_1_1NodeFilter}{Node\+Filter}} used to screen nodes. 
+
+
+
+Definition at line 192 of file Tree\+Walker.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_ac1c3c8fb49833ed881f74407380dc6fc}\label{classPoco_1_1XML_1_1TreeWalker_ac1c3c8fb49833ed881f74407380dc6fc}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!filter@{filter}}
+\index{filter@{filter}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1NodeFilter}{Node\+Filter}} $\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+This attribute determines which node types are presented via the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}. The available set of constants is defined in the \mbox{\hyperlink{classPoco_1_1XML_1_1NodeFilter}{Node\+Filter}} interface. Nodes not accepted by what\+To\+Show will be skipped, but their children may still be considered. Note that this skip takes precedence over the filter, if any. 
+
+Definition at line 186 of file Tree\+Walker.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a84155ea6bfa6a18f9bca3c3d48cbe3c7}\label{classPoco_1_1XML_1_1TreeWalker_a84155ea6bfa6a18f9bca3c3d48cbe3c7}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!firstChild@{firstChild}}
+\index{firstChild@{firstChild}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{firstChild()}{firstChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::first\+Child (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Moves to and returns the closest visible ancestor node of the current node. If the search for parent\+Node attempts to step upward from the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}\textquotesingle{}s root node, or if it fails to find a visible ancestor node, this method retains the current position and returns null. \mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a4682378a3d5ef542a56941638cdf61b7}\label{classPoco_1_1XML_1_1TreeWalker_a4682378a3d5ef542a56941638cdf61b7}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!getCurrentNode@{getCurrentNode}}
+\index{getCurrentNode@{getCurrentNode}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{getCurrentNode()}{getCurrentNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::get\+Current\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+The node at which the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} is currently positioned. Alterations to the D\+OM tree may cause the current node to no longer be accepted by the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}\textquotesingle{}s associated filter. current\+Node may also be explicitly set to any node, whether or not it is within the subtree specified by the root node or would be accepted by the filter and what\+To\+Show flags. Further traversal occurs relative to current\+Node even if it is not part of the current view, by applying the filters in the requested direction; if no traversal is possible, current\+Node is not changed. 
+
+Definition at line 204 of file Tree\+Walker.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_ab61f5740aedea426b8e8544dcb959fe8}\label{classPoco_1_1XML_1_1TreeWalker_ab61f5740aedea426b8e8544dcb959fe8}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!lastChild@{lastChild}}
+\index{lastChild@{lastChild}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{lastChild()}{lastChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::last\+Child (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Moves the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} to the first visible child of the current node, and returns the new node. If the current node has no visible children, returns null, and retains the current node. \mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a126962305aca96ed46db0f9095d6c6a2}\label{classPoco_1_1XML_1_1TreeWalker_a126962305aca96ed46db0f9095d6c6a2}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!next@{next}}
+\index{next@{next}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$}]{p\+Node }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a15a4f9e26c5e07cfb34c44b2307c75f5}\label{classPoco_1_1XML_1_1TreeWalker_a15a4f9e26c5e07cfb34c44b2307c75f5}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!nextNode@{nextNode}}
+\index{nextNode@{nextNode}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{nextNode()}{nextNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::next\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Moves the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} to the previous visible node in document order relative to the current node, and returns the new node. If the current node has no previous node, or if the search for previous\+Node attempts to step upward from the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}\textquotesingle{}s root node, returns null, and retains the current node. \mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a19cd64a80f2e737aff5a6b88f26b3271}\label{classPoco_1_1XML_1_1TreeWalker_a19cd64a80f2e737aff5a6b88f26b3271}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!nextSibling@{nextSibling}}
+\index{nextSibling@{nextSibling}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{nextSibling()}{nextSibling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::next\+Sibling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Moves the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} to the previous sibling of the current node, and returns the new node. If the current node has no visible previous sibling, returns null, and retains the current node. \mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a877ce26f13f6d64e44e1d076e6bbb526}\label{classPoco_1_1XML_1_1TreeWalker_a877ce26f13f6d64e44e1d076e6bbb526}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}\& Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} \&}]{walker }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} by copying another \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_af349cbfc7c9f5ed94550f8ea757ed459}\label{classPoco_1_1XML_1_1TreeWalker_af349cbfc7c9f5ed94550f8ea757ed459}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!parentNode@{parentNode}}
+\index{parentNode@{parentNode}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{parentNode()}{parentNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::parent\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the current node. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_aa9b1356ebbb30ec9a7bb8efb237bd8d2}\label{classPoco_1_1XML_1_1TreeWalker_aa9b1356ebbb30ec9a7bb8efb237bd8d2}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!previous@{previous}}
+\index{previous@{previous}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{previous()}{previous()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::previous (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$}]{p\+Node }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_ad91366ac20471901f05cacbd8e7d43be}\label{classPoco_1_1XML_1_1TreeWalker_ad91366ac20471901f05cacbd8e7d43be}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!previousNode@{previousNode}}
+\index{previousNode@{previousNode}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{previousNode()}{previousNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::previous\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Moves the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} to the next sibling of the current node, and returns the new node. If the current node has no visible next sibling, returns null, and retains the current node. \mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a9996b9a422f94e5af37659011157d48a}\label{classPoco_1_1XML_1_1TreeWalker_a9996b9a422f94e5af37659011157d48a}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!previousSibling@{previousSibling}}
+\index{previousSibling@{previousSibling}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{previousSibling()}{previousSibling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::previous\+Sibling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Moves the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}} to the last visible child of the current node, and returns the new node. If the current node has no visible children, returns null, and retains the current node. \mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_abb98ce1dacef7613a925974d956401ae}\label{classPoco_1_1XML_1_1TreeWalker_abb98ce1dacef7613a925974d956401ae}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!root@{root}}
+\index{root@{root}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{root()}{root()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}. 
+
+
+
+Definition at line 174 of file Tree\+Walker.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_a7f19801df2800e13f7a05ad891f2408c}\label{classPoco_1_1XML_1_1TreeWalker_a7f19801df2800e13f7a05ad891f2408c}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!setCurrentNode@{setCurrentNode}}
+\index{setCurrentNode@{setCurrentNode}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{setCurrentNode()}{setCurrentNode()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::set\+Current\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$}]{p\+Node }\end{DoxyParamCaption})}
+
+
+
+See \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker_a88337f2000c09f9aedb8f9cb4cc88fbb}{current\+Node()}}. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1TreeWalker_aab6e801d4ecdee912140648066a37536}\label{classPoco_1_1XML_1_1TreeWalker_aab6e801d4ecdee912140648066a37536}} 
+\index{Poco::XML::TreeWalker@{Poco::XML::TreeWalker}!whatToShow@{whatToShow}}
+\index{whatToShow@{whatToShow}!Poco::XML::TreeWalker@{Poco::XML::TreeWalker}}
+\doxysubsubsection{\texorpdfstring{whatToShow()}{whatToShow()}}
+{\footnotesize\ttfamily unsigned long Poco\+::\+X\+M\+L\+::\+Tree\+Walker\+::what\+To\+Show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The root node of the \mbox{\hyperlink{classPoco_1_1XML_1_1TreeWalker}{Tree\+Walker}}, as specified when it was created. 
+
+
+
+Definition at line 180 of file Tree\+Walker.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+D\+O\+M/\mbox{\hyperlink{TreeWalker_8h}{Tree\+Walker.\+h}}\end{DoxyCompactItemize}

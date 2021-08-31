@@ -1,0 +1,91 @@
+\hypertarget{classPoco_1_1Bugcheck}{}\doxysection{Poco\+::Bugcheck Class Reference}
+\label{classPoco_1_1Bugcheck}\index{Poco::Bugcheck@{Poco::Bugcheck}}
+
+
+{\ttfamily \#include $<$Bugcheck.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Bugcheck_a9361e8b2cdd9ac2190e70fea6b5f7245}{assertion}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$cond, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int line, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$text=0)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Bugcheck_a2d35859432ea0bf10ac3b9453c1718eb}{null\+Pointer}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ptr, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int line)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Bugcheck_a8d26a458b6c2533224ed9a57395b7567}{bugcheck}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int line)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Bugcheck_a17113470739d460d115f8b424f632842}{bugcheck}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$msg, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int line)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Bugcheck_aede802ee19e723b4437165d8909f13d6}{unexpected}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int line)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Bugcheck_a8716f7ee97fc77ce09669eeb3a4bdce4}{debugger}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int line)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Bugcheck_a7e8e66fc9dda98a13d8c62077c0754a3}{debugger}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$msg, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int line)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1Bugcheck_a111e639f17f9012d6c6ac4360db71a8d}{what}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$msg, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int line, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$text=0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides some static methods that are used by the \mbox{\hyperlink{Bugcheck_8h_ac13d4d417304e09659a50f39f4d7920f}{poco\+\_\+assert\+\_\+dbg()}}, \mbox{\hyperlink{Bugcheck_8h_a6e02e3964cf3e2bcc686e7a8014bd6a0}{poco\+\_\+assert()}}, \mbox{\hyperlink{Bugcheck_8h_a2379a6a06279aa3a2f328b7c3d646889}{poco\+\_\+check\+\_\+ptr()}}, \mbox{\hyperlink{Bugcheck_8h_a01b1dc829ec1a2b5cfe35e98ce0835fe}{poco\+\_\+bugcheck()}} and \mbox{\hyperlink{Bugcheck_8h_a375ce587c8acd55cea029571ff8ff76d}{poco\+\_\+unexpected()}} macros. You should not invoke these methods directly. Use the macros instead, as they automatically provide useful context information. 
+
+Definition at line 34 of file Bugcheck.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Bugcheck_a9361e8b2cdd9ac2190e70fea6b5f7245}\label{classPoco_1_1Bugcheck_a9361e8b2cdd9ac2190e70fea6b5f7245}} 
+\index{Poco::Bugcheck@{Poco::Bugcheck}!assertion@{assertion}}
+\index{assertion@{assertion}!Poco::Bugcheck@{Poco::Bugcheck}}
+\doxysubsubsection{\texorpdfstring{assertion()}{assertion()}}
+{\footnotesize\ttfamily static void Poco\+::\+Bugcheck\+::assertion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{cond,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{line,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPoco_1_1Bugcheck_a8d26a458b6c2533224ed9a57395b7567}\label{classPoco_1_1Bugcheck_a8d26a458b6c2533224ed9a57395b7567}} 
+\index{Poco::Bugcheck@{Poco::Bugcheck}!bugcheck@{bugcheck}}
+\index{bugcheck@{bugcheck}!Poco::Bugcheck@{Poco::Bugcheck}}
+\doxysubsubsection{\texorpdfstring{bugcheck()}{bugcheck()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+Bugcheck\+::bugcheck (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+An null pointer was encountered. Break into the debugger, if possible, then throw an Null\+Pointer\+Exception. \mbox{\Hypertarget{classPoco_1_1Bugcheck_a17113470739d460d115f8b424f632842}\label{classPoco_1_1Bugcheck_a17113470739d460d115f8b424f632842}} 
+\index{Poco::Bugcheck@{Poco::Bugcheck}!bugcheck@{bugcheck}}
+\index{bugcheck@{bugcheck}!Poco::Bugcheck@{Poco::Bugcheck}}
+\doxysubsubsection{\texorpdfstring{bugcheck()}{bugcheck()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+Bugcheck\+::bugcheck (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{msg,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+An internal error was encountered. Break into the debugger, if possible, then throw an Bugcheck\+Exception. \mbox{\Hypertarget{classPoco_1_1Bugcheck_a8716f7ee97fc77ce09669eeb3a4bdce4}\label{classPoco_1_1Bugcheck_a8716f7ee97fc77ce09669eeb3a4bdce4}} 
+\index{Poco::Bugcheck@{Poco::Bugcheck}!debugger@{debugger}}
+\index{debugger@{debugger}!Poco::Bugcheck@{Poco::Bugcheck}}
+\doxysubsubsection{\texorpdfstring{debugger()}{debugger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+Bugcheck\+::debugger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+An exception was caught in a destructor. Break into debugger, if possible and report exception. Must only be called from within a catch () block as it rethrows the exception to determine its class. \mbox{\Hypertarget{classPoco_1_1Bugcheck_a7e8e66fc9dda98a13d8c62077c0754a3}\label{classPoco_1_1Bugcheck_a7e8e66fc9dda98a13d8c62077c0754a3}} 
+\index{Poco::Bugcheck@{Poco::Bugcheck}!debugger@{debugger}}
+\index{debugger@{debugger}!Poco::Bugcheck@{Poco::Bugcheck}}
+\doxysubsubsection{\texorpdfstring{debugger()}{debugger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+Bugcheck\+::debugger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{msg,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+An internal error was encountered. Break into the debugger, if possible. \mbox{\Hypertarget{classPoco_1_1Bugcheck_a2d35859432ea0bf10ac3b9453c1718eb}\label{classPoco_1_1Bugcheck_a2d35859432ea0bf10ac3b9453c1718eb}} 
+\index{Poco::Bugcheck@{Poco::Bugcheck}!nullPointer@{nullPointer}}
+\index{nullPointer@{nullPointer}!Poco::Bugcheck@{Poco::Bugcheck}}
+\doxysubsubsection{\texorpdfstring{nullPointer()}{nullPointer()}}
+{\footnotesize\ttfamily static void Poco\+::\+Bugcheck\+::null\+Pointer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{ptr,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+An assertion failed. Break into the debugger, if possible, then throw an Assertion\+Violation\+Exception. \mbox{\Hypertarget{classPoco_1_1Bugcheck_aede802ee19e723b4437165d8909f13d6}\label{classPoco_1_1Bugcheck_aede802ee19e723b4437165d8909f13d6}} 
+\index{Poco::Bugcheck@{Poco::Bugcheck}!unexpected@{unexpected}}
+\index{unexpected@{unexpected}!Poco::Bugcheck@{Poco::Bugcheck}}
+\doxysubsubsection{\texorpdfstring{unexpected()}{unexpected()}}
+{\footnotesize\ttfamily static void Poco\+::\+Bugcheck\+::unexpected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+An internal error was encountered. Break into the debugger, if possible, then throw an Bugcheck\+Exception. \mbox{\Hypertarget{classPoco_1_1Bugcheck_a111e639f17f9012d6c6ac4360db71a8d}\label{classPoco_1_1Bugcheck_a111e639f17f9012d6c6ac4360db71a8d}} 
+\index{Poco::Bugcheck@{Poco::Bugcheck}!what@{what}}
+\index{what@{what}!Poco::Bugcheck@{Poco::Bugcheck}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Bugcheck\+::what (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{msg,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{line,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+An internal error was encountered. Break into the debugger, if possible. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Bugcheck_8h}{Bugcheck.\+h}}\end{DoxyCompactItemize}

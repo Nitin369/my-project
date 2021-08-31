@@ -1,0 +1,65 @@
+\hypertarget{namespacePoco_1_1Dynamic_1_1Impl}{}\doxysection{Poco\+::Dynamic\+::Impl Namespace Reference}
+\label{namespacePoco_1_1Dynamic_1_1Impl}\index{Poco::Dynamic::Impl@{Poco::Dynamic::Impl}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{Foundation_8h_aa8ac83d4c3361414b6d5fcb37a7eb1ce}{Foundation\+\_\+\+A\+PI}} \mbox{\hyperlink{namespacePoco_1_1Dynamic_1_1Impl_aef16b253196534bd2070da7252c12911}{is\+J\+S\+O\+N\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&any)
+\item 
+void \mbox{\hyperlink{Foundation_8h_aa8ac83d4c3361414b6d5fcb37a7eb1ce}{Foundation\+\_\+\+A\+PI}} \mbox{\hyperlink{namespacePoco_1_1Dynamic_1_1Impl_a2eb05dd2722e21f899480e1dc822b817}{append\+J\+S\+O\+N\+Key}} (std\+::string \&val, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&any)
+\begin{DoxyCompactList}\small\item\em Returns true for values that should be J\+S\+O\+N-\/formatted as string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Foundation_8h_aa8ac83d4c3361414b6d5fcb37a7eb1ce}{Foundation\+\_\+\+A\+PI}} \mbox{\hyperlink{namespacePoco_1_1Dynamic_1_1Impl_a906c6aa27cd9c43a1cafc3e23ca720e4}{append\+J\+S\+O\+N\+String}} (std\+::string \&val, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&any)
+\item 
+void \mbox{\hyperlink{Foundation_8h_aa8ac83d4c3361414b6d5fcb37a7eb1ce}{Foundation\+\_\+\+A\+PI}} \mbox{\hyperlink{namespacePoco_1_1Dynamic_1_1Impl_a2e68353c5081150efc8e65e31ea40265}{append\+J\+S\+O\+N\+Value}} (std\+::string \&val, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&any)
+\item 
+{\footnotesize template$<$typename C $>$ }\\void \mbox{\hyperlink{namespacePoco_1_1Dynamic_1_1Impl_a272e81509d91956380caf339e5370eb3}{container\+To\+J\+S\+ON}} (C \&cont, std\+::string \&val)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacePoco_1_1Dynamic_1_1Impl_a2eb05dd2722e21f899480e1dc822b817}\label{namespacePoco_1_1Dynamic_1_1Impl_a2eb05dd2722e21f899480e1dc822b817}} 
+\index{Poco::Dynamic::Impl@{Poco::Dynamic::Impl}!appendJSONKey@{appendJSONKey}}
+\index{appendJSONKey@{appendJSONKey}!Poco::Dynamic::Impl@{Poco::Dynamic::Impl}}
+\doxysubsubsection{\texorpdfstring{appendJSONKey()}{appendJSONKey()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{Foundation_8h_aa8ac83d4c3361414b6d5fcb37a7eb1ce}{Foundation\+\_\+\+A\+PI}} Poco\+::\+Dynamic\+::\+Impl\+::append\+J\+S\+O\+N\+Key (\begin{DoxyParamCaption}\item[{std\+::string \&}]{val,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{any }\end{DoxyParamCaption})}
+
+
+
+Returns true for values that should be J\+S\+O\+N-\/formatted as string. 
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{namespacePoco_1_1Dynamic_1_1Impl_a906c6aa27cd9c43a1cafc3e23ca720e4}\label{namespacePoco_1_1Dynamic_1_1Impl_a906c6aa27cd9c43a1cafc3e23ca720e4}} 
+\index{Poco::Dynamic::Impl@{Poco::Dynamic::Impl}!appendJSONString@{appendJSONString}}
+\index{appendJSONString@{appendJSONString}!Poco::Dynamic::Impl@{Poco::Dynamic::Impl}}
+\doxysubsubsection{\texorpdfstring{appendJSONString()}{appendJSONString()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{Foundation_8h_aa8ac83d4c3361414b6d5fcb37a7eb1ce}{Foundation\+\_\+\+A\+PI}} Poco\+::\+Dynamic\+::\+Impl\+::append\+J\+S\+O\+N\+String (\begin{DoxyParamCaption}\item[{std\+::string \&}]{val,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{any }\end{DoxyParamCaption})}
+
+Converts the any to a \mbox{\hyperlink{namespacePoco_1_1JSON}{J\+S\+ON}} key (i.\+e. wraps it into double quotes regardless of the underlying type) and appends it to val. \mbox{\Hypertarget{namespacePoco_1_1Dynamic_1_1Impl_a2e68353c5081150efc8e65e31ea40265}\label{namespacePoco_1_1Dynamic_1_1Impl_a2e68353c5081150efc8e65e31ea40265}} 
+\index{Poco::Dynamic::Impl@{Poco::Dynamic::Impl}!appendJSONValue@{appendJSONValue}}
+\index{appendJSONValue@{appendJSONValue}!Poco::Dynamic::Impl@{Poco::Dynamic::Impl}}
+\doxysubsubsection{\texorpdfstring{appendJSONValue()}{appendJSONValue()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{Foundation_8h_aa8ac83d4c3361414b6d5fcb37a7eb1ce}{Foundation\+\_\+\+A\+PI}} Poco\+::\+Dynamic\+::\+Impl\+::append\+J\+S\+O\+N\+Value (\begin{DoxyParamCaption}\item[{std\+::string \&}]{val,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{any }\end{DoxyParamCaption})}
+
+Converts the any to a \mbox{\hyperlink{namespacePoco_1_1JSON}{J\+S\+ON}} string (i.\+e. wraps it into double quotes) regardless of the underlying type) and appends it to val. Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{namespacePoco_1_1Dynamic_1_1Impl_a272e81509d91956380caf339e5370eb3}\label{namespacePoco_1_1Dynamic_1_1Impl_a272e81509d91956380caf339e5370eb3}} 
+\index{Poco::Dynamic::Impl@{Poco::Dynamic::Impl}!containerToJSON@{containerToJSON}}
+\index{containerToJSON@{containerToJSON}!Poco::Dynamic::Impl@{Poco::Dynamic::Impl}}
+\doxysubsubsection{\texorpdfstring{containerToJSON()}{containerToJSON()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+void Poco\+::\+Dynamic\+::\+Impl\+::container\+To\+J\+S\+ON (\begin{DoxyParamCaption}\item[{C \&}]{cont,  }\item[{std\+::string \&}]{val }\end{DoxyParamCaption})}
+
+Converts the any to a \mbox{\hyperlink{namespacePoco_1_1JSON}{J\+S\+ON}} value (if underlying type qualifies as string -\/ see \mbox{\hyperlink{namespacePoco_1_1Dynamic_1_1Impl_aef16b253196534bd2070da7252c12911}{is\+J\+S\+O\+N\+String()}} -\/ , it is wrapped into double quotes) and appends it to val 
+
+Definition at line 78 of file Var\+Holder.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{namespacePoco_1_1Dynamic_1_1Impl_aef16b253196534bd2070da7252c12911}\label{namespacePoco_1_1Dynamic_1_1Impl_aef16b253196534bd2070da7252c12911}} 
+\index{Poco::Dynamic::Impl@{Poco::Dynamic::Impl}!isJSONString@{isJSONString}}
+\index{isJSONString@{isJSONString}!Poco::Dynamic::Impl@{Poco::Dynamic::Impl}}
+\doxysubsubsection{\texorpdfstring{isJSONString()}{isJSONString()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{Foundation_8h_aa8ac83d4c3361414b6d5fcb37a7eb1ce}{Foundation\+\_\+\+A\+PI}} Poco\+::\+Dynamic\+::\+Impl\+::is\+J\+S\+O\+N\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{any }\end{DoxyParamCaption})}
+

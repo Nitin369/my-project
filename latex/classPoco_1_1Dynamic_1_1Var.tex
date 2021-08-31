@@ -1,0 +1,1200 @@
+\hypertarget{classPoco_1_1Dynamic_1_1Var}{}\doxysection{Poco\+::Dynamic\+::Var Class Reference}
+\label{classPoco_1_1Dynamic_1_1Var}\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+
+
+{\ttfamily \#include $<$Var.\+h$>$}
+
+
+
+Collaboration diagram for Poco\+::Dynamic\+::Var\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} $>$ \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a44a5969dfd5d168834424bec141f4a1b}{Ptr}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1Dynamic_1_1VarIterator}{Poco\+::\+Dynamic\+::\+Var\+Iterator}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a53b21e4b577b99a64dc91d37ed85a35d}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a52079a104abd6578e70e4639b46d461c}{Var}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_adcc025d76ec6baa13e753a5986464a9a}{Var}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&val)
+\begin{DoxyCompactList}\small\item\em Creates an empty \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a5d5b796401f6a015ff1dbb47384efa5d}{Var}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$p\+Val)
+\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a3f2959e89cc829bf6a709d74b47e8434}{Var}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other)
+\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a2d933175527a1410c96b695a5bbaaa47}{$\sim$\+Var}} ()
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a3a3131650522927e2b7b576372a80ca7}{swap}} (\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a55196fa6dcb2be01d854bb2c5278ed44}{Const\+Iterator}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a7446f9bc19fe0b2f578381c507fd7dca}{begin}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Swaps the content of the this \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} with the other \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a55196fa6dcb2be01d854bb2c5278ed44}{Const\+Iterator}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a873ce1ab5cd6b6ca0d93fcd56c0499be}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the const \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} iterator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a53b21e4b577b99a64dc91d37ed85a35d}{Iterator}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a71d86b1e1c1bb8edcc34c21100a60d37}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Returns the const \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} iterator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a53b21e4b577b99a64dc91d37ed85a35d}{Iterator}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a7ec791e3dde549dca7893af9549fd5b3}{end}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} iterator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_aa71081ae2c04e2f6a46283d528633ceb}{convert}} (T \&val) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} iterator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_aaa287bae21188af98956db4e67231efc}{convert}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a795e216aaa3b1b5d74cb3e945fc67579}{operator T}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a025f129d1e0a8441034d17617443e837}{extract}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a653bd2154a27cbd6042169ebbc0ac0af}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator for assigning P\+OD to \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a7e674d7685e5584362e53721188929eb}{operator!}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a99fa8f1a8d3f2608fff01d02b2f57ae8}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other)
+\begin{DoxyCompactList}\small\item\em Logical N\+OT operator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a8dea9c8c951ff20c7f805a4cffc1fa87}{operator+}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Assignment operator specialization for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_afd158c35faf4ecf814baad443309a565}{operator+}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_ab97420fb5500d5cf8a2a162b56f5e89d}{operator+}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Addition operator specialization for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a4b32d03db0dd452019411bd0f95d03d0}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Addition operator specialization for adding const char$\ast$ to \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a95fea882fc20cdb54f2735a5a90d87c5}{operator++}} (int)
+\begin{DoxyCompactList}\small\item\em Pre-\/increment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a3204575efad901d4a1bbfd03c2af58c4}{operator-\/-\/}} ()
+\begin{DoxyCompactList}\small\item\em Post-\/increment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a6dfb7f00320bfec9a3990c4492c8a7ad}{operator-\/-\/}} (int)
+\begin{DoxyCompactList}\small\item\em Pre-\/decrement operator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_afc310cbbc1c08e81e9b1cedfd61f8a4d}{operator+=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other)
+\begin{DoxyCompactList}\small\item\em Post-\/decrement operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a589b7e49e7cb8786c563c2f92fa9d1a7}{operator+=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other)
+\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a8648451a320d9a5287ac34ceacdb6fa9}{operator+=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$other)
+\begin{DoxyCompactList}\small\item\em Addition asignment operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_af4e7f113cf94b5cc82483abefcce924e}{operator-\/}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Addition asignment operator overload for const char$\ast$. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_aeafe0cf940b6554c9cdd661978981f3d}{operator-\/}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a5278c6f2f16a3919a3e33980f5493955}{operator-\/=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other)
+\begin{DoxyCompactList}\small\item\em Subtraction operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a90b66da7958552ebc3f466e0b69f277b}{operator-\/=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a7249a00e9a939941be38018fdce88bbf}{operator$\ast$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Subtraction asignment operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a1900da29e3c4c6bfd8708ac0eb4f5dec}{operator$\ast$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_acb02a56f06e86260e82cc05021e8692c}{operator$\ast$=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other)
+\begin{DoxyCompactList}\small\item\em Multiplication operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a4f65d32eb67b678d46dbcec0874952a5}{operator$\ast$=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_ad8c8215595cfd77e38d4b559db064e93}{operator/}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Multiplication asignment operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a039a71faabd8e7ee5ca3fdbdeae75d5c}{operator/}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a20163f2cb9248d954d588d6ace51b25d}{operator/=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other)
+\begin{DoxyCompactList}\small\item\em Division operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a27af8405c987f2eae7739bff42fa7b74}{operator/=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_aaa6ef99f0abf61cb80e05268a89fd7a0}{operator==}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Division asignment operator specialization for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_af8a4f26487549232d3af52997bfb3543}{operator==}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a13e6c087992010d5fa125021d9828236}{operator==}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Equality operator overload for const char$\ast$. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_ad7f073397671e5cb42e71c43fc6588da}{operator!=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Equality operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a38c86f01d5733a73be252e8d91a8806b}{operator!=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_ad7ac5f411ba5fefa9972b26cdbd5411d}{operator!=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Inequality operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a4847c187f43819ee8adb5154168ad1fb}{operator$<$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Inequality operator overload for const char$\ast$. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_ab46f9d4a4e774f4d1c49e02b1baa28c8}{operator$<$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_abfd43653dc57af7db764e33d3d824aeb}{operator$<$=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Less than operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a2a528c2f57a3f7997b0d5a7a78c4275c}{operator$<$=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_afeb376638d9685125bef5ed98c8538a3}{operator$>$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Less than or equal operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a6e171c38b12fe75fc7604d131d029b96}{operator$>$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a5f6607fe1c6d1192940b58b032e9a0f1}{operator$>$=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Greater than operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a10995a57ab0cbc0f8f53affa20b77bbb}{operator$>$=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_aeaa00f70c359a8e9d1dca125bfa51f5d}{operator$\vert$$\vert$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Greater than or equal operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a2a18a69f472c67b02f1b04925f92cfc1}{operator$\vert$$\vert$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a54b0f88349a7113500fefd917fab891c}{operator\&\&}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Logical OR operator operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a63b6f2c973fe3ac486ed54df9f403e23}{operator\&\&}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a105b2ee1de628d79c249ff9b01b8eafc}{is\+Array}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Logical A\+ND operator operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a7222ebeef77518f0871488461e0566f4}{is\+Vector}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} is not empty. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a62bd73739ceced079b4d70da7a5fff32}{is\+List}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} represents a vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a5a1cc5b73b581abbd5b9e5d77fe0fc4e}{is\+Deque}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} represents a list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_afa256c04a5106a5a5da3215a6ae4a865}{is\+Struct}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} represents a deque. \end{DoxyCompactList}\item 
+char \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a279938418842671811f1d7b0645d1e98}{at}} (std\+::size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Returns true if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} represents a struct. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_abf1a3e2b2837b0b882e978b56964638d}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&n)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a214b0a188281c6f911cfe3570af8e32c}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&n) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a6302e823fd7e5edbf20714a0e5cf2f53}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_afc80054caa997d57dbafef75ecd36045}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a286c3caca155a292e598802d2387ca6b}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a351f2f314a9be1e4a24bd51b4a0bafc2}{empty}} ()
+\begin{DoxyCompactList}\small\item\em Returns the type information of the stored content. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a3ca72be4fb53004efada3ce36b1d2ea1}{is\+Empty}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Empties \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a9deccd6f963970bc4dffc065321473c8}{is\+Integer}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if empty. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_afe234afbe2e4df00a13692f37c33829f}{is\+Signed}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if stored value is integer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a71973bac5a328b01fdd96fa27262b53a}{is\+Numeric}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if stored value is signed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_af8b29320774548aa12f85afa34719d2f}{is\+Boolean}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a846dabed5302322244d8c9e2b0318b88}{is\+String}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a62fb54319d7f0fa5185f6acdf83de0c6}{size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if stored value is std\+::string. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a62e35c530b24c2910a26312e70a69278}{to\+String}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the stored value as string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a4e200c95f16926279569ff53ffd734b1}{parse}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&val)
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_ae2ae384e2353d72666d5c846e1ed3b75}{to\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&var)
+\begin{DoxyCompactList}\small\item\em Parses the string which must be in \mbox{\hyperlink{namespacePoco_1_1JSON}{J\+S\+ON}} format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef \mbox{\hyperlink{classPoco_1_1Dynamic_1_1VarIterator}{Var\+Iterator}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a55196fa6dcb2be01d854bb2c5278ed44}{Const\+Iterator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} allows to store data of different types and to convert between these types transparently. \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} puts forth the best effort to provide intuitive and reasonable conversion semantics and prevent unexpected data loss, particularly when performing narrowing or signedness conversions of numeric data types.
+
+An attempt to convert or extract from a non-\/initialized (\char`\"{}empty\char`\"{}) \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} variable shall result in an exception being thrown.
+
+Loss of signedness is not allowed for numeric values. This means that if an attempt is made to convert the internal value which is a negative signed integer to an unsigned integer type storage, a Range\+Exception is thrown. Overflow is not allowed, so if the internal value is a larger number than the target numeric type size can accomodate, a Range\+Exception is thrown.
+
+Precision loss, such as in conversion from floating-\/point types to integers or from double to float on platforms where they differ in size (provided internal actual value fits in float min/max range), is allowed.
+
+String truncation is allowed -- it is possible to convert between string and character when string length is greater than 1. An empty string gets converted to the char \textquotesingle{}\textbackslash{}0\textquotesingle{}, a non-\/empty string is truncated to the first character.
+
+Boolean conversion is performed as follows\+:
+
+A string value \char`\"{}false\char`\"{} (not case sensitive), \char`\"{}0\char`\"{} or \char`\"{}\char`\"{} (empty string) can be converted to a boolean value false, any other string not being false by the above criteria evaluates to true (e.\+g\+: \char`\"{}hi\char`\"{} -\/$>$ true). Integer 0 values are false, everything else is true. Floating point values equal to the minimal FP representation on a given platform are false, everything else is true.
+
+Arithmetic operations with P\+OD types as well as between \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\textquotesingle{}s are supported, subject to following limitations\+: \begin{DoxyVerb}- for std::string and const char* values, only '+' and '+=' operations are supported
+
+- for integral and floating point numeric values, following operations are supported:
+  '+', '+=', '-', '-=', '*', '*=' , '/' and '/=' 
+
+- for integral values, following operations are supported:
+  prefix and postfix increment (++) and decrement (--)
+
+- for all other types, InvalidArgumentException is thrown upon attempt of an arithmetic operation
+\end{DoxyVerb}
+
+
+A \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} can be created from and converted to a value of any type for which a specialization of \mbox{\hyperlink{classPoco_1_1Dynamic_1_1VarHolderImpl}{Var\+Holder\+Impl}} is available. For supported types, see \mbox{\hyperlink{classPoco_1_1Dynamic_1_1VarHolder}{Var\+Holder}} documentation. 
+
+Definition at line 39 of file Var.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a53b21e4b577b99a64dc91d37ed85a35d}\label{classPoco_1_1Dynamic_1_1Var_a53b21e4b577b99a64dc91d37ed85a35d}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1Dynamic_1_1VarIterator}{Poco\+::\+Dynamic\+::\+Var\+Iterator}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a53b21e4b577b99a64dc91d37ed85a35d}{Poco\+::\+Dynamic\+::\+Var\+::\+Iterator}}}
+
+
+
+Definition at line 83 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a44a5969dfd5d168834424bec141f4a1b}\label{classPoco_1_1Dynamic_1_1Var_a44a5969dfd5d168834424bec141f4a1b}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}$>$ \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a44a5969dfd5d168834424bec141f4a1b}{Poco\+::\+Dynamic\+::\+Var\+::\+Ptr}}}
+
+
+
+Definition at line 82 of file Var.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a52079a104abd6578e70e4639b46d461c}\label{classPoco_1_1Dynamic_1_1Var_a52079a104abd6578e70e4639b46d461c}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!Var@{Var}}
+\index{Var@{Var}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{Var()}{Var()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Poco\+::\+Dynamic\+::\+Var\+::\+Var (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_adcc025d76ec6baa13e753a5986464a9a}\label{classPoco_1_1Dynamic_1_1Var_adcc025d76ec6baa13e753a5986464a9a}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!Var@{Var}}
+\index{Var@{Var}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{Var()}{Var()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+Poco\+::\+Dynamic\+::\+Var\+::\+Var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an empty \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Creates the \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} from the given value. 
+
+Definition at line 90 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a5d5b796401f6a015ff1dbb47384efa5d}\label{classPoco_1_1Dynamic_1_1Var_a5d5b796401f6a015ff1dbb47384efa5d}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!Var@{Var}}
+\index{Var@{Var}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{Var()}{Var()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Poco\+::\+Dynamic\+::\+Var\+::\+Var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{p\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a3f2959e89cc829bf6a709d74b47e8434}\label{classPoco_1_1Dynamic_1_1Var_a3f2959e89cc829bf6a709d74b47e8434}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!Var@{Var}}
+\index{Var@{Var}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{Var()}{Var()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Poco\+::\+Dynamic\+::\+Var\+::\+Var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a2d933175527a1410c96b695a5bbaaa47}\label{classPoco_1_1Dynamic_1_1Var_a2d933175527a1410c96b695a5bbaaa47}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!````~Var@{$\sim$Var}}
+\index{````~Var@{$\sim$Var}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{$\sim$Var()}{~Var()}}
+{\footnotesize\ttfamily Poco\+::\+Dynamic\+::\+Var\+::$\sim$\+Var (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a279938418842671811f1d7b0645d1e98}\label{classPoco_1_1Dynamic_1_1Var_a279938418842671811f1d7b0645d1e98}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!at@{at}}
+\index{at@{at}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily char\& Poco\+::\+Dynamic\+::\+Var\+::at (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+Returns true if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} represents a struct. 
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a71d86b1e1c1bb8edcc34c21100a60d37}\label{classPoco_1_1Dynamic_1_1Var_a71d86b1e1c1bb8edcc34c21100a60d37}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!begin@{begin}}
+\index{begin@{begin}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a53b21e4b577b99a64dc91d37ed85a35d}{Iterator}} Poco\+::\+Dynamic\+::\+Var\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the const \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} iterator. 
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a7446f9bc19fe0b2f578381c507fd7dca}\label{classPoco_1_1Dynamic_1_1Var_a7446f9bc19fe0b2f578381c507fd7dca}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!begin@{begin}}
+\index{begin@{begin}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a53b21e4b577b99a64dc91d37ed85a35d}{Var\+::\+Iterator}} Poco\+::\+Dynamic\+::\+Var\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Swaps the content of the this \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} with the other \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+
+
+Definition at line 713 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_aaa287bae21188af98956db4e67231efc}\label{classPoco_1_1Dynamic_1_1Var_aaa287bae21188af98956db4e67231efc}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!convert@{convert}}
+\index{convert@{convert}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Poco\+::\+Dynamic\+::\+Var\+::convert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Invoke this method to perform a safe conversion.
+
+Example usage\+: \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} any(\char`\"{}42\char`\"{}); int i = any.\+convert$<$int$>$();
+
+Throws a Range\+Exception if the value does not fit into the result variable. Throws a Not\+Implemented\+Exception if conversion is not available for the given type. Throws Invalid\+Access\+Exception if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} is empty. 
+
+Definition at line 150 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_aa71081ae2c04e2f6a46283d528633ceb}\label{classPoco_1_1Dynamic_1_1Var_aa71081ae2c04e2f6a46283d528633ceb}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!convert@{convert}}
+\index{convert@{convert}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Poco\+::\+Dynamic\+::\+Var\+::convert (\begin{DoxyParamCaption}\item[{T \&}]{val }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} iterator. 
+
+Invoke this method to perform a safe conversion.
+
+Example usage\+: \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} any(\char`\"{}42\char`\"{}); int i; any.\+convert(i);
+
+Throws a Range\+Exception if the value does not fit into the result variable. Throws a Not\+Implemented\+Exception if conversion is not available for the given type. Throws Invalid\+Access\+Exception if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} is empty. 
+
+Definition at line 127 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a351f2f314a9be1e4a24bd51b4a0bafc2}\label{classPoco_1_1Dynamic_1_1Var_a351f2f314a9be1e4a24bd51b4a0bafc2}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!empty@{empty}}
+\index{empty@{empty}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily void Poco\+::\+Dynamic\+::\+Var\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the type information of the stored content. 
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a7ec791e3dde549dca7893af9549fd5b3}\label{classPoco_1_1Dynamic_1_1Var_a7ec791e3dde549dca7893af9549fd5b3}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!end@{end}}
+\index{end@{end}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a53b21e4b577b99a64dc91d37ed85a35d}{Iterator}} Poco\+::\+Dynamic\+::\+Var\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} iterator. 
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a873ce1ab5cd6b6ca0d93fcd56c0499be}\label{classPoco_1_1Dynamic_1_1Var_a873ce1ab5cd6b6ca0d93fcd56c0499be}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!end@{end}}
+\index{end@{end}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a53b21e4b577b99a64dc91d37ed85a35d}{Var\+::\+Iterator}} Poco\+::\+Dynamic\+::\+Var\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the const \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} iterator. 
+
+
+
+Definition at line 720 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a025f129d1e0a8441034d17617443e837}\label{classPoco_1_1Dynamic_1_1Var_a025f129d1e0a8441034d17617443e837}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!extract@{extract}}
+\index{extract@{extract}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{extract()}{extract()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\& Poco\+::\+Dynamic\+::\+Var\+::extract (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a const reference to the actual value.
+
+Must be instantiated with the exact type of the stored value, otherwise a Bad\+Cast\+Exception is thrown. Throws Invalid\+Access\+Exception if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} is empty. 
+
+Definition at line 205 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a105b2ee1de628d79c249ff9b01b8eafc}\label{classPoco_1_1Dynamic_1_1Var_a105b2ee1de628d79c249ff9b01b8eafc}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!isArray@{isArray}}
+\index{isArray@{isArray}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{isArray()}{isArray()}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::is\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Logical A\+ND operator operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+
+
+Definition at line 774 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_af8b29320774548aa12f85afa34719d2f}\label{classPoco_1_1Dynamic_1_1Var_af8b29320774548aa12f85afa34719d2f}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!isBoolean@{isBoolean}}
+\index{isBoolean@{isBoolean}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{isBoolean()}{isBoolean()}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::is\+Boolean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if stored value is numeric. Returns false for numeric strings (e.\+g. \char`\"{}123\char`\"{} is string, not number) 
+
+Definition at line 833 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a5a1cc5b73b581abbd5b9e5d77fe0fc4e}\label{classPoco_1_1Dynamic_1_1Var_a5a1cc5b73b581abbd5b9e5d77fe0fc4e}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!isDeque@{isDeque}}
+\index{isDeque@{isDeque}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{isDeque()}{isDeque()}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::is\+Deque (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} represents a list. 
+
+
+
+Definition at line 798 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a3ca72be4fb53004efada3ce36b1d2ea1}\label{classPoco_1_1Dynamic_1_1Var_a3ca72be4fb53004efada3ce36b1d2ea1}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Empties \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+
+
+Definition at line 768 of file Var.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a9deccd6f963970bc4dffc065321473c8}\label{classPoco_1_1Dynamic_1_1Var_a9deccd6f963970bc4dffc065321473c8}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!isInteger@{isInteger}}
+\index{isInteger@{isInteger}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{isInteger()}{isInteger()}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::is\+Integer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if empty. 
+
+
+
+Definition at line 812 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a62bd73739ceced079b4d70da7a5fff32}\label{classPoco_1_1Dynamic_1_1Var_a62bd73739ceced079b4d70da7a5fff32}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!isList@{isList}}
+\index{isList@{isList}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{isList()}{isList()}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::is\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} represents a vector. 
+
+
+
+Definition at line 791 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a71973bac5a328b01fdd96fa27262b53a}\label{classPoco_1_1Dynamic_1_1Var_a71973bac5a328b01fdd96fa27262b53a}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!isNumeric@{isNumeric}}
+\index{isNumeric@{isNumeric}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{isNumeric()}{isNumeric()}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::is\+Numeric (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if stored value is signed. 
+
+
+
+Definition at line 826 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_afe234afbe2e4df00a13692f37c33829f}\label{classPoco_1_1Dynamic_1_1Var_afe234afbe2e4df00a13692f37c33829f}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!isSigned@{isSigned}}
+\index{isSigned@{isSigned}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{isSigned()}{isSigned()}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::is\+Signed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if stored value is integer. 
+
+
+
+Definition at line 819 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a846dabed5302322244d8c9e2b0318b88}\label{classPoco_1_1Dynamic_1_1Var_a846dabed5302322244d8c9e2b0318b88}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!isString@{isString}}
+\index{isString@{isString}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{isString()}{isString()}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::is\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if stored value is boolean. Returns false for boolean strings (e.\+g. \char`\"{}true\char`\"{} is string, not number) 
+
+Definition at line 840 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 14
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_afa256c04a5106a5a5da3215a6ae4a865}\label{classPoco_1_1Dynamic_1_1Var_afa256c04a5106a5a5da3215a6ae4a865}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!isStruct@{isStruct}}
+\index{isStruct@{isStruct}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{isStruct()}{isStruct()}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::is\+Struct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} represents a deque. 
+
+
+
+Definition at line 805 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a7222ebeef77518f0871488461e0566f4}\label{classPoco_1_1Dynamic_1_1Var_a7222ebeef77518f0871488461e0566f4}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!isVector@{isVector}}
+\index{isVector@{isVector}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{isVector()}{isVector()}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::is\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} is not empty. 
+
+
+
+Definition at line 784 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a795e216aaa3b1b5d74cb3e945fc67579}\label{classPoco_1_1Dynamic_1_1Var_a795e216aaa3b1b5d74cb3e945fc67579}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator T@{operator T}}
+\index{operator T@{operator T}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator T()}{operator T()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+Poco\+::\+Dynamic\+::\+Var\+::operator T (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Safe conversion operator for implicit type conversions. If the requested type T is same as the type being held, the operation performed is direct extraction, otherwise it is the conversion of the value from type currently held to the one requested.
+
+Throws a Range\+Exception if the value does not fit into the result variable. Throws a Not\+Implemented\+Exception if conversion is not available for the given type. Throws Invalid\+Access\+Exception if \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} is empty. 
+
+Definition at line 176 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 18
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a7e674d7685e5584362e53721188929eb}\label{classPoco_1_1Dynamic_1_1Var_a7e674d7685e5584362e53721188929eb}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator"!()}{operator!()}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::operator! (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 762 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_ad7ac5f411ba5fefa9972b26cdbd5411d}\label{classPoco_1_1Dynamic_1_1Var_ad7ac5f411ba5fefa9972b26cdbd5411d}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a7e674d7685e5584362e53721188929eb}{Poco\+::\+Dynamic\+::\+Var\+::operator!}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Inequality operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_ad7f073397671e5cb42e71c43fc6588da}\label{classPoco_1_1Dynamic_1_1Var_ad7f073397671e5cb42e71c43fc6588da}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a7e674d7685e5584362e53721188929eb}{Poco\+::\+Dynamic\+::\+Var\+::operator!}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Equality operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Inequality operator 
+
+Definition at line 360 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a38c86f01d5733a73be252e8d91a8806b}\label{classPoco_1_1Dynamic_1_1Var_a38c86f01d5733a73be252e8d91a8806b}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var_a7e674d7685e5584362e53721188929eb}{Poco\+::\+Dynamic\+::\+Var\+::operator!}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a54b0f88349a7113500fefd917fab891c}\label{classPoco_1_1Dynamic_1_1Var_a54b0f88349a7113500fefd917fab891c}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator\&\&@{operator\&\&}}
+\index{operator\&\&@{operator\&\&}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator\&\&()}{operator\&\&()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Poco\+::\+Dynamic\+::\+Var\+::operator\&\& (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Logical OR operator operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Logical A\+ND operator. 
+
+Definition at line 429 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a63b6f2c973fe3ac486ed54df9f403e23}\label{classPoco_1_1Dynamic_1_1Var_a63b6f2c973fe3ac486ed54df9f403e23}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator\&\&@{operator\&\&}}
+\index{operator\&\&@{operator\&\&}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator\&\&()}{operator\&\&()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::operator\&\& (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a7249a00e9a939941be38018fdce88bbf}\label{classPoco_1_1Dynamic_1_1Var_a7249a00e9a939941be38018fdce88bbf}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} Poco\+::\+Dynamic\+::\+Var\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Subtraction asignment operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Multiplication operator for multiplying \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} with P\+OD 
+
+Definition at line 306 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a1900da29e3c4c6bfd8708ac0eb4f5dec}\label{classPoco_1_1Dynamic_1_1Var_a1900da29e3c4c6bfd8708ac0eb4f5dec}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} Poco\+::\+Dynamic\+::\+Var\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_acb02a56f06e86260e82cc05021e8692c}\label{classPoco_1_1Dynamic_1_1Var_acb02a56f06e86260e82cc05021e8692c}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Multiplication operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Multiplication asignment operator 
+
+Definition at line 316 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a4f65d32eb67b678d46dbcec0874952a5}\label{classPoco_1_1Dynamic_1_1Var_a4f65d32eb67b678d46dbcec0874952a5}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_ab97420fb5500d5cf8a2a162b56f5e89d}\label{classPoco_1_1Dynamic_1_1Var_ab97420fb5500d5cf8a2a162b56f5e89d}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator+@{operator+}}
+\index{operator+@{operator+}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} Poco\+::\+Dynamic\+::\+Var\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Addition operator specialization for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+
+
+Definition at line 750 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a8dea9c8c951ff20c7f805a4cffc1fa87}\label{classPoco_1_1Dynamic_1_1Var_a8dea9c8c951ff20c7f805a4cffc1fa87}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator+@{operator+}}
+\index{operator+@{operator+}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} Poco\+::\+Dynamic\+::\+Var\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator specialization for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Addition operator for adding P\+OD to \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} 
+
+Definition at line 248 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_afd158c35faf4ecf814baad443309a565}\label{classPoco_1_1Dynamic_1_1Var_afd158c35faf4ecf814baad443309a565}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator+@{operator+}}
+\index{operator+@{operator+}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} Poco\+::\+Dynamic\+::\+Var\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a4b32d03db0dd452019411bd0f95d03d0}\label{classPoco_1_1Dynamic_1_1Var_a4b32d03db0dd452019411bd0f95d03d0}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator++@{operator++}}
+\index{operator++@{operator++}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Addition operator specialization for adding const char$\ast$ to \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a95fea882fc20cdb54f2735a5a90d87c5}\label{classPoco_1_1Dynamic_1_1Var_a95fea882fc20cdb54f2735a5a90d87c5}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator++@{operator++}}
+\index{operator++@{operator++}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} Poco\+::\+Dynamic\+::\+Var\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Pre-\/increment operator. 
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a8648451a320d9a5287ac34ceacdb6fa9}\label{classPoco_1_1Dynamic_1_1Var_a8648451a320d9a5287ac34ceacdb6fa9}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& Poco\+::\+Dynamic\+::\+Var\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Addition asignment operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+
+
+Definition at line 756 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_afc310cbbc1c08e81e9b1cedfd61f8a4d}\label{classPoco_1_1Dynamic_1_1Var_afc310cbbc1c08e81e9b1cedfd61f8a4d}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Post-\/decrement operator. 
+
+Addition asignment operator for addition/assignment of P\+OD to \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Definition at line 273 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a589b7e49e7cb8786c563c2f92fa9d1a7}\label{classPoco_1_1Dynamic_1_1Var_a589b7e49e7cb8786c563c2f92fa9d1a7}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_af4e7f113cf94b5cc82483abefcce924e}\label{classPoco_1_1Dynamic_1_1Var_af4e7f113cf94b5cc82483abefcce924e}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} Poco\+::\+Dynamic\+::\+Var\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Addition asignment operator overload for const char$\ast$. 
+
+Subtraction operator for subtracting P\+OD from \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} 
+
+Definition at line 286 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_aeafe0cf940b6554c9cdd661978981f3d}\label{classPoco_1_1Dynamic_1_1Var_aeafe0cf940b6554c9cdd661978981f3d}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} Poco\+::\+Dynamic\+::\+Var\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a3204575efad901d4a1bbfd03c2af58c4}\label{classPoco_1_1Dynamic_1_1Var_a3204575efad901d4a1bbfd03c2af58c4}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Post-\/increment operator. 
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a6dfb7f00320bfec9a3990c4492c8a7ad}\label{classPoco_1_1Dynamic_1_1Var_a6dfb7f00320bfec9a3990c4492c8a7ad}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} Poco\+::\+Dynamic\+::\+Var\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Pre-\/decrement operator. 
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a5278c6f2f16a3919a3e33980f5493955}\label{classPoco_1_1Dynamic_1_1Var_a5278c6f2f16a3919a3e33980f5493955}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Subtraction operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Subtraction asignment operator 
+
+Definition at line 296 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a90b66da7958552ebc3f466e0b69f277b}\label{classPoco_1_1Dynamic_1_1Var_a90b66da7958552ebc3f466e0b69f277b}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_ad8c8215595cfd77e38d4b559db064e93}\label{classPoco_1_1Dynamic_1_1Var_ad8c8215595cfd77e38d4b559db064e93}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator/@{operator/}}
+\index{operator/@{operator/}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} Poco\+::\+Dynamic\+::\+Var\+::operator/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Multiplication asignment operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Division operator for dividing \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} with P\+OD 
+
+Definition at line 326 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a039a71faabd8e7ee5ca3fdbdeae75d5c}\label{classPoco_1_1Dynamic_1_1Var_a039a71faabd8e7ee5ca3fdbdeae75d5c}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator/@{operator/}}
+\index{operator/@{operator/}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} Poco\+::\+Dynamic\+::\+Var\+::operator/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a20163f2cb9248d954d588d6ace51b25d}\label{classPoco_1_1Dynamic_1_1Var_a20163f2cb9248d954d588d6ace51b25d}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Division operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Division asignment operator 
+
+Definition at line 336 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a27af8405c987f2eae7739bff42fa7b74}\label{classPoco_1_1Dynamic_1_1Var_a27af8405c987f2eae7739bff42fa7b74}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a4847c187f43819ee8adb5154168ad1fb}\label{classPoco_1_1Dynamic_1_1Var_a4847c187f43819ee8adb5154168ad1fb}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Poco\+::\+Dynamic\+::\+Var\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inequality operator overload for const char$\ast$. 
+
+Less than operator 
+
+Definition at line 374 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_ab46f9d4a4e774f4d1c49e02b1baa28c8}\label{classPoco_1_1Dynamic_1_1Var_ab46f9d4a4e774f4d1c49e02b1baa28c8}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_abfd43653dc57af7db764e33d3d824aeb}\label{classPoco_1_1Dynamic_1_1Var_abfd43653dc57af7db764e33d3d824aeb}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Poco\+::\+Dynamic\+::\+Var\+::operator$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Less than operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Less than or equal operator 
+
+Definition at line 385 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a2a528c2f57a3f7997b0d5a7a78c4275c}\label{classPoco_1_1Dynamic_1_1Var_a2a528c2f57a3f7997b0d5a7a78c4275c}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::operator$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a653bd2154a27cbd6042169ebbc0ac0af}\label{classPoco_1_1Dynamic_1_1Var_a653bd2154a27cbd6042169ebbc0ac0af}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator for assigning P\+OD to \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+
+
+Definition at line 229 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 19
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a99fa8f1a8d3f2608fff01d02b2f57ae8}\label{classPoco_1_1Dynamic_1_1Var_a99fa8f1a8d3f2608fff01d02b2f57ae8}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Logical N\+OT operator. 
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_af8a4f26487549232d3af52997bfb3543}\label{classPoco_1_1Dynamic_1_1Var_af8a4f26487549232d3af52997bfb3543}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator==@{operator==}}
+\index{operator==@{operator==}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_aaa6ef99f0abf61cb80e05268a89fd7a0}\label{classPoco_1_1Dynamic_1_1Var_aaa6ef99f0abf61cb80e05268a89fd7a0}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator==@{operator==}}
+\index{operator==@{operator==}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Poco\+::\+Dynamic\+::\+Var\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Division asignment operator specialization for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Equality operator 
+
+Definition at line 346 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a13e6c087992010d5fa125021d9828236}\label{classPoco_1_1Dynamic_1_1Var_a13e6c087992010d5fa125021d9828236}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator==@{operator==}}
+\index{operator==@{operator==}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Equality operator overload for const char$\ast$. 
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_afeb376638d9685125bef5ed98c8538a3}\label{classPoco_1_1Dynamic_1_1Var_afeb376638d9685125bef5ed98c8538a3}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Poco\+::\+Dynamic\+::\+Var\+::operator$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Less than or equal operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Greater than operator 
+
+Definition at line 396 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a6e171c38b12fe75fc7604d131d029b96}\label{classPoco_1_1Dynamic_1_1Var_a6e171c38b12fe75fc7604d131d029b96}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::operator$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a5f6607fe1c6d1192940b58b032e9a0f1}\label{classPoco_1_1Dynamic_1_1Var_a5f6607fe1c6d1192940b58b032e9a0f1}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Poco\+::\+Dynamic\+::\+Var\+::operator$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Greater than operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Greater than or equal operator 
+
+Definition at line 407 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a10995a57ab0cbc0f8f53affa20b77bbb}\label{classPoco_1_1Dynamic_1_1Var_a10995a57ab0cbc0f8f53affa20b77bbb}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::operator$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a6302e823fd7e5edbf20714a0e5cf2f53}\label{classPoco_1_1Dynamic_1_1Var_a6302e823fd7e5edbf20714a0e5cf2f53}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& Poco\+::\+Dynamic\+::\+Var\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 738 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_afc80054caa997d57dbafef75ecd36045}\label{classPoco_1_1Dynamic_1_1Var_afc80054caa997d57dbafef75ecd36045}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \& Poco\+::\+Dynamic\+::\+Var\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Index operator by name, only use on Vars where is\+Struct returns true! In all other cases Invalid\+Access\+Exception is thrown. 
+
+Definition at line 744 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_abf1a3e2b2837b0b882e978b56964638d}\label{classPoco_1_1Dynamic_1_1Var_abf1a3e2b2837b0b882e978b56964638d}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns character at position n. This function only works with \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} containing a std\+::string. 
+
+Definition at line 460 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a214b0a188281c6f911cfe3570af8e32c}\label{classPoco_1_1Dynamic_1_1Var_a214b0a188281c6f911cfe3570af8e32c}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}\& Poco\+::\+Dynamic\+::\+Var\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 466 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_aeaa00f70c359a8e9d1dca125bfa51f5d}\label{classPoco_1_1Dynamic_1_1Var_aeaa00f70c359a8e9d1dca125bfa51f5d}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator\texttt{"|}\texttt{"|}@{operator\texttt{"|}\texttt{"|}}}
+\index{operator\texttt{"|}\texttt{"|}@{operator\texttt{"|}\texttt{"|}}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator\texttt{"|}\texttt{"|}()}{operator||()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Poco\+::\+Dynamic\+::\+Var\+::operator$\vert$$\vert$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Greater than or equal operator overload for \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+Logical OR operator 
+
+Definition at line 418 of file Var.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a2a18a69f472c67b02f1b04925f92cfc1}\label{classPoco_1_1Dynamic_1_1Var_a2a18a69f472c67b02f1b04925f92cfc1}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!operator\texttt{"|}\texttt{"|}@{operator\texttt{"|}\texttt{"|}}}
+\index{operator\texttt{"|}\texttt{"|}@{operator\texttt{"|}\texttt{"|}}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{operator\texttt{"|}\texttt{"|}()}{operator||()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Dynamic\+::\+Var\+::operator$\vert$$\vert$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a4e200c95f16926279569ff53ffd734b1}\label{classPoco_1_1Dynamic_1_1Var_a4e200c95f16926279569ff53ffd734b1}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!parse@{parse}}
+\index{parse@{parse}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} Poco\+::\+Dynamic\+::\+Var\+::parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a62fb54319d7f0fa5185f6acdf83de0c6}\label{classPoco_1_1Dynamic_1_1Var_a62fb54319d7f0fa5185f6acdf83de0c6}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!size@{size}}
+\index{size@{size}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Dynamic\+::\+Var\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if stored value is std\+::string. 
+
+
+
+Definition at line 847 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 20
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a3a3131650522927e2b7b576372a80ca7}\label{classPoco_1_1Dynamic_1_1Var_a3a3131650522927e2b7b576372a80ca7}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!swap@{swap}}
+\index{swap@{swap}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Poco\+::\+Dynamic\+::\+Var\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. 
+
+inlines \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} members 
+
+Definition at line 672 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 21
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a62e35c530b24c2910a26312e70a69278}\label{classPoco_1_1Dynamic_1_1Var_a62e35c530b24c2910a26312e70a69278}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!toString@{toString}}
+\index{toString@{toString}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Dynamic\+::\+Var\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the stored value as string. 
+
+Returns the size of this \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}}. This function returns 0 when \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} is empty, 1 for P\+OD or the size (i.\+e. length) for held container. 
+
+Definition at line 510 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 22
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_ae2ae384e2353d72666d5c846e1ed3b75}\label{classPoco_1_1Dynamic_1_1Var_ae2ae384e2353d72666d5c846e1ed3b75}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!toString@{toString}}
+\index{toString@{toString}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Dynamic\+::\+Var\+::to\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Var}} \&}]{var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parses the string which must be in \mbox{\hyperlink{namespacePoco_1_1JSON}{J\+S\+ON}} format. 
+
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a286c3caca155a292e598802d2387ca6b}\label{classPoco_1_1Dynamic_1_1Var_a286c3caca155a292e598802d2387ca6b}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!type@{type}}
+\index{type@{type}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& Poco\+::\+Dynamic\+::\+Var\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Index operator by name, only use on Vars where is\+Struct returns true! In all other cases Invalid\+Access\+Exception is thrown. 
+
+Definition at line 706 of file Var.\+h.
+
+Here is the call graph for this function\+:
+% FIG 23
+Here is the caller graph for this function\+:
+% FIG 24
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Dynamic_1_1Var_a55196fa6dcb2be01d854bb2c5278ed44}\label{classPoco_1_1Dynamic_1_1Var_a55196fa6dcb2be01d854bb2c5278ed44}} 
+\index{Poco::Dynamic::Var@{Poco::Dynamic::Var}!ConstIterator@{ConstIterator}}
+\index{ConstIterator@{ConstIterator}!Poco::Dynamic::Var@{Poco::Dynamic::Var}}
+\doxysubsubsection{\texorpdfstring{ConstIterator}{ConstIterator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef \mbox{\hyperlink{classPoco_1_1Dynamic_1_1VarIterator}{Var\+Iterator}} Poco\+::\+Dynamic\+::\+Var\+::\+Const\+Iterator}
+
+
+
+Definition at line 84 of file Var.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Dynamic/\mbox{\hyperlink{Var_8h}{Var.\+h}}\end{DoxyCompactItemize}

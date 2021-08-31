@@ -1,0 +1,385 @@
+\hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject}{}\doxysection{IoT\+::Device\+Status\+::Device\+Status\+Service\+Remote\+Object Class Reference}
+\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject}\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+
+
+{\ttfamily \#include $<$Device\+Status\+Service\+Remote\+Object.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Device\+Status\+::Device\+Status\+Service\+Remote\+Object\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Device\+Status\+::Device\+Status\+Service\+Remote\+Object\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject}{Device\+Status\+Service\+Remote\+Object}} $>$ \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a11c398c2ff32e1128ae0ea5e82ac6450}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_af68e74d569b0e22ea41a588239e2bd8f}{Device\+Status\+Service\+Remote\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService}{Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service}} $>$ p\+Service\+Object)
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_ac017133e616feb2aeae2942ed6440adf}{$\sim$\+Device\+Status\+Service\+Remote\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject}{Device\+Status\+Service\+Remote\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a6a52807fafafd9656835e594f0a36ff6}{acknowledge}} (Poco\+::\+Int64 id)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject}{Device\+Status\+Service\+Remote\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a929c22e89eb4b90de0c6c23b4d6bb373}{acknowledge\+Up\+To}} (Poco\+::\+Int64 id)
+\item 
+\mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a012dfd8a13ea8cf30335c5df3fc3832d}{clear\+Status}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&message\+Class)
+\item 
+\mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a818a21b01080092e60790922a38a179a}{clear\+Status\+Of\+Source}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&source)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusMessage}{Io\+T\+::\+Device\+Status\+::\+Status\+Message}} $>$ \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a93f163c186446183a298f2784a1e6667}{messages}} (int max\+Messages=int(0)) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Change}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a592b4e8deb21021cd706215dd66c2295}{post\+Status}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate}{Io\+T\+::\+Device\+Status\+::\+Status\+Update}} \&status\+Update)
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a12ca0a657d788dd1a97bb70bf9f8b4ce}{post\+Status\+Async}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate}{Io\+T\+::\+Device\+Status\+::\+Status\+Update}} \&status\+Update)
+\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_aa5daa4c63bba76e0aa91082d61c52572}{remoting\+\_\+\+\_\+enable\+Events}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}} p\+Listener, bool enable=bool(true))
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a32a26eb6b05fb6446cc486b6f501788e}{remoting\+\_\+\+\_\+enable\+Remote\+Events}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a125b01bf7f5c802af7b86848149499c3}{remoting\+\_\+\+\_\+has\+Events}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the Remote\+Object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_ac4c2987aa6464870617e47b7aa56b652}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the object\textquotesingle{}s U\+RI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a314f913aeba8f0dc4410c48babc6c657}{remove}} (Poco\+::\+Int64 id)
+\begin{DoxyCompactList}\small\item\em Returns the Type\+Id of the class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a3ee0b1536965b3c3c8aab8295e4ae2af}{reset}} ()
+\item 
+\mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_acde286a792ab6365d7b11b1c78d9d19f}{status}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Resets the device status to D\+E\+V\+I\+C\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+OK and removes all messages. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_aafcd57e83d0fcad64e51c2b85e53f88f}{status\+Of\+Source}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&source) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a643f5af4c8dc77f0f542908540de3b66}{event\+\_\+\+\_\+status\+Changed}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Change}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_ae80e7803c4c72ba5baa56c6e352a3d48}{event\+\_\+\+\_\+status\+Updated}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Change}} \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService}{Device\+Status\+Service}} keeps track of the current operational status of a device. 
+
+Definition at line 32 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a11c398c2ff32e1128ae0ea5e82ac6450}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a11c398c2ff32e1128ae0ea5e82ac6450}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject}{Device\+Status\+Service\+Remote\+Object}}$>$ \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a11c398c2ff32e1128ae0ea5e82ac6450}{Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::\+Ptr}}}
+
+
+
+Definition at line 37 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_af68e74d569b0e22ea41a588239e2bd8f}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_af68e74d569b0e22ea41a588239e2bd8f}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!DeviceStatusServiceRemoteObject@{DeviceStatusServiceRemoteObject}}
+\index{DeviceStatusServiceRemoteObject@{DeviceStatusServiceRemoteObject}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{DeviceStatusServiceRemoteObject()}{DeviceStatusServiceRemoteObject()}}
+{\footnotesize\ttfamily Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::\+Device\+Status\+Service\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService}{Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service}} $>$}]{p\+Service\+Object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_ac017133e616feb2aeae2942ed6440adf}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_ac017133e616feb2aeae2942ed6440adf}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!````~DeviceStatusServiceRemoteObject@{$\sim$DeviceStatusServiceRemoteObject}}
+\index{````~DeviceStatusServiceRemoteObject@{$\sim$DeviceStatusServiceRemoteObject}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$DeviceStatusServiceRemoteObject()}{~DeviceStatusServiceRemoteObject()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::$\sim$\+Device\+Status\+Service\+Remote\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject}{Device\+Status\+Service\+Remote\+Object}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a6a52807fafafd9656835e594f0a36ff6}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a6a52807fafafd9656835e594f0a36ff6}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!acknowledge@{acknowledge}}
+\index{acknowledge@{acknowledge}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{acknowledge()}{acknowledge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::acknowledge (\begin{DoxyParamCaption}\item[{Poco\+::\+Int64}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject}{Device\+Status\+Service\+Remote\+Object}}. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1IDeviceStatusService_a387932a7119ab490b8a2ff4cb8694326}{Io\+T\+::\+Device\+Status\+::\+I\+Device\+Status\+Service}}.
+
+
+
+Definition at line 123 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a929c22e89eb4b90de0c6c23b4d6bb373}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a929c22e89eb4b90de0c6c23b4d6bb373}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!acknowledgeUpTo@{acknowledgeUpTo}}
+\index{acknowledgeUpTo@{acknowledgeUpTo}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{acknowledgeUpTo()}{acknowledgeUpTo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::acknowledge\+Up\+To (\begin{DoxyParamCaption}\item[{Poco\+::\+Int64}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Marks the message with the given ID as acknowledged, if it is acknowledgeable.
+
+Returns the new device status. 
+
+Implements \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1IDeviceStatusService_a6bf791b5d0ab7d3bd36a7ed713350905}{Io\+T\+::\+Device\+Status\+::\+I\+Device\+Status\+Service}}.
+
+
+
+Definition at line 129 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a012dfd8a13ea8cf30335c5df3fc3832d}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a012dfd8a13ea8cf30335c5df3fc3832d}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!clearStatus@{clearStatus}}
+\index{clearStatus@{clearStatus}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{clearStatus()}{clearStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::clear\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{message\+Class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Marks all acknowledgeable messages up to (and including) the given ID as acknowledged.
+
+Returns the new device status. 
+
+Implements \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1IDeviceStatusService_a677ded2f6379ee72aef64b2ae55dd142}{Io\+T\+::\+Device\+Status\+::\+I\+Device\+Status\+Service}}.
+
+
+
+Definition at line 135 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a818a21b01080092e60790922a38a179a}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a818a21b01080092e60790922a38a179a}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!clearStatusOfSource@{clearStatusOfSource}}
+\index{clearStatusOfSource@{clearStatusOfSource}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{clearStatusOfSource()}{clearStatusOfSource()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::clear\+Status\+Of\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Clears the status update with the given message\+Class and removes it from the message history.
+
+Returns the new device status. 
+
+Implements \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1IDeviceStatusService_a2ab9a869c90e71890a93aab9af644ae0}{Io\+T\+::\+Device\+Status\+::\+I\+Device\+Status\+Service}}.
+
+
+
+Definition at line 141 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a643f5af4c8dc77f0f542908540de3b66}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a643f5af4c8dc77f0f542908540de3b66}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!event\_\_statusChanged@{event\_\_statusChanged}}
+\index{event\_\_statusChanged@{event\_\_statusChanged}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_statusChanged()}{event\_\_statusChanged()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::event\+\_\+\+\_\+status\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Change}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the current source-\/specific device status, considering only status updates with the given source.
+
+Only unacknowledged status updates are considered in determining the current status. \mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_ae80e7803c4c72ba5baa56c6e352a3d48}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_ae80e7803c4c72ba5baa56c6e352a3d48}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!event\_\_statusUpdated@{event\_\_statusUpdated}}
+\index{event\_\_statusUpdated@{event\_\_statusUpdated}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_statusUpdated()}{event\_\_statusUpdated()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::event\+\_\+\+\_\+status\+Updated (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Change}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a93f163c186446183a298f2784a1e6667}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a93f163c186446183a298f2784a1e6667}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!messages@{messages}}
+\index{messages@{messages}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{messages()}{messages()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusMessage}{Io\+T\+::\+Device\+Status\+::\+Status\+Message}} $>$ Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::messages (\begin{DoxyParamCaption}\item[{int}]{max\+Messages = {\ttfamily int(0)} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Clears all status updates with the given source and removes them from the message history.
+
+Returns the new device status. 
+
+Implements \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1IDeviceStatusService_a5c8e0a15c1de11bbd57c47876a02ab09}{Io\+T\+::\+Device\+Status\+::\+I\+Device\+Status\+Service}}.
+
+
+
+Definition at line 147 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a592b4e8deb21021cd706215dd66c2295}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a592b4e8deb21021cd706215dd66c2295}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!postStatus@{postStatus}}
+\index{postStatus@{postStatus}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{postStatus()}{postStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Change}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::post\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate}{Io\+T\+::\+Device\+Status\+::\+Status\+Update}} \&}]{status\+Update }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Retrieves stored status messages. If max\+Messages is $>$ 0, will at most return max\+Messages messages. 
+
+Implements \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1IDeviceStatusService_aa611a95d9560aa91bed1836115a85a57}{Io\+T\+::\+Device\+Status\+::\+I\+Device\+Status\+Service}}.
+
+
+
+Definition at line 153 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a12ca0a657d788dd1a97bb70bf9f8b4ce}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a12ca0a657d788dd1a97bb70bf9f8b4ce}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!postStatusAsync@{postStatusAsync}}
+\index{postStatusAsync@{postStatusAsync}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{postStatusAsync()}{postStatusAsync()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::post\+Status\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate}{Io\+T\+::\+Device\+Status\+::\+Status\+Update}} \&}]{status\+Update }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Updates the device status.
+
+Returns a \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Device\+Status\+Change}} structure. 
+
+Implements \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1IDeviceStatusService_a1c69967df0a5255ee5b4d25b08eadffc}{Io\+T\+::\+Device\+Status\+::\+I\+Device\+Status\+Service}}.
+
+
+
+Definition at line 159 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_aa5daa4c63bba76e0aa91082d61c52572}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_aa5daa4c63bba76e0aa91082d61c52572}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!remoting\_\_enableEvents@{remoting\_\_enableEvents}}
+\index{remoting\_\_enableEvents@{remoting\_\_enableEvents}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_enableEvents()}{remoting\_\_enableEvents()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::remoting\+\_\+\+\_\+enable\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}}}]{p\+Listener,  }\item[{bool}]{enable = {\ttfamily bool(true)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Updates the device status asynchronously.
+
+The actual status update in the database will be done asynchronously in a separate thread. 
+
+Implements \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1IDeviceStatusService_a6d37e47bd7d2f6cd0f557aa65a3e54d3}{Io\+T\+::\+Device\+Status\+::\+I\+Device\+Status\+Service}}.
+
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a32a26eb6b05fb6446cc486b6f501788e}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a32a26eb6b05fb6446cc486b6f501788e}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!remoting\_\_enableRemoteEvents@{remoting\_\_enableRemoteEvents}}
+\index{remoting\_\_enableRemoteEvents@{remoting\_\_enableRemoteEvents}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_enableRemoteEvents()}{remoting\_\_enableRemoteEvents()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::remoting\+\_\+\+\_\+enable\+Remote\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the service object has events, false otherwise.
+
+Must be overridden by subclasses if the service object has events. The default implementation always returns false. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_ab4902ffb94dd10a81426a97c918fea1a}{Poco\+::\+Remoting\+N\+G\+::\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a125b01bf7f5c802af7b86848149499c3}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a125b01bf7f5c802af7b86848149499c3}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!remoting\_\_hasEvents@{remoting\_\_hasEvents}}
+\index{remoting\_\_hasEvents@{remoting\_\_hasEvents}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_hasEvents()}{remoting\_\_hasEvents()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::remoting\+\_\+\+\_\+has\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the Remote\+Object. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_a6bad1b69b9506c827a62df0ac3a4cf1d}{Poco\+::\+Remoting\+N\+G\+::\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_ac4c2987aa6464870617e47b7aa56b652}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_ac4c2987aa6464870617e47b7aa56b652}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the object\textquotesingle{}s U\+RI. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_a1c3bd470be79d79803cbcf674fd5a049}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable}}.
+
+
+
+Definition at line 165 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a314f913aeba8f0dc4410c48babc6c657}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a314f913aeba8f0dc4410c48babc6c657}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!remove@{remove}}
+\index{remove@{remove}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::remove (\begin{DoxyParamCaption}\item[{Poco\+::\+Int64}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the Type\+Id of the class. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1IDeviceStatusService_a23121edefb35aca0b62c6d127b0b1fbc}{Io\+T\+::\+Device\+Status\+::\+I\+Device\+Status\+Service}}.
+
+
+
+Definition at line 171 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a3ee0b1536965b3c3c8aab8295e4ae2af}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_a3ee0b1536965b3c3c8aab8295e4ae2af}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!reset@{reset}}
+\index{reset@{reset}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes the message with the given ID from the message history.
+
+Returns the new device status. 
+
+Implements \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1IDeviceStatusService_a2973398b579c36d427c4a236e537d6c8}{Io\+T\+::\+Device\+Status\+::\+I\+Device\+Status\+Service}}.
+
+
+
+Definition at line 177 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_acde286a792ab6365d7b11b1c78d9d19f}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_acde286a792ab6365d7b11b1c78d9d19f}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!status@{status}}
+\index{status@{status}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Resets the device status to D\+E\+V\+I\+C\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+OK and removes all messages. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1IDeviceStatusService_aae3e01383a29fb75129e66185c2eee1e}{Io\+T\+::\+Device\+Status\+::\+I\+Device\+Status\+Service}}.
+
+
+
+Definition at line 183 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_aafcd57e83d0fcad64e51c2b85e53f88f}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusServiceRemoteObject_aafcd57e83d0fcad64e51c2b85e53f88f}} 
+\index{IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}!statusOfSource@{statusOfSource}}
+\index{statusOfSource@{statusOfSource}!IoT::DeviceStatus::DeviceStatusServiceRemoteObject@{IoT::DeviceStatus::DeviceStatusServiceRemoteObject}}
+\doxysubsubsection{\texorpdfstring{statusOfSource()}{statusOfSource()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Io\+T\+::\+Device\+Status\+::\+Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+Remote\+Object\+::status\+Of\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{source }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the current global device status.
+
+Only unacknowledged status updates are considered in determining the current status. 
+
+Implements \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1IDeviceStatusService_a8aa51e1f56a936744f4f0f6e0ce81b61}{Io\+T\+::\+Device\+Status\+::\+I\+Device\+Status\+Service}}.
+
+
+
+Definition at line 189 of file Device\+Status\+Service\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 13
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Device\+Status/\mbox{\hyperlink{DeviceStatusServiceRemoteObject_8h}{Device\+Status\+Service\+Remote\+Object.\+h}}\end{DoxyCompactItemize}

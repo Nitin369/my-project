@@ -1,0 +1,70 @@
+\hypertarget{classPoco_1_1PurgeStrategy}{}\doxysection{Poco\+::Purge\+Strategy Class Reference}
+\label{classPoco_1_1PurgeStrategy}\index{Poco::PurgeStrategy@{Poco::PurgeStrategy}}
+
+
+{\ttfamily \#include $<$Purge\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Purge\+Strategy\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1PurgeStrategy_accd455c9d7d76d75f4049e315710843b}{Purge\+Strategy}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1PurgeStrategy_a83aaf4210ed6b142c47e3787bc687c89}{$\sim$\+Purge\+Strategy}} ()
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1PurgeStrategy_a00842e6011133c68b3eb2d0d545f6f53}{purge}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1PurgeStrategy_a276b5369e117abb9818b779b3a95f48c}{list}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1File}{File}} $>$ \&files)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1PurgeStrategy}{Purge\+Strategy}} is used by \mbox{\hyperlink{classPoco_1_1FileChannel}{File\+Channel}} to purge archived log files. 
+
+Definition at line 32 of file Purge\+Strategy.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1PurgeStrategy_accd455c9d7d76d75f4049e315710843b}\label{classPoco_1_1PurgeStrategy_accd455c9d7d76d75f4049e315710843b}} 
+\index{Poco::PurgeStrategy@{Poco::PurgeStrategy}!PurgeStrategy@{PurgeStrategy}}
+\index{PurgeStrategy@{PurgeStrategy}!Poco::PurgeStrategy@{Poco::PurgeStrategy}}
+\doxysubsubsection{\texorpdfstring{PurgeStrategy()}{PurgeStrategy()}}
+{\footnotesize\ttfamily Poco\+::\+Purge\+Strategy\+::\+Purge\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1PurgeStrategy_a83aaf4210ed6b142c47e3787bc687c89}\label{classPoco_1_1PurgeStrategy_a83aaf4210ed6b142c47e3787bc687c89}} 
+\index{Poco::PurgeStrategy@{Poco::PurgeStrategy}!````~PurgeStrategy@{$\sim$PurgeStrategy}}
+\index{````~PurgeStrategy@{$\sim$PurgeStrategy}!Poco::PurgeStrategy@{Poco::PurgeStrategy}}
+\doxysubsubsection{\texorpdfstring{$\sim$PurgeStrategy()}{~PurgeStrategy()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Purge\+Strategy\+::$\sim$\+Purge\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1PurgeStrategy_a276b5369e117abb9818b779b3a95f48c}\label{classPoco_1_1PurgeStrategy_a276b5369e117abb9818b779b3a95f48c}} 
+\index{Poco::PurgeStrategy@{Poco::PurgeStrategy}!list@{list}}
+\index{list@{list}!Poco::PurgeStrategy@{Poco::PurgeStrategy}}
+\doxysubsubsection{\texorpdfstring{list()}{list()}}
+{\footnotesize\ttfamily void Poco\+::\+Purge\+Strategy\+::list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1File}{File}} $>$ \&}]{files }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Purges archived log files. The path to the current \char`\"{}hot\char`\"{} log file is given. To find archived log files, look for files with a name consisting of the given path plus any suffix (e.\+g., .1, .20050929081500, .1.\+gz). A list of archived files can be obtained by calling the \mbox{\hyperlink{classPoco_1_1PurgeStrategy_a276b5369e117abb9818b779b3a95f48c}{list()}} method. \mbox{\Hypertarget{classPoco_1_1PurgeStrategy_a00842e6011133c68b3eb2d0d545f6f53}\label{classPoco_1_1PurgeStrategy_a00842e6011133c68b3eb2d0d545f6f53}} 
+\index{Poco::PurgeStrategy@{Poco::PurgeStrategy}!purge@{purge}}
+\index{purge@{purge}!Poco::PurgeStrategy@{Poco::PurgeStrategy}}
+\doxysubsubsection{\texorpdfstring{purge()}{purge()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Purge\+Strategy\+::purge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1PurgeByCountStrategy_adcb40f35179c6885536efa54116fd13a}{Poco\+::\+Purge\+By\+Count\+Strategy}}, and \mbox{\hyperlink{classPoco_1_1PurgeByAgeStrategy_aa6512d73ff2549b8a9d2f0bab00a8df0}{Poco\+::\+Purge\+By\+Age\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{PurgeStrategy_8h}{Purge\+Strategy.\+h}}\end{DoxyCompactItemize}

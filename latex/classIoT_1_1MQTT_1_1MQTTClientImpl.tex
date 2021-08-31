@@ -1,0 +1,457 @@
+\hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl}{}\doxysection{IoT\+::M\+Q\+TT\+::M\+Q\+T\+T\+Client\+Impl Class Reference}
+\label{classIoT_1_1MQTT_1_1MQTTClientImpl}\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+
+
+The default implementation of \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{M\+Q\+T\+T\+Client}} based on paho.  
+
+
+
+
+{\ttfamily \#include $<$M\+Q\+T\+T\+Client\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::M\+Q\+TT\+::M\+Q\+T\+T\+Client\+Impl\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::M\+Q\+TT\+::M\+Q\+T\+T\+Client\+Impl\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions}{Connect\+Options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528}{Persistence}} \{ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528ac580af1495777fa59558138079347f13}{M\+Q\+T\+T\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528a5fbf44b511520643ecc017ebddd5bdda}{M\+Q\+T\+T\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+F\+I\+LE}} = 1, 
+\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528a26edc8746470f203d0f0bbe0940b90e1}{M\+Q\+T\+T\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+D\+A\+T\+A\+B\+A\+SE}} = 2
+ \}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl}{M\+Q\+T\+T\+Client\+Impl}} $>$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a1abd782aaedd02b0322176abbca7f510}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_ac4d0baeeb4403562408c035685ac4957}{M\+Q\+T\+T\+Client\+Impl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a689ec91c69edaa5f956a16ff80a1c87f}{server\+U\+RI}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&client\+Id, \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528}{Persistence}} persistence, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&persistence\+Path, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions}{Connect\+Options}} \&connect\+Options)
+\item 
+\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a07ddefd63d3cf14bf6c6d7b117697afb}{$\sim$\+M\+Q\+T\+T\+Client\+Impl}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a02ee1c72b892309c6d13ff6b1973cb2f}{id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl}{M\+Q\+T\+T\+Client\+Impl}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a689ec91c69edaa5f956a16ff80a1c87f}{server\+U\+RI}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the configured client ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_ac8a249034b4d94cf25f575c6af36b469}{connected}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the configured server U\+RI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structIoT_1_1MQTT_1_1ConnectionInfo}{Connection\+Info}} \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_af3e87bafbef8a41ea2d69b17020929ec}{connect}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the client is currently connected to the server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_ad626844a6927a1b6ef55d6c525eb398e}{connect\+Async}} ()
+\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_abf4c7b30e17e7c4ca4a5ee3228e2641a}{disconnect}} (int timeout)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structIoT_1_1MQTT_1_1TopicQoS}{Topic\+QoS}} $>$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a113eb1131573e176728b60f29f577247}{subscribed\+Topics}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{structIoT_1_1MQTT_1_1Statistics}{Statistics}} \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_afebcc4e88c1a6ed2d0bc15541ff27314}{statistics}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a2983cdad1cc77c533fdefbba00dc8e2b}{publish}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&topic, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&payload, int qos)
+\begin{DoxyCompactList}\small\item\em Returns statistics about published and received topics and message counts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a2890991adadf2ee71b17665404a81324}{publish\+Message}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&topic, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1Message}{Message}} \&message)
+\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_ab84fab886f1360bff34eeca5405e4c63}{subscribe}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&topic, int qos)
+\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_ad090a722d3dfd1fd08fa769fb5bc7b2f}{unsubscribe}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&topic)
+\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a3867cfbab9118afadddae72102d7c729}{subscribe\+Many}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ \mbox{\hyperlink{structIoT_1_1MQTT_1_1TopicQoS}{Topic\+QoS}} $>$ \&topics\+And\+QoS)
+\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_af4512e26f8cdf136ca56793361e817ec}{unsubscribe\+Many}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ std\+::string $>$ \&topics)
+\item 
+\mbox{\hyperlink{structIoT_1_1MQTT_1_1ConnectionInfo}{Connection\+Info}} \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a91c46d08648c37e98c66e495f0326247}{connection\+Info}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a8f86d61aae04ae9723f4d62142abe993aba8e1fc9165e354e89cfc9ca7ef56965}{I\+N\+I\+T\+I\+A\+L\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+D\+E\+L\+AY}} = 1000, 
+\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a8f86d61aae04ae9723f4d62142abe993acd5336416f75d8128b5b278305b31e36}{M\+A\+X\+I\+M\+U\+M\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+D\+E\+L\+AY}} = 32000
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_aa7cbae75869844ad5ad01388fc6bb8ed}{connect\+Once}} ()
+\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a0c3048b520433fd66d79571716a8e107}{reconnect}} ()
+\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_ae78c45fbaee74cc9f62fc8d5ade2ef1b}{connect\+Impl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions}{Connect\+Options}} \&options)
+\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a8c2e8a4c120f6b2477350b780ff48d6e}{resubscribe}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a2ecedbcf8db742d9f4f4037bcc08c1d6}{error\+Message}} (int code)
+\item 
+static void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a331c1b5e34d3677cf18f6edbe59eb65b}{on\+Connection\+Lost}} (void $\ast$context, char $\ast$cause)
+\item 
+static void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a51f1139e0be8a5c496281be45359f9a2}{on\+Message\+Delivered}} (void $\ast$context, int token)
+\item 
+static int \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a87a6222694f095efbff18b0d90c9b2ef}{on\+Message\+Arrived}} (void $\ast$context, char $\ast$topic\+Name, int topic\+Len, \mbox{\hyperlink{structMQTTClient__message}{M\+Q\+T\+T\+Client\+\_\+message}} $\ast$message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_aa6d00878a4650a6ec297c7d495a1f980}{Reconnect\+Task}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The default implementation of \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient}{M\+Q\+T\+T\+Client}} based on paho. 
+
+Definition at line 40 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a1abd782aaedd02b0322176abbca7f510}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a1abd782aaedd02b0322176abbca7f510}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl}{M\+Q\+T\+T\+Client\+Impl}}$>$ \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a1abd782aaedd02b0322176abbca7f510}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Ptr}}}
+
+
+
+Definition at line 44 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a8f86d61aae04ae9723f4d62142abe993}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a8f86d61aae04ae9723f4d62142abe993}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INITIAL\_RECONNECT\_DELAY@{INITIAL\_RECONNECT\_DELAY}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!INITIAL\_RECONNECT\_DELAY@{INITIAL\_RECONNECT\_DELAY}}}\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a8f86d61aae04ae9723f4d62142abe993aba8e1fc9165e354e89cfc9ca7ef56965}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a8f86d61aae04ae9723f4d62142abe993aba8e1fc9165e354e89cfc9ca7ef56965}} 
+I\+N\+I\+T\+I\+A\+L\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+D\+E\+L\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAXIMUM\_RECONNECT\_DELAY@{MAXIMUM\_RECONNECT\_DELAY}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!MAXIMUM\_RECONNECT\_DELAY@{MAXIMUM\_RECONNECT\_DELAY}}}\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a8f86d61aae04ae9723f4d62142abe993acd5336416f75d8128b5b278305b31e36}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a8f86d61aae04ae9723f4d62142abe993acd5336416f75d8128b5b278305b31e36}} 
+M\+A\+X\+I\+M\+U\+M\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+D\+E\+L\+AY&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 154 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!Persistence@{Persistence}}
+\index{Persistence@{Persistence}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{Persistence}{Persistence}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Persistence}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MQTT\_PERSISTENCE\_NONE@{MQTT\_PERSISTENCE\_NONE}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!MQTT\_PERSISTENCE\_NONE@{MQTT\_PERSISTENCE\_NONE}}}\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528ac580af1495777fa59558138079347f13}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528ac580af1495777fa59558138079347f13}} 
+M\+Q\+T\+T\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MQTT\_PERSISTENCE\_FILE@{MQTT\_PERSISTENCE\_FILE}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!MQTT\_PERSISTENCE\_FILE@{MQTT\_PERSISTENCE\_FILE}}}\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528a5fbf44b511520643ecc017ebddd5bdda}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528a5fbf44b511520643ecc017ebddd5bdda}} 
+M\+Q\+T\+T\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+F\+I\+LE&In-\/memory persistence. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MQTT\_PERSISTENCE\_DATABASE@{MQTT\_PERSISTENCE\_DATABASE}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!MQTT\_PERSISTENCE\_DATABASE@{MQTT\_PERSISTENCE\_DATABASE}}}\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528a26edc8746470f203d0f0bbe0940b90e1}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528a26edc8746470f203d0f0bbe0940b90e1}} 
+M\+Q\+T\+T\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+D\+A\+T\+A\+B\+A\+SE&File-\/based persistence. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 119 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_ac4d0baeeb4403562408c035685ac4957}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_ac4d0baeeb4403562408c035685ac4957}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!MQTTClientImpl@{MQTTClientImpl}}
+\index{MQTTClientImpl@{MQTTClientImpl}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{MQTTClientImpl()}{MQTTClientImpl()}}
+{\footnotesize\ttfamily Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+M\+Q\+T\+T\+Client\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{server\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{client\+Id,  }\item[{\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl_a02dc297d0b6dfee7c76a3887b4006528}{Persistence}}}]{persistence,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{persistence\+Path,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions}{Connect\+Options}} \&}]{connect\+Options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a07ddefd63d3cf14bf6c6d7b117697afb}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a07ddefd63d3cf14bf6c6d7b117697afb}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!````~MQTTClientImpl@{$\sim$MQTTClientImpl}}
+\index{````~MQTTClientImpl@{$\sim$MQTTClientImpl}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{$\sim$MQTTClientImpl()}{~MQTTClientImpl()}}
+{\footnotesize\ttfamily Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::$\sim$\+M\+Q\+T\+T\+Client\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl}{M\+Q\+T\+T\+Client\+Impl}} with the given server U\+RI, client ID, persistence, persistence path and connect options.
+
+For File-\/based persistence, the path should specify a directory. For S\+Q\+Lite-\/based persistence, the path should specify a S\+Q\+Lite database file. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_af3e87bafbef8a41ea2d69b17020929ec}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_af3e87bafbef8a41ea2d69b17020929ec}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!connect@{connect}}
+\index{connect@{connect}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structIoT_1_1MQTT_1_1ConnectionInfo}{Connection\+Info}} Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns true if the client is currently connected to the server. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_a3d6d404adbcd7a7ad46de67af34db1e5}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_ad626844a6927a1b6ef55d6c525eb398e}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_ad626844a6927a1b6ef55d6c525eb398e}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!connectAsync@{connectAsync}}
+\index{connectAsync@{connectAsync}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{connectAsync()}{connectAsync()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::connect\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Connects to the server if not already connected.
+
+Normally, the client connects automatically when a message is published or a topic is subscribed to.
+
+Returns a \mbox{\hyperlink{structIoT_1_1MQTT_1_1ConnectionInfo}{Connection\+Info}} object containing information about the connection.
+
+Fires the connected event if successful.
+
+Throws a Poco\+::\+I\+O\+Exception if the connection cannot be established. 
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_ad0d3de4f26cf4ba0a421b1499a40a576}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_ac8a249034b4d94cf25f575c6af36b469}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_ac8a249034b4d94cf25f575c6af36b469}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!connected@{connected}}
+\index{connected@{connected}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{connected()}{connected()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the configured server U\+RI. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_a6afd99a38497eb06e5b8cb9c680a1e3d}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_ae78c45fbaee74cc9f62fc8d5ade2ef1b}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_ae78c45fbaee74cc9f62fc8d5ade2ef1b}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!connectImpl@{connectImpl}}
+\index{connectImpl@{connectImpl}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{connectImpl()}{connectImpl()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::connect\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions}{Connect\+Options}} \&}]{options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a91c46d08648c37e98c66e495f0326247}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a91c46d08648c37e98c66e495f0326247}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!connectionInfo@{connectionInfo}}
+\index{connectionInfo@{connectionInfo}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{connectionInfo()}{connectionInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structIoT_1_1MQTT_1_1ConnectionInfo}{Connection\+Info}} Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::connection\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function attempts to remove existing subscriptions to a list of topics made by the specified client.
+
+Throws a Poco\+::\+I\+O\+Exception if there was a problem removing the subscriptions. 
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_a46f3a5ee22caf67479b8fcf60c3cc388}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_aa7cbae75869844ad5ad01388fc6bb8ed}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_aa7cbae75869844ad5ad01388fc6bb8ed}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!connectOnce@{connectOnce}}
+\index{connectOnce@{connectOnce}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{connectOnce()}{connectOnce()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::connect\+Once (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_abf4c7b30e17e7c4ca4a5ee3228e2641a}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_abf4c7b30e17e7c4ca4a5ee3228e2641a}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::disconnect (\begin{DoxyParamCaption}\item[{int}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Connects to the server if not already connected.
+
+Connecting will be done asynchronously in a background thread.
+
+A successful connection will be reported by firing the connected event. 
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_a425a48cfb93cfb8092f76547cc39454f}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a2ecedbcf8db742d9f4f4037bcc08c1d6}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a2ecedbcf8db742d9f4f4037bcc08c1d6}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!errorMessage@{errorMessage}}
+\index{errorMessage@{errorMessage}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{errorMessage()}{errorMessage()}}
+{\footnotesize\ttfamily static std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::error\+Message (\begin{DoxyParamCaption}\item[{int}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a02ee1c72b892309c6d13ff6b1973cb2f}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a02ee1c72b892309c6d13ff6b1973cb2f}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!id@{id}}
+\index{id@{id}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientImpl}{M\+Q\+T\+T\+Client\+Impl}}. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_a7088c7aed0ef819eb2c58aa1946114cd}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a331c1b5e34d3677cf18f6edbe59eb65b}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a331c1b5e34d3677cf18f6edbe59eb65b}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!onConnectionLost@{onConnectionLost}}
+\index{onConnectionLost@{onConnectionLost}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{onConnectionLost()}{onConnectionLost()}}
+{\footnotesize\ttfamily static void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::on\+Connection\+Lost (\begin{DoxyParamCaption}\item[{void $\ast$}]{context,  }\item[{char $\ast$}]{cause }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a87a6222694f095efbff18b0d90c9b2ef}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a87a6222694f095efbff18b0d90c9b2ef}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!onMessageArrived@{onMessageArrived}}
+\index{onMessageArrived@{onMessageArrived}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{onMessageArrived()}{onMessageArrived()}}
+{\footnotesize\ttfamily static int Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::on\+Message\+Arrived (\begin{DoxyParamCaption}\item[{void $\ast$}]{context,  }\item[{char $\ast$}]{topic\+Name,  }\item[{int}]{topic\+Len,  }\item[{\mbox{\hyperlink{structMQTTClient__message}{M\+Q\+T\+T\+Client\+\_\+message}} $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a51f1139e0be8a5c496281be45359f9a2}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a51f1139e0be8a5c496281be45359f9a2}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!onMessageDelivered@{onMessageDelivered}}
+\index{onMessageDelivered@{onMessageDelivered}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{onMessageDelivered()}{onMessageDelivered()}}
+{\footnotesize\ttfamily static void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::on\+Message\+Delivered (\begin{DoxyParamCaption}\item[{void $\ast$}]{context,  }\item[{int}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a2983cdad1cc77c533fdefbba00dc8e2b}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a2983cdad1cc77c533fdefbba00dc8e2b}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!publish@{publish}}
+\index{publish@{publish}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{publish()}{publish()}}
+{\footnotesize\ttfamily int Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::publish (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{topic,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{payload,  }\item[{int}]{qos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns statistics about published and received topics and message counts. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_a6ebf22f547bcf41d3cddd955867f6407}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a2890991adadf2ee71b17665404a81324}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a2890991adadf2ee71b17665404a81324}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!publishMessage@{publishMessage}}
+\index{publishMessage@{publishMessage}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{publishMessage()}{publishMessage()}}
+{\footnotesize\ttfamily int Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::publish\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{topic,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1Message}{Message}} \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Publishes the given message on the given topic, using the given QoS.
+
+Returns a delivery token which can be used with the message\+Delivered event to verify that the message has been delivered.
+
+Throws a Poco\+::\+I\+O\+Exception if the message cannot be published. 
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_aaf2be5e1002fdb99375ae929c5e357a5}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a0c3048b520433fd66d79571716a8e107}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a0c3048b520433fd66d79571716a8e107}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!reconnect@{reconnect}}
+\index{reconnect@{reconnect}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{reconnect()}{reconnect()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::reconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a8c2e8a4c120f6b2477350b780ff48d6e}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a8c2e8a4c120f6b2477350b780ff48d6e}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!resubscribe@{resubscribe}}
+\index{resubscribe@{resubscribe}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{resubscribe()}{resubscribe()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::resubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a689ec91c69edaa5f956a16ff80a1c87f}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a689ec91c69edaa5f956a16ff80a1c87f}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!serverURI@{serverURI}}
+\index{serverURI@{serverURI}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{serverURI()}{serverURI()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::server\+U\+RI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the configured client ID. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_a0ff508a8e545eb7ce7c717e938c258e9}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_afebcc4e88c1a6ed2d0bc15541ff27314}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_afebcc4e88c1a6ed2d0bc15541ff27314}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!statistics@{statistics}}
+\index{statistics@{statistics}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{statistics()}{statistics()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structIoT_1_1MQTT_1_1Statistics}{Statistics}} Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a vector containing all currently subscribed topics with their QoS level. 
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_a7156e9e8e277e432521e78fdcbb72df6}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_ab84fab886f1360bff34eeca5405e4c63}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_ab84fab886f1360bff34eeca5405e4c63}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::subscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{topic,  }\item[{int}]{qos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Publishes the given message on the given topic.
+
+Returns a delivery token which can be used with the message\+Delivered event to verify that the message has been delivered.
+
+Throws a Poco\+::\+I\+O\+Exception if the message cannot be published. 
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_ac27a2055c6ee32e8668f38d7a1800e31}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a113eb1131573e176728b60f29f577247}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a113eb1131573e176728b60f29f577247}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!subscribedTopics@{subscribedTopics}}
+\index{subscribedTopics@{subscribedTopics}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{subscribedTopics()}{subscribedTopics()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structIoT_1_1MQTT_1_1TopicQoS}{Topic\+QoS}}$>$ Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::subscribed\+Topics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Disconnects from the server.
+
+In order to allow the client time to complete handling of messages that are in-\/flight when this function is called, a timeout period is specified (in milliseconds). When the timeout period has expired, the client disconnects even if there are still outstanding message acknowledgements. The next time the client connects to the same server, any QoS 1 or 2 messages which have not completed will be retried depending on the clean session settings for both the previous and the new connection. 
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_a24f9c4c1596acb7457115d069947f884}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_a3867cfbab9118afadddae72102d7c729}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_a3867cfbab9118afadddae72102d7c729}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!subscribeMany@{subscribeMany}}
+\index{subscribeMany@{subscribeMany}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{subscribeMany()}{subscribeMany()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::subscribe\+Many (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ \mbox{\hyperlink{structIoT_1_1MQTT_1_1TopicQoS}{Topic\+QoS}} $>$ \&}]{topics\+And\+QoS }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function attempts to remove an existing subscription made by the client.
+
+Throws a Poco\+::\+I\+O\+Exception if there was a problem removing the subscription. 
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_a8af8efc9383a3cb943dda6139e1bbcb4}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_ad090a722d3dfd1fd08fa769fb5bc7b2f}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_ad090a722d3dfd1fd08fa769fb5bc7b2f}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!unsubscribe@{unsubscribe}}
+\index{unsubscribe@{unsubscribe}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{unsubscribe()}{unsubscribe()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::unsubscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{topic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function attempts to subscribe the client to a single topic, which may contain wildcards. This call also specifies the Quality of service requested for the subscription.
+
+Throws a Poco\+::\+I\+O\+Exception if there was a problem registering the subscription. 
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_a05ca63bedeb8e33d932b5adedffb4cce}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_af4512e26f8cdf136ca56793361e817ec}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_af4512e26f8cdf136ca56793361e817ec}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!unsubscribeMany@{unsubscribeMany}}
+\index{unsubscribeMany@{unsubscribeMany}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{unsubscribeMany()}{unsubscribeMany()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::unsubscribe\+Many (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ std\+::string $>$ \&}]{topics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function attempts to subscribe the client to a list of topics (with associated QoS levels), which may contain wildcards.
+
+Throws a Poco\+::\+I\+O\+Exception if there was a problem registering the subscriptions. 
+
+Implements \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_a6e4da228a44f3af630537e0d341467c3}{Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientImpl_aa6d00878a4650a6ec297c7d495a1f980}\label{classIoT_1_1MQTT_1_1MQTTClientImpl_aa6d00878a4650a6ec297c7d495a1f980}} 
+\index{IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}!ReconnectTask@{ReconnectTask}}
+\index{ReconnectTask@{ReconnectTask}!IoT::MQTT::MQTTClientImpl@{IoT::MQTT::MQTTClientImpl}}
+\doxysubsubsection{\texorpdfstring{ReconnectTask}{ReconnectTask}}
+{\footnotesize\ttfamily friend class Reconnect\+Task\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 186 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+M\+Q\+T\+T/\+M\+Q\+T\+T\+Client\+Impl/\mbox{\hyperlink{MQTTClientImpl_8h}{M\+Q\+T\+T\+Client\+Impl.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,165 @@
+\hypertarget{classIoT_1_1Devices_1_1SwitchServerHelper}{}\doxysection{IoT\+::Devices\+::Switch\+Server\+Helper Class Reference}
+\label{classIoT_1_1Devices_1_1SwitchServerHelper}\index{IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}}
+
+
+{\ttfamily \#include $<$Switch\+Server\+Helper.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Io\+T\+::\+Devices\+::\+Switch}} \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper_ac7ffdbfc11e1cc507877088f2618cccb}{Service}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper_aeb751a96601f5d022696d6b2c7bf2976}{Switch\+Server\+Helper}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper_aa960ace25a5ab260f8ccc111568d692e}{$\sim$\+Switch\+Server\+Helper}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper}{Switch\+Server\+Helper}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchRemoteObject}{Io\+T\+::\+Devices\+::\+Switch\+Remote\+Object}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper_a9cfb581f82b505b6e85f1f643582b806}{create\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Io\+T\+::\+Devices\+::\+Switch}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper}{Switch\+Server\+Helper}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper_afc98f14553e6a5b7b60bdaffa6ede291}{enable\+Events}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\begin{DoxyCompactList}\small\item\em Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Io\+T\+::\+Devices\+::\+Switch}} instance. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper_a91e7f8f0fc5394f81131a6850abcca45}{register\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Io\+T\+::\+Devices\+::\+Switch}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper_ab770f235ce738e312956e0e23141883e}{register\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchRemoteObject}{Io\+T\+::\+Devices\+::\+Switch\+Remote\+Object}} $>$ p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper_a92b575938f7611a4ef2452a7e5ec9029}{shutdown}} ()
+\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper_a541ae4a694152cae9b854f2baad99bcb}{unregister\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\begin{DoxyCompactList}\small\item\em Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Io\+T\+::\+Devices\+::\+Switch}} from the O\+RB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for switchable things (that can be turned on and off).
+
+A \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}} has a current state and a target state. Depending upon the implementation, the current state and target state may be different for a short amount of time (e.\+g., while the device is powering on).
+
+In addition to the methods defined in this interface, a \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}} implementation should expose the following properties\+:
+\begin{DoxyItemize}
+\item display\+State (string, optional)\+: The current state of the \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}}, formatted as string for display purposes. 
+\end{DoxyItemize}
+
+Definition at line 34 of file Switch\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchServerHelper_ac7ffdbfc11e1cc507877088f2618cccb}\label{classIoT_1_1Devices_1_1SwitchServerHelper_ac7ffdbfc11e1cc507877088f2618cccb}} 
+\index{IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}!Service@{Service}}
+\index{Service@{Service}!IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}}
+\doxysubsubsection{\texorpdfstring{Service}{Service}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Io\+T\+::\+Devices\+::\+Switch}} \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper_ac7ffdbfc11e1cc507877088f2618cccb}{Io\+T\+::\+Devices\+::\+Switch\+Server\+Helper\+::\+Service}}}
+
+
+
+Definition at line 50 of file Switch\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchServerHelper_aeb751a96601f5d022696d6b2c7bf2976}\label{classIoT_1_1Devices_1_1SwitchServerHelper_aeb751a96601f5d022696d6b2c7bf2976}} 
+\index{IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}!SwitchServerHelper@{SwitchServerHelper}}
+\index{SwitchServerHelper@{SwitchServerHelper}!IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}}
+\doxysubsubsection{\texorpdfstring{SwitchServerHelper()}{SwitchServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Switch\+Server\+Helper\+::\+Switch\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchServerHelper_aa960ace25a5ab260f8ccc111568d692e}\label{classIoT_1_1Devices_1_1SwitchServerHelper_aa960ace25a5ab260f8ccc111568d692e}} 
+\index{IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}!````~SwitchServerHelper@{$\sim$SwitchServerHelper}}
+\index{````~SwitchServerHelper@{$\sim$SwitchServerHelper}!IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}}
+\doxysubsubsection{\texorpdfstring{$\sim$SwitchServerHelper()}{~SwitchServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Switch\+Server\+Helper\+::$\sim$\+Switch\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper}{Switch\+Server\+Helper}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchServerHelper_a9cfb581f82b505b6e85f1f643582b806}\label{classIoT_1_1Devices_1_1SwitchServerHelper_a9cfb581f82b505b6e85f1f643582b806}} 
+\index{IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}!createRemoteObject@{createRemoteObject}}
+\index{createRemoteObject@{createRemoteObject}!IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}}
+\doxysubsubsection{\texorpdfstring{createRemoteObject()}{createRemoteObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchRemoteObject}{Io\+T\+::\+Devices\+::\+Switch\+Remote\+Object}} $>$ Io\+T\+::\+Devices\+::\+Switch\+Server\+Helper\+::create\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Io\+T\+::\+Devices\+::\+Switch}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchServerHelper}{Switch\+Server\+Helper}}. 
+
+
+
+Definition at line 106 of file Switch\+Server\+Helper.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchServerHelper_afc98f14553e6a5b7b60bdaffa6ede291}\label{classIoT_1_1Devices_1_1SwitchServerHelper_afc98f14553e6a5b7b60bdaffa6ede291}} 
+\index{IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}!enableEvents@{enableEvents}}
+\index{enableEvents@{enableEvents}!IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}}
+\doxysubsubsection{\texorpdfstring{enableEvents()}{enableEvents()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Switch\+Server\+Helper\+::enable\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Io\+T\+::\+Devices\+::\+Switch}} instance. 
+
+
+
+Definition at line 112 of file Switch\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchServerHelper_a91e7f8f0fc5394f81131a6850abcca45}\label{classIoT_1_1Devices_1_1SwitchServerHelper_a91e7f8f0fc5394f81131a6850abcca45}} 
+\index{IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}!registerObject@{registerObject}}
+\index{registerObject@{registerObject}!IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerObject()}{registerObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Devices\+::\+Switch\+Server\+Helper\+::register\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Io\+T\+::\+Devices\+::\+Switch}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Enables remote events for the Remote\+Object identified by the given U\+RI.
+
+Events will be delivered using the Transport for the given protocol. Can be called multiple times for the same U\+RI with different protocols. 
+
+Definition at line 118 of file Switch\+Server\+Helper.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchServerHelper_ab770f235ce738e312956e0e23141883e}\label{classIoT_1_1Devices_1_1SwitchServerHelper_ab770f235ce738e312956e0e23141883e}} 
+\index{IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}!registerRemoteObject@{registerRemoteObject}}
+\index{registerRemoteObject@{registerRemoteObject}!IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerRemoteObject()}{registerRemoteObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Devices\+::\+Switch\+Server\+Helper\+::register\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchRemoteObject}{Io\+T\+::\+Devices\+::\+Switch\+Remote\+Object}} $>$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Io\+T\+::\+Devices\+::\+Switch}} instance and registers it with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. 
+
+Definition at line 124 of file Switch\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchServerHelper_a92b575938f7611a4ef2452a7e5ec9029}\label{classIoT_1_1Devices_1_1SwitchServerHelper_a92b575938f7611a4ef2452a7e5ec9029}} 
+\index{IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily static void Io\+T\+::\+Devices\+::\+Switch\+Server\+Helper\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers the given Remote\+Object with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. \mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchServerHelper_a541ae4a694152cae9b854f2baad99bcb}\label{classIoT_1_1Devices_1_1SwitchServerHelper_a541ae4a694152cae9b854f2baad99bcb}} 
+\index{IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}!unregisterObject@{unregisterObject}}
+\index{unregisterObject@{unregisterObject}!IoT::Devices::SwitchServerHelper@{IoT::Devices::SwitchServerHelper}}
+\doxysubsubsection{\texorpdfstring{unregisterObject()}{unregisterObject()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Switch\+Server\+Helper\+::unregister\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Io\+T\+::\+Devices\+::\+Switch}} from the O\+RB. 
+
+
+
+Definition at line 130 of file Switch\+Server\+Helper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{SwitchServerHelper_8h}{Switch\+Server\+Helper.\+h}}\end{DoxyCompactItemize}

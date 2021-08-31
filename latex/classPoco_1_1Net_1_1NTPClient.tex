@@ -1,0 +1,96 @@
+\hypertarget{classPoco_1_1Net_1_1NTPClient}{}\doxysection{Poco\+::Net\+::N\+T\+P\+Client Class Reference}
+\label{classPoco_1_1Net_1_1NTPClient}\index{Poco::Net::NTPClient@{Poco::Net::NTPClient}}
+
+
+This class provides N\+TP (Network Time Protocol) client functionality.  
+
+
+
+
+{\ttfamily \#include $<$N\+T\+P\+Client.\+h$>$}
+
+
+
+Collaboration diagram for Poco\+::Net\+::N\+T\+P\+Client\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1NTPClient_aeeb902b71eb2ce696b4d30c5561381a6}{N\+T\+P\+Client}} (\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress_a048c8fc29019f4722f2cdb5ba752d9b6}{I\+P\+Address\+::\+Family}} family, int timeout=3000000)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1NTPClient_acf9e828aa1924cf635e83af1a06ae7c3}{$\sim$\+N\+T\+P\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Creates an N\+TP client. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1NTPClient_ae9baef9ad98e501e02e5c0c5fcdb0623}{request}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&address) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the N\+TP client. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1NTPClient_a16f6023ad95ca4f4e5b62bf0a357c3b7}{request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&address) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{classPoco_1_1Net_1_1NTPEventArgs}{N\+T\+P\+Event\+Args}} $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1NTPClient_ab4d81209a984299890ec16d957a69ba5}{response}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides N\+TP (Network Time Protocol) client functionality. 
+
+Definition at line 33 of file N\+T\+P\+Client.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1NTPClient_aeeb902b71eb2ce696b4d30c5561381a6}\label{classPoco_1_1Net_1_1NTPClient_aeeb902b71eb2ce696b4d30c5561381a6}} 
+\index{Poco::Net::NTPClient@{Poco::Net::NTPClient}!NTPClient@{NTPClient}}
+\index{NTPClient@{NTPClient}!Poco::Net::NTPClient@{Poco::Net::NTPClient}}
+\doxysubsubsection{\texorpdfstring{NTPClient()}{NTPClient()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+N\+T\+P\+Client\+::\+N\+T\+P\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress_a048c8fc29019f4722f2cdb5ba752d9b6}{I\+P\+Address\+::\+Family}}}]{family,  }\item[{int}]{timeout = {\ttfamily 3000000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1NTPClient_acf9e828aa1924cf635e83af1a06ae7c3}\label{classPoco_1_1Net_1_1NTPClient_acf9e828aa1924cf635e83af1a06ae7c3}} 
+\index{Poco::Net::NTPClient@{Poco::Net::NTPClient}!````~NTPClient@{$\sim$NTPClient}}
+\index{````~NTPClient@{$\sim$NTPClient}!Poco::Net::NTPClient@{Poco::Net::NTPClient}}
+\doxysubsubsection{\texorpdfstring{$\sim$NTPClient()}{~NTPClient()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+N\+T\+P\+Client\+::$\sim$\+N\+T\+P\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an N\+TP client. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1NTPClient_a16f6023ad95ca4f4e5b62bf0a357c3b7}\label{classPoco_1_1Net_1_1NTPClient_a16f6023ad95ca4f4e5b62bf0a357c3b7}} 
+\index{Poco::Net::NTPClient@{Poco::Net::NTPClient}!request@{request}}
+\index{request@{request}!Poco::Net::NTPClient@{Poco::Net::NTPClient}}
+\doxysubsubsection{\texorpdfstring{request()}{request()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+N\+T\+P\+Client\+::request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{address }\end{DoxyParamCaption}) const}
+
+Request the time from the server at address. Notifications are posted for events.
+
+Returns the number of valid replies. \mbox{\Hypertarget{classPoco_1_1Net_1_1NTPClient_ae9baef9ad98e501e02e5c0c5fcdb0623}\label{classPoco_1_1Net_1_1NTPClient_ae9baef9ad98e501e02e5c0c5fcdb0623}} 
+\index{Poco::Net::NTPClient@{Poco::Net::NTPClient}!request@{request}}
+\index{request@{request}!Poco::Net::NTPClient@{Poco::Net::NTPClient}}
+\doxysubsubsection{\texorpdfstring{request()}{request()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+N\+T\+P\+Client\+::request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address }\end{DoxyParamCaption}) const}
+
+
+
+Destroys the N\+TP client. 
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1NTPClient_ab4d81209a984299890ec16d957a69ba5}\label{classPoco_1_1Net_1_1NTPClient_ab4d81209a984299890ec16d957a69ba5}} 
+\index{Poco::Net::NTPClient@{Poco::Net::NTPClient}!response@{response}}
+\index{response@{response}!Poco::Net::NTPClient@{Poco::Net::NTPClient}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{classPoco_1_1Net_1_1NTPEventArgs}{N\+T\+P\+Event\+Args}}$>$ Poco\+::\+Net\+::\+N\+T\+P\+Client\+::response\hspace{0.3cm}{\ttfamily [mutable]}}
+
+
+
+Definition at line 37 of file N\+T\+P\+Client.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{NTPClient_8h}{N\+T\+P\+Client.\+h}}\end{DoxyCompactItemize}

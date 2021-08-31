@@ -1,0 +1,76 @@
+\hypertarget{classPoco_1_1Net_1_1PartHandler}{}\doxysection{Poco\+::Net\+::Part\+Handler Class Reference}
+\label{classPoco_1_1Net_1_1PartHandler}\index{Poco::Net::PartHandler@{Poco::Net::PartHandler}}
+
+
+{\ttfamily \#include $<$Part\+Handler.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::Part\+Handler\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler_ad1e9b48c2f936ebf3583a8154e21647b}{handle\+Part}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&header, std\+::istream \&stream)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler_a01dc9d2dc0b9b9511646299306d0d16f}{Part\+Handler}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler_a4d1f04a5c8924242bbe16671d804de17}{$\sim$\+Part\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for all part or attachment handlers. \begin{DoxyVerb}Part handlers are used for handling email parts and 
+attachments in MIME multipart messages, as well as file 
+uploads via HTML forms.
+
+Subclasses must override handlePart(). 
+\end{DoxyVerb}
+ 
+
+Definition at line 34 of file Part\+Handler.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1PartHandler_a01dc9d2dc0b9b9511646299306d0d16f}\label{classPoco_1_1Net_1_1PartHandler_a01dc9d2dc0b9b9511646299306d0d16f}} 
+\index{Poco::Net::PartHandler@{Poco::Net::PartHandler}!PartHandler@{PartHandler}}
+\index{PartHandler@{PartHandler}!Poco::Net::PartHandler@{Poco::Net::PartHandler}}
+\doxysubsubsection{\texorpdfstring{PartHandler()}{PartHandler()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Part\+Handler\+::\+Part\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Called for every part encountered during the processing of an email message or an uploaded H\+T\+ML form.
+
+Information about the part can be extracted from the given message header. What information can be obtained from header depends on the kind of part.
+
+The content of the part can be read from stream. \mbox{\Hypertarget{classPoco_1_1Net_1_1PartHandler_a4d1f04a5c8924242bbe16671d804de17}\label{classPoco_1_1Net_1_1PartHandler_a4d1f04a5c8924242bbe16671d804de17}} 
+\index{Poco::Net::PartHandler@{Poco::Net::PartHandler}!````~PartHandler@{$\sim$PartHandler}}
+\index{````~PartHandler@{$\sim$PartHandler}!Poco::Net::PartHandler@{Poco::Net::PartHandler}}
+\doxysubsubsection{\texorpdfstring{$\sim$PartHandler()}{~PartHandler()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+Part\+Handler\+::$\sim$\+Part\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1PartHandler_ad1e9b48c2f936ebf3583a8154e21647b}\label{classPoco_1_1Net_1_1PartHandler_ad1e9b48c2f936ebf3583a8154e21647b}} 
+\index{Poco::Net::PartHandler@{Poco::Net::PartHandler}!handlePart@{handlePart}}
+\index{handlePart@{handlePart}!Poco::Net::PartHandler@{Poco::Net::PartHandler}}
+\doxysubsubsection{\texorpdfstring{handlePart()}{handlePart()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Part\+Handler\+::handle\+Part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&}]{header,  }\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Net_1_1NullPartHandler_a4e49ce889bdd42a89093a187d8b71632}{Poco\+::\+Net\+::\+Null\+Part\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{PartHandler_8h}{Part\+Handler.\+h}}\end{DoxyCompactItemize}

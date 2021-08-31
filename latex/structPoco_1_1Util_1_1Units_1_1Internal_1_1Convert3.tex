@@ -1,0 +1,43 @@
+\hypertarget{structPoco_1_1Util_1_1Units_1_1Internal_1_1Convert3}{}\doxysection{Poco\+::Util\+::Units\+::Internal\+::Convert3$<$ T1, T2 $>$ Struct Template Reference}
+\label{structPoco_1_1Util_1_1Units_1_1Internal_1_1Convert3}\index{Poco::Util::Units::Internal::Convert3$<$ T1, T2 $>$@{Poco::Util::Units::Internal::Convert3$<$ T1, T2 $>$}}
+
+
+{\ttfamily \#include $<$Units.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename V $>$ }\\static V \mbox{\hyperlink{structPoco_1_1Util_1_1Units_1_1Internal_1_1Convert3_ae6b79b88b0e49a30af4d394044e959b6}{fn}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} V \&v)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T1, typename T2$>$\newline
+struct Poco\+::\+Util\+::\+Units\+::\+Internal\+::\+Convert3$<$ T1, T2 $>$}
+
+Converts T1 to T2. Stage 3 -\/ performed after Stage 1 and Stage 2. The reason we perform \mbox{\hyperlink{structPoco_1_1Util_1_1Units_1_1Internal_1_1Convert}{Convert}} in stages is so that the compiler can resolve templates in the order we want it to. 
+
+Definition at line 318 of file Units.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structPoco_1_1Util_1_1Units_1_1Internal_1_1Convert3_ae6b79b88b0e49a30af4d394044e959b6}\label{structPoco_1_1Util_1_1Units_1_1Internal_1_1Convert3_ae6b79b88b0e49a30af4d394044e959b6}} 
+\index{Poco::Util::Units::Internal::Convert3$<$ T1, T2 $>$@{Poco::Util::Units::Internal::Convert3$<$ T1, T2 $>$}!fn@{fn}}
+\index{fn@{fn}!Poco::Util::Units::Internal::Convert3$<$ T1, T2 $>$@{Poco::Util::Units::Internal::Convert3$<$ T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{fn()}{fn()}}
+{\footnotesize\ttfamily template$<$typename T1 , typename T2 $>$ \\
+template$<$typename V $>$ \\
+static V \mbox{\hyperlink{structPoco_1_1Util_1_1Units_1_1Internal_1_1Convert3}{Poco\+::\+Util\+::\+Units\+::\+Internal\+::\+Convert3}}$<$ T1, T2 $>$\+::fn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} V \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+The default implementation assumes that the two quantities are in compatible \mbox{\hyperlink{namespacePoco_1_1Util_1_1Units_1_1Units}{Units}} up to some scaling factor. Find the scaling factor and apply it. 
+
+Definition at line 325 of file Units.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Util/\mbox{\hyperlink{Units_8h}{Units.\+h}}\end{DoxyCompactItemize}

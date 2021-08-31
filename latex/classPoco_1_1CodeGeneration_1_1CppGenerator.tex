@@ -1,0 +1,401 @@
+\hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator}{}\doxysection{Poco\+::Code\+Generation\+::Cpp\+Generator Class Reference}
+\label{classPoco_1_1CodeGeneration_1_1CppGenerator}\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+
+
+Cpp implementation of the code generator.  
+
+
+
+
+{\ttfamily \#include $<$Cpp\+Generator.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Code\+Generation\+::Cpp\+Generator\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Code\+Generation\+::Cpp\+Generator\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a2b9ec0e4b81e70a5816f9a67f554023f}{Cpp\+Generator}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a2fd9f92835112d3cc6896088c4f9ba02}{name\+Space}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a007136ecacc09517a927547a704af3c9}{library\+Name}}, bool \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a503c541671fb7e92b8db46fc4536b29e}{use\+Poco\+Include\+Style}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a6bfe850312e4b0947de3eb201907237a}{copyright}}, std\+::ostream \&h\+Out, std\+::ostream \&cpp\+Out)
+\item 
+\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_aaa54b1380ebcee5595b59e92cdb33fb1}{$\sim$\+Cpp\+Generator}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator}{Cpp\+Generator}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_afa036a42e35032b3ca5d8e5108c6cdec}{enable\+Attributes}} (bool enable=true)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator}{Cpp\+Generator}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a9a59112f39fd9658430d6eeb296adfd3}{enable\+Timestamps}} (bool enable=true)
+\begin{DoxyCompactList}\small\item\em Enable or disable (default) writing of attributes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_aef9e5e55142051bffb0b8d6cb9d82aca}{register\+Constructor\+Hint}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable}{Poco\+::\+Cpp\+Parser\+::\+Variable}} $\ast$p\+Var, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter}{Poco\+::\+Cpp\+Parser\+::\+Parameter}} $\ast$p\+Param)
+\begin{DoxyCompactList}\small\item\em Enable (default) or disable timestamps in file headers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a2149a6715529b164cda83f60e03fb7b8}{register\+Constructor\+Hint}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable}{Poco\+::\+Cpp\+Parser\+::\+Variable}} $\ast$p\+Var, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a22b63ade7bd1dadb34618a9e2e2d68eb}{write\+Default\+Header}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$p\+Struct, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&class\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a007136ecacc09517a927547a704af3c9}{library\+Name}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&package)
+\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a6f7c7722b55c98267b1296ac488fc14d}{end\+File}} ()
+\begin{DoxyCompactList}\small\item\em Writes the default header, plus include guard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a723fcbb763855b1ff2df76c5ca1cd125}{write\+Include}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&include, bool to\+Header)
+\begin{DoxyCompactList}\small\item\em Closes the include guard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a5b303f610c02bb6780cff10a97bc3008}{write\+Src\+Include}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&include)
+\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_af3e60f71392dcca0c10209f7fcfa8b61}{write\+System\+Include}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&include)
+\begin{DoxyCompactList}\small\item\em Writes the include either to the header or the src file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a43cb13980510d63e332503a612b6c35e}{write\+Name\+Space\+Begin}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&full\+Name\+Space)
+\begin{DoxyCompactList}\small\item\em Writes the system include file to the header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a7040a0a7056550f0ecd3b9d9c174ef4d}{write\+Fwd\+Decls}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_ad24ae88dea0fe4febc442bfb1dae88a3}{Code\+Generator\+::\+Fwd\+Decls}} \&decl)
+\begin{DoxyCompactList}\small\item\em Writes the enclosing namespace. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a8a03efd6bb8f35ee7351b9703404ce09}{write\+Name\+Space\+End}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&full\+Name\+Space)
+\begin{DoxyCompactList}\small\item\em Writes the fwd decl to the header file and the include file to the src file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a8ddb99daca3736402b1702a8e51272de}{struct\+Start}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$p\+Struct, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&properties)
+\begin{DoxyCompactList}\small\item\em Closes the namespace. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_ab6250b1ae6f42382aff4258cb2930064}{struct\+End}} ()
+\begin{DoxyCompactList}\small\item\em Writes the class declaration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_abc2b0f43d344ea52f9c3b98fe40e143c}{method\+Start}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Poco\+::\+Cpp\+Parser\+::\+Function}} $\ast$p\+Func, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&properties)
+\begin{DoxyCompactList}\small\item\em Closes the class declaration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a701580c704fa5bcbe80dcc116a183bba}{write\+Method\+Implementation}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&code)
+\begin{DoxyCompactList}\small\item\em Writes the method header. Properties contains the properties found in the functions docuementation and in the class documentation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a8b76f0642bc25c4bc23c2f80cecd6054}{write\+Implementation}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&code)
+\begin{DoxyCompactList}\small\item\em Only valid when inside a method. Simply forwards the code lines to the implementation file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a401dc58fcd548adcc23b220215d121ae}{method\+End}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Poco\+::\+Cpp\+Parser\+::\+Function}} $\ast$p\+Func, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&properties)
+\begin{DoxyCompactList}\small\item\em Writes other non-\/method code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_aa9dba0c69f0ab099f73faa591bf77e3c}{variables\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Closes the method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_aded92527fc0cd4ab6c204e093164f671}{variable}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable}{Poco\+::\+Cpp\+Parser\+::\+Variable}} $\ast$p\+Var)
+\begin{DoxyCompactList}\small\item\em Indicates that variables wil be written. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_ade15acac4cf5c92c6a7435c4fbd9a2fc}{variables\+End}} ()
+\begin{DoxyCompactList}\small\item\em Writes a single typedef. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_ac8fae256cc797c294db8327fc2bfdb1e}{write\+Type\+Def}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1TypeDef}{Poco\+::\+Cpp\+Parser\+::\+Type\+Def}} $\ast$p\+Type)
+\begin{DoxyCompactList}\small\item\em Writes a single variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator_a6449cd0b639f591ac19c3fc5d22f9425}{write\+To\+Header}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&js\+Code)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Cpp implementation of the code generator. 
+
+Definition at line 33 of file Cpp\+Generator.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a2b9ec0e4b81e70a5816f9a67f554023f}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a2b9ec0e4b81e70a5816f9a67f554023f}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!CppGenerator@{CppGenerator}}
+\index{CppGenerator@{CppGenerator}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{CppGenerator()}{CppGenerator()}}
+{\footnotesize\ttfamily Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::\+Cpp\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name\+Space,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{library\+Name,  }\item[{bool}]{use\+Poco\+Include\+Style,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{copyright,  }\item[{std\+::ostream \&}]{h\+Out,  }\item[{std\+::ostream \&}]{cpp\+Out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_aaa54b1380ebcee5595b59e92cdb33fb1}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_aaa54b1380ebcee5595b59e92cdb33fb1}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!````~CppGenerator@{$\sim$CppGenerator}}
+\index{````~CppGenerator@{$\sim$CppGenerator}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{$\sim$CppGenerator()}{~CppGenerator()}}
+{\footnotesize\ttfamily Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::$\sim$\+Cpp\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator}{Cpp\+Generator}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_afa036a42e35032b3ca5d8e5108c6cdec}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_afa036a42e35032b3ca5d8e5108c6cdec}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!enableAttributes@{enableAttributes}}
+\index{enableAttributes@{enableAttributes}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{enableAttributes()}{enableAttributes()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::enable\+Attributes (\begin{DoxyParamCaption}\item[{bool}]{enable = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CppGenerator}{Cpp\+Generator}}. 
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a9a59112f39fd9658430d6eeb296adfd3}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a9a59112f39fd9658430d6eeb296adfd3}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!enableTimestamps@{enableTimestamps}}
+\index{enableTimestamps@{enableTimestamps}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{enableTimestamps()}{enableTimestamps()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::enable\+Timestamps (\begin{DoxyParamCaption}\item[{bool}]{enable = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Enable or disable (default) writing of attributes. 
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a6f7c7722b55c98267b1296ac488fc14d}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a6f7c7722b55c98267b1296ac488fc14d}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!endFile@{endFile}}
+\index{endFile@{endFile}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{endFile()}{endFile()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::end\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes the default header, plus include guard. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a89f684f115449f3439e367fcd3d58b74}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a401dc58fcd548adcc23b220215d121ae}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a401dc58fcd548adcc23b220215d121ae}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!methodEnd@{methodEnd}}
+\index{methodEnd@{methodEnd}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{methodEnd()}{methodEnd()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::method\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Poco\+::\+Cpp\+Parser\+::\+Function}} $\ast$}]{p\+Func,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes other non-\/method code. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a828af3b306d0096f72fc4d352b46d124}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_abc2b0f43d344ea52f9c3b98fe40e143c}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_abc2b0f43d344ea52f9c3b98fe40e143c}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!methodStart@{methodStart}}
+\index{methodStart@{methodStart}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{methodStart()}{methodStart()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::method\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Poco\+::\+Cpp\+Parser\+::\+Function}} $\ast$}]{p\+Func,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Closes the class declaration. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af880770c96cde96af546e0a0c2a0cc00}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_aef9e5e55142051bffb0b8d6cb9d82aca}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_aef9e5e55142051bffb0b8d6cb9d82aca}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!registerConstructorHint@{registerConstructorHint}}
+\index{registerConstructorHint@{registerConstructorHint}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{registerConstructorHint()}{registerConstructorHint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::register\+Constructor\+Hint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable}{Poco\+::\+Cpp\+Parser\+::\+Variable}} $\ast$}]{p\+Var,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter}{Poco\+::\+Cpp\+Parser\+::\+Parameter}} $\ast$}]{p\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enable (default) or disable timestamps in file headers. 
+
+
+
+Definition at line 168 of file Cpp\+Generator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a2149a6715529b164cda83f60e03fb7b8}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a2149a6715529b164cda83f60e03fb7b8}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!registerConstructorHint@{registerConstructorHint}}
+\index{registerConstructorHint@{registerConstructorHint}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{registerConstructorHint()}{registerConstructorHint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::register\+Constructor\+Hint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable}{Poco\+::\+Cpp\+Parser\+::\+Variable}} $\ast$}]{p\+Var,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Register a hint which tells us which parameter of the constructor should be used to init a given member variable 
+
+Definition at line 174 of file Cpp\+Generator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_ab6250b1ae6f42382aff4258cb2930064}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_ab6250b1ae6f42382aff4258cb2930064}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!structEnd@{structEnd}}
+\index{structEnd@{structEnd}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{structEnd()}{structEnd()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::struct\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes the class declaration. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a4f5fcd71d56d5f419c1c6e85713d81cf}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a8ddb99daca3736402b1702a8e51272de}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a8ddb99daca3736402b1702a8e51272de}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!structStart@{structStart}}
+\index{structStart@{structStart}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{structStart()}{structStart()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::struct\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$}]{p\+Struct,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Closes the namespace. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_acc2e3d75ae1bb663ec70f851c01c85e8}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_aded92527fc0cd4ab6c204e093164f671}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_aded92527fc0cd4ab6c204e093164f671}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!variable@{variable}}
+\index{variable@{variable}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{variable()}{variable()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::variable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable}{Poco\+::\+Cpp\+Parser\+::\+Variable}} $\ast$}]{p\+Var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Indicates that variables wil be written. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_ac6eeec2e298ca33ebc2cf68fd9b619dd}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_ade15acac4cf5c92c6a7435c4fbd9a2fc}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_ade15acac4cf5c92c6a7435c4fbd9a2fc}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!variablesEnd@{variablesEnd}}
+\index{variablesEnd@{variablesEnd}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{variablesEnd()}{variablesEnd()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::variables\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes a single typedef. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a1f6fbaacd66b86bd926050d33ca1a330}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_aa9dba0c69f0ab099f73faa591bf77e3c}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_aa9dba0c69f0ab099f73faa591bf77e3c}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!variablesStart@{variablesStart}}
+\index{variablesStart@{variablesStart}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{variablesStart()}{variablesStart()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::variables\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Closes the method. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a451c70b33235310d4141d8dfebd9db6b}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a22b63ade7bd1dadb34618a9e2e2d68eb}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a22b63ade7bd1dadb34618a9e2e2d68eb}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!writeDefaultHeader@{writeDefaultHeader}}
+\index{writeDefaultHeader@{writeDefaultHeader}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{writeDefaultHeader()}{writeDefaultHeader()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::write\+Default\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$}]{p\+Struct,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{class\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{library\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{package }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Register a hint which tells us which constant value should be used to init a given member variable. 
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a6a4f48e3dda522f97a688f695583312a}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a7040a0a7056550f0ecd3b9d9c174ef4d}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a7040a0a7056550f0ecd3b9d9c174ef4d}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!writeFwdDecls@{writeFwdDecls}}
+\index{writeFwdDecls@{writeFwdDecls}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{writeFwdDecls()}{writeFwdDecls()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::write\+Fwd\+Decls (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_ad24ae88dea0fe4febc442bfb1dae88a3}{Code\+Generator\+::\+Fwd\+Decls}} \&}]{decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes the enclosing namespace. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af9984e0cb0e8ae038261c2340ad52690}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a8b76f0642bc25c4bc23c2f80cecd6054}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a8b76f0642bc25c4bc23c2f80cecd6054}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!writeImplementation@{writeImplementation}}
+\index{writeImplementation@{writeImplementation}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{writeImplementation()}{writeImplementation()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::write\+Implementation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Only valid when inside a method. Simply forwards the code lines to the implementation file. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_ad4957d7bf7e1420f5552758c522b6e4a}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a723fcbb763855b1ff2df76c5ca1cd125}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a723fcbb763855b1ff2df76c5ca1cd125}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!writeInclude@{writeInclude}}
+\index{writeInclude@{writeInclude}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{writeInclude()}{writeInclude()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::write\+Include (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{include,  }\item[{bool}]{to\+Header }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Closes the include guard. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a51a18881f13b4e08f85af2ac9d1faacd}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a701580c704fa5bcbe80dcc116a183bba}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a701580c704fa5bcbe80dcc116a183bba}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!writeMethodImplementation@{writeMethodImplementation}}
+\index{writeMethodImplementation@{writeMethodImplementation}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{writeMethodImplementation()}{writeMethodImplementation()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::write\+Method\+Implementation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes the method header. Properties contains the properties found in the functions docuementation and in the class documentation. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a7d0fce7d245a13f145562742aff45bb1}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a43cb13980510d63e332503a612b6c35e}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a43cb13980510d63e332503a612b6c35e}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!writeNameSpaceBegin@{writeNameSpaceBegin}}
+\index{writeNameSpaceBegin@{writeNameSpaceBegin}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{writeNameSpaceBegin()}{writeNameSpaceBegin()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::write\+Name\+Space\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{full\+Name\+Space }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes the system include file to the header. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a1625b7acfaf751f8b6c5f5dd0ac4d8ea}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a8a03efd6bb8f35ee7351b9703404ce09}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a8a03efd6bb8f35ee7351b9703404ce09}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!writeNameSpaceEnd@{writeNameSpaceEnd}}
+\index{writeNameSpaceEnd@{writeNameSpaceEnd}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{writeNameSpaceEnd()}{writeNameSpaceEnd()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::write\+Name\+Space\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{full\+Name\+Space }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes the fwd decl to the header file and the include file to the src file. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_abdc8cb986d39244b72939a972dbe9521}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a5b303f610c02bb6780cff10a97bc3008}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a5b303f610c02bb6780cff10a97bc3008}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!writeSrcInclude@{writeSrcInclude}}
+\index{writeSrcInclude@{writeSrcInclude}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{writeSrcInclude()}{writeSrcInclude()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::write\+Src\+Include (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{include }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_af3e60f71392dcca0c10209f7fcfa8b61}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_af3e60f71392dcca0c10209f7fcfa8b61}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!writeSystemInclude@{writeSystemInclude}}
+\index{writeSystemInclude@{writeSystemInclude}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{writeSystemInclude()}{writeSystemInclude()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::write\+System\+Include (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{include }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes the include either to the header or the src file. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_ac0b5d30098cdd3c4e9c4e41553a752fe}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_a6449cd0b639f591ac19c3fc5d22f9425}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_a6449cd0b639f591ac19c3fc5d22f9425}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!writeToHeader@{writeToHeader}}
+\index{writeToHeader@{writeToHeader}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{writeToHeader()}{writeToHeader()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::write\+To\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{js\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 180 of file Cpp\+Generator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1CppGenerator_ac8fae256cc797c294db8327fc2bfdb1e}\label{classPoco_1_1CodeGeneration_1_1CppGenerator_ac8fae256cc797c294db8327fc2bfdb1e}} 
+\index{Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}!writeTypeDef@{writeTypeDef}}
+\index{writeTypeDef@{writeTypeDef}!Poco::CodeGeneration::CppGenerator@{Poco::CodeGeneration::CppGenerator}}
+\doxysubsubsection{\texorpdfstring{writeTypeDef()}{writeTypeDef()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Cpp\+Generator\+::write\+Type\+Def (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1TypeDef}{Poco\+::\+Cpp\+Parser\+::\+Type\+Def}} $\ast$}]{p\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes a single variable. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_abe12b926f61ddab4923270375679b5ca}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Code\+Generation/\mbox{\hyperlink{CppGenerator_8h}{Cpp\+Generator.\+h}}\end{DoxyCompactItemize}

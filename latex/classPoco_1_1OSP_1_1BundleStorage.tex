@@ -1,0 +1,144 @@
+\hypertarget{classPoco_1_1OSP_1_1BundleStorage}{}\doxysection{Poco\+::O\+SP\+::Bundle\+Storage Class Reference}
+\label{classPoco_1_1OSP_1_1BundleStorage}\index{Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}}
+
+
+{\ttfamily \#include $<$Bundle\+Storage.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::O\+SP\+::Bundle\+Storage\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::O\+SP\+::Bundle\+Storage\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage}{Bundle\+Storage}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_a5fdb9cbbfea48198742307c8e4922d6a}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::istream $\ast$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_aa27d4daf1a0199ab6370673b80f8d4c9}{get\+Resource}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_a96ddcd5bd716218e5d0f39fe65b03f17}{path}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_a9ffbed3b3b8ab03e7edfd09ee7a448c9}{list}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_a96ddcd5bd716218e5d0f39fe65b03f17}{path}}, std\+::vector$<$ std\+::string $>$ \&files) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_a4f5e5b74f617a948c51e212e489e6b20}{last\+Modified}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_a96ddcd5bd716218e5d0f39fe65b03f17}{path}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_a96ddcd5bd716218e5d0f39fe65b03f17}{path}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Returns the last modification timestamp for the specified file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_a5fdb9cbbfea48198742307c8e4922d6a}{Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_a2d0a1e2272f28cc1305cfc21d0d3d705}{Const\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_a9e9a8c0ec81870d10218c81f9238b866}{$\sim$\+Bundle\+Storage}} ()
+\begin{DoxyCompactList}\small\item\em Returns the path to the bundle\textquotesingle{}s directory or archive file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage}{Bundle\+Storage}} manages provides access to all resources stored inside of a bundle.
+
+\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage}{Bundle\+Storage}} itself is an abstract class; subclasses implement the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage}{Bundle\+Storage}} interface for bundles stored in directories or \mbox{\hyperlink{namespacePoco_1_1Zip}{Zip}} files.
+
+Paths to resources within a bundle are always specified using Unix notation -\/ directories are separated with a forward slash (\textquotesingle{}/\textquotesingle{}). 
+
+Definition at line 35 of file Bundle\+Storage.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleStorage_a5fdb9cbbfea48198742307c8e4922d6a}\label{classPoco_1_1OSP_1_1BundleStorage_a5fdb9cbbfea48198742307c8e4922d6a}} 
+\index{Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage}{Bundle\+Storage}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_a5fdb9cbbfea48198742307c8e4922d6a}{Poco\+::\+O\+S\+P\+::\+Bundle\+Storage\+::\+Ptr}}}
+
+
+
+Definition at line 48 of file Bundle\+Storage.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleStorage_a9e9a8c0ec81870d10218c81f9238b866}\label{classPoco_1_1OSP_1_1BundleStorage_a9e9a8c0ec81870d10218c81f9238b866}} 
+\index{Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}!````~BundleStorage@{$\sim$BundleStorage}}
+\index{````~BundleStorage@{$\sim$BundleStorage}!Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}}
+\doxysubsubsection{\texorpdfstring{$\sim$BundleStorage()}{~BundleStorage()}}
+{\footnotesize\ttfamily virtual Poco\+::\+O\+S\+P\+::\+Bundle\+Storage\+::$\sim$\+Bundle\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Returns the path to the bundle\textquotesingle{}s directory or archive file. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleStorage_aa27d4daf1a0199ab6370673b80f8d4c9}\label{classPoco_1_1OSP_1_1BundleStorage_aa27d4daf1a0199ab6370673b80f8d4c9}} 
+\index{Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}!getResource@{getResource}}
+\index{getResource@{getResource}!Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}}
+\doxysubsubsection{\texorpdfstring{getResource()}{getResource()}}
+{\footnotesize\ttfamily virtual std\+::istream$\ast$ Poco\+::\+O\+S\+P\+::\+Bundle\+Storage\+::get\+Resource (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFile_ab4594390245367e4c7d161e7e267b29d}{Poco\+::\+O\+S\+P\+::\+Bundle\+File}}, and \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleDirectory_a71cec1f00fb2e1ec936eca4af292558b}{Poco\+::\+O\+S\+P\+::\+Bundle\+Directory}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleStorage_a4f5e5b74f617a948c51e212e489e6b20}\label{classPoco_1_1OSP_1_1BundleStorage_a4f5e5b74f617a948c51e212e489e6b20}} 
+\index{Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}!lastModified@{lastModified}}
+\index{lastModified@{lastModified}!Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}}
+\doxysubsubsection{\texorpdfstring{lastModified()}{lastModified()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} Poco\+::\+O\+S\+P\+::\+Bundle\+Storage\+::last\+Modified (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+List all files in the directory specified by path. If path is empty, all files in the bundle root directory are listed. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFile_a10528029f2cde2e04e5ec859907b9878}{Poco\+::\+O\+S\+P\+::\+Bundle\+File}}, and \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleDirectory_a92f3aa7ebc8e1e4f8a54ae866f0f0f37}{Poco\+::\+O\+S\+P\+::\+Bundle\+Directory}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleStorage_a9ffbed3b3b8ab03e7edfd09ee7a448c9}\label{classPoco_1_1OSP_1_1BundleStorage_a9ffbed3b3b8ab03e7edfd09ee7a448c9}} 
+\index{Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}!list@{list}}
+\index{list@{list}!Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}}
+\doxysubsubsection{\texorpdfstring{list()}{list()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+O\+S\+P\+::\+Bundle\+Storage\+::list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{files }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns an input stream for reading the resource with the given path, if the resource exists. Otherwise, returns N\+U\+LL.
+
+The caller receives ownership of, and is responsible for deleting the input stream when it\textquotesingle{}s no longer needed. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFile_afb5c9b51e6d81c36952d8ce30ab7be98}{Poco\+::\+O\+S\+P\+::\+Bundle\+File}}, and \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleDirectory_a89fd1cdc82a2ded806ed2a88f07db0b6}{Poco\+::\+O\+S\+P\+::\+Bundle\+Directory}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleStorage_a96ddcd5bd716218e5d0f39fe65b03f17}\label{classPoco_1_1OSP_1_1BundleStorage_a96ddcd5bd716218e5d0f39fe65b03f17}} 
+\index{Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}!path@{path}}
+\index{path@{path}!Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily virtual std\+::string Poco\+::\+O\+S\+P\+::\+Bundle\+Storage\+::path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the last modification timestamp for the specified file. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFile_a98c6dc40b572698fdc7981e5b370c2a1}{Poco\+::\+O\+S\+P\+::\+Bundle\+File}}, and \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleDirectory_a8610c13f28d69bb5c3ab56714e420882}{Poco\+::\+O\+S\+P\+::\+Bundle\+Directory}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleStorage_a2d0a1e2272f28cc1305cfc21d0d3d705}\label{classPoco_1_1OSP_1_1BundleStorage_a2d0a1e2272f28cc1305cfc21d0d3d705}} 
+\index{Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}!ConstPtr@{ConstPtr}}
+\index{ConstPtr@{ConstPtr}!Poco::OSP::BundleStorage@{Poco::OSP::BundleStorage}}
+\doxysubsubsection{\texorpdfstring{ConstPtr}{ConstPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleStorage_a5fdb9cbbfea48198742307c8e4922d6a}{Ptr}} Poco\+::\+O\+S\+P\+::\+Bundle\+Storage\+::\+Const\+Ptr}
+
+
+
+Definition at line 49 of file Bundle\+Storage.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{BundleStorage_8h}{Bundle\+Storage.\+h}}\end{DoxyCompactItemize}

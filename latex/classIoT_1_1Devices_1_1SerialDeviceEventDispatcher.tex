@@ -1,0 +1,92 @@
+\hypertarget{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher}{}\doxysection{IoT\+::Devices\+::Serial\+Device\+Event\+Dispatcher Class Reference}
+\label{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher}\index{IoT::Devices::SerialDeviceEventDispatcher@{IoT::Devices::SerialDeviceEventDispatcher}}
+
+
+{\ttfamily \#include $<$Serial\+Device\+Event\+Dispatcher.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::Serial\+Device\+Event\+Dispatcher\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::Serial\+Device\+Event\+Dispatcher\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher_ad4db47f0611578477b5515cfa156f708}{Serial\+Device\+Event\+Dispatcher}} (\mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDeviceRemoteObject}{Serial\+Device\+Remote\+Object}} $\ast$p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a14d7bb586169695c72bd34e7b012903a}{protocol}})
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher_a957b0a1d33939a467e42936ff7d09680}{$\sim$\+Serial\+Device\+Event\+Dispatcher}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher}{Serial\+Device\+Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher_a8ea570c12612ce395e509d3b8e0ca7f2}{event\+\_\+\+\_\+line\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&data)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher}{Serial\+Device\+Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher_a9b27dcf44f8e61286a468cf3c172d477}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class provides a simple interface for accessing a serial port.
+
+There are two modes of operation for receiving data\+: polling (blocking) mode (default) and events (callback) mode.
+
+In polling mode, repeatedly call poll() to detect if data is available, then call one of the read() methods to receive available data. The read() methods can also be called if no data is available, but will block until at least one character can be read.
+
+In event mode the class will start a thread that polls and reads available data from the serial port, and fires the line\+Received event whenever something has been read. Since callback mode uses read\+Line() to receive entire lines (if possible), delimiter characters and timeout can be set via the \char`\"{}delimiters\char`\"{} (string) and \char`\"{}timeout\char`\"{} (double) properties.
+
+Clients of the class can switch between polling and event mode by enabling or disabling the \char`\"{}events\char`\"{} feature\+: \begin{DoxyVerb}setFeature("events", true); 
+\end{DoxyVerb}
+ 
+
+Definition at line 30 of file Serial\+Device\+Event\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher_ad4db47f0611578477b5515cfa156f708}\label{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher_ad4db47f0611578477b5515cfa156f708}} 
+\index{IoT::Devices::SerialDeviceEventDispatcher@{IoT::Devices::SerialDeviceEventDispatcher}!SerialDeviceEventDispatcher@{SerialDeviceEventDispatcher}}
+\index{SerialDeviceEventDispatcher@{SerialDeviceEventDispatcher}!IoT::Devices::SerialDeviceEventDispatcher@{IoT::Devices::SerialDeviceEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{SerialDeviceEventDispatcher()}{SerialDeviceEventDispatcher()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Serial\+Device\+Event\+Dispatcher\+::\+Serial\+Device\+Event\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDeviceRemoteObject}{Serial\+Device\+Remote\+Object}} $\ast$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher_a957b0a1d33939a467e42936ff7d09680}\label{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher_a957b0a1d33939a467e42936ff7d09680}} 
+\index{IoT::Devices::SerialDeviceEventDispatcher@{IoT::Devices::SerialDeviceEventDispatcher}!````~SerialDeviceEventDispatcher@{$\sim$SerialDeviceEventDispatcher}}
+\index{````~SerialDeviceEventDispatcher@{$\sim$SerialDeviceEventDispatcher}!IoT::Devices::SerialDeviceEventDispatcher@{IoT::Devices::SerialDeviceEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$SerialDeviceEventDispatcher()}{~SerialDeviceEventDispatcher()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Devices\+::\+Serial\+Device\+Event\+Dispatcher\+::$\sim$\+Serial\+Device\+Event\+Dispatcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher}{Serial\+Device\+Event\+Dispatcher}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher_a8ea570c12612ce395e509d3b8e0ca7f2}\label{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher_a8ea570c12612ce395e509d3b8e0ca7f2}} 
+\index{IoT::Devices::SerialDeviceEventDispatcher@{IoT::Devices::SerialDeviceEventDispatcher}!event\_\_lineReceived@{event\_\_lineReceived}}
+\index{event\_\_lineReceived@{event\_\_lineReceived}!IoT::Devices::SerialDeviceEventDispatcher@{IoT::Devices::SerialDeviceEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_lineReceived()}{event\_\_lineReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Serial\+Device\+Event\+Dispatcher\+::event\+\_\+\+\_\+line\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher}{Serial\+Device\+Event\+Dispatcher}}. 
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher_a9b27dcf44f8e61286a468cf3c172d477}\label{classIoT_1_1Devices_1_1SerialDeviceEventDispatcher_a9b27dcf44f8e61286a468cf3c172d477}} 
+\index{IoT::Devices::SerialDeviceEventDispatcher@{IoT::Devices::SerialDeviceEventDispatcher}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Devices::SerialDeviceEventDispatcher@{IoT::Devices::SerialDeviceEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+Devices\+::\+Serial\+Device\+Event\+Dispatcher\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 74 of file Serial\+Device\+Event\+Dispatcher.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{SerialDeviceEventDispatcher_8h}{Serial\+Device\+Event\+Dispatcher.\+h}}\end{DoxyCompactItemize}

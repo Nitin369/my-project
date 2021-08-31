@@ -1,0 +1,162 @@
+\hypertarget{classIoT_1_1Devices_1_1IOServerHelper}{}\doxysection{IoT\+::Devices\+::I\+O\+Server\+Helper Class Reference}
+\label{classIoT_1_1Devices_1_1IOServerHelper}\index{IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}}
+
+
+{\ttfamily \#include $<$I\+O\+Server\+Helper.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{Io\+T\+::\+Devices\+::\+IO}} \mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper_a7549d6bc473c5fa1589b381efbf42eb6}{Service}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper_a08033d57eb9b2c5cfdbd411cd2c3cb83}{I\+O\+Server\+Helper}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper_a03a3092339418ec27261e4caccc927b8}{$\sim$\+I\+O\+Server\+Helper}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper}{I\+O\+Server\+Helper}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IORemoteObject}{Io\+T\+::\+Devices\+::\+I\+O\+Remote\+Object}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper_a3d7bc51ed2b74157716a50d16c7ea606}{create\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{Io\+T\+::\+Devices\+::\+IO}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper}{I\+O\+Server\+Helper}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper_a7cb6a0b72a838dcb7be85b1f33dc8529}{enable\+Events}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\begin{DoxyCompactList}\small\item\em Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{Io\+T\+::\+Devices\+::\+IO}} instance. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper_a2031ce9f3c5682c908bcd948afb666be}{register\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{Io\+T\+::\+Devices\+::\+IO}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper_ae93b170c55ced0111e48e5f6cc2004b4}{register\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IORemoteObject}{Io\+T\+::\+Devices\+::\+I\+O\+Remote\+Object}} $>$ p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper_ae6702b0568ac3f443525065009dfe106}{shutdown}} ()
+\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper_a00f4c1b5165f4c32321b39b9a18334e5}{unregister\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\begin{DoxyCompactList}\small\item\em Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{Io\+T\+::\+Devices\+::\+IO}} from the O\+RB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The interface for general purpose input/output (G\+P\+IO) ports.
+
+This class represents a single G\+P\+IO pin. Mapping to physical pins is configured when setting up the specific \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{IO}} implementation class, typically using a configuration file.
+
+Implementations supporting dynamically changing pin directions should expose a string property named \char`\"{}direction\char`\"{} that takes the values \char`\"{}in\char`\"{} and \char`\"{}out\char`\"{}. 
+
+Definition at line 34 of file I\+O\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IOServerHelper_a7549d6bc473c5fa1589b381efbf42eb6}\label{classIoT_1_1Devices_1_1IOServerHelper_a7549d6bc473c5fa1589b381efbf42eb6}} 
+\index{IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}!Service@{Service}}
+\index{Service@{Service}!IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}}
+\doxysubsubsection{\texorpdfstring{Service}{Service}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{Io\+T\+::\+Devices\+::\+IO}} \mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper_a7549d6bc473c5fa1589b381efbf42eb6}{Io\+T\+::\+Devices\+::\+I\+O\+Server\+Helper\+::\+Service}}}
+
+
+
+Definition at line 48 of file I\+O\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IOServerHelper_a08033d57eb9b2c5cfdbd411cd2c3cb83}\label{classIoT_1_1Devices_1_1IOServerHelper_a08033d57eb9b2c5cfdbd411cd2c3cb83}} 
+\index{IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}!IOServerHelper@{IOServerHelper}}
+\index{IOServerHelper@{IOServerHelper}!IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}}
+\doxysubsubsection{\texorpdfstring{IOServerHelper()}{IOServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+I\+O\+Server\+Helper\+::\+I\+O\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IOServerHelper_a03a3092339418ec27261e4caccc927b8}\label{classIoT_1_1Devices_1_1IOServerHelper_a03a3092339418ec27261e4caccc927b8}} 
+\index{IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}!````~IOServerHelper@{$\sim$IOServerHelper}}
+\index{````~IOServerHelper@{$\sim$IOServerHelper}!IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}}
+\doxysubsubsection{\texorpdfstring{$\sim$IOServerHelper()}{~IOServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+I\+O\+Server\+Helper\+::$\sim$\+I\+O\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper}{I\+O\+Server\+Helper}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IOServerHelper_a3d7bc51ed2b74157716a50d16c7ea606}\label{classIoT_1_1Devices_1_1IOServerHelper_a3d7bc51ed2b74157716a50d16c7ea606}} 
+\index{IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}!createRemoteObject@{createRemoteObject}}
+\index{createRemoteObject@{createRemoteObject}!IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}}
+\doxysubsubsection{\texorpdfstring{createRemoteObject()}{createRemoteObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IORemoteObject}{Io\+T\+::\+Devices\+::\+I\+O\+Remote\+Object}} $>$ Io\+T\+::\+Devices\+::\+I\+O\+Server\+Helper\+::create\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{Io\+T\+::\+Devices\+::\+IO}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1IOServerHelper}{I\+O\+Server\+Helper}}. 
+
+
+
+Definition at line 104 of file I\+O\+Server\+Helper.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IOServerHelper_a7cb6a0b72a838dcb7be85b1f33dc8529}\label{classIoT_1_1Devices_1_1IOServerHelper_a7cb6a0b72a838dcb7be85b1f33dc8529}} 
+\index{IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}!enableEvents@{enableEvents}}
+\index{enableEvents@{enableEvents}!IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}}
+\doxysubsubsection{\texorpdfstring{enableEvents()}{enableEvents()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+I\+O\+Server\+Helper\+::enable\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{Io\+T\+::\+Devices\+::\+IO}} instance. 
+
+
+
+Definition at line 110 of file I\+O\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IOServerHelper_a2031ce9f3c5682c908bcd948afb666be}\label{classIoT_1_1Devices_1_1IOServerHelper_a2031ce9f3c5682c908bcd948afb666be}} 
+\index{IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}!registerObject@{registerObject}}
+\index{registerObject@{registerObject}!IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerObject()}{registerObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Devices\+::\+I\+O\+Server\+Helper\+::register\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{Io\+T\+::\+Devices\+::\+IO}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Enables remote events for the Remote\+Object identified by the given U\+RI.
+
+Events will be delivered using the Transport for the given protocol. Can be called multiple times for the same U\+RI with different protocols. 
+
+Definition at line 116 of file I\+O\+Server\+Helper.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IOServerHelper_ae93b170c55ced0111e48e5f6cc2004b4}\label{classIoT_1_1Devices_1_1IOServerHelper_ae93b170c55ced0111e48e5f6cc2004b4}} 
+\index{IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}!registerRemoteObject@{registerRemoteObject}}
+\index{registerRemoteObject@{registerRemoteObject}!IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerRemoteObject()}{registerRemoteObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Devices\+::\+I\+O\+Server\+Helper\+::register\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IORemoteObject}{Io\+T\+::\+Devices\+::\+I\+O\+Remote\+Object}} $>$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{Io\+T\+::\+Devices\+::\+IO}} instance and registers it with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. 
+
+Definition at line 122 of file I\+O\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IOServerHelper_ae6702b0568ac3f443525065009dfe106}\label{classIoT_1_1Devices_1_1IOServerHelper_ae6702b0568ac3f443525065009dfe106}} 
+\index{IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily static void Io\+T\+::\+Devices\+::\+I\+O\+Server\+Helper\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers the given Remote\+Object with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. \mbox{\Hypertarget{classIoT_1_1Devices_1_1IOServerHelper_a00f4c1b5165f4c32321b39b9a18334e5}\label{classIoT_1_1Devices_1_1IOServerHelper_a00f4c1b5165f4c32321b39b9a18334e5}} 
+\index{IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}!unregisterObject@{unregisterObject}}
+\index{unregisterObject@{unregisterObject}!IoT::Devices::IOServerHelper@{IoT::Devices::IOServerHelper}}
+\doxysubsubsection{\texorpdfstring{unregisterObject()}{unregisterObject()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+I\+O\+Server\+Helper\+::unregister\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1Devices_1_1IO}{Io\+T\+::\+Devices\+::\+IO}} from the O\+RB. 
+
+
+
+Definition at line 128 of file I\+O\+Server\+Helper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{IOServerHelper_8h}{I\+O\+Server\+Helper.\+h}}\end{DoxyCompactItemize}

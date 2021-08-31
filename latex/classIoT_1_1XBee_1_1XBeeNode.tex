@@ -1,0 +1,361 @@
+\hypertarget{classIoT_1_1XBee_1_1XBeeNode}{}\doxysection{IoT\+::X\+Bee\+::X\+Bee\+Node Class Reference}
+\label{classIoT_1_1XBee_1_1XBeeNode}\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+
+
+{\ttfamily \#include $<$X\+Bee\+Node.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::X\+Bee\+::X\+Bee\+Node\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::X\+Bee\+::X\+Bee\+Node\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a42aed9b330b90e8c239339904490700d}{X\+Bee\+Node}} ()
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a17a0520f5fc726df98ae5738886a181a}{$\sim$\+X\+Bee\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode}{X\+Bee\+Node}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_aea6d97b40eff775c19c941cb485e5626}{send\+Frame}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1APIFrame}{A\+P\+I\+Frame}} \&frame)=0
+\begin{DoxyCompactList}\small\item\em Destroys the Z\+B\+Port. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_afd882aedc0a0822230fd3f95118f6358}{send\+Command}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ATCommand}{A\+T\+Command}} \&command)=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a7ddfec6f15762edf44b018c0b74098a3}{queue\+Command}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ATCommand}{A\+T\+Command}} \&command)=0
+\begin{DoxyCompactList}\small\item\em Sends an AT command to the connected \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a75dd17c26c508f2a49dcc8b606eed5f8}{send\+Remote\+Command}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1RemoteATCommand}{Remote\+A\+T\+Command}} \&command)=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_ac8a1307f9d9cc52acdb55983d5675d96}{send\+Transmit\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1TransmitRequest}{Transmit\+Request}} \&request)=0
+\begin{DoxyCompactList}\small\item\em Sends an AT command to a remote \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_aa2befac19f15f2ed44fb35d069910145}{send\+Zig\+Bee\+Transmit\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeTransmitRequest}{Zig\+Bee\+Transmit\+Request}} \&request)=0
+\begin{DoxyCompactList}\small\item\em Sends a \mbox{\hyperlink{structIoT_1_1XBee_1_1TransmitRequest}{Transmit\+Request}} message to the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a701b4d708ac150586903368e7d36f830}{send\+Explicit\+Addressing\+Zig\+Bee\+Transmit\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ExplicitAddressingZigBeeTransmitRequest}{Explicit\+Addressing\+Zig\+Bee\+Transmit\+Request}} \&request)=0
+\begin{DoxyCompactList}\small\item\em Sends a \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeTransmitRequest}{Zig\+Bee\+Transmit\+Request}} to the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1APIFrame}{A\+P\+I\+Frame}} $>$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a20fbda8e7d20a11e83a3f0f87664edf6}{frame\+Received}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1TransmitStatus}{Transmit\+Status}} $>$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_ad62d116d441f26523e4ad0a950d26ed2}{transmit\+Status\+Received}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ReceivePacket}{Receive\+Packet}} $>$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a2fdf8ae165cbd8574c09dd8588c7831f}{packet\+Received}}
+\begin{DoxyCompactList}\small\item\em Fired when a TX Request is completed and the module sends a TX Status message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ReceivePacket}{Receive\+Packet}} $>$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a34584b5a104f478ae838ea011f9b2913}{io\+Data\+Received}}
+\begin{DoxyCompactList}\small\item\em Fired when a packet has been received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeTransmitStatus}{Zig\+Bee\+Transmit\+Status}} $>$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a42abbe5da449f021e8d8c1b8781a1467}{zig\+Bee\+Transmit\+Status\+Received}}
+\begin{DoxyCompactList}\small\item\em Fired when a I/O data packet has been received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeReceivePacket}{Zig\+Bee\+Receive\+Packet}} $>$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a5292b0bc2eadafc87ecea2285bce0d00}{zig\+Bee\+Packet\+Received}}
+\begin{DoxyCompactList}\small\item\em Fired when a Zig\+Bee TX Request is completed and the module sends a TX Status message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ExplicitAddressingZigBeeReceivePacket}{Explicit\+Addressing\+Zig\+Bee\+Receive\+Packet}} $>$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a2f71ddfb3817f36544f80a3b185df58e}{explicit\+Addressing\+Zig\+Bee\+Packet\+Received}}
+\begin{DoxyCompactList}\small\item\em Fired when a Zig\+Bee packet has been received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ModemStatus}{Modem\+Status}} $>$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a00b12323181b37055ce9985eb039b2c0}{modem\+Status\+Received}}
+\begin{DoxyCompactList}\small\item\em Fired when an explicit addressing Zig\+Bee packet has been received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ATCommandResponse}{A\+T\+Command\+Response}} $>$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a1e7940c6e75f511a288b36b7f73799ac}{command\+Response\+Received}}
+\begin{DoxyCompactList}\small\item\em Fired when a valid modem status frame has been received from the connected \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1RemoteATCommandResponse}{Remote\+A\+T\+Command\+Response}} $>$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a4afcaa55a461c919a1a5b164272a3bde}{remote\+Command\+Response\+Received}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1IOSample}{I\+O\+Sample}} $>$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_ab9bfc66eab20d68af9605e372a52e8b1}{io\+Sample\+Received}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1SensorRead}{Sensor\+Read}} $>$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_a69d084508f002140dab5bbd1ba2b6059}{sensor\+Read\+Received}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides a high-\/level interface to a Digi \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device using the Digi \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} A\+PI frame-\/based protocol. This class can be used with all \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} devices supporting the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} A\+PI frame-\/based protocol, including Zig\+Bee devices. Actually supported methods and events are depending on the kind of \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device, e.\+g., an 802.\+15.\+4 module won\textquotesingle{}t support Zig\+Bee-\/specific A\+PI frames, and vice-\/versa. Please refer to the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} product manual for detailed information about the A\+PI. 
+
+Definition at line 550 of file X\+Bee\+Node.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a42aed9b330b90e8c239339904490700d}\label{classIoT_1_1XBee_1_1XBeeNode_a42aed9b330b90e8c239339904490700d}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!XBeeNode@{XBeeNode}}
+\index{XBeeNode@{XBeeNode}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{XBeeNode()}{XBeeNode()}}
+{\footnotesize\ttfamily Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::\+X\+Bee\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fired when a \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} Sensor Read Indicator frame has been received from the connected \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. \mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a17a0520f5fc726df98ae5738886a181a}\label{classIoT_1_1XBee_1_1XBeeNode_a17a0520f5fc726df98ae5738886a181a}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!````~XBeeNode@{$\sim$XBeeNode}}
+\index{````~XBeeNode@{$\sim$XBeeNode}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{$\sim$XBeeNode()}{~XBeeNode()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::$\sim$\+X\+Bee\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode}{X\+Bee\+Node}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a7ddfec6f15762edf44b018c0b74098a3}\label{classIoT_1_1XBee_1_1XBeeNode_a7ddfec6f15762edf44b018c0b74098a3}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!queueCommand@{queueCommand}}
+\index{queueCommand@{queueCommand}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{queueCommand()}{queueCommand()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::queue\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ATCommand}{A\+T\+Command}} \&}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sends an AT command to the connected \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeImpl_a5f0e6e312d36a3f373a11a44e557382b}{Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_afd882aedc0a0822230fd3f95118f6358}\label{classIoT_1_1XBee_1_1XBeeNode_afd882aedc0a0822230fd3f95118f6358}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!sendCommand@{sendCommand}}
+\index{sendCommand@{sendCommand}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{sendCommand()}{sendCommand()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::send\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ATCommand}{A\+T\+Command}} \&}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sends an A\+PI frame to the connected \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device.
+
+The caller is responsible for correct formatting of the A\+PI frame\textquotesingle{}s data. Refer to the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} module documentation for supported frames and their format.
+
+This can be used to send A\+PI frames not directly supported by the \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode}{X\+Bee\+Node}} interface. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeImpl_ac80106dbb8a769f091f985865bb438c8}{Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a701b4d708ac150586903368e7d36f830}\label{classIoT_1_1XBee_1_1XBeeNode_a701b4d708ac150586903368e7d36f830}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!sendExplicitAddressingZigBeeTransmitRequest@{sendExplicitAddressingZigBeeTransmitRequest}}
+\index{sendExplicitAddressingZigBeeTransmitRequest@{sendExplicitAddressingZigBeeTransmitRequest}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{sendExplicitAddressingZigBeeTransmitRequest()}{sendExplicitAddressingZigBeeTransmitRequest()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::send\+Explicit\+Addressing\+Zig\+Bee\+Transmit\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ExplicitAddressingZigBeeTransmitRequest}{Explicit\+Addressing\+Zig\+Bee\+Transmit\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sends a \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeTransmitRequest}{Zig\+Bee\+Transmit\+Request}} to the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeImpl_a6c7a078ece8ad706ca98ae67d3c2ac9a}{Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_aea6d97b40eff775c19c941cb485e5626}\label{classIoT_1_1XBee_1_1XBeeNode_aea6d97b40eff775c19c941cb485e5626}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!sendFrame@{sendFrame}}
+\index{sendFrame@{sendFrame}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{sendFrame()}{sendFrame()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::send\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1APIFrame}{A\+P\+I\+Frame}} \&}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the Z\+B\+Port. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeImpl_a883f992cab1d599cde8c975e8e963266}{Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a75dd17c26c508f2a49dcc8b606eed5f8}\label{classIoT_1_1XBee_1_1XBeeNode_a75dd17c26c508f2a49dcc8b606eed5f8}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!sendRemoteCommand@{sendRemoteCommand}}
+\index{sendRemoteCommand@{sendRemoteCommand}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{sendRemoteCommand()}{sendRemoteCommand()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::send\+Remote\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1RemoteATCommand}{Remote\+A\+T\+Command}} \&}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Queues an AT command for execution on the connected \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device.
+
+In contrast to \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_afd882aedc0a0822230fd3f95118f6358}{send\+Command()}}, new parameter values are queued and not applied until either \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode_afd882aedc0a0822230fd3f95118f6358}{send\+Command()}} is called or the Apply Changes (AC) AT command is issued. Register queries (reading parameter values) are returned immediately. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeImpl_a3509202c5a0b71e443af7b98243c4628}{Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_ac8a1307f9d9cc52acdb55983d5675d96}\label{classIoT_1_1XBee_1_1XBeeNode_ac8a1307f9d9cc52acdb55983d5675d96}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!sendTransmitRequest@{sendTransmitRequest}}
+\index{sendTransmitRequest@{sendTransmitRequest}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{sendTransmitRequest()}{sendTransmitRequest()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::send\+Transmit\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1TransmitRequest}{Transmit\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sends an AT command to a remote \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeImpl_a5d4b306ae67b2e2cdc584616982cfa2e}{Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_aa2befac19f15f2ed44fb35d069910145}\label{classIoT_1_1XBee_1_1XBeeNode_aa2befac19f15f2ed44fb35d069910145}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!sendZigBeeTransmitRequest@{sendZigBeeTransmitRequest}}
+\index{sendZigBeeTransmitRequest@{sendZigBeeTransmitRequest}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{sendZigBeeTransmitRequest()}{sendZigBeeTransmitRequest()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::send\+Zig\+Bee\+Transmit\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeTransmitRequest}{Zig\+Bee\+Transmit\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sends a \mbox{\hyperlink{structIoT_1_1XBee_1_1TransmitRequest}{Transmit\+Request}} message to the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeImpl_a11f477d3d4ab155c170509751506a967}{Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 8
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a1e7940c6e75f511a288b36b7f73799ac}\label{classIoT_1_1XBee_1_1XBeeNode_a1e7940c6e75f511a288b36b7f73799ac}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!commandResponseReceived@{commandResponseReceived}}
+\index{commandResponseReceived@{commandResponseReceived}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{commandResponseReceived}{commandResponseReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ATCommandResponse}{A\+T\+Command\+Response}}$>$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::command\+Response\+Received}
+
+
+
+Fired when a valid modem status frame has been received from the connected \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. 
+
+
+
+Definition at line 591 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a2f71ddfb3817f36544f80a3b185df58e}\label{classIoT_1_1XBee_1_1XBeeNode_a2f71ddfb3817f36544f80a3b185df58e}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!explicitAddressingZigBeePacketReceived@{explicitAddressingZigBeePacketReceived}}
+\index{explicitAddressingZigBeePacketReceived@{explicitAddressingZigBeePacketReceived}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{explicitAddressingZigBeePacketReceived}{explicitAddressingZigBeePacketReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ExplicitAddressingZigBeeReceivePacket}{Explicit\+Addressing\+Zig\+Bee\+Receive\+Packet}}$>$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::explicit\+Addressing\+Zig\+Bee\+Packet\+Received}
+
+
+
+Fired when a Zig\+Bee packet has been received. 
+
+
+
+Definition at line 585 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a20fbda8e7d20a11e83a3f0f87664edf6}\label{classIoT_1_1XBee_1_1XBeeNode_a20fbda8e7d20a11e83a3f0f87664edf6}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!frameReceived@{frameReceived}}
+\index{frameReceived@{frameReceived}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{frameReceived}{frameReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1APIFrame}{A\+P\+I\+Frame}}$>$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::frame\+Received}
+
+
+
+Definition at line 561 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a34584b5a104f478ae838ea011f9b2913}\label{classIoT_1_1XBee_1_1XBeeNode_a34584b5a104f478ae838ea011f9b2913}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!ioDataReceived@{ioDataReceived}}
+\index{ioDataReceived@{ioDataReceived}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{ioDataReceived}{ioDataReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ReceivePacket}{Receive\+Packet}}$>$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::io\+Data\+Received}
+
+
+
+Fired when a packet has been received. 
+
+
+
+Definition at line 576 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_ab9bfc66eab20d68af9605e372a52e8b1}\label{classIoT_1_1XBee_1_1XBeeNode_ab9bfc66eab20d68af9605e372a52e8b1}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!ioSampleReceived@{ioSampleReceived}}
+\index{ioSampleReceived@{ioSampleReceived}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{ioSampleReceived}{ioSampleReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1IOSample}{I\+O\+Sample}}$>$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::io\+Sample\+Received}
+
+Fired when an AT command response frame has been received from the connected \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. 
+
+Definition at line 599 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a00b12323181b37055ce9985eb039b2c0}\label{classIoT_1_1XBee_1_1XBeeNode_a00b12323181b37055ce9985eb039b2c0}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!modemStatusReceived@{modemStatusReceived}}
+\index{modemStatusReceived@{modemStatusReceived}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{modemStatusReceived}{modemStatusReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ModemStatus}{Modem\+Status}}$>$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::modem\+Status\+Received}
+
+
+
+Fired when an explicit addressing Zig\+Bee packet has been received. 
+
+
+
+Definition at line 588 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a2fdf8ae165cbd8574c09dd8588c7831f}\label{classIoT_1_1XBee_1_1XBeeNode_a2fdf8ae165cbd8574c09dd8588c7831f}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!packetReceived@{packetReceived}}
+\index{packetReceived@{packetReceived}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{packetReceived}{packetReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ReceivePacket}{Receive\+Packet}}$>$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::packet\+Received}
+
+
+
+Fired when a TX Request is completed and the module sends a TX Status message. 
+
+
+
+Definition at line 573 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a4afcaa55a461c919a1a5b164272a3bde}\label{classIoT_1_1XBee_1_1XBeeNode_a4afcaa55a461c919a1a5b164272a3bde}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!remoteCommandResponseReceived@{remoteCommandResponseReceived}}
+\index{remoteCommandResponseReceived@{remoteCommandResponseReceived}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{remoteCommandResponseReceived}{remoteCommandResponseReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1RemoteATCommandResponse}{Remote\+A\+T\+Command\+Response}}$>$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::remote\+Command\+Response\+Received}
+
+Fired when an AT command response frame has been received from the connected \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. 
+
+Definition at line 595 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a69d084508f002140dab5bbd1ba2b6059}\label{classIoT_1_1XBee_1_1XBeeNode_a69d084508f002140dab5bbd1ba2b6059}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!sensorReadReceived@{sensorReadReceived}}
+\index{sensorReadReceived@{sensorReadReceived}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{sensorReadReceived}{sensorReadReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1SensorRead}{Sensor\+Read}}$>$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::sensor\+Read\+Received}
+
+Fired when an Zig\+Bee IO Data Sample Rx Indicator frame has been received from the connected \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device. 
+
+Definition at line 603 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_ad62d116d441f26523e4ad0a950d26ed2}\label{classIoT_1_1XBee_1_1XBeeNode_ad62d116d441f26523e4ad0a950d26ed2}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!transmitStatusReceived@{transmitStatusReceived}}
+\index{transmitStatusReceived@{transmitStatusReceived}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{transmitStatusReceived}{transmitStatusReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1TransmitStatus}{Transmit\+Status}}$>$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::transmit\+Status\+Received}
+
+Fired when a valid frame has been received from the connected \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device.
+
+This is fired for every receive frame. For supported frame types, a second, more specific event (transmit\+Status\+Received, etc.) is also fired.
+
+This can be used to handle A\+PI frames not directly supported by the \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNode}{X\+Bee\+Node}} interface. 
+
+Definition at line 570 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a5292b0bc2eadafc87ecea2285bce0d00}\label{classIoT_1_1XBee_1_1XBeeNode_a5292b0bc2eadafc87ecea2285bce0d00}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!zigBeePacketReceived@{zigBeePacketReceived}}
+\index{zigBeePacketReceived@{zigBeePacketReceived}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{zigBeePacketReceived}{zigBeePacketReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeReceivePacket}{Zig\+Bee\+Receive\+Packet}}$>$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::zig\+Bee\+Packet\+Received}
+
+
+
+Fired when a Zig\+Bee TX Request is completed and the module sends a TX Status message. 
+
+
+
+Definition at line 582 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNode_a42abbe5da449f021e8d8c1b8781a1467}\label{classIoT_1_1XBee_1_1XBeeNode_a42abbe5da449f021e8d8c1b8781a1467}} 
+\index{IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}!zigBeeTransmitStatusReceived@{zigBeeTransmitStatusReceived}}
+\index{zigBeeTransmitStatusReceived@{zigBeeTransmitStatusReceived}!IoT::XBee::XBeeNode@{IoT::XBee::XBeeNode}}
+\doxysubsubsection{\texorpdfstring{zigBeeTransmitStatusReceived}{zigBeeTransmitStatusReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeTransmitStatus}{Zig\+Bee\+Transmit\+Status}}$>$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+::zig\+Bee\+Transmit\+Status\+Received}
+
+
+
+Fired when a I/O data packet has been received. 
+
+
+
+Definition at line 579 of file X\+Bee\+Node.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+X\+Bee/\mbox{\hyperlink{XBeeNode_8h}{X\+Bee\+Node.\+h}}\end{DoxyCompactItemize}

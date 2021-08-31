@@ -1,0 +1,253 @@
+\hypertarget{classPoco_1_1Net_1_1StreamSocket}{}\doxysection{Poco\+::Net\+::Stream\+Socket Class Reference}
+\label{classPoco_1_1Net_1_1StreamSocket}\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+
+
+{\ttfamily \#include $<$Stream\+Socket.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::Stream\+Socket\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::Stream\+Socket\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_acf094640f25f3f5f3a42fd24960512b9}{Stream\+Socket}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_aebd065f8469f311efc289bb0946c3263}{Stream\+Socket}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1Socket_a4d09afdbb03e7235e1453c2354bc7972}{address}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a3cdfb1339eb22e033f70a622769a5c6d}{Stream\+Socket}} (\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress_a048c8fc29019f4722f2cdb5ba752d9b6}{I\+P\+Address\+::\+Family}} family)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a93f660d6204dead01217966127b205bb}{Stream\+Socket}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&socket)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a9c5a6423baf1edf36c8eac322202020c}{$\sim$\+Stream\+Socket}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_aa4fc3fe1f5b444d450ae61eca27ba862}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&socket)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a4f7be10a71f621f3e254a0b851d34c01}{connect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1Socket_a4d09afdbb03e7235e1453c2354bc7972}{address}})
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_ad946b010823839a1c60cb9795716073f}{connect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1Socket_a4d09afdbb03e7235e1453c2354bc7972}{address}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a363e1b7ef2863118da170ef17f82c8ff}{connect\+NB}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1Socket_a4d09afdbb03e7235e1453c2354bc7972}{address}})
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a548d68b70668c565b277585c2950d97e}{shutdown\+Receive}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_adf1dcd077d9a8d52682978dc2080663d}{shutdown\+Send}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the receiving part of the socket connection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a137381760453bee6ed1a5882f0d65cff}{shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the sending part of the socket connection. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a655e35c1f32c0688ca35dcfb9eb05c2c}{send\+Bytes}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$buffer, int length, int flags=0)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_ac0e40c07ed525762dd0ff700c73430d6}{send\+Bytes}} (\mbox{\hyperlink{namespacePoco_af5cc76cc5962c03b1302383336f5af80}{Poco\+::\+F\+I\+F\+O\+Buffer}} \&buffer)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a33cee8a58a5b1a47570617d3ea59e5ba}{receive\+Bytes}} (void $\ast$buffer, int length, int flags=0)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_acf63b78237888a70afa276f4b18ff245}{receive\+Bytes}} (\mbox{\hyperlink{namespacePoco_af5cc76cc5962c03b1302383336f5af80}{Poco\+::\+F\+I\+F\+O\+Buffer}} \&buffer)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a90b0676d5525daac0e0360e68b5a1081}{send\+Urgent}} (unsigned char data)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a08ab244fee5d092f371da811d229091f}{Stream\+Socket}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} $\ast$p\+Impl)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a11a8bb11feaafab939278a8285afa567}{Server\+Socket}}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a5da0c0dcc5a05762559cb549cb08fd73}{Socket\+I\+OS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class provides an interface to a T\+CP stream socket. 
+
+Definition at line 35 of file Stream\+Socket.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_acf094640f25f3f5f3a42fd24960512b9}\label{classPoco_1_1Net_1_1StreamSocket_acf094640f25f3f5f3a42fd24960512b9}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!StreamSocket@{StreamSocket}}
+\index{StreamSocket@{StreamSocket}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{StreamSocket()}{StreamSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Stream\+Socket\+::\+Stream\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_aebd065f8469f311efc289bb0946c3263}\label{classPoco_1_1Net_1_1StreamSocket_aebd065f8469f311efc289bb0946c3263}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!StreamSocket@{StreamSocket}}
+\index{StreamSocket@{StreamSocket}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{StreamSocket()}{StreamSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Stream\+Socket\+::\+Stream\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates an unconnected stream socket.
+
+Before sending or receiving data, the socket must be connected with a call to \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket_a4f7be10a71f621f3e254a0b851d34c01}{connect()}}. \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a3cdfb1339eb22e033f70a622769a5c6d}\label{classPoco_1_1Net_1_1StreamSocket_a3cdfb1339eb22e033f70a622769a5c6d}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!StreamSocket@{StreamSocket}}
+\index{StreamSocket@{StreamSocket}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{StreamSocket()}{StreamSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Stream\+Socket\+::\+Stream\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress_a048c8fc29019f4722f2cdb5ba752d9b6}{I\+P\+Address\+::\+Family}}}]{family }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates a stream socket and connects it to the socket specified by address. \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a93f660d6204dead01217966127b205bb}\label{classPoco_1_1Net_1_1StreamSocket_a93f660d6204dead01217966127b205bb}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!StreamSocket@{StreamSocket}}
+\index{StreamSocket@{StreamSocket}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{StreamSocket()}{StreamSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Stream\+Socket\+::\+Stream\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&}]{socket }\end{DoxyParamCaption})}
+
+Creates an unconnected stream socket for the given address family.
+
+This is useful if certain socket options (like send and receive buffer) sizes, that must be set before connecting the socket, will be set later on. \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a9c5a6423baf1edf36c8eac322202020c}\label{classPoco_1_1Net_1_1StreamSocket_a9c5a6423baf1edf36c8eac322202020c}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!````~StreamSocket@{$\sim$StreamSocket}}
+\index{````~StreamSocket@{$\sim$StreamSocket}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{$\sim$StreamSocket()}{~StreamSocket()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+Stream\+Socket\+::$\sim$\+Stream\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} with the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} from another socket. The \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} must be a \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl}{Stream\+Socket\+Impl}}, otherwise an Invalid\+Argument\+Exception will be thrown. \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a08ab244fee5d092f371da811d229091f}\label{classPoco_1_1Net_1_1StreamSocket_a08ab244fee5d092f371da811d229091f}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!StreamSocket@{StreamSocket}}
+\index{StreamSocket@{StreamSocket}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{StreamSocket()}{StreamSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Stream\+Socket\+::\+Stream\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} $\ast$}]{p\+Impl }\end{DoxyParamCaption})}
+
+Sends one byte of urgent data through the socket.
+
+The data is sent with the M\+S\+G\+\_\+\+O\+OB flag.
+
+The preferred way for a socket to receive urgent data is by enabling the S\+O\+\_\+\+O\+O\+B\+I\+N\+L\+I\+NE option. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a4f7be10a71f621f3e254a0b851d34c01}\label{classPoco_1_1Net_1_1StreamSocket_a4f7be10a71f621f3e254a0b851d34c01}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!connect@{connect}}
+\index{connect@{connect}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Stream\+Socket\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address }\end{DoxyParamCaption})}
+
+Assignment operator.
+
+Releases the socket\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} and attaches the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} from the other socket and increments the reference count of the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}}. ~\newline
+ \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_ad946b010823839a1c60cb9795716073f}\label{classPoco_1_1Net_1_1StreamSocket_ad946b010823839a1c60cb9795716073f}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!connect@{connect}}
+\index{connect@{connect}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Stream\+Socket\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout }\end{DoxyParamCaption})}
+
+Initializes the socket and establishes a connection to the T\+CP server at the given address.
+
+Can also be used for U\+DP sockets. In this case, no connection is established. Instead, incoming and outgoing packets are restricted to the specified address. \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a363e1b7ef2863118da170ef17f82c8ff}\label{classPoco_1_1Net_1_1StreamSocket_a363e1b7ef2863118da170ef17f82c8ff}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!connectNB@{connectNB}}
+\index{connectNB@{connectNB}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{connectNB()}{connectNB()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Stream\+Socket\+::connect\+NB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address }\end{DoxyParamCaption})}
+
+Initializes the socket, sets the socket timeout and establishes a connection to the T\+CP server at the given address. Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_aa4fc3fe1f5b444d450ae61eca27ba862}\label{classPoco_1_1Net_1_1StreamSocket_aa4fc3fe1f5b444d450ae61eca27ba862}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}}\& Poco\+::\+Net\+::\+Stream\+Socket\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&}]{socket }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_acf63b78237888a70afa276f4b18ff245}\label{classPoco_1_1Net_1_1StreamSocket_acf63b78237888a70afa276f4b18ff245}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!receiveBytes@{receiveBytes}}
+\index{receiveBytes@{receiveBytes}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{receiveBytes()}{receiveBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Stream\+Socket\+::receive\+Bytes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacePoco_af5cc76cc5962c03b1302383336f5af80}{Poco\+::\+F\+I\+F\+O\+Buffer}} \&}]{buffer }\end{DoxyParamCaption})}
+
+Receives data from the socket and stores it in buffer. Up to length bytes are received.
+
+Returns the number of bytes received. A return value of 0 means a graceful shutdown of the connection from the peer.
+
+Throws a Timeout\+Exception if a receive timeout has been set and nothing is received within that interval. Throws a Net\+Exception (or a subclass) in case of other errors. \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a33cee8a58a5b1a47570617d3ea59e5ba}\label{classPoco_1_1Net_1_1StreamSocket_a33cee8a58a5b1a47570617d3ea59e5ba}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!receiveBytes@{receiveBytes}}
+\index{receiveBytes@{receiveBytes}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{receiveBytes()}{receiveBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Stream\+Socket\+::receive\+Bytes (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Sends the contents of the given buffer through the socket. F\+I\+F\+O\+Buffer has writable/readable transition notifications which may be enabled to notify the caller when the buffer transitions between empty, partially full and full states.
+
+Returns the number of bytes sent, which may be less than the number of bytes specified.
+
+Certain socket implementations may also return a negative value denoting a certain condition. \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a655e35c1f32c0688ca35dcfb9eb05c2c}\label{classPoco_1_1Net_1_1StreamSocket_a655e35c1f32c0688ca35dcfb9eb05c2c}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!sendBytes@{sendBytes}}
+\index{sendBytes@{sendBytes}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{sendBytes()}{sendBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Stream\+Socket\+::send\+Bytes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Shuts down both the receiving and the sending part of the socket connection. \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_ac0e40c07ed525762dd0ff700c73430d6}\label{classPoco_1_1Net_1_1StreamSocket_ac0e40c07ed525762dd0ff700c73430d6}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!sendBytes@{sendBytes}}
+\index{sendBytes@{sendBytes}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{sendBytes()}{sendBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Stream\+Socket\+::send\+Bytes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacePoco_af5cc76cc5962c03b1302383336f5af80}{Poco\+::\+F\+I\+F\+O\+Buffer}} \&}]{buffer }\end{DoxyParamCaption})}
+
+Sends the contents of the given buffer through the socket.
+
+Returns the number of bytes sent, which may be less than the number of bytes specified.
+
+Certain socket implementations may also return a negative value denoting a certain condition. \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a90b0676d5525daac0e0360e68b5a1081}\label{classPoco_1_1Net_1_1StreamSocket_a90b0676d5525daac0e0360e68b5a1081}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!sendUrgent@{sendUrgent}}
+\index{sendUrgent@{sendUrgent}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{sendUrgent()}{sendUrgent()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Stream\+Socket\+::send\+Urgent (\begin{DoxyParamCaption}\item[{unsigned char}]{data }\end{DoxyParamCaption})}
+
+Receives data from the socket and stores it in buffer. Up to length bytes are received. F\+I\+F\+O\+Buffer has writable/readable transition notifications which may be enabled to notify the caller when the buffer transitions between empty, partially full and full states.
+
+Returns the number of bytes received. A return value of 0 means a graceful shutdown of the connection from the peer.
+
+Throws a Timeout\+Exception if a receive timeout has been set and nothing is received within that interval. Throws a Net\+Exception (or a subclass) in case of other errors. \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a137381760453bee6ed1a5882f0d65cff}\label{classPoco_1_1Net_1_1StreamSocket_a137381760453bee6ed1a5882f0d65cff}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Stream\+Socket\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shuts down the sending part of the socket connection. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a548d68b70668c565b277585c2950d97e}\label{classPoco_1_1Net_1_1StreamSocket_a548d68b70668c565b277585c2950d97e}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!shutdownReceive@{shutdownReceive}}
+\index{shutdownReceive@{shutdownReceive}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{shutdownReceive()}{shutdownReceive()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Stream\+Socket\+::shutdown\+Receive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initializes the socket and establishes a connection to the T\+CP server at the given address. Prior to opening the connection the socket is set to nonblocking mode. \mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_adf1dcd077d9a8d52682978dc2080663d}\label{classPoco_1_1Net_1_1StreamSocket_adf1dcd077d9a8d52682978dc2080663d}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!shutdownSend@{shutdownSend}}
+\index{shutdownSend@{shutdownSend}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{shutdownSend()}{shutdownSend()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Stream\+Socket\+::shutdown\+Send (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shuts down the receiving part of the socket connection. 
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a11a8bb11feaafab939278a8285afa567}\label{classPoco_1_1Net_1_1StreamSocket_a11a8bb11feaafab939278a8285afa567}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!ServerSocket@{ServerSocket}}
+\index{ServerSocket@{ServerSocket}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{ServerSocket}{ServerSocket}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 174 of file Stream\+Socket.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1StreamSocket_a5da0c0dcc5a05762559cb549cb08fd73}\label{classPoco_1_1Net_1_1StreamSocket_a5da0c0dcc5a05762559cb549cb08fd73}} 
+\index{Poco::Net::StreamSocket@{Poco::Net::StreamSocket}!SocketIOS@{SocketIOS}}
+\index{SocketIOS@{SocketIOS}!Poco::Net::StreamSocket@{Poco::Net::StreamSocket}}
+\doxysubsubsection{\texorpdfstring{SocketIOS}{SocketIOS}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1SocketIOS}{Socket\+I\+OS}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 175 of file Stream\+Socket.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{StreamSocket_8h}{Stream\+Socket.\+h}}\end{DoxyCompactItemize}

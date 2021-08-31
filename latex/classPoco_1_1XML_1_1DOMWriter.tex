@@ -1,0 +1,172 @@
+\hypertarget{classPoco_1_1XML_1_1DOMWriter}{}\doxysection{Poco\+::X\+ML\+::D\+O\+M\+Writer Class Reference}
+\label{classPoco_1_1XML_1_1DOMWriter}\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+
+
+{\ttfamily \#include $<$D\+O\+M\+Writer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter_ab1855b961536c1e5c14afa42f94b6573}{D\+O\+M\+Writer}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter_a5ddb7fc99d00f2741f52c56386adef5f}{$\sim$\+D\+O\+M\+Writer}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter}{D\+O\+M\+Writer}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter_ad24afdee958b8793c50abc1360c12657}{set\+Encoding}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&encoding\+Name, \mbox{\hyperlink{classPoco_1_1TextEncoding}{Poco\+::\+Text\+Encoding}} \&text\+Encoding)
+\begin{DoxyCompactList}\small\item\em Destroys a \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter}{D\+O\+M\+Writer}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter_a5ac1d001ddbdc9c9252948c00d084534}{get\+Encoding}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the encoding, which will be reflected in the written \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} declaration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter_a52426d06faa55fdccd9419180d7198cd}{set\+Options}} (int options)
+\begin{DoxyCompactList}\small\item\em Returns the encoding name set with set\+Encoding. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter_a45f6259f92d7fbd2965808cb884cdcbf}{get\+Options}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter_aefdd46d10b6ca319087dab5493de14be}{set\+New\+Line}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&new\+Line)
+\begin{DoxyCompactList}\small\item\em Returns the options for the internal \mbox{\hyperlink{classPoco_1_1XML_1_1XMLWriter}{X\+M\+L\+Writer}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter_a9d86c859d9dbb6784a637289211f7c0d}{get\+New\+Line}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter_a9f493c210e39305023eb2bb53b076be3}{set\+Indent}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&indent)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter_a194023365ad68fdeb560603f0065450e}{get\+Indent}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter_a0df3466cf6d088be5bd6cf48ba141590}{write\+Node}} (\mbox{\hyperlink{namespacePoco_1_1XML_afc21018a93540522e2621d87d5ee29d0}{X\+M\+L\+Byte\+Output\+Stream}} \&ostr, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$p\+Node)
+\begin{DoxyCompactList}\small\item\em Returns the string used for one indentation step. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter_ae8408651955f542da1180335575b75b4}{write\+Node}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&system\+Id, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$p\+Node)
+\begin{DoxyCompactList}\small\item\em Writes the \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} for the given node to the specified stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter}{D\+O\+M\+Writer}} uses a \mbox{\hyperlink{classPoco_1_1XML_1_1DOMSerializer}{D\+O\+M\+Serializer}} with an \mbox{\hyperlink{classPoco_1_1XML_1_1XMLWriter}{X\+M\+L\+Writer}} to serialize a D\+OM document into textual \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}}. 
+
+Definition at line 37 of file D\+O\+M\+Writer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMWriter_ab1855b961536c1e5c14afa42f94b6573}\label{classPoco_1_1XML_1_1DOMWriter_ab1855b961536c1e5c14afa42f94b6573}} 
+\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}!DOMWriter@{DOMWriter}}
+\index{DOMWriter@{DOMWriter}!Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+\doxysubsubsection{\texorpdfstring{DOMWriter()}{DOMWriter()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Writer\+::\+D\+O\+M\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMWriter_a5ddb7fc99d00f2741f52c56386adef5f}\label{classPoco_1_1XML_1_1DOMWriter_a5ddb7fc99d00f2741f52c56386adef5f}} 
+\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}!````~DOMWriter@{$\sim$DOMWriter}}
+\index{````~DOMWriter@{$\sim$DOMWriter}!Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+\doxysubsubsection{\texorpdfstring{$\sim$DOMWriter()}{~DOMWriter()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Writer\+::$\sim$\+D\+O\+M\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter}{D\+O\+M\+Writer}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMWriter_a5ac1d001ddbdc9c9252948c00d084534}\label{classPoco_1_1XML_1_1DOMWriter_a5ac1d001ddbdc9c9252948c00d084534}} 
+\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}!getEncoding@{getEncoding}}
+\index{getEncoding@{getEncoding}!Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+\doxysubsubsection{\texorpdfstring{getEncoding()}{getEncoding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Writer\+::get\+Encoding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the encoding, which will be reflected in the written \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} declaration. 
+
+
+
+Definition at line 102 of file D\+O\+M\+Writer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMWriter_a194023365ad68fdeb560603f0065450e}\label{classPoco_1_1XML_1_1DOMWriter_a194023365ad68fdeb560603f0065450e}} 
+\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}!getIndent@{getIndent}}
+\index{getIndent@{getIndent}!Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+\doxysubsubsection{\texorpdfstring{getIndent()}{getIndent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Writer\+::get\+Indent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the string used for one indentation step.
+
+The default is a single T\+AB character. The given string should only contain T\+AB or S\+P\+A\+CE characters (e.\+g., a single T\+AB character, or two to four S\+P\+A\+CE characters). 
+
+Definition at line 120 of file D\+O\+M\+Writer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMWriter_a9d86c859d9dbb6784a637289211f7c0d}\label{classPoco_1_1XML_1_1DOMWriter_a9d86c859d9dbb6784a637289211f7c0d}} 
+\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}!getNewLine@{getNewLine}}
+\index{getNewLine@{getNewLine}!Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+\doxysubsubsection{\texorpdfstring{getNewLine()}{getNewLine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Writer\+::get\+New\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the line ending characters for the internal \mbox{\hyperlink{classPoco_1_1XML_1_1XMLWriter}{X\+M\+L\+Writer}}. See \mbox{\hyperlink{classPoco_1_1XML_1_1XMLWriter_a3e2065bc634e840ef8d52e84040515e6}{X\+M\+L\+Writer\+::set\+New\+Line()}} for a list of supported values. ~\newline
+ 
+
+Definition at line 114 of file D\+O\+M\+Writer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMWriter_a45f6259f92d7fbd2965808cb884cdcbf}\label{classPoco_1_1XML_1_1DOMWriter_a45f6259f92d7fbd2965808cb884cdcbf}} 
+\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}!getOptions@{getOptions}}
+\index{getOptions@{getOptions}!Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+\doxysubsubsection{\texorpdfstring{getOptions()}{getOptions()}}
+{\footnotesize\ttfamily int Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Writer\+::get\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets options for the internal \mbox{\hyperlink{classPoco_1_1XML_1_1XMLWriter}{X\+M\+L\+Writer}}.
+
+See class \mbox{\hyperlink{classPoco_1_1XML_1_1XMLWriter}{X\+M\+L\+Writer}} for available options. 
+
+Definition at line 108 of file D\+O\+M\+Writer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMWriter_ad24afdee958b8793c50abc1360c12657}\label{classPoco_1_1XML_1_1DOMWriter_ad24afdee958b8793c50abc1360c12657}} 
+\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}!setEncoding@{setEncoding}}
+\index{setEncoding@{setEncoding}!Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+\doxysubsubsection{\texorpdfstring{setEncoding()}{setEncoding()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Writer\+::set\+Encoding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{encoding\+Name,  }\item[{\mbox{\hyperlink{classPoco_1_1TextEncoding}{Poco\+::\+Text\+Encoding}} \&}]{text\+Encoding }\end{DoxyParamCaption})}
+
+
+
+Destroys a \mbox{\hyperlink{classPoco_1_1XML_1_1DOMWriter}{D\+O\+M\+Writer}}. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMWriter_a9f493c210e39305023eb2bb53b076be3}\label{classPoco_1_1XML_1_1DOMWriter_a9f493c210e39305023eb2bb53b076be3}} 
+\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}!setIndent@{setIndent}}
+\index{setIndent@{setIndent}!Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+\doxysubsubsection{\texorpdfstring{setIndent()}{setIndent()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Writer\+::set\+Indent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{indent }\end{DoxyParamCaption})}
+
+Returns the line ending characters used by the internal \mbox{\hyperlink{classPoco_1_1XML_1_1XMLWriter}{X\+M\+L\+Writer}}. \mbox{\Hypertarget{classPoco_1_1XML_1_1DOMWriter_aefdd46d10b6ca319087dab5493de14be}\label{classPoco_1_1XML_1_1DOMWriter_aefdd46d10b6ca319087dab5493de14be}} 
+\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}!setNewLine@{setNewLine}}
+\index{setNewLine@{setNewLine}!Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+\doxysubsubsection{\texorpdfstring{setNewLine()}{setNewLine()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Writer\+::set\+New\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{new\+Line }\end{DoxyParamCaption})}
+
+
+
+Returns the options for the internal \mbox{\hyperlink{classPoco_1_1XML_1_1XMLWriter}{X\+M\+L\+Writer}}. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMWriter_a52426d06faa55fdccd9419180d7198cd}\label{classPoco_1_1XML_1_1DOMWriter_a52426d06faa55fdccd9419180d7198cd}} 
+\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}!setOptions@{setOptions}}
+\index{setOptions@{setOptions}!Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+\doxysubsubsection{\texorpdfstring{setOptions()}{setOptions()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Writer\+::set\+Options (\begin{DoxyParamCaption}\item[{int}]{options }\end{DoxyParamCaption})}
+
+
+
+Returns the encoding name set with set\+Encoding. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMWriter_ae8408651955f542da1180335575b75b4}\label{classPoco_1_1XML_1_1DOMWriter_ae8408651955f542da1180335575b75b4}} 
+\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}!writeNode@{writeNode}}
+\index{writeNode@{writeNode}!Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+\doxysubsubsection{\texorpdfstring{writeNode()}{writeNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Writer\+::write\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{system\+Id,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$}]{p\+Node }\end{DoxyParamCaption})}
+
+
+
+Writes the \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} for the given node to the specified stream. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMWriter_a0df3466cf6d088be5bd6cf48ba141590}\label{classPoco_1_1XML_1_1DOMWriter_a0df3466cf6d088be5bd6cf48ba141590}} 
+\index{Poco::XML::DOMWriter@{Poco::XML::DOMWriter}!writeNode@{writeNode}}
+\index{writeNode@{writeNode}!Poco::XML::DOMWriter@{Poco::XML::DOMWriter}}
+\doxysubsubsection{\texorpdfstring{writeNode()}{writeNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Writer\+::write\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacePoco_1_1XML_afc21018a93540522e2621d87d5ee29d0}{X\+M\+L\+Byte\+Output\+Stream}} \&}]{ostr,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$}]{p\+Node }\end{DoxyParamCaption})}
+
+
+
+Returns the string used for one indentation step. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+D\+O\+M/\mbox{\hyperlink{DOMWriter_8h}{D\+O\+M\+Writer.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,377 @@
+\hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine}{}\doxysection{Poco\+::Code\+Generation\+::Generator\+Engine Class Reference}
+\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine}\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+
+
+A \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine}{Generator\+Engine}} iterates over a Struct and calls the correct methods in a \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}}.  
+
+
+
+
+{\ttfamily \#include $<$Generator\+Engine.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}}) (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Poco\+::\+Cpp\+Parser\+::\+Function}} $\ast$, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$, \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} \&, void $\ast$param)
+\item 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}} $>$ \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a1c96a21649c621618bc722cea25489a2}{Callbacks}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a85ea9de4c92bc4646c8496ca3b6774c0}{Generator\+Engine}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a875b1251758cd9a82a2a71b744db409c}{$\sim$\+Generator\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine}{Generator\+Engine}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a677211ecf3efcce021b65cfccdc10315}{register\+Default\+Callback}} (\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}} func\+Gen)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine}{Generator\+Engine}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ace4194bfccbaa80fb19fbb6c9ed7fa94}{unregister\+Default\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Registers a default callback, invoked always when no callback is found for a given methodname. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a8051c4ae4aecd0022a6e26dfebc2bdb8}{register\+Pre\+Class\+Callback}} (\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}} func\+Gen)
+\begin{DoxyCompactList}\small\item\em Unregisters the default callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_adfa9230b8aca45ce3afdedd184ae4881}{register\+Post\+Class\+Callback}} (\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}} func\+Gen)
+\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_abe57d9144f4624d3164314b0be03fc07}{unregister\+Pre\+Class\+Callback}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a6280d24d008c752d9d02410a3acff828}{unregister\+Post\+Class\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Unregisters the pre class callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ab0a8c7fed6fcc2981c38c47e568d04d9}{register\+Pre\+Name\+Space\+Callback}} (\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}} func\+Gen)
+\begin{DoxyCompactList}\small\item\em Unregisters the post class callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a642399e9cbd0a463fbd2876153364a06}{register\+Post\+Name\+Space\+Callback}} (\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}} func\+Gen)
+\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a0dbbe2feaa102ba086daaf1dcf9dba57}{unregister\+Pre\+Name\+Space\+Callback}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a41938f0bab870bc009a2d5a8fa9e9a58}{unregister\+Post\+Name\+Space\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Unregisters the pre namespace callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ab43a34c54af495f9cd538ab886fbaca9}{register\+Callback}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&method\+Name, \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}} func\+Gen)
+\begin{DoxyCompactList}\small\item\em Unregisters the post namespace callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_af3cb72c8cf697adf68d4a433c32f0db4}{unregister\+Callback}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&method\+Name)
+\begin{DoxyCompactList}\small\item\em Registers a callback for a method name iff no other callback is registered yet. Throws an exception in the latter case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_af30b9a6677e573a166b05b39e22c52f1}{generate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$p\+Struct, \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} \&gen, void $\ast$add\+Param=0, bool is\+First\+Class=true, bool is\+Last\+Class=true)
+\begin{DoxyCompactList}\small\item\em Unregisters a callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a378c24f4164d0b8898b10574ff986ec4}{handle\+Include\+File}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$p\+Struct, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&class\+Decl, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&default\+Library, \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} \&gen)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a52ce8d5ec5416859ca27b9f551cf6653}{handle\+Includes}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$p\+Struct, \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} \&gen)
+\begin{DoxyCompactList}\small\item\em Checks first the file in p\+Struct, then regenerates the include based on the class\+Decl. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a1105c3248f49979e7a55f298781733bf}{empty\+Code\+Gen}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Poco\+::\+Cpp\+Parser\+::\+Function}} $\ast$, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$, \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} \&, void $\ast$param)
+\begin{DoxyCompactList}\small\item\em Detects and handles all includes. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a23154e011f79fabc466ad729c67890bb}{parse\+Properties}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Poco\+::\+Cpp\+Parser\+::\+Symbol}} $\ast$p\+Sym, \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&props)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ac5ff898bb14a9673d64e11b58a4d8609}{parse\+Element\+Properties}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&elem\+Val, \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&props)
+\begin{DoxyCompactList}\small\item\em Parses and adds properties in lower case to props. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7cb75aa47da9df98537f8d601b66fec7}{get\+String\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&props, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&prop\+Name, std\+::string \&value)
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a76f31a10038fa39fa8bc507f65239fa1}{get\+Bool\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&props, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&prop\+Name, bool \&value)
+\begin{DoxyCompactList}\small\item\em Returns true if it finds for the given property name the attr\+Value, writes the found value to parameter value. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ad948eb072ce09458f64c7a7104732ac4}{get\+U\+Int32\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&props, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&prop\+Name, Poco\+::\+U\+Int32 \&value)
+\begin{DoxyCompactList}\small\item\em Returns true if it finds for the given property name the attr\+Value, writes the found value to parameter value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine}{Generator\+Engine}} iterates over a Struct and calls the correct methods in a \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}}. 
+
+Definition at line 37 of file Generator\+Engine.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a1c96a21649c621618bc722cea25489a2}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a1c96a21649c621618bc722cea25489a2}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!Callbacks@{Callbacks}}
+\index{Callbacks@{Callbacks}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{Callbacks}{Callbacks}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}}$>$ \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a1c96a21649c621618bc722cea25489a2}{Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::\+Callbacks}}}
+
+
+
+Definition at line 42 of file Generator\+Engine.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!MethodGenerator@{MethodGenerator}}
+\index{MethodGenerator@{MethodGenerator}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{MethodGenerator}{MethodGenerator}}
+{\footnotesize\ttfamily typedef void($\ast$ Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::\+Method\+Generator) (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Poco\+::\+Cpp\+Parser\+::\+Function}} $\ast$, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$, \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} \&, void $\ast$param)}
+
+
+
+Definition at line 41 of file Generator\+Engine.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a85ea9de4c92bc4646c8496ca3b6774c0}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a85ea9de4c92bc4646c8496ca3b6774c0}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!GeneratorEngine@{GeneratorEngine}}
+\index{GeneratorEngine@{GeneratorEngine}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{GeneratorEngine()}{GeneratorEngine()}}
+{\footnotesize\ttfamily Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::\+Generator\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a875b1251758cd9a82a2a71b744db409c}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a875b1251758cd9a82a2a71b744db409c}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!````~GeneratorEngine@{$\sim$GeneratorEngine}}
+\index{````~GeneratorEngine@{$\sim$GeneratorEngine}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$GeneratorEngine()}{~GeneratorEngine()}}
+{\footnotesize\ttfamily Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::$\sim$\+Generator\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine}{Generator\+Engine}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a1105c3248f49979e7a55f298781733bf}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a1105c3248f49979e7a55f298781733bf}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!emptyCodeGen@{emptyCodeGen}}
+\index{emptyCodeGen@{emptyCodeGen}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{emptyCodeGen()}{emptyCodeGen()}}
+{\footnotesize\ttfamily static void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::empty\+Code\+Gen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Poco\+::\+Cpp\+Parser\+::\+Function}} $\ast$}]{,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$}]{,  }\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} \&}]{,  }\item[{void $\ast$}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Detects and handles all includes. 
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_af30b9a6677e573a166b05b39e22c52f1}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_af30b9a6677e573a166b05b39e22c52f1}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!generate@{generate}}
+\index{generate@{generate}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::generate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$}]{p\+Struct,  }\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} \&}]{gen,  }\item[{void $\ast$}]{add\+Param = {\ttfamily 0},  }\item[{bool}]{is\+First\+Class = {\ttfamily true},  }\item[{bool}]{is\+Last\+Class = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Unregisters a callback. 
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a76f31a10038fa39fa8bc507f65239fa1}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a76f31a10038fa39fa8bc507f65239fa1}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!getBoolProperty@{getBoolProperty}}
+\index{getBoolProperty@{getBoolProperty}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{getBoolProperty()}{getBoolProperty()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::get\+Bool\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&}]{props,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{prop\+Name,  }\item[{bool \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if it finds for the given property name the attr\+Value, writes the found value to parameter value. 
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7cb75aa47da9df98537f8d601b66fec7}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7cb75aa47da9df98537f8d601b66fec7}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!getStringProperty@{getStringProperty}}
+\index{getStringProperty@{getStringProperty}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{getStringProperty()}{getStringProperty()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::get\+String\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&}]{props,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{prop\+Name,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses and adds element properties in lower case to props. Element properties are properties defined for single parameters or variables \mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ad948eb072ce09458f64c7a7104732ac4}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ad948eb072ce09458f64c7a7104732ac4}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!getUInt32Property@{getUInt32Property}}
+\index{getUInt32Property@{getUInt32Property}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{getUInt32Property()}{getUInt32Property()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::get\+U\+Int32\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&}]{props,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{prop\+Name,  }\item[{Poco\+::\+U\+Int32 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if it finds for the given property name the attr\+Value, writes the found value to parameter value. 
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a378c24f4164d0b8898b10574ff986ec4}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a378c24f4164d0b8898b10574ff986ec4}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!handleIncludeFile@{handleIncludeFile}}
+\index{handleIncludeFile@{handleIncludeFile}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{handleIncludeFile()}{handleIncludeFile()}}
+{\footnotesize\ttfamily static void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::handle\+Include\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$}]{p\+Struct,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{class\+Decl,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{default\+Library,  }\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} \&}]{gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generates code for the given struct using the given \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}}, add\+Param can be used to provide a pointer to additional information, required for the registered callbacks. If is\+First\+Class is true, the copyright header and the namespace begin is written, if is\+Last\+Class is true the namespace is closed. \mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a52ce8d5ec5416859ca27b9f551cf6653}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a52ce8d5ec5416859ca27b9f551cf6653}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!handleIncludes@{handleIncludes}}
+\index{handleIncludes@{handleIncludes}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{handleIncludes()}{handleIncludes()}}
+{\footnotesize\ttfamily static void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::handle\+Includes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$}]{p\+Struct,  }\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} \&}]{gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks first the file in p\+Struct, then regenerates the include based on the class\+Decl. 
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ac5ff898bb14a9673d64e11b58a4d8609}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ac5ff898bb14a9673d64e11b58a4d8609}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!parseElementProperties@{parseElementProperties}}
+\index{parseElementProperties@{parseElementProperties}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{parseElementProperties()}{parseElementProperties()}}
+{\footnotesize\ttfamily static void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::parse\+Element\+Properties (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{elem\+Val,  }\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&}]{props }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parses and adds properties in lower case to props. 
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a23154e011f79fabc466ad729c67890bb}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a23154e011f79fabc466ad729c67890bb}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!parseProperties@{parseProperties}}
+\index{parseProperties@{parseProperties}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{parseProperties()}{parseProperties()}}
+{\footnotesize\ttfamily static void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::parse\+Properties (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Poco\+::\+Cpp\+Parser\+::\+Symbol}} $\ast$}]{p\+Sym,  }\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&}]{props }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ab43a34c54af495f9cd538ab886fbaca9}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ab43a34c54af495f9cd538ab886fbaca9}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!registerCallback@{registerCallback}}
+\index{registerCallback@{registerCallback}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{registerCallback()}{registerCallback()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::register\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{method\+Name,  }\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}}}]{func\+Gen }\end{DoxyParamCaption})}
+
+
+
+Unregisters the post namespace callback. 
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a677211ecf3efcce021b65cfccdc10315}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a677211ecf3efcce021b65cfccdc10315}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!registerDefaultCallback@{registerDefaultCallback}}
+\index{registerDefaultCallback@{registerDefaultCallback}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{registerDefaultCallback()}{registerDefaultCallback()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::register\+Default\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}}}]{func\+Gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine}{Generator\+Engine}}. 
+
+
+
+Definition at line 151 of file Generator\+Engine.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_adfa9230b8aca45ce3afdedd184ae4881}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_adfa9230b8aca45ce3afdedd184ae4881}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!registerPostClassCallback@{registerPostClassCallback}}
+\index{registerPostClassCallback@{registerPostClassCallback}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{registerPostClassCallback()}{registerPostClassCallback()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::register\+Post\+Class\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}}}]{func\+Gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Allows to register a code generator that will write code to the implementation file before the first constructor is written. Useful to initialize static members. With templates the code will be written right after namespace\+\_\+begin. 
+
+Definition at line 169 of file Generator\+Engine.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a642399e9cbd0a463fbd2876153364a06}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a642399e9cbd0a463fbd2876153364a06}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!registerPostNameSpaceCallback@{registerPostNameSpaceCallback}}
+\index{registerPostNameSpaceCallback@{registerPostNameSpaceCallback}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{registerPostNameSpaceCallback()}{registerPostNameSpaceCallback()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::register\+Post\+Name\+Space\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}}}]{func\+Gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Allows to register a code generator that will write code to the implementation file before the namespace is opened. 
+
+Definition at line 193 of file Generator\+Engine.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a8051c4ae4aecd0022a6e26dfebc2bdb8}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a8051c4ae4aecd0022a6e26dfebc2bdb8}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!registerPreClassCallback@{registerPreClassCallback}}
+\index{registerPreClassCallback@{registerPreClassCallback}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{registerPreClassCallback()}{registerPreClassCallback()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::register\+Pre\+Class\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}}}]{func\+Gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unregisters the default callback. 
+
+
+
+Definition at line 163 of file Generator\+Engine.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ab0a8c7fed6fcc2981c38c47e568d04d9}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ab0a8c7fed6fcc2981c38c47e568d04d9}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!registerPreNameSpaceCallback@{registerPreNameSpaceCallback}}
+\index{registerPreNameSpaceCallback@{registerPreNameSpaceCallback}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{registerPreNameSpaceCallback()}{registerPreNameSpaceCallback()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::register\+Pre\+Name\+Space\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a7f64f86013814f7b959b1505d619e182}{Method\+Generator}}}]{func\+Gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unregisters the post class callback. 
+
+
+
+Definition at line 187 of file Generator\+Engine.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_af3cb72c8cf697adf68d4a433c32f0db4}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_af3cb72c8cf697adf68d4a433c32f0db4}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!unregisterCallback@{unregisterCallback}}
+\index{unregisterCallback@{unregisterCallback}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{unregisterCallback()}{unregisterCallback()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::unregister\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{method\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Registers a callback for a method name iff no other callback is registered yet. Throws an exception in the latter case. 
+
+
+
+Definition at line 211 of file Generator\+Engine.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ace4194bfccbaa80fb19fbb6c9ed7fa94}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_ace4194bfccbaa80fb19fbb6c9ed7fa94}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!unregisterDefaultCallback@{unregisterDefaultCallback}}
+\index{unregisterDefaultCallback@{unregisterDefaultCallback}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{unregisterDefaultCallback()}{unregisterDefaultCallback()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::unregister\+Default\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Registers a default callback, invoked always when no callback is found for a given methodname. 
+
+
+
+Definition at line 157 of file Generator\+Engine.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a6280d24d008c752d9d02410a3acff828}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a6280d24d008c752d9d02410a3acff828}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!unregisterPostClassCallback@{unregisterPostClassCallback}}
+\index{unregisterPostClassCallback@{unregisterPostClassCallback}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{unregisterPostClassCallback()}{unregisterPostClassCallback()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::unregister\+Post\+Class\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unregisters the pre class callback. 
+
+
+
+Definition at line 181 of file Generator\+Engine.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a41938f0bab870bc009a2d5a8fa9e9a58}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a41938f0bab870bc009a2d5a8fa9e9a58}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!unregisterPostNameSpaceCallback@{unregisterPostNameSpaceCallback}}
+\index{unregisterPostNameSpaceCallback@{unregisterPostNameSpaceCallback}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{unregisterPostNameSpaceCallback()}{unregisterPostNameSpaceCallback()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::unregister\+Post\+Name\+Space\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unregisters the pre namespace callback. 
+
+
+
+Definition at line 205 of file Generator\+Engine.\+h.
+
+Here is the call graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_abe57d9144f4624d3164314b0be03fc07}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_abe57d9144f4624d3164314b0be03fc07}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!unregisterPreClassCallback@{unregisterPreClassCallback}}
+\index{unregisterPreClassCallback@{unregisterPreClassCallback}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{unregisterPreClassCallback()}{unregisterPreClassCallback()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::unregister\+Pre\+Class\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Allows to register a code generator that will write code to the implementation file after the last method was written. Useful to initialize static members. 
+
+Definition at line 175 of file Generator\+Engine.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a0dbbe2feaa102ba086daaf1dcf9dba57}\label{classPoco_1_1CodeGeneration_1_1GeneratorEngine_a0dbbe2feaa102ba086daaf1dcf9dba57}} 
+\index{Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}!unregisterPreNameSpaceCallback@{unregisterPreNameSpaceCallback}}
+\index{unregisterPreNameSpaceCallback@{unregisterPreNameSpaceCallback}!Poco::CodeGeneration::GeneratorEngine@{Poco::CodeGeneration::GeneratorEngine}}
+\doxysubsubsection{\texorpdfstring{unregisterPreNameSpaceCallback()}{unregisterPreNameSpaceCallback()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Generator\+Engine\+::unregister\+Pre\+Name\+Space\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Allows to register a code generator that will write code to the implementation file after the namespace was closed. 
+
+Definition at line 199 of file Generator\+Engine.\+h.
+
+Here is the call graph for this function\+:
+% FIG 11
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Code\+Generation/\mbox{\hyperlink{GeneratorEngine_8h}{Generator\+Engine.\+h}}\end{DoxyCompactItemize}

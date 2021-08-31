@@ -1,0 +1,155 @@
+\hypertarget{classPoco_1_1FastMutex}{}\doxysection{Poco\+::Fast\+Mutex Class Reference}
+\label{classPoco_1_1FastMutex}\index{Poco::FastMutex@{Poco::FastMutex}}
+
+
+{\ttfamily \#include $<$Mutex.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Fast\+Mutex\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Fast\+Mutex\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1ScopedLock}{Poco\+::\+Scoped\+Lock}}$<$ \mbox{\hyperlink{classPoco_1_1FastMutex}{Fast\+Mutex}} $>$ \mbox{\hyperlink{classPoco_1_1FastMutex_a65a71c9197937367ebeb0f8d46132333}{Scoped\+Lock}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FastMutex_a80371cd2793af834b34f3e8351e9f3a0}{Fast\+Mutex}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1FastMutex_a666592998f39ee6535fa2a1609f590b6}{$\sim$\+Fast\+Mutex}} ()
+\begin{DoxyCompactList}\small\item\em creates the \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1FastMutex_a706292a6c12e17552fc368ec415984dc}{lock}} ()
+\begin{DoxyCompactList}\small\item\em destroys the \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1FastMutex_ae9ce4227b4adba8d6e24632b0ddef7c3}{lock}} (long milliseconds)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1FastMutex_a76f8f599068569dcfd549b9ef9fe603b}{try\+Lock}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1FastMutex_a51cd4097b34e925f424958f9864706a1}{try\+Lock}} (long milliseconds)
+\item 
+void \mbox{\hyperlink{classPoco_1_1FastMutex_a04d8f91aabca6ffa6df941c6f5b50f98}{unlock}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1FastMutex}{Fast\+Mutex}} (mutual exclusion) is similar to a \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}}. Unlike a \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}}, however, a \mbox{\hyperlink{classPoco_1_1FastMutex}{Fast\+Mutex}} is not recursive, which means that a deadlock will occur if the same thread tries to lock a mutex it has already locked again. Locking a \mbox{\hyperlink{classPoco_1_1FastMutex}{Fast\+Mutex}} is faster than locking a recursive \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}}. Using the \mbox{\hyperlink{classPoco_1_1ScopedLock}{Scoped\+Lock}} class is the preferred way to automatically lock and unlock a mutex. 
+
+Definition at line 100 of file Mutex.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1FastMutex_a65a71c9197937367ebeb0f8d46132333}\label{classPoco_1_1FastMutex_a65a71c9197937367ebeb0f8d46132333}} 
+\index{Poco::FastMutex@{Poco::FastMutex}!ScopedLock@{ScopedLock}}
+\index{ScopedLock@{ScopedLock}!Poco::FastMutex@{Poco::FastMutex}}
+\doxysubsubsection{\texorpdfstring{ScopedLock}{ScopedLock}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1ScopedLock}{Poco\+::\+Scoped\+Lock}}$<$\mbox{\hyperlink{classPoco_1_1FastMutex}{Fast\+Mutex}}$>$ \mbox{\hyperlink{classPoco_1_1FastMutex_a65a71c9197937367ebeb0f8d46132333}{Poco\+::\+Fast\+Mutex\+::\+Scoped\+Lock}}}
+
+
+
+Definition at line 110 of file Mutex.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1FastMutex_a80371cd2793af834b34f3e8351e9f3a0}\label{classPoco_1_1FastMutex_a80371cd2793af834b34f3e8351e9f3a0}} 
+\index{Poco::FastMutex@{Poco::FastMutex}!FastMutex@{FastMutex}}
+\index{FastMutex@{FastMutex}!Poco::FastMutex@{Poco::FastMutex}}
+\doxysubsubsection{\texorpdfstring{FastMutex()}{FastMutex()}}
+{\footnotesize\ttfamily Poco\+::\+Fast\+Mutex\+::\+Fast\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1FastMutex_a666592998f39ee6535fa2a1609f590b6}\label{classPoco_1_1FastMutex_a666592998f39ee6535fa2a1609f590b6}} 
+\index{Poco::FastMutex@{Poco::FastMutex}!````~FastMutex@{$\sim$FastMutex}}
+\index{````~FastMutex@{$\sim$FastMutex}!Poco::FastMutex@{Poco::FastMutex}}
+\doxysubsubsection{\texorpdfstring{$\sim$FastMutex()}{~FastMutex()}}
+{\footnotesize\ttfamily Poco\+::\+Fast\+Mutex\+::$\sim$\+Fast\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+creates the \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1FastMutex_a706292a6c12e17552fc368ec415984dc}\label{classPoco_1_1FastMutex_a706292a6c12e17552fc368ec415984dc}} 
+\index{Poco::FastMutex@{Poco::FastMutex}!lock@{lock}}
+\index{lock@{lock}!Poco::FastMutex@{Poco::FastMutex}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Fast\+Mutex\+::lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+destroys the \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}}. 
+
+
+
+Definition at line 238 of file Mutex.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1FastMutex_ae9ce4227b4adba8d6e24632b0ddef7c3}\label{classPoco_1_1FastMutex_ae9ce4227b4adba8d6e24632b0ddef7c3}} 
+\index{Poco::FastMutex@{Poco::FastMutex}!lock@{lock}}
+\index{lock@{lock}!Poco::FastMutex@{Poco::FastMutex}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Fast\+Mutex\+::lock (\begin{DoxyParamCaption}\item[{long}]{milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Locks the mutex. Blocks if the mutex is held by another thread. 
+
+Definition at line 244 of file Mutex.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1FastMutex_a76f8f599068569dcfd549b9ef9fe603b}\label{classPoco_1_1FastMutex_a76f8f599068569dcfd549b9ef9fe603b}} 
+\index{Poco::FastMutex@{Poco::FastMutex}!tryLock@{tryLock}}
+\index{tryLock@{tryLock}!Poco::FastMutex@{Poco::FastMutex}}
+\doxysubsubsection{\texorpdfstring{tryLock()}{tryLock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Fast\+Mutex\+::try\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Locks the mutex. Blocks up to the given number of milliseconds if the mutex is held by another thread. Throws a Timeout\+Exception if the mutex can not be locked within the given timeout.
+
+Performance Note\+: On most platforms (including Windows), this member function is implemented using a loop calling (the equivalent of) \mbox{\hyperlink{classPoco_1_1FastMutex_a76f8f599068569dcfd549b9ef9fe603b}{try\+Lock()}} and \mbox{\hyperlink{classPoco_1_1Thread_aaa3d7740f70533cb058483fcaedd9cf7}{Thread\+::sleep()}}. On P\+O\+S\+IX platforms that support pthread\+\_\+mutex\+\_\+timedlock(), this is used. 
+
+Definition at line 251 of file Mutex.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1FastMutex_a51cd4097b34e925f424958f9864706a1}\label{classPoco_1_1FastMutex_a51cd4097b34e925f424958f9864706a1}} 
+\index{Poco::FastMutex@{Poco::FastMutex}!tryLock@{tryLock}}
+\index{tryLock@{tryLock}!Poco::FastMutex@{Poco::FastMutex}}
+\doxysubsubsection{\texorpdfstring{tryLock()}{tryLock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Fast\+Mutex\+::try\+Lock (\begin{DoxyParamCaption}\item[{long}]{milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tries to lock the mutex. Returns false immediately if the mutex is already held by another thread. Returns true if the mutex was successfully locked. 
+
+Definition at line 257 of file Mutex.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1FastMutex_a04d8f91aabca6ffa6df941c6f5b50f98}\label{classPoco_1_1FastMutex_a04d8f91aabca6ffa6df941c6f5b50f98}} 
+\index{Poco::FastMutex@{Poco::FastMutex}!unlock@{unlock}}
+\index{unlock@{unlock}!Poco::FastMutex@{Poco::FastMutex}}
+\doxysubsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily void Poco\+::\+Fast\+Mutex\+::unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Locks the mutex. Blocks up to the given number of milliseconds if the mutex is held by another thread. Returns true if the mutex was successfully locked.
+
+Performance Note\+: On most platforms (including Windows), this member function is implemented using a loop calling (the equivalent of) \mbox{\hyperlink{classPoco_1_1FastMutex_a76f8f599068569dcfd549b9ef9fe603b}{try\+Lock()}} and \mbox{\hyperlink{classPoco_1_1Thread_aaa3d7740f70533cb058483fcaedd9cf7}{Thread\+::sleep()}}. On P\+O\+S\+IX platforms that support pthread\+\_\+mutex\+\_\+timedlock(), this is used. 
+
+Definition at line 263 of file Mutex.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+Here is the caller graph for this function\+:
+% FIG 8
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Mutex_8h}{Mutex.\+h}}\end{DoxyCompactItemize}

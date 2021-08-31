@@ -1,0 +1,162 @@
+\hypertarget{classPoco_1_1Util_1_1OptionSet}{}\doxysection{Poco\+::Util\+::Option\+Set Class Reference}
+\label{classPoco_1_1Util_1_1OptionSet}\index{Poco::Util::OptionSet@{Poco::Util::OptionSet}}
+
+
+A collection of \mbox{\hyperlink{classPoco_1_1Util_1_1Option}{Option}} objects.  
+
+
+
+
+{\ttfamily \#include $<$Option\+Set.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1Util_1_1Option}{Option}} $>$ \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_a30a825d335d3be4fff17bc3eae2a520f}{Option\+Vec}}
+\item 
+typedef Option\+Vec\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_ae71803c30edc3a864e86c27f7f47fb21}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_a7117ead65e760c45926c295e38f3941e}{Option\+Set}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_a4315b77a36fd0f02bbe01f938fa11b96}{Option\+Set}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}} \&options)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_a67db087367a4ca6eeda675ff24a14151}{$\sim$\+Option\+Set}} ()
+\begin{DoxyCompactList}\small\item\em Creates an option set from another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}} \& \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_a42cc0076d87458f6c5bae51c9c361805}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}} \&options)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_aeb01f9e58bb4c4676424dd21adf953fb}{add\+Option}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Util_1_1Option}{Option}} \&option)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_ace065bfaf2f4c2078011f1c4172f5559}{has\+Option}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool match\+Short=false) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Adds an option to the collection. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Util_1_1Option}{Option}} \& \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_a28396f15527f1f8b2b169bfcaacfc811}{get\+Option}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool match\+Short=false) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_ae71803c30edc3a864e86c27f7f47fb21}{Iterator}} \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_a75250531383eee227e09b64835c45247}{begin}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_ae71803c30edc3a864e86c27f7f47fb21}{Iterator}} \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_ac907f6c8a22500c5aea485ae840e6dc2}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Supports iterating over all options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A collection of \mbox{\hyperlink{classPoco_1_1Util_1_1Option}{Option}} objects. 
+
+Definition at line 32 of file Option\+Set.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1OptionSet_ae71803c30edc3a864e86c27f7f47fb21}\label{classPoco_1_1Util_1_1OptionSet_ae71803c30edc3a864e86c27f7f47fb21}} 
+\index{Poco::Util::OptionSet@{Poco::Util::OptionSet}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::Util::OptionSet@{Poco::Util::OptionSet}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily typedef Option\+Vec\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_ae71803c30edc3a864e86c27f7f47fb21}{Poco\+::\+Util\+::\+Option\+Set\+::\+Iterator}}}
+
+
+
+Definition at line 37 of file Option\+Set.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1OptionSet_a30a825d335d3be4fff17bc3eae2a520f}\label{classPoco_1_1Util_1_1OptionSet_a30a825d335d3be4fff17bc3eae2a520f}} 
+\index{Poco::Util::OptionSet@{Poco::Util::OptionSet}!OptionVec@{OptionVec}}
+\index{OptionVec@{OptionVec}!Poco::Util::OptionSet@{Poco::Util::OptionSet}}
+\doxysubsubsection{\texorpdfstring{OptionVec}{OptionVec}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classPoco_1_1Util_1_1Option}{Option}}$>$ \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_a30a825d335d3be4fff17bc3eae2a520f}{Poco\+::\+Util\+::\+Option\+Set\+::\+Option\+Vec}}}
+
+
+
+Definition at line 36 of file Option\+Set.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1OptionSet_a7117ead65e760c45926c295e38f3941e}\label{classPoco_1_1Util_1_1OptionSet_a7117ead65e760c45926c295e38f3941e}} 
+\index{Poco::Util::OptionSet@{Poco::Util::OptionSet}!OptionSet@{OptionSet}}
+\index{OptionSet@{OptionSet}!Poco::Util::OptionSet@{Poco::Util::OptionSet}}
+\doxysubsubsection{\texorpdfstring{OptionSet()}{OptionSet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Option\+Set\+::\+Option\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1OptionSet_a4315b77a36fd0f02bbe01f938fa11b96}\label{classPoco_1_1Util_1_1OptionSet_a4315b77a36fd0f02bbe01f938fa11b96}} 
+\index{Poco::Util::OptionSet@{Poco::Util::OptionSet}!OptionSet@{OptionSet}}
+\index{OptionSet@{OptionSet}!Poco::Util::OptionSet@{Poco::Util::OptionSet}}
+\doxysubsubsection{\texorpdfstring{OptionSet()}{OptionSet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Option\+Set\+::\+Option\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}} \&}]{options }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1OptionSet_a67db087367a4ca6eeda675ff24a14151}\label{classPoco_1_1Util_1_1OptionSet_a67db087367a4ca6eeda675ff24a14151}} 
+\index{Poco::Util::OptionSet@{Poco::Util::OptionSet}!````~OptionSet@{$\sim$OptionSet}}
+\index{````~OptionSet@{$\sim$OptionSet}!Poco::Util::OptionSet@{Poco::Util::OptionSet}}
+\doxysubsubsection{\texorpdfstring{$\sim$OptionSet()}{~OptionSet()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Option\+Set\+::$\sim$\+Option\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an option set from another one. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1OptionSet_aeb01f9e58bb4c4676424dd21adf953fb}\label{classPoco_1_1Util_1_1OptionSet_aeb01f9e58bb4c4676424dd21adf953fb}} 
+\index{Poco::Util::OptionSet@{Poco::Util::OptionSet}!addOption@{addOption}}
+\index{addOption@{addOption}!Poco::Util::OptionSet@{Poco::Util::OptionSet}}
+\doxysubsubsection{\texorpdfstring{addOption()}{addOption()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Option\+Set\+::add\+Option (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Util_1_1Option}{Option}} \&}]{option }\end{DoxyParamCaption})}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1OptionSet_a75250531383eee227e09b64835c45247}\label{classPoco_1_1Util_1_1OptionSet_a75250531383eee227e09b64835c45247}} 
+\index{Poco::Util::OptionSet@{Poco::Util::OptionSet}!begin@{begin}}
+\index{begin@{begin}!Poco::Util::OptionSet@{Poco::Util::OptionSet}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_ae71803c30edc3a864e86c27f7f47fb21}{Iterator}} Poco\+::\+Util\+::\+Option\+Set\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a reference to the option with the given name.
+
+The given name can either be a fully specified short name, or a partially specified full name. The name must either match the short or full name of an option. Comparison case sensitive for the short name and not case sensitive for the full name. Throws a Not\+Found\+Exception if no matching option has been found. Throws an Unknown\+Option\+Exception if a partial full name matches more than one option. \mbox{\Hypertarget{classPoco_1_1Util_1_1OptionSet_ac907f6c8a22500c5aea485ae840e6dc2}\label{classPoco_1_1Util_1_1OptionSet_ac907f6c8a22500c5aea485ae840e6dc2}} 
+\index{Poco::Util::OptionSet@{Poco::Util::OptionSet}!end@{end}}
+\index{end@{end}!Poco::Util::OptionSet@{Poco::Util::OptionSet}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet_ae71803c30edc3a864e86c27f7f47fb21}{Iterator}} Poco\+::\+Util\+::\+Option\+Set\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Supports iterating over all options. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1OptionSet_a28396f15527f1f8b2b169bfcaacfc811}\label{classPoco_1_1Util_1_1OptionSet_a28396f15527f1f8b2b169bfcaacfc811}} 
+\index{Poco::Util::OptionSet@{Poco::Util::OptionSet}!getOption@{getOption}}
+\index{getOption@{getOption}!Poco::Util::OptionSet@{Poco::Util::OptionSet}}
+\doxysubsubsection{\texorpdfstring{getOption()}{getOption()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Util_1_1Option}{Option}}\& Poco\+::\+Util\+::\+Option\+Set\+::get\+Option (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{match\+Short = {\ttfamily false} }\end{DoxyParamCaption}) const}
+
+Returns a true iff an option with the given name exists.
+
+The given name can either be a fully specified short name, or a partially specified full name. If a partial name matches more than one full name, false is returned. The name must either match the short or full name of an option. Comparison case sensitive for the short name and not case sensitive for the full name. \mbox{\Hypertarget{classPoco_1_1Util_1_1OptionSet_ace065bfaf2f4c2078011f1c4172f5559}\label{classPoco_1_1Util_1_1OptionSet_ace065bfaf2f4c2078011f1c4172f5559}} 
+\index{Poco::Util::OptionSet@{Poco::Util::OptionSet}!hasOption@{hasOption}}
+\index{hasOption@{hasOption}!Poco::Util::OptionSet@{Poco::Util::OptionSet}}
+\doxysubsubsection{\texorpdfstring{hasOption()}{hasOption()}}
+{\footnotesize\ttfamily bool Poco\+::\+Util\+::\+Option\+Set\+::has\+Option (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{match\+Short = {\ttfamily false} }\end{DoxyParamCaption}) const}
+
+
+
+Adds an option to the collection. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1OptionSet_a42cc0076d87458f6c5bae51c9c361805}\label{classPoco_1_1Util_1_1OptionSet_a42cc0076d87458f6c5bae51c9c361805}} 
+\index{Poco::Util::OptionSet@{Poco::Util::OptionSet}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Util::OptionSet@{Poco::Util::OptionSet}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}}\& Poco\+::\+Util\+::\+Option\+Set\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}} \&}]{options }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Util/\mbox{\hyperlink{OptionSet_8h}{Option\+Set.\+h}}\end{DoxyCompactItemize}

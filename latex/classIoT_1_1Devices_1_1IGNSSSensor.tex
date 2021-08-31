@@ -1,0 +1,279 @@
+\hypertarget{classIoT_1_1Devices_1_1IGNSSSensor}{}\doxysection{IoT\+::Devices\+::I\+G\+N\+S\+S\+Sensor Class Reference}
+\label{classIoT_1_1Devices_1_1IGNSSSensor}\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+
+
+{\ttfamily \#include $<$I\+G\+N\+S\+S\+Sensor.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::I\+G\+N\+S\+S\+Sensor\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::I\+G\+N\+S\+S\+Sensor\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor}{I\+G\+N\+S\+S\+Sensor}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_a04eca123269c7ad44cd6ce430e5325c2}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_aae17f332d071dca2c50b25ff85d9885f}{I\+G\+N\+S\+S\+Sensor}} ()
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_a1d03d59caaa25ae501a4ef98aaa2bb0d}{$\sim$\+I\+G\+N\+S\+S\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor}{I\+G\+N\+S\+S\+Sensor}}. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_a87050b62e480e3a4d96a08305fb5de47}{altitude}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor}{I\+G\+N\+S\+S\+Sensor}}. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_afd81ed6794fe2edad0289c14750903d7}{course}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_a4c304a267bd01bfc3684065806d2e85f}{hdop}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Returns the current course in degrees \mbox{[}0, 360). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_a92bbeb1df3721231336a24a18b500e06}{isA}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&other\+Type) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_a8c95350417c7e422c8f0107ba9af0c57}{magnetic\+Variation}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Returns true if the class is a subclass of the class given by other\+Type. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{structIoT_1_1Devices_1_1LatLon}{Io\+T\+::\+Devices\+::\+Lat\+Lon}} \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_abbcf4cd142c9b7e91b3e97a6ce8e1c86}{position}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_acdd9f545542784906d7885ff8fb864c1}{position\+Available}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_ac4e5fe6b2ef6f218ec4a9004608252c9}{remoting\+\_\+\+\_\+enable\+Events}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}} p\+Listener, bool enable=bool(true))=0
+\begin{DoxyCompactList}\small\item\em Returns true if a valid position is available. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_af4ca341369be3b4c5346e519757824d6}{speed}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Returns the Type\+Id of the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_ac9e0402b5badd23b78e48273a029761a}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_a3f4a84c297a87fb15c1505dde77955d7}{remoting\+\_\+\+\_\+type\+Id}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ void $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_a2ca619070d615d90268e33530d986062}{position\+Lost}}
+\begin{DoxyCompactList}\small\item\em Returns the type information for the object\textquotesingle{}s class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Devices_1_1PositionUpdate}{Position\+Update}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_afa42291fcbfd6ae8a90aca219ae2c91d}{position\+Update}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The interface for G\+N\+S\+S/\+G\+PS receivers. \begin{DoxyVerb}Implementations of this class should also support the
+following (optional) properties for configuration:
+
+  - positionChangedPeriod (int): the minimum time interval
+    in milliseconds between firings of the positionUpdate event.
+  - positionChangedDelta (int): the minimum distance (in meters)
+    the receiver must move before the positionUpdate event
+    is fired again.
+  - positionTimeout (int): Timeout in milliseconds after which the
+    positionLost event is fired if no valid position has been
+    received from the GNSS receiver. 
+\end{DoxyVerb}
+ 
+
+Definition at line 31 of file I\+G\+N\+S\+S\+Sensor.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_a04eca123269c7ad44cd6ce430e5325c2}\label{classIoT_1_1Devices_1_1IGNSSSensor_a04eca123269c7ad44cd6ce430e5325c2}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor}{I\+G\+N\+S\+S\+Sensor}}$>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_a04eca123269c7ad44cd6ce430e5325c2}{Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::\+Ptr}}}
+
+
+
+Definition at line 47 of file I\+G\+N\+S\+S\+Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_aae17f332d071dca2c50b25ff85d9885f}\label{classIoT_1_1Devices_1_1IGNSSSensor_aae17f332d071dca2c50b25ff85d9885f}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!IGNSSSensor@{IGNSSSensor}}
+\index{IGNSSSensor@{IGNSSSensor}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{IGNSSSensor()}{IGNSSSensor()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::\+I\+G\+N\+S\+S\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_a1d03d59caaa25ae501a4ef98aaa2bb0d}\label{classIoT_1_1Devices_1_1IGNSSSensor_a1d03d59caaa25ae501a4ef98aaa2bb0d}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!````~IGNSSSensor@{$\sim$IGNSSSensor}}
+\index{````~IGNSSSensor@{$\sim$IGNSSSensor}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{$\sim$IGNSSSensor()}{~IGNSSSensor()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::$\sim$\+I\+G\+N\+S\+S\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor}{I\+G\+N\+S\+S\+Sensor}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_a87050b62e480e3a4d96a08305fb5de47}\label{classIoT_1_1Devices_1_1IGNSSSensor_a87050b62e480e3a4d96a08305fb5de47}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!altitude@{altitude}}
+\index{altitude@{altitude}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{altitude()}{altitude()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::altitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor}{I\+G\+N\+S\+S\+Sensor}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorRemoteObject_a10d7173e5fe09db8389a3b7614d6ffa5}{Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_afd81ed6794fe2edad0289c14750903d7}\label{classIoT_1_1Devices_1_1IGNSSSensor_afd81ed6794fe2edad0289c14750903d7}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!course@{course}}
+\index{course@{course}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{course()}{course()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::course (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the current altitude above sea level in meters. Returns -\/9999 if no altitude is available. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorRemoteObject_a85d7bd9b3f9f18ac9feb1bbb1196b99c}{Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_a4c304a267bd01bfc3684065806d2e85f}\label{classIoT_1_1Devices_1_1IGNSSSensor_a4c304a267bd01bfc3684065806d2e85f}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!hdop@{hdop}}
+\index{hdop@{hdop}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{hdop()}{hdop()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::hdop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the current course in degrees \mbox{[}0, 360). 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorRemoteObject_af9c5d18f21e9619842b705aec8c640be}{Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_a92bbeb1df3721231336a24a18b500e06}\label{classIoT_1_1Devices_1_1IGNSSSensor_a92bbeb1df3721231336a24a18b500e06}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!isA@{isA}}
+\index{isA@{isA}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{isA()}{isA()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::isA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&}]{other\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the Horizontal Dilution Of Precision (H\+D\+OP) in meters, or -\/9999 if no H\+D\+OP value is available. 
+
+Reimplemented from \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a5147d8397d770fe73aaaed10a94fd0fa}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_a8c95350417c7e422c8f0107ba9af0c57}\label{classIoT_1_1Devices_1_1IGNSSSensor_a8c95350417c7e422c8f0107ba9af0c57}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!magneticVariation@{magneticVariation}}
+\index{magneticVariation@{magneticVariation}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{magneticVariation()}{magneticVariation()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::magnetic\+Variation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns true if the class is a subclass of the class given by other\+Type. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorRemoteObject_a9b85f3db6c65a2e4b08ff420da9e2784}{Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_abbcf4cd142c9b7e91b3e97a6ce8e1c86}\label{classIoT_1_1Devices_1_1IGNSSSensor_abbcf4cd142c9b7e91b3e97a6ce8e1c86}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!position@{position}}
+\index{position@{position}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structIoT_1_1Devices_1_1LatLon}{Io\+T\+::\+Devices\+::\+Lat\+Lon}} Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the current magnetic variation in degrees \mbox{[}0, 360). Returns -\/1 if no magnetic variation is available. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorRemoteObject_af01d6d87d52494801f2175e2d34b2817}{Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_acdd9f545542784906d7885ff8fb864c1}\label{classIoT_1_1Devices_1_1IGNSSSensor_acdd9f545542784906d7885ff8fb864c1}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!positionAvailable@{positionAvailable}}
+\index{positionAvailable@{positionAvailable}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{positionAvailable()}{positionAvailable()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::position\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the last obtained position.
+
+If no position is available, latitude and longitude will both be 0. To disambiguate with a real position, also check \mbox{\hyperlink{classIoT_1_1Devices_1_1IGNSSSensor_acdd9f545542784906d7885ff8fb864c1}{position\+Available()}}. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorRemoteObject_aa54835b3738dc1b5e24e946e899cb6cd}{Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_ac4e5fe6b2ef6f218ec4a9004608252c9}\label{classIoT_1_1Devices_1_1IGNSSSensor_ac4e5fe6b2ef6f218ec4a9004608252c9}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!remoting\_\_enableEvents@{remoting\_\_enableEvents}}
+\index{remoting\_\_enableEvents@{remoting\_\_enableEvents}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_enableEvents()}{remoting\_\_enableEvents()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::remoting\+\_\+\+\_\+enable\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}}}]{p\+Listener,  }\item[{bool}]{enable = {\ttfamily bool(true)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns true if a valid position is available. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorRemoteObject_a5c89786424161499268600fd058d21e1}{Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_a3f4a84c297a87fb15c1505dde77955d7}\label{classIoT_1_1Devices_1_1IGNSSSensor_a3f4a84c297a87fb15c1505dde77955d7}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}}\& Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Enable or disable delivery of remote events.
+
+The given Listener instance must implement the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventListener}{Poco\+::\+Remoting\+N\+G\+::\+Event\+Listener}} interface, otherwise this method will fail with a Remoting\+Exception.
+
+This method is only used with Proxy objects; calling this method on a Remote\+Object will do nothing. Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_af4ca341369be3b4c5346e519757824d6}\label{classIoT_1_1Devices_1_1IGNSSSensor_af4ca341369be3b4c5346e519757824d6}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!speed@{speed}}
+\index{speed@{speed}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{speed()}{speed()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the Type\+Id of the class. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorRemoteObject_a667e75cd7b1d22957d9c76fc4b9f6bd8}{Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_ac9e0402b5badd23b78e48273a029761a}\label{classIoT_1_1Devices_1_1IGNSSSensor_ac9e0402b5badd23b78e48273a029761a}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!type@{type}}
+\index{type@{type}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info\& Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the current speed in nautical knots. If no speed is available, returns -\/1. 
+
+Reimplemented from \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_ab6924e586b55df5c087dfd13aa84c04b}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_a2ca619070d615d90268e33530d986062}\label{classIoT_1_1Devices_1_1IGNSSSensor_a2ca619070d615d90268e33530d986062}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!positionLost@{positionLost}}
+\index{positionLost@{positionLost}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{positionLost}{positionLost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ void $>$ Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::position\+Lost}
+
+
+
+Returns the type information for the object\textquotesingle{}s class. 
+
+
+
+Definition at line 101 of file I\+G\+N\+S\+S\+Sensor.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IGNSSSensor_afa42291fcbfd6ae8a90aca219ae2c91d}\label{classIoT_1_1Devices_1_1IGNSSSensor_afa42291fcbfd6ae8a90aca219ae2c91d}} 
+\index{IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}!positionUpdate@{positionUpdate}}
+\index{positionUpdate@{positionUpdate}!IoT::Devices::IGNSSSensor@{IoT::Devices::IGNSSSensor}}
+\doxysubsubsection{\texorpdfstring{positionUpdate}{positionUpdate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Devices_1_1PositionUpdate}{Position\+Update}} $>$ Io\+T\+::\+Devices\+::\+I\+G\+N\+S\+S\+Sensor\+::position\+Update}
+
+
+
+Definition at line 102 of file I\+G\+N\+S\+S\+Sensor.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{IGNSSSensor_8h}{I\+G\+N\+S\+S\+Sensor.\+h}}\end{DoxyCompactItemize}

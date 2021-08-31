@@ -1,0 +1,418 @@
+\hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject}{}\doxysection{IoT\+::Devices\+::Accelerometer\+Remote\+Object Class Reference}
+\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject}\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+
+
+The interface for three-\/axis Accelerometers.  
+
+
+
+
+{\ttfamily \#include $<$Accelerometer\+Remote\+Object.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::Accelerometer\+Remote\+Object\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::Accelerometer\+Remote\+Object\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject}{Accelerometer\+Remote\+Object}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a8c068e1670c3fbabbc3056b09131dcc7}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_ab3600bdb5b31b2857e59877c9c319dc4}{Accelerometer\+Remote\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} $>$ p\+Service\+Object)
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a3734e091435922bf262a8fcbe01c6fdf}{$\sim$\+Accelerometer\+Remote\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject}{Accelerometer\+Remote\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structIoT_1_1Devices_1_1Acceleration}{Io\+T\+::\+Devices\+::\+Acceleration}} \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_aff2f07d841140ae8414906f006173faa}{acceleration}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject}{Accelerometer\+Remote\+Object}}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a59d65fcd672be064cae20544a998df37}{get\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the most recently measured acceleration values. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a5d04cd35b915d5a81c3ea66f4bfe3a75}{get\+Property\+Bool}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a95e8b5af601410dce4bb0d5d9e84d934}{get\+Property\+Double}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual int \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a5c4e1c0ced478d1e23355425bd1d987c}{get\+Property\+Int}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a9e91c377ae14850c22d37b64a6ff7f45}{get\+Property\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a24ea01ec31e76e03259fab2129ceb6e9}{has\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a786c6b06f9411e93efa3578747b4b729}{has\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_aaabe64d55938cd92f0090eb10d18a770}{remoting\+\_\+\+\_\+enable\+Events}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}} p\+Listener, bool enable=bool(true))
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a5182b1130217cb527f6b579c4ad38497}{remoting\+\_\+\+\_\+enable\+Remote\+Events}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_aabcb1723fe72e12f52a48d4e3637b60b}{remoting\+\_\+\+\_\+has\+Events}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the Remote\+Object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_aec00ce2f2f31d93a9a8bfaa19dc853f8}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the object\textquotesingle{}s U\+RI. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a9067c8ddc46c6611b1e09194e11dea8b}{set\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool enable)
+\begin{DoxyCompactList}\small\item\em Returns the Type\+Id of the class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_af4319f93a22653dcbbc049de1bcb776d}{set\+Property\+Bool}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool value)
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a9e2b49818574627a3f67b1d1b2681986}{set\+Property\+Double}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, double value)
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a339e9f6a47c8ad07115547eb9843b2cf}{set\+Property\+Int}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, int value)
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_acc20dadff6fd1307b713e12c875c344f}{set\+Property\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_abc5bbdb2eeb7ad1c4d39fc3d1f802c2c}{event\+\_\+\+\_\+acceleration\+Changed}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Devices_1_1Acceleration}{Io\+T\+::\+Devices\+::\+Acceleration}} \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The interface for three-\/axis Accelerometers. 
+
+Definition at line 32 of file Accelerometer\+Remote\+Object.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a8c068e1670c3fbabbc3056b09131dcc7}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a8c068e1670c3fbabbc3056b09131dcc7}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject}{Accelerometer\+Remote\+Object}}$>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a8c068e1670c3fbabbc3056b09131dcc7}{Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::\+Ptr}}}
+
+
+
+Definition at line 36 of file Accelerometer\+Remote\+Object.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_ab3600bdb5b31b2857e59877c9c319dc4}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_ab3600bdb5b31b2857e59877c9c319dc4}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!AccelerometerRemoteObject@{AccelerometerRemoteObject}}
+\index{AccelerometerRemoteObject@{AccelerometerRemoteObject}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{AccelerometerRemoteObject()}{AccelerometerRemoteObject()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::\+Accelerometer\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Accelerometer}{Io\+T\+::\+Devices\+::\+Accelerometer}} $>$}]{p\+Service\+Object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a3734e091435922bf262a8fcbe01c6fdf}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a3734e091435922bf262a8fcbe01c6fdf}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!````~AccelerometerRemoteObject@{$\sim$AccelerometerRemoteObject}}
+\index{````~AccelerometerRemoteObject@{$\sim$AccelerometerRemoteObject}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$AccelerometerRemoteObject()}{~AccelerometerRemoteObject()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::$\sim$\+Accelerometer\+Remote\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject}{Accelerometer\+Remote\+Object}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_aff2f07d841140ae8414906f006173faa}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_aff2f07d841140ae8414906f006173faa}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!acceleration@{acceleration}}
+\index{acceleration@{acceleration}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{acceleration()}{acceleration()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structIoT_1_1Devices_1_1Acceleration}{Io\+T\+::\+Devices\+::\+Acceleration}} Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::acceleration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1AccelerometerRemoteObject}{Accelerometer\+Remote\+Object}}. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IAccelerometer_a0e1a6fd64242ab10e00ead8d12b2fc7d}{Io\+T\+::\+Devices\+::\+I\+Accelerometer}}.
+
+
+
+Definition at line 133 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_abc5bbdb2eeb7ad1c4d39fc3d1f802c2c}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_abc5bbdb2eeb7ad1c4d39fc3d1f802c2c}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!event\_\_accelerationChanged@{event\_\_accelerationChanged}}
+\index{event\_\_accelerationChanged@{event\_\_accelerationChanged}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_accelerationChanged()}{event\_\_accelerationChanged()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::event\+\_\+\+\_\+acceleration\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Devices_1_1Acceleration}{Io\+T\+::\+Devices\+::\+Acceleration}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets a device property.
+
+Which properties are supported is defined by the actual device implementation. \mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a59d65fcd672be064cae20544a998df37}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a59d65fcd672be064cae20544a998df37}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!getFeature@{getFeature}}
+\index{getFeature@{getFeature}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{getFeature()}{getFeature()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::get\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the most recently measured acceleration values. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a4bff6fb174c55a8685f29849bcf39720}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 139 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a5d04cd35b915d5a81c3ea66f4bfe3a75}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a5d04cd35b915d5a81c3ea66f4bfe3a75}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!getPropertyBool@{getPropertyBool}}
+\index{getPropertyBool@{getPropertyBool}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{getPropertyBool()}{getPropertyBool()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::get\+Property\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns true if the feature with the given name is enabled, or false otherwise. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_ab40fcd1b1c7a509f0634ebf803a91a85}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 145 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a95e8b5af601410dce4bb0d5d9e84d934}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a95e8b5af601410dce4bb0d5d9e84d934}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!getPropertyDouble@{getPropertyDouble}}
+\index{getPropertyDouble@{getPropertyDouble}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{getPropertyDouble()}{getPropertyDouble()}}
+{\footnotesize\ttfamily double Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::get\+Property\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the value of the device property with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the property with the given name is unknown. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_afc1bb68b11e1bec202c85e51ad678dfd}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 151 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a5c4e1c0ced478d1e23355425bd1d987c}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a5c4e1c0ced478d1e23355425bd1d987c}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!getPropertyInt@{getPropertyInt}}
+\index{getPropertyInt@{getPropertyInt}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{getPropertyInt()}{getPropertyInt()}}
+{\footnotesize\ttfamily int Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::get\+Property\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the value of the device property with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the property with the given name is unknown. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_ad3c499a6564552a70785ded52a757ebe}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 157 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a9e91c377ae14850c22d37b64a6ff7f45}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a9e91c377ae14850c22d37b64a6ff7f45}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!getPropertyString@{getPropertyString}}
+\index{getPropertyString@{getPropertyString}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{getPropertyString()}{getPropertyString()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::get\+Property\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the value of the device property with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the property with the given name is unknown. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a62106fa596032646dfd2546f643bf5fc}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 163 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a24ea01ec31e76e03259fab2129ceb6e9}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a24ea01ec31e76e03259fab2129ceb6e9}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!hasFeature@{hasFeature}}
+\index{hasFeature@{hasFeature}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{hasFeature()}{hasFeature()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::has\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the value of the device property with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the property with the given name is unknown. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a79ed836b828b696f247d2e420f166cee}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 169 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a786c6b06f9411e93efa3578747b4b729}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a786c6b06f9411e93efa3578747b4b729}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!hasProperty@{hasProperty}}
+\index{hasProperty@{hasProperty}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{hasProperty()}{hasProperty()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::has\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns true if the feature with the given name is known, or false otherwise. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a64e805fa1a310921fddc14b1dbf6eaab}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 175 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_aaabe64d55938cd92f0090eb10d18a770}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_aaabe64d55938cd92f0090eb10d18a770}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!remoting\_\_enableEvents@{remoting\_\_enableEvents}}
+\index{remoting\_\_enableEvents@{remoting\_\_enableEvents}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_enableEvents()}{remoting\_\_enableEvents()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::remoting\+\_\+\+\_\+enable\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}}}]{p\+Listener,  }\item[{bool}]{enable = {\ttfamily bool(true)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the property with the given name exists, or false otherwise. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IAccelerometer_a87eb1ae269fb660fa0161460538d598c}{Io\+T\+::\+Devices\+::\+I\+Accelerometer}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a5182b1130217cb527f6b579c4ad38497}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a5182b1130217cb527f6b579c4ad38497}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!remoting\_\_enableRemoteEvents@{remoting\_\_enableRemoteEvents}}
+\index{remoting\_\_enableRemoteEvents@{remoting\_\_enableRemoteEvents}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_enableRemoteEvents()}{remoting\_\_enableRemoteEvents()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::remoting\+\_\+\+\_\+enable\+Remote\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the service object has events, false otherwise.
+
+Must be overridden by subclasses if the service object has events. The default implementation always returns false. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_ab4902ffb94dd10a81426a97c918fea1a}{Poco\+::\+Remoting\+N\+G\+::\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_aabcb1723fe72e12f52a48d4e3637b60b}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_aabcb1723fe72e12f52a48d4e3637b60b}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!remoting\_\_hasEvents@{remoting\_\_hasEvents}}
+\index{remoting\_\_hasEvents@{remoting\_\_hasEvents}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_hasEvents()}{remoting\_\_hasEvents()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::remoting\+\_\+\+\_\+has\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the Remote\+Object. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_a6bad1b69b9506c827a62df0ac3a4cf1d}{Poco\+::\+Remoting\+N\+G\+::\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_aec00ce2f2f31d93a9a8bfaa19dc853f8}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_aec00ce2f2f31d93a9a8bfaa19dc853f8}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the object\textquotesingle{}s U\+RI. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_a1c3bd470be79d79803cbcf674fd5a049}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable}}.
+
+
+
+Definition at line 181 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a9067c8ddc46c6611b1e09194e11dea8b}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a9067c8ddc46c6611b1e09194e11dea8b}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!setFeature@{setFeature}}
+\index{setFeature@{setFeature}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{setFeature()}{setFeature()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::set\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the Type\+Id of the class. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a532161c927139ec8efd1c0ac2b0a0d3a}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 187 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_af4319f93a22653dcbbc049de1bcb776d}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_af4319f93a22653dcbbc049de1bcb776d}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!setPropertyBool@{setPropertyBool}}
+\index{setPropertyBool@{setPropertyBool}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{setPropertyBool()}{setPropertyBool()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::set\+Property\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Enables or disables the feature with the given name.
+
+Which features are supported is defined by the actual device implementation. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a75ed5e013bb0ea879b629874259a4aca}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 193 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a9e2b49818574627a3f67b1d1b2681986}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a9e2b49818574627a3f67b1d1b2681986}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!setPropertyDouble@{setPropertyDouble}}
+\index{setPropertyDouble@{setPropertyDouble}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{setPropertyDouble()}{setPropertyDouble()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::set\+Property\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets a device property.
+
+Which properties are supported is defined by the actual device implementation. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_ad03cf412585420d2327c0f7e9957df55}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 199 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a339e9f6a47c8ad07115547eb9843b2cf}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_a339e9f6a47c8ad07115547eb9843b2cf}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!setPropertyInt@{setPropertyInt}}
+\index{setPropertyInt@{setPropertyInt}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{setPropertyInt()}{setPropertyInt()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::set\+Property\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets a device property.
+
+Which properties are supported is defined by the actual device implementation. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a39b711acf95036aaeb4722a1639d73e4}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 205 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1AccelerometerRemoteObject_acc20dadff6fd1307b713e12c875c344f}\label{classIoT_1_1Devices_1_1AccelerometerRemoteObject_acc20dadff6fd1307b713e12c875c344f}} 
+\index{IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}!setPropertyString@{setPropertyString}}
+\index{setPropertyString@{setPropertyString}!IoT::Devices::AccelerometerRemoteObject@{IoT::Devices::AccelerometerRemoteObject}}
+\doxysubsubsection{\texorpdfstring{setPropertyString()}{setPropertyString()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Accelerometer\+Remote\+Object\+::set\+Property\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets a device property.
+
+Which properties are supported is defined by the actual device implementation. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a410ca0acb30c45cfa9adbfb8a2ad7a4e}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 211 of file Accelerometer\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 15
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{AccelerometerRemoteObject_8h}{Accelerometer\+Remote\+Object.\+h}}\end{DoxyCompactItemize}

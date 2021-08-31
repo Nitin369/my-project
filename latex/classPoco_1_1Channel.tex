@@ -1,0 +1,164 @@
+\hypertarget{classPoco_1_1Channel}{}\doxysection{Poco\+::Channel Class Reference}
+\label{classPoco_1_1Channel}\index{Poco::Channel@{Poco::Channel}}
+
+
+{\ttfamily \#include $<$Channel.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Channel\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Channel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Channel_abb5372fc1797c9cbf5953185af97fa72}{Channel}} ()
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Channel_aef60226200d2e287068a62d9af5a4f6e}{open}} ()
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Channel_a2056a173f804c51411942649bd4d6408}{close}} ()
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Channel_aeafdcc5ce2e0e38d96f15a60a563da4e}{log}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&msg)=0
+\item 
+void \mbox{\hyperlink{classPoco_1_1Channel_a67c2a274e476745b902ced03fb485c6e}{set\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1Channel_a187321f59674dfde457599885a4f6ec0}{get\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Throws a Property\+Not\+Supported\+Exception. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Channel_ac34e84caf8d402d3f9e80aa1066e7142}{stop\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Throws a Property\+Not\+Supported\+Exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Channel_aa3f776a0463202d1c46dc669b4223569}{$\sim$\+Channel}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timer}{Poco\+::\+Timer}} \mbox{\hyperlink{classPoco_1_1Channel_a442d510cd9e3d4e6fad160b21277213c}{\+\_\+log\+Monitor\+Timer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for all \mbox{\hyperlink{classPoco_1_1Channel}{Channel}} classes. \begin{DoxyVerb}Supports reference counting based garbage
+collection and provides trivial implementations
+of getProperty() and setProperty(). 
+\end{DoxyVerb}
+ 
+
+Definition at line 38 of file Channel.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Channel_abb5372fc1797c9cbf5953185af97fa72}\label{classPoco_1_1Channel_abb5372fc1797c9cbf5953185af97fa72}} 
+\index{Poco::Channel@{Poco::Channel}!Channel@{Channel}}
+\index{Channel@{Channel}!Poco::Channel@{Poco::Channel}}
+\doxysubsubsection{\texorpdfstring{Channel()}{Channel()}}
+{\footnotesize\ttfamily Poco\+::\+Channel\+::\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Channel_aa3f776a0463202d1c46dc669b4223569}\label{classPoco_1_1Channel_aa3f776a0463202d1c46dc669b4223569}} 
+\index{Poco::Channel@{Poco::Channel}!````~Channel@{$\sim$Channel}}
+\index{````~Channel@{$\sim$Channel}!Poco::Channel@{Poco::Channel}}
+\doxysubsubsection{\texorpdfstring{$\sim$Channel()}{~Channel()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Channel\+::$\sim$\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Channel_a2056a173f804c51411942649bd4d6408}\label{classPoco_1_1Channel_a2056a173f804c51411942649bd4d6408}} 
+\index{Poco::Channel@{Poco::Channel}!close@{close}}
+\index{close@{close}!Poco::Channel@{Poco::Channel}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Channel\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Does whatever is necessary to open the channel. The default implementation does nothing. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1FileChannel_a78660cf11aa220ca6f484620d473bf29}{Poco\+::\+File\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1RemoteSyslogChannel_a5b42f08a1c27bf42c5244c7327760637}{Poco\+::\+Net\+::\+Remote\+Syslog\+Channel}}, \mbox{\hyperlink{classPoco_1_1SimpleFileChannel_a1f696c3bab1121f555c74e8bcf9595ca}{Poco\+::\+Simple\+File\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1RemoteSyslogListener_a1751f04b7c984e8961ec6b9ae4481427}{Poco\+::\+Net\+::\+Remote\+Syslog\+Listener}}, \mbox{\hyperlink{classPoco_1_1FormattingChannel_a702818a936f8c2749c1166f93f85986e}{Poco\+::\+Formatting\+Channel}}, \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a4b85b306e79e2d2a014fecd81775b3a5}{Poco\+::\+Data\+::\+S\+Q\+L\+Channel}}, \mbox{\hyperlink{classPoco_1_1SyslogChannel_aac8e911dcb4f5d5164ce3cfc7ff71b95}{Poco\+::\+Syslog\+Channel}}, \mbox{\hyperlink{classPoco_1_1AsyncChannel_a36f38ef01f3f3268b5d6a94407401eaa}{Poco\+::\+Async\+Channel}}, \mbox{\hyperlink{classPoco_1_1SplitterChannel_aeae8ef6e64f6a3a130cb6e33ef8458b6}{Poco\+::\+Splitter\+Channel}}, \mbox{\hyperlink{classPoco_1_1EventLogChannel_acb2b6d3e2f0ef0403374c42d78460cf2}{Poco\+::\+Event\+Log\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_ae9c4efbccf55c27c13b78b9fb3aeea7a}{Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel}}, and \mbox{\hyperlink{classPoco_1_1DLTChannel_ae8f1159108f2b498259c3f53c0108095}{Poco\+::\+D\+L\+T\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Channel_a187321f59674dfde457599885a4f6ec0}\label{classPoco_1_1Channel_a187321f59674dfde457599885a4f6ec0}} 
+\index{Poco::Channel@{Poco::Channel}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!Poco::Channel@{Poco::Channel}}
+\doxysubsubsection{\texorpdfstring{getProperty()}{getProperty()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Channel\+::get\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Throws a Property\+Not\+Supported\+Exception. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Configurable_a565940a99f096c005743a68040ca5e25}{Poco\+::\+Configurable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1FileChannel_ad281fd85cd0805d4805d2b16ee6bde88}{Poco\+::\+File\+Channel}}, \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_a4ea83f2029131ffc5f54b27be1c85306}{Poco\+::\+Color\+Console\+Channel}}, \mbox{\hyperlink{classPoco_1_1WindowsColorConsoleChannel_a02e411300ca7f6dd74a7cd72912c177d}{Poco\+::\+Windows\+Color\+Console\+Channel}}, \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a151d422cdb85dda97185100760457a55}{Poco\+::\+Data\+::\+S\+Q\+L\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1RemoteSyslogChannel_ad6d42b17ccf46f6eeef8d7ec602b0414}{Poco\+::\+Net\+::\+Remote\+Syslog\+Channel}}, \mbox{\hyperlink{classPoco_1_1SimpleFileChannel_af6774b2f750aa5b966da92c1751eb334}{Poco\+::\+Simple\+File\+Channel}}, \mbox{\hyperlink{classPoco_1_1SyslogChannel_ae2d033bf9ce76c1c96ddf89dd5d9c166}{Poco\+::\+Syslog\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1RemoteSyslogListener_a5a070f02adf5436d8d61cee0246a600b}{Poco\+::\+Net\+::\+Remote\+Syslog\+Listener}}, \mbox{\hyperlink{classPoco_1_1EventLogChannel_a50e7d14847fb98c3a8afc12c453e7f56}{Poco\+::\+Event\+Log\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_af0f99274c0c3a2d42c6e288cd067d275}{Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel}}, \mbox{\hyperlink{classPoco_1_1OpcomChannel_a4fbcb7689642a5fe853bd2427fd5963b}{Poco\+::\+Opcom\+Channel}}, and \mbox{\hyperlink{classPoco_1_1DLTChannel_ae1f76111cc73a19b6489b906ceb9d2b7}{Poco\+::\+D\+L\+T\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Channel_aeafdcc5ce2e0e38d96f15a60a563da4e}\label{classPoco_1_1Channel_aeafdcc5ce2e0e38d96f15a60a563da4e}} 
+\index{Poco::Channel@{Poco::Channel}!log@{log}}
+\index{log@{log}!Poco::Channel@{Poco::Channel}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Channel\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Does whatever is necessary to close the channel. The default implementation does nothing. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1FileChannel_a98cb6c5d9e70b4babcca7c346dd38278}{Poco\+::\+File\+Channel}}, \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_a45255c80eaa346e4f1ba80947ea641d5}{Poco\+::\+Color\+Console\+Channel}}, \mbox{\hyperlink{classPoco_1_1Logger_a31f0e70766c672053d1f31022e0cf668}{Poco\+::\+Logger}}, \mbox{\hyperlink{classPoco_1_1WindowsColorConsoleChannel_a71b71ca488a1753a5d9ad93650a091c8}{Poco\+::\+Windows\+Color\+Console\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1RemoteSyslogChannel_aa8b601dd9dbe03b26c7df7aa15586097}{Poco\+::\+Net\+::\+Remote\+Syslog\+Channel}}, \mbox{\hyperlink{classPoco_1_1SimpleFileChannel_a67e7820d565adeea21395dfbde5be81f}{Poco\+::\+Simple\+File\+Channel}}, \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a04aa9bb2063d9774468670977e53d564}{Poco\+::\+Data\+::\+S\+Q\+L\+Channel}}, \mbox{\hyperlink{classPoco_1_1SyslogChannel_a574a637bd20bcab546e52a8a6892dd2c}{Poco\+::\+Syslog\+Channel}}, \mbox{\hyperlink{classPoco_1_1FormattingChannel_a8013e1889bb749136a2dc4839e683e12}{Poco\+::\+Formatting\+Channel}}, \mbox{\hyperlink{classPoco_1_1AsyncChannel_a53f317d6416289eea7bdd5c2b7a231ac}{Poco\+::\+Async\+Channel}}, \mbox{\hyperlink{classPoco_1_1EventLogChannel_a45b02b67bfcf80c823d802ad49a443a2}{Poco\+::\+Event\+Log\+Channel}}, \mbox{\hyperlink{classPoco_1_1ConsoleChannel_a3295d3aa0fb7905d5c1967c8dd5fb779}{Poco\+::\+Console\+Channel}}, \mbox{\hyperlink{classPoco_1_1WindowsConsoleChannel_a0f4963a0710cb8de475ec7c367bdb00b}{Poco\+::\+Windows\+Console\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_ad417c9d0ed302f9cb149aafd7cc2a7d2}{Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel}}, \mbox{\hyperlink{classPoco_1_1NullChannel_a1f860b0a5cf99efa47f814164884104c}{Poco\+::\+Null\+Channel}}, \mbox{\hyperlink{classPoco_1_1SplitterChannel_afe2c7b266faea535387d3fb928b4e5b7}{Poco\+::\+Splitter\+Channel}}, \mbox{\hyperlink{classPoco_1_1StreamChannel_a864fec3191c345ec38bf5ec7c587271b}{Poco\+::\+Stream\+Channel}}, \mbox{\hyperlink{classPoco_1_1EventChannel_a118fae3b2418a0cb070e247d9f6c88ae}{Poco\+::\+Event\+Channel}}, \mbox{\hyperlink{classPoco_1_1OpcomChannel_a9b4fb2d283de517856d047380f21a734}{Poco\+::\+Opcom\+Channel}}, and \mbox{\hyperlink{classPoco_1_1DLTChannel_aa63a2bcbd5d7bab08abe6930c7466f8a}{Poco\+::\+D\+L\+T\+Channel}}.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Channel_aef60226200d2e287068a62d9af5a4f6e}\label{classPoco_1_1Channel_aef60226200d2e287068a62d9af5a4f6e}} 
+\index{Poco::Channel@{Poco::Channel}!open@{open}}
+\index{open@{open}!Poco::Channel@{Poco::Channel}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Channel\+::open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates the channel and initializes the reference count to one. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1FileChannel_a887422254aa0a370b18ed0b7c6e881cc}{Poco\+::\+File\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1RemoteSyslogChannel_a98aad44b5b7d61a540cd59a056534836}{Poco\+::\+Net\+::\+Remote\+Syslog\+Channel}}, \mbox{\hyperlink{classPoco_1_1SimpleFileChannel_a2f000aa5a61dec44c38d21aa6cb39833}{Poco\+::\+Simple\+File\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1RemoteSyslogListener_a786d96b7c5576cdbd33b9e02fe85bff8}{Poco\+::\+Net\+::\+Remote\+Syslog\+Listener}}, \mbox{\hyperlink{classPoco_1_1FormattingChannel_a96553e2e520871e054115ff35ceefeb5}{Poco\+::\+Formatting\+Channel}}, \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_aadcc10380e2cf16abaa01135b449ac6e}{Poco\+::\+Data\+::\+S\+Q\+L\+Channel}}, \mbox{\hyperlink{classPoco_1_1SyslogChannel_abfae9ce6eda15fb62ac45d23e28d11d2}{Poco\+::\+Syslog\+Channel}}, \mbox{\hyperlink{classPoco_1_1AsyncChannel_a6c6e99f6e6ecbe8c8422b24107b30ce0}{Poco\+::\+Async\+Channel}}, \mbox{\hyperlink{classPoco_1_1EventLogChannel_a64d0fde321e10eee50853ed2bc16148a}{Poco\+::\+Event\+Log\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_ab840607b1a87b69e4912d48513220e02}{Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel}}, and \mbox{\hyperlink{classPoco_1_1DLTChannel_ad79487ca262919a9507a9b4469ac6715}{Poco\+::\+D\+L\+T\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Channel_a67c2a274e476745b902ced03fb485c6e}\label{classPoco_1_1Channel_a67c2a274e476745b902ced03fb485c6e}} 
+\index{Poco::Channel@{Poco::Channel}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!Poco::Channel@{Poco::Channel}}
+\doxysubsubsection{\texorpdfstring{setProperty()}{setProperty()}}
+{\footnotesize\ttfamily void Poco\+::\+Channel\+::set\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Logs the given message to the channel. Must be overridden by subclasses.
+
+If the channel has not been opened yet, the \mbox{\hyperlink{classPoco_1_1Channel_aeafdcc5ce2e0e38d96f15a60a563da4e}{log()}} method will open it. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Configurable_ae31289819bd01f4a1bda0be67144d5bf}{Poco\+::\+Configurable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1FileChannel_ac645e951d085ac76abba8d0c2f5e070d}{Poco\+::\+File\+Channel}}, \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_a5a9ef6dab49578cab4b0cde8e464564f}{Poco\+::\+Color\+Console\+Channel}}, \mbox{\hyperlink{classPoco_1_1WindowsColorConsoleChannel_a130a15ade6039a49a2659bb0ac000b74}{Poco\+::\+Windows\+Color\+Console\+Channel}}, \mbox{\hyperlink{classPoco_1_1Logger_a02ea5fccc82e4e5d562eefaa5390a41c}{Poco\+::\+Logger}}, \mbox{\hyperlink{classPoco_1_1Net_1_1RemoteSyslogChannel_acf625ebca3d679962d6d88685370b72b}{Poco\+::\+Net\+::\+Remote\+Syslog\+Channel}}, \mbox{\hyperlink{classPoco_1_1SimpleFileChannel_abffa22723223589cb7fa993804c377a3}{Poco\+::\+Simple\+File\+Channel}}, \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_abfe5e1774d6540ac75833c4858e12cfc}{Poco\+::\+Data\+::\+S\+Q\+L\+Channel}}, \mbox{\hyperlink{classPoco_1_1SyslogChannel_acf03884d328f0146febf968a74acc675}{Poco\+::\+Syslog\+Channel}}, \mbox{\hyperlink{classPoco_1_1FormattingChannel_ab3c81cf6ffcb4eb906be2aec890f8072}{Poco\+::\+Formatting\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1RemoteSyslogListener_a03fafd917c8b5f0940729c4e7cc7df57}{Poco\+::\+Net\+::\+Remote\+Syslog\+Listener}}, \mbox{\hyperlink{classPoco_1_1EventLogChannel_a1b35fb9a74c68bdfdc544e270088a9ff}{Poco\+::\+Event\+Log\+Channel}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_af10726a63442bc71fc045e438dec2223}{Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel}}, \mbox{\hyperlink{classPoco_1_1SplitterChannel_ab95fe91e054b42a77975c10335b588d0}{Poco\+::\+Splitter\+Channel}}, \mbox{\hyperlink{classPoco_1_1NullChannel_acbda8d2663366e0e13a36f7d2ff51060}{Poco\+::\+Null\+Channel}}, \mbox{\hyperlink{classPoco_1_1OpcomChannel_afbe47525a8b871872efdc1cd1314eda1}{Poco\+::\+Opcom\+Channel}}, and \mbox{\hyperlink{classPoco_1_1DLTChannel_a2529790278f568940793e9ef6a097ded}{Poco\+::\+D\+L\+T\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Channel_ac34e84caf8d402d3f9e80aa1066e7142}\label{classPoco_1_1Channel_ac34e84caf8d402d3f9e80aa1066e7142}} 
+\index{Poco::Channel@{Poco::Channel}!stopTimer@{stopTimer}}
+\index{stopTimer@{stopTimer}!Poco::Channel@{Poco::Channel}}
+\doxysubsubsection{\texorpdfstring{stopTimer()}{stopTimer()}}
+{\footnotesize\ttfamily void Poco\+::\+Channel\+::stop\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Throws a Property\+Not\+Supported\+Exception. 
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Channel_a442d510cd9e3d4e6fad160b21277213c}\label{classPoco_1_1Channel_a442d510cd9e3d4e6fad160b21277213c}} 
+\index{Poco::Channel@{Poco::Channel}!\_logMonitorTimer@{\_logMonitorTimer}}
+\index{\_logMonitorTimer@{\_logMonitorTimer}!Poco::Channel@{Poco::Channel}}
+\doxysubsubsection{\texorpdfstring{\_logMonitorTimer}{\_logMonitorTimer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timer}{Poco\+::\+Timer}} Poco\+::\+Channel\+::\+\_\+log\+Monitor\+Timer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 82 of file Channel.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Channel_8h}{Channel.\+h}}\end{DoxyCompactItemize}

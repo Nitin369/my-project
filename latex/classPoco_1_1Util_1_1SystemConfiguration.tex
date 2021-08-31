@@ -1,0 +1,132 @@
+\hypertarget{classPoco_1_1Util_1_1SystemConfiguration}{}\doxysection{Poco\+::Util\+::System\+Configuration Class Reference}
+\label{classPoco_1_1Util_1_1SystemConfiguration}\index{Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}}
+
+
+{\ttfamily \#include $<$System\+Configuration.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Util\+::System\+Configuration\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Util\+::System\+Configuration\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1SystemConfiguration_a5c6f2af415856fc94df473cb03c7273d}{System\+Configuration}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Util_1_1SystemConfiguration_a8f4da72897c2ad0eef0a1b2181ccc102}{get\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, std\+::string \&value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Util_1_1SystemConfiguration}{System\+Configuration}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1SystemConfiguration_a734ca735d1324816e6ed4b2d064fb5dc}{set\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1SystemConfiguration_aa1fcfaf8b924c87a3ba1861e1af9dc15}{enumerate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_ab77c4dc36e335ec05107a155786cb91f}{Keys}} \&range) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1SystemConfiguration_a983a144457ef2faa9b24d205cae7f740}{remove\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key)
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1SystemConfiguration_ad3b4069a383bdfda885eb41fa365f346}{$\sim$\+System\+Configuration}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class implements a Configuration interface to various system properties and environment variables.
+
+The following properties are supported\+:
+\begin{DoxyItemize}
+\item system.\+os\+Name\+: the operating system name
+\item system.\+os\+Version\+: the operating system version
+\item system.\+os\+Architecture\+: the operating system architecture
+\item system.\+node\+Name\+: the node (or host) name
+\item system.\+node\+Id\+: system ID, based on the Ethernet address (format \char`\"{}xxxxxxxxxxxx\char`\"{}) of the first Ethernet adapter found on the system.
+\item system.\+current\+Dir\+: the current working directory
+\item system.\+home\+Dir\+: the user\textquotesingle{}s home directory
+\item system.\+temp\+Dir\+: the system\textquotesingle{}s temporary directory
+\item system.\+date\+Time\+: the current U\+TC date and time, formatted in I\+SO 8601 format.
+\item system.\+pid\+: the current process ID.
+\item system.\+env.$<$\+N\+A\+M\+E$>$\+: the environment variable with the given $<$\+N\+A\+M\+E$>$.
+\end{DoxyItemize}
+
+An attempt to set a system variable will result in an Invalid\+Access\+Exception being thrown.
+
+Enumerating environment variables is not supported. An attempt to call keys(\char`\"{}system.\+env\char`\"{}) will return an empty range.
+
+Removing key is not supported. An attempt to remove a key results in a Not\+Implemented\+Exception being thrown. 
+
+Definition at line 31 of file System\+Configuration.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1SystemConfiguration_a5c6f2af415856fc94df473cb03c7273d}\label{classPoco_1_1Util_1_1SystemConfiguration_a5c6f2af415856fc94df473cb03c7273d}} 
+\index{Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}!SystemConfiguration@{SystemConfiguration}}
+\index{SystemConfiguration@{SystemConfiguration}!Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}}
+\doxysubsubsection{\texorpdfstring{SystemConfiguration()}{SystemConfiguration()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+System\+Configuration\+::\+System\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1SystemConfiguration_ad3b4069a383bdfda885eb41fa365f346}\label{classPoco_1_1Util_1_1SystemConfiguration_ad3b4069a383bdfda885eb41fa365f346}} 
+\index{Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}!````~SystemConfiguration@{$\sim$SystemConfiguration}}
+\index{````~SystemConfiguration@{$\sim$SystemConfiguration}!Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}}
+\doxysubsubsection{\texorpdfstring{$\sim$SystemConfiguration()}{~SystemConfiguration()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+System\+Configuration\+::$\sim$\+System\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1SystemConfiguration_aa1fcfaf8b924c87a3ba1861e1af9dc15}\label{classPoco_1_1Util_1_1SystemConfiguration_aa1fcfaf8b924c87a3ba1861e1af9dc15}} 
+\index{Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}!enumerate@{enumerate}}
+\index{enumerate@{enumerate}!Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}}
+\doxysubsubsection{\texorpdfstring{enumerate()}{enumerate()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+System\+Configuration\+::enumerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_ab77c4dc36e335ec05107a155786cb91f}{Keys}} \&}]{range }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Sets the property with the given key to the given value. An already existing value for the key is overwritten.
+
+Must be overridden by subclasses. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a64885a63b3990485d518b37697aa1057}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1SystemConfiguration_a8f4da72897c2ad0eef0a1b2181ccc102}\label{classPoco_1_1Util_1_1SystemConfiguration_a8f4da72897c2ad0eef0a1b2181ccc102}} 
+\index{Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}!getRaw@{getRaw}}
+\index{getRaw@{getRaw}!Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}}
+\doxysubsubsection{\texorpdfstring{getRaw()}{getRaw()}}
+{\footnotesize\ttfamily bool Poco\+::\+Util\+::\+System\+Configuration\+::get\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Util_1_1SystemConfiguration}{System\+Configuration}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a07e5732151cd6056cfa15809f3a5ac55}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1SystemConfiguration_a983a144457ef2faa9b24d205cae7f740}\label{classPoco_1_1Util_1_1SystemConfiguration_a983a144457ef2faa9b24d205cae7f740}} 
+\index{Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}!removeRaw@{removeRaw}}
+\index{removeRaw@{removeRaw}!Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}}
+\doxysubsubsection{\texorpdfstring{removeRaw()}{removeRaw()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+System\+Configuration\+::remove\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Returns in range the names of all subkeys under the given key. If an empty key is passed, all root level keys are returned. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a9b26c960b912239e815c0f0a2607a132}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1SystemConfiguration_a734ca735d1324816e6ed4b2d064fb5dc}\label{classPoco_1_1Util_1_1SystemConfiguration_a734ca735d1324816e6ed4b2d064fb5dc}} 
+\index{Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}!setRaw@{setRaw}}
+\index{setRaw@{setRaw}!Poco::Util::SystemConfiguration@{Poco::Util::SystemConfiguration}}
+\doxysubsubsection{\texorpdfstring{setRaw()}{setRaw()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+System\+Configuration\+::set\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+If the property with the given key exists, stores the property\textquotesingle{}s value in value and returns true. Otherwise, returns false.
+
+Must be overridden by subclasses. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a620fb5eedbf878c312d7259c9c251509}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Util/\mbox{\hyperlink{SystemConfiguration_8h}{System\+Configuration.\+h}}\end{DoxyCompactItemize}

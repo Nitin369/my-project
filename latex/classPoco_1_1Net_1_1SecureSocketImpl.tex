@@ -1,0 +1,413 @@
+\hypertarget{classPoco_1_1Net_1_1SecureSocketImpl}{}\doxysection{Poco\+::Net\+::Secure\+Socket\+Impl Class Reference}
+\label{classPoco_1_1Net_1_1SecureSocketImpl}\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+
+
+The \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} for \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocket}{Secure\+Stream\+Socket}}.  
+
+
+
+
+{\ttfamily \#include $<$Secure\+Socket\+Impl.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a471b81e15faa23709ab902ca2f3e9610}{Secure\+Socket\+Impl}} (\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} $>$ p\+Socket\+Impl, \mbox{\hyperlink{classPoco_1_1Net_1_1Context_a5a1e86c0e3e93f19533e93a58ddaaac9}{Context\+::\+Ptr}} p\+Context)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a8373fd450e2741d29b358a4b81063f3d}{$\sim$\+Secure\+Socket\+Impl}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a4ad6012f061b1ab9337871d404a3c688}{accept\+Connection}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&client\+Addr)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl}{Secure\+Socket\+Impl}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a67806d724b88e5f1b6c6b2a843406cbd}{connect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&address, bool perform\+Handshake)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a9ca62b54a01614a01bbe0a078387933d}{connect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&address, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout, bool perform\+Handshake)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a9b232b0212435683171c84acc80cfe2f}{connect\+NB}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&address)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a3face3eba35f126aadf632bdd315ba8e}{bind}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&address, bool reuse\+Address=false)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_ad10c73f278f0ed58660c5fcc10f84036}{listen}} (int backlog=64)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_ae9c1f55d3f9940efa786179e0424bc9b}{shutdown}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a30b284d3bd838696c495025fd384bd92}{close}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_abcb08d18d8807d1902290851433afe36}{abort}} ()
+\begin{DoxyCompactList}\small\item\em Close the socket. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a5bef05c5f660396206f74eab281b3e60}{send\+Bytes}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$buffer, int length, int flags=0)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a6e1385e5a42a8ad921b803112007a6ce}{receive\+Bytes}} (void $\ast$buffer, int length, int flags=0)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a2e4d392fc5c359fd07beba54409cc13e}{available}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a5c7a6b00f8bda3c242ee7a4bf4fd15f1}{complete\+Handshake}} ()
+\item 
+poco\+\_\+socket\+\_\+t \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_ac133f5cbc577a75e6be7fcadbc1538d9}{sockfd}} ()
+\item 
+X509 $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a21408b3a10649d482e9b95247fa96528}{peer\+Certificate}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the underlying socket descriptor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1Context_a5a1e86c0e3e93f19533e93a58ddaaac9}{Context\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a99b000d59c9711df8ad90e0fb192226a}{context}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the peer\textquotesingle{}s certificate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a4583637da21204d2d58765b66f97ab36}{verify\+Peer\+Certificate}} ()
+\begin{DoxyCompactList}\small\item\em Returns the S\+SL context used for this socket. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a35f4c0ba82785997f212f830d67abe02}{verify\+Peer\+Certificate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host\+Name)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_ac8738f5dc47f92ea2a270ab1dc7b3e48}{set\+Peer\+Host\+Name}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host\+Name)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a9367e9c3efe45a6a3e2e1a8b5a0f5cd9}{get\+Peer\+Host\+Name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the peer host name for certificate validation purposes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1Session_a0df3cd9d591b79ff2a15afe69d224ce2}{Session\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_ae97f1417ee9728ac2365b8ef8a8bfa3d}{current\+Session}} ()
+\begin{DoxyCompactList}\small\item\em Returns the peer host name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_ac64748bf70325bea11bc95c1a7b2210f}{use\+Session}} (\mbox{\hyperlink{classPoco_1_1Net_1_1Session_a0df3cd9d591b79ff2a15afe69d224ce2}{Session\+::\+Ptr}} p\+Session)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a1928f0d513b3b349b71f1804c04e6f45}{session\+Was\+Reused}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_ab087c479f02cc6cec2c803a41fddda4f}{accept\+S\+SL}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_ac5402efc224114d0945160fc9b4146e9}{connect\+S\+SL}} (bool perform\+Handshake)
+\begin{DoxyCompactList}\small\item\em Performs a server-\/side S\+SL handshake and certificate verification. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a9ee9f24e60cd7b53726561e2cd2fd8e1}{verify\+Peer\+Certificate\+Impl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host\+Name)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a6f3ce03880e6649a7d9ea8a77af1c57e}{must\+Retry}} (int rc)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a2accb6cc1451ebc57c0c3d8f02a1c1f8}{handle\+Error}} (int rc)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a85538afc76332766f24f3c1c4db8d363}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Handles an S\+SL error by throwing an appropriate exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a69cb4b3adf41f27c02593169110b6078}{is\+Local\+Host}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host\+Name)
+\begin{DoxyCompactList}\small\item\em Performs post-\/connect (or post-\/accept) peer certificate validation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a2b7e3b63d472cea0b35cac4070236dab}{Secure\+Stream\+Socket\+Impl}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} for \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocket}{Secure\+Stream\+Socket}}. 
+
+Definition at line 39 of file Secure\+Socket\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a471b81e15faa23709ab902ca2f3e9610}\label{classPoco_1_1Net_1_1SecureSocketImpl_a471b81e15faa23709ab902ca2f3e9610}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!SecureSocketImpl@{SecureSocketImpl}}
+\index{SecureSocketImpl@{SecureSocketImpl}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{SecureSocketImpl()}{SecureSocketImpl()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::\+Secure\+Socket\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} $>$}]{p\+Socket\+Impl,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1Context_a5a1e86c0e3e93f19533e93a58ddaaac9}{Context\+::\+Ptr}}}]{p\+Context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a8373fd450e2741d29b358a4b81063f3d}\label{classPoco_1_1Net_1_1SecureSocketImpl_a8373fd450e2741d29b358a4b81063f3d}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!````~SecureSocketImpl@{$\sim$SecureSocketImpl}}
+\index{````~SecureSocketImpl@{$\sim$SecureSocketImpl}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{$\sim$SecureSocketImpl()}{~SecureSocketImpl()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::$\sim$\+Secure\+Socket\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl}{Secure\+Socket\+Impl}} using an already connected stream socket. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_abcb08d18d8807d1902290851433afe36}\label{classPoco_1_1Net_1_1SecureSocketImpl_abcb08d18d8807d1902290851433afe36}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!abort@{abort}}
+\index{abort@{abort}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{abort()}{abort()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::abort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Close the socket. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a4ad6012f061b1ab9337871d404a3c688}\label{classPoco_1_1Net_1_1SecureSocketImpl_a4ad6012f061b1ab9337871d404a3c688}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!acceptConnection@{acceptConnection}}
+\index{acceptConnection@{acceptConnection}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{acceptConnection()}{acceptConnection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}}$\ast$ Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::accept\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{client\+Addr }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl}{Secure\+Socket\+Impl}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_ab087c479f02cc6cec2c803a41fddda4f}\label{classPoco_1_1Net_1_1SecureSocketImpl_ab087c479f02cc6cec2c803a41fddda4f}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!acceptSSL@{acceptSSL}}
+\index{acceptSSL@{acceptSSL}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{acceptSSL()}{acceptSSL()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::accept\+S\+SL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns true iff a reused session was negotiated during the handshake. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a2e4d392fc5c359fd07beba54409cc13e}\label{classPoco_1_1Net_1_1SecureSocketImpl_a2e4d392fc5c359fd07beba54409cc13e}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!available@{available}}
+\index{available@{available}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Receives data from the socket and stores it in buffer. Up to length bytes are received.
+
+Returns the number of bytes received. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a3face3eba35f126aadf632bdd315ba8e}\label{classPoco_1_1Net_1_1SecureSocketImpl_a3face3eba35f126aadf632bdd315ba8e}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!bind@{bind}}
+\index{bind@{bind}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::bind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{bool}]{reuse\+Address = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Initializes the socket and establishes a secure connection to the T\+CP server at the given address. Prior to opening the connection the socket is set to nonblocking mode. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a30b284d3bd838696c495025fd384bd92}\label{classPoco_1_1Net_1_1SecureSocketImpl_a30b284d3bd838696c495025fd384bd92}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!close@{close}}
+\index{close@{close}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Shuts down the connection by attempting an orderly S\+SL shutdown, then actually shutting down the T\+CP connection. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a5c7a6b00f8bda3c242ee7a4bf4fd15f1}\label{classPoco_1_1Net_1_1SecureSocketImpl_a5c7a6b00f8bda3c242ee7a4bf4fd15f1}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!completeHandshake@{completeHandshake}}
+\index{completeHandshake@{completeHandshake}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{completeHandshake()}{completeHandshake()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::complete\+Handshake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of bytes available from the S\+SL buffer for immediate reading. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a67806d724b88e5f1b6c6b2a843406cbd}\label{classPoco_1_1Net_1_1SecureSocketImpl_a67806d724b88e5f1b6c6b2a843406cbd}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!connect@{connect}}
+\index{connect@{connect}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{bool}]{perform\+Handshake }\end{DoxyParamCaption})}
+
+Get the next completed connection from the socket\textquotesingle{}s completed connection queue.
+
+If the queue is empty, waits until a connection request completes.
+
+Returns a new S\+SL socket for the connection with the client.
+
+The client socket\textquotesingle{}s address is returned in client\+Addr. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a9ca62b54a01614a01bbe0a078387933d}\label{classPoco_1_1Net_1_1SecureSocketImpl_a9ca62b54a01614a01bbe0a078387933d}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!connect@{connect}}
+\index{connect@{connect}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout,  }\item[{bool}]{perform\+Handshake }\end{DoxyParamCaption})}
+
+Initializes the socket and establishes a secure connection to the T\+CP server at the given address.
+
+If perform\+Handshake is true, the S\+SL handshake is performed immediately after establishing the connection. Otherwise, the handshake is performed the first time \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a5bef05c5f660396206f74eab281b3e60}{send\+Bytes()}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a6e1385e5a42a8ad921b803112007a6ce}{receive\+Bytes()}} or \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a5c7a6b00f8bda3c242ee7a4bf4fd15f1}{complete\+Handshake()}} is called. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a9b232b0212435683171c84acc80cfe2f}\label{classPoco_1_1Net_1_1SecureSocketImpl_a9b232b0212435683171c84acc80cfe2f}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!connectNB@{connectNB}}
+\index{connectNB@{connectNB}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{connectNB()}{connectNB()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::connect\+NB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address }\end{DoxyParamCaption})}
+
+Initializes the socket, sets the socket timeout and establishes a secure connection to the T\+CP server at the given address.
+
+If perform\+Handshake is true, the S\+SL handshake is performed immediately after establishing the connection. Otherwise, the handshake is performed the first time \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a5bef05c5f660396206f74eab281b3e60}{send\+Bytes()}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a6e1385e5a42a8ad921b803112007a6ce}{receive\+Bytes()}} or \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a5c7a6b00f8bda3c242ee7a4bf4fd15f1}{complete\+Handshake()}} is called. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_ac5402efc224114d0945160fc9b4146e9}\label{classPoco_1_1Net_1_1SecureSocketImpl_ac5402efc224114d0945160fc9b4146e9}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!connectSSL@{connectSSL}}
+\index{connectSSL@{connectSSL}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{connectSSL()}{connectSSL()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::connect\+S\+SL (\begin{DoxyParamCaption}\item[{bool}]{perform\+Handshake }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Performs a server-\/side S\+SL handshake and certificate verification. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a99b000d59c9711df8ad90e0fb192226a}\label{classPoco_1_1Net_1_1SecureSocketImpl_a99b000d59c9711df8ad90e0fb192226a}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!context@{context}}
+\index{context@{context}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{context()}{context()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1Context_a5a1e86c0e3e93f19533e93a58ddaaac9}{Context\+::\+Ptr}} Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the peer\textquotesingle{}s certificate. 
+
+
+
+Definition at line 250 of file Secure\+Socket\+Impl.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_ae97f1417ee9728ac2365b8ef8a8bfa3d}\label{classPoco_1_1Net_1_1SecureSocketImpl_ae97f1417ee9728ac2365b8ef8a8bfa3d}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!currentSession@{currentSession}}
+\index{currentSession@{currentSession}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{currentSession()}{currentSession()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1Session_a0df3cd9d591b79ff2a15afe69d224ce2}{Session\+::\+Ptr}} Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::current\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the peer host name. 
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a9367e9c3efe45a6a3e2e1a8b5a0f5cd9}\label{classPoco_1_1Net_1_1SecureSocketImpl_a9367e9c3efe45a6a3e2e1a8b5a0f5cd9}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!getPeerHostName@{getPeerHostName}}
+\index{getPeerHostName@{getPeerHostName}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{getPeerHostName()}{getPeerHostName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::get\+Peer\+Host\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the peer host name for certificate validation purposes. 
+
+
+
+Definition at line 256 of file Secure\+Socket\+Impl.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a2accb6cc1451ebc57c0c3d8f02a1c1f8}\label{classPoco_1_1Net_1_1SecureSocketImpl_a2accb6cc1451ebc57c0c3d8f02a1c1f8}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!handleError@{handleError}}
+\index{handleError@{handleError}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{handleError()}{handleError()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::handle\+Error (\begin{DoxyParamCaption}\item[{int}]{rc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns true if the last operation should be retried, otherwise false.
+
+In case of an S\+S\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+A\+N\+T\+\_\+\+R\+E\+AD error, and if the socket is blocking, waits for the underlying socket to become readable.
+
+In case of an S\+S\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+A\+N\+T\+\_\+\+W\+R\+I\+TE error, and if the socket is blocking, waits for the underlying socket to become writable.
+
+Can also throw a Poco\+::\+Timeout\+Exception if the socket does not become readable or writable within the sockets receive or send timeout. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a69cb4b3adf41f27c02593169110b6078}\label{classPoco_1_1Net_1_1SecureSocketImpl_a69cb4b3adf41f27c02593169110b6078}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!isLocalHost@{isLocalHost}}
+\index{isLocalHost@{isLocalHost}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{isLocalHost()}{isLocalHost()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::is\+Local\+Host (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Performs post-\/connect (or post-\/accept) peer certificate validation. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_ad10c73f278f0ed58660c5fcc10f84036}\label{classPoco_1_1Net_1_1SecureSocketImpl_ad10c73f278f0ed58660c5fcc10f84036}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!listen@{listen}}
+\index{listen@{listen}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{listen()}{listen()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::listen (\begin{DoxyParamCaption}\item[{int}]{backlog = {\ttfamily 64} }\end{DoxyParamCaption})}
+
+Bind a local address to the socket.
+
+This is usually only done when establishing a server socket. S\+SL clients should not bind a socket to a specific address.
+
+If reuse\+Address is true, sets the S\+O\+\_\+\+R\+E\+U\+S\+E\+A\+D\+DR socket option. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a6f3ce03880e6649a7d9ea8a77af1c57e}\label{classPoco_1_1Net_1_1SecureSocketImpl_a6f3ce03880e6649a7d9ea8a77af1c57e}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!mustRetry@{mustRetry}}
+\index{mustRetry@{mustRetry}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{mustRetry()}{mustRetry()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::must\+Retry (\begin{DoxyParamCaption}\item[{int}]{rc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns true iff the given host name is the local host (either \char`\"{}localhost\char`\"{} or \char`\"{}127.\+0.\+0.\+1\char`\"{}). \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a21408b3a10649d482e9b95247fa96528}\label{classPoco_1_1Net_1_1SecureSocketImpl_a21408b3a10649d482e9b95247fa96528}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!peerCertificate@{peerCertificate}}
+\index{peerCertificate@{peerCertificate}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{peerCertificate()}{peerCertificate()}}
+{\footnotesize\ttfamily X509$\ast$ Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::peer\+Certificate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the underlying socket descriptor. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a6e1385e5a42a8ad921b803112007a6ce}\label{classPoco_1_1Net_1_1SecureSocketImpl_a6e1385e5a42a8ad921b803112007a6ce}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!receiveBytes@{receiveBytes}}
+\index{receiveBytes@{receiveBytes}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{receiveBytes()}{receiveBytes()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::receive\+Bytes (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Sends the contents of the given buffer through the socket. \mbox{\hyperlink{classPoco_1_1Any}{Any}} specified flags are ignored.
+
+Returns the number of bytes sent, which may be less than the number of bytes specified. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a85538afc76332766f24f3c1c4db8d363}\label{classPoco_1_1Net_1_1SecureSocketImpl_a85538afc76332766f24f3c1c4db8d363}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!reset@{reset}}
+\index{reset@{reset}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Handles an S\+SL error by throwing an appropriate exception. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a5bef05c5f660396206f74eab281b3e60}\label{classPoco_1_1Net_1_1SecureSocketImpl_a5bef05c5f660396206f74eab281b3e60}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!sendBytes@{sendBytes}}
+\index{sendBytes@{sendBytes}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{sendBytes()}{sendBytes()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::send\+Bytes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Aborts the connection by closing the underlying T\+CP connection. No orderly S\+SL shutdown is performed. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a1928f0d513b3b349b71f1804c04e6f45}\label{classPoco_1_1Net_1_1SecureSocketImpl_a1928f0d513b3b349b71f1804c04e6f45}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!sessionWasReused@{sessionWasReused}}
+\index{sessionWasReused@{sessionWasReused}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{sessionWasReused()}{sessionWasReused()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::session\+Was\+Reused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the S\+SL session to use for the next connection. Setting a previously saved \mbox{\hyperlink{classPoco_1_1Net_1_1Session}{Session}} object is necessary to enable session caching.
+
+To remove the currently set session, a null pointer can be given.
+
+Must be called before \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_a67806d724b88e5f1b6c6b2a843406cbd}{connect()}} to be effective. Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_ac8738f5dc47f92ea2a270ab1dc7b3e48}\label{classPoco_1_1Net_1_1SecureSocketImpl_ac8738f5dc47f92ea2a270ab1dc7b3e48}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!setPeerHostName@{setPeerHostName}}
+\index{setPeerHostName@{setPeerHostName}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{setPeerHostName()}{setPeerHostName()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::set\+Peer\+Host\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host\+Name }\end{DoxyParamCaption})}
+
+Performs post-\/connect (or post-\/accept) peer certificate validation using the given peer host name. Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_ae9c1f55d3f9940efa786179e0424bc9b}\label{classPoco_1_1Net_1_1SecureSocketImpl_ae9c1f55d3f9940efa786179e0424bc9b}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Puts the socket into listening state.
+
+The socket becomes a passive socket that can accept incoming connection requests.
+
+The backlog argument specifies the maximum number of connections that can be queued for this socket. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_ac133f5cbc577a75e6be7fcadbc1538d9}\label{classPoco_1_1Net_1_1SecureSocketImpl_ac133f5cbc577a75e6be7fcadbc1538d9}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!sockfd@{sockfd}}
+\index{sockfd@{sockfd}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{sockfd()}{sockfd()}}
+{\footnotesize\ttfamily poco\+\_\+socket\+\_\+t Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::sockfd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Completes the S\+SL handshake.
+
+If the S\+SL connection was the result of an accept(), the server-\/side handshake is completed, otherwise a client-\/side handshake is performed. ~\newline
+ 
+
+Definition at line 244 of file Secure\+Socket\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_ac64748bf70325bea11bc95c1a7b2210f}\label{classPoco_1_1Net_1_1SecureSocketImpl_ac64748bf70325bea11bc95c1a7b2210f}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!useSession@{useSession}}
+\index{useSession@{useSession}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{useSession()}{useSession()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::use\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1Session_a0df3cd9d591b79ff2a15afe69d224ce2}{Session\+::\+Ptr}}}]{p\+Session }\end{DoxyParamCaption})}
+
+Returns the S\+SL session of the current connection, for reuse in a future connection (if session caching is enabled).
+
+If no connection is established, returns null. Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a4583637da21204d2d58765b66f97ab36}\label{classPoco_1_1Net_1_1SecureSocketImpl_a4583637da21204d2d58765b66f97ab36}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!verifyPeerCertificate@{verifyPeerCertificate}}
+\index{verifyPeerCertificate@{verifyPeerCertificate}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{verifyPeerCertificate()}{verifyPeerCertificate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::verify\+Peer\+Certificate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the S\+SL context used for this socket. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a35f4c0ba82785997f212f830d67abe02}\label{classPoco_1_1Net_1_1SecureSocketImpl_a35f4c0ba82785997f212f830d67abe02}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!verifyPeerCertificate@{verifyPeerCertificate}}
+\index{verifyPeerCertificate@{verifyPeerCertificate}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{verifyPeerCertificate()}{verifyPeerCertificate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::verify\+Peer\+Certificate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host\+Name }\end{DoxyParamCaption})}
+
+Performs post-\/connect (or post-\/accept) peer certificate validation, using the peer host name set with \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl_ac8738f5dc47f92ea2a270ab1dc7b3e48}{set\+Peer\+Host\+Name()}}, or the peer\textquotesingle{}s IP address string if no peer host name has been set. \mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a9ee9f24e60cd7b53726561e2cd2fd8e1}\label{classPoco_1_1Net_1_1SecureSocketImpl_a9ee9f24e60cd7b53726561e2cd2fd8e1}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!verifyPeerCertificateImpl@{verifyPeerCertificateImpl}}
+\index{verifyPeerCertificateImpl@{verifyPeerCertificateImpl}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{verifyPeerCertificateImpl()}{verifyPeerCertificateImpl()}}
+{\footnotesize\ttfamily long Poco\+::\+Net\+::\+Secure\+Socket\+Impl\+::verify\+Peer\+Certificate\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Performs a client-\/side S\+SL handshake and establishes a secure connection over an already existing T\+CP connection. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SecureSocketImpl_a2b7e3b63d472cea0b35cac4070236dab}\label{classPoco_1_1Net_1_1SecureSocketImpl_a2b7e3b63d472cea0b35cac4070236dab}} 
+\index{Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}!SecureStreamSocketImpl@{SecureStreamSocketImpl}}
+\index{SecureStreamSocketImpl@{SecureStreamSocketImpl}!Poco::Net::SecureSocketImpl@{Poco::Net::SecureSocketImpl}}
+\doxysubsubsection{\texorpdfstring{SecureStreamSocketImpl}{SecureStreamSocketImpl}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl}{Secure\+Stream\+Socket\+Impl}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 237 of file Secure\+Socket\+Impl.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{SecureSocketImpl_8h}{Secure\+Socket\+Impl.\+h}}\end{DoxyCompactItemize}

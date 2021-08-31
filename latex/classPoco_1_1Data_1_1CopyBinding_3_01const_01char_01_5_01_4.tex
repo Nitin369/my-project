@@ -1,0 +1,228 @@
+\hypertarget{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4}{}\doxysection{Poco\+::Data\+::Copy\+Binding$<$ const char $\ast$ $>$ Class Reference}
+\label{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4}\index{Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}}
+
+
+\mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Binding}} const char$\ast$ specialization wraps char pointer into string.  
+
+
+
+
+{\ttfamily \#include $<$Binding.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::Copy\+Binding$<$ const char $\ast$ $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Data\+::Copy\+Binding$<$ const char $\ast$ $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_af3b187ea3bc835cd2d363a1154fcdc82}{Val\+Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_ac3a08c804e354d7ff6fa14eeeecbb8e3}{Val\+Ptr}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Copy\+Binding}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a6c4d42bb209f78a45510521d4eff7cc4}{Type}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a6c4d42bb209f78a45510521d4eff7cc4}{Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a3ae4495ff92768f0272189e0fa22f3d7}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a0145b3cc22d0c3e31050b2e79bec2ec7}{Copy\+Binding}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$p\+Val, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_aad21656cdfa3d86f092fa9a0939191a2}{name}}=\char`\"{}\char`\"{}, \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ad2419eb98c1e4c09656d796854706496}{Direction}} direction=\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ad2419eb98c1e4c09656d796854706496aa319cc2c7f5308b0e2c06d11917ddbbd}{P\+D\+\_\+\+IN}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a672065240b0f1388bb17270c1d7f7f2b}{$\sim$\+Copy\+Binding}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Copy\+Binding}}. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a6f57a6800be0407463b55e50838165b7}{num\+Of\+Columns\+Handled}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinder}{Abstract\+Binder}} used for binding data. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_aa0a220836cc9328c44763291092865c0}{num\+Of\+Rows\+Handled}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_aa58a5d8e7f4f36e9893fb1bb4fcbf49c}{can\+Bind}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_ab07a29e701a5ec3eae7e938948cfd687}{bind}} (std\+::size\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em Returns true if we have enough data to bind. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_acde543f4ad588e8ba9e805a76ac03f22}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Binds a value to the given column position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef char $\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_af3b187ea3bc835cd2d363a1154fcdc82}{Val\+Type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Binding}} const char$\ast$ specialization wraps char pointer into string. 
+
+Definition at line 247 of file Binding.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a3ae4495ff92768f0272189e0fa22f3d7}\label{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a3ae4495ff92768f0272189e0fa22f3d7}} 
+\index{Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a6c4d42bb209f78a45510521d4eff7cc4}{Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Poco\+::\+Data\+::\+Copy\+Binding}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ae623db90af7dc5d074aa37c630b6b8a3}{Ptr}}}
+
+
+
+Definition at line 254 of file Binding.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a6c4d42bb209f78a45510521d4eff7cc4}\label{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a6c4d42bb209f78a45510521d4eff7cc4}} 
+\index{Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}!Type@{Type}}
+\index{Type@{Type}!Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Copy\+Binding}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Poco\+::\+Data\+::\+Copy\+Binding}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a6c4d42bb209f78a45510521d4eff7cc4}{Type}}}
+
+
+
+Definition at line 253 of file Binding.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_ac3a08c804e354d7ff6fa14eeeecbb8e3}\label{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_ac3a08c804e354d7ff6fa14eeeecbb8e3}} 
+\index{Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}!ValPtr@{ValPtr}}
+\index{ValPtr@{ValPtr}!Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}}
+\doxysubsubsection{\texorpdfstring{ValPtr}{ValPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_af3b187ea3bc835cd2d363a1154fcdc82}{Val\+Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Poco\+::\+Data\+::\+Copy\+Binding}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_ac3a08c804e354d7ff6fa14eeeecbb8e3}{Val\+Ptr}}}
+
+
+
+Definition at line 252 of file Binding.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a0145b3cc22d0c3e31050b2e79bec2ec7}\label{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a0145b3cc22d0c3e31050b2e79bec2ec7}} 
+\index{Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}!CopyBinding@{CopyBinding}}
+\index{CopyBinding@{CopyBinding}!Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}}
+\doxysubsubsection{\texorpdfstring{CopyBinding()}{CopyBinding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Poco\+::\+Data\+::\+Copy\+Binding}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Copy\+Binding}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{p\+Val,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}},  }\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ad2419eb98c1e4c09656d796854706496}{Direction}}}]{direction = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ad2419eb98c1e4c09656d796854706496aa319cc2c7f5308b0e2c06d11917ddbbd}{P\+D\+\_\+\+IN}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 256 of file Binding.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a672065240b0f1388bb17270c1d7f7f2b}\label{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a672065240b0f1388bb17270c1d7f7f2b}} 
+\index{Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}!````~CopyBinding@{$\sim$CopyBinding}}
+\index{````~CopyBinding@{$\sim$CopyBinding}!Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$CopyBinding()}{~CopyBinding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Poco\+::\+Data\+::\+Copy\+Binding}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Copy\+Binding}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Copy\+Binding}}. 
+
+
+
+Definition at line 266 of file Binding.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_ab07a29e701a5ec3eae7e938948cfd687}\label{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_ab07a29e701a5ec3eae7e938948cfd687}} 
+\index{Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}!bind@{bind}}
+\index{bind@{bind}!Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Poco\+::\+Data\+::\+Copy\+Binding}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ $>$\+::bind (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns true if we have enough data to bind. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_a742814d4060e833d606d563a3794a9ff}{Poco\+::\+Data\+::\+Abstract\+Binding}}.
+
+
+
+Definition at line 286 of file Binding.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_aa58a5d8e7f4f36e9893fb1bb4fcbf49c}\label{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_aa58a5d8e7f4f36e9893fb1bb4fcbf49c}} 
+\index{Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}!canBind@{canBind}}
+\index{canBind@{canBind}!Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}}
+\doxysubsubsection{\texorpdfstring{canBind()}{canBind()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Poco\+::\+Data\+::\+Copy\+Binding}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ $>$\+::can\+Bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of rows that the binding handles.
+
+The trivial case will be one single row but for collection data types it can be larger. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_a77bbfb86c6fc0054e275dd42d9b45c53}{Poco\+::\+Data\+::\+Abstract\+Binding}}.
+
+
+
+Definition at line 281 of file Binding.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a6f57a6800be0407463b55e50838165b7}\label{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_a6f57a6800be0407463b55e50838165b7}} 
+\index{Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}!numOfColumnsHandled@{numOfColumnsHandled}}
+\index{numOfColumnsHandled@{numOfColumnsHandled}!Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}}
+\doxysubsubsection{\texorpdfstring{numOfColumnsHandled()}{numOfColumnsHandled()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Poco\+::\+Data\+::\+Copy\+Binding}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ $>$\+::num\+Of\+Columns\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinder}{Abstract\+Binder}} used for binding data. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_a7faa2cd0e44e16b2c3859687fabd830a}{Poco\+::\+Data\+::\+Abstract\+Binding}}.
+
+
+
+Definition at line 271 of file Binding.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_aa0a220836cc9328c44763291092865c0}\label{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_aa0a220836cc9328c44763291092865c0}} 
+\index{Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}!numOfRowsHandled@{numOfRowsHandled}}
+\index{numOfRowsHandled@{numOfRowsHandled}!Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}}
+\doxysubsubsection{\texorpdfstring{numOfRowsHandled()}{numOfRowsHandled()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Poco\+::\+Data\+::\+Copy\+Binding}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ $>$\+::num\+Of\+Rows\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of columns that the binding handles.
+
+The trivial case will be one single column but when complex types are used this value can be larger than one. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ae079a20af09d4eda61ac499f7ef1a552}{Poco\+::\+Data\+::\+Abstract\+Binding}}.
+
+
+
+Definition at line 276 of file Binding.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_acde543f4ad588e8ba9e805a76ac03f22}\label{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_acde543f4ad588e8ba9e805a76ac03f22}} 
+\index{Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}!reset@{reset}}
+\index{reset@{reset}!Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Poco\+::\+Data\+::\+Copy\+Binding}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ $>$\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Binds a value to the given column position. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_a7813acedf8bb85269248bf16b6350807}{Poco\+::\+Data\+::\+Abstract\+Binding}}.
+
+
+
+Definition at line 293 of file Binding.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_af3b187ea3bc835cd2d363a1154fcdc82}\label{classPoco_1_1Data_1_1CopyBinding_3_01const_01char_01_5_01_4_af3b187ea3bc835cd2d363a1154fcdc82}} 
+\index{Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}!ValType@{ValType}}
+\index{ValType@{ValType}!Poco::Data::CopyBinding$<$ const char $\ast$ $>$@{Poco::Data::CopyBinding$<$ const char $\ast$ $>$}}
+\doxysubsubsection{\texorpdfstring{ValType}{ValType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef char$\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1CopyBinding}{Poco\+::\+Data\+::\+Copy\+Binding}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ $>$\+::Val\+Type}
+
+
+
+Definition at line 251 of file Binding.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{Binding_8h}{Binding.\+h}}\end{DoxyCompactItemize}

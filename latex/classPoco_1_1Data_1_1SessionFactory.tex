@@ -1,0 +1,83 @@
+\hypertarget{classPoco_1_1Data_1_1SessionFactory}{}\doxysection{Poco\+::Data\+::Session\+Factory Class Reference}
+\label{classPoco_1_1Data_1_1SessionFactory}\index{Poco::Data::SessionFactory@{Poco::Data::SessionFactory}}
+
+
+{\ttfamily \#include $<$Session\+Factory.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionFactory_ac3093582d254d6c04076ac231447f5ff}{add}} (\mbox{\hyperlink{classPoco_1_1Data_1_1Connector}{Connector}} $\ast$p\+In)
+\begin{DoxyCompactList}\small\item\em returns the static instance of the singleton. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionFactory_a4d4f5c0970d93b8606989f983c60e6ed}{remove}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \mbox{\hyperlink{classPoco_1_1Data_1_1SessionFactory_a93fb26d474edaddd984bb17491c43581}{create}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&connection\+String, std\+::size\+\_\+t timeout=\mbox{\hyperlink{classPoco_1_1Data_1_1Session_afc1074d8daceb77cd48582882e6d5207}{Session\+::\+L\+O\+G\+I\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+D\+E\+F\+A\+U\+LT}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \mbox{\hyperlink{classPoco_1_1Data_1_1SessionFactory_a338a6b0938b0e421a29d81503000b928}{create}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, std\+::size\+\_\+t timeout=\mbox{\hyperlink{classPoco_1_1Data_1_1Session_afc1074d8daceb77cd48582882e6d5207}{Session\+::\+L\+O\+G\+I\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+D\+E\+F\+A\+U\+LT}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1Data_1_1SessionFactory}{Session\+Factory}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1SessionFactory_aa124fc712cd4b7f705441199735ca03e}{instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1Data_1_1SessionFactory}{Session\+Factory}} is a singleton class that stores Connectors and allows to create Sessions of the required type\+: \begin{DoxyVerb}Session ses(SessionFactory::instance().create(connector, connectionString));
+\end{DoxyVerb}
+
+
+where the first param presents the type of session one wants to create (e.\+g. for \mbox{\hyperlink{namespacePoco_1_1Data_1_1SQLite}{S\+Q\+Lite}} one would choose \char`\"{}\+S\+Q\+Lite\char`\"{}) and the second param is the connection string that the connector requires to connect to the database.
+
+A concrete example to open an \mbox{\hyperlink{namespacePoco_1_1Data_1_1SQLite}{S\+Q\+Lite}} database stored in the file \char`\"{}dummy.\+db\char`\"{} would be \begin{DoxyVerb}Session ses(SessionFactory::instance().create(SQLite::Connector::KEY, "dummy.db"));
+\end{DoxyVerb}
+
+
+An even simpler way to create a session is to use the two argument constructor of \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}}, which automatically invokes the \mbox{\hyperlink{classPoco_1_1Data_1_1SessionFactory}{Session\+Factory}}\+: \begin{DoxyVerb} Session ses("SQLite", "dummy.db"); 
+\end{DoxyVerb}
+ 
+
+Definition at line 36 of file Session\+Factory.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionFactory_ac3093582d254d6c04076ac231447f5ff}\label{classPoco_1_1Data_1_1SessionFactory_ac3093582d254d6c04076ac231447f5ff}} 
+\index{Poco::Data::SessionFactory@{Poco::Data::SessionFactory}!add@{add}}
+\index{add@{add}!Poco::Data::SessionFactory@{Poco::Data::SessionFactory}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Session\+Factory\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1Connector}{Connector}} $\ast$}]{p\+In }\end{DoxyParamCaption})}
+
+
+
+returns the static instance of the singleton. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionFactory_a93fb26d474edaddd984bb17491c43581}\label{classPoco_1_1Data_1_1SessionFactory_a93fb26d474edaddd984bb17491c43581}} 
+\index{Poco::Data::SessionFactory@{Poco::Data::SessionFactory}!create@{create}}
+\index{create@{create}!Poco::Data::SessionFactory@{Poco::Data::SessionFactory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} Poco\+::\+Data\+::\+Session\+Factory\+::create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{connection\+String,  }\item[{std\+::size\+\_\+t}]{timeout = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Session_afc1074d8daceb77cd48582882e6d5207}{Session\+::\+L\+O\+G\+I\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+D\+E\+F\+A\+U\+LT}}} }\end{DoxyParamCaption})}
+
+Lowers the reference count for the \mbox{\hyperlink{classPoco_1_1Data_1_1Connector}{Connector}} registered under that key. If the count reaches zero, the object is removed. \mbox{\Hypertarget{classPoco_1_1Data_1_1SessionFactory_a338a6b0938b0e421a29d81503000b928}\label{classPoco_1_1Data_1_1SessionFactory_a338a6b0938b0e421a29d81503000b928}} 
+\index{Poco::Data::SessionFactory@{Poco::Data::SessionFactory}!create@{create}}
+\index{create@{create}!Poco::Data::SessionFactory@{Poco::Data::SessionFactory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} Poco\+::\+Data\+::\+Session\+Factory\+::create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{std\+::size\+\_\+t}]{timeout = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Session_afc1074d8daceb77cd48582882e6d5207}{Session\+::\+L\+O\+G\+I\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+D\+E\+F\+A\+U\+LT}}} }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} for the given key with the connection\+String. Throws an Poco\+:\+Data\+:\+:Unknown\+Data\+Base\+Exception if no \mbox{\hyperlink{classPoco_1_1Data_1_1Connector}{Connector}} is registered for that key. \mbox{\Hypertarget{classPoco_1_1Data_1_1SessionFactory_aa124fc712cd4b7f705441199735ca03e}\label{classPoco_1_1Data_1_1SessionFactory_aa124fc712cd4b7f705441199735ca03e}} 
+\index{Poco::Data::SessionFactory@{Poco::Data::SessionFactory}!instance@{instance}}
+\index{instance@{instance}!Poco::Data::SessionFactory@{Poco::Data::SessionFactory}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1Data_1_1SessionFactory}{Session\+Factory}}\& Poco\+::\+Data\+::\+Session\+Factory\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionFactory_a4d4f5c0970d93b8606989f983c60e6ed}\label{classPoco_1_1Data_1_1SessionFactory_a4d4f5c0970d93b8606989f983c60e6ed}} 
+\index{Poco::Data::SessionFactory@{Poco::Data::SessionFactory}!remove@{remove}}
+\index{remove@{remove}!Poco::Data::SessionFactory@{Poco::Data::SessionFactory}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Session\+Factory\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+Registers a \mbox{\hyperlink{classPoco_1_1Data_1_1Connector}{Connector}} under its key at the factory. If a registration for that key is already active, the first registration will be kept, only its reference count will be increased. Always takes ownership of parameter p\+In. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{SessionFactory_8h}{Session\+Factory.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,428 @@
+\hypertarget{classPoco_1_1RecursiveDirectoryIterator}{}\doxysection{Poco\+::Recursive\+Directory\+Iterator$<$ T\+Trav\+Str $>$ Class Template Reference}
+\label{classPoco_1_1RecursiveDirectoryIterator}\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+
+
+{\ttfamily \#include $<$Recursive\+Directory\+Iterator.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0a98cf4fafd43aec01a737e06d880d071c}{D\+\_\+\+I\+N\+F\+I\+N\+I\+TE}} = 0
+ \}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$ \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a7ee00616c1c18117494a9c92d308eaa7}{Recursive\+Directory\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Creates the end iterator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a75f614fd149d646b1e512b7da63b18ee}{Recursive\+Directory\+Iterator}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_afdf4c51bd86268273705d16ea9848154}{path}}, U\+Int16 \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ad93e0e0fd039ca52b6521b451a751d4d}{max\+Depth}}=\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0a98cf4fafd43aec01a737e06d880d071c}{D\+\_\+\+I\+N\+F\+I\+N\+I\+TE}})
+\begin{DoxyCompactList}\small\item\em Creates a recursive directory iterator for the given path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a49e300373a55733f230655f27ded8ea4}{Recursive\+Directory\+Iterator}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}} \&iterator)
+\item 
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ab4cbf30c3399780661973c91e95628b1}{Recursive\+Directory\+Iterator}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DirectoryIterator}{Directory\+Iterator}} \&iterator, U\+Int16 \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ad93e0e0fd039ca52b6521b451a751d4d}{max\+Depth}}=\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0a98cf4fafd43aec01a737e06d880d071c}{D\+\_\+\+I\+N\+F\+I\+N\+I\+TE}})
+\item 
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ad31acdb4b4db4d602cf4e2b410293f68}{Recursive\+Directory\+Iterator}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1File}{File}} \&file, U\+Int16 \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ad93e0e0fd039ca52b6521b451a751d4d}{max\+Depth}}=\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0a98cf4fafd43aec01a737e06d880d071c}{D\+\_\+\+I\+N\+F\+I\+N\+I\+TE}})
+\item 
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a06fea221fd624c377cf0451a24658ebc}{Recursive\+Directory\+Iterator}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_afdf4c51bd86268273705d16ea9848154}{path}}, U\+Int16 \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ad93e0e0fd039ca52b6521b451a751d4d}{max\+Depth}}=\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0a98cf4fafd43aec01a737e06d880d071c}{D\+\_\+\+I\+N\+F\+I\+N\+I\+TE}})
+\item 
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a55802f92b4b623b4f38b29b98376f768}{$\sim$\+Recursive\+Directory\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1DirectoryIterator}{Directory\+Iterator}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a3f9dc3a760d22426a316f28dae63f8b2}{name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the current filename. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Poco\+::\+Path}} \& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_afdf4c51bd86268273705d16ea9848154}{path}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the current path. \end{DoxyCompactList}\item 
+U\+Int16 \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a289260479e721e6db00b30adf1375996}{depth}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Depth of recursion (counting from 1). \end{DoxyCompactList}\item 
+U\+Int16 \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ad93e0e0fd039ca52b6521b451a751d4d}{max\+Depth}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Max depth of recursion (counting from 1). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}} \& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a2421be58f6ef6bf146aac83b05fe7de3}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}} \&it)
+\item 
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}} \& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ab8f369891e42cbe275fcabee7931597e}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1File}{File}} \&file)
+\item 
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}} \& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a14b458ca803c9ec5b80bb6f4c1d071c2}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_afdf4c51bd86268273705d16ea9848154}{path}})
+\item 
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}} \& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_addad9f2699b66e6a84613cbf9e84aedb}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_afdf4c51bd86268273705d16ea9848154}{path}})
+\item 
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}} \& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_adc694e147c1c0e34ccc42c8b5d799159}{operator++}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1File}{File}} \& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ae169919495c431f68934c66e72558761}{operator$\ast$}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1File}{File}} \& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a7a301f03b821656212bf6cd484d07868}{operator$\ast$}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1File}{File}} $\ast$ \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_aa44b3a23706b73b9b70ee2dfa306ad32}{operator-\/$>$}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1File}{File}} $\ast$ \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ac037cdc8679e2d13555cd3fbb52806a0}{operator-\/$>$}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T1 , class T2 $>$ }\\bool \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_add47d50e265ea7be32a56078eeca53be}{operator==}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}}$<$ T1 $>$ \&a, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}}$<$ T2 $>$ \&b)
+\item 
+{\footnotesize template$<$class T1 , class T2 $>$ }\\bool \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ada5659e5874c3477b4151fdc6c861c4e}{operator!=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}}$<$ T1 $>$ \&a, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}}$<$ T2 $>$ \&b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Trav\+Str = Children\+First\+Traverse$>$\newline
+class Poco\+::\+Recursive\+Directory\+Iterator$<$ T\+Trav\+Str $>$}
+
+The \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}} class is used to enumerate all files in a directory and its subdirectories.
+
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}} has some limitations\+:
+\begin{DoxyItemize}
+\item only forward iteration (++) is supported
+\item an iterator copied from another one will always point to the same file as the original iterator, even is the original iterator has been advanced (all copies of an iterator share their state with the original iterator)
+\end{DoxyItemize}
+
+The class can follow different traversal strategies\+:
+\begin{DoxyItemize}
+\item depth-\/first strategy;
+\item siblings-\/first strategy. The stategies are set by template parameter. There are two corresponding typedefs\+:
+\item Simple\+Recursive\+Directory\+Iterator;
+\item Siblings\+First\+Recursive\+Directory\+Iterator.
+\end{DoxyItemize}
+
+The depth of traversal can be limited by constructor parameter max\+Depth (which sets the infinite depth by default). 
+
+Definition at line 41 of file Recursive\+Directory\+Iterator.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}\label{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!MyType@{MyType}}
+\index{MyType@{MyType}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{MyType}{MyType}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}}$<$T\+Trav\+Str$>$ \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}}}
+
+
+
+Definition at line 65 of file Recursive\+Directory\+Iterator.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0}\label{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\_INFINITE@{D\_INFINITE}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!D\_INFINITE@{D\_INFINITE}}}\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0a98cf4fafd43aec01a737e06d880d071c}\label{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0a98cf4fafd43aec01a737e06d880d071c}} 
+D\+\_\+\+I\+N\+F\+I\+N\+I\+TE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 67 of file Recursive\+Directory\+Iterator.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_a7ee00616c1c18117494a9c92d308eaa7}\label{classPoco_1_1RecursiveDirectoryIterator_a7ee00616c1c18117494a9c92d308eaa7}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!RecursiveDirectoryIterator@{RecursiveDirectoryIterator}}
+\index{RecursiveDirectoryIterator@{RecursiveDirectoryIterator}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{RecursiveDirectoryIterator()}{RecursiveDirectoryIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates the end iterator. 
+
+
+
+Definition at line 72 of file Recursive\+Directory\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_a75f614fd149d646b1e512b7da63b18ee}\label{classPoco_1_1RecursiveDirectoryIterator_a75f614fd149d646b1e512b7da63b18ee}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!RecursiveDirectoryIterator@{RecursiveDirectoryIterator}}
+\index{RecursiveDirectoryIterator@{RecursiveDirectoryIterator}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{RecursiveDirectoryIterator()}{RecursiveDirectoryIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{U\+Int16}]{max\+Depth = {\ttfamily \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0a98cf4fafd43aec01a737e06d880d071c}{D\+\_\+\+I\+N\+F\+I\+N\+I\+TE}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a recursive directory iterator for the given path. 
+
+
+
+Definition at line 78 of file Recursive\+Directory\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_a49e300373a55733f230655f27ded8ea4}\label{classPoco_1_1RecursiveDirectoryIterator_a49e300373a55733f230655f27ded8ea4}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!RecursiveDirectoryIterator@{RecursiveDirectoryIterator}}
+\index{RecursiveDirectoryIterator@{RecursiveDirectoryIterator}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{RecursiveDirectoryIterator()}{RecursiveDirectoryIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}} \&}]{iterator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 84 of file Recursive\+Directory\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_ab4cbf30c3399780661973c91e95628b1}\label{classPoco_1_1RecursiveDirectoryIterator_ab4cbf30c3399780661973c91e95628b1}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!RecursiveDirectoryIterator@{RecursiveDirectoryIterator}}
+\index{RecursiveDirectoryIterator@{RecursiveDirectoryIterator}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{RecursiveDirectoryIterator()}{RecursiveDirectoryIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DirectoryIterator}{Directory\+Iterator}} \&}]{iterator,  }\item[{U\+Int16}]{max\+Depth = {\ttfamily \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0a98cf4fafd43aec01a737e06d880d071c}{D\+\_\+\+I\+N\+F\+I\+N\+I\+TE}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a recursive directory iterator for the path of non-\/recursive directory iterator. 
+
+Definition at line 90 of file Recursive\+Directory\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_ad31acdb4b4db4d602cf4e2b410293f68}\label{classPoco_1_1RecursiveDirectoryIterator_ad31acdb4b4db4d602cf4e2b410293f68}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!RecursiveDirectoryIterator@{RecursiveDirectoryIterator}}
+\index{RecursiveDirectoryIterator@{RecursiveDirectoryIterator}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{RecursiveDirectoryIterator()}{RecursiveDirectoryIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1File}{File}} \&}]{file,  }\item[{U\+Int16}]{max\+Depth = {\ttfamily \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0a98cf4fafd43aec01a737e06d880d071c}{D\+\_\+\+I\+N\+F\+I\+N\+I\+TE}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 97 of file Recursive\+Directory\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_a06fea221fd624c377cf0451a24658ebc}\label{classPoco_1_1RecursiveDirectoryIterator_a06fea221fd624c377cf0451a24658ebc}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!RecursiveDirectoryIterator@{RecursiveDirectoryIterator}}
+\index{RecursiveDirectoryIterator@{RecursiveDirectoryIterator}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{RecursiveDirectoryIterator()}{RecursiveDirectoryIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&}]{path,  }\item[{U\+Int16}]{max\+Depth = {\ttfamily \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_ab9dc132a20f8b858185f47d673497ad0a98cf4fafd43aec01a737e06d880d071c}{D\+\_\+\+I\+N\+F\+I\+N\+I\+TE}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 103 of file Recursive\+Directory\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_a55802f92b4b623b4f38b29b98376f768}\label{classPoco_1_1RecursiveDirectoryIterator_a55802f92b4b623b4f38b29b98376f768}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!````~RecursiveDirectoryIterator@{$\sim$RecursiveDirectoryIterator}}
+\index{````~RecursiveDirectoryIterator@{$\sim$RecursiveDirectoryIterator}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$RecursiveDirectoryIterator()}{~RecursiveDirectoryIterator()}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1DirectoryIterator}{Directory\+Iterator}}. 
+
+
+
+Definition at line 109 of file Recursive\+Directory\+Iterator.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_a289260479e721e6db00b30adf1375996}\label{classPoco_1_1RecursiveDirectoryIterator_a289260479e721e6db00b30adf1375996}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!depth@{depth}}
+\index{depth@{depth}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{depth()}{depth()}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+U\+Int16 \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Depth of recursion (counting from 1). 
+
+
+
+Definition at line 128 of file Recursive\+Directory\+Iterator.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_ad93e0e0fd039ca52b6521b451a751d4d}\label{classPoco_1_1RecursiveDirectoryIterator_ad93e0e0fd039ca52b6521b451a751d4d}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!maxDepth@{maxDepth}}
+\index{maxDepth@{maxDepth}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{maxDepth()}{maxDepth()}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+U\+Int16 \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::max\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Max depth of recursion (counting from 1). 
+
+
+
+Definition at line 134 of file Recursive\+Directory\+Iterator.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_a3f9dc3a760d22426a316f28dae63f8b2}\label{classPoco_1_1RecursiveDirectoryIterator_a3f9dc3a760d22426a316f28dae63f8b2}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!name@{name}}
+\index{name@{name}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the current filename. 
+
+
+
+Definition at line 116 of file Recursive\+Directory\+Iterator.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_a7a301f03b821656212bf6cd484d07868}\label{classPoco_1_1RecursiveDirectoryIterator_a7a301f03b821656212bf6cd484d07868}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1File}{File}}\& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 201 of file Recursive\+Directory\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_ae169919495c431f68934c66e72558761}\label{classPoco_1_1RecursiveDirectoryIterator_ae169919495c431f68934c66e72558761}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1File}{File}}\& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 196 of file Recursive\+Directory\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_adc694e147c1c0e34ccc42c8b5d799159}\label{classPoco_1_1RecursiveDirectoryIterator_adc694e147c1c0e34ccc42c8b5d799159}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}}\& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 186 of file Recursive\+Directory\+Iterator.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_ac037cdc8679e2d13555cd3fbb52806a0}\label{classPoco_1_1RecursiveDirectoryIterator_ac037cdc8679e2d13555cd3fbb52806a0}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1File}{File}}$\ast$ \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 211 of file Recursive\+Directory\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_aa44b3a23706b73b9b70ee2dfa306ad32}\label{classPoco_1_1RecursiveDirectoryIterator_aa44b3a23706b73b9b70ee2dfa306ad32}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1File}{File}}$\ast$ \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 206 of file Recursive\+Directory\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_ab8f369891e42cbe275fcabee7931597e}\label{classPoco_1_1RecursiveDirectoryIterator_ab8f369891e42cbe275fcabee7931597e}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}}\& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1File}{File}} \&}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 155 of file Recursive\+Directory\+Iterator.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_a2421be58f6ef6bf146aac83b05fe7de3}\label{classPoco_1_1RecursiveDirectoryIterator_a2421be58f6ef6bf146aac83b05fe7de3}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}}\& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}} \&}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 141 of file Recursive\+Directory\+Iterator.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_a14b458ca803c9ec5b80bb6f4c1d071c2}\label{classPoco_1_1RecursiveDirectoryIterator_a14b458ca803c9ec5b80bb6f4c1d071c2}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}}\& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 166 of file Recursive\+Directory\+Iterator.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_addad9f2699b66e6a84613cbf9e84aedb}\label{classPoco_1_1RecursiveDirectoryIterator_addad9f2699b66e6a84613cbf9e84aedb}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator_a140709838eff588c24a14b0e4587dfa6}{My\+Type}}\& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 176 of file Recursive\+Directory\+Iterator.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_afdf4c51bd86268273705d16ea9848154}\label{classPoco_1_1RecursiveDirectoryIterator_afdf4c51bd86268273705d16ea9848154}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!path@{path}}
+\index{path@{path}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Poco\+::\+Path}}\& \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Poco\+::\+Recursive\+Directory\+Iterator}}$<$ T\+Trav\+Str $>$\+::path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the current path. 
+
+
+
+Definition at line 122 of file Recursive\+Directory\+Iterator.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 9
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_ada5659e5874c3477b4151fdc6c861c4e}\label{classPoco_1_1RecursiveDirectoryIterator_ada5659e5874c3477b4151fdc6c861c4e}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!=}{operator!=}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+template$<$class T1 , class T2 $>$ \\
+bool operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}}$<$ T1 $>$ \&}]{a,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}}$<$ T2 $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 240 of file Recursive\+Directory\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RecursiveDirectoryIterator_add47d50e265ea7be32a56078eeca53be}\label{classPoco_1_1RecursiveDirectoryIterator_add47d50e265ea7be32a56078eeca53be}} 
+\index{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!Poco::RecursiveDirectoryIterator$<$ TTravStr $>$@{Poco::RecursiveDirectoryIterator$<$ TTravStr $>$}}
+\doxysubsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily template$<$class T\+Trav\+Str  = Children\+First\+Traverse$>$ \\
+template$<$class T1 , class T2 $>$ \\
+bool operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}}$<$ T1 $>$ \&}]{a,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RecursiveDirectoryIterator}{Recursive\+Directory\+Iterator}}$<$ T2 $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 234 of file Recursive\+Directory\+Iterator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{RecursiveDirectoryIterator_8h}{Recursive\+Directory\+Iterator.\+h}}\end{DoxyCompactItemize}

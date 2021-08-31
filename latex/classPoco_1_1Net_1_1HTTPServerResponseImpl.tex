@@ -1,0 +1,206 @@
+\hypertarget{classPoco_1_1Net_1_1HTTPServerResponseImpl}{}\doxysection{Poco\+::Net\+::H\+T\+T\+P\+Server\+Response\+Impl Class Reference}
+\label{classPoco_1_1Net_1_1HTTPServerResponseImpl}\index{Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}}
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+Server\+Response\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::H\+T\+T\+P\+Server\+Response\+Impl\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::H\+T\+T\+P\+Server\+Response\+Impl\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a61132d54ae55d1fcc1f0d7f49a749fd3}{H\+T\+T\+P\+Server\+Response\+Impl}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession}{H\+T\+T\+P\+Server\+Session}} \&session)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a4e275779ea374d8073e1dd6b082905e8}{$\sim$\+H\+T\+T\+P\+Server\+Response\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl}{H\+T\+T\+P\+Server\+Response\+Impl}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_ac2802c7a0e94f7a0516b820d583e673f}{send\+Continue}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl}{H\+T\+T\+P\+Server\+Response\+Impl}}. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a67829f14aeb77c5b0e5212ccc6cdf982}{send}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a2226e64760620ed11a6bb36326236bdb}{send\+File}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&media\+Type)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a970fd2caa05a24e6934a3dca1f498896}{send\+Buffer}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Buffer, std\+::size\+\_\+t length)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a778d6aadc029b00ff306507ecd1eb284}{redirect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPResponse_a150cc2b05826d90ccffd2c123c2b404d}{H\+T\+T\+P\+Status}} status=\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPResponse_a150cc2b05826d90ccffd2c123c2b404da625bab027e62ddd11b337b6c6da48e73}{H\+T\+T\+P\+\_\+\+F\+O\+U\+ND}})
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a389edc432f7b0f6c7b22af367bf5bfb9}{require\+Authentication}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&realm)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a87741544bd0f8a62e9333cdeb6aa9db1}{sent}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a18abcccba4d212c53bcbb6ee723ce65b}{attach\+Request}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequestImpl}{H\+T\+T\+P\+Server\+Request\+Impl}} $\ast$p\+Request)
+\begin{DoxyCompactList}\small\item\em Returns true if the response (header) has been sent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a0e9a34f5f2085400d9e7050884ce07c7}{H\+T\+T\+P\+Server\+Request\+Impl}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This subclass of \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse}{H\+T\+T\+P\+Server\+Response}} is used for representing server-\/side H\+T\+TP responses.
+
+A \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse}{H\+T\+T\+P\+Server\+Response}} is passed to the handle\+Request() method of \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandler}{H\+T\+T\+P\+Request\+Handler}}.
+
+handle\+Request() must set a status code and optional reason phrase, set headers as necessary, and provide a message body. 
+
+Definition at line 35 of file H\+T\+T\+P\+Server\+Response\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerResponseImpl_a61132d54ae55d1fcc1f0d7f49a749fd3}\label{classPoco_1_1Net_1_1HTTPServerResponseImpl_a61132d54ae55d1fcc1f0d7f49a749fd3}} 
+\index{Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}!HTTPServerResponseImpl@{HTTPServerResponseImpl}}
+\index{HTTPServerResponseImpl@{HTTPServerResponseImpl}!Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}}
+\doxysubsubsection{\texorpdfstring{HTTPServerResponseImpl()}{HTTPServerResponseImpl()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response\+Impl\+::\+H\+T\+T\+P\+Server\+Response\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession}{H\+T\+T\+P\+Server\+Session}} \&}]{session }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerResponseImpl_a4e275779ea374d8073e1dd6b082905e8}\label{classPoco_1_1Net_1_1HTTPServerResponseImpl_a4e275779ea374d8073e1dd6b082905e8}} 
+\index{Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}!````~HTTPServerResponseImpl@{$\sim$HTTPServerResponseImpl}}
+\index{````~HTTPServerResponseImpl@{$\sim$HTTPServerResponseImpl}!Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}}
+\doxysubsubsection{\texorpdfstring{$\sim$HTTPServerResponseImpl()}{~HTTPServerResponseImpl()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response\+Impl\+::$\sim$\+H\+T\+T\+P\+Server\+Response\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl}{H\+T\+T\+P\+Server\+Response\+Impl}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerResponseImpl_a18abcccba4d212c53bcbb6ee723ce65b}\label{classPoco_1_1Net_1_1HTTPServerResponseImpl_a18abcccba4d212c53bcbb6ee723ce65b}} 
+\index{Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}!attachRequest@{attachRequest}}
+\index{attachRequest@{attachRequest}!Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}}
+\doxysubsubsection{\texorpdfstring{attachRequest()}{attachRequest()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response\+Impl\+::attach\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequestImpl}{H\+T\+T\+P\+Server\+Request\+Impl}} $\ast$}]{p\+Request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns true if the response (header) has been sent. 
+
+
+
+Definition at line 132 of file H\+T\+T\+P\+Server\+Response\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerResponseImpl_a778d6aadc029b00ff306507ecd1eb284}\label{classPoco_1_1Net_1_1HTTPServerResponseImpl_a778d6aadc029b00ff306507ecd1eb284}} 
+\index{Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}!redirect@{redirect}}
+\index{redirect@{redirect}!Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}}
+\doxysubsubsection{\texorpdfstring{redirect()}{redirect()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response\+Impl\+::redirect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPResponse_a150cc2b05826d90ccffd2c123c2b404d}{H\+T\+T\+P\+Status}}}]{status = {\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPResponse_a150cc2b05826d90ccffd2c123c2b404da625bab027e62ddd11b337b6c6da48e73}{H\+T\+T\+P\+\_\+\+F\+O\+U\+ND}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sends the response header to the client, followed by the contents of the given buffer.
+
+The Content-\/\+Length header of the response is set to length and chunked transfer encoding is disabled.
+
+If both the H\+T\+TP message header and body (from the given buffer) fit into one single network packet, the complete response can be sent in one network packet.
+
+Must not be called after \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a67829f14aeb77c5b0e5212ccc6cdf982}{send()}}, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a2226e64760620ed11a6bb36326236bdb}{send\+File()}} ~\newline
+ or \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a778d6aadc029b00ff306507ecd1eb284}{redirect()}} has been called. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse_ab4435d60ac444fe9a6b9b30856fc4bbf}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerResponseImpl_a389edc432f7b0f6c7b22af367bf5bfb9}\label{classPoco_1_1Net_1_1HTTPServerResponseImpl_a389edc432f7b0f6c7b22af367bf5bfb9}} 
+\index{Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}!requireAuthentication@{requireAuthentication}}
+\index{requireAuthentication@{requireAuthentication}!Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}}
+\doxysubsubsection{\texorpdfstring{requireAuthentication()}{requireAuthentication()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response\+Impl\+::require\+Authentication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{realm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the status code, which must be one of H\+T\+T\+P\+\_\+\+M\+O\+V\+E\+D\+\_\+\+P\+E\+R\+M\+A\+N\+E\+N\+T\+LY (301), H\+T\+T\+P\+\_\+\+F\+O\+U\+ND (302), or H\+T\+T\+P\+\_\+\+S\+E\+E\+\_\+\+O\+T\+H\+ER (303), and sets the \char`\"{}\+Location\char`\"{} header field to the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}, which according to the H\+T\+TP specification, must be absolute.
+
+Must not be called after \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a67829f14aeb77c5b0e5212ccc6cdf982}{send()}} has been called. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse_a82bc11fdf84ccc81177f9c3bad6a59a6}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerResponseImpl_a67829f14aeb77c5b0e5212ccc6cdf982}\label{classPoco_1_1Net_1_1HTTPServerResponseImpl_a67829f14aeb77c5b0e5212ccc6cdf982}} 
+\index{Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}!send@{send}}
+\index{send@{send}!Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily std\+::ostream\& Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response\+Impl\+::send (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sends a 100 Continue response to the client. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse_af027230598c4f6e6e0f25d85d4a53c40}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerResponseImpl_a970fd2caa05a24e6934a3dca1f498896}\label{classPoco_1_1Net_1_1HTTPServerResponseImpl_a970fd2caa05a24e6934a3dca1f498896}} 
+\index{Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}!sendBuffer@{sendBuffer}}
+\index{sendBuffer@{sendBuffer}!Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}}
+\doxysubsubsection{\texorpdfstring{sendBuffer()}{sendBuffer()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response\+Impl\+::send\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Buffer,  }\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sends the response header to the client, followed by the content of the given file.
+
+Must not be called after \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a67829f14aeb77c5b0e5212ccc6cdf982}{send()}}, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a970fd2caa05a24e6934a3dca1f498896}{send\+Buffer()}} or \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a778d6aadc029b00ff306507ecd1eb284}{redirect()}} has been called.
+
+Throws a File\+Not\+Found\+Exception if the file cannot be found, or an Open\+File\+Exception if the file cannot be opened. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse_a780ea6a836134aabf7d2de94d2aff820}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerResponseImpl_ac2802c7a0e94f7a0516b820d583e673f}\label{classPoco_1_1Net_1_1HTTPServerResponseImpl_ac2802c7a0e94f7a0516b820d583e673f}} 
+\index{Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}!sendContinue@{sendContinue}}
+\index{sendContinue@{sendContinue}!Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}}
+\doxysubsubsection{\texorpdfstring{sendContinue()}{sendContinue()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response\+Impl\+::send\+Continue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl}{H\+T\+T\+P\+Server\+Response\+Impl}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse_a00036b10cf57d395a6a77fb3fec92691}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerResponseImpl_a2226e64760620ed11a6bb36326236bdb}\label{classPoco_1_1Net_1_1HTTPServerResponseImpl_a2226e64760620ed11a6bb36326236bdb}} 
+\index{Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}!sendFile@{sendFile}}
+\index{sendFile@{sendFile}!Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}}
+\doxysubsubsection{\texorpdfstring{sendFile()}{sendFile()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response\+Impl\+::send\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{media\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sends the response header to the client and returns an output stream for sending the response body.
+
+The returned stream is valid until the response object is destroyed.
+
+Must not be called after \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a2226e64760620ed11a6bb36326236bdb}{send\+File()}}, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a970fd2caa05a24e6934a3dca1f498896}{send\+Buffer()}} or \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponseImpl_a778d6aadc029b00ff306507ecd1eb284}{redirect()}} has been called. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse_a220c504a9a15367158a9fdd6c93af144}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerResponseImpl_a87741544bd0f8a62e9333cdeb6aa9db1}\label{classPoco_1_1Net_1_1HTTPServerResponseImpl_a87741544bd0f8a62e9333cdeb6aa9db1}} 
+\index{Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}!sent@{sent}}
+\index{sent@{sent}!Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}}
+\doxysubsubsection{\texorpdfstring{sent()}{sent()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response\+Impl\+::sent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the status code to 401 (Unauthorized) and sets the \char`\"{}\+W\+W\+W-\/\+Authenticate\char`\"{} header field according to the given realm. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse_a0507f5949b472dace001dcf3dc683857}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Response}}.
+
+
+
+Definition at line 126 of file H\+T\+T\+P\+Server\+Response\+Impl.\+h.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerResponseImpl_a0e9a34f5f2085400d9e7050884ce07c7}\label{classPoco_1_1Net_1_1HTTPServerResponseImpl_a0e9a34f5f2085400d9e7050884ce07c7}} 
+\index{Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}!HTTPServerRequestImpl@{HTTPServerRequestImpl}}
+\index{HTTPServerRequestImpl@{HTTPServerRequestImpl}!Poco::Net::HTTPServerResponseImpl@{Poco::Net::HTTPServerResponseImpl}}
+\doxysubsubsection{\texorpdfstring{HTTPServerRequestImpl}{HTTPServerRequestImpl}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequestImpl}{H\+T\+T\+P\+Server\+Request\+Impl}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 119 of file H\+T\+T\+P\+Server\+Response\+Impl.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{HTTPServerResponseImpl_8h}{H\+T\+T\+P\+Server\+Response\+Impl.\+h}}\end{DoxyCompactItemize}

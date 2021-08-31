@@ -1,0 +1,208 @@
+\hypertarget{classPoco_1_1Net_1_1RawSocket}{}\doxysection{Poco\+::Net\+::Raw\+Socket Class Reference}
+\label{classPoco_1_1Net_1_1RawSocket}\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+
+
+{\ttfamily \#include $<$Raw\+Socket.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::Raw\+Socket\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::Raw\+Socket\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a56ee3d1a30baf99fb04ce05f235db2a0}{Raw\+Socket}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a10b8267581c122872a87f66f471afc03}{Raw\+Socket}} (\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress_a048c8fc29019f4722f2cdb5ba752d9b6}{I\+P\+Address\+::\+Family}} family, int proto=I\+P\+P\+R\+O\+T\+O\+\_\+\+R\+AW)
+\begin{DoxyCompactList}\small\item\em Creates an unconnected I\+Pv4 raw socket. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a04ec2894aa94d04927a8b221808bd125}{Raw\+Socket}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1Socket_a4d09afdbb03e7235e1453c2354bc7972}{address}}, bool reuse\+Address=false)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_acb40cd55bb375063e10a987d753b1095}{Raw\+Socket}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&socket)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a607e0ecfa75e4ecb9aa73bc6df8069a7}{$\sim$\+Raw\+Socket}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket}{Raw\+Socket}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_ac406529098f072929ed7c635213fa606}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&socket)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket}{Raw\+Socket}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_ac177521dbfe91fa1fc0e8e4bf33c4381}{connect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1Socket_a4d09afdbb03e7235e1453c2354bc7972}{address}})
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a8b14fd626eb6fec51072781ee9a6e754}{bind}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1Socket_a4d09afdbb03e7235e1453c2354bc7972}{address}}, bool reuse\+Address=false)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a28ea12bb2f715a3222d00214cacdcedd}{send\+Bytes}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$buffer, int length, int flags=0)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a96850acb9892f32fe4a2e732023c30d5}{receive\+Bytes}} (void $\ast$buffer, int length, int flags=0)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a592350caa8aa97ba480a099944df50b6}{send\+To}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$buffer, int length, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1Socket_a4d09afdbb03e7235e1453c2354bc7972}{address}}, int flags=0)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a51c878c905205e0abc0a71f04185eb0f}{receive\+From}} (void $\ast$buffer, int length, \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1Socket_a4d09afdbb03e7235e1453c2354bc7972}{address}}, int flags=0)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a8af56c9bbed375b65d393e887debac6d}{set\+Broadcast}} (bool flag)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_acad762cbe98480a62b8ade6691042e36}{get\+Broadcast}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a84ef30c16c0fb5b68a726fefd38e03d3}{Raw\+Socket}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} $\ast$p\+Impl)
+\begin{DoxyCompactList}\small\item\em Returns the value of the S\+O\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST socket option. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class provides an interface to a raw IP socket. 
+
+Definition at line 31 of file Raw\+Socket.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_a56ee3d1a30baf99fb04ce05f235db2a0}\label{classPoco_1_1Net_1_1RawSocket_a56ee3d1a30baf99fb04ce05f235db2a0}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!RawSocket@{RawSocket}}
+\index{RawSocket@{RawSocket}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{RawSocket()}{RawSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Raw\+Socket\+::\+Raw\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_a10b8267581c122872a87f66f471afc03}\label{classPoco_1_1Net_1_1RawSocket_a10b8267581c122872a87f66f471afc03}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!RawSocket@{RawSocket}}
+\index{RawSocket@{RawSocket}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{RawSocket()}{RawSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Raw\+Socket\+::\+Raw\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress_a048c8fc29019f4722f2cdb5ba752d9b6}{I\+P\+Address\+::\+Family}}}]{family,  }\item[{int}]{proto = {\ttfamily IPPROTO\+\_\+RAW} }\end{DoxyParamCaption})}
+
+
+
+Creates an unconnected I\+Pv4 raw socket. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_a04ec2894aa94d04927a8b221808bd125}\label{classPoco_1_1Net_1_1RawSocket_a04ec2894aa94d04927a8b221808bd125}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!RawSocket@{RawSocket}}
+\index{RawSocket@{RawSocket}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{RawSocket()}{RawSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Raw\+Socket\+::\+Raw\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{bool}]{reuse\+Address = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Creates an unconnected raw socket.
+
+The socket will be created for the given address family. \mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_acb40cd55bb375063e10a987d753b1095}\label{classPoco_1_1Net_1_1RawSocket_acb40cd55bb375063e10a987d753b1095}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!RawSocket@{RawSocket}}
+\index{RawSocket@{RawSocket}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{RawSocket()}{RawSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Raw\+Socket\+::\+Raw\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&}]{socket }\end{DoxyParamCaption})}
+
+Creates a raw socket and binds it to the given address.
+
+Depending on the address family, the socket will be either an I\+Pv4 or an I\+Pv6 socket. \mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_a607e0ecfa75e4ecb9aa73bc6df8069a7}\label{classPoco_1_1Net_1_1RawSocket_a607e0ecfa75e4ecb9aa73bc6df8069a7}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!````~RawSocket@{$\sim$RawSocket}}
+\index{````~RawSocket@{$\sim$RawSocket}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{$\sim$RawSocket()}{~RawSocket()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Raw\+Socket\+::$\sim$\+Raw\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket}{Raw\+Socket}} with the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} from another socket. The \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} must be a \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocketImpl}{Raw\+Socket\+Impl}}, otherwise an Invalid\+Argument\+Exception will be thrown. \mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_a84ef30c16c0fb5b68a726fefd38e03d3}\label{classPoco_1_1Net_1_1RawSocket_a84ef30c16c0fb5b68a726fefd38e03d3}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!RawSocket@{RawSocket}}
+\index{RawSocket@{RawSocket}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{RawSocket()}{RawSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Raw\+Socket\+::\+Raw\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} $\ast$}]{p\+Impl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the value of the S\+O\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST socket option. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_a8b14fd626eb6fec51072781ee9a6e754}\label{classPoco_1_1Net_1_1RawSocket_a8b14fd626eb6fec51072781ee9a6e754}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!bind@{bind}}
+\index{bind@{bind}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Raw\+Socket\+::bind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{bool}]{reuse\+Address = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Restricts incoming and outgoing packets to the specified address.
+
+Calls to \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_ac177521dbfe91fa1fc0e8e4bf33c4381}{connect()}} cannot come before calls to \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a8b14fd626eb6fec51072781ee9a6e754}{bind()}}. \mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_ac177521dbfe91fa1fc0e8e4bf33c4381}\label{classPoco_1_1Net_1_1RawSocket_ac177521dbfe91fa1fc0e8e4bf33c4381}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!connect@{connect}}
+\index{connect@{connect}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Raw\+Socket\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address }\end{DoxyParamCaption})}
+
+Assignment operator.
+
+Releases the socket\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} and attaches the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} from the other socket and increments the reference count of the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}}. ~\newline
+ \mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_acad762cbe98480a62b8ade6691042e36}\label{classPoco_1_1Net_1_1RawSocket_acad762cbe98480a62b8ade6691042e36}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!getBroadcast@{getBroadcast}}
+\index{getBroadcast@{getBroadcast}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{getBroadcast()}{getBroadcast()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Raw\+Socket\+::get\+Broadcast (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the value of the S\+O\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST socket option.
+
+Setting this flag allows sending datagrams to the broadcast address. 
+
+Definition at line 140 of file Raw\+Socket.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_ac406529098f072929ed7c635213fa606}\label{classPoco_1_1Net_1_1RawSocket_ac406529098f072929ed7c635213fa606}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket}{Raw\+Socket}}\& Poco\+::\+Net\+::\+Raw\+Socket\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&}]{socket }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket}{Raw\+Socket}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_a96850acb9892f32fe4a2e732023c30d5}\label{classPoco_1_1Net_1_1RawSocket_a96850acb9892f32fe4a2e732023c30d5}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!receiveBytes@{receiveBytes}}
+\index{receiveBytes@{receiveBytes}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{receiveBytes()}{receiveBytes()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Raw\+Socket\+::receive\+Bytes (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Sends the contents of the given buffer through the socket.
+
+Returns the number of bytes sent, which may be less than the number of bytes specified. \mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_a51c878c905205e0abc0a71f04185eb0f}\label{classPoco_1_1Net_1_1RawSocket_a51c878c905205e0abc0a71f04185eb0f}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!receiveFrom@{receiveFrom}}
+\index{receiveFrom@{receiveFrom}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{receiveFrom()}{receiveFrom()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Raw\+Socket\+::receive\+From (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Sends the contents of the given buffer through the socket to the given address.
+
+Returns the number of bytes sent, which may be less than the number of bytes specified. \mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_a28ea12bb2f715a3222d00214cacdcedd}\label{classPoco_1_1Net_1_1RawSocket_a28ea12bb2f715a3222d00214cacdcedd}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!sendBytes@{sendBytes}}
+\index{sendBytes@{sendBytes}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{sendBytes()}{sendBytes()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Raw\+Socket\+::send\+Bytes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Bind a local address to the socket.
+
+This is usually only done when establishing a server socket.
+
+If reuse\+Address is true, sets the S\+O\+\_\+\+R\+E\+U\+S\+E\+A\+D\+DR socket option.
+
+Calls to \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_ac177521dbfe91fa1fc0e8e4bf33c4381}{connect()}} cannot come before calls to \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocket_a8b14fd626eb6fec51072781ee9a6e754}{bind()}}. \mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_a592350caa8aa97ba480a099944df50b6}\label{classPoco_1_1Net_1_1RawSocket_a592350caa8aa97ba480a099944df50b6}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!sendTo@{sendTo}}
+\index{sendTo@{sendTo}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{sendTo()}{sendTo()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Raw\+Socket\+::send\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Receives data from the socket and stores it in buffer. Up to length bytes are received.
+
+Returns the number of bytes received. \mbox{\Hypertarget{classPoco_1_1Net_1_1RawSocket_a8af56c9bbed375b65d393e887debac6d}\label{classPoco_1_1Net_1_1RawSocket_a8af56c9bbed375b65d393e887debac6d}} 
+\index{Poco::Net::RawSocket@{Poco::Net::RawSocket}!setBroadcast@{setBroadcast}}
+\index{setBroadcast@{setBroadcast}!Poco::Net::RawSocket@{Poco::Net::RawSocket}}
+\doxysubsubsection{\texorpdfstring{setBroadcast()}{setBroadcast()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Raw\+Socket\+::set\+Broadcast (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Receives data from the socket and stores it in buffer. Up to length bytes are received. Stores the address of the sender in address.
+
+Returns the number of bytes received. 
+
+Definition at line 134 of file Raw\+Socket.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{RawSocket_8h}{Raw\+Socket.\+h}}\end{DoxyCompactItemize}

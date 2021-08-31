@@ -1,0 +1,202 @@
+\hypertarget{classIoT_1_1Devices_1_1Device}{}\doxysection{IoT\+::Devices\+::Device Class Reference}
+\label{classIoT_1_1Devices_1_1Device}\index{IoT::Devices::Device@{IoT::Devices::Device}}
+
+
+{\ttfamily \#include $<$Device.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::Device\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1Device_a1370c2c0c13ec20e3a53cd3f6741bf8d}{Device}} ()
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_a28c25a5f987ccb0279334c8c28f0b002}{$\sim$\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1Device}{Device}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_a5010c62a7ea4d1ef6fa2914899d9809d}{set\+Property\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)=0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1Device}{Device}}. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_a2b0a19ada1bf64fe02fd3ecb239955f0}{get\+Property\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_a1e4e211c8fb7aaf5ae650c9b25454aac}{set\+Property\+Int}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, int value)=0
+\item 
+virtual int \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_ac70a3ace734131eb1eac3f8d4ae1abd7}{get\+Property\+Int}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_a88bf225df1b50edff3b885590de201c6}{set\+Property\+Double}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, double value)=0
+\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_acaad80b438a333a8de7a8fd74fe3e963}{get\+Property\+Double}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_a99a3c7ff532a15ec8df42afb71cf5a4d}{set\+Property\+Bool}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool value)=0
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_af24e928631995ea87cd417b1368ed0f0}{get\+Property\+Bool}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_a4dc2ebfd570d37f70a1ba6a9c9d87310}{has\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_ad35e41cae5da4af70019d211182a7d57}{set\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool enable)=0
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_a76ab2ef2f9256b4f3b7d87017a0bc0be}{get\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1Device_a87a0c94f8dc079d50182d59d96e9dbc9}{has\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for all devices and sensors. \begin{DoxyVerb}This class defines a generic interface for setting
+and querying device properties and features.
+
+Every implementation of Device should expose the
+following properties:
+  - symbolicName (string): A name in reverse DNS notation
+    that identifies the device type (e.g., "io.macchina.serialport").
+  - name (string): A human-readable device type (e.g., "Serial Port"). 
+\end{DoxyVerb}
+ 
+
+Definition at line 31 of file Device.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_a1370c2c0c13ec20e3a53cd3f6741bf8d}\label{classIoT_1_1Devices_1_1Device_a1370c2c0c13ec20e3a53cd3f6741bf8d}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!Device@{Device}}
+\index{Device@{Device}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{Device()}{Device()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Device\+::\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_a28c25a5f987ccb0279334c8c28f0b002}\label{classIoT_1_1Devices_1_1Device_a28c25a5f987ccb0279334c8c28f0b002}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!````~Device@{$\sim$Device}}
+\index{````~Device@{$\sim$Device}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{$\sim$Device()}{~Device()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Devices\+::\+Device\+::$\sim$\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1Device}{Device}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_a76ab2ef2f9256b4f3b7d87017a0bc0be}\label{classIoT_1_1Devices_1_1Device_a76ab2ef2f9256b4f3b7d87017a0bc0be}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!getFeature@{getFeature}}
+\index{getFeature@{getFeature}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{getFeature()}{getFeature()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+Device\+::get\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enables or disables the feature with the given name.
+
+Which features are supported is defined by the actual device implementation. Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_af24e928631995ea87cd417b1368ed0f0}\label{classIoT_1_1Devices_1_1Device_af24e928631995ea87cd417b1368ed0f0}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!getPropertyBool@{getPropertyBool}}
+\index{getPropertyBool@{getPropertyBool}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{getPropertyBool()}{getPropertyBool()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+Device\+::get\+Property\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets a device property.
+
+Which properties are supported is defined by the actual device implementation. Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_acaad80b438a333a8de7a8fd74fe3e963}\label{classIoT_1_1Devices_1_1Device_acaad80b438a333a8de7a8fd74fe3e963}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!getPropertyDouble@{getPropertyDouble}}
+\index{getPropertyDouble@{getPropertyDouble}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{getPropertyDouble()}{getPropertyDouble()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+Device\+::get\+Property\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets a device property.
+
+Which properties are supported is defined by the actual device implementation. Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_ac70a3ace734131eb1eac3f8d4ae1abd7}\label{classIoT_1_1Devices_1_1Device_ac70a3ace734131eb1eac3f8d4ae1abd7}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!getPropertyInt@{getPropertyInt}}
+\index{getPropertyInt@{getPropertyInt}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{getPropertyInt()}{getPropertyInt()}}
+{\footnotesize\ttfamily virtual int Io\+T\+::\+Devices\+::\+Device\+::get\+Property\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets a device property.
+
+Which properties are supported is defined by the actual device implementation. Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_a2b0a19ada1bf64fe02fd3ecb239955f0}\label{classIoT_1_1Devices_1_1Device_a2b0a19ada1bf64fe02fd3ecb239955f0}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!getPropertyString@{getPropertyString}}
+\index{getPropertyString@{getPropertyString}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{getPropertyString()}{getPropertyString()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Devices\+::\+Device\+::get\+Property\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets a device property.
+
+Which properties are supported is defined by the actual device implementation. Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_a87a0c94f8dc079d50182d59d96e9dbc9}\label{classIoT_1_1Devices_1_1Device_a87a0c94f8dc079d50182d59d96e9dbc9}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!hasFeature@{hasFeature}}
+\index{hasFeature@{hasFeature}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{hasFeature()}{hasFeature()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+Device\+::has\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the feature with the given name is enabled, or false otherwise. Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_a4dc2ebfd570d37f70a1ba6a9c9d87310}\label{classIoT_1_1Devices_1_1Device_a4dc2ebfd570d37f70a1ba6a9c9d87310}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!hasProperty@{hasProperty}}
+\index{hasProperty@{hasProperty}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{hasProperty()}{hasProperty()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+Device\+::has\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the value of the device property with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the property with the given name is unknown. Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_ad35e41cae5da4af70019d211182a7d57}\label{classIoT_1_1Devices_1_1Device_ad35e41cae5da4af70019d211182a7d57}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!setFeature@{setFeature}}
+\index{setFeature@{setFeature}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{setFeature()}{setFeature()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+Device\+::set\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the property with the given name exists, or false otherwise. Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_a99a3c7ff532a15ec8df42afb71cf5a4d}\label{classIoT_1_1Devices_1_1Device_a99a3c7ff532a15ec8df42afb71cf5a4d}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!setPropertyBool@{setPropertyBool}}
+\index{setPropertyBool@{setPropertyBool}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{setPropertyBool()}{setPropertyBool()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+Device\+::set\+Property\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the value of the device property with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the property with the given name is unknown. Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_a88bf225df1b50edff3b885590de201c6}\label{classIoT_1_1Devices_1_1Device_a88bf225df1b50edff3b885590de201c6}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!setPropertyDouble@{setPropertyDouble}}
+\index{setPropertyDouble@{setPropertyDouble}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{setPropertyDouble()}{setPropertyDouble()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+Device\+::set\+Property\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the value of the device property with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the property with the given name is unknown. Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_a1e4e211c8fb7aaf5ae650c9b25454aac}\label{classIoT_1_1Devices_1_1Device_a1e4e211c8fb7aaf5ae650c9b25454aac}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!setPropertyInt@{setPropertyInt}}
+\index{setPropertyInt@{setPropertyInt}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{setPropertyInt()}{setPropertyInt()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+Device\+::set\+Property\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the value of the device property with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the property with the given name is unknown. Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Device_a5010c62a7ea4d1ef6fa2914899d9809d}\label{classIoT_1_1Devices_1_1Device_a5010c62a7ea4d1ef6fa2914899d9809d}} 
+\index{IoT::Devices::Device@{IoT::Devices::Device}!setPropertyString@{setPropertyString}}
+\index{setPropertyString@{setPropertyString}!IoT::Devices::Device@{IoT::Devices::Device}}
+\doxysubsubsection{\texorpdfstring{setPropertyString()}{setPropertyString()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+Device\+::set\+Property\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1Device}{Device}}. 
+
+Here is the caller graph for this function\+:
+% FIG 12
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{Device_8h}{Device.\+h}}\end{DoxyCompactItemize}

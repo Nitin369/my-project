@@ -1,0 +1,284 @@
+\hypertarget{classPoco_1_1PriorityStrategy}{}\doxysection{Poco\+::Priority\+Strategy$<$ T\+Args, T\+Delegate $>$ Class Template Reference}
+\label{classPoco_1_1PriorityStrategy}\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+
+
+{\ttfamily \#include $<$Priority\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Priority\+Strategy$<$ T\+Args, T\+Delegate $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Priority\+Strategy$<$ T\+Args, T\+Delegate $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T\+Delegate $\ast$ \mbox{\hyperlink{classPoco_1_1PriorityStrategy_af39ae7992014ce0644ad35f97d55dae1}{Delegate\+Handle}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Delegate $>$ \mbox{\hyperlink{classPoco_1_1PriorityStrategy_a6ea9059f432ea1023ed694deb635372c}{Delegate\+Ptr}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1PriorityStrategy_a6ea9059f432ea1023ed694deb635372c}{Delegate\+Ptr}} $>$ \mbox{\hyperlink{classPoco_1_1PriorityStrategy_a8b6968582571d849d44e401d864199bb}{Delegates}}
+\item 
+typedef Delegates\+::iterator \mbox{\hyperlink{classPoco_1_1PriorityStrategy_a6cc548b95dad867f521a5714ccae3e8a}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1PriorityStrategy_a632396278531c316957e76fc0de69c23}{Priority\+Strategy}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1PriorityStrategy_a5d00a8aeafb35a8f9830882307ecf816}{Priority\+Strategy}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Priority\+Strategy}} \&s)
+\item 
+\mbox{\hyperlink{classPoco_1_1PriorityStrategy_a6179bb5ab8ed5935b3569e47949824dd}{$\sim$\+Priority\+Strategy}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1PriorityStrategy_a72f4cac25394e8564c528a5484080934}{notify}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$sender, T\+Args \&arguments)
+\item 
+\mbox{\hyperlink{classPoco_1_1NotificationStrategy_ac4da7a7e4541d0fed8e7283510b999c3}{Delegate\+Handle}} \mbox{\hyperlink{classPoco_1_1PriorityStrategy_a6bea85db7cc76a847ae9053ee329f315}{add}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Delegate \&\mbox{\hyperlink{namespacePoco_a3c92b935465d543414d807c7884396ff}{delegate}})
+\begin{DoxyCompactList}\small\item\em Sends a notification to all registered delegates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1PriorityStrategy_a9462afeef4df91d29595c91adebefe2f}{remove}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Delegate \&\mbox{\hyperlink{namespacePoco_a3c92b935465d543414d807c7884396ff}{delegate}})
+\begin{DoxyCompactList}\small\item\em Adds a delegate to the strategy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1PriorityStrategy_a11a4255590fe2a868214f6a4ad6ba75f}{remove}} (\mbox{\hyperlink{classPoco_1_1NotificationStrategy_ac4da7a7e4541d0fed8e7283510b999c3}{Delegate\+Handle}} delegate\+Handle)
+\item 
+\mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Priority\+Strategy}} \& \mbox{\hyperlink{classPoco_1_1PriorityStrategy_a7ff62d73c1c3111fd75fe96b094654de}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Priority\+Strategy}} \&s)
+\item 
+void \mbox{\hyperlink{classPoco_1_1PriorityStrategy_a2f365af3b6b1e8c8312aad262ec934be}{clear}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1PriorityStrategy_a16a34602b600eac92277fbe0cb337478}{empty}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Removes all delegates from the strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1PriorityStrategy_a8b6968582571d849d44e401d864199bb}{Delegates}} \mbox{\hyperlink{classPoco_1_1PriorityStrategy_aa0d6367af95cea2d9ee5283317a3dad6}{\+\_\+delegates}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Args, class T\+Delegate$>$\newline
+class Poco\+::\+Priority\+Strategy$<$ T\+Args, T\+Delegate $>$}
+
+\mbox{\hyperlink{classPoco_1_1NotificationStrategy}{Notification\+Strategy}} for \mbox{\hyperlink{classPoco_1_1PriorityEvent}{Priority\+Event}}. \begin{DoxyVerb}Delegates are kept in a std::vector<>, ordered
+by their priority. 
+\end{DoxyVerb}
+ 
+
+Definition at line 32 of file Priority\+Strategy.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_af39ae7992014ce0644ad35f97d55dae1}\label{classPoco_1_1PriorityStrategy_af39ae7992014ce0644ad35f97d55dae1}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!DelegateHandle@{DelegateHandle}}
+\index{DelegateHandle@{DelegateHandle}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{DelegateHandle}{DelegateHandle}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+typedef T\+Delegate$\ast$ \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\mbox{\hyperlink{classPoco_1_1NotificationStrategy_ac4da7a7e4541d0fed8e7283510b999c3}{Delegate\+Handle}}}
+
+
+
+Definition at line 39 of file Priority\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a6ea9059f432ea1023ed694deb635372c}\label{classPoco_1_1PriorityStrategy_a6ea9059f432ea1023ed694deb635372c}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!DelegatePtr@{DelegatePtr}}
+\index{DelegatePtr@{DelegatePtr}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{DelegatePtr}{DelegatePtr}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$T\+Delegate$>$ \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\mbox{\hyperlink{classPoco_1_1PriorityStrategy_a6ea9059f432ea1023ed694deb635372c}{Delegate\+Ptr}}}
+
+
+
+Definition at line 40 of file Priority\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a8b6968582571d849d44e401d864199bb}\label{classPoco_1_1PriorityStrategy_a8b6968582571d849d44e401d864199bb}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!Delegates@{Delegates}}
+\index{Delegates@{Delegates}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{Delegates}{Delegates}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+typedef std\+::vector$<$\mbox{\hyperlink{classPoco_1_1PriorityStrategy_a6ea9059f432ea1023ed694deb635372c}{Delegate\+Ptr}}$>$ \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\mbox{\hyperlink{classPoco_1_1PriorityStrategy_a8b6968582571d849d44e401d864199bb}{Delegates}}}
+
+
+
+Definition at line 41 of file Priority\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a6cc548b95dad867f521a5714ccae3e8a}\label{classPoco_1_1PriorityStrategy_a6cc548b95dad867f521a5714ccae3e8a}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+typedef Delegates\+::iterator \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\mbox{\hyperlink{classPoco_1_1PriorityStrategy_a6cc548b95dad867f521a5714ccae3e8a}{Iterator}}}
+
+
+
+Definition at line 42 of file Priority\+Strategy.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a632396278531c316957e76fc0de69c23}\label{classPoco_1_1PriorityStrategy_a632396278531c316957e76fc0de69c23}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!PriorityStrategy@{PriorityStrategy}}
+\index{PriorityStrategy@{PriorityStrategy}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{PriorityStrategy()}{PriorityStrategy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+\mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Priority\+Strategy}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file Priority\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a5d00a8aeafb35a8f9830882307ecf816}\label{classPoco_1_1PriorityStrategy_a5d00a8aeafb35a8f9830882307ecf816}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!PriorityStrategy@{PriorityStrategy}}
+\index{PriorityStrategy@{PriorityStrategy}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{PriorityStrategy()}{PriorityStrategy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+\mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Priority\+Strategy}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$ \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 49 of file Priority\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a6179bb5ab8ed5935b3569e47949824dd}\label{classPoco_1_1PriorityStrategy_a6179bb5ab8ed5935b3569e47949824dd}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!````~PriorityStrategy@{$\sim$PriorityStrategy}}
+\index{````~PriorityStrategy@{$\sim$PriorityStrategy}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$PriorityStrategy()}{~PriorityStrategy()}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+\mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Priority\+Strategy}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 54 of file Priority\+Strategy.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a6bea85db7cc76a847ae9053ee329f315}\label{classPoco_1_1PriorityStrategy_a6bea85db7cc76a847ae9053ee329f315}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!add@{add}}
+\index{add@{add}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+\mbox{\hyperlink{classPoco_1_1NotificationStrategy_ac4da7a7e4541d0fed8e7283510b999c3}{Delegate\+Handle}} \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Delegate \&}]{delegate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sends a notification to all registered delegates. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1NotificationStrategy_accc82e765a474c4a7b1949e794c09e0f}{Poco\+::\+Notification\+Strategy$<$ T\+Args, T\+Delegate $>$}}.
+
+
+
+Definition at line 66 of file Priority\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a2f365af3b6b1e8c8312aad262ec934be}\label{classPoco_1_1PriorityStrategy_a2f365af3b6b1e8c8312aad262ec934be}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!clear@{clear}}
+\index{clear@{clear}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+void \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes a delegate from the strategy, if found. Does nothing if the delegate has not been added. 
+
+Implements \mbox{\hyperlink{classPoco_1_1NotificationStrategy_a35f2ec0e91cc2ba4cf6dc72f1703dd80}{Poco\+::\+Notification\+Strategy$<$ T\+Args, T\+Delegate $>$}}.
+
+
+
+Definition at line 117 of file Priority\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a16a34602b600eac92277fbe0cb337478}\label{classPoco_1_1PriorityStrategy_a16a34602b600eac92277fbe0cb337478}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!empty@{empty}}
+\index{empty@{empty}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Removes all delegates from the strategy. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1NotificationStrategy_af518fe93dad9d78eb82cbd596c129392}{Poco\+::\+Notification\+Strategy$<$ T\+Args, T\+Delegate $>$}}.
+
+
+
+Definition at line 126 of file Priority\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a72f4cac25394e8564c528a5484080934}\label{classPoco_1_1PriorityStrategy_a72f4cac25394e8564c528a5484080934}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!notify@{notify}}
+\index{notify@{notify}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+void \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{sender,  }\item[{T\+Args \&}]{arguments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1NotificationStrategy_aa2ce26186fef83b8a0fe8d3c501f7a15}{Poco\+::\+Notification\+Strategy$<$ T\+Args, T\+Delegate $>$}}.
+
+
+
+Definition at line 58 of file Priority\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a7ff62d73c1c3111fd75fe96b094654de}\label{classPoco_1_1PriorityStrategy_a7ff62d73c1c3111fd75fe96b094654de}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+\mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Priority\+Strategy}}\& \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$ \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 108 of file Priority\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a9462afeef4df91d29595c91adebefe2f}\label{classPoco_1_1PriorityStrategy_a9462afeef4df91d29595c91adebefe2f}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!remove@{remove}}
+\index{remove@{remove}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+void \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Delegate \&}]{delegate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Adds a delegate to the strategy. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1NotificationStrategy_a172efd5392435e1ba146f78301387326}{Poco\+::\+Notification\+Strategy$<$ T\+Args, T\+Delegate $>$}}.
+
+
+
+Definition at line 82 of file Priority\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_a11a4255590fe2a868214f6a4ad6ba75f}\label{classPoco_1_1PriorityStrategy_a11a4255590fe2a868214f6a4ad6ba75f}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!remove@{remove}}
+\index{remove@{remove}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+void \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1NotificationStrategy_ac4da7a7e4541d0fed8e7283510b999c3}{Delegate\+Handle}}}]{delegate\+Handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes a delegate from the strategy, if found. Does nothing if the delegate has not been added. 
+
+Implements \mbox{\hyperlink{classPoco_1_1NotificationStrategy_a76fc40f72f2bfdb64910af99497e87ad}{Poco\+::\+Notification\+Strategy$<$ T\+Args, T\+Delegate $>$}}.
+
+
+
+Definition at line 95 of file Priority\+Strategy.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1PriorityStrategy_aa0d6367af95cea2d9ee5283317a3dad6}\label{classPoco_1_1PriorityStrategy_aa0d6367af95cea2d9ee5283317a3dad6}} 
+\index{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}!\_delegates@{\_delegates}}
+\index{\_delegates@{\_delegates}!Poco::PriorityStrategy$<$ TArgs, TDelegate $>$@{Poco::PriorityStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{\_delegates}{\_delegates}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+\mbox{\hyperlink{classPoco_1_1PriorityStrategy_a8b6968582571d849d44e401d864199bb}{Delegates}} \mbox{\hyperlink{classPoco_1_1PriorityStrategy}{Poco\+::\+Priority\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\+\_\+delegates\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 132 of file Priority\+Strategy.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{PriorityStrategy_8h}{Priority\+Strategy.\+h}}\end{DoxyCompactItemize}

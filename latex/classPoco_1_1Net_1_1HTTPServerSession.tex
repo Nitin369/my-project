@@ -1,0 +1,108 @@
+\hypertarget{classPoco_1_1Net_1_1HTTPServerSession}{}\doxysection{Poco\+::Net\+::H\+T\+T\+P\+Server\+Session Class Reference}
+\label{classPoco_1_1Net_1_1HTTPServerSession}\index{Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}}
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+Server\+Session.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::H\+T\+T\+P\+Server\+Session\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::H\+T\+T\+P\+Server\+Session\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession_a7a2ceedc6934cad68cbe65dd217a5f50}{H\+T\+T\+P\+Server\+Session}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a182567e432a2641121f20753721cb476}{socket}}, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams_a1a215b5a26295406cd76c6a41b4fcbdb}{H\+T\+T\+P\+Server\+Params\+::\+Ptr}} p\+Params)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession_ab060d688666b0f8effe28b11a284e1cb}{$\sim$\+H\+T\+T\+P\+Server\+Session}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession}{H\+T\+T\+P\+Server\+Session}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession_aaecb0b0c5d451eb45d74b844ebbd432e}{has\+More\+Requests}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession}{H\+T\+T\+P\+Server\+Session}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession_aafaad3a02e5cd9c70d77c8f0ae327434}{can\+Keep\+Alive}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if there are requests available. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession_ac9036ad6a7624fd22814a61944209b72}{client\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the session can be kept alive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession_a86188793fe0664ad8e75d2d913b7643e}{server\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Returns the client\textquotesingle{}s address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class handles the server side of a H\+T\+TP session. It is used internally by \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer}{H\+T\+T\+P\+Server}}. 
+
+Definition at line 35 of file H\+T\+T\+P\+Server\+Session.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerSession_a7a2ceedc6934cad68cbe65dd217a5f50}\label{classPoco_1_1Net_1_1HTTPServerSession_a7a2ceedc6934cad68cbe65dd217a5f50}} 
+\index{Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}!HTTPServerSession@{HTTPServerSession}}
+\index{HTTPServerSession@{HTTPServerSession}!Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}}
+\doxysubsubsection{\texorpdfstring{HTTPServerSession()}{HTTPServerSession()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Session\+::\+H\+T\+T\+P\+Server\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&}]{socket,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams_a1a215b5a26295406cd76c6a41b4fcbdb}{H\+T\+T\+P\+Server\+Params\+::\+Ptr}}}]{p\+Params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerSession_ab060d688666b0f8effe28b11a284e1cb}\label{classPoco_1_1Net_1_1HTTPServerSession_ab060d688666b0f8effe28b11a284e1cb}} 
+\index{Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}!````~HTTPServerSession@{$\sim$HTTPServerSession}}
+\index{````~HTTPServerSession@{$\sim$HTTPServerSession}!Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}}
+\doxysubsubsection{\texorpdfstring{$\sim$HTTPServerSession()}{~HTTPServerSession()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Session\+::$\sim$\+H\+T\+T\+P\+Server\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession}{H\+T\+T\+P\+Server\+Session}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerSession_aafaad3a02e5cd9c70d77c8f0ae327434}\label{classPoco_1_1Net_1_1HTTPServerSession_aafaad3a02e5cd9c70d77c8f0ae327434}} 
+\index{Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}!canKeepAlive@{canKeepAlive}}
+\index{canKeepAlive@{canKeepAlive}!Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}}
+\doxysubsubsection{\texorpdfstring{canKeepAlive()}{canKeepAlive()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Session\+::can\+Keep\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if there are requests available. 
+
+
+
+Definition at line 69 of file H\+T\+T\+P\+Server\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerSession_ac9036ad6a7624fd22814a61944209b72}\label{classPoco_1_1Net_1_1HTTPServerSession_ac9036ad6a7624fd22814a61944209b72}} 
+\index{Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}!clientAddress@{clientAddress}}
+\index{clientAddress@{clientAddress}!Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}}
+\doxysubsubsection{\texorpdfstring{clientAddress()}{clientAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Session\+::client\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the session can be kept alive. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerSession_aaecb0b0c5d451eb45d74b844ebbd432e}\label{classPoco_1_1Net_1_1HTTPServerSession_aaecb0b0c5d451eb45d74b844ebbd432e}} 
+\index{Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}!hasMoreRequests@{hasMoreRequests}}
+\index{hasMoreRequests@{hasMoreRequests}!Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}}
+\doxysubsubsection{\texorpdfstring{hasMoreRequests()}{hasMoreRequests()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Session\+::has\+More\+Requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerSession}{H\+T\+T\+P\+Server\+Session}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServerSession_a86188793fe0664ad8e75d2d913b7643e}\label{classPoco_1_1Net_1_1HTTPServerSession_a86188793fe0664ad8e75d2d913b7643e}} 
+\index{Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}!serverAddress@{serverAddress}}
+\index{serverAddress@{serverAddress}!Poco::Net::HTTPServerSession@{Poco::Net::HTTPServerSession}}
+\doxysubsubsection{\texorpdfstring{serverAddress()}{serverAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+Session\+::server\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the client\textquotesingle{}s address. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{HTTPServerSession_8h}{H\+T\+T\+P\+Server\+Session.\+h}}\end{DoxyCompactItemize}

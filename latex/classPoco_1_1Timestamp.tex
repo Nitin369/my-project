@@ -1,0 +1,498 @@
+\hypertarget{classPoco_1_1Timestamp}{}\doxysection{Poco\+::Timestamp Class Reference}
+\label{classPoco_1_1Timestamp}\index{Poco::Timestamp@{Poco::Timestamp}}
+
+
+{\ttfamily \#include $<$Timestamp.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Int64 \mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Time\+Val}}
+\item 
+typedef Int64 \mbox{\hyperlink{classPoco_1_1Timestamp_a06b805d545e2f0261b4e4d20f8e445c4}{Utc\+Time\+Val}}
+\item 
+typedef Int64 \mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Time\+Diff}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp_a9718a3a252b80831797ce31d909afa97}{Timestamp}} ()
+\begin{DoxyCompactList}\small\item\em Maximum timestamp value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp_a15d42afd26214c5d1daadbd71747efa9}{Timestamp}} (\mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Time\+Val}} tv)
+\begin{DoxyCompactList}\small\item\em Creates a timestamp with the current time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp_acca37455f2bf90b78ee8d6b157403577}{Timestamp}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&other)
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp_a5d5247ce2043a6dc1c4a13adbb536542}{$\sim$\+Timestamp}} ()
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \& \mbox{\hyperlink{classPoco_1_1Timestamp_a068cc6b665f335b6bc7d1d4b0f32f025}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&other)
+\begin{DoxyCompactList}\small\item\em Destroys the timestamp. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \& \mbox{\hyperlink{classPoco_1_1Timestamp_aaee4ba927aee1528c22040e675b12904}{operator=}} (\mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Time\+Val}} tv)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Timestamp_ad48c5ded1c43170b268fd4c434acaaa3}{swap}} (\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&timestamp)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Timestamp_af1d86259e8c0365bd176d296e1178d53}{update}} ()
+\begin{DoxyCompactList}\small\item\em Swaps the \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} with another one. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Timestamp_a68610315646ce53f2e83e94c109a8482}{operator==}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Updates the \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} with the current time. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Timestamp_aaacbeeae986b98a50789fd7932f3a87e}{operator!=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timestamp_ac6d5fa7aa3457620f3af9f67a61be107}{operator$>$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timestamp_a72fb3db2b704a05e5a1a8a8db6a2818c}{operator$>$=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timestamp_a8e590c5e4cd661148c4d28b12deba154}{operator$<$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timestamp_a4722fdb949a846c36920a3427453de22}{operator$<$=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \mbox{\hyperlink{classPoco_1_1Timestamp_a8d4e1879eb43c91ffc6033f89508a252}{operator+}} (\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Time\+Diff}} d) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \mbox{\hyperlink{classPoco_1_1Timestamp_a4f33aa9269f4f493e2f9b64e1f8affb6}{operator+}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&span) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \mbox{\hyperlink{classPoco_1_1Timestamp_ae4e2e690e9af5e0efa3cc3a2a23f9391}{operator-\/}} (\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Time\+Diff}} d) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \mbox{\hyperlink{classPoco_1_1Timestamp_a5f94e3fe6b652875571a920640f8b824}{operator-\/}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&span) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timestamp_ac30c3762a8203cb594f28f8765dc023d}{operator-\/}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \& \mbox{\hyperlink{classPoco_1_1Timestamp_a07af31ee3933673003d7584d795ca999}{operator+=}} (\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Time\+Diff}} d)
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \& \mbox{\hyperlink{classPoco_1_1Timestamp_aa6d1ab4ace5a1962865485970b235400}{operator+=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&span)
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \& \mbox{\hyperlink{classPoco_1_1Timestamp_a0f0bb1df37a01470b9b25c7cd345f887}{operator-\/=}} (\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Time\+Diff}} d)
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \& \mbox{\hyperlink{classPoco_1_1Timestamp_a25e64879ff1274279c82cdc110fca832}{operator-\/=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&span)
+\item 
+std\+::time\+\_\+t \mbox{\hyperlink{classPoco_1_1Timestamp_a5395e44769f63f60d4a759dcf7b5d9ac}{epoch\+Time}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp_a06b805d545e2f0261b4e4d20f8e445c4}{Utc\+Time\+Val}} \mbox{\hyperlink{classPoco_1_1Timestamp_a8c46fbbcf9bcd6c83da57ab2165d077d}{utc\+Time}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Time\+Val}} \mbox{\hyperlink{classPoco_1_1Timestamp_a33e960be2206fe74bf9a56669d0a2b3b}{epoch\+Microseconds}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timestamp_a36956487d258f6296193eedaf2063237}{elapsed}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timestamp_a21f088dca2e7c60817eb009aab994ac8}{is\+Elapsed}} (\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Time\+Diff}} interval) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Time\+Val}} \mbox{\hyperlink{classPoco_1_1Timestamp_ae7bce9757253d17e6f73faff938e2e67}{raw}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \mbox{\hyperlink{classPoco_1_1Timestamp_a9065af42ba063df445fbe8f0c12d0816}{from\+Epoch\+Time}} (std\+::time\+\_\+t t)
+\item 
+static \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \mbox{\hyperlink{classPoco_1_1Timestamp_a33eda16c876c53ad5ab9733b0944d93c}{from\+Utc\+Time}} (\mbox{\hyperlink{classPoco_1_1Timestamp_a06b805d545e2f0261b4e4d20f8e445c4}{Utc\+Time\+Val}} val)
+\begin{DoxyCompactList}\small\item\em Creates a timestamp from a std\+::time\+\_\+t. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timestamp_a39a59f8ec283e6606990245a50644bee}{resolution}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Time\+Val}} \mbox{\hyperlink{classPoco_1_1Timestamp_a335aa61e484d9cf9ae01a81de819182d}{T\+I\+M\+E\+V\+A\+L\+\_\+\+M\+IN}}
+\begin{DoxyCompactList}\small\item\em Difference between two Time\+Val values in microseconds. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Time\+Val}} \mbox{\hyperlink{classPoco_1_1Timestamp_ab858b1a1db5ac0af1ea20cdd0a2a399d}{T\+I\+M\+E\+V\+A\+L\+\_\+\+M\+AX}}
+\begin{DoxyCompactList}\small\item\em Minimum timestamp value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} stores a monotonic$\ast$ time value with (theoretical) microseconds resolution. Timestamps can be compared with each other and simple arithmetics are supported.
+
+\mbox{[}$\ast$\mbox{]} Note that \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} values are only monotonic as long as the systems\textquotesingle{}s clock is monotonic as well (and not, e.\+g. set back due to time synchronization or other reasons).
+
+Timestamps are U\+TC (Coordinated Universal Time) based and thus independent of the timezone in effect on the system.
+
+The internal reference time is the Unix epoch, midnight, January 1, 1970. 
+
+Definition at line 32 of file Timestamp.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}\label{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!TimeDiff@{TimeDiff}}
+\index{TimeDiff@{TimeDiff}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{TimeDiff}{TimeDiff}}
+{\footnotesize\ttfamily typedef Int64 \mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Poco\+::\+Timestamp\+::\+Time\+Diff}}}
+
+Monotonic U\+TC time value in 100 nanosecond resolution, with base time midnight, October 15, 1582. 
+
+Definition at line 59 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}\label{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!TimeVal@{TimeVal}}
+\index{TimeVal@{TimeVal}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{TimeVal}{TimeVal}}
+{\footnotesize\ttfamily typedef Int64 \mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Poco\+::\+Timestamp\+::\+Time\+Val}}}
+
+
+
+Definition at line 51 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a06b805d545e2f0261b4e4d20f8e445c4}\label{classPoco_1_1Timestamp_a06b805d545e2f0261b4e4d20f8e445c4}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!UtcTimeVal@{UtcTimeVal}}
+\index{UtcTimeVal@{UtcTimeVal}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{UtcTimeVal}{UtcTimeVal}}
+{\footnotesize\ttfamily typedef Int64 \mbox{\hyperlink{classPoco_1_1Timestamp_a06b805d545e2f0261b4e4d20f8e445c4}{Poco\+::\+Timestamp\+::\+Utc\+Time\+Val}}}
+
+Monotonic U\+TC time value in microsecond resolution, with base time midnight, January 1, 1970. 
+
+Definition at line 55 of file Timestamp.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a9718a3a252b80831797ce31d909afa97}\label{classPoco_1_1Timestamp_a9718a3a252b80831797ce31d909afa97}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!Timestamp@{Timestamp}}
+\index{Timestamp@{Timestamp}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{Timestamp()}{Timestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Timestamp\+::\+Timestamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Maximum timestamp value. 
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a15d42afd26214c5d1daadbd71747efa9}\label{classPoco_1_1Timestamp_a15d42afd26214c5d1daadbd71747efa9}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!Timestamp@{Timestamp}}
+\index{Timestamp@{Timestamp}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{Timestamp()}{Timestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Timestamp\+::\+Timestamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Time\+Val}}}]{tv }\end{DoxyParamCaption})}
+
+
+
+Creates a timestamp with the current time. 
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_acca37455f2bf90b78ee8d6b157403577}\label{classPoco_1_1Timestamp_acca37455f2bf90b78ee8d6b157403577}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!Timestamp@{Timestamp}}
+\index{Timestamp@{Timestamp}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{Timestamp()}{Timestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Timestamp\+::\+Timestamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&}]{other }\end{DoxyParamCaption})}
+
+Creates a timestamp from the given time value (microseconds since midnight, January 1, 1970). \mbox{\Hypertarget{classPoco_1_1Timestamp_a5d5247ce2043a6dc1c4a13adbb536542}\label{classPoco_1_1Timestamp_a5d5247ce2043a6dc1c4a13adbb536542}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!````~Timestamp@{$\sim$Timestamp}}
+\index{````~Timestamp@{$\sim$Timestamp}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{$\sim$Timestamp()}{~Timestamp()}}
+{\footnotesize\ttfamily Poco\+::\+Timestamp\+::$\sim$\+Timestamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a36956487d258f6296193eedaf2063237}\label{classPoco_1_1Timestamp_a36956487d258f6296193eedaf2063237}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{elapsed()}{elapsed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}} Poco\+::\+Timestamp\+::elapsed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the timestamp expressed in microseconds since the Unix epoch, midnight, January 1, 1970. 
+
+Definition at line 243 of file Timestamp.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a33e960be2206fe74bf9a56669d0a2b3b}\label{classPoco_1_1Timestamp_a33e960be2206fe74bf9a56669d0a2b3b}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!epochMicroseconds@{epochMicroseconds}}
+\index{epochMicroseconds@{epochMicroseconds}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{epochMicroseconds()}{epochMicroseconds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Timestamp\+::\+Time\+Val}} Poco\+::\+Timestamp\+::epoch\+Microseconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the timestamp expressed in U\+T\+C-\/based time. U\+TC base time is midnight, October 15, 1582. Resolution is 100 nanoseconds. 
+
+Definition at line 237 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a5395e44769f63f60d4a759dcf7b5d9ac}\label{classPoco_1_1Timestamp_a5395e44769f63f60d4a759dcf7b5d9ac}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!epochTime@{epochTime}}
+\index{epochTime@{epochTime}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{epochTime()}{epochTime()}}
+{\footnotesize\ttfamily std\+::time\+\_\+t Poco\+::\+Timestamp\+::epoch\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 225 of file Timestamp.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a9065af42ba063df445fbe8f0c12d0816}\label{classPoco_1_1Timestamp_a9065af42ba063df445fbe8f0c12d0816}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!fromEpochTime@{fromEpochTime}}
+\index{fromEpochTime@{fromEpochTime}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{fromEpochTime()}{fromEpochTime()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} Poco\+::\+Timestamp\+::from\+Epoch\+Time (\begin{DoxyParamCaption}\item[{std\+::time\+\_\+t}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the raw time value.
+
+Same as \mbox{\hyperlink{classPoco_1_1Timestamp_a33e960be2206fe74bf9a56669d0a2b3b}{epoch\+Microseconds()}}. \mbox{\Hypertarget{classPoco_1_1Timestamp_a33eda16c876c53ad5ab9733b0944d93c}\label{classPoco_1_1Timestamp_a33eda16c876c53ad5ab9733b0944d93c}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!fromUtcTime@{fromUtcTime}}
+\index{fromUtcTime@{fromUtcTime}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{fromUtcTime()}{fromUtcTime()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} Poco\+::\+Timestamp\+::from\+Utc\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timestamp_a06b805d545e2f0261b4e4d20f8e445c4}{Utc\+Time\+Val}}}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a timestamp from a std\+::time\+\_\+t. 
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a21f088dca2e7c60817eb009aab994ac8}\label{classPoco_1_1Timestamp_a21f088dca2e7c60817eb009aab994ac8}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!isElapsed@{isElapsed}}
+\index{isElapsed@{isElapsed}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{isElapsed()}{isElapsed()}}
+{\footnotesize\ttfamily bool Poco\+::\+Timestamp\+::is\+Elapsed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}}}]{interval }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the time elapsed since the time denoted by the timestamp. Equivalent to \mbox{\hyperlink{classPoco_1_1Timestamp_a9718a3a252b80831797ce31d909afa97}{Timestamp()}} -\/ $\ast$this. 
+
+Definition at line 250 of file Timestamp.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1Timestamp_aaacbeeae986b98a50789fd7932f3a87e}\label{classPoco_1_1Timestamp_aaacbeeae986b98a50789fd7932f3a87e}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Poco\+::\+Timestamp\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 163 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a4f33aa9269f4f493e2f9b64e1f8affb6}\label{classPoco_1_1Timestamp_a4f33aa9269f4f493e2f9b64e1f8affb6}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator+@{operator+}}
+\index{operator+@{operator+}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} Poco\+::\+Timestamp\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{span }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a8d4e1879eb43c91ffc6033f89508a252}\label{classPoco_1_1Timestamp_a8d4e1879eb43c91ffc6033f89508a252}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator+@{operator+}}
+\index{operator+@{operator+}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} Poco\+::\+Timestamp\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}}}]{d }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 193 of file Timestamp.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1Timestamp_aa6d1ab4ace5a1962865485970b235400}\label{classPoco_1_1Timestamp_aa6d1ab4ace5a1962865485970b235400}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}}\& Poco\+::\+Timestamp\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{span }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a07af31ee3933673003d7584d795ca999}\label{classPoco_1_1Timestamp_a07af31ee3933673003d7584d795ca999}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \& Poco\+::\+Timestamp\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 211 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a5f94e3fe6b652875571a920640f8b824}\label{classPoco_1_1Timestamp_a5f94e3fe6b652875571a920640f8b824}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} Poco\+::\+Timestamp\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{span }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_ac30c3762a8203cb594f28f8765dc023d}\label{classPoco_1_1Timestamp_ac30c3762a8203cb594f28f8765dc023d}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}} Poco\+::\+Timestamp\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 205 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_ae4e2e690e9af5e0efa3cc3a2a23f9391}\label{classPoco_1_1Timestamp_ae4e2e690e9af5e0efa3cc3a2a23f9391}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} Poco\+::\+Timestamp\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}}}]{d }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 199 of file Timestamp.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a25e64879ff1274279c82cdc110fca832}\label{classPoco_1_1Timestamp_a25e64879ff1274279c82cdc110fca832}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}}\& Poco\+::\+Timestamp\+::operator-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{span }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a0f0bb1df37a01470b9b25c7cd345f887}\label{classPoco_1_1Timestamp_a0f0bb1df37a01470b9b25c7cd345f887}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \& Poco\+::\+Timestamp\+::operator-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 218 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a8e590c5e4cd661148c4d28b12deba154}\label{classPoco_1_1Timestamp_a8e590c5e4cd661148c4d28b12deba154}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Poco\+::\+Timestamp\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 181 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a4722fdb949a846c36920a3427453de22}\label{classPoco_1_1Timestamp_a4722fdb949a846c36920a3427453de22}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Poco\+::\+Timestamp\+::operator$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 187 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a068cc6b665f335b6bc7d1d4b0f32f025}\label{classPoco_1_1Timestamp_a068cc6b665f335b6bc7d1d4b0f32f025}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}}\& Poco\+::\+Timestamp\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Destroys the timestamp. 
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_aaee4ba927aee1528c22040e675b12904}\label{classPoco_1_1Timestamp_aaee4ba927aee1528c22040e675b12904}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}}\& Poco\+::\+Timestamp\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Time\+Val}}}]{tv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a68610315646ce53f2e83e94c109a8482}\label{classPoco_1_1Timestamp_a68610315646ce53f2e83e94c109a8482}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator==@{operator==}}
+\index{operator==@{operator==}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Poco\+::\+Timestamp\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} with the current time. 
+
+
+
+Definition at line 157 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_ac6d5fa7aa3457620f3af9f67a61be107}\label{classPoco_1_1Timestamp_ac6d5fa7aa3457620f3af9f67a61be107}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Poco\+::\+Timestamp\+::operator$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 169 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a72fb3db2b704a05e5a1a8a8db6a2818c}\label{classPoco_1_1Timestamp_a72fb3db2b704a05e5a1a8a8db6a2818c}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Poco\+::\+Timestamp\+::operator$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 175 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_ae7bce9757253d17e6f73faff938e2e67}\label{classPoco_1_1Timestamp_ae7bce9757253d17e6f73faff938e2e67}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!raw@{raw}}
+\index{raw@{raw}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{raw()}{raw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Timestamp\+::\+Time\+Val}} Poco\+::\+Timestamp\+::raw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true iff the given interval has passed since the time denoted by the timestamp. 
+
+Definition at line 270 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a39a59f8ec283e6606990245a50644bee}\label{classPoco_1_1Timestamp_a39a59f8ec283e6606990245a50644bee}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!resolution@{resolution}}
+\index{resolution@{resolution}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{resolution()}{resolution()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}} Poco\+::\+Timestamp\+::resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a timestamp from a U\+TC time value (100 nanosecond intervals since midnight, October 15, 1582). 
+
+Definition at line 258 of file Timestamp.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1Timestamp_ad48c5ded1c43170b268fd4c434acaaa3}\label{classPoco_1_1Timestamp_ad48c5ded1c43170b268fd4c434acaaa3}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!swap@{swap}}
+\index{swap@{swap}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Poco\+::\+Timestamp\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \&}]{timestamp }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classPoco_1_1Timestamp_af1d86259e8c0365bd176d296e1178d53}\label{classPoco_1_1Timestamp_af1d86259e8c0365bd176d296e1178d53}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!update@{update}}
+\index{update@{update}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Poco\+::\+Timestamp\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Swaps the \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} with another one. 
+
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a8c46fbbcf9bcd6c83da57ab2165d077d}\label{classPoco_1_1Timestamp_a8c46fbbcf9bcd6c83da57ab2165d077d}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!utcTime@{utcTime}}
+\index{utcTime@{utcTime}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{utcTime()}{utcTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp_a06b805d545e2f0261b4e4d20f8e445c4}{Timestamp\+::\+Utc\+Time\+Val}} Poco\+::\+Timestamp\+::utc\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the timestamp expressed in time\+\_\+t. time\+\_\+t base time is midnight, January 1, 1970. Resolution is one second. 
+
+Definition at line 231 of file Timestamp.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Timestamp_ab858b1a1db5ac0af1ea20cdd0a2a399d}\label{classPoco_1_1Timestamp_ab858b1a1db5ac0af1ea20cdd0a2a399d}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!TIMEVAL\_MAX@{TIMEVAL\_MAX}}
+\index{TIMEVAL\_MAX@{TIMEVAL\_MAX}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{TIMEVAL\_MAX}{TIMEVAL\_MAX}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Time\+Val}} Poco\+::\+Timestamp\+::\+T\+I\+M\+E\+V\+A\+L\+\_\+\+M\+AX\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Minimum timestamp value. 
+
+
+
+Definition at line 63 of file Timestamp.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timestamp_a335aa61e484d9cf9ae01a81de819182d}\label{classPoco_1_1Timestamp_a335aa61e484d9cf9ae01a81de819182d}} 
+\index{Poco::Timestamp@{Poco::Timestamp}!TIMEVAL\_MIN@{TIMEVAL\_MIN}}
+\index{TIMEVAL\_MIN@{TIMEVAL\_MIN}!Poco::Timestamp@{Poco::Timestamp}}
+\doxysubsubsection{\texorpdfstring{TIMEVAL\_MIN}{TIMEVAL\_MIN}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp_a7da8d9f1604abae96ca48b1f1adbb549}{Time\+Val}} Poco\+::\+Timestamp\+::\+T\+I\+M\+E\+V\+A\+L\+\_\+\+M\+IN\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Difference between two Time\+Val values in microseconds. 
+
+
+
+Definition at line 62 of file Timestamp.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Timestamp_8h}{Timestamp.\+h}}\end{DoxyCompactItemize}

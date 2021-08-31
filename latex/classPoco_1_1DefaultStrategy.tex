@@ -1,0 +1,287 @@
+\hypertarget{classPoco_1_1DefaultStrategy}{}\doxysection{Poco\+::Default\+Strategy$<$ T\+Args, T\+Delegate $>$ Class Template Reference}
+\label{classPoco_1_1DefaultStrategy}\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+
+
+{\ttfamily \#include $<$Default\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Default\+Strategy$<$ T\+Args, T\+Delegate $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Default\+Strategy$<$ T\+Args, T\+Delegate $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T\+Delegate $\ast$ \mbox{\hyperlink{classPoco_1_1DefaultStrategy_af6054917fe4dff934a0e594d76d0940d}{Delegate\+Handle}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ T\+Delegate $>$ \mbox{\hyperlink{classPoco_1_1DefaultStrategy_acf6b09522be92d8a1b97d38b380e631f}{Delegate\+Ptr}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1DefaultStrategy_acf6b09522be92d8a1b97d38b380e631f}{Delegate\+Ptr}} $>$ \mbox{\hyperlink{classPoco_1_1DefaultStrategy_a446ff28d30fc2053edd04e5fe11295bf}{Delegates}}
+\item 
+typedef Delegates\+::iterator \mbox{\hyperlink{classPoco_1_1DefaultStrategy_a70a70041689044126ce53642c2c08693}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1DefaultStrategy_a435da1aaadb3794fb68333a712686d2a}{Default\+Strategy}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1DefaultStrategy_adcc6fc1f244ad4e97648742cd7c8dc0d}{Default\+Strategy}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Default\+Strategy}} \&s)
+\item 
+\mbox{\hyperlink{classPoco_1_1DefaultStrategy_ac2640496577933823d118cd86be3885b}{$\sim$\+Default\+Strategy}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1DefaultStrategy_afd5266b0751a8ad06a8e60524c5b96ff}{notify}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$sender, T\+Args \&arguments)
+\item 
+\mbox{\hyperlink{classPoco_1_1DefaultStrategy_af6054917fe4dff934a0e594d76d0940d}{Delegate\+Handle}} \mbox{\hyperlink{classPoco_1_1DefaultStrategy_a2fa0dfc036aaa111659a9c3e397313cc}{add}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Delegate \&\mbox{\hyperlink{namespacePoco_a3c92b935465d543414d807c7884396ff}{delegate}})
+\begin{DoxyCompactList}\small\item\em Sends a notification to all registered delegates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1DefaultStrategy_a47b4af99c6e18c567c3341323f15d408}{remove}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Delegate \&\mbox{\hyperlink{namespacePoco_a3c92b935465d543414d807c7884396ff}{delegate}})
+\begin{DoxyCompactList}\small\item\em Adds a delegate to the strategy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1DefaultStrategy_a8d17f325845c741ecee21129ac849da6}{remove}} (\mbox{\hyperlink{classPoco_1_1DefaultStrategy_af6054917fe4dff934a0e594d76d0940d}{Delegate\+Handle}} delegate\+Handle)
+\item 
+\mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Default\+Strategy}} \& \mbox{\hyperlink{classPoco_1_1DefaultStrategy_af8e3cdea532beedc36d5e13cfea069fa}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Default\+Strategy}} \&s)
+\item 
+void \mbox{\hyperlink{classPoco_1_1DefaultStrategy_a7e8ce4b396d75bf798a92f4af6cfb6c3}{clear}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1DefaultStrategy_a798b67d97d3d48f440a8108a9bbf656b}{empty}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Removes all delegates from the strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1DefaultStrategy_a446ff28d30fc2053edd04e5fe11295bf}{Delegates}} \mbox{\hyperlink{classPoco_1_1DefaultStrategy_a72b260a5269bb7e32d10dad5c7504eac}{\+\_\+delegates}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Args, class T\+Delegate$>$\newline
+class Poco\+::\+Default\+Strategy$<$ T\+Args, T\+Delegate $>$}
+
+Default notification strategy. \begin{DoxyVerb}Internally, a std::vector<> is used to store
+delegate objects. Delegates are invoked in the
+order in which they have been registered. 
+\end{DoxyVerb}
+ 
+
+Definition at line 32 of file Default\+Strategy.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_af6054917fe4dff934a0e594d76d0940d}\label{classPoco_1_1DefaultStrategy_af6054917fe4dff934a0e594d76d0940d}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!DelegateHandle@{DelegateHandle}}
+\index{DelegateHandle@{DelegateHandle}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{DelegateHandle}{DelegateHandle}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+typedef T\+Delegate$\ast$ \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\mbox{\hyperlink{classPoco_1_1DefaultStrategy_af6054917fe4dff934a0e594d76d0940d}{Delegate\+Handle}}}
+
+
+
+Definition at line 40 of file Default\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_acf6b09522be92d8a1b97d38b380e631f}\label{classPoco_1_1DefaultStrategy_acf6b09522be92d8a1b97d38b380e631f}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!DelegatePtr@{DelegatePtr}}
+\index{DelegatePtr@{DelegatePtr}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{DelegatePtr}{DelegatePtr}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$T\+Delegate$>$ \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\mbox{\hyperlink{classPoco_1_1DefaultStrategy_acf6b09522be92d8a1b97d38b380e631f}{Delegate\+Ptr}}}
+
+
+
+Definition at line 41 of file Default\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_a446ff28d30fc2053edd04e5fe11295bf}\label{classPoco_1_1DefaultStrategy_a446ff28d30fc2053edd04e5fe11295bf}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!Delegates@{Delegates}}
+\index{Delegates@{Delegates}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{Delegates}{Delegates}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+typedef std\+::vector$<$\mbox{\hyperlink{classPoco_1_1DefaultStrategy_acf6b09522be92d8a1b97d38b380e631f}{Delegate\+Ptr}}$>$ \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\mbox{\hyperlink{classPoco_1_1DefaultStrategy_a446ff28d30fc2053edd04e5fe11295bf}{Delegates}}}
+
+
+
+Definition at line 42 of file Default\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_a70a70041689044126ce53642c2c08693}\label{classPoco_1_1DefaultStrategy_a70a70041689044126ce53642c2c08693}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+typedef Delegates\+::iterator \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\mbox{\hyperlink{classPoco_1_1DefaultStrategy_a70a70041689044126ce53642c2c08693}{Iterator}}}
+
+
+
+Definition at line 43 of file Default\+Strategy.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_a435da1aaadb3794fb68333a712686d2a}\label{classPoco_1_1DefaultStrategy_a435da1aaadb3794fb68333a712686d2a}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!DefaultStrategy@{DefaultStrategy}}
+\index{DefaultStrategy@{DefaultStrategy}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{DefaultStrategy()}{DefaultStrategy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+\mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Default\+Strategy}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 46 of file Default\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_adcc6fc1f244ad4e97648742cd7c8dc0d}\label{classPoco_1_1DefaultStrategy_adcc6fc1f244ad4e97648742cd7c8dc0d}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!DefaultStrategy@{DefaultStrategy}}
+\index{DefaultStrategy@{DefaultStrategy}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{DefaultStrategy()}{DefaultStrategy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+\mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Default\+Strategy}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$ \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 50 of file Default\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_ac2640496577933823d118cd86be3885b}\label{classPoco_1_1DefaultStrategy_ac2640496577933823d118cd86be3885b}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!````~DefaultStrategy@{$\sim$DefaultStrategy}}
+\index{````~DefaultStrategy@{$\sim$DefaultStrategy}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$DefaultStrategy()}{~DefaultStrategy()}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+\mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Default\+Strategy}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 55 of file Default\+Strategy.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_a2fa0dfc036aaa111659a9c3e397313cc}\label{classPoco_1_1DefaultStrategy_a2fa0dfc036aaa111659a9c3e397313cc}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!add@{add}}
+\index{add@{add}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+\mbox{\hyperlink{classPoco_1_1DefaultStrategy_af6054917fe4dff934a0e594d76d0940d}{Delegate\+Handle}} \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Delegate \&}]{delegate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sends a notification to all registered delegates. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1NotificationStrategy_accc82e765a474c4a7b1949e794c09e0f}{Poco\+::\+Notification\+Strategy$<$ T\+Args, T\+Delegate $>$}}.
+
+
+
+Definition at line 67 of file Default\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_a7e8ce4b396d75bf798a92f4af6cfb6c3}\label{classPoco_1_1DefaultStrategy_a7e8ce4b396d75bf798a92f4af6cfb6c3}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!clear@{clear}}
+\index{clear@{clear}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+void \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes a delegate from the strategy, if found. Does nothing if the delegate has not been added. 
+
+Implements \mbox{\hyperlink{classPoco_1_1NotificationStrategy_a35f2ec0e91cc2ba4cf6dc72f1703dd80}{Poco\+::\+Notification\+Strategy$<$ T\+Args, T\+Delegate $>$}}.
+
+
+
+Definition at line 109 of file Default\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_a798b67d97d3d48f440a8108a9bbf656b}\label{classPoco_1_1DefaultStrategy_a798b67d97d3d48f440a8108a9bbf656b}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!empty@{empty}}
+\index{empty@{empty}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Removes all delegates from the strategy. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1NotificationStrategy_af518fe93dad9d78eb82cbd596c129392}{Poco\+::\+Notification\+Strategy$<$ T\+Args, T\+Delegate $>$}}.
+
+
+
+Definition at line 118 of file Default\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_afd5266b0751a8ad06a8e60524c5b96ff}\label{classPoco_1_1DefaultStrategy_afd5266b0751a8ad06a8e60524c5b96ff}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!notify@{notify}}
+\index{notify@{notify}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+void \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{sender,  }\item[{T\+Args \&}]{arguments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1NotificationStrategy_aa2ce26186fef83b8a0fe8d3c501f7a15}{Poco\+::\+Notification\+Strategy$<$ T\+Args, T\+Delegate $>$}}.
+
+
+
+Definition at line 59 of file Default\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_af8e3cdea532beedc36d5e13cfea069fa}\label{classPoco_1_1DefaultStrategy_af8e3cdea532beedc36d5e13cfea069fa}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+\mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Default\+Strategy}}\& \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$ \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 100 of file Default\+Strategy.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_a47b4af99c6e18c567c3341323f15d408}\label{classPoco_1_1DefaultStrategy_a47b4af99c6e18c567c3341323f15d408}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!remove@{remove}}
+\index{remove@{remove}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+void \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Delegate \&}]{delegate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Adds a delegate to the strategy. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1NotificationStrategy_a172efd5392435e1ba146f78301387326}{Poco\+::\+Notification\+Strategy$<$ T\+Args, T\+Delegate $>$}}.
+
+
+
+Definition at line 74 of file Default\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_a8d17f325845c741ecee21129ac849da6}\label{classPoco_1_1DefaultStrategy_a8d17f325845c741ecee21129ac849da6}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!remove@{remove}}
+\index{remove@{remove}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+void \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1DefaultStrategy_af6054917fe4dff934a0e594d76d0940d}{Delegate\+Handle}}}]{delegate\+Handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes a delegate from the strategy, if found. Does nothing if the delegate has not been added. 
+
+Implements \mbox{\hyperlink{classPoco_1_1NotificationStrategy_a76fc40f72f2bfdb64910af99497e87ad}{Poco\+::\+Notification\+Strategy$<$ T\+Args, T\+Delegate $>$}}.
+
+
+
+Definition at line 87 of file Default\+Strategy.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1DefaultStrategy_a72b260a5269bb7e32d10dad5c7504eac}\label{classPoco_1_1DefaultStrategy_a72b260a5269bb7e32d10dad5c7504eac}} 
+\index{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}!\_delegates@{\_delegates}}
+\index{\_delegates@{\_delegates}!Poco::DefaultStrategy$<$ TArgs, TDelegate $>$@{Poco::DefaultStrategy$<$ TArgs, TDelegate $>$}}
+\doxysubsubsection{\texorpdfstring{\_delegates}{\_delegates}}
+{\footnotesize\ttfamily template$<$class T\+Args , class T\+Delegate $>$ \\
+\mbox{\hyperlink{classPoco_1_1DefaultStrategy_a446ff28d30fc2053edd04e5fe11295bf}{Delegates}} \mbox{\hyperlink{classPoco_1_1DefaultStrategy}{Poco\+::\+Default\+Strategy}}$<$ T\+Args, T\+Delegate $>$\+::\+\_\+delegates\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 124 of file Default\+Strategy.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{DefaultStrategy_8h}{Default\+Strategy.\+h}}\end{DoxyCompactItemize}

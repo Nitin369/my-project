@@ -1,0 +1,101 @@
+\hypertarget{classPoco_1_1TextConverter}{}\doxysection{Poco\+::Text\+Converter Class Reference}
+\label{classPoco_1_1TextConverter}\index{Poco::TextConverter@{Poco::TextConverter}}
+
+
+{\ttfamily \#include $<$Text\+Converter.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef int($\ast$ \mbox{\hyperlink{classPoco_1_1TextConverter_a399a5748d6c12b12b02dd5c9c4ae00df}{Transform}}) (int)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1TextConverter_ae41d7836cf326cbcab0dc7bd213b1007}{Text\+Converter}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} \&in\+Encoding, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} \&out\+Encoding, int default\+Char=\textquotesingle{}?\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Transform function for convert. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1TextConverter_ae199fb6b69204fe508ebe091db52a6d7}{$\sim$\+Text\+Converter}} ()
+\item 
+int \mbox{\hyperlink{classPoco_1_1TextConverter_abf2545bd98b300ba2a353e0a7e139ce6}{convert}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&source, std\+::string \&destination, \mbox{\hyperlink{classPoco_1_1TextConverter_a399a5748d6c12b12b02dd5c9c4ae00df}{Transform}} trans)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1TextConverter}{Text\+Converter}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1TextConverter_ab9288b9e1d139763c086d002c2f75c10}{convert}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$source, int length, std\+::string \&destination, \mbox{\hyperlink{classPoco_1_1TextConverter_a399a5748d6c12b12b02dd5c9c4ae00df}{Transform}} trans)
+\item 
+int \mbox{\hyperlink{classPoco_1_1TextConverter_a438dbc129f2896962d642c0f88a9d757}{convert}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&source, std\+::string \&destination)
+\item 
+int \mbox{\hyperlink{classPoco_1_1TextConverter_ac958211a8fb49605c515043479efc891}{convert}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$source, int length, std\+::string \&destination)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1TextConverter}{Text\+Converter}} converts strings from one encoding into another. 
+
+Definition at line 32 of file Text\+Converter.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1TextConverter_a399a5748d6c12b12b02dd5c9c4ae00df}\label{classPoco_1_1TextConverter_a399a5748d6c12b12b02dd5c9c4ae00df}} 
+\index{Poco::TextConverter@{Poco::TextConverter}!Transform@{Transform}}
+\index{Transform@{Transform}!Poco::TextConverter@{Poco::TextConverter}}
+\doxysubsubsection{\texorpdfstring{Transform}{Transform}}
+{\footnotesize\ttfamily typedef int($\ast$ Poco\+::\+Text\+Converter\+::\+Transform) (int)}
+
+
+
+Definition at line 37 of file Text\+Converter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1TextConverter_ae41d7836cf326cbcab0dc7bd213b1007}\label{classPoco_1_1TextConverter_ae41d7836cf326cbcab0dc7bd213b1007}} 
+\index{Poco::TextConverter@{Poco::TextConverter}!TextConverter@{TextConverter}}
+\index{TextConverter@{TextConverter}!Poco::TextConverter@{Poco::TextConverter}}
+\doxysubsubsection{\texorpdfstring{TextConverter()}{TextConverter()}}
+{\footnotesize\ttfamily Poco\+::\+Text\+Converter\+::\+Text\+Converter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} \&}]{in\+Encoding,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} \&}]{out\+Encoding,  }\item[{int}]{default\+Char = {\ttfamily \textquotesingle{}?\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Transform function for convert. 
+
+\mbox{\Hypertarget{classPoco_1_1TextConverter_ae199fb6b69204fe508ebe091db52a6d7}\label{classPoco_1_1TextConverter_ae199fb6b69204fe508ebe091db52a6d7}} 
+\index{Poco::TextConverter@{Poco::TextConverter}!````~TextConverter@{$\sim$TextConverter}}
+\index{````~TextConverter@{$\sim$TextConverter}!Poco::TextConverter@{Poco::TextConverter}}
+\doxysubsubsection{\texorpdfstring{$\sim$TextConverter()}{~TextConverter()}}
+{\footnotesize\ttfamily Poco\+::\+Text\+Converter\+::$\sim$\+Text\+Converter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1TextConverter}{Text\+Converter}}. The encoding objects must not be deleted while the \mbox{\hyperlink{classPoco_1_1TextConverter}{Text\+Converter}} is in use. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1TextConverter_a438dbc129f2896962d642c0f88a9d757}\label{classPoco_1_1TextConverter_a438dbc129f2896962d642c0f88a9d757}} 
+\index{Poco::TextConverter@{Poco::TextConverter}!convert@{convert}}
+\index{convert@{convert}!Poco::TextConverter@{Poco::TextConverter}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily int Poco\+::\+Text\+Converter\+::convert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{source,  }\item[{std\+::string \&}]{destination }\end{DoxyParamCaption})}
+
+Converts the source buffer from in\+Encoding to out\+Encoding and appends the result to destination. Every character is passed to the transform function. If a character cannot be represented in out\+Encoding, default\+Char is used instead. Returns the number of encoding errors (invalid byte sequences in source). \mbox{\Hypertarget{classPoco_1_1TextConverter_abf2545bd98b300ba2a353e0a7e139ce6}\label{classPoco_1_1TextConverter_abf2545bd98b300ba2a353e0a7e139ce6}} 
+\index{Poco::TextConverter@{Poco::TextConverter}!convert@{convert}}
+\index{convert@{convert}!Poco::TextConverter@{Poco::TextConverter}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily int Poco\+::\+Text\+Converter\+::convert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{source,  }\item[{std\+::string \&}]{destination,  }\item[{\mbox{\hyperlink{classPoco_1_1TextConverter_a399a5748d6c12b12b02dd5c9c4ae00df}{Transform}}}]{trans }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1TextConverter}{Text\+Converter}}. 
+
+\mbox{\Hypertarget{classPoco_1_1TextConverter_ac958211a8fb49605c515043479efc891}\label{classPoco_1_1TextConverter_ac958211a8fb49605c515043479efc891}} 
+\index{Poco::TextConverter@{Poco::TextConverter}!convert@{convert}}
+\index{convert@{convert}!Poco::TextConverter@{Poco::TextConverter}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily int Poco\+::\+Text\+Converter\+::convert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{source,  }\item[{int}]{length,  }\item[{std\+::string \&}]{destination }\end{DoxyParamCaption})}
+
+Converts the source string from in\+Encoding to out\+Encoding and appends the result to destination. If a character cannot be represented in out\+Encoding, default\+Char is used instead. Returns the number of encoding errors (invalid byte sequences in source). \mbox{\Hypertarget{classPoco_1_1TextConverter_ab9288b9e1d139763c086d002c2f75c10}\label{classPoco_1_1TextConverter_ab9288b9e1d139763c086d002c2f75c10}} 
+\index{Poco::TextConverter@{Poco::TextConverter}!convert@{convert}}
+\index{convert@{convert}!Poco::TextConverter@{Poco::TextConverter}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily int Poco\+::\+Text\+Converter\+::convert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{source,  }\item[{int}]{length,  }\item[{std\+::string \&}]{destination,  }\item[{\mbox{\hyperlink{classPoco_1_1TextConverter_a399a5748d6c12b12b02dd5c9c4ae00df}{Transform}}}]{trans }\end{DoxyParamCaption})}
+
+Converts the source string from in\+Encoding to out\+Encoding and appends the result to destination. Every character is passed to the transform function. If a character cannot be represented in out\+Encoding, default\+Char is used instead. Returns the number of encoding errors (invalid byte sequences in source). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{TextConverter_8h}{Text\+Converter.\+h}}\end{DoxyCompactItemize}

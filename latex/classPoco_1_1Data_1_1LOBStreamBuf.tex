@@ -1,0 +1,147 @@
+\hypertarget{classPoco_1_1Data_1_1LOBStreamBuf}{}\doxysection{Poco\+::Data\+::L\+O\+B\+Stream\+Buf$<$ T $>$ Class Template Reference}
+\label{classPoco_1_1Data_1_1LOBStreamBuf}\index{Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}}
+
+
+This is the streambuf class used for reading from and writing to a \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}}.  
+
+
+
+
+{\ttfamily \#include $<$L\+O\+B\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::L\+O\+B\+Stream\+Buf$<$ T $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Data\+::L\+O\+B\+Stream\+Buf$<$ T $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf_a641a2221654fd26e5138cc5b963508f6}{L\+O\+B\+Stream\+Buf}} (\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}}$<$ T $>$ \&lob)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf_a05156bdb0b8e24937dd336f12650d999}{$\sim$\+L\+O\+B\+Stream\+Buf}} ()
+\begin{DoxyCompactList}\small\item\em Destroys \mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf}{L\+O\+B\+Stream\+Buf}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::char\+\_\+traits$<$ T $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf_a8cb5ae2788f6ad2832237154d2fbbcd2}{Traits\+Type}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1BasicUnbufferedStreamBuf}{Basic\+Unbuffered\+Stream\+Buf}}$<$ T, \mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf_a8cb5ae2788f6ad2832237154d2fbbcd2}{Traits\+Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf_af98a4117039096eb93f67027ea9160ee}{Base\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicUnbufferedStreamBuf_af4ed13f581184a5758933d22d83ed58e}{Base\+Type\+::int\+\_\+type}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf_a243e813a8f047c766f47f156f1344d18}{read\+From\+Device}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicUnbufferedStreamBuf_af4ed13f581184a5758933d22d83ed58e}{Base\+Type\+::int\+\_\+type}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf_ad9767ced7856acd9c99e909c8fb478f6}{write\+To\+Device}} (T c)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Poco\+::\+Data\+::\+L\+O\+B\+Stream\+Buf$<$ T $>$}
+
+This is the streambuf class used for reading from and writing to a \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}}. 
+
+Definition at line 35 of file L\+O\+B\+Stream.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOBStreamBuf_af98a4117039096eb93f67027ea9160ee}\label{classPoco_1_1Data_1_1LOBStreamBuf_af98a4117039096eb93f67027ea9160ee}} 
+\index{Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}!BaseType@{BaseType}}
+\index{BaseType@{BaseType}!Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BaseType}{BaseType}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1BasicUnbufferedStreamBuf}{Basic\+Unbuffered\+Stream\+Buf}}$<$T, \mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf_a8cb5ae2788f6ad2832237154d2fbbcd2}{Traits\+Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf}{Poco\+::\+Data\+::\+L\+O\+B\+Stream\+Buf}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf_af98a4117039096eb93f67027ea9160ee}{Base\+Type}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 52 of file L\+O\+B\+Stream.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOBStreamBuf_a8cb5ae2788f6ad2832237154d2fbbcd2}\label{classPoco_1_1Data_1_1LOBStreamBuf_a8cb5ae2788f6ad2832237154d2fbbcd2}} 
+\index{Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}!TraitsType@{TraitsType}}
+\index{TraitsType@{TraitsType}!Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TraitsType}{TraitsType}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef std\+::char\+\_\+traits$<$T$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf}{Poco\+::\+Data\+::\+L\+O\+B\+Stream\+Buf}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf_a8cb5ae2788f6ad2832237154d2fbbcd2}{Traits\+Type}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 51 of file L\+O\+B\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOBStreamBuf_a641a2221654fd26e5138cc5b963508f6}\label{classPoco_1_1Data_1_1LOBStreamBuf_a641a2221654fd26e5138cc5b963508f6}} 
+\index{Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}!LOBStreamBuf@{LOBStreamBuf}}
+\index{LOBStreamBuf@{LOBStreamBuf}!Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LOBStreamBuf()}{LOBStreamBuf()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf}{Poco\+::\+Data\+::\+L\+O\+B\+Stream\+Buf}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf}{L\+O\+B\+Stream\+Buf}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}}$<$ T $>$ \&}]{lob }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 39 of file L\+O\+B\+Stream.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOBStreamBuf_a05156bdb0b8e24937dd336f12650d999}\label{classPoco_1_1Data_1_1LOBStreamBuf_a05156bdb0b8e24937dd336f12650d999}} 
+\index{Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}!````~LOBStreamBuf@{$\sim$LOBStreamBuf}}
+\index{````~LOBStreamBuf@{$\sim$LOBStreamBuf}!Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$LOBStreamBuf()}{~LOBStreamBuf()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf}{Poco\+::\+Data\+::\+L\+O\+B\+Stream\+Buf}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf}{L\+O\+B\+Stream\+Buf}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys \mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf}{L\+O\+B\+Stream\+Buf}}. 
+
+
+
+Definition at line 45 of file L\+O\+B\+Stream.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOBStreamBuf_a243e813a8f047c766f47f156f1344d18}\label{classPoco_1_1Data_1_1LOBStreamBuf_a243e813a8f047c766f47f156f1344d18}} 
+\index{Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}!readFromDevice@{readFromDevice}}
+\index{readFromDevice@{readFromDevice}!Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{readFromDevice()}{readFromDevice()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicUnbufferedStreamBuf_af4ed13f581184a5758933d22d83ed58e}{Base\+Type\+::int\+\_\+type}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf}{Poco\+::\+Data\+::\+L\+O\+B\+Stream\+Buf}}$<$ T $>$\+::read\+From\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1BasicUnbufferedStreamBuf}{Poco\+::\+Basic\+Unbuffered\+Stream\+Buf$<$ T, std\+::char\+\_\+traits$<$ T $>$ $>$}}.
+
+
+
+Definition at line 54 of file L\+O\+B\+Stream.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOBStreamBuf_ad9767ced7856acd9c99e909c8fb478f6}\label{classPoco_1_1Data_1_1LOBStreamBuf_ad9767ced7856acd9c99e909c8fb478f6}} 
+\index{Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}!writeToDevice@{writeToDevice}}
+\index{writeToDevice@{writeToDevice}!Poco::Data::LOBStreamBuf$<$ T $>$@{Poco::Data::LOBStreamBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{writeToDevice()}{writeToDevice()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicUnbufferedStreamBuf_af4ed13f581184a5758933d22d83ed58e}{Base\+Type\+::int\+\_\+type}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOBStreamBuf}{Poco\+::\+Data\+::\+L\+O\+B\+Stream\+Buf}}$<$ T $>$\+::write\+To\+Device (\begin{DoxyParamCaption}\item[{T}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1BasicUnbufferedStreamBuf}{Poco\+::\+Basic\+Unbuffered\+Stream\+Buf$<$ T, std\+::char\+\_\+traits$<$ T $>$ $>$}}.
+
+
+
+Definition at line 62 of file L\+O\+B\+Stream.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{LOBStream_8h}{L\+O\+B\+Stream.\+h}}\end{DoxyCompactItemize}

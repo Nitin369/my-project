@@ -1,0 +1,243 @@
+\hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService}{}\doxysection{IoT\+::Device\+Status\+::Device\+Status\+Service Class Reference}
+\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService}\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+
+
+{\ttfamily \#include $<$Device\+Status\+Service.\+h$>$}
+
+
+
+Collaboration diagram for IoT\+::Device\+Status\+::Device\+Status\+Service\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService}{Device\+Status\+Service}} $>$ \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a95cac4071f0547b1e30bcc3599417cc5}{Ptr}}
+\item 
+typedef Poco\+::\+U\+Int32 \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_afb2779983d1c9f1222bb8bbde61faf70}{Status\+ID}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_ab01a77b4baba1492c60830941d8bc6fa}{Device\+Status\+Service}} ()
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a37d2af45cd000ee00c362feda577a0fc}{$\sim$\+Device\+Status\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService}{Device\+Status\+Service}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a8ade2067621de025f8cbf201a353f9c8}{status}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService}{Device\+Status\+Service}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a8fb6e2d5edd8855f04f9145a33b392f9}{status\+Of\+Source}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&source) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Device\+Status\+Change}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a0dc620a5cacacd5d6c79d8bd2cecd70a}{post\+Status}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate}{Status\+Update}} \&status\+Update)=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a50a1bac60379bc98c2aec16d2e6d7039}{post\+Status\+Async}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate}{Status\+Update}} \&status\+Update)=0
+\item 
+virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_aeb8399f61f02ed288d86a9a7a67eb297}{clear\+Status}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&message\+Class)=0
+\item 
+virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a18fd15471e290c3ce05e6b09b5ad6cb6}{clear\+Status\+Of\+Source}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&source)=0
+\item 
+virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a41f31650ed49c91421ce9d0e05c65b4e}{acknowledge}} (Poco\+::\+Int64 id)=0
+\item 
+virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a03e07eb2595a176e81ce4972f5550f9d}{acknowledge\+Up\+To}} (Poco\+::\+Int64 id)=0
+\item 
+virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a08df9bb2eed2a14a36777134c4b534fc}{remove}} (Poco\+::\+Int64 id)=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusMessage}{Status\+Message}} $>$ \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a4dd94f5aac696911a861bc4175a3d6e4}{messages}} (int max\+Messages=0) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_ad8b571b6db7fbd560d42ed410f4ec117}{reset}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Device\+Status\+Change}} $>$ \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_abfc99e87d3af6c3f518e93deb4c8be70}{status\+Changed}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Device\+Status\+Change}} $>$ \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_ae87781abb0fc9f1528f25a813aa42ca2}{status\+Updated}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService}{Device\+Status\+Service}} keeps track of the current operational status of a device. 
+
+Definition at line 178 of file Device\+Status\+Service.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a95cac4071f0547b1e30bcc3599417cc5}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a95cac4071f0547b1e30bcc3599417cc5}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService}{Device\+Status\+Service}}$>$ \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a95cac4071f0547b1e30bcc3599417cc5}{Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::\+Ptr}}}
+
+
+
+Definition at line 183 of file Device\+Status\+Service.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_afb2779983d1c9f1222bb8bbde61faf70}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_afb2779983d1c9f1222bb8bbde61faf70}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!StatusID@{StatusID}}
+\index{StatusID@{StatusID}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{StatusID}{StatusID}}
+{\footnotesize\ttfamily typedef Poco\+::\+U\+Int32 \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_afb2779983d1c9f1222bb8bbde61faf70}{Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::\+Status\+ID}}}
+
+
+
+Definition at line 184 of file Device\+Status\+Service.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_ab01a77b4baba1492c60830941d8bc6fa}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_ab01a77b4baba1492c60830941d8bc6fa}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!DeviceStatusService@{DeviceStatusService}}
+\index{DeviceStatusService@{DeviceStatusService}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{DeviceStatusService()}{DeviceStatusService()}}
+{\footnotesize\ttfamily Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::\+Device\+Status\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fired when the device status has been updated by calling \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a0dc620a5cacacd5d6c79d8bd2cecd70a}{post\+Status()}} or \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a50a1bac60379bc98c2aec16d2e6d7039}{post\+Status\+Async()}}, regardless of whether the device status level has changed or not. \mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a37d2af45cd000ee00c362feda577a0fc}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a37d2af45cd000ee00c362feda577a0fc}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!````~DeviceStatusService@{$\sim$DeviceStatusService}}
+\index{````~DeviceStatusService@{$\sim$DeviceStatusService}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{$\sim$DeviceStatusService()}{~DeviceStatusService()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::$\sim$\+Device\+Status\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService}{Device\+Status\+Service}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a41f31650ed49c91421ce9d0e05c65b4e}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a41f31650ed49c91421ce9d0e05c65b4e}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!acknowledge@{acknowledge}}
+\index{acknowledge@{acknowledge}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{acknowledge()}{acknowledge()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::acknowledge (\begin{DoxyParamCaption}\item[{Poco\+::\+Int64}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Clears all status updates with the given source and removes them from the message history.
+
+Returns the new device status. Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a03e07eb2595a176e81ce4972f5550f9d}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a03e07eb2595a176e81ce4972f5550f9d}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!acknowledgeUpTo@{acknowledgeUpTo}}
+\index{acknowledgeUpTo@{acknowledgeUpTo}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{acknowledgeUpTo()}{acknowledgeUpTo()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::acknowledge\+Up\+To (\begin{DoxyParamCaption}\item[{Poco\+::\+Int64}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Marks the message with the given ID as acknowledged, if it is acknowledgeable.
+
+Returns the new device status. Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_aeb8399f61f02ed288d86a9a7a67eb297}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_aeb8399f61f02ed288d86a9a7a67eb297}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!clearStatus@{clearStatus}}
+\index{clearStatus@{clearStatus}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{clearStatus()}{clearStatus()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::clear\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{message\+Class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Updates the device status asynchronously.
+
+The actual status update in the database will be done asynchronously in a separate thread. Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a18fd15471e290c3ce05e6b09b5ad6cb6}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a18fd15471e290c3ce05e6b09b5ad6cb6}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!clearStatusOfSource@{clearStatusOfSource}}
+\index{clearStatusOfSource@{clearStatusOfSource}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{clearStatusOfSource()}{clearStatusOfSource()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::clear\+Status\+Of\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Clears the status update with the given message\+Class and removes it from the message history.
+
+Returns the new device status. Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a4dd94f5aac696911a861bc4175a3d6e4}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a4dd94f5aac696911a861bc4175a3d6e4}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!messages@{messages}}
+\index{messages@{messages}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{messages()}{messages()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusMessage}{Status\+Message}}$>$ Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::messages (\begin{DoxyParamCaption}\item[{int}]{max\+Messages = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Removes the message with the given ID from the message history.
+
+Returns the new device status. Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a0dc620a5cacacd5d6c79d8bd2cecd70a}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a0dc620a5cacacd5d6c79d8bd2cecd70a}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!postStatus@{postStatus}}
+\index{postStatus@{postStatus}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{postStatus()}{postStatus()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Device\+Status\+Change}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::post\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate}{Status\+Update}} \&}]{status\+Update }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the current source-\/specific device status, considering only status updates with the given source.
+
+Only unacknowledged status updates are considered in determining the current status. Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a50a1bac60379bc98c2aec16d2e6d7039}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a50a1bac60379bc98c2aec16d2e6d7039}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!postStatusAsync@{postStatusAsync}}
+\index{postStatusAsync@{postStatusAsync}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{postStatusAsync()}{postStatusAsync()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::post\+Status\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate}{Status\+Update}} \&}]{status\+Update }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Updates the device status.
+
+Returns a \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Device\+Status\+Change}} structure. Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a08df9bb2eed2a14a36777134c4b534fc}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a08df9bb2eed2a14a36777134c4b534fc}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!remove@{remove}}
+\index{remove@{remove}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::remove (\begin{DoxyParamCaption}\item[{Poco\+::\+Int64}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Marks all acknowledgeable messages up to (and including) the given ID as acknowledged.
+
+Returns the new device status. Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_ad8b571b6db7fbd560d42ed410f4ec117}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_ad8b571b6db7fbd560d42ed410f4ec117}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!reset@{reset}}
+\index{reset@{reset}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Retrieves stored status messages. If max\+Messages is $>$ 0, will at most return max\+Messages messages. Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a8ade2067621de025f8cbf201a353f9c8}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a8ade2067621de025f8cbf201a353f9c8}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!status@{status}}
+\index{status@{status}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService}{Device\+Status\+Service}}. 
+
+Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a8fb6e2d5edd8855f04f9145a33b392f9}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a8fb6e2d5edd8855f04f9145a33b392f9}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!statusOfSource@{statusOfSource}}
+\index{statusOfSource@{statusOfSource}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{statusOfSource()}{statusOfSource()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::status\+Of\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{source }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the current global device status.
+
+Only unacknowledged status updates are considered in determining the current status. Here is the caller graph for this function\+:
+% FIG 11
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_abfc99e87d3af6c3f518e93deb4c8be70}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_abfc99e87d3af6c3f518e93deb4c8be70}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!statusChanged@{statusChanged}}
+\index{statusChanged@{statusChanged}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{statusChanged}{statusChanged}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Device\+Status\+Change}}$>$ Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::status\+Changed}
+
+
+
+Definition at line 186 of file Device\+Status\+Service.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1DeviceStatus_1_1DeviceStatusService_ae87781abb0fc9f1528f25a813aa42ca2}\label{classIoT_1_1DeviceStatus_1_1DeviceStatusService_ae87781abb0fc9f1528f25a813aa42ca2}} 
+\index{IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}!statusUpdated@{statusUpdated}}
+\index{statusUpdated@{statusUpdated}!IoT::DeviceStatus::DeviceStatusService@{IoT::DeviceStatus::DeviceStatusService}}
+\doxysubsubsection{\texorpdfstring{statusUpdated}{statusUpdated}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1DeviceStatusChange}{Device\+Status\+Change}}$>$ Io\+T\+::\+Device\+Status\+::\+Device\+Status\+Service\+::status\+Updated}
+
+Fired when the device status level has changed. Not every call to \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a0dc620a5cacacd5d6c79d8bd2cecd70a}{post\+Status()}} or \mbox{\hyperlink{classIoT_1_1DeviceStatus_1_1DeviceStatusService_a50a1bac60379bc98c2aec16d2e6d7039}{post\+Status\+Async()}} will trigger a status\+Changed event. 
+
+Definition at line 191 of file Device\+Status\+Service.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Device\+Status/\mbox{\hyperlink{DeviceStatusService_8h}{Device\+Status\+Service.\+h}}\end{DoxyCompactItemize}

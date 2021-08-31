@@ -1,0 +1,123 @@
+\hypertarget{classPoco_1_1OSP_1_1LanguageTag}{}\doxysection{Poco\+::O\+SP\+::Language\+Tag Class Reference}
+\label{classPoco_1_1OSP_1_1LanguageTag}\index{Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}}
+
+
+{\ttfamily \#include $<$Language\+Tag.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag_a46eab605a8662f3f5a4b9d497a356fcb}{Language\+Tag}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag_ae08b17b6d442650351b344fcbe6e26a3}{Language\+Tag}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&tag)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag_a7864d6b0756e86ef51675a3ccdf4ef9c}{Language\+Tag}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag_aa60b5147b895d67360b2aa371eac1243}{primary\+Tag}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag_aaa997e3cb099e06d3608f66c62702fc9}{sub\+Tags}})
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag}{Language\+Tag}} from the tag given in the string argument. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag_aec3f99b35139df990bdbbfb1f1c677db}{$\sim$\+Language\+Tag}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag}{Language\+Tag}} from the given primary and sub tags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag_aa60b5147b895d67360b2aa371eac1243}{primary\+Tag}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag}{Language\+Tag}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag_aaa997e3cb099e06d3608f66c62702fc9}{sub\+Tags}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the primary tag. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag_a006c18ae98d90dd92402db04442348cb}{to\+String}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns all sub tags, delimited by a \textquotesingle{}-\/\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class implements a R\+FC 1766 language tag. \begin{DoxyVerb}A language tag describes a language and consists
+of a primary tag and one or more subtags.
+Usually, the primary tag conforms to an ISO 639
+language code and the first subtag conforms to an
+ISO 3166 country code. For the details, please
+refer to RFC 1766.
+
+In a string representation, primary and subtags
+are separated by '-', e.g., "en-US" or "de-AT". 
+\end{DoxyVerb}
+ 
+
+Definition at line 30 of file Language\+Tag.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1LanguageTag_a46eab605a8662f3f5a4b9d497a356fcb}\label{classPoco_1_1OSP_1_1LanguageTag_a46eab605a8662f3f5a4b9d497a356fcb}} 
+\index{Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}!LanguageTag@{LanguageTag}}
+\index{LanguageTag@{LanguageTag}!Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}}
+\doxysubsubsection{\texorpdfstring{LanguageTag()}{LanguageTag()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Language\+Tag\+::\+Language\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1LanguageTag_ae08b17b6d442650351b344fcbe6e26a3}\label{classPoco_1_1OSP_1_1LanguageTag_ae08b17b6d442650351b344fcbe6e26a3}} 
+\index{Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}!LanguageTag@{LanguageTag}}
+\index{LanguageTag@{LanguageTag}!Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}}
+\doxysubsubsection{\texorpdfstring{LanguageTag()}{LanguageTag()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Language\+Tag\+::\+Language\+Tag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{tag }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag}{Language\+Tag}} for the system\textquotesingle{}s default language.
+
+On Windows platform, the system\textquotesingle{}s locale information is used. On Unix platform, the value of the environment variable L\+A\+NG is used. If L\+A\+NG is not defined, the default \char`\"{}en-\/\+U\+S\char`\"{} is used. \mbox{\Hypertarget{classPoco_1_1OSP_1_1LanguageTag_a7864d6b0756e86ef51675a3ccdf4ef9c}\label{classPoco_1_1OSP_1_1LanguageTag_a7864d6b0756e86ef51675a3ccdf4ef9c}} 
+\index{Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}!LanguageTag@{LanguageTag}}
+\index{LanguageTag@{LanguageTag}!Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}}
+\doxysubsubsection{\texorpdfstring{LanguageTag()}{LanguageTag()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Language\+Tag\+::\+Language\+Tag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{primary\+Tag,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{sub\+Tags }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag}{Language\+Tag}} from the tag given in the string argument. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1LanguageTag_aec3f99b35139df990bdbbfb1f1c677db}\label{classPoco_1_1OSP_1_1LanguageTag_aec3f99b35139df990bdbbfb1f1c677db}} 
+\index{Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}!````~LanguageTag@{$\sim$LanguageTag}}
+\index{````~LanguageTag@{$\sim$LanguageTag}!Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}}
+\doxysubsubsection{\texorpdfstring{$\sim$LanguageTag()}{~LanguageTag()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Language\+Tag\+::$\sim$\+Language\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag}{Language\+Tag}} from the given primary and sub tags. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1LanguageTag_aa60b5147b895d67360b2aa371eac1243}\label{classPoco_1_1OSP_1_1LanguageTag_aa60b5147b895d67360b2aa371eac1243}} 
+\index{Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}!primaryTag@{primaryTag}}
+\index{primaryTag@{primaryTag}!Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}}
+\doxysubsubsection{\texorpdfstring{primaryTag()}{primaryTag()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+O\+S\+P\+::\+Language\+Tag\+::primary\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1LanguageTag}{Language\+Tag}}. 
+
+
+
+Definition at line 82 of file Language\+Tag.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1LanguageTag_aaa997e3cb099e06d3608f66c62702fc9}\label{classPoco_1_1OSP_1_1LanguageTag_aaa997e3cb099e06d3608f66c62702fc9}} 
+\index{Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}!subTags@{subTags}}
+\index{subTags@{subTags}!Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}}
+\doxysubsubsection{\texorpdfstring{subTags()}{subTags()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+O\+S\+P\+::\+Language\+Tag\+::sub\+Tags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the primary tag. 
+
+
+
+Definition at line 88 of file Language\+Tag.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1LanguageTag_a006c18ae98d90dd92402db04442348cb}\label{classPoco_1_1OSP_1_1LanguageTag_a006c18ae98d90dd92402db04442348cb}} 
+\index{Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}!toString@{toString}}
+\index{toString@{toString}!Poco::OSP::LanguageTag@{Poco::OSP::LanguageTag}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+O\+S\+P\+::\+Language\+Tag\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns all sub tags, delimited by a \textquotesingle{}-\/\textquotesingle{}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{LanguageTag_8h}{Language\+Tag.\+h}}\end{DoxyCompactItemize}

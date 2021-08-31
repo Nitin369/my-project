@@ -1,0 +1,72 @@
+\hypertarget{classPoco_1_1OSP_1_1BundleFilter}{}\doxysection{Poco\+::O\+SP\+::Bundle\+Filter Class Reference}
+\label{classPoco_1_1OSP_1_1BundleFilter}\index{Poco::OSP::BundleFilter@{Poco::OSP::BundleFilter}}
+
+
+{\ttfamily \#include $<$Bundle\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::O\+SP\+::Bundle\+Filter\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::O\+SP\+::Bundle\+Filter\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter}{Bundle\+Filter}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter_a506d5fcc28761d21591eafcddc0695b4}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter_a1e237457b26baf8a2a67a3dd697fe140}{accept}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} p\+Bundle)=0
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter_a1096ab8ec264f4c08691ae74773f6924}{$\sim$\+Bundle\+Filter}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter}{Bundle\+Filter}} is used by \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleRepository}{Bundle\+Repository}} to determine which bundles found in a repository should be loaded. For each bundle found in a repository, the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter}{Bundle\+Filter}}\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter_a1e237457b26baf8a2a67a3dd697fe140}{accept()}} method will be called, passing the \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} as argument. Only if \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter_a1e237457b26baf8a2a67a3dd697fe140}{accept()}} returns true, the bundle will be loaded. 
+
+Definition at line 33 of file Bundle\+Filter.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleFilter_a506d5fcc28761d21591eafcddc0695b4}\label{classPoco_1_1OSP_1_1BundleFilter_a506d5fcc28761d21591eafcddc0695b4}} 
+\index{Poco::OSP::BundleFilter@{Poco::OSP::BundleFilter}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::OSP::BundleFilter@{Poco::OSP::BundleFilter}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter}{Bundle\+Filter}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter_a506d5fcc28761d21591eafcddc0695b4}{Poco\+::\+O\+S\+P\+::\+Bundle\+Filter\+::\+Ptr}}}
+
+
+
+Definition at line 42 of file Bundle\+Filter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleFilter_a1096ab8ec264f4c08691ae74773f6924}\label{classPoco_1_1OSP_1_1BundleFilter_a1096ab8ec264f4c08691ae74773f6924}} 
+\index{Poco::OSP::BundleFilter@{Poco::OSP::BundleFilter}!````~BundleFilter@{$\sim$BundleFilter}}
+\index{````~BundleFilter@{$\sim$BundleFilter}!Poco::OSP::BundleFilter@{Poco::OSP::BundleFilter}}
+\doxysubsubsection{\texorpdfstring{$\sim$BundleFilter()}{~BundleFilter()}}
+{\footnotesize\ttfamily virtual Poco\+::\+O\+S\+P\+::\+Bundle\+Filter\+::$\sim$\+Bundle\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Check whether the given \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} should be loaded. Must be overridden by subclasses.
+
+Returns true if given \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} should be loaded, or false otherwise. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleFilter_a1e237457b26baf8a2a67a3dd697fe140}\label{classPoco_1_1OSP_1_1BundleFilter_a1e237457b26baf8a2a67a3dd697fe140}} 
+\index{Poco::OSP::BundleFilter@{Poco::OSP::BundleFilter}!accept@{accept}}
+\index{accept@{accept}!Poco::OSP::BundleFilter@{Poco::OSP::BundleFilter}}
+\doxysubsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+O\+S\+P\+::\+Bundle\+Filter\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}}}]{p\+Bundle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{BundleFilter_8h}{Bundle\+Filter.\+h}}\end{DoxyCompactItemize}

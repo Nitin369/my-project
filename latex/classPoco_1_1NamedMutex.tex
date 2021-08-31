@@ -1,0 +1,123 @@
+\hypertarget{classPoco_1_1NamedMutex}{}\doxysection{Poco\+::Named\+Mutex Class Reference}
+\label{classPoco_1_1NamedMutex}\index{Poco::NamedMutex@{Poco::NamedMutex}}
+
+
+{\ttfamily \#include $<$Named\+Mutex.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Named\+Mutex\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Named\+Mutex\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1ScopedLock}{Poco\+::\+Scoped\+Lock}}$<$ \mbox{\hyperlink{classPoco_1_1NamedMutex}{Named\+Mutex}} $>$ \mbox{\hyperlink{classPoco_1_1NamedMutex_a5041005b013fc7e5e0f085fa04cd8edd}{Scoped\+Lock}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1NamedMutex_ad0aa3f8350d47ebfeed5a4328f131c24}{Named\+Mutex}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+\mbox{\hyperlink{classPoco_1_1NamedMutex_a337a885dcea5865a875918adba7947ec}{$\sim$\+Named\+Mutex}} ()
+\begin{DoxyCompactList}\small\item\em creates the \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1NamedMutex_a860f735565597fbb9dfe3147e46d97af}{lock}} ()
+\begin{DoxyCompactList}\small\item\em destroys the \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1NamedMutex_ab8bc31181d34e720ce03c52945431350}{try\+Lock}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1NamedMutex_a3cb844b74908d2ca04ad40485c677281}{unlock}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1NamedMutex}{Named\+Mutex}} (mutual exclusion) is a global synchronization mechanism used to control access to a shared resource in a concurrent (multi process) scenario. Using the \mbox{\hyperlink{classPoco_1_1ScopedLock}{Scoped\+Lock}} class is the preferred way to automatically lock and unlock a mutex.
+
+Unlike a \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}} or a \mbox{\hyperlink{classPoco_1_1FastMutex}{Fast\+Mutex}}, which itself is the unit of synchronization, a \mbox{\hyperlink{classPoco_1_1NamedMutex}{Named\+Mutex}} refers to a named operating system resource being the unit of synchronization. In other words, there can be multiple instances of \mbox{\hyperlink{classPoco_1_1NamedMutex}{Named\+Mutex}} referring to the same actual synchronization object.
+
+There should not be more than one instance of \mbox{\hyperlink{classPoco_1_1NamedMutex}{Named\+Mutex}} for a given name in a process. Otherwise, the instances may interfere with each other. 
+
+Definition at line 43 of file Named\+Mutex.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1NamedMutex_a5041005b013fc7e5e0f085fa04cd8edd}\label{classPoco_1_1NamedMutex_a5041005b013fc7e5e0f085fa04cd8edd}} 
+\index{Poco::NamedMutex@{Poco::NamedMutex}!ScopedLock@{ScopedLock}}
+\index{ScopedLock@{ScopedLock}!Poco::NamedMutex@{Poco::NamedMutex}}
+\doxysubsubsection{\texorpdfstring{ScopedLock}{ScopedLock}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1ScopedLock}{Poco\+::\+Scoped\+Lock}}$<$\mbox{\hyperlink{classPoco_1_1NamedMutex}{Named\+Mutex}}$>$ \mbox{\hyperlink{classPoco_1_1NamedMutex_a5041005b013fc7e5e0f085fa04cd8edd}{Poco\+::\+Named\+Mutex\+::\+Scoped\+Lock}}}
+
+
+
+Definition at line 62 of file Named\+Mutex.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1NamedMutex_ad0aa3f8350d47ebfeed5a4328f131c24}\label{classPoco_1_1NamedMutex_ad0aa3f8350d47ebfeed5a4328f131c24}} 
+\index{Poco::NamedMutex@{Poco::NamedMutex}!NamedMutex@{NamedMutex}}
+\index{NamedMutex@{NamedMutex}!Poco::NamedMutex@{Poco::NamedMutex}}
+\doxysubsubsection{\texorpdfstring{NamedMutex()}{NamedMutex()}}
+{\footnotesize\ttfamily Poco\+::\+Named\+Mutex\+::\+Named\+Mutex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1NamedMutex_a337a885dcea5865a875918adba7947ec}\label{classPoco_1_1NamedMutex_a337a885dcea5865a875918adba7947ec}} 
+\index{Poco::NamedMutex@{Poco::NamedMutex}!````~NamedMutex@{$\sim$NamedMutex}}
+\index{````~NamedMutex@{$\sim$NamedMutex}!Poco::NamedMutex@{Poco::NamedMutex}}
+\doxysubsubsection{\texorpdfstring{$\sim$NamedMutex()}{~NamedMutex()}}
+{\footnotesize\ttfamily Poco\+::\+Named\+Mutex\+::$\sim$\+Named\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+creates the \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1NamedMutex_a860f735565597fbb9dfe3147e46d97af}\label{classPoco_1_1NamedMutex_a860f735565597fbb9dfe3147e46d97af}} 
+\index{Poco::NamedMutex@{Poco::NamedMutex}!lock@{lock}}
+\index{lock@{lock}!Poco::NamedMutex@{Poco::NamedMutex}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily void Poco\+::\+Named\+Mutex\+::lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+destroys the \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}}. 
+
+
+
+Definition at line 93 of file Named\+Mutex.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1NamedMutex_ab8bc31181d34e720ce03c52945431350}\label{classPoco_1_1NamedMutex_ab8bc31181d34e720ce03c52945431350}} 
+\index{Poco::NamedMutex@{Poco::NamedMutex}!tryLock@{tryLock}}
+\index{tryLock@{tryLock}!Poco::NamedMutex@{Poco::NamedMutex}}
+\doxysubsubsection{\texorpdfstring{tryLock()}{tryLock()}}
+{\footnotesize\ttfamily bool Poco\+::\+Named\+Mutex\+::try\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Locks the mutex. Blocks if the mutex is held by another process or thread. 
+
+Definition at line 99 of file Named\+Mutex.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1NamedMutex_a3cb844b74908d2ca04ad40485c677281}\label{classPoco_1_1NamedMutex_a3cb844b74908d2ca04ad40485c677281}} 
+\index{Poco::NamedMutex@{Poco::NamedMutex}!unlock@{unlock}}
+\index{unlock@{unlock}!Poco::NamedMutex@{Poco::NamedMutex}}
+\doxysubsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily void Poco\+::\+Named\+Mutex\+::unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tries to lock the mutex. Returns false immediately if the mutex is already held by another process or thread. Returns true if the mutex was successfully locked. 
+
+Definition at line 105 of file Named\+Mutex.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{NamedMutex_8h}{Named\+Mutex.\+h}}\end{DoxyCompactItemize}

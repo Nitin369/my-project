@@ -1,0 +1,19 @@
+digraph "Poco::Net::ParallelSocketAcceptor::onAccept"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Poco::Net::ParallelSocket\lAcceptor::onAccept",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Accepts connection and creates event handler."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Poco::Net::ParallelSocket\lAcceptor::ParallelSocketAcceptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ParallelSocketAcceptor.html#a1db9da478475fde4ab6cb5ab38721b89",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Poco::Net::ParallelSocket\lAcceptor::registerAcceptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ParallelSocketAcceptor.html#a5a87b01e93a0cb5c0646246f2a4bcfde",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Poco::Net::ParallelSocket\lAcceptor::setReactor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ParallelSocketAcceptor.html#a1746866d4759585584e7f508b168f701",tooltip="Sets the reactor for this acceptor."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Poco::Net::ParallelSocket\lAcceptor::unregisterAcceptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ParallelSocketAcceptor.html#a0d04c724457efe626ebc92f6e21007f1",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Poco::Net::ParallelSocket\lAcceptor::~ParallelSocketAcceptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ParallelSocketAcceptor.html#a0139d87cc92e3b84fcb264dc242354ff",tooltip="Destroys the ParallelSocketAcceptor."];
+}

@@ -1,0 +1,99 @@
+\hypertarget{classIoT_1_1Devices_1_1SensorSkeleton}{}\doxysection{IoT\+::Devices\+::Sensor\+Skeleton Class Reference}
+\label{classIoT_1_1Devices_1_1SensorSkeleton}\index{IoT::Devices::SensorSkeleton@{IoT::Devices::SensorSkeleton}}
+
+
+{\ttfamily \#include $<$Sensor\+Skeleton.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::Sensor\+Skeleton\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::Sensor\+Skeleton\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1SensorSkeleton_a5eab6b90584aba64c657c5ddf332ddf5}{Sensor\+Skeleton}} ()
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorSkeleton_a121d16493afb9e41be796647ac28b732}{$\sim$\+Sensor\+Skeleton}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorSkeleton}{Sensor\+Skeleton}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorSkeleton_a0abef18d9c09b3c23aa5765fbbca1229}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys a \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorSkeleton}{Sensor\+Skeleton}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorSkeleton_aecc7bb395318ce1c5b5b2cd9988cf13c}{D\+E\+F\+A\+U\+L\+T\+\_\+\+NS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The base class for analog sensors, such as temperature or ambient light sensors.
+
+In addition to the methods defined in this interface, a \mbox{\hyperlink{classIoT_1_1Devices_1_1Sensor}{Sensor}} implementation should expose the following properties\+:
+\begin{DoxyItemize}
+\item physical\+Quantity (string)\+: The physical quantity that is being measured by the sensor, e.\+g. \char`\"{}temperature\char`\"{}.
+\item physical\+Unit (string)\+: The physical unit the measured value is being represented in (e.\+g. \char`\"{}°\+C\char`\"{}), U\+T\+F-\/8 encoded. See the P\+H\+Y\+S\+I\+C\+A\+L\+\_\+\+U\+N\+I\+T\+\_\+$\ast$ strings for predefined values.
+\item display\+Value (string, optional)\+: The current value of the sensor, formatted as string for display purposes. 
+\end{DoxyItemize}
+
+Definition at line 30 of file Sensor\+Skeleton.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SensorSkeleton_a5eab6b90584aba64c657c5ddf332ddf5}\label{classIoT_1_1Devices_1_1SensorSkeleton_a5eab6b90584aba64c657c5ddf332ddf5}} 
+\index{IoT::Devices::SensorSkeleton@{IoT::Devices::SensorSkeleton}!SensorSkeleton@{SensorSkeleton}}
+\index{SensorSkeleton@{SensorSkeleton}!IoT::Devices::SensorSkeleton@{IoT::Devices::SensorSkeleton}}
+\doxysubsubsection{\texorpdfstring{SensorSkeleton()}{SensorSkeleton()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Sensor\+Skeleton\+::\+Sensor\+Skeleton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SensorSkeleton_a121d16493afb9e41be796647ac28b732}\label{classIoT_1_1Devices_1_1SensorSkeleton_a121d16493afb9e41be796647ac28b732}} 
+\index{IoT::Devices::SensorSkeleton@{IoT::Devices::SensorSkeleton}!````~SensorSkeleton@{$\sim$SensorSkeleton}}
+\index{````~SensorSkeleton@{$\sim$SensorSkeleton}!IoT::Devices::SensorSkeleton@{IoT::Devices::SensorSkeleton}}
+\doxysubsubsection{\texorpdfstring{$\sim$SensorSkeleton()}{~SensorSkeleton()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Devices\+::\+Sensor\+Skeleton\+::$\sim$\+Sensor\+Skeleton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorSkeleton}{Sensor\+Skeleton}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SensorSkeleton_a0abef18d9c09b3c23aa5765fbbca1229}\label{classIoT_1_1Devices_1_1SensorSkeleton_a0abef18d9c09b3c23aa5765fbbca1229}} 
+\index{IoT::Devices::SensorSkeleton@{IoT::Devices::SensorSkeleton}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Devices::SensorSkeleton@{IoT::Devices::SensorSkeleton}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+Devices\+::\+Sensor\+Skeleton\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroys a \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorSkeleton}{Sensor\+Skeleton}}. 
+
+
+
+Definition at line 58 of file Sensor\+Skeleton.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SensorSkeleton_aecc7bb395318ce1c5b5b2cd9988cf13c}\label{classIoT_1_1Devices_1_1SensorSkeleton_aecc7bb395318ce1c5b5b2cd9988cf13c}} 
+\index{IoT::Devices::SensorSkeleton@{IoT::Devices::SensorSkeleton}!DEFAULT\_NS@{DEFAULT\_NS}}
+\index{DEFAULT\_NS@{DEFAULT\_NS}!IoT::Devices::SensorSkeleton@{IoT::Devices::SensorSkeleton}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_NS}{DEFAULT\_NS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Io\+T\+::\+Devices\+::\+Sensor\+Skeleton\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+NS\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 54 of file Sensor\+Skeleton.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{SensorSkeleton_8h}{Sensor\+Skeleton.\+h}}\end{DoxyCompactItemize}

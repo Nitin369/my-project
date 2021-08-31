@@ -1,0 +1,469 @@
+\hypertarget{classPoco_1_1Net_1_1HTTPRequest}{}\doxysection{Poco\+::Net\+::H\+T\+T\+P\+Request Class Reference}
+\label{classPoco_1_1Net_1_1HTTPRequest}\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+Request.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::H\+T\+T\+P\+Request\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::H\+T\+T\+P\+Request\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a7576441fd13cc2549169c7c736827185}{H\+T\+T\+P\+Request}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a5d093e528615ee43ebd1ce3277f30259}{H\+T\+T\+P\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&version)
+\begin{DoxyCompactList}\small\item\em Creates a G\+ET / H\+T\+T\+P/1.\+0 H\+T\+TP request. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a7089368626638f98b36a5f5d59872271}{H\+T\+T\+P\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&method, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_abde23484418c95280651315a2d7d6554}{H\+T\+T\+P\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&method, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&version)
+\begin{DoxyCompactList}\small\item\em Creates a H\+T\+T\+P/1.\+0 request with the given method and \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a35c6220aa1a4cd41f46dcfd9ffe28ad6}{$\sim$\+H\+T\+T\+P\+Request}} ()
+\begin{DoxyCompactList}\small\item\em Creates a H\+T\+TP request with the given method, \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} and version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_ab658584eaa95c951e6c53aa17159de47}{set\+Method}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&method)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest}{H\+T\+T\+P\+Request}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a58632bed80af403d82e73eefa7ab1401}{get\+Method}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a192f0b4308c386323e110bec93d84cff}{set\+U\+RI}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\begin{DoxyCompactList}\small\item\em Returns the method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a29412fa883f9e1defec68df53cc64b8a}{get\+U\+RI}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the request \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_ace0b1d3b833657eba28afca65eb59df7}{set\+Host}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host)
+\begin{DoxyCompactList}\small\item\em Returns the request \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_ac88c94693757b637dd9f35bc23210e34}{set\+Host}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host, Poco\+::\+U\+Int16 port)
+\begin{DoxyCompactList}\small\item\em Sets the value of the Host header field. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a81fa7cfbb21988defa72ea474e2a9f3b}{get\+Host}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a0c89d1575692352036edd30a6e6f61d5}{set\+Cookies}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1NameValueCollection}{Name\+Value\+Collection}} \&cookies)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a4cf88c221538873ddb7ba1285ed560f5}{get\+Cookies}} (\mbox{\hyperlink{classPoco_1_1Net_1_1NameValueCollection}{Name\+Value\+Collection}} \&cookies) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_af304ab297194d914486156299c5e5fe7}{has\+Credentials}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_adccc6601c06a1be52285eff59731e467}{get\+Credentials}} (std\+::string \&scheme, std\+::string \&auth\+Info) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a569833ea82252a6aab5aa73075ca1561}{set\+Credentials}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&scheme, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&auth\+Info)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a81816d0c1fcc5cb84f73304597928c90}{has\+Proxy\+Credentials}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_ad25748e59052dac8d16359c9f97ac0d4}{get\+Proxy\+Credentials}} (std\+::string \&scheme, std\+::string \&auth\+Info) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a40fd2f3b727385ea9f865c68ea293764}{set\+Proxy\+Credentials}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&scheme, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&auth\+Info)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_aab6a9b472c821c0d2d6206d4d7c1674a}{write}} (std\+::ostream \&ostr) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a2f5990edf834ede6be949346e28cf778}{read}} (std\+::istream \&istr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_ae09a20d50e13c1cf83266bed53a639b6}{H\+T\+T\+P\+\_\+\+G\+ET}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_afee08b8919f40a2ba17802089bb0c314}{H\+T\+T\+P\+\_\+\+H\+E\+AD}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a4ebba4e782e50f079802672792b8a216}{H\+T\+T\+P\+\_\+\+P\+UT}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_af5fd4c92cb8d0281a1bfa740b30a3efc}{H\+T\+T\+P\+\_\+\+P\+O\+ST}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a22567097680de71e334daf17e036b164}{H\+T\+T\+P\+\_\+\+O\+P\+T\+I\+O\+NS}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_ae38d76e06745c41323c70259638d9e66}{H\+T\+T\+P\+\_\+\+D\+E\+L\+E\+TE}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a1b08f1d605a02e0be43c1941505a2eb5}{H\+T\+T\+P\+\_\+\+T\+R\+A\+CE}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a29404f6c20b1f8cacfc6c0dff731320f}{H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+E\+CT}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a4221ed22ba5d11ce451d720e8623edfd}{H\+T\+T\+P\+\_\+\+P\+A\+T\+CH}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a4363dbbf7e0a965114322bf1cbdf00ed}{H\+O\+ST}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_ae8f5343ab2cff6b3c3c149b7329b6c9c}{C\+O\+O\+K\+IE}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a96ebe6c5ca647d3b74e275278346953c}{A\+U\+T\+H\+O\+R\+I\+Z\+A\+T\+I\+ON}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_ac6fb8115e586392309d2adc68b4e0fbb}{P\+R\+O\+X\+Y\+\_\+\+A\+U\+T\+H\+O\+R\+I\+Z\+A\+T\+I\+ON}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_afc0a825044af1024ad501e9fa1d93ee3}{U\+P\+G\+R\+A\+DE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_a5995506e06ead26ee5480a4e92772b95}{get\+Credentials}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&header, std\+::string \&scheme, std\+::string \&auth\+Info) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest_abae8f1b407474121612e76d2e1ca7bc5}{set\+Credentials}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&header, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&scheme, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&auth\+Info)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class encapsulates an H\+T\+TP request message.
+
+In addition to the properties common to all H\+T\+TP messages, a H\+T\+TP request has a method (e.\+g. G\+ET, H\+E\+AD, P\+O\+ST, etc.) and a request \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. 
+
+Definition at line 31 of file H\+T\+T\+P\+Request.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a7576441fd13cc2549169c7c736827185}\label{classPoco_1_1Net_1_1HTTPRequest_a7576441fd13cc2549169c7c736827185}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTPRequest@{HTTPRequest}}
+\index{HTTPRequest@{HTTPRequest}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTPRequest()}{HTTPRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a5d093e528615ee43ebd1ce3277f30259}\label{classPoco_1_1Net_1_1HTTPRequest_a5d093e528615ee43ebd1ce3277f30259}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTPRequest@{HTTPRequest}}
+\index{HTTPRequest@{HTTPRequest}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTPRequest()}{HTTPRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{version }\end{DoxyParamCaption})}
+
+
+
+Creates a G\+ET / H\+T\+T\+P/1.\+0 H\+T\+TP request. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a7089368626638f98b36a5f5d59872271}\label{classPoco_1_1Net_1_1HTTPRequest_a7089368626638f98b36a5f5d59872271}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTPRequest@{HTTPRequest}}
+\index{HTTPRequest@{HTTPRequest}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTPRequest()}{HTTPRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{method,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})}
+
+Creates a G\+ET / H\+T\+T\+P/1.\+x request with the given version (H\+T\+T\+P/1.\+0 or H\+T\+T\+P/1.\+1). \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_abde23484418c95280651315a2d7d6554}\label{classPoco_1_1Net_1_1HTTPRequest_abde23484418c95280651315a2d7d6554}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTPRequest@{HTTPRequest}}
+\index{HTTPRequest@{HTTPRequest}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTPRequest()}{HTTPRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{method,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{version }\end{DoxyParamCaption})}
+
+
+
+Creates a H\+T\+T\+P/1.\+0 request with the given method and \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a35c6220aa1a4cd41f46dcfd9ffe28ad6}\label{classPoco_1_1Net_1_1HTTPRequest_a35c6220aa1a4cd41f46dcfd9ffe28ad6}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!````~HTTPRequest@{$\sim$HTTPRequest}}
+\index{````~HTTPRequest@{$\sim$HTTPRequest}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{$\sim$HTTPRequest()}{~HTTPRequest()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::$\sim$\+H\+T\+T\+P\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a H\+T\+TP request with the given method, \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} and version. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a4cf88c221538873ddb7ba1285ed560f5}\label{classPoco_1_1Net_1_1HTTPRequest_a4cf88c221538873ddb7ba1285ed560f5}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!getCookies@{getCookies}}
+\index{getCookies@{getCookies}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{getCookies()}{getCookies()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::get\+Cookies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1NameValueCollection}{Name\+Value\+Collection}} \&}]{cookies }\end{DoxyParamCaption}) const}
+
+Adds a Cookie header with the names and values from cookies. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a5995506e06ead26ee5480a4e92772b95}\label{classPoco_1_1Net_1_1HTTPRequest_a5995506e06ead26ee5480a4e92772b95}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!getCredentials@{getCredentials}}
+\index{getCredentials@{getCredentials}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{getCredentials()}{getCredentials()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::get\+Credentials (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{header,  }\item[{std\+::string \&}]{scheme,  }\item[{std\+::string \&}]{auth\+Info }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_adccc6601c06a1be52285eff59731e467}\label{classPoco_1_1Net_1_1HTTPRequest_adccc6601c06a1be52285eff59731e467}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!getCredentials@{getCredentials}}
+\index{getCredentials@{getCredentials}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{getCredentials()}{getCredentials()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::get\+Credentials (\begin{DoxyParamCaption}\item[{std\+::string \&}]{scheme,  }\item[{std\+::string \&}]{auth\+Info }\end{DoxyParamCaption}) const}
+
+Returns true iff the request contains authentication information in the form of an Authorization header. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a81fa7cfbb21988defa72ea474e2a9f3b}\label{classPoco_1_1Net_1_1HTTPRequest_a81fa7cfbb21988defa72ea474e2a9f3b}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!getHost@{getHost}}
+\index{getHost@{getHost}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{getHost()}{getHost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::get\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Sets the value of the Host header field.
+
+If the given port number is a non-\/standard port number (other than 80 or 443), it is included in the Host header field. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a58632bed80af403d82e73eefa7ab1401}\label{classPoco_1_1Net_1_1HTTPRequest_a58632bed80af403d82e73eefa7ab1401}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!getMethod@{getMethod}}
+\index{getMethod@{getMethod}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{getMethod()}{getMethod()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::get\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the method. 
+
+
+
+Definition at line 178 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_ad25748e59052dac8d16359c9f97ac0d4}\label{classPoco_1_1Net_1_1HTTPRequest_ad25748e59052dac8d16359c9f97ac0d4}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!getProxyCredentials@{getProxyCredentials}}
+\index{getProxyCredentials@{getProxyCredentials}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{getProxyCredentials()}{getProxyCredentials()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::get\+Proxy\+Credentials (\begin{DoxyParamCaption}\item[{std\+::string \&}]{scheme,  }\item[{std\+::string \&}]{auth\+Info }\end{DoxyParamCaption}) const}
+
+Returns true iff the request contains proxy authentication information in the form of an Proxy-\/\+Authorization header. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a29412fa883f9e1defec68df53cc64b8a}\label{classPoco_1_1Net_1_1HTTPRequest_a29412fa883f9e1defec68df53cc64b8a}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!getURI@{getURI}}
+\index{getURI@{getURI}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{getURI()}{getURI()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::get\+U\+RI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the request \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. 
+
+
+
+Definition at line 184 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_af304ab297194d914486156299c5e5fe7}\label{classPoco_1_1Net_1_1HTTPRequest_af304ab297194d914486156299c5e5fe7}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!hasCredentials@{hasCredentials}}
+\index{hasCredentials@{hasCredentials}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{hasCredentials()}{hasCredentials()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::has\+Credentials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Fills cookies with the cookies extracted from the Cookie headers in the request. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a81816d0c1fcc5cb84f73304597928c90}\label{classPoco_1_1Net_1_1HTTPRequest_a81816d0c1fcc5cb84f73304597928c90}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!hasProxyCredentials@{hasProxyCredentials}}
+\index{hasProxyCredentials@{hasProxyCredentials}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{hasProxyCredentials()}{hasProxyCredentials()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::has\+Proxy\+Credentials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Sets the authentication scheme and information for this request. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a2f5990edf834ede6be949346e28cf778}\label{classPoco_1_1Net_1_1HTTPRequest_a2f5990edf834ede6be949346e28cf778}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!read@{read}}
+\index{read@{read}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::read (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Writes the H\+T\+TP request to the given output stream. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader_aabf5802666bb656970cb2a44bd5f2e57}{Poco\+::\+Net\+::\+Message\+Header}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a0c89d1575692352036edd30a6e6f61d5}\label{classPoco_1_1Net_1_1HTTPRequest_a0c89d1575692352036edd30a6e6f61d5}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!setCookies@{setCookies}}
+\index{setCookies@{setCookies}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{setCookies()}{setCookies()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::set\+Cookies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1NameValueCollection}{Name\+Value\+Collection}} \&}]{cookies }\end{DoxyParamCaption})}
+
+Returns the value of the Host header field.
+
+Throws a Not\+Found\+Exception if the request does not have a Host header field. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_abae8f1b407474121612e76d2e1ca7bc5}\label{classPoco_1_1Net_1_1HTTPRequest_abae8f1b407474121612e76d2e1ca7bc5}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!setCredentials@{setCredentials}}
+\index{setCredentials@{setCredentials}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{setCredentials()}{setCredentials()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::set\+Credentials (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{header,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{scheme,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{auth\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the authentication scheme and additional authentication information contained in the given header of request.
+
+Throws a Not\+Authenticated\+Exception if no authentication information is contained in the request. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a569833ea82252a6aab5aa73075ca1561}\label{classPoco_1_1Net_1_1HTTPRequest_a569833ea82252a6aab5aa73075ca1561}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!setCredentials@{setCredentials}}
+\index{setCredentials@{setCredentials}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{setCredentials()}{setCredentials()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::set\+Credentials (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{scheme,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{auth\+Info }\end{DoxyParamCaption})}
+
+Returns the authentication scheme and additional authentication information contained in this request.
+
+Throws a Not\+Authenticated\+Exception if no authentication information is contained in the request. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_ace0b1d3b833657eba28afca65eb59df7}\label{classPoco_1_1Net_1_1HTTPRequest_ace0b1d3b833657eba28afca65eb59df7}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!setHost@{setHost}}
+\index{setHost@{setHost}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{setHost()}{setHost()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::set\+Host (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host }\end{DoxyParamCaption})}
+
+
+
+Returns the request \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_ac88c94693757b637dd9f35bc23210e34}\label{classPoco_1_1Net_1_1HTTPRequest_ac88c94693757b637dd9f35bc23210e34}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!setHost@{setHost}}
+\index{setHost@{setHost}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{setHost()}{setHost()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::set\+Host (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host,  }\item[{Poco\+::\+U\+Int16}]{port }\end{DoxyParamCaption})}
+
+
+
+Sets the value of the Host header field. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_ab658584eaa95c951e6c53aa17159de47}\label{classPoco_1_1Net_1_1HTTPRequest_ab658584eaa95c951e6c53aa17159de47}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!setMethod@{setMethod}}
+\index{setMethod@{setMethod}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{setMethod()}{setMethod()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::set\+Method (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{method }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest}{H\+T\+T\+P\+Request}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a40fd2f3b727385ea9f865c68ea293764}\label{classPoco_1_1Net_1_1HTTPRequest_a40fd2f3b727385ea9f865c68ea293764}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!setProxyCredentials@{setProxyCredentials}}
+\index{setProxyCredentials@{setProxyCredentials}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{setProxyCredentials()}{setProxyCredentials()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::set\+Proxy\+Credentials (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{scheme,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{auth\+Info }\end{DoxyParamCaption})}
+
+Returns the proxy authentication scheme and additional proxy authentication information contained in this request.
+
+Throws a Not\+Authenticated\+Exception if no proxy authentication information is contained in the request. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a192f0b4308c386323e110bec93d84cff}\label{classPoco_1_1Net_1_1HTTPRequest_a192f0b4308c386323e110bec93d84cff}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!setURI@{setURI}}
+\index{setURI@{setURI}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{setURI()}{setURI()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::set\+U\+RI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})}
+
+
+
+Returns the method. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_aab6a9b472c821c0d2d6206d4d7c1674a}\label{classPoco_1_1Net_1_1HTTPRequest_aab6a9b472c821c0d2d6206d4d7c1674a}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!write@{write}}
+\index{write@{write}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the proxy authentication scheme and information for this request. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader_a17d364fb83f557d453465a33143ef220}{Poco\+::\+Net\+::\+Message\+Header}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a96ebe6c5ca647d3b74e275278346953c}\label{classPoco_1_1Net_1_1HTTPRequest_a96ebe6c5ca647d3b74e275278346953c}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!AUTHORIZATION@{AUTHORIZATION}}
+\index{AUTHORIZATION@{AUTHORIZATION}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{AUTHORIZATION}{AUTHORIZATION}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+A\+U\+T\+H\+O\+R\+I\+Z\+A\+T\+I\+ON\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 143 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_ae8f5343ab2cff6b3c3c149b7329b6c9c}\label{classPoco_1_1Net_1_1HTTPRequest_ae8f5343ab2cff6b3c3c149b7329b6c9c}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!COOKIE@{COOKIE}}
+\index{COOKIE@{COOKIE}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{COOKIE}{COOKIE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+C\+O\+O\+K\+IE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 142 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a4363dbbf7e0a965114322bf1cbdf00ed}\label{classPoco_1_1Net_1_1HTTPRequest_a4363dbbf7e0a965114322bf1cbdf00ed}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HOST@{HOST}}
+\index{HOST@{HOST}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HOST}{HOST}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+O\+ST\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 141 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a29404f6c20b1f8cacfc6c0dff731320f}\label{classPoco_1_1Net_1_1HTTPRequest_a29404f6c20b1f8cacfc6c0dff731320f}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTP\_CONNECT@{HTTP\_CONNECT}}
+\index{HTTP\_CONNECT@{HTTP\_CONNECT}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTP\_CONNECT}{HTTP\_CONNECT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+E\+CT\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 138 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_ae38d76e06745c41323c70259638d9e66}\label{classPoco_1_1Net_1_1HTTPRequest_ae38d76e06745c41323c70259638d9e66}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTP\_DELETE@{HTTP\_DELETE}}
+\index{HTTP\_DELETE@{HTTP\_DELETE}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTP\_DELETE}{HTTP\_DELETE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+\_\+\+D\+E\+L\+E\+TE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 136 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_ae09a20d50e13c1cf83266bed53a639b6}\label{classPoco_1_1Net_1_1HTTPRequest_ae09a20d50e13c1cf83266bed53a639b6}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTP\_GET@{HTTP\_GET}}
+\index{HTTP\_GET@{HTTP\_GET}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTP\_GET}{HTTP\_GET}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+\_\+\+G\+ET\hspace{0.3cm}{\ttfamily [static]}}
+
+Reads the H\+T\+TP request from the given input stream. 
+
+Definition at line 131 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_afee08b8919f40a2ba17802089bb0c314}\label{classPoco_1_1Net_1_1HTTPRequest_afee08b8919f40a2ba17802089bb0c314}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTP\_HEAD@{HTTP\_HEAD}}
+\index{HTTP\_HEAD@{HTTP\_HEAD}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTP\_HEAD}{HTTP\_HEAD}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+\_\+\+H\+E\+AD\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 132 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a22567097680de71e334daf17e036b164}\label{classPoco_1_1Net_1_1HTTPRequest_a22567097680de71e334daf17e036b164}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTP\_OPTIONS@{HTTP\_OPTIONS}}
+\index{HTTP\_OPTIONS@{HTTP\_OPTIONS}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTP\_OPTIONS}{HTTP\_OPTIONS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+\_\+\+O\+P\+T\+I\+O\+NS\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 135 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a4221ed22ba5d11ce451d720e8623edfd}\label{classPoco_1_1Net_1_1HTTPRequest_a4221ed22ba5d11ce451d720e8623edfd}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTP\_PATCH@{HTTP\_PATCH}}
+\index{HTTP\_PATCH@{HTTP\_PATCH}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTP\_PATCH}{HTTP\_PATCH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+\_\+\+P\+A\+T\+CH\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 139 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_af5fd4c92cb8d0281a1bfa740b30a3efc}\label{classPoco_1_1Net_1_1HTTPRequest_af5fd4c92cb8d0281a1bfa740b30a3efc}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTP\_POST@{HTTP\_POST}}
+\index{HTTP\_POST@{HTTP\_POST}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTP\_POST}{HTTP\_POST}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+\_\+\+P\+O\+ST\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 134 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a4ebba4e782e50f079802672792b8a216}\label{classPoco_1_1Net_1_1HTTPRequest_a4ebba4e782e50f079802672792b8a216}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTP\_PUT@{HTTP\_PUT}}
+\index{HTTP\_PUT@{HTTP\_PUT}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTP\_PUT}{HTTP\_PUT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+\_\+\+P\+UT\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 133 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_a1b08f1d605a02e0be43c1941505a2eb5}\label{classPoco_1_1Net_1_1HTTPRequest_a1b08f1d605a02e0be43c1941505a2eb5}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!HTTP\_TRACE@{HTTP\_TRACE}}
+\index{HTTP\_TRACE@{HTTP\_TRACE}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{HTTP\_TRACE}{HTTP\_TRACE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+H\+T\+T\+P\+\_\+\+T\+R\+A\+CE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 137 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_ac6fb8115e586392309d2adc68b4e0fbb}\label{classPoco_1_1Net_1_1HTTPRequest_ac6fb8115e586392309d2adc68b4e0fbb}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!PROXY\_AUTHORIZATION@{PROXY\_AUTHORIZATION}}
+\index{PROXY\_AUTHORIZATION@{PROXY\_AUTHORIZATION}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{PROXY\_AUTHORIZATION}{PROXY\_AUTHORIZATION}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+P\+R\+O\+X\+Y\+\_\+\+A\+U\+T\+H\+O\+R\+I\+Z\+A\+T\+I\+ON\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 144 of file H\+T\+T\+P\+Request.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequest_afc0a825044af1024ad501e9fa1d93ee3}\label{classPoco_1_1Net_1_1HTTPRequest_afc0a825044af1024ad501e9fa1d93ee3}} 
+\index{Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}!UPGRADE@{UPGRADE}}
+\index{UPGRADE@{UPGRADE}!Poco::Net::HTTPRequest@{Poco::Net::HTTPRequest}}
+\doxysubsubsection{\texorpdfstring{UPGRADE}{UPGRADE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+::\+U\+P\+G\+R\+A\+DE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 145 of file H\+T\+T\+P\+Request.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{HTTPRequest_8h}{H\+T\+T\+P\+Request.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,136 @@
+\hypertarget{classIoT_1_1UDP_1_1UDPEndpoint}{}\doxysection{IoT\+::U\+DP\+::U\+D\+P\+Endpoint Class Reference}
+\label{classIoT_1_1UDP_1_1UDPEndpoint}\index{IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}}
+
+
+The \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint}{U\+D\+P\+Endpoint}} is used to receive and send \mbox{\hyperlink{namespaceIoT_1_1UDP}{U\+DP}} packets.  
+
+
+
+
+{\ttfamily \#include $<$U\+D\+P\+Endpoint.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::U\+DP\+::U\+D\+P\+Endpoint\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::U\+DP\+::U\+D\+P\+Endpoint\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint}{U\+D\+P\+Endpoint}} $>$ \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint_ad05629d3d5a7805650396d13d3fd39ae}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint_a41dcaf728c12a09220981f3802e52fe6}{U\+D\+P\+Endpoint}} ()
+\begin{DoxyCompactList}\small\item\em Fired when an \mbox{\hyperlink{namespaceIoT_1_1UDP}{U\+DP}} packet has been received. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint_a6248467739b24fbc53c6424118056325}{$\sim$\+U\+D\+P\+Endpoint}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint}{U\+D\+P\+Endpoint}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{structIoT_1_1UDP_1_1EndpointAddress}{Endpoint\+Address}} \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint_a476c8cd35c20d0e540c7289412931bea}{address}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint}{U\+D\+P\+Endpoint}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint_ac194680686e4fb25fa1abeb593877ce6}{send\+Packet}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ char $>$ \&payload, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1UDP_1_1EndpointAddress}{Endpoint\+Address}} \&destination=\mbox{\hyperlink{structIoT_1_1UDP_1_1EndpointAddress}{Endpoint\+Address}}())=0
+\begin{DoxyCompactList}\small\item\em Returns the socket address of this endpoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1UDP_1_1Packet}{Packet}} $>$ \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint_ab6f4e655c080f040198d343c087cddb1}{packet\+Received}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint}{U\+D\+P\+Endpoint}} is used to receive and send \mbox{\hyperlink{namespaceIoT_1_1UDP}{U\+DP}} packets. 
+
+Definition at line 66 of file U\+D\+P\+Endpoint.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1UDPEndpoint_ad05629d3d5a7805650396d13d3fd39ae}\label{classIoT_1_1UDP_1_1UDPEndpoint_ad05629d3d5a7805650396d13d3fd39ae}} 
+\index{IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint}{U\+D\+P\+Endpoint}}$>$ \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint_ad05629d3d5a7805650396d13d3fd39ae}{Io\+T\+::\+U\+D\+P\+::\+U\+D\+P\+Endpoint\+::\+Ptr}}}
+
+
+
+Definition at line 70 of file U\+D\+P\+Endpoint.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1UDPEndpoint_a41dcaf728c12a09220981f3802e52fe6}\label{classIoT_1_1UDP_1_1UDPEndpoint_a41dcaf728c12a09220981f3802e52fe6}} 
+\index{IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}!UDPEndpoint@{UDPEndpoint}}
+\index{UDPEndpoint@{UDPEndpoint}!IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{UDPEndpoint()}{UDPEndpoint()}}
+{\footnotesize\ttfamily Io\+T\+::\+U\+D\+P\+::\+U\+D\+P\+Endpoint\+::\+U\+D\+P\+Endpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fired when an \mbox{\hyperlink{namespaceIoT_1_1UDP}{U\+DP}} packet has been received. 
+
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1UDPEndpoint_a6248467739b24fbc53c6424118056325}\label{classIoT_1_1UDP_1_1UDPEndpoint_a6248467739b24fbc53c6424118056325}} 
+\index{IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}!````~UDPEndpoint@{$\sim$UDPEndpoint}}
+\index{````~UDPEndpoint@{$\sim$UDPEndpoint}!IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{$\sim$UDPEndpoint()}{~UDPEndpoint()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+U\+D\+P\+::\+U\+D\+P\+Endpoint\+::$\sim$\+U\+D\+P\+Endpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint}{U\+D\+P\+Endpoint}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1UDPEndpoint_a476c8cd35c20d0e540c7289412931bea}\label{classIoT_1_1UDP_1_1UDPEndpoint_a476c8cd35c20d0e540c7289412931bea}} 
+\index{IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}!address@{address}}
+\index{address@{address}!IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structIoT_1_1UDP_1_1EndpointAddress}{Endpoint\+Address}} Io\+T\+::\+U\+D\+P\+::\+U\+D\+P\+Endpoint\+::address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint}{U\+D\+P\+Endpoint}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpointImpl_abbcce5a99381b90966a81537bdf1cb89}{Io\+T\+::\+U\+D\+P\+::\+U\+D\+P\+Endpoint\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1UDPEndpoint_ac194680686e4fb25fa1abeb593877ce6}\label{classIoT_1_1UDP_1_1UDPEndpoint_ac194680686e4fb25fa1abeb593877ce6}} 
+\index{IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}!sendPacket@{sendPacket}}
+\index{sendPacket@{sendPacket}!IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{sendPacket()}{sendPacket()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+U\+D\+P\+::\+U\+D\+P\+Endpoint\+::send\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ char $>$ \&}]{payload,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1UDP_1_1EndpointAddress}{Endpoint\+Address}} \&}]{destination = {\ttfamily \mbox{\hyperlink{structIoT_1_1UDP_1_1EndpointAddress}{Endpoint\+Address}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the socket address of this endpoint. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpointImpl_a37e7b0a586a9789cf99e9968c49bb062}{Io\+T\+::\+U\+D\+P\+::\+U\+D\+P\+Endpoint\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1UDPEndpoint_ab6f4e655c080f040198d343c087cddb1}\label{classIoT_1_1UDP_1_1UDPEndpoint_ab6f4e655c080f040198d343c087cddb1}} 
+\index{IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}!packetReceived@{packetReceived}}
+\index{packetReceived@{packetReceived}!IoT::UDP::UDPEndpoint@{IoT::UDP::UDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{packetReceived}{packetReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1UDP_1_1Packet}{Packet}}$>$ Io\+T\+::\+U\+D\+P\+::\+U\+D\+P\+Endpoint\+::packet\+Received}
+
+
+
+Definition at line 72 of file U\+D\+P\+Endpoint.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+U\+D\+P/\mbox{\hyperlink{UDPEndpoint_8h}{U\+D\+P\+Endpoint.\+h}}\end{DoxyCompactItemize}

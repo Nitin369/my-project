@@ -1,0 +1,144 @@
+\hypertarget{classPoco_1_1Stopwatch}{}\doxysection{Poco\+::Stopwatch Class Reference}
+\label{classPoco_1_1Stopwatch}\index{Poco::Stopwatch@{Poco::Stopwatch}}
+
+
+{\ttfamily \#include $<$Stopwatch.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Stopwatch_a57ad977a152803a14d0bac8e9bce3643}{Stopwatch}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Stopwatch_a078f75af2631f6535f93c4e6c4d2065d}{$\sim$\+Stopwatch}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Stopwatch_a9b2103b5b29f6c67050db7673cede40b}{start}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Stopwatch_a7e58de104aea2e849ee194026552e543}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Starts (or restarts) the stopwatch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Stopwatch_af49b28eca8156c72da1293102349ff5e}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Stops or pauses the stopwatch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Stopwatch_a26f1301bc36801b0803c407136f63300}{restart}} ()
+\begin{DoxyCompactList}\small\item\em Resets the stopwatch. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+::\+Clock\+Diff}} \mbox{\hyperlink{classPoco_1_1Stopwatch_ad1154bd60401bd33f7160a0ad7a3b3f0}{elapsed}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Resets and starts the stopwatch. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Stopwatch_a81aa50ec8a37437cca33b010fd0d0c69}{elapsed\+Seconds}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+::\+Clock\+Val}} \mbox{\hyperlink{classPoco_1_1Stopwatch_a3fc38652863904f3c1b0e19584ea97db}{resolution}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple facility to measure time intervals with microsecond resolution. 
+
+Definition at line 30 of file Stopwatch.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Stopwatch_a57ad977a152803a14d0bac8e9bce3643}\label{classPoco_1_1Stopwatch_a57ad977a152803a14d0bac8e9bce3643}} 
+\index{Poco::Stopwatch@{Poco::Stopwatch}!Stopwatch@{Stopwatch}}
+\index{Stopwatch@{Stopwatch}!Poco::Stopwatch@{Poco::Stopwatch}}
+\doxysubsubsection{\texorpdfstring{Stopwatch()}{Stopwatch()}}
+{\footnotesize\ttfamily Poco\+::\+Stopwatch\+::\+Stopwatch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Stopwatch_a078f75af2631f6535f93c4e6c4d2065d}\label{classPoco_1_1Stopwatch_a078f75af2631f6535f93c4e6c4d2065d}} 
+\index{Poco::Stopwatch@{Poco::Stopwatch}!````~Stopwatch@{$\sim$Stopwatch}}
+\index{````~Stopwatch@{$\sim$Stopwatch}!Poco::Stopwatch@{Poco::Stopwatch}}
+\doxysubsubsection{\texorpdfstring{$\sim$Stopwatch()}{~Stopwatch()}}
+{\footnotesize\ttfamily Poco\+::\+Stopwatch\+::$\sim$\+Stopwatch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Stopwatch_ad1154bd60401bd33f7160a0ad7a3b3f0}\label{classPoco_1_1Stopwatch_ad1154bd60401bd33f7160a0ad7a3b3f0}} 
+\index{Poco::Stopwatch@{Poco::Stopwatch}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!Poco::Stopwatch@{Poco::Stopwatch}}
+\doxysubsubsection{\texorpdfstring{elapsed()}{elapsed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+::\+Clock\+Diff}} Poco\+::\+Stopwatch\+::elapsed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Resets and starts the stopwatch. 
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Stopwatch_a81aa50ec8a37437cca33b010fd0d0c69}\label{classPoco_1_1Stopwatch_a81aa50ec8a37437cca33b010fd0d0c69}} 
+\index{Poco::Stopwatch@{Poco::Stopwatch}!elapsedSeconds@{elapsedSeconds}}
+\index{elapsedSeconds@{elapsedSeconds}!Poco::Stopwatch@{Poco::Stopwatch}}
+\doxysubsubsection{\texorpdfstring{elapsedSeconds()}{elapsedSeconds()}}
+{\footnotesize\ttfamily int Poco\+::\+Stopwatch\+::elapsed\+Seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the elapsed time in microseconds since the stopwatch started. 
+
+Definition at line 95 of file Stopwatch.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Stopwatch_af49b28eca8156c72da1293102349ff5e}\label{classPoco_1_1Stopwatch_af49b28eca8156c72da1293102349ff5e}} 
+\index{Poco::Stopwatch@{Poco::Stopwatch}!reset@{reset}}
+\index{reset@{reset}!Poco::Stopwatch@{Poco::Stopwatch}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Poco\+::\+Stopwatch\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops or pauses the stopwatch. 
+
+\mbox{\Hypertarget{classPoco_1_1Stopwatch_a3fc38652863904f3c1b0e19584ea97db}\label{classPoco_1_1Stopwatch_a3fc38652863904f3c1b0e19584ea97db}} 
+\index{Poco::Stopwatch@{Poco::Stopwatch}!resolution@{resolution}}
+\index{resolution@{resolution}!Poco::Stopwatch@{Poco::Stopwatch}}
+\doxysubsubsection{\texorpdfstring{resolution()}{resolution()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+::\+Clock\+Val}} Poco\+::\+Stopwatch\+::resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns the number of seconds elapsed since the stopwatch started. 
+
+Definition at line 101 of file Stopwatch.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Stopwatch_a26f1301bc36801b0803c407136f63300}\label{classPoco_1_1Stopwatch_a26f1301bc36801b0803c407136f63300}} 
+\index{Poco::Stopwatch@{Poco::Stopwatch}!restart@{restart}}
+\index{restart@{restart}!Poco::Stopwatch@{Poco::Stopwatch}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void Poco\+::\+Stopwatch\+::restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the stopwatch. 
+
+\mbox{\Hypertarget{classPoco_1_1Stopwatch_a9b2103b5b29f6c67050db7673cede40b}\label{classPoco_1_1Stopwatch_a9b2103b5b29f6c67050db7673cede40b}} 
+\index{Poco::Stopwatch@{Poco::Stopwatch}!start@{start}}
+\index{start@{start}!Poco::Stopwatch@{Poco::Stopwatch}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Poco\+::\+Stopwatch\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 74 of file Stopwatch.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Stopwatch_a7e58de104aea2e849ee194026552e543}\label{classPoco_1_1Stopwatch_a7e58de104aea2e849ee194026552e543}} 
+\index{Poco::Stopwatch@{Poco::Stopwatch}!stop@{stop}}
+\index{stop@{stop}!Poco::Stopwatch@{Poco::Stopwatch}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Poco\+::\+Stopwatch\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Starts (or restarts) the stopwatch. 
+
+
+
+Definition at line 84 of file Stopwatch.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Stopwatch_8h}{Stopwatch.\+h}}\end{DoxyCompactItemize}

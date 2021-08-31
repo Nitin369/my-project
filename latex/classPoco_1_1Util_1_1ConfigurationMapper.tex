@@ -1,0 +1,127 @@
+\hypertarget{classPoco_1_1Util_1_1ConfigurationMapper}{}\doxysection{Poco\+::Util\+::Configuration\+Mapper Class Reference}
+\label{classPoco_1_1Util_1_1ConfigurationMapper}\index{Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}}
+
+
+{\ttfamily \#include $<$Configuration\+Mapper.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Util\+::Configuration\+Mapper\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Util\+::Configuration\+Mapper\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1ConfigurationMapper_aecea807d5652fb659f0c35b78e6fec93}{Configuration\+Mapper}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&from\+Prefix, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&to\+Prefix, \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$p\+Config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Util_1_1ConfigurationMapper_a2e68318f3860e49f0e0420e88281e660}{get\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, std\+::string \&value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1ConfigurationMapper_a2e2be6124cb925a3df5c3861ca3d3ef5}{set\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1ConfigurationMapper_af21257f2cbb2142e8d5d6083bee2e6b9}{enumerate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_ab77c4dc36e335ec05107a155786cb91f}{Keys}} \&range) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1ConfigurationMapper_a127dc398b56ecf61dd3261b25ef043d4}{remove\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key)
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1Util_1_1ConfigurationMapper_a9efc1eab54b7e967d49bceec8082d2e1}{translate\+Key}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1ConfigurationMapper_a0b4ca67c80bd7a7a85484e705afdc7da}{$\sim$\+Configuration\+Mapper}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This configuration maps a property hierarchy into another hierarchy.
+
+For example, given a configuration with the following properties\+: config.\+value1 config.\+value2 config.\+sub.\+value1 config.\+sub.\+value2 and a \mbox{\hyperlink{classPoco_1_1Util_1_1ConfigurationView}{Configuration\+View}} with from\+Prefix == \char`\"{}config\char`\"{} and to\+Prefix == \char`\"{}root.\+conf\char`\"{}, then the above properties will be available via the mapper as root.\+conf.\+value1 root.\+conf.\+value2 root.\+conf.\+sub.\+value1 root.\+conf.\+sub.\+value2
+
+From\+Prefix can be empty, in which case, and given to\+Prefix == \char`\"{}root\char`\"{}, the properties will be available as root.\+config.\+value1 root.\+config.\+value2 root.\+config.\+sub.\+value1 root.\+config.\+sub.\+value2
+
+This is equivalent to the functionality of the \mbox{\hyperlink{classPoco_1_1Util_1_1ConfigurationView}{Configuration\+View}} class.
+
+Similarly, to\+Prefix can also be empty. Given from\+Prefix == \char`\"{}config\char`\"{} and to\+Prefix == \char`\"{}\char`\"{}, the properties will be available as value1 value2 sub.\+value1 sub.\+value2
+
+If both from\+Prefix and to\+Prefix are empty, no mapping is performed.
+
+A \mbox{\hyperlink{classPoco_1_1Util_1_1ConfigurationMapper}{Configuration\+Mapper}} is most useful in combination with a \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. 
+
+Definition at line 31 of file Configuration\+Mapper.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1ConfigurationMapper_aecea807d5652fb659f0c35b78e6fec93}\label{classPoco_1_1Util_1_1ConfigurationMapper_aecea807d5652fb659f0c35b78e6fec93}} 
+\index{Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}!ConfigurationMapper@{ConfigurationMapper}}
+\index{ConfigurationMapper@{ConfigurationMapper}!Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}}
+\doxysubsubsection{\texorpdfstring{ConfigurationMapper()}{ConfigurationMapper()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Configuration\+Mapper\+::\+Configuration\+Mapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{from\+Prefix,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{to\+Prefix,  }\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$}]{p\+Config }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1ConfigurationMapper_a0b4ca67c80bd7a7a85484e705afdc7da}\label{classPoco_1_1Util_1_1ConfigurationMapper_a0b4ca67c80bd7a7a85484e705afdc7da}} 
+\index{Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}!````~ConfigurationMapper@{$\sim$ConfigurationMapper}}
+\index{````~ConfigurationMapper@{$\sim$ConfigurationMapper}!Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}}
+\doxysubsubsection{\texorpdfstring{$\sim$ConfigurationMapper()}{~ConfigurationMapper()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Configuration\+Mapper\+::$\sim$\+Configuration\+Mapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1ConfigurationMapper_af21257f2cbb2142e8d5d6083bee2e6b9}\label{classPoco_1_1Util_1_1ConfigurationMapper_af21257f2cbb2142e8d5d6083bee2e6b9}} 
+\index{Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}!enumerate@{enumerate}}
+\index{enumerate@{enumerate}!Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}}
+\doxysubsubsection{\texorpdfstring{enumerate()}{enumerate()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Configuration\+Mapper\+::enumerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_ab77c4dc36e335ec05107a155786cb91f}{Keys}} \&}]{range }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Sets the property with the given key to the given value. An already existing value for the key is overwritten.
+
+Must be overridden by subclasses. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a64885a63b3990485d518b37697aa1057}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1ConfigurationMapper_a2e68318f3860e49f0e0420e88281e660}\label{classPoco_1_1Util_1_1ConfigurationMapper_a2e68318f3860e49f0e0420e88281e660}} 
+\index{Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}!getRaw@{getRaw}}
+\index{getRaw@{getRaw}!Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}}
+\doxysubsubsection{\texorpdfstring{getRaw()}{getRaw()}}
+{\footnotesize\ttfamily bool Poco\+::\+Util\+::\+Configuration\+Mapper\+::get\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Util_1_1ConfigurationMapper}{Configuration\+Mapper}}. The \mbox{\hyperlink{classPoco_1_1Util_1_1ConfigurationMapper}{Configuration\+Mapper}} does not take ownership of the passed configuration. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a07e5732151cd6056cfa15809f3a5ac55}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1ConfigurationMapper_a127dc398b56ecf61dd3261b25ef043d4}\label{classPoco_1_1Util_1_1ConfigurationMapper_a127dc398b56ecf61dd3261b25ef043d4}} 
+\index{Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}!removeRaw@{removeRaw}}
+\index{removeRaw@{removeRaw}!Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}}
+\doxysubsubsection{\texorpdfstring{removeRaw()}{removeRaw()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Configuration\+Mapper\+::remove\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Returns in range the names of all subkeys under the given key. If an empty key is passed, all root level keys are returned. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a9b26c960b912239e815c0f0a2607a132}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1ConfigurationMapper_a2e2be6124cb925a3df5c3861ca3d3ef5}\label{classPoco_1_1Util_1_1ConfigurationMapper_a2e2be6124cb925a3df5c3861ca3d3ef5}} 
+\index{Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}!setRaw@{setRaw}}
+\index{setRaw@{setRaw}!Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}}
+\doxysubsubsection{\texorpdfstring{setRaw()}{setRaw()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Configuration\+Mapper\+::set\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+If the property with the given key exists, stores the property\textquotesingle{}s value in value and returns true. Otherwise, returns false.
+
+Must be overridden by subclasses. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a620fb5eedbf878c312d7259c9c251509}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1ConfigurationMapper_a9efc1eab54b7e967d49bceec8082d2e1}\label{classPoco_1_1Util_1_1ConfigurationMapper_a9efc1eab54b7e967d49bceec8082d2e1}} 
+\index{Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}!translateKey@{translateKey}}
+\index{translateKey@{translateKey}!Poco::Util::ConfigurationMapper@{Poco::Util::ConfigurationMapper}}
+\doxysubsubsection{\texorpdfstring{translateKey()}{translateKey()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Util\+::\+Configuration\+Mapper\+::translate\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Util/\mbox{\hyperlink{ConfigurationMapper_8h}{Configuration\+Mapper.\+h}}\end{DoxyCompactItemize}

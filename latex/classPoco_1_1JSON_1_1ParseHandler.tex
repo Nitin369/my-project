@@ -1,0 +1,289 @@
+\hypertarget{classPoco_1_1JSON_1_1ParseHandler}{}\doxysection{Poco\+::J\+S\+ON\+::Parse\+Handler Class Reference}
+\label{classPoco_1_1JSON_1_1ParseHandler}\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+
+
+{\ttfamily \#include $<$Parse\+Handler.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::J\+S\+ON\+::Parse\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::J\+S\+ON\+::Parse\+Handler\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_a4f28c2893a7c10900db8aeb3205f1da6}{Parse\+Handler}} (bool preserve\+Object\+Order=false)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_a84cf6a873e25badf809c13b404cb3e4d}{$\sim$\+Parse\+Handler}} ()
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_afa3e5610fb56bbb7ba102180a415691f}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler}{Parse\+Handler}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_a2dfbd12951cfb3a8d83c86b952d7d8e0}{start\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Resets the handler state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_ab1338dc9688974d347caa9195a7de231}{end\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Handles a \textquotesingle{}\{\textquotesingle{}; a new object is started. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_a037565c2973e6081a99cd67bf0bc376d}{start\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Handles a \textquotesingle{}\}\textquotesingle{}; the object is closed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_a022856d272407bcd0f46e02cfd8ff9f1}{end\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Handles a \textquotesingle{}\mbox{[}\textquotesingle{}; a new array is started. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_added3406e74747eba5b1550fea1260cc}{key}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&k)
+\begin{DoxyCompactList}\small\item\em Handles a \textquotesingle{}\mbox{]}\textquotesingle{}; the array is closed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_a9b5b71fe55220abbc6ff2899cfe4e782}{as\+Var}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em A key is read. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_a056659a62693a9b39a3871d206bd2462}{value}} (int v)
+\begin{DoxyCompactList}\small\item\em Returns the result of the parser (an object or an array). \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_a985e50866ed36f910535764476b6bfc0}{value}} (unsigned v)
+\begin{DoxyCompactList}\small\item\em An integer value is read. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_aade5debe7dc1a9fb46569cc84d71f835}{value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&s)
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_ace5d805643fd9fb7a649e85bcd25d002}{value}} (double d)
+\begin{DoxyCompactList}\small\item\em A string value is read. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_a56442675aab911331ca7c5051644fd90}{value}} (bool b)
+\begin{DoxyCompactList}\small\item\em A double value is read. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler_a6a6ed6f69a41f27595c7f400b7949ab0}{null}} ()
+\begin{DoxyCompactList}\small\item\em A boolean value is read. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler}{Parse\+Handler}} is the default handler for the \mbox{\hyperlink{namespacePoco_1_1JSON}{J\+S\+ON}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Parser}{Parser}}. \begin{DoxyVerb}This handler will construct an Object or Array based
+on the handlers called by the Parser. 
+\end{DoxyVerb}
+ 
+
+Definition at line 31 of file Parse\+Handler.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_a4f28c2893a7c10900db8aeb3205f1da6}\label{classPoco_1_1JSON_1_1ParseHandler_a4f28c2893a7c10900db8aeb3205f1da6}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!ParseHandler@{ParseHandler}}
+\index{ParseHandler@{ParseHandler}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{ParseHandler()}{ParseHandler()}}
+{\footnotesize\ttfamily Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::\+Parse\+Handler (\begin{DoxyParamCaption}\item[{bool}]{preserve\+Object\+Order = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_a84cf6a873e25badf809c13b404cb3e4d}\label{classPoco_1_1JSON_1_1ParseHandler_a84cf6a873e25badf809c13b404cb3e4d}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!````~ParseHandler@{$\sim$ParseHandler}}
+\index{````~ParseHandler@{$\sim$ParseHandler}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParseHandler()}{~ParseHandler()}}
+{\footnotesize\ttfamily virtual Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::$\sim$\+Parse\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates the \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler}{Parse\+Handler}}.
+
+If preserve\+Object\+Order is true, the order of properties inside objects is preserved. Otherwise, items will be sorted by keys. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_a9b5b71fe55220abbc6ff2899cfe4e782}\label{classPoco_1_1JSON_1_1ParseHandler_a9b5b71fe55220abbc6ff2899cfe4e782}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!asVar@{asVar}}
+\index{asVar@{asVar}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{asVar()}{asVar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::as\+Var (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A key is read. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_ac471a91212dca42bffebdf37516b147c}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+
+
+Definition at line 111 of file Parse\+Handler.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_a022856d272407bcd0f46e02cfd8ff9f1}\label{classPoco_1_1JSON_1_1ParseHandler_a022856d272407bcd0f46e02cfd8ff9f1}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!endArray@{endArray}}
+\index{endArray@{endArray}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{endArray()}{endArray()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::end\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles a \textquotesingle{}\mbox{[}\textquotesingle{}; a new array is started. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_acb3ce9e46159b7c2593cb60c4a23a39a}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_ab1338dc9688974d347caa9195a7de231}\label{classPoco_1_1JSON_1_1ParseHandler_ab1338dc9688974d347caa9195a7de231}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!endObject@{endObject}}
+\index{endObject@{endObject}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{endObject()}{endObject()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::end\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles a \textquotesingle{}\{\textquotesingle{}; a new object is started. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_a972998d6e453651655cff5b17f21952a}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_added3406e74747eba5b1550fea1260cc}\label{classPoco_1_1JSON_1_1ParseHandler_added3406e74747eba5b1550fea1260cc}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!key@{key}}
+\index{key@{key}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{key()}{key()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles a \textquotesingle{}\mbox{]}\textquotesingle{}; the array is closed. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_a204217e674bd85fb74abc3d30c531daf}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_a6a6ed6f69a41f27595c7f400b7949ab0}\label{classPoco_1_1JSON_1_1ParseHandler_a6a6ed6f69a41f27595c7f400b7949ab0}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!null@{null}}
+\index{null@{null}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{null()}{null()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A boolean value is read. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_af4f26f54e1ea8a948d501d3a8fef0570}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+
+
+Definition at line 161 of file Parse\+Handler.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_afa3e5610fb56bbb7ba102180a415691f}\label{classPoco_1_1JSON_1_1ParseHandler_afa3e5610fb56bbb7ba102180a415691f}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!reset@{reset}}
+\index{reset@{reset}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1JSON_1_1ParseHandler}{Parse\+Handler}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_a7f30f7d2ff71ac1c490c8884e898fae4}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_a037565c2973e6081a99cd67bf0bc376d}\label{classPoco_1_1JSON_1_1ParseHandler_a037565c2973e6081a99cd67bf0bc376d}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!startArray@{startArray}}
+\index{startArray@{startArray}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{startArray()}{startArray()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::start\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles a \textquotesingle{}\}\textquotesingle{}; the object is closed. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_a10cf59d5d74162ff8919d51d8c7e82c0}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_a2dfbd12951cfb3a8d83c86b952d7d8e0}\label{classPoco_1_1JSON_1_1ParseHandler_a2dfbd12951cfb3a8d83c86b952d7d8e0}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!startObject@{startObject}}
+\index{startObject@{startObject}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{startObject()}{startObject()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::start\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Resets the handler state. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_a002d8e77098660838f4a60b27abe947a}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_a56442675aab911331ca7c5051644fd90}\label{classPoco_1_1JSON_1_1ParseHandler_a56442675aab911331ca7c5051644fd90}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!value@{value}}
+\index{value@{value}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::value (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A double value is read. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_a3499c3609aea5336b0f644ab6a74028e}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+
+
+Definition at line 155 of file Parse\+Handler.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_aade5debe7dc1a9fb46569cc84d71f835}\label{classPoco_1_1JSON_1_1ParseHandler_aade5debe7dc1a9fb46569cc84d71f835}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!value@{value}}
+\index{value@{value}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+An unsigned value is read. This will only be triggered if the value cannot fit into a signed int. 
+
+Implements \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_a42682ebabf13c7e6b680a0a6f5174657}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+
+
+Definition at line 143 of file Parse\+Handler.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_ace5d805643fd9fb7a649e85bcd25d002}\label{classPoco_1_1JSON_1_1ParseHandler_ace5d805643fd9fb7a649e85bcd25d002}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!value@{value}}
+\index{value@{value}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::value (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A string value is read. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_a1b465b1368014d1527e44f19811754e5}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+
+
+Definition at line 149 of file Parse\+Handler.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_a056659a62693a9b39a3871d206bd2462}\label{classPoco_1_1JSON_1_1ParseHandler_a056659a62693a9b39a3871d206bd2462}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!value@{value}}
+\index{value@{value}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::value (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the result of the parser (an object or an array). 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_a5101a717129f3c5b1d8b8b018914f065}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+
+
+Definition at line 117 of file Parse\+Handler.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1ParseHandler_a985e50866ed36f910535764476b6bfc0}\label{classPoco_1_1JSON_1_1ParseHandler_a985e50866ed36f910535764476b6bfc0}} 
+\index{Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}!value@{value}}
+\index{value@{value}!Poco::JSON::ParseHandler@{Poco::JSON::ParseHandler}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Parse\+Handler\+::value (\begin{DoxyParamCaption}\item[{unsigned}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+An integer value is read. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1JSON_1_1Handler_a7d92e774fc25fb007bd80f3606dfb946}{Poco\+::\+J\+S\+O\+N\+::\+Handler}}.
+
+
+
+Definition at line 123 of file Parse\+Handler.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+J\+S\+O\+N/\mbox{\hyperlink{ParseHandler_8h}{Parse\+Handler.\+h}}\end{DoxyCompactItemize}

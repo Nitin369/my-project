@@ -1,0 +1,82 @@
+\hypertarget{classPoco_1_1FileStreamFactory}{}\doxysection{Poco\+::File\+Stream\+Factory Class Reference}
+\label{classPoco_1_1FileStreamFactory}\index{Poco::FileStreamFactory@{Poco::FileStreamFactory}}
+
+
+{\ttfamily \#include $<$File\+Stream\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::File\+Stream\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::File\+Stream\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FileStreamFactory_a656228552e302e5c2fbd29779698aed8}{File\+Stream\+Factory}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1FileStreamFactory_a55ac7eb287839309cbfb750c110fb9cf}{$\sim$\+File\+Stream\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1FileStreamFactory}{File\+Stream\+Factory}}. \end{DoxyCompactList}\item 
+std\+::istream $\ast$ \mbox{\hyperlink{classPoco_1_1FileStreamFactory_a2dc15644d698e3b8cdb10ec486fc49cf}{open}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} \&uri)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1FileStreamFactory}{File\+Stream\+Factory}}. \end{DoxyCompactList}\item 
+std\+::istream $\ast$ \mbox{\hyperlink{classPoco_1_1FileStreamFactory_adb1d16970797bf7a95b995a97e2439e7}{open}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An implementation of the \mbox{\hyperlink{classPoco_1_1URIStreamFactory}{U\+R\+I\+Stream\+Factory}} interface that handles file U\+R\+Is. 
+
+Definition at line 33 of file File\+Stream\+Factory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1FileStreamFactory_a656228552e302e5c2fbd29779698aed8}\label{classPoco_1_1FileStreamFactory_a656228552e302e5c2fbd29779698aed8}} 
+\index{Poco::FileStreamFactory@{Poco::FileStreamFactory}!FileStreamFactory@{FileStreamFactory}}
+\index{FileStreamFactory@{FileStreamFactory}!Poco::FileStreamFactory@{Poco::FileStreamFactory}}
+\doxysubsubsection{\texorpdfstring{FileStreamFactory()}{FileStreamFactory()}}
+{\footnotesize\ttfamily Poco\+::\+File\+Stream\+Factory\+::\+File\+Stream\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamFactory_a55ac7eb287839309cbfb750c110fb9cf}\label{classPoco_1_1FileStreamFactory_a55ac7eb287839309cbfb750c110fb9cf}} 
+\index{Poco::FileStreamFactory@{Poco::FileStreamFactory}!````~FileStreamFactory@{$\sim$FileStreamFactory}}
+\index{````~FileStreamFactory@{$\sim$FileStreamFactory}!Poco::FileStreamFactory@{Poco::FileStreamFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$FileStreamFactory()}{~FileStreamFactory()}}
+{\footnotesize\ttfamily Poco\+::\+File\+Stream\+Factory\+::$\sim$\+File\+Stream\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1FileStreamFactory}{File\+Stream\+Factory}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1FileStreamFactory_adb1d16970797bf7a95b995a97e2439e7}\label{classPoco_1_1FileStreamFactory_adb1d16970797bf7a95b995a97e2439e7}} 
+\index{Poco::FileStreamFactory@{Poco::FileStreamFactory}!open@{open}}
+\index{open@{open}!Poco::FileStreamFactory@{Poco::FileStreamFactory}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::istream$\ast$ Poco\+::\+File\+Stream\+Factory\+::open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&}]{path }\end{DoxyParamCaption})}
+
+Creates and opens a file stream in binary mode for the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. The \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} must be either a file \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} or a relative \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} reference containing a path to a local file.
+
+Throws an File\+Not\+Found exception if the file cannot be opened. \mbox{\Hypertarget{classPoco_1_1FileStreamFactory_a2dc15644d698e3b8cdb10ec486fc49cf}\label{classPoco_1_1FileStreamFactory_a2dc15644d698e3b8cdb10ec486fc49cf}} 
+\index{Poco::FileStreamFactory@{Poco::FileStreamFactory}!open@{open}}
+\index{open@{open}!Poco::FileStreamFactory@{Poco::FileStreamFactory}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::istream$\ast$ Poco\+::\+File\+Stream\+Factory\+::open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1FileStreamFactory}{File\+Stream\+Factory}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1URIStreamFactory_a0768071cef5d26530977d4fd23a8abc8}{Poco\+::\+U\+R\+I\+Stream\+Factory}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{FileStreamFactory_8h}{File\+Stream\+Factory.\+h}}\end{DoxyCompactItemize}

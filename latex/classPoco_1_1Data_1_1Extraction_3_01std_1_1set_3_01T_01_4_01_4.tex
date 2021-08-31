@@ -1,0 +1,260 @@
+\hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4}{}\doxysection{Poco\+::Data\+::Extraction$<$ std\+::set$<$ T $>$ $>$ Class Template Reference}
+\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4}\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+
+
+Set \mbox{\hyperlink{namespacePoco_1_1Data}{Data}} Type specialization for extraction of values from a query result set.  
+
+
+
+
+{\ttfamily \#include $<$Extraction.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::Extraction$<$ std\+::set$<$ T $>$ $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Data\+::Extraction$<$ std\+::set$<$ T $>$ $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::set$<$ T $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a68365c8cee05d8e12725106dd951b66c}{Val\+Type}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a68365c8cee05d8e12725106dd951b66c}{Val\+Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a50dcd438a324fa1b6bc0ad07c2a229ff}{Val\+Ptr}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Extraction}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a68365c8cee05d8e12725106dd951b66c}{Val\+Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a095875c5ceb7dfeab59ff21dbf44ac1a}{Type}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a095875c5ceb7dfeab59ff21dbf44ac1a}{Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a2f84cfcf300b999e3a8ee8b914ceef50}{Ptr}}
+\item 
+typedef Val\+Type\+::iterator \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a299c680f597ca662aaff621b1c95540e}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_ac0301328e1ed8ba3458fcacfdb3f60cb}{Extraction}} (std\+::set$<$ T $>$ \&result, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}} \&pos=\mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}}(0))
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a100e77c2a41ca43b0493c149a308cf2f}{Extraction}} (std\+::set$<$ T $>$ \&result, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&def, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}} \&pos=\mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}}(0))
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a1a98c965fff18ca3d483e9196b25a412}{$\sim$\+Extraction}} ()
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a4ab71a78a84f2e18a151fc50d0994a84}{num\+Of\+Columns\+Handled}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the extraction position. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_aab154d7fd65fd3ddd8ac298f3b5831ad}{num\+Of\+Rows\+Handled}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_aea1e4afe3236a6357738503073761d68}{num\+Of\+Rows\+Allowed}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_abc81378af7abec469b701d2a0ade5af2}{extract}} (std\+::size\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em Returns the upper limit on number of rows that the extraction will handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractPreparation_ab50d15b514d176d16fec386e4f369087}{Abstract\+Preparation\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_aa5d2c0fb48958e89b5fc63ee4e281c2a}{create\+Preparation}} (\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractPreparator_a93a2a279420ab875c6d2d989f912dc24}{Abstract\+Preparator\+::\+Ptr}} \&p\+Prep, std\+::size\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em Returns true. Implementations should override it for different behavior. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Poco\+::\+Data\+::\+Extraction$<$ std\+::set$<$ T $>$ $>$}
+
+Set \mbox{\hyperlink{namespacePoco_1_1Data}{Data}} Type specialization for extraction of values from a query result set. 
+
+Definition at line 566 of file Extraction.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a299c680f597ca662aaff621b1c95540e}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a299c680f597ca662aaff621b1c95540e}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef Val\+Type\+::iterator \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a299c680f597ca662aaff621b1c95540e}{Iterator}}}
+
+
+
+Definition at line 574 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a2f84cfcf300b999e3a8ee8b914ceef50}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a2f84cfcf300b999e3a8ee8b914ceef50}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a095875c5ceb7dfeab59ff21dbf44ac1a}{Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_a8bf4fe7842a0b54f205347f458beff12}{Ptr}}}
+
+
+
+Definition at line 573 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a095875c5ceb7dfeab59ff21dbf44ac1a}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a095875c5ceb7dfeab59ff21dbf44ac1a}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!Type@{Type}}
+\index{Type@{Type}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Extraction}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a68365c8cee05d8e12725106dd951b66c}{Val\+Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a095875c5ceb7dfeab59ff21dbf44ac1a}{Type}}}
+
+
+
+Definition at line 572 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a50dcd438a324fa1b6bc0ad07c2a229ff}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a50dcd438a324fa1b6bc0ad07c2a229ff}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!ValPtr@{ValPtr}}
+\index{ValPtr@{ValPtr}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{ValPtr}{ValPtr}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a68365c8cee05d8e12725106dd951b66c}{Val\+Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a50dcd438a324fa1b6bc0ad07c2a229ff}{Val\+Ptr}}}
+
+
+
+Definition at line 571 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a68365c8cee05d8e12725106dd951b66c}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a68365c8cee05d8e12725106dd951b66c}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!ValType@{ValType}}
+\index{ValType@{ValType}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{ValType}{ValType}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef std\+::set$<$T$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a68365c8cee05d8e12725106dd951b66c}{Val\+Type}}}
+
+
+
+Definition at line 570 of file Extraction.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_ac0301328e1ed8ba3458fcacfdb3f60cb}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_ac0301328e1ed8ba3458fcacfdb3f60cb}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!Extraction@{Extraction}}
+\index{Extraction@{Extraction}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Extraction()}{Extraction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Extraction}} (\begin{DoxyParamCaption}\item[{std\+::set$<$ T $>$ \&}]{result,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}} \&}]{pos = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}}(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 576 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a100e77c2a41ca43b0493c149a308cf2f}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a100e77c2a41ca43b0493c149a308cf2f}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!Extraction@{Extraction}}
+\index{Extraction@{Extraction}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Extraction()}{Extraction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Extraction}} (\begin{DoxyParamCaption}\item[{std\+::set$<$ T $>$ \&}]{result,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{def,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}} \&}]{pos = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}}(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 584 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a1a98c965fff18ca3d483e9196b25a412}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a1a98c965fff18ca3d483e9196b25a412}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!````~Extraction@{$\sim$Extraction}}
+\index{````~Extraction@{$\sim$Extraction}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Extraction()}{~Extraction()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Extraction}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 592 of file Extraction.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_aa5d2c0fb48958e89b5fc63ee4e281c2a}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_aa5d2c0fb48958e89b5fc63ee4e281c2a}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!createPreparation@{createPreparation}}
+\index{createPreparation@{createPreparation}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{createPreparation()}{createPreparation()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractPreparation_ab50d15b514d176d16fec386e4f369087}{Abstract\+Preparation\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::create\+Preparation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractPreparator_a93a2a279420ab875c6d2d989f912dc24}{Abstract\+Preparator\+::\+Ptr}} \&}]{p\+Prep,  }\item[{std\+::size\+\_\+t}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns true. Implementations should override it for different behavior. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_ab56f98f75226fe295f8febf29e8266e8}{Poco\+::\+Data\+::\+Abstract\+Extraction}}.
+
+
+
+Definition at line 619 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_abc81378af7abec469b701d2a0ade5af2}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_abc81378af7abec469b701d2a0ade5af2}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!extract@{extract}}
+\index{extract@{extract}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{extract()}{extract()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::extract (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the upper limit on number of rows that the extraction will handle. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_afe527ed013427474ba30f207393aef71}{Poco\+::\+Data\+::\+Abstract\+Extraction}}.
+
+
+
+Definition at line 611 of file Extraction.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a4ab71a78a84f2e18a151fc50d0994a84}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_a4ab71a78a84f2e18a151fc50d0994a84}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!numOfColumnsHandled@{numOfColumnsHandled}}
+\index{numOfColumnsHandled@{numOfColumnsHandled}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{numOfColumnsHandled()}{numOfColumnsHandled()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::num\+Of\+Columns\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the extraction position. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_a5910ad9b4bcaacefc7946ced15074828}{Poco\+::\+Data\+::\+Abstract\+Extraction}}.
+
+
+
+Definition at line 596 of file Extraction.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_aea1e4afe3236a6357738503073761d68}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_aea1e4afe3236a6357738503073761d68}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!numOfRowsAllowed@{numOfRowsAllowed}}
+\index{numOfRowsAllowed@{numOfRowsAllowed}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{numOfRowsAllowed()}{numOfRowsAllowed()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::num\+Of\+Rows\+Allowed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of rows that the extraction handles.
+
+The trivial case will be one single row but for collection data types (ie vector) it can be larger. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_acd83c1e080923fe73f38e6b9bd8e61f3}{Poco\+::\+Data\+::\+Abstract\+Extraction}}.
+
+
+
+Definition at line 606 of file Extraction.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_aab154d7fd65fd3ddd8ac298f3b5831ad}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1set_3_01T_01_4_01_4_aab154d7fd65fd3ddd8ac298f3b5831ad}} 
+\index{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}!numOfRowsHandled@{numOfRowsHandled}}
+\index{numOfRowsHandled@{numOfRowsHandled}!Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::set$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{numOfRowsHandled()}{numOfRowsHandled()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::set$<$ T $>$ $>$\+::num\+Of\+Rows\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of columns that the extraction handles.
+
+The trivial case will be one single column but when complex types are used this value can be larger than one. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_a4c8ac9a79279d30ba5cef2739a342a39}{Poco\+::\+Data\+::\+Abstract\+Extraction}}.
+
+
+
+Definition at line 601 of file Extraction.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{Extraction_8h}{Extraction.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1Proxy}{}\doxysection{Poco\+::Remoting\+NG\+::Proxy Class Reference}
+\label{classPoco_1_1RemotingNG_1_1Proxy}\index{Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}}
+
+
+{\ttfamily \#include $<$Proxy.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::Proxy\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::Proxy\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy_aaf824da0e2978af004eb20e58f4c4447}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy_a0fbb40858aa33d579d4949c2d2060788}{Proxy}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy_a06b6c4e4dfff34a78337525e1d4ed567}{$\sim$\+Proxy}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy_a187a8405f8de96da1b943100bb72fa5c}{remoting\+\_\+\+\_\+connect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy_acb4299268d233332d9892379d3341f8b}{remoting\+\_\+\+\_\+disconnect}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy_a905ee9800896ca22ff8c64dbd9f2f243}{remoting\+\_\+\+\_\+is\+Connected}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Disconnects the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}} from the endpoint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy_a814fc75442ae3bbe26749bb482543024}{remoting\+\_\+\+\_\+transport}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if the proxy is connected to an endpoint, false otherwise. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy_aa8196fbe996af17c610ad7f8fb032b60}{remoting\+\_\+\+\_\+set\+Event\+U\+RI}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{Poco\+::\+U\+RI}} \&event\+U\+RI)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{Poco\+::\+U\+RI}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy_a46ae55f3f6af89996ec140fe5d7323ed}{remoting\+\_\+\+\_\+get\+Event\+U\+RI}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FastMutex}{Poco\+::\+Fast\+Mutex}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy_a7c21f6145585bb91e25c6ca2ea42ae08}{remoting\+\_\+\+\_\+mutex}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}} maintains a connection to a remote endpoint (using a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}) and sends method invocations to a remote object, using the connection.
+
+The \mbox{\hyperlink{namespacePoco_1_1RemotingNG}{Remoting\+NG}} code generator will generate subclasses of \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}} creating appropriate serialization and deserialization code for all service object methods. 
+
+Definition at line 32 of file Proxy.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Proxy_aaf824da0e2978af004eb20e58f4c4447}\label{classPoco_1_1RemotingNG_1_1Proxy_aaf824da0e2978af004eb20e58f4c4447}} 
+\index{Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy_aaf824da0e2978af004eb20e58f4c4447}{Poco\+::\+Remoting\+N\+G\+::\+Proxy\+::\+Ptr}}}
+
+
+
+Definition at line 42 of file Proxy.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Proxy_a0fbb40858aa33d579d4949c2d2060788}\label{classPoco_1_1RemotingNG_1_1Proxy_a0fbb40858aa33d579d4949c2d2060788}} 
+\index{Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}!Proxy@{Proxy}}
+\index{Proxy@{Proxy}!Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}}
+\doxysubsubsection{\texorpdfstring{Proxy()}{Proxy()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+Proxy\+::\+Proxy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Proxy_a06b6c4e4dfff34a78337525e1d4ed567}\label{classPoco_1_1RemotingNG_1_1Proxy_a06b6c4e4dfff34a78337525e1d4ed567}} 
+\index{Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}!````~Proxy@{$\sim$Proxy}}
+\index{````~Proxy@{$\sim$Proxy}!Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}}
+\doxysubsubsection{\texorpdfstring{$\sim$Proxy()}{~Proxy()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Remoting\+N\+G\+::\+Proxy\+::$\sim$\+Proxy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Proxy_a187a8405f8de96da1b943100bb72fa5c}\label{classPoco_1_1RemotingNG_1_1Proxy_a187a8405f8de96da1b943100bb72fa5c}} 
+\index{Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}!remoting\_\_connect@{remoting\_\_connect}}
+\index{remoting\_\_connect@{remoting\_\_connect}!Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_connect()}{remoting\_\_connect()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Proxy\+::remoting\+\_\+\+\_\+connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}}. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Proxy_acb4299268d233332d9892379d3341f8b}\label{classPoco_1_1RemotingNG_1_1Proxy_acb4299268d233332d9892379d3341f8b}} 
+\index{Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}!remoting\_\_disconnect@{remoting\_\_disconnect}}
+\index{remoting\_\_disconnect@{remoting\_\_disconnect}!Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_disconnect()}{remoting\_\_disconnect()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Proxy\+::remoting\+\_\+\+\_\+disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Connects the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}} to the endpoint specified by the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}, using the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} for the given protocol. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Proxy_a46ae55f3f6af89996ec140fe5d7323ed}\label{classPoco_1_1RemotingNG_1_1Proxy_a46ae55f3f6af89996ec140fe5d7323ed}} 
+\index{Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}!remoting\_\_getEventURI@{remoting\_\_getEventURI}}
+\index{remoting\_\_getEventURI@{remoting\_\_getEventURI}!Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_getEventURI()}{remoting\_\_getEventURI()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{Poco\+::\+U\+RI}} \& Poco\+::\+Remoting\+N\+G\+::\+Proxy\+::remoting\+\_\+\+\_\+get\+Event\+U\+RI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} to be used for sending event subscription and unsubscription requests. 
+
+Definition at line 105 of file Proxy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Proxy_a905ee9800896ca22ff8c64dbd9f2f243}\label{classPoco_1_1RemotingNG_1_1Proxy_a905ee9800896ca22ff8c64dbd9f2f243}} 
+\index{Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}!remoting\_\_isConnected@{remoting\_\_isConnected}}
+\index{remoting\_\_isConnected@{remoting\_\_isConnected}!Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_isConnected()}{remoting\_\_isConnected()}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Proxy\+::remoting\+\_\+\+\_\+is\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disconnects the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}} from the endpoint. 
+
+
+
+Definition at line 87 of file Proxy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Proxy_a7c21f6145585bb91e25c6ca2ea42ae08}\label{classPoco_1_1RemotingNG_1_1Proxy_a7c21f6145585bb91e25c6ca2ea42ae08}} 
+\index{Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}!remoting\_\_mutex@{remoting\_\_mutex}}
+\index{remoting\_\_mutex@{remoting\_\_mutex}!Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_mutex()}{remoting\_\_mutex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1FastMutex}{Poco\+::\+Fast\+Mutex}} \& Poco\+::\+Remoting\+N\+G\+::\+Proxy\+::remoting\+\_\+\+\_\+mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} to be used for sending event subscription and unsubscription requests. 
+
+Definition at line 99 of file Proxy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Proxy_aa8196fbe996af17c610ad7f8fb032b60}\label{classPoco_1_1RemotingNG_1_1Proxy_aa8196fbe996af17c610ad7f8fb032b60}} 
+\index{Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}!remoting\_\_setEventURI@{remoting\_\_setEventURI}}
+\index{remoting\_\_setEventURI@{remoting\_\_setEventURI}!Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_setEventURI()}{remoting\_\_setEventURI()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Proxy\+::remoting\+\_\+\+\_\+set\+Event\+U\+RI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{Poco\+::\+U\+RI}} \&}]{event\+U\+RI }\end{DoxyParamCaption})}
+
+Returns the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} used for the connection to the endpoint.
+
+Throws an exception if the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}} is not connected to an endpoint. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Proxy_a814fc75442ae3bbe26749bb482543024}\label{classPoco_1_1RemotingNG_1_1Proxy_a814fc75442ae3bbe26749bb482543024}} 
+\index{Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}!remoting\_\_transport@{remoting\_\_transport}}
+\index{remoting\_\_transport@{remoting\_\_transport}!Poco::RemotingNG::Proxy@{Poco::RemotingNG::Proxy}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_transport()}{remoting\_\_transport()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} \& Poco\+::\+Remoting\+N\+G\+::\+Proxy\+::remoting\+\_\+\+\_\+transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if the proxy is connected to an endpoint, false otherwise. 
+
+
+
+Definition at line 93 of file Proxy.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{Proxy_8h}{Proxy.\+h}}\end{DoxyCompactItemize}

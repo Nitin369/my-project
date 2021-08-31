@@ -1,0 +1,96 @@
+\hypertarget{structMQTTAsync__responseOptions}{}\doxysection{M\+Q\+T\+T\+Async\+\_\+response\+Options Struct Reference}
+\label{structMQTTAsync__responseOptions}\index{MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}}
+
+
+{\ttfamily \#include $<$M\+Q\+T\+T\+Async.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{structMQTTAsync__responseOptions_a4b82d5aca6f990de991c87c34f8a7d02}{struct\+\_\+id}} \mbox{[}4\mbox{]}
+\item 
+int \mbox{\hyperlink{structMQTTAsync__responseOptions_aabf57368b8266f17e7951579897f7f66}{struct\+\_\+version}}
+\item 
+\mbox{\hyperlink{MQTTAsync_8h_a7b0c18a0e29e2ce73f3ea109bc32617b}{M\+Q\+T\+T\+Async\+\_\+on\+Success}} $\ast$ \mbox{\hyperlink{structMQTTAsync__responseOptions_a4a6dffebf9a6f4ffb9fe2a5d949d8090}{on\+Success}}
+\item 
+\mbox{\hyperlink{MQTTAsync_8h_a6060c25c2641e878803aef76fefb31ee}{M\+Q\+T\+T\+Async\+\_\+on\+Failure}} $\ast$ \mbox{\hyperlink{structMQTTAsync__responseOptions_a180b2c728942d606a3fc4a4a79bb81f4}{on\+Failure}}
+\item 
+void $\ast$ \mbox{\hyperlink{structMQTTAsync__responseOptions_a1d39a3f47712791b00ec7faab14c839a}{context}}
+\item 
+\mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} \mbox{\hyperlink{structMQTTAsync__responseOptions_aaf6926989620579f2590cdaf1ff16bfe}{token}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 405 of file M\+Q\+T\+T\+Async.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structMQTTAsync__responseOptions_a1d39a3f47712791b00ec7faab14c839a}\label{structMQTTAsync__responseOptions_a1d39a3f47712791b00ec7faab14c839a}} 
+\index{MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}!context@{context}}
+\index{context@{context}!MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily void$\ast$ M\+Q\+T\+T\+Async\+\_\+response\+Options\+::context}
+
+A pointer to any application-\/specific context. The the {\itshape context} pointer is passed to success or failure callback functions to provide access to the context information in the callback. 
+
+Definition at line 428 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__responseOptions_a180b2c728942d606a3fc4a4a79bb81f4}\label{structMQTTAsync__responseOptions_a180b2c728942d606a3fc4a4a79bb81f4}} 
+\index{MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}!onFailure@{onFailure}}
+\index{onFailure@{onFailure}!MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}}
+\doxysubsubsection{\texorpdfstring{onFailure}{onFailure}}
+{\footnotesize\ttfamily \mbox{\hyperlink{MQTTAsync_8h_a6060c25c2641e878803aef76fefb31ee}{M\+Q\+T\+T\+Async\+\_\+on\+Failure}}$\ast$ M\+Q\+T\+T\+Async\+\_\+response\+Options\+::on\+Failure}
+
+A pointer to a callback function to be called if the A\+PI call fails. Can be set to N\+U\+LL, in which case no indication of unsuccessful completion will be received. 
+
+Definition at line 422 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__responseOptions_a4a6dffebf9a6f4ffb9fe2a5d949d8090}\label{structMQTTAsync__responseOptions_a4a6dffebf9a6f4ffb9fe2a5d949d8090}} 
+\index{MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}!onSuccess@{onSuccess}}
+\index{onSuccess@{onSuccess}!MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}}
+\doxysubsubsection{\texorpdfstring{onSuccess}{onSuccess}}
+{\footnotesize\ttfamily \mbox{\hyperlink{MQTTAsync_8h_a7b0c18a0e29e2ce73f3ea109bc32617b}{M\+Q\+T\+T\+Async\+\_\+on\+Success}}$\ast$ M\+Q\+T\+T\+Async\+\_\+response\+Options\+::on\+Success}
+
+A pointer to a callback function to be called if the A\+PI call successfully completes. Can be set to N\+U\+LL, in which case no indication of successful completion will be received. 
+
+Definition at line 416 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__responseOptions_a4b82d5aca6f990de991c87c34f8a7d02}\label{structMQTTAsync__responseOptions_a4b82d5aca6f990de991c87c34f8a7d02}} 
+\index{MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}!struct\_id@{struct\_id}}
+\index{struct\_id@{struct\_id}!MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}}
+\doxysubsubsection{\texorpdfstring{struct\_id}{struct\_id}}
+{\footnotesize\ttfamily char M\+Q\+T\+T\+Async\+\_\+response\+Options\+::struct\+\_\+id\mbox{[}4\mbox{]}}
+
+The eyecatcher for this structure. Must be M\+Q\+TR 
+
+Definition at line 408 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__responseOptions_aabf57368b8266f17e7951579897f7f66}\label{structMQTTAsync__responseOptions_aabf57368b8266f17e7951579897f7f66}} 
+\index{MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}!struct\_version@{struct\_version}}
+\index{struct\_version@{struct\_version}!MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}}
+\doxysubsubsection{\texorpdfstring{struct\_version}{struct\_version}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Async\+\_\+response\+Options\+::struct\+\_\+version}
+
+The version number of this structure. Must be 0 
+
+Definition at line 410 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__responseOptions_aaf6926989620579f2590cdaf1ff16bfe}\label{structMQTTAsync__responseOptions_aaf6926989620579f2590cdaf1ff16bfe}} 
+\index{MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}!token@{token}}
+\index{token@{token}!MQTTAsync\_responseOptions@{MQTTAsync\_responseOptions}}
+\doxysubsubsection{\texorpdfstring{token}{token}}
+{\footnotesize\ttfamily \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} M\+Q\+T\+T\+Async\+\_\+response\+Options\+::token}
+
+
+
+Definition at line 429 of file M\+Q\+T\+T\+Async.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+M\+Q\+T\+T/\+Paho/\mbox{\hyperlink{MQTTAsync_8h}{M\+Q\+T\+T\+Async.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\hypertarget{structIoT_1_1XBee_1_1ZigBeeReceivePacket}{}\doxysection{IoT\+::X\+Bee\+::Zig\+Bee\+Receive\+Packet Struct Reference}
+\label{structIoT_1_1XBee_1_1ZigBeeReceivePacket}\index{IoT::XBee::ZigBeeReceivePacket@{IoT::XBee::ZigBeeReceivePacket}}
+
+
+{\ttfamily \#include $<$X\+Bee\+Node.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeReceivePacket_a2b98742377f6ff744fd37a456adb506f}{device\+Address}}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeReceivePacket_ac399b4251c10671b131487b2b1c4a301}{network\+Address}}
+\begin{DoxyCompactList}\small\item\em Hexadecimal text representation of 64-\/bit address of the destination device. \end{DoxyCompactList}\item 
+Poco\+::\+U\+Int8 \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeReceivePacket_ae258ddc015734756703f49ca64923be5}{options}}
+\begin{DoxyCompactList}\small\item\em Hexadecimal text representation of the 16-\/bit network address of the device. \end{DoxyCompactList}\item 
+std\+::vector$<$ Poco\+::\+U\+Int8 $>$ \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeReceivePacket_a6523e2b6ae55ac46cce5b1cddf00dd2f}{payload}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+When the module receives an RF packet, it is sent out the serial port using this message type.
+
+Frame Type\+: 0x90 
+
+Definition at line 291 of file X\+Bee\+Node.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1ZigBeeReceivePacket_a2b98742377f6ff744fd37a456adb506f}\label{structIoT_1_1XBee_1_1ZigBeeReceivePacket_a2b98742377f6ff744fd37a456adb506f}} 
+\index{IoT::XBee::ZigBeeReceivePacket@{IoT::XBee::ZigBeeReceivePacket}!deviceAddress@{deviceAddress}}
+\index{deviceAddress@{deviceAddress}!IoT::XBee::ZigBeeReceivePacket@{IoT::XBee::ZigBeeReceivePacket}}
+\doxysubsubsection{\texorpdfstring{deviceAddress}{deviceAddress}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+X\+Bee\+::\+Zig\+Bee\+Receive\+Packet\+::device\+Address}
+
+
+
+Definition at line 297 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1ZigBeeReceivePacket_ac399b4251c10671b131487b2b1c4a301}\label{structIoT_1_1XBee_1_1ZigBeeReceivePacket_ac399b4251c10671b131487b2b1c4a301}} 
+\index{IoT::XBee::ZigBeeReceivePacket@{IoT::XBee::ZigBeeReceivePacket}!networkAddress@{networkAddress}}
+\index{networkAddress@{networkAddress}!IoT::XBee::ZigBeeReceivePacket@{IoT::XBee::ZigBeeReceivePacket}}
+\doxysubsubsection{\texorpdfstring{networkAddress}{networkAddress}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+X\+Bee\+::\+Zig\+Bee\+Receive\+Packet\+::network\+Address}
+
+
+
+Hexadecimal text representation of 64-\/bit address of the destination device. 
+
+
+
+Definition at line 300 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1ZigBeeReceivePacket_ae258ddc015734756703f49ca64923be5}\label{structIoT_1_1XBee_1_1ZigBeeReceivePacket_ae258ddc015734756703f49ca64923be5}} 
+\index{IoT::XBee::ZigBeeReceivePacket@{IoT::XBee::ZigBeeReceivePacket}!options@{options}}
+\index{options@{options}!IoT::XBee::ZigBeeReceivePacket@{IoT::XBee::ZigBeeReceivePacket}}
+\doxysubsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int8 Io\+T\+::\+X\+Bee\+::\+Zig\+Bee\+Receive\+Packet\+::options}
+
+
+
+Hexadecimal text representation of the 16-\/bit network address of the device. 
+
+
+
+Definition at line 303 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1ZigBeeReceivePacket_a6523e2b6ae55ac46cce5b1cddf00dd2f}\label{structIoT_1_1XBee_1_1ZigBeeReceivePacket_a6523e2b6ae55ac46cce5b1cddf00dd2f}} 
+\index{IoT::XBee::ZigBeeReceivePacket@{IoT::XBee::ZigBeeReceivePacket}!payload@{payload}}
+\index{payload@{payload}!IoT::XBee::ZigBeeReceivePacket@{IoT::XBee::ZigBeeReceivePacket}}
+\doxysubsubsection{\texorpdfstring{payload}{payload}}
+{\footnotesize\ttfamily std\+::vector$<$Poco\+::\+U\+Int8$>$ Io\+T\+::\+X\+Bee\+::\+Zig\+Bee\+Receive\+Packet\+::payload}
+
+Receive options\+:
+\begin{DoxyItemize}
+\item 0x01 -\/ Packet Acknowledged
+\item 0x02 -\/ Packet was a broadcast packet
+\item 0x20 -\/ Packet encrypted with A\+PS encryption
+\item 0x40 -\/ Packet sent with extended timeout enabled
+\end{DoxyItemize}
+
+Note\+: Option values can be combined. For example, a 0x40 and a 0x01 will show as a 0x41. Other possible values 0x00, 0x21, 0x22, 0x41, 0x42, 0x60, 0x61, 0x62. 
+
+Definition at line 313 of file X\+Bee\+Node.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+X\+Bee/\mbox{\hyperlink{XBeeNode_8h}{X\+Bee\+Node.\+h}}\end{DoxyCompactItemize}

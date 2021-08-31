@@ -1,0 +1,98 @@
+\hypertarget{classPoco_1_1ArchiveStrategy}{}\doxysection{Poco\+::Archive\+Strategy Class Reference}
+\label{classPoco_1_1ArchiveStrategy}\index{Poco::ArchiveStrategy@{Poco::ArchiveStrategy}}
+
+
+{\ttfamily \#include $<$Archive\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Archive\+Strategy\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ArchiveStrategy_a9eaf864d46a3910e2f05ed859c9fa5f8}{Archive\+Strategy}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1ArchiveStrategy_a6175448c5a3667fdeb317e4075bd29bc}{$\sim$\+Archive\+Strategy}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1LogFile}{Log\+File}} $\ast$ \mbox{\hyperlink{classPoco_1_1ArchiveStrategy_a7675cd698d64df60ff94bbc861de0312}{archive}} (\mbox{\hyperlink{classPoco_1_1LogFile}{Log\+File}} $\ast$p\+File)=0
+\item 
+void \mbox{\hyperlink{classPoco_1_1ArchiveStrategy_ac1e76f5b7c2bab762b79c9a75a15a084}{compress}} (bool flag=true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1ArchiveStrategy_a0d259e6cb59bc8ddd749dd8414f382d0}{move\+File}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&old\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&new\+Name)
+\begin{DoxyCompactList}\small\item\em Enables or disables compression of archived files. ~\newline
+ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1ArchiveStrategy_a116baa9d71fdb82cd3d35c0220700355}{exists}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1ArchiveStrategy}{Archive\+Strategy}} is used by \mbox{\hyperlink{classPoco_1_1FileChannel}{File\+Channel}} to rename a rotated log file for archiving.
+
+Archived files can be automatically compressed, using the gzip file format. 
+
+Definition at line 36 of file Archive\+Strategy.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1ArchiveStrategy_a9eaf864d46a3910e2f05ed859c9fa5f8}\label{classPoco_1_1ArchiveStrategy_a9eaf864d46a3910e2f05ed859c9fa5f8}} 
+\index{Poco::ArchiveStrategy@{Poco::ArchiveStrategy}!ArchiveStrategy@{ArchiveStrategy}}
+\index{ArchiveStrategy@{ArchiveStrategy}!Poco::ArchiveStrategy@{Poco::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{ArchiveStrategy()}{ArchiveStrategy()}}
+{\footnotesize\ttfamily Poco\+::\+Archive\+Strategy\+::\+Archive\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1ArchiveStrategy_a6175448c5a3667fdeb317e4075bd29bc}\label{classPoco_1_1ArchiveStrategy_a6175448c5a3667fdeb317e4075bd29bc}} 
+\index{Poco::ArchiveStrategy@{Poco::ArchiveStrategy}!````~ArchiveStrategy@{$\sim$ArchiveStrategy}}
+\index{````~ArchiveStrategy@{$\sim$ArchiveStrategy}!Poco::ArchiveStrategy@{Poco::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{$\sim$ArchiveStrategy()}{~ArchiveStrategy()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Archive\+Strategy\+::$\sim$\+Archive\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1ArchiveStrategy_a7675cd698d64df60ff94bbc861de0312}\label{classPoco_1_1ArchiveStrategy_a7675cd698d64df60ff94bbc861de0312}} 
+\index{Poco::ArchiveStrategy@{Poco::ArchiveStrategy}!archive@{archive}}
+\index{archive@{archive}!Poco::ArchiveStrategy@{Poco::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{archive()}{archive()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1LogFile}{Log\+File}}$\ast$ Poco\+::\+Archive\+Strategy\+::archive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1LogFile}{Log\+File}} $\ast$}]{p\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1ArchiveByTimestampStrategy_a4c7041adef17134cd34ed2d5b78e9306}{Poco\+::\+Archive\+By\+Timestamp\+Strategy$<$ D\+T $>$}}, and \mbox{\hyperlink{classPoco_1_1ArchiveByNumberStrategy_aca67e953d5ee4a62602d43ac30347ed0}{Poco\+::\+Archive\+By\+Number\+Strategy}}.
+
+\mbox{\Hypertarget{classPoco_1_1ArchiveStrategy_ac1e76f5b7c2bab762b79c9a75a15a084}\label{classPoco_1_1ArchiveStrategy_ac1e76f5b7c2bab762b79c9a75a15a084}} 
+\index{Poco::ArchiveStrategy@{Poco::ArchiveStrategy}!compress@{compress}}
+\index{compress@{compress}!Poco::ArchiveStrategy@{Poco::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{compress()}{compress()}}
+{\footnotesize\ttfamily void Poco\+::\+Archive\+Strategy\+::compress (\begin{DoxyParamCaption}\item[{bool}]{flag = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Renames the given log file for archiving and creates and returns a new log file. The given \mbox{\hyperlink{classPoco_1_1LogFile}{Log\+File}} object is deleted. \mbox{\Hypertarget{classPoco_1_1ArchiveStrategy_a116baa9d71fdb82cd3d35c0220700355}\label{classPoco_1_1ArchiveStrategy_a116baa9d71fdb82cd3d35c0220700355}} 
+\index{Poco::ArchiveStrategy@{Poco::ArchiveStrategy}!exists@{exists}}
+\index{exists@{exists}!Poco::ArchiveStrategy@{Poco::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool Poco\+::\+Archive\+Strategy\+::exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1ArchiveStrategy_a0d259e6cb59bc8ddd749dd8414f382d0}\label{classPoco_1_1ArchiveStrategy_a0d259e6cb59bc8ddd749dd8414f382d0}} 
+\index{Poco::ArchiveStrategy@{Poco::ArchiveStrategy}!moveFile@{moveFile}}
+\index{moveFile@{moveFile}!Poco::ArchiveStrategy@{Poco::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{moveFile()}{moveFile()}}
+{\footnotesize\ttfamily void Poco\+::\+Archive\+Strategy\+::move\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{old\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{new\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Enables or disables compression of archived files. ~\newline
+ 
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ArchiveStrategy_8h}{Archive\+Strategy.\+h}}\end{DoxyCompactItemize}

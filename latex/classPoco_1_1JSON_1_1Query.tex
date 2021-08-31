@@ -1,0 +1,133 @@
+\hypertarget{classPoco_1_1JSON_1_1Query}{}\doxysection{Poco\+::J\+S\+ON\+::Query Class Reference}
+\label{classPoco_1_1JSON_1_1Query}\index{Poco::JSON::Query@{Poco::JSON::Query}}
+
+
+Class that can be used to search for a value in a \mbox{\hyperlink{namespacePoco_1_1JSON}{J\+S\+ON}} object or array.  
+
+
+
+
+{\ttfamily \#include $<$Query.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Query_aa62277776f8d0f02e1f456b2532a0e71}{Query}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \&source)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1JSON_1_1Query_a964651d8fe3a003eefa2309213daefda}{$\sim$\+Query}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Object_a03dbde848f00716887308883f547eef7}{Object\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Query_aa2d5be75e51b4efba2fa723219a0a70b}{find\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1JSON_1_1Query}{Query}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}} \& \mbox{\hyperlink{classPoco_1_1JSON_1_1Query_a880cc09a57c2ac9b2e9253fe42ea4ea8}{find\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, \mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}} \&obj) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aeceb3f751138fa25594300ea1daec83f}{Array\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Query_a91e73c6665fa39653bf285a798172033}{find\+Array}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}} \& \mbox{\hyperlink{classPoco_1_1JSON_1_1Query_a32f77ae0f35130ebfe6bd544830b46ef}{find\+Array}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}} \&obj) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Query_a502816370aea6751cd60ff929b4ab84d}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{classPoco_1_1JSON_1_1Query_a2669aa24f87a5bed911be4db19c68dae}{find\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&def) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1JSON_1_1Query_a409d57a70e0053682e8ded90c8f3e396}{find\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$path, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$def) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that can be used to search for a value in a \mbox{\hyperlink{namespacePoco_1_1JSON}{J\+S\+ON}} object or array. 
+
+Definition at line 32 of file Query.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Query_aa62277776f8d0f02e1f456b2532a0e71}\label{classPoco_1_1JSON_1_1Query_aa62277776f8d0f02e1f456b2532a0e71}} 
+\index{Poco::JSON::Query@{Poco::JSON::Query}!Query@{Query}}
+\index{Query@{Query}!Poco::JSON::Query@{Poco::JSON::Query}}
+\doxysubsubsection{\texorpdfstring{Query()}{Query()}}
+{\footnotesize\ttfamily Poco\+::\+J\+S\+O\+N\+::\+Query\+::\+Query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \&}]{source }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Query_a964651d8fe3a003eefa2309213daefda}\label{classPoco_1_1JSON_1_1Query_a964651d8fe3a003eefa2309213daefda}} 
+\index{Poco::JSON::Query@{Poco::JSON::Query}!````~Query@{$\sim$Query}}
+\index{````~Query@{$\sim$Query}!Poco::JSON::Query@{Poco::JSON::Query}}
+\doxysubsubsection{\texorpdfstring{$\sim$Query()}{~Query()}}
+{\footnotesize\ttfamily virtual Poco\+::\+J\+S\+O\+N\+::\+Query\+::$\sim$\+Query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a Query/
+
+Source must be \mbox{\hyperlink{namespacePoco_1_1JSON}{J\+S\+ON}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}}, \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}}, \mbox{\hyperlink{classPoco_1_1JSON_1_1Object_a03dbde848f00716887308883f547eef7}{Object\+::\+Ptr}}, \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aeceb3f751138fa25594300ea1daec83f}{Array\+::\+Ptr}} or empty Var. \mbox{\hyperlink{classPoco_1_1Any}{Any}} other type will trigger throwing of Invalid\+Argument\+Exception.
+
+Creating \mbox{\hyperlink{classPoco_1_1JSON_1_1Query}{Query}} holding Ptr will typically result in faster performance. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Query_a502816370aea6751cd60ff929b4ab84d}\label{classPoco_1_1JSON_1_1Query_a502816370aea6751cd60ff929b4ab84d}} 
+\index{Poco::JSON::Query@{Poco::JSON::Query}!find@{find}}
+\index{find@{find}!Poco::JSON::Query@{Poco::JSON::Query}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} Poco\+::\+J\+S\+O\+N\+::\+Query\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption}) const}
+
+Search for an array.
+
+If array is found, it is assigned to the \mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}} through the reference passed in. When the array can\textquotesingle{}t be found, the provided \mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}} is emptied and returned. \mbox{\Hypertarget{classPoco_1_1JSON_1_1Query_a91e73c6665fa39653bf285a798172033}\label{classPoco_1_1JSON_1_1Query_a91e73c6665fa39653bf285a798172033}} 
+\index{Poco::JSON::Query@{Poco::JSON::Query}!findArray@{findArray}}
+\index{findArray@{findArray}!Poco::JSON::Query@{Poco::JSON::Query}}
+\doxysubsubsection{\texorpdfstring{findArray()}{findArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aeceb3f751138fa25594300ea1daec83f}{Array\+::\+Ptr}} Poco\+::\+J\+S\+O\+N\+::\+Query\+::find\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption}) const}
+
+Search for an object.
+
+If object is found, it is assigned to the \mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}} through the reference passed in. When the object can\textquotesingle{}t be found, the provided \mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}} is emptied and returned. \mbox{\Hypertarget{classPoco_1_1JSON_1_1Query_a32f77ae0f35130ebfe6bd544830b46ef}\label{classPoco_1_1JSON_1_1Query_a32f77ae0f35130ebfe6bd544830b46ef}} 
+\index{Poco::JSON::Query@{Poco::JSON::Query}!findArray@{findArray}}
+\index{findArray@{findArray}!Poco::JSON::Query@{Poco::JSON::Query}}
+\doxysubsubsection{\texorpdfstring{findArray()}{findArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}}\& Poco\+::\+J\+S\+O\+N\+::\+Query\+::find\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{\mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}} \&}]{obj }\end{DoxyParamCaption}) const}
+
+Search for an array.
+
+When the array can\textquotesingle{}t be found, a zero Ptr is returned; otherwise, a shared pointer to internally held array is returned. If array (as opposed to a pointer to array) is held internally, a shared pointer to new (heap-\/allocated) \mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}} is returned; this may be expensive operation. \mbox{\Hypertarget{classPoco_1_1JSON_1_1Query_aa2d5be75e51b4efba2fa723219a0a70b}\label{classPoco_1_1JSON_1_1Query_aa2d5be75e51b4efba2fa723219a0a70b}} 
+\index{Poco::JSON::Query@{Poco::JSON::Query}!findObject@{findObject}}
+\index{findObject@{findObject}!Poco::JSON::Query@{Poco::JSON::Query}}
+\doxysubsubsection{\texorpdfstring{findObject()}{findObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1JSON_1_1Object_a03dbde848f00716887308883f547eef7}{Object\+::\+Ptr}} Poco\+::\+J\+S\+O\+N\+::\+Query\+::find\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption}) const}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1JSON_1_1Query}{Query}}. 
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Query_a880cc09a57c2ac9b2e9253fe42ea4ea8}\label{classPoco_1_1JSON_1_1Query_a880cc09a57c2ac9b2e9253fe42ea4ea8}} 
+\index{Poco::JSON::Query@{Poco::JSON::Query}!findObject@{findObject}}
+\index{findObject@{findObject}!Poco::JSON::Query@{Poco::JSON::Query}}
+\doxysubsubsection{\texorpdfstring{findObject()}{findObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}}\& Poco\+::\+J\+S\+O\+N\+::\+Query\+::find\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{\mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}} \&}]{obj }\end{DoxyParamCaption}) const}
+
+Search for an object.
+
+When the object can\textquotesingle{}t be found, a zero Ptr is returned; otherwise, a shared pointer to internally held object is returned. If object (as opposed to a pointer to object) is held internally, a shared pointer to new (heap-\/allocated) \mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}} is returned; this may be expensive operation. \mbox{\Hypertarget{classPoco_1_1JSON_1_1Query_a409d57a70e0053682e8ded90c8f3e396}\label{classPoco_1_1JSON_1_1Query_a409d57a70e0053682e8ded90c8f3e396}} 
+\index{Poco::JSON::Query@{Poco::JSON::Query}!findValue@{findValue}}
+\index{findValue@{findValue}!Poco::JSON::Query@{Poco::JSON::Query}}
+\doxysubsubsection{\texorpdfstring{findValue()}{findValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+J\+S\+O\+N\+::\+Query\+::find\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{path,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{def }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Searches for a value will convert it to the given type. When the value can\textquotesingle{}t be found or has an invalid type the default value will be returned. 
+
+Definition at line 111 of file Query.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Query_a2669aa24f87a5bed911be4db19c68dae}\label{classPoco_1_1JSON_1_1Query_a2669aa24f87a5bed911be4db19c68dae}} 
+\index{Poco::JSON::Query@{Poco::JSON::Query}!findValue@{findValue}}
+\index{findValue@{findValue}!Poco::JSON::Query@{Poco::JSON::Query}}
+\doxysubsubsection{\texorpdfstring{findValue()}{findValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Poco\+::\+J\+S\+O\+N\+::\+Query\+::find\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{def }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Searches a value.
+
+Example\+: \char`\"{}person.\+children\mbox{[}0\mbox{]}.\+name\char`\"{} will return the the name of the first child. When the value can\textquotesingle{}t be found an empty value is returned. Searches for a value will convert it to the given type. When the value can\textquotesingle{}t be found or has an invalid type the default value will be returned. 
+
+Definition at line 91 of file Query.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+J\+S\+O\+N/\mbox{\hyperlink{Query_8h}{Query.\+h}}\end{DoxyCompactItemize}

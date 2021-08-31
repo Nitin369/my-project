@@ -1,0 +1,112 @@
+\hypertarget{classPoco_1_1XML_1_1DOMObject}{}\doxysection{Poco\+::X\+ML\+::D\+O\+M\+Object Class Reference}
+\label{classPoco_1_1XML_1_1DOMObject}\index{Poco::XML::DOMObject@{Poco::XML::DOMObject}}
+
+
+{\ttfamily \#include $<$D\+O\+M\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::D\+O\+M\+Object\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1DOMObject_a6915ee7835d68c3dbed6bbd3607e9d23}{D\+O\+M\+Object}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1DOMObject_a492091c0d6748efda278df55b5b2311b}{duplicate}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1DOMObject_a59fcc225a5bcf0fcf7e49d06ecba249a}{release}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Increases the object\textquotesingle{}s reference count. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1XML_1_1DOMObject_a39f0ede64e7f87d462b79dd53d844c6c}{auto\+Release}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1XML_1_1DOMObject_a5e086a1459679cb680f0739f691f866e}{$\sim$\+D\+O\+M\+Object}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for all objects in the \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} Object Model. \begin{DoxyVerb}DOMObject defines the rules for memory management
+in this implementation of the DOM. Violation of these
+rules, which are outlined in the following, results
+in memory leaks or dangling pointers.
+
+Every object created by new or by a factory
+method (for example, Document::create*) must be released
+with a call to release() or autoRelease() when it
+is no longer needed.
+
+Every object created by cloning or importing another
+object must be released.
+For every call to duplicate() there must be a matching
+call to release().
+An object obtained via any other way must not be
+released, except ownership of it has been explicitely
+taken with a call to duplicate().
+
+While DOMObjects are safe for use in multithreaded programs,
+a DOMObject or one of its subclasses must not be accessed
+from multiple threads simultaneously. 
+\end{DoxyVerb}
+ 
+
+Definition at line 30 of file D\+O\+M\+Object.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMObject_a6915ee7835d68c3dbed6bbd3607e9d23}\label{classPoco_1_1XML_1_1DOMObject_a6915ee7835d68c3dbed6bbd3607e9d23}} 
+\index{Poco::XML::DOMObject@{Poco::XML::DOMObject}!DOMObject@{DOMObject}}
+\index{DOMObject@{DOMObject}!Poco::XML::DOMObject@{Poco::XML::DOMObject}}
+\doxysubsubsection{\texorpdfstring{DOMObject()}{DOMObject()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Object\+::\+D\+O\+M\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMObject_a5e086a1459679cb680f0739f691f866e}\label{classPoco_1_1XML_1_1DOMObject_a5e086a1459679cb680f0739f691f866e}} 
+\index{Poco::XML::DOMObject@{Poco::XML::DOMObject}!````~DOMObject@{$\sim$DOMObject}}
+\index{````~DOMObject@{$\sim$DOMObject}!Poco::XML::DOMObject@{Poco::XML::DOMObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$DOMObject()}{~DOMObject()}}
+{\footnotesize\ttfamily virtual Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Object\+::$\sim$\+D\+O\+M\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Adds the object to an appropriate \mbox{\hyperlink{classPoco_1_1AutoReleasePool}{Auto\+Release\+Pool}}, which is usually the \mbox{\hyperlink{classPoco_1_1AutoReleasePool}{Auto\+Release\+Pool}} managed by the \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} to which this object belongs. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMObject_a39f0ede64e7f87d462b79dd53d844c6c}\label{classPoco_1_1XML_1_1DOMObject_a39f0ede64e7f87d462b79dd53d844c6c}} 
+\index{Poco::XML::DOMObject@{Poco::XML::DOMObject}!autoRelease@{autoRelease}}
+\index{autoRelease@{autoRelease}!Poco::XML::DOMObject@{Poco::XML::DOMObject}}
+\doxysubsubsection{\texorpdfstring{autoRelease()}{autoRelease()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Object\+::auto\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Decreases the object\textquotesingle{}s reference count. If the reference count reaches zero, the object is deleted. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a53b52cb95ee5861cdd2bc2d76ed75018}{Poco\+::\+X\+M\+L\+::\+Event}}, \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode_ae938ba6d8db654a02faff6ffb607a943}{Poco\+::\+X\+M\+L\+::\+Abstract\+Node}}, \mbox{\hyperlink{classPoco_1_1XML_1_1ElementsByTagNameListNS_aa2cca5ba522d4aedc200011e2dceb324}{Poco\+::\+X\+M\+L\+::\+Elements\+By\+Tag\+Name\+List\+NS}}, \mbox{\hyperlink{classPoco_1_1XML_1_1DTDMap_acd5be9301be922e6c36bc1b89a44809e}{Poco\+::\+X\+M\+L\+::\+D\+T\+D\+Map}}, \mbox{\hyperlink{classPoco_1_1XML_1_1AttrMap_a458161c96371893355c58ae9bda717f9}{Poco\+::\+X\+M\+L\+::\+Attr\+Map}}, \mbox{\hyperlink{classPoco_1_1XML_1_1ElementsByTagNameList_ae5f350e8b1d519a1dc1f7039db7d961f}{Poco\+::\+X\+M\+L\+::\+Elements\+By\+Tag\+Name\+List}}, and \mbox{\hyperlink{classPoco_1_1XML_1_1ChildNodesList_a442f68dea4077fc66187f00091c84e39}{Poco\+::\+X\+M\+L\+::\+Child\+Nodes\+List}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMObject_a492091c0d6748efda278df55b5b2311b}\label{classPoco_1_1XML_1_1DOMObject_a492091c0d6748efda278df55b5b2311b}} 
+\index{Poco::XML::DOMObject@{Poco::XML::DOMObject}!duplicate@{duplicate}}
+\index{duplicate@{duplicate}!Poco::XML::DOMObject@{Poco::XML::DOMObject}}
+\doxysubsubsection{\texorpdfstring{duplicate()}{duplicate()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Object\+::duplicate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates the \mbox{\hyperlink{classPoco_1_1XML_1_1DOMObject}{D\+O\+M\+Object}}. The object\textquotesingle{}s reference count is initialized to one. 
+
+Definition at line 89 of file D\+O\+M\+Object.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DOMObject_a59fcc225a5bcf0fcf7e49d06ecba249a}\label{classPoco_1_1XML_1_1DOMObject_a59fcc225a5bcf0fcf7e49d06ecba249a}} 
+\index{Poco::XML::DOMObject@{Poco::XML::DOMObject}!release@{release}}
+\index{release@{release}!Poco::XML::DOMObject@{Poco::XML::DOMObject}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Object\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Increases the object\textquotesingle{}s reference count. 
+
+
+
+Definition at line 95 of file D\+O\+M\+Object.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+D\+O\+M/\mbox{\hyperlink{DOMObject_8h}{D\+O\+M\+Object.\+h}}\end{DoxyCompactItemize}

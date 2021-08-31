@@ -1,0 +1,191 @@
+\hypertarget{classPoco_1_1NotificationQueue}{}\doxysection{Poco\+::Notification\+Queue Class Reference}
+\label{classPoco_1_1NotificationQueue}\index{Poco::NotificationQueue@{Poco::NotificationQueue}}
+
+
+{\ttfamily \#include $<$Notification\+Queue.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1NotificationQueue_a45b601a4e009043f358984a4f0b521cd}{Notification\+Queue}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1NotificationQueue_a6470352ba2ddef9a9f4fa775853051f7}{$\sim$\+Notification\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1NotificationQueue}{Notification\+Queue}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1NotificationQueue_a2732fd8c8c82253f2fd03d7b313d5e2f}{enqueue\+Notification}} (\mbox{\hyperlink{classPoco_1_1Notification_a135c7b6ff2d0e72b57b40c52534c7744}{Notification\+::\+Ptr}} p\+Notification)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1NotificationQueue}{Notification\+Queue}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1NotificationQueue_a5e309ac3ba2928737a50ee745efe6ff9}{enqueue\+Urgent\+Notification}} (\mbox{\hyperlink{classPoco_1_1Notification_a135c7b6ff2d0e72b57b40c52534c7744}{Notification\+::\+Ptr}} p\+Notification)
+\item 
+\mbox{\hyperlink{classPoco_1_1Notification}{Notification}} $\ast$ \mbox{\hyperlink{classPoco_1_1NotificationQueue_af8d1d91b739aa070bb855d921547ed20}{dequeue\+Notification}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Notification}{Notification}} $\ast$ \mbox{\hyperlink{classPoco_1_1NotificationQueue_a7981b552d708a3ee681a5c4b69817f54}{wait\+Dequeue\+Notification}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Notification}{Notification}} $\ast$ \mbox{\hyperlink{classPoco_1_1NotificationQueue_a06bbe07bf768da65b3edc1cde91ff2cb}{wait\+Dequeue\+Notification}} (long milliseconds)
+\item 
+void \mbox{\hyperlink{classPoco_1_1NotificationQueue_a1cd99c42cb71adb09bd253836eeb787d}{dispatch}} (\mbox{\hyperlink{classPoco_1_1NotificationCenter}{Notification\+Center}} \&notification\+Center)
+\item 
+void \mbox{\hyperlink{classPoco_1_1NotificationQueue_ac7dbc59cd5c01524770425a6308da19c}{wake\+Up\+All}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1NotificationQueue_a7696f4032d68ceb3f9adb228e726c26a}{empty}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Wakes up all threads that wait for a notification. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1NotificationQueue_a8c279d2ec80ebdd903483449a92d2d16}{size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff the queue is empty. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1NotificationQueue_a4df810aaff40f415803fbff2cd4a7f61}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of notifications in the queue. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1NotificationQueue_a90448728acc9897646bb665474b53b44}{has\+Idle\+Threads}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Removes all notifications from the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1NotificationQueue}{Notification\+Queue}} \& \mbox{\hyperlink{classPoco_1_1NotificationQueue_a6cb421b35467f3829126e3020a6d6bab}{default\+Queue}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Notification_a135c7b6ff2d0e72b57b40c52534c7744}{Notification\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1NotificationQueue_a706fd7ca8c9060f0b612580da5bca5c2}{dequeue\+One}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1NotificationQueue}{Notification\+Queue}} object provides a way to implement asynchronous notifications. This is especially useful for sending notifications from one thread to another, for example from a background thread to the main (user interface) thread.
+
+The \mbox{\hyperlink{classPoco_1_1NotificationQueue}{Notification\+Queue}} can also be used to distribute work from a controlling thread to one or more worker threads. Each worker thread repeatedly calls \mbox{\hyperlink{classPoco_1_1NotificationQueue_a7981b552d708a3ee681a5c4b69817f54}{wait\+Dequeue\+Notification()}} and processes the returned notification. Special care must be taken when shutting down a queue with worker threads waiting for notifications. The recommended sequence to shut down and destroy the queue is to
+\begin{DoxyEnumerate}
+\item set a termination flag for every worker thread
+\item call the \mbox{\hyperlink{classPoco_1_1NotificationQueue_ac7dbc59cd5c01524770425a6308da19c}{wake\+Up\+All()}} method
+\item join each worker thread
+\item destroy the notification queue. 
+\end{DoxyEnumerate}
+
+Definition at line 36 of file Notification\+Queue.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1NotificationQueue_a45b601a4e009043f358984a4f0b521cd}\label{classPoco_1_1NotificationQueue_a45b601a4e009043f358984a4f0b521cd}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!NotificationQueue@{NotificationQueue}}
+\index{NotificationQueue@{NotificationQueue}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{NotificationQueue()}{NotificationQueue()}}
+{\footnotesize\ttfamily Poco\+::\+Notification\+Queue\+::\+Notification\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1NotificationQueue_a6470352ba2ddef9a9f4fa775853051f7}\label{classPoco_1_1NotificationQueue_a6470352ba2ddef9a9f4fa775853051f7}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!````~NotificationQueue@{$\sim$NotificationQueue}}
+\index{````~NotificationQueue@{$\sim$NotificationQueue}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{$\sim$NotificationQueue()}{~NotificationQueue()}}
+{\footnotesize\ttfamily Poco\+::\+Notification\+Queue\+::$\sim$\+Notification\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1NotificationQueue}{Notification\+Queue}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1NotificationQueue_a4df810aaff40f415803fbff2cd4a7f61}\label{classPoco_1_1NotificationQueue_a4df810aaff40f415803fbff2cd4a7f61}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!clear@{clear}}
+\index{clear@{clear}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Poco\+::\+Notification\+Queue\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of notifications in the queue. 
+
+\mbox{\Hypertarget{classPoco_1_1NotificationQueue_a6cb421b35467f3829126e3020a6d6bab}\label{classPoco_1_1NotificationQueue_a6cb421b35467f3829126e3020a6d6bab}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!defaultQueue@{defaultQueue}}
+\index{defaultQueue@{defaultQueue}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{defaultQueue()}{defaultQueue()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1NotificationQueue}{Notification\+Queue}}\& Poco\+::\+Notification\+Queue\+::default\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns true if the queue has at least one thread waiting for a notification. \mbox{\Hypertarget{classPoco_1_1NotificationQueue_af8d1d91b739aa070bb855d921547ed20}\label{classPoco_1_1NotificationQueue_af8d1d91b739aa070bb855d921547ed20}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!dequeueNotification@{dequeueNotification}}
+\index{dequeueNotification@{dequeueNotification}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{dequeueNotification()}{dequeueNotification()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Notification}{Notification}}$\ast$ Poco\+::\+Notification\+Queue\+::dequeue\+Notification (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Enqueues the given notification by adding it to the front of the queue (L\+I\+FO). The event therefore gets processed before all other events already in the queue. The queue takes ownership of the notification, thus a call like notification\+Queue.\+enqueue\+Urgent\+Notification(new My\+Notification); does not result in a memory leak. \mbox{\Hypertarget{classPoco_1_1NotificationQueue_a706fd7ca8c9060f0b612580da5bca5c2}\label{classPoco_1_1NotificationQueue_a706fd7ca8c9060f0b612580da5bca5c2}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!dequeueOne@{dequeueOne}}
+\index{dequeueOne@{dequeueOne}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{dequeueOne()}{dequeueOne()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Notification_a135c7b6ff2d0e72b57b40c52534c7744}{Notification\+::\+Ptr}} Poco\+::\+Notification\+Queue\+::dequeue\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns a reference to the default \mbox{\hyperlink{classPoco_1_1NotificationQueue}{Notification\+Queue}}. \mbox{\Hypertarget{classPoco_1_1NotificationQueue_a1cd99c42cb71adb09bd253836eeb787d}\label{classPoco_1_1NotificationQueue_a1cd99c42cb71adb09bd253836eeb787d}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily void Poco\+::\+Notification\+Queue\+::dispatch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1NotificationCenter}{Notification\+Center}} \&}]{notification\+Center }\end{DoxyParamCaption})}
+
+Dequeues the next pending notification. If no notification is available, waits for a notification to be enqueued up to the specified time. Returns 0 (null) if no notification is available. The caller gains ownership of the notification and is expected to release it when done with it.
+
+It is highly recommended that the result is immediately assigned to a \mbox{\hyperlink{classPoco_1_1Notification_a135c7b6ff2d0e72b57b40c52534c7744}{Notification\+::\+Ptr}}, to avoid potential memory management issues. \mbox{\Hypertarget{classPoco_1_1NotificationQueue_a7696f4032d68ceb3f9adb228e726c26a}\label{classPoco_1_1NotificationQueue_a7696f4032d68ceb3f9adb228e726c26a}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!empty@{empty}}
+\index{empty@{empty}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool Poco\+::\+Notification\+Queue\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Wakes up all threads that wait for a notification. 
+
+\mbox{\Hypertarget{classPoco_1_1NotificationQueue_a2732fd8c8c82253f2fd03d7b313d5e2f}\label{classPoco_1_1NotificationQueue_a2732fd8c8c82253f2fd03d7b313d5e2f}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!enqueueNotification@{enqueueNotification}}
+\index{enqueueNotification@{enqueueNotification}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueNotification()}{enqueueNotification()}}
+{\footnotesize\ttfamily void Poco\+::\+Notification\+Queue\+::enqueue\+Notification (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Notification_a135c7b6ff2d0e72b57b40c52534c7744}{Notification\+::\+Ptr}}}]{p\+Notification }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1NotificationQueue}{Notification\+Queue}}. 
+
+\mbox{\Hypertarget{classPoco_1_1NotificationQueue_a5e309ac3ba2928737a50ee745efe6ff9}\label{classPoco_1_1NotificationQueue_a5e309ac3ba2928737a50ee745efe6ff9}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!enqueueUrgentNotification@{enqueueUrgentNotification}}
+\index{enqueueUrgentNotification@{enqueueUrgentNotification}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueUrgentNotification()}{enqueueUrgentNotification()}}
+{\footnotesize\ttfamily void Poco\+::\+Notification\+Queue\+::enqueue\+Urgent\+Notification (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Notification_a135c7b6ff2d0e72b57b40c52534c7744}{Notification\+::\+Ptr}}}]{p\+Notification }\end{DoxyParamCaption})}
+
+Enqueues the given notification by adding it to the end of the queue (F\+I\+FO). The queue takes ownership of the notification, thus a call like notification\+Queue.\+enqueue\+Notification(new My\+Notification); does not result in a memory leak. \mbox{\Hypertarget{classPoco_1_1NotificationQueue_a90448728acc9897646bb665474b53b44}\label{classPoco_1_1NotificationQueue_a90448728acc9897646bb665474b53b44}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!hasIdleThreads@{hasIdleThreads}}
+\index{hasIdleThreads@{hasIdleThreads}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{hasIdleThreads()}{hasIdleThreads()}}
+{\footnotesize\ttfamily bool Poco\+::\+Notification\+Queue\+::has\+Idle\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Removes all notifications from the queue. 
+
+\mbox{\Hypertarget{classPoco_1_1NotificationQueue_a8c279d2ec80ebdd903483449a92d2d16}\label{classPoco_1_1NotificationQueue_a8c279d2ec80ebdd903483449a92d2d16}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!size@{size}}
+\index{size@{size}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Poco\+::\+Notification\+Queue\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true iff the queue is empty. 
+
+\mbox{\Hypertarget{classPoco_1_1NotificationQueue_a7981b552d708a3ee681a5c4b69817f54}\label{classPoco_1_1NotificationQueue_a7981b552d708a3ee681a5c4b69817f54}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!waitDequeueNotification@{waitDequeueNotification}}
+\index{waitDequeueNotification@{waitDequeueNotification}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{waitDequeueNotification()}{waitDequeueNotification()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Notification}{Notification}}$\ast$ Poco\+::\+Notification\+Queue\+::wait\+Dequeue\+Notification (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Dequeues the next pending notification. Returns 0 (null) if no notification is available. The caller gains ownership of the notification and is expected to release it when done with it.
+
+It is highly recommended that the result is immediately assigned to a \mbox{\hyperlink{classPoco_1_1Notification_a135c7b6ff2d0e72b57b40c52534c7744}{Notification\+::\+Ptr}}, to avoid potential memory management issues. \mbox{\Hypertarget{classPoco_1_1NotificationQueue_a06bbe07bf768da65b3edc1cde91ff2cb}\label{classPoco_1_1NotificationQueue_a06bbe07bf768da65b3edc1cde91ff2cb}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!waitDequeueNotification@{waitDequeueNotification}}
+\index{waitDequeueNotification@{waitDequeueNotification}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{waitDequeueNotification()}{waitDequeueNotification()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Notification}{Notification}}$\ast$ Poco\+::\+Notification\+Queue\+::wait\+Dequeue\+Notification (\begin{DoxyParamCaption}\item[{long}]{milliseconds }\end{DoxyParamCaption})}
+
+Dequeues the next pending notification. If no notification is available, waits for a notification to be enqueued. The caller gains ownership of the notification and is expected to release it when done with it. This method returns 0 (null) if wake\+Up\+Waiting\+Threads() has been called by another thread.
+
+It is highly recommended that the result is immediately assigned to a \mbox{\hyperlink{classPoco_1_1Notification_a135c7b6ff2d0e72b57b40c52534c7744}{Notification\+::\+Ptr}}, to avoid potential memory management issues. \mbox{\Hypertarget{classPoco_1_1NotificationQueue_ac7dbc59cd5c01524770425a6308da19c}\label{classPoco_1_1NotificationQueue_ac7dbc59cd5c01524770425a6308da19c}} 
+\index{Poco::NotificationQueue@{Poco::NotificationQueue}!wakeUpAll@{wakeUpAll}}
+\index{wakeUpAll@{wakeUpAll}!Poco::NotificationQueue@{Poco::NotificationQueue}}
+\doxysubsubsection{\texorpdfstring{wakeUpAll()}{wakeUpAll()}}
+{\footnotesize\ttfamily void Poco\+::\+Notification\+Queue\+::wake\+Up\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Dispatches all queued notifications to the given notification center. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{NotificationQueue_8h}{Notification\+Queue.\+h}}\end{DoxyCompactItemize}

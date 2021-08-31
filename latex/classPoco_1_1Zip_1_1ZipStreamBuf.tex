@@ -1,0 +1,120 @@
+\hypertarget{classPoco_1_1Zip_1_1ZipStreamBuf}{}\doxysection{Poco\+::Zip\+::Zip\+Stream\+Buf Class Reference}
+\label{classPoco_1_1Zip_1_1ZipStreamBuf}\index{Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}}
+
+
+\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf}{Zip\+Stream\+Buf}} is used to decompress single files from a \mbox{\hyperlink{namespacePoco_1_1Zip}{Zip}} file.  
+
+
+
+
+{\ttfamily \#include $<$Zip\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Zip\+::Zip\+Stream\+Buf\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Zip\+::Zip\+Stream\+Buf\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf_ac952197bb5a8cb46d000221af2b599aa}{Zip\+Stream\+Buf}} (std\+::istream \&istr, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader}{Zip\+Local\+File\+Header}} \&file\+Entry, bool reposition)
+\item 
+\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf_aee08cc18336f7e4581996a2bd2d384fb}{Zip\+Stream\+Buf}} (std\+::ostream \&ostr, \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader}{Zip\+Local\+File\+Header}} \&file\+Entry, bool reposition)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf}{Zip\+Stream\+Buf}}. Set reposition to false, if you do on-\/the-\/fly decompression. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf_a368d7ad050cfe07a0ea204b7fda95558}{$\sim$\+Zip\+Stream\+Buf}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf}{Zip\+Stream\+Buf}}. Set reposition to false, if you do on-\/the-\/fly compression. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf_ad6aaa4670dc07e1ae51b778406097d7d}{close}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf}{Zip\+Stream\+Buf}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf_a016ad43cb1fed55329414c7366339cb7}{crc\+Valid}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Informs a writing outputstream that writing is done for this stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf_aa3838b1fcebc28d60cb5b40fe4eb9e0a}{read\+From\+Device}} (char $\ast$buffer, std\+::streamsize length)
+\begin{DoxyCompactList}\small\item\em Call this method once all bytes were read from the input stream to determine if the C\+RC is valid. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf_a0052d09d5f5638e7c998fc4e447c1bda}{write\+To\+Device}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$buffer, std\+::streamsize length)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf}{Zip\+Stream\+Buf}} is used to decompress single files from a \mbox{\hyperlink{namespacePoco_1_1Zip}{Zip}} file. 
+
+Definition at line 40 of file Zip\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipStreamBuf_ac952197bb5a8cb46d000221af2b599aa}\label{classPoco_1_1Zip_1_1ZipStreamBuf_ac952197bb5a8cb46d000221af2b599aa}} 
+\index{Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}!ZipStreamBuf@{ZipStreamBuf}}
+\index{ZipStreamBuf@{ZipStreamBuf}!Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}}
+\doxysubsubsection{\texorpdfstring{ZipStreamBuf()}{ZipStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Zip\+::\+Zip\+Stream\+Buf\+::\+Zip\+Stream\+Buf (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader}{Zip\+Local\+File\+Header}} \&}]{file\+Entry,  }\item[{bool}]{reposition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipStreamBuf_aee08cc18336f7e4581996a2bd2d384fb}\label{classPoco_1_1Zip_1_1ZipStreamBuf_aee08cc18336f7e4581996a2bd2d384fb}} 
+\index{Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}!ZipStreamBuf@{ZipStreamBuf}}
+\index{ZipStreamBuf@{ZipStreamBuf}!Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}}
+\doxysubsubsection{\texorpdfstring{ZipStreamBuf()}{ZipStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Zip\+::\+Zip\+Stream\+Buf\+::\+Zip\+Stream\+Buf (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader}{Zip\+Local\+File\+Header}} \&}]{file\+Entry,  }\item[{bool}]{reposition }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf}{Zip\+Stream\+Buf}}. Set reposition to false, if you do on-\/the-\/fly decompression. 
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipStreamBuf_a368d7ad050cfe07a0ea204b7fda95558}\label{classPoco_1_1Zip_1_1ZipStreamBuf_a368d7ad050cfe07a0ea204b7fda95558}} 
+\index{Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}!````~ZipStreamBuf@{$\sim$ZipStreamBuf}}
+\index{````~ZipStreamBuf@{$\sim$ZipStreamBuf}!Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}}
+\doxysubsubsection{\texorpdfstring{$\sim$ZipStreamBuf()}{~ZipStreamBuf()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Zip\+::\+Zip\+Stream\+Buf\+::$\sim$\+Zip\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf}{Zip\+Stream\+Buf}}. Set reposition to false, if you do on-\/the-\/fly compression. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipStreamBuf_ad6aaa4670dc07e1ae51b778406097d7d}\label{classPoco_1_1Zip_1_1ZipStreamBuf_ad6aaa4670dc07e1ae51b778406097d7d}} 
+\index{Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}!close@{close}}
+\index{close@{close}!Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Zip\+::\+Zip\+Stream\+Buf\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf}{Zip\+Stream\+Buf}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipStreamBuf_a016ad43cb1fed55329414c7366339cb7}\label{classPoco_1_1Zip_1_1ZipStreamBuf_a016ad43cb1fed55329414c7366339cb7}} 
+\index{Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}!crcValid@{crcValid}}
+\index{crcValid@{crcValid}!Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}}
+\doxysubsubsection{\texorpdfstring{crcValid()}{crcValid()}}
+{\footnotesize\ttfamily bool Poco\+::\+Zip\+::\+Zip\+Stream\+Buf\+::crc\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Informs a writing outputstream that writing is done for this stream. 
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipStreamBuf_aa3838b1fcebc28d60cb5b40fe4eb9e0a}\label{classPoco_1_1Zip_1_1ZipStreamBuf_aa3838b1fcebc28d60cb5b40fe4eb9e0a}} 
+\index{Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}!readFromDevice@{readFromDevice}}
+\index{readFromDevice@{readFromDevice}!Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}}
+\doxysubsubsection{\texorpdfstring{readFromDevice()}{readFromDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Zip\+::\+Zip\+Stream\+Buf\+::read\+From\+Device (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Call this method once all bytes were read from the input stream to determine if the C\+RC is valid. 
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipStreamBuf_a0052d09d5f5638e7c998fc4e447c1bda}\label{classPoco_1_1Zip_1_1ZipStreamBuf_a0052d09d5f5638e7c998fc4e447c1bda}} 
+\index{Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}!writeToDevice@{writeToDevice}}
+\index{writeToDevice@{writeToDevice}!Poco::Zip::ZipStreamBuf@{Poco::Zip::ZipStreamBuf}}
+\doxysubsubsection{\texorpdfstring{writeToDevice()}{writeToDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Zip\+::\+Zip\+Stream\+Buf\+::write\+To\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Zip/\mbox{\hyperlink{ZipStream_8h}{Zip\+Stream.\+h}}\end{DoxyCompactItemize}

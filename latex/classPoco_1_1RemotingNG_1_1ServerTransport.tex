@@ -1,0 +1,148 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1ServerTransport}{}\doxysection{Poco\+::Remoting\+NG\+::Server\+Transport Class Reference}
+\label{classPoco_1_1RemotingNG_1_1ServerTransport}\index{Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}}
+
+
+{\ttfamily \#include $<$Server\+Transport.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::Server\+Transport\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::Server\+Transport\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport_aacfdc5494a4b0cc3ffcf8d2dce88b3dc}{Server\+Transport}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport_a2964c8e93dfd4201cb0345741f0e3059}{$\sim$\+Server\+Transport}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport_aef991a3ff983af8cc3ecf85746732c38}{authenticate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&method)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport_ad113a897a8c83d224850730e080e52b1}{authorize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&method, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&permission)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport_af37f3065ef3e64c8f1edbaf3fd8cd7f7}{begin\+Request}} ()=0
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport_af752a5cfacc2b01f11df764aabae0814}{send\+Reply}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}} message\+Type)=0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport_abc68c73ca67ccc037ee4792751abf112}{end\+Request}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}} objects are used as mediators between a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}, receiving a request, and the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} and Method\+Handlers, processing the request.
+
+The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}} allows the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} to deserialize the request message in order to determine the method name, select an appropriate \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1MethodHandler}{Method\+Handler}}, based on the method name and pass control to the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1MethodHandler}{Method\+Handler}}. The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1MethodHandler}{Method\+Handler}} then uses the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}} to send back a response message. 
+
+Definition at line 36 of file Server\+Transport.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ServerTransport_aacfdc5494a4b0cc3ffcf8d2dce88b3dc}\label{classPoco_1_1RemotingNG_1_1ServerTransport_aacfdc5494a4b0cc3ffcf8d2dce88b3dc}} 
+\index{Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}!ServerTransport@{ServerTransport}}
+\index{ServerTransport@{ServerTransport}!Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}}
+\doxysubsubsection{\texorpdfstring{ServerTransport()}{ServerTransport()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+Server\+Transport\+::\+Server\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ServerTransport_a2964c8e93dfd4201cb0345741f0e3059}\label{classPoco_1_1RemotingNG_1_1ServerTransport_a2964c8e93dfd4201cb0345741f0e3059}} 
+\index{Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}!````~ServerTransport@{$\sim$ServerTransport}}
+\index{````~ServerTransport@{$\sim$ServerTransport}!Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}}
+\doxysubsubsection{\texorpdfstring{$\sim$ServerTransport()}{~ServerTransport()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Remoting\+N\+G\+::\+Server\+Transport\+::$\sim$\+Server\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}}. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ServerTransport_a310e8a8244bd4da0204a3cac42c299cf}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Server\+Transport}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ServerTransport_aef991a3ff983af8cc3ecf85746732c38}\label{classPoco_1_1RemotingNG_1_1ServerTransport_aef991a3ff983af8cc3ecf85746732c38}} 
+\index{Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Remoting\+N\+G\+::\+Server\+Transport\+::authenticate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}}. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ServerTransport_a99d3397ec1c9c5a698e818102f2b4448}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Server\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ServerTransport_ad113a897a8c83d224850730e080e52b1}\label{classPoco_1_1RemotingNG_1_1ServerTransport_ad113a897a8c83d224850730e080e52b1}} 
+\index{Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}!authorize@{authorize}}
+\index{authorize@{authorize}!Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}}
+\doxysubsubsection{\texorpdfstring{authorize()}{authorize()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Remoting\+N\+G\+::\+Server\+Transport\+::authorize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{method,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{permission }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Verify that the request is properly authenticated.
+
+This method is called if the method or its class has the @authenticated attribute set to true, or if it has a @permission attribute set to a non-\/empty permission.
+
+An implementation should check whether the current request contains valid authentication information. Typically, an implementation will obtain the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Credentials}{Credentials}} object for the request, obtain the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator}{Authenticator}} from the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}, and call its \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport_aef991a3ff983af8cc3ecf85746732c38}{authenticate()}} method to check the credentials.
+
+Returns true if the request is properly authenticated, otherwise false.
+
+The default implementation simply returns true. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ServerTransport_a7561e96cdbf101300d71a32c70d6a560}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Server\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ServerTransport_af37f3065ef3e64c8f1edbaf3fd8cd7f7}\label{classPoco_1_1RemotingNG_1_1ServerTransport_af37f3065ef3e64c8f1edbaf3fd8cd7f7}} 
+\index{Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}!beginRequest@{beginRequest}}
+\index{beginRequest@{beginRequest}!Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}}
+\doxysubsubsection{\texorpdfstring{beginRequest()}{beginRequest()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}}\& Poco\+::\+Remoting\+N\+G\+::\+Server\+Transport\+::begin\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Verify that an authenticated user has the given permission, which is required to invoke the given method.
+
+The given permission will be the the one specified with the @permission attribute for the respective remote method. If no @permission attribute has been specified for a remote method, or the permission is an empty string, this method will not be called.
+
+An implementation should obtain the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer}{Authorizer}} object from the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}, and call the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer}{Authorizer}}\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport_ad113a897a8c83d224850730e080e52b1}{authorize()}} method to authorize the method call.
+
+Returns true if authorization is successful, otherwise false.
+
+The default implementation simply returns true. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ServerTransport_aa9b49076e7be5851cf9a0ff78924e07e}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Server\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ServerTransport_abc68c73ca67ccc037ee4792751abf112}\label{classPoco_1_1RemotingNG_1_1ServerTransport_abc68c73ca67ccc037ee4792751abf112}} 
+\index{Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}!endRequest@{endRequest}}
+\index{endRequest@{endRequest}!Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}}
+\doxysubsubsection{\texorpdfstring{endRequest()}{endRequest()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Remoting\+N\+G\+::\+Server\+Transport\+::end\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Prepares the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}} to send a response message back to the caller.
+
+The given Message\+Type must be either M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+P\+LY, M\+E\+S\+S\+A\+G\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+R\+E\+P\+LY or M\+E\+S\+S\+A\+G\+E\+\_\+\+F\+A\+U\+LT.
+
+Returns a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} for writing the reply (or fault reply) message. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ServerTransport_a02f3d4316e696f1a5eb1dba65da8af03}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Server\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ServerTransport_af752a5cfacc2b01f11df764aabae0814}\label{classPoco_1_1RemotingNG_1_1ServerTransport_af752a5cfacc2b01f11df764aabae0814}} 
+\index{Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}!sendReply@{sendReply}}
+\index{sendReply@{sendReply}!Poco::RemotingNG::ServerTransport@{Poco::RemotingNG::ServerTransport}}
+\doxysubsubsection{\texorpdfstring{sendReply()}{sendReply()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}}\& Poco\+::\+Remoting\+N\+G\+::\+Server\+Transport\+::send\+Reply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}}}]{message\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Prepare a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}} for reading the request message.
+
+Returns a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}} that can be used to read the request message. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ServerTransport_a5cb2aff6a50f8f77776be54d64d8225e}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Server\+Transport}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{ServerTransport_8h}{Server\+Transport.\+h}}\end{DoxyCompactItemize}

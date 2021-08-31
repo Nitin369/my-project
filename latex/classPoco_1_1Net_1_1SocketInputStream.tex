@@ -1,0 +1,60 @@
+\hypertarget{classPoco_1_1Net_1_1SocketInputStream}{}\doxysection{Poco\+::Net\+::Socket\+Input\+Stream Class Reference}
+\label{classPoco_1_1Net_1_1SocketInputStream}\index{Poco::Net::SocketInputStream@{Poco::Net::SocketInputStream}}
+
+
+{\ttfamily \#include $<$Socket\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::Socket\+Input\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::Socket\+Input\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketInputStream_a8caa9a995215b13fbcb2d7fd0eb9ce26}{Socket\+Input\+Stream}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1SocketIOS_aec49cb2d6880a00afe66b457aa6da20d}{socket}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketInputStream_a3f56a2b588e7b1f7d3b5a9b8b869591e}{$\sim$\+Socket\+Input\+Stream}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An input stream for reading from a socket. \begin{DoxyVerb}When using formatted input from a SocketInputStream,
+always ensure that a receive timeout is set for the
+socket. Otherwise your program might unexpectedly
+hang.
+
+However, using formatted input from a SocketInputStream
+is not recommended, due to the read-ahead behavior of
+istream with formatted reads. 
+\end{DoxyVerb}
+ 
+
+Definition at line 117 of file Socket\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketInputStream_a8caa9a995215b13fbcb2d7fd0eb9ce26}\label{classPoco_1_1Net_1_1SocketInputStream_a8caa9a995215b13fbcb2d7fd0eb9ce26}} 
+\index{Poco::Net::SocketInputStream@{Poco::Net::SocketInputStream}!SocketInputStream@{SocketInputStream}}
+\index{SocketInputStream@{SocketInputStream}!Poco::Net::SocketInputStream@{Poco::Net::SocketInputStream}}
+\doxysubsubsection{\texorpdfstring{SocketInputStream()}{SocketInputStream()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Socket\+Input\+Stream\+::\+Socket\+Input\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&}]{socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketInputStream_a3f56a2b588e7b1f7d3b5a9b8b869591e}\label{classPoco_1_1Net_1_1SocketInputStream_a3f56a2b588e7b1f7d3b5a9b8b869591e}} 
+\index{Poco::Net::SocketInputStream@{Poco::Net::SocketInputStream}!````~SocketInputStream@{$\sim$SocketInputStream}}
+\index{````~SocketInputStream@{$\sim$SocketInputStream}!Poco::Net::SocketInputStream@{Poco::Net::SocketInputStream}}
+\doxysubsubsection{\texorpdfstring{$\sim$SocketInputStream()}{~SocketInputStream()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Socket\+Input\+Stream\+::$\sim$\+Socket\+Input\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketInputStream}{Socket\+Input\+Stream}} with the given socket.
+
+The socket\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} must be a \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl}{Stream\+Socket\+Impl}}, otherwise an Invalid\+Argument\+Exception is thrown. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{SocketStream_8h}{Socket\+Stream.\+h}}\end{DoxyCompactItemize}

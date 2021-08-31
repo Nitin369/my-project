@@ -1,0 +1,1068 @@
+\hypertarget{classPoco_1_1Net_1_1SocketImpl}{}\doxysection{Poco\+::Net\+::Socket\+Impl Class Reference}
+\label{classPoco_1_1Net_1_1SocketImpl}\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+
+
+{\ttfamily \#include $<$Socket\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::Socket\+Impl\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::Socket\+Impl\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780}{Select\+Mode}} \{ \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780a0bd90982c01c684360288cab2d849758}{S\+E\+L\+E\+C\+T\+\_\+\+R\+E\+AD}} = 1, 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780a1947680f50f6f8d1ab84b83245fcb293}{S\+E\+L\+E\+C\+T\+\_\+\+W\+R\+I\+TE}} = 2, 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780a34d898ec97f42906cbc394972530d9a9}{S\+E\+L\+E\+C\+T\+\_\+\+E\+R\+R\+OR}} = 4
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a16153f827776eb018d36aeb467cde290}{accept\+Connection}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&client\+Addr)
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a9272c566890928fc5c9e96bcf37aa1ff}{connect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aef377790f80420714811b589dc3af635}{address}})
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_ae4729b67ec92f0a604702cb88c6f1e6b}{connect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aef377790f80420714811b589dc3af635}{address}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout)
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a290c5e4887abdc5fd7bb5bd7d8856806}{connect\+NB}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aef377790f80420714811b589dc3af635}{address}})
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a43d3da41f5b2b22cf75b6eb222fc53a5}{bind}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aef377790f80420714811b589dc3af635}{address}}, bool reuse\+Address=false)
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a5e2a45cbf7d403ddd1edb4585da193f5}{bind6}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aef377790f80420714811b589dc3af635}{address}}, bool reuse\+Address=false, bool ip\+V6\+Only=false)
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a0994375254b7e67388330c1197b242e1}{listen}} (int backlog=64)
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a823bc2ba9a95531c00051611c9cdde64}{close}} ()
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a0e92238ec6c7228a8a36c829cf500662}{shutdown\+Receive}} ()
+\begin{DoxyCompactList}\small\item\em Close the socket. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_acdcad7d9b270930874dfed91d0b621a6}{shutdown\+Send}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the receiving part of the socket connection. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_ae962421bd2ce3466ec906178c00018e7}{shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the sending part of the socket connection. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aa59d3c72d02155d6075cb3b681e691f0}{send\+Bytes}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$buffer, int length, int flags=0)
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a0fad62e3c1372bd59866007e2191f470}{receive\+Bytes}} (void $\ast$buffer, int length, int flags=0)
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a1bb8b92cd44600dc1067c753d53d3f34}{send\+To}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$buffer, int length, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aef377790f80420714811b589dc3af635}{address}}, int flags=0)
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a9c8592fd354cb5127498628062561109}{receive\+From}} (void $\ast$buffer, int length, \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aef377790f80420714811b589dc3af635}{address}}, int flags=0)
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a0e9222ef356eef6a09f6c59be3da75ea}{send\+Urgent}} (unsigned char data)
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a05ce9b0b60e4b72ed4f2cb6790d59059}{available}} ()
+\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a79bb81af87335fd4a000f235af7a9ef2}{poll}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout, int mode)
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_afeaa1b59ae76e8c38a8f92cb1a19e0b9}{set\+Send\+Buffer\+Size}} (int size)
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a56ede6958c25cdeb73833648e4909d7c}{get\+Send\+Buffer\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Sets the size of the send buffer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a34e15aeb178ffb949ab24d0a66d7e175}{set\+Receive\+Buffer\+Size}} (int size)
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a4e4ed01d5eb87858612f1b08db4d8c9e}{get\+Receive\+Buffer\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Sets the size of the receive buffer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a6e7069c5e8385ec9581522cabaaef724}{set\+Send\+Timeout}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a24b1e5bdf46170d24262bf6cee5dd135}{get\+Send\+Timeout}} ()
+\begin{DoxyCompactList}\small\item\em Sets the send timeout for the socket. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a5401c99e2a540d19f128f807e27172fa}{set\+Receive\+Timeout}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a1e165309a5ce14e9c661dec13308a612}{get\+Receive\+Timeout}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aef377790f80420714811b589dc3af635}{address}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a59d6dc5bd3a908cdd3af6ea902a13a8b}{peer\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Returns the IP address and port number of the socket. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a35d99f6d235985827cd382e6e74cf7ca}{set\+Option}} (int level, int option, int value)
+\begin{DoxyCompactList}\small\item\em Returns the IP address and port number of the peer socket. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_af7a3e1e5a6975cf88dec37028063d170}{set\+Option}} (int level, int option, unsigned value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_ac0f8a780abeb3d13e9bbe3cca02e6378}{set\+Option}} (int level, int option, unsigned char value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_ab082d67fa3ea3c11238926f0d6a07666}{set\+Option}} (int level, int option, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a3212bf116ed3319ff59f0a008c47006e}{set\+Option}} (int level, int option, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress}{I\+P\+Address}} \&value)
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a3753ed5d4277882b8cbd32492c56f6a0}{set\+Raw\+Option}} (int level, int option, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$value, poco\+\_\+socklen\+\_\+t length)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aa9e27c9fcff68c77257228a976ca5153}{get\+Option}} (int level, int option, int \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_adce6fbbb34a8623054e08f684dd2b41b}{get\+Option}} (int level, int option, unsigned \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a2ad26450a604cbb7d1ff387a46e77e58}{get\+Option}} (int level, int option, unsigned char \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a60a11678ff2884e60982b7e0f0d02e3f}{get\+Option}} (int level, int option, \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a9912f75c526f124366931422e1775711}{get\+Option}} (int level, int option, \mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress}{I\+P\+Address}} \&value)
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a282fbc921cdd87e191daa67e150a1ddb}{get\+Raw\+Option}} (int level, int option, void $\ast$value, poco\+\_\+socklen\+\_\+t \&length)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aca64e2ea533f82b9e78b668ad059240d}{set\+Linger}} (bool on, int seconds)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aeb04c4c6889aacdda74309fb23db18ec}{get\+Linger}} (bool \&on, int \&seconds)
+\begin{DoxyCompactList}\small\item\em Sets the value of the S\+O\+\_\+\+L\+I\+N\+G\+ER socket option. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a6e41e51a3034a64e47a3a0d0b63c6f6f}{set\+No\+Delay}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Returns the value of the S\+O\+\_\+\+L\+I\+N\+G\+ER socket option. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_ab969da4db2960f8e66a585a3c5d03958}{get\+No\+Delay}} ()
+\begin{DoxyCompactList}\small\item\em Sets the value of the T\+C\+P\+\_\+\+N\+O\+D\+E\+L\+AY socket option. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_af8be6670ad1a1115e9415415c14a174c}{set\+Keep\+Alive}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Returns the value of the T\+C\+P\+\_\+\+N\+O\+D\+E\+L\+AY socket option. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a49f847d52804a670914b304695fbd386}{get\+Keep\+Alive}} ()
+\begin{DoxyCompactList}\small\item\em Sets the value of the S\+O\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE socket option. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_ad9443b9ff4558ca50ee2810355714144}{set\+Reuse\+Address}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Returns the value of the S\+O\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE socket option. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a5f3f9c10cbdb05c03455ac64ebb9787d}{get\+Reuse\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Sets the value of the S\+O\+\_\+\+R\+E\+U\+S\+E\+A\+D\+DR socket option. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a4f719f8476f74babeb0dd510379cc134}{set\+Reuse\+Port}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Returns the value of the S\+O\+\_\+\+R\+E\+U\+S\+E\+A\+D\+DR socket option. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_ae16279c4ad520e93e981d2223b07ade9}{get\+Reuse\+Port}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aef598e7a5551a432481c1f1f78b6023f}{set\+O\+O\+B\+Inline}} (bool flag)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a4b1b5fcc6e43f6f06074c7921ce13a69}{get\+O\+O\+B\+Inline}} ()
+\begin{DoxyCompactList}\small\item\em Sets the value of the S\+O\+\_\+\+O\+O\+B\+I\+N\+L\+I\+NE socket option. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a98e91e59b1d1385f4c85bce4bcc2aecb}{set\+Broadcast}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Returns the value of the S\+O\+\_\+\+O\+O\+B\+I\+N\+L\+I\+NE socket option. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a32f3b5ded0f2657e2a5afe26de744726}{get\+Broadcast}} ()
+\begin{DoxyCompactList}\small\item\em Sets the value of the S\+O\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST socket option. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a385b74e6b9c1a8064a2f64a3711686d6}{set\+Blocking}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Returns the value of the S\+O\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST socket option. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a42a191f4fa362dfe0921843c84af5c04}{get\+Blocking}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a03ad30594c5f54ce331519adcc51e44f}{secure}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a2051824d16288272de51f2b224c6f093}{socket\+Error}} ()
+\item 
+poco\+\_\+socket\+\_\+t \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a39dc408f5d254af81ee85767d9fc4cdc}{sockfd}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the value of the S\+O\+\_\+\+E\+R\+R\+OR socket option. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a9b8e95ddf8210cac78ac1173db12effc}{ioctl}} (poco\+\_\+ioctl\+\_\+request\+\_\+t request, int \&arg)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aa04b9b1452f8af21e99a4810ceabb524}{ioctl}} (poco\+\_\+ioctl\+\_\+request\+\_\+t request, void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em A wrapper for the ioctl system call. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a7a7448461bb35fdd9b1c9cefe9bc92c7}{initialized}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em A wrapper for the ioctl system call. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a431d78a8282090675230f18a20afed56}{Socket\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Returns true iff the underlying socket is initialized. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a9d614086918c2a24b25f187fd16fc839}{Socket\+Impl}} (poco\+\_\+socket\+\_\+t \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a39dc408f5d254af81ee85767d9fc4cdc}{sockfd}})
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a84458639feb016bbe3ab1ca0a9ada96b}{$\sim$\+Socket\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} using the given native socket. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a79ad870810e84d67811d656c4a8707d4}{init}} (int af)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aedff929707b03a0044b4db661c14c786}{init\+Socket}} (int af, int type, int proto=0)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a5c12ec8588d8c7543b2b9c9b9cd0ef2d}{reset}} (poco\+\_\+socket\+\_\+t fd=P\+O\+C\+O\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a3ffe9583ed625f2d4ff2dd4871300cf4}{last\+Error}} ()
+\begin{DoxyCompactList}\small\item\em Allows subclasses to set the socket manually, iff no valid socket is set yet. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a811dbd3e9e8f153fc7b5c2f4e5cbacdf}{error}} ()
+\begin{DoxyCompactList}\small\item\em Returns the last error code. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_afb5b15ed692c7aa408d0deef308a8036}{error}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&arg)
+\begin{DoxyCompactList}\small\item\em Throws an appropriate exception for the last error. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a2fac81981e534ba1baec655718a018fb}{error}} (int code)
+\begin{DoxyCompactList}\small\item\em Throws an appropriate exception for the last error. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a46eb122eb782d0f7bc7334a3c8310041}{error}} (int code, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&arg)
+\begin{DoxyCompactList}\small\item\em Throws an appropriate exception for the given error code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_ab510887d735ee73ab1cb598c66260e87}{Socket}}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_ad27a4c334f7fe97bfae3c47080aafd4a}{Secure\+Socket\+Impl}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class encapsulates the Berkeley sockets A\+PI. \begin{DoxyVerb}Subclasses implement specific socket types like
+stream or datagram sockets.
+
+You should not create any instances of this class. 
+\end{DoxyVerb}
+ 
+
+Definition at line 34 of file Socket\+Impl.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780}\label{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!SelectMode@{SelectMode}}
+\index{SelectMode@{SelectMode}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{SelectMode}{SelectMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780}{Poco\+::\+Net\+::\+Socket\+Impl\+::\+Select\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECT\_READ@{SELECT\_READ}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!SELECT\_READ@{SELECT\_READ}}}\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780a0bd90982c01c684360288cab2d849758}\label{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780a0bd90982c01c684360288cab2d849758}} 
+S\+E\+L\+E\+C\+T\+\_\+\+R\+E\+AD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECT\_WRITE@{SELECT\_WRITE}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!SELECT\_WRITE@{SELECT\_WRITE}}}\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780a1947680f50f6f8d1ab84b83245fcb293}\label{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780a1947680f50f6f8d1ab84b83245fcb293}} 
+S\+E\+L\+E\+C\+T\+\_\+\+W\+R\+I\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECT\_ERROR@{SELECT\_ERROR}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!SELECT\_ERROR@{SELECT\_ERROR}}}\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780a34d898ec97f42906cbc394972530d9a9}\label{classPoco_1_1Net_1_1SocketImpl_a83da33f180ce05c177be867406e3f780a34d898ec97f42906cbc394972530d9a9}} 
+S\+E\+L\+E\+C\+T\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 43 of file Socket\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a431d78a8282090675230f18a20afed56}\label{classPoco_1_1Net_1_1SocketImpl_a431d78a8282090675230f18a20afed56}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!SocketImpl@{SocketImpl}}
+\index{SocketImpl@{SocketImpl}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{SocketImpl()}{SocketImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Socket\+Impl\+::\+Socket\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns true iff the underlying socket is initialized. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a9d614086918c2a24b25f187fd16fc839}\label{classPoco_1_1Net_1_1SocketImpl_a9d614086918c2a24b25f187fd16fc839}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!SocketImpl@{SocketImpl}}
+\index{SocketImpl@{SocketImpl}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{SocketImpl()}{SocketImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Socket\+Impl\+::\+Socket\+Impl (\begin{DoxyParamCaption}\item[{poco\+\_\+socket\+\_\+t}]{sockfd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a84458639feb016bbe3ab1ca0a9ada96b}\label{classPoco_1_1Net_1_1SocketImpl_a84458639feb016bbe3ab1ca0a9ada96b}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!````~SocketImpl@{$\sim$SocketImpl}}
+\index{````~SocketImpl@{$\sim$SocketImpl}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{$\sim$SocketImpl()}{~SocketImpl()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+Socket\+Impl\+::$\sim$\+Socket\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} using the given native socket. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a16153f827776eb018d36aeb467cde290}\label{classPoco_1_1Net_1_1SocketImpl_a16153f827776eb018d36aeb467cde290}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!acceptConnection@{acceptConnection}}
+\index{acceptConnection@{acceptConnection}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{acceptConnection()}{acceptConnection()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}}$\ast$ Poco\+::\+Net\+::\+Socket\+Impl\+::accept\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{client\+Addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a0131ec003fa5c96d8a82b495afc5afb8}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_aaaeed3d7d3b7a57bad539e21bd4a1938}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_a21d21252760fb401884141fb94fc4b1c}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_aef377790f80420714811b589dc3af635}\label{classPoco_1_1Net_1_1SocketImpl_aef377790f80420714811b589dc3af635}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!address@{address}}
+\index{address@{address}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} Poco\+::\+Net\+::\+Socket\+Impl\+::address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the receive timeout for the socket.
+
+The returned timeout may be different than the timeout previously set with \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a5401c99e2a540d19f128f807e27172fa}{set\+Receive\+Timeout()}}, as the system is free to adjust the value. Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a05ce9b0b60e4b72ed4f2cb6790d59059}\label{classPoco_1_1Net_1_1SocketImpl_a05ce9b0b60e4b72ed4f2cb6790d59059}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!available@{available}}
+\index{available@{available}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Net\+::\+Socket\+Impl\+::available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sends one byte of urgent data through the socket.
+
+The data is sent with the M\+S\+G\+\_\+\+O\+OB flag.
+
+The preferred way for a socket to receive urgent data is by enabling the S\+O\+\_\+\+O\+O\+B\+I\+N\+L\+I\+NE option. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_ad40606c64ca11372ce80fbfd9d8a5c8c}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a0a31fa6fe898c4bd53c5752331904b5c}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a43d3da41f5b2b22cf75b6eb222fc53a5}\label{classPoco_1_1Net_1_1SocketImpl_a43d3da41f5b2b22cf75b6eb222fc53a5}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!bind@{bind}}
+\index{bind@{bind}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::bind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{bool}]{reuse\+Address = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Initializes the socket and establishes a connection to the T\+CP server at the given address. Prior to opening the connection the socket is set to nonblocking mode. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_a631562670ef41e135fb863ab720fe274}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_ac92f5572cf7374ccb5bdc2253c60e384}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a5fdf82f8106f7c6cf83b648d50a1e14d}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a5e2a45cbf7d403ddd1edb4585da193f5}\label{classPoco_1_1Net_1_1SocketImpl_a5e2a45cbf7d403ddd1edb4585da193f5}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!bind6@{bind6}}
+\index{bind6@{bind6}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{bind6()}{bind6()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::bind6 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{bool}]{reuse\+Address = {\ttfamily false},  }\item[{bool}]{ip\+V6\+Only = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Bind a local address to the socket.
+
+This is usually only done when establishing a server socket. T\+CP clients should not bind a socket to a specific address.
+
+If reuse\+Address is true, sets the S\+O\+\_\+\+R\+E\+U\+S\+E\+A\+D\+DR socket option. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a5e45a4b5ecdffbd878ee53994010ebd1}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a823bc2ba9a95531c00051611c9cdde64}\label{classPoco_1_1Net_1_1SocketImpl_a823bc2ba9a95531c00051611c9cdde64}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!close@{close}}
+\index{close@{close}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Puts the socket into listening state.
+
+The socket becomes a passive socket that can accept incoming connection requests.
+
+The backlog argument specifies the maximum number of connections that can be queued for this socket. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_a20107da556739218a1e8352a54799d8b}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_a57d92b198c1bcbf6a92069d54623a708}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_abff2e7d88daf29f1351177aa2afe63d9}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a9272c566890928fc5c9e96bcf37aa1ff}\label{classPoco_1_1Net_1_1SocketImpl_a9272c566890928fc5c9e96bcf37aa1ff}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!connect@{connect}}
+\index{connect@{connect}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the next completed connection from the socket\textquotesingle{}s completed connection queue.
+
+If the queue is empty, waits until a connection request completes.
+
+Returns a new T\+CP socket for the connection with the client.
+
+The client socket\textquotesingle{}s address is returned in client\+Addr. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_adfca79dcd5be281ae6f9ae661078fb8f}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a1d5948951d616ff72a0cbcf9fcf9f607}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_aa9e08578609c896a8150bbe9a344b9d0}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_ae4729b67ec92f0a604702cb88c6f1e6b}\label{classPoco_1_1Net_1_1SocketImpl_ae4729b67ec92f0a604702cb88c6f1e6b}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!connect@{connect}}
+\index{connect@{connect}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Initializes the socket and establishes a connection to the T\+CP server at the given address.
+
+Can also be used for U\+DP sockets. In this case, no connection is established. Instead, incoming and outgoing packets are restricted to the specified address. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_a55a36a9afc05000b47f2e1d939caa931}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_acc429a128b44865b2148df87705fd621}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_ae3b58711323509afb0fd5cd4631f376b}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a290c5e4887abdc5fd7bb5bd7d8856806}\label{classPoco_1_1Net_1_1SocketImpl_a290c5e4887abdc5fd7bb5bd7d8856806}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!connectNB@{connectNB}}
+\index{connectNB@{connectNB}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{connectNB()}{connectNB()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::connect\+NB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Initializes the socket, sets the socket timeout and establishes a connection to the T\+CP server at the given address. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_ab9052199b25b82b0647944c66a061f11}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_a190f2ce0b88e81a779fec7d3c8a120cd}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a2355742539b36d750b8759eeec7fed10}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a811dbd3e9e8f153fc7b5c2f4e5cbacdf}\label{classPoco_1_1Net_1_1SocketImpl_a811dbd3e9e8f153fc7b5c2f4e5cbacdf}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!error@{error}}
+\index{error@{error}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily static void Poco\+::\+Net\+::\+Socket\+Impl\+::error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Returns the last error code. 
+
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_afb5b15ed692c7aa408d0deef308a8036}\label{classPoco_1_1Net_1_1SocketImpl_afb5b15ed692c7aa408d0deef308a8036}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!error@{error}}
+\index{error@{error}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static void Poco\+::\+Net\+::\+Socket\+Impl\+::error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Throws an appropriate exception for the last error. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a2fac81981e534ba1baec655718a018fb}\label{classPoco_1_1Net_1_1SocketImpl_a2fac81981e534ba1baec655718a018fb}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!error@{error}}
+\index{error@{error}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static void Poco\+::\+Net\+::\+Socket\+Impl\+::error (\begin{DoxyParamCaption}\item[{int}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Throws an appropriate exception for the last error. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a46eb122eb782d0f7bc7334a3c8310041}\label{classPoco_1_1Net_1_1SocketImpl_a46eb122eb782d0f7bc7334a3c8310041}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!error@{error}}
+\index{error@{error}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static void Poco\+::\+Net\+::\+Socket\+Impl\+::error (\begin{DoxyParamCaption}\item[{int}]{code,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Throws an appropriate exception for the given error code. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a42a191f4fa362dfe0921843c84af5c04}\label{classPoco_1_1Net_1_1SocketImpl_a42a191f4fa362dfe0921843c84af5c04}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getBlocking@{getBlocking}}
+\index{getBlocking@{getBlocking}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getBlocking()}{getBlocking()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Blocking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the socket in blocking mode if flag is true, disables blocking mode if flag is false. 
+
+Definition at line 460 of file Socket\+Impl.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a32f3b5ded0f2657e2a5afe26de744726}\label{classPoco_1_1Net_1_1SocketImpl_a32f3b5ded0f2657e2a5afe26de744726}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getBroadcast@{getBroadcast}}
+\index{getBroadcast@{getBroadcast}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getBroadcast()}{getBroadcast()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Broadcast (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the value of the S\+O\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST socket option. 
+
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a49f847d52804a670914b304695fbd386}\label{classPoco_1_1Net_1_1SocketImpl_a49f847d52804a670914b304695fbd386}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getKeepAlive@{getKeepAlive}}
+\index{getKeepAlive@{getKeepAlive}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getKeepAlive()}{getKeepAlive()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Keep\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the value of the S\+O\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE socket option. 
+
+Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_aeb04c4c6889aacdda74309fb23db18ec}\label{classPoco_1_1Net_1_1SocketImpl_aeb04c4c6889aacdda74309fb23db18ec}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getLinger@{getLinger}}
+\index{getLinger@{getLinger}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getLinger()}{getLinger()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Linger (\begin{DoxyParamCaption}\item[{bool \&}]{on,  }\item[{int \&}]{seconds }\end{DoxyParamCaption})}
+
+
+
+Sets the value of the S\+O\+\_\+\+L\+I\+N\+G\+ER socket option. 
+
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_ab969da4db2960f8e66a585a3c5d03958}\label{classPoco_1_1Net_1_1SocketImpl_ab969da4db2960f8e66a585a3c5d03958}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getNoDelay@{getNoDelay}}
+\index{getNoDelay@{getNoDelay}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getNoDelay()}{getNoDelay()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Socket\+Impl\+::get\+No\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the value of the T\+C\+P\+\_\+\+N\+O\+D\+E\+L\+AY socket option. 
+
+Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a4b1b5fcc6e43f6f06074c7921ce13a69}\label{classPoco_1_1Net_1_1SocketImpl_a4b1b5fcc6e43f6f06074c7921ce13a69}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getOOBInline@{getOOBInline}}
+\index{getOOBInline@{getOOBInline}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getOOBInline()}{getOOBInline()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Socket\+Impl\+::get\+O\+O\+B\+Inline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the value of the S\+O\+\_\+\+O\+O\+B\+I\+N\+L\+I\+NE socket option. 
+
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_aa9e27c9fcff68c77257228a976ca5153}\label{classPoco_1_1Net_1_1SocketImpl_aa9e27c9fcff68c77257228a976ca5153}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getOption@{getOption}}
+\index{getOption@{getOption}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getOption()}{getOption()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Option (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{option,  }\item[{int \&}]{value }\end{DoxyParamCaption})}
+
+Sets the socket option specified by level and option to the given time value. Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a9912f75c526f124366931422e1775711}\label{classPoco_1_1Net_1_1SocketImpl_a9912f75c526f124366931422e1775711}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getOption@{getOption}}
+\index{getOption@{getOption}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getOption()}{getOption()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Option (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{option,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress}{I\+P\+Address}} \&}]{value }\end{DoxyParamCaption})}
+
+Returns the value of the socket option specified by level and option. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a60a11678ff2884e60982b7e0f0d02e3f}\label{classPoco_1_1Net_1_1SocketImpl_a60a11678ff2884e60982b7e0f0d02e3f}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getOption@{getOption}}
+\index{getOption@{getOption}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getOption()}{getOption()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Option (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{option,  }\item[{\mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{value }\end{DoxyParamCaption})}
+
+Returns the value of the socket option specified by level and option. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_adce6fbbb34a8623054e08f684dd2b41b}\label{classPoco_1_1Net_1_1SocketImpl_adce6fbbb34a8623054e08f684dd2b41b}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getOption@{getOption}}
+\index{getOption@{getOption}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getOption()}{getOption()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Option (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{option,  }\item[{unsigned \&}]{value }\end{DoxyParamCaption})}
+
+Returns the value of the socket option specified by level and option. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a2ad26450a604cbb7d1ff387a46e77e58}\label{classPoco_1_1Net_1_1SocketImpl_a2ad26450a604cbb7d1ff387a46e77e58}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getOption@{getOption}}
+\index{getOption@{getOption}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getOption()}{getOption()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Option (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{option,  }\item[{unsigned char \&}]{value }\end{DoxyParamCaption})}
+
+Returns the value of the socket option specified by level and option. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a282fbc921cdd87e191daa67e150a1ddb}\label{classPoco_1_1Net_1_1SocketImpl_a282fbc921cdd87e191daa67e150a1ddb}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getRawOption@{getRawOption}}
+\index{getRawOption@{getRawOption}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getRawOption()}{getRawOption()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Raw\+Option (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{option,  }\item[{void $\ast$}]{value,  }\item[{poco\+\_\+socklen\+\_\+t \&}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the value of the socket option specified by level and option. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a4e4ed01d5eb87858612f1b08db4d8c9e}\label{classPoco_1_1Net_1_1SocketImpl_a4e4ed01d5eb87858612f1b08db4d8c9e}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getReceiveBufferSize@{getReceiveBufferSize}}
+\index{getReceiveBufferSize@{getReceiveBufferSize}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getReceiveBufferSize()}{getReceiveBufferSize()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Receive\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the size of the receive buffer. 
+
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a1e165309a5ce14e9c661dec13308a612}\label{classPoco_1_1Net_1_1SocketImpl_a1e165309a5ce14e9c661dec13308a612}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getReceiveTimeout@{getReceiveTimeout}}
+\index{getReceiveTimeout@{getReceiveTimeout}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getReceiveTimeout()}{getReceiveTimeout()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Receive\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the send timeout for the socket.
+
+On systems that do not support S\+O\+\_\+\+R\+C\+V\+T\+I\+M\+EO, a workaround using \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a79bb81af87335fd4a000f235af7a9ef2}{poll()}} is provided. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_abb72e8a5a5e99726bc9b405700cf3f5a}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a5f3f9c10cbdb05c03455ac64ebb9787d}\label{classPoco_1_1Net_1_1SocketImpl_a5f3f9c10cbdb05c03455ac64ebb9787d}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getReuseAddress@{getReuseAddress}}
+\index{getReuseAddress@{getReuseAddress}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getReuseAddress()}{getReuseAddress()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Reuse\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the value of the S\+O\+\_\+\+R\+E\+U\+S\+E\+A\+D\+DR socket option. 
+
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_ae16279c4ad520e93e981d2223b07ade9}\label{classPoco_1_1Net_1_1SocketImpl_ae16279c4ad520e93e981d2223b07ade9}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getReusePort@{getReusePort}}
+\index{getReusePort@{getReusePort}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getReusePort()}{getReusePort()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Reuse\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the value of the S\+O\+\_\+\+R\+E\+U\+S\+E\+P\+O\+RT socket option. Does nothing if the socket implementation does not support S\+O\+\_\+\+R\+E\+U\+S\+E\+P\+O\+RT. Here is the caller graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a56ede6958c25cdeb73833648e4909d7c}\label{classPoco_1_1Net_1_1SocketImpl_a56ede6958c25cdeb73833648e4909d7c}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getSendBufferSize@{getSendBufferSize}}
+\index{getSendBufferSize@{getSendBufferSize}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getSendBufferSize()}{getSendBufferSize()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Send\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the size of the send buffer. 
+
+Here is the caller graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a24b1e5bdf46170d24262bf6cee5dd135}\label{classPoco_1_1Net_1_1SocketImpl_a24b1e5bdf46170d24262bf6cee5dd135}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!getSendTimeout@{getSendTimeout}}
+\index{getSendTimeout@{getSendTimeout}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{getSendTimeout()}{getSendTimeout()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} Poco\+::\+Net\+::\+Socket\+Impl\+::get\+Send\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the send timeout for the socket. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a2cded97e5cfbef2e9a3b499621838e67}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 18
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a79ad870810e84d67811d656c4a8707d4}\label{classPoco_1_1Net_1_1SocketImpl_a79ad870810e84d67811d656c4a8707d4}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!init@{init}}
+\index{init@{init}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::init (\begin{DoxyParamCaption}\item[{int}]{af }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}}. Closes the socket if it is still open. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1DatagramSocketImpl_af9f789154e6f43728195c0e89eb01aaf}{Poco\+::\+Net\+::\+Datagram\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1RawSocketImpl_ac49b7ecca3196e44b21048da6eb1f9b6}{Poco\+::\+Net\+::\+Raw\+Socket\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 19
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a7a7448461bb35fdd9b1c9cefe9bc92c7}\label{classPoco_1_1Net_1_1SocketImpl_a7a7448461bb35fdd9b1c9cefe9bc92c7}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!initialized@{initialized}}
+\index{initialized@{initialized}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{initialized()}{initialized()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Socket\+Impl\+::initialized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A wrapper for the ioctl system call. 
+
+
+
+Definition at line 444 of file Socket\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_aedff929707b03a0044b4db661c14c786}\label{classPoco_1_1Net_1_1SocketImpl_aedff929707b03a0044b4db661c14c786}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!initSocket@{initSocket}}
+\index{initSocket@{initSocket}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{initSocket()}{initSocket()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::init\+Socket (\begin{DoxyParamCaption}\item[{int}]{af,  }\item[{int}]{type,  }\item[{int}]{proto = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates the underlying native socket.
+
+Subclasses must implement this method so that it calls \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_aedff929707b03a0044b4db661c14c786}{init\+Socket()}} with the appropriate arguments.
+
+The default implementation creates a stream socket. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a9b8e95ddf8210cac78ac1173db12effc}\label{classPoco_1_1Net_1_1SocketImpl_a9b8e95ddf8210cac78ac1173db12effc}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!ioctl@{ioctl}}
+\index{ioctl@{ioctl}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{ioctl()}{ioctl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::ioctl (\begin{DoxyParamCaption}\item[{poco\+\_\+ioctl\+\_\+request\+\_\+t}]{request,  }\item[{int \&}]{arg }\end{DoxyParamCaption})}
+
+Returns the socket descriptor for the underlying native socket. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_aa04b9b1452f8af21e99a4810ceabb524}\label{classPoco_1_1Net_1_1SocketImpl_aa04b9b1452f8af21e99a4810ceabb524}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!ioctl@{ioctl}}
+\index{ioctl@{ioctl}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{ioctl()}{ioctl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::ioctl (\begin{DoxyParamCaption}\item[{poco\+\_\+ioctl\+\_\+request\+\_\+t}]{request,  }\item[{void $\ast$}]{arg }\end{DoxyParamCaption})}
+
+
+
+A wrapper for the ioctl system call. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a3ffe9583ed625f2d4ff2dd4871300cf4}\label{classPoco_1_1Net_1_1SocketImpl_a3ffe9583ed625f2d4ff2dd4871300cf4}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!lastError@{lastError}}
+\index{lastError@{lastError}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{lastError()}{lastError()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Socket\+Impl\+::last\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Allows subclasses to set the socket manually, iff no valid socket is set yet. 
+
+
+
+Definition at line 450 of file Socket\+Impl.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 20
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a0994375254b7e67388330c1197b242e1}\label{classPoco_1_1Net_1_1SocketImpl_a0994375254b7e67388330c1197b242e1}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!listen@{listen}}
+\index{listen@{listen}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{listen()}{listen()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::listen (\begin{DoxyParamCaption}\item[{int}]{backlog = {\ttfamily 64} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Bind a local I\+Pv6 address to the socket.
+
+This is usually only done when establishing a server socket. T\+CP clients should not bind a socket to a specific address.
+
+If reuse\+Address is true, sets the S\+O\+\_\+\+R\+E\+U\+S\+E\+A\+D\+DR socket option.
+
+The given address must be an I\+Pv6 address. The I\+P\+P\+R\+O\+T\+O\+\_\+\+I\+P\+V6/\+I\+P\+V6\+\_\+\+V6\+O\+N\+LY option is set on the socket according to the ip\+V6\+Only parameter.
+
+If the library has not been built with I\+Pv6 support, a Poco\+::\+Not\+Implemented\+Exception will be thrown. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_a45852f35e396b266379ebc18c523de96}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_aaf24b3b88a87791474be7aae3327593a}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a0fd0a80c8dc5d3ca51d93e284528ebe1}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a59d6dc5bd3a908cdd3af6ea902a13a8b}\label{classPoco_1_1Net_1_1SocketImpl_a59d6dc5bd3a908cdd3af6ea902a13a8b}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!peerAddress@{peerAddress}}
+\index{peerAddress@{peerAddress}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{peerAddress()}{peerAddress()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} Poco\+::\+Net\+::\+Socket\+Impl\+::peer\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the IP address and port number of the socket. 
+
+Here is the caller graph for this function\+:
+% FIG 21
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a79bb81af87335fd4a000f235af7a9ef2}\label{classPoco_1_1Net_1_1SocketImpl_a79bb81af87335fd4a000f235af7a9ef2}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!poll@{poll}}
+\index{poll@{poll}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{poll()}{poll()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Net\+::\+Socket\+Impl\+::poll (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout,  }\item[{int}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of bytes available that can be read without causing the socket to block. Here is the caller graph for this function\+:
+% FIG 22
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a0fad62e3c1372bd59866007e2191f470}\label{classPoco_1_1Net_1_1SocketImpl_a0fad62e3c1372bd59866007e2191f470}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!receiveBytes@{receiveBytes}}
+\index{receiveBytes@{receiveBytes}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{receiveBytes()}{receiveBytes()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Net\+::\+Socket\+Impl\+::receive\+Bytes (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sends the contents of the given buffer through the socket.
+
+Returns the number of bytes sent, which may be less than the number of bytes specified.
+
+Certain socket implementations may also return a negative value denoting a certain condition. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_ac257fd2595288f6db6be1467791e8b53}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_afa494a06dda9daf268b0a4fbcc693219}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_acf70121fa7d1ff069185207a8abd0b67}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a9c8592fd354cb5127498628062561109}\label{classPoco_1_1Net_1_1SocketImpl_a9c8592fd354cb5127498628062561109}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!receiveFrom@{receiveFrom}}
+\index{receiveFrom@{receiveFrom}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{receiveFrom()}{receiveFrom()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Net\+::\+Socket\+Impl\+::receive\+From (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sends the contents of the given buffer through the socket to the given address.
+
+Returns the number of bytes sent, which may be less than the number of bytes specified. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_a741566872a04680a021ae06c1143faad}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_a81c5a6c7624896d04d4b0dff4bc32ece}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a0b2880435f0a7dfdf3f9251587d39da8}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPSocketImpl_aeaa073931fda45f8d56d198e0bba647f}{Poco\+::\+Net\+::\+I\+C\+M\+P\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a5c12ec8588d8c7543b2b9c9b9cd0ef2d}\label{classPoco_1_1Net_1_1SocketImpl_a5c12ec8588d8c7543b2b9c9b9cd0ef2d}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!reset@{reset}}
+\index{reset@{reset}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::reset (\begin{DoxyParamCaption}\item[{poco\+\_\+socket\+\_\+t}]{fd = {\ttfamily POCO\+\_\+INVALID\+\_\+SOCKET} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates the underlying native socket.
+
+The first argument, af, specifies the address family used by the socket, which should be either A\+F\+\_\+\+I\+N\+ET or A\+F\+\_\+\+I\+N\+E\+T6.
+
+The second argument, type, specifies the type of the socket, which can be one of S\+O\+C\+K\+\_\+\+S\+T\+R\+E\+AM, S\+O\+C\+K\+\_\+\+D\+G\+R\+AM or S\+O\+C\+K\+\_\+\+R\+AW.
+
+The third argument, proto, is normally set to 0, except for raw sockets. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a03ad30594c5f54ce331519adcc51e44f}\label{classPoco_1_1Net_1_1SocketImpl_a03ad30594c5f54ce331519adcc51e44f}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!secure@{secure}}
+\index{secure@{secure}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{secure()}{secure()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Net\+::\+Socket\+Impl\+::secure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the blocking mode of the socket. This method will only work if the blocking modes of the socket are changed via the set\+Blocking method! 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_aab40c7b11db2480f5e5ff9a35cdd6412}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_a75cb8f217159867dcfabcdf9abcfda3e}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_afd964ee1af69e3b0cfa3567649f68be6}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 23
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_aa59d3c72d02155d6075cb3b681e691f0}\label{classPoco_1_1Net_1_1SocketImpl_aa59d3c72d02155d6075cb3b681e691f0}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!sendBytes@{sendBytes}}
+\index{sendBytes@{sendBytes}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{sendBytes()}{sendBytes()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Net\+::\+Socket\+Impl\+::send\+Bytes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Shuts down both the receiving and the sending part of the socket connection. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_ac819d987550c2d3d380d86f8e8e88daa}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_ab6a9bcbc6f105e733a3b6097a4bc2888}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl_ac8940d8ebe49ecd929f7e1dcd0a4c47a}{Poco\+::\+Net\+::\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_af7ce7cde53cfad634b2a94c0e2066c1e}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a1bb8b92cd44600dc1067c753d53d3f34}\label{classPoco_1_1Net_1_1SocketImpl_a1bb8b92cd44600dc1067c753d53d3f34}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!sendTo@{sendTo}}
+\index{sendTo@{sendTo}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{sendTo()}{sendTo()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Net\+::\+Socket\+Impl\+::send\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{int}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Receives data from the socket and stores it in buffer. Up to length bytes are received.
+
+Returns the number of bytes received.
+
+Certain socket implementations may also return a negative value denoting a certain condition. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_aa238ea9f928f4d2c8777fbf56adc897c}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_a18affbc1213335f6ea198224dc33aed1}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a4e57ec5f39e4fbce7a2347e45c8ae09d}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPSocketImpl_a7bc7eef62eba757665009251b44ac511}{Poco\+::\+Net\+::\+I\+C\+M\+P\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a0e9222ef356eef6a09f6c59be3da75ea}\label{classPoco_1_1Net_1_1SocketImpl_a0e9222ef356eef6a09f6c59be3da75ea}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!sendUrgent@{sendUrgent}}
+\index{sendUrgent@{sendUrgent}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{sendUrgent()}{sendUrgent()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::send\+Urgent (\begin{DoxyParamCaption}\item[{unsigned char}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Receives data from the socket and stores it in buffer. Up to length bytes are received. Stores the address of the sender in address.
+
+Returns the number of bytes received. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureServerSocketImpl_acf4bf32a51bfdf47d295551151d7456a}{Poco\+::\+Net\+::\+Secure\+Server\+Socket\+Impl}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_a1abd17cfc0da203c9e5936f3bf36b654}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a0bc0ed2c90f1e6b4cefaabd3e5834d3f}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a385b74e6b9c1a8064a2f64a3711686d6}\label{classPoco_1_1Net_1_1SocketImpl_a385b74e6b9c1a8064a2f64a3711686d6}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setBlocking@{setBlocking}}
+\index{setBlocking@{setBlocking}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setBlocking()}{setBlocking()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Blocking (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the value of the S\+O\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST socket option. 
+
+Here is the caller graph for this function\+:
+% FIG 24
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a98e91e59b1d1385f4c85bce4bcc2aecb}\label{classPoco_1_1Net_1_1SocketImpl_a98e91e59b1d1385f4c85bce4bcc2aecb}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setBroadcast@{setBroadcast}}
+\index{setBroadcast@{setBroadcast}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setBroadcast()}{setBroadcast()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Broadcast (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Returns the value of the S\+O\+\_\+\+O\+O\+B\+I\+N\+L\+I\+NE socket option. 
+
+Here is the caller graph for this function\+:
+% FIG 25
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_af8be6670ad1a1115e9415415c14a174c}\label{classPoco_1_1Net_1_1SocketImpl_af8be6670ad1a1115e9415415c14a174c}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setKeepAlive@{setKeepAlive}}
+\index{setKeepAlive@{setKeepAlive}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setKeepAlive()}{setKeepAlive()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Keep\+Alive (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Returns the value of the T\+C\+P\+\_\+\+N\+O\+D\+E\+L\+AY socket option. 
+
+Here is the caller graph for this function\+:
+% FIG 26
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_aca64e2ea533f82b9e78b668ad059240d}\label{classPoco_1_1Net_1_1SocketImpl_aca64e2ea533f82b9e78b668ad059240d}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setLinger@{setLinger}}
+\index{setLinger@{setLinger}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setLinger()}{setLinger()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Linger (\begin{DoxyParamCaption}\item[{bool}]{on,  }\item[{int}]{seconds }\end{DoxyParamCaption})}
+
+Returns the value of the socket option specified by level and option. ~\newline
+ Here is the caller graph for this function\+:
+% FIG 27
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a6e41e51a3034a64e47a3a0d0b63c6f6f}\label{classPoco_1_1Net_1_1SocketImpl_a6e41e51a3034a64e47a3a0d0b63c6f6f}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setNoDelay@{setNoDelay}}
+\index{setNoDelay@{setNoDelay}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setNoDelay()}{setNoDelay()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+No\+Delay (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Returns the value of the S\+O\+\_\+\+L\+I\+N\+G\+ER socket option. 
+
+Here is the caller graph for this function\+:
+% FIG 28
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_aef598e7a5551a432481c1f1f78b6023f}\label{classPoco_1_1Net_1_1SocketImpl_aef598e7a5551a432481c1f1f78b6023f}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setOOBInline@{setOOBInline}}
+\index{setOOBInline@{setOOBInline}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setOOBInline()}{setOOBInline()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+O\+O\+B\+Inline (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+Returns the value of the S\+O\+\_\+\+R\+E\+U\+S\+E\+P\+O\+RT socket option.
+
+Returns false if the socket implementation does not support S\+O\+\_\+\+R\+E\+U\+S\+E\+P\+O\+RT. Here is the caller graph for this function\+:
+% FIG 29
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a3212bf116ed3319ff59f0a008c47006e}\label{classPoco_1_1Net_1_1SocketImpl_a3212bf116ed3319ff59f0a008c47006e}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setOption@{setOption}}
+\index{setOption@{setOption}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setOption()}{setOption()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Option (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{option,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress}{I\+P\+Address}} \&}]{value }\end{DoxyParamCaption})}
+
+Sets the socket option specified by level and option to the given time value. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_ab082d67fa3ea3c11238926f0d6a07666}\label{classPoco_1_1Net_1_1SocketImpl_ab082d67fa3ea3c11238926f0d6a07666}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setOption@{setOption}}
+\index{setOption@{setOption}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setOption()}{setOption()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Option (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{option,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{value }\end{DoxyParamCaption})}
+
+Sets the socket option specified by level and option to the given integer value. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a35d99f6d235985827cd382e6e74cf7ca}\label{classPoco_1_1Net_1_1SocketImpl_a35d99f6d235985827cd382e6e74cf7ca}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setOption@{setOption}}
+\index{setOption@{setOption}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setOption()}{setOption()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Option (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{option,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns the IP address and port number of the peer socket. 
+
+Here is the caller graph for this function\+:
+% FIG 30
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_ac0f8a780abeb3d13e9bbe3cca02e6378}\label{classPoco_1_1Net_1_1SocketImpl_ac0f8a780abeb3d13e9bbe3cca02e6378}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setOption@{setOption}}
+\index{setOption@{setOption}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setOption()}{setOption()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Option (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{option,  }\item[{unsigned char}]{value }\end{DoxyParamCaption})}
+
+Sets the socket option specified by level and option to the given integer value. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_af7a3e1e5a6975cf88dec37028063d170}\label{classPoco_1_1Net_1_1SocketImpl_af7a3e1e5a6975cf88dec37028063d170}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setOption@{setOption}}
+\index{setOption@{setOption}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setOption()}{setOption()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Option (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{option,  }\item[{unsigned}]{value }\end{DoxyParamCaption})}
+
+Sets the socket option specified by level and option to the given integer value. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a3753ed5d4277882b8cbd32492c56f6a0}\label{classPoco_1_1Net_1_1SocketImpl_a3753ed5d4277882b8cbd32492c56f6a0}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setRawOption@{setRawOption}}
+\index{setRawOption@{setRawOption}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setRawOption()}{setRawOption()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Raw\+Option (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{option,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{value,  }\item[{poco\+\_\+socklen\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the socket option specified by level and option to the given time value. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a34e15aeb178ffb949ab24d0a66d7e175}\label{classPoco_1_1Net_1_1SocketImpl_a34e15aeb178ffb949ab24d0a66d7e175}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setReceiveBufferSize@{setReceiveBufferSize}}
+\index{setReceiveBufferSize@{setReceiveBufferSize}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setReceiveBufferSize()}{setReceiveBufferSize()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Receive\+Buffer\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the size of the send buffer.
+
+The returned value may be different than the value previously set with \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_afeaa1b59ae76e8c38a8f92cb1a19e0b9}{set\+Send\+Buffer\+Size()}}, as the system is free to adjust the value. Here is the caller graph for this function\+:
+% FIG 31
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a5401c99e2a540d19f128f807e27172fa}\label{classPoco_1_1Net_1_1SocketImpl_a5401c99e2a540d19f128f807e27172fa}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setReceiveTimeout@{setReceiveTimeout}}
+\index{setReceiveTimeout@{setReceiveTimeout}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setReceiveTimeout()}{setReceiveTimeout()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Receive\+Timeout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the send timeout for the socket.
+
+The returned timeout may be different than the timeout previously set with \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a6e7069c5e8385ec9581522cabaaef724}{set\+Send\+Timeout()}}, as the system is free to adjust the value. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_ae0d45acf249427dee7e1130f2389d44d}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 32
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_ad9443b9ff4558ca50ee2810355714144}\label{classPoco_1_1Net_1_1SocketImpl_ad9443b9ff4558ca50ee2810355714144}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setReuseAddress@{setReuseAddress}}
+\index{setReuseAddress@{setReuseAddress}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setReuseAddress()}{setReuseAddress()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Reuse\+Address (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Returns the value of the S\+O\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE socket option. 
+
+Here is the caller graph for this function\+:
+% FIG 33
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a4f719f8476f74babeb0dd510379cc134}\label{classPoco_1_1Net_1_1SocketImpl_a4f719f8476f74babeb0dd510379cc134}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setReusePort@{setReusePort}}
+\index{setReusePort@{setReusePort}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setReusePort()}{setReusePort()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Reuse\+Port (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+Returns the value of the S\+O\+\_\+\+R\+E\+U\+S\+E\+A\+D\+DR socket option. 
+
+Here is the caller graph for this function\+:
+% FIG 34
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_afeaa1b59ae76e8c38a8f92cb1a19e0b9}\label{classPoco_1_1Net_1_1SocketImpl_afeaa1b59ae76e8c38a8f92cb1a19e0b9}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setSendBufferSize@{setSendBufferSize}}
+\index{setSendBufferSize@{setSendBufferSize}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setSendBufferSize()}{setSendBufferSize()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Send\+Buffer\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Determines the status of the socket, using a call to select().
+
+The mode argument is constructed by combining the values of the Select\+Mode enumeration.
+
+Returns true if the next operation corresponding to mode will not block, false otherwise. Here is the caller graph for this function\+:
+% FIG 35
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a6e7069c5e8385ec9581522cabaaef724}\label{classPoco_1_1Net_1_1SocketImpl_a6e7069c5e8385ec9581522cabaaef724}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!setSendTimeout@{setSendTimeout}}
+\index{setSendTimeout@{setSendTimeout}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{setSendTimeout()}{setSendTimeout()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::set\+Send\+Timeout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the size of the receive buffer.
+
+The returned value may be different than the value previously set with \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl_a34e15aeb178ffb949ab24d0a66d7e175}{set\+Receive\+Buffer\+Size()}}, as the system is free to adjust the value. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_afc872a7794e2a3b7e8f31d2ce9b70583}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 36
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_ae962421bd2ce3466ec906178c00018e7}\label{classPoco_1_1Net_1_1SocketImpl_ae962421bd2ce3466ec906178c00018e7}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Shuts down the sending part of the socket connection. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_abcc8865dc755d3332faf784b53fd6398}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a222a4cef97dcd276deeda9171f5bfbff}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a0e92238ec6c7228a8a36c829cf500662}\label{classPoco_1_1Net_1_1SocketImpl_a0e92238ec6c7228a8a36c829cf500662}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!shutdownReceive@{shutdownReceive}}
+\index{shutdownReceive@{shutdownReceive}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{shutdownReceive()}{shutdownReceive()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::shutdown\+Receive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Close the socket. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_a63b60618883aa640978c3a9234817532}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_a96d41c0216bce818d9cc470fb6bbe6be}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_acdcad7d9b270930874dfed91d0b621a6}\label{classPoco_1_1Net_1_1SocketImpl_acdcad7d9b270930874dfed91d0b621a6}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!shutdownSend@{shutdownSend}}
+\index{shutdownSend@{shutdownSend}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{shutdownSend()}{shutdownSend()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Impl\+::shutdown\+Send (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Shuts down the receiving part of the socket connection. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocketImpl_acf9b3df76a63e5344577bd1631e84482}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocketImpl_ae96eae80c853ff56be05357caa1333ab}{Poco\+::\+Net\+::\+Web\+Socket\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a2051824d16288272de51f2b224c6f093}\label{classPoco_1_1Net_1_1SocketImpl_a2051824d16288272de51f2b224c6f093}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!socketError@{socketError}}
+\index{socketError@{socketError}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{socketError()}{socketError()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+Socket\+Impl\+::socket\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true iff the socket\textquotesingle{}s connection is secure (using S\+SL or T\+LS). Here is the caller graph for this function\+:
+% FIG 37
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_a39dc408f5d254af81ee85767d9fc4cdc}\label{classPoco_1_1Net_1_1SocketImpl_a39dc408f5d254af81ee85767d9fc4cdc}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!sockfd@{sockfd}}
+\index{sockfd@{sockfd}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{sockfd()}{sockfd()}}
+{\footnotesize\ttfamily poco\+\_\+socket\+\_\+t Poco\+::\+Net\+::\+Socket\+Impl\+::sockfd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the value of the S\+O\+\_\+\+E\+R\+R\+OR socket option. 
+
+
+
+Definition at line 438 of file Socket\+Impl.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 38
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_ad27a4c334f7fe97bfae3c47080aafd4a}\label{classPoco_1_1Net_1_1SocketImpl_ad27a4c334f7fe97bfae3c47080aafd4a}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!SecureSocketImpl@{SecureSocketImpl}}
+\index{SecureSocketImpl@{SecureSocketImpl}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{SecureSocketImpl}{SecureSocketImpl}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl}{Secure\+Socket\+Impl}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 431 of file Socket\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketImpl_ab510887d735ee73ab1cb598c66260e87}\label{classPoco_1_1Net_1_1SocketImpl_ab510887d735ee73ab1cb598c66260e87}} 
+\index{Poco::Net::SocketImpl@{Poco::Net::SocketImpl}!Socket@{Socket}}
+\index{Socket@{Socket}!Poco::Net::SocketImpl@{Poco::Net::SocketImpl}}
+\doxysubsubsection{\texorpdfstring{Socket}{Socket}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 430 of file Socket\+Impl.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{SocketImpl_8h}{Socket\+Impl.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{classPoco_1_1Net_1_1HTTPRequestHandler}{}\doxysection{Poco\+::Net\+::H\+T\+T\+P\+Request\+Handler Class Reference}
+\label{classPoco_1_1Net_1_1HTTPRequestHandler}\index{Poco::Net::HTTPRequestHandler@{Poco::Net::HTTPRequestHandler}}
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+Request\+Handler.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::H\+T\+T\+P\+Request\+Handler\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandler_adfdd07fc7cf9e14b5e8cbb71e04bf8fc}{H\+T\+T\+P\+Request\+Handler}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandler_aafc3b60e607784ac353908f8d10006dd}{$\sim$\+H\+T\+T\+P\+Request\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandler}{H\+T\+T\+P\+Request\+Handler}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandler_aa766ec81d67103e079501fc102e9fd46}{handle\+Request}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{H\+T\+T\+P\+Server\+Request}} \&request, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse}{H\+T\+T\+P\+Server\+Response}} \&response)=0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandler}{H\+T\+T\+P\+Request\+Handler}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The abstract base class for H\+T\+T\+P\+Request\+Handlers created by \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer}{H\+T\+T\+P\+Server}}.
+
+Derived classes must override the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandler_aa766ec81d67103e079501fc102e9fd46}{handle\+Request()}} method. Furthermore, a \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandlerFactory}{H\+T\+T\+P\+Request\+Handler\+Factory}} must be provided.
+
+The \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandler_aa766ec81d67103e079501fc102e9fd46}{handle\+Request()}} method must perform the complete handling of the H\+T\+TP request connection. As soon as the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandler_aa766ec81d67103e079501fc102e9fd46}{handle\+Request()}} method returns, the request handler object is destroyed.
+
+A new \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandler}{H\+T\+T\+P\+Request\+Handler}} object will be created for each new H\+T\+TP request that is received by the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer}{H\+T\+T\+P\+Server}}. 
+
+Definition at line 34 of file H\+T\+T\+P\+Request\+Handler.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequestHandler_adfdd07fc7cf9e14b5e8cbb71e04bf8fc}\label{classPoco_1_1Net_1_1HTTPRequestHandler_adfdd07fc7cf9e14b5e8cbb71e04bf8fc}} 
+\index{Poco::Net::HTTPRequestHandler@{Poco::Net::HTTPRequestHandler}!HTTPRequestHandler@{HTTPRequestHandler}}
+\index{HTTPRequestHandler@{HTTPRequestHandler}!Poco::Net::HTTPRequestHandler@{Poco::Net::HTTPRequestHandler}}
+\doxysubsubsection{\texorpdfstring{HTTPRequestHandler()}{HTTPRequestHandler()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+Handler\+::\+H\+T\+T\+P\+Request\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequestHandler_aafc3b60e607784ac353908f8d10006dd}\label{classPoco_1_1Net_1_1HTTPRequestHandler_aafc3b60e607784ac353908f8d10006dd}} 
+\index{Poco::Net::HTTPRequestHandler@{Poco::Net::HTTPRequestHandler}!````~HTTPRequestHandler@{$\sim$HTTPRequestHandler}}
+\index{````~HTTPRequestHandler@{$\sim$HTTPRequestHandler}!Poco::Net::HTTPRequestHandler@{Poco::Net::HTTPRequestHandler}}
+\doxysubsubsection{\texorpdfstring{$\sim$HTTPRequestHandler()}{~HTTPRequestHandler()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+Handler\+::$\sim$\+H\+T\+T\+P\+Request\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandler}{H\+T\+T\+P\+Request\+Handler}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPRequestHandler_aa766ec81d67103e079501fc102e9fd46}\label{classPoco_1_1Net_1_1HTTPRequestHandler_aa766ec81d67103e079501fc102e9fd46}} 
+\index{Poco::Net::HTTPRequestHandler@{Poco::Net::HTTPRequestHandler}!handleRequest@{handleRequest}}
+\index{handleRequest@{handleRequest}!Poco::Net::HTTPRequestHandler@{Poco::Net::HTTPRequestHandler}}
+\doxysubsubsection{\texorpdfstring{handleRequest()}{handleRequest()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+H\+T\+T\+P\+Request\+Handler\+::handle\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerRequest}{H\+T\+T\+P\+Server\+Request}} \&}]{request,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerResponse}{H\+T\+T\+P\+Server\+Response}} \&}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandler}{H\+T\+T\+P\+Request\+Handler}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerRequestHandler_a9485c56009cd4159e5aa185b5c2decb9}{Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Request\+Handler}}, and \mbox{\hyperlink{classPoco_1_1Net_1_1AbstractHTTPRequestHandler_a8a3820fe03a7a682625e4f317b3d08ab}{Poco\+::\+Net\+::\+Abstract\+H\+T\+T\+P\+Request\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{HTTPRequestHandler_8h}{H\+T\+T\+P\+Request\+Handler.\+h}}\end{DoxyCompactItemize}

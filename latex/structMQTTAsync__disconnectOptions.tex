@@ -1,0 +1,96 @@
+\hypertarget{structMQTTAsync__disconnectOptions}{}\doxysection{M\+Q\+T\+T\+Async\+\_\+disconnect\+Options Struct Reference}
+\label{structMQTTAsync__disconnectOptions}\index{MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}}
+
+
+{\ttfamily \#include $<$M\+Q\+T\+T\+Async.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char \mbox{\hyperlink{structMQTTAsync__disconnectOptions_a20885ec9441a8b6bd9bfe1a0b266a029}{struct\+\_\+id}} \mbox{[}4\mbox{]}
+\item 
+int \mbox{\hyperlink{structMQTTAsync__disconnectOptions_aef6853e3c56c83ca3b49250578417848}{struct\+\_\+version}}
+\item 
+int \mbox{\hyperlink{structMQTTAsync__disconnectOptions_a71f6175d58e01af30b064c19967d42ca}{timeout}}
+\item 
+\mbox{\hyperlink{MQTTAsync_8h_a7b0c18a0e29e2ce73f3ea109bc32617b}{M\+Q\+T\+T\+Async\+\_\+on\+Success}} $\ast$ \mbox{\hyperlink{structMQTTAsync__disconnectOptions_afe4eec80b7037a59e459fb8643bed3e3}{on\+Success}}
+\item 
+\mbox{\hyperlink{MQTTAsync_8h_a6060c25c2641e878803aef76fefb31ee}{M\+Q\+T\+T\+Async\+\_\+on\+Failure}} $\ast$ \mbox{\hyperlink{structMQTTAsync__disconnectOptions_a7719db20d0649fd1bd0edc239c289cdb}{on\+Failure}}
+\item 
+void $\ast$ \mbox{\hyperlink{structMQTTAsync__disconnectOptions_a6c8a7ef5c761e46d17750919eb4dadd3}{context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 806 of file M\+Q\+T\+T\+Async.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structMQTTAsync__disconnectOptions_a6c8a7ef5c761e46d17750919eb4dadd3}\label{structMQTTAsync__disconnectOptions_a6c8a7ef5c761e46d17750919eb4dadd3}} 
+\index{MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}!context@{context}}
+\index{context@{context}!MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily void$\ast$ M\+Q\+T\+T\+Async\+\_\+disconnect\+Options\+::context}
+
+A pointer to any application-\/specific context. The the {\itshape context} pointer is passed to success or failure callback functions to provide access to the context information in the callback. 
+
+Definition at line 834 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__disconnectOptions_a7719db20d0649fd1bd0edc239c289cdb}\label{structMQTTAsync__disconnectOptions_a7719db20d0649fd1bd0edc239c289cdb}} 
+\index{MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}!onFailure@{onFailure}}
+\index{onFailure@{onFailure}!MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}}
+\doxysubsubsection{\texorpdfstring{onFailure}{onFailure}}
+{\footnotesize\ttfamily \mbox{\hyperlink{MQTTAsync_8h_a6060c25c2641e878803aef76fefb31ee}{M\+Q\+T\+T\+Async\+\_\+on\+Failure}}$\ast$ M\+Q\+T\+T\+Async\+\_\+disconnect\+Options\+::on\+Failure}
+
+A pointer to a callback function to be called if the disconnect fails. Can be set to N\+U\+LL, in which case no indication of unsuccessful completion will be received. 
+
+Definition at line 828 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__disconnectOptions_afe4eec80b7037a59e459fb8643bed3e3}\label{structMQTTAsync__disconnectOptions_afe4eec80b7037a59e459fb8643bed3e3}} 
+\index{MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}!onSuccess@{onSuccess}}
+\index{onSuccess@{onSuccess}!MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}}
+\doxysubsubsection{\texorpdfstring{onSuccess}{onSuccess}}
+{\footnotesize\ttfamily \mbox{\hyperlink{MQTTAsync_8h_a7b0c18a0e29e2ce73f3ea109bc32617b}{M\+Q\+T\+T\+Async\+\_\+on\+Success}}$\ast$ M\+Q\+T\+T\+Async\+\_\+disconnect\+Options\+::on\+Success}
+
+A pointer to a callback function to be called if the disconnect successfully completes. Can be set to N\+U\+LL, in which case no indication of successful completion will be received. 
+
+Definition at line 822 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__disconnectOptions_a20885ec9441a8b6bd9bfe1a0b266a029}\label{structMQTTAsync__disconnectOptions_a20885ec9441a8b6bd9bfe1a0b266a029}} 
+\index{MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}!struct\_id@{struct\_id}}
+\index{struct\_id@{struct\_id}!MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}}
+\doxysubsubsection{\texorpdfstring{struct\_id}{struct\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char M\+Q\+T\+T\+Async\+\_\+disconnect\+Options\+::struct\+\_\+id\mbox{[}4\mbox{]}}
+
+The eyecatcher for this structure. Must be M\+Q\+TD. 
+
+Definition at line 809 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__disconnectOptions_aef6853e3c56c83ca3b49250578417848}\label{structMQTTAsync__disconnectOptions_aef6853e3c56c83ca3b49250578417848}} 
+\index{MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}!struct\_version@{struct\_version}}
+\index{struct\_version@{struct\_version}!MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}}
+\doxysubsubsection{\texorpdfstring{struct\_version}{struct\_version}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Async\+\_\+disconnect\+Options\+::struct\+\_\+version}
+
+The version number of this structure. Must be 0 or 1. 0 signifies no S\+SL options 
+
+Definition at line 811 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__disconnectOptions_a71f6175d58e01af30b064c19967d42ca}\label{structMQTTAsync__disconnectOptions_a71f6175d58e01af30b064c19967d42ca}} 
+\index{MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}!timeout@{timeout}}
+\index{timeout@{timeout}!MQTTAsync\_disconnectOptions@{MQTTAsync\_disconnectOptions}}
+\doxysubsubsection{\texorpdfstring{timeout}{timeout}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Async\+\_\+disconnect\+Options\+::timeout}
+
+The client delays disconnection for up to this time (in milliseconds) in order to allow in-\/flight message transfers to complete. 
+
+Definition at line 816 of file M\+Q\+T\+T\+Async.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+M\+Q\+T\+T/\+Paho/\mbox{\hyperlink{MQTTAsync_8h}{M\+Q\+T\+T\+Async.\+h}}\end{DoxyCompactItemize}

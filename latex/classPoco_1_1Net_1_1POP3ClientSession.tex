@@ -1,0 +1,264 @@
+\hypertarget{classPoco_1_1Net_1_1POP3ClientSession}{}\doxysection{Poco\+::Net\+::P\+O\+P3\+Client\+Session Class Reference}
+\label{classPoco_1_1Net_1_1POP3ClientSession}\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+
+
+{\ttfamily \#include $<$P\+O\+P3\+Client\+Session.\+h$>$}
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1Net_1_1POP3ClientSession_1_1MessageInfo}{Message\+Info}}
+\begin{DoxyCompactList}\small\item\em Information returned by \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a4497873766e3c4d1b7d1e5c9fbc8fac2}{list\+Messages()}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a051c9013607393b95f0192804f8bc60ba1d10d7364906cd53a056b3408c17da6b}{P\+O\+P3\+\_\+\+P\+O\+RT}} = 110
+ \}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{structPoco_1_1Net_1_1POP3ClientSession_1_1MessageInfo}{Message\+Info}} $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_ad9670360f2f3abde38ea4ecd61fd19eb}{Message\+Info\+Vec}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_aff82778805ac5fd4c6c546c34e23b644}{P\+O\+P3\+Client\+Session}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&socket)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_aec195669bc1c79efd35ee14c3fb0001b}{P\+O\+P3\+Client\+Session}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host, Poco\+::\+U\+Int16 port=\mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a051c9013607393b95f0192804f8bc60ba1d10d7364906cd53a056b3408c17da6b}{P\+O\+P3\+\_\+\+P\+O\+RT}})
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a7dbacfc05344d0d051e1956ed1f79a29}{$\sim$\+P\+O\+P3\+Client\+Session}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_aa9f3e8073b77e0cbb3e8471183e3ba66}{set\+Timeout}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPClientSession}{S\+M\+T\+P\+Client\+Session}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a43ab34349e5e22cc890a1b7883d73e1f}{get\+Timeout}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the timeout for socket read operations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a14373f6ca69b904c27f63ea132095d8b}{login}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&username, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Returns the timeout for socket read operations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a9fb7d95eb3d2743c60625857717c6b34}{close}} ()
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a22af73ca80d9a3a3361455ed5fb4e27e}{message\+Count}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a4497873766e3c4d1b7d1e5c9fbc8fac2}{list\+Messages}} (\mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_ad9670360f2f3abde38ea4ecd61fd19eb}{Message\+Info\+Vec}} \&messages)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_ae825e8a504136fd01cb84232d8b131cd}{retrieve\+Message}} (int id, \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}} \&message)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_ae3330014db7ddbf65b1be0a67decbaaf}{retrieve\+Message}} (int id, \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}} \&message, \mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}} \&handler)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_ae1b401e94f0a944a13418239755f0736}{retrieve\+Message}} (int id, std\+::ostream \&ostr)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a0439383788061d9abe7110312c909262}{retrieve\+Header}} (int id, \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&header)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_aaf8482c1bf7016321185d04cd8560a2c}{delete\+Message}} (int id)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_ae309ffc4189a14216aeb70d6f7edcb1e}{send\+Command}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&command, std\+::string \&response)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a92fa8d135c822a886c8cd1d63aa37f81}{send\+Command}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&command, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&arg, std\+::string \&response)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a710c797b7eef70d6eadff6d77a33ca9f}{send\+Command}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&command, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&arg1, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&arg2, std\+::string \&response)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_ac6156fdea5d8c33d7933e2f9a160227b}{is\+Positive}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&response)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class implements an Post Office Protocol Version 3 (P\+O\+P3, R\+FC 1939) client for receiving e-\/mail messages. 
+
+Definition at line 39 of file P\+O\+P3\+Client\+Session.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_ad9670360f2f3abde38ea4ecd61fd19eb}\label{classPoco_1_1Net_1_1POP3ClientSession_ad9670360f2f3abde38ea4ecd61fd19eb}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!MessageInfoVec@{MessageInfoVec}}
+\index{MessageInfoVec@{MessageInfoVec}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{MessageInfoVec}{MessageInfoVec}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{structPoco_1_1Net_1_1POP3ClientSession_1_1MessageInfo}{Message\+Info}}$>$ \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_ad9670360f2f3abde38ea4ecd61fd19eb}{Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::\+Message\+Info\+Vec}}}
+
+
+
+Definition at line 57 of file P\+O\+P3\+Client\+Session.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_a051c9013607393b95f0192804f8bc60b}\label{classPoco_1_1Net_1_1POP3ClientSession_a051c9013607393b95f0192804f8bc60b}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POP3\_PORT@{POP3\_PORT}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!POP3\_PORT@{POP3\_PORT}}}\mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_a051c9013607393b95f0192804f8bc60ba1d10d7364906cd53a056b3408c17da6b}\label{classPoco_1_1Net_1_1POP3ClientSession_a051c9013607393b95f0192804f8bc60ba1d10d7364906cd53a056b3408c17da6b}} 
+P\+O\+P3\+\_\+\+P\+O\+RT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 45 of file P\+O\+P3\+Client\+Session.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_aff82778805ac5fd4c6c546c34e23b644}\label{classPoco_1_1Net_1_1POP3ClientSession_aff82778805ac5fd4c6c546c34e23b644}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!POP3ClientSession@{POP3ClientSession}}
+\index{POP3ClientSession@{POP3ClientSession}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{POP3ClientSession()}{POP3ClientSession()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::\+P\+O\+P3\+Client\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&}]{socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_aec195669bc1c79efd35ee14c3fb0001b}\label{classPoco_1_1Net_1_1POP3ClientSession_aec195669bc1c79efd35ee14c3fb0001b}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!POP3ClientSession@{POP3ClientSession}}
+\index{POP3ClientSession@{POP3ClientSession}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{POP3ClientSession()}{POP3ClientSession()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::\+P\+O\+P3\+Client\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host,  }\item[{Poco\+::\+U\+Int16}]{port = {\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a051c9013607393b95f0192804f8bc60ba1d10d7364906cd53a056b3408c17da6b}{P\+O\+P3\+\_\+\+P\+O\+RT}}} }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession}{P\+O\+P3\+Client\+Session}} using the given socket, which must be connected to a P\+O\+P3 server. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_a7dbacfc05344d0d051e1956ed1f79a29}\label{classPoco_1_1Net_1_1POP3ClientSession_a7dbacfc05344d0d051e1956ed1f79a29}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!````~POP3ClientSession@{$\sim$POP3ClientSession}}
+\index{````~POP3ClientSession@{$\sim$POP3ClientSession}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{$\sim$POP3ClientSession()}{~POP3ClientSession()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::$\sim$\+P\+O\+P3\+Client\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession}{P\+O\+P3\+Client\+Session}} using a socket connected to the given host and port. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_a9fb7d95eb3d2743c60625857717c6b34}\label{classPoco_1_1Net_1_1POP3ClientSession_a9fb7d95eb3d2743c60625857717c6b34}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!close@{close}}
+\index{close@{close}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Logs in to the P\+O\+P3 server by sending a U\+S\+ER command followed by a P\+A\+SS command.
+
+Throws a P\+O\+P3\+Exception in case of a P\+O\+P3-\/specific error, or a Net\+Exception in case of a general network communication failure. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_aaf8482c1bf7016321185d04cd8560a2c}\label{classPoco_1_1Net_1_1POP3ClientSession_aaf8482c1bf7016321185d04cd8560a2c}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!deleteMessage@{deleteMessage}}
+\index{deleteMessage@{deleteMessage}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{deleteMessage()}{deleteMessage()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::delete\+Message (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Retrieves the message header of the message with the given id and stores it in header.
+
+For this to work, the server must support the T\+OP command.
+
+Throws a P\+O\+P3\+Exception in case of a P\+O\+P3-\/specific error, or a Net\+Exception in case of a general network communication failure. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_a43ab34349e5e22cc890a1b7883d73e1f}\label{classPoco_1_1Net_1_1POP3ClientSession_a43ab34349e5e22cc890a1b7883d73e1f}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!getTimeout@{getTimeout}}
+\index{getTimeout@{getTimeout}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{getTimeout()}{getTimeout()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::get\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Sets the timeout for socket read operations. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_ac6156fdea5d8c33d7933e2f9a160227b}\label{classPoco_1_1Net_1_1POP3ClientSession_ac6156fdea5d8c33d7933e2f9a160227b}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!isPositive@{isPositive}}
+\index{isPositive@{isPositive}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{isPositive()}{isPositive()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::is\+Positive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Sends the given command verbatim to the server and waits for a response.
+
+Returns true if the response is positive, false otherwise.
+
+Throws a P\+O\+P3\+Exception in case of a P\+O\+P3-\/specific error, or a Net\+Exception in case of a general network communication failure. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_a4497873766e3c4d1b7d1e5c9fbc8fac2}\label{classPoco_1_1Net_1_1POP3ClientSession_a4497873766e3c4d1b7d1e5c9fbc8fac2}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!listMessages@{listMessages}}
+\index{listMessages@{listMessages}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{listMessages()}{listMessages()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::list\+Messages (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_ad9670360f2f3abde38ea4ecd61fd19eb}{Message\+Info\+Vec}} \&}]{messages }\end{DoxyParamCaption})}
+
+Sends a S\+T\+AT command to determine the number of messages available on the server and returns that number.
+
+Throws a P\+O\+P3\+Exception in case of a P\+O\+P3-\/specific error, or a Net\+Exception in case of a general network communication failure. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_a14373f6ca69b904c27f63ea132095d8b}\label{classPoco_1_1Net_1_1POP3ClientSession_a14373f6ca69b904c27f63ea132095d8b}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!login@{login}}
+\index{login@{login}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{username,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Returns the timeout for socket read operations. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_a22af73ca80d9a3a3361455ed5fb4e27e}\label{classPoco_1_1Net_1_1POP3ClientSession_a22af73ca80d9a3a3361455ed5fb4e27e}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!messageCount@{messageCount}}
+\index{messageCount@{messageCount}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{messageCount()}{messageCount()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::message\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sends a Q\+U\+IT command and closes the connection to the server. ~\newline
+
+
+Throws a P\+O\+P3\+Exception in case of a P\+O\+P3-\/specific error, or a Net\+Exception in case of a general network communication failure. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_a0439383788061d9abe7110312c909262}\label{classPoco_1_1Net_1_1POP3ClientSession_a0439383788061d9abe7110312c909262}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!retrieveHeader@{retrieveHeader}}
+\index{retrieveHeader@{retrieveHeader}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{retrieveHeader()}{retrieveHeader()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::retrieve\+Header (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&}]{header }\end{DoxyParamCaption})}
+
+Retrieves the raw message with the given id from the server and copies it to the given output stream.
+
+Throws a P\+O\+P3\+Exception in case of a P\+O\+P3-\/specific error, or a Net\+Exception in case of a general network communication failure. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_ae825e8a504136fd01cb84232d8b131cd}\label{classPoco_1_1Net_1_1POP3ClientSession_ae825e8a504136fd01cb84232d8b131cd}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!retrieveMessage@{retrieveMessage}}
+\index{retrieveMessage@{retrieveMessage}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{retrieveMessage()}{retrieveMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::retrieve\+Message (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}} \&}]{message }\end{DoxyParamCaption})}
+
+Fills the given vector with the ids and sizes of all messages available on the server.
+
+Throws a P\+O\+P3\+Exception in case of a P\+O\+P3-\/specific error, or a Net\+Exception in case of a general network communication failure. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_ae3330014db7ddbf65b1be0a67decbaaf}\label{classPoco_1_1Net_1_1POP3ClientSession_ae3330014db7ddbf65b1be0a67decbaaf}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!retrieveMessage@{retrieveMessage}}
+\index{retrieveMessage@{retrieveMessage}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{retrieveMessage()}{retrieveMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::retrieve\+Message (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}} \&}]{message,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}} \&}]{handler }\end{DoxyParamCaption})}
+
+Retrieves the message with the given id from the server and stores the raw message content in the message\textquotesingle{}s content string, available with message.\+get\+Content().
+
+Throws a P\+O\+P3\+Exception in case of a P\+O\+P3-\/specific error, or a Net\+Exception in case of a general network communication failure. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_ae1b401e94f0a944a13418239755f0736}\label{classPoco_1_1Net_1_1POP3ClientSession_ae1b401e94f0a944a13418239755f0736}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!retrieveMessage@{retrieveMessage}}
+\index{retrieveMessage@{retrieveMessage}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{retrieveMessage()}{retrieveMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::retrieve\+Message (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption})}
+
+Retrieves the message with the given id from the server and stores it in message.
+
+If the message has multiple parts, the parts are reported to the \mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}}. If the message is not a multi-\/part message, the content is stored in a string available by calling message.\+get\+Content().
+
+Throws a P\+O\+P3\+Exception in case of a P\+O\+P3-\/specific error, or a Net\+Exception in case of a general network communication failure. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_a92fa8d135c822a886c8cd1d63aa37f81}\label{classPoco_1_1Net_1_1POP3ClientSession_a92fa8d135c822a886c8cd1d63aa37f81}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!sendCommand@{sendCommand}}
+\index{sendCommand@{sendCommand}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{sendCommand()}{sendCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::send\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{command,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{arg,  }\item[{std\+::string \&}]{response }\end{DoxyParamCaption})}
+
+Sends the given command verbatim to the server and waits for a response.
+
+Returns true if the response is positive, false otherwise.
+
+Throws a P\+O\+P3\+Exception in case of a P\+O\+P3-\/specific error, or a Net\+Exception in case of a general network communication failure. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_a710c797b7eef70d6eadff6d77a33ca9f}\label{classPoco_1_1Net_1_1POP3ClientSession_a710c797b7eef70d6eadff6d77a33ca9f}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!sendCommand@{sendCommand}}
+\index{sendCommand@{sendCommand}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{sendCommand()}{sendCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::send\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{command,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{arg1,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{arg2,  }\item[{std\+::string \&}]{response }\end{DoxyParamCaption})}
+
+Sends the given command verbatim to the server and waits for a response.
+
+Returns true if the response is positive, false otherwise.
+
+Throws a P\+O\+P3\+Exception in case of a P\+O\+P3-\/specific error, or a Net\+Exception in case of a general network communication failure. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_ae309ffc4189a14216aeb70d6f7edcb1e}\label{classPoco_1_1Net_1_1POP3ClientSession_ae309ffc4189a14216aeb70d6f7edcb1e}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!sendCommand@{sendCommand}}
+\index{sendCommand@{sendCommand}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{sendCommand()}{sendCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::send\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{command,  }\item[{std\+::string \&}]{response }\end{DoxyParamCaption})}
+
+Marks the message with the given ID for deletion. The message will be deleted when the connection to the server is closed by calling \mbox{\hyperlink{classPoco_1_1Net_1_1POP3ClientSession_a9fb7d95eb3d2743c60625857717c6b34}{close()}}.
+
+Throws a P\+O\+P3\+Exception in case of a P\+O\+P3-\/specific error, or a Net\+Exception in case of a general network communication failure. \mbox{\Hypertarget{classPoco_1_1Net_1_1POP3ClientSession_aa9f3e8073b77e0cbb3e8471183e3ba66}\label{classPoco_1_1Net_1_1POP3ClientSession_aa9f3e8073b77e0cbb3e8471183e3ba66}} 
+\index{Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}!setTimeout@{setTimeout}}
+\index{setTimeout@{setTimeout}!Poco::Net::POP3ClientSession@{Poco::Net::POP3ClientSession}}
+\doxysubsubsection{\texorpdfstring{setTimeout()}{setTimeout()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+P\+O\+P3\+Client\+Session\+::set\+Timeout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPClientSession}{S\+M\+T\+P\+Client\+Session}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{POP3ClientSession_8h}{P\+O\+P3\+Client\+Session.\+h}}\end{DoxyCompactItemize}

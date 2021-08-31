@@ -1,0 +1,244 @@
+\hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl}{}\doxysection{Poco\+::Data\+::S\+Q\+Lite\+::S\+Q\+Lite\+Statement\+Impl Class Reference}
+\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl}\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+
+
+Implements statement functionality needed for \mbox{\hyperlink{namespacePoco_1_1Data_1_1SQLite}{S\+Q\+Lite}}.  
+
+
+
+
+{\ttfamily \#include $<$S\+Q\+Lite\+Statement\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::S\+Q\+Lite\+::S\+Q\+Lite\+Statement\+Impl\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Data\+::S\+Q\+Lite\+::S\+Q\+Lite\+Statement\+Impl\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a68c47af401fe8bbcd8c5a87804ba9cf3}{S\+Q\+Lite\+Statement\+Impl}} (\mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Poco\+::\+Data\+::\+Session\+Impl}} \&r\+Session, \mbox{\hyperlink{SQLite_2SessionImpl_8h_a0ef6f2646262c8a9b24368d8ac140f69}{sqlite3}} $\ast$p\+DB)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a2ebfb0e48c65eb62694474e745bf4906}{$\sim$\+S\+Q\+Lite\+Statement\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl}{S\+Q\+Lite\+Statement\+Impl}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_ac8f822814ce2f2f507585727b03c413b}{columns\+Returned}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl}{S\+Q\+Lite\+Statement\+Impl}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a892bb074143b3c1b9847262599eb766d}{affected\+Row\+Count}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns number of columns returned by query. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1MetaColumn}{Meta\+Column}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a28c54dec578ebd892b013c3700c46ae4}{meta\+Column}} (std\+::size\+\_\+t pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a704c33413fbc1aa11d11397517e4b3b9}{has\+Next}} ()
+\begin{DoxyCompactList}\small\item\em Returns column meta data. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_afcda778f40772f9a2b76f3fb6f328bcc}{next}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if a call to \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_afcda778f40772f9a2b76f3fb6f328bcc}{next()}} will return data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_adb6d1b1a54576d108b697f67732621cf}{can\+Bind}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a8fe9e78b5b4811d9086b91ce3fc8c277}{can\+Compile}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if a valid statement is set and we can bind. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a0c4b2005f3911858cc208a24a4d7822c}{compile\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if statement can compile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a8a76c36946fd572c1cd6a1abec6423e1}{bind\+Impl}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_ad0be39556dac6c444ac9eb0c0ebc574a}{Abstract\+Extraction\+::\+Extractor\+Ptr}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a25e72928fbc1432bf305079df991a1b5}{extractor}} ()
+\begin{DoxyCompactList}\small\item\em Binds parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_a9c37c2ba202a02dfc82f5aa20549026e}{Abstract\+Binding\+::\+Binder\+Ptr}} \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a45a8b3b23970d2d0a0ff432293cdd501}{binder}} ()
+\begin{DoxyCompactList}\small\item\em Returns the concrete extractor used by the statement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Implements statement functionality needed for \mbox{\hyperlink{namespacePoco_1_1Data_1_1SQLite}{S\+Q\+Lite}}. 
+
+Definition at line 43 of file S\+Q\+Lite\+Statement\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a68c47af401fe8bbcd8c5a87804ba9cf3}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a68c47af401fe8bbcd8c5a87804ba9cf3}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!SQLiteStatementImpl@{SQLiteStatementImpl}}
+\index{SQLiteStatementImpl@{SQLiteStatementImpl}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{SQLiteStatementImpl()}{SQLiteStatementImpl()}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::\+S\+Q\+Lite\+Statement\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Poco\+::\+Data\+::\+Session\+Impl}} \&}]{r\+Session,  }\item[{\mbox{\hyperlink{SQLite_2SessionImpl_8h_a0ef6f2646262c8a9b24368d8ac140f69}{sqlite3}} $\ast$}]{p\+DB }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a2ebfb0e48c65eb62694474e745bf4906}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a2ebfb0e48c65eb62694474e745bf4906}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!````~SQLiteStatementImpl@{$\sim$SQLiteStatementImpl}}
+\index{````~SQLiteStatementImpl@{$\sim$SQLiteStatementImpl}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{$\sim$SQLiteStatementImpl()}{~SQLiteStatementImpl()}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::$\sim$\+S\+Q\+Lite\+Statement\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl}{S\+Q\+Lite\+Statement\+Impl}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a892bb074143b3c1b9847262599eb766d}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a892bb074143b3c1b9847262599eb766d}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!affectedRowCount@{affectedRowCount}}
+\index{affectedRowCount@{affectedRowCount}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{affectedRowCount()}{affectedRowCount()}}
+{\footnotesize\ttfamily int Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::affected\+Row\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Returns number of columns returned by query. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_aac5c7c91781b86091accda359ba2aacf}{Poco\+::\+Data\+::\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a45a8b3b23970d2d0a0ff432293cdd501}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a45a8b3b23970d2d0a0ff432293cdd501}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!binder@{binder}}
+\index{binder@{binder}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{binder()}{binder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_a9c37c2ba202a02dfc82f5aa20549026e}{Abstract\+Binding\+::\+Binder\+Ptr}} Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::binder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Returns the concrete extractor used by the statement. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_a81ddf0ec837a8e84356501c0c5465a15}{Poco\+::\+Data\+::\+Statement\+Impl}}.
+
+
+
+Definition at line 136 of file S\+Q\+Lite\+Statement\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a8a76c36946fd572c1cd6a1abec6423e1}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a8a76c36946fd572c1cd6a1abec6423e1}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!bindImpl@{bindImpl}}
+\index{bindImpl@{bindImpl}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{bindImpl()}{bindImpl()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::bind\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Compiles the statement, doesn\textquotesingle{}t bind yet. Returns true if the statement was succesfully compiled. The way \mbox{\hyperlink{namespacePoco_1_1Data_1_1SQLite}{S\+Q\+Lite}} handles batches of statmeents is by compiling one at a time and returning a pointer to the next one. The remainder of the statement is kept in a string buffer pointed to by \+\_\+p\+Leftover member. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_aa06f9b88849ed51f9e657deb8d275036}{Poco\+::\+Data\+::\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_adb6d1b1a54576d108b697f67732621cf}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_adb6d1b1a54576d108b697f67732621cf}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!canBind@{canBind}}
+\index{canBind@{canBind}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{canBind()}{canBind()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::can\+Bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Retrieves the next row from the resultset and returns 1. Will throw, if the resultset is empty. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_ae3cc97e16619008ef7ff8a57baf35157}{Poco\+::\+Data\+::\+Statement\+Impl}}.
+
+
+
+Definition at line 142 of file S\+Q\+Lite\+Statement\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a8fe9e78b5b4811d9086b91ce3fc8c277}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a8fe9e78b5b4811d9086b91ce3fc8c277}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!canCompile@{canCompile}}
+\index{canCompile@{canCompile}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{canCompile()}{canCompile()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::can\+Compile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Returns true if a valid statement is set and we can bind. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_aa752c904e722e8053a6c062e65e134ee}{Poco\+::\+Data\+::\+Statement\+Impl}}.
+
+
+
+Definition at line 148 of file S\+Q\+Lite\+Statement\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_ac8f822814ce2f2f507585727b03c413b}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_ac8f822814ce2f2f507585727b03c413b}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!columnsReturned@{columnsReturned}}
+\index{columnsReturned@{columnsReturned}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{columnsReturned()}{columnsReturned()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::columns\+Returned (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl}{S\+Q\+Lite\+Statement\+Impl}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_a39228f9763431ad9dc8ef43cfdc8d7c5}{Poco\+::\+Data\+::\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a0c4b2005f3911858cc208a24a4d7822c}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a0c4b2005f3911858cc208a24a4d7822c}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!compileImpl@{compileImpl}}
+\index{compileImpl@{compileImpl}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{compileImpl()}{compileImpl()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::compile\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Returns true if statement can compile. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_a566d5027ab7d3d29a58d6191fc6d1e81}{Poco\+::\+Data\+::\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a25e72928fbc1432bf305079df991a1b5}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a25e72928fbc1432bf305079df991a1b5}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!extractor@{extractor}}
+\index{extractor@{extractor}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{extractor()}{extractor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_ad0be39556dac6c444ac9eb0c0ebc574a}{Abstract\+Extraction\+::\+Extractor\+Ptr}} Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::extractor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Binds parameters. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_aed816af34f8788f42497e88ce3264535}{Poco\+::\+Data\+::\+Statement\+Impl}}.
+
+
+
+Definition at line 130 of file S\+Q\+Lite\+Statement\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a704c33413fbc1aa11d11397517e4b3b9}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a704c33413fbc1aa11d11397517e4b3b9}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!hasNext@{hasNext}}
+\index{hasNext@{hasNext}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{hasNext()}{hasNext()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::has\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Returns column meta data. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_abad39ee500588599b6621fd7dd8e6680}{Poco\+::\+Data\+::\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a28c54dec578ebd892b013c3700c46ae4}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_a28c54dec578ebd892b013c3700c46ae4}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!metaColumn@{metaColumn}}
+\index{metaColumn@{metaColumn}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{metaColumn()}{metaColumn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1MetaColumn}{Meta\+Column}}\& Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::meta\+Column (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Returns the number of affected rows. Used to find out the number of rows affected by insert, delete or update. All changes are counted, even if they are later undone by a R\+O\+L\+L\+B\+A\+CK or A\+B\+O\+RT. Changes associated with creating and dropping tables are not counted. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_ae177b1cec7d2b02b7d48a1caad44cf2b}{Poco\+::\+Data\+::\+Statement\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_afcda778f40772f9a2b76f3fb6f328bcc}\label{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_afcda778f40772f9a2b76f3fb6f328bcc}} 
+\index{Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}!next@{next}}
+\index{next@{next}!Poco::Data::SQLite::SQLiteStatementImpl@{Poco::Data::SQLite::SQLiteStatementImpl}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+S\+Q\+Lite\+Statement\+Impl\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Returns true if a call to \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SQLiteStatementImpl_afcda778f40772f9a2b76f3fb6f328bcc}{next()}} will return data. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_a151c258b82dd2e6fe0184f82baa93c65}{Poco\+::\+Data\+::\+Statement\+Impl}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\+S\+Q\+Lite/\mbox{\hyperlink{SQLiteStatementImpl_8h}{S\+Q\+Lite\+Statement\+Impl.\+h}}\end{DoxyCompactItemize}

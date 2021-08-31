@@ -1,0 +1,156 @@
+\hypertarget{classPoco_1_1Net_1_1ICMPClient}{}\doxysection{Poco\+::Net\+::I\+C\+M\+P\+Client Class Reference}
+\label{classPoco_1_1Net_1_1ICMPClient}\index{Poco::Net::ICMPClient@{Poco::Net::ICMPClient}}
+
+
+{\ttfamily \#include $<$I\+C\+M\+P\+Client.\+h$>$}
+
+
+
+Collaboration diagram for Poco\+::Net\+::I\+C\+M\+P\+Client\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1ICMPClient_a9974ea93d3118ae2e30b9a2b232e20c5}{I\+C\+M\+P\+Client}} (\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress_a048c8fc29019f4722f2cdb5ba752d9b6}{I\+P\+Address\+::\+Family}} family)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1ICMPClient_ac2edf52956dd9f4270d3fb725737f5b5}{$\sim$\+I\+C\+M\+P\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Creates an I\+C\+MP client. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPClient_a62caa6ec5653275f85219de44b42fc33}{ping}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&address, int repeat=1) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the I\+C\+MP client. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPClient_a09952630a5f325763bf2950c1292f219}{ping}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&address, int repeat=1) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPClient_a248b9ea3ec105fd313462ec8eb2c2118}{ping}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&address, \mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress_a048c8fc29019f4722f2cdb5ba752d9b6}{I\+P\+Address\+::\+Family}} family, int repeat=1)
+\item 
+static int \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPClient_a3962a9c7547a3fe529dc781dd68faea7}{ping\+I\+Pv4}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&address, int repeat=1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPEventArgs}{I\+C\+M\+P\+Event\+Args}} $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPClient_ab8c0f037b2440db2184c876d00ca6c42}{ping\+Begin}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPEventArgs}{I\+C\+M\+P\+Event\+Args}} $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPClient_a13f28baabfcf2dfa1478c94441a59c1e}{ping\+Reply}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPEventArgs}{I\+C\+M\+P\+Event\+Args}} $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPClient_a362e7b3d288d1ba2e8879733deb31888}{ping\+Error}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPEventArgs}{I\+C\+M\+P\+Event\+Args}} $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPClient_ad94b98b088b5540d771f66755f7e05cf}{ping\+End}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides I\+C\+MP Ping functionality. \begin{DoxyVerb}The events are available when class is instantiated
+and non-static member functions are called.
+
+A "lightweight" alternative is direct (without instantiation)
+use of static member functions. 
+\end{DoxyVerb}
+ 
+
+Definition at line 34 of file I\+C\+M\+P\+Client.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPClient_a9974ea93d3118ae2e30b9a2b232e20c5}\label{classPoco_1_1Net_1_1ICMPClient_a9974ea93d3118ae2e30b9a2b232e20c5}} 
+\index{Poco::Net::ICMPClient@{Poco::Net::ICMPClient}!ICMPClient@{ICMPClient}}
+\index{ICMPClient@{ICMPClient}!Poco::Net::ICMPClient@{Poco::Net::ICMPClient}}
+\doxysubsubsection{\texorpdfstring{ICMPClient()}{ICMPClient()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+I\+C\+M\+P\+Client\+::\+I\+C\+M\+P\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress_a048c8fc29019f4722f2cdb5ba752d9b6}{I\+P\+Address\+::\+Family}}}]{family }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPClient_ac2edf52956dd9f4270d3fb725737f5b5}\label{classPoco_1_1Net_1_1ICMPClient_ac2edf52956dd9f4270d3fb725737f5b5}} 
+\index{Poco::Net::ICMPClient@{Poco::Net::ICMPClient}!````~ICMPClient@{$\sim$ICMPClient}}
+\index{````~ICMPClient@{$\sim$ICMPClient}!Poco::Net::ICMPClient@{Poco::Net::ICMPClient}}
+\doxysubsubsection{\texorpdfstring{$\sim$ICMPClient()}{~ICMPClient()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+I\+C\+M\+P\+Client\+::$\sim$\+I\+C\+M\+P\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an I\+C\+MP client. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPClient_a09952630a5f325763bf2950c1292f219}\label{classPoco_1_1Net_1_1ICMPClient_a09952630a5f325763bf2950c1292f219}} 
+\index{Poco::Net::ICMPClient@{Poco::Net::ICMPClient}!ping@{ping}}
+\index{ping@{ping}!Poco::Net::ICMPClient@{Poco::Net::ICMPClient}}
+\doxysubsubsection{\texorpdfstring{ping()}{ping()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+I\+C\+M\+P\+Client\+::ping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{address,  }\item[{int}]{repeat = {\ttfamily 1} }\end{DoxyParamCaption}) const}
+
+Pings the specified address \mbox{[}repeat\mbox{]} times. Notifications are posted for events.
+
+Returns the number of valid replies. \mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPClient_a62caa6ec5653275f85219de44b42fc33}\label{classPoco_1_1Net_1_1ICMPClient_a62caa6ec5653275f85219de44b42fc33}} 
+\index{Poco::Net::ICMPClient@{Poco::Net::ICMPClient}!ping@{ping}}
+\index{ping@{ping}!Poco::Net::ICMPClient@{Poco::Net::ICMPClient}}
+\doxysubsubsection{\texorpdfstring{ping()}{ping()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+I\+C\+M\+P\+Client\+::ping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{int}]{repeat = {\ttfamily 1} }\end{DoxyParamCaption}) const}
+
+
+
+Destroys the I\+C\+MP client. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPClient_a248b9ea3ec105fd313462ec8eb2c2118}\label{classPoco_1_1Net_1_1ICMPClient_a248b9ea3ec105fd313462ec8eb2c2118}} 
+\index{Poco::Net::ICMPClient@{Poco::Net::ICMPClient}!ping@{ping}}
+\index{ping@{ping}!Poco::Net::ICMPClient@{Poco::Net::ICMPClient}}
+\doxysubsubsection{\texorpdfstring{ping()}{ping()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static int Poco\+::\+Net\+::\+I\+C\+M\+P\+Client\+::ping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress_a048c8fc29019f4722f2cdb5ba752d9b6}{I\+P\+Address\+::\+Family}}}]{family,  }\item[{int}]{repeat = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calls I\+C\+M\+P\+Client\+::ping(\+Socket\+Address\&, int) and returns the result.
+
+Returns the number of valid replies. \mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPClient_a3962a9c7547a3fe529dc781dd68faea7}\label{classPoco_1_1Net_1_1ICMPClient_a3962a9c7547a3fe529dc781dd68faea7}} 
+\index{Poco::Net::ICMPClient@{Poco::Net::ICMPClient}!pingIPv4@{pingIPv4}}
+\index{pingIPv4@{pingIPv4}!Poco::Net::ICMPClient@{Poco::Net::ICMPClient}}
+\doxysubsubsection{\texorpdfstring{pingIPv4()}{pingIPv4()}}
+{\footnotesize\ttfamily static int Poco\+::\+Net\+::\+I\+C\+M\+P\+Client\+::ping\+I\+Pv4 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{address,  }\item[{int}]{repeat = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Pings the specified address \mbox{[}repeat\mbox{]} times. Notifications are not posted for events.
+
+Returns the number of valid replies. 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPClient_ab8c0f037b2440db2184c876d00ca6c42}\label{classPoco_1_1Net_1_1ICMPClient_ab8c0f037b2440db2184c876d00ca6c42}} 
+\index{Poco::Net::ICMPClient@{Poco::Net::ICMPClient}!pingBegin@{pingBegin}}
+\index{pingBegin@{pingBegin}!Poco::Net::ICMPClient@{Poco::Net::ICMPClient}}
+\doxysubsubsection{\texorpdfstring{pingBegin}{pingBegin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{classPoco_1_1Net_1_1ICMPEventArgs}{I\+C\+M\+P\+Event\+Args}}$>$ Poco\+::\+Net\+::\+I\+C\+M\+P\+Client\+::ping\+Begin\hspace{0.3cm}{\ttfamily [mutable]}}
+
+
+
+Definition at line 44 of file I\+C\+M\+P\+Client.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPClient_ad94b98b088b5540d771f66755f7e05cf}\label{classPoco_1_1Net_1_1ICMPClient_ad94b98b088b5540d771f66755f7e05cf}} 
+\index{Poco::Net::ICMPClient@{Poco::Net::ICMPClient}!pingEnd@{pingEnd}}
+\index{pingEnd@{pingEnd}!Poco::Net::ICMPClient@{Poco::Net::ICMPClient}}
+\doxysubsubsection{\texorpdfstring{pingEnd}{pingEnd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{classPoco_1_1Net_1_1ICMPEventArgs}{I\+C\+M\+P\+Event\+Args}}$>$ Poco\+::\+Net\+::\+I\+C\+M\+P\+Client\+::ping\+End\hspace{0.3cm}{\ttfamily [mutable]}}
+
+
+
+Definition at line 47 of file I\+C\+M\+P\+Client.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPClient_a362e7b3d288d1ba2e8879733deb31888}\label{classPoco_1_1Net_1_1ICMPClient_a362e7b3d288d1ba2e8879733deb31888}} 
+\index{Poco::Net::ICMPClient@{Poco::Net::ICMPClient}!pingError@{pingError}}
+\index{pingError@{pingError}!Poco::Net::ICMPClient@{Poco::Net::ICMPClient}}
+\doxysubsubsection{\texorpdfstring{pingError}{pingError}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{classPoco_1_1Net_1_1ICMPEventArgs}{I\+C\+M\+P\+Event\+Args}}$>$ Poco\+::\+Net\+::\+I\+C\+M\+P\+Client\+::ping\+Error\hspace{0.3cm}{\ttfamily [mutable]}}
+
+
+
+Definition at line 46 of file I\+C\+M\+P\+Client.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPClient_a13f28baabfcf2dfa1478c94441a59c1e}\label{classPoco_1_1Net_1_1ICMPClient_a13f28baabfcf2dfa1478c94441a59c1e}} 
+\index{Poco::Net::ICMPClient@{Poco::Net::ICMPClient}!pingReply@{pingReply}}
+\index{pingReply@{pingReply}!Poco::Net::ICMPClient@{Poco::Net::ICMPClient}}
+\doxysubsubsection{\texorpdfstring{pingReply}{pingReply}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{classPoco_1_1Net_1_1ICMPEventArgs}{I\+C\+M\+P\+Event\+Args}}$>$ Poco\+::\+Net\+::\+I\+C\+M\+P\+Client\+::ping\+Reply\hspace{0.3cm}{\ttfamily [mutable]}}
+
+
+
+Definition at line 45 of file I\+C\+M\+P\+Client.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{ICMPClient_8h}{I\+C\+M\+P\+Client.\+h}}\end{DoxyCompactItemize}

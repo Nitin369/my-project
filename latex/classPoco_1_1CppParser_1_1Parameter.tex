@@ -1,0 +1,190 @@
+\hypertarget{classPoco_1_1CppParser_1_1Parameter}{}\doxysection{Poco\+::Cpp\+Parser\+::Parameter Class Reference}
+\label{classPoco_1_1CppParser_1_1Parameter}\index{Poco::CppParser::Parameter@{Poco::CppParser::Parameter}}
+
+
+This class represents a parameter to a function.  
+
+
+
+
+{\ttfamily \#include $<$Parameter.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Cpp\+Parser\+::Parameter\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Cpp\+Parser\+::Parameter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_a5adf3c55d361ad3a28994d004ea8bc2a}{Parameter}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&decl, \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Function}} $\ast$p\+Function)
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_a8595af87a6efe8106276e0ebfc6ec80a}{$\sim$\+Parameter}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter}{Parameter}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a67448d9c53f4abcae2a53711ad0e23d4}{Symbol\+::\+Kind}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_a5a5acb55251ae910552919b4f0aac45d}{kind}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter}{Parameter}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_ad303a1a687de3f457198e455b2da5f99}{is\+Reference}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_a5da5890ac952cabe1c06981744618cce}{is\+Pointer}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff the parameter is a reference. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_a997f8e17adb6d855200f1e57e033bc48}{is\+Const}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff the parameter is a pointer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_a7ae2f3f741dd393254d71837685e2d97}{has\+Default\+Value}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff the parameter is const. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_a3d6cc0954cbd71322b7d93e0956d3ba3}{decl\+Type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_a59318045c844ce7eff17444a69866bdf}{default\+Value}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_a321a06e0a228ba20b8202d2aaf74a54e}{default\+Decl}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_a1f2cd0b6ba6f0deac6a6f1981420c9af}{vector\+Type}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&type, \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}} $\ast$p\+NS)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class represents a parameter to a function. 
+
+Definition at line 34 of file Parameter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parameter_a5adf3c55d361ad3a28994d004ea8bc2a}\label{classPoco_1_1CppParser_1_1Parameter_a5adf3c55d361ad3a28994d004ea8bc2a}} 
+\index{Poco::CppParser::Parameter@{Poco::CppParser::Parameter}!Parameter@{Parameter}}
+\index{Parameter@{Parameter}!Poco::CppParser::Parameter@{Poco::CppParser::Parameter}}
+\doxysubsubsection{\texorpdfstring{Parameter()}{Parameter()}}
+{\footnotesize\ttfamily Poco\+::\+Cpp\+Parser\+::\+Parameter\+::\+Parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{decl,  }\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Function}} $\ast$}]{p\+Function }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parameter_a8595af87a6efe8106276e0ebfc6ec80a}\label{classPoco_1_1CppParser_1_1Parameter_a8595af87a6efe8106276e0ebfc6ec80a}} 
+\index{Poco::CppParser::Parameter@{Poco::CppParser::Parameter}!````~Parameter@{$\sim$Parameter}}
+\index{````~Parameter@{$\sim$Parameter}!Poco::CppParser::Parameter@{Poco::CppParser::Parameter}}
+\doxysubsubsection{\texorpdfstring{$\sim$Parameter()}{~Parameter()}}
+{\footnotesize\ttfamily Poco\+::\+Cpp\+Parser\+::\+Parameter\+::$\sim$\+Parameter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter}{Parameter}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parameter_a3d6cc0954cbd71322b7d93e0956d3ba3}\label{classPoco_1_1CppParser_1_1Parameter_a3d6cc0954cbd71322b7d93e0956d3ba3}} 
+\index{Poco::CppParser::Parameter@{Poco::CppParser::Parameter}!declType@{declType}}
+\index{declType@{declType}!Poco::CppParser::Parameter@{Poco::CppParser::Parameter}}
+\doxysubsubsection{\texorpdfstring{declType()}{declType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Cpp\+Parser\+::\+Parameter\+::decl\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if a defaultvalue was set at this parameter, Example\+: const std\+::string\& data = std\+::string(\char`\"{}default\char`\"{}). 
+
+Definition at line 99 of file Parameter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parameter_a321a06e0a228ba20b8202d2aaf74a54e}\label{classPoco_1_1CppParser_1_1Parameter_a321a06e0a228ba20b8202d2aaf74a54e}} 
+\index{Poco::CppParser::Parameter@{Poco::CppParser::Parameter}!defaultDecl@{defaultDecl}}
+\index{defaultDecl@{defaultDecl}!Poco::CppParser::Parameter@{Poco::CppParser::Parameter}}
+\doxysubsubsection{\texorpdfstring{defaultDecl()}{defaultDecl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Cpp\+Parser\+::\+Parameter\+::default\+Decl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+If \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_a7ae2f3f741dd393254d71837685e2d97}{has\+Default\+Value()}} returns true, this method returns the default value, i.\+e. all data found between the opening and closing bracket of the init string.
+
+Example\+: for const std\+::string\& data = std\+::string(\char`\"{}default\char`\"{}) it will return \char`\"{}default\char`\"{}, for = std\+::string() it will return a zero length string, for = Complex\+Class(13,12, \char`\"{}test\char`\"{}, 0); it will return 13,12, \char`\"{}test\char`\"{}, 0. 
+
+Definition at line 135 of file Parameter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parameter_a59318045c844ce7eff17444a69866bdf}\label{classPoco_1_1CppParser_1_1Parameter_a59318045c844ce7eff17444a69866bdf}} 
+\index{Poco::CppParser::Parameter@{Poco::CppParser::Parameter}!defaultValue@{defaultValue}}
+\index{defaultValue@{defaultValue}!Poco::CppParser::Parameter@{Poco::CppParser::Parameter}}
+\doxysubsubsection{\texorpdfstring{defaultValue()}{defaultValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Cpp\+Parser\+::\+Parameter\+::default\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the type of the parameter without const and \& if present.
+
+Example\+: a type const std\+::string\& -\/$>$ std\+::string, a type const std\+::string$\ast$ returns std\+::string 
+
+Definition at line 129 of file Parameter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parameter_a7ae2f3f741dd393254d71837685e2d97}\label{classPoco_1_1CppParser_1_1Parameter_a7ae2f3f741dd393254d71837685e2d97}} 
+\index{Poco::CppParser::Parameter@{Poco::CppParser::Parameter}!hasDefaultValue@{hasDefaultValue}}
+\index{hasDefaultValue@{hasDefaultValue}!Poco::CppParser::Parameter@{Poco::CppParser::Parameter}}
+\doxysubsubsection{\texorpdfstring{hasDefaultValue()}{hasDefaultValue()}}
+{\footnotesize\ttfamily bool Poco\+::\+Cpp\+Parser\+::\+Parameter\+::has\+Default\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true iff the parameter is const. 
+
+
+
+Definition at line 123 of file Parameter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parameter_a997f8e17adb6d855200f1e57e033bc48}\label{classPoco_1_1CppParser_1_1Parameter_a997f8e17adb6d855200f1e57e033bc48}} 
+\index{Poco::CppParser::Parameter@{Poco::CppParser::Parameter}!isConst@{isConst}}
+\index{isConst@{isConst}!Poco::CppParser::Parameter@{Poco::CppParser::Parameter}}
+\doxysubsubsection{\texorpdfstring{isConst()}{isConst()}}
+{\footnotesize\ttfamily bool Poco\+::\+Cpp\+Parser\+::\+Parameter\+::is\+Const (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true iff the parameter is a pointer. 
+
+
+
+Definition at line 111 of file Parameter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parameter_a5da5890ac952cabe1c06981744618cce}\label{classPoco_1_1CppParser_1_1Parameter_a5da5890ac952cabe1c06981744618cce}} 
+\index{Poco::CppParser::Parameter@{Poco::CppParser::Parameter}!isPointer@{isPointer}}
+\index{isPointer@{isPointer}!Poco::CppParser::Parameter@{Poco::CppParser::Parameter}}
+\doxysubsubsection{\texorpdfstring{isPointer()}{isPointer()}}
+{\footnotesize\ttfamily bool Poco\+::\+Cpp\+Parser\+::\+Parameter\+::is\+Pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true iff the parameter is a reference. 
+
+
+
+Definition at line 117 of file Parameter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parameter_ad303a1a687de3f457198e455b2da5f99}\label{classPoco_1_1CppParser_1_1Parameter_ad303a1a687de3f457198e455b2da5f99}} 
+\index{Poco::CppParser::Parameter@{Poco::CppParser::Parameter}!isReference@{isReference}}
+\index{isReference@{isReference}!Poco::CppParser::Parameter@{Poco::CppParser::Parameter}}
+\doxysubsubsection{\texorpdfstring{isReference()}{isReference()}}
+{\footnotesize\ttfamily bool Poco\+::\+Cpp\+Parser\+::\+Parameter\+::is\+Reference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 105 of file Parameter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parameter_a5a5acb55251ae910552919b4f0aac45d}\label{classPoco_1_1CppParser_1_1Parameter_a5a5acb55251ae910552919b4f0aac45d}} 
+\index{Poco::CppParser::Parameter@{Poco::CppParser::Parameter}!kind@{kind}}
+\index{kind@{kind}!Poco::CppParser::Parameter@{Poco::CppParser::Parameter}}
+\doxysubsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a67448d9c53f4abcae2a53711ad0e23d4}{Symbol\+::\+Kind}} Poco\+::\+Cpp\+Parser\+::\+Parameter\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter}{Parameter}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a6708cf40021563dcd93bb275bf87296c}{Poco\+::\+Cpp\+Parser\+::\+Symbol}}.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parameter_a1f2cd0b6ba6f0deac6a6f1981420c9af}\label{classPoco_1_1CppParser_1_1Parameter_a1f2cd0b6ba6f0deac6a6f1981420c9af}} 
+\index{Poco::CppParser::Parameter@{Poco::CppParser::Parameter}!vectorType@{vectorType}}
+\index{vectorType@{vectorType}!Poco::CppParser::Parameter@{Poco::CppParser::Parameter}}
+\doxysubsubsection{\texorpdfstring{vectorType()}{vectorType()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Cpp\+Parser\+::\+Parameter\+::vector\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{type,  }\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}} $\ast$}]{p\+NS }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+If \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter_a7ae2f3f741dd393254d71837685e2d97}{has\+Default\+Value()}} returns true, this method returns the default value declaration.
+
+Example\+: for const std\+::string\& data = std\+::string(\char`\"{}default\char`\"{}) it will return std\+::string(\char`\"{}default\char`\"{}). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Cpp\+Parser/\mbox{\hyperlink{Parameter_8h}{Parameter.\+h}}\end{DoxyCompactItemize}

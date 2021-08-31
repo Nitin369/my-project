@@ -1,0 +1,290 @@
+\hypertarget{classPoco_1_1Data_1_1RowIterator}{}\doxysection{Poco\+::Data\+::Row\+Iterator Class Reference}
+\label{classPoco_1_1Data_1_1RowIterator}\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+
+
+\mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} class.  
+
+
+
+
+{\ttfamily \#include $<$Row\+Iterator.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::bidirectional\+\_\+iterator\+\_\+tag \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a38f32e448a5ad5bf117cb3b960db8f9a}{iterator\+\_\+category}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1Data_1_1Row}{Row}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a817dcf4acc472b30a498b26590551b2f}{value\+\_\+type}}
+\item 
+typedef std\+::ptrdiff\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_ad73fcf2d0b20af70ce615e61d849880c}{difference\+\_\+type}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1Data_1_1Row}{Row}} $\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a086d60ac39c6eaacd6a68430d9ea8e5f}{pointer}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1Data_1_1Row}{Row}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a88b4cee194d877d0f2314c1930451c7a}{reference}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a0b9ac8ba07c6015a3087ae59fb119be3}{Row\+Iterator}} (\mbox{\hyperlink{classPoco_1_1Data_1_1RecordSet}{Record\+Set}} $\ast$p\+Record\+Set, bool position\+End)
+\begin{DoxyCompactList}\small\item\em End position indicator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a7bb58daf67e9f67f5c68dff6f63aa13a}{Row\+Iterator}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \&other)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a0c58e5d28a389a1509d219c64edbe907}{$\sim$\+Row\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Creates a copy of other \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a9d095846e2ec80b9aba5fe6094f5d412}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \&other)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a26b777a66bc6aac853b862dc3a0f5a49}{operator==}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Assigns the other \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a8a0c440fd5f1c1abdb2f200328f4c6e3}{operator!=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Row}{Row}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_abe9fa847cd4b70e6ebe4b6d8506c3e29}{operator$\ast$}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Row}{Row}} $\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a0c058ba2e1aebaef60dd6b7e0c50e336}{operator-\/$>$}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns reference to the current row. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a316e523239a55ad337c77957cd571202}{operator++}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns pointer to the current row. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a82c7c3ccfd1f72bd0aaf285cd8049470}{operator++}} (int) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Advances by one position and returns current position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a2677aa0e095d4c8f71a6b4947b0f7614}{operator-\/-\/}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a4ce9fabbe41226946c58c695539686ec}{operator-\/-\/}} (int) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a9da7ed4585f88e9f0b50c925023e412a}{operator+}} (std\+::size\+\_\+t diff) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Goes back by one position and returns previous current position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a2b61f4f5f8babd8998522daf517d90af}{operator-\/}} (std\+::size\+\_\+t diff) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns a copy the \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} advanced by diff positions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a671c6aaeaa88a780ef0293e6267dfc35}{swap}} (\mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \&other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a8a07e5f6844f442393832aad2eed7194}{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+E\+ND}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} class. 
+
+Definition at line 37 of file Row\+Iterator.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_ad73fcf2d0b20af70ce615e61d849880c}\label{classPoco_1_1Data_1_1RowIterator_ad73fcf2d0b20af70ce615e61d849880c}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!difference\_type@{difference\_type}}
+\index{difference\_type@{difference\_type}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{difference\_type}{difference\_type}}
+{\footnotesize\ttfamily typedef std\+::ptrdiff\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_ad73fcf2d0b20af70ce615e61d849880c}{Poco\+::\+Data\+::\+Row\+Iterator\+::difference\+\_\+type}}}
+
+
+
+Definition at line 43 of file Row\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a38f32e448a5ad5bf117cb3b960db8f9a}\label{classPoco_1_1Data_1_1RowIterator_a38f32e448a5ad5bf117cb3b960db8f9a}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!iterator\_category@{iterator\_category}}
+\index{iterator\_category@{iterator\_category}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{iterator\_category}{iterator\_category}}
+{\footnotesize\ttfamily typedef std\+::bidirectional\+\_\+iterator\+\_\+tag \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a38f32e448a5ad5bf117cb3b960db8f9a}{Poco\+::\+Data\+::\+Row\+Iterator\+::iterator\+\_\+category}}}
+
+
+
+Definition at line 41 of file Row\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a086d60ac39c6eaacd6a68430d9ea8e5f}\label{classPoco_1_1Data_1_1RowIterator_a086d60ac39c6eaacd6a68430d9ea8e5f}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!pointer@{pointer}}
+\index{pointer@{pointer}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1Data_1_1Row}{Row}}$\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a086d60ac39c6eaacd6a68430d9ea8e5f}{Poco\+::\+Data\+::\+Row\+Iterator\+::pointer}}}
+
+
+
+Definition at line 44 of file Row\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a88b4cee194d877d0f2314c1930451c7a}\label{classPoco_1_1Data_1_1RowIterator_a88b4cee194d877d0f2314c1930451c7a}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!reference@{reference}}
+\index{reference@{reference}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1Data_1_1Row}{Row}}\& \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a88b4cee194d877d0f2314c1930451c7a}{Poco\+::\+Data\+::\+Row\+Iterator\+::reference}}}
+
+
+
+Definition at line 45 of file Row\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a817dcf4acc472b30a498b26590551b2f}\label{classPoco_1_1Data_1_1RowIterator_a817dcf4acc472b30a498b26590551b2f}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1Data_1_1Row}{Row}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator_a817dcf4acc472b30a498b26590551b2f}{Poco\+::\+Data\+::\+Row\+Iterator\+::value\+\_\+type}}}
+
+
+
+Definition at line 42 of file Row\+Iterator.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a0b9ac8ba07c6015a3087ae59fb119be3}\label{classPoco_1_1Data_1_1RowIterator_a0b9ac8ba07c6015a3087ae59fb119be3}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!RowIterator@{RowIterator}}
+\index{RowIterator@{RowIterator}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{RowIterator()}{RowIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+Row\+Iterator\+::\+Row\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1RecordSet}{Record\+Set}} $\ast$}]{p\+Record\+Set,  }\item[{bool}]{position\+End }\end{DoxyParamCaption})}
+
+
+
+End position indicator. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a7bb58daf67e9f67f5c68dff6f63aa13a}\label{classPoco_1_1Data_1_1RowIterator_a7bb58daf67e9f67f5c68dff6f63aa13a}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!RowIterator@{RowIterator}}
+\index{RowIterator@{RowIterator}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{RowIterator()}{RowIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+Row\+Iterator\+::\+Row\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \&}]{other }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} and positions it at the end of the recordset if position\+End is true. Otherwise, it is positioned at the beginning. \mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a0c58e5d28a389a1509d219c64edbe907}\label{classPoco_1_1Data_1_1RowIterator_a0c58e5d28a389a1509d219c64edbe907}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!````~RowIterator@{$\sim$RowIterator}}
+\index{````~RowIterator@{$\sim$RowIterator}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{$\sim$RowIterator()}{~RowIterator()}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+Row\+Iterator\+::$\sim$\+Row\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a copy of other \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a8a0c440fd5f1c1abdb2f200328f4c6e3}\label{classPoco_1_1Data_1_1RowIterator_a8a0c440fd5f1c1abdb2f200328f4c6e3}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+Row\+Iterator\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Equality operator. 
+
+
+
+Definition at line 131 of file Row\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_abe9fa847cd4b70e6ebe4b6d8506c3e29}\label{classPoco_1_1Data_1_1RowIterator_abe9fa847cd4b70e6ebe4b6d8506c3e29}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Row}{Row}}\& Poco\+::\+Data\+::\+Row\+Iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Inequality operator. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a9da7ed4585f88e9f0b50c925023e412a}\label{classPoco_1_1Data_1_1RowIterator_a9da7ed4585f88e9f0b50c925023e412a}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!operator+@{operator+}}
+\index{operator+@{operator+}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} Poco\+::\+Data\+::\+Row\+Iterator\+::operator+ (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{diff }\end{DoxyParamCaption}) const}
+
+
+
+Goes back by one position and returns previous current position. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a316e523239a55ad337c77957cd571202}\label{classPoco_1_1Data_1_1RowIterator_a316e523239a55ad337c77957cd571202}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}}\& Poco\+::\+Data\+::\+Row\+Iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns pointer to the current row. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a82c7c3ccfd1f72bd0aaf285cd8049470}\label{classPoco_1_1Data_1_1RowIterator_a82c7c3ccfd1f72bd0aaf285cd8049470}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} Poco\+::\+Data\+::\+Row\+Iterator\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Advances by one position and returns current position. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a2b61f4f5f8babd8998522daf517d90af}\label{classPoco_1_1Data_1_1RowIterator_a2b61f4f5f8babd8998522daf517d90af}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} Poco\+::\+Data\+::\+Row\+Iterator\+::operator-\/ (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{diff }\end{DoxyParamCaption}) const}
+
+
+
+Returns a copy the \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} advanced by diff positions. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a2677aa0e095d4c8f71a6b4947b0f7614}\label{classPoco_1_1Data_1_1RowIterator_a2677aa0e095d4c8f71a6b4947b0f7614}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}}\& Poco\+::\+Data\+::\+Row\+Iterator\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Advances by one position and returns copy of the iterator with previous current position. \mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a4ce9fabbe41226946c58c695539686ec}\label{classPoco_1_1Data_1_1RowIterator_a4ce9fabbe41226946c58c695539686ec}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} Poco\+::\+Data\+::\+Row\+Iterator\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption}) const}
+
+Goes back by one position and returns copy of the iterator with previous current position. \mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a0c058ba2e1aebaef60dd6b7e0c50e336}\label{classPoco_1_1Data_1_1RowIterator_a0c058ba2e1aebaef60dd6b7e0c50e336}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Row}{Row}}$\ast$ Poco\+::\+Data\+::\+Row\+Iterator\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns reference to the current row. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a9d095846e2ec80b9aba5fe6094f5d412}\label{classPoco_1_1Data_1_1RowIterator_a9d095846e2ec80b9aba5fe6094f5d412}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}}\& Poco\+::\+Data\+::\+Row\+Iterator\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a26b777a66bc6aac853b862dc3a0f5a49}\label{classPoco_1_1Data_1_1RowIterator_a26b777a66bc6aac853b862dc3a0f5a49}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!operator==@{operator==}}
+\index{operator==@{operator==}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+Row\+Iterator\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns the other \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}}. 
+
+inlines 
+
+Definition at line 125 of file Row\+Iterator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a671c6aaeaa88a780ef0293e6267dfc35}\label{classPoco_1_1Data_1_1RowIterator_a671c6aaeaa88a780ef0293e6267dfc35}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!swap@{swap}}
+\index{swap@{swap}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Row\+Iterator\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} \&}]{other }\end{DoxyParamCaption})}
+
+Returns a copy the \mbox{\hyperlink{classPoco_1_1Data_1_1RowIterator}{Row\+Iterator}} backed by diff positions. Throws Range\+Exception if diff is larger than current position. Here is the caller graph for this function\+:
+% FIG 0
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1RowIterator_a8a07e5f6844f442393832aad2eed7194}\label{classPoco_1_1Data_1_1RowIterator_a8a07e5f6844f442393832aad2eed7194}} 
+\index{Poco::Data::RowIterator@{Poco::Data::RowIterator}!POSITION\_END@{POSITION\_END}}
+\index{POSITION\_END@{POSITION\_END}!Poco::Data::RowIterator@{Poco::Data::RowIterator}}
+\doxysubsubsection{\texorpdfstring{POSITION\_END}{POSITION\_END}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::size\+\_\+t Poco\+::\+Data\+::\+Row\+Iterator\+::\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+E\+ND\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 47 of file Row\+Iterator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{RowIterator_8h}{Row\+Iterator.\+h}}\end{DoxyCompactItemize}

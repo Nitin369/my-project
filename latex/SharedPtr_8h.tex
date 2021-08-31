@@ -1,0 +1,29 @@
+\hypertarget{SharedPtr_8h}{}\doxysection{App\+Frame\+Work/include/\+Poco/\+Shared\+Ptr.h File Reference}
+\label{SharedPtr_8h}\index{AppFrameWork/include/Poco/SharedPtr.h@{AppFrameWork/include/Poco/SharedPtr.h}}
+{\ttfamily \#include \char`\"{}Poco/\+Foundation.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Poco/\+Exception.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Poco/\+Atomic\+Counter.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+Include dependency graph for Shared\+Ptr.\+h\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1ReferenceCounter}{Poco\+::\+Reference\+Counter}}
+\begin{DoxyCompactList}\small\item\em Simple \mbox{\hyperlink{classPoco_1_1ReferenceCounter}{Reference\+Counter}} object, does not delete itself when count reaches 0. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classPoco_1_1ReleasePolicy}{Poco\+::\+Release\+Policy$<$ C $>$}}
+\item 
+class \mbox{\hyperlink{classPoco_1_1ReleaseArrayPolicy}{Poco\+::\+Release\+Array\+Policy$<$ C $>$}}
+\begin{DoxyCompactList}\small\item\em The release policy for \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}} holding arrays. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr$<$ C, R\+C, R\+P $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacePoco}{Poco}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class C , class RC , class RP $>$ }\\void \mbox{\hyperlink{namespacePoco_a258838eb33318e658f934193e193beff}{Poco\+::swap}} (Shared\+Ptr$<$ C, RC, RP $>$ \&p1, Shared\+Ptr$<$ C, RC, RP $>$ \&p2)
+\end{DoxyCompactItemize}

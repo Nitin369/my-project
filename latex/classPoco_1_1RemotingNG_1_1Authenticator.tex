@@ -1,0 +1,99 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1Authenticator}{}\doxysection{Poco\+::Remoting\+NG\+::Authenticator Class Reference}
+\label{classPoco_1_1RemotingNG_1_1Authenticator}\index{Poco::RemotingNG::Authenticator@{Poco::RemotingNG::Authenticator}}
+
+
+{\ttfamily \#include $<$Authenticator.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::Authenticator\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::Authenticator\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator}{Authenticator}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator_ac4e924d914f05a05a50c96d8d7f74910}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator_a76795c2571d0c482f5a6ea2db556afbe}{Authenticator}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator_aa55fa0ba806e03630a47235ee8034e76}{$\sim$\+Authenticator}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator}{Authenticator}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1AuthenticateResult}{Authenticate\+Result}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator_ab33a2602f41c3c862a837d63ab33abf7}{authenticate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Credentials}{Credentials}} \&credentials, Poco\+::\+U\+Int32 conversation\+ID=0)=0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator}{Authenticator}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator}{Authenticator}} interface is used for authenticating credentials. \begin{DoxyVerb}Authenticators are specific to a transport and external authentication 
+mechanism and must be implemented specifically for an application.
+
+The design of the Authentication class allows for multi-request
+authentication schemes.
+
+For multi-step authentication mechanisms, the Authenticator must
+be able to handle multiple authentication conversations simultaneously. 
+\end{DoxyVerb}
+ 
+
+Definition at line 96 of file Authenticator.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Authenticator_ac4e924d914f05a05a50c96d8d7f74910}\label{classPoco_1_1RemotingNG_1_1Authenticator_ac4e924d914f05a05a50c96d8d7f74910}} 
+\index{Poco::RemotingNG::Authenticator@{Poco::RemotingNG::Authenticator}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::RemotingNG::Authenticator@{Poco::RemotingNG::Authenticator}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator}{Authenticator}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator_ac4e924d914f05a05a50c96d8d7f74910}{Poco\+::\+Remoting\+N\+G\+::\+Authenticator\+::\+Ptr}}}
+
+
+
+Definition at line 109 of file Authenticator.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Authenticator_a76795c2571d0c482f5a6ea2db556afbe}\label{classPoco_1_1RemotingNG_1_1Authenticator_a76795c2571d0c482f5a6ea2db556afbe}} 
+\index{Poco::RemotingNG::Authenticator@{Poco::RemotingNG::Authenticator}!Authenticator@{Authenticator}}
+\index{Authenticator@{Authenticator}!Poco::RemotingNG::Authenticator@{Poco::RemotingNG::Authenticator}}
+\doxysubsubsection{\texorpdfstring{Authenticator()}{Authenticator()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+Authenticator\+::\+Authenticator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Authenticator_aa55fa0ba806e03630a47235ee8034e76}\label{classPoco_1_1RemotingNG_1_1Authenticator_aa55fa0ba806e03630a47235ee8034e76}} 
+\index{Poco::RemotingNG::Authenticator@{Poco::RemotingNG::Authenticator}!````~Authenticator@{$\sim$Authenticator}}
+\index{````~Authenticator@{$\sim$Authenticator}!Poco::RemotingNG::Authenticator@{Poco::RemotingNG::Authenticator}}
+\doxysubsubsection{\texorpdfstring{$\sim$Authenticator()}{~Authenticator()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Remoting\+N\+G\+::\+Authenticator\+::$\sim$\+Authenticator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator}{Authenticator}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Authenticator_ab33a2602f41c3c862a837d63ab33abf7}\label{classPoco_1_1RemotingNG_1_1Authenticator_ab33a2602f41c3c862a837d63ab33abf7}} 
+\index{Poco::RemotingNG::Authenticator@{Poco::RemotingNG::Authenticator}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!Poco::RemotingNG::Authenticator@{Poco::RemotingNG::Authenticator}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1AuthenticateResult}{Authenticate\+Result}} Poco\+::\+Remoting\+N\+G\+::\+Authenticator\+::authenticate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Credentials}{Credentials}} \&}]{credentials,  }\item[{Poco\+::\+U\+Int32}]{conversation\+ID = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator}{Authenticator}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SCRAMAuthenticator_af0e6a0fd1f9db28f8b263cda7dc7e95f}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+S\+C\+R\+A\+M\+Authenticator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{Authenticator_8h}{Authenticator.\+h}}\end{DoxyCompactItemize}

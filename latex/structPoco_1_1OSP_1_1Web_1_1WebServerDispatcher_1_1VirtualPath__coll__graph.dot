@@ -1,0 +1,16 @@
+digraph "Poco::OSP::Web::WebServerDispatcher::VirtualPath"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Poco::OSP::Web::WebServer\lDispatcher::VirtualPath",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A VirtualPath struct is used to specify a path mapping for a bundle."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pOwnerBundle" ];
+  Node2 [label="Poco::AutoPtr\< Bundle \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AutoPtr.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" security" ];
+  Node3 [label="Poco::OSP::Web::WebServer\lDispatcher::PathSecurity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity.html",tooltip="Security attributes for a registered path."];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pFactory" ];
+  Node4 [label="Poco::SharedPtr\< Poco\l::Net::HTTPRequestHandlerFactory \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1SharedPtr.html",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pPattern" ];
+  Node5 [label="Poco::SharedPtr\< Poco\l::RegularExpression \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1SharedPtr.html",tooltip=" "];
+}

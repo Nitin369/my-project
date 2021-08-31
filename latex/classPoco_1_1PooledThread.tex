@@ -1,0 +1,127 @@
+\hypertarget{classPoco_1_1PooledThread}{}\doxysection{Poco\+::Pooled\+Thread Class Reference}
+\label{classPoco_1_1PooledThread}\index{Poco::PooledThread@{Poco::PooledThread}}
+
+
+{\ttfamily \#include $<$Thread\+Pool.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Pooled\+Thread\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Pooled\+Thread\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1PooledThread_ad1114b51879cbcc9a28e3bd9490d8b4c}{Pooled\+Thread}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, int stack\+Size=\mbox{\hyperlink{Config_8h_a9f8968fba0ac89f55b2f81dbe015539b}{P\+O\+C\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}})
+\item 
+\mbox{\hyperlink{classPoco_1_1PooledThread_a90e684150673083a1da2aea3ad0e011a}{$\sim$\+Pooled\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1PooledThread_a4b67c02faed01d2e0dfabf59eeca37d0}{start}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1PooledThread_ab4b0c42b59eaaef165e92d342761e1c4}{start}} (\mbox{\hyperlink{classPoco_1_1Thread_a4c86ded71a250e740cb3a448f112f1e3}{Thread\+::\+Priority}} priority, \mbox{\hyperlink{classPoco_1_1Runnable}{Runnable}} \&target)
+\item 
+void \mbox{\hyperlink{classPoco_1_1PooledThread_a04cab0e767aeccb487a50c11b4081e3f}{start}} (\mbox{\hyperlink{classPoco_1_1Thread_a4c86ded71a250e740cb3a448f112f1e3}{Thread\+::\+Priority}} priority, \mbox{\hyperlink{classPoco_1_1Runnable}{Runnable}} \&target, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1PooledThread_a459681bf37ecfa064288d98eac41d8fe}{idle}} ()
+\item 
+int \mbox{\hyperlink{classPoco_1_1PooledThread_a56f0022635616c14e1a21591b27201c1}{idle\+Time}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1PooledThread_a0f6801b2c157aea66a9ab516a689fcf5}{join}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1PooledThread_a42ec91d135e196a0096068f5df4908a4}{activate}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1PooledThread_affed9bf2038a846f5b8a4eb08a2210da}{release}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1PooledThread_a7766b20e1ade8d6fa8cfcfacad833411}{run}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 37 of file Thread\+Pool.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1PooledThread_ad1114b51879cbcc9a28e3bd9490d8b4c}\label{classPoco_1_1PooledThread_ad1114b51879cbcc9a28e3bd9490d8b4c}} 
+\index{Poco::PooledThread@{Poco::PooledThread}!PooledThread@{PooledThread}}
+\index{PooledThread@{PooledThread}!Poco::PooledThread@{Poco::PooledThread}}
+\doxysubsubsection{\texorpdfstring{PooledThread()}{PooledThread()}}
+{\footnotesize\ttfamily Poco\+::\+Pooled\+Thread\+::\+Pooled\+Thread (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{int}]{stack\+Size = {\ttfamily \mbox{\hyperlink{Config_8h_a9f8968fba0ac89f55b2f81dbe015539b}{P\+O\+C\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1PooledThread_a90e684150673083a1da2aea3ad0e011a}\label{classPoco_1_1PooledThread_a90e684150673083a1da2aea3ad0e011a}} 
+\index{Poco::PooledThread@{Poco::PooledThread}!````~PooledThread@{$\sim$PooledThread}}
+\index{````~PooledThread@{$\sim$PooledThread}!Poco::PooledThread@{Poco::PooledThread}}
+\doxysubsubsection{\texorpdfstring{$\sim$PooledThread()}{~PooledThread()}}
+{\footnotesize\ttfamily Poco\+::\+Pooled\+Thread\+::$\sim$\+Pooled\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1PooledThread_a42ec91d135e196a0096068f5df4908a4}\label{classPoco_1_1PooledThread_a42ec91d135e196a0096068f5df4908a4}} 
+\index{Poco::PooledThread@{Poco::PooledThread}!activate@{activate}}
+\index{activate@{activate}!Poco::PooledThread@{Poco::PooledThread}}
+\doxysubsubsection{\texorpdfstring{activate()}{activate()}}
+{\footnotesize\ttfamily void Poco\+::\+Pooled\+Thread\+::activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1PooledThread_a459681bf37ecfa064288d98eac41d8fe}\label{classPoco_1_1PooledThread_a459681bf37ecfa064288d98eac41d8fe}} 
+\index{Poco::PooledThread@{Poco::PooledThread}!idle@{idle}}
+\index{idle@{idle}!Poco::PooledThread@{Poco::PooledThread}}
+\doxysubsubsection{\texorpdfstring{idle()}{idle()}}
+{\footnotesize\ttfamily bool Poco\+::\+Pooled\+Thread\+::idle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1PooledThread_a56f0022635616c14e1a21591b27201c1}\label{classPoco_1_1PooledThread_a56f0022635616c14e1a21591b27201c1}} 
+\index{Poco::PooledThread@{Poco::PooledThread}!idleTime@{idleTime}}
+\index{idleTime@{idleTime}!Poco::PooledThread@{Poco::PooledThread}}
+\doxysubsubsection{\texorpdfstring{idleTime()}{idleTime()}}
+{\footnotesize\ttfamily int Poco\+::\+Pooled\+Thread\+::idle\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1PooledThread_a0f6801b2c157aea66a9ab516a689fcf5}\label{classPoco_1_1PooledThread_a0f6801b2c157aea66a9ab516a689fcf5}} 
+\index{Poco::PooledThread@{Poco::PooledThread}!join@{join}}
+\index{join@{join}!Poco::PooledThread@{Poco::PooledThread}}
+\doxysubsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily void Poco\+::\+Pooled\+Thread\+::join (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1PooledThread_affed9bf2038a846f5b8a4eb08a2210da}\label{classPoco_1_1PooledThread_affed9bf2038a846f5b8a4eb08a2210da}} 
+\index{Poco::PooledThread@{Poco::PooledThread}!release@{release}}
+\index{release@{release}!Poco::PooledThread@{Poco::PooledThread}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void Poco\+::\+Pooled\+Thread\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1PooledThread_a7766b20e1ade8d6fa8cfcfacad833411}\label{classPoco_1_1PooledThread_a7766b20e1ade8d6fa8cfcfacad833411}} 
+\index{Poco::PooledThread@{Poco::PooledThread}!run@{run}}
+\index{run@{run}!Poco::PooledThread@{Poco::PooledThread}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Poco\+::\+Pooled\+Thread\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Runnable_ad89816e81207bf5f1e52d5df860d11d4}{Poco\+::\+Runnable}}.
+
+\mbox{\Hypertarget{classPoco_1_1PooledThread_a4b67c02faed01d2e0dfabf59eeca37d0}\label{classPoco_1_1PooledThread_a4b67c02faed01d2e0dfabf59eeca37d0}} 
+\index{Poco::PooledThread@{Poco::PooledThread}!start@{start}}
+\index{start@{start}!Poco::PooledThread@{Poco::PooledThread}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Poco\+::\+Pooled\+Thread\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1PooledThread_ab4b0c42b59eaaef165e92d342761e1c4}\label{classPoco_1_1PooledThread_ab4b0c42b59eaaef165e92d342761e1c4}} 
+\index{Poco::PooledThread@{Poco::PooledThread}!start@{start}}
+\index{start@{start}!Poco::PooledThread@{Poco::PooledThread}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Poco\+::\+Pooled\+Thread\+::start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Thread_a4c86ded71a250e740cb3a448f112f1e3}{Thread\+::\+Priority}}}]{priority,  }\item[{\mbox{\hyperlink{classPoco_1_1Runnable}{Runnable}} \&}]{target }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1PooledThread_a04cab0e767aeccb487a50c11b4081e3f}\label{classPoco_1_1PooledThread_a04cab0e767aeccb487a50c11b4081e3f}} 
+\index{Poco::PooledThread@{Poco::PooledThread}!start@{start}}
+\index{start@{start}!Poco::PooledThread@{Poco::PooledThread}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Poco\+::\+Pooled\+Thread\+::start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Thread_a4c86ded71a250e740cb3a448f112f1e3}{Thread\+::\+Priority}}}]{priority,  }\item[{\mbox{\hyperlink{classPoco_1_1Runnable}{Runnable}} \&}]{target,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ThreadPool_8h}{Thread\+Pool.\+h}}\end{DoxyCompactItemize}

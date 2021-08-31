@@ -1,0 +1,64 @@
+\hypertarget{classPoco_1_1Net_1_1Utility}{}\doxysection{Poco\+::Net\+::Utility Class Reference}
+\label{classPoco_1_1Net_1_1Utility}\index{Poco::Net::Utility@{Poco::Net::Utility}}
+
+
+{\ttfamily \#include $<$Utility.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1Net_1_1Context_a498c600ce469ccfaf79c7afa019702aa}{Context\+::\+Verification\+Mode}} \mbox{\hyperlink{classPoco_1_1Net_1_1Utility_a221407e45597697c10aa7dad7d3ca840}{convert\+Verification\+Mode}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&ver\+Mode)
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1Utility_a0c64e273c0a2722cfd45246ec1cfc705}{convert\+Certificate\+Error}} (long err\+Code)
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1Utility_a0d819b6fbfcbe41094fef23a0cb3df0f}{get\+Last\+Error}} ()
+\begin{DoxyCompactList}\small\item\em Converts an S\+SL certificate handling error code into an error message. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1Net_1_1Utility_a7be2ad407fedc9b7814a3f8b41ab15a4}{clear\+Error\+Stack}} ()
+\begin{DoxyCompactList}\small\item\em Returns the last error from the error stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides various helper functions for working with the Open\+S\+SL library. 
+
+Definition at line 31 of file Utility.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1Utility_a7be2ad407fedc9b7814a3f8b41ab15a4}\label{classPoco_1_1Net_1_1Utility_a7be2ad407fedc9b7814a3f8b41ab15a4}} 
+\index{Poco::Net::Utility@{Poco::Net::Utility}!clearErrorStack@{clearErrorStack}}
+\index{clearErrorStack@{clearErrorStack}!Poco::Net::Utility@{Poco::Net::Utility}}
+\doxysubsubsection{\texorpdfstring{clearErrorStack()}{clearErrorStack()}}
+{\footnotesize\ttfamily static void Poco\+::\+Net\+::\+Utility\+::clear\+Error\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the last error from the error stack. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1Utility_a0c64e273c0a2722cfd45246ec1cfc705}\label{classPoco_1_1Net_1_1Utility_a0c64e273c0a2722cfd45246ec1cfc705}} 
+\index{Poco::Net::Utility@{Poco::Net::Utility}!convertCertificateError@{convertCertificateError}}
+\index{convertCertificateError@{convertCertificateError}!Poco::Net::Utility@{Poco::Net::Utility}}
+\doxysubsubsection{\texorpdfstring{convertCertificateError()}{convertCertificateError()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Net\+::\+Utility\+::convert\+Certificate\+Error (\begin{DoxyParamCaption}\item[{long}]{err\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Non-\/case sensitive conversion of a string to a Verification\+Mode enum. If ver\+Mode is illegal an Invalid\+Argument\+Exception is thrown. \mbox{\Hypertarget{classPoco_1_1Net_1_1Utility_a221407e45597697c10aa7dad7d3ca840}\label{classPoco_1_1Net_1_1Utility_a221407e45597697c10aa7dad7d3ca840}} 
+\index{Poco::Net::Utility@{Poco::Net::Utility}!convertVerificationMode@{convertVerificationMode}}
+\index{convertVerificationMode@{convertVerificationMode}!Poco::Net::Utility@{Poco::Net::Utility}}
+\doxysubsubsection{\texorpdfstring{convertVerificationMode()}{convertVerificationMode()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1Net_1_1Context_a498c600ce469ccfaf79c7afa019702aa}{Context\+::\+Verification\+Mode}} Poco\+::\+Net\+::\+Utility\+::convert\+Verification\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{ver\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1Utility_a0d819b6fbfcbe41094fef23a0cb3df0f}\label{classPoco_1_1Net_1_1Utility_a0d819b6fbfcbe41094fef23a0cb3df0f}} 
+\index{Poco::Net::Utility@{Poco::Net::Utility}!getLastError@{getLastError}}
+\index{getLastError@{getLastError}!Poco::Net::Utility@{Poco::Net::Utility}}
+\doxysubsubsection{\texorpdfstring{getLastError()}{getLastError()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Net\+::\+Utility\+::get\+Last\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts an S\+SL certificate handling error code into an error message. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{Net_2Utility_8h}{Utility.\+h}}\end{DoxyCompactItemize}

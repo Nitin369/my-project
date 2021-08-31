@@ -1,0 +1,238 @@
+\hypertarget{classIoT_1_1Devices_1_1SerialDevice}{}\doxysection{IoT\+::Devices\+::Serial\+Device Class Reference}
+\label{classIoT_1_1Devices_1_1SerialDevice}\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+
+
+{\ttfamily \#include $<$Serial\+Device.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::Serial\+Device\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::Serial\+Device\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice}{Serial\+Device}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_a4077e1548256008fae6ded9af6a5c822}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_aad3f34b67f43ee26fcb1179d00a13549}{Serial\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Fired when a line of text has been received on the serial port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_a96cf71723900e5671d830441def1e696}{$\sim$\+Serial\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice}{Serial\+Device}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_aa1ac5f0b33e5f1efb9eb97586c6718c8}{reconfigure}} (int baud\+Rate, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&parameters, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&flow\+Control)=0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice}{Serial\+Device}}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_a0ebc6cef3e4f10b35c571b336aa8942c}{poll}} (double timeout)=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_af2f1d7df02708827db7374f9afc0b08e}{set\+R\+TS}} (bool status)=0
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_afe292184f5a5633f16ce948f06556b2d}{get\+R\+TS}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Manually sets or clears R\+TS. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_acbf43e409e149985b1ba79e39d996b8a}{write\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&data)=0
+\begin{DoxyCompactList}\small\item\em Returns the R\+TS status. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_ae798b0f2be57c5fda0b5c600b0068c4e}{read\+String}} ()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_a3551dd5be73cbe79ff3864f5d5eddfe2}{read\+Line}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&delimiters, double timeout)=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_aeaa499c76ef84e0b366d8cb4f08dfff8}{write\+Byte}} (Poco\+::\+U\+Int8 byte)=0
+\item 
+virtual Poco\+::\+U\+Int8 \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_a7c4b72c38ce13ff6508e6244edc39a50}{read\+Byte}} ()=0
+\begin{DoxyCompactList}\small\item\em Writes the given byte to the port. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_a1f26604a38c390a77ea164846db681b1}{available}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_aa81530b0489e3603c024d0b2c3450d7c}{line\+Received}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides a simple interface for accessing a serial port.
+
+There are two modes of operation for receiving data\+: polling (blocking) mode (default) and events (callback) mode.
+
+In polling mode, repeatedly call \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_a0ebc6cef3e4f10b35c571b336aa8942c}{poll()}} to detect if data is available, then call one of the read() methods to receive available data. The read() methods can also be called if no data is available, but will block until at least one character can be read.
+
+In event mode the class will start a thread that polls and reads available data from the serial port, and fires the line\+Received event whenever something has been read. Since callback mode uses \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_a3551dd5be73cbe79ff3864f5d5eddfe2}{read\+Line()}} to receive entire lines (if possible), delimiter characters and timeout can be set via the \char`\"{}delimiters\char`\"{} (string) and \char`\"{}timeout\char`\"{} (double) properties.
+
+Clients of the class can switch between polling and event mode by enabling or disabling the \char`\"{}events\char`\"{} feature\+: \begin{DoxyVerb}setFeature("events", true); 
+\end{DoxyVerb}
+ 
+
+Definition at line 33 of file Serial\+Device.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_a4077e1548256008fae6ded9af6a5c822}\label{classIoT_1_1Devices_1_1SerialDevice_a4077e1548256008fae6ded9af6a5c822}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice}{Serial\+Device}}$>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice_a4077e1548256008fae6ded9af6a5c822}{Io\+T\+::\+Devices\+::\+Serial\+Device\+::\+Ptr}}}
+
+
+
+Definition at line 59 of file Serial\+Device.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_aad3f34b67f43ee26fcb1179d00a13549}\label{classIoT_1_1Devices_1_1SerialDevice_aad3f34b67f43ee26fcb1179d00a13549}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!SerialDevice@{SerialDevice}}
+\index{SerialDevice@{SerialDevice}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{SerialDevice()}{SerialDevice()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Serial\+Device\+::\+Serial\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fired when a line of text has been received on the serial port. 
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_a96cf71723900e5671d830441def1e696}\label{classIoT_1_1Devices_1_1SerialDevice_a96cf71723900e5671d830441def1e696}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!````~SerialDevice@{$\sim$SerialDevice}}
+\index{````~SerialDevice@{$\sim$SerialDevice}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{$\sim$SerialDevice()}{~SerialDevice()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Serial\+Device\+::$\sim$\+Serial\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice}{Serial\+Device}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_a1f26604a38c390a77ea164846db681b1}\label{classIoT_1_1Devices_1_1SerialDevice_a1f26604a38c390a77ea164846db681b1}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!available@{available}}
+\index{available@{available}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily virtual int Io\+T\+::\+Devices\+::\+Serial\+Device\+::available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reads a single character from the port.
+
+If the internal buffer is empty, blocks until data arrives at the port. Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_afe292184f5a5633f16ce948f06556b2d}\label{classIoT_1_1Devices_1_1SerialDevice_afe292184f5a5633f16ce948f06556b2d}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!getRTS@{getRTS}}
+\index{getRTS@{getRTS}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{getRTS()}{getRTS()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+Serial\+Device\+::get\+R\+TS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Manually sets or clears R\+TS. 
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_a0ebc6cef3e4f10b35c571b336aa8942c}\label{classIoT_1_1Devices_1_1SerialDevice_a0ebc6cef3e4f10b35c571b336aa8942c}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!poll@{poll}}
+\index{poll@{poll}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{poll()}{poll()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+Serial\+Device\+::poll (\begin{DoxyParamCaption}\item[{double}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reconfigures the serial port with the given baud rate and communication parameters.
+
+Baud rate must be one of the following\+: 50, 75, 110, 134, 150, 200, 300, 600, 1200, 1800, 2400, 4800, 9600, 19200, 38400, 57600, 115200 or 230400.
+
+Specify -\/1 for baud\+Rate to use the currently configured speed. Note that not all platforms support all baud rates. ~\newline
+
+
+To specify character size, parity and stop bits, use the parameters argument. The parameters argument must be a three character string. The first character specifies the serial line character width in bits (5, 6, 7 or 8). The second char specifies the parity (N for none, E for even, O for odd) and the third character specifies the number of stop bits (1 or 2). Example\+: \char`\"{}8\+N1\char`\"{} for 8 bit characters, no parity, 1 stop bit.
+
+To specify flow control, use the flow\+Control argument. Specify \char`\"{}none\char`\"{} or an empty string for no flow control. Specify \char`\"{}rtscts\char`\"{} for hardware (R\+T\+S/\+C\+TS) flow control. Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_a7c4b72c38ce13ff6508e6244edc39a50}\label{classIoT_1_1Devices_1_1SerialDevice_a7c4b72c38ce13ff6508e6244edc39a50}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!readByte@{readByte}}
+\index{readByte@{readByte}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{readByte()}{readByte()}}
+{\footnotesize\ttfamily virtual Poco\+::\+U\+Int8 Io\+T\+::\+Devices\+::\+Serial\+Device\+::read\+Byte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Writes the given byte to the port. 
+
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_a3551dd5be73cbe79ff3864f5d5eddfe2}\label{classIoT_1_1Devices_1_1SerialDevice_a3551dd5be73cbe79ff3864f5d5eddfe2}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!readLine@{readLine}}
+\index{readLine@{readLine}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{readLine()}{readLine()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Devices\+::\+Serial\+Device\+::read\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{delimiters,  }\item[{double}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reads what\textquotesingle{}s currently available from the serial port or internal buffer and returns it in data.
+
+If the internal buffer is empty, blocks until data arrives at the port. Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_ae798b0f2be57c5fda0b5c600b0068c4e}\label{classIoT_1_1Devices_1_1SerialDevice_ae798b0f2be57c5fda0b5c600b0068c4e}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!readString@{readString}}
+\index{readString@{readString}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{readString()}{readString()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Devices\+::\+Serial\+Device\+::read\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes the given data to the port. Returns the number of characters written. Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_aa1ac5f0b33e5f1efb9eb97586c6718c8}\label{classIoT_1_1Devices_1_1SerialDevice_aa1ac5f0b33e5f1efb9eb97586c6718c8}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!reconfigure@{reconfigure}}
+\index{reconfigure@{reconfigure}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{reconfigure()}{reconfigure()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+Serial\+Device\+::reconfigure (\begin{DoxyParamCaption}\item[{int}]{baud\+Rate,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{parameters,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{flow\+Control }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1SerialDevice}{Serial\+Device}}. 
+
+Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_af2f1d7df02708827db7374f9afc0b08e}\label{classIoT_1_1Devices_1_1SerialDevice_af2f1d7df02708827db7374f9afc0b08e}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!setRTS@{setRTS}}
+\index{setRTS@{setRTS}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{setRTS()}{setRTS()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+Serial\+Device\+::set\+R\+TS (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Waits for data to arrive at the port.
+
+Returns true immediately if data is already in the internal buffer, or if data arrives during the specified time interval (given in seconds), otherwise false. Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_aeaa499c76ef84e0b366d8cb4f08dfff8}\label{classIoT_1_1Devices_1_1SerialDevice_aeaa499c76ef84e0b366d8cb4f08dfff8}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!writeByte@{writeByte}}
+\index{writeByte@{writeByte}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{writeByte()}{writeByte()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+Serial\+Device\+::write\+Byte (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{byte }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reads a characters from the serial port.
+
+Characters will be read until one of the characters specified in delimiters is encountered, or no character is received for the specified timeout (in seconds). Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_acbf43e409e149985b1ba79e39d996b8a}\label{classIoT_1_1Devices_1_1SerialDevice_acbf43e409e149985b1ba79e39d996b8a}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!writeString@{writeString}}
+\index{writeString@{writeString}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{writeString()}{writeString()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+Serial\+Device\+::write\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the R\+TS status. 
+
+Here is the caller graph for this function\+:
+% FIG 11
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SerialDevice_aa81530b0489e3603c024d0b2c3450d7c}\label{classIoT_1_1Devices_1_1SerialDevice_aa81530b0489e3603c024d0b2c3450d7c}} 
+\index{IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}!lineReceived@{lineReceived}}
+\index{lineReceived@{lineReceived}!IoT::Devices::SerialDevice@{IoT::Devices::SerialDevice}}
+\doxysubsubsection{\texorpdfstring{lineReceived}{lineReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string$>$ Io\+T\+::\+Devices\+::\+Serial\+Device\+::line\+Received}
+
+
+
+Definition at line 61 of file Serial\+Device.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{SerialDevice_8h}{Serial\+Device.\+h}}\end{DoxyCompactItemize}

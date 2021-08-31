@@ -1,0 +1,141 @@
+\hypertarget{classPoco_1_1Zip_1_1ZipUtil}{}\doxysection{Poco\+::Zip\+::Zip\+Util Class Reference}
+\label{classPoco_1_1Zip_1_1ZipUtil}\index{Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}}
+
+
+A utility class used for parsing header information inside of zip files.  
+
+
+
+
+{\ttfamily \#include $<$Zip\+Util.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Poco\+::\+U\+Int16 \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipUtil_adb42f03196f61d49c2cb6d9dee5aa8c6}{get16\+Bit\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$p\+Val, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32 pos)
+\item 
+static Poco\+::\+U\+Int32 \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipUtil_a36350efd063f900933e0d240dab36c86}{get32\+Bit\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$p\+Val, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32 pos)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipUtil_a87976801521952be8099ea3993256bba}{set16\+Bit\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int16 val, char $\ast$p\+Val, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32 pos)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipUtil_ab27484c2fc85c71cd26806a3e476ac55}{set32\+Bit\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32 val, char $\ast$p\+Val, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32 pos)
+\item 
+static \mbox{\hyperlink{classPoco_1_1DateTime}{Poco\+::\+Date\+Time}} \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipUtil_ae5bd10c14204ff3a793c396db1f38d9b}{parse\+Date\+Time}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$p\+Val, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32 time\+Pos, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32 date\+Pos)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipUtil_a2c5f550bd60e677d3021d802f86265bc}{set\+Date\+Time}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DateTime}{Poco\+::\+Date\+Time}} \&dt, char $\ast$p\+Val, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32 time\+Pos, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32 date\+Pos)
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipUtil_ac90e971aba8f07cfaff1b8bb3dfc1454}{fake\+Z\+Lib\+Init\+String}} (\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_aafbfb627b08375fd0bc9d2fd5152b263}{Zip\+Common\+::\+Compression\+Level}} cl)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipUtil_aaaeb979cdb1e1055f64cfc889eeb5f65}{sync}} (std\+::istream \&in)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipUtil_a98c73059bbf0ab8161c5cc935723e2c1}{verify\+Zip\+Entry\+File\+Name}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&zip\+Path)
+\begin{DoxyCompactList}\small\item\em Searches the next valid header in the input stream, stops right before it. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipUtil_a8fd136a5e6dd763d7a14c73ebf5dac38}{valid\+Zip\+Entry\+File\+Name}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Poco\+::\+Path}} \&entry)
+\begin{DoxyCompactList}\small\item\em Verifies that the name of the Zip\+Entry is a valid path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A utility class used for parsing header information inside of zip files. 
+
+Definition at line 34 of file Zip\+Util.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipUtil_ac90e971aba8f07cfaff1b8bb3dfc1454}\label{classPoco_1_1Zip_1_1ZipUtil_ac90e971aba8f07cfaff1b8bb3dfc1454}} 
+\index{Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}!fakeZLibInitString@{fakeZLibInitString}}
+\index{fakeZLibInitString@{fakeZLibInitString}!Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}}
+\doxysubsubsection{\texorpdfstring{fakeZLibInitString()}{fakeZLibInitString()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Zip\+::\+Zip\+Util\+::fake\+Z\+Lib\+Init\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_aafbfb627b08375fd0bc9d2fd5152b263}{Zip\+Common\+::\+Compression\+Level}}}]{cl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipUtil_adb42f03196f61d49c2cb6d9dee5aa8c6}\label{classPoco_1_1Zip_1_1ZipUtil_adb42f03196f61d49c2cb6d9dee5aa8c6}} 
+\index{Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}!get16BitValue@{get16BitValue}}
+\index{get16BitValue@{get16BitValue}!Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}}
+\doxysubsubsection{\texorpdfstring{get16BitValue()}{get16BitValue()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Poco\+::\+Zip\+::\+Zip\+Util\+::get16\+Bit\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{p\+Val,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 68 of file Zip\+Util.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipUtil_a36350efd063f900933e0d240dab36c86}\label{classPoco_1_1Zip_1_1ZipUtil_a36350efd063f900933e0d240dab36c86}} 
+\index{Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}!get32BitValue@{get32BitValue}}
+\index{get32BitValue@{get32BitValue}!Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}}
+\doxysubsubsection{\texorpdfstring{get32BitValue()}{get32BitValue()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int32 Poco\+::\+Zip\+::\+Zip\+Util\+::get32\+Bit\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{p\+Val,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 74 of file Zip\+Util.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipUtil_ae5bd10c14204ff3a793c396db1f38d9b}\label{classPoco_1_1Zip_1_1ZipUtil_ae5bd10c14204ff3a793c396db1f38d9b}} 
+\index{Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}!parseDateTime@{parseDateTime}}
+\index{parseDateTime@{parseDateTime}!Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}}
+\doxysubsubsection{\texorpdfstring{parseDateTime()}{parseDateTime()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1DateTime}{Poco\+::\+Date\+Time}} Poco\+::\+Zip\+::\+Zip\+Util\+::parse\+Date\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{p\+Val,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32}]{time\+Pos,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32}]{date\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipUtil_a87976801521952be8099ea3993256bba}\label{classPoco_1_1Zip_1_1ZipUtil_a87976801521952be8099ea3993256bba}} 
+\index{Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}!set16BitValue@{set16BitValue}}
+\index{set16BitValue@{set16BitValue}!Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}}
+\doxysubsubsection{\texorpdfstring{set16BitValue()}{set16BitValue()}}
+{\footnotesize\ttfamily void Poco\+::\+Zip\+::\+Zip\+Util\+::set16\+Bit\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int16}]{val,  }\item[{char $\ast$}]{p\+Val,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 81 of file Zip\+Util.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipUtil_ab27484c2fc85c71cd26806a3e476ac55}\label{classPoco_1_1Zip_1_1ZipUtil_ab27484c2fc85c71cd26806a3e476ac55}} 
+\index{Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}!set32BitValue@{set32BitValue}}
+\index{set32BitValue@{set32BitValue}!Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}}
+\doxysubsubsection{\texorpdfstring{set32BitValue()}{set32BitValue()}}
+{\footnotesize\ttfamily void Poco\+::\+Zip\+::\+Zip\+Util\+::set32\+Bit\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32}]{val,  }\item[{char $\ast$}]{p\+Val,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 88 of file Zip\+Util.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipUtil_a2c5f550bd60e677d3021d802f86265bc}\label{classPoco_1_1Zip_1_1ZipUtil_a2c5f550bd60e677d3021d802f86265bc}} 
+\index{Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}!setDateTime@{setDateTime}}
+\index{setDateTime@{setDateTime}!Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}}
+\doxysubsubsection{\texorpdfstring{setDateTime()}{setDateTime()}}
+{\footnotesize\ttfamily static void Poco\+::\+Zip\+::\+Zip\+Util\+::set\+Date\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DateTime}{Poco\+::\+Date\+Time}} \&}]{dt,  }\item[{char $\ast$}]{p\+Val,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32}]{time\+Pos,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int32}]{date\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipUtil_aaaeb979cdb1e1055f64cfc889eeb5f65}\label{classPoco_1_1Zip_1_1ZipUtil_aaaeb979cdb1e1055f64cfc889eeb5f65}} 
+\index{Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}!sync@{sync}}
+\index{sync@{sync}!Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}}
+\doxysubsubsection{\texorpdfstring{sync()}{sync()}}
+{\footnotesize\ttfamily static void Poco\+::\+Zip\+::\+Zip\+Util\+::sync (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipUtil_a8fd136a5e6dd763d7a14c73ebf5dac38}\label{classPoco_1_1Zip_1_1ZipUtil_a8fd136a5e6dd763d7a14c73ebf5dac38}} 
+\index{Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}!validZipEntryFileName@{validZipEntryFileName}}
+\index{validZipEntryFileName@{validZipEntryFileName}!Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}}
+\doxysubsubsection{\texorpdfstring{validZipEntryFileName()}{validZipEntryFileName()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Zip\+::\+Zip\+Util\+::valid\+Zip\+Entry\+File\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Poco\+::\+Path}} \&}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifies that the name of the Zip\+Entry is a valid path. 
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipUtil_a98c73059bbf0ab8161c5cc935723e2c1}\label{classPoco_1_1Zip_1_1ZipUtil_a98c73059bbf0ab8161c5cc935723e2c1}} 
+\index{Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}!verifyZipEntryFileName@{verifyZipEntryFileName}}
+\index{verifyZipEntryFileName@{verifyZipEntryFileName}!Poco::Zip::ZipUtil@{Poco::Zip::ZipUtil}}
+\doxysubsubsection{\texorpdfstring{verifyZipEntryFileName()}{verifyZipEntryFileName()}}
+{\footnotesize\ttfamily static void Poco\+::\+Zip\+::\+Zip\+Util\+::verify\+Zip\+Entry\+File\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{zip\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Searches the next valid header in the input stream, stops right before it. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Zip/\mbox{\hyperlink{ZipUtil_8h}{Zip\+Util.\+h}}\end{DoxyCompactItemize}

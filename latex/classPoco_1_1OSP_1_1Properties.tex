@@ -1,0 +1,238 @@
+\hypertarget{classPoco_1_1OSP_1_1Properties}{}\doxysection{Poco\+::O\+SP\+::Properties Class Reference}
+\label{classPoco_1_1OSP_1_1Properties}\index{Poco::OSP::Properties@{Poco::OSP::Properties}}
+
+
+{\ttfamily \#include $<$Properties.\+h$>$}
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1OSP_1_1Properties_1_1ILT}{I\+LT}}
+\begin{DoxyCompactList}\small\item\em Fills the given vector with all keys. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a06aa3863f3545ae93ce014caa728807e}{Properties}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a1ca91302bdc3ae605bd31310acd0ad26}{Properties}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} \&props)
+\begin{DoxyCompactList}\small\item\em Creates an empty \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_ad97f82dd86f4b2eab97d52e8f0b774c8}{$\sim$\+Properties}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} object by copying another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} \& \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a548c9dca7fe08bbe5db939c87995c59d}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} \&props)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a9cb19dea85a47bdd8874a48211baf347}{swap}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} \&props)
+\begin{DoxyCompactList}\small\item\em Assigns another \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a49e8aeaad7dc4c9b8eeee4a2a340fe64}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a44ad723fac2710f08d1e37c178ad659e}{get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_ae06a62b2ac173b0be3f62c1f990d9d72}{get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&deflt) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a972aeead5e118915cffb718ca31aa472}{get\+Bool}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a929af2d4f9b4ab9a950e0e5fcf178b42}{get\+Bool}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, bool deflt) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a96cf6ae40bd9b8bde23d4c807ff55c7f}{get\+Int}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a8c18d3a1632f81318e79eca16fce0fd1}{get\+Int}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, int deflt) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+double \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a5b56f411e2f0bc16887553d441929f22}{get\+Float}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+double \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_abaf5ed9f1b4131b8350f185991f08518}{get\+Float}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, double deflt) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a4537ad512b59e796b2b47f07b518ed9c}{set}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a992feb30a8ba8aba13ffee29edaaaa8b}{has}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Adds a new or updates an existing property. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_a395bbc039cf8fc2862510dc080592d70}{keys}} (std\+::vector$<$ std\+::string $>$ \&keys) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff a property with the given key exists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, std\+::string, \mbox{\hyperlink{structPoco_1_1OSP_1_1Properties_1_1ILT}{I\+LT}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_af74fe18e44bf523b0ee0527e1ed855ab}{Props\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} class manages a collection of key-\/value pairs.
+
+Property keys are not case sensitive. 
+
+Definition at line 34 of file Properties.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_af74fe18e44bf523b0ee0527e1ed855ab}\label{classPoco_1_1OSP_1_1Properties_af74fe18e44bf523b0ee0527e1ed855ab}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!PropsMap@{PropsMap}}
+\index{PropsMap@{PropsMap}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{PropsMap}{PropsMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, std\+::string, \mbox{\hyperlink{structPoco_1_1OSP_1_1Properties_1_1ILT}{I\+LT}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties_af74fe18e44bf523b0ee0527e1ed855ab}{Poco\+::\+O\+S\+P\+::\+Properties\+::\+Props\+Map}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 130 of file Properties.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a06aa3863f3545ae93ce014caa728807e}\label{classPoco_1_1OSP_1_1Properties_a06aa3863f3545ae93ce014caa728807e}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!Properties@{Properties}}
+\index{Properties@{Properties}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{Properties()}{Properties()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Properties\+::\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a1ca91302bdc3ae605bd31310acd0ad26}\label{classPoco_1_1OSP_1_1Properties_a1ca91302bdc3ae605bd31310acd0ad26}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!Properties@{Properties}}
+\index{Properties@{Properties}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{Properties()}{Properties()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Properties\+::\+Properties (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} \&}]{props }\end{DoxyParamCaption})}
+
+
+
+Creates an empty \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} object. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_ad97f82dd86f4b2eab97d52e8f0b774c8}\label{classPoco_1_1OSP_1_1Properties_ad97f82dd86f4b2eab97d52e8f0b774c8}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!````~Properties@{$\sim$Properties}}
+\index{````~Properties@{$\sim$Properties}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{$\sim$Properties()}{~Properties()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Properties\+::$\sim$\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} object by copying another one. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a44ad723fac2710f08d1e37c178ad659e}\label{classPoco_1_1OSP_1_1Properties_a44ad723fac2710f08d1e37c178ad659e}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!get@{get}}
+\index{get@{get}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+O\+S\+P\+::\+Properties\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption}) const}
+
+Returns the value for the given key.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the given key does not exist. Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_ae06a62b2ac173b0be3f62c1f990d9d72}\label{classPoco_1_1OSP_1_1Properties_ae06a62b2ac173b0be3f62c1f990d9d72}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!get@{get}}
+\index{get@{get}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+O\+S\+P\+::\+Properties\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{deflt }\end{DoxyParamCaption}) const}
+
+Returns the value for the given key.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the given key does not exist. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a972aeead5e118915cffb718ca31aa472}\label{classPoco_1_1OSP_1_1Properties_a972aeead5e118915cffb718ca31aa472}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!getBool@{getBool}}
+\index{getBool@{getBool}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{getBool()}{getBool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Properties\+::get\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption}) const}
+
+Returns the value for the given key, or deflt if the key does not exist. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a929af2d4f9b4ab9a950e0e5fcf178b42}\label{classPoco_1_1OSP_1_1Properties_a929af2d4f9b4ab9a950e0e5fcf178b42}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!getBool@{getBool}}
+\index{getBool@{getBool}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{getBool()}{getBool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Properties\+::get\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{bool}]{deflt }\end{DoxyParamCaption}) const}
+
+Returns the given value as a boolean. To be true, the string value must be something other than \char`\"{}false\char`\"{}.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the given key does not exist. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a5b56f411e2f0bc16887553d441929f22}\label{classPoco_1_1OSP_1_1Properties_a5b56f411e2f0bc16887553d441929f22}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!getFloat@{getFloat}}
+\index{getFloat@{getFloat}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{getFloat()}{getFloat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Poco\+::\+O\+S\+P\+::\+Properties\+::get\+Float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption}) const}
+
+Returns the given value as an integer.
+
+Returns deflt if key does not exist. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_abaf5ed9f1b4131b8350f185991f08518}\label{classPoco_1_1OSP_1_1Properties_abaf5ed9f1b4131b8350f185991f08518}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!getFloat@{getFloat}}
+\index{getFloat@{getFloat}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{getFloat()}{getFloat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Poco\+::\+O\+S\+P\+::\+Properties\+::get\+Float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{double}]{deflt }\end{DoxyParamCaption}) const}
+
+Returns the given value as an integer.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the given key does not exist and a Poco\+::\+Syntax\+Exception if the property value is not a valid floating point number. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a96cf6ae40bd9b8bde23d4c807ff55c7f}\label{classPoco_1_1OSP_1_1Properties_a96cf6ae40bd9b8bde23d4c807ff55c7f}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!getInt@{getInt}}
+\index{getInt@{getInt}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{getInt()}{getInt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Poco\+::\+O\+S\+P\+::\+Properties\+::get\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption}) const}
+
+Returns the given value as a boolean. To be true, the string value must be something other than \char`\"{}false\char`\"{}.
+
+Returns deflt if key does not exist. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a8c18d3a1632f81318e79eca16fce0fd1}\label{classPoco_1_1OSP_1_1Properties_a8c18d3a1632f81318e79eca16fce0fd1}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!getInt@{getInt}}
+\index{getInt@{getInt}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{getInt()}{getInt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Poco\+::\+O\+S\+P\+::\+Properties\+::get\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{int}]{deflt }\end{DoxyParamCaption}) const}
+
+Returns the given value as an integer.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the given key does not exist and a Poco\+::\+Syntax\+Exception if the property value is not a valid integer. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a992feb30a8ba8aba13ffee29edaaaa8b}\label{classPoco_1_1OSP_1_1Properties_a992feb30a8ba8aba13ffee29edaaaa8b}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!has@{has}}
+\index{has@{has}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Properties\+::has (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption}) const}
+
+
+
+Adds a new or updates an existing property. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a395bbc039cf8fc2862510dc080592d70}\label{classPoco_1_1OSP_1_1Properties_a395bbc039cf8fc2862510dc080592d70}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!keys@{keys}}
+\index{keys@{keys}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{keys()}{keys()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Properties\+::keys (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{keys }\end{DoxyParamCaption}) const}
+
+
+
+Returns true iff a property with the given key exists. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a548c9dca7fe08bbe5db939c87995c59d}\label{classPoco_1_1OSP_1_1Properties_a548c9dca7fe08bbe5db939c87995c59d}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}}\& Poco\+::\+O\+S\+P\+::\+Properties\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} \&}]{props }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} object. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a49e8aeaad7dc4c9b8eeee4a2a340fe64}\label{classPoco_1_1OSP_1_1Properties_a49e8aeaad7dc4c9b8eeee4a2a340fe64}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+O\+S\+P\+::\+Properties\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Exchanges the contents of the \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} object with those from another one. 
+
+Definition at line 141 of file Properties.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a4537ad512b59e796b2b47f07b518ed9c}\label{classPoco_1_1OSP_1_1Properties_a4537ad512b59e796b2b47f07b518ed9c}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!set@{set}}
+\index{set@{set}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Properties\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})}
+
+Returns the given value as a double.
+
+Returns deflt if key does not exist. \mbox{\Hypertarget{classPoco_1_1OSP_1_1Properties_a9cb19dea85a47bdd8874a48211baf347}\label{classPoco_1_1OSP_1_1Properties_a9cb19dea85a47bdd8874a48211baf347}} 
+\index{Poco::OSP::Properties@{Poco::OSP::Properties}!swap@{swap}}
+\index{swap@{swap}!Poco::OSP::Properties@{Poco::OSP::Properties}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Properties\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} \&}]{props }\end{DoxyParamCaption})}
+
+
+
+Assigns another \mbox{\hyperlink{classPoco_1_1OSP_1_1Properties}{Properties}} object. 
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{Properties_8h}{Properties.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,214 @@
+\hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory}{}\doxysection{Poco\+::Net\+::H\+T\+T\+P\+Session\+Factory Class Reference}
+\label{classPoco_1_1Net_1_1HTTPSessionFactory}\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+Session\+Factory.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_a0c0879af8c794f97834e771ed84065c9}{H\+T\+T\+P\+Session\+Factory}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_a9e925b3e1afdcb96b5522ebcada920e3}{H\+T\+T\+P\+Session\+Factory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_ad5b1152d028b5142501266b78c023a9a}{proxy\+Host}}, Poco\+::\+U\+Int16 \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_a4e1b2a71b49fee0513a433cc104e20d8}{proxy\+Port}})
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory}{H\+T\+T\+P\+Session\+Factory}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_acde193b0952a5e9cb3b70a8368826970}{$\sim$\+H\+T\+T\+P\+Session\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory}{H\+T\+T\+P\+Session\+Factory}} and sets the proxy host and port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_adb868fd1435fcb495402228b66c9edd0}{register\+Protocol}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionInstantiator}{H\+T\+T\+P\+Session\+Instantiator}} $\ast$p\+Session\+Instantiator)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory}{H\+T\+T\+P\+Session\+Factory}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_a07e94b70457a473a446eeee60293a77c}{unregister\+Protocol}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_a8d5beb4d03099ef92d46ea3c31b012bf}{supports\+Protocol}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_a361f474c520855cd752f00308caa1d41}{create\+Client\+Session}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{Poco\+::\+U\+RI}} \&uri)
+\begin{DoxyCompactList}\small\item\em Returns true if a session instantiator for the given protocol has been registered. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_ad5b1152d028b5142501266b78c023a9a}{proxy\+Host}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Creates a client session for the given uri scheme. Throws exception if no factory is registered for the given scheme. \end{DoxyCompactList}\item 
+Poco\+::\+U\+Int16 \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_a4e1b2a71b49fee0513a433cc104e20d8}{proxy\+Port}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the proxy host, if one has been set, or an empty string otherwise. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_ab7d57ca9aa7d65377bf4d3ac039f9b91}{set\+Proxy}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_ad5b1152d028b5142501266b78c023a9a}{proxy\+Host}}, Poco\+::\+U\+Int16 \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_a4e1b2a71b49fee0513a433cc104e20d8}{proxy\+Port}})
+\begin{DoxyCompactList}\small\item\em Returns the proxy port number, if one has been set, or zero otherwise. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_ae110248b4755bdec7e8987aae9609b5f}{set\+Proxy\+Credentials}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&username, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Sets the proxy host and port number. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_ad636746829fef4a1277f0ccafba5b509}{proxy\+Username}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the username and password for proxy authorization (Basic auth only). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_a073987db32ff2a33e6675e9c16fd9ed7}{proxy\+Password}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the username for proxy authorization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory}{H\+T\+T\+P\+Session\+Factory}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_aefcb27b0e4fa3bdf9622a25cf16d6093}{default\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Returns the password for proxy authorization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory for \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} objects. \begin{DoxyVerb}Given a URI, this class creates a HTTPClientSession
+(for http) or a HTTPSClientSession (for https) for
+accessing the URI.
+
+The actual work of creating the session is done by
+HTTPSessionInstantiator objects that must be registered
+with a HTTPSessionFactory. 
+\end{DoxyVerb}
+ 
+
+Definition at line 39 of file H\+T\+T\+P\+Session\+Factory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_a0c0879af8c794f97834e771ed84065c9}\label{classPoco_1_1Net_1_1HTTPSessionFactory_a0c0879af8c794f97834e771ed84065c9}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!HTTPSessionFactory@{HTTPSessionFactory}}
+\index{HTTPSessionFactory@{HTTPSessionFactory}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{HTTPSessionFactory()}{HTTPSessionFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::\+H\+T\+T\+P\+Session\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_a9e925b3e1afdcb96b5522ebcada920e3}\label{classPoco_1_1Net_1_1HTTPSessionFactory_a9e925b3e1afdcb96b5522ebcada920e3}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!HTTPSessionFactory@{HTTPSessionFactory}}
+\index{HTTPSessionFactory@{HTTPSessionFactory}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{HTTPSessionFactory()}{HTTPSessionFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::\+H\+T\+T\+P\+Session\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{proxy\+Host,  }\item[{Poco\+::\+U\+Int16}]{proxy\+Port }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory}{H\+T\+T\+P\+Session\+Factory}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_acde193b0952a5e9cb3b70a8368826970}\label{classPoco_1_1Net_1_1HTTPSessionFactory_acde193b0952a5e9cb3b70a8368826970}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!````~HTTPSessionFactory@{$\sim$HTTPSessionFactory}}
+\index{````~HTTPSessionFactory@{$\sim$HTTPSessionFactory}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$HTTPSessionFactory()}{~HTTPSessionFactory()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::$\sim$\+H\+T\+T\+P\+Session\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory}{H\+T\+T\+P\+Session\+Factory}} and sets the proxy host and port. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_a361f474c520855cd752f00308caa1d41}\label{classPoco_1_1Net_1_1HTTPSessionFactory_a361f474c520855cd752f00308caa1d41}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!createClientSession@{createClientSession}}
+\index{createClientSession@{createClientSession}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{createClientSession()}{createClientSession()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}}$\ast$ Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::create\+Client\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{Poco\+::\+U\+RI}} \&}]{uri }\end{DoxyParamCaption})}
+
+
+
+Returns true if a session instantiator for the given protocol has been registered. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_aefcb27b0e4fa3bdf9622a25cf16d6093}\label{classPoco_1_1Net_1_1HTTPSessionFactory_aefcb27b0e4fa3bdf9622a25cf16d6093}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!defaultFactory@{defaultFactory}}
+\index{defaultFactory@{defaultFactory}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{defaultFactory()}{defaultFactory()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory}{H\+T\+T\+P\+Session\+Factory}}\& Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::default\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the password for proxy authorization. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_ad5b1152d028b5142501266b78c023a9a}\label{classPoco_1_1Net_1_1HTTPSessionFactory_ad5b1152d028b5142501266b78c023a9a}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!proxyHost@{proxyHost}}
+\index{proxyHost@{proxyHost}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{proxyHost()}{proxyHost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::proxy\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a client session for the given uri scheme. Throws exception if no factory is registered for the given scheme. 
+
+
+
+Definition at line 130 of file H\+T\+T\+P\+Session\+Factory.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_a073987db32ff2a33e6675e9c16fd9ed7}\label{classPoco_1_1Net_1_1HTTPSessionFactory_a073987db32ff2a33e6675e9c16fd9ed7}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!proxyPassword@{proxyPassword}}
+\index{proxyPassword@{proxyPassword}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{proxyPassword()}{proxyPassword()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::proxy\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the username for proxy authorization. 
+
+
+
+Definition at line 148 of file H\+T\+T\+P\+Session\+Factory.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_a4e1b2a71b49fee0513a433cc104e20d8}\label{classPoco_1_1Net_1_1HTTPSessionFactory_a4e1b2a71b49fee0513a433cc104e20d8}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!proxyPort@{proxyPort}}
+\index{proxyPort@{proxyPort}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{proxyPort()}{proxyPort()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::proxy\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the proxy host, if one has been set, or an empty string otherwise. 
+
+
+
+Definition at line 136 of file H\+T\+T\+P\+Session\+Factory.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_ad636746829fef4a1277f0ccafba5b509}\label{classPoco_1_1Net_1_1HTTPSessionFactory_ad636746829fef4a1277f0ccafba5b509}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!proxyUsername@{proxyUsername}}
+\index{proxyUsername@{proxyUsername}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{proxyUsername()}{proxyUsername()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::proxy\+Username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the username and password for proxy authorization (Basic auth only). 
+
+
+
+Definition at line 142 of file H\+T\+T\+P\+Session\+Factory.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_adb868fd1435fcb495402228b66c9edd0}\label{classPoco_1_1Net_1_1HTTPSessionFactory_adb868fd1435fcb495402228b66c9edd0}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!registerProtocol@{registerProtocol}}
+\index{registerProtocol@{registerProtocol}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{registerProtocol()}{registerProtocol()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::register\+Protocol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionInstantiator}{H\+T\+T\+P\+Session\+Instantiator}} $\ast$}]{p\+Session\+Instantiator }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory}{H\+T\+T\+P\+Session\+Factory}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_ab7d57ca9aa7d65377bf4d3ac039f9b91}\label{classPoco_1_1Net_1_1HTTPSessionFactory_ab7d57ca9aa7d65377bf4d3ac039f9b91}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!setProxy@{setProxy}}
+\index{setProxy@{setProxy}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{setProxy()}{setProxy()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::set\+Proxy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{proxy\+Host,  }\item[{Poco\+::\+U\+Int16}]{proxy\+Port }\end{DoxyParamCaption})}
+
+
+
+Returns the proxy port number, if one has been set, or zero otherwise. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_ae110248b4755bdec7e8987aae9609b5f}\label{classPoco_1_1Net_1_1HTTPSessionFactory_ae110248b4755bdec7e8987aae9609b5f}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!setProxyCredentials@{setProxyCredentials}}
+\index{setProxyCredentials@{setProxyCredentials}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{setProxyCredentials()}{setProxyCredentials()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::set\+Proxy\+Credentials (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{username,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Sets the proxy host and port number. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_a8d5beb4d03099ef92d46ea3c31b012bf}\label{classPoco_1_1Net_1_1HTTPSessionFactory_a8d5beb4d03099ef92d46ea3c31b012bf}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!supportsProtocol@{supportsProtocol}}
+\index{supportsProtocol@{supportsProtocol}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{supportsProtocol()}{supportsProtocol()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::supports\+Protocol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})}
+
+Removes the registration of a protocol.
+
+Throws a Not\+Found\+Exception if no instantiator has been registered for the given protocol. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSessionFactory_a07e94b70457a473a446eeee60293a77c}\label{classPoco_1_1Net_1_1HTTPSessionFactory_a07e94b70457a473a446eeee60293a77c}} 
+\index{Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}!unregisterProtocol@{unregisterProtocol}}
+\index{unregisterProtocol@{unregisterProtocol}!Poco::Net::HTTPSessionFactory@{Poco::Net::HTTPSessionFactory}}
+\doxysubsubsection{\texorpdfstring{unregisterProtocol()}{unregisterProtocol()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Session\+Factory\+::unregister\+Protocol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})}
+
+Registers the session instantiator for the given protocol. The factory takes ownership of the Session\+Instantiator.
+
+A protocol can be registered more than once. However, only the instantiator that has been registered first is used. Also, for each call to \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_adb868fd1435fcb495402228b66c9edd0}{register\+Protocol()}}, a corresponding call to \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSessionFactory_a07e94b70457a473a446eeee60293a77c}{unregister\+Protocol()}} must be made. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{HTTPSessionFactory_8h}{H\+T\+T\+P\+Session\+Factory.\+h}}\end{DoxyCompactItemize}

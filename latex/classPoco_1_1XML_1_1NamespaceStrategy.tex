@@ -1,0 +1,100 @@
+\hypertarget{classPoco_1_1XML_1_1NamespaceStrategy}{}\doxysection{Poco\+::X\+ML\+::Namespace\+Strategy Class Reference}
+\label{classPoco_1_1XML_1_1NamespaceStrategy}\index{Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}}
+
+
+{\ttfamily \#include $<$Namespace\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::Namespace\+Strategy\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1XML_1_1NamespaceStrategy_a60c1c63f046d63b7d38c3ba69facf3d6}{$\sim$\+Namespace\+Strategy}} ()
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1XML_1_1NamespaceStrategy_abe3951554b6d5e49fa1ec33d5f779dee}{start\+Element}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$$\ast$atts, int specified\+Count, \mbox{\hyperlink{classPoco_1_1XML_1_1ContentHandler}{Content\+Handler}} $\ast$p\+Content\+Handler)=0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1XML_1_1NamespaceStrategy_a82eb0fc9b02acb48d2051cd5bfe6ed2b}{end\+Element}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$name, \mbox{\hyperlink{classPoco_1_1XML_1_1ContentHandler}{Content\+Handler}} $\ast$p\+Content\+Handler)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPoco_1_1XML_1_1NamespaceStrategy_ac1eda867f8734bf23885208185689679}{split\+Name}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$qname, \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&uri, \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1XML_1_1NamespaceStrategy_a67056ad4c2693abe1be3d5777bf434fa}{split\+Name}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$qname, \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&uri, \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name, \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&prefix)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \mbox{\hyperlink{classPoco_1_1XML_1_1NamespaceStrategy_a6d2cc1aafc41e00a4f6bb3d29b7330b1}{N\+O\+T\+H\+I\+NG}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used by \mbox{\hyperlink{classPoco_1_1XML_1_1ParserEngine}{Parser\+Engine}} to handle the start\+Element, end\+Element, start\+Prefix\+Mapping and end\+Prefix\+Mapping events. 
+
+Definition at line 36 of file Namespace\+Strategy.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1NamespaceStrategy_a60c1c63f046d63b7d38c3ba69facf3d6}\label{classPoco_1_1XML_1_1NamespaceStrategy_a60c1c63f046d63b7d38c3ba69facf3d6}} 
+\index{Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}!````~NamespaceStrategy@{$\sim$NamespaceStrategy}}
+\index{````~NamespaceStrategy@{$\sim$NamespaceStrategy}!Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}}
+\doxysubsubsection{\texorpdfstring{$\sim$NamespaceStrategy()}{~NamespaceStrategy()}}
+{\footnotesize\ttfamily virtual Poco\+::\+X\+M\+L\+::\+Namespace\+Strategy\+::$\sim$\+Namespace\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1NamespaceStrategy_a82eb0fc9b02acb48d2051cd5bfe6ed2b}\label{classPoco_1_1XML_1_1NamespaceStrategy_a82eb0fc9b02acb48d2051cd5bfe6ed2b}} 
+\index{Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}!endElement@{endElement}}
+\index{endElement@{endElement}!Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}}
+\doxysubsubsection{\texorpdfstring{endElement()}{endElement()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+X\+M\+L\+::\+Namespace\+Strategy\+::end\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$}]{name,  }\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1ContentHandler}{Content\+Handler}} $\ast$}]{p\+Content\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Translate the arguments as delivered by Expat and call the \mbox{\hyperlink{classPoco_1_1XML_1_1NamespaceStrategy_abe3951554b6d5e49fa1ec33d5f779dee}{start\+Element()}} method of the \mbox{\hyperlink{classPoco_1_1XML_1_1ContentHandler}{Content\+Handler}}. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1XML_1_1NamespacePrefixesStrategy_abfe6fa1054270c29f7e7221be7b59d93}{Poco\+::\+X\+M\+L\+::\+Namespace\+Prefixes\+Strategy}}, \mbox{\hyperlink{classPoco_1_1XML_1_1NoNamespacePrefixesStrategy_a38d5778b07dfc7e970c8e1d8b6342c32}{Poco\+::\+X\+M\+L\+::\+No\+Namespace\+Prefixes\+Strategy}}, and \mbox{\hyperlink{classPoco_1_1XML_1_1NoNamespacesStrategy_a57392c71ec0e2e7d6d1ab73145da80fe}{Poco\+::\+X\+M\+L\+::\+No\+Namespaces\+Strategy}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1NamespaceStrategy_ac1eda867f8734bf23885208185689679}\label{classPoco_1_1XML_1_1NamespaceStrategy_ac1eda867f8734bf23885208185689679}} 
+\index{Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}!splitName@{splitName}}
+\index{splitName@{splitName}!Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}}
+\doxysubsubsection{\texorpdfstring{splitName()}{splitName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+X\+M\+L\+::\+Namespace\+Strategy\+::split\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$}]{qname,  }\item[{\mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{uri,  }\item[{\mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Translate the arguments as delivered by Expat and call the \mbox{\hyperlink{classPoco_1_1XML_1_1NamespaceStrategy_a82eb0fc9b02acb48d2051cd5bfe6ed2b}{end\+Element()}} method of the \mbox{\hyperlink{classPoco_1_1XML_1_1ContentHandler}{Content\+Handler}}. \mbox{\Hypertarget{classPoco_1_1XML_1_1NamespaceStrategy_a67056ad4c2693abe1be3d5777bf434fa}\label{classPoco_1_1XML_1_1NamespaceStrategy_a67056ad4c2693abe1be3d5777bf434fa}} 
+\index{Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}!splitName@{splitName}}
+\index{splitName@{splitName}!Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}}
+\doxysubsubsection{\texorpdfstring{splitName()}{splitName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+X\+M\+L\+::\+Namespace\+Strategy\+::split\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$}]{qname,  }\item[{\mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{uri,  }\item[{\mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name,  }\item[{\mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1NamespaceStrategy_abe3951554b6d5e49fa1ec33d5f779dee}\label{classPoco_1_1XML_1_1NamespaceStrategy_abe3951554b6d5e49fa1ec33d5f779dee}} 
+\index{Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}!startElement@{startElement}}
+\index{startElement@{startElement}!Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}}
+\doxysubsubsection{\texorpdfstring{startElement()}{startElement()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+X\+M\+L\+::\+Namespace\+Strategy\+::start\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$$\ast$}]{atts,  }\item[{int}]{specified\+Count,  }\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1ContentHandler}{Content\+Handler}} $\ast$}]{p\+Content\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1XML_1_1NamespacePrefixesStrategy_a567a7da1014f9b0488fc132e20bf1eb6}{Poco\+::\+X\+M\+L\+::\+Namespace\+Prefixes\+Strategy}}, \mbox{\hyperlink{classPoco_1_1XML_1_1NoNamespacePrefixesStrategy_a509fdb0073106541381f357827ea20c7}{Poco\+::\+X\+M\+L\+::\+No\+Namespace\+Prefixes\+Strategy}}, and \mbox{\hyperlink{classPoco_1_1XML_1_1NoNamespacesStrategy_aa8a0980ec5c2f926b38ffcba7a5f57e3}{Poco\+::\+X\+M\+L\+::\+No\+Namespaces\+Strategy}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1NamespaceStrategy_a6d2cc1aafc41e00a4f6bb3d29b7330b1}\label{classPoco_1_1XML_1_1NamespaceStrategy_a6d2cc1aafc41e00a4f6bb3d29b7330b1}} 
+\index{Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}!NOTHING@{NOTHING}}
+\index{NOTHING@{NOTHING}!Poco::XML::NamespaceStrategy@{Poco::XML::NamespaceStrategy}}
+\doxysubsubsection{\texorpdfstring{NOTHING}{NOTHING}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} Poco\+::\+X\+M\+L\+::\+Namespace\+Strategy\+::\+N\+O\+T\+H\+I\+NG\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 56 of file Namespace\+Strategy.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+X\+M\+L/\mbox{\hyperlink{NamespaceStrategy_8h}{Namespace\+Strategy.\+h}}\end{DoxyCompactItemize}

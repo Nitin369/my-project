@@ -1,0 +1,103 @@
+\hypertarget{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf}{}\doxysection{Poco\+::Net\+::H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf Class Reference}
+\label{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf}\index{Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}}
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+Fixed\+Length\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{H\+T\+T\+P\+Basic\+Stream\+Buf\+::openmode}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a89b9afc0e1e40fdcadc116eb9a117b79}{openmode}}
+\item 
+typedef std\+::streamsize \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a37d82c438475e498f57059df3a1888a1}{Content\+Length}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a41a0a8ddcaf9bc7488f3d4a2f56d3a9c}{H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession}{H\+T\+T\+P\+Session}} \&session, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a37d82c438475e498f57059df3a1888a1}{Content\+Length}} length, \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{openmode}} mode)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a67ce3fc8ef55ade8187485cfaa618c77}{$\sim$\+H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_acc6096cb18a2052d856ed8313f5cd190}{read\+From\+Device}} (char $\ast$buffer, std\+::streamsize length)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_aee3d8cfc45f2395e25c6dfaa0bc59d3c}{write\+To\+Device}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$buffer, std\+::streamsize length)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is the streambuf class used for reading and writing fixed-\/size H\+T\+TP message bodies.
+
+At most a given number of bytes are read or written. 
+
+Definition at line 37 of file H\+T\+T\+P\+Fixed\+Length\+Stream.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a37d82c438475e498f57059df3a1888a1}\label{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a37d82c438475e498f57059df3a1888a1}} 
+\index{Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}!ContentLength@{ContentLength}}
+\index{ContentLength@{ContentLength}!Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}}
+\doxysubsubsection{\texorpdfstring{ContentLength}{ContentLength}}
+{\footnotesize\ttfamily typedef std\+::streamsize \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a37d82c438475e498f57059df3a1888a1}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf\+::\+Content\+Length}}}
+
+
+
+Definition at line 49 of file H\+T\+T\+P\+Fixed\+Length\+Stream.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a89b9afc0e1e40fdcadc116eb9a117b79}\label{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a89b9afc0e1e40fdcadc116eb9a117b79}} 
+\index{Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}!openmode@{openmode}}
+\index{openmode@{openmode}!Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}}
+\doxysubsubsection{\texorpdfstring{openmode}{openmode}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{H\+T\+T\+P\+Basic\+Stream\+Buf\+::openmode}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a89b9afc0e1e40fdcadc116eb9a117b79}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf\+::openmode}}}
+
+
+
+Definition at line 44 of file H\+T\+T\+P\+Fixed\+Length\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a41a0a8ddcaf9bc7488f3d4a2f56d3a9c}\label{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a41a0a8ddcaf9bc7488f3d4a2f56d3a9c}} 
+\index{Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}!HTTPFixedLengthStreamBuf@{HTTPFixedLengthStreamBuf}}
+\index{HTTPFixedLengthStreamBuf@{HTTPFixedLengthStreamBuf}!Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}}
+\doxysubsubsection{\texorpdfstring{HTTPFixedLengthStreamBuf()}{HTTPFixedLengthStreamBuf()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf\+::\+H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession}{H\+T\+T\+P\+Session}} \&}]{session,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a37d82c438475e498f57059df3a1888a1}{Content\+Length}}}]{length,  }\item[{\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{openmode}}}]{mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a67ce3fc8ef55ade8187485cfaa618c77}\label{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_a67ce3fc8ef55ade8187485cfaa618c77}} 
+\index{Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}!````~HTTPFixedLengthStreamBuf@{$\sim$HTTPFixedLengthStreamBuf}}
+\index{````~HTTPFixedLengthStreamBuf@{$\sim$HTTPFixedLengthStreamBuf}!Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}}
+\doxysubsubsection{\texorpdfstring{$\sim$HTTPFixedLengthStreamBuf()}{~HTTPFixedLengthStreamBuf()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf\+::$\sim$\+H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_acc6096cb18a2052d856ed8313f5cd190}\label{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_acc6096cb18a2052d856ed8313f5cd190}} 
+\index{Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}!readFromDevice@{readFromDevice}}
+\index{readFromDevice@{readFromDevice}!Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}}
+\doxysubsubsection{\texorpdfstring{readFromDevice()}{readFromDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf\+::read\+From\+Device (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_aee3d8cfc45f2395e25c6dfaa0bc59d3c}\label{classPoco_1_1Net_1_1HTTPFixedLengthStreamBuf_aee3d8cfc45f2395e25c6dfaa0bc59d3c}} 
+\index{Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}!writeToDevice@{writeToDevice}}
+\index{writeToDevice@{writeToDevice}!Poco::Net::HTTPFixedLengthStreamBuf@{Poco::Net::HTTPFixedLengthStreamBuf}}
+\doxysubsubsection{\texorpdfstring{writeToDevice()}{writeToDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+H\+T\+T\+P\+Fixed\+Length\+Stream\+Buf\+::write\+To\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{HTTPFixedLengthStream_8h}{H\+T\+T\+P\+Fixed\+Length\+Stream.\+h}}\end{DoxyCompactItemize}

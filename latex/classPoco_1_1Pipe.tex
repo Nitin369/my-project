@@ -1,0 +1,218 @@
+\hypertarget{classPoco_1_1Pipe}{}\doxysection{Poco\+::Pipe Class Reference}
+\label{classPoco_1_1Pipe}\index{Poco::Pipe@{Poco::Pipe}}
+
+
+{\ttfamily \#include $<$Pipe.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965e}{Close\+Mode}} \{ \mbox{\hyperlink{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965eacc34cc3af8dab4a468c66482d907b2d2}{C\+L\+O\+S\+E\+\_\+\+R\+E\+AD}} = 0x01, 
+\mbox{\hyperlink{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965eaf93657dcbd3290223091eaba83ccb77e}{C\+L\+O\+S\+E\+\_\+\+W\+R\+I\+TE}} = 0x02, 
+\mbox{\hyperlink{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965ea0a284537193457f0579776224cfb80ee}{C\+L\+O\+S\+E\+\_\+\+B\+O\+TH}} = 0x03
+ \}
+\begin{DoxyCompactList}\small\item\em The read/write handle or file descriptor. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classPoco_1_1PipeImpl_a87a6afb95a87ca82b6c1acc08355b001}{Pipe\+Impl\+::\+Handle}} \mbox{\hyperlink{classPoco_1_1Pipe_abf09a7da9dbed1cf1bd386f9b32ad16c}{Handle}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Pipe_afa03962f25fe7a2b0636126c8fe6e139}{Pipe}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Pipe_a7d576c8db94a09ca6cd7665d22c7fc4c}{Pipe}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} \&pipe)
+\item 
+\mbox{\hyperlink{classPoco_1_1Pipe_a432bb927fb0ca9a86cd18ca122ecc60c}{$\sim$\+Pipe}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} using the \mbox{\hyperlink{classPoco_1_1PipeImpl}{Pipe\+Impl}} from another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} \& \mbox{\hyperlink{classPoco_1_1Pipe_aeccea64ffdeffff9e49d9bc6f61941c8}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} \&pipe)
+\begin{DoxyCompactList}\small\item\em Closes and destroys the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Pipe_a56b39715ddb14d885f4cc125c95d165a}{write\+Bytes}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$buffer, int length)
+\begin{DoxyCompactList}\small\item\em Releases the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}}\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1PipeImpl}{Pipe\+Impl}} and assigns another one. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Pipe_a02d6619c17a04c116f8ee66aeb3e41ac}{read\+Bytes}} (void $\ast$buffer, int length)
+\item 
+\mbox{\hyperlink{classPoco_1_1Pipe_abf09a7da9dbed1cf1bd386f9b32ad16c}{Handle}} \mbox{\hyperlink{classPoco_1_1Pipe_adf9ca4506470026b288faaf4bba0d8f5}{read\+Handle}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Pipe_abf09a7da9dbed1cf1bd386f9b32ad16c}{Handle}} \mbox{\hyperlink{classPoco_1_1Pipe_a402ff2f51e0d0886971d3db709c8d8a7}{write\+Handle}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Pipe_a1e7653e9eca98d9307b6c03884b3c0a9}{close}} (\mbox{\hyperlink{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965e}{Close\+Mode}} mode=\mbox{\hyperlink{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965ea0a284537193457f0579776224cfb80ee}{C\+L\+O\+S\+E\+\_\+\+B\+O\+TH}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class implements an anonymous pipe. \begin{DoxyVerb}Pipes are a common method of inter-process communication -
+on Unix, pipes are the oldest form of IPC.
+
+A pipe is a half-duplex communication channel, which means
+that data only flows in one direction.
+Pipes have a read-end and a write-end. One process writes to
+the pipe and another process reads the data written by
+its peer. 
+Read and write operations are always synchronous. A read will
+block until data is available and a write will block until
+the reader reads the data.
+
+The sendBytes() and readBytes() methods of Pipe are usually
+used through a PipeOutputStream or PipeInputStream and are
+not called directly.
+
+Pipe objects have value semantics; the actual work is delegated
+to a reference-counted PipeImpl object. 
+\end{DoxyVerb}
+ 
+
+Definition at line 30 of file Pipe.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Pipe_abf09a7da9dbed1cf1bd386f9b32ad16c}\label{classPoco_1_1Pipe_abf09a7da9dbed1cf1bd386f9b32ad16c}} 
+\index{Poco::Pipe@{Poco::Pipe}!Handle@{Handle}}
+\index{Handle@{Handle}!Poco::Pipe@{Poco::Pipe}}
+\doxysubsubsection{\texorpdfstring{Handle}{Handle}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1PipeImpl_a87a6afb95a87ca82b6c1acc08355b001}{Pipe\+Impl\+::\+Handle}} \mbox{\hyperlink{classPoco_1_1Pipe_abf09a7da9dbed1cf1bd386f9b32ad16c}{Poco\+::\+Pipe\+::\+Handle}}}
+
+
+
+Definition at line 53 of file Pipe.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965e}\label{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965e}} 
+\index{Poco::Pipe@{Poco::Pipe}!CloseMode@{CloseMode}}
+\index{CloseMode@{CloseMode}!Poco::Pipe@{Poco::Pipe}}
+\doxysubsubsection{\texorpdfstring{CloseMode}{CloseMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965e}{Poco\+::\+Pipe\+::\+Close\+Mode}}}
+
+
+
+The read/write handle or file descriptor. 
+
+used by \mbox{\hyperlink{classPoco_1_1Pipe_a1e7653e9eca98d9307b6c03884b3c0a9}{close()}} \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CLOSE\_READ@{CLOSE\_READ}!Poco::Pipe@{Poco::Pipe}}\index{Poco::Pipe@{Poco::Pipe}!CLOSE\_READ@{CLOSE\_READ}}}\mbox{\Hypertarget{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965eacc34cc3af8dab4a468c66482d907b2d2}\label{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965eacc34cc3af8dab4a468c66482d907b2d2}} 
+C\+L\+O\+S\+E\+\_\+\+R\+E\+AD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CLOSE\_WRITE@{CLOSE\_WRITE}!Poco::Pipe@{Poco::Pipe}}\index{Poco::Pipe@{Poco::Pipe}!CLOSE\_WRITE@{CLOSE\_WRITE}}}\mbox{\Hypertarget{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965eaf93657dcbd3290223091eaba83ccb77e}\label{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965eaf93657dcbd3290223091eaba83ccb77e}} 
+C\+L\+O\+S\+E\+\_\+\+W\+R\+I\+TE&Close reading end of pipe. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CLOSE\_BOTH@{CLOSE\_BOTH}!Poco::Pipe@{Poco::Pipe}}\index{Poco::Pipe@{Poco::Pipe}!CLOSE\_BOTH@{CLOSE\_BOTH}}}\mbox{\Hypertarget{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965ea0a284537193457f0579776224cfb80ee}\label{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965ea0a284537193457f0579776224cfb80ee}} 
+C\+L\+O\+S\+E\+\_\+\+B\+O\+TH&Close writing end of pipe. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 55 of file Pipe.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Pipe_afa03962f25fe7a2b0636126c8fe6e139}\label{classPoco_1_1Pipe_afa03962f25fe7a2b0636126c8fe6e139}} 
+\index{Poco::Pipe@{Poco::Pipe}!Pipe@{Pipe}}
+\index{Pipe@{Pipe}!Poco::Pipe@{Poco::Pipe}}
+\doxysubsubsection{\texorpdfstring{Pipe()}{Pipe()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Pipe\+::\+Pipe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Pipe_a7d576c8db94a09ca6cd7665d22c7fc4c}\label{classPoco_1_1Pipe_a7d576c8db94a09ca6cd7665d22c7fc4c}} 
+\index{Poco::Pipe@{Poco::Pipe}!Pipe@{Pipe}}
+\index{Pipe@{Pipe}!Poco::Pipe@{Poco::Pipe}}
+\doxysubsubsection{\texorpdfstring{Pipe()}{Pipe()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Pipe\+::\+Pipe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} \&}]{pipe }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}}.
+
+Throws a Create\+File\+Exception if the pipe cannot be created. \mbox{\Hypertarget{classPoco_1_1Pipe_a432bb927fb0ca9a86cd18ca122ecc60c}\label{classPoco_1_1Pipe_a432bb927fb0ca9a86cd18ca122ecc60c}} 
+\index{Poco::Pipe@{Poco::Pipe}!````~Pipe@{$\sim$Pipe}}
+\index{````~Pipe@{$\sim$Pipe}!Poco::Pipe@{Poco::Pipe}}
+\doxysubsubsection{\texorpdfstring{$\sim$Pipe()}{~Pipe()}}
+{\footnotesize\ttfamily Poco\+::\+Pipe\+::$\sim$\+Pipe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} using the \mbox{\hyperlink{classPoco_1_1PipeImpl}{Pipe\+Impl}} from another one. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Pipe_a1e7653e9eca98d9307b6c03884b3c0a9}\label{classPoco_1_1Pipe_a1e7653e9eca98d9307b6c03884b3c0a9}} 
+\index{Poco::Pipe@{Poco::Pipe}!close@{close}}
+\index{close@{close}!Poco::Pipe@{Poco::Pipe}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Pipe\+::close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965e}{Close\+Mode}}}]{mode = {\ttfamily \mbox{\hyperlink{classPoco_1_1Pipe_a6d518fd6e5cbd07845170e9f3968965ea0a284537193457f0579776224cfb80ee}{C\+L\+O\+S\+E\+\_\+\+B\+O\+TH}}} }\end{DoxyParamCaption})}
+
+Returns the write handle or file descriptor for the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}}. For internal use only. \mbox{\Hypertarget{classPoco_1_1Pipe_aeccea64ffdeffff9e49d9bc6f61941c8}\label{classPoco_1_1Pipe_aeccea64ffdeffff9e49d9bc6f61941c8}} 
+\index{Poco::Pipe@{Poco::Pipe}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Pipe@{Poco::Pipe}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}}\& Poco\+::\+Pipe\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} \&}]{pipe }\end{DoxyParamCaption})}
+
+
+
+Closes and destroys the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Pipe_a02d6619c17a04c116f8ee66aeb3e41ac}\label{classPoco_1_1Pipe_a02d6619c17a04c116f8ee66aeb3e41ac}} 
+\index{Poco::Pipe@{Poco::Pipe}!readBytes@{readBytes}}
+\index{readBytes@{readBytes}!Poco::Pipe@{Poco::Pipe}}
+\doxysubsubsection{\texorpdfstring{readBytes()}{readBytes()}}
+{\footnotesize\ttfamily int Poco\+::\+Pipe\+::read\+Bytes (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sends the contents of the given buffer through the pipe. Blocks until the receiver is ready to read the data.
+
+Returns the number of bytes sent.
+
+Throws a Write\+File\+Exception if the data cannot be written. 
+
+Definition at line 123 of file Pipe.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Pipe_adf9ca4506470026b288faaf4bba0d8f5}\label{classPoco_1_1Pipe_adf9ca4506470026b288faaf4bba0d8f5}} 
+\index{Poco::Pipe@{Poco::Pipe}!readHandle@{readHandle}}
+\index{readHandle@{readHandle}!Poco::Pipe@{Poco::Pipe}}
+\doxysubsubsection{\texorpdfstring{readHandle()}{readHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Pipe_abf09a7da9dbed1cf1bd386f9b32ad16c}{Pipe\+::\+Handle}} Poco\+::\+Pipe\+::read\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Receives data from the pipe and stores it in buffer. Up to length bytes are received. Blocks until data becomes available.
+
+Returns the number of bytes received, or 0 if the pipe has been closed.
+
+Throws a Read\+File\+Exception if nothing can be read. 
+
+Definition at line 129 of file Pipe.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Pipe_a56b39715ddb14d885f4cc125c95d165a}\label{classPoco_1_1Pipe_a56b39715ddb14d885f4cc125c95d165a}} 
+\index{Poco::Pipe@{Poco::Pipe}!writeBytes@{writeBytes}}
+\index{writeBytes@{writeBytes}!Poco::Pipe@{Poco::Pipe}}
+\doxysubsubsection{\texorpdfstring{writeBytes()}{writeBytes()}}
+{\footnotesize\ttfamily int Poco\+::\+Pipe\+::write\+Bytes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{buffer,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Releases the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}}\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1PipeImpl}{Pipe\+Impl}} and assigns another one. 
+
+
+
+Definition at line 117 of file Pipe.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Pipe_a402ff2f51e0d0886971d3db709c8d8a7}\label{classPoco_1_1Pipe_a402ff2f51e0d0886971d3db709c8d8a7}} 
+\index{Poco::Pipe@{Poco::Pipe}!writeHandle@{writeHandle}}
+\index{writeHandle@{writeHandle}!Poco::Pipe@{Poco::Pipe}}
+\doxysubsubsection{\texorpdfstring{writeHandle()}{writeHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Pipe_abf09a7da9dbed1cf1bd386f9b32ad16c}{Pipe\+::\+Handle}} Poco\+::\+Pipe\+::write\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the read handle or file descriptor for the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}}. For internal use only. 
+
+Definition at line 135 of file Pipe.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Pipe_8h}{Pipe.\+h}}\end{DoxyCompactItemize}

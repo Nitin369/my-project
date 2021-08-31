@@ -1,0 +1,201 @@
+\hypertarget{classPoco_1_1ObjectPool}{}\doxysection{Poco\+::Object\+Pool$<$ C, P, F $>$ Class Template Reference}
+\label{classPoco_1_1ObjectPool}\index{Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}}
+
+
+{\ttfamily \#include $<$Object\+Pool.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ObjectPool_aa97244cf69957a8faea1f442705e769d}{Object\+Pool}} (std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ObjectPool_a872cb7d3a0b3ee61788b1c04c0acdf3d}{capacity}}, std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ObjectPool_a2019737956b269ddd090ffb5f772a056}{peak\+Capacity}})
+\item 
+\mbox{\hyperlink{classPoco_1_1ObjectPool_a6062fcc736fe616eb9675b6ca6e6254f}{Object\+Pool}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} F \&factory, std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ObjectPool_a872cb7d3a0b3ee61788b1c04c0acdf3d}{capacity}}, std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ObjectPool_a2019737956b269ddd090ffb5f772a056}{peak\+Capacity}})
+\item 
+\mbox{\hyperlink{classPoco_1_1ObjectPool_a30375f47413d201fa932751b7109e9e6}{$\sim$\+Object\+Pool}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1ObjectPool}{Object\+Pool}}. \end{DoxyCompactList}\item 
+P \mbox{\hyperlink{classPoco_1_1ObjectPool_a106732baea23b1e681475a50f147daa2}{borrow\+Object}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1ObjectPool_a9e184168182b3ad47de348f56dc8a83b}{return\+Object}} (P p\+Object)
+\begin{DoxyCompactList}\small\item\em Returns an object to the pool. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ObjectPool_a872cb7d3a0b3ee61788b1c04c0acdf3d}{capacity}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ObjectPool_a2019737956b269ddd090ffb5f772a056}{peak\+Capacity}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ObjectPool_a8120db8a32da704d3b644abf2ebf726f}{size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ObjectPool_adc5d182fe290847337a7f95bc041b6c1}{available}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+P \mbox{\hyperlink{classPoco_1_1ObjectPool_af47cf1ea6c96079bbe04c42ec4d5b1e2}{activate\+Object}} (P p\+Object)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class C, class P = C$\ast$, class F = Poolable\+Object\+Factory$<$\+C, P$>$$>$\newline
+class Poco\+::\+Object\+Pool$<$ C, P, F $>$}
+
+An \mbox{\hyperlink{classPoco_1_1ObjectPool}{Object\+Pool}} manages a pool of objects of a certain class. \begin{DoxyVerb}The number of objects managed by the pool can be restricted.
+
+When an object is requested from the pool:
+  - If an object is available from the pool, an object from the pool is
+    removed from the pool, activated (using the factory) and returned. 
+  - Otherwise, if the peak capacity of the pool has not yet been reached, 
+    a new object is created and activated, using the object factory, and returned. 
+  - If the peak capacity has already been reached, null is returned.
+
+When an object is returned to the pool:
+  - If the object is valid (checked by calling validateObject()
+    from the object factory), the object is deactivated. If the 
+    number of objects in the pool is below the capacity,
+    the object is added to the pool. Otherwise it is destroyed.
+  - If the object is not valid, it is destroyed immediately. 
+\end{DoxyVerb}
+ 
+
+Definition at line 150 of file Object\+Pool.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1ObjectPool_aa97244cf69957a8faea1f442705e769d}\label{classPoco_1_1ObjectPool_aa97244cf69957a8faea1f442705e769d}} 
+\index{Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}!ObjectPool@{ObjectPool}}
+\index{ObjectPool@{ObjectPool}!Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}}
+\doxysubsubsection{\texorpdfstring{ObjectPool()}{ObjectPool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$, class F  = Poolable\+Object\+Factory$<$\+C, P$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1ObjectPool}{Poco\+::\+Object\+Pool}}$<$ C, P, F $>$\+::\mbox{\hyperlink{classPoco_1_1ObjectPool}{Object\+Pool}} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{capacity,  }\item[{std\+::size\+\_\+t}]{peak\+Capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new \mbox{\hyperlink{classPoco_1_1ObjectPool}{Object\+Pool}} with the given capacity and peak capacity.
+
+The \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory}{Poolable\+Object\+Factory}} must have a public default constructor. 
+
+Definition at line 170 of file Object\+Pool.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ObjectPool_a6062fcc736fe616eb9675b6ca6e6254f}\label{classPoco_1_1ObjectPool_a6062fcc736fe616eb9675b6ca6e6254f}} 
+\index{Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}!ObjectPool@{ObjectPool}}
+\index{ObjectPool@{ObjectPool}!Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}}
+\doxysubsubsection{\texorpdfstring{ObjectPool()}{ObjectPool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$, class F  = Poolable\+Object\+Factory$<$\+C, P$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1ObjectPool}{Poco\+::\+Object\+Pool}}$<$ C, P, F $>$\+::\mbox{\hyperlink{classPoco_1_1ObjectPool}{Object\+Pool}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} F \&}]{factory,  }\item[{std\+::size\+\_\+t}]{capacity,  }\item[{std\+::size\+\_\+t}]{peak\+Capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new \mbox{\hyperlink{classPoco_1_1ObjectPool}{Object\+Pool}} with the given \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory}{Poolable\+Object\+Factory}}, capacity and peak capacity. The \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory}{Poolable\+Object\+Factory}} must have a public copy constructor. 
+
+Definition at line 182 of file Object\+Pool.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ObjectPool_a30375f47413d201fa932751b7109e9e6}\label{classPoco_1_1ObjectPool_a30375f47413d201fa932751b7109e9e6}} 
+\index{Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}!````~ObjectPool@{$\sim$ObjectPool}}
+\index{````~ObjectPool@{$\sim$ObjectPool}!Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$ObjectPool()}{~ObjectPool()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$, class F  = Poolable\+Object\+Factory$<$\+C, P$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1ObjectPool}{Poco\+::\+Object\+Pool}}$<$ C, P, F $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1ObjectPool}{Object\+Pool}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1ObjectPool}{Object\+Pool}}. 
+
+
+
+Definition at line 194 of file Object\+Pool.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1ObjectPool_af47cf1ea6c96079bbe04c42ec4d5b1e2}\label{classPoco_1_1ObjectPool_af47cf1ea6c96079bbe04c42ec4d5b1e2}} 
+\index{Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}!activateObject@{activateObject}}
+\index{activateObject@{activateObject}!Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}}
+\doxysubsubsection{\texorpdfstring{activateObject()}{activateObject()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$, class F  = Poolable\+Object\+Factory$<$\+C, P$>$$>$ \\
+P \mbox{\hyperlink{classPoco_1_1ObjectPool}{Poco\+::\+Object\+Pool}}$<$ C, P, F $>$\+::activate\+Object (\begin{DoxyParamCaption}\item[{P}]{p\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 286 of file Object\+Pool.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1ObjectPool_adc5d182fe290847337a7f95bc041b6c1}\label{classPoco_1_1ObjectPool_adc5d182fe290847337a7f95bc041b6c1}} 
+\index{Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}!available@{available}}
+\index{available@{available}!Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}}
+\doxysubsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$, class F  = Poolable\+Object\+Factory$<$\+C, P$>$$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ObjectPool}{Poco\+::\+Object\+Pool}}$<$ C, P, F $>$\+::available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 278 of file Object\+Pool.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ObjectPool_a106732baea23b1e681475a50f147daa2}\label{classPoco_1_1ObjectPool_a106732baea23b1e681475a50f147daa2}} 
+\index{Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}!borrowObject@{borrowObject}}
+\index{borrowObject@{borrowObject}!Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}}
+\doxysubsubsection{\texorpdfstring{borrowObject()}{borrowObject()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$, class F  = Poolable\+Object\+Factory$<$\+C, P$>$$>$ \\
+P \mbox{\hyperlink{classPoco_1_1ObjectPool}{Poco\+::\+Object\+Pool}}$<$ C, P, F $>$\+::borrow\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtains an object from the pool, or creates a new object if possible.
+
+Returns null if no object is available.
+
+If activating the object fails, the object is destroyed and the exception is passed on to the caller. 
+
+Definition at line 210 of file Object\+Pool.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ObjectPool_a872cb7d3a0b3ee61788b1c04c0acdf3d}\label{classPoco_1_1ObjectPool_a872cb7d3a0b3ee61788b1c04c0acdf3d}} 
+\index{Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}!capacity@{capacity}}
+\index{capacity@{capacity}!Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}}
+\doxysubsubsection{\texorpdfstring{capacity()}{capacity()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$, class F  = Poolable\+Object\+Factory$<$\+C, P$>$$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ObjectPool}{Poco\+::\+Object\+Pool}}$<$ C, P, F $>$\+::capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 261 of file Object\+Pool.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1ObjectPool_a2019737956b269ddd090ffb5f772a056}\label{classPoco_1_1ObjectPool_a2019737956b269ddd090ffb5f772a056}} 
+\index{Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}!peakCapacity@{peakCapacity}}
+\index{peakCapacity@{peakCapacity}!Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}}
+\doxysubsubsection{\texorpdfstring{peakCapacity()}{peakCapacity()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$, class F  = Poolable\+Object\+Factory$<$\+C, P$>$$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ObjectPool}{Poco\+::\+Object\+Pool}}$<$ C, P, F $>$\+::peak\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 266 of file Object\+Pool.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1ObjectPool_a9e184168182b3ad47de348f56dc8a83b}\label{classPoco_1_1ObjectPool_a9e184168182b3ad47de348f56dc8a83b}} 
+\index{Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}!returnObject@{returnObject}}
+\index{returnObject@{returnObject}!Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}}
+\doxysubsubsection{\texorpdfstring{returnObject()}{returnObject()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$, class F  = Poolable\+Object\+Factory$<$\+C, P$>$$>$ \\
+void \mbox{\hyperlink{classPoco_1_1ObjectPool}{Poco\+::\+Object\+Pool}}$<$ C, P, F $>$\+::return\+Object (\begin{DoxyParamCaption}\item[{P}]{p\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an object to the pool. 
+
+
+
+Definition at line 237 of file Object\+Pool.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1ObjectPool_a8120db8a32da704d3b644abf2ebf726f}\label{classPoco_1_1ObjectPool_a8120db8a32da704d3b644abf2ebf726f}} 
+\index{Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}!size@{size}}
+\index{size@{size}!Poco::ObjectPool$<$ C, P, F $>$@{Poco::ObjectPool$<$ C, P, F $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$, class F  = Poolable\+Object\+Factory$<$\+C, P$>$$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ObjectPool}{Poco\+::\+Object\+Pool}}$<$ C, P, F $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 271 of file Object\+Pool.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ObjectPool_8h}{Object\+Pool.\+h}}\end{DoxyCompactItemize}

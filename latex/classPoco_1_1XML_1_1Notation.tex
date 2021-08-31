@@ -1,0 +1,145 @@
+\hypertarget{classPoco_1_1XML_1_1Notation}{}\doxysection{Poco\+::X\+ML\+::Notation Class Reference}
+\label{classPoco_1_1XML_1_1Notation}\index{Poco::XML::Notation@{Poco::XML::Notation}}
+
+
+{\ttfamily \#include $<$Notation.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::Notation\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::X\+ML\+::Notation\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1Notation_a99098ae7b5f28a2f9b13bd1b0f22d8ad}{public\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1Notation_a549cd14990c092bcda44296f5520becb}{system\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1Notation_ad3d5b2c7f739a5f2956939f811cd2b06}{node\+Name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+unsigned short \mbox{\hyperlink{classPoco_1_1XML_1_1Notation_a1b5130c762ab1ad44db9d28a3e590156}{node\+Type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Notation_a36abe10f8941aaa6e923d491ea8464d9}{Notation}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&\mbox{\hyperlink{classPoco_1_1XML_1_1Notation_a99098ae7b5f28a2f9b13bd1b0f22d8ad}{public\+Id}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&\mbox{\hyperlink{classPoco_1_1XML_1_1Notation_a549cd14990c092bcda44296f5520becb}{system\+Id}})
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Notation_a48f7b0c629bbcd8222fba76807c96d2f}{Notation}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1Notation}{Notation}} \&notation)
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Notation_ac6ff1c43899034cfd31a2453cbe06faa}{$\sim$\+Notation}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1Notation_a889e4da27fce47f4285c40494a225c52}{copy\+Node}} (bool deep, \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1XML_1_1Notation_a883538034e58fc5c0de7d4e4cab3cef7}{Document}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This interface represents a notation declared in the D\+TD. A notation either declares, by name, the format of an unparsed entity (see section 4.\+7 of the \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} 1.\+0 specification \href{http://www.w3.org/TR/2004/REC-xml-20040204/}{\texttt{ http\+://www.\+w3.\+org/\+T\+R/2004/\+R\+E\+C-\/xml-\/20040204/}}), or is used for formal declaration of processing instruction targets (see section 2.\+6 of the \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} 1.\+0 specification). The node\+Name attribute inherited from \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} is set to the declared name of the notation.
+
+The D\+OM Level 1 does not support editing \mbox{\hyperlink{classPoco_1_1XML_1_1Notation}{Notation}} nodes; they are therefore readonly.
+
+A \mbox{\hyperlink{classPoco_1_1XML_1_1Notation}{Notation}} node does not have any parent. 
+
+Definition at line 32 of file Notation.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Notation_a36abe10f8941aaa6e923d491ea8464d9}\label{classPoco_1_1XML_1_1Notation_a36abe10f8941aaa6e923d491ea8464d9}} 
+\index{Poco::XML::Notation@{Poco::XML::Notation}!Notation@{Notation}}
+\index{Notation@{Notation}!Poco::XML::Notation@{Poco::XML::Notation}}
+\doxysubsubsection{\texorpdfstring{Notation()}{Notation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Notation\+::\+Notation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{public\+Id,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{system\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Notation_a48f7b0c629bbcd8222fba76807c96d2f}\label{classPoco_1_1XML_1_1Notation_a48f7b0c629bbcd8222fba76807c96d2f}} 
+\index{Poco::XML::Notation@{Poco::XML::Notation}!Notation@{Notation}}
+\index{Notation@{Notation}!Poco::XML::Notation@{Poco::XML::Notation}}
+\doxysubsubsection{\texorpdfstring{Notation()}{Notation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Notation\+::\+Notation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1Notation}{Notation}} \&}]{notation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Notation_ac6ff1c43899034cfd31a2453cbe06faa}\label{classPoco_1_1XML_1_1Notation_ac6ff1c43899034cfd31a2453cbe06faa}} 
+\index{Poco::XML::Notation@{Poco::XML::Notation}!````~Notation@{$\sim$Notation}}
+\index{````~Notation@{$\sim$Notation}!Poco::XML::Notation@{Poco::XML::Notation}}
+\doxysubsubsection{\texorpdfstring{$\sim$Notation()}{~Notation()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Notation\+::$\sim$\+Notation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Notation_a889e4da27fce47f4285c40494a225c52}\label{classPoco_1_1XML_1_1Notation_a889e4da27fce47f4285c40494a225c52}} 
+\index{Poco::XML::Notation@{Poco::XML::Notation}!copyNode@{copyNode}}
+\index{copyNode@{copyNode}!Poco::XML::Notation@{Poco::XML::Notation}}
+\doxysubsubsection{\texorpdfstring{copyNode()}{copyNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Notation\+::copy\+Node (\begin{DoxyParamCaption}\item[{bool}]{deep,  }\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode_ae0a8579dd6ecfed5ff9c3f3daec40d90}{Poco\+::\+X\+M\+L\+::\+Abstract\+Node}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Notation_ad3d5b2c7f739a5f2956939f811cd2b06}\label{classPoco_1_1XML_1_1Notation_ad3d5b2c7f739a5f2956939f811cd2b06}} 
+\index{Poco::XML::Notation@{Poco::XML::Notation}!nodeName@{nodeName}}
+\index{nodeName@{nodeName}!Poco::XML::Notation@{Poco::XML::Notation}}
+\doxysubsubsection{\texorpdfstring{nodeName()}{nodeName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}}\& Poco\+::\+X\+M\+L\+::\+Notation\+::node\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the system identifier of this notation. If not specified, this is an empty string (and not null, as in the D\+OM specification). 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode_a19a18ccbfab094d220e02a0a7b05c5f1}{Poco\+::\+X\+M\+L\+::\+Abstract\+Node}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Notation_a1b5130c762ab1ad44db9d28a3e590156}\label{classPoco_1_1XML_1_1Notation_a1b5130c762ab1ad44db9d28a3e590156}} 
+\index{Poco::XML::Notation@{Poco::XML::Notation}!nodeType@{nodeType}}
+\index{nodeType@{nodeType}!Poco::XML::Notation@{Poco::XML::Notation}}
+\doxysubsubsection{\texorpdfstring{nodeType()}{nodeType()}}
+{\footnotesize\ttfamily unsigned short Poco\+::\+X\+M\+L\+::\+Notation\+::node\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the value of this node. Throws an exception if the node is read-\/only. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Node_ac001e1819b1eb928ca1ae6f6f90e1159}{Poco\+::\+X\+M\+L\+::\+Node}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Notation_a99098ae7b5f28a2f9b13bd1b0f22d8ad}\label{classPoco_1_1XML_1_1Notation_a99098ae7b5f28a2f9b13bd1b0f22d8ad}} 
+\index{Poco::XML::Notation@{Poco::XML::Notation}!publicId@{publicId}}
+\index{publicId@{publicId}!Poco::XML::Notation@{Poco::XML::Notation}}
+\doxysubsubsection{\texorpdfstring{publicId()}{publicId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& Poco\+::\+X\+M\+L\+::\+Notation\+::public\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 80 of file Notation.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Notation_a549cd14990c092bcda44296f5520becb}\label{classPoco_1_1XML_1_1Notation_a549cd14990c092bcda44296f5520becb}} 
+\index{Poco::XML::Notation@{Poco::XML::Notation}!systemId@{systemId}}
+\index{systemId@{systemId}!Poco::XML::Notation@{Poco::XML::Notation}}
+\doxysubsubsection{\texorpdfstring{systemId()}{systemId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& Poco\+::\+X\+M\+L\+::\+Notation\+::system\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the public identifier of this notation. If not specified, this is an empty string (and not null, as in the D\+OM specification). 
+
+Definition at line 86 of file Notation.\+h.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Notation_a883538034e58fc5c0de7d4e4cab3cef7}\label{classPoco_1_1XML_1_1Notation_a883538034e58fc5c0de7d4e4cab3cef7}} 
+\index{Poco::XML::Notation@{Poco::XML::Notation}!Document@{Document}}
+\index{Document@{Document}!Poco::XML::Notation@{Poco::XML::Notation}}
+\doxysubsubsection{\texorpdfstring{Document}{Document}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 73 of file Notation.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+D\+O\+M/\mbox{\hyperlink{Notation_8h}{Notation.\+h}}\end{DoxyCompactItemize}

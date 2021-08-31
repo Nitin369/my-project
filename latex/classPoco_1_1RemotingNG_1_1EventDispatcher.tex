@@ -1,0 +1,268 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher}{}\doxysection{Poco\+::Remoting\+NG\+::Event\+Dispatcher Class Reference}
+\label{classPoco_1_1RemotingNG_1_1EventDispatcher}\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+
+
+{\ttfamily \#include $<$Event\+Dispatcher.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::Event\+Dispatcher\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::Event\+Dispatcher\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1RemotingNG_1_1EventDispatcher_1_1SubscriberInfo}{Subscriber\+Info}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a9f8f26e37d33bcccf5fbaeffb59da9e8}{Ptr}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_ac02975dc99bbc3b0223800607b5eb241}{Transport\+::\+Name\+Value\+Map}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a3c666336d799ca5ef53d9ecef0846703}{Name\+Value\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a9fb03e315f687517ee6a434cb845c6b4}{Event\+Dispatcher}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a14d7bb586169695c72bd34e7b012903a}{protocol}})
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a476603fe70baad7a502550e947811512}{$\sim$\+Event\+Dispatcher}} ()
+\begin{DoxyCompactList}\small\item\em Creates an \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a422d3cb6e887ea6b3077a2f0bb6c0073}{subscribe}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&subscriber\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&endpoint\+U\+RI, \mbox{\hyperlink{classPoco_1_1Clock}{Poco\+::\+Clock}} expire\+Time=0)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_aeaf63f022caa8e28a878a5ccacb7633a}{unsubscribe}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&subscriber\+U\+RI)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_aff729fee4d37f546892daa354ddcd506}{set\+Event\+Filter}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&subscriber\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&event, typename \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventFilter}{Event\+Filter}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a9f8f26e37d33bcccf5fbaeffb59da9e8}{Ptr}} p\+Filter)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_af7836899219e3ec85ba3fe2509cf765f}{remove\+Event\+Filter}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&subscriber\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&event)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a14d7bb586169695c72bd34e7b012903a}{protocol}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Removes the event filter for the given subscriber and event. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1AttributedObject}{Attributed\+Object}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a0313f53b54367c2d759447e1f448dffd}{attributes}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&subscriber\+U\+RI)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a50a36bc725e71cf9a03a696ebf53343e}{Filter\+Map}}
+\item 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{structPoco_1_1RemotingNG_1_1EventDispatcher_1_1SubscriberInfo_ab8ddf9969546cb35ae50632067c35188}{Subscriber\+Info\+::\+Ptr}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_ab022b4c06f243a2d02eb57dfda35001c}{Subscriber\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_ae761aa792b1ce1e4de47eae9a59e1476}{transport\+For\+Subscriber}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&subscriber\+U\+RI)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a4458907f416b1616bb793f4f069abcc6}{set\+Event\+Filter\+Impl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&subscriber\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&event, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&filter)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a159d5527db1ce0ae8b67b5f054c3de90}{accept}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a50a36bc725e71cf9a03a696ebf53343e}{Filter\+Map}} \&filters, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&event, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_ab022b4c06f243a2d02eb57dfda35001c}{Subscriber\+Map}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a6b27418b29929507e521cbdf00f647f3}{\+\_\+subscribers}}
+\item 
+\mbox{\hyperlink{classPoco_1_1FastMutex}{Poco\+::\+Fast\+Mutex}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a7b3ce035b6d335a553514f216607ae08}{\+\_\+mutex}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}} is responsible for delivering events fired by service objects to remote subscribers.
+
+\mbox{\hyperlink{classPoco_1_1Event}{Event}} dispatching and delivery in \mbox{\hyperlink{namespacePoco_1_1RemotingNG}{Remoting\+NG}} works as follows\+: If a service object has events, the corresponding \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} class will have a delegate member function for every service object event, as well as providing all the events itself (inherited from the interface class). During construction of the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}}, its delegates will be bound to the service objects\textquotesingle{} events. The delegates will then simply fire the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}}\textquotesingle{}s event, when invoked.
+
+The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}} subclass for a specific service will have delegate functions for all service object events, which will be bound to the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}}\textquotesingle{}s events. The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}} class maintains a list of event subscribers. When an event is fired, the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}}\textquotesingle{}s delegate will dispatch the event to all registered event subscribers, using a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}. This works in a very similar way to a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}}. 
+
+Definition at line 39 of file Event\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_a50a36bc725e71cf9a03a696ebf53343e}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_a50a36bc725e71cf9a03a696ebf53343e}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!FilterMap@{FilterMap}}
+\index{FilterMap@{FilterMap}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{FilterMap}{FilterMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a50a36bc725e71cf9a03a696ebf53343e}{Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::\+Filter\+Map}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the event filter for the given subscriber and event.
+
+If the given filter is empty, removes the filter. 
+
+Definition at line 125 of file Event\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_a3c666336d799ca5ef53d9ecef0846703}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_a3c666336d799ca5ef53d9ecef0846703}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!NameValueMap@{NameValueMap}}
+\index{NameValueMap@{NameValueMap}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{NameValueMap}{NameValueMap}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_ac02975dc99bbc3b0223800607b5eb241}{Transport\+::\+Name\+Value\+Map}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a3c666336d799ca5ef53d9ecef0846703}{Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::\+Name\+Value\+Map}}}
+
+
+
+Definition at line 61 of file Event\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_a9f8f26e37d33bcccf5fbaeffb59da9e8}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_a9f8f26e37d33bcccf5fbaeffb59da9e8}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a9f8f26e37d33bcccf5fbaeffb59da9e8}{Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::\+Ptr}}}
+
+
+
+Definition at line 60 of file Event\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_ab022b4c06f243a2d02eb57dfda35001c}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_ab022b4c06f243a2d02eb57dfda35001c}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!SubscriberMap@{SubscriberMap}}
+\index{SubscriberMap@{SubscriberMap}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{SubscriberMap}{SubscriberMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \mbox{\hyperlink{structPoco_1_1RemotingNG_1_1EventDispatcher_1_1SubscriberInfo_ab8ddf9969546cb35ae50632067c35188}{Subscriber\+Info\+::\+Ptr}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_ab022b4c06f243a2d02eb57dfda35001c}{Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::\+Subscriber\+Map}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 148 of file Event\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_a9fb03e315f687517ee6a434cb845c6b4}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_a9fb03e315f687517ee6a434cb845c6b4}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!EventDispatcher@{EventDispatcher}}
+\index{EventDispatcher@{EventDispatcher}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{EventDispatcher()}{EventDispatcher()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::\+Event\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_a476603fe70baad7a502550e947811512}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_a476603fe70baad7a502550e947811512}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!````~EventDispatcher@{$\sim$EventDispatcher}}
+\index{````~EventDispatcher@{$\sim$EventDispatcher}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$EventDispatcher()}{~EventDispatcher()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::$\sim$\+Event\+Dispatcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates an \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_a159d5527db1ce0ae8b67b5f054c3de90}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_a159d5527db1ce0ae8b67b5f054c3de90}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!accept@{accept}}
+\index{accept@{accept}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a50a36bc725e71cf9a03a696ebf53343e}{Filter\+Map}} \&}]{filters,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{event,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 128 of file Event\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_a0313f53b54367c2d759447e1f448dffd}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_a0313f53b54367c2d759447e1f448dffd}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!attributes@{attributes}}
+\index{attributes@{attributes}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{attributes()}{attributes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1AttributedObject}{Attributed\+Object}} \& Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::attributes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{subscriber\+U\+RI }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the protocol to be used for delivering event messages to subscribers. 
+
+Definition at line 170 of file Event\+Dispatcher.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_a14d7bb586169695c72bd34e7b012903a}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_a14d7bb586169695c72bd34e7b012903a}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!protocol@{protocol}}
+\index{protocol@{protocol}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{protocol()}{protocol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::protocol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the event filter for the given subscriber and event. 
+
+
+
+Definition at line 164 of file Event\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_af7836899219e3ec85ba3fe2509cf765f}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_af7836899219e3ec85ba3fe2509cf765f}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!removeEventFilter@{removeEventFilter}}
+\index{removeEventFilter@{removeEventFilter}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{removeEventFilter()}{removeEventFilter()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::remove\+Event\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{subscriber\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_aff729fee4d37f546892daa354ddcd506}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_aff729fee4d37f546892daa354ddcd506}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!setEventFilter@{setEventFilter}}
+\index{setEventFilter@{setEventFilter}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{setEventFilter()}{setEventFilter()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::set\+Event\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{subscriber\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{event,  }\item[{typename \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventFilter}{Event\+Filter}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a9f8f26e37d33bcccf5fbaeffb59da9e8}{Ptr}}}]{p\+Filter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unregisters the remote \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventSubscriber}{Event\+Subscriber}} identified by the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}.
+
+Throws a Poco\+::\+Not\+Found\+Exception if no subscription exists. Sets an event filter for the given subscriber and event.
+
+If p\+Filter is null, removes the filter. 
+
+Definition at line 89 of file Event\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_a4458907f416b1616bb793f4f069abcc6}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_a4458907f416b1616bb793f4f069abcc6}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!setEventFilterImpl@{setEventFilterImpl}}
+\index{setEventFilterImpl@{setEventFilterImpl}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{setEventFilterImpl()}{setEventFilterImpl()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::set\+Event\+Filter\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{subscriber\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{event,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&}]{filter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} object for communicating with the remote \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventSubscriber}{Event\+Subscriber}} identified by the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the subscriber is not known. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_a422d3cb6e887ea6b3077a2f0bb6c0073}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_a422d3cb6e887ea6b3077a2f0bb6c0073}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::subscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{subscriber\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{endpoint\+U\+RI,  }\item[{\mbox{\hyperlink{classPoco_1_1Clock}{Poco\+::\+Clock}}}]{expire\+Time = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}}. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_ae761aa792b1ce1e4de47eae9a59e1476}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_ae761aa792b1ce1e4de47eae9a59e1476}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!transportForSubscriber@{transportForSubscriber}}
+\index{transportForSubscriber@{transportForSubscriber}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{transportForSubscriber()}{transportForSubscriber()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}\& Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::transport\+For\+Subscriber (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{subscriber\+U\+RI }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the attributes for the subscriber identified by the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. The attributes are stored in the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} object. Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_aeaf63f022caa8e28a878a5ccacb7633a}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_aeaf63f022caa8e28a878a5ccacb7633a}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!unsubscribe@{unsubscribe}}
+\index{unsubscribe@{unsubscribe}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{unsubscribe()}{unsubscribe()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::unsubscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{subscriber\+U\+RI }\end{DoxyParamCaption})}
+
+Registers a remote \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventSubscriber}{Event\+Subscriber}} identified by the given subscriber\+U\+RI. Events will be sent to the specified endpoint, which must be a proper \mbox{\hyperlink{namespacePoco_1_1RemotingNG}{Remoting\+NG}} \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. Depending on the actual transport-\/specific events implementation, subscriber\+U\+RI and endpoint\+U\+RI may be the same or different.
+
+If a non-\/null expire\+Time is given, the subscription will automatically expire at the time given in expire\+Time.
+
+If a subscription with the given subscriber\+U\+RI already exists, the expire\+Time of the existing subscription will be updated. 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_a7b3ce035b6d335a553514f216607ae08}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_a7b3ce035b6d335a553514f216607ae08}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!\_mutex@{\_mutex}}
+\index{\_mutex@{\_mutex}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{\_mutex}{\_mutex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1FastMutex}{Poco\+::\+Fast\+Mutex}} Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::\+\_\+mutex\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 151 of file Event\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1EventDispatcher_a6b27418b29929507e521cbdf00f647f3}\label{classPoco_1_1RemotingNG_1_1EventDispatcher_a6b27418b29929507e521cbdf00f647f3}} 
+\index{Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}!\_subscribers@{\_subscribers}}
+\index{\_subscribers@{\_subscribers}!Poco::RemotingNG::EventDispatcher@{Poco::RemotingNG::EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{\_subscribers}{\_subscribers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_ab022b4c06f243a2d02eb57dfda35001c}{Subscriber\+Map}} Poco\+::\+Remoting\+N\+G\+::\+Event\+Dispatcher\+::\+\_\+subscribers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 150 of file Event\+Dispatcher.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{RemotingNG_2EventDispatcher_8h}{Event\+Dispatcher.\+h}}\end{DoxyCompactItemize}

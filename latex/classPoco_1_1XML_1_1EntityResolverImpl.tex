@@ -1,0 +1,112 @@
+\hypertarget{classPoco_1_1XML_1_1EntityResolverImpl}{}\doxysection{Poco\+::X\+ML\+::Entity\+Resolver\+Impl Class Reference}
+\label{classPoco_1_1XML_1_1EntityResolverImpl}\index{Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}}
+
+
+{\ttfamily \#include $<$Entity\+Resolver\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::Entity\+Resolver\+Impl\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::X\+ML\+::Entity\+Resolver\+Impl\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolverImpl_ab1d81333c0d29f3d8db82bf4700a71ab}{Entity\+Resolver\+Impl}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolverImpl_aeac16cf1c95ff5be3f6f8957458d4e89}{Entity\+Resolver\+Impl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{Poco\+::\+U\+R\+I\+Stream\+Opener}} \&opener)
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolverImpl_a05532b87f138f522241386363c2e257c}{$\sim$\+Entity\+Resolver\+Impl}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1InputSource}{Input\+Source}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolverImpl_a8089d5cc39fb9a4e229e792a57894604}{resolve\+Entity}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} $\ast$public\+Id, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&system\+Id)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolverImpl}{Entity\+Resolver\+Impl}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolverImpl_a5aa1d873465f8f9967ca189d79efafcb}{release\+Input\+Source}} (\mbox{\hyperlink{classPoco_1_1XML_1_1InputSource}{Input\+Source}} $\ast$p\+Source)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolverImpl_ac9a9997619073f9672d9b3a198dc343e}{resolve\+System\+Id}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&system\+Id)
+\begin{DoxyCompactList}\small\item\em Deletes the \mbox{\hyperlink{classPoco_1_1XML_1_1InputSource}{Input\+Source}}\textquotesingle{}s stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A default implementation of the \mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolver}{Entity\+Resolver}} interface. \begin{DoxyVerb}The system ID is first interpreted as an URI and the
+URIStreamOpener is used to create and open an istream
+for an InputSource.
+
+If the system ID is not a valid URI, it is
+interpreted as a filesystem path and a Poco::FileInputStream
+is opened for it. 
+\end{DoxyVerb}
+ 
+
+Definition at line 33 of file Entity\+Resolver\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EntityResolverImpl_ab1d81333c0d29f3d8db82bf4700a71ab}\label{classPoco_1_1XML_1_1EntityResolverImpl_ab1d81333c0d29f3d8db82bf4700a71ab}} 
+\index{Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}!EntityResolverImpl@{EntityResolverImpl}}
+\index{EntityResolverImpl@{EntityResolverImpl}!Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}}
+\doxysubsubsection{\texorpdfstring{EntityResolverImpl()}{EntityResolverImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Entity\+Resolver\+Impl\+::\+Entity\+Resolver\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EntityResolverImpl_aeac16cf1c95ff5be3f6f8957458d4e89}\label{classPoco_1_1XML_1_1EntityResolverImpl_aeac16cf1c95ff5be3f6f8957458d4e89}} 
+\index{Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}!EntityResolverImpl@{EntityResolverImpl}}
+\index{EntityResolverImpl@{EntityResolverImpl}!Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}}
+\doxysubsubsection{\texorpdfstring{EntityResolverImpl()}{EntityResolverImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Entity\+Resolver\+Impl\+::\+Entity\+Resolver\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{Poco\+::\+U\+R\+I\+Stream\+Opener}} \&}]{opener }\end{DoxyParamCaption})}
+
+Creates an \mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolverImpl}{Entity\+Resolver\+Impl}} that uses the default \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}}. \mbox{\Hypertarget{classPoco_1_1XML_1_1EntityResolverImpl_a05532b87f138f522241386363c2e257c}\label{classPoco_1_1XML_1_1EntityResolverImpl_a05532b87f138f522241386363c2e257c}} 
+\index{Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}!````~EntityResolverImpl@{$\sim$EntityResolverImpl}}
+\index{````~EntityResolverImpl@{$\sim$EntityResolverImpl}!Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}}
+\doxysubsubsection{\texorpdfstring{$\sim$EntityResolverImpl()}{~EntityResolverImpl()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Entity\+Resolver\+Impl\+::$\sim$\+Entity\+Resolver\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates an \mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolverImpl}{Entity\+Resolver\+Impl}} that uses the given \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EntityResolverImpl_a5aa1d873465f8f9967ca189d79efafcb}\label{classPoco_1_1XML_1_1EntityResolverImpl_a5aa1d873465f8f9967ca189d79efafcb}} 
+\index{Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}!releaseInputSource@{releaseInputSource}}
+\index{releaseInputSource@{releaseInputSource}!Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}}
+\doxysubsubsection{\texorpdfstring{releaseInputSource()}{releaseInputSource()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Entity\+Resolver\+Impl\+::release\+Input\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1InputSource}{Input\+Source}} $\ast$}]{p\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Tries to use the \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}} to create and open an istream for the given system\+Id, which is interpreted as an \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}.
+
+If the system\+Id is not a valid \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}, it is interpreted as a local filesystem path and a \mbox{\hyperlink{classPoco_1_1FileInputStream}{Poco\+::\+File\+Input\+Stream}} is opened for it. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolver_ab0ebc2597b449d0c7e8b7c69c9f31744}{Poco\+::\+X\+M\+L\+::\+Entity\+Resolver}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EntityResolverImpl_a8089d5cc39fb9a4e229e792a57894604}\label{classPoco_1_1XML_1_1EntityResolverImpl_a8089d5cc39fb9a4e229e792a57894604}} 
+\index{Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}!resolveEntity@{resolveEntity}}
+\index{resolveEntity@{resolveEntity}!Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}}
+\doxysubsubsection{\texorpdfstring{resolveEntity()}{resolveEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1InputSource}{Input\+Source}}$\ast$ Poco\+::\+X\+M\+L\+::\+Entity\+Resolver\+Impl\+::resolve\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} $\ast$}]{public\+Id,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{system\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolverImpl}{Entity\+Resolver\+Impl}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolver_a5664cf889522c95786f8999ffd9d51e5}{Poco\+::\+X\+M\+L\+::\+Entity\+Resolver}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EntityResolverImpl_ac9a9997619073f9672d9b3a198dc343e}\label{classPoco_1_1XML_1_1EntityResolverImpl_ac9a9997619073f9672d9b3a198dc343e}} 
+\index{Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}!resolveSystemId@{resolveSystemId}}
+\index{resolveSystemId@{resolveSystemId}!Poco::XML::EntityResolverImpl@{Poco::XML::EntityResolverImpl}}
+\doxysubsubsection{\texorpdfstring{resolveSystemId()}{resolveSystemId()}}
+{\footnotesize\ttfamily std\+::istream$\ast$ Poco\+::\+X\+M\+L\+::\+Entity\+Resolver\+Impl\+::resolve\+System\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{system\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Deletes the \mbox{\hyperlink{classPoco_1_1XML_1_1InputSource}{Input\+Source}}\textquotesingle{}s stream. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+S\+A\+X/\mbox{\hyperlink{EntityResolverImpl_8h}{Entity\+Resolver\+Impl.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\hypertarget{classPoco_1_1XML_1_1Comment}{}\doxysection{Poco\+::X\+ML\+::Comment Class Reference}
+\label{classPoco_1_1XML_1_1Comment}\index{Poco::XML::Comment@{Poco::XML::Comment}}
+
+
+{\ttfamily \#include $<$Comment.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::Comment\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::X\+ML\+::Comment\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1Comment_adb25a2835cd160de4edd6f87132c1c68}{node\+Name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+unsigned short \mbox{\hyperlink{classPoco_1_1XML_1_1Comment_afc490e57cc9e1f44a1c6847c44bb8950}{node\+Type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Comment_ae3a3b1fee972764b1fdfe15bf62b30ea}{Comment}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&\mbox{\hyperlink{classPoco_1_1XML_1_1CharacterData_a941941c3a1a9423c4bb277a70197fe30}{data}})
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Comment_aa6d500fe4a2ed3785dbfde0583ee4c75}{Comment}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1Comment}{Comment}} \&comment)
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Comment_ae678eeb777dd5b937b2a87e1db7ec0f1}{$\sim$\+Comment}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1Comment_a0163e9ceb98e6bfd292132502d3313ef}{copy\+Node}} (bool deep, \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1XML_1_1Comment_a883538034e58fc5c0de7d4e4cab3cef7}{Document}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This interface inherits from \mbox{\hyperlink{classPoco_1_1XML_1_1CharacterData}{Character\+Data}} and represents the content of a comment, i.\+e., all the characters between the starting \textquotesingle{}\textquotesingle{}. Note that this is the definition of a comment in \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}}, and, in practice, H\+T\+ML, although some H\+T\+ML tools may implement the full S\+G\+ML comment structure. 
+
+Definition at line 32 of file Comment.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Comment_ae3a3b1fee972764b1fdfe15bf62b30ea}\label{classPoco_1_1XML_1_1Comment_ae3a3b1fee972764b1fdfe15bf62b30ea}} 
+\index{Poco::XML::Comment@{Poco::XML::Comment}!Comment@{Comment}}
+\index{Comment@{Comment}!Poco::XML::Comment@{Poco::XML::Comment}}
+\doxysubsubsection{\texorpdfstring{Comment()}{Comment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Comment\+::\+Comment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Comment_aa6d500fe4a2ed3785dbfde0583ee4c75}\label{classPoco_1_1XML_1_1Comment_aa6d500fe4a2ed3785dbfde0583ee4c75}} 
+\index{Poco::XML::Comment@{Poco::XML::Comment}!Comment@{Comment}}
+\index{Comment@{Comment}!Poco::XML::Comment@{Poco::XML::Comment}}
+\doxysubsubsection{\texorpdfstring{Comment()}{Comment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Comment\+::\+Comment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1Comment}{Comment}} \&}]{comment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Comment_ae678eeb777dd5b937b2a87e1db7ec0f1}\label{classPoco_1_1XML_1_1Comment_ae678eeb777dd5b937b2a87e1db7ec0f1}} 
+\index{Poco::XML::Comment@{Poco::XML::Comment}!````~Comment@{$\sim$Comment}}
+\index{````~Comment@{$\sim$Comment}!Poco::XML::Comment@{Poco::XML::Comment}}
+\doxysubsubsection{\texorpdfstring{$\sim$Comment()}{~Comment()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Comment\+::$\sim$\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Comment_a0163e9ceb98e6bfd292132502d3313ef}\label{classPoco_1_1XML_1_1Comment_a0163e9ceb98e6bfd292132502d3313ef}} 
+\index{Poco::XML::Comment@{Poco::XML::Comment}!copyNode@{copyNode}}
+\index{copyNode@{copyNode}!Poco::XML::Comment@{Poco::XML::Comment}}
+\doxysubsubsection{\texorpdfstring{copyNode()}{copyNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Comment\+::copy\+Node (\begin{DoxyParamCaption}\item[{bool}]{deep,  }\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode_ae0a8579dd6ecfed5ff9c3f3daec40d90}{Poco\+::\+X\+M\+L\+::\+Abstract\+Node}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Comment_adb25a2835cd160de4edd6f87132c1c68}\label{classPoco_1_1XML_1_1Comment_adb25a2835cd160de4edd6f87132c1c68}} 
+\index{Poco::XML::Comment@{Poco::XML::Comment}!nodeName@{nodeName}}
+\index{nodeName@{nodeName}!Poco::XML::Comment@{Poco::XML::Comment}}
+\doxysubsubsection{\texorpdfstring{nodeName()}{nodeName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}}\& Poco\+::\+X\+M\+L\+::\+Comment\+::node\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode_a19a18ccbfab094d220e02a0a7b05c5f1}{Poco\+::\+X\+M\+L\+::\+Abstract\+Node}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Comment_afc490e57cc9e1f44a1c6847c44bb8950}\label{classPoco_1_1XML_1_1Comment_afc490e57cc9e1f44a1c6847c44bb8950}} 
+\index{Poco::XML::Comment@{Poco::XML::Comment}!nodeType@{nodeType}}
+\index{nodeType@{nodeType}!Poco::XML::Comment@{Poco::XML::Comment}}
+\doxysubsubsection{\texorpdfstring{nodeType()}{nodeType()}}
+{\footnotesize\ttfamily unsigned short Poco\+::\+X\+M\+L\+::\+Comment\+::node\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the value of this node. Throws an exception if the node is read-\/only. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Node_ac001e1819b1eb928ca1ae6f6f90e1159}{Poco\+::\+X\+M\+L\+::\+Node}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Comment_a883538034e58fc5c0de7d4e4cab3cef7}\label{classPoco_1_1XML_1_1Comment_a883538034e58fc5c0de7d4e4cab3cef7}} 
+\index{Poco::XML::Comment@{Poco::XML::Comment}!Document@{Document}}
+\index{Document@{Document}!Poco::XML::Comment@{Poco::XML::Comment}}
+\doxysubsubsection{\texorpdfstring{Document}{Document}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 53 of file Comment.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+D\+O\+M/\mbox{\hyperlink{Comment_8h}{Comment.\+h}}\end{DoxyCompactItemize}

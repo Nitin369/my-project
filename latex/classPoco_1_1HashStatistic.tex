@@ -1,0 +1,178 @@
+\hypertarget{classPoco_1_1HashStatistic}{}\doxysection{Poco\+::Hash\+Statistic Class Reference}
+\label{classPoco_1_1HashStatistic}\index{Poco::HashStatistic@{Poco::HashStatistic}}
+
+
+\mbox{\hyperlink{classPoco_1_1HashStatistic}{Hash\+Statistic}} class bundles statistical information on the current state of a \mbox{\hyperlink{classPoco_1_1HashTable}{Hash\+Table}}.  
+
+
+
+
+{\ttfamily \#include $<$Hash\+Statistic.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1HashStatistic_ac677aad859e617e6ce87ff87b76e79f6}{Hash\+Statistic}} (U\+Int32 table\+Size, U\+Int32 num\+Entries, U\+Int32 num\+Zero\+Entries, U\+Int32 max\+Entry, std\+::vector$<$ U\+Int32 $>$ details=std\+::vector$<$ U\+Int32 $>$())
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1HashStatistic_a8d6ef4f22bd7ef66fd01f0c668a56ca9}{$\sim$\+Hash\+Statistic}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1HashStatistic}{Hash\+Statistic}}. \end{DoxyCompactList}\item 
+U\+Int32 \mbox{\hyperlink{classPoco_1_1HashStatistic_aa6c8629c2c9de522394d890b5eec08c2}{max\+Positions\+Of\+Table}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1HashStatistic}{Hash\+Statistic}}. \end{DoxyCompactList}\item 
+U\+Int32 \mbox{\hyperlink{classPoco_1_1HashStatistic_a2e0b266e62b788b2c3fd644667c45320}{number\+Of\+Entries}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the maximum number of different hash values possible for the table. \end{DoxyCompactList}\item 
+U\+Int32 \mbox{\hyperlink{classPoco_1_1HashStatistic_a302712215623b190f4eda1794ea615db}{number\+Of\+Zero\+Positions}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of entries currently stored in the \mbox{\hyperlink{classPoco_1_1HashTable}{Hash\+Table}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classPoco_1_1HashStatistic_a630f4efa988aac37695ca111f9ce701e}{avg\+Entries\+Per\+Hash}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of hash positions that contain no entry. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classPoco_1_1HashStatistic_a4a7a37b53e386af3d369c16c08324095}{avg\+Entries\+Per\+Hash\+Excl\+Zero\+Entries}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+U\+Int32 \mbox{\hyperlink{classPoco_1_1HashStatistic_a40e3321fa438272db31731401eac1a18}{max\+Entries\+Per\+Hash}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ U\+Int32 $>$ \mbox{\hyperlink{classPoco_1_1HashStatistic_a485f571a3092afddad91794e40141fa4}{detailed\+Entries\+Per\+Hash}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the maximum number of entries per hash value found in the current table. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1HashStatistic_ab644caf6faef4a22e3b15444471f5782}{to\+String}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Will either be an empty vector or will contain for each possible hash value, the number of entries currently stored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1HashStatistic}{Hash\+Statistic}} class bundles statistical information on the current state of a \mbox{\hyperlink{classPoco_1_1HashTable}{Hash\+Table}}. 
+
+Definition at line 31 of file Hash\+Statistic.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1HashStatistic_ac677aad859e617e6ce87ff87b76e79f6}\label{classPoco_1_1HashStatistic_ac677aad859e617e6ce87ff87b76e79f6}} 
+\index{Poco::HashStatistic@{Poco::HashStatistic}!HashStatistic@{HashStatistic}}
+\index{HashStatistic@{HashStatistic}!Poco::HashStatistic@{Poco::HashStatistic}}
+\doxysubsubsection{\texorpdfstring{HashStatistic()}{HashStatistic()}}
+{\footnotesize\ttfamily Poco\+::\+Hash\+Statistic\+::\+Hash\+Statistic (\begin{DoxyParamCaption}\item[{U\+Int32}]{table\+Size,  }\item[{U\+Int32}]{num\+Entries,  }\item[{U\+Int32}]{num\+Zero\+Entries,  }\item[{U\+Int32}]{max\+Entry,  }\item[{std\+::vector$<$ U\+Int32 $>$}]{details = {\ttfamily std\+:\+:vector$<$~UInt32~$>$()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1HashStatistic_a8d6ef4f22bd7ef66fd01f0c668a56ca9}\label{classPoco_1_1HashStatistic_a8d6ef4f22bd7ef66fd01f0c668a56ca9}} 
+\index{Poco::HashStatistic@{Poco::HashStatistic}!````~HashStatistic@{$\sim$HashStatistic}}
+\index{````~HashStatistic@{$\sim$HashStatistic}!Poco::HashStatistic@{Poco::HashStatistic}}
+\doxysubsubsection{\texorpdfstring{$\sim$HashStatistic()}{~HashStatistic()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Hash\+Statistic\+::$\sim$\+Hash\+Statistic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1HashStatistic}{Hash\+Statistic}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1HashStatistic_a630f4efa988aac37695ca111f9ce701e}\label{classPoco_1_1HashStatistic_a630f4efa988aac37695ca111f9ce701e}} 
+\index{Poco::HashStatistic@{Poco::HashStatistic}!avgEntriesPerHash@{avgEntriesPerHash}}
+\index{avgEntriesPerHash@{avgEntriesPerHash}!Poco::HashStatistic@{Poco::HashStatistic}}
+\doxysubsubsection{\texorpdfstring{avgEntriesPerHash()}{avgEntriesPerHash()}}
+{\footnotesize\ttfamily double Poco\+::\+Hash\+Statistic\+::avg\+Entries\+Per\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of hash positions that contain no entry. 
+
+
+
+Definition at line 101 of file Hash\+Statistic.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1HashStatistic_a4a7a37b53e386af3d369c16c08324095}\label{classPoco_1_1HashStatistic_a4a7a37b53e386af3d369c16c08324095}} 
+\index{Poco::HashStatistic@{Poco::HashStatistic}!avgEntriesPerHashExclZeroEntries@{avgEntriesPerHashExclZeroEntries}}
+\index{avgEntriesPerHashExclZeroEntries@{avgEntriesPerHashExclZeroEntries}!Poco::HashStatistic@{Poco::HashStatistic}}
+\doxysubsubsection{\texorpdfstring{avgEntriesPerHashExclZeroEntries()}{avgEntriesPerHashExclZeroEntries()}}
+{\footnotesize\ttfamily double Poco\+::\+Hash\+Statistic\+::avg\+Entries\+Per\+Hash\+Excl\+Zero\+Entries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the average number of entries per position in the Hashtable, the higher this value the less efficient performs hashing. If a large value is returned and get\+Number\+Of\+Zero\+Positions also returns a large value, this indicates an inefficient hashing function. If the number of zero entries is low, resizing the \mbox{\hyperlink{classPoco_1_1HashTable}{Hash\+Table}}, should be enough to improve performance 
+
+Definition at line 107 of file Hash\+Statistic.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1HashStatistic_a485f571a3092afddad91794e40141fa4}\label{classPoco_1_1HashStatistic_a485f571a3092afddad91794e40141fa4}} 
+\index{Poco::HashStatistic@{Poco::HashStatistic}!detailedEntriesPerHash@{detailedEntriesPerHash}}
+\index{detailedEntriesPerHash@{detailedEntriesPerHash}!Poco::HashStatistic@{Poco::HashStatistic}}
+\doxysubsubsection{\texorpdfstring{detailedEntriesPerHash()}{detailedEntriesPerHash()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ U\+Int32 $>$ Poco\+::\+Hash\+Statistic\+::detailed\+Entries\+Per\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the maximum number of entries per hash value found in the current table. 
+
+
+
+Definition at line 119 of file Hash\+Statistic.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1HashStatistic_a40e3321fa438272db31731401eac1a18}\label{classPoco_1_1HashStatistic_a40e3321fa438272db31731401eac1a18}} 
+\index{Poco::HashStatistic@{Poco::HashStatistic}!maxEntriesPerHash@{maxEntriesPerHash}}
+\index{maxEntriesPerHash@{maxEntriesPerHash}!Poco::HashStatistic@{Poco::HashStatistic}}
+\doxysubsubsection{\texorpdfstring{maxEntriesPerHash()}{maxEntriesPerHash()}}
+{\footnotesize\ttfamily U\+Int32 Poco\+::\+Hash\+Statistic\+::max\+Entries\+Per\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Same as get\+Avg\+Entries\+Per\+Hash but hash values that contain no entry are ignored, get\+Avg\+Entries\+Per\+Hash\+Excl\+Zero\+Entries $>$= get\+Avg\+Entries\+Per\+Hash will always be true. 
+
+Definition at line 113 of file Hash\+Statistic.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1HashStatistic_aa6c8629c2c9de522394d890b5eec08c2}\label{classPoco_1_1HashStatistic_aa6c8629c2c9de522394d890b5eec08c2}} 
+\index{Poco::HashStatistic@{Poco::HashStatistic}!maxPositionsOfTable@{maxPositionsOfTable}}
+\index{maxPositionsOfTable@{maxPositionsOfTable}!Poco::HashStatistic@{Poco::HashStatistic}}
+\doxysubsubsection{\texorpdfstring{maxPositionsOfTable()}{maxPositionsOfTable()}}
+{\footnotesize\ttfamily U\+Int32 Poco\+::\+Hash\+Statistic\+::max\+Positions\+Of\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1HashStatistic}{Hash\+Statistic}}. 
+
+
+
+Definition at line 83 of file Hash\+Statistic.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1HashStatistic_a2e0b266e62b788b2c3fd644667c45320}\label{classPoco_1_1HashStatistic_a2e0b266e62b788b2c3fd644667c45320}} 
+\index{Poco::HashStatistic@{Poco::HashStatistic}!numberOfEntries@{numberOfEntries}}
+\index{numberOfEntries@{numberOfEntries}!Poco::HashStatistic@{Poco::HashStatistic}}
+\doxysubsubsection{\texorpdfstring{numberOfEntries()}{numberOfEntries()}}
+{\footnotesize\ttfamily U\+Int32 Poco\+::\+Hash\+Statistic\+::number\+Of\+Entries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the maximum number of different hash values possible for the table. 
+
+
+
+Definition at line 89 of file Hash\+Statistic.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1HashStatistic_a302712215623b190f4eda1794ea615db}\label{classPoco_1_1HashStatistic_a302712215623b190f4eda1794ea615db}} 
+\index{Poco::HashStatistic@{Poco::HashStatistic}!numberOfZeroPositions@{numberOfZeroPositions}}
+\index{numberOfZeroPositions@{numberOfZeroPositions}!Poco::HashStatistic@{Poco::HashStatistic}}
+\doxysubsubsection{\texorpdfstring{numberOfZeroPositions()}{numberOfZeroPositions()}}
+{\footnotesize\ttfamily U\+Int32 Poco\+::\+Hash\+Statistic\+::number\+Of\+Zero\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the total number of entries currently stored in the \mbox{\hyperlink{classPoco_1_1HashTable}{Hash\+Table}}. 
+
+
+
+Definition at line 95 of file Hash\+Statistic.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1HashStatistic_ab644caf6faef4a22e3b15444471f5782}\label{classPoco_1_1HashStatistic_ab644caf6faef4a22e3b15444471f5782}} 
+\index{Poco::HashStatistic@{Poco::HashStatistic}!toString@{toString}}
+\index{toString@{toString}!Poco::HashStatistic@{Poco::HashStatistic}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Hash\+Statistic\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Will either be an empty vector or will contain for each possible hash value, the number of entries currently stored. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{HashStatistic_8h}{Hash\+Statistic.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,358 @@
+\hypertarget{classPoco_1_1Util_1_1HelpFormatter}{}\doxysection{Poco\+::Util\+::Help\+Formatter Class Reference}
+\label{classPoco_1_1Util_1_1HelpFormatter}\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+
+
+This class formats a help message from an \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}}.  
+
+
+
+
+{\ttfamily \#include $<$Help\+Formatter.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_af72fe8854c854cb7409a4360b080f210}{Help\+Formatter}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}} \&options)
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_aae235037ad88a9cfe803271793a902e3}{$\sim$\+Help\+Formatter}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a8da9e0aecbca4e2bd24d9af436da3fb2}{set\+Command}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&command)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter}{Help\+Formatter}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a336175ea2c9b5114e9962d21b98edc22}{get\+Command}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the command name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a00aca9b35cd0e6c45acf912bbf4d33b8}{set\+Usage}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&usage)
+\begin{DoxyCompactList}\small\item\em Returns the command name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a6dad931bc3d427a7a80650129bb32a3a}{get\+Usage}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the usage string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a4245867dcbab8e09040685b1e1a88a5b}{set\+Header}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&header)
+\begin{DoxyCompactList}\small\item\em Returns the usage string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a811533b1523389e94e656a694df2b46f}{get\+Header}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the header string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_aba27e299334b58889feac933955db7ab}{set\+Footer}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&footer)
+\begin{DoxyCompactList}\small\item\em Returns the header string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a25efa1e9ab2a4fb589d29b27bccd0a78}{get\+Footer}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the footer string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_ae74bab732ba4a6b61501f86ddfadc184}{format}} (std\+::ostream \&ostr) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the footer string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a229e8fdddf68f8f1f3858f76014ed681}{set\+Width}} (int width)
+\begin{DoxyCompactList}\small\item\em Writes the formatted help text to the given stream. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a14a4c61ce61bc2e9ffb1744bcbf7a64f}{get\+Width}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the line width for the formatted help text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a13394fbcdd2d6bcd69078aae10a22611}{set\+Indent}} (int indent)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a530c688d601a18df5bf905e1f3b86ed6}{get\+Indent}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the indentation for description continuation lines. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_ab82a49ffc63a47ffa08c4a3adfc5984f}{set\+Auto\+Indent}} ()
+\begin{DoxyCompactList}\small\item\em Returns the indentation for description continuation lines. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a7d2a70183916043b16c143efb4232eed}{set\+Unix\+Style}} (bool flag)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_ac1edd79c63b1442576813e71ce1a0adf}{is\+Unix\+Style}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a0372521035bbfc0b34619cc214c3eacb}{short\+Prefix}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns if Unix-\/style options are set. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a66f8049f37c9ec64aed8f7e8435cf2a1}{long\+Prefix}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a24dd48b420a4e02e902ad1832cd16c6d}{calc\+Indent}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a8d63e769e853d2e8473d4597ce6a6c08}{format\+Options}} (std\+::ostream \&ostr) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a420f720282b83353b73016c8e5d4efa0}{format\+Option}} (std\+::ostream \&ostr, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Util_1_1Option}{Option}} \&option, int width) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Formats all options. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_aa232e789ac97c1c8d99f2fb5dfe25107}{format\+Text}} (std\+::ostream \&ostr, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&text, int indent) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_af3a4d3c3dc177d798fb46a69a37ad277}{format\+Text}} (std\+::ostream \&ostr, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&text, int indent, int first\+Indent) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Formats the given text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a92bb57d6de869f3995942f4913833b2f}{format\+Word}} (std\+::ostream \&ostr, int \&pos, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&word, int indent) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Formats the given text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a8c9f88f49299ac5c824f72cf67c0213c}{clear\+Word}} (std\+::ostream \&ostr, int \&pos, std\+::string \&word, int indent) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Formats the given word. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class formats a help message from an \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}}. 
+
+Definition at line 35 of file Help\+Formatter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_af72fe8854c854cb7409a4360b080f210}\label{classPoco_1_1Util_1_1HelpFormatter_af72fe8854c854cb7409a4360b080f210}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!HelpFormatter@{HelpFormatter}}
+\index{HelpFormatter@{HelpFormatter}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{HelpFormatter()}{HelpFormatter()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Help\+Formatter\+::\+Help\+Formatter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}} \&}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_aae235037ad88a9cfe803271793a902e3}\label{classPoco_1_1Util_1_1HelpFormatter_aae235037ad88a9cfe803271793a902e3}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!````~HelpFormatter@{$\sim$HelpFormatter}}
+\index{````~HelpFormatter@{$\sim$HelpFormatter}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{$\sim$HelpFormatter()}{~HelpFormatter()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Help\+Formatter\+::$\sim$\+Help\+Formatter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter}{Help\+Formatter}}, using the given options.
+
+The \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter}{Help\+Formatter}} just stores a reference to the given \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}}, so the \mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}} must not be destroyed during the lifetime of the \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter}{Help\+Formatter}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a24dd48b420a4e02e902ad1832cd16c6d}\label{classPoco_1_1Util_1_1HelpFormatter_a24dd48b420a4e02e902ad1832cd16c6d}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!calcIndent@{calcIndent}}
+\index{calcIndent@{calcIndent}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{calcIndent()}{calcIndent()}}
+{\footnotesize\ttfamily int Poco\+::\+Util\+::\+Help\+Formatter\+::calc\+Indent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the platform-\/specific prefix for long options. \char`\"{}-\/-\/\char`\"{} on Unix, \char`\"{}/\char`\"{} on Windows and Open\+V\+MS. \mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a8c9f88f49299ac5c824f72cf67c0213c}\label{classPoco_1_1Util_1_1HelpFormatter_a8c9f88f49299ac5c824f72cf67c0213c}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!clearWord@{clearWord}}
+\index{clearWord@{clearWord}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{clearWord()}{clearWord()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::clear\+Word (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{int \&}]{pos,  }\item[{std\+::string \&}]{word,  }\item[{int}]{indent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Formats the given word. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_ae74bab732ba4a6b61501f86ddfadc184}\label{classPoco_1_1Util_1_1HelpFormatter_ae74bab732ba4a6b61501f86ddfadc184}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!format@{format}}
+\index{format@{format}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::format (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption}) const}
+
+
+
+Returns the footer string. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a420f720282b83353b73016c8e5d4efa0}\label{classPoco_1_1Util_1_1HelpFormatter_a420f720282b83353b73016c8e5d4efa0}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!formatOption@{formatOption}}
+\index{formatOption@{formatOption}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{formatOption()}{formatOption()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::format\+Option (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Util_1_1Option}{Option}} \&}]{option,  }\item[{int}]{width }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Formats all options. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a8d63e769e853d2e8473d4597ce6a6c08}\label{classPoco_1_1Util_1_1HelpFormatter_a8d63e769e853d2e8473d4597ce6a6c08}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!formatOptions@{formatOptions}}
+\index{formatOptions@{formatOptions}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{formatOptions()}{formatOptions()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::format\+Options (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calculates the indentation for the option descriptions from the given options. \mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_aa232e789ac97c1c8d99f2fb5dfe25107}\label{classPoco_1_1Util_1_1HelpFormatter_aa232e789ac97c1c8d99f2fb5dfe25107}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!formatText@{formatText}}
+\index{formatText@{formatText}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{formatText()}{formatText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::format\+Text (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{text,  }\item[{int}]{indent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Formats an option, using the platform-\/specific prefixes. \mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_af3a4d3c3dc177d798fb46a69a37ad277}\label{classPoco_1_1Util_1_1HelpFormatter_af3a4d3c3dc177d798fb46a69a37ad277}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!formatText@{formatText}}
+\index{formatText@{formatText}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{formatText()}{formatText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::format\+Text (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{text,  }\item[{int}]{indent,  }\item[{int}]{first\+Indent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Formats the given text. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a92bb57d6de869f3995942f4913833b2f}\label{classPoco_1_1Util_1_1HelpFormatter_a92bb57d6de869f3995942f4913833b2f}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!formatWord@{formatWord}}
+\index{formatWord@{formatWord}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{formatWord()}{formatWord()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::format\+Word (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{int \&}]{pos,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{word,  }\item[{int}]{indent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Formats the given text. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a336175ea2c9b5114e9962d21b98edc22}\label{classPoco_1_1Util_1_1HelpFormatter_a336175ea2c9b5114e9962d21b98edc22}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!getCommand@{getCommand}}
+\index{getCommand@{getCommand}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{getCommand()}{getCommand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Util\+::\+Help\+Formatter\+::get\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the command name. 
+
+
+
+Definition at line 171 of file Help\+Formatter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a25efa1e9ab2a4fb589d29b27bccd0a78}\label{classPoco_1_1Util_1_1HelpFormatter_a25efa1e9ab2a4fb589d29b27bccd0a78}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!getFooter@{getFooter}}
+\index{getFooter@{getFooter}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{getFooter()}{getFooter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Util\+::\+Help\+Formatter\+::get\+Footer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the footer string. 
+
+
+
+Definition at line 189 of file Help\+Formatter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a811533b1523389e94e656a694df2b46f}\label{classPoco_1_1Util_1_1HelpFormatter_a811533b1523389e94e656a694df2b46f}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!getHeader@{getHeader}}
+\index{getHeader@{getHeader}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{getHeader()}{getHeader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Util\+::\+Help\+Formatter\+::get\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the header string. 
+
+
+
+Definition at line 183 of file Help\+Formatter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a530c688d601a18df5bf905e1f3b86ed6}\label{classPoco_1_1Util_1_1HelpFormatter_a530c688d601a18df5bf905e1f3b86ed6}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!getIndent@{getIndent}}
+\index{getIndent@{getIndent}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{getIndent()}{getIndent()}}
+{\footnotesize\ttfamily int Poco\+::\+Util\+::\+Help\+Formatter\+::get\+Indent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the indentation for description continuation lines. 
+
+
+
+Definition at line 165 of file Help\+Formatter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a6dad931bc3d427a7a80650129bb32a3a}\label{classPoco_1_1Util_1_1HelpFormatter_a6dad931bc3d427a7a80650129bb32a3a}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!getUsage@{getUsage}}
+\index{getUsage@{getUsage}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{getUsage()}{getUsage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Util\+::\+Help\+Formatter\+::get\+Usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the usage string. 
+
+
+
+Definition at line 177 of file Help\+Formatter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a14a4c61ce61bc2e9ffb1744bcbf7a64f}\label{classPoco_1_1Util_1_1HelpFormatter_a14a4c61ce61bc2e9ffb1744bcbf7a64f}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int Poco\+::\+Util\+::\+Help\+Formatter\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the line width for the formatted help text. 
+
+
+
+Definition at line 159 of file Help\+Formatter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_ac1edd79c63b1442576813e71ce1a0adf}\label{classPoco_1_1Util_1_1HelpFormatter_ac1edd79c63b1442576813e71ce1a0adf}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!isUnixStyle@{isUnixStyle}}
+\index{isUnixStyle@{isUnixStyle}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{isUnixStyle()}{isUnixStyle()}}
+{\footnotesize\ttfamily bool Poco\+::\+Util\+::\+Help\+Formatter\+::is\+Unix\+Style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enables Unix-\/style options. Both short and long option names are printed if Unix-\/style is set. Otherwise, only long option names are printed.
+
+After calling \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_a7d2a70183916043b16c143efb4232eed}{set\+Unix\+Style()}}, \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter_ab82a49ffc63a47ffa08c4a3adfc5984f}{set\+Auto\+Indent()}} should be called as well to ensure proper help text formatting. 
+
+Definition at line 195 of file Help\+Formatter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a66f8049f37c9ec64aed8f7e8435cf2a1}\label{classPoco_1_1Util_1_1HelpFormatter_a66f8049f37c9ec64aed8f7e8435cf2a1}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!longPrefix@{longPrefix}}
+\index{longPrefix@{longPrefix}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{longPrefix()}{longPrefix()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Util\+::\+Help\+Formatter\+::long\+Prefix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the platform-\/specific prefix for short options. \char`\"{}-\/\char`\"{} on Unix, \char`\"{}/\char`\"{} on Windows and Open\+V\+MS. \mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_ab82a49ffc63a47ffa08c4a3adfc5984f}\label{classPoco_1_1Util_1_1HelpFormatter_ab82a49ffc63a47ffa08c4a3adfc5984f}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!setAutoIndent@{setAutoIndent}}
+\index{setAutoIndent@{setAutoIndent}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{setAutoIndent()}{setAutoIndent()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::set\+Auto\+Indent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the indentation for description continuation lines. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a8da9e0aecbca4e2bd24d9af436da3fb2}\label{classPoco_1_1Util_1_1HelpFormatter_a8da9e0aecbca4e2bd24d9af436da3fb2}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!setCommand@{setCommand}}
+\index{setCommand@{setCommand}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{setCommand()}{setCommand()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::set\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{command }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Util_1_1HelpFormatter}{Help\+Formatter}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_aba27e299334b58889feac933955db7ab}\label{classPoco_1_1Util_1_1HelpFormatter_aba27e299334b58889feac933955db7ab}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!setFooter@{setFooter}}
+\index{setFooter@{setFooter}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{setFooter()}{setFooter()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::set\+Footer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{footer }\end{DoxyParamCaption})}
+
+
+
+Returns the header string. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a4245867dcbab8e09040685b1e1a88a5b}\label{classPoco_1_1Util_1_1HelpFormatter_a4245867dcbab8e09040685b1e1a88a5b}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!setHeader@{setHeader}}
+\index{setHeader@{setHeader}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{setHeader()}{setHeader()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::set\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{header }\end{DoxyParamCaption})}
+
+
+
+Returns the usage string. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a13394fbcdd2d6bcd69078aae10a22611}\label{classPoco_1_1Util_1_1HelpFormatter_a13394fbcdd2d6bcd69078aae10a22611}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!setIndent@{setIndent}}
+\index{setIndent@{setIndent}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{setIndent()}{setIndent()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::set\+Indent (\begin{DoxyParamCaption}\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns the line width for the formatted help text.
+
+The default width is 72. \mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a7d2a70183916043b16c143efb4232eed}\label{classPoco_1_1Util_1_1HelpFormatter_a7d2a70183916043b16c143efb4232eed}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!setUnixStyle@{setUnixStyle}}
+\index{setUnixStyle@{setUnixStyle}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{setUnixStyle()}{setUnixStyle()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::set\+Unix\+Style (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+Sets the indentation for description continuation lines so that the description text is left-\/aligned. ~\newline
+ \mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a00aca9b35cd0e6c45acf912bbf4d33b8}\label{classPoco_1_1Util_1_1HelpFormatter_a00aca9b35cd0e6c45acf912bbf4d33b8}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!setUsage@{setUsage}}
+\index{setUsage@{setUsage}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{setUsage()}{setUsage()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::set\+Usage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{usage }\end{DoxyParamCaption})}
+
+
+
+Returns the command name. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a229e8fdddf68f8f1f3858f76014ed681}\label{classPoco_1_1Util_1_1HelpFormatter_a229e8fdddf68f8f1f3858f76014ed681}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{setWidth()}{setWidth()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Help\+Formatter\+::set\+Width (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Writes the formatted help text to the given stream. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1HelpFormatter_a0372521035bbfc0b34619cc214c3eacb}\label{classPoco_1_1Util_1_1HelpFormatter_a0372521035bbfc0b34619cc214c3eacb}} 
+\index{Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}!shortPrefix@{shortPrefix}}
+\index{shortPrefix@{shortPrefix}!Poco::Util::HelpFormatter@{Poco::Util::HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{shortPrefix()}{shortPrefix()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Util\+::\+Help\+Formatter\+::short\+Prefix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns if Unix-\/style options are set. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Util/\mbox{\hyperlink{HelpFormatter_8h}{Help\+Formatter.\+h}}\end{DoxyCompactItemize}

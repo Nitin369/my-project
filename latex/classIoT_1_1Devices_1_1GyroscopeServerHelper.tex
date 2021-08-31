@@ -1,0 +1,163 @@
+\hypertarget{classIoT_1_1Devices_1_1GyroscopeServerHelper}{}\doxysection{IoT\+::Devices\+::Gyroscope\+Server\+Helper Class Reference}
+\label{classIoT_1_1Devices_1_1GyroscopeServerHelper}\index{IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}}
+
+
+The interface for three-\/axis Gyroscopes.  
+
+
+
+
+{\ttfamily \#include $<$Gyroscope\+Server\+Helper.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classIoT_1_1Devices_1_1Gyroscope}{Io\+T\+::\+Devices\+::\+Gyroscope}} \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper_a26beb37ac6384bef8e3188b9ff19c22d}{Service}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper_a6e7d4e54fc94b6882cbc31bbc1a49f26}{Gyroscope\+Server\+Helper}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper_a40bfee60f68c27c8d71bf91d29b26fc9}{$\sim$\+Gyroscope\+Server\+Helper}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper}{Gyroscope\+Server\+Helper}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeRemoteObject}{Io\+T\+::\+Devices\+::\+Gyroscope\+Remote\+Object}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper_a128285d16b23803161e8996142a12ce0}{create\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Gyroscope}{Io\+T\+::\+Devices\+::\+Gyroscope}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper}{Gyroscope\+Server\+Helper}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper_a3cc379d7bab748de14bac70ad2dabee7}{enable\+Events}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\begin{DoxyCompactList}\small\item\em Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1Gyroscope}{Io\+T\+::\+Devices\+::\+Gyroscope}} instance. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper_a20689b612c8823f0579f82ab1182fc69}{register\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Gyroscope}{Io\+T\+::\+Devices\+::\+Gyroscope}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper_a87c923123103bb392fec0b9a8861bcaf}{register\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeRemoteObject}{Io\+T\+::\+Devices\+::\+Gyroscope\+Remote\+Object}} $>$ p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper_a4ce00282d76e5d944d9b621d91c43043}{shutdown}} ()
+\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper_a5aed306282b6d328eb9db9ad44f98f00}{unregister\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\begin{DoxyCompactList}\small\item\em Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1Devices_1_1Gyroscope}{Io\+T\+::\+Devices\+::\+Gyroscope}} from the O\+RB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The interface for three-\/axis Gyroscopes. 
+
+Definition at line 34 of file Gyroscope\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GyroscopeServerHelper_a26beb37ac6384bef8e3188b9ff19c22d}\label{classIoT_1_1Devices_1_1GyroscopeServerHelper_a26beb37ac6384bef8e3188b9ff19c22d}} 
+\index{IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}!Service@{Service}}
+\index{Service@{Service}!IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}}
+\doxysubsubsection{\texorpdfstring{Service}{Service}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classIoT_1_1Devices_1_1Gyroscope}{Io\+T\+::\+Devices\+::\+Gyroscope}} \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper_a26beb37ac6384bef8e3188b9ff19c22d}{Io\+T\+::\+Devices\+::\+Gyroscope\+Server\+Helper\+::\+Service}}}
+
+
+
+Definition at line 38 of file Gyroscope\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GyroscopeServerHelper_a6e7d4e54fc94b6882cbc31bbc1a49f26}\label{classIoT_1_1Devices_1_1GyroscopeServerHelper_a6e7d4e54fc94b6882cbc31bbc1a49f26}} 
+\index{IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}!GyroscopeServerHelper@{GyroscopeServerHelper}}
+\index{GyroscopeServerHelper@{GyroscopeServerHelper}!IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}}
+\doxysubsubsection{\texorpdfstring{GyroscopeServerHelper()}{GyroscopeServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Gyroscope\+Server\+Helper\+::\+Gyroscope\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GyroscopeServerHelper_a40bfee60f68c27c8d71bf91d29b26fc9}\label{classIoT_1_1Devices_1_1GyroscopeServerHelper_a40bfee60f68c27c8d71bf91d29b26fc9}} 
+\index{IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}!````~GyroscopeServerHelper@{$\sim$GyroscopeServerHelper}}
+\index{````~GyroscopeServerHelper@{$\sim$GyroscopeServerHelper}!IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}}
+\doxysubsubsection{\texorpdfstring{$\sim$GyroscopeServerHelper()}{~GyroscopeServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Gyroscope\+Server\+Helper\+::$\sim$\+Gyroscope\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper}{Gyroscope\+Server\+Helper}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GyroscopeServerHelper_a128285d16b23803161e8996142a12ce0}\label{classIoT_1_1Devices_1_1GyroscopeServerHelper_a128285d16b23803161e8996142a12ce0}} 
+\index{IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}!createRemoteObject@{createRemoteObject}}
+\index{createRemoteObject@{createRemoteObject}!IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}}
+\doxysubsubsection{\texorpdfstring{createRemoteObject()}{createRemoteObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeRemoteObject}{Io\+T\+::\+Devices\+::\+Gyroscope\+Remote\+Object}} $>$ Io\+T\+::\+Devices\+::\+Gyroscope\+Server\+Helper\+::create\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Gyroscope}{Io\+T\+::\+Devices\+::\+Gyroscope}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeServerHelper}{Gyroscope\+Server\+Helper}}. 
+
+
+
+Definition at line 94 of file Gyroscope\+Server\+Helper.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GyroscopeServerHelper_a3cc379d7bab748de14bac70ad2dabee7}\label{classIoT_1_1Devices_1_1GyroscopeServerHelper_a3cc379d7bab748de14bac70ad2dabee7}} 
+\index{IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}!enableEvents@{enableEvents}}
+\index{enableEvents@{enableEvents}!IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}}
+\doxysubsubsection{\texorpdfstring{enableEvents()}{enableEvents()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Gyroscope\+Server\+Helper\+::enable\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1Gyroscope}{Io\+T\+::\+Devices\+::\+Gyroscope}} instance. 
+
+
+
+Definition at line 100 of file Gyroscope\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GyroscopeServerHelper_a20689b612c8823f0579f82ab1182fc69}\label{classIoT_1_1Devices_1_1GyroscopeServerHelper_a20689b612c8823f0579f82ab1182fc69}} 
+\index{IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}!registerObject@{registerObject}}
+\index{registerObject@{registerObject}!IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerObject()}{registerObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Devices\+::\+Gyroscope\+Server\+Helper\+::register\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Gyroscope}{Io\+T\+::\+Devices\+::\+Gyroscope}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Enables remote events for the Remote\+Object identified by the given U\+RI.
+
+Events will be delivered using the Transport for the given protocol. Can be called multiple times for the same U\+RI with different protocols. 
+
+Definition at line 106 of file Gyroscope\+Server\+Helper.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GyroscopeServerHelper_a87c923123103bb392fec0b9a8861bcaf}\label{classIoT_1_1Devices_1_1GyroscopeServerHelper_a87c923123103bb392fec0b9a8861bcaf}} 
+\index{IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}!registerRemoteObject@{registerRemoteObject}}
+\index{registerRemoteObject@{registerRemoteObject}!IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerRemoteObject()}{registerRemoteObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Devices\+::\+Gyroscope\+Server\+Helper\+::register\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1GyroscopeRemoteObject}{Io\+T\+::\+Devices\+::\+Gyroscope\+Remote\+Object}} $>$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1Gyroscope}{Io\+T\+::\+Devices\+::\+Gyroscope}} instance and registers it with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. 
+
+Definition at line 112 of file Gyroscope\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GyroscopeServerHelper_a4ce00282d76e5d944d9b621d91c43043}\label{classIoT_1_1Devices_1_1GyroscopeServerHelper_a4ce00282d76e5d944d9b621d91c43043}} 
+\index{IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily static void Io\+T\+::\+Devices\+::\+Gyroscope\+Server\+Helper\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers the given Remote\+Object with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. \mbox{\Hypertarget{classIoT_1_1Devices_1_1GyroscopeServerHelper_a5aed306282b6d328eb9db9ad44f98f00}\label{classIoT_1_1Devices_1_1GyroscopeServerHelper_a5aed306282b6d328eb9db9ad44f98f00}} 
+\index{IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}!unregisterObject@{unregisterObject}}
+\index{unregisterObject@{unregisterObject}!IoT::Devices::GyroscopeServerHelper@{IoT::Devices::GyroscopeServerHelper}}
+\doxysubsubsection{\texorpdfstring{unregisterObject()}{unregisterObject()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Gyroscope\+Server\+Helper\+::unregister\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1Devices_1_1Gyroscope}{Io\+T\+::\+Devices\+::\+Gyroscope}} from the O\+RB. 
+
+
+
+Definition at line 118 of file Gyroscope\+Server\+Helper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{GyroscopeServerHelper_8h}{Gyroscope\+Server\+Helper.\+h}}\end{DoxyCompactItemize}

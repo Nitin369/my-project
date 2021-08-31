@@ -1,0 +1,111 @@
+\hypertarget{classPoco_1_1Net_1_1SocketIOS}{}\doxysection{Poco\+::Net\+::Socket\+I\+OS Class Reference}
+\label{classPoco_1_1Net_1_1SocketIOS}\index{Poco::Net::SocketIOS@{Poco::Net::SocketIOS}}
+
+
+{\ttfamily \#include $<$Socket\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::Socket\+I\+OS\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::Socket\+I\+OS\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketIOS_a5fb05dc3ad773f63920352ca38b1e596}{Socket\+I\+OS}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1SocketIOS_aec49cb2d6880a00afe66b457aa6da20d}{socket}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketIOS_acd55ce6185edbd3ba81074221040d9db}{$\sim$\+Socket\+I\+OS}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketStreamBuf}{Socket\+Stream\+Buf}} $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1SocketIOS_a0d2c976d5837f9a1fef12e22a0979c5b}{rdbuf}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketIOS_a6ef6f2c7f5c6be23f9b5261b47524ee4}{close}} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the internal \mbox{\hyperlink{classPoco_1_1Net_1_1SocketStreamBuf}{Socket\+Stream\+Buf}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketIOS_aec49cb2d6880a00afe66b457aa6da20d}{socket}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Flushes the stream and closes the socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketStreamBuf}{Socket\+Stream\+Buf}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketIOS_ae9f0ce2ade42f45d259001977de5d9ee}{\+\_\+buf}}
+\begin{DoxyCompactList}\small\item\em Returns the underlying socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for \mbox{\hyperlink{classPoco_1_1Net_1_1SocketStream}{Socket\+Stream}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SocketInputStream}{Socket\+Input\+Stream}} and \mbox{\hyperlink{classPoco_1_1Net_1_1SocketOutputStream}{Socket\+Output\+Stream}}.
+
+This class is needed to ensure the correct initialization order of the stream buffer and base classes. 
+
+Definition at line 67 of file Socket\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketIOS_a5fb05dc3ad773f63920352ca38b1e596}\label{classPoco_1_1Net_1_1SocketIOS_a5fb05dc3ad773f63920352ca38b1e596}} 
+\index{Poco::Net::SocketIOS@{Poco::Net::SocketIOS}!SocketIOS@{SocketIOS}}
+\index{SocketIOS@{SocketIOS}!Poco::Net::SocketIOS@{Poco::Net::SocketIOS}}
+\doxysubsubsection{\texorpdfstring{SocketIOS()}{SocketIOS()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Socket\+I\+O\+S\+::\+Socket\+I\+OS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&}]{socket }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketIOS_acd55ce6185edbd3ba81074221040d9db}\label{classPoco_1_1Net_1_1SocketIOS_acd55ce6185edbd3ba81074221040d9db}} 
+\index{Poco::Net::SocketIOS@{Poco::Net::SocketIOS}!````~SocketIOS@{$\sim$SocketIOS}}
+\index{````~SocketIOS@{$\sim$SocketIOS}!Poco::Net::SocketIOS@{Poco::Net::SocketIOS}}
+\doxysubsubsection{\texorpdfstring{$\sim$SocketIOS()}{~SocketIOS()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Socket\+I\+O\+S\+::$\sim$\+Socket\+I\+OS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketIOS}{Socket\+I\+OS}} with the given socket.
+
+The socket\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1Net_1_1SocketImpl}{Socket\+Impl}} must be a \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocketImpl}{Stream\+Socket\+Impl}}, otherwise an Invalid\+Argument\+Exception is thrown. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketIOS_a6ef6f2c7f5c6be23f9b5261b47524ee4}\label{classPoco_1_1Net_1_1SocketIOS_a6ef6f2c7f5c6be23f9b5261b47524ee4}} 
+\index{Poco::Net::SocketIOS@{Poco::Net::SocketIOS}!close@{close}}
+\index{close@{close}!Poco::Net::SocketIOS@{Poco::Net::SocketIOS}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+I\+O\+S\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a pointer to the internal \mbox{\hyperlink{classPoco_1_1Net_1_1SocketStreamBuf}{Socket\+Stream\+Buf}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketIOS_a0d2c976d5837f9a1fef12e22a0979c5b}\label{classPoco_1_1Net_1_1SocketIOS_a0d2c976d5837f9a1fef12e22a0979c5b}} 
+\index{Poco::Net::SocketIOS@{Poco::Net::SocketIOS}!rdbuf@{rdbuf}}
+\index{rdbuf@{rdbuf}!Poco::Net::SocketIOS@{Poco::Net::SocketIOS}}
+\doxysubsubsection{\texorpdfstring{rdbuf()}{rdbuf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1SocketStreamBuf}{Socket\+Stream\+Buf}}$\ast$ Poco\+::\+Net\+::\+Socket\+I\+O\+S\+::rdbuf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketIOS}{Socket\+I\+OS}}.
+
+Flushes the buffer, but does not close the socket. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketIOS_aec49cb2d6880a00afe66b457aa6da20d}\label{classPoco_1_1Net_1_1SocketIOS_aec49cb2d6880a00afe66b457aa6da20d}} 
+\index{Poco::Net::SocketIOS@{Poco::Net::SocketIOS}!socket@{socket}}
+\index{socket@{socket}!Poco::Net::SocketIOS@{Poco::Net::SocketIOS}}
+\doxysubsubsection{\texorpdfstring{socket()}{socket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} Poco\+::\+Net\+::\+Socket\+I\+O\+S\+::socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Flushes the stream and closes the socket. 
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketIOS_ae9f0ce2ade42f45d259001977de5d9ee}\label{classPoco_1_1Net_1_1SocketIOS_ae9f0ce2ade42f45d259001977de5d9ee}} 
+\index{Poco::Net::SocketIOS@{Poco::Net::SocketIOS}!\_buf@{\_buf}}
+\index{\_buf@{\_buf}!Poco::Net::SocketIOS@{Poco::Net::SocketIOS}}
+\doxysubsubsection{\texorpdfstring{\_buf}{\_buf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1SocketStreamBuf}{Socket\+Stream\+Buf}} Poco\+::\+Net\+::\+Socket\+I\+O\+S\+::\+\_\+buf\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the underlying socket. 
+
+
+
+Definition at line 96 of file Socket\+Stream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{SocketStream_8h}{Socket\+Stream.\+h}}\end{DoxyCompactItemize}

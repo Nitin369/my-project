@@ -1,0 +1,80 @@
+\hypertarget{classPoco_1_1Crypto_1_1CryptoOutputStream}{}\doxysection{Poco\+::Crypto\+::Crypto\+Output\+Stream Class Reference}
+\label{classPoco_1_1Crypto_1_1CryptoOutputStream}\index{Poco::Crypto::CryptoOutputStream@{Poco::Crypto::CryptoOutputStream}}
+
+
+{\ttfamily \#include $<$Crypto\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Crypto\+::Crypto\+Output\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Crypto\+::Crypto\+Output\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream_a1f9531b9a2ff8b5210a750ebd91a4a42}{Crypto\+Output\+Stream}} (std\+::ostream \&ostr, \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}} $\ast$p\+Transform, std\+::streamsize buffer\+Size=8192)
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream_ad85c774e14a03e63c2cb16f008b08789}{Crypto\+Output\+Stream}} (std\+::ostream \&ostr, \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher}{Cipher}} \&cipher, std\+::streamsize buffer\+Size=8192)
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream_a79070e933c5129cd67f580aa6a82aa82}{$\sim$\+Crypto\+Output\+Stream}} ()
+\begin{DoxyCompactList}\small\item\em Create a new decrypting \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream}{Crypto\+Output\+Stream}} object using the given cipher. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream_a784060d18c664e0c55670f669c494ade}{close}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream}{Crypto\+Output\+Stream}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This stream transforms all data passing through it using the given \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}}.
+
+Use a \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}} object provided by Cipher\+::create\+Encrytor() or \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5ff6f0b7c3eb92c908150f51e9a9fdc7}{Cipher\+::create\+Decryptor()}} to create an encrypting or decrypting stream, respectively.
+
+After all data has been passed through the stream, \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream_a784060d18c664e0c55670f669c494ade}{close()}} must be called to ensure completion of cryptographic transformation. 
+
+Definition at line 104 of file Crypto\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1CryptoOutputStream_a1f9531b9a2ff8b5210a750ebd91a4a42}\label{classPoco_1_1Crypto_1_1CryptoOutputStream_a1f9531b9a2ff8b5210a750ebd91a4a42}} 
+\index{Poco::Crypto::CryptoOutputStream@{Poco::Crypto::CryptoOutputStream}!CryptoOutputStream@{CryptoOutputStream}}
+\index{CryptoOutputStream@{CryptoOutputStream}!Poco::Crypto::CryptoOutputStream@{Poco::Crypto::CryptoOutputStream}}
+\doxysubsubsection{\texorpdfstring{CryptoOutputStream()}{CryptoOutputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+Crypto\+Output\+Stream\+::\+Crypto\+Output\+Stream (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{\mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}} $\ast$}]{p\+Transform,  }\item[{std\+::streamsize}]{buffer\+Size = {\ttfamily 8192} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1CryptoOutputStream_ad85c774e14a03e63c2cb16f008b08789}\label{classPoco_1_1Crypto_1_1CryptoOutputStream_ad85c774e14a03e63c2cb16f008b08789}} 
+\index{Poco::Crypto::CryptoOutputStream@{Poco::Crypto::CryptoOutputStream}!CryptoOutputStream@{CryptoOutputStream}}
+\index{CryptoOutputStream@{CryptoOutputStream}!Poco::Crypto::CryptoOutputStream@{Poco::Crypto::CryptoOutputStream}}
+\doxysubsubsection{\texorpdfstring{CryptoOutputStream()}{CryptoOutputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+Crypto\+Output\+Stream\+::\+Crypto\+Output\+Stream (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher}{Cipher}} \&}]{cipher,  }\item[{std\+::streamsize}]{buffer\+Size = {\ttfamily 8192} }\end{DoxyParamCaption})}
+
+Create a new \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream}{Crypto\+Output\+Stream}} object. The \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream}{Crypto\+Output\+Stream}} takes the ownership of the given \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}} object. \mbox{\Hypertarget{classPoco_1_1Crypto_1_1CryptoOutputStream_a79070e933c5129cd67f580aa6a82aa82}\label{classPoco_1_1Crypto_1_1CryptoOutputStream_a79070e933c5129cd67f580aa6a82aa82}} 
+\index{Poco::Crypto::CryptoOutputStream@{Poco::Crypto::CryptoOutputStream}!````~CryptoOutputStream@{$\sim$CryptoOutputStream}}
+\index{````~CryptoOutputStream@{$\sim$CryptoOutputStream}!Poco::Crypto::CryptoOutputStream@{Poco::Crypto::CryptoOutputStream}}
+\doxysubsubsection{\texorpdfstring{$\sim$CryptoOutputStream()}{~CryptoOutputStream()}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+Crypto\+Output\+Stream\+::$\sim$\+Crypto\+Output\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a new decrypting \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream}{Crypto\+Output\+Stream}} object using the given cipher. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1CryptoOutputStream_a784060d18c664e0c55670f669c494ade}\label{classPoco_1_1Crypto_1_1CryptoOutputStream_a784060d18c664e0c55670f669c494ade}} 
+\index{Poco::Crypto::CryptoOutputStream@{Poco::Crypto::CryptoOutputStream}!close@{close}}
+\index{close@{close}!Poco::Crypto::CryptoOutputStream@{Poco::Crypto::CryptoOutputStream}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Crypto\+::\+Crypto\+Output\+Stream\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream}{Crypto\+Output\+Stream}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Crypto/\mbox{\hyperlink{CryptoStream_8h}{Crypto\+Stream.\+h}}\end{DoxyCompactItemize}

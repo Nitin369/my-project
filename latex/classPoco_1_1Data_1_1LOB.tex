@@ -1,0 +1,415 @@
+\hypertarget{classPoco_1_1Data_1_1LOB}{}\doxysection{Poco\+::Data\+::L\+OB$<$ T $>$ Class Template Reference}
+\label{classPoco_1_1Data_1_1LOB}\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Dynamic\+L\+O\+B.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ T $>$\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a4b57495309b07b4b6e7cc05d4a681bea}{Iterator}}
+\item 
+typedef T \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a7f83204e144ef1492808f45ae86039ab}{Value\+Type}}
+\item 
+typedef std\+::vector$<$ T $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a8e5afdf0875660adc7f306cc515ac821}{Container}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a8e5afdf0875660adc7f306cc515ac821}{Container}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a4ed51cad82abc11f28a7748f07f9a12d}{Content\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_adc0b523f66322f84a1344d550e0f52ff}{L\+OB}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a8d2e95e8896ebf6cf93588edfed908e5}{L\+OB}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ T $>$ \&\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a93c240c40737eef1dfa55d2e582ae87a}{content}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_afdc0531f5ca4acab904c86e0262c6d6f}{L\+OB}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} p\+Content, std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a95f424cbf47ede1b589e8d1cbd7bd662}{size}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a0a7dca207cba488e7beebc3ead3105b2}{L\+OB}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::basic\+\_\+string$<$ T $>$ \&\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a93c240c40737eef1dfa55d2e582ae87a}{content}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a64eb3a7b0920fd6457c1a6639e4679ee}{L\+OB}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} \&other)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a6f6cdb9a3989be383ee2dc366ac89db4}{$\sim$\+L\+OB}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_ac5938bb395b9d032629c76f4a7b6eb80}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a68a26d4e9f38342de043948ec559bffa}{operator==}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Compares for equality \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} by value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_ab17d618433c88007f411579363a56e5a}{operator!=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Compares for inequality \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} by value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_af61e74c7b542bb3fbbd476806ec3a9a5}{swap}} (\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} \&other)
+\begin{DoxyCompactList}\small\item\em Swaps the \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} with another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ T $>$ \& \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a93c240c40737eef1dfa55d2e582ae87a}{content}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the content. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_ac154ee4b7cbbd4b97f69d24cd388086a}{raw\+Content}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a5e982c4ce831680f1b8d19c0c6e4362f}{assign\+Val}} (std\+::size\+\_\+t count, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&val)
+\begin{DoxyCompactList}\small\item\em Assigns raw content to internal storage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_acd91d95266b0cfe3f42f066d8d64eb27}{assign\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$ptr, std\+::size\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Assigns raw content to internal storage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a167bc0f0d11f35ccc2988c74be3d13f0}{append\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$p\+Char, std\+::size\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Assigns raw content to internal storage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_ab227a6fbad65b00628f0ec5ac327c53f}{clear}} (bool do\+Compact=false)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a159fd737d70b4f10245ae35f9ce34733}{compact}} ()
+\begin{DoxyCompactList}\small\item\em Trims the internal storage excess capacity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a4b57495309b07b4b6e7cc05d4a681bea}{Iterator}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a42d81feb33876df0e6501c2054fda214}{begin}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a4b57495309b07b4b6e7cc05d4a681bea}{Iterator}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a554f9deaf47f5b0e1e5190e780248987}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a95f424cbf47ede1b589e8d1cbd7bd662}{size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the size of the \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} in bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Poco\+::\+Data\+::\+L\+O\+B$<$ T $>$}
+
+Representation of a Large O\+Bject. \begin{DoxyVerb}A LOB can hold arbitrary data.
+The maximum size depends on the underlying database.
+
+The LOBInputStream and LOBOutputStream classes provide
+a convenient way to access the data in a LOB. 
+\end{DoxyVerb}
+ 
+
+Definition at line 31 of file Dynamic\+L\+O\+B.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a8e5afdf0875660adc7f306cc515ac821}\label{classPoco_1_1Data_1_1LOB_a8e5afdf0875660adc7f306cc515ac821}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!Container@{Container}}
+\index{Container@{Container}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Container}{Container}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef std\+::vector$<$T$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a8e5afdf0875660adc7f306cc515ac821}{Container}}}
+
+
+
+Definition at line 48 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a4ed51cad82abc11f28a7748f07f9a12d}\label{classPoco_1_1Data_1_1LOB_a4ed51cad82abc11f28a7748f07f9a12d}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!ContentPtr@{ContentPtr}}
+\index{ContentPtr@{ContentPtr}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ContentPtr}{ContentPtr}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a8e5afdf0875660adc7f306cc515ac821}{Container}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a4ed51cad82abc11f28a7748f07f9a12d}{Content\+Ptr}}}
+
+
+
+Definition at line 49 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a4b57495309b07b4b6e7cc05d4a681bea}\label{classPoco_1_1Data_1_1LOB_a4b57495309b07b4b6e7cc05d4a681bea}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef std\+::vector$<$T$>$\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a4b57495309b07b4b6e7cc05d4a681bea}{Iterator}}}
+
+
+
+Definition at line 46 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a7f83204e144ef1492808f45ae86039ab}\label{classPoco_1_1Data_1_1LOB_a7f83204e144ef1492808f45ae86039ab}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!ValueType@{ValueType}}
+\index{ValueType@{ValueType}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ValueType}{ValueType}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef T \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a7f83204e144ef1492808f45ae86039ab}{Value\+Type}}}
+
+
+
+Definition at line 47 of file L\+O\+B.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_adc0b523f66322f84a1344d550e0f52ff}\label{classPoco_1_1Data_1_1LOB_adc0b523f66322f84a1344d550e0f52ff}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!LOB@{LOB}}
+\index{LOB@{LOB}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LOB()}{LOB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 51 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a8d2e95e8896ebf6cf93588edfed908e5}\label{classPoco_1_1Data_1_1LOB_a8d2e95e8896ebf6cf93588edfed908e5}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!LOB@{LOB}}
+\index{LOB@{LOB}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LOB()}{LOB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ T $>$ \&}]{content }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 56 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_afdc0531f5ca4acab904c86e0262c6d6f}\label{classPoco_1_1Data_1_1LOB_afdc0531f5ca4acab904c86e0262c6d6f}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!LOB@{LOB}}
+\index{LOB@{LOB}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LOB()}{LOB()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}}]{p\+Content,  }\item[{std\+::size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 62 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a0a7dca207cba488e7beebc3ead3105b2}\label{classPoco_1_1Data_1_1LOB_a0a7dca207cba488e7beebc3ead3105b2}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!LOB@{LOB}}
+\index{LOB@{LOB}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LOB()}{LOB()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::basic\+\_\+string$<$ T $>$ \&}]{content }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 68 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a64eb3a7b0920fd6457c1a6639e4679ee}\label{classPoco_1_1Data_1_1LOB_a64eb3a7b0920fd6457c1a6639e4679ee}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!LOB@{LOB}}
+\index{LOB@{LOB}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LOB()}{LOB()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 74 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a6f6cdb9a3989be383ee2dc366ac89db4}\label{classPoco_1_1Data_1_1LOB_a6f6cdb9a3989be383ee2dc366ac89db4}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!````~LOB@{$\sim$LOB}}
+\index{````~LOB@{$\sim$LOB}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$LOB()}{~LOB()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}}. 
+
+
+
+Definition at line 79 of file L\+O\+B.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a167bc0f0d11f35ccc2988c74be3d13f0}\label{classPoco_1_1Data_1_1LOB_a167bc0f0d11f35ccc2988c74be3d13f0}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!appendRaw@{appendRaw}}
+\index{appendRaw@{appendRaw}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{appendRaw()}{appendRaw()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::append\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$}]{p\+Char,  }\item[{std\+::size\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns raw content to internal storage. 
+
+
+
+Definition at line 143 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_acd91d95266b0cfe3f42f066d8d64eb27}\label{classPoco_1_1Data_1_1LOB_acd91d95266b0cfe3f42f066d8d64eb27}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!assignRaw@{assignRaw}}
+\index{assignRaw@{assignRaw}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{assignRaw()}{assignRaw()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::assign\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$}]{ptr,  }\item[{std\+::size\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns raw content to internal storage. 
+
+
+
+Definition at line 135 of file L\+O\+B.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a5e982c4ce831680f1b8d19c0c6e4362f}\label{classPoco_1_1Data_1_1LOB_a5e982c4ce831680f1b8d19c0c6e4362f}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!assignVal@{assignVal}}
+\index{assignVal@{assignVal}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{assignVal()}{assignVal()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::assign\+Val (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{count,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns raw content to internal storage. 
+
+
+
+Definition at line 128 of file L\+O\+B.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a42d81feb33876df0e6501c2054fda214}\label{classPoco_1_1Data_1_1LOB_a42d81feb33876df0e6501c2054fda214}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a4b57495309b07b4b6e7cc05d4a681bea}{Iterator}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 164 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_ab227a6fbad65b00628f0ec5ac327c53f}\label{classPoco_1_1Data_1_1LOB_ab227a6fbad65b00628f0ec5ac327c53f}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::clear (\begin{DoxyParamCaption}\item[{bool}]{do\+Compact = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clears the content of the blob. If do\+Compact is true, trims the excess capacity. 
+
+Definition at line 150 of file L\+O\+B.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a159fd737d70b4f10245ae35f9ce34733}\label{classPoco_1_1Data_1_1LOB_a159fd737d70b4f10245ae35f9ce34733}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!compact@{compact}}
+\index{compact@{compact}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{compact()}{compact()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::compact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Trims the internal storage excess capacity. 
+
+
+
+Definition at line 158 of file L\+O\+B.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a93c240c40737eef1dfa55d2e582ae87a}\label{classPoco_1_1Data_1_1LOB_a93c240c40737eef1dfa55d2e582ae87a}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!content@{content}}
+\index{content@{content}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{content()}{content()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$T$>$\& \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the content. 
+
+
+
+Definition at line 111 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a554f9deaf47f5b0e1e5190e780248987}\label{classPoco_1_1Data_1_1LOB_a554f9deaf47f5b0e1e5190e780248987}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!end@{end}}
+\index{end@{end}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB_a4b57495309b07b4b6e7cc05d4a681bea}{Iterator}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 169 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_ab17d618433c88007f411579363a56e5a}\label{classPoco_1_1Data_1_1LOB_ab17d618433c88007f411579363a56e5a}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compares for inequality \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} by value. 
+
+
+
+Definition at line 98 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_ac5938bb395b9d032629c76f4a7b6eb80}\label{classPoco_1_1Data_1_1LOB_ac5938bb395b9d032629c76f4a7b6eb80}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}}\& \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator. 
+
+
+
+Definition at line 84 of file L\+O\+B.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a68a26d4e9f38342de043948ec559bffa}\label{classPoco_1_1Data_1_1LOB_a68a26d4e9f38342de043948ec559bffa}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compares for equality \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} by value. 
+
+
+
+Definition at line 92 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_ac154ee4b7cbbd4b97f69d24cd388086a}\label{classPoco_1_1Data_1_1LOB_ac154ee4b7cbbd4b97f69d24cd388086a}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!rawContent@{rawContent}}
+\index{rawContent@{rawContent}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rawContent()}{rawContent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T$\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::raw\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the raw content.
+
+If the \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} is empty, returns N\+U\+LL. 
+
+Definition at line 117 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_a95f424cbf47ede1b589e8d1cbd7bd662}\label{classPoco_1_1Data_1_1LOB_a95f424cbf47ede1b589e8d1cbd7bd662}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!size@{size}}
+\index{size@{size}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the size of the \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} in bytes. 
+
+
+
+Definition at line 174 of file L\+O\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1LOB_af61e74c7b542bb3fbbd476806ec3a9a5}\label{classPoco_1_1Data_1_1LOB_af61e74c7b542bb3fbbd476806ec3a9a5}} 
+\index{Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}!swap@{swap}}
+\index{swap@{swap}!Poco::Data::LOB$<$ T $>$@{Poco::Data::LOB$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{Poco\+::\+Data\+::\+L\+OB}}$<$ T $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Swaps the \mbox{\hyperlink{classPoco_1_1Data_1_1LOB}{L\+OB}} with another one. 
+
+
+
+Definition at line 104 of file L\+O\+B.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{DynamicLOB_8h}{Dynamic\+L\+O\+B.\+h}}\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{LOB_8h}{L\+O\+B.\+h}}\end{DoxyCompactItemize}

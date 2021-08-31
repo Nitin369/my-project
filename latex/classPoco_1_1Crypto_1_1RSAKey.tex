@@ -1,0 +1,229 @@
+\hypertarget{classPoco_1_1Crypto_1_1RSAKey}{}\doxysection{Poco\+::Crypto\+::R\+S\+A\+Key Class Reference}
+\label{classPoco_1_1Crypto_1_1RSAKey}\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+
+
+{\ttfamily \#include $<$R\+S\+A\+Key.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Crypto\+::R\+S\+A\+Key\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Crypto\+::R\+S\+A\+Key\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991}{Key\+Length}} \{ \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991a643c691f6a14f9d5a3599ea780f53042}{K\+L\+\_\+512}} = 512, 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991a698461b72ce2d7ff8783fedb85d28f76}{K\+L\+\_\+1024}} = 1024, 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991a6d2eb5584f4c17701463ac04c00faa2e}{K\+L\+\_\+2048}} = 2048, 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991a7ecbebc1ebd1183afc64806445627a6e}{K\+L\+\_\+4096}} = 4096
+ \}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a948974b2a0cba1c54b1024a859cf7765}{Exponent}} \{ \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a948974b2a0cba1c54b1024a859cf7765a7811154e828398e686fc4998f96c491b}{E\+X\+P\+\_\+\+S\+M\+A\+LL}} = 0, 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a948974b2a0cba1c54b1024a859cf7765a7bfdc28931183e580498a6244b8ea6a7}{E\+X\+P\+\_\+\+L\+A\+R\+GE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a6dee715d9607f2aa29ad4eb65b670a20}{R\+S\+A\+Key}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1EVPPKey}{E\+V\+P\+P\+Key}} \&key)
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a5fe57dcc057f8db6ded81f98749c1d8d}{R\+S\+A\+Key}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1X509Certificate}{X509\+Certificate}} \&cert)
+\begin{DoxyCompactList}\small\item\em Constructs \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKeyImpl}{E\+C\+Key\+Impl}} by extracting the EC key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a2831c60a047a0e19c2ff42fb9276d532}{R\+S\+A\+Key}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1PKCS12Container}{P\+K\+C\+S12\+Container}} \&cert)
+\begin{DoxyCompactList}\small\item\em Extracts the R\+SA public key from the given certificate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a0e79247ba1ee36ba6bd8fbfae7315180}{R\+S\+A\+Key}} (\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991}{Key\+Length}} key\+Length, \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a948974b2a0cba1c54b1024a859cf7765}{Exponent}} exp)
+\begin{DoxyCompactList}\small\item\em Extracts the R\+SA private key from the given certificate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a109db480f6f1c1f7b4ba57326bd3b2c0}{R\+S\+A\+Key}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&public\+Key\+File, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&private\+Key\+File=\char`\"{}\char`\"{}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&private\+Key\+Passphrase=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a24f941095e1fc1b9a88a9f65ac976446}{R\+S\+A\+Key}} (std\+::istream $\ast$p\+Public\+Key\+Stream, std\+::istream $\ast$p\+Private\+Key\+Stream=0, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&private\+Key\+Passphrase=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_ad4a250a130552700986b6b0861728cee}{$\sim$\+R\+S\+A\+Key}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKeyImpl_a32e31d61e3af9e67b07521c541350fd8}{R\+S\+A\+Key\+Impl\+::\+Byte\+Vec}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a1baceb2c026c2cd4dac20c05ae7c44a6}{modulus}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey}{R\+S\+A\+Key}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKeyImpl_a32e31d61e3af9e67b07521c541350fd8}{R\+S\+A\+Key\+Impl\+::\+Byte\+Vec}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a2556f2545328cf771fb33b34ff0f1e7c}{encryption\+Exponent}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the R\+SA modulus. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKeyImpl_a32e31d61e3af9e67b07521c541350fd8}{R\+S\+A\+Key\+Impl\+::\+Byte\+Vec}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_ae5efccdb9906feca5e147b855833ebe4}{decryption\+Exponent}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the R\+SA encryption exponent. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKeyImpl_ae494871c1d86c6fd7e184020d9647147}{R\+S\+A\+Key\+Impl\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a79f3ce5e1b6bc0319e7ee67369065368}{impl}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the R\+SA decryption exponent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class stores an R\+SA key pair, consisting of private and public key. Storage of the private key is optional.
+
+If a private key is available, the \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey}{R\+S\+A\+Key}} can be used for decrypting data (encrypted with the public key) or computing secure digital signatures. 
+
+Definition at line 34 of file R\+S\+A\+Key.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a948974b2a0cba1c54b1024a859cf7765}\label{classPoco_1_1Crypto_1_1RSAKey_a948974b2a0cba1c54b1024a859cf7765}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!Exponent@{Exponent}}
+\index{Exponent@{Exponent}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{Exponent}{Exponent}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a948974b2a0cba1c54b1024a859cf7765}{Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::\+Exponent}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXP\_SMALL@{EXP\_SMALL}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!EXP\_SMALL@{EXP\_SMALL}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a948974b2a0cba1c54b1024a859cf7765a7811154e828398e686fc4998f96c491b}\label{classPoco_1_1Crypto_1_1RSAKey_a948974b2a0cba1c54b1024a859cf7765a7811154e828398e686fc4998f96c491b}} 
+E\+X\+P\+\_\+\+S\+M\+A\+LL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXP\_LARGE@{EXP\_LARGE}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!EXP\_LARGE@{EXP\_LARGE}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a948974b2a0cba1c54b1024a859cf7765a7bfdc28931183e580498a6244b8ea6a7}\label{classPoco_1_1Crypto_1_1RSAKey_a948974b2a0cba1c54b1024a859cf7765a7bfdc28931183e580498a6244b8ea6a7}} 
+E\+X\+P\+\_\+\+L\+A\+R\+GE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 52 of file R\+S\+A\+Key.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991}\label{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!KeyLength@{KeyLength}}
+\index{KeyLength@{KeyLength}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{KeyLength}{KeyLength}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991}{Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::\+Key\+Length}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KL\_512@{KL\_512}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!KL\_512@{KL\_512}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991a643c691f6a14f9d5a3599ea780f53042}\label{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991a643c691f6a14f9d5a3599ea780f53042}} 
+K\+L\+\_\+512&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KL\_1024@{KL\_1024}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!KL\_1024@{KL\_1024}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991a698461b72ce2d7ff8783fedb85d28f76}\label{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991a698461b72ce2d7ff8783fedb85d28f76}} 
+K\+L\+\_\+1024&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KL\_2048@{KL\_2048}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!KL\_2048@{KL\_2048}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991a6d2eb5584f4c17701463ac04c00faa2e}\label{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991a6d2eb5584f4c17701463ac04c00faa2e}} 
+K\+L\+\_\+2048&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KL\_4096@{KL\_4096}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!KL\_4096@{KL\_4096}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991a7ecbebc1ebd1183afc64806445627a6e}\label{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991a7ecbebc1ebd1183afc64806445627a6e}} 
+K\+L\+\_\+4096&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 44 of file R\+S\+A\+Key.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a6dee715d9607f2aa29ad4eb65b670a20}\label{classPoco_1_1Crypto_1_1RSAKey_a6dee715d9607f2aa29ad4eb65b670a20}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!RSAKey@{RSAKey}}
+\index{RSAKey@{RSAKey}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{RSAKey()}{RSAKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::\+R\+S\+A\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1EVPPKey}{E\+V\+P\+P\+Key}} \&}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a5fe57dcc057f8db6ded81f98749c1d8d}\label{classPoco_1_1Crypto_1_1RSAKey_a5fe57dcc057f8db6ded81f98749c1d8d}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!RSAKey@{RSAKey}}
+\index{RSAKey@{RSAKey}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{RSAKey()}{RSAKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::\+R\+S\+A\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1X509Certificate}{X509\+Certificate}} \&}]{cert }\end{DoxyParamCaption})}
+
+
+
+Constructs \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKeyImpl}{E\+C\+Key\+Impl}} by extracting the EC key. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a2831c60a047a0e19c2ff42fb9276d532}\label{classPoco_1_1Crypto_1_1RSAKey_a2831c60a047a0e19c2ff42fb9276d532}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!RSAKey@{RSAKey}}
+\index{RSAKey@{RSAKey}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{RSAKey()}{RSAKey()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::\+R\+S\+A\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1PKCS12Container}{P\+K\+C\+S12\+Container}} \&}]{cert }\end{DoxyParamCaption})}
+
+
+
+Extracts the R\+SA public key from the given certificate. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a0e79247ba1ee36ba6bd8fbfae7315180}\label{classPoco_1_1Crypto_1_1RSAKey_a0e79247ba1ee36ba6bd8fbfae7315180}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!RSAKey@{RSAKey}}
+\index{RSAKey@{RSAKey}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{RSAKey()}{RSAKey()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::\+R\+S\+A\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a812630d662610cae54192fd3f1c48991}{Key\+Length}}}]{key\+Length,  }\item[{\mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey_a948974b2a0cba1c54b1024a859cf7765}{Exponent}}}]{exp }\end{DoxyParamCaption})}
+
+
+
+Extracts the R\+SA private key from the given certificate. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a109db480f6f1c1f7b4ba57326bd3b2c0}\label{classPoco_1_1Crypto_1_1RSAKey_a109db480f6f1c1f7b4ba57326bd3b2c0}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!RSAKey@{RSAKey}}
+\index{RSAKey@{RSAKey}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{RSAKey()}{RSAKey()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::\+R\+S\+A\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{public\+Key\+File,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{private\+Key\+File = {\ttfamily \char`\"{}\char`\"{}},  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{private\+Key\+Passphrase = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey}{R\+S\+A\+Key}}. Creates a new public/private keypair using the given parameters. Can be used to sign data and verify signatures. \mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a24f941095e1fc1b9a88a9f65ac976446}\label{classPoco_1_1Crypto_1_1RSAKey_a24f941095e1fc1b9a88a9f65ac976446}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!RSAKey@{RSAKey}}
+\index{RSAKey@{RSAKey}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{RSAKey()}{RSAKey()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::\+R\+S\+A\+Key (\begin{DoxyParamCaption}\item[{std\+::istream $\ast$}]{p\+Public\+Key\+Stream,  }\item[{std\+::istream $\ast$}]{p\+Private\+Key\+Stream = {\ttfamily 0},  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{private\+Key\+Passphrase = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey}{R\+S\+A\+Key}}, by reading public and private key from the given files and using the given passphrase for the private key.
+
+Cannot be used for signing or decryption unless a private key is available.
+
+If a private key is specified, you don\textquotesingle{}t need to specify a public key file. Open\+S\+SL will auto-\/create the public key from the private key. \mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_ad4a250a130552700986b6b0861728cee}\label{classPoco_1_1Crypto_1_1RSAKey_ad4a250a130552700986b6b0861728cee}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!````~RSAKey@{$\sim$RSAKey}}
+\index{````~RSAKey@{$\sim$RSAKey}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{$\sim$RSAKey()}{~RSAKey()}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::$\sim$\+R\+S\+A\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey}{R\+S\+A\+Key}}, by reading public and private key from the given streams and using the given passphrase for the private key.
+
+Cannot be used for signing or decryption unless a private key is available.
+
+If a private key is specified, you don\textquotesingle{}t need to specify a public key file. Open\+S\+SL will auto-\/create the public key from the private key. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_ae5efccdb9906feca5e147b855833ebe4}\label{classPoco_1_1Crypto_1_1RSAKey_ae5efccdb9906feca5e147b855833ebe4}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!decryptionExponent@{decryptionExponent}}
+\index{decryptionExponent@{decryptionExponent}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{decryptionExponent()}{decryptionExponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKeyImpl_a32e31d61e3af9e67b07521c541350fd8}{R\+S\+A\+Key\+Impl\+::\+Byte\+Vec}} Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::decryption\+Exponent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the R\+SA encryption exponent. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a2556f2545328cf771fb33b34ff0f1e7c}\label{classPoco_1_1Crypto_1_1RSAKey_a2556f2545328cf771fb33b34ff0f1e7c}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!encryptionExponent@{encryptionExponent}}
+\index{encryptionExponent@{encryptionExponent}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{encryptionExponent()}{encryptionExponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKeyImpl_a32e31d61e3af9e67b07521c541350fd8}{R\+S\+A\+Key\+Impl\+::\+Byte\+Vec}} Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::encryption\+Exponent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the R\+SA modulus. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a79f3ce5e1b6bc0319e7ee67369065368}\label{classPoco_1_1Crypto_1_1RSAKey_a79f3ce5e1b6bc0319e7ee67369065368}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!impl@{impl}}
+\index{impl@{impl}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{impl()}{impl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKeyImpl_ae494871c1d86c6fd7e184020d9647147}{R\+S\+A\+Key\+Impl\+::\+Ptr}} Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the R\+SA decryption exponent. 
+
+
+
+Definition at line 116 of file R\+S\+A\+Key.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1RSAKey_a1baceb2c026c2cd4dac20c05ae7c44a6}\label{classPoco_1_1Crypto_1_1RSAKey_a1baceb2c026c2cd4dac20c05ae7c44a6}} 
+\index{Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}!modulus@{modulus}}
+\index{modulus@{modulus}!Poco::Crypto::RSAKey@{Poco::Crypto::RSAKey}}
+\doxysubsubsection{\texorpdfstring{modulus()}{modulus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKeyImpl_a32e31d61e3af9e67b07521c541350fd8}{R\+S\+A\+Key\+Impl\+::\+Byte\+Vec}} Poco\+::\+Crypto\+::\+R\+S\+A\+Key\+::modulus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSAKey}{R\+S\+A\+Key}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Crypto/\mbox{\hyperlink{RSAKey_8h}{R\+S\+A\+Key.\+h}}\end{DoxyCompactItemize}

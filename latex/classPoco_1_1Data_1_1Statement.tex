@@ -1,0 +1,1217 @@
+\hypertarget{classPoco_1_1Data_1_1Statement}{}\doxysection{Poco\+::Data\+::Statement Class Reference}
+\label{classPoco_1_1Data_1_1Statement}\index{Poco::Data::Statement@{Poco::Data::Statement}}
+
+
+{\ttfamily \#include $<$Statement.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::Statement\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9}{Storage}} \{ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9af8bc0a8d46affe9126c8cbfcf6eeb0e0}{S\+T\+O\+R\+A\+G\+E\+\_\+\+D\+E\+Q\+UE}} = Statement\+Impl\+::S\+T\+O\+R\+A\+G\+E\+\_\+\+D\+E\+Q\+U\+E\+\_\+\+I\+M\+PL, 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9a3a11df1b8be798c8a079eb5b475e8832}{S\+T\+O\+R\+A\+G\+E\+\_\+\+V\+E\+C\+T\+OR}} = Statement\+Impl\+::S\+T\+O\+R\+A\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+I\+M\+PL, 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9a8258b4689d8a8fc6d77d5b38f90847fd}{S\+T\+O\+R\+A\+G\+E\+\_\+\+L\+I\+ST}} = Statement\+Impl\+::S\+T\+O\+R\+A\+G\+E\+\_\+\+L\+I\+S\+T\+\_\+\+I\+M\+PL, 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9a78dcabc850c1eb541a3e88dab7220537}{S\+T\+O\+R\+A\+G\+E\+\_\+\+U\+N\+K\+N\+O\+WN}} = Statement\+Impl\+::S\+T\+O\+R\+A\+G\+E\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+I\+M\+PL
+ \}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a5841de2f5e3aee1f549d6f80ba8278e6}{Manipulator}}) (\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \&)
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1ActiveResult}{Active\+Result}}$<$ std\+::size\+\_\+t $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a1436b6bdf361c14d6d4875e8321d48d8}{Result}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a1436b6bdf361c14d6d4875e8321d48d8}{Result}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a018465d5511b167ec6f85baeda148ccf}{Result\+Ptr}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}}$<$ std\+::size\+\_\+t, bool, \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl}{Statement\+Impl}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_af4be3e83c1d975a9b67c8a9c6f013b00}{Async\+Exec\+Method}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_af4be3e83c1d975a9b67c8a9c6f013b00}{Async\+Exec\+Method}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_af7d6a4186aba89597c70583e794f3329}{Async\+Exec\+Method\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a55410d95c7e959ed6d40ed07fd56fc73}{Statement}} (\mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_a86ca6f2b9e99390162332813baaecc7e}{Statement\+Impl\+::\+Ptr}} p\+Impl)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ab9eb61b201872a80527bbcd5dca3669c}{Statement}} (\mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \&\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a7302444e9641e7820bf2385df8e50444}{session}})
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a64722654fd726abf6e54ff4525f7471a}{$\sim$\+Statement}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ac01c6ecf36a5e311c5ba6962fbbe9015}{Statement}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \&stmt)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a5e2de6f2f876b201540de10ee02348e2}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \&stmt)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a58d6c6e84a39bc1535646371111cbcfa}{swap}} (\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a72e55e8bef68e24c703b25ec5074817d}{operator$<$$<$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&t)
+\begin{DoxyCompactList}\small\item\em Swaps the statement with another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ae0fd349fdafc00b3bc4964f4c753ef1e}{operator,}} (\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a5841de2f5e3aee1f549d6f80ba8278e6}{Manipulator}} manip)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_acebe95a2917cc8de81a9ba2fe8c4d1e7}{operator,}} (\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ae623db90af7dc5d074aa37c630b6b8a3}{Abstract\+Binding\+::\+Ptr}} p\+Bind)
+\begin{DoxyCompactList}\small\item\em Handles manipulators, such as now, async, etc. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ac6411c75812ad649b7901262df5c9a7c}{add\+Bind}} (\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ae623db90af7dc5d074aa37c630b6b8a3}{Abstract\+Binding\+::\+Ptr}} p\+Bind)
+\begin{DoxyCompactList}\small\item\em Registers the \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Binding}} with the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} by calling \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ac6411c75812ad649b7901262df5c9a7c}{add\+Bind()}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a92331211f26841254e4d9ff5eb1866bf}{remove\+Bind}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Registers a single binding with the statement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a9df3f71f6ae7e5b2acc5914df992bd4b}{operator,}} (\mbox{\hyperlink{namespacePoco_1_1Data_a78da186617485f27e9d21bb2b2b132dc}{Abstract\+Binding\+Vec}} \&bind\+Vec)
+\begin{DoxyCompactList}\small\item\em Removes the all the bindings with specified name from the statement. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename C $>$ }\\\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a502f67fadd8607647b696bdd3b79df0f}{add\+Binding}} (C \&binding\+Cont, bool \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a612a3de5f22c8e92f43968f372f5a634}{reset}})
+\begin{DoxyCompactList}\small\item\em Registers the \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Binding}} vector with the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a6c4a875f801b207812a3187dcce20db2}{operator,}} (\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_a8bf4fe7842a0b54f205347f458beff12}{Abstract\+Extraction\+::\+Ptr}} extract)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_af7eafb8527a8224f3672b27200b4e0a0}{operator,}} (\mbox{\hyperlink{namespacePoco_1_1Data_a24e5465f942de6d835f98ed5d6fa7a82}{Abstract\+Extraction\+Vec}} \&ext\+Vec)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a92d4c68679b1352c6a70dec6edd662d5}{operator,}} (\mbox{\hyperlink{namespacePoco_1_1Data_a92dd25cbdb4d119f68e0b64c45ab990a}{Abstract\+Extraction\+Vec\+Vec}} \&ext\+Vec\+Vec)
+\item 
+{\footnotesize template$<$typename C $>$ }\\\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a71aa68b6abf52297359daa6205f1a625}{add\+Extraction}} (C \&val, bool \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a612a3de5f22c8e92f43968f372f5a634}{reset}})
+\begin{DoxyCompactList}\small\item\em Registers the vector of extraction vectors with the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename C $>$ }\\\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ab6ed2ab11b9d803c3085e54dcedd9aea}{add\+Extractions}} (C \&val)
+\begin{DoxyCompactList}\small\item\em Registers container of extraction containers with the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a3c88f4d9c6cbe5f665927060be072805}{add\+Extract}} (\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_a8bf4fe7842a0b54f205347f458beff12}{Abstract\+Extraction\+::\+Ptr}} p\+Extract)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_aa096b89ea4436226bd6045125b034f9d}{operator,}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Bulk}{Bulk}} \&bulk)
+\begin{DoxyCompactList}\small\item\em Registers a single extraction with the statement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ae5e75c5b9346bf91ec6f02388d5c50c0}{operator,}} (\mbox{\hyperlink{namespacePoco_1_1Data_a444e5a7c04fc1d8d31d06a0c42178f59}{Bulk\+Fn\+Type}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ac12ac81509f3a8b20837108268ac65c1}{operator,}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Limit}{Limit}} \&extr\+Limit)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_af5f5ae292c71a060c44aa649568ebf09}{operator,}} (\mbox{\hyperlink{classPoco_1_1Data_1_1RowFormatter_a8b78d46a90da39257686540581fb4537}{Row\+Formatter\+::\+Ptr}} p\+Row\+Fformatter)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_aabb8732241980f293d5e31efd879ab5d}{operator,}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Range}{Range}} \&extr\+Range)
+\begin{DoxyCompactList}\small\item\em Sets the row formatter for the statement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a050c1cac519de999dc04cc554399e6ed}{operator,}} (char value)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_abd96feb0a0f90b2b60c00368731da68d}{operator,}} (Poco\+::\+U\+Int8 value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ad39eada0be05bd00cfd487ada779a71e}{operator,}} (Poco\+::\+Int8 value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a8bd93bc08fc8ef1b436a874547fe25aa}{operator,}} (Poco\+::\+U\+Int16 value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a83ded1d720f0c63270aa2fba560a95b5}{operator,}} (Poco\+::\+Int16 value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ab9746b91e629fac97aa25fb039387a2c}{operator,}} (Poco\+::\+U\+Int32 value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a10494a6c6cdb9ff24d50795450676dcd}{operator,}} (Poco\+::\+Int32 value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_aa89d96ee7f65a0e41ecf2842e06e13bb}{operator,}} (long value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a0cc7cd06c9ee03190e6b82e9e486f342}{operator,}} (unsigned long value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a6148fe8c763f478b702f60f2f2195646}{operator,}} (Poco\+::\+U\+Int64 value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ae9d6d93393b4001257225d895548689e}{operator,}} (Poco\+::\+Int64 value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a94115d290eef10e983d079c07ff6260c}{operator,}} (double value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ac5f90ca12382a206ed58afcbfa54eea7}{operator,}} (float value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a8916bb53b9521508aee0f9b9d87257b4}{operator,}} (bool value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a24ab24558fbe9197638b5c1d6078fe93}{operator,}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a2984358bba60ecb6cf86e4a533f9022b}{operator,}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$value)
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a02506d49bd13c595c8320ce69c98b74f}{to\+String}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Adds the value to the list of values to be supplied to the S\+QL string formatting function. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a2be38d265a5c47b8210f15e4082eec4e}{execute}} (bool \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a612a3de5f22c8e92f43968f372f5a634}{reset}}=true)
+\begin{DoxyCompactList}\small\item\em Creates a string from the accumulated S\+QL statement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a1436b6bdf361c14d6d4875e8321d48d8}{Result}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a5bcf1fe15413e942c275c8d97e761c84}{execute\+Async}} (bool \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a612a3de5f22c8e92f43968f372f5a634}{reset}}=true)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a3d704897ba4e6733d59131ed153da85e}{set\+Async}} (bool async=true)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a2a86d174e8e300bf68e6e69379bf10a3}{is\+Async}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a8d55f23c8ccf658977ef2dcd90d732a6}{wait}} (long milliseconds=\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a4a9e9d0e5bbef4eb510ceb57c90a6c9d}{W\+A\+I\+T\+\_\+\+F\+O\+R\+E\+V\+ER}})
+\begin{DoxyCompactList}\small\item\em Returns true if statement was marked for asynchronous execution. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a95a2f5313b3c3963f22e2d55e3fb8e50}{initialized}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a1d739178128d17598ad3a0eb9395e328}{paused}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the statement was initialized (i.\+e. not executed yet). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a0df7e01caa14516f85e567f6d34a06a7}{done}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a612a3de5f22c8e92f43968f372f5a634}{reset}} (\mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \&\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a7302444e9641e7820bf2385df8e50444}{session}})
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a455993fc8b2220dbc2b2238b1b003de1}{can\+Modify\+Storage}} ()
+\begin{DoxyCompactList}\small\item\em Resets the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} so that it can be filled with a new S\+QL command. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9}{Storage}} \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ae2f9fab339d7e1476e0ddde9560f1082}{storage}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if statement is in a state that allows the internal storage to be modified. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_afab557984fd9368aa552a968020d6f49}{set\+Storage}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ae2f9fab339d7e1476e0ddde9560f1082}{storage}})
+\begin{DoxyCompactList}\small\item\em Returns the internal storage type for the statement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a6f5856c563e1de337f2685ab3167f17e}{get\+Storage}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the internal storage type for the statement. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a895cbc79ef75139d77b64c0016717585}{columns\+Extracted}} (int data\+Set=\mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_ab3af1013cd928bd168a818ad3c01f2a4}{Statement\+Impl\+::\+U\+S\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+A\+T\+A\+\_\+\+S\+ET}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the internal storage type for the statement. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ada0a5dbf9ef636bdbe78bfafa8ae0956}{rows\+Extracted}} (int data\+Set=\mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_ab3af1013cd928bd168a818ad3c01f2a4}{Statement\+Impl\+::\+U\+S\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+A\+T\+A\+\_\+\+S\+ET}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_aa78745de29b616f39cb31a0ac4f5a999}{sub\+Total\+Row\+Count}} (int data\+Set=\mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_ab3af1013cd928bd168a818ad3c01f2a4}{Statement\+Impl\+::\+U\+S\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+A\+T\+A\+\_\+\+S\+ET}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ac84f4ab83664f77449d9c6e1524b5a4f}{extraction\+Count}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ab3eba052313471b1a679f176fd548a31}{data\+Set\+Count}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a101aeafdd0ab60e5d47867ce0235008d}{next\+Data\+Set}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of data sets associated with the statement. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a5385375568aadb27eea75c2efadc1f6d}{previous\+Data\+Set}} ()
+\begin{DoxyCompactList}\small\item\em Returns the index of the next data set. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a6e20b9b3b05cab94b6efdbff5c40a26c}{has\+More\+Data\+Sets}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the index of the previous data set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a3526cf9947da32a0adaa77c15cd98f2d}{set\+Row\+Formatter}} (\mbox{\hyperlink{classPoco_1_1Data_1_1RowFormatter_a8b78d46a90da39257686540581fb4537}{Row\+Formatter\+::\+Ptr}} p\+Row\+Formatter)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} int \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a4a9e9d0e5bbef4eb510ceb57c90a6c9d}{W\+A\+I\+T\+\_\+\+F\+O\+R\+E\+V\+ER}} = -\/1
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_a86ca6f2b9e99390162332813baaecc7e}{Statement\+Impl\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a1f655da9504811b9226d0f1d0c6911b0}{Impl\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1Data_a24e5465f942de6d835f98ed5d6fa7a82}{Abstract\+Extraction\+Vec}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a77006c01fca1ef069bfa72217608f152}{extractions}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1MetaColumn}{Meta\+Column}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a3dc8dfc0e8ed5049eaceffcfe772a4e8}{meta\+Column}} (std\+::size\+\_\+t pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the extractions vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1MetaColumn}{Meta\+Column}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a84d2be2dbbce0426df3790acd154e30f}{meta\+Column}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the type for the column at specified position. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a6c31a2269297d2841eba1746c42d9d3d}{is\+Null}} (std\+::size\+\_\+t col, std\+::size\+\_\+t row) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the type for the column with specified name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_adc6c77df8a09bf9db807758cd7802c54}{is\+Bulk\+Extraction}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if the current row value at column pos is null. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a1f655da9504811b9226d0f1d0c6911b0}{Impl\+Ptr}} \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ab8b11c6259100b0e5a22f4883f28ed1a}{impl}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if this statement extracts data in bulk. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowFormatter_a8b78d46a90da39257686540581fb4537}{Row\+Formatter\+::\+Ptr}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a1d0ee19d32dc71486b0b7653e569fdb1}{get\+Row\+Formatter}} ()
+\begin{DoxyCompactList}\small\item\em Returns pointer to statement implementation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a7302444e9641e7820bf2385df8e50444}{session}} ()
+\begin{DoxyCompactList}\small\item\em Returns the row formatter for this statement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} is used to execute S\+QL statements. It does not contain code of its own. Its main purpose is to forward calls to the concrete \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl}{Statement\+Impl}} stored inside. \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} execution can be synchronous or asynchronous. Synchronous ececution is achieved through \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a2be38d265a5c47b8210f15e4082eec4e}{execute()}} call, while asynchronous is achieved through \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a5bcf1fe15413e942c275c8d97e761c84}{execute\+Async()}} method call. An asynchronously executing statement should not be copied during the execution.
+
+Note\+:
+
+Once set as asynchronous through \textquotesingle{}async\textquotesingle{} manipulator, statement remains asynchronous for all subsequent execution calls, both \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a2be38d265a5c47b8210f15e4082eec4e}{execute()}} and \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a5bcf1fe15413e942c275c8d97e761c84}{execute\+Async()}}. However, calling execut\+Async() on a synchronous statement shall execute asynchronously but without altering the underlying statement\textquotesingle{}s synchronous nature.
+
+Once asynchronous, a statement can be reverted back to synchronous state in two ways\+:
+
+1) By calling set\+Async(false) 2) By means of \textquotesingle{}sync\textquotesingle{} or \textquotesingle{}reset\textquotesingle{} manipulators
+
+See individual functions documentation for more details.
+
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} owns the \mbox{\hyperlink{classPoco_1_1Data_1_1RowFormatter}{Row\+Formatter}}, which can be provided externaly through set\+Formatter() member function. If no formatter is externally supplied to the statement, the \mbox{\hyperlink{classPoco_1_1Data_1_1SimpleRowFormatter}{Simple\+Row\+Formatter}} is lazy created and used. 
+
+Definition at line 48 of file Statement.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_af4be3e83c1d975a9b67c8a9c6f013b00}\label{classPoco_1_1Data_1_1Statement_af4be3e83c1d975a9b67c8a9c6f013b00}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!AsyncExecMethod@{AsyncExecMethod}}
+\index{AsyncExecMethod@{AsyncExecMethod}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{AsyncExecMethod}{AsyncExecMethod}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}}$<$std\+::size\+\_\+t, bool, \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl}{Statement\+Impl}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_af4be3e83c1d975a9b67c8a9c6f013b00}{Poco\+::\+Data\+::\+Statement\+::\+Async\+Exec\+Method}}}
+
+
+
+Definition at line 81 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_af7d6a4186aba89597c70583e794f3329}\label{classPoco_1_1Data_1_1Statement_af7d6a4186aba89597c70583e794f3329}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!AsyncExecMethodPtr@{AsyncExecMethodPtr}}
+\index{AsyncExecMethodPtr@{AsyncExecMethodPtr}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{AsyncExecMethodPtr}{AsyncExecMethodPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_af4be3e83c1d975a9b67c8a9c6f013b00}{Async\+Exec\+Method}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_af7d6a4186aba89597c70583e794f3329}{Poco\+::\+Data\+::\+Statement\+::\+Async\+Exec\+Method\+Ptr}}}
+
+
+
+Definition at line 82 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a1f655da9504811b9226d0f1d0c6911b0}\label{classPoco_1_1Data_1_1Statement_a1f655da9504811b9226d0f1d0c6911b0}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!ImplPtr@{ImplPtr}}
+\index{ImplPtr@{ImplPtr}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{ImplPtr}{ImplPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_a86ca6f2b9e99390162332813baaecc7e}{Statement\+Impl\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a1f655da9504811b9226d0f1d0c6911b0}{Poco\+::\+Data\+::\+Statement\+::\+Impl\+Ptr}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the row formatter for this statement. \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} takes the ownership of the formatter. 
+
+Definition at line 373 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a5841de2f5e3aee1f549d6f80ba8278e6}\label{classPoco_1_1Data_1_1Statement_a5841de2f5e3aee1f549d6f80ba8278e6}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!Manipulator@{Manipulator}}
+\index{Manipulator@{Manipulator}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{Manipulator}{Manipulator}}
+{\footnotesize\ttfamily typedef void($\ast$ Poco\+::\+Data\+::\+Statement\+::\+Manipulator) (\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \&)}
+
+
+
+Definition at line 77 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a1436b6bdf361c14d6d4875e8321d48d8}\label{classPoco_1_1Data_1_1Statement_a1436b6bdf361c14d6d4875e8321d48d8}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!Result@{Result}}
+\index{Result@{Result}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{Result}{Result}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1ActiveResult}{Active\+Result}}$<$std\+::size\+\_\+t$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a1436b6bdf361c14d6d4875e8321d48d8}{Poco\+::\+Data\+::\+Statement\+::\+Result}}}
+
+
+
+Definition at line 79 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a018465d5511b167ec6f85baeda148ccf}\label{classPoco_1_1Data_1_1Statement_a018465d5511b167ec6f85baeda148ccf}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!ResultPtr@{ResultPtr}}
+\index{ResultPtr@{ResultPtr}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{ResultPtr}{ResultPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a1436b6bdf361c14d6d4875e8321d48d8}{Result}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a018465d5511b167ec6f85baeda148ccf}{Poco\+::\+Data\+::\+Statement\+::\+Result\+Ptr}}}
+
+
+
+Definition at line 80 of file Statement.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9}\label{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!Storage@{Storage}}
+\index{Storage@{Storage}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{Storage}{Storage}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9}{Poco\+::\+Data\+::\+Statement\+::\+Storage}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STORAGE\_DEQUE@{STORAGE\_DEQUE}!Poco::Data::Statement@{Poco::Data::Statement}}\index{Poco::Data::Statement@{Poco::Data::Statement}!STORAGE\_DEQUE@{STORAGE\_DEQUE}}}\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9af8bc0a8d46affe9126c8cbfcf6eeb0e0}\label{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9af8bc0a8d46affe9126c8cbfcf6eeb0e0}} 
+S\+T\+O\+R\+A\+G\+E\+\_\+\+D\+E\+Q\+UE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STORAGE\_VECTOR@{STORAGE\_VECTOR}!Poco::Data::Statement@{Poco::Data::Statement}}\index{Poco::Data::Statement@{Poco::Data::Statement}!STORAGE\_VECTOR@{STORAGE\_VECTOR}}}\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9a3a11df1b8be798c8a079eb5b475e8832}\label{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9a3a11df1b8be798c8a079eb5b475e8832}} 
+S\+T\+O\+R\+A\+G\+E\+\_\+\+V\+E\+C\+T\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STORAGE\_LIST@{STORAGE\_LIST}!Poco::Data::Statement@{Poco::Data::Statement}}\index{Poco::Data::Statement@{Poco::Data::Statement}!STORAGE\_LIST@{STORAGE\_LIST}}}\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9a8258b4689d8a8fc6d77d5b38f90847fd}\label{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9a8258b4689d8a8fc6d77d5b38f90847fd}} 
+S\+T\+O\+R\+A\+G\+E\+\_\+\+L\+I\+ST&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STORAGE\_UNKNOWN@{STORAGE\_UNKNOWN}!Poco::Data::Statement@{Poco::Data::Statement}}\index{Poco::Data::Statement@{Poco::Data::Statement}!STORAGE\_UNKNOWN@{STORAGE\_UNKNOWN}}}\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9a78dcabc850c1eb541a3e88dab7220537}\label{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9a78dcabc850c1eb541a3e88dab7220537}} 
+S\+T\+O\+R\+A\+G\+E\+\_\+\+U\+N\+K\+N\+O\+WN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 86 of file Statement.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a55410d95c7e959ed6d40ed07fd56fc73}\label{classPoco_1_1Data_1_1Statement_a55410d95c7e959ed6d40ed07fd56fc73}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!Statement@{Statement}}
+\index{Statement@{Statement}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{Statement()}{Statement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+Statement\+::\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_a86ca6f2b9e99390162332813baaecc7e}{Statement\+Impl\+::\+Ptr}}}]{p\+Impl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ab9eb61b201872a80527bbcd5dca3669c}\label{classPoco_1_1Data_1_1Statement_ab9eb61b201872a80527bbcd5dca3669c}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!Statement@{Statement}}
+\index{Statement@{Statement}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{Statement()}{Statement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+Statement\+::\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \&}]{session }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a64722654fd726abf6e54ff4525f7471a}\label{classPoco_1_1Data_1_1Statement_a64722654fd726abf6e54ff4525f7471a}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!````~Statement@{$\sim$Statement}}
+\index{````~Statement@{$\sim$Statement}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{$\sim$Statement()}{~Statement()}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+Statement\+::$\sim$\+Statement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} for the given \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}}.
+
+The following\+: \begin{DoxyVerb}Statement stmt(sess);
+stmt << "SELECT * FROM Table", ...
+\end{DoxyVerb}
+
+
+is equivalent to\+: \begin{DoxyVerb}Statement stmt(sess << "SELECT * FROM Table", ...);
+\end{DoxyVerb}
+
+
+but in some cases better readable. \mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ac01c6ecf36a5e311c5ba6962fbbe9015}\label{classPoco_1_1Data_1_1Statement_ac01c6ecf36a5e311c5ba6962fbbe9015}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!Statement@{Statement}}
+\index{Statement@{Statement}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{Statement()}{Statement()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+Statement\+::\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \&}]{stmt }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ac6411c75812ad649b7901262df5c9a7c}\label{classPoco_1_1Data_1_1Statement_ac6411c75812ad649b7901262df5c9a7c}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!addBind@{addBind}}
+\index{addBind@{addBind}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{addBind()}{addBind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::add\+Bind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ae623db90af7dc5d074aa37c630b6b8a3}{Abstract\+Binding\+::\+Ptr}}}]{p\+Bind }\end{DoxyParamCaption})}
+
+
+
+Registers the \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Binding}} with the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} by calling \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_ac6411c75812ad649b7901262df5c9a7c}{add\+Bind()}}. 
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a502f67fadd8607647b696bdd3b79df0f}\label{classPoco_1_1Data_1_1Statement_a502f67fadd8607647b696bdd3b79df0f}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!addBinding@{addBinding}}
+\index{addBinding@{addBinding}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{addBinding()}{addBinding()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::add\+Binding (\begin{DoxyParamCaption}\item[{C \&}]{binding\+Cont,  }\item[{bool}]{reset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Registers the \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Binding}} vector with the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. 
+
+Registers binding container with the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. 
+
+Definition at line 150 of file Statement.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a3c88f4d9c6cbe5f665927060be072805}\label{classPoco_1_1Data_1_1Statement_a3c88f4d9c6cbe5f665927060be072805}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!addExtract@{addExtract}}
+\index{addExtract@{addExtract}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{addExtract()}{addExtract()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::add\+Extract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_a8bf4fe7842a0b54f205347f458beff12}{Abstract\+Extraction\+::\+Ptr}}}]{p\+Extract }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a71aa68b6abf52297359daa6205f1a625}\label{classPoco_1_1Data_1_1Statement_a71aa68b6abf52297359daa6205f1a625}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!addExtraction@{addExtraction}}
+\index{addExtraction@{addExtraction}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{addExtraction()}{addExtraction()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::add\+Extraction (\begin{DoxyParamCaption}\item[{C \&}]{val,  }\item[{bool}]{reset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Registers the vector of extraction vectors with the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. 
+
+Registers extraction container with the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. 
+
+Definition at line 172 of file Statement.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ab6ed2ab11b9d803c3085e54dcedd9aea}\label{classPoco_1_1Data_1_1Statement_ab6ed2ab11b9d803c3085e54dcedd9aea}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!addExtractions@{addExtractions}}
+\index{addExtractions@{addExtractions}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{addExtractions()}{addExtractions()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::add\+Extractions (\begin{DoxyParamCaption}\item[{C \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Registers container of extraction containers with the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. 
+
+
+
+Definition at line 183 of file Statement.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a455993fc8b2220dbc2b2238b1b003de1}\label{classPoco_1_1Data_1_1Statement_a455993fc8b2220dbc2b2238b1b003de1}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!canModifyStorage@{canModifyStorage}}
+\index{canModifyStorage@{canModifyStorage}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{canModifyStorage()}{canModifyStorage()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+Statement\+::can\+Modify\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resets the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} so that it can be filled with a new S\+QL command. 
+
+
+
+Definition at line 737 of file Statement.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a895cbc79ef75139d77b64c0016717585}\label{classPoco_1_1Data_1_1Statement_a895cbc79ef75139d77b64c0016717585}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!columnsExtracted@{columnsExtracted}}
+\index{columnsExtracted@{columnsExtracted}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{columnsExtracted()}{columnsExtracted()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+Statement\+::columns\+Extracted (\begin{DoxyParamCaption}\item[{int}]{data\+Set = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_ab3af1013cd928bd168a818ad3c01f2a4}{Statement\+Impl\+::\+U\+S\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+A\+T\+A\+\_\+\+S\+ET}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the internal storage type for the statement. 
+
+
+
+Definition at line 695 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ab3eba052313471b1a679f176fd548a31}\label{classPoco_1_1Data_1_1Statement_ab3eba052313471b1a679f176fd548a31}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!dataSetCount@{dataSetCount}}
+\index{dataSetCount@{dataSetCount}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{dataSetCount()}{dataSetCount()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+Statement\+::data\+Set\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of extraction storage buffers associated with the current data set. 
+
+Definition at line 707 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a0df7e01caa14516f85e567f6d34a06a7}\label{classPoco_1_1Data_1_1Statement_a0df7e01caa14516f85e567f6d34a06a7}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!done@{done}}
+\index{done@{done}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{done()}{done()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+Statement\+::done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if the statement was paused (a range limit stopped it and there is more work to do). 
+
+Definition at line 755 of file Statement.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a2be38d265a5c47b8210f15e4082eec4e}\label{classPoco_1_1Data_1_1Statement_a2be38d265a5c47b8210f15e4082eec4e}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!execute@{execute}}
+\index{execute@{execute}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+Statement\+::execute (\begin{DoxyParamCaption}\item[{bool}]{reset = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Creates a string from the accumulated S\+QL statement. 
+
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a5bcf1fe15413e942c275c8d97e761c84}\label{classPoco_1_1Data_1_1Statement_a5bcf1fe15413e942c275c8d97e761c84}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!executeAsync@{executeAsync}}
+\index{executeAsync@{executeAsync}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{executeAsync()}{executeAsync()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a1436b6bdf361c14d6d4875e8321d48d8}{Result}}\& Poco\+::\+Data\+::\+Statement\+::execute\+Async (\begin{DoxyParamCaption}\item[{bool}]{reset = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Executes the statement synchronously or asynchronously. Stops when either a limit is hit or the whole statement was executed. Returns the number of rows extracted from the database (for statements returning data) or number of rows affected (for all other statements). If reset is true (default), associated storage is reset and reused. Otherwise, the results from this execution step are appended. Reset argument has no meaning for unlimited statements that return all rows. If \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a2a86d174e8e300bf68e6e69379bf10a3}{is\+Async()}} returns true, the statement is executed asynchronously and the return value from this function is zero. The result of execution (i.\+e. number of returned or affected rows) can be obtained by calling \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a8d55f23c8ccf658977ef2dcd90d732a6}{wait()}} on the statement at a later point in time. \mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ac84f4ab83664f77449d9c6e1524b5a4f}\label{classPoco_1_1Data_1_1Statement_ac84f4ab83664f77449d9c6e1524b5a4f}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!extractionCount@{extractionCount}}
+\index{extractionCount@{extractionCount}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{extractionCount()}{extractionCount()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+Statement\+::extraction\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of rows extracted so far for the data set. Default value indicates current data set (if any). 
+
+Definition at line 689 of file Statement.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a77006c01fca1ef069bfa72217608f152}\label{classPoco_1_1Data_1_1Statement_a77006c01fca1ef069bfa72217608f152}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!extractions@{extractions}}
+\index{extractions@{extractions}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{extractions()}{extractions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1Data_a24e5465f942de6d835f98ed5d6fa7a82}{Abstract\+Extraction\+Vec}} \& Poco\+::\+Data\+::\+Statement\+::extractions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 665 of file Statement.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a1d0ee19d32dc71486b0b7653e569fdb1}\label{classPoco_1_1Data_1_1Statement_a1d0ee19d32dc71486b0b7653e569fdb1}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!getRowFormatter@{getRowFormatter}}
+\index{getRowFormatter@{getRowFormatter}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{getRowFormatter()}{getRowFormatter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1RowFormatter_a8b78d46a90da39257686540581fb4537}{Row\+Formatter\+::\+Ptr}} \& Poco\+::\+Data\+::\+Statement\+::get\+Row\+Formatter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns pointer to statement implementation. 
+
+
+
+Definition at line 785 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a6f5856c563e1de337f2685ab3167f17e}\label{classPoco_1_1Data_1_1Statement_a6f5856c563e1de337f2685ab3167f17e}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!getStorage@{getStorage}}
+\index{getStorage@{getStorage}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{getStorage()}{getStorage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Data\+::\+Statement\+::get\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Sets the internal storage type for the statement. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a6e20b9b3b05cab94b6efdbff5c40a26c}\label{classPoco_1_1Data_1_1Statement_a6e20b9b3b05cab94b6efdbff5c40a26c}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!hasMoreDataSets@{hasMoreDataSets}}
+\index{hasMoreDataSets@{hasMoreDataSets}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{hasMoreDataSets()}{hasMoreDataSets()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+Statement\+::has\+More\+Data\+Sets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the index of the previous data set. 
+
+
+
+Definition at line 725 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ab8b11c6259100b0e5a22f4883f28ed1a}\label{classPoco_1_1Data_1_1Statement_ab8b11c6259100b0e5a22f4883f28ed1a}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!impl@{impl}}
+\index{impl@{impl}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{impl()}{impl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a1f655da9504811b9226d0f1d0c6911b0}{Statement\+::\+Impl\+Ptr}} Poco\+::\+Data\+::\+Statement\+::impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns true if this statement extracts data in bulk. 
+
+
+
+Definition at line 654 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a95a2f5313b3c3963f22e2d55e3fb8e50}\label{classPoco_1_1Data_1_1Statement_a95a2f5313b3c3963f22e2d55e3fb8e50}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!initialized@{initialized}}
+\index{initialized@{initialized}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{initialized()}{initialized()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+Statement\+::initialized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Waits for the execution completion for asynchronous statements or returns immediately for synchronous ones. The return value for asynchronous statement is the execution result (i.\+e. number of rows retrieved). For synchronous statements, the return value is zero. 
+
+Definition at line 743 of file Statement.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a2a86d174e8e300bf68e6e69379bf10a3}\label{classPoco_1_1Data_1_1Statement_a2a86d174e8e300bf68e6e69379bf10a3}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!isAsync@{isAsync}}
+\index{isAsync@{isAsync}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{isAsync()}{isAsync()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+Statement\+::is\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the asynchronous flag. If this flag is true, \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a5bcf1fe15413e942c275c8d97e761c84}{execute\+Async()}} is called from the \mbox{\hyperlink{namespacePoco_1_1Data_1_1Keywords_a839e06ffbdee1328f646e4c83e0ae1fd}{now()}} manipulator. This setting does not affect the statement\textquotesingle{}s capability to be executed synchronously by directly calling \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a2be38d265a5c47b8210f15e4082eec4e}{execute()}}. 
+
+Definition at line 773 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_adc6c77df8a09bf9db807758cd7802c54}\label{classPoco_1_1Data_1_1Statement_adc6c77df8a09bf9db807758cd7802c54}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!isBulkExtraction@{isBulkExtraction}}
+\index{isBulkExtraction@{isBulkExtraction}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{isBulkExtraction()}{isBulkExtraction()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+Statement\+::is\+Bulk\+Extraction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns true if the current row value at column pos is null. 
+
+
+
+Definition at line 767 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a6c31a2269297d2841eba1746c42d9d3d}\label{classPoco_1_1Data_1_1Statement_a6c31a2269297d2841eba1746c42d9d3d}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!isNull@{isNull}}
+\index{isNull@{isNull}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{isNull()}{isNull()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+Statement\+::is\+Null (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{col,  }\item[{std\+::size\+\_\+t}]{row }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns the type for the column with specified name. 
+
+
+
+Definition at line 761 of file Statement.\+h.
+
+Here is the call graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a84d2be2dbbce0426df3790acd154e30f}\label{classPoco_1_1Data_1_1Statement_a84d2be2dbbce0426df3790acd154e30f}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!metaColumn@{metaColumn}}
+\index{metaColumn@{metaColumn}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{metaColumn()}{metaColumn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1MetaColumn}{Meta\+Column}} \& Poco\+::\+Data\+::\+Statement\+::meta\+Column (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns the type for the column at specified position. 
+
+
+
+Definition at line 677 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a3dc8dfc0e8ed5049eaceffcfe772a4e8}\label{classPoco_1_1Data_1_1Statement_a3dc8dfc0e8ed5049eaceffcfe772a4e8}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!metaColumn@{metaColumn}}
+\index{metaColumn@{metaColumn}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{metaColumn()}{metaColumn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1MetaColumn}{Meta\+Column}} \& Poco\+::\+Data\+::\+Statement\+::meta\+Column (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns the extractions vector. 
+
+
+
+Definition at line 671 of file Statement.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a101aeafdd0ab60e5d47867ce0235008d}\label{classPoco_1_1Data_1_1Statement_a101aeafdd0ab60e5d47867ce0235008d}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!nextDataSet@{nextDataSet}}
+\index{nextDataSet@{nextDataSet}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{nextDataSet()}{nextDataSet()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+Statement\+::next\+Data\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of data sets associated with the statement. 
+
+
+
+Definition at line 713 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_acebe95a2917cc8de81a9ba2fe8c4d1e7}\label{classPoco_1_1Data_1_1Statement_acebe95a2917cc8de81a9ba2fe8c4d1e7}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [1/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ae623db90af7dc5d074aa37c630b6b8a3}{Abstract\+Binding\+::\+Ptr}}}]{p\+Bind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Handles manipulators, such as now, async, etc. 
+
+
+
+Definition at line 624 of file Statement.\+h.
+
+Here is the call graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a9df3f71f6ae7e5b2acc5914df992bd4b}\label{classPoco_1_1Data_1_1Statement_a9df3f71f6ae7e5b2acc5914df992bd4b}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [2/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacePoco_1_1Data_a78da186617485f27e9d21bb2b2b132dc}{Abstract\+Binding\+Vec}} \&}]{bind\+Vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the all the bindings with specified name from the statement. 
+
+
+
+Definition at line 630 of file Statement.\+h.
+
+Here is the call graph for this function\+:
+% FIG 18
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a6c4a875f801b207812a3187dcce20db2}\label{classPoco_1_1Data_1_1Statement_a6c4a875f801b207812a3187dcce20db2}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [3/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_a8bf4fe7842a0b54f205347f458beff12}{Abstract\+Extraction\+::\+Ptr}}}]{extract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 636 of file Statement.\+h.
+
+Here is the call graph for this function\+:
+% FIG 19
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_af7eafb8527a8224f3672b27200b4e0a0}\label{classPoco_1_1Data_1_1Statement_af7eafb8527a8224f3672b27200b4e0a0}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [4/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacePoco_1_1Data_a24e5465f942de6d835f98ed5d6fa7a82}{Abstract\+Extraction\+Vec}} \&}]{ext\+Vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Registers objects used for extracting data with the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} by calling \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a3c88f4d9c6cbe5f665927060be072805}{add\+Extract()}}. 
+
+Definition at line 642 of file Statement.\+h.
+
+Here is the call graph for this function\+:
+% FIG 20
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a92d4c68679b1352c6a70dec6edd662d5}\label{classPoco_1_1Data_1_1Statement_a92d4c68679b1352c6a70dec6edd662d5}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [5/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacePoco_1_1Data_a92dd25cbdb4d119f68e0b64c45ab990a}{Abstract\+Extraction\+Vec\+Vec}} \&}]{ext\+Vec\+Vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Registers the extraction vector with the \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}. The vector is registered at position 0 (i.\+e. for the first returned data set). 
+
+Definition at line 648 of file Statement.\+h.
+
+Here is the call graph for this function\+:
+% FIG 21
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a8916bb53b9521508aee0f9b9d87257b4}\label{classPoco_1_1Data_1_1Statement_a8916bb53b9521508aee0f9b9d87257b4}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [6/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 600 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ae5e75c5b9346bf91ec6f02388d5c50c0}\label{classPoco_1_1Data_1_1Statement_ae5e75c5b9346bf91ec6f02388d5c50c0}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [7/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacePoco_1_1Data_a444e5a7c04fc1d8d31d06a0c42178f59}{Bulk\+Fn\+Type}}}]{ }\end{DoxyParamCaption})}
+
+Sets the bulk execution mode (both binding and extraction) for this statement.\+Statement must not have any extractors or binders set at the time when this operator is applied. Failure to adhere to the above constraint shall result in Invalid\+Access\+Exception. \mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a050c1cac519de999dc04cc554399e6ed}\label{classPoco_1_1Data_1_1Statement_a050c1cac519de999dc04cc554399e6ed}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [8/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{char}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets a an extraction range for the maximum number of rows a select is allowed to return.
+
+Set per default to \mbox{\hyperlink{classPoco_1_1Data_1_1Limit_a728b45f0e7b205e1d58888e7b4d639b2a433a42b46355c5a8f2455a015854382e}{Limit\+::\+L\+I\+M\+I\+T\+\_\+\+U\+N\+L\+I\+M\+I\+T\+ED}} which disables the range. 
+
+Definition at line 520 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_aa096b89ea4436226bd6045125b034f9d}\label{classPoco_1_1Data_1_1Statement_aa096b89ea4436226bd6045125b034f9d}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [9/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Bulk}{Bulk}} \&}]{bulk }\end{DoxyParamCaption})}
+
+
+
+Registers a single extraction with the statement. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a2984358bba60ecb6cf86e4a533f9022b}\label{classPoco_1_1Data_1_1Statement_a2984358bba60ecb6cf86e4a533f9022b}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [10/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 612 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ac12ac81509f3a8b20837108268ac65c1}\label{classPoco_1_1Data_1_1Statement_ac12ac81509f3a8b20837108268ac65c1}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [11/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Limit}{Limit}} \&}]{extr\+Limit }\end{DoxyParamCaption})}
+
+Sets the bulk execution mode (both binding and extraction) for this statement.\+Statement must not have any extractors or binders set at the time when this operator is applied. Additionally, this function requires limit to be set in order to determine the bulk size. Failure to adhere to the above constraints shall result in Invalid\+Access\+Exception. \mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_aabb8732241980f293d5e31efd879ab5d}\label{classPoco_1_1Data_1_1Statement_aabb8732241980f293d5e31efd879ab5d}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [12/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Range}{Range}} \&}]{extr\+Range }\end{DoxyParamCaption})}
+
+
+
+Sets the row formatter for the statement. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a24ab24558fbe9197638b5c1d6078fe93}\label{classPoco_1_1Data_1_1Statement_a24ab24558fbe9197638b5c1d6078fe93}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [13/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 606 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a94115d290eef10e983d079c07ff6260c}\label{classPoco_1_1Data_1_1Statement_a94115d290eef10e983d079c07ff6260c}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [14/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 588 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ac5f90ca12382a206ed58afcbfa54eea7}\label{classPoco_1_1Data_1_1Statement_ac5f90ca12382a206ed58afcbfa54eea7}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [15/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 594 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_aa89d96ee7f65a0e41ecf2842e06e13bb}\label{classPoco_1_1Data_1_1Statement_aa89d96ee7f65a0e41ecf2842e06e13bb}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [16/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{long}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 563 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ae0fd349fdafc00b3bc4964f4c753ef1e}\label{classPoco_1_1Data_1_1Statement_ae0fd349fdafc00b3bc4964f4c753ef1e}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [17/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a5841de2f5e3aee1f549d6f80ba8278e6}{Manipulator}}}]{manip }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a83ded1d720f0c63270aa2fba560a95b5}\label{classPoco_1_1Data_1_1Statement_a83ded1d720f0c63270aa2fba560a95b5}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [18/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{Poco\+::\+Int16}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 544 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a10494a6c6cdb9ff24d50795450676dcd}\label{classPoco_1_1Data_1_1Statement_a10494a6c6cdb9ff24d50795450676dcd}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [19/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{Poco\+::\+Int32}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 556 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ae9d6d93393b4001257225d895548689e}\label{classPoco_1_1Data_1_1Statement_ae9d6d93393b4001257225d895548689e}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [20/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{Poco\+::\+Int64}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 582 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ad39eada0be05bd00cfd487ada779a71e}\label{classPoco_1_1Data_1_1Statement_ad39eada0be05bd00cfd487ada779a71e}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [21/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{Poco\+::\+Int8}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 532 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a8bd93bc08fc8ef1b436a874547fe25aa}\label{classPoco_1_1Data_1_1Statement_a8bd93bc08fc8ef1b436a874547fe25aa}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [22/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 538 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ab9746b91e629fac97aa25fb039387a2c}\label{classPoco_1_1Data_1_1Statement_ab9746b91e629fac97aa25fb039387a2c}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [23/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int32}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 550 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a6148fe8c763f478b702f60f2f2195646}\label{classPoco_1_1Data_1_1Statement_a6148fe8c763f478b702f60f2f2195646}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [24/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int64}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 576 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_abd96feb0a0f90b2b60c00368731da68d}\label{classPoco_1_1Data_1_1Statement_abd96feb0a0f90b2b60c00368731da68d}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [25/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 526 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_af5f5ae292c71a060c44aa649568ebf09}\label{classPoco_1_1Data_1_1Statement_af5f5ae292c71a060c44aa649568ebf09}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [26/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1RowFormatter_a8b78d46a90da39257686540581fb4537}{Row\+Formatter\+::\+Ptr}}}]{p\+Row\+Fformatter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets a limit on the maximum number of rows a select is allowed to return.
+
+Set per default to zero to \mbox{\hyperlink{classPoco_1_1Data_1_1Limit_a728b45f0e7b205e1d58888e7b4d639b2a433a42b46355c5a8f2455a015854382e}{Limit\+::\+L\+I\+M\+I\+T\+\_\+\+U\+N\+L\+I\+M\+I\+T\+ED}}, which disables the limit. 
+
+Definition at line 513 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a0cc7cd06c9ee03190e6b82e9e486f342}\label{classPoco_1_1Data_1_1Statement_a0cc7cd06c9ee03190e6b82e9e486f342}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator,@{operator,}}
+\index{operator,@{operator,}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator,()}{operator,()}\hspace{0.1cm}{\footnotesize\ttfamily [27/27]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Statement\+::operator, (\begin{DoxyParamCaption}\item[{unsigned long}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 569 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a72e55e8bef68e24c703b25ec5074817d}\label{classPoco_1_1Data_1_1Statement_a72e55e8bef68e24c703b25ec5074817d}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Swaps the statement with another one. 
+
+Concatenates data with the S\+QL statement string. 
+
+Definition at line 127 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a5e2de6f2f876b201540de10ee02348e2}\label{classPoco_1_1Data_1_1Statement_a5e2de6f2f876b201540de10ee02348e2}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \&}]{stmt }\end{DoxyParamCaption})}
+
+Copy constructor. If the statement has been executed asynchronously and has not been synchronized prior to copy operation (i.\+e. is copied while executing), this constructor shall synchronize it. \mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a1d739178128d17598ad3a0eb9395e328}\label{classPoco_1_1Data_1_1Statement_a1d739178128d17598ad3a0eb9395e328}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!paused@{paused}}
+\index{paused@{paused}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{paused()}{paused()}}
+{\footnotesize\ttfamily bool Poco\+::\+Data\+::\+Statement\+::paused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if the statement was initialized (i.\+e. not executed yet). 
+
+
+
+Definition at line 749 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a5385375568aadb27eea75c2efadc1f6d}\label{classPoco_1_1Data_1_1Statement_a5385375568aadb27eea75c2efadc1f6d}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!previousDataSet@{previousDataSet}}
+\index{previousDataSet@{previousDataSet}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{previousDataSet()}{previousDataSet()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+Statement\+::previous\+Data\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the index of the next data set. 
+
+
+
+Definition at line 719 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a92331211f26841254e4d9ff5eb1866bf}\label{classPoco_1_1Data_1_1Statement_a92331211f26841254e4d9ff5eb1866bf}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!removeBind@{removeBind}}
+\index{removeBind@{removeBind}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{removeBind()}{removeBind()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Statement\+::remove\+Bind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Registers a single binding with the statement. 
+
+
+
+Definition at line 618 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a612a3de5f22c8e92f43968f372f5a634}\label{classPoco_1_1Data_1_1Statement_a612a3de5f22c8e92f43968f372f5a634}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!reset@{reset}}
+\index{reset@{reset}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}\& Poco\+::\+Data\+::\+Statement\+::reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \&}]{session }\end{DoxyParamCaption})}
+
+Returns true if the statement was completely executed or false if a range limit stopped it and there is more work to do. When no limit is set, it will always return true after calling \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a2be38d265a5c47b8210f15e4082eec4e}{execute()}}. \mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ada0a5dbf9ef636bdbe78bfafa8ae0956}\label{classPoco_1_1Data_1_1Statement_ada0a5dbf9ef636bdbe78bfafa8ae0956}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!rowsExtracted@{rowsExtracted}}
+\index{rowsExtracted@{rowsExtracted}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{rowsExtracted()}{rowsExtracted()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+Statement\+::rows\+Extracted (\begin{DoxyParamCaption}\item[{int}]{data\+Set = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_ab3af1013cd928bd168a818ad3c01f2a4}{Statement\+Impl\+::\+U\+S\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+A\+T\+A\+\_\+\+S\+ET}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of columns returned for current data set. Default value indicates current data set (if any). 
+
+Definition at line 701 of file Statement.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 22
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a7302444e9641e7820bf2385df8e50444}\label{classPoco_1_1Data_1_1Statement_a7302444e9641e7820bf2385df8e50444}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!session@{session}}
+\index{session@{session}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{session()}{session()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} Poco\+::\+Data\+::\+Statement\+::session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the row formatter for this statement. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a3d704897ba4e6733d59131ed153da85e}\label{classPoco_1_1Data_1_1Statement_a3d704897ba4e6733d59131ed153da85e}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!setAsync@{setAsync}}
+\index{setAsync@{setAsync}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{setAsync()}{setAsync()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Statement\+::set\+Async (\begin{DoxyParamCaption}\item[{bool}]{async = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Executes the statement asynchronously. Stops when either a limit is hit or the whole statement was executed. Returns immediately. Calling \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a8d55f23c8ccf658977ef2dcd90d732a6}{wait()}} (on either the result returned from this call or the statement itself) returns the number of rows extracted or number of rows affected by the statement execution. When executed on a synchronous statement, this method does not alter the statement\textquotesingle{}s synchronous nature. Here is the caller graph for this function\+:
+% FIG 23
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a3526cf9947da32a0adaa77c15cd98f2d}\label{classPoco_1_1Data_1_1Statement_a3526cf9947da32a0adaa77c15cd98f2d}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!setRowFormatter@{setRowFormatter}}
+\index{setRowFormatter@{setRowFormatter}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{setRowFormatter()}{setRowFormatter()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Statement\+::set\+Row\+Formatter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1RowFormatter_a8b78d46a90da39257686540581fb4537}{Row\+Formatter\+::\+Ptr}}}]{p\+Row\+Formatter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns false if the current data set index points to the last data set. Otherwise, it returns true. 
+
+Definition at line 779 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_afab557984fd9368aa552a968020d6f49}\label{classPoco_1_1Data_1_1Statement_afab557984fd9368aa552a968020d6f49}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!setStorage@{setStorage}}
+\index{setStorage@{setStorage}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{setStorage()}{setStorage()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Statement\+::set\+Storage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{storage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the internal storage type for the statement. 
+
+
+
+Definition at line 683 of file Statement.\+h.
+
+Here is the call graph for this function\+:
+% FIG 24
+Here is the caller graph for this function\+:
+% FIG 25
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_ae2f9fab339d7e1476e0ddde9560f1082}\label{classPoco_1_1Data_1_1Statement_ae2f9fab339d7e1476e0ddde9560f1082}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!storage@{storage}}
+\index{storage@{storage}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{storage()}{storage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a57a642784dc3032c192e79e5dbed28b9}{Statement\+::\+Storage}} Poco\+::\+Data\+::\+Statement\+::storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if statement is in a state that allows the internal storage to be modified. 
+
+
+
+Definition at line 731 of file Statement.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 26
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_aa78745de29b616f39cb31a0ac4f5a999}\label{classPoco_1_1Data_1_1Statement_aa78745de29b616f39cb31a0ac4f5a999}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!subTotalRowCount@{subTotalRowCount}}
+\index{subTotalRowCount@{subTotalRowCount}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{subTotalRowCount()}{subTotalRowCount()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+Statement\+::sub\+Total\+Row\+Count (\begin{DoxyParamCaption}\item[{int}]{data\+Set = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl_ab3af1013cd928bd168a818ad3c01f2a4}{Statement\+Impl\+::\+U\+S\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+A\+T\+A\+\_\+\+S\+ET}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of rows returned for current data set during last statement execution. Default value indicates current data set (if any). 
+
+Definition at line 426 of file Statement.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 27
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a58d6c6e84a39bc1535646371111cbcfa}\label{classPoco_1_1Data_1_1Statement_a58d6c6e84a39bc1535646371111cbcfa}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!swap@{swap}}
+\index{swap@{swap}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Statement\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Assignment operator. 
+
+Here is the caller graph for this function\+:
+% FIG 28
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a02506d49bd13c595c8320ce69c98b74f}\label{classPoco_1_1Data_1_1Statement_a02506d49bd13c595c8320ce69c98b74f}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!toString@{toString}}
+\index{toString@{toString}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Data\+::\+Statement\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the value to the list of values to be supplied to the S\+QL string formatting function. 
+
+
+
+Definition at line 660 of file Statement.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a8d55f23c8ccf658977ef2dcd90d732a6}\label{classPoco_1_1Data_1_1Statement_a8d55f23c8ccf658977ef2dcd90d732a6}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!wait@{wait}}
+\index{wait@{wait}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+Statement\+::wait (\begin{DoxyParamCaption}\item[{long}]{milliseconds = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement_a4a9e9d0e5bbef4eb510ceb57c90a6c9d}{W\+A\+I\+T\+\_\+\+F\+O\+R\+E\+V\+ER}}} }\end{DoxyParamCaption})}
+
+
+
+Returns true if statement was marked for asynchronous execution. 
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Statement_a4a9e9d0e5bbef4eb510ceb57c90a6c9d}\label{classPoco_1_1Data_1_1Statement_a4a9e9d0e5bbef4eb510ceb57c90a6c9d}} 
+\index{Poco::Data::Statement@{Poco::Data::Statement}!WAIT\_FOREVER@{WAIT\_FOREVER}}
+\index{WAIT\_FOREVER@{WAIT\_FOREVER}!Poco::Data::Statement@{Poco::Data::Statement}}
+\doxysubsubsection{\texorpdfstring{WAIT\_FOREVER}{WAIT\_FOREVER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} int Poco\+::\+Data\+::\+Statement\+::\+W\+A\+I\+T\+\_\+\+F\+O\+R\+E\+V\+ER = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 84 of file Statement.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{Statement_8h}{Statement.\+h}}\end{DoxyCompactItemize}

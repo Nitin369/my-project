@@ -1,0 +1,713 @@
+\hypertarget{classIoT_1_1BtLE_1_1Peripheral}{}\doxysection{IoT\+::Bt\+LE\+::Peripheral Class Reference}
+\label{classIoT_1_1BtLE_1_1Peripheral}\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+
+
+{\ttfamily \#include $<$Peripheral.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Bt\+LE\+::Peripheral\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Bt\+LE\+::Peripheral\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral}{Peripheral}} $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_aab0e03bbe7769743da55823cba401c81}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a0355e05df2969743b91b66de5dc3c6fd}{connect}} ()=0
+\begin{DoxyCompactList}\small\item\em Fired when a \mbox{\hyperlink{structIoT_1_1BtLE_1_1Notification}{Notification}} has been received from the peripheral. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_acd8a941b49a0909a92baa38fdef9e039}{connect\+Async}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_af69aa9bd5906b92506037e999584d0b0}{disconnect}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a8938ec5dd2b2c47d86061c5b38c3b0bb}{is\+Connected}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Disconnects from the Bluetooth LE peripheral. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_ad6adbab5ce7d1cfb053de0f6da5608e2}{address}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Returns true if the device is connected. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a8e0d1475efad32632074445762675b8a}{services}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the address of the device. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a7f6a3bd8ea37d6364c1eb6848ddd3314}{service\+U\+U\+I\+D\+For\+Assigned\+Number}} (Poco\+::\+U\+Int32 assigned\+Number)=0
+\begin{DoxyCompactList}\small\item\em Returns a vector containing the U\+U\+I\+Ds of all available services. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a5a77744809d95a7dca90399065502055}{characteristics}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&service\+U\+U\+ID)=0
+\item 
+virtual \mbox{\hyperlink{structIoT_1_1BtLE_1_1Characteristic}{Characteristic}} \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a696f8e49a14a4cb5ebe438c57f1df3af}{characteristic}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&service\+U\+U\+ID, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&characteristic\+U\+U\+ID)=0
+\item 
+virtual \mbox{\hyperlink{structIoT_1_1BtLE_1_1Characteristic}{Characteristic}} \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_af70712e16334547fcd964c756bec5a60}{characteristic\+For\+Assigned\+Number}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&service\+U\+U\+ID, Poco\+::\+U\+Int32 assigned\+Number)=0
+\begin{DoxyCompactList}\small\item\em Returns the properties and handle for accessing the value of the given characteristic. \end{DoxyCompactList}\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a159219f3a52e1bf2cb46b7d0d9d1b1ce}{handle\+For\+Descriptor}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&service\+U\+U\+ID, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&descriptor\+U\+U\+ID)=0
+\begin{DoxyCompactList}\small\item\em Returns the properties and handle for accessing the value of the given characteristic. \end{DoxyCompactList}\item 
+virtual Poco\+::\+U\+Int8 \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_aedb926a81096749a28e9f5781ffce8c6}{read\+U\+Int8}} (Poco\+::\+U\+Int16 value\+Handle)=0
+\begin{DoxyCompactList}\small\item\em Returns the handle with the given descriptor U\+U\+ID for the service with the given service\+U\+U\+ID. \end{DoxyCompactList}\item 
+virtual Poco\+::\+Int8 \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_af353c23dd99564125395d20bff3e865a}{read\+Int8}} (Poco\+::\+U\+Int16 value\+Handle)=0
+\begin{DoxyCompactList}\small\item\em Reads an unsigned byte value from the given value handle. \end{DoxyCompactList}\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_ab71199f86cc93dd8fd8c7831808caacd}{read\+U\+Int16}} (Poco\+::\+U\+Int16 value\+Handle)=0
+\begin{DoxyCompactList}\small\item\em Reads a signed byte value from the given value handle. \end{DoxyCompactList}\item 
+virtual Poco\+::\+Int16 \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a775de3264fa56d4d1fdd1f6e892c66e2}{read\+Int16}} (Poco\+::\+U\+Int16 value\+Handle)=0
+\begin{DoxyCompactList}\small\item\em Reads an unsigned 16-\/bit integer value from the given value handle. \end{DoxyCompactList}\item 
+virtual Poco\+::\+U\+Int32 \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_ade640fc121e710b7f41f0f89ae3f7bc0}{read\+U\+Int32}} (Poco\+::\+U\+Int16 value\+Handle)=0
+\begin{DoxyCompactList}\small\item\em Reads a signed 16-\/bit integer value from the given value handle. \end{DoxyCompactList}\item 
+virtual Poco\+::\+Int32 \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_afe9f5542c0c509a52b6370985c3c5feb}{read\+Int32}} (Poco\+::\+U\+Int16 value\+Handle)=0
+\begin{DoxyCompactList}\small\item\em Reads an unsigned 32-\/bit integer value from the given value handle. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_aee37caeb0cffd08f3d034fd42eb6ccd9}{read\+String}} (Poco\+::\+U\+Int16 value\+Handle)=0
+\begin{DoxyCompactList}\small\item\em Reads a signed 32-\/bit integer value from the given value handle. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ char $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_afa80395c468e841c75517ee9d0347cca}{read\+Bytes}} (Poco\+::\+U\+Int16 value\+Handle)=0
+\begin{DoxyCompactList}\small\item\em Reads a raw byte string from the given value handle. ~\newline
+ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a1c8de7c044f16b1ef39ba20c1b031dc0}{write\+U\+Int8}} (Poco\+::\+U\+Int16 value\+Handle, Poco\+::\+U\+Int8 value, bool with\+Response)=0
+\begin{DoxyCompactList}\small\item\em Reads a raw byte string from the given value handle. ~\newline
+ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a5ec71172c15762a521dd881fb95016a3}{write\+Int8}} (Poco\+::\+U\+Int16 value\+Handle, Poco\+::\+Int8 value, bool with\+Response)=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_aaf264d2e2a7c458206134b0d0635925f}{write\+U\+Int16}} (Poco\+::\+U\+Int16 value\+Handle, Poco\+::\+U\+Int16 value, bool with\+Response)=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_aea2a6285c41749238282a47add80ef62}{write\+Int16}} (Poco\+::\+U\+Int16 value\+Handle, Poco\+::\+Int16 value, bool with\+Response)=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a3051d6403949471886e2d60eec6a7254}{write\+U\+Int32}} (Poco\+::\+U\+Int16 value\+Handle, Poco\+::\+U\+Int32 value, bool with\+Response)=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a7df533e7a414bfa2985b37dadf08814b}{write\+Int32}} (Poco\+::\+U\+Int16 value\+Handle, Poco\+::\+U\+Int32 value, bool with\+Response)=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_af06def93270e20d5b8a09fb55c301ae3}{write\+String}} (Poco\+::\+U\+Int16 value\+Handle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value, bool with\+Response)=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a076f8e252a5d171a3d4b8c6e7549948a}{write\+Bytes}} (Poco\+::\+U\+Int16 value\+Handle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ char $>$ \&value, bool with\+Response)=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_ae1785849391da2a1cafc9e79fb3286c5}{manufacturer\+Name}} ()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a17923da0a280349151dd2c28a2ee7cbc}{model\+Number}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the peripheral\textquotesingle{}s manufacturer name obtained from the Device Information service. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a297bd350d152e5eb7a4573915e37a17a}{serial\+Number}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the peripheral\textquotesingle{}s model number string obtained from the Device Information service. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_aa6e973da9ba4b8ae3adf361860d4b3a8}{hardware\+Revision}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the peripheral\textquotesingle{}s serial number string obtained from the Device Information service. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a4c4ddf0e58530040be94bbf9367d0542}{firmware\+Revision}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the peripheral\textquotesingle{}s hardware revision string obtained from the Device Information service. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a4e11d3faab66e09b5517e6becdbeed0b}{software\+Revision}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the peripheral\textquotesingle{}s firmware revision string obtained from the Device Information service. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a0679f48d67b41c9f79908c62ab1020f8}{$\sim$\+Peripheral}} ()
+\begin{DoxyCompactList}\small\item\em Returns the peripheral\textquotesingle{}s software revision string obtained from the Device Information service. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ void $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a31061f38aba880d36fd27064c85fcba7}{connected}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ void $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a0d43be8bf2d0fa47c1009395efe99e5f}{disconnected}}
+\begin{DoxyCompactList}\small\item\em Fired when a connection with the peripheral has been established. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a9cc0917f812a2ca8591bd5b408a7a325}{error}}
+\begin{DoxyCompactList}\small\item\em Fired when the connection with the peripheral has been disconnected. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1BtLE_1_1Indication}{Indication}} $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a3ad8e0fdb24145d35675d2f856ec2887}{indication\+Received}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1BtLE_1_1Notification}{Notification}} $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_a84539c1788bdfef50728768648e4f04d}{notification\+Received}}
+\begin{DoxyCompactList}\small\item\em Fired when an \mbox{\hyperlink{structIoT_1_1BtLE_1_1Indication}{Indication}} has been received from the peripheral. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides a high-\/level interface to a Bluetooth LE peripheral device using the Bluetooth Generic Attribute Profile (G\+A\+TT). 
+
+Definition at line 69 of file Peripheral.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_aab0e03bbe7769743da55823cba401c81}\label{classIoT_1_1BtLE_1_1Peripheral_aab0e03bbe7769743da55823cba401c81}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral}{Peripheral}}$>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1Peripheral_aab0e03bbe7769743da55823cba401c81}{Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::\+Ptr}}}
+
+
+
+Definition at line 74 of file Peripheral.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a0679f48d67b41c9f79908c62ab1020f8}\label{classIoT_1_1BtLE_1_1Peripheral_a0679f48d67b41c9f79908c62ab1020f8}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!````~Peripheral@{$\sim$Peripheral}}
+\index{````~Peripheral@{$\sim$Peripheral}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{$\sim$Peripheral()}{~Peripheral()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::$\sim$\+Peripheral (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the peripheral\textquotesingle{}s software revision string obtained from the Device Information service. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_ad6adbab5ce7d1cfb053de0f6da5608e2}\label{classIoT_1_1BtLE_1_1Peripheral_ad6adbab5ce7d1cfb053de0f6da5608e2}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!address@{address}}
+\index{address@{address}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns true if the device is connected. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_ac72bf8b8e8d1ae1a845019add2db3cc0}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a696f8e49a14a4cb5ebe438c57f1df3af}\label{classIoT_1_1BtLE_1_1Peripheral_a696f8e49a14a4cb5ebe438c57f1df3af}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!characteristic@{characteristic}}
+\index{characteristic@{characteristic}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{characteristic()}{characteristic()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structIoT_1_1BtLE_1_1Characteristic}{Characteristic}} Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::characteristic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{service\+U\+U\+ID,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{characteristic\+U\+U\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a vector containing the U\+U\+I\+Ds of all available characteristics of the service identified by the given service\+U\+U\+ID. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_ab28f885d948c94a393d25d4c3e232be5}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_af70712e16334547fcd964c756bec5a60}\label{classIoT_1_1BtLE_1_1Peripheral_af70712e16334547fcd964c756bec5a60}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!characteristicForAssignedNumber@{characteristicForAssignedNumber}}
+\index{characteristicForAssignedNumber@{characteristicForAssignedNumber}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{characteristicForAssignedNumber()}{characteristicForAssignedNumber()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structIoT_1_1BtLE_1_1Characteristic}{Characteristic}} Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::characteristic\+For\+Assigned\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{service\+U\+U\+ID,  }\item[{Poco\+::\+U\+Int32}]{assigned\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the properties and handle for accessing the value of the given characteristic. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_af892b930d529e4a9a6493b620eea4734}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a5a77744809d95a7dca90399065502055}\label{classIoT_1_1BtLE_1_1Peripheral_a5a77744809d95a7dca90399065502055}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!characteristics@{characteristics}}
+\index{characteristics@{characteristics}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{characteristics()}{characteristics()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::string$>$ Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::characteristics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{service\+U\+U\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the U\+U\+ID of the service with the given 32-\/bit assigned number, or an empty string if no such service is available. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a73ebe6b37cdf6efc9430bea689da7c6a}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a0355e05df2969743b91b66de5dc3c6fd}\label{classIoT_1_1BtLE_1_1Peripheral_a0355e05df2969743b91b66de5dc3c6fd}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!connect@{connect}}
+\index{connect@{connect}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Fired when a \mbox{\hyperlink{structIoT_1_1BtLE_1_1Notification}{Notification}} has been received from the peripheral. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_ad4da74ae39db7b61753876af83038678}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_acd8a941b49a0909a92baa38fdef9e039}\label{classIoT_1_1BtLE_1_1Peripheral_acd8a941b49a0909a92baa38fdef9e039}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!connectAsync@{connectAsync}}
+\index{connectAsync@{connectAsync}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{connectAsync()}{connectAsync()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::connect\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Connects to the Bluetooth LE peripheral.
+
+Waits for successful connection or error. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_acdf1c91042eec801625092d23cab5920}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_af69aa9bd5906b92506037e999584d0b0}\label{classIoT_1_1BtLE_1_1Peripheral_af69aa9bd5906b92506037e999584d0b0}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Connects to the Bluetooth LE peripheral.
+
+Successful connection or error will be reported through connected and error events. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a66d57ae4a5fa30c7068dd4c5cdb62563}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a4c4ddf0e58530040be94bbf9367d0542}\label{classIoT_1_1BtLE_1_1Peripheral_a4c4ddf0e58530040be94bbf9367d0542}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!firmwareRevision@{firmwareRevision}}
+\index{firmwareRevision@{firmwareRevision}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{firmwareRevision()}{firmwareRevision()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::firmware\+Revision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the peripheral\textquotesingle{}s hardware revision string obtained from the Device Information service. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a14037bce4e6ade6f7fa8d70979e0979e}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a159219f3a52e1bf2cb46b7d0d9d1b1ce}\label{classIoT_1_1BtLE_1_1Peripheral_a159219f3a52e1bf2cb46b7d0d9d1b1ce}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!handleForDescriptor@{handleForDescriptor}}
+\index{handleForDescriptor@{handleForDescriptor}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{handleForDescriptor()}{handleForDescriptor()}}
+{\footnotesize\ttfamily virtual Poco\+::\+U\+Int16 Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::handle\+For\+Descriptor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{service\+U\+U\+ID,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{descriptor\+U\+U\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the properties and handle for accessing the value of the given characteristic. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_ab1615fdb42dbf23a0bed782086d43ef8}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_aa6e973da9ba4b8ae3adf361860d4b3a8}\label{classIoT_1_1BtLE_1_1Peripheral_aa6e973da9ba4b8ae3adf361860d4b3a8}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!hardwareRevision@{hardwareRevision}}
+\index{hardwareRevision@{hardwareRevision}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{hardwareRevision()}{hardwareRevision()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::hardware\+Revision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the peripheral\textquotesingle{}s serial number string obtained from the Device Information service. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_ae269dd8265078f022c7ff86a5fb7ff82}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a8938ec5dd2b2c47d86061c5b38c3b0bb}\label{classIoT_1_1BtLE_1_1Peripheral_a8938ec5dd2b2c47d86061c5b38c3b0bb}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::is\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Disconnects from the Bluetooth LE peripheral. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a2f6a02ebaf27ce51846f6cf4dd90671a}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_ae1785849391da2a1cafc9e79fb3286c5}\label{classIoT_1_1BtLE_1_1Peripheral_ae1785849391da2a1cafc9e79fb3286c5}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!manufacturerName@{manufacturerName}}
+\index{manufacturerName@{manufacturerName}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{manufacturerName()}{manufacturerName()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::manufacturer\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes a raw byte string to the given value handle.
+
+If with\+Response is false, uses a Write\+Without\+Response operation, otherwise a Write operation. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_ac67139b88aca51849c55950007bdb018}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a17923da0a280349151dd2c28a2ee7cbc}\label{classIoT_1_1BtLE_1_1Peripheral_a17923da0a280349151dd2c28a2ee7cbc}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!modelNumber@{modelNumber}}
+\index{modelNumber@{modelNumber}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{modelNumber()}{modelNumber()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::model\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the peripheral\textquotesingle{}s manufacturer name obtained from the Device Information service. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a057def6f238959152b9970af46d9204d}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_afa80395c468e841c75517ee9d0347cca}\label{classIoT_1_1BtLE_1_1Peripheral_afa80395c468e841c75517ee9d0347cca}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!readBytes@{readBytes}}
+\index{readBytes@{readBytes}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{readBytes()}{readBytes()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$char$>$ Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::read\+Bytes (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads a raw byte string from the given value handle. ~\newline
+ 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a25faca2a1ce3c2586ad76830bc70a3c9}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a775de3264fa56d4d1fdd1f6e892c66e2}\label{classIoT_1_1BtLE_1_1Peripheral_a775de3264fa56d4d1fdd1f6e892c66e2}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!readInt16@{readInt16}}
+\index{readInt16@{readInt16}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{readInt16()}{readInt16()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Int16 Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::read\+Int16 (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads an unsigned 16-\/bit integer value from the given value handle. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_aae932f3875877fbe37c354cc434f962f}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_afe9f5542c0c509a52b6370985c3c5feb}\label{classIoT_1_1BtLE_1_1Peripheral_afe9f5542c0c509a52b6370985c3c5feb}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!readInt32@{readInt32}}
+\index{readInt32@{readInt32}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{readInt32()}{readInt32()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Int32 Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::read\+Int32 (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads an unsigned 32-\/bit integer value from the given value handle. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_ab09b1b870ac68284811a55565a648c74}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_af353c23dd99564125395d20bff3e865a}\label{classIoT_1_1BtLE_1_1Peripheral_af353c23dd99564125395d20bff3e865a}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!readInt8@{readInt8}}
+\index{readInt8@{readInt8}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{readInt8()}{readInt8()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Int8 Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::read\+Int8 (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads an unsigned byte value from the given value handle. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_ac192aea7bbfb04d839b85b5e5d40899d}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 18
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_aee37caeb0cffd08f3d034fd42eb6ccd9}\label{classIoT_1_1BtLE_1_1Peripheral_aee37caeb0cffd08f3d034fd42eb6ccd9}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!readString@{readString}}
+\index{readString@{readString}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{readString()}{readString()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::read\+String (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads a signed 32-\/bit integer value from the given value handle. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a2de7a6896e7c6bfe3517008e88d2a375}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 19
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_ab71199f86cc93dd8fd8c7831808caacd}\label{classIoT_1_1BtLE_1_1Peripheral_ab71199f86cc93dd8fd8c7831808caacd}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!readUInt16@{readUInt16}}
+\index{readUInt16@{readUInt16}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{readUInt16()}{readUInt16()}}
+{\footnotesize\ttfamily virtual Poco\+::\+U\+Int16 Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::read\+U\+Int16 (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads a signed byte value from the given value handle. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_aba66b933c0cd9b5c7a5c1a53c2f9c1c5}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 20
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_ade640fc121e710b7f41f0f89ae3f7bc0}\label{classIoT_1_1BtLE_1_1Peripheral_ade640fc121e710b7f41f0f89ae3f7bc0}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!readUInt32@{readUInt32}}
+\index{readUInt32@{readUInt32}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{readUInt32()}{readUInt32()}}
+{\footnotesize\ttfamily virtual Poco\+::\+U\+Int32 Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::read\+U\+Int32 (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads a signed 16-\/bit integer value from the given value handle. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a65f394fcbb696b5dc4f98044997925ee}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 21
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_aedb926a81096749a28e9f5781ffce8c6}\label{classIoT_1_1BtLE_1_1Peripheral_aedb926a81096749a28e9f5781ffce8c6}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!readUInt8@{readUInt8}}
+\index{readUInt8@{readUInt8}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{readUInt8()}{readUInt8()}}
+{\footnotesize\ttfamily virtual Poco\+::\+U\+Int8 Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::read\+U\+Int8 (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the handle with the given descriptor U\+U\+ID for the service with the given service\+U\+U\+ID. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_abfcc468ef56339ee745a8b51dcdc1407}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 22
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a297bd350d152e5eb7a4573915e37a17a}\label{classIoT_1_1BtLE_1_1Peripheral_a297bd350d152e5eb7a4573915e37a17a}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!serialNumber@{serialNumber}}
+\index{serialNumber@{serialNumber}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{serialNumber()}{serialNumber()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::serial\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the peripheral\textquotesingle{}s model number string obtained from the Device Information service. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a3b1e36240b2ddb2e46678c238a348875}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 23
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a8e0d1475efad32632074445762675b8a}\label{classIoT_1_1BtLE_1_1Peripheral_a8e0d1475efad32632074445762675b8a}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!services@{services}}
+\index{services@{services}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{services()}{services()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::string$>$ Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::services (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the address of the device. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a93e5c73b660bcf282e98a96a4221cf8a}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 24
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a7f6a3bd8ea37d6364c1eb6848ddd3314}\label{classIoT_1_1BtLE_1_1Peripheral_a7f6a3bd8ea37d6364c1eb6848ddd3314}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!serviceUUIDForAssignedNumber@{serviceUUIDForAssignedNumber}}
+\index{serviceUUIDForAssignedNumber@{serviceUUIDForAssignedNumber}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{serviceUUIDForAssignedNumber()}{serviceUUIDForAssignedNumber()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::service\+U\+U\+I\+D\+For\+Assigned\+Number (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int32}]{assigned\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns a vector containing the U\+U\+I\+Ds of all available services. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a90a5a0c220cdc42f785c73a19626883d}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 25
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a4e11d3faab66e09b5517e6becdbeed0b}\label{classIoT_1_1BtLE_1_1Peripheral_a4e11d3faab66e09b5517e6becdbeed0b}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!softwareRevision@{softwareRevision}}
+\index{softwareRevision@{softwareRevision}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{softwareRevision()}{softwareRevision()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::software\+Revision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the peripheral\textquotesingle{}s firmware revision string obtained from the Device Information service. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a1397620d15652002aeb746b031d0f87f}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 26
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a076f8e252a5d171a3d4b8c6e7549948a}\label{classIoT_1_1BtLE_1_1Peripheral_a076f8e252a5d171a3d4b8c6e7549948a}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!writeBytes@{writeBytes}}
+\index{writeBytes@{writeBytes}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{writeBytes()}{writeBytes()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::write\+Bytes (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ char $>$ \&}]{value,  }\item[{bool}]{with\+Response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes a raw byte string to the given value handle.
+
+If with\+Response is false, uses a Write\+Without\+Response operation, otherwise a Write operation. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_ab57579efc6dad2f9d63b68c9567d0dea}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 27
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_aea2a6285c41749238282a47add80ef62}\label{classIoT_1_1BtLE_1_1Peripheral_aea2a6285c41749238282a47add80ef62}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!writeInt16@{writeInt16}}
+\index{writeInt16@{writeInt16}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{writeInt16()}{writeInt16()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::write\+Int16 (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle,  }\item[{Poco\+::\+Int16}]{value,  }\item[{bool}]{with\+Response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes an unsigned 16-\/bit integer value to the given value handle.
+
+If with\+Response is false, uses a Write\+Without\+Response operation, otherwise a Write operation. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a30a79b950b9db8d85bcfae8e2505cfdb}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 28
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a7df533e7a414bfa2985b37dadf08814b}\label{classIoT_1_1BtLE_1_1Peripheral_a7df533e7a414bfa2985b37dadf08814b}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!writeInt32@{writeInt32}}
+\index{writeInt32@{writeInt32}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{writeInt32()}{writeInt32()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::write\+Int32 (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle,  }\item[{Poco\+::\+U\+Int32}]{value,  }\item[{bool}]{with\+Response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes an unsigned 32-\/bit integer value to the given value handle.
+
+If with\+Response is false, uses a Write\+Without\+Response operation, otherwise a Write operation. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a8854340e7ae17295871f5973d26581cf}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 29
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a5ec71172c15762a521dd881fb95016a3}\label{classIoT_1_1BtLE_1_1Peripheral_a5ec71172c15762a521dd881fb95016a3}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!writeInt8@{writeInt8}}
+\index{writeInt8@{writeInt8}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{writeInt8()}{writeInt8()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::write\+Int8 (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle,  }\item[{Poco\+::\+Int8}]{value,  }\item[{bool}]{with\+Response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes an unsigned byte value to the given value handle.
+
+If with\+Response is false, uses a Write\+Without\+Response operation, otherwise a Write operation. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a0e6155e40e411b046cebe1643e3f4dcc}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 30
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_af06def93270e20d5b8a09fb55c301ae3}\label{classIoT_1_1BtLE_1_1Peripheral_af06def93270e20d5b8a09fb55c301ae3}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!writeString@{writeString}}
+\index{writeString@{writeString}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{writeString()}{writeString()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::write\+String (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value,  }\item[{bool}]{with\+Response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes a signed 32-\/bit integer value to the given value handle.
+
+If with\+Response is false, uses a Write\+Without\+Response operation, otherwise a Write operation. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a6a7030e4749399764497ae61d7ba5077}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 31
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_aaf264d2e2a7c458206134b0d0635925f}\label{classIoT_1_1BtLE_1_1Peripheral_aaf264d2e2a7c458206134b0d0635925f}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!writeUInt16@{writeUInt16}}
+\index{writeUInt16@{writeUInt16}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{writeUInt16()}{writeUInt16()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::write\+U\+Int16 (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle,  }\item[{Poco\+::\+U\+Int16}]{value,  }\item[{bool}]{with\+Response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes a signed byte value to the given value handle.
+
+If with\+Response is false, uses a Write\+Without\+Response operation, otherwise a Write operation. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a52089b906a50136441a39dd5998ac4a5}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 32
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a3051d6403949471886e2d60eec6a7254}\label{classIoT_1_1BtLE_1_1Peripheral_a3051d6403949471886e2d60eec6a7254}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!writeUInt32@{writeUInt32}}
+\index{writeUInt32@{writeUInt32}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{writeUInt32()}{writeUInt32()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::write\+U\+Int32 (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle,  }\item[{Poco\+::\+U\+Int32}]{value,  }\item[{bool}]{with\+Response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes a signed 16-\/bit integer value to the given value handle.
+
+If with\+Response is false, uses a Write\+Without\+Response operation, otherwise a Write operation. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_a7b0dec042b47034882c4904421a8b1d9}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 33
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a1c8de7c044f16b1ef39ba20c1b031dc0}\label{classIoT_1_1BtLE_1_1Peripheral_a1c8de7c044f16b1ef39ba20c1b031dc0}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!writeUInt8@{writeUInt8}}
+\index{writeUInt8@{writeUInt8}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{writeUInt8()}{writeUInt8()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::write\+U\+Int8 (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{value\+Handle,  }\item[{Poco\+::\+U\+Int8}]{value,  }\item[{bool}]{with\+Response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads a raw byte string from the given value handle. ~\newline
+ 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTPeripheral_ab6321fb233b51ac76273b96f7d75601f}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Peripheral}}.
+
+Here is the caller graph for this function\+:
+% FIG 34
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a31061f38aba880d36fd27064c85fcba7}\label{classIoT_1_1BtLE_1_1Peripheral_a31061f38aba880d36fd27064c85fcba7}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!connected@{connected}}
+\index{connected@{connected}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{connected}{connected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$void$>$ Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::connected}
+
+
+
+Definition at line 76 of file Peripheral.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a0d43be8bf2d0fa47c1009395efe99e5f}\label{classIoT_1_1BtLE_1_1Peripheral_a0d43be8bf2d0fa47c1009395efe99e5f}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!disconnected@{disconnected}}
+\index{disconnected@{disconnected}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{disconnected}{disconnected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$void$>$ Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::disconnected}
+
+
+
+Fired when a connection with the peripheral has been established. 
+
+
+
+Definition at line 79 of file Peripheral.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a9cc0917f812a2ca8591bd5b408a7a325}\label{classIoT_1_1BtLE_1_1Peripheral_a9cc0917f812a2ca8591bd5b408a7a325}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!error@{error}}
+\index{error@{error}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string$>$ Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::error}
+
+
+
+Fired when the connection with the peripheral has been disconnected. 
+
+
+
+Definition at line 82 of file Peripheral.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a3ad8e0fdb24145d35675d2f856ec2887}\label{classIoT_1_1BtLE_1_1Peripheral_a3ad8e0fdb24145d35675d2f856ec2887}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!indicationReceived@{indicationReceived}}
+\index{indicationReceived@{indicationReceived}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{indicationReceived}{indicationReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1BtLE_1_1Indication}{Indication}}$>$ Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::indication\+Received}
+
+Fired when the connection attempt with the peripheral has failed. The event argument contains more information about the error. 
+
+Definition at line 86 of file Peripheral.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1Peripheral_a84539c1788bdfef50728768648e4f04d}\label{classIoT_1_1BtLE_1_1Peripheral_a84539c1788bdfef50728768648e4f04d}} 
+\index{IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}!notificationReceived@{notificationReceived}}
+\index{notificationReceived@{notificationReceived}!IoT::BtLE::Peripheral@{IoT::BtLE::Peripheral}}
+\doxysubsubsection{\texorpdfstring{notificationReceived}{notificationReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1BtLE_1_1Notification}{Notification}}$>$ Io\+T\+::\+Bt\+L\+E\+::\+Peripheral\+::notification\+Received}
+
+
+
+Fired when an \mbox{\hyperlink{structIoT_1_1BtLE_1_1Indication}{Indication}} has been received from the peripheral. 
+
+
+
+Definition at line 89 of file Peripheral.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Bt\+L\+E/\mbox{\hyperlink{Peripheral_8h}{Peripheral.\+h}}\end{DoxyCompactItemize}

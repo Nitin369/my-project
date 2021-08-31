@@ -1,0 +1,157 @@
+\hypertarget{classPoco_1_1OSP_1_1PreferencesService}{}\doxysection{Poco\+::O\+SP\+::Preferences\+Service Class Reference}
+\label{classPoco_1_1OSP_1_1PreferencesService}\index{Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}}
+
+
+{\ttfamily \#include $<$Preferences\+Service.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::O\+SP\+::Preferences\+Service\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::O\+SP\+::Preferences\+Service\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService}{Preferences\+Service}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_aed6bedec9793636328b6acbeed2f1950}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_a26753679b74068033772a8b66d16dce8}{Preferences\+Service}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Poco\+::\+Path}} \&persistency\+Dir, \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Poco\+::\+Util\+::\+Abstract\+Configuration}} $\ast$p\+Global\+Config)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Preferences_a7219e333ef8364deb747f60940c73608}{Preferences\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_a009ea0e64a1c30bbaf85e7b68911bb28}{preferences}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&bundle\+Or\+Service\+ID)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_af4c9daf6a954f9ad1c3bcc2f2e778ae4}{Configuration\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_a15a6590270ca12c6a88092689b1dbe78}{configuration}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_a3843dd81f76a65bb636a3c1f717df57b}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_a4a91c33f98a4989b193fe88d4fad4a44}{isA}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&other\+Type) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_aed6bedec9793636328b6acbeed2f1950}{Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_aa87deff35fd34253956b228a35b4aee6}{Const\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_a827b919bc5ea91c631f12619c1ab21c0}{S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+A\+ME}}
+\begin{DoxyCompactList}\small\item\em Returns the global application configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_aaa52829d733a1c1b3b7bf6b8f0fcb3f5}{$\sim$\+Preferences\+Service}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService}{Preferences\+Service}} provides an easy way for a bundle or service to retrieve and store configuration information. It also gives a bundle or service read-\/only access to the global application configuration.
+
+The service name of the \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService}{Preferences\+Service}} is \char`\"{}osp.\+core.\+preferences\char`\"{}. 
+
+Definition at line 38 of file Preferences\+Service.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1PreferencesService_aed6bedec9793636328b6acbeed2f1950}\label{classPoco_1_1OSP_1_1PreferencesService_aed6bedec9793636328b6acbeed2f1950}} 
+\index{Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService}{Preferences\+Service}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_aed6bedec9793636328b6acbeed2f1950}{Poco\+::\+O\+S\+P\+::\+Preferences\+Service\+::\+Ptr}}}
+
+
+
+Definition at line 48 of file Preferences\+Service.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1PreferencesService_a26753679b74068033772a8b66d16dce8}\label{classPoco_1_1OSP_1_1PreferencesService_a26753679b74068033772a8b66d16dce8}} 
+\index{Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}!PreferencesService@{PreferencesService}}
+\index{PreferencesService@{PreferencesService}!Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}}
+\doxysubsubsection{\texorpdfstring{PreferencesService()}{PreferencesService()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Preferences\+Service\+::\+Preferences\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Poco\+::\+Path}} \&}]{persistency\+Dir,  }\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Poco\+::\+Util\+::\+Abstract\+Configuration}} $\ast$}]{p\+Global\+Config }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1PreferencesService_aaa52829d733a1c1b3b7bf6b8f0fcb3f5}\label{classPoco_1_1OSP_1_1PreferencesService_aaa52829d733a1c1b3b7bf6b8f0fcb3f5}} 
+\index{Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}!````~PreferencesService@{$\sim$PreferencesService}}
+\index{````~PreferencesService@{$\sim$PreferencesService}!Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}}
+\doxysubsubsection{\texorpdfstring{$\sim$PreferencesService()}{~PreferencesService()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Preferences\+Service\+::$\sim$\+Preferences\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1PreferencesService_a15a6590270ca12c6a88092689b1dbe78}\label{classPoco_1_1OSP_1_1PreferencesService_a15a6590270ca12c6a88092689b1dbe78}} 
+\index{Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}!configuration@{configuration}}
+\index{configuration@{configuration}!Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}}
+\doxysubsubsection{\texorpdfstring{configuration()}{configuration()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_af4c9daf6a954f9ad1c3bcc2f2e778ae4}{Configuration\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Preferences\+Service\+::configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the preferences object for the given bundle or service. A bundle should specify its symbolic name as ID. A service should specify its service name. \mbox{\Hypertarget{classPoco_1_1OSP_1_1PreferencesService_a4a91c33f98a4989b193fe88d4fad4a44}\label{classPoco_1_1OSP_1_1PreferencesService_a4a91c33f98a4989b193fe88d4fad4a44}} 
+\index{Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}!isA@{isA}}
+\index{isA@{isA}!Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}}
+\doxysubsubsection{\texorpdfstring{isA()}{isA()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Preferences\+Service\+::isA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&}]{other\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the type information for the object\textquotesingle{}s class.
+
+Subclasses must override this member function.
+
+The implementation of \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_a4a91c33f98a4989b193fe88d4fad4a44}{is\+A()}} is usually as follows\+: const std\+::type\+\_\+info\& My\+Service\+::type() const \{ return typeid(\+My\+Service); \}
+
+If a service class implements a service interface, the type information for the interface class should be returned instead\+: const std\+::type\+\_\+info\& My\+Service\+Impl\+::type() const \{ return typeid(\+My\+Service); \} 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a46c8cf8f6356230490f9ba59a5cb40e2}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1PreferencesService_a009ea0e64a1c30bbaf85e7b68911bb28}\label{classPoco_1_1OSP_1_1PreferencesService_a009ea0e64a1c30bbaf85e7b68911bb28}} 
+\index{Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}!preferences@{preferences}}
+\index{preferences@{preferences}!Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}}
+\doxysubsubsection{\texorpdfstring{preferences()}{preferences()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Preferences_a7219e333ef8364deb747f60940c73608}{Preferences\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Preferences\+Service\+::preferences (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{bundle\+Or\+Service\+ID }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService}{Preferences\+Service}}, usign the given global configuration. \mbox{\Hypertarget{classPoco_1_1OSP_1_1PreferencesService_a3843dd81f76a65bb636a3c1f717df57b}\label{classPoco_1_1OSP_1_1PreferencesService_a3843dd81f76a65bb636a3c1f717df57b}} 
+\index{Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}!type@{type}}
+\index{type@{type}!Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info\& Poco\+::\+O\+S\+P\+::\+Preferences\+Service\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a71ff82992f3ecfa2de28d647b15eede8}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1PreferencesService_aa87deff35fd34253956b228a35b4aee6}\label{classPoco_1_1OSP_1_1PreferencesService_aa87deff35fd34253956b228a35b4aee6}} 
+\index{Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}!ConstPtr@{ConstPtr}}
+\index{ConstPtr@{ConstPtr}!Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}}
+\doxysubsubsection{\texorpdfstring{ConstPtr}{ConstPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService_aed6bedec9793636328b6acbeed2f1950}{Ptr}} Poco\+::\+O\+S\+P\+::\+Preferences\+Service\+::\+Const\+Ptr}
+
+
+
+Definition at line 49 of file Preferences\+Service.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1PreferencesService_a827b919bc5ea91c631f12619c1ab21c0}\label{classPoco_1_1OSP_1_1PreferencesService_a827b919bc5ea91c631f12619c1ab21c0}} 
+\index{Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}!SERVICE\_NAME@{SERVICE\_NAME}}
+\index{SERVICE\_NAME@{SERVICE\_NAME}!Poco::OSP::PreferencesService@{Poco::OSP::PreferencesService}}
+\doxysubsubsection{\texorpdfstring{SERVICE\_NAME}{SERVICE\_NAME}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+O\+S\+P\+::\+Preferences\+Service\+::\+S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+A\+ME\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the global application configuration. 
+
+
+
+Definition at line 63 of file Preferences\+Service.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{PreferencesService_8h}{Preferences\+Service.\+h}}\end{DoxyCompactItemize}

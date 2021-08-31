@@ -1,0 +1,258 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1Listener}{}\doxysection{Poco\+::Remoting\+NG\+::Listener Class Reference}
+\label{classPoco_1_1RemotingNG_1_1Listener}\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+
+
+{\ttfamily \#include $<$Listener.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::Listener\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::Listener\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a40e542b5026fe0cae8002b8267cd09ee}{Listener}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a1042f46b2e46e8b496a2c406ebcfab61}{end\+Point}})
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a0869eb0af0ffccd115b98d2c34e6a5ec}{$\sim$\+Listener}} ()
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a28739398cfb0762be64179974ebb93c9}{start}} ()=0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_ad3c872bfafaab2b67e3ac5a7c4b27134}{stop}} ()=0
+\begin{DoxyCompactList}\small\item\em Start accepting requests. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a6684c1be1c75e9151fd96b4c27ea412e}{protocol}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Stop accepting requests. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a1042f46b2e46e8b496a2c406ebcfab61}{end\+Point}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual std\+::string \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a8f6ad56bd57d8c6686a46c28e7731da7}{create\+U\+RI}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&type\+Id, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&object\+Id)=0
+\begin{DoxyCompactList}\small\item\em Returns the local endpoint of the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}, as given in the constructor. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a6626c744e63983b38069a8d7f5f05658}{handles\+U\+RI}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)=0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a8ca2978a498fe6e3481ccf15a7be65d8}{register\+Object}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_af3776a637b207d01ec206c8239bce711}{Remote\+Object\+::\+Ptr}} p\+Remote\+Object, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_ab08a5b8b65aa0f3fb807f8f8b5f61fcc}{Skeleton\+::\+Ptr}} p\+Skeleton)=0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_ac34c98080a052920b5375f03a949a126}{unregister\+Object}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_af3776a637b207d01ec206c8239bce711}{Remote\+Object\+::\+Ptr}} p\+Remote\+Object)=0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a17c10e14db6b715f877ce463ba48f152}{set\+Authenticator}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator_ac4e924d914f05a05a50c96d8d7f74910}{Authenticator\+::\+Ptr}} p\+Authenticator)
+\begin{DoxyCompactList}\small\item\em Unregisters a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} from the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator_ac4e924d914f05a05a50c96d8d7f74910}{Authenticator\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_ae28f24288357d578caa07e26d11519c3}{get\+Authenticator}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a8b4fe8295089c84d53b9ad8684b5b601}{set\+Authorizer}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer_a72815d7ed340008fe050bf161176e498}{Authorizer\+::\+Ptr}} p\+Authorizer)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator}{Authenticator}} instance for this \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer_a72815d7ed340008fe050bf161176e498}{Authorizer\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a8a84b16f7c8787f092ae52a68c245c12}{get\+Authorizer}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} waits for incoming requests and handles them by accepting them and passing them to the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} for processing. 
+
+Definition at line 36 of file Listener.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}\label{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}}}
+
+
+
+Definition at line 41 of file Listener.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_a40e542b5026fe0cae8002b8267cd09ee}\label{classPoco_1_1RemotingNG_1_1Listener_a40e542b5026fe0cae8002b8267cd09ee}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!Listener@{Listener}}
+\index{Listener@{Listener}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{Listener()}{Listener()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{end\+Point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_a0869eb0af0ffccd115b98d2c34e6a5ec}\label{classPoco_1_1RemotingNG_1_1Listener_a0869eb0af0ffccd115b98d2c34e6a5ec}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!````~Listener@{$\sim$Listener}}
+\index{````~Listener@{$\sim$Listener}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{$\sim$Listener()}{~Listener()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Remoting\+N\+G\+::\+Listener\+::$\sim$\+Listener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}.
+
+Takes a local endpoint address as input. For network based listener, this will typically be a port number or socket address in the form $<$host$>$\+:$<$port$>$. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Listener_a0be5567ece37d410cb33c9a41b277d38}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Listener}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_a8f6ad56bd57d8c6686a46c28e7731da7}\label{classPoco_1_1RemotingNG_1_1Listener_a8f6ad56bd57d8c6686a46c28e7731da7}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!createURI@{createURI}}
+\index{createURI@{createURI}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{createURI()}{createURI()}}
+{\footnotesize\ttfamily virtual std\+::string Poco\+::\+Remoting\+N\+G\+::\+Listener\+::create\+U\+RI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{type\+Id,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&}]{object\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the local endpoint of the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}, as given in the constructor. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Listener_a9f3f5b219308bc5f7499d654a41d1276}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Listener}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_a1042f46b2e46e8b496a2c406ebcfab61}\label{classPoco_1_1RemotingNG_1_1Listener_a1042f46b2e46e8b496a2c406ebcfab61}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!endPoint@{endPoint}}
+\index{endPoint@{endPoint}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{endPoint()}{endPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Remoting\+N\+G\+::\+Listener\+::end\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the ID of the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} for which this \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} handles requests. 
+
+Definition at line 148 of file Listener.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_ae28f24288357d578caa07e26d11519c3}\label{classPoco_1_1RemotingNG_1_1Listener_ae28f24288357d578caa07e26d11519c3}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!getAuthenticator@{getAuthenticator}}
+\index{getAuthenticator@{getAuthenticator}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{getAuthenticator()}{getAuthenticator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator_ac4e924d914f05a05a50c96d8d7f74910}{Authenticator\+::\+Ptr}} Poco\+::\+Remoting\+N\+G\+::\+Listener\+::get\+Authenticator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator}{Authenticator}} instance for this \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}.
+
+An \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator}{Authenticator}} should be set immediately after creating the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}, before registering it with the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} and accepting requests.
+
+Can be overridden by subclasses, but overriders should call the base class implementation. 
+
+Definition at line 154 of file Listener.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_a8a84b16f7c8787f092ae52a68c245c12}\label{classPoco_1_1RemotingNG_1_1Listener_a8a84b16f7c8787f092ae52a68c245c12}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!getAuthorizer@{getAuthorizer}}
+\index{getAuthorizer@{getAuthorizer}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{getAuthorizer()}{getAuthorizer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer_a72815d7ed340008fe050bf161176e498}{Authorizer\+::\+Ptr}} Poco\+::\+Remoting\+N\+G\+::\+Listener\+::get\+Authorizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer}{Authorizer}} instance for this \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}.
+
+An \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer}{Authorizer}} should be set immediately after creating the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}, before registering it with the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} and accepting requests.
+
+Can be overridden by subclasses, but overriders should call the base class implementation. 
+
+Definition at line 160 of file Listener.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_a6626c744e63983b38069a8d7f5f05658}\label{classPoco_1_1RemotingNG_1_1Listener_a6626c744e63983b38069a8d7f5f05658}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!handlesURI@{handlesURI}}
+\index{handlesURI@{handlesURI}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{handlesURI()}{handlesURI()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Remoting\+N\+G\+::\+Listener\+::handles\+U\+RI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Create an \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} for accessing the object with the given Type\+Id and Object\+Id through the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}.
+
+Must return a complete \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} for the object. \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} scheme and authority can be freely chosen by the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}; however the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} path must be in format /$<$protocol$>$/$<$type\+Id$>$/$<$object\+Id$>$. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Listener_abb252aaf4a538ad2b2f60841b956c081}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Listener}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_a6684c1be1c75e9151fd96b4c27ea412e}\label{classPoco_1_1RemotingNG_1_1Listener_a6684c1be1c75e9151fd96b4c27ea412e}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!protocol@{protocol}}
+\index{protocol@{protocol}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{protocol()}{protocol()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Remoting\+N\+G\+::\+Listener\+::protocol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Stop accepting requests. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Listener_a665fb7199883d2a30a7cad83b4d46cb2}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Listener}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_a8ca2978a498fe6e3481ccf15a7be65d8}\label{classPoco_1_1RemotingNG_1_1Listener_a8ca2978a498fe6e3481ccf15a7be65d8}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!registerObject@{registerObject}}
+\index{registerObject@{registerObject}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{registerObject()}{registerObject()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Remoting\+N\+G\+::\+Listener\+::register\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_af3776a637b207d01ec206c8239bce711}{Remote\+Object\+::\+Ptr}}}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_ab08a5b8b65aa0f3fb807f8f8b5f61fcc}{Skeleton\+::\+Ptr}}}]{p\+Skeleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Check whether the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} can be handled by this \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} instance.
+
+This is used by the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} to check whether a given remote service object identified by the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} is actually located on the same \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}.
+
+In some cases, simply comparing the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} against all locally registered U\+R\+Is does not work, as \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} may be different even if they reference the same object. For example, the U\+R\+Is \href{http://localhost/a/b/c}{\texttt{ http\+://localhost/a/b/c}} and \href{http://127.0.0.1/a/b/c}{\texttt{ http\+://127.\+0.\+0.\+1/a/b/c}} are different, but actually reference the same resource.
+
+An implementation of this function should examine the authority part (host and port) of the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} and check if it is equivalent to the endpoint handled by the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}.
+
+A simple implementation can always return false. In this case, local objects will only be recognized if the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} exactly matches the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} created by the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} when the object was registered. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Listener_a7f6b145dd10109ecd2e3a673c46ac158}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Listener}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_a17c10e14db6b715f877ce463ba48f152}\label{classPoco_1_1RemotingNG_1_1Listener_a17c10e14db6b715f877ce463ba48f152}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!setAuthenticator@{setAuthenticator}}
+\index{setAuthenticator@{setAuthenticator}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{setAuthenticator()}{setAuthenticator()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Remoting\+N\+G\+::\+Listener\+::set\+Authenticator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator_ac4e924d914f05a05a50c96d8d7f74910}{Authenticator\+::\+Ptr}}}]{p\+Authenticator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Unregisters a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} from the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_a8b4fe8295089c84d53b9ad8684b5b601}\label{classPoco_1_1RemotingNG_1_1Listener_a8b4fe8295089c84d53b9ad8684b5b601}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!setAuthorizer@{setAuthorizer}}
+\index{setAuthorizer@{setAuthorizer}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{setAuthorizer()}{setAuthorizer()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Remoting\+N\+G\+::\+Listener\+::set\+Authorizer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer_a72815d7ed340008fe050bf161176e498}{Authorizer\+::\+Ptr}}}]{p\+Authorizer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authenticator}{Authenticator}} instance for this \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_a28739398cfb0762be64179974ebb93c9}\label{classPoco_1_1RemotingNG_1_1Listener_a28739398cfb0762be64179974ebb93c9}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!start@{start}}
+\index{start@{start}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Remoting\+N\+G\+::\+Listener\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Listener_ad150622e3e9dc83dc265b227f56f7690}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Listener}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_ad3c872bfafaab2b67e3ac5a7c4b27134}\label{classPoco_1_1RemotingNG_1_1Listener_ad3c872bfafaab2b67e3ac5a7c4b27134}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!stop@{stop}}
+\index{stop@{stop}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Remoting\+N\+G\+::\+Listener\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Start accepting requests. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Listener_a7df68a4ba7c894e772297d54e8cbdb5a}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Listener}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Listener_ac34c98080a052920b5375f03a949a126}\label{classPoco_1_1RemotingNG_1_1Listener_ac34c98080a052920b5375f03a949a126}} 
+\index{Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}!unregisterObject@{unregisterObject}}
+\index{unregisterObject@{unregisterObject}!Poco::RemotingNG::Listener@{Poco::RemotingNG::Listener}}
+\doxysubsubsection{\texorpdfstring{unregisterObject()}{unregisterObject()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Remoting\+N\+G\+::\+Listener\+::unregister\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_af3776a637b207d01ec206c8239bce711}{Remote\+Object\+::\+Ptr}}}]{p\+Remote\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} and its \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} with the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}.
+
+Depending on the protocol, the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} can opt to let the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} handle all invocations (i.\+e. with a protocol that sends the full \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} with each request), which allows to implement a request handler that simply calls \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a95ce65a28cb2e160c3f1ab09ddd3a638}{O\+R\+B\+::invoke()}}. In this case the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} does not need to actually register the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} and \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} internally.
+
+Note that \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a8ca2978a498fe6e3481ccf15a7be65d8}{register\+Object()}} is called from inside the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}, and thus is not allowed to call back into the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} (danger of dead-\/lock). 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Listener_ac3ac20ed139744c5727240d4dfc9dd62}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Listener}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{Listener_8h}{Listener.\+h}}\end{DoxyCompactItemize}

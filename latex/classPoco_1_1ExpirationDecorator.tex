@@ -1,0 +1,136 @@
+\hypertarget{classPoco_1_1ExpirationDecorator}{}\doxysection{Poco\+::Expiration\+Decorator$<$ T\+Args $>$ Class Template Reference}
+\label{classPoco_1_1ExpirationDecorator}\index{Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}}
+
+
+{\ttfamily \#include $<$Expiration\+Decorator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ExpirationDecorator_a44e36dfe11c63d7b978de3133629743e}{Expiration\+Decorator}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1ExpirationDecorator_a729c19d0b6779ad906ea740e869962bb}{Expiration\+Decorator}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Args \&p, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Poco\+::\+Timespan\+::\+Time\+Diff}} \&diff\+In\+Ms)
+\item 
+\mbox{\hyperlink{classPoco_1_1ExpirationDecorator_a6923631fe5d3f0f836fb114b9278983f}{Expiration\+Decorator}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Args \&p, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&time\+Span)
+\item 
+\mbox{\hyperlink{classPoco_1_1ExpirationDecorator_ad777e864c50079f10b424b7aed5ff74a}{Expiration\+Decorator}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Args \&p, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} \&time\+Stamp)
+\item 
+\mbox{\hyperlink{classPoco_1_1ExpirationDecorator_a1a51935c64e630c72f9e53efadd720ac}{$\sim$\+Expiration\+Decorator}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} \& \mbox{\hyperlink{classPoco_1_1ExpirationDecorator_aaab1d8cdd3bc9797516532a5952c4c5d}{get\+Expiration}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Args \& \mbox{\hyperlink{classPoco_1_1ExpirationDecorator_af493a996fcae358c88d053c02f79b131}{value}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+T\+Args \& \mbox{\hyperlink{classPoco_1_1ExpirationDecorator_a4f970b29c0836c8895673952e32492c4}{value}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T\+Args$>$\newline
+class Poco\+::\+Expiration\+Decorator$<$ T\+Args $>$}
+
+\mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Expiration\+Decorator}} adds an expiration method to values so that they can be used with the \mbox{\hyperlink{classPoco_1_1UniqueExpireCache}{Unique\+Expire\+Cache}}. 
+
+Definition at line 31 of file Expiration\+Decorator.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1ExpirationDecorator_a44e36dfe11c63d7b978de3133629743e}\label{classPoco_1_1ExpirationDecorator_a44e36dfe11c63d7b978de3133629743e}} 
+\index{Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}!ExpirationDecorator@{ExpirationDecorator}}
+\index{ExpirationDecorator@{ExpirationDecorator}!Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{ExpirationDecorator()}{ExpirationDecorator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T\+Args $>$ \\
+\mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Poco\+::\+Expiration\+Decorator}}$<$ T\+Args $>$\+::\mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Expiration\+Decorator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 36 of file Expiration\+Decorator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpirationDecorator_a729c19d0b6779ad906ea740e869962bb}\label{classPoco_1_1ExpirationDecorator_a729c19d0b6779ad906ea740e869962bb}} 
+\index{Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}!ExpirationDecorator@{ExpirationDecorator}}
+\index{ExpirationDecorator@{ExpirationDecorator}!Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{ExpirationDecorator()}{ExpirationDecorator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T\+Args $>$ \\
+\mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Poco\+::\+Expiration\+Decorator}}$<$ T\+Args $>$\+::\mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Expiration\+Decorator}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Args \&}]{p,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Poco\+::\+Timespan\+::\+Time\+Diff}} \&}]{diff\+In\+Ms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 42 of file Expiration\+Decorator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpirationDecorator_a6923631fe5d3f0f836fb114b9278983f}\label{classPoco_1_1ExpirationDecorator_a6923631fe5d3f0f836fb114b9278983f}} 
+\index{Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}!ExpirationDecorator@{ExpirationDecorator}}
+\index{ExpirationDecorator@{ExpirationDecorator}!Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{ExpirationDecorator()}{ExpirationDecorator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T\+Args $>$ \\
+\mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Poco\+::\+Expiration\+Decorator}}$<$ T\+Args $>$\+::\mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Expiration\+Decorator}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Args \&}]{p,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{time\+Span }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 50 of file Expiration\+Decorator.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1ExpirationDecorator_ad777e864c50079f10b424b7aed5ff74a}\label{classPoco_1_1ExpirationDecorator_ad777e864c50079f10b424b7aed5ff74a}} 
+\index{Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}!ExpirationDecorator@{ExpirationDecorator}}
+\index{ExpirationDecorator@{ExpirationDecorator}!Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{ExpirationDecorator()}{ExpirationDecorator()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T\+Args $>$ \\
+\mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Poco\+::\+Expiration\+Decorator}}$<$ T\+Args $>$\+::\mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Expiration\+Decorator}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Args \&}]{p,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} \&}]{time\+Stamp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 58 of file Expiration\+Decorator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpirationDecorator_a1a51935c64e630c72f9e53efadd720ac}\label{classPoco_1_1ExpirationDecorator_a1a51935c64e630c72f9e53efadd720ac}} 
+\index{Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}!````~ExpirationDecorator@{$\sim$ExpirationDecorator}}
+\index{````~ExpirationDecorator@{$\sim$ExpirationDecorator}!Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$ExpirationDecorator()}{~ExpirationDecorator()}}
+{\footnotesize\ttfamily template$<$typename T\+Args $>$ \\
+\mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Poco\+::\+Expiration\+Decorator}}$<$ T\+Args $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Expiration\+Decorator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file Expiration\+Decorator.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1ExpirationDecorator_aaab1d8cdd3bc9797516532a5952c4c5d}\label{classPoco_1_1ExpirationDecorator_aaab1d8cdd3bc9797516532a5952c4c5d}} 
+\index{Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}!getExpiration@{getExpiration}}
+\index{getExpiration@{getExpiration}!Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{getExpiration()}{getExpiration()}}
+{\footnotesize\ttfamily template$<$typename T\+Args $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}}\& \mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Poco\+::\+Expiration\+Decorator}}$<$ T\+Args $>$\+::get\+Expiration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 70 of file Expiration\+Decorator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpirationDecorator_a4f970b29c0836c8895673952e32492c4}\label{classPoco_1_1ExpirationDecorator_a4f970b29c0836c8895673952e32492c4}} 
+\index{Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}!value@{value}}
+\index{value@{value}!Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Args $>$ \\
+T\+Args\& \mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Poco\+::\+Expiration\+Decorator}}$<$ T\+Args $>$\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 80 of file Expiration\+Decorator.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpirationDecorator_af493a996fcae358c88d053c02f79b131}\label{classPoco_1_1ExpirationDecorator_af493a996fcae358c88d053c02f79b131}} 
+\index{Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}!value@{value}}
+\index{value@{value}!Poco::ExpirationDecorator$<$ TArgs $>$@{Poco::ExpirationDecorator$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Args $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Args\& \mbox{\hyperlink{classPoco_1_1ExpirationDecorator}{Poco\+::\+Expiration\+Decorator}}$<$ T\+Args $>$\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 75 of file Expiration\+Decorator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ExpirationDecorator_8h}{Expiration\+Decorator.\+h}}\end{DoxyCompactItemize}

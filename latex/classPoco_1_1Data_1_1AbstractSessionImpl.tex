@@ -1,0 +1,451 @@
+\hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl}{}\doxysection{Poco\+::Data\+::Abstract\+Session\+Impl$<$ C $>$ Class Template Reference}
+\label{classPoco_1_1Data_1_1AbstractSessionImpl}\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+
+
+{\ttfamily \#include $<$Abstract\+Session\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::Abstract\+Session\+Impl$<$ C $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Data\+::Abstract\+Session\+Impl$<$ C $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(C\+::$\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a2b1b368ca6e43f9cacaf3d77d50cf2d5}{Feature\+Setter}}) (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&, bool)
+\item 
+typedef bool(C\+::$\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a31998d0fc2a2cd90857683977a04fdec}{Feature\+Getter}}) (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&)
+\begin{DoxyCompactList}\small\item\em The setter method for a feature. \end{DoxyCompactList}\item 
+typedef void(C\+::$\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a9eedc3616e2965e91648e45f3155d255}{Property\+Setter}}) (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&)
+\begin{DoxyCompactList}\small\item\em The getter method for a feature. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}}(C\+::$\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_aa1f215342110414de8f016f6d72230b9}{Property\+Getter}}) (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&)
+\begin{DoxyCompactList}\small\item\em The setter method for a property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_aaceacb814e2252c3495a8584f1476727}{Abstract\+Session\+Impl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a25cd3353029f8c1bfc9a70a249e4b38b}{connection\+String}}, std\+::size\+\_\+t timeout=\mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a5e8fac3c026749487f40f2778acaeb0d}{L\+O\+G\+I\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+D\+E\+F\+A\+U\+LT}})
+\begin{DoxyCompactList}\small\item\em The getter method for a property. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_aae17a45c231908986eaf80eea22f1945}{$\sim$\+Abstract\+Session\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Abstract\+Session\+Impl}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a0c0d1f17ea4ec19af6694fdadade7827}{set\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool state)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_ac8086b635c37b671c6c16882fa98c431}{get\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a748fee01445219ca5529e9827d167f10}{set\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&value)
+\item 
+\mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a2c82ebed3018fd837831af44bff8a41b}{get\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_ac598185722f7f521bcf40df9f919dfbb}{set\+Storage}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Sets the storage type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a35c1ddf0b2d4c2cd140795d313ab41e2}{set\+Storage}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&value)
+\begin{DoxyCompactList}\small\item\em Sets the storage type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a8dd4f518d57a0020f46ed2e2d765bafd}{get\+Storage}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Returns the storage type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_afaab56fe7969eb112ea2086a2c5e8149}{set\+Handle}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&handle)
+\begin{DoxyCompactList}\small\item\em Sets the native session handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_ae02bf3f3ab69c2a724478e21688a2d23}{get\+Handle}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Returns the native session handle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a813d6d31f5eed26e649d3204372a8c6d}{set\+Bulk}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool bulk)
+\begin{DoxyCompactList}\small\item\em Sets the execution type. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_aed115dc882462cf8a269e8ce0b352d83}{get\+Bulk}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Returns the execution type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a4867790d74ddb6bbf907c34922987d74}{set\+Empty\+String\+Is\+Null}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool empty\+String\+Is\+Null)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a7e9478b2ac1364fb13ade8c93ee6805f}{get\+Empty\+String\+Is\+Null}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name=\char`\"{}\char`\"{})
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a6713a1b7d8c977be9b40094c7500f477}{set\+Force\+Empty\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool force\+Empty\+String)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a5f59e268da0a91f76df0f78c4d1987de}{get\+Force\+Empty\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_ab9b7c20688b99cee232fefe723661d95}{add\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a2b1b368ca6e43f9cacaf3d77d50cf2d5}{Feature\+Setter}} setter, \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a31998d0fc2a2cd90857683977a04fdec}{Feature\+Getter}} getter)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a0f2f15a6c8e0660763c441b651a3aef9}{add\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a9eedc3616e2965e91648e45f3155d255}{Property\+Setter}} setter, \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_aa1f215342110414de8f016f6d72230b9}{Property\+Getter}} getter)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class C$>$\newline
+class Poco\+::\+Data\+::\+Abstract\+Session\+Impl$<$ C $>$}
+
+A partial implementation of \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}}, providing features and properties management.
+
+To implement a certain feature or property, a subclass must provide setter and getter methods and register them with \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_ab9b7c20688b99cee232fefe723661d95}{add\+Feature()}} or \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a0f2f15a6c8e0660763c441b651a3aef9}{add\+Property()}}. 
+
+Definition at line 34 of file Abstract\+Session\+Impl.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a31998d0fc2a2cd90857683977a04fdec}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a31998d0fc2a2cd90857683977a04fdec}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!FeatureGetter@{FeatureGetter}}
+\index{FeatureGetter@{FeatureGetter}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{FeatureGetter}{FeatureGetter}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+typedef bool(C\+::$\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::Feature\+Getter) (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&)}
+
+
+
+The setter method for a feature. 
+
+
+
+Definition at line 46 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a2b1b368ca6e43f9cacaf3d77d50cf2d5}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a2b1b368ca6e43f9cacaf3d77d50cf2d5}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!FeatureSetter@{FeatureSetter}}
+\index{FeatureSetter@{FeatureSetter}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{FeatureSetter}{FeatureSetter}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+typedef void(C\+::$\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::Feature\+Setter) (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&, bool)}
+
+
+
+Definition at line 43 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_aa1f215342110414de8f016f6d72230b9}\label{classPoco_1_1Data_1_1AbstractSessionImpl_aa1f215342110414de8f016f6d72230b9}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!PropertyGetter@{PropertyGetter}}
+\index{PropertyGetter@{PropertyGetter}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{PropertyGetter}{PropertyGetter}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}}(C\+::$\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::Property\+Getter) (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&)}
+
+
+
+The setter method for a property. 
+
+
+
+Definition at line 52 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a9eedc3616e2965e91648e45f3155d255}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a9eedc3616e2965e91648e45f3155d255}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!PropertySetter@{PropertySetter}}
+\index{PropertySetter@{PropertySetter}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{PropertySetter}{PropertySetter}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+typedef void(C\+::$\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::Property\+Setter) (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&)}
+
+
+
+The getter method for a feature. 
+
+
+
+Definition at line 49 of file Abstract\+Session\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_aaceacb814e2252c3495a8584f1476727}\label{classPoco_1_1Data_1_1AbstractSessionImpl_aaceacb814e2252c3495a8584f1476727}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!AbstractSessionImpl@{AbstractSessionImpl}}
+\index{AbstractSessionImpl@{AbstractSessionImpl}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{AbstractSessionImpl()}{AbstractSessionImpl()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Abstract\+Session\+Impl}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{connection\+String,  }\item[{std\+::size\+\_\+t}]{timeout = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a5e8fac3c026749487f40f2778acaeb0d}{L\+O\+G\+I\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+D\+E\+F\+A\+U\+LT}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The getter method for a property. 
+
+Creates the \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Abstract\+Session\+Impl}}. \begin{DoxyVerb}    Adds "storage" property and sets the default internal storage container 
+    type to std::deque.
+    The storage is created by statements automatically whenever a query 
+    returning results is executed but external storage is provided by the user.
+    Storage type can be reconfigured at runtime both globally (for the
+    duration of the session) and locally (for a single statement execution only). 
+    See StatementImpl for details on how this property is used at runtime.
+
+    Adds "handle" property which, if set by the back end, returns native handle
+    for the back end DB.
+
+    Adds "bulk" feature and sets it to false.
+    Bulk feature determines whether the session is capable of bulk operations.
+    Connectors that are capable of it must set this feature prior to attempting 
+    bulk operations.
+
+    Adds "emptyStringIsNull" feature and sets it to false. This feature should be
+    set to true in order to modify the behavior of the databases that distinguish
+    between zero-length character strings as nulls. Setting this feature to true 
+    shall disregard any difference between empty character strings and nulls,
+    causing the framework to treat them the same (i.e. behave like Oracle).     
+
+    Adds "forceEmptyString" feature and sets it to false. This feature should be set
+    to true in order to force the databases that do not distinguish empty strings from
+    nulls (e.g. Oracle) to always report empty string.
+
+    The "emptyStringIsNull" and "forceEmptyString" features are mutually exclusive.
+    While these features can not both be true at the same time, they can both be false,
+    resulting in default underlying database behavior.
+\end{DoxyVerb}
+ 
+
+Definition at line 55 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_aae17a45c231908986eaf80eea22f1945}\label{classPoco_1_1Data_1_1AbstractSessionImpl_aae17a45c231908986eaf80eea22f1945}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!````~AbstractSessionImpl@{$\sim$AbstractSessionImpl}}
+\index{````~AbstractSessionImpl@{$\sim$AbstractSessionImpl}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$AbstractSessionImpl()}{~AbstractSessionImpl()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Abstract\+Session\+Impl}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Abstract\+Session\+Impl}}. 
+
+
+
+Definition at line 115 of file Abstract\+Session\+Impl.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_ab9b7c20688b99cee232fefe723661d95}\label{classPoco_1_1Data_1_1AbstractSessionImpl_ab9b7c20688b99cee232fefe723661d95}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!addFeature@{addFeature}}
+\index{addFeature@{addFeature}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{addFeature()}{addFeature()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::add\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a2b1b368ca6e43f9cacaf3d77d50cf2d5}{Feature\+Setter}}}]{setter,  }\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a31998d0fc2a2cd90857683977a04fdec}{Feature\+Getter}}}]{getter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Adds a feature to the map of supported features.
+
+The setter or getter can be null, in case setting or getting a feature is not supported. 
+
+Definition at line 264 of file Abstract\+Session\+Impl.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a0f2f15a6c8e0660763c441b651a3aef9}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a0f2f15a6c8e0660763c441b651a3aef9}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!addProperty@{addProperty}}
+\index{addProperty@{addProperty}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{addProperty()}{addProperty()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::add\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a9eedc3616e2965e91648e45f3155d255}{Property\+Setter}}}]{setter,  }\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_aa1f215342110414de8f016f6d72230b9}{Property\+Getter}}}]{getter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Adds a property to the map of supported properties.
+
+The setter or getter can be null, in case setting or getting a property is not supported. 
+
+Definition at line 276 of file Abstract\+Session\+Impl.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_aed115dc882462cf8a269e8ce0b352d83}\label{classPoco_1_1Data_1_1AbstractSessionImpl_aed115dc882462cf8a269e8ce0b352d83}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!getBulk@{getBulk}}
+\index{getBulk@{getBulk}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{getBulk()}{getBulk()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::get\+Bulk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the execution type. 
+
+
+
+Definition at line 216 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a7e9478b2ac1364fb13ade8c93ee6805f}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a7e9478b2ac1364fb13ade8c93ee6805f}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!getEmptyStringIsNull@{getEmptyStringIsNull}}
+\index{getEmptyStringIsNull@{getEmptyStringIsNull}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{getEmptyStringIsNull()}{getEmptyStringIsNull()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::get\+Empty\+String\+Is\+Null (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the setting for the behavior regarding empty variable length strings. See \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a4867790d74ddb6bbf907c34922987d74}{set\+Empty\+String\+Is\+Null(const std\+::string\&, bool)}} and this class documentation for feature rationale and details. 
+
+Definition at line 234 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_ac8086b635c37b671c6c16882fa98c431}\label{classPoco_1_1Data_1_1AbstractSessionImpl_ac8086b635c37b671c6c16882fa98c431}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!getFeature@{getFeature}}
+\index{getFeature@{getFeature}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{getFeature()}{getFeature()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::get\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Looks a feature up in the features map and calls the feature\textquotesingle{}s getter, if there is one. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a5b63f60915d5c65f45c053a70a481acb}{Poco\+::\+Data\+::\+Session\+Impl}}.
+
+
+
+Definition at line 135 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a5f59e268da0a91f76df0f78c4d1987de}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a5f59e268da0a91f76df0f78c4d1987de}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!getForceEmptyString@{getForceEmptyString}}
+\index{getForceEmptyString@{getForceEmptyString}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{getForceEmptyString()}{getForceEmptyString()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::get\+Force\+Empty\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the setting for the behavior regarding empty variable length strings. See \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a6713a1b7d8c977be9b40094c7500f477}{set\+Force\+Empty\+String(const std\+::string\&, bool)}} and this class documentation for feature rationale and details. 
+
+Definition at line 255 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_ae02bf3f3ab69c2a724478e21688a2d23}\label{classPoco_1_1Data_1_1AbstractSessionImpl_ae02bf3f3ab69c2a724478e21688a2d23}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!getHandle@{getHandle}}
+\index{getHandle@{getHandle}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{getHandle()}{getHandle()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::get\+Handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the native session handle. 
+
+
+
+Definition at line 204 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a2c82ebed3018fd837831af44bff8a41b}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a2c82ebed3018fd837831af44bff8a41b}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{getProperty()}{getProperty()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::get\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Looks a property up in the properties map and calls the property\textquotesingle{}s getter, if there is one. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a6a8d8b9930f13e448c475aa3ede6beba}{Poco\+::\+Data\+::\+Session\+Impl}}.
+
+
+
+Definition at line 165 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a8dd4f518d57a0020f46ed2e2d765bafd}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a8dd4f518d57a0020f46ed2e2d765bafd}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!getStorage@{getStorage}}
+\index{getStorage@{getStorage}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{getStorage()}{getStorage()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::get\+Storage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the storage type. 
+
+
+
+Definition at line 192 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a813d6d31f5eed26e649d3204372a8c6d}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a813d6d31f5eed26e649d3204372a8c6d}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!setBulk@{setBulk}}
+\index{setBulk@{setBulk}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{setBulk()}{setBulk()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::set\+Bulk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{bulk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the execution type. 
+
+
+
+Definition at line 210 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a4867790d74ddb6bbf907c34922987d74}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a4867790d74ddb6bbf907c34922987d74}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!setEmptyStringIsNull@{setEmptyStringIsNull}}
+\index{setEmptyStringIsNull@{setEmptyStringIsNull}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{setEmptyStringIsNull()}{setEmptyStringIsNull()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::set\+Empty\+String\+Is\+Null (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{empty\+String\+Is\+Null }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the behavior regarding empty variable length strings. Those are treated as N\+U\+LL by Oracle and as empty string by most other databases. When this feature is true, empty strings are treated as N\+U\+LL. 
+
+Definition at line 222 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a0c0d1f17ea4ec19af6694fdadade7827}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a0c0d1f17ea4ec19af6694fdadade7827}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!setFeature@{setFeature}}
+\index{setFeature@{setFeature}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{setFeature()}{setFeature()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::set\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Looks a feature up in the features map and calls the feature\textquotesingle{}s setter, if there is one. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a0bc9a9d0e5a2de2a276325033bbe2613}{Poco\+::\+Data\+::\+Session\+Impl}}.
+
+
+
+Definition at line 120 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a6713a1b7d8c977be9b40094c7500f477}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a6713a1b7d8c977be9b40094c7500f477}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!setForceEmptyString@{setForceEmptyString}}
+\index{setForceEmptyString@{setForceEmptyString}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{setForceEmptyString()}{setForceEmptyString()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::set\+Force\+Empty\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{force\+Empty\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the behavior regarding empty variable length strings. Those are treated as N\+U\+LL by Oracle and as empty string by most other databases. When this feature is true, both empty strings and N\+U\+LL values are reported as empty strings. 
+
+Definition at line 242 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_afaab56fe7969eb112ea2086a2c5e8149}\label{classPoco_1_1Data_1_1AbstractSessionImpl_afaab56fe7969eb112ea2086a2c5e8149}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!setHandle@{setHandle}}
+\index{setHandle@{setHandle}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{setHandle()}{setHandle()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::set\+Handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the native session handle. 
+
+
+
+Definition at line 198 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a748fee01445219ca5529e9827d167f10}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a748fee01445219ca5529e9827d167f10}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{setProperty()}{setProperty()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::set\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Looks a property up in the properties map and calls the property\textquotesingle{}s setter, if there is one. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_ae8ce1167ab86396cbef04cd208323f00}{Poco\+::\+Data\+::\+Session\+Impl}}.
+
+
+
+Definition at line 150 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_a35c1ddf0b2d4c2cd140795d313ab41e2}\label{classPoco_1_1Data_1_1AbstractSessionImpl_a35c1ddf0b2d4c2cd140795d313ab41e2}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!setStorage@{setStorage}}
+\index{setStorage@{setStorage}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{setStorage()}{setStorage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::set\+Storage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the storage type. 
+
+
+
+Definition at line 186 of file Abstract\+Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1AbstractSessionImpl_ac598185722f7f521bcf40df9f919dfbb}\label{classPoco_1_1Data_1_1AbstractSessionImpl_ac598185722f7f521bcf40df9f919dfbb}} 
+\index{Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}!setStorage@{setStorage}}
+\index{setStorage@{setStorage}!Poco::Data::AbstractSessionImpl$<$ C $>$@{Poco::Data::AbstractSessionImpl$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{setStorage()}{setStorage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl}}$<$ C $>$\+::set\+Storage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the storage type. 
+
+
+
+Definition at line 180 of file Abstract\+Session\+Impl.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{AbstractSessionImpl_8h}{Abstract\+Session\+Impl.\+h}}\end{DoxyCompactItemize}

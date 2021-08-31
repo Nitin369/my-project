@@ -1,0 +1,96 @@
+\hypertarget{classPoco_1_1WhitespaceToken}{}\doxysection{Poco\+::Whitespace\+Token Class Reference}
+\label{classPoco_1_1WhitespaceToken}\index{Poco::WhitespaceToken@{Poco::WhitespaceToken}}
+
+
+{\ttfamily \#include $<$Token.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Whitespace\+Token\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Whitespace\+Token\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1WhitespaceToken_aad743cfb355698179ed3ee97c94a0ca9}{Whitespace\+Token}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1WhitespaceToken_ab41e81e860ceafadd27e9f13fc7267c6}{$\sim$\+Whitespace\+Token}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Token_af97b4311a26f292ad64e5bb9cf52e68f}{Class}} \mbox{\hyperlink{classPoco_1_1WhitespaceToken_a4bc1cd710815f47b2554e16bbd5ff4b7}{token\+Class}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1WhitespaceToken_a5097659d6f699961c2c4276a77320efd}{start}} (char c, std\+::istream \&istr)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Token}{Token}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1WhitespaceToken_a75148421a7ec0ff4da3647fe6a9938b5}{finish}} (std\+::istream \&istr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This pseudo token class is used to eat up whitespace in between real tokens. 
+
+Definition at line 143 of file Token.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1WhitespaceToken_aad743cfb355698179ed3ee97c94a0ca9}\label{classPoco_1_1WhitespaceToken_aad743cfb355698179ed3ee97c94a0ca9}} 
+\index{Poco::WhitespaceToken@{Poco::WhitespaceToken}!WhitespaceToken@{WhitespaceToken}}
+\index{WhitespaceToken@{WhitespaceToken}!Poco::WhitespaceToken@{Poco::WhitespaceToken}}
+\doxysubsubsection{\texorpdfstring{WhitespaceToken()}{WhitespaceToken()}}
+{\footnotesize\ttfamily Poco\+::\+Whitespace\+Token\+::\+Whitespace\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1WhitespaceToken_ab41e81e860ceafadd27e9f13fc7267c6}\label{classPoco_1_1WhitespaceToken_ab41e81e860ceafadd27e9f13fc7267c6}} 
+\index{Poco::WhitespaceToken@{Poco::WhitespaceToken}!````~WhitespaceToken@{$\sim$WhitespaceToken}}
+\index{````~WhitespaceToken@{$\sim$WhitespaceToken}!Poco::WhitespaceToken@{Poco::WhitespaceToken}}
+\doxysubsubsection{\texorpdfstring{$\sim$WhitespaceToken()}{~WhitespaceToken()}}
+{\footnotesize\ttfamily Poco\+::\+Whitespace\+Token\+::$\sim$\+Whitespace\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1WhitespaceToken_a75148421a7ec0ff4da3647fe6a9938b5}\label{classPoco_1_1WhitespaceToken_a75148421a7ec0ff4da3647fe6a9938b5}} 
+\index{Poco::WhitespaceToken@{Poco::WhitespaceToken}!finish@{finish}}
+\index{finish@{finish}!Poco::WhitespaceToken@{Poco::WhitespaceToken}}
+\doxysubsubsection{\texorpdfstring{finish()}{finish()}}
+{\footnotesize\ttfamily void Poco\+::\+Whitespace\+Token\+::finish (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Checks if the given character (and, optionally, the next character in the input stream) start a valid token. Returns true if so, false otherwise.
+
+The current read position in istr must not be changed. In other words, only the peek() method of istream may be used.
+
+If the character starts the token, it should be set as the token\textquotesingle{}s value. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Token_a25d6280ac330f4ec952ffdb5c4828d82}{Poco\+::\+Token}}.
+
+\mbox{\Hypertarget{classPoco_1_1WhitespaceToken_a5097659d6f699961c2c4276a77320efd}\label{classPoco_1_1WhitespaceToken_a5097659d6f699961c2c4276a77320efd}} 
+\index{Poco::WhitespaceToken@{Poco::WhitespaceToken}!start@{start}}
+\index{start@{start}!Poco::WhitespaceToken@{Poco::WhitespaceToken}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily bool Poco\+::\+Whitespace\+Token\+::start (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Token}{Token}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Token_ae52de1f819f65cd953950c195a643e6a}{Poco\+::\+Token}}.
+
+\mbox{\Hypertarget{classPoco_1_1WhitespaceToken_a4bc1cd710815f47b2554e16bbd5ff4b7}\label{classPoco_1_1WhitespaceToken_a4bc1cd710815f47b2554e16bbd5ff4b7}} 
+\index{Poco::WhitespaceToken@{Poco::WhitespaceToken}!tokenClass@{tokenClass}}
+\index{tokenClass@{tokenClass}!Poco::WhitespaceToken@{Poco::WhitespaceToken}}
+\doxysubsubsection{\texorpdfstring{tokenClass()}{tokenClass()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Token_af97b4311a26f292ad64e5bb9cf52e68f}{Class}} Poco\+::\+Whitespace\+Token\+::token\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Builds the token by reading and appending the remaining characters from istr. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Token_a699d79eb488d09ea22d802ac633debfa}{Poco\+::\+Token}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Token_8h}{Token.\+h}}\end{DoxyCompactItemize}

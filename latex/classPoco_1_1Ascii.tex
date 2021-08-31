@@ -1,0 +1,347 @@
+\hypertarget{classPoco_1_1Ascii}{}\doxysection{Poco\+::Ascii Class Reference}
+\label{classPoco_1_1Ascii}\index{Poco::Ascii@{Poco::Ascii}}
+
+
+{\ttfamily \#include $<$Ascii.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1}{Character\+Properties}} \{ \newline
+\mbox{\hyperlink{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a79ab19df68e26daa4cbeef5eb7e2f435}{A\+C\+P\+\_\+\+C\+O\+N\+T\+R\+OL}} = 0x0001, 
+\mbox{\hyperlink{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a2946a63a024d1168bda79506382ccbd9}{A\+C\+P\+\_\+\+S\+P\+A\+CE}} = 0x0002, 
+\mbox{\hyperlink{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1adec760fb4d0fd8a444f9c91aa61b990c}{A\+C\+P\+\_\+\+P\+U\+N\+CT}} = 0x0004, 
+\mbox{\hyperlink{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a97dfa36aafe7c7de078abe28edf0d63c}{A\+C\+P\+\_\+\+D\+I\+G\+IT}} = 0x0008, 
+\newline
+\mbox{\hyperlink{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a5b2e18331aa7336389dcdc082b162497}{A\+C\+P\+\_\+\+H\+E\+X\+D\+I\+G\+IT}} = 0x0010, 
+\mbox{\hyperlink{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a009bf9d9144c24c699b90de6ec40eb97}{A\+C\+P\+\_\+\+A\+L\+P\+HA}} = 0x0020, 
+\mbox{\hyperlink{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a4fc1d79ffde8b9f6a2962a3a26bb567a}{A\+C\+P\+\_\+\+L\+O\+W\+ER}} = 0x0040, 
+\mbox{\hyperlink{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a07fcdc7434d427b874e9ccd94555cd6d}{A\+C\+P\+\_\+\+U\+P\+P\+ER}} = 0x0080, 
+\newline
+\mbox{\hyperlink{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a7653e036b87c72338d88d3d67834a447}{A\+C\+P\+\_\+\+G\+R\+A\+PH}} = 0x0100, 
+\mbox{\hyperlink{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a2c4bb57731eb1f4dc70612deca688032}{A\+C\+P\+\_\+\+P\+R\+I\+NT}} = 0x0200
+ \}
+\begin{DoxyCompactList}\small\item\em A\+S\+C\+II character properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classPoco_1_1Ascii_ac31d57add4c307b7753686e04a0cf429}{properties}} (int ch)
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Ascii_aee4a71c7a304e9591ad88053d9f62af6}{has\+Some\+Properties}} (int ch, int \mbox{\hyperlink{classPoco_1_1Ascii_ac31d57add4c307b7753686e04a0cf429}{properties}})
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Ascii_abb1e29a5240534d6a1c6a6f884c0b722}{has\+Properties}} (int ch, int \mbox{\hyperlink{classPoco_1_1Ascii_ac31d57add4c307b7753686e04a0cf429}{properties}})
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Ascii_a0f6a764502a6adde5d140fd43b5a3561}{is\+Ascii}} (int ch)
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Ascii_af972424d47bf76090f82edb8235cf293}{is\+Space}} (int ch)
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Ascii_aeb92c4199d410313a1622573638a557c}{is\+Digit}} (int ch)
+\begin{DoxyCompactList}\small\item\em Returns true iff the given character is a whitespace. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classPoco_1_1Ascii_a6684ecb367406ddf0a1b26f335817d7e}{is\+Hex\+Digit}} (int ch)
+\begin{DoxyCompactList}\small\item\em Returns true iff the given character is a digit. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classPoco_1_1Ascii_aab0fea88fe715f9998c8907495559e37}{is\+Punct}} (int ch)
+\begin{DoxyCompactList}\small\item\em Returns true iff the given character is a hexadecimal digit. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classPoco_1_1Ascii_a1fa273974dadb06793527699c79a6af3}{is\+Alpha}} (int ch)
+\begin{DoxyCompactList}\small\item\em Returns true iff the given character is a punctuation character. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classPoco_1_1Ascii_ab796cce66ddd925861e267940686a61d}{is\+Alpha\+Numeric}} (int ch)
+\begin{DoxyCompactList}\small\item\em Returns true iff the given character is an alphabetic character. ~\newline
+ \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classPoco_1_1Ascii_a74b8f5d63331b3072c5cac8d1fa9cfdf}{is\+Lower}} (int ch)
+\begin{DoxyCompactList}\small\item\em Returns true iff the given character is an alphabetic character. ~\newline
+ \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classPoco_1_1Ascii_a4e314ffb9da60b298e54b6bbdcce0bb3}{is\+Upper}} (int ch)
+\item 
+static int \mbox{\hyperlink{classPoco_1_1Ascii_a60e7810a5713e9ce051c5c914073a18e}{to\+Lower}} (int ch)
+\item 
+static int \mbox{\hyperlink{classPoco_1_1Ascii_a58d5919f06162b7b3a9765f5024b8d1e}{to\+Upper}} (int ch)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains enumerations and static utility functions for dealing with A\+S\+C\+II characters and their properties.
+
+The classification functions will also work if non-\/\+A\+S\+C\+II character codes are passed to them, but classification will only check for A\+S\+C\+II characters.
+
+This allows the classification methods to be used on the single bytes of a U\+T\+F-\/8 string, without causing assertions or inconsistent results (depending upon the current locale) on bytes outside the A\+S\+C\+II range, as may be produced by \mbox{\hyperlink{classPoco_1_1Ascii_af972424d47bf76090f82edb8235cf293}{Ascii\+::is\+Space()}}, etc. 
+
+Definition at line 29 of file Ascii.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1}\label{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1}} 
+\index{Poco::Ascii@{Poco::Ascii}!CharacterProperties@{CharacterProperties}}
+\index{CharacterProperties@{CharacterProperties}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{CharacterProperties}{CharacterProperties}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1}{Poco\+::\+Ascii\+::\+Character\+Properties}}}
+
+
+
+A\+S\+C\+II character properties. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACP\_CONTROL@{ACP\_CONTROL}!Poco::Ascii@{Poco::Ascii}}\index{Poco::Ascii@{Poco::Ascii}!ACP\_CONTROL@{ACP\_CONTROL}}}\mbox{\Hypertarget{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a79ab19df68e26daa4cbeef5eb7e2f435}\label{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a79ab19df68e26daa4cbeef5eb7e2f435}} 
+A\+C\+P\+\_\+\+C\+O\+N\+T\+R\+OL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACP\_SPACE@{ACP\_SPACE}!Poco::Ascii@{Poco::Ascii}}\index{Poco::Ascii@{Poco::Ascii}!ACP\_SPACE@{ACP\_SPACE}}}\mbox{\Hypertarget{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a2946a63a024d1168bda79506382ccbd9}\label{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a2946a63a024d1168bda79506382ccbd9}} 
+A\+C\+P\+\_\+\+S\+P\+A\+CE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACP\_PUNCT@{ACP\_PUNCT}!Poco::Ascii@{Poco::Ascii}}\index{Poco::Ascii@{Poco::Ascii}!ACP\_PUNCT@{ACP\_PUNCT}}}\mbox{\Hypertarget{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1adec760fb4d0fd8a444f9c91aa61b990c}\label{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1adec760fb4d0fd8a444f9c91aa61b990c}} 
+A\+C\+P\+\_\+\+P\+U\+N\+CT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACP\_DIGIT@{ACP\_DIGIT}!Poco::Ascii@{Poco::Ascii}}\index{Poco::Ascii@{Poco::Ascii}!ACP\_DIGIT@{ACP\_DIGIT}}}\mbox{\Hypertarget{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a97dfa36aafe7c7de078abe28edf0d63c}\label{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a97dfa36aafe7c7de078abe28edf0d63c}} 
+A\+C\+P\+\_\+\+D\+I\+G\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACP\_HEXDIGIT@{ACP\_HEXDIGIT}!Poco::Ascii@{Poco::Ascii}}\index{Poco::Ascii@{Poco::Ascii}!ACP\_HEXDIGIT@{ACP\_HEXDIGIT}}}\mbox{\Hypertarget{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a5b2e18331aa7336389dcdc082b162497}\label{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a5b2e18331aa7336389dcdc082b162497}} 
+A\+C\+P\+\_\+\+H\+E\+X\+D\+I\+G\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACP\_ALPHA@{ACP\_ALPHA}!Poco::Ascii@{Poco::Ascii}}\index{Poco::Ascii@{Poco::Ascii}!ACP\_ALPHA@{ACP\_ALPHA}}}\mbox{\Hypertarget{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a009bf9d9144c24c699b90de6ec40eb97}\label{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a009bf9d9144c24c699b90de6ec40eb97}} 
+A\+C\+P\+\_\+\+A\+L\+P\+HA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACP\_LOWER@{ACP\_LOWER}!Poco::Ascii@{Poco::Ascii}}\index{Poco::Ascii@{Poco::Ascii}!ACP\_LOWER@{ACP\_LOWER}}}\mbox{\Hypertarget{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a4fc1d79ffde8b9f6a2962a3a26bb567a}\label{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a4fc1d79ffde8b9f6a2962a3a26bb567a}} 
+A\+C\+P\+\_\+\+L\+O\+W\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACP\_UPPER@{ACP\_UPPER}!Poco::Ascii@{Poco::Ascii}}\index{Poco::Ascii@{Poco::Ascii}!ACP\_UPPER@{ACP\_UPPER}}}\mbox{\Hypertarget{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a07fcdc7434d427b874e9ccd94555cd6d}\label{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a07fcdc7434d427b874e9ccd94555cd6d}} 
+A\+C\+P\+\_\+\+U\+P\+P\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACP\_GRAPH@{ACP\_GRAPH}!Poco::Ascii@{Poco::Ascii}}\index{Poco::Ascii@{Poco::Ascii}!ACP\_GRAPH@{ACP\_GRAPH}}}\mbox{\Hypertarget{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a7653e036b87c72338d88d3d67834a447}\label{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a7653e036b87c72338d88d3d67834a447}} 
+A\+C\+P\+\_\+\+G\+R\+A\+PH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACP\_PRINT@{ACP\_PRINT}!Poco::Ascii@{Poco::Ascii}}\index{Poco::Ascii@{Poco::Ascii}!ACP\_PRINT@{ACP\_PRINT}}}\mbox{\Hypertarget{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a2c4bb57731eb1f4dc70612deca688032}\label{classPoco_1_1Ascii_a77f5c5e17e5c36daf178473450c0f9b1a2c4bb57731eb1f4dc70612deca688032}} 
+A\+C\+P\+\_\+\+P\+R\+I\+NT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 46 of file Ascii.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Ascii_abb1e29a5240534d6a1c6a6f884c0b722}\label{classPoco_1_1Ascii_abb1e29a5240534d6a1c6a6f884c0b722}} 
+\index{Poco::Ascii@{Poco::Ascii}!hasProperties@{hasProperties}}
+\index{hasProperties@{hasProperties}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{hasProperties()}{hasProperties()}}
+{\footnotesize\ttfamily bool Poco\+::\+Ascii\+::has\+Properties (\begin{DoxyParamCaption}\item[{int}]{ch,  }\item[{int}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns true if the given character is within the A\+S\+C\+II range and has at least one of the given properties. 
+
+Definition at line 141 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Ascii_aee4a71c7a304e9591ad88053d9f62af6}\label{classPoco_1_1Ascii_aee4a71c7a304e9591ad88053d9f62af6}} 
+\index{Poco::Ascii@{Poco::Ascii}!hasSomeProperties@{hasSomeProperties}}
+\index{hasSomeProperties@{hasSomeProperties}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{hasSomeProperties()}{hasSomeProperties()}}
+{\footnotesize\ttfamily bool Poco\+::\+Ascii\+::has\+Some\+Properties (\begin{DoxyParamCaption}\item[{int}]{ch,  }\item[{int}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Return the A\+S\+C\+II character properties for the character with the given A\+S\+C\+II value.
+
+If the character is outside the A\+S\+C\+II range (0 .. 127), 0 is returned. 
+
+Definition at line 147 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Ascii_a1fa273974dadb06793527699c79a6af3}\label{classPoco_1_1Ascii_a1fa273974dadb06793527699c79a6af3}} 
+\index{Poco::Ascii@{Poco::Ascii}!isAlpha@{isAlpha}}
+\index{isAlpha@{isAlpha}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{isAlpha()}{isAlpha()}}
+{\footnotesize\ttfamily bool Poco\+::\+Ascii\+::is\+Alpha (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns true iff the given character is a punctuation character. 
+
+
+
+Definition at line 177 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Ascii_ab796cce66ddd925861e267940686a61d}\label{classPoco_1_1Ascii_ab796cce66ddd925861e267940686a61d}} 
+\index{Poco::Ascii@{Poco::Ascii}!isAlphaNumeric@{isAlphaNumeric}}
+\index{isAlphaNumeric@{isAlphaNumeric}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{isAlphaNumeric()}{isAlphaNumeric()}}
+{\footnotesize\ttfamily bool Poco\+::\+Ascii\+::is\+Alpha\+Numeric (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns true iff the given character is an alphabetic character. ~\newline
+ 
+
+
+
+Definition at line 183 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1Ascii_a0f6a764502a6adde5d140fd43b5a3561}\label{classPoco_1_1Ascii_a0f6a764502a6adde5d140fd43b5a3561}} 
+\index{Poco::Ascii@{Poco::Ascii}!isAscii@{isAscii}}
+\index{isAscii@{isAscii}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{isAscii()}{isAscii()}}
+{\footnotesize\ttfamily bool Poco\+::\+Ascii\+::is\+Ascii (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns true if the given character is within the A\+S\+C\+II range and has all of the given properties. 
+
+Definition at line 135 of file Ascii.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1Ascii_aeb92c4199d410313a1622573638a557c}\label{classPoco_1_1Ascii_aeb92c4199d410313a1622573638a557c}} 
+\index{Poco::Ascii@{Poco::Ascii}!isDigit@{isDigit}}
+\index{isDigit@{isDigit}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{isDigit()}{isDigit()}}
+{\footnotesize\ttfamily bool Poco\+::\+Ascii\+::is\+Digit (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns true iff the given character is a whitespace. 
+
+
+
+Definition at line 159 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1Ascii_a6684ecb367406ddf0a1b26f335817d7e}\label{classPoco_1_1Ascii_a6684ecb367406ddf0a1b26f335817d7e}} 
+\index{Poco::Ascii@{Poco::Ascii}!isHexDigit@{isHexDigit}}
+\index{isHexDigit@{isHexDigit}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{isHexDigit()}{isHexDigit()}}
+{\footnotesize\ttfamily bool Poco\+::\+Ascii\+::is\+Hex\+Digit (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns true iff the given character is a digit. 
+
+
+
+Definition at line 165 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1Ascii_a74b8f5d63331b3072c5cac8d1fa9cfdf}\label{classPoco_1_1Ascii_a74b8f5d63331b3072c5cac8d1fa9cfdf}} 
+\index{Poco::Ascii@{Poco::Ascii}!isLower@{isLower}}
+\index{isLower@{isLower}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{isLower()}{isLower()}}
+{\footnotesize\ttfamily bool Poco\+::\+Ascii\+::is\+Lower (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns true iff the given character is an alphabetic character. ~\newline
+ 
+
+
+
+Definition at line 189 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 9
+Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classPoco_1_1Ascii_aab0fea88fe715f9998c8907495559e37}\label{classPoco_1_1Ascii_aab0fea88fe715f9998c8907495559e37}} 
+\index{Poco::Ascii@{Poco::Ascii}!isPunct@{isPunct}}
+\index{isPunct@{isPunct}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{isPunct()}{isPunct()}}
+{\footnotesize\ttfamily bool Poco\+::\+Ascii\+::is\+Punct (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns true iff the given character is a hexadecimal digit. 
+
+
+
+Definition at line 171 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classPoco_1_1Ascii_af972424d47bf76090f82edb8235cf293}\label{classPoco_1_1Ascii_af972424d47bf76090f82edb8235cf293}} 
+\index{Poco::Ascii@{Poco::Ascii}!isSpace@{isSpace}}
+\index{isSpace@{isSpace}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{isSpace()}{isSpace()}}
+{\footnotesize\ttfamily bool Poco\+::\+Ascii\+::is\+Space (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns true iff the given character code is within the A\+S\+C\+II range (0 .. 127). 
+
+Definition at line 153 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 12
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classPoco_1_1Ascii_a4e314ffb9da60b298e54b6bbdcce0bb3}\label{classPoco_1_1Ascii_a4e314ffb9da60b298e54b6bbdcce0bb3}} 
+\index{Poco::Ascii@{Poco::Ascii}!isUpper@{isUpper}}
+\index{isUpper@{isUpper}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{isUpper()}{isUpper()}}
+{\footnotesize\ttfamily bool Poco\+::\+Ascii\+::is\+Upper (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns true iff the given character is a lowercase alphabetic character. 
+
+Definition at line 195 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 14
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{classPoco_1_1Ascii_ac31d57add4c307b7753686e04a0cf429}\label{classPoco_1_1Ascii_ac31d57add4c307b7753686e04a0cf429}} 
+\index{Poco::Ascii@{Poco::Ascii}!properties@{properties}}
+\index{properties@{properties}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{properties()}{properties()}}
+{\footnotesize\ttfamily int Poco\+::\+Ascii\+::properties (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 126 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 16
+Here is the caller graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{classPoco_1_1Ascii_a60e7810a5713e9ce051c5c914073a18e}\label{classPoco_1_1Ascii_a60e7810a5713e9ce051c5c914073a18e}} 
+\index{Poco::Ascii@{Poco::Ascii}!toLower@{toLower}}
+\index{toLower@{toLower}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{toLower()}{toLower()}}
+{\footnotesize\ttfamily int Poco\+::\+Ascii\+::to\+Lower (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns true iff the given character is an uppercase alphabetic character. 
+
+Definition at line 201 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 18
+Here is the caller graph for this function\+:
+% FIG 19
+\mbox{\Hypertarget{classPoco_1_1Ascii_a58d5919f06162b7b3a9765f5024b8d1e}\label{classPoco_1_1Ascii_a58d5919f06162b7b3a9765f5024b8d1e}} 
+\index{Poco::Ascii@{Poco::Ascii}!toUpper@{toUpper}}
+\index{toUpper@{toUpper}!Poco::Ascii@{Poco::Ascii}}
+\doxysubsubsection{\texorpdfstring{toUpper()}{toUpper()}}
+{\footnotesize\ttfamily int Poco\+::\+Ascii\+::to\+Upper (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+If the given character is an uppercase character, return its lowercase counterpart, otherwise return the character. 
+
+Definition at line 210 of file Ascii.\+h.
+
+Here is the call graph for this function\+:
+% FIG 20
+Here is the caller graph for this function\+:
+% FIG 21
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Ascii_8h}{Ascii.\+h}}\end{DoxyCompactItemize}

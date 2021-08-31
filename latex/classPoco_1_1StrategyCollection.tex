@@ -1,0 +1,283 @@
+\hypertarget{classPoco_1_1StrategyCollection}{}\doxysection{Poco\+::Strategy\+Collection$<$ T\+Key, T\+Value $>$ Class Template Reference}
+\label{classPoco_1_1StrategyCollection}\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+
+
+An \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Strategy\+Collection}} is a decorator masking n collections as a single one.  
+
+
+
+
+{\ttfamily \#include $<$Strategy\+Collection.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Strategy\+Collection$<$ T\+Key, T\+Value $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Strategy\+Collection$<$ T\+Key, T\+Value $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1AbstractStrategy}{Abstract\+Strategy}}$<$ T\+Key, T\+Value $>$ $>$ $>$ \mbox{\hyperlink{classPoco_1_1StrategyCollection_a9fad75cb163aeeefdb498649170d02c6}{Strategies}}
+\item 
+typedef Strategies\+::iterator \mbox{\hyperlink{classPoco_1_1StrategyCollection_ada69bee7861f05347c8a6acee151a8f7}{Iterator}}
+\item 
+typedef Strategies\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1StrategyCollection_ae62e8c2b4ab547af5b20b287bcd712d7}{Const\+Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1StrategyCollection_ad79da92a5092a8fd10745f9468b9fd96}{Strategy\+Collection}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1StrategyCollection_a5f39e59877ffb81e0d2c11ad775a5445}{$\sim$\+Strategy\+Collection}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection_aa41c15f3ef04581652a3c83f17051c89}{push\+Back}} (\mbox{\hyperlink{classPoco_1_1AbstractStrategy}{Abstract\+Strategy}}$<$ T\+Key, T\+Value $>$ $\ast$p\+Strat)
+\begin{DoxyCompactList}\small\item\em Adds an \mbox{\hyperlink{classPoco_1_1AbstractStrategy}{Abstract\+Strategy}} to the collection. Class takes ownership of pointer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection_afb4390c1e4c6f81adfaeb1762a7b6386}{pop\+Back}} ()
+\begin{DoxyCompactList}\small\item\em Removes the last added \mbox{\hyperlink{classPoco_1_1AbstractStrategy}{Abstract\+Strategy}} from the collection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection_a9e2f32d1f770f5f63322bc267383a181}{on\+Add}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1KeyValueArgs}{Key\+Value\+Args}}$<$ T\+Key, T\+Value $>$ \&key)
+\item 
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection_a0b81184c4e3a6dd616e960f8b5a6d4c0}{on\+Remove}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key)
+\item 
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection_ab504fac78d6c9058ae4c302ff1828aa1}{on\+Get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key)
+\item 
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection_ae8d851331a0537d929a72bf7c34f927e}{on\+Clear}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1EventArgs}{Event\+Args}} \&args)
+\begin{DoxyCompactList}\small\item\em Informs the strategy that a read-\/access happens to an element. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection_a0b719ba9628e9f995fec1f4dd7c0f04c}{on\+Is\+Valid}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{classPoco_1_1ValidArgs}{Valid\+Args}}$<$ T\+Key $>$ \&key)
+\begin{DoxyCompactList}\small\item\em Removes all elements from the cache. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection_ac07f7481c442fc3497aa07ea056e8df1}{on\+Replace}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, std\+::set$<$ T\+Key $>$ \&elems\+To\+Remove)
+\begin{DoxyCompactList}\small\item\em Used to query if a key is still valid (i.\+e. cached). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1StrategyCollection_a9fad75cb163aeeefdb498649170d02c6}{Strategies}} \mbox{\hyperlink{classPoco_1_1StrategyCollection_a1941720eacef5fb89a3f97dc729f21be}{\+\_\+strategies}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Key, class T\+Value$>$\newline
+class Poco\+::\+Strategy\+Collection$<$ T\+Key, T\+Value $>$}
+
+An \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Strategy\+Collection}} is a decorator masking n collections as a single one. 
+
+Definition at line 34 of file Strategy\+Collection.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_ae62e8c2b4ab547af5b20b287bcd712d7}\label{classPoco_1_1StrategyCollection_ae62e8c2b4ab547af5b20b287bcd712d7}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!ConstIterator@{ConstIterator}}
+\index{ConstIterator@{ConstIterator}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{ConstIterator}{ConstIterator}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef Strategies\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1StrategyCollection_ae62e8c2b4ab547af5b20b287bcd712d7}{Const\+Iterator}}}
+
+
+
+Definition at line 40 of file Strategy\+Collection.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_ada69bee7861f05347c8a6acee151a8f7}\label{classPoco_1_1StrategyCollection_ada69bee7861f05347c8a6acee151a8f7}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef Strategies\+::iterator \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1StrategyCollection_ada69bee7861f05347c8a6acee151a8f7}{Iterator}}}
+
+
+
+Definition at line 39 of file Strategy\+Collection.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_a9fad75cb163aeeefdb498649170d02c6}\label{classPoco_1_1StrategyCollection_a9fad75cb163aeeefdb498649170d02c6}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!Strategies@{Strategies}}
+\index{Strategies@{Strategies}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{Strategies}{Strategies}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef std\+::vector$<$\mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1AbstractStrategy}{Abstract\+Strategy}}$<$T\+Key, T\+Value$>$ $>$ $>$ \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1StrategyCollection_a9fad75cb163aeeefdb498649170d02c6}{Strategies}}}
+
+
+
+Definition at line 38 of file Strategy\+Collection.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_ad79da92a5092a8fd10745f9468b9fd96}\label{classPoco_1_1StrategyCollection_ad79da92a5092a8fd10745f9468b9fd96}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!StrategyCollection@{StrategyCollection}}
+\index{StrategyCollection@{StrategyCollection}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{StrategyCollection()}{StrategyCollection()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+\mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1StrategyCollection}{Strategy\+Collection}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file Strategy\+Collection.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_a5f39e59877ffb81e0d2c11ad775a5445}\label{classPoco_1_1StrategyCollection_a5f39e59877ffb81e0d2c11ad775a5445}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!````~StrategyCollection@{$\sim$StrategyCollection}}
+\index{````~StrategyCollection@{$\sim$StrategyCollection}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$StrategyCollection()}{~StrategyCollection()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+\mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1StrategyCollection}{Strategy\+Collection}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 47 of file Strategy\+Collection.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_a9e2f32d1f770f5f63322bc267383a181}\label{classPoco_1_1StrategyCollection_a9e2f32d1f770f5f63322bc267383a181}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!onAdd@{onAdd}}
+\index{onAdd@{onAdd}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onAdd()}{onAdd()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::on\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1KeyValueArgs}{Key\+Value\+Args}}$<$ T\+Key, T\+Value $>$ \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Adds the key to the strategy. If for the key already an entry exists, it will be overwritten. 
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a40bb84cd0085c3ff59064cd3d13a21dd}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 63 of file Strategy\+Collection.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_ae8d851331a0537d929a72bf7c34f927e}\label{classPoco_1_1StrategyCollection_ae8d851331a0537d929a72bf7c34f927e}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!onClear@{onClear}}
+\index{onClear@{onClear}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onClear()}{onClear()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::on\+Clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1EventArgs}{Event\+Args}} \&}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Informs the strategy that a read-\/access happens to an element. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a84d1033a199ef6eea12207f7a40bca72}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 97 of file Strategy\+Collection.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_ab504fac78d6c9058ae4c302ff1828aa1}\label{classPoco_1_1StrategyCollection_ab504fac78d6c9058ae4c302ff1828aa1}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!onGet@{onGet}}
+\index{onGet@{onGet}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onGet()}{onGet()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::on\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes an entry from the strategy. If the entry is not found the remove is ignored. 
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a802663d39fa378d09ca76b37daccf8e9}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 87 of file Strategy\+Collection.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_a0b719ba9628e9f995fec1f4dd7c0f04c}\label{classPoco_1_1StrategyCollection_a0b719ba9628e9f995fec1f4dd7c0f04c}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!onIsValid@{onIsValid}}
+\index{onIsValid@{onIsValid}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onIsValid()}{onIsValid()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::on\+Is\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{classPoco_1_1ValidArgs}{Valid\+Args}}$<$ T\+Key $>$ \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Removes all elements from the cache. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_ade01399ff91ed48ca9ab2656c184dc7e}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 107 of file Strategy\+Collection.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_a0b81184c4e3a6dd616e960f8b5a6d4c0}\label{classPoco_1_1StrategyCollection_a0b81184c4e3a6dd616e960f8b5a6d4c0}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!onRemove@{onRemove}}
+\index{onRemove@{onRemove}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onRemove()}{onRemove()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::on\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes an entry from the strategy. If the entry is not found the remove is ignored. 
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a3c74a0e9b7469f4246ee083252d995ac}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 75 of file Strategy\+Collection.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_ac07f7481c442fc3497aa07ea056e8df1}\label{classPoco_1_1StrategyCollection_ac07f7481c442fc3497aa07ea056e8df1}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!onReplace@{onReplace}}
+\index{onReplace@{onReplace}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onReplace()}{onReplace()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::on\+Replace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{std\+::set$<$ T\+Key $>$ \&}]{elems\+To\+Remove }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Used to query if a key is still valid (i.\+e. cached). 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a344d2caa3f8b5ea1507a5a26c49f7eae}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 117 of file Strategy\+Collection.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_afb4390c1e4c6f81adfaeb1762a7b6386}\label{classPoco_1_1StrategyCollection_afb4390c1e4c6f81adfaeb1762a7b6386}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!popBack@{popBack}}
+\index{popBack@{popBack}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{popBack()}{popBack()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::pop\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the last added \mbox{\hyperlink{classPoco_1_1AbstractStrategy}{Abstract\+Strategy}} from the collection. 
+
+
+
+Definition at line 57 of file Strategy\+Collection.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_aa41c15f3ef04581652a3c83f17051c89}\label{classPoco_1_1StrategyCollection_aa41c15f3ef04581652a3c83f17051c89}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!pushBack@{pushBack}}
+\index{pushBack@{pushBack}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{pushBack()}{pushBack()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::push\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1AbstractStrategy}{Abstract\+Strategy}}$<$ T\+Key, T\+Value $>$ $\ast$}]{p\+Strat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds an \mbox{\hyperlink{classPoco_1_1AbstractStrategy}{Abstract\+Strategy}} to the collection. Class takes ownership of pointer. 
+
+
+
+Definition at line 51 of file Strategy\+Collection.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1StrategyCollection_a1941720eacef5fb89a3f97dc729f21be}\label{classPoco_1_1StrategyCollection_a1941720eacef5fb89a3f97dc729f21be}} 
+\index{Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}!\_strategies@{\_strategies}}
+\index{\_strategies@{\_strategies}!Poco::StrategyCollection$<$ TKey, TValue $>$@{Poco::StrategyCollection$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{\_strategies}{\_strategies}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+\mbox{\hyperlink{classPoco_1_1StrategyCollection_a9fad75cb163aeeefdb498649170d02c6}{Strategies}} \mbox{\hyperlink{classPoco_1_1StrategyCollection}{Poco\+::\+Strategy\+Collection}}$<$ T\+Key, T\+Value $>$\+::\+\_\+strategies\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 128 of file Strategy\+Collection.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{StrategyCollection_8h}{Strategy\+Collection.\+h}}\end{DoxyCompactItemize}

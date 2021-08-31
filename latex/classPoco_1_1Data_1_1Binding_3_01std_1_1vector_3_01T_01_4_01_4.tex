@@ -1,0 +1,238 @@
+\hypertarget{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4}{}\doxysection{Poco\+::Data\+::Binding$<$ std\+::vector$<$ T $>$ $>$ Class Template Reference}
+\label{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4}\index{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}}
+
+
+Specialization for std\+::vector.  
+
+
+
+
+{\ttfamily \#include $<$Binding.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::Binding$<$ std\+::vector$<$ T $>$ $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Data\+::Binding$<$ std\+::vector$<$ T $>$ $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ T $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a59da8e062b6e744f7fedcbfaef2b6389}{Val\+Type}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a59da8e062b6e744f7fedcbfaef2b6389}{Val\+Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a72bb05c8503d70e970b78fa75f88f23f}{Val\+Ptr}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Binding}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a59da8e062b6e744f7fedcbfaef2b6389}{Val\+Type}} $>$ $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a6c413b88e1a02ea39d93492c90236fbb}{Ptr}}
+\item 
+typedef Val\+Type\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a42f50dadddbbe6abe07f006c5cec3ecb}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a2df08028b40d2f63699989f676eb103a}{Binding}} (std\+::vector$<$ T $>$ \&val, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_aad21656cdfa3d86f092fa9a0939191a2}{name}}=\char`\"{}\char`\"{}, \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ad2419eb98c1e4c09656d796854706496}{Direction}} direction=\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ad2419eb98c1e4c09656d796854706496aa319cc2c7f5308b0e2c06d11917ddbbd}{P\+D\+\_\+\+IN}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_aa6f6a58ed7c53d90525d0608e23314d1}{$\sim$\+Binding}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Binding}}. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_aa702cf9c32843ca896170b503b6eb44b}{num\+Of\+Columns\+Handled}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinder}{Abstract\+Binder}} used for binding data. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_aebbc7c446911fc7cc9f640006290822d}{num\+Of\+Rows\+Handled}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a3cff31f6f0593b4fb6315ece07344f25}{can\+Bind}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_afc735371aae77478c0c6ff23e899b8ba}{bind}} (std\+::size\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em Returns true if we have enough data to bind. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a3d367946e1a91c73eff5f0d721cd29fd}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Binds a value to the given column position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Poco\+::\+Data\+::\+Binding$<$ std\+::vector$<$ T $>$ $>$}
+
+Specialization for std\+::vector. 
+
+Definition at line 308 of file Binding.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a42f50dadddbbe6abe07f006c5cec3ecb}\label{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a42f50dadddbbe6abe07f006c5cec3ecb}} 
+\index{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef Val\+Type\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Poco\+::\+Data\+::\+Binding}}$<$ std\+::vector$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a42f50dadddbbe6abe07f006c5cec3ecb}{Iterator}}}
+
+
+
+Definition at line 315 of file Binding.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a6c413b88e1a02ea39d93492c90236fbb}\label{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a6c413b88e1a02ea39d93492c90236fbb}} 
+\index{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Binding}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a59da8e062b6e744f7fedcbfaef2b6389}{Val\+Type}}$>$ $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Poco\+::\+Data\+::\+Binding}}$<$ std\+::vector$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ae623db90af7dc5d074aa37c630b6b8a3}{Ptr}}}
+
+
+
+Definition at line 314 of file Binding.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a72bb05c8503d70e970b78fa75f88f23f}\label{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a72bb05c8503d70e970b78fa75f88f23f}} 
+\index{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}!ValPtr@{ValPtr}}
+\index{ValPtr@{ValPtr}!Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{ValPtr}{ValPtr}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a59da8e062b6e744f7fedcbfaef2b6389}{Val\+Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Poco\+::\+Data\+::\+Binding}}$<$ std\+::vector$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a72bb05c8503d70e970b78fa75f88f23f}{Val\+Ptr}}}
+
+
+
+Definition at line 313 of file Binding.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a59da8e062b6e744f7fedcbfaef2b6389}\label{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a59da8e062b6e744f7fedcbfaef2b6389}} 
+\index{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}!ValType@{ValType}}
+\index{ValType@{ValType}!Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{ValType}{ValType}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef std\+::vector$<$T$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Poco\+::\+Data\+::\+Binding}}$<$ std\+::vector$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a59da8e062b6e744f7fedcbfaef2b6389}{Val\+Type}}}
+
+
+
+Definition at line 312 of file Binding.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a2df08028b40d2f63699989f676eb103a}\label{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a2df08028b40d2f63699989f676eb103a}} 
+\index{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}!Binding@{Binding}}
+\index{Binding@{Binding}!Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Binding()}{Binding()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Poco\+::\+Data\+::\+Binding}}$<$ std\+::vector$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Binding}} (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{val,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}},  }\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ad2419eb98c1e4c09656d796854706496}{Direction}}}]{direction = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ad2419eb98c1e4c09656d796854706496aa319cc2c7f5308b0e2c06d11917ddbbd}{P\+D\+\_\+\+IN}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 317 of file Binding.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_aa6f6a58ed7c53d90525d0608e23314d1}\label{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_aa6f6a58ed7c53d90525d0608e23314d1}} 
+\index{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}!````~Binding@{$\sim$Binding}}
+\index{````~Binding@{$\sim$Binding}!Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Binding()}{~Binding()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Poco\+::\+Data\+::\+Binding}}$<$ std\+::vector$<$ T $>$ $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Binding}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Binding}}. 
+
+
+
+Definition at line 331 of file Binding.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_afc735371aae77478c0c6ff23e899b8ba}\label{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_afc735371aae77478c0c6ff23e899b8ba}} 
+\index{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}!bind@{bind}}
+\index{bind@{bind}!Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Poco\+::\+Data\+::\+Binding}}$<$ std\+::vector$<$ T $>$ $>$\+::bind (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns true if we have enough data to bind. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_a742814d4060e833d606d563a3794a9ff}{Poco\+::\+Data\+::\+Abstract\+Binding}}.
+
+
+
+Definition at line 351 of file Binding.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a3cff31f6f0593b4fb6315ece07344f25}\label{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a3cff31f6f0593b4fb6315ece07344f25}} 
+\index{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}!canBind@{canBind}}
+\index{canBind@{canBind}!Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{canBind()}{canBind()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Poco\+::\+Data\+::\+Binding}}$<$ std\+::vector$<$ T $>$ $>$\+::can\+Bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of rows that the binding handles.
+
+The trivial case will be one single row but for collection data types it can be larger. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_a77bbfb86c6fc0054e275dd42d9b45c53}{Poco\+::\+Data\+::\+Abstract\+Binding}}.
+
+
+
+Definition at line 346 of file Binding.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_aa702cf9c32843ca896170b503b6eb44b}\label{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_aa702cf9c32843ca896170b503b6eb44b}} 
+\index{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}!numOfColumnsHandled@{numOfColumnsHandled}}
+\index{numOfColumnsHandled@{numOfColumnsHandled}!Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{numOfColumnsHandled()}{numOfColumnsHandled()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Poco\+::\+Data\+::\+Binding}}$<$ std\+::vector$<$ T $>$ $>$\+::num\+Of\+Columns\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinder}{Abstract\+Binder}} used for binding data. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_a7faa2cd0e44e16b2c3859687fabd830a}{Poco\+::\+Data\+::\+Abstract\+Binding}}.
+
+
+
+Definition at line 336 of file Binding.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_aebbc7c446911fc7cc9f640006290822d}\label{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_aebbc7c446911fc7cc9f640006290822d}} 
+\index{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}!numOfRowsHandled@{numOfRowsHandled}}
+\index{numOfRowsHandled@{numOfRowsHandled}!Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{numOfRowsHandled()}{numOfRowsHandled()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Poco\+::\+Data\+::\+Binding}}$<$ std\+::vector$<$ T $>$ $>$\+::num\+Of\+Rows\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of columns that the binding handles.
+
+The trivial case will be one single column but when complex types are used this value can be larger than one. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_ae079a20af09d4eda61ac499f7ef1a552}{Poco\+::\+Data\+::\+Abstract\+Binding}}.
+
+
+
+Definition at line 341 of file Binding.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a3d367946e1a91c73eff5f0d721cd29fd}\label{classPoco_1_1Data_1_1Binding_3_01std_1_1vector_3_01T_01_4_01_4_a3d367946e1a91c73eff5f0d721cd29fd}} 
+\index{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}!reset@{reset}}
+\index{reset@{reset}!Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$@{Poco::Data::Binding$<$ std::vector$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Binding}{Poco\+::\+Data\+::\+Binding}}$<$ std\+::vector$<$ T $>$ $>$\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Binds a value to the given column position. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractBinding_a7813acedf8bb85269248bf16b6350807}{Poco\+::\+Data\+::\+Abstract\+Binding}}.
+
+
+
+Definition at line 360 of file Binding.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{Binding_8h}{Binding.\+h}}\end{DoxyCompactItemize}

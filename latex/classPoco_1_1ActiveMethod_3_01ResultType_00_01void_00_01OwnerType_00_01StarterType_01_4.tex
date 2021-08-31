@@ -1,0 +1,179 @@
+\hypertarget{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4}{}\doxysection{Poco\+::Active\+Method$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$ Class Template Reference}
+\label{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4}\index{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}}
+
+
+{\ttfamily \#include $<$Active\+Method.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Result\+Type(Owner\+Type\+::$\ast$ \mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a7a47988e26f9a72fe5a663caee57424a}{Callback}}) (void)
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1ActiveResult}{Active\+Result}}$<$ Result\+Type $>$ \mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a72ca2cb104460671cd951293313dc172}{Active\+Result\+Type}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1ActiveRunnable}{Active\+Runnable}}$<$ Result\+Type, void, Owner\+Type $>$ \mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a5bde804238ed050e627aba583854dc7e}{Active\+Runnable\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a5188751c65e8ad4e101faf4a3aa793da}{Active\+Method}} (Owner\+Type $\ast$p\+Owner, \mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a7a47988e26f9a72fe5a663caee57424a}{Callback}} method)
+\item 
+\mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a72ca2cb104460671cd951293313dc172}{Active\+Result\+Type}} \mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a811a5afda2dd690170236d8371ab0d8f}{operator()}} (void)
+\begin{DoxyCompactList}\small\item\em Invokes the \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a2a2cf56e4b114dc48c045f96445e008b}{Active\+Method}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}} \&other)
+\item 
+\mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}} \& \mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a3eff8f683239284d7677eba34daf3151}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}} \&other)
+\item 
+void \mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a635f468f9a8543558543533b317f7efe}{swap}} (\mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}} \&other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Result\+Type, class Owner\+Type, class Starter\+Type$>$\newline
+class Poco\+::\+Active\+Method$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$}
+
+An active method is a method that, when called, executes in its own thread. \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}}\textquotesingle{}s take exactly one argument and can return a value. To pass more than one argument to the method, use a struct. The following example shows how to add an \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}} to a class\+: \begin{DoxyVerb}class ActiveObject
+{
+public:
+    ActiveObject():
+        exampleActiveMethod(this, &ActiveObject::exampleActiveMethodImpl)
+    {
+    }
+
+    ActiveMethod<std::string, std::string, ActiveObject> exampleActiveMethod;
+
+protected:
+    std::string exampleActiveMethodImpl(const std::string& arg)
+    {
+        ...
+    }
+};
+\end{DoxyVerb}
+
+
+And following is an example that shows how to invoke an \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}}. \begin{DoxyVerb}ActiveObject myActiveObject;
+ActiveResult<std::string> result = myActiveObject.exampleActiveMethod("foo");
+...
+result.wait();
+std::cout << result.data() << std::endl;
+\end{DoxyVerb}
+
+
+The way an \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}} is started can be changed by passing a Starter\+Type template argument with a corresponding class. The default \mbox{\hyperlink{classPoco_1_1ActiveStarter}{Active\+Starter}} starts the method in its own thread, obtained from a thread pool.
+
+For an alternative implementation of Starter\+Type, see \mbox{\hyperlink{classPoco_1_1ActiveDispatcher}{Active\+Dispatcher}}.
+
+For methods that do not require an argument or a return value, simply use void. 
+
+Definition at line 127 of file Active\+Method.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a72ca2cb104460671cd951293313dc172}\label{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a72ca2cb104460671cd951293313dc172}} 
+\index{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}!ActiveResultType@{ActiveResultType}}
+\index{ActiveResultType@{ActiveResultType}!Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}}
+\doxysubsubsection{\texorpdfstring{ActiveResultType}{ActiveResultType}}
+{\footnotesize\ttfamily template$<$class Result\+Type , class Owner\+Type , class Starter\+Type $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1ActiveResult}{Active\+Result}}$<$Result\+Type$>$ \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Poco\+::\+Active\+Method}}$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$\+::\mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a72ca2cb104460671cd951293313dc172}{Active\+Result\+Type}}}
+
+
+
+Definition at line 170 of file Active\+Method.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a5bde804238ed050e627aba583854dc7e}\label{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a5bde804238ed050e627aba583854dc7e}} 
+\index{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}!ActiveRunnableType@{ActiveRunnableType}}
+\index{ActiveRunnableType@{ActiveRunnableType}!Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}}
+\doxysubsubsection{\texorpdfstring{ActiveRunnableType}{ActiveRunnableType}}
+{\footnotesize\ttfamily template$<$class Result\+Type , class Owner\+Type , class Starter\+Type $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1ActiveRunnable}{Active\+Runnable}}$<$Result\+Type, void, Owner\+Type$>$ \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Poco\+::\+Active\+Method}}$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$\+::\mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a5bde804238ed050e627aba583854dc7e}{Active\+Runnable\+Type}}}
+
+
+
+Definition at line 171 of file Active\+Method.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a7a47988e26f9a72fe5a663caee57424a}\label{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a7a47988e26f9a72fe5a663caee57424a}} 
+\index{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}!Callback@{Callback}}
+\index{Callback@{Callback}!Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}}
+\doxysubsubsection{\texorpdfstring{Callback}{Callback}}
+{\footnotesize\ttfamily template$<$class Result\+Type , class Owner\+Type , class Starter\+Type $>$ \\
+typedef Result\+Type(Owner\+Type\+::$\ast$ \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Poco\+::\+Active\+Method}}$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$\+::Callback) (void)}
+
+
+
+Definition at line 169 of file Active\+Method.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a5188751c65e8ad4e101faf4a3aa793da}\label{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a5188751c65e8ad4e101faf4a3aa793da}} 
+\index{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}!ActiveMethod@{ActiveMethod}}
+\index{ActiveMethod@{ActiveMethod}!Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}}
+\doxysubsubsection{\texorpdfstring{ActiveMethod()}{ActiveMethod()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Result\+Type , class Owner\+Type , class Starter\+Type $>$ \\
+\mbox{\hyperlink{classPoco_1_1ActiveMethod}{Poco\+::\+Active\+Method}}$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$\+::\mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}} (\begin{DoxyParamCaption}\item[{Owner\+Type $\ast$}]{p\+Owner,  }\item[{\mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a7a47988e26f9a72fe5a663caee57424a}{Callback}}}]{method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 173 of file Active\+Method.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a2a2cf56e4b114dc48c045f96445e008b}\label{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a2a2cf56e4b114dc48c045f96445e008b}} 
+\index{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}!ActiveMethod@{ActiveMethod}}
+\index{ActiveMethod@{ActiveMethod}!Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}}
+\doxysubsubsection{\texorpdfstring{ActiveMethod()}{ActiveMethod()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Result\+Type , class Owner\+Type , class Starter\+Type $>$ \\
+\mbox{\hyperlink{classPoco_1_1ActiveMethod}{Poco\+::\+Active\+Method}}$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$\+::\mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}}$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 190 of file Active\+Method.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a811a5afda2dd690170236d8371ab0d8f}\label{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a811a5afda2dd690170236d8371ab0d8f}} 
+\index{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$class Result\+Type , class Owner\+Type , class Starter\+Type $>$ \\
+\mbox{\hyperlink{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a72ca2cb104460671cd951293313dc172}{Active\+Result\+Type}} \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Poco\+::\+Active\+Method}}$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$\+::operator() (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Invokes the \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}}. 
+
+
+
+Definition at line 181 of file Active\+Method.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a3eff8f683239284d7677eba34daf3151}\label{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a3eff8f683239284d7677eba34daf3151}} 
+\index{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class Result\+Type , class Owner\+Type , class Starter\+Type $>$ \\
+\mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}}\& \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Poco\+::\+Active\+Method}}$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}}$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 196 of file Active\+Method.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a635f468f9a8543558543533b317f7efe}\label{classPoco_1_1ActiveMethod_3_01ResultType_00_01void_00_01OwnerType_00_01StarterType_01_4_a635f468f9a8543558543533b317f7efe}} 
+\index{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}!swap@{swap}}
+\index{swap@{swap}!Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$@{Poco::ActiveMethod$<$ ResultType, void, OwnerType, StarterType $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$class Result\+Type , class Owner\+Type , class Starter\+Type $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ActiveMethod}{Poco\+::\+Active\+Method}}$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1ActiveMethod}{Active\+Method}}$<$ Result\+Type, void, Owner\+Type, Starter\+Type $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 203 of file Active\+Method.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ActiveMethod_8h}{Active\+Method.\+h}}\end{DoxyCompactItemize}

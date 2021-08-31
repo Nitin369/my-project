@@ -1,0 +1,212 @@
+\hypertarget{classPoco_1_1StringTokenizer}{}\doxysection{Poco\+::String\+Tokenizer Class Reference}
+\label{classPoco_1_1StringTokenizer}\index{Poco::StringTokenizer@{Poco::StringTokenizer}}
+
+
+{\ttfamily \#include $<$String\+Tokenizer.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1StringTokenizer_a9298b8671d200711ea88b7e2629e33b0}{Options}} \{ \mbox{\hyperlink{classPoco_1_1StringTokenizer_a9298b8671d200711ea88b7e2629e33b0af599fd6826f8dd1a5bd7d40bc813129f}{T\+O\+K\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+E\+M\+P\+TY}} = 1, 
+\mbox{\hyperlink{classPoco_1_1StringTokenizer_a9298b8671d200711ea88b7e2629e33b0aa825e0919817957dbd01ad01edd20bbd}{T\+O\+K\+\_\+\+T\+R\+IM}} = 2
+ \}
+\item 
+typedef std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classPoco_1_1StringTokenizer_afb49b4ad672c728d998d2c448e1864da}{Token\+Vec}}
+\item 
+typedef Token\+Vec\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1StringTokenizer_a10645cb8c74dc4db5c976d123e5c4f50}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1StringTokenizer_a3a19245ef8a5306c136e92efb1676ce7}{String\+Tokenizer}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&str, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&separators, int options=0)
+\item 
+\mbox{\hyperlink{classPoco_1_1StringTokenizer_a25dc0fcad95c1294ec356c70ba8320c8}{$\sim$\+String\+Tokenizer}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1StringTokenizer_a10645cb8c74dc4db5c976d123e5c4f50}{Iterator}} \mbox{\hyperlink{classPoco_1_1StringTokenizer_a6ee625ad4c1278ef9e02992da5734859}{begin}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the tokenizer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1StringTokenizer_a10645cb8c74dc4db5c976d123e5c4f50}{Iterator}} \mbox{\hyperlink{classPoco_1_1StringTokenizer_a4e11b8d832ce7ef9504f26897cd59792}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1StringTokenizer_a2b2b70e1c07852b034ec8040148ca8d6}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t index) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::string \& \mbox{\hyperlink{classPoco_1_1StringTokenizer_a092e6e34c502735ae679d4e2d5fd4c6b}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t index)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1StringTokenizer_a04ef0082c7783ec7e9049984f1e412a3}{has}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&token) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::string\+::size\+\_\+type \mbox{\hyperlink{classPoco_1_1StringTokenizer_aa69c5a6fc47317f697a813e575a6b550}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&token, std\+::string\+::size\+\_\+type pos=0) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if token exists, false otherwise. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1StringTokenizer_a302989f3a8b57cf77cb533a32372ea02}{replace}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&old\+Token, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&new\+Token, std\+::string\+::size\+\_\+type pos=0)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1StringTokenizer_a3fe3ecfb0d2e6b94315d702a7ae182ee}{count}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1StringTokenizer_aa17f7425cd6bfc718f1dae07d25a8b1d}{count}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&token) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of tokens. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple tokenizer that splits a string into tokens, which are separated by separator characters. An iterator is used to iterate over all tokens. 
+
+Definition at line 32 of file String\+Tokenizer.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_a10645cb8c74dc4db5c976d123e5c4f50}\label{classPoco_1_1StringTokenizer_a10645cb8c74dc4db5c976d123e5c4f50}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily typedef Token\+Vec\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1StringTokenizer_a10645cb8c74dc4db5c976d123e5c4f50}{Poco\+::\+String\+Tokenizer\+::\+Iterator}}}
+
+
+
+Definition at line 45 of file String\+Tokenizer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_afb49b4ad672c728d998d2c448e1864da}\label{classPoco_1_1StringTokenizer_afb49b4ad672c728d998d2c448e1864da}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!TokenVec@{TokenVec}}
+\index{TokenVec@{TokenVec}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{TokenVec}{TokenVec}}
+{\footnotesize\ttfamily typedef std\+::vector$<$std\+::string$>$ \mbox{\hyperlink{classPoco_1_1StringTokenizer_afb49b4ad672c728d998d2c448e1864da}{Poco\+::\+String\+Tokenizer\+::\+Token\+Vec}}}
+
+
+
+Definition at line 44 of file String\+Tokenizer.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_a9298b8671d200711ea88b7e2629e33b0}\label{classPoco_1_1StringTokenizer_a9298b8671d200711ea88b7e2629e33b0}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!Options@{Options}}
+\index{Options@{Options}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{Options}{Options}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1StringTokenizer_a9298b8671d200711ea88b7e2629e33b0}{Poco\+::\+String\+Tokenizer\+::\+Options}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TOK\_IGNORE\_EMPTY@{TOK\_IGNORE\_EMPTY}!Poco::StringTokenizer@{Poco::StringTokenizer}}\index{Poco::StringTokenizer@{Poco::StringTokenizer}!TOK\_IGNORE\_EMPTY@{TOK\_IGNORE\_EMPTY}}}\mbox{\Hypertarget{classPoco_1_1StringTokenizer_a9298b8671d200711ea88b7e2629e33b0af599fd6826f8dd1a5bd7d40bc813129f}\label{classPoco_1_1StringTokenizer_a9298b8671d200711ea88b7e2629e33b0af599fd6826f8dd1a5bd7d40bc813129f}} 
+T\+O\+K\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+E\+M\+P\+TY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TOK\_TRIM@{TOK\_TRIM}!Poco::StringTokenizer@{Poco::StringTokenizer}}\index{Poco::StringTokenizer@{Poco::StringTokenizer}!TOK\_TRIM@{TOK\_TRIM}}}\mbox{\Hypertarget{classPoco_1_1StringTokenizer_a9298b8671d200711ea88b7e2629e33b0aa825e0919817957dbd01ad01edd20bbd}\label{classPoco_1_1StringTokenizer_a9298b8671d200711ea88b7e2629e33b0aa825e0919817957dbd01ad01edd20bbd}} 
+T\+O\+K\+\_\+\+T\+R\+IM&ignore empty tokens \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 38 of file String\+Tokenizer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_a3a19245ef8a5306c136e92efb1676ce7}\label{classPoco_1_1StringTokenizer_a3a19245ef8a5306c136e92efb1676ce7}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!StringTokenizer@{StringTokenizer}}
+\index{StringTokenizer@{StringTokenizer}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{StringTokenizer()}{StringTokenizer()}}
+{\footnotesize\ttfamily Poco\+::\+String\+Tokenizer\+::\+String\+Tokenizer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{str,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{separators,  }\item[{int}]{options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_a25dc0fcad95c1294ec356c70ba8320c8}\label{classPoco_1_1StringTokenizer_a25dc0fcad95c1294ec356c70ba8320c8}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!````~StringTokenizer@{$\sim$StringTokenizer}}
+\index{````~StringTokenizer@{$\sim$StringTokenizer}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{$\sim$StringTokenizer()}{~StringTokenizer()}}
+{\footnotesize\ttfamily Poco\+::\+String\+Tokenizer\+::$\sim$\+String\+Tokenizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Splits the given string into tokens. The tokens are expected to be separated by one of the separator characters given in separators. Additionally, options can be specified\+:
+\begin{DoxyItemize}
+\item T\+O\+K\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+E\+M\+P\+TY\+: empty tokens are ignored
+\item T\+O\+K\+\_\+\+T\+R\+IM\+: trailing and leading whitespace is removed from tokens. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_a6ee625ad4c1278ef9e02992da5734859}\label{classPoco_1_1StringTokenizer_a6ee625ad4c1278ef9e02992da5734859}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!begin@{begin}}
+\index{begin@{begin}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1StringTokenizer_a10645cb8c74dc4db5c976d123e5c4f50}{String\+Tokenizer\+::\+Iterator}} Poco\+::\+String\+Tokenizer\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the tokenizer. 
+
+
+
+Definition at line 102 of file String\+Tokenizer.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_a3fe3ecfb0d2e6b94315d702a7ae182ee}\label{classPoco_1_1StringTokenizer_a3fe3ecfb0d2e6b94315d702a7ae182ee}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!count@{count}}
+\index{count@{count}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+String\+Tokenizer\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Starting at position pos, replaces all subsequent tokens having value equal to old\+Token with new\+Token. Returns the number of modified tokens. 
+
+Definition at line 128 of file String\+Tokenizer.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_aa17f7425cd6bfc718f1dae07d25a8b1d}\label{classPoco_1_1StringTokenizer_aa17f7425cd6bfc718f1dae07d25a8b1d}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!count@{count}}
+\index{count@{count}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+String\+Tokenizer\+::count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{token }\end{DoxyParamCaption}) const}
+
+
+
+Returns the total number of tokens. 
+
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_a4e11b8d832ce7ef9504f26897cd59792}\label{classPoco_1_1StringTokenizer_a4e11b8d832ce7ef9504f26897cd59792}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!end@{end}}
+\index{end@{end}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1StringTokenizer_a10645cb8c74dc4db5c976d123e5c4f50}{String\+Tokenizer\+::\+Iterator}} Poco\+::\+String\+Tokenizer\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 108 of file String\+Tokenizer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_aa69c5a6fc47317f697a813e575a6b550}\label{classPoco_1_1StringTokenizer_aa69c5a6fc47317f697a813e575a6b550}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!find@{find}}
+\index{find@{find}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily std\+::string\+::size\+\_\+type Poco\+::\+String\+Tokenizer\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{token,  }\item[{std\+::string\+::size\+\_\+type}]{pos = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if token exists, false otherwise. 
+
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_a04ef0082c7783ec7e9049984f1e412a3}\label{classPoco_1_1StringTokenizer_a04ef0082c7783ec7e9049984f1e412a3}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!has@{has}}
+\index{has@{has}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily bool Poco\+::\+String\+Tokenizer\+::has (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{token }\end{DoxyParamCaption}) const}
+
+Returns reference to the index\textquotesingle{}th token. Throws a Range\+Exception if the index is out of range. \mbox{\Hypertarget{classPoco_1_1StringTokenizer_a092e6e34c502735ae679d4e2d5fd4c6b}\label{classPoco_1_1StringTokenizer_a092e6e34c502735ae679d4e2d5fd4c6b}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string \& Poco\+::\+String\+Tokenizer\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns const reference the index\textquotesingle{}th token. Throws a Range\+Exception if the index is out of range. 
+
+Definition at line 114 of file String\+Tokenizer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_a2b2b70e1c07852b034ec8040148ca8d6}\label{classPoco_1_1StringTokenizer_a2b2b70e1c07852b034ec8040148ca8d6}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+String\+Tokenizer\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 121 of file String\+Tokenizer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1StringTokenizer_a302989f3a8b57cf77cb533a32372ea02}\label{classPoco_1_1StringTokenizer_a302989f3a8b57cf77cb533a32372ea02}} 
+\index{Poco::StringTokenizer@{Poco::StringTokenizer}!replace@{replace}}
+\index{replace@{replace}!Poco::StringTokenizer@{Poco::StringTokenizer}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+String\+Tokenizer\+::replace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{old\+Token,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{new\+Token,  }\item[{std\+::string\+::size\+\_\+type}]{pos = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Returns the index of the first occurence of the token starting at position pos. Throws a Not\+Found\+Exception if the token is not found. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{StringTokenizer_8h}{String\+Tokenizer.\+h}}\end{DoxyCompactItemize}

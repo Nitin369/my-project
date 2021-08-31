@@ -1,0 +1,831 @@
+\hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject}{}\doxysection{IoT\+::Modbus\+::Modbus\+Master\+Remote\+Object Class Reference}
+\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject}\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+
+
+{\ttfamily \#include $<$Modbus\+Master\+Remote\+Object.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Modbus\+::Modbus\+Master\+Remote\+Object\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Modbus\+::Modbus\+Master\+Remote\+Object\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject}{Modbus\+Master\+Remote\+Object}} $>$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a517f3194e014a203361c05feb8ebc0b1}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2434d0d910e51423965710c0bdbdea16}{Modbus\+Master\+Remote\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} $>$ p\+Service\+Object)
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a0432218f5b0dd6b7a15f6e2263ba3c36}{$\sim$\+Modbus\+Master\+Remote\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject}{Modbus\+Master\+Remote\+Object}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a49080c9c248a89664ba2236dcd65dea9}{mask\+Write\+Register}} (Poco\+::\+U\+Int8 slave\+Address, Poco\+::\+U\+Int16 output\+Address, Poco\+::\+U\+Int16 and\+Mask, Poco\+::\+U\+Int16 or\+Mask)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject}{Modbus\+Master\+Remote\+Object}}. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ bool $>$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a1f212f23aaf4c481c0ec0697d4bfb245}{read\+Coils}} (Poco\+::\+U\+Int8 slave\+Address, Poco\+::\+U\+Int16 starting\+Address, Poco\+::\+U\+Int16 n\+Of\+Coils)
+\item 
+virtual std\+::vector$<$ bool $>$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a4c2937bcd70267a186de35e3a4a9bbc9}{read\+Discrete\+Inputs}} (Poco\+::\+U\+Int8 slave\+Address, Poco\+::\+U\+Int16 starting\+Address, Poco\+::\+U\+Int16 n\+Of\+Inputs)
+\item 
+virtual Poco\+::\+U\+Int8 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_af7ac7fac40da4c10b46ebbd78d81a044}{read\+Exception\+Status}} (Poco\+::\+U\+Int8 slave\+Address)
+\item 
+virtual std\+::vector$<$ Poco\+::\+U\+Int16 $>$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a671f097f9e2d7ac3c9b6ad92d114a191}{read\+F\+I\+F\+O\+Queue}} (Poco\+::\+U\+Int8 slave\+Address, Poco\+::\+U\+Int16 fifo\+Pointer\+Address)
+\item 
+virtual std\+::vector$<$ Poco\+::\+U\+Int16 $>$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ac110684ffaf128ed6e4b6b05888baa9e}{read\+Holding\+Registers}} (Poco\+::\+U\+Int8 slave\+Address, Poco\+::\+U\+Int16 starting\+Address, Poco\+::\+U\+Int16 n\+Of\+Registers)
+\item 
+virtual std\+::vector$<$ Poco\+::\+U\+Int16 $>$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a586a621910f65790e588b160a51c4202}{read\+Input\+Registers}} (Poco\+::\+U\+Int8 slave\+Address, Poco\+::\+U\+Int16 starting\+Address, Poco\+::\+U\+Int16 n\+Of\+Registers)
+\item 
+virtual std\+::vector$<$ Poco\+::\+U\+Int16 $>$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_acb5c0e7020445ce26b6de196f336a473}{read\+Write\+Multiple\+Registers}} (Poco\+::\+U\+Int8 slave\+Address, Poco\+::\+U\+Int16 write\+Starting\+Address, std\+::vector$<$ Poco\+::\+U\+Int16 $>$ write\+Values, Poco\+::\+U\+Int16 read\+Starting\+Address, Poco\+::\+U\+Int8 n\+Of\+Read\+Registers)
+\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_acdf3ef4e19999a34038af7104a924ce2}{remoting\+\_\+\+\_\+enable\+Events}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}} p\+Listener, bool enable=bool(true))
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_adce815571e00bd2ab1f6278df126c02e}{remoting\+\_\+\+\_\+enable\+Remote\+Events}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a5a2ab7fb39f02e8dd8a0e400a29d54fe}{remoting\+\_\+\+\_\+has\+Events}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the Remote\+Object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_af7f35ca750773dc18600908d0ea54058}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the object\textquotesingle{}s U\+RI. \end{DoxyCompactList}\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_acd7bf9060cb8526a979274d07b39e796}{send\+Mask\+Write\+Register\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1MaskWriteRegisterRequest}{Io\+T\+::\+Modbus\+::\+Mask\+Write\+Register\+Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Returns the Type\+Id of the class. \end{DoxyCompactList}\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a64bc03b764835ac4ed02066b5fb68a07}{send\+Read\+Coils\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadCoilsRequest}{Io\+T\+::\+Modbus\+::\+Read\+Coils\+Request}} \&request)
+\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_af685f51cf6160cd8482d48ea4dfc063b}{send\+Read\+Discrete\+Inputs\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadDiscreteInputsRequest}{Io\+T\+::\+Modbus\+::\+Read\+Discrete\+Inputs\+Request}} \&request)
+\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ab40bdfa26f4caf73f692b7a393f4f63d}{send\+Read\+Exception\+Status\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadExceptionStatusRequest}{Io\+T\+::\+Modbus\+::\+Read\+Exception\+Status\+Request}} \&request)
+\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_aea877212090a06bc555f987c3c2d08db}{send\+Read\+F\+I\+F\+O\+Queue\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadFIFOQueueRequest}{Io\+T\+::\+Modbus\+::\+Read\+F\+I\+F\+O\+Queue\+Request}} \&request)
+\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a21e3e83f61d78124a5c20d5ffec89c35}{send\+Read\+Holding\+Registers\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadHoldingRegistersRequest}{Io\+T\+::\+Modbus\+::\+Read\+Holding\+Registers\+Request}} \&request)
+\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_afb6197d4e205d80b7ac003992dddfe46}{send\+Read\+Input\+Registers\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadInputRegistersRequest}{Io\+T\+::\+Modbus\+::\+Read\+Input\+Registers\+Request}} \&request)
+\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a95062d2b02ac94c04651f2e87b68dc87}{send\+Read\+Write\+Multiple\+Registers\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadWriteMultipleRegistersRequest}{Io\+T\+::\+Modbus\+::\+Read\+Write\+Multiple\+Registers\+Request}} \&request)
+\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ac441371d2f08fb4cdf3f9e59f11d8aaf}{send\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1GenericMessage}{Io\+T\+::\+Modbus\+::\+Generic\+Message}} \&message)
+\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2d42558add4f04c7157ac4cb8239c0ba}{send\+Write\+Multiple\+Coils\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteMultipleCoilsRequest}{Io\+T\+::\+Modbus\+::\+Write\+Multiple\+Coils\+Request}} \&request)
+\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a17d391000afbd12c0c4f08cf6c159769}{send\+Write\+Multiple\+Registers\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteMultipleRegistersRequest}{Io\+T\+::\+Modbus\+::\+Write\+Multiple\+Registers\+Request}} \&request)
+\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2e250a0210e41ef3e337353826b43480}{send\+Write\+Single\+Coil\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteSingleCoilRequest}{Io\+T\+::\+Modbus\+::\+Write\+Single\+Coil\+Request}} \&request)
+\item 
+virtual Poco\+::\+U\+Int16 \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a938127ccf007a4f4ee3a00f1c074ff39}{send\+Write\+Single\+Register\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteSingleRegisterRequest}{Io\+T\+::\+Modbus\+::\+Write\+Single\+Register\+Request}} \&request)
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ab5b54040de272611d2268deb408a704c}{write\+Multiple\+Coils}} (Poco\+::\+U\+Int8 slave\+Address, Poco\+::\+U\+Int16 output\+Address, std\+::vector$<$ bool $>$ values)
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_aea816e31b4c7cdab5c189741ba02e22f}{write\+Multiple\+Registers}} (Poco\+::\+U\+Int8 slave\+Address, Poco\+::\+U\+Int16 output\+Address, std\+::vector$<$ Poco\+::\+U\+Int16 $>$ values)
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a5551844c04f6edb723e4503ee9f02d55}{write\+Single\+Coil}} (Poco\+::\+U\+Int8 slave\+Address, Poco\+::\+U\+Int16 output\+Address, bool value)
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a3a43183e0dd43f493141558f095d0c19}{write\+Single\+Register}} (Poco\+::\+U\+Int8 slave\+Address, Poco\+::\+U\+Int16 output\+Address, Poco\+::\+U\+Int16 value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ade1937a1d639e9c20c4de706a820a940}{event\+\_\+\+\_\+bad\+Frame\+Received}} ()
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ae62ecef8c95c0ba701fb79f4faaea17a}{event\+\_\+\+\_\+exception\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ModbusExceptionMessage}{Io\+T\+::\+Modbus\+::\+Modbus\+Exception\+Message}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ad1674bf478545d2a35628050f46ccfac}{event\+\_\+\+\_\+mask\+Write\+Register\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1MaskWriteRegisterResponse}{Io\+T\+::\+Modbus\+::\+Mask\+Write\+Register\+Response}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2837878f1c4b28d7f59e32f64a6fd92a}{event\+\_\+\+\_\+read\+Coils\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadCoilsResponse}{Io\+T\+::\+Modbus\+::\+Read\+Coils\+Response}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2299809ad50eb6658975bc8010c22ce2}{event\+\_\+\+\_\+read\+Discrete\+Inputs\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadDiscreteInputsResponse}{Io\+T\+::\+Modbus\+::\+Read\+Discrete\+Inputs\+Response}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a50e06911dfe78ca99f4d0dc276d5931f}{event\+\_\+\+\_\+read\+Exception\+Status\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadExceptionStatusResponse}{Io\+T\+::\+Modbus\+::\+Read\+Exception\+Status\+Response}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_acebd0b7f619253775d55fa2707e3d956}{event\+\_\+\+\_\+read\+F\+I\+F\+O\+Queue\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadFIFOQueueResponse}{Io\+T\+::\+Modbus\+::\+Read\+F\+I\+F\+O\+Queue\+Response}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ac70d8a147e13d9ddc8693040692d75ea}{event\+\_\+\+\_\+read\+Holding\+Registers\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadHoldingRegistersResponse}{Io\+T\+::\+Modbus\+::\+Read\+Holding\+Registers\+Response}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a0876dcaeca44f8568bfde2fa70b1876d}{event\+\_\+\+\_\+read\+Input\+Registers\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadInputRegistersResponse}{Io\+T\+::\+Modbus\+::\+Read\+Input\+Registers\+Response}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_aa0938a28ed9c1e7a14907d283cc6d2fb}{event\+\_\+\+\_\+read\+Write\+Multiple\+Registers\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadWriteMultipleRegistersResponse}{Io\+T\+::\+Modbus\+::\+Read\+Write\+Multiple\+Registers\+Response}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a3cc0590b5f43cfce09d8735b4e921557}{event\+\_\+\+\_\+response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1GenericMessage}{Io\+T\+::\+Modbus\+::\+Generic\+Message}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a81fb783eed8a906a84074f4709e5880a}{event\+\_\+\+\_\+timeout}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int16 \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a44ba16d558d4bfacd0ed08ab5864db3b}{event\+\_\+\+\_\+write\+Multiple\+Coils\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteMultipleCoilsResponse}{Io\+T\+::\+Modbus\+::\+Write\+Multiple\+Coils\+Response}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_aee630302fd8b1247a578348fd62f85a6}{event\+\_\+\+\_\+write\+Multiple\+Registers\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteMultipleRegistersResponse}{Io\+T\+::\+Modbus\+::\+Write\+Multiple\+Registers\+Response}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_adf529599d58b149389a027e32a381bf6}{event\+\_\+\+\_\+write\+Single\+Coil\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteSingleCoilResponse}{Io\+T\+::\+Modbus\+::\+Write\+Single\+Coil\+Response}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ae2d699f804d28ba5ae81e073ecd9c624}{event\+\_\+\+\_\+write\+Single\+Register\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteSingleRegisterResponse}{Io\+T\+::\+Modbus\+::\+Write\+Single\+Register\+Response}} \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class defines the interface for \mbox{\hyperlink{namespaceIoT_1_1Modbus}{Modbus}} clients. \begin{DoxyVerb}The interface supports two basic modes of operation:
+   - Asynchronous requests: One of the sendXXXRequest() methods is used
+     to send a request to the device. The method returns as soon as the
+     request has been sent over the wire. The device's response is
+     reported asynchronously via an appropriate XXXResponseReceived event.
+   - Synchronous requests: After sending the request, the method waits
+     for the response from the device and directly returns it to the caller.
+     In case no response is received within the specified timeout, a
+     Poco::TimeoutException is thrown. If an exception message is received
+     from the device, a ModbusException is thrown. If an incomplete or invalid
+     message is received, a Poco::ProtocolException is thrown.
+
+Note that asynchronous and synchronous (blocking) mode cannot be used
+simultaneously. Calling one of the asynchronous request methods will enable
+asynchronous mode. Calling one of the synchronous request methods will
+disable asynchronous mode. Switching to synchronous mode while a response
+to an asynchronous request is pending will lead to undefined results,
+including possible mismatch of requests and responses.
+
+In asynchronous operation, requests are associated with a transaction ID,
+to tell apart multiple concurrent transactions. Transaction IDs are not guaranteed
+to be unique for subsequent requests. In fact, for Modbus RTU, which does not
+allow multiple simultaneous requests, the transaction ID will always be zero. 
+\end{DoxyVerb}
+ 
+
+Definition at line 32 of file Modbus\+Master\+Remote\+Object.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a517f3194e014a203361c05feb8ebc0b1}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a517f3194e014a203361c05feb8ebc0b1}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject}{Modbus\+Master\+Remote\+Object}}$>$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a517f3194e014a203361c05feb8ebc0b1}{Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::\+Ptr}}}
+
+
+
+Definition at line 60 of file Modbus\+Master\+Remote\+Object.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2434d0d910e51423965710c0bdbdea16}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2434d0d910e51423965710c0bdbdea16}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!ModbusMasterRemoteObject@{ModbusMasterRemoteObject}}
+\index{ModbusMasterRemoteObject@{ModbusMasterRemoteObject}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{ModbusMasterRemoteObject()}{ModbusMasterRemoteObject()}}
+{\footnotesize\ttfamily Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::\+Modbus\+Master\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Io\+T\+::\+Modbus\+::\+Modbus\+Master}} $>$}]{p\+Service\+Object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a0432218f5b0dd6b7a15f6e2263ba3c36}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a0432218f5b0dd6b7a15f6e2263ba3c36}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!````~ModbusMasterRemoteObject@{$\sim$ModbusMasterRemoteObject}}
+\index{````~ModbusMasterRemoteObject@{$\sim$ModbusMasterRemoteObject}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$ModbusMasterRemoteObject()}{~ModbusMasterRemoteObject()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::$\sim$\+Modbus\+Master\+Remote\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject}{Modbus\+Master\+Remote\+Object}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ade1937a1d639e9c20c4de706a820a940}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ade1937a1d639e9c20c4de706a820a940}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_badFrameReceived@{event\_\_badFrameReceived}}
+\index{event\_\_badFrameReceived@{event\_\_badFrameReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_badFrameReceived()}{event\_\_badFrameReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+bad\+Frame\+Received (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sends a Write Single Register request to the device and waits for the response.
+
+Throws a Poco\+::\+Timeout\+Exception if the device does not respond within the specified timeout. Throws a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusException}{Modbus\+Exception}} if the device responds with an exception message. \mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ae62ecef8c95c0ba701fb79f4faaea17a}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ae62ecef8c95c0ba701fb79f4faaea17a}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_exceptionReceived@{event\_\_exceptionReceived}}
+\index{event\_\_exceptionReceived@{event\_\_exceptionReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_exceptionReceived()}{event\_\_exceptionReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+exception\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ModbusExceptionMessage}{Io\+T\+::\+Modbus\+::\+Modbus\+Exception\+Message}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ad1674bf478545d2a35628050f46ccfac}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ad1674bf478545d2a35628050f46ccfac}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_maskWriteRegisterResponseReceived@{event\_\_maskWriteRegisterResponseReceived}}
+\index{event\_\_maskWriteRegisterResponseReceived@{event\_\_maskWriteRegisterResponseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_maskWriteRegisterResponseReceived()}{event\_\_maskWriteRegisterResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+mask\+Write\+Register\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1MaskWriteRegisterResponse}{Io\+T\+::\+Modbus\+::\+Mask\+Write\+Register\+Response}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2837878f1c4b28d7f59e32f64a6fd92a}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2837878f1c4b28d7f59e32f64a6fd92a}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_readCoilsResponseReceived@{event\_\_readCoilsResponseReceived}}
+\index{event\_\_readCoilsResponseReceived@{event\_\_readCoilsResponseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_readCoilsResponseReceived()}{event\_\_readCoilsResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+read\+Coils\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadCoilsResponse}{Io\+T\+::\+Modbus\+::\+Read\+Coils\+Response}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2299809ad50eb6658975bc8010c22ce2}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2299809ad50eb6658975bc8010c22ce2}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_readDiscreteInputsResponseReceived@{event\_\_readDiscreteInputsResponseReceived}}
+\index{event\_\_readDiscreteInputsResponseReceived@{event\_\_readDiscreteInputsResponseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_readDiscreteInputsResponseReceived()}{event\_\_readDiscreteInputsResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+read\+Discrete\+Inputs\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadDiscreteInputsResponse}{Io\+T\+::\+Modbus\+::\+Read\+Discrete\+Inputs\+Response}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a50e06911dfe78ca99f4d0dc276d5931f}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a50e06911dfe78ca99f4d0dc276d5931f}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_readExceptionStatusResponseReceived@{event\_\_readExceptionStatusResponseReceived}}
+\index{event\_\_readExceptionStatusResponseReceived@{event\_\_readExceptionStatusResponseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_readExceptionStatusResponseReceived()}{event\_\_readExceptionStatusResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+read\+Exception\+Status\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadExceptionStatusResponse}{Io\+T\+::\+Modbus\+::\+Read\+Exception\+Status\+Response}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_acebd0b7f619253775d55fa2707e3d956}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_acebd0b7f619253775d55fa2707e3d956}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_readFIFOQueueResponseReceived@{event\_\_readFIFOQueueResponseReceived}}
+\index{event\_\_readFIFOQueueResponseReceived@{event\_\_readFIFOQueueResponseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_readFIFOQueueResponseReceived()}{event\_\_readFIFOQueueResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+read\+F\+I\+F\+O\+Queue\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadFIFOQueueResponse}{Io\+T\+::\+Modbus\+::\+Read\+F\+I\+F\+O\+Queue\+Response}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ac70d8a147e13d9ddc8693040692d75ea}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ac70d8a147e13d9ddc8693040692d75ea}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_readHoldingRegistersResponseReceived@{event\_\_readHoldingRegistersResponseReceived}}
+\index{event\_\_readHoldingRegistersResponseReceived@{event\_\_readHoldingRegistersResponseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_readHoldingRegistersResponseReceived()}{event\_\_readHoldingRegistersResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+read\+Holding\+Registers\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadHoldingRegistersResponse}{Io\+T\+::\+Modbus\+::\+Read\+Holding\+Registers\+Response}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a0876dcaeca44f8568bfde2fa70b1876d}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a0876dcaeca44f8568bfde2fa70b1876d}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_readInputRegistersResponseReceived@{event\_\_readInputRegistersResponseReceived}}
+\index{event\_\_readInputRegistersResponseReceived@{event\_\_readInputRegistersResponseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_readInputRegistersResponseReceived()}{event\_\_readInputRegistersResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+read\+Input\+Registers\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadInputRegistersResponse}{Io\+T\+::\+Modbus\+::\+Read\+Input\+Registers\+Response}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_aa0938a28ed9c1e7a14907d283cc6d2fb}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_aa0938a28ed9c1e7a14907d283cc6d2fb}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_readWriteMultipleRegistersResponseReceived@{event\_\_readWriteMultipleRegistersResponseReceived}}
+\index{event\_\_readWriteMultipleRegistersResponseReceived@{event\_\_readWriteMultipleRegistersResponseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_readWriteMultipleRegistersResponseReceived()}{event\_\_readWriteMultipleRegistersResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+read\+Write\+Multiple\+Registers\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadWriteMultipleRegistersResponse}{Io\+T\+::\+Modbus\+::\+Read\+Write\+Multiple\+Registers\+Response}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a3cc0590b5f43cfce09d8735b4e921557}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a3cc0590b5f43cfce09d8735b4e921557}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_responseReceived@{event\_\_responseReceived}}
+\index{event\_\_responseReceived@{event\_\_responseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_responseReceived()}{event\_\_responseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1GenericMessage}{Io\+T\+::\+Modbus\+::\+Generic\+Message}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a81fb783eed8a906a84074f4709e5880a}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a81fb783eed8a906a84074f4709e5880a}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_timeout@{event\_\_timeout}}
+\index{event\_\_timeout@{event\_\_timeout}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_timeout()}{event\_\_timeout()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+timeout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int16 \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a44ba16d558d4bfacd0ed08ab5864db3b}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a44ba16d558d4bfacd0ed08ab5864db3b}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_writeMultipleCoilsResponseReceived@{event\_\_writeMultipleCoilsResponseReceived}}
+\index{event\_\_writeMultipleCoilsResponseReceived@{event\_\_writeMultipleCoilsResponseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_writeMultipleCoilsResponseReceived()}{event\_\_writeMultipleCoilsResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+write\+Multiple\+Coils\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteMultipleCoilsResponse}{Io\+T\+::\+Modbus\+::\+Write\+Multiple\+Coils\+Response}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_aee630302fd8b1247a578348fd62f85a6}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_aee630302fd8b1247a578348fd62f85a6}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_writeMultipleRegistersResponseReceived@{event\_\_writeMultipleRegistersResponseReceived}}
+\index{event\_\_writeMultipleRegistersResponseReceived@{event\_\_writeMultipleRegistersResponseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_writeMultipleRegistersResponseReceived()}{event\_\_writeMultipleRegistersResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+write\+Multiple\+Registers\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteMultipleRegistersResponse}{Io\+T\+::\+Modbus\+::\+Write\+Multiple\+Registers\+Response}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_adf529599d58b149389a027e32a381bf6}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_adf529599d58b149389a027e32a381bf6}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_writeSingleCoilResponseReceived@{event\_\_writeSingleCoilResponseReceived}}
+\index{event\_\_writeSingleCoilResponseReceived@{event\_\_writeSingleCoilResponseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_writeSingleCoilResponseReceived()}{event\_\_writeSingleCoilResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+write\+Single\+Coil\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteSingleCoilResponse}{Io\+T\+::\+Modbus\+::\+Write\+Single\+Coil\+Response}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ae2d699f804d28ba5ae81e073ecd9c624}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ae2d699f804d28ba5ae81e073ecd9c624}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!event\_\_writeSingleRegisterResponseReceived@{event\_\_writeSingleRegisterResponseReceived}}
+\index{event\_\_writeSingleRegisterResponseReceived@{event\_\_writeSingleRegisterResponseReceived}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{event\_\_writeSingleRegisterResponseReceived()}{event\_\_writeSingleRegisterResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::event\+\_\+\+\_\+write\+Single\+Register\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteSingleRegisterResponse}{Io\+T\+::\+Modbus\+::\+Write\+Single\+Register\+Response}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a49080c9c248a89664ba2236dcd65dea9}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a49080c9c248a89664ba2236dcd65dea9}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!maskWriteRegister@{maskWriteRegister}}
+\index{maskWriteRegister@{maskWriteRegister}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{maskWriteRegister()}{maskWriteRegister()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::mask\+Write\+Register (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{slave\+Address,  }\item[{Poco\+::\+U\+Int16}]{output\+Address,  }\item[{Poco\+::\+U\+Int16}]{and\+Mask,  }\item[{Poco\+::\+U\+Int16}]{or\+Mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject}{Modbus\+Master\+Remote\+Object}}. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a8e004a52d680c238edc752d91fb78ed8}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 296 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a1f212f23aaf4c481c0ec0697d4bfb245}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a1f212f23aaf4c481c0ec0697d4bfb245}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!readCoils@{readCoils}}
+\index{readCoils@{readCoils}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{readCoils()}{readCoils()}}
+{\footnotesize\ttfamily std\+::vector$<$ bool $>$ Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::read\+Coils (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{slave\+Address,  }\item[{Poco\+::\+U\+Int16}]{starting\+Address,  }\item[{Poco\+::\+U\+Int16}]{n\+Of\+Coils }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Mask Write register request to the device and waits for the response.
+
+Throws a Poco\+::\+Timeout\+Exception if the device does not respond within the specified timeout. Throws a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusException}{Modbus\+Exception}} if the device responds with an exception message. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_ae71f1ddbe55ee070988fdaafc394e7a8}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 302 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a4c2937bcd70267a186de35e3a4a9bbc9}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a4c2937bcd70267a186de35e3a4a9bbc9}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!readDiscreteInputs@{readDiscreteInputs}}
+\index{readDiscreteInputs@{readDiscreteInputs}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{readDiscreteInputs()}{readDiscreteInputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ bool $>$ Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::read\+Discrete\+Inputs (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{slave\+Address,  }\item[{Poco\+::\+U\+Int16}]{starting\+Address,  }\item[{Poco\+::\+U\+Int16}]{n\+Of\+Inputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read Coils request to the device and waits for the response.
+
+Throws a Poco\+::\+Timeout\+Exception if the device does not respond within the specified timeout. Throws a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusException}{Modbus\+Exception}} if the device responds with an exception message. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a4fe1a914a241ef4092ff6cdbbb3baf91}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 308 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_af7ac7fac40da4c10b46ebbd78d81a044}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_af7ac7fac40da4c10b46ebbd78d81a044}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!readExceptionStatus@{readExceptionStatus}}
+\index{readExceptionStatus@{readExceptionStatus}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{readExceptionStatus()}{readExceptionStatus()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int8 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::read\+Exception\+Status (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{slave\+Address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read Discrete Inputs request to the device and waits for the response.
+
+Throws a Poco\+::\+Timeout\+Exception if the device does not respond within the specified timeout. Throws a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusException}{Modbus\+Exception}} if the device responds with an exception message. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a2be422105f52b433e3a067dec09fae84}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 314 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a671f097f9e2d7ac3c9b6ad92d114a191}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a671f097f9e2d7ac3c9b6ad92d114a191}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!readFIFOQueue@{readFIFOQueue}}
+\index{readFIFOQueue@{readFIFOQueue}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{readFIFOQueue()}{readFIFOQueue()}}
+{\footnotesize\ttfamily std\+::vector$<$ Poco\+::\+U\+Int16 $>$ Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::read\+F\+I\+F\+O\+Queue (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{slave\+Address,  }\item[{Poco\+::\+U\+Int16}]{fifo\+Pointer\+Address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read Exception Status request to the device and waits for the response.
+
+Throws a Poco\+::\+Timeout\+Exception if the device does not respond within the specified timeout. Throws a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusException}{Modbus\+Exception}} if the device responds with an exception message. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a8d45e938814913c2291cf3f445621903}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 320 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ac110684ffaf128ed6e4b6b05888baa9e}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ac110684ffaf128ed6e4b6b05888baa9e}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!readHoldingRegisters@{readHoldingRegisters}}
+\index{readHoldingRegisters@{readHoldingRegisters}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{readHoldingRegisters()}{readHoldingRegisters()}}
+{\footnotesize\ttfamily std\+::vector$<$ Poco\+::\+U\+Int16 $>$ Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::read\+Holding\+Registers (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{slave\+Address,  }\item[{Poco\+::\+U\+Int16}]{starting\+Address,  }\item[{Poco\+::\+U\+Int16}]{n\+Of\+Registers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read F\+I\+FO Queue request to the device and waits for the response.
+
+Throws a Poco\+::\+Timeout\+Exception if the device does not respond within the specified timeout. Throws a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusException}{Modbus\+Exception}} if the device responds with an exception message. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_ac53e17776a8e49c991f98376ec035d09}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 326 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a586a621910f65790e588b160a51c4202}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a586a621910f65790e588b160a51c4202}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!readInputRegisters@{readInputRegisters}}
+\index{readInputRegisters@{readInputRegisters}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{readInputRegisters()}{readInputRegisters()}}
+{\footnotesize\ttfamily std\+::vector$<$ Poco\+::\+U\+Int16 $>$ Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::read\+Input\+Registers (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{slave\+Address,  }\item[{Poco\+::\+U\+Int16}]{starting\+Address,  }\item[{Poco\+::\+U\+Int16}]{n\+Of\+Registers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read Holding Registers request to the device and waits for the response.
+
+Throws a Poco\+::\+Timeout\+Exception if the device does not respond within the specified timeout. Throws a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusException}{Modbus\+Exception}} if the device responds with an exception message. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_aa1b36cf18962ab7a5d60f66fd4d7a8c1}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 332 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_acb5c0e7020445ce26b6de196f336a473}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_acb5c0e7020445ce26b6de196f336a473}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!readWriteMultipleRegisters@{readWriteMultipleRegisters}}
+\index{readWriteMultipleRegisters@{readWriteMultipleRegisters}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{readWriteMultipleRegisters()}{readWriteMultipleRegisters()}}
+{\footnotesize\ttfamily std\+::vector$<$ Poco\+::\+U\+Int16 $>$ Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::read\+Write\+Multiple\+Registers (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{slave\+Address,  }\item[{Poco\+::\+U\+Int16}]{write\+Starting\+Address,  }\item[{std\+::vector$<$ Poco\+::\+U\+Int16 $>$}]{write\+Values,  }\item[{Poco\+::\+U\+Int16}]{read\+Starting\+Address,  }\item[{Poco\+::\+U\+Int8}]{n\+Of\+Read\+Registers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read Input Registers request to the device and waits for the response.
+
+Throws a Poco\+::\+Timeout\+Exception if the device does not respond within the specified timeout. Throws a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusException}{Modbus\+Exception}} if the device responds with an exception message. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a856e70be4be281e742afbfb9d1faa08e}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 338 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_acdf3ef4e19999a34038af7104a924ce2}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_acdf3ef4e19999a34038af7104a924ce2}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!remoting\_\_enableEvents@{remoting\_\_enableEvents}}
+\index{remoting\_\_enableEvents@{remoting\_\_enableEvents}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_enableEvents()}{remoting\_\_enableEvents()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::remoting\+\_\+\+\_\+enable\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}}}]{p\+Listener,  }\item[{bool}]{enable = {\ttfamily bool(true)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sends a Read/\+Write Multiple registers request to the device and waits for the response.
+
+Throws a Poco\+::\+Timeout\+Exception if the device does not respond within the specified timeout. Throws a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusException}{Modbus\+Exception}} if the device responds with an exception message. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a646f2b7b1a80023c91f78db2811221fb}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_adce815571e00bd2ab1f6278df126c02e}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_adce815571e00bd2ab1f6278df126c02e}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!remoting\_\_enableRemoteEvents@{remoting\_\_enableRemoteEvents}}
+\index{remoting\_\_enableRemoteEvents@{remoting\_\_enableRemoteEvents}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_enableRemoteEvents()}{remoting\_\_enableRemoteEvents()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::remoting\+\_\+\+\_\+enable\+Remote\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the service object has events, false otherwise.
+
+Must be overridden by subclasses if the service object has events. The default implementation always returns false. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_ab4902ffb94dd10a81426a97c918fea1a}{Poco\+::\+Remoting\+N\+G\+::\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a5a2ab7fb39f02e8dd8a0e400a29d54fe}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a5a2ab7fb39f02e8dd8a0e400a29d54fe}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!remoting\_\_hasEvents@{remoting\_\_hasEvents}}
+\index{remoting\_\_hasEvents@{remoting\_\_hasEvents}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_hasEvents()}{remoting\_\_hasEvents()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::remoting\+\_\+\+\_\+has\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the Remote\+Object. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_a6bad1b69b9506c827a62df0ac3a4cf1d}{Poco\+::\+Remoting\+N\+G\+::\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_af7f35ca750773dc18600908d0ea54058}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_af7f35ca750773dc18600908d0ea54058}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the object\textquotesingle{}s U\+RI. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_a1c3bd470be79d79803cbcf674fd5a049}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable}}.
+
+
+
+Definition at line 344 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_acd7bf9060cb8526a979274d07b39e796}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_acd7bf9060cb8526a979274d07b39e796}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendMaskWriteRegisterRequest@{sendMaskWriteRegisterRequest}}
+\index{sendMaskWriteRegisterRequest@{sendMaskWriteRegisterRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendMaskWriteRegisterRequest()}{sendMaskWriteRegisterRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Mask\+Write\+Register\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1MaskWriteRegisterRequest}{Io\+T\+::\+Modbus\+::\+Mask\+Write\+Register\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the Type\+Id of the class. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a67786abec9e67571f0a8dd7bb523a41c}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 350 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a64bc03b764835ac4ed02066b5fb68a07}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a64bc03b764835ac4ed02066b5fb68a07}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendReadCoilsRequest@{sendReadCoilsRequest}}
+\index{sendReadCoilsRequest@{sendReadCoilsRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendReadCoilsRequest()}{sendReadCoilsRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Read\+Coils\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadCoilsRequest}{Io\+T\+::\+Modbus\+::\+Read\+Coils\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Mask Write Register request.
+
+A response from the device will be reported via the mask\+Write\+Register\+Response\+Received event.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a3ab1f4b7616a124a59b13ff936753ca0}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 356 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_af685f51cf6160cd8482d48ea4dfc063b}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_af685f51cf6160cd8482d48ea4dfc063b}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendReadDiscreteInputsRequest@{sendReadDiscreteInputsRequest}}
+\index{sendReadDiscreteInputsRequest@{sendReadDiscreteInputsRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendReadDiscreteInputsRequest()}{sendReadDiscreteInputsRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Read\+Discrete\+Inputs\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadDiscreteInputsRequest}{Io\+T\+::\+Modbus\+::\+Read\+Discrete\+Inputs\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read Coils request.
+
+A response from the device will be reported via the read\+Coils\+Response\+Received event.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a352c6cae4ad235f847ecc97bcdf9730f}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 362 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ab40bdfa26f4caf73f692b7a393f4f63d}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ab40bdfa26f4caf73f692b7a393f4f63d}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendReadExceptionStatusRequest@{sendReadExceptionStatusRequest}}
+\index{sendReadExceptionStatusRequest@{sendReadExceptionStatusRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendReadExceptionStatusRequest()}{sendReadExceptionStatusRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Read\+Exception\+Status\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadExceptionStatusRequest}{Io\+T\+::\+Modbus\+::\+Read\+Exception\+Status\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read Discrete Inputs request.
+
+A response from the device will be reported via the read\+Discrete\+Inputs\+Response\+Received event.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a1a8ceb619f68abf259e79adabfb19d83}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 368 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_aea877212090a06bc555f987c3c2d08db}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_aea877212090a06bc555f987c3c2d08db}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendReadFIFOQueueRequest@{sendReadFIFOQueueRequest}}
+\index{sendReadFIFOQueueRequest@{sendReadFIFOQueueRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendReadFIFOQueueRequest()}{sendReadFIFOQueueRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Read\+F\+I\+F\+O\+Queue\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadFIFOQueueRequest}{Io\+T\+::\+Modbus\+::\+Read\+F\+I\+F\+O\+Queue\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read Exception Status request.
+
+A response from the device will be reported via the read\+Exception\+Status\+Response\+Received event.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a34f4864c563751bb8bc0c3524ff1137f}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 374 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a21e3e83f61d78124a5c20d5ffec89c35}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a21e3e83f61d78124a5c20d5ffec89c35}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendReadHoldingRegistersRequest@{sendReadHoldingRegistersRequest}}
+\index{sendReadHoldingRegistersRequest@{sendReadHoldingRegistersRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendReadHoldingRegistersRequest()}{sendReadHoldingRegistersRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Read\+Holding\+Registers\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadHoldingRegistersRequest}{Io\+T\+::\+Modbus\+::\+Read\+Holding\+Registers\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read F\+I\+FO Queue request.
+
+A response from the device will be reported via the read\+F\+I\+F\+O\+Queue\+Response\+Received event.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a2e295c9c6e2a7bb54b01b33a86bd048e}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 380 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_afb6197d4e205d80b7ac003992dddfe46}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_afb6197d4e205d80b7ac003992dddfe46}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendReadInputRegistersRequest@{sendReadInputRegistersRequest}}
+\index{sendReadInputRegistersRequest@{sendReadInputRegistersRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendReadInputRegistersRequest()}{sendReadInputRegistersRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Read\+Input\+Registers\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadInputRegistersRequest}{Io\+T\+::\+Modbus\+::\+Read\+Input\+Registers\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read Holding Registers request.
+
+A response from the device will be reported via the read\+Holding\+Registers\+Response\+Received event.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_adb31ca9788cfa659acff5c031a5fdbf9}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 386 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a95062d2b02ac94c04651f2e87b68dc87}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a95062d2b02ac94c04651f2e87b68dc87}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendReadWriteMultipleRegistersRequest@{sendReadWriteMultipleRegistersRequest}}
+\index{sendReadWriteMultipleRegistersRequest@{sendReadWriteMultipleRegistersRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendReadWriteMultipleRegistersRequest()}{sendReadWriteMultipleRegistersRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Read\+Write\+Multiple\+Registers\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1ReadWriteMultipleRegistersRequest}{Io\+T\+::\+Modbus\+::\+Read\+Write\+Multiple\+Registers\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read Input Registers request.
+
+A response from the device will be reported via the read\+Input\+Registers\+Response\+Received event.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a034669cea002c4fa22eb9b442dc4a24e}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 392 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 18
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ac441371d2f08fb4cdf3f9e59f11d8aaf}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ac441371d2f08fb4cdf3f9e59f11d8aaf}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendRequest@{sendRequest}}
+\index{sendRequest@{sendRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendRequest()}{sendRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1GenericMessage}{Io\+T\+::\+Modbus\+::\+Generic\+Message}} \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Read Write Multiple Registers request.
+
+A response from the device will be reported via the read\+Write\+Multiple\+Registers\+Response\+Received event.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_acde646e7793d38c6ca35b91676d3a6fb}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 398 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 19
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2d42558add4f04c7157ac4cb8239c0ba}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2d42558add4f04c7157ac4cb8239c0ba}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendWriteMultipleCoilsRequest@{sendWriteMultipleCoilsRequest}}
+\index{sendWriteMultipleCoilsRequest@{sendWriteMultipleCoilsRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendWriteMultipleCoilsRequest()}{sendWriteMultipleCoilsRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Write\+Multiple\+Coils\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteMultipleCoilsRequest}{Io\+T\+::\+Modbus\+::\+Write\+Multiple\+Coils\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a generic \mbox{\hyperlink{namespaceIoT_1_1Modbus}{Modbus}} message.
+
+The caller is responsible for correct formatting of the messages\textquotesingle{}s data field.
+
+This can be used to send \mbox{\hyperlink{namespaceIoT_1_1Modbus}{Modbus}} requests not directly supported by the \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMaster}{Modbus\+Master}} interface.
+
+A response from the device will be reported via the response\+Received event or a more specific event if the response message type is supported.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a8f5cad3f5fc3f9e25f203df303b6747a}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 404 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 20
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a17d391000afbd12c0c4f08cf6c159769}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a17d391000afbd12c0c4f08cf6c159769}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendWriteMultipleRegistersRequest@{sendWriteMultipleRegistersRequest}}
+\index{sendWriteMultipleRegistersRequest@{sendWriteMultipleRegistersRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendWriteMultipleRegistersRequest()}{sendWriteMultipleRegistersRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Write\+Multiple\+Registers\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteMultipleRegistersRequest}{Io\+T\+::\+Modbus\+::\+Write\+Multiple\+Registers\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Write Multiple Coils request.
+
+A response from the device will be reported via the write\+Multiple\+Coils\+Response\+Received event.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_afdf7e2793edbde2c2e0d5eb898cc766d}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 410 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 21
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2e250a0210e41ef3e337353826b43480}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a2e250a0210e41ef3e337353826b43480}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendWriteSingleCoilRequest@{sendWriteSingleCoilRequest}}
+\index{sendWriteSingleCoilRequest@{sendWriteSingleCoilRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendWriteSingleCoilRequest()}{sendWriteSingleCoilRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Write\+Single\+Coil\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteSingleCoilRequest}{Io\+T\+::\+Modbus\+::\+Write\+Single\+Coil\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Write Multiple Registers request.
+
+A response from the device will be reported via the write\+Multiple\+Registers\+Response\+Received event.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a2bde09396fe4f59c2b8871c33abdfac0}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 416 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 22
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a938127ccf007a4f4ee3a00f1c074ff39}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a938127ccf007a4f4ee3a00f1c074ff39}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!sendWriteSingleRegisterRequest@{sendWriteSingleRegisterRequest}}
+\index{sendWriteSingleRegisterRequest@{sendWriteSingleRegisterRequest}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{sendWriteSingleRegisterRequest()}{sendWriteSingleRegisterRequest()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::send\+Write\+Single\+Register\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Modbus_1_1WriteSingleRegisterRequest}{Io\+T\+::\+Modbus\+::\+Write\+Single\+Register\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Write Single Coil request.
+
+A response from the device will be reported via the write\+Single\+Coil\+Response\+Received event.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a6e9e099f23f4fb6c653a5b2b50b57316}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 422 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 23
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ab5b54040de272611d2268deb408a704c}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_ab5b54040de272611d2268deb408a704c}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!writeMultipleCoils@{writeMultipleCoils}}
+\index{writeMultipleCoils@{writeMultipleCoils}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{writeMultipleCoils()}{writeMultipleCoils()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::write\+Multiple\+Coils (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{slave\+Address,  }\item[{Poco\+::\+U\+Int16}]{output\+Address,  }\item[{std\+::vector$<$ bool $>$}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Write Single Register request.
+
+A response from the device will be reported via the write\+Single\+Register\+Response\+Received event.
+
+Returns the transaction ID for the request. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a90dee71e6b79d9ca7de38c4db580bd2f}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 428 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 24
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_aea816e31b4c7cdab5c189741ba02e22f}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_aea816e31b4c7cdab5c189741ba02e22f}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!writeMultipleRegisters@{writeMultipleRegisters}}
+\index{writeMultipleRegisters@{writeMultipleRegisters}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{writeMultipleRegisters()}{writeMultipleRegisters()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::write\+Multiple\+Registers (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{slave\+Address,  }\item[{Poco\+::\+U\+Int16}]{output\+Address,  }\item[{std\+::vector$<$ Poco\+::\+U\+Int16 $>$}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Write Multiple Coils request to the device and waits for the response.
+
+Throws a Poco\+::\+Timeout\+Exception if the device does not respond within the specified timeout. Throws a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusException}{Modbus\+Exception}} if the device responds with an exception message. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_afdd4e80a34618c9cb895baf94083b1dd}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 434 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 25
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a5551844c04f6edb723e4503ee9f02d55}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a5551844c04f6edb723e4503ee9f02d55}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!writeSingleCoil@{writeSingleCoil}}
+\index{writeSingleCoil@{writeSingleCoil}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{writeSingleCoil()}{writeSingleCoil()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::write\+Single\+Coil (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{slave\+Address,  }\item[{Poco\+::\+U\+Int16}]{output\+Address,  }\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Write Multiple Registers request to the device and waits for the response.
+
+Throws a Poco\+::\+Timeout\+Exception if the device does not respond within the specified timeout. Throws a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusException}{Modbus\+Exception}} if the device responds with an exception message. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_af396567dfd6e52e8d372ab6f7a28586b}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 440 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 26
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a3a43183e0dd43f493141558f095d0c19}\label{classIoT_1_1Modbus_1_1ModbusMasterRemoteObject_a3a43183e0dd43f493141558f095d0c19}} 
+\index{IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}!writeSingleRegister@{writeSingleRegister}}
+\index{writeSingleRegister@{writeSingleRegister}!IoT::Modbus::ModbusMasterRemoteObject@{IoT::Modbus::ModbusMasterRemoteObject}}
+\doxysubsubsection{\texorpdfstring{writeSingleRegister()}{writeSingleRegister()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Remote\+Object\+::write\+Single\+Register (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{slave\+Address,  }\item[{Poco\+::\+U\+Int16}]{output\+Address,  }\item[{Poco\+::\+U\+Int16}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sends a Write Single Coils request to the device and waits for the response.
+
+Throws a Poco\+::\+Timeout\+Exception if the device does not respond within the specified timeout. Throws a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusException}{Modbus\+Exception}} if the device responds with an exception message. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Modbus_1_1IModbusMaster_a3422cb568ccb8a7395d08c83fdcf0321}{Io\+T\+::\+Modbus\+::\+I\+Modbus\+Master}}.
+
+
+
+Definition at line 446 of file Modbus\+Master\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 27
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Modbus/\mbox{\hyperlink{ModbusMasterRemoteObject_8h}{Modbus\+Master\+Remote\+Object.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,319 @@
+\hypertarget{classPoco_1_1Data_1_1ArchiveStrategy}{}\doxysection{Poco\+::Data\+::Archive\+Strategy Class Reference}
+\label{classPoco_1_1Data_1_1ArchiveStrategy}\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+
+
+The \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy}{Archive\+Strategy}} is used by \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel}{S\+Q\+L\+Channel}} to archive log rows.  
+
+
+
+
+{\ttfamily \#include $<$Archive\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::Archive\+Strategy\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_ac3a65c324880e12dfcfe10d775049b27}{Archive\+Strategy}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&connector, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&connect, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&source, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&destination=\mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a4d01e4bdde9c70baf75c27adc8f7c18f}{D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+R\+C\+H\+I\+V\+E\+\_\+\+D\+E\+S\+T\+I\+N\+A\+T\+I\+ON}})
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_ad8ef3b33afb76173ce0df84dbd940da4}{$\sim$\+Archive\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Creates archive strategy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_acb336f4bee7daad26d1f7fb96e70b097}{open}} ()
+\begin{DoxyCompactList}\small\item\em Destroys archive strategy. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a572d6e5a6da123875725fe059f146a9a}{archive}} ()=0
+\begin{DoxyCompactList}\small\item\em Opens the session. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a8fd95847628f5a3d445267e70755277a}{get\+Source}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Archives the rows. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a5cf019dd21e5c5ee40e4eada281eabc5}{set\+Source}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&source)
+\begin{DoxyCompactList}\small\item\em Returns the name of the source table containing rows to be archived. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_ac9134db3999693806db5b672feee6ea8}{get\+Destination}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the name of the source table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a96316e70a22bd185194058c76ca4fd7c}{set\+Destination}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&destination)
+\begin{DoxyCompactList}\small\item\em Returns the name of the destination table for rows to be archived. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_aaa993704980c548851559718b8febd9a}{get\+Threshold}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Sets the name of the destination table. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a7d57373556c499b28248209565d4f4f2}{set\+Threshold}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&threshold)=0
+\begin{DoxyCompactList}\small\item\em Returns the archive threshold. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a4d01e4bdde9c70baf75c27adc8f7c18f}{D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+R\+C\+H\+I\+V\+E\+\_\+\+D\+E\+S\+T\+I\+N\+A\+T\+I\+ON}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_ae0ed030bcaa4d598dc13a8ca0af0894e}{Session\+Ptr}}
+\begin{DoxyCompactList}\small\item\em Sets the archive threshold. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a309e58d7274fa1d71544237b97ba74fc}{Statement\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_aa2511944a8aebd523abc1c1c9e956e87}{session}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a62f6433334975713cfdf63f17ec98d4a}{set\+Copy\+Statement}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_afff3bd81af28d3dadbacfcb41b5bbedc}{set\+Delete\+Statement}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a9ab7ac9d150aa75019f8830cda3c7fef}{set\+Count\+Statement}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_acced8d07499ab57a4337f8d94e8d2e96}{get\+Copy\+Statement}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a9c23aa530135dbe0d5935a46bdabc6e0}{get\+Delete\+Statement}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a0b631670b5a100f6583d153b3e176719}{get\+Count\+Statement}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy}{Archive\+Strategy}} is used by \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel}{S\+Q\+L\+Channel}} to archive log rows. 
+
+Definition at line 35 of file Archive\+Strategy.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_ae0ed030bcaa4d598dc13a8ca0af0894e}\label{classPoco_1_1Data_1_1ArchiveStrategy_ae0ed030bcaa4d598dc13a8ca0af0894e}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!SessionPtr@{SessionPtr}}
+\index{SessionPtr@{SessionPtr}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{SessionPtr}{SessionPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_ae0ed030bcaa4d598dc13a8ca0af0894e}{Poco\+::\+Data\+::\+Archive\+Strategy\+::\+Session\+Ptr}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sets the archive threshold. 
+
+
+
+Definition at line 75 of file Archive\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_a309e58d7274fa1d71544237b97ba74fc}\label{classPoco_1_1Data_1_1ArchiveStrategy_a309e58d7274fa1d71544237b97ba74fc}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!StatementPtr@{StatementPtr}}
+\index{StatementPtr@{StatementPtr}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{StatementPtr}{StatementPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a309e58d7274fa1d71544237b97ba74fc}{Poco\+::\+Data\+::\+Archive\+Strategy\+::\+Statement\+Ptr}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 76 of file Archive\+Strategy.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_ac3a65c324880e12dfcfe10d775049b27}\label{classPoco_1_1Data_1_1ArchiveStrategy_ac3a65c324880e12dfcfe10d775049b27}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!ArchiveStrategy@{ArchiveStrategy}}
+\index{ArchiveStrategy@{ArchiveStrategy}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{ArchiveStrategy()}{ArchiveStrategy()}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+Archive\+Strategy\+::\+Archive\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{connector,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{connect,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{source,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{destination = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveStrategy_a4d01e4bdde9c70baf75c27adc8f7c18f}{D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+R\+C\+H\+I\+V\+E\+\_\+\+D\+E\+S\+T\+I\+N\+A\+T\+I\+ON}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_ad8ef3b33afb76173ce0df84dbd940da4}\label{classPoco_1_1Data_1_1ArchiveStrategy_ad8ef3b33afb76173ce0df84dbd940da4}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!````~ArchiveStrategy@{$\sim$ArchiveStrategy}}
+\index{````~ArchiveStrategy@{$\sim$ArchiveStrategy}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{$\sim$ArchiveStrategy()}{~ArchiveStrategy()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Data\+::\+Archive\+Strategy\+::$\sim$\+Archive\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates archive strategy. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_a572d6e5a6da123875725fe059f146a9a}\label{classPoco_1_1Data_1_1ArchiveStrategy_a572d6e5a6da123875725fe059f146a9a}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!archive@{archive}}
+\index{archive@{archive}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{archive()}{archive()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Data\+::\+Archive\+Strategy\+::archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Opens the session. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveByAgeStrategy_a3aef854a9866a239fa093c23f9b25b20}{Poco\+::\+Data\+::\+Archive\+By\+Age\+Strategy}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_acced8d07499ab57a4337f8d94e8d2e96}\label{classPoco_1_1Data_1_1ArchiveStrategy_acced8d07499ab57a4337f8d94e8d2e96}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!getCopyStatement@{getCopyStatement}}
+\index{getCopyStatement@{getCopyStatement}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{getCopyStatement()}{getCopyStatement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Archive\+Strategy\+::get\+Copy\+Statement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 156 of file Archive\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_a0b631670b5a100f6583d153b3e176719}\label{classPoco_1_1Data_1_1ArchiveStrategy_a0b631670b5a100f6583d153b3e176719}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!getCountStatement@{getCountStatement}}
+\index{getCountStatement@{getCountStatement}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{getCountStatement()}{getCountStatement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Archive\+Strategy\+::get\+Count\+Statement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 168 of file Archive\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_a9c23aa530135dbe0d5935a46bdabc6e0}\label{classPoco_1_1Data_1_1ArchiveStrategy_a9c23aa530135dbe0d5935a46bdabc6e0}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!getDeleteStatement@{getDeleteStatement}}
+\index{getDeleteStatement@{getDeleteStatement}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{getDeleteStatement()}{getDeleteStatement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Statement}{Statement}} \& Poco\+::\+Data\+::\+Archive\+Strategy\+::get\+Delete\+Statement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 162 of file Archive\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_ac9134db3999693806db5b672feee6ea8}\label{classPoco_1_1Data_1_1ArchiveStrategy_ac9134db3999693806db5b672feee6ea8}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!getDestination@{getDestination}}
+\index{getDestination@{getDestination}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{getDestination()}{getDestination()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Data\+::\+Archive\+Strategy\+::get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the name of the source table. 
+
+
+
+Definition at line 126 of file Archive\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_a8fd95847628f5a3d445267e70755277a}\label{classPoco_1_1Data_1_1ArchiveStrategy_a8fd95847628f5a3d445267e70755277a}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!getSource@{getSource}}
+\index{getSource@{getSource}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Data\+::\+Archive\+Strategy\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Archives the rows. 
+
+
+
+Definition at line 108 of file Archive\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_aaa993704980c548851559718b8febd9a}\label{classPoco_1_1Data_1_1ArchiveStrategy_aaa993704980c548851559718b8febd9a}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!getThreshold@{getThreshold}}
+\index{getThreshold@{getThreshold}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{getThreshold()}{getThreshold()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Data\+::\+Archive\+Strategy\+::get\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the name of the destination table. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveByAgeStrategy_af057843e22e2abfba1103b023c3db0e3}{Poco\+::\+Data\+::\+Archive\+By\+Age\+Strategy}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_acb336f4bee7daad26d1f7fb96e70b097}\label{classPoco_1_1Data_1_1ArchiveStrategy_acb336f4bee7daad26d1f7fb96e70b097}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!open@{open}}
+\index{open@{open}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Archive\+Strategy\+::open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys archive strategy. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_aa2511944a8aebd523abc1c1c9e956e87}\label{classPoco_1_1Data_1_1ArchiveStrategy_aa2511944a8aebd523abc1c1c9e956e87}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!session@{session}}
+\index{session@{session}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{session()}{session()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} \& Poco\+::\+Data\+::\+Archive\+Strategy\+::session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 132 of file Archive\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_a62f6433334975713cfdf63f17ec98d4a}\label{classPoco_1_1Data_1_1ArchiveStrategy_a62f6433334975713cfdf63f17ec98d4a}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!setCopyStatement@{setCopyStatement}}
+\index{setCopyStatement@{setCopyStatement}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{setCopyStatement()}{setCopyStatement()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Archive\+Strategy\+::set\+Copy\+Statement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 138 of file Archive\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_a9ab7ac9d150aa75019f8830cda3c7fef}\label{classPoco_1_1Data_1_1ArchiveStrategy_a9ab7ac9d150aa75019f8830cda3c7fef}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!setCountStatement@{setCountStatement}}
+\index{setCountStatement@{setCountStatement}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{setCountStatement()}{setCountStatement()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Archive\+Strategy\+::set\+Count\+Statement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 150 of file Archive\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_afff3bd81af28d3dadbacfcb41b5bbedc}\label{classPoco_1_1Data_1_1ArchiveStrategy_afff3bd81af28d3dadbacfcb41b5bbedc}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!setDeleteStatement@{setDeleteStatement}}
+\index{setDeleteStatement@{setDeleteStatement}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{setDeleteStatement()}{setDeleteStatement()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Archive\+Strategy\+::set\+Delete\+Statement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 144 of file Archive\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_a96316e70a22bd185194058c76ca4fd7c}\label{classPoco_1_1Data_1_1ArchiveStrategy_a96316e70a22bd185194058c76ca4fd7c}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!setDestination@{setDestination}}
+\index{setDestination@{setDestination}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{setDestination()}{setDestination()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Archive\+Strategy\+::set\+Destination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{destination }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the name of the destination table for rows to be archived. 
+
+
+
+Definition at line 120 of file Archive\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_a5cf019dd21e5c5ee40e4eada281eabc5}\label{classPoco_1_1Data_1_1ArchiveStrategy_a5cf019dd21e5c5ee40e4eada281eabc5}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!setSource@{setSource}}
+\index{setSource@{setSource}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Archive\+Strategy\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the name of the source table containing rows to be archived. 
+
+
+
+Definition at line 114 of file Archive\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_a7d57373556c499b28248209565d4f4f2}\label{classPoco_1_1Data_1_1ArchiveStrategy_a7d57373556c499b28248209565d4f4f2}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!setThreshold@{setThreshold}}
+\index{setThreshold@{setThreshold}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{setThreshold()}{setThreshold()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Data\+::\+Archive\+Strategy\+::set\+Threshold (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{threshold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the archive threshold. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1ArchiveByAgeStrategy_aca64d34d23003ff72be00340e3325543}{Poco\+::\+Data\+::\+Archive\+By\+Age\+Strategy}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1ArchiveStrategy_a4d01e4bdde9c70baf75c27adc8f7c18f}\label{classPoco_1_1Data_1_1ArchiveStrategy_a4d01e4bdde9c70baf75c27adc8f7c18f}} 
+\index{Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}!DEFAULT\_ARCHIVE\_DESTINATION@{DEFAULT\_ARCHIVE\_DESTINATION}}
+\index{DEFAULT\_ARCHIVE\_DESTINATION@{DEFAULT\_ARCHIVE\_DESTINATION}!Poco::Data::ArchiveStrategy@{Poco::Data::ArchiveStrategy}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_ARCHIVE\_DESTINATION}{DEFAULT\_ARCHIVE\_DESTINATION}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Data\+::\+Archive\+Strategy\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+R\+C\+H\+I\+V\+E\+\_\+\+D\+E\+S\+T\+I\+N\+A\+T\+I\+ON\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 39 of file Archive\+Strategy.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{Data_2ArchiveStrategy_8h}{Archive\+Strategy.\+h}}\end{DoxyCompactItemize}

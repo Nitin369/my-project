@@ -1,0 +1,87 @@
+\hypertarget{classPoco_1_1DeflatingOutputStream}{}\doxysection{Poco\+::Deflating\+Output\+Stream Class Reference}
+\label{classPoco_1_1DeflatingOutputStream}\index{Poco::DeflatingOutputStream@{Poco::DeflatingOutputStream}}
+
+
+{\ttfamily \#include $<$Deflating\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Deflating\+Output\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Deflating\+Output\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1DeflatingOutputStream_a83ebe53de96f8cbf6736350505757fc0}{Deflating\+Output\+Stream}} (std\+::ostream \&ostr, \mbox{\hyperlink{classPoco_1_1DeflatingStreamBuf_a2c66cb1fa4d7a4f3aaca878a242e6e1f}{Deflating\+Stream\+Buf\+::\+Stream\+Type}} type=\mbox{\hyperlink{classPoco_1_1DeflatingStreamBuf_a2c66cb1fa4d7a4f3aaca878a242e6e1fa484f07be91f3a6bc08bb5f711ff0311e}{Deflating\+Stream\+Buf\+::\+S\+T\+R\+E\+A\+M\+\_\+\+Z\+L\+IB}}, int level=\mbox{\hyperlink{zlib_8h_af5387baee05124298e431ebe6fe96b17}{Z\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+ON}})
+\item 
+\mbox{\hyperlink{classPoco_1_1DeflatingOutputStream_a7fd16d2446b2d2da99f2e7f990749dec}{Deflating\+Output\+Stream}} (std\+::ostream \&ostr, int window\+Bits, int level)
+\item 
+\mbox{\hyperlink{classPoco_1_1DeflatingOutputStream_a60006cfb713b46ebe43322398056d0cd}{$\sim$\+Deflating\+Output\+Stream}} ()
+\item 
+int \mbox{\hyperlink{classPoco_1_1DeflatingOutputStream_a9ed4619a3175261cc8d9788dc31390c5}{close}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1DeflatingOutputStream}{Deflating\+Output\+Stream}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1DeflatingOutputStream_aba0f1641392a0e9d82366e03fa3b55c0}{sync}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This stream compresses all data passing through it using zlib\textquotesingle{}s deflate algorithm. After all data has been written to the stream, \mbox{\hyperlink{classPoco_1_1DeflatingOutputStream_a9ed4619a3175261cc8d9788dc31390c5}{close()}} must be called to ensure completion of compression. Example\+: std\+::ofstream ostr(\char`\"{}data.\+gz\char`\"{}, std\+::ios\+::binary); \mbox{\hyperlink{classPoco_1_1DeflatingOutputStream}{Deflating\+Output\+Stream}} deflater(ostr, Deflating\+Stream\+Buf\+::\+S\+T\+R\+E\+A\+M\+\_\+\+G\+Z\+I\+P); deflater $<$$<$ \char`\"{}\+Hello, world!\char`\"{} $<$$<$ std\+::endl; deflater.\+close(); ostr.\+close(); 
+
+Definition at line 142 of file Deflating\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1DeflatingOutputStream_a83ebe53de96f8cbf6736350505757fc0}\label{classPoco_1_1DeflatingOutputStream_a83ebe53de96f8cbf6736350505757fc0}} 
+\index{Poco::DeflatingOutputStream@{Poco::DeflatingOutputStream}!DeflatingOutputStream@{DeflatingOutputStream}}
+\index{DeflatingOutputStream@{DeflatingOutputStream}!Poco::DeflatingOutputStream@{Poco::DeflatingOutputStream}}
+\doxysubsubsection{\texorpdfstring{DeflatingOutputStream()}{DeflatingOutputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Deflating\+Output\+Stream\+::\+Deflating\+Output\+Stream (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{\mbox{\hyperlink{classPoco_1_1DeflatingStreamBuf_a2c66cb1fa4d7a4f3aaca878a242e6e1f}{Deflating\+Stream\+Buf\+::\+Stream\+Type}}}]{type = {\ttfamily \mbox{\hyperlink{classPoco_1_1DeflatingStreamBuf_a2c66cb1fa4d7a4f3aaca878a242e6e1fa484f07be91f3a6bc08bb5f711ff0311e}{Deflating\+Stream\+Buf\+::\+S\+T\+R\+E\+A\+M\+\_\+\+Z\+L\+IB}}},  }\item[{int}]{level = {\ttfamily \mbox{\hyperlink{zlib_8h_af5387baee05124298e431ebe6fe96b17}{Z\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+ON}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1DeflatingOutputStream_a7fd16d2446b2d2da99f2e7f990749dec}\label{classPoco_1_1DeflatingOutputStream_a7fd16d2446b2d2da99f2e7f990749dec}} 
+\index{Poco::DeflatingOutputStream@{Poco::DeflatingOutputStream}!DeflatingOutputStream@{DeflatingOutputStream}}
+\index{DeflatingOutputStream@{DeflatingOutputStream}!Poco::DeflatingOutputStream@{Poco::DeflatingOutputStream}}
+\doxysubsubsection{\texorpdfstring{DeflatingOutputStream()}{DeflatingOutputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Deflating\+Output\+Stream\+::\+Deflating\+Output\+Stream (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{int}]{window\+Bits,  }\item[{int}]{level }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1DeflatingOutputStream}{Deflating\+Output\+Stream}} for compressing data passed through and forwarding it to the given output stream. \mbox{\Hypertarget{classPoco_1_1DeflatingOutputStream_a60006cfb713b46ebe43322398056d0cd}\label{classPoco_1_1DeflatingOutputStream_a60006cfb713b46ebe43322398056d0cd}} 
+\index{Poco::DeflatingOutputStream@{Poco::DeflatingOutputStream}!````~DeflatingOutputStream@{$\sim$DeflatingOutputStream}}
+\index{````~DeflatingOutputStream@{$\sim$DeflatingOutputStream}!Poco::DeflatingOutputStream@{Poco::DeflatingOutputStream}}
+\doxysubsubsection{\texorpdfstring{$\sim$DeflatingOutputStream()}{~DeflatingOutputStream()}}
+{\footnotesize\ttfamily Poco\+::\+Deflating\+Output\+Stream\+::$\sim$\+Deflating\+Output\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1DeflatingOutputStream}{Deflating\+Output\+Stream}} for compressing data passed through and forwarding it to the given output stream.
+
+Please refer to the zlib documentation of \mbox{\hyperlink{zlib_8h_a59b575a521efe7ea0d3b9dd3c8d315c1}{deflate\+Init2()}} for a description of the window\+Bits parameter. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1DeflatingOutputStream_a9ed4619a3175261cc8d9788dc31390c5}\label{classPoco_1_1DeflatingOutputStream_a9ed4619a3175261cc8d9788dc31390c5}} 
+\index{Poco::DeflatingOutputStream@{Poco::DeflatingOutputStream}!close@{close}}
+\index{close@{close}!Poco::DeflatingOutputStream@{Poco::DeflatingOutputStream}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily int Poco\+::\+Deflating\+Output\+Stream\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1DeflatingOutputStream}{Deflating\+Output\+Stream}}. 
+
+\mbox{\Hypertarget{classPoco_1_1DeflatingOutputStream_aba0f1641392a0e9d82366e03fa3b55c0}\label{classPoco_1_1DeflatingOutputStream_aba0f1641392a0e9d82366e03fa3b55c0}} 
+\index{Poco::DeflatingOutputStream@{Poco::DeflatingOutputStream}!sync@{sync}}
+\index{sync@{sync}!Poco::DeflatingOutputStream@{Poco::DeflatingOutputStream}}
+\doxysubsubsection{\texorpdfstring{sync()}{sync()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Deflating\+Output\+Stream\+::sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Finishes up the stream.
+
+Must be called when deflating to an output stream. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{DeflatingStream_8h}{Deflating\+Stream.\+h}}\end{DoxyCompactItemize}

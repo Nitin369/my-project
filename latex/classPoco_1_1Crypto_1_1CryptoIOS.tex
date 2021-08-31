@@ -1,0 +1,88 @@
+\hypertarget{classPoco_1_1Crypto_1_1CryptoIOS}{}\doxysection{Poco\+::Crypto\+::Crypto\+I\+OS Class Reference}
+\label{classPoco_1_1Crypto_1_1CryptoIOS}\index{Poco::Crypto::CryptoIOS@{Poco::Crypto::CryptoIOS}}
+
+
+{\ttfamily \#include $<$Crypto\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Crypto\+::Crypto\+I\+OS\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Crypto\+::Crypto\+I\+OS\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoIOS_a193357895543a07e60e34b3b1833a619}{Crypto\+I\+OS}} (std\+::istream \&istr, \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}} $\ast$p\+Transform, std\+::streamsize buffer\+Size=8192)
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoIOS_a9e1446f6f1a6680b53ef953b78cbff1c}{Crypto\+I\+OS}} (std\+::ostream \&ostr, \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}} $\ast$p\+Transform, std\+::streamsize buffer\+Size=8192)
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoIOS_a318e6e0354f6205abe0f350a8845b8e0}{$\sim$\+Crypto\+I\+OS}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoStreamBuf}{Crypto\+Stream\+Buf}} $\ast$ \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoIOS_a8934d5fd7ba34a3617899c4ec6979b70}{rdbuf}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoStreamBuf}{Crypto\+Stream\+Buf}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoIOS_a4abaf6ce6ec6cb6621b1b371581bcd9b}{\+\_\+buf}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoInputStream}{Crypto\+Input\+Stream}} and \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream}{Crypto\+Output\+Stream}}. \begin{DoxyVerb}This class is needed to ensure correct initialization order of the
+stream buffer and base classes. 
+\end{DoxyVerb}
+ 
+
+Definition at line 66 of file Crypto\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1CryptoIOS_a193357895543a07e60e34b3b1833a619}\label{classPoco_1_1Crypto_1_1CryptoIOS_a193357895543a07e60e34b3b1833a619}} 
+\index{Poco::Crypto::CryptoIOS@{Poco::Crypto::CryptoIOS}!CryptoIOS@{CryptoIOS}}
+\index{CryptoIOS@{CryptoIOS}!Poco::Crypto::CryptoIOS@{Poco::Crypto::CryptoIOS}}
+\doxysubsubsection{\texorpdfstring{CryptoIOS()}{CryptoIOS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+Crypto\+I\+O\+S\+::\+Crypto\+I\+OS (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{\mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}} $\ast$}]{p\+Transform,  }\item[{std\+::streamsize}]{buffer\+Size = {\ttfamily 8192} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1CryptoIOS_a9e1446f6f1a6680b53ef953b78cbff1c}\label{classPoco_1_1Crypto_1_1CryptoIOS_a9e1446f6f1a6680b53ef953b78cbff1c}} 
+\index{Poco::Crypto::CryptoIOS@{Poco::Crypto::CryptoIOS}!CryptoIOS@{CryptoIOS}}
+\index{CryptoIOS@{CryptoIOS}!Poco::Crypto::CryptoIOS@{Poco::Crypto::CryptoIOS}}
+\doxysubsubsection{\texorpdfstring{CryptoIOS()}{CryptoIOS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+Crypto\+I\+O\+S\+::\+Crypto\+I\+OS (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{\mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}} $\ast$}]{p\+Transform,  }\item[{std\+::streamsize}]{buffer\+Size = {\ttfamily 8192} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1CryptoIOS_a318e6e0354f6205abe0f350a8845b8e0}\label{classPoco_1_1Crypto_1_1CryptoIOS_a318e6e0354f6205abe0f350a8845b8e0}} 
+\index{Poco::Crypto::CryptoIOS@{Poco::Crypto::CryptoIOS}!````~CryptoIOS@{$\sim$CryptoIOS}}
+\index{````~CryptoIOS@{$\sim$CryptoIOS}!Poco::Crypto::CryptoIOS@{Poco::Crypto::CryptoIOS}}
+\doxysubsubsection{\texorpdfstring{$\sim$CryptoIOS()}{~CryptoIOS()}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+Crypto\+I\+O\+S\+::$\sim$\+Crypto\+I\+OS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1CryptoIOS_a8934d5fd7ba34a3617899c4ec6979b70}\label{classPoco_1_1Crypto_1_1CryptoIOS_a8934d5fd7ba34a3617899c4ec6979b70}} 
+\index{Poco::Crypto::CryptoIOS@{Poco::Crypto::CryptoIOS}!rdbuf@{rdbuf}}
+\index{rdbuf@{rdbuf}!Poco::Crypto::CryptoIOS@{Poco::Crypto::CryptoIOS}}
+\doxysubsubsection{\texorpdfstring{rdbuf()}{rdbuf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoStreamBuf}{Crypto\+Stream\+Buf}}$\ast$ Poco\+::\+Crypto\+::\+Crypto\+I\+O\+S\+::rdbuf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1CryptoIOS_a4abaf6ce6ec6cb6621b1b371581bcd9b}\label{classPoco_1_1Crypto_1_1CryptoIOS_a4abaf6ce6ec6cb6621b1b371581bcd9b}} 
+\index{Poco::Crypto::CryptoIOS@{Poco::Crypto::CryptoIOS}!\_buf@{\_buf}}
+\index{\_buf@{\_buf}!Poco::Crypto::CryptoIOS@{Poco::Crypto::CryptoIOS}}
+\doxysubsubsection{\texorpdfstring{\_buf}{\_buf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoStreamBuf}{Crypto\+Stream\+Buf}} Poco\+::\+Crypto\+::\+Crypto\+I\+O\+S\+::\+\_\+buf\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 79 of file Crypto\+Stream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Crypto/\mbox{\hyperlink{CryptoStream_8h}{Crypto\+Stream.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,245 @@
+\hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher}{}\doxysection{Poco\+::Net\+::T\+C\+P\+Server\+Dispatcher Class Reference}
+\label{classPoco_1_1Net_1_1TCPServerDispatcher}\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+
+
+{\ttfamily \#include $<$T\+C\+P\+Server\+Dispatcher.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::T\+C\+P\+Server\+Dispatcher\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::T\+C\+P\+Server\+Dispatcher\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_ad640f24fe40c479453fdb58942639c6b}{T\+C\+P\+Server\+Dispatcher}} (\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory_ae0d969474f313a3d530187fc72024688}{T\+C\+P\+Server\+Connection\+Factory\+::\+Ptr}} p\+Factory, \mbox{\hyperlink{classPoco_1_1ThreadPool}{Poco\+::\+Thread\+Pool}} \&thread\+Pool, \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams_a2764661030f4c5fd7da346cb2fdddb83}{T\+C\+P\+Server\+Params\+::\+Ptr}} p\+Params)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_aa2c1cb5dd8eff9feaa3c74e8c34046c6}{duplicate}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_ab7b35715fa3c88b9e09bcee5853c4e05}{release}} ()
+\begin{DoxyCompactList}\small\item\em Increments the object\textquotesingle{}s reference count. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_a7dd542cff505b89a67a1cb536bf9ca59}{run}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_aeb0aa87de24f5dc9bc22c58e6c5756d1}{enqueue}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&socket)
+\begin{DoxyCompactList}\small\item\em Runs the dispatcher. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_a07fd569f55ee13ba6b11fd96cd750d0a}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Queues the given socket connection. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_ab5d2bf05683a52b1c906a687183843a1}{current\+Threads}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Stops the dispatcher. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_a667da594856ab0ceb1bf65a6b86b780b}{max\+Threads}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of currently used threads. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_abacedd0dc2c0e954d8d024fa08d75c3d}{total\+Connections}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the maximum number of threads available. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_a077624735e9ae9674fb6fefa63f4a051}{current\+Connections}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of handled connections. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_ab13ee29324b1cbc60f6a483357ba1c7f}{max\+Concurrent\+Connections}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of currently handled connections. ~\newline
+ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_a59344763c0b10a9106973c7e8e4c48e9}{queued\+Connections}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the maximum number of concurrently handled connections. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_ad54abcc979eb10d644610171f640e15d}{refused\+Connections}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of queued connections. ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams}{T\+C\+P\+Server\+Params}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_a2ea50d3b38bed7850c4eb56354c7a950}{params}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of refused connections. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_a1a1d5c613a7397990fe88ad041c542cb}{$\sim$\+T\+C\+P\+Server\+Dispatcher}} ()
+\begin{DoxyCompactList}\small\item\em Returns a const reference to the T\+C\+P\+Server\+Param object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_a3d94bfb6506cb8e3a5b93e3636e6462c}{begin\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher}{T\+C\+P\+Server\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher_ae54128c030a8241c7a8998af182eeefe}{end\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em Updates the performance counters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A helper class for \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer}{T\+C\+P\+Server}} that dispatches connections to server connection threads. 
+
+Definition at line 37 of file T\+C\+P\+Server\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_ad640f24fe40c479453fdb58942639c6b}\label{classPoco_1_1Net_1_1TCPServerDispatcher_ad640f24fe40c479453fdb58942639c6b}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!TCPServerDispatcher@{TCPServerDispatcher}}
+\index{TCPServerDispatcher@{TCPServerDispatcher}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{TCPServerDispatcher()}{TCPServerDispatcher()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::\+T\+C\+P\+Server\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory_ae0d969474f313a3d530187fc72024688}{T\+C\+P\+Server\+Connection\+Factory\+::\+Ptr}}}]{p\+Factory,  }\item[{\mbox{\hyperlink{classPoco_1_1ThreadPool}{Poco\+::\+Thread\+Pool}} \&}]{thread\+Pool,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams_a2764661030f4c5fd7da346cb2fdddb83}{T\+C\+P\+Server\+Params\+::\+Ptr}}}]{p\+Params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_a1a1d5c613a7397990fe88ad041c542cb}\label{classPoco_1_1Net_1_1TCPServerDispatcher_a1a1d5c613a7397990fe88ad041c542cb}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!````~TCPServerDispatcher@{$\sim$TCPServerDispatcher}}
+\index{````~TCPServerDispatcher@{$\sim$TCPServerDispatcher}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$TCPServerDispatcher()}{~TCPServerDispatcher()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::$\sim$\+T\+C\+P\+Server\+Dispatcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns a const reference to the T\+C\+P\+Server\+Param object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_a3d94bfb6506cb8e3a5b93e3636e6462c}\label{classPoco_1_1Net_1_1TCPServerDispatcher_a3d94bfb6506cb8e3a5b93e3636e6462c}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!beginConnection@{beginConnection}}
+\index{beginConnection@{beginConnection}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{beginConnection()}{beginConnection()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::begin\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher}{T\+C\+P\+Server\+Dispatcher}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_a077624735e9ae9674fb6fefa63f4a051}\label{classPoco_1_1Net_1_1TCPServerDispatcher_a077624735e9ae9674fb6fefa63f4a051}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!currentConnections@{currentConnections}}
+\index{currentConnections@{currentConnections}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{currentConnections()}{currentConnections()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::current\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the total number of handled connections. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_ab5d2bf05683a52b1c906a687183843a1}\label{classPoco_1_1Net_1_1TCPServerDispatcher_ab5d2bf05683a52b1c906a687183843a1}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!currentThreads@{currentThreads}}
+\index{currentThreads@{currentThreads}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{currentThreads()}{currentThreads()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::current\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Stops the dispatcher. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_aa2c1cb5dd8eff9feaa3c74e8c34046c6}\label{classPoco_1_1Net_1_1TCPServerDispatcher_aa2c1cb5dd8eff9feaa3c74e8c34046c6}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!duplicate@{duplicate}}
+\index{duplicate@{duplicate}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{duplicate()}{duplicate()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::duplicate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher}{T\+C\+P\+Server\+Dispatcher}}.
+
+The dispatcher takes ownership of the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams}{T\+C\+P\+Server\+Params}} object. If no \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams}{T\+C\+P\+Server\+Params}} object is supplied, the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher}{T\+C\+P\+Server\+Dispatcher}} creates one. \mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_ae54128c030a8241c7a8998af182eeefe}\label{classPoco_1_1Net_1_1TCPServerDispatcher_ae54128c030a8241c7a8998af182eeefe}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!endConnection@{endConnection}}
+\index{endConnection@{endConnection}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{endConnection()}{endConnection()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::end\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Updates the performance counters. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_aeb0aa87de24f5dc9bc22c58e6c5756d1}\label{classPoco_1_1Net_1_1TCPServerDispatcher_aeb0aa87de24f5dc9bc22c58e6c5756d1}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::enqueue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&}]{socket }\end{DoxyParamCaption})}
+
+
+
+Runs the dispatcher. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_ab13ee29324b1cbc60f6a483357ba1c7f}\label{classPoco_1_1Net_1_1TCPServerDispatcher_ab13ee29324b1cbc60f6a483357ba1c7f}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!maxConcurrentConnections@{maxConcurrentConnections}}
+\index{maxConcurrentConnections@{maxConcurrentConnections}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{maxConcurrentConnections()}{maxConcurrentConnections()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::max\+Concurrent\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of currently handled connections. ~\newline
+ 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_a667da594856ab0ceb1bf65a6b86b780b}\label{classPoco_1_1Net_1_1TCPServerDispatcher_a667da594856ab0ceb1bf65a6b86b780b}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!maxThreads@{maxThreads}}
+\index{maxThreads@{maxThreads}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{maxThreads()}{maxThreads()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::max\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of currently used threads. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_a2ea50d3b38bed7850c4eb56354c7a950}\label{classPoco_1_1Net_1_1TCPServerDispatcher_a2ea50d3b38bed7850c4eb56354c7a950}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!params@{params}}
+\index{params@{params}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{params()}{params()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams}{T\+C\+P\+Server\+Params}} \& Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of refused connections. 
+
+
+
+Definition at line 123 of file T\+C\+P\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_a59344763c0b10a9106973c7e8e4c48e9}\label{classPoco_1_1Net_1_1TCPServerDispatcher_a59344763c0b10a9106973c7e8e4c48e9}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!queuedConnections@{queuedConnections}}
+\index{queuedConnections@{queuedConnections}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{queuedConnections()}{queuedConnections()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::queued\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the maximum number of concurrently handled connections. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_ad54abcc979eb10d644610171f640e15d}\label{classPoco_1_1Net_1_1TCPServerDispatcher_ad54abcc979eb10d644610171f640e15d}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!refusedConnections@{refusedConnections}}
+\index{refusedConnections@{refusedConnections}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{refusedConnections()}{refusedConnections()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::refused\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of queued connections. ~\newline
+ 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_ab7b35715fa3c88b9e09bcee5853c4e05}\label{classPoco_1_1Net_1_1TCPServerDispatcher_ab7b35715fa3c88b9e09bcee5853c4e05}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!release@{release}}
+\index{release@{release}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increments the object\textquotesingle{}s reference count. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_a7dd542cff505b89a67a1cb536bf9ca59}\label{classPoco_1_1Net_1_1TCPServerDispatcher_a7dd542cff505b89a67a1cb536bf9ca59}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!run@{run}}
+\index{run@{run}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Decrements the object\textquotesingle{}s reference count and deletes the object if the count reaches zero. ~\newline
+ 
+
+Implements \mbox{\hyperlink{classPoco_1_1Runnable_ad89816e81207bf5f1e52d5df860d11d4}{Poco\+::\+Runnable}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_a07fd569f55ee13ba6b11fd96cd750d0a}\label{classPoco_1_1Net_1_1TCPServerDispatcher_a07fd569f55ee13ba6b11fd96cd750d0a}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!stop@{stop}}
+\index{stop@{stop}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Queues the given socket connection. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServerDispatcher_abacedd0dc2c0e954d8d024fa08d75c3d}\label{classPoco_1_1Net_1_1TCPServerDispatcher_abacedd0dc2c0e954d8d024fa08d75c3d}} 
+\index{Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}!totalConnections@{totalConnections}}
+\index{totalConnections@{totalConnections}!Poco::Net::TCPServerDispatcher@{Poco::Net::TCPServerDispatcher}}
+\doxysubsubsection{\texorpdfstring{totalConnections()}{totalConnections()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+Dispatcher\+::total\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the maximum number of threads available. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{TCPServerDispatcher_8h}{T\+C\+P\+Server\+Dispatcher.\+h}}\end{DoxyCompactItemize}

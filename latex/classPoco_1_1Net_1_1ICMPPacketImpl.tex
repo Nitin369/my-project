@@ -1,0 +1,267 @@
+\hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl}{}\doxysection{Poco\+::Net\+::I\+C\+M\+P\+Packet\+Impl Class Reference}
+\label{classPoco_1_1Net_1_1ICMPPacketImpl}\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+
+
+This is the abstract class for I\+C\+MP packet implementations.  
+
+
+
+
+{\ttfamily \#include $<$I\+C\+M\+P\+Packet\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::I\+C\+M\+P\+Packet\+Impl\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_aadf4c414d32dbe95fdeb60cc40c41f96}{I\+C\+M\+P\+Packet\+Impl}} (int data\+Size=48)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_a36809c05cc80673760c077d74cfe74b4}{$\sim$\+I\+C\+M\+P\+Packet\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. Creates an \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl}{I\+C\+M\+P\+Packet\+Impl}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int8 $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_a897a74006bdaa3b5fdd5545b0b86fa3d}{packet}} (bool init=true)
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_a019c75f64c863180aacfa02a4985291a}{packet\+Size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_aa1fe64ccafb36a3beb00af0335b74eb2}{max\+Packet\+Size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+Poco\+::\+U\+Int16 \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_ab3e6df9397d4f0fdb3be3d43fa234c4a}{sequence}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the maximum permitted size of packet in number of octets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_abae6175a660cf96b338e5223b8b4f26a}{set\+Data\+Size}} (int data\+Size)
+\begin{DoxyCompactList}\small\item\em Returns the most recent sequence number generated. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_a0357b17bfc97f6a1a5a08d062a5bee16}{get\+Data\+Size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets data size. \end{DoxyCompactList}\item 
+virtual struct timeval \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_aad7c4b3009395905d460b839a8d07aeb}{time}} (Poco\+::\+U\+Int8 $\ast$buffer=0, int length=0) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Returns data size. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_abf0b1b8ca93ce216ad36f0384eb47db3}{valid\+Reply\+ID}} (unsigned char $\ast$buffer, int length) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_a7506d2823a217f1452cde279cad2d8fb}{error\+Description}} (Poco\+::\+U\+Int8 $\ast$buffer, int length)=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_a991cfa8dbdfa865aa21283752c65f7b3}{type\+Description}} (int type\+Id)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int16 \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_ae71b99b94458403e4014fb38c40c4cf6}{M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int16 \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_a800983f86842fd194b5e5d88683e6ed6}{M\+A\+X\+\_\+\+S\+E\+Q\+\_\+\+V\+A\+L\+UE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Poco\+::\+U\+Int16 \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_ad970e3bd3a35fab8c7c696e80a2ac747}{next\+Sequence}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_a5de065cfb5f29d6caac74c0fd4f45de4}{reset\+Sequence}} ()
+\begin{DoxyCompactList}\small\item\em Increments sequence number and returns the new value. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_a3b74e2ea09b4b396c9db60f52de97567}{init\+Packet}} ()=0
+\begin{DoxyCompactList}\small\item\em Resets the sequence to zero. \end{DoxyCompactList}\item 
+Poco\+::\+U\+Int16 \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_a95ef8e384edef91acdce2ab688e91b13}{checksum}} (Poco\+::\+U\+Int16 $\ast$addr, Poco\+::\+Int32 len)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the abstract class for I\+C\+MP packet implementations. 
+
+Definition at line 31 of file I\+C\+M\+P\+Packet\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_aadf4c414d32dbe95fdeb60cc40c41f96}\label{classPoco_1_1Net_1_1ICMPPacketImpl_aadf4c414d32dbe95fdeb60cc40c41f96}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!ICMPPacketImpl@{ICMPPacketImpl}}
+\index{ICMPPacketImpl@{ICMPPacketImpl}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{ICMPPacketImpl()}{ICMPPacketImpl()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::\+I\+C\+M\+P\+Packet\+Impl (\begin{DoxyParamCaption}\item[{int}]{data\+Size = {\ttfamily 48} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_a36809c05cc80673760c077d74cfe74b4}\label{classPoco_1_1Net_1_1ICMPPacketImpl_a36809c05cc80673760c077d74cfe74b4}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!````~ICMPPacketImpl@{$\sim$ICMPPacketImpl}}
+\index{````~ICMPPacketImpl@{$\sim$ICMPPacketImpl}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{$\sim$ICMPPacketImpl()}{~ICMPPacketImpl()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::$\sim$\+I\+C\+M\+P\+Packet\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Constructor. Creates an \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl}{I\+C\+M\+P\+Packet\+Impl}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_a95ef8e384edef91acdce2ab688e91b13}\label{classPoco_1_1Net_1_1ICMPPacketImpl_a95ef8e384edef91acdce2ab688e91b13}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!checksum@{checksum}}
+\index{checksum@{checksum}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{checksum()}{checksum()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::checksum (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16 $\ast$}]{addr,  }\item[{Poco\+::\+Int32}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+(Re)assembles the packet. Must be overriden. \mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_a7506d2823a217f1452cde279cad2d8fb}\label{classPoco_1_1Net_1_1ICMPPacketImpl_a7506d2823a217f1452cde279cad2d8fb}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!errorDescription@{errorDescription}}
+\index{errorDescription@{errorDescription}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{errorDescription()}{errorDescription()}}
+{\footnotesize\ttfamily virtual std\+::string Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::error\+Description (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8 $\ast$}]{buffer,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the extracted id is recognized (i.\+e. equals the process id).
+
+Supplied buffer includes IP header, I\+C\+MP header and data. Must be overriden. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPv4PacketImpl_a4020f4330d4a3b2ec5b6755713cb3789}{Poco\+::\+Net\+::\+I\+C\+M\+Pv4\+Packet\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_a0357b17bfc97f6a1a5a08d062a5bee16}\label{classPoco_1_1Net_1_1ICMPPacketImpl_a0357b17bfc97f6a1a5a08d062a5bee16}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!getDataSize@{getDataSize}}
+\index{getDataSize@{getDataSize}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{getDataSize()}{getDataSize()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::get\+Data\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Sets data size. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_a3b74e2ea09b4b396c9db60f52de97567}\label{classPoco_1_1Net_1_1ICMPPacketImpl_a3b74e2ea09b4b396c9db60f52de97567}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!initPacket@{initPacket}}
+\index{initPacket@{initPacket}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{initPacket()}{initPacket()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::init\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Resets the sequence to zero. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_aa1fe64ccafb36a3beb00af0335b74eb2}\label{classPoco_1_1Net_1_1ICMPPacketImpl_aa1fe64ccafb36a3beb00af0335b74eb2}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!maxPacketSize@{maxPacketSize}}
+\index{maxPacketSize@{maxPacketSize}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{maxPacketSize()}{maxPacketSize()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::max\+Packet\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the total size of packet (I\+C\+MP header + data) in number of octets. Must be overriden. 
+
+Definition at line 134 of file I\+C\+M\+P\+Packet\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_ad970e3bd3a35fab8c7c696e80a2ac747}\label{classPoco_1_1Net_1_1ICMPPacketImpl_ad970e3bd3a35fab8c7c696e80a2ac747}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!nextSequence@{nextSequence}}
+\index{nextSequence@{nextSequence}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{nextSequence()}{nextSequence()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::next\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 122 of file I\+C\+M\+P\+Packet\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_a897a74006bdaa3b5fdd5545b0b86fa3d}\label{classPoco_1_1Net_1_1ICMPPacketImpl_a897a74006bdaa3b5fdd5545b0b86fa3d}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!packet@{packet}}
+\index{packet@{packet}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{packet()}{packet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int8$\ast$ Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::packet (\begin{DoxyParamCaption}\item[{bool}]{init = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_a019c75f64c863180aacfa02a4985291a}\label{classPoco_1_1Net_1_1ICMPPacketImpl_a019c75f64c863180aacfa02a4985291a}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!packetSize@{packetSize}}
+\index{packetSize@{packetSize}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{packetSize()}{packetSize()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::packet\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns raw I\+C\+MP packet. I\+C\+MP header and data are included in the packet. If init is true, \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPPacketImpl_a3b74e2ea09b4b396c9db60f52de97567}{init\+Packet()}} is called. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPv4PacketImpl_a35f82efdd08fcb2ae01a7b17529bfce0}{Poco\+::\+Net\+::\+I\+C\+M\+Pv4\+Packet\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_a5de065cfb5f29d6caac74c0fd4f45de4}\label{classPoco_1_1Net_1_1ICMPPacketImpl_a5de065cfb5f29d6caac74c0fd4f45de4}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!resetSequence@{resetSequence}}
+\index{resetSequence@{resetSequence}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{resetSequence()}{resetSequence()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::reset\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Increments sequence number and returns the new value. 
+
+
+
+Definition at line 128 of file I\+C\+M\+P\+Packet\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_ab3e6df9397d4f0fdb3be3d43fa234c4a}\label{classPoco_1_1Net_1_1ICMPPacketImpl_ab3e6df9397d4f0fdb3be3d43fa234c4a}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!sequence@{sequence}}
+\index{sequence@{sequence}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{sequence()}{sequence()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the maximum permitted size of packet in number of octets. 
+
+
+
+Definition at line 116 of file I\+C\+M\+P\+Packet\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_abae6175a660cf96b338e5223b8b4f26a}\label{classPoco_1_1Net_1_1ICMPPacketImpl_abae6175a660cf96b338e5223b8b4f26a}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!setDataSize@{setDataSize}}
+\index{setDataSize@{setDataSize}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{setDataSize()}{setDataSize()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::set\+Data\+Size (\begin{DoxyParamCaption}\item[{int}]{data\+Size }\end{DoxyParamCaption})}
+
+
+
+Returns the most recent sequence number generated. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_aad7c4b3009395905d460b839a8d07aeb}\label{classPoco_1_1Net_1_1ICMPPacketImpl_aad7c4b3009395905d460b839a8d07aeb}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!time@{time}}
+\index{time@{time}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily virtual struct timeval Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::time (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8 $\ast$}]{buffer = {\ttfamily 0},  }\item[{int}]{length = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns data size. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPv4PacketImpl_a306981127406a66d81dd937e15cb79f0}{Poco\+::\+Net\+::\+I\+C\+M\+Pv4\+Packet\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_a991cfa8dbdfa865aa21283752c65f7b3}\label{classPoco_1_1Net_1_1ICMPPacketImpl_a991cfa8dbdfa865aa21283752c65f7b3}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!typeDescription@{typeDescription}}
+\index{typeDescription@{typeDescription}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{typeDescription()}{typeDescription()}}
+{\footnotesize\ttfamily virtual std\+::string Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::type\+Description (\begin{DoxyParamCaption}\item[{int}]{type\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns error description string. If supplied buffer contains an I\+C\+MP echo reply packet, an empty string is returned indicating the absence of error.
+
+Supplied buffer includes IP header, I\+C\+MP header and data. Must be overriden. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Net_1_1ICMPv4PacketImpl_ad5b0526035115b9129520375bdc54cb7}{Poco\+::\+Net\+::\+I\+C\+M\+Pv4\+Packet\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_abf0b1b8ca93ce216ad36f0384eb47db3}\label{classPoco_1_1Net_1_1ICMPPacketImpl_abf0b1b8ca93ce216ad36f0384eb47db3}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!validReplyID@{validReplyID}}
+\index{validReplyID@{validReplyID}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{validReplyID()}{validReplyID()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::valid\+Reply\+ID (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{length }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns current epoch time if either argument is equal to zero. Otherwise, it extracts the time value from the supplied buffer.
+
+Supplied buffer includes IP header, I\+C\+MP header and data. Must be overriden. 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_ae71b99b94458403e4014fb38c40c4cf6}\label{classPoco_1_1Net_1_1ICMPPacketImpl_ae71b99b94458403e4014fb38c40c4cf6}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!MAX\_PACKET\_SIZE@{MAX\_PACKET\_SIZE}}
+\index{MAX\_PACKET\_SIZE@{MAX\_PACKET\_SIZE}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{MAX\_PACKET\_SIZE}{MAX\_PACKET\_SIZE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int16 Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::\+M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the description of the packet type. Must be overriden. 
+
+Definition at line 88 of file I\+C\+M\+P\+Packet\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ICMPPacketImpl_a800983f86842fd194b5e5d88683e6ed6}\label{classPoco_1_1Net_1_1ICMPPacketImpl_a800983f86842fd194b5e5d88683e6ed6}} 
+\index{Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}!MAX\_SEQ\_VALUE@{MAX\_SEQ\_VALUE}}
+\index{MAX\_SEQ\_VALUE@{MAX\_SEQ\_VALUE}!Poco::Net::ICMPPacketImpl@{Poco::Net::ICMPPacketImpl}}
+\doxysubsubsection{\texorpdfstring{MAX\_SEQ\_VALUE}{MAX\_SEQ\_VALUE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+U\+Int16 Poco\+::\+Net\+::\+I\+C\+M\+P\+Packet\+Impl\+::\+M\+A\+X\+\_\+\+S\+E\+Q\+\_\+\+V\+A\+L\+UE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 89 of file I\+C\+M\+P\+Packet\+Impl.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{ICMPPacketImpl_8h}{I\+C\+M\+P\+Packet\+Impl.\+h}}\end{DoxyCompactItemize}

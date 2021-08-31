@@ -1,0 +1,89 @@
+\hypertarget{classIoT_1_1Devices_1_1SensorEventDispatcher}{}\doxysection{IoT\+::Devices\+::Sensor\+Event\+Dispatcher Class Reference}
+\label{classIoT_1_1Devices_1_1SensorEventDispatcher}\index{IoT::Devices::SensorEventDispatcher@{IoT::Devices::SensorEventDispatcher}}
+
+
+{\ttfamily \#include $<$Sensor\+Event\+Dispatcher.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::Sensor\+Event\+Dispatcher\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::Sensor\+Event\+Dispatcher\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1SensorEventDispatcher_a4c251e6a63a8159bb325da555fdd4399}{Sensor\+Event\+Dispatcher}} (\mbox{\hyperlink{classIoT_1_1Devices_1_1SensorRemoteObject}{Sensor\+Remote\+Object}} $\ast$p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a14d7bb586169695c72bd34e7b012903a}{protocol}})
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorEventDispatcher_afdd5c0273f522e68e0e8329b75ff87f2}{$\sim$\+Sensor\+Event\+Dispatcher}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorEventDispatcher}{Sensor\+Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorEventDispatcher_ab661f15ed32729422f35772a2451c848}{event\+\_\+\+\_\+value\+Changed}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} double \&data)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorEventDispatcher}{Sensor\+Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorEventDispatcher_ad88d31207f011caca48e8724871b2de0}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The base class for analog sensors, such as temperature or ambient light sensors.
+
+In addition to the methods defined in this interface, a \mbox{\hyperlink{classIoT_1_1Devices_1_1Sensor}{Sensor}} implementation should expose the following properties\+:
+\begin{DoxyItemize}
+\item physical\+Quantity (string)\+: The physical quantity that is being measured by the sensor, e.\+g. \char`\"{}temperature\char`\"{}.
+\item physical\+Unit (string)\+: The physical unit the measured value is being represented in (e.\+g. \char`\"{}°\+C\char`\"{}), U\+T\+F-\/8 encoded. See the P\+H\+Y\+S\+I\+C\+A\+L\+\_\+\+U\+N\+I\+T\+\_\+$\ast$ strings for predefined values.
+\item display\+Value (string, optional)\+: The current value of the sensor, formatted as string for display purposes. 
+\end{DoxyItemize}
+
+Definition at line 30 of file Sensor\+Event\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SensorEventDispatcher_a4c251e6a63a8159bb325da555fdd4399}\label{classIoT_1_1Devices_1_1SensorEventDispatcher_a4c251e6a63a8159bb325da555fdd4399}} 
+\index{IoT::Devices::SensorEventDispatcher@{IoT::Devices::SensorEventDispatcher}!SensorEventDispatcher@{SensorEventDispatcher}}
+\index{SensorEventDispatcher@{SensorEventDispatcher}!IoT::Devices::SensorEventDispatcher@{IoT::Devices::SensorEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{SensorEventDispatcher()}{SensorEventDispatcher()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Sensor\+Event\+Dispatcher\+::\+Sensor\+Event\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1Devices_1_1SensorRemoteObject}{Sensor\+Remote\+Object}} $\ast$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SensorEventDispatcher_afdd5c0273f522e68e0e8329b75ff87f2}\label{classIoT_1_1Devices_1_1SensorEventDispatcher_afdd5c0273f522e68e0e8329b75ff87f2}} 
+\index{IoT::Devices::SensorEventDispatcher@{IoT::Devices::SensorEventDispatcher}!````~SensorEventDispatcher@{$\sim$SensorEventDispatcher}}
+\index{````~SensorEventDispatcher@{$\sim$SensorEventDispatcher}!IoT::Devices::SensorEventDispatcher@{IoT::Devices::SensorEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$SensorEventDispatcher()}{~SensorEventDispatcher()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Devices\+::\+Sensor\+Event\+Dispatcher\+::$\sim$\+Sensor\+Event\+Dispatcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorEventDispatcher}{Sensor\+Event\+Dispatcher}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SensorEventDispatcher_ab661f15ed32729422f35772a2451c848}\label{classIoT_1_1Devices_1_1SensorEventDispatcher_ab661f15ed32729422f35772a2451c848}} 
+\index{IoT::Devices::SensorEventDispatcher@{IoT::Devices::SensorEventDispatcher}!event\_\_valueChanged@{event\_\_valueChanged}}
+\index{event\_\_valueChanged@{event\_\_valueChanged}!IoT::Devices::SensorEventDispatcher@{IoT::Devices::SensorEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_valueChanged()}{event\_\_valueChanged()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Sensor\+Event\+Dispatcher\+::event\+\_\+\+\_\+value\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} double \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1SensorEventDispatcher}{Sensor\+Event\+Dispatcher}}. 
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SensorEventDispatcher_ad88d31207f011caca48e8724871b2de0}\label{classIoT_1_1Devices_1_1SensorEventDispatcher_ad88d31207f011caca48e8724871b2de0}} 
+\index{IoT::Devices::SensorEventDispatcher@{IoT::Devices::SensorEventDispatcher}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Devices::SensorEventDispatcher@{IoT::Devices::SensorEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+Devices\+::\+Sensor\+Event\+Dispatcher\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 64 of file Sensor\+Event\+Dispatcher.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{SensorEventDispatcher_8h}{Sensor\+Event\+Dispatcher.\+h}}\end{DoxyCompactItemize}

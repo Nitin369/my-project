@@ -1,0 +1,626 @@
+\hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter}{}\doxysection{Poco\+::Code\+Generation\+::Method\+Property\+Filter Class Reference}
+\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter}\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+
+
+{\ttfamily \#include $<$Method\+Property\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Code\+Generation\+::Method\+Property\+Filter\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Code\+Generation\+::Method\+Property\+Filter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a7e72011dc2cc78e1be4dc596ce0e3b55}{Method\+Property\+Filter}} (\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} $\ast$p\+Gen, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&properties)
+\item 
+\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a4c9ee17f02e3fcab2d9e0967b63b37b5}{Method\+Property\+Filter}} (\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} $\ast$p\+Gen, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&prop)
+\item 
+\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_adc1912d9f31c75a5a00a3f2437585314}{$\sim$\+Method\+Property\+Filter}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a62b8b4e0879fa83f9d1276e5bca5c59a}{add\+Include\+File}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&inc\+File)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter}{Method\+Property\+Filter}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_aca4e825c88c23b89ffd36e073708bc66}{add\+System\+Include\+File}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&inc\+File)
+\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a846853e5dcf14bbd6084f8afb4cf33eb}{add\+Fwd\+Decl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&incl\+File, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&class\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string namespace\+Prefix)
+\begin{DoxyCompactList}\small\item\em Adds a system include file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a1fbdb8e03987768671b77a823cf6c583}{write\+Includes}} ()
+\begin{DoxyCompactList}\small\item\em Adds a fwd decl. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ac0eb887dd6811071966a17bd0eda9ab0}{write\+Default\+Header}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$p\+Struct, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&class\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a8307f30aeab2e4648dace13f9f409e6b}{library\+Name}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&package)
+\begin{DoxyCompactList}\small\item\em Convenience Functions which calls for all include files write\+Include, also writes fwd\+Decls. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_aa233b22a8f4e5bb58431d8513a36e20a}{write\+Include}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&include, bool to\+Header)
+\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a3b4b2b58d41b9bd168c928e57cf77560}{write\+System\+Include}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&include)
+\begin{DoxyCompactList}\small\item\em Writes the include either to the header or the src file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ad04ca1dc49ebcf4de03241b1b8730a73}{write\+Name\+Space\+Begin}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&ns)
+\begin{DoxyCompactList}\small\item\em Writes the system include file to the header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_aa964814e38c6d4e9c6975e32831e6521}{write\+Fwd\+Decls}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_ad24ae88dea0fe4febc442bfb1dae88a3}{Code\+Generator\+::\+Fwd\+Decls}} \&decl)
+\begin{DoxyCompactList}\small\item\em Writes the enclosing namespace. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ade411b8e7eee5d1d0bd70cd58c9effdd}{write\+Name\+Space\+End}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&ns)
+\begin{DoxyCompactList}\small\item\em Writes the fwd decl to the header file and the include file to the src file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a1c8786b58ad7eb4f0720a8d0d855b85c}{struct\+Start}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$p\+Struct, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&properties)
+\begin{DoxyCompactList}\small\item\em Closes the namespace. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a3f63a41b635b24ace79d90b879b59640}{struct\+End}} ()
+\begin{DoxyCompactList}\small\item\em Writes the class declaration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a407fc3fd4e2ee766a241105a498d32a2}{method\+Start}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Poco\+::\+Cpp\+Parser\+::\+Function}} $\ast$p\+Func, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&properties)
+\begin{DoxyCompactList}\small\item\em Closes the class declaration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ac6e66c944716d5edce01b9f943b38f47}{write\+Method\+Implementation}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&code)
+\begin{DoxyCompactList}\small\item\em Writes the method header. Properties contains the properties found in the functions docuementation and in the class documentation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a35e064c2c1109acbddf1b3929606ae49}{write\+Implementation}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&code)
+\begin{DoxyCompactList}\small\item\em Only valid when inside a method. Simply forwards the code lines to the implementation file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a1d1e0fef2563b9cc9db73cb3d500c6d7}{method\+End}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Poco\+::\+Cpp\+Parser\+::\+Function}} $\ast$p\+Func, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&properties)
+\begin{DoxyCompactList}\small\item\em Writes other non-\/method code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a4f19bb3f3d72d8dedb5402166205e858}{variables\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Closes the method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a22ae832dbe33b739a47c732adb6b37de}{variable}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable}{Poco\+::\+Cpp\+Parser\+::\+Variable}} $\ast$p\+Var)
+\begin{DoxyCompactList}\small\item\em Indicates that variables wil be written. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a446c05e68e2f2b962ae3fa88cf5d500e}{variables\+End}} ()
+\begin{DoxyCompactList}\small\item\em Writes a single typedef. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_adfd4b2936026f93fcee7439cc5cf74bd}{Code\+Generator\+::\+Include\+Set}} \& \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a4bf34dce321887647122a2d856162597}{includes}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Ends variable definitions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_adfd4b2936026f93fcee7439cc5cf74bd}{Code\+Generator\+::\+Include\+Set}} \& \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a0c4caa4134afc1471a1b0f78795d9a0e}{system\+Includes}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns all includes that the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} consists of. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a55246bed49f21d583f5923c91eeee0ec}{name\+Space}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns all system includes that the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} consists of. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a8307f30aeab2e4648dace13f9f409e6b}{library\+Name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em The namespace of the file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ab27b772c7557ca0cb09fd3399308dd07}{use\+Poco\+Include\+Style}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em The prefix assigned to the namespace. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_abac25c3915fcb9ee0a4fa3b94b3dd8ba}{copyright}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns which include style should be used. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a7818f2507970445e7d52542da02e3feb}{end\+File}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a1afe47e61eff4530fbc750c245d1e24d}{write\+Type\+Def}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1TypeDef}{Poco\+::\+Cpp\+Parser\+::\+Type\+Def}} $\ast$p\+Type)
+\begin{DoxyCompactList}\small\item\em Writes a single variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter}{Method\+Property\+Filter}} filters methods according to properties. It works as a decorator, checking if a property is set at the method. If not it will simply ignore all method calls related to that method. It will not filter variables, includes, only methods excl. constructor and destructor are checked. 
+
+Definition at line 31 of file Method\+Property\+Filter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a7e72011dc2cc78e1be4dc596ce0e3b55}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a7e72011dc2cc78e1be4dc596ce0e3b55}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!MethodPropertyFilter@{MethodPropertyFilter}}
+\index{MethodPropertyFilter@{MethodPropertyFilter}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{MethodPropertyFilter()}{MethodPropertyFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::\+Method\+Property\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} $\ast$}]{p\+Gen,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&}]{properties }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a4c9ee17f02e3fcab2d9e0967b63b37b5}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a4c9ee17f02e3fcab2d9e0967b63b37b5}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!MethodPropertyFilter@{MethodPropertyFilter}}
+\index{MethodPropertyFilter@{MethodPropertyFilter}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{MethodPropertyFilter()}{MethodPropertyFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::\+Method\+Property\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} $\ast$}]{p\+Gen,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{prop }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter}{Method\+Property\+Filter}} decorating another \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}}. Takes ownership of the pointer which must not be 0. properties contains the properties that each method must match to be generated. \mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_adc1912d9f31c75a5a00a3f2437585314}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_adc1912d9f31c75a5a00a3f2437585314}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!````~MethodPropertyFilter@{$\sim$MethodPropertyFilter}}
+\index{````~MethodPropertyFilter@{$\sim$MethodPropertyFilter}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{$\sim$MethodPropertyFilter()}{~MethodPropertyFilter()}}
+{\footnotesize\ttfamily Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::$\sim$\+Method\+Property\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter}{Method\+Property\+Filter}} decorating another \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}}. Takes ownership of the pointer which must not be 0. Convenience constructor which takes exactly one property. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a846853e5dcf14bbd6084f8afb4cf33eb}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a846853e5dcf14bbd6084f8afb4cf33eb}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!addFwdDecl@{addFwdDecl}}
+\index{addFwdDecl@{addFwdDecl}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{addFwdDecl()}{addFwdDecl()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::add\+Fwd\+Decl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{incl\+File,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{class\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string}]{namespace\+Prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Adds a system include file. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_ad264d3238c55c6e395fdd550499789de}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 134 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a62b8b4e0879fa83f9d1276e5bca5c59a}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a62b8b4e0879fa83f9d1276e5bca5c59a}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!addIncludeFile@{addIncludeFile}}
+\index{addIncludeFile@{addIncludeFile}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{addIncludeFile()}{addIncludeFile()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::add\+Include\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{inc\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter}{Method\+Property\+Filter}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a2e1e49f52a0983caf20841d0c1e25ce3}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 122 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_aca4e825c88c23b89ffd36e073708bc66}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_aca4e825c88c23b89ffd36e073708bc66}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!addSystemIncludeFile@{addSystemIncludeFile}}
+\index{addSystemIncludeFile@{addSystemIncludeFile}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{addSystemIncludeFile()}{addSystemIncludeFile()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::add\+System\+Include\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{inc\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Adds an include file to the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}}. A call to this method is only meaningful until struct\+Start was not called. Duplicate includes will be ignored. Contains the include path only, e.\+g. \char`\"{}include/\+My\+Class.\+h\char`\"{} (without enclosing ") 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_aa46dba132c5afb29a08aead265f4d226}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 128 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_abac25c3915fcb9ee0a4fa3b94b3dd8ba}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_abac25c3915fcb9ee0a4fa3b94b3dd8ba}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!copyright@{copyright}}
+\index{copyright@{copyright}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{copyright()}{copyright()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::copyright (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns which include style should be used. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a6bfe850312e4b0947de3eb201907237a}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 254 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a7818f2507970445e7d52542da02e3feb}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a7818f2507970445e7d52542da02e3feb}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!endFile@{endFile}}
+\index{endFile@{endFile}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{endFile()}{endFile()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::end\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes the default header, e.\+g. copyright notice, no include namespace open or anything else is written This is always the first method that is called! 
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a89f684f115449f3439e367fcd3d58b74}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 248 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a4bf34dce321887647122a2d856162597}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a4bf34dce321887647122a2d856162597}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!includes@{includes}}
+\index{includes@{includes}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{includes()}{includes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_adfd4b2936026f93fcee7439cc5cf74bd}{Code\+Generator\+::\+Include\+Set}} \& Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::includes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Ends variable definitions. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_ae206b0e0145393076075b359e607c5e3}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 218 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a8307f30aeab2e4648dace13f9f409e6b}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a8307f30aeab2e4648dace13f9f409e6b}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!libraryName@{libraryName}}
+\index{libraryName@{libraryName}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{libraryName()}{libraryName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::library\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+The namespace of the file. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a007136ecacc09517a927547a704af3c9}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 236 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a1d1e0fef2563b9cc9db73cb3d500c6d7}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a1d1e0fef2563b9cc9db73cb3d500c6d7}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!methodEnd@{methodEnd}}
+\index{methodEnd@{methodEnd}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{methodEnd()}{methodEnd()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::method\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Poco\+::\+Cpp\+Parser\+::\+Function}} $\ast$}]{p\+Func,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes other non-\/method code. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a828af3b306d0096f72fc4d352b46d124}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a407fc3fd4e2ee766a241105a498d32a2}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a407fc3fd4e2ee766a241105a498d32a2}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!methodStart@{methodStart}}
+\index{methodStart@{methodStart}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{methodStart()}{methodStart()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::method\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Poco\+::\+Cpp\+Parser\+::\+Function}} $\ast$}]{p\+Func,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Closes the class declaration. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af880770c96cde96af546e0a0c2a0cc00}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a55246bed49f21d583f5923c91eeee0ec}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a55246bed49f21d583f5923c91eeee0ec}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!nameSpace@{nameSpace}}
+\index{nameSpace@{nameSpace}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{nameSpace()}{nameSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::name\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns all system includes that the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} consists of. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a2fd9f92835112d3cc6896088c4f9ba02}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 230 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a3f63a41b635b24ace79d90b879b59640}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a3f63a41b635b24ace79d90b879b59640}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!structEnd@{structEnd}}
+\index{structEnd@{structEnd}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{structEnd()}{structEnd()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::struct\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Writes the class declaration. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a4f5fcd71d56d5f419c1c6e85713d81cf}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 194 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a1c8786b58ad7eb4f0720a8d0d855b85c}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a1c8786b58ad7eb4f0720a8d0d855b85c}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!structStart@{structStart}}
+\index{structStart@{structStart}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{structStart()}{structStart()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::struct\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$}]{p\+Struct,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af3087ea1e26a8e372ff8eb677ea9474b}{Code\+Generator\+::\+Properties}} \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Closes the namespace. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_acc2e3d75ae1bb663ec70f851c01c85e8}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 188 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a0c4caa4134afc1471a1b0f78795d9a0e}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a0c4caa4134afc1471a1b0f78795d9a0e}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!systemIncludes@{systemIncludes}}
+\index{systemIncludes@{systemIncludes}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{systemIncludes()}{systemIncludes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_adfd4b2936026f93fcee7439cc5cf74bd}{Code\+Generator\+::\+Include\+Set}} \& Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::system\+Includes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns all includes that the \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator}{Code\+Generator}} consists of. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_aadc0c5078680d1128b9f3286a81adc92}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 224 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ab27b772c7557ca0cb09fd3399308dd07}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ab27b772c7557ca0cb09fd3399308dd07}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!usePocoIncludeStyle@{usePocoIncludeStyle}}
+\index{usePocoIncludeStyle@{usePocoIncludeStyle}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{usePocoIncludeStyle()}{usePocoIncludeStyle()}}
+{\footnotesize\ttfamily bool Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::use\+Poco\+Include\+Style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+The prefix assigned to the namespace. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a503c541671fb7e92b8db46fc4536b29e}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 242 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a22ae832dbe33b739a47c732adb6b37de}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a22ae832dbe33b739a47c732adb6b37de}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!variable@{variable}}
+\index{variable@{variable}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{variable()}{variable()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::variable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Variable}{Poco\+::\+Cpp\+Parser\+::\+Variable}} $\ast$}]{p\+Var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Indicates that variables wil be written. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_ac6eeec2e298ca33ebc2cf68fd9b619dd}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 206 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a446c05e68e2f2b962ae3fa88cf5d500e}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a446c05e68e2f2b962ae3fa88cf5d500e}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!variablesEnd@{variablesEnd}}
+\index{variablesEnd@{variablesEnd}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{variablesEnd()}{variablesEnd()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::variables\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Writes a single typedef. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a1f6fbaacd66b86bd926050d33ca1a330}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 212 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a4f19bb3f3d72d8dedb5402166205e858}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a4f19bb3f3d72d8dedb5402166205e858}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!variablesStart@{variablesStart}}
+\index{variablesStart@{variablesStart}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{variablesStart()}{variablesStart()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::variables\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Closes the method. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a451c70b33235310d4141d8dfebd9db6b}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 200 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ac0eb887dd6811071966a17bd0eda9ab0}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ac0eb887dd6811071966a17bd0eda9ab0}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!writeDefaultHeader@{writeDefaultHeader}}
+\index{writeDefaultHeader@{writeDefaultHeader}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{writeDefaultHeader()}{writeDefaultHeader()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::write\+Default\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Poco\+::\+Cpp\+Parser\+::\+Struct}} $\ast$}]{p\+Struct,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{class\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{library\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{package }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Convenience Functions which calls for all include files write\+Include, also writes fwd\+Decls. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a6a4f48e3dda522f97a688f695583312a}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 146 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 18
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_aa964814e38c6d4e9c6975e32831e6521}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_aa964814e38c6d4e9c6975e32831e6521}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!writeFwdDecls@{writeFwdDecls}}
+\index{writeFwdDecls@{writeFwdDecls}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{writeFwdDecls()}{writeFwdDecls()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::write\+Fwd\+Decls (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_ad24ae88dea0fe4febc442bfb1dae88a3}{Code\+Generator\+::\+Fwd\+Decls}} \&}]{decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Writes the enclosing namespace. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_af9984e0cb0e8ae038261c2340ad52690}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 176 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 19
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a35e064c2c1109acbddf1b3929606ae49}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a35e064c2c1109acbddf1b3929606ae49}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!writeImplementation@{writeImplementation}}
+\index{writeImplementation@{writeImplementation}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{writeImplementation()}{writeImplementation()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::write\+Implementation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Only valid when inside a method. Simply forwards the code lines to the implementation file. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_ad4957d7bf7e1420f5552758c522b6e4a}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 164 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 20
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_aa233b22a8f4e5bb58431d8513a36e20a}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_aa233b22a8f4e5bb58431d8513a36e20a}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!writeInclude@{writeInclude}}
+\index{writeInclude@{writeInclude}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{writeInclude()}{writeInclude()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::write\+Include (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{include,  }\item[{bool}]{to\+Header }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Writes the default header, e.\+g. copyright notice, no include namespace open or anything else is written This is always the first method that is called! 
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a51a18881f13b4e08f85af2ac9d1faacd}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 152 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 21
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a1fbdb8e03987768671b77a823cf6c583}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a1fbdb8e03987768671b77a823cf6c583}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!writeIncludes@{writeIncludes}}
+\index{writeIncludes@{writeIncludes}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{writeIncludes()}{writeIncludes()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::write\+Includes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Adds a fwd decl. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a1d524b72996338ed53e2dfcbff763b91}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 140 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 22
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ac6e66c944716d5edce01b9f943b38f47}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ac6e66c944716d5edce01b9f943b38f47}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!writeMethodImplementation@{writeMethodImplementation}}
+\index{writeMethodImplementation@{writeMethodImplementation}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{writeMethodImplementation()}{writeMethodImplementation()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::write\+Method\+Implementation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writes the method header. Properties contains the properties found in the functions docuementation and in the class documentation. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a7d0fce7d245a13f145562742aff45bb1}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ad04ca1dc49ebcf4de03241b1b8730a73}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ad04ca1dc49ebcf4de03241b1b8730a73}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!writeNameSpaceBegin@{writeNameSpaceBegin}}
+\index{writeNameSpaceBegin@{writeNameSpaceBegin}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{writeNameSpaceBegin()}{writeNameSpaceBegin()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::write\+Name\+Space\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{full\+Name\+Space }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Writes the system include file to the header. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_a1625b7acfaf751f8b6c5f5dd0ac4d8ea}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 170 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 23
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ade411b8e7eee5d1d0bd70cd58c9effdd}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_ade411b8e7eee5d1d0bd70cd58c9effdd}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!writeNameSpaceEnd@{writeNameSpaceEnd}}
+\index{writeNameSpaceEnd@{writeNameSpaceEnd}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{writeNameSpaceEnd()}{writeNameSpaceEnd()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::write\+Name\+Space\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{full\+Name\+Space }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Writes the fwd decl to the header file and the include file to the src file. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_abdc8cb986d39244b72939a972dbe9521}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 182 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 24
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a3b4b2b58d41b9bd168c928e57cf77560}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a3b4b2b58d41b9bd168c928e57cf77560}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!writeSystemInclude@{writeSystemInclude}}
+\index{writeSystemInclude@{writeSystemInclude}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{writeSystemInclude()}{writeSystemInclude()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::write\+System\+Include (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{include }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Writes the include either to the header or the src file. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_ac0b5d30098cdd3c4e9c4e41553a752fe}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 158 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 25
+\mbox{\Hypertarget{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a1afe47e61eff4530fbc750c245d1e24d}\label{classPoco_1_1CodeGeneration_1_1MethodPropertyFilter_a1afe47e61eff4530fbc750c245d1e24d}} 
+\index{Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}!writeTypeDef@{writeTypeDef}}
+\index{writeTypeDef@{writeTypeDef}!Poco::CodeGeneration::MethodPropertyFilter@{Poco::CodeGeneration::MethodPropertyFilter}}
+\doxysubsubsection{\texorpdfstring{writeTypeDef()}{writeTypeDef()}}
+{\footnotesize\ttfamily void Poco\+::\+Code\+Generation\+::\+Method\+Property\+Filter\+::write\+Type\+Def (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1TypeDef}{Poco\+::\+Cpp\+Parser\+::\+Type\+Def}} $\ast$}]{p\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Writes a single variable. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CodeGeneration_1_1CodeGenerator_abe12b926f61ddab4923270375679b5ca}{Poco\+::\+Code\+Generation\+::\+Code\+Generator}}.
+
+
+
+Definition at line 260 of file Method\+Property\+Filter.\+h.
+
+Here is the call graph for this function\+:
+% FIG 26
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Code\+Generation/\mbox{\hyperlink{MethodPropertyFilter_8h}{Method\+Property\+Filter.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\hypertarget{classPoco_1_1SharedMemory}{}\doxysection{Poco\+::Shared\+Memory Class Reference}
+\label{classPoco_1_1SharedMemory}\index{Poco::SharedMemory@{Poco::SharedMemory}}
+
+
+{\ttfamily \#include $<$Shared\+Memory.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141ee}{Access\+Mode}} \{ \mbox{\hyperlink{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141eea5c9a6cfea012b6479b6f40fd8667ad55}{A\+M\+\_\+\+R\+E\+AD}} = 0, 
+\mbox{\hyperlink{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141eeaf7378a47976edd9e87f50526c7d8d859}{A\+M\+\_\+\+W\+R\+I\+TE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1SharedMemory_a15eb1c28f52d1117d3d17e81a64e9afb}{Shared\+Memory}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1SharedMemory_adb04711f68f65b697f6f8eb794dfade8}{Shared\+Memory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, std\+::size\+\_\+t size, \mbox{\hyperlink{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141ee}{Access\+Mode}} mode, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$addr\+Hint=0, bool server=true)
+\item 
+\mbox{\hyperlink{classPoco_1_1SharedMemory_a550a7f770b6529db9902bf56eeccf16a}{Shared\+Memory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1File}{File}} \&file, \mbox{\hyperlink{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141ee}{Access\+Mode}} mode, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$addr\+Hint=0)
+\item 
+\mbox{\hyperlink{classPoco_1_1SharedMemory_a785d35b31169c4ebb3a9ecd297a4e433}{Shared\+Memory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} \&other)
+\item 
+\mbox{\hyperlink{classPoco_1_1SharedMemory_a5d62926a820bd6ed0edb660dd74c7ff8}{$\sim$\+Shared\+Memory}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} object by copying another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} \& \mbox{\hyperlink{classPoco_1_1SharedMemory_af44d4725029fe0d5d5f9075f861cc0f0}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} \&other)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1SharedMemory_ad82086a99f7e2ddc8e9c79239c2e974a}{swap}} (\mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} \&other)
+\begin{DoxyCompactList}\small\item\em Assigns another \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} object. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{classPoco_1_1SharedMemory_a4a90f2c4960f59a4b048c4ab525513f2}{begin}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Swaps the \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} object with another one. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{classPoco_1_1SharedMemory_ac63f1952a055839712945338a25abc50}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Create and manage a shared memory object. \begin{DoxyVerb}A SharedMemory object has value semantics, but
+is implemented using a handle/implementation idiom.
+Therefore, multiple SharedMemory objects can share
+a single, reference counted SharedMemoryImpl object. 
+\end{DoxyVerb}
+ 
+
+Definition at line 35 of file Shared\+Memory.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141ee}\label{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141ee}} 
+\index{Poco::SharedMemory@{Poco::SharedMemory}!AccessMode@{AccessMode}}
+\index{AccessMode@{AccessMode}!Poco::SharedMemory@{Poco::SharedMemory}}
+\doxysubsubsection{\texorpdfstring{AccessMode}{AccessMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141ee}{Poco\+::\+Shared\+Memory\+::\+Access\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AM\_READ@{AM\_READ}!Poco::SharedMemory@{Poco::SharedMemory}}\index{Poco::SharedMemory@{Poco::SharedMemory}!AM\_READ@{AM\_READ}}}\mbox{\Hypertarget{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141eea5c9a6cfea012b6479b6f40fd8667ad55}\label{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141eea5c9a6cfea012b6479b6f40fd8667ad55}} 
+A\+M\+\_\+\+R\+E\+AD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AM\_WRITE@{AM\_WRITE}!Poco::SharedMemory@{Poco::SharedMemory}}\index{Poco::SharedMemory@{Poco::SharedMemory}!AM\_WRITE@{AM\_WRITE}}}\mbox{\Hypertarget{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141eeaf7378a47976edd9e87f50526c7d8d859}\label{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141eeaf7378a47976edd9e87f50526c7d8d859}} 
+A\+M\+\_\+\+W\+R\+I\+TE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 44 of file Shared\+Memory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1SharedMemory_a15eb1c28f52d1117d3d17e81a64e9afb}\label{classPoco_1_1SharedMemory_a15eb1c28f52d1117d3d17e81a64e9afb}} 
+\index{Poco::SharedMemory@{Poco::SharedMemory}!SharedMemory@{SharedMemory}}
+\index{SharedMemory@{SharedMemory}!Poco::SharedMemory@{Poco::SharedMemory}}
+\doxysubsubsection{\texorpdfstring{SharedMemory()}{SharedMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Poco\+::\+Shared\+Memory\+::\+Shared\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1SharedMemory_adb04711f68f65b697f6f8eb794dfade8}\label{classPoco_1_1SharedMemory_adb04711f68f65b697f6f8eb794dfade8}} 
+\index{Poco::SharedMemory@{Poco::SharedMemory}!SharedMemory@{SharedMemory}}
+\index{SharedMemory@{SharedMemory}!Poco::SharedMemory@{Poco::SharedMemory}}
+\doxysubsubsection{\texorpdfstring{SharedMemory()}{SharedMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Poco\+::\+Shared\+Memory\+::\+Shared\+Memory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{std\+::size\+\_\+t}]{size,  }\item[{\mbox{\hyperlink{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141ee}{Access\+Mode}}}]{mode,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{addr\+Hint = {\ttfamily 0},  }\item[{bool}]{server = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Default constructor creates an unmapped \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} object. No clients can connect to an unmapped \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} object. \mbox{\Hypertarget{classPoco_1_1SharedMemory_a550a7f770b6529db9902bf56eeccf16a}\label{classPoco_1_1SharedMemory_a550a7f770b6529db9902bf56eeccf16a}} 
+\index{Poco::SharedMemory@{Poco::SharedMemory}!SharedMemory@{SharedMemory}}
+\index{SharedMemory@{SharedMemory}!Poco::SharedMemory@{Poco::SharedMemory}}
+\doxysubsubsection{\texorpdfstring{SharedMemory()}{SharedMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Poco\+::\+Shared\+Memory\+::\+Shared\+Memory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1File}{File}} \&}]{file,  }\item[{\mbox{\hyperlink{classPoco_1_1SharedMemory_a12ab0f4ee9f7fa6b90387507a0a141ee}{Access\+Mode}}}]{mode,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{addr\+Hint = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Creates or connects to a shared memory object with the given name.
+
+For maximum portability, name should be a valid Unix filename and not contain any slashes or backslashes.
+
+An address hint can be passed to the system, specifying the desired start address of the shared memory area. Whether the hint is actually honored is, however, up to the system. Windows platform will generally ignore the hint.
+
+If server is set to true, the shared memory region will be unlinked by calling shm\+\_\+unlink() (on P\+O\+S\+IX platforms) when the \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} object is destroyed. The server parameter is ignored on Windows platforms. \mbox{\Hypertarget{classPoco_1_1SharedMemory_a785d35b31169c4ebb3a9ecd297a4e433}\label{classPoco_1_1SharedMemory_a785d35b31169c4ebb3a9ecd297a4e433}} 
+\index{Poco::SharedMemory@{Poco::SharedMemory}!SharedMemory@{SharedMemory}}
+\index{SharedMemory@{SharedMemory}!Poco::SharedMemory@{Poco::SharedMemory}}
+\doxysubsubsection{\texorpdfstring{SharedMemory()}{SharedMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Poco\+::\+Shared\+Memory\+::\+Shared\+Memory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} \&}]{other }\end{DoxyParamCaption})}
+
+Maps the entire contents of file into a shared memory segment.
+
+An address hint can be passed to the system, specifying the desired start address of the shared memory area. Whether the hint is actually honored is, however, up to the system. Windows platform will generally ignore the hint. \mbox{\Hypertarget{classPoco_1_1SharedMemory_a5d62926a820bd6ed0edb660dd74c7ff8}\label{classPoco_1_1SharedMemory_a5d62926a820bd6ed0edb660dd74c7ff8}} 
+\index{Poco::SharedMemory@{Poco::SharedMemory}!````~SharedMemory@{$\sim$SharedMemory}}
+\index{````~SharedMemory@{$\sim$SharedMemory}!Poco::SharedMemory@{Poco::SharedMemory}}
+\doxysubsubsection{\texorpdfstring{$\sim$SharedMemory()}{~SharedMemory()}}
+{\footnotesize\ttfamily Poco\+::\+Shared\+Memory\+::$\sim$\+Shared\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} object by copying another one. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1SharedMemory_a4a90f2c4960f59a4b048c4ab525513f2}\label{classPoco_1_1SharedMemory_a4a90f2c4960f59a4b048c4ab525513f2}} 
+\index{Poco::SharedMemory@{Poco::SharedMemory}!begin@{begin}}
+\index{begin@{begin}!Poco::SharedMemory@{Poco::SharedMemory}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily char$\ast$ Poco\+::\+Shared\+Memory\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Swaps the \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} object with another one. 
+
+\mbox{\Hypertarget{classPoco_1_1SharedMemory_ac63f1952a055839712945338a25abc50}\label{classPoco_1_1SharedMemory_ac63f1952a055839712945338a25abc50}} 
+\index{Poco::SharedMemory@{Poco::SharedMemory}!end@{end}}
+\index{end@{end}!Poco::SharedMemory@{Poco::SharedMemory}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily char$\ast$ Poco\+::\+Shared\+Memory\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the start address of the shared memory segment. Will be N\+U\+LL for illegal segments. \mbox{\Hypertarget{classPoco_1_1SharedMemory_af44d4725029fe0d5d5f9075f861cc0f0}\label{classPoco_1_1SharedMemory_af44d4725029fe0d5d5f9075f861cc0f0}} 
+\index{Poco::SharedMemory@{Poco::SharedMemory}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::SharedMemory@{Poco::SharedMemory}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}}\& Poco\+::\+Shared\+Memory\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}}. 
+
+\mbox{\Hypertarget{classPoco_1_1SharedMemory_ad82086a99f7e2ddc8e9c79239c2e974a}\label{classPoco_1_1SharedMemory_ad82086a99f7e2ddc8e9c79239c2e974a}} 
+\index{Poco::SharedMemory@{Poco::SharedMemory}!swap@{swap}}
+\index{swap@{swap}!Poco::SharedMemory@{Poco::SharedMemory}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Poco\+::\+Shared\+Memory\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns another \mbox{\hyperlink{classPoco_1_1SharedMemory}{Shared\+Memory}} object. 
+
+
+
+Definition at line 105 of file Shared\+Memory.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{SharedMemory_8h}{Shared\+Memory.\+h}}\end{DoxyCompactItemize}

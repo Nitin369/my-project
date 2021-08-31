@@ -1,0 +1,379 @@
+\hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4}{}\doxysection{Poco\+::Data\+::Column$<$ std\+::vector$<$ bool $>$ $>$ Class Reference}
+\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4}\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+
+
+{\ttfamily \#include $<$Column.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ bool $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a74a88dcab7846441d315ff9e908d9bae}{Container}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a74a88dcab7846441d315ff9e908d9bae}{Container}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aff61c885c8e5cd9c9945067e65b36dcc}{Container\+Ptr}}
+\item 
+typedef Container\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_afe435cd0c6300000db108372df6e1380}{Iterator}}
+\item 
+typedef Container\+::const\+\_\+reverse\+\_\+iterator \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a6bd75db395e675a03372105f7b24d6c7}{R\+Iterator}}
+\item 
+typedef Container\+::size\+\_\+type \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a761d40d33a5f686720a1ed6e26683ba5}{Size}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aa504735aedd25fee798bbf4bf20b9fd5}{Column}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1MetaColumn}{Meta\+Column}} \&meta\+Column, \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a74a88dcab7846441d315ff9e908d9bae}{Container}} $\ast$p\+Data)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a4594922148a78feca3aa25fe2507f9b3}{Column}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}} \&col)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_ac0679c1c4eaa3e7486b2e679d33d80f9}{$\sim$\+Column}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a6b596e9ef4934e9e16fda0581bd1d180}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}} \&col)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a6dcb71e4e1e84a534f9dc2d0f0de57a6}{swap}} (\mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}} \&other)
+\begin{DoxyCompactList}\small\item\em Swaps the column with another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a74a88dcab7846441d315ff9e908d9bae}{Container}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a82beb4549885c7fa8b0417791bb81b4c}{data}} ()
+\begin{DoxyCompactList}\small\item\em Returns reference to contained data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool \& \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a8ca1be2f60bf5b6107fb0bbe71845714}{value}} (std\+::size\+\_\+t row) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the field value in specified row. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool \& \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a232940fb9ae37bee21465d457a511275}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t row) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the field value in specified row. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a761d40d33a5f686720a1ed6e26683ba5}{Size}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a452374eb80074cdc633001cf0b105984}{row\+Count}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns number of rows. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aeb5ad81004cbb0f5599fe144880785fe}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Clears and shrinks the storage. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a5dfb2e31bd704ec38d95ec57bacf2abe}{name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns column name. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aee3833e373567acd2121e90557c2001f}{length}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns column maximum length. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a67832b86030c54dd8f6867b8d46838b1}{precision}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_ae45bddccb296169216c9bd5f5c99543c}{position}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns column position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1MetaColumn_a40651ce603efd01012afcd12efee02f2}{Meta\+Column\+::\+Column\+Data\+Type}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a367cec923cbfd025922f1673fe3c6b3f}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns column type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_afe435cd0c6300000db108372df6e1380}{Iterator}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aa1cfd5830e1afc3489eda526598e60b1}{begin}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns iterator pointing to the beginning of data storage vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_afe435cd0c6300000db108372df6e1380}{Iterator}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a81ac537b11cd2b4879668aac4341c1e9}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns iterator pointing to the end of data storage vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The std\+::vector$<$bool$>$ specialization for the \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}} class. \begin{DoxyVerb}This specialization is necessary due to the nature of std::vector<bool>.
+For details, see the standard library implementation of vector<bool> 
+or
+S. Meyers: "Effective STL" (Copyright Addison-Wesley 2001),
+Item 18: "Avoid using vector<bool>."
+
+The workaround employed here is using deque<bool> as an
+internal "companion" container kept in sync with the vector<bool>
+column data. 
+\end{DoxyVerb}
+ 
+
+Definition at line 177 of file Column.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a74a88dcab7846441d315ff9e908d9bae}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a74a88dcab7846441d315ff9e908d9bae}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!Container@{Container}}
+\index{Container@{Container}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Container}{Container}}
+{\footnotesize\ttfamily typedef std\+::vector$<$bool$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a74a88dcab7846441d315ff9e908d9bae}{Container}}}
+
+
+
+Definition at line 191 of file Column.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aff61c885c8e5cd9c9945067e65b36dcc}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aff61c885c8e5cd9c9945067e65b36dcc}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!ContainerPtr@{ContainerPtr}}
+\index{ContainerPtr@{ContainerPtr}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{ContainerPtr}{ContainerPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a74a88dcab7846441d315ff9e908d9bae}{Container}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aff61c885c8e5cd9c9945067e65b36dcc}{Container\+Ptr}}}
+
+
+
+Definition at line 192 of file Column.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_afe435cd0c6300000db108372df6e1380}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_afe435cd0c6300000db108372df6e1380}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily typedef Container\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_afe435cd0c6300000db108372df6e1380}{Iterator}}}
+
+
+
+Definition at line 193 of file Column.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a6bd75db395e675a03372105f7b24d6c7}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a6bd75db395e675a03372105f7b24d6c7}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!RIterator@{RIterator}}
+\index{RIterator@{RIterator}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{RIterator}{RIterator}}
+{\footnotesize\ttfamily typedef Container\+::const\+\_\+reverse\+\_\+iterator \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a6bd75db395e675a03372105f7b24d6c7}{R\+Iterator}}}
+
+
+
+Definition at line 194 of file Column.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a761d40d33a5f686720a1ed6e26683ba5}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a761d40d33a5f686720a1ed6e26683ba5}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!Size@{Size}}
+\index{Size@{Size}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily typedef Container\+::size\+\_\+type \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a761d40d33a5f686720a1ed6e26683ba5}{Size}}}
+
+
+
+Definition at line 195 of file Column.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aa504735aedd25fee798bbf4bf20b9fd5}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aa504735aedd25fee798bbf4bf20b9fd5}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!Column@{Column}}
+\index{Column@{Column}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Column()}{Column()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1MetaColumn}{Meta\+Column}}$<$ std\+::vector$<$ bool $>$ $>$ \&}]{meta\+Column,  }\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a74a88dcab7846441d315ff9e908d9bae}{Container}} $\ast$}]{p\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 197 of file Column.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a4594922148a78feca3aa25fe2507f9b3}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a4594922148a78feca3aa25fe2507f9b3}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!Column@{Column}}
+\index{Column@{Column}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Column()}{Column()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}}$<$ std\+::vector$<$ bool $>$ $>$ \&}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 206 of file Column.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_ac0679c1c4eaa3e7486b2e679d33d80f9}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_ac0679c1c4eaa3e7486b2e679d33d80f9}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!````~Column@{$\sim$Column}}
+\index{````~Column@{$\sim$Column}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Column()}{~Column()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}}. 
+
+
+
+Definition at line 214 of file Column.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aa1cfd5830e1afc3489eda526598e60b1}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aa1cfd5830e1afc3489eda526598e60b1}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!begin@{begin}}
+\index{begin@{begin}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_afe435cd0c6300000db108372df6e1380}{Iterator}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns iterator pointing to the beginning of data storage vector. 
+
+
+
+Definition at line 308 of file Column.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a82beb4549885c7fa8b0417791bb81b4c}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a82beb4549885c7fa8b0417791bb81b4c}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!data@{data}}
+\index{data@{data}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a74a88dcab7846441d315ff9e908d9bae}{Container}}\& \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns reference to contained data. 
+
+
+
+Definition at line 236 of file Column.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a81ac537b11cd2b4879668aac4341c1e9}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a81ac537b11cd2b4879668aac4341c1e9}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!end@{end}}
+\index{end@{end}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_afe435cd0c6300000db108372df6e1380}{Iterator}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns iterator pointing to the end of data storage vector. 
+
+
+
+Definition at line 314 of file Column.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aee3833e373567acd2121e90557c2001f}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aee3833e373567acd2121e90557c2001f}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!length@{length}}
+\index{length@{length}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns column maximum length. 
+
+
+
+Definition at line 283 of file Column.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a5dfb2e31bd704ec38d95ec57bacf2abe}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a5dfb2e31bd704ec38d95ec57bacf2abe}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!name@{name}}
+\index{name@{name}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns column name. 
+
+
+
+Definition at line 277 of file Column.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a6b596e9ef4934e9e16fda0581bd1d180}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a6b596e9ef4934e9e16fda0581bd1d180}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}}\& \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}}$<$ std\+::vector$<$ bool $>$ $>$ \&}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator. 
+
+
+
+Definition at line 219 of file Column.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a232940fb9ae37bee21465d457a511275}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a232940fb9ae37bee21465d457a511275}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool\& \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{row }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the field value in specified row. 
+
+
+
+Definition at line 258 of file Column.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_ae45bddccb296169216c9bd5f5c99543c}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_ae45bddccb296169216c9bd5f5c99543c}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!position@{position}}
+\index{position@{position}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns column position. 
+
+
+
+Definition at line 296 of file Column.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a67832b86030c54dd8f6867b8d46838b1}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a67832b86030c54dd8f6867b8d46838b1}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!precision@{precision}}
+\index{precision@{precision}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{precision()}{precision()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::precision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns column precision. Valid for floating point fields only (zero for other data types). 
+
+Definition at line 289 of file Column.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aeb5ad81004cbb0f5599fe144880785fe}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_aeb5ad81004cbb0f5599fe144880785fe}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!reset@{reset}}
+\index{reset@{reset}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clears and shrinks the storage. 
+
+
+
+Definition at line 270 of file Column.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a452374eb80074cdc633001cf0b105984}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a452374eb80074cdc633001cf0b105984}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!rowCount@{rowCount}}
+\index{rowCount@{rowCount}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{rowCount()}{rowCount()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a761d40d33a5f686720a1ed6e26683ba5}{Size}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::row\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns number of rows. 
+
+
+
+Definition at line 264 of file Column.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a6dcb71e4e1e84a534f9dc2d0f0de57a6}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a6dcb71e4e1e84a534f9dc2d0f0de57a6}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!swap@{swap}}
+\index{swap@{swap}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}}$<$ std\+::vector$<$ bool $>$ $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Swaps the column with another one. 
+
+
+
+Definition at line 227 of file Column.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a367cec923cbfd025922f1673fe3c6b3f}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a367cec923cbfd025922f1673fe3c6b3f}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!type@{type}}
+\index{type@{type}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1MetaColumn_a40651ce603efd01012afcd12efee02f2}{Meta\+Column\+::\+Column\+Data\+Type}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns column type. 
+
+
+
+Definition at line 302 of file Column.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a8ca1be2f60bf5b6107fb0bbe71845714}\label{classPoco_1_1Data_1_1Column_3_01std_1_1vector_3_01bool_01_4_01_4_a8ca1be2f60bf5b6107fb0bbe71845714}} 
+\index{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}!value@{value}}
+\index{value@{value}!Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$@{Poco::Data::Column$<$ std::vector$<$ bool $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool\& \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Poco\+::\+Data\+::\+Column}}$<$ std\+::vector$<$ bool $>$ $>$\+::value (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{row }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the field value in specified row. 
+
+
+
+Definition at line 242 of file Column.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{Column_8h}{Column.\+h}}\end{DoxyCompactItemize}

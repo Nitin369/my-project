@@ -1,0 +1,124 @@
+\hypertarget{classIoT_1_1Devices_1_1Switch}{}\doxysection{IoT\+::Devices\+::Switch Class Reference}
+\label{classIoT_1_1Devices_1_1Switch}\index{IoT::Devices::Switch@{IoT::Devices::Switch}}
+
+
+{\ttfamily \#include $<$Switch.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::Switch\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::Switch\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1Switch_a1a1abe8e2544c929d73b5fc8e8a9fe61}{Switch}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1Switch_af9e6e6037ee150c044122fd1b875e4b7}{$\sim$\+Switch}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch_aa5f01ac56d076b10225af4f7f1c0cb87}{state}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch_aeab697b09b99b85169fefaa7a8998a50}{get\+Target\+State}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Returns the current state of the \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch_ac4280dbab28371376f87e6003bef56e9}{set\+Target\+State}} (bool new\+State)=0
+\begin{DoxyCompactList}\small\item\em Returns the target state of the \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch_a05f47658136249097cdc7bafaa1ed26f}{state\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for switchable things (that can be turned on and off).
+
+A \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}} has a current state and a target state. Depending upon the implementation, the current state and target state may be different for a short amount of time (e.\+g., while the device is powering on).
+
+In addition to the methods defined in this interface, a \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}} implementation should expose the following properties\+:
+\begin{DoxyItemize}
+\item display\+State (string, optional)\+: The current state of the \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}}, formatted as string for display purposes. 
+\end{DoxyItemize}
+
+Definition at line 32 of file Switch.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Switch_a1a1abe8e2544c929d73b5fc8e8a9fe61}\label{classIoT_1_1Devices_1_1Switch_a1a1abe8e2544c929d73b5fc8e8a9fe61}} 
+\index{IoT::Devices::Switch@{IoT::Devices::Switch}!Switch@{Switch}}
+\index{Switch@{Switch}!IoT::Devices::Switch@{IoT::Devices::Switch}}
+\doxysubsubsection{\texorpdfstring{Switch()}{Switch()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Switch\+::\+Switch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fired when the state of the \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}} has changed.
+
+Actual behavior of this event (e.\+g., minimum interval between fires) are implementation specific and can be configured via properties. \mbox{\Hypertarget{classIoT_1_1Devices_1_1Switch_af9e6e6037ee150c044122fd1b875e4b7}\label{classIoT_1_1Devices_1_1Switch_af9e6e6037ee150c044122fd1b875e4b7}} 
+\index{IoT::Devices::Switch@{IoT::Devices::Switch}!````~Switch@{$\sim$Switch}}
+\index{````~Switch@{$\sim$Switch}!IoT::Devices::Switch@{IoT::Devices::Switch}}
+\doxysubsubsection{\texorpdfstring{$\sim$Switch()}{~Switch()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Switch\+::$\sim$\+Switch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Switch_aeab697b09b99b85169fefaa7a8998a50}\label{classIoT_1_1Devices_1_1Switch_aeab697b09b99b85169fefaa7a8998a50}} 
+\index{IoT::Devices::Switch@{IoT::Devices::Switch}!getTargetState@{getTargetState}}
+\index{getTargetState@{getTargetState}!IoT::Devices::Switch@{IoT::Devices::Switch}}
+\doxysubsubsection{\texorpdfstring{getTargetState()}{getTargetState()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+Switch\+::get\+Target\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the current state of the \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}}. 
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Switch_ac4280dbab28371376f87e6003bef56e9}\label{classIoT_1_1Devices_1_1Switch_ac4280dbab28371376f87e6003bef56e9}} 
+\index{IoT::Devices::Switch@{IoT::Devices::Switch}!setTargetState@{setTargetState}}
+\index{setTargetState@{setTargetState}!IoT::Devices::Switch@{IoT::Devices::Switch}}
+\doxysubsubsection{\texorpdfstring{setTargetState()}{setTargetState()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+Switch\+::set\+Target\+State (\begin{DoxyParamCaption}\item[{bool}]{new\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the target state of the \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}}. 
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Switch_aa5f01ac56d076b10225af4f7f1c0cb87}\label{classIoT_1_1Devices_1_1Switch_aa5f01ac56d076b10225af4f7f1c0cb87}} 
+\index{IoT::Devices::Switch@{IoT::Devices::Switch}!state@{state}}
+\index{state@{state}!IoT::Devices::Switch@{IoT::Devices::Switch}}
+\doxysubsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+Switch\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}}. 
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1Switch_a05f47658136249097cdc7bafaa1ed26f}\label{classIoT_1_1Devices_1_1Switch_a05f47658136249097cdc7bafaa1ed26f}} 
+\index{IoT::Devices::Switch@{IoT::Devices::Switch}!stateChanged@{stateChanged}}
+\index{stateChanged@{stateChanged}!IoT::Devices::Switch@{IoT::Devices::Switch}}
+\doxysubsubsection{\texorpdfstring{stateChanged}{stateChanged}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool$>$ Io\+T\+::\+Devices\+::\+Switch\+::state\+Changed}
+
+
+
+Definition at line 48 of file Switch.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{Switch_8h}{Switch.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,121 @@
+\hypertarget{structIoT_1_1XBee_1_1RemoteATCommandResponse}{}\doxysection{IoT\+::X\+Bee\+::Remote\+A\+T\+Command\+Response Struct Reference}
+\label{structIoT_1_1XBee_1_1RemoteATCommandResponse}\index{IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}}
+
+
+{\ttfamily \#include $<$X\+Bee\+Node.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+Poco\+::\+U\+Int8 \mbox{\hyperlink{structIoT_1_1XBee_1_1RemoteATCommandResponse_a57312980121bac799f4b88ab881a3e4a}{frame\+ID}}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1XBee_1_1RemoteATCommandResponse_a63892ae7f9050a159117ae4471cde5de}{device\+Address}}
+\begin{DoxyCompactList}\small\item\em Correlates response frame with command frame. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1XBee_1_1RemoteATCommandResponse_a2235e7946fa310d6122d1ae5558b3e68}{network\+Address}}
+\begin{DoxyCompactList}\small\item\em Hexadecimal text representation of 64-\/bit address of the remote device. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1XBee_1_1RemoteATCommandResponse_ad9948844ed6c4a5a04d1433dd1887552}{command}}
+\begin{DoxyCompactList}\small\item\em Hexadecimal text representation of the 16-\/bit network address of the remote device. \end{DoxyCompactList}\item 
+Poco\+::\+U\+Int8 \mbox{\hyperlink{structIoT_1_1XBee_1_1RemoteATCommandResponse_aa889642753ade1b4b1800222c6f9ef15}{status}}
+\begin{DoxyCompactList}\small\item\em Two character AT command. \end{DoxyCompactList}\item 
+std\+::vector$<$ Poco\+::\+U\+Int8 $>$ \mbox{\hyperlink{structIoT_1_1XBee_1_1RemoteATCommandResponse_ab22ee39ed07bde39f6096f8e7f663b2d}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The response to an issued remote AT command. \begin{DoxyVerb}Frame Type: 0x97 
+\end{DoxyVerb}
+ 
+
+Definition at line 444 of file X\+Bee\+Node.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1RemoteATCommandResponse_ad9948844ed6c4a5a04d1433dd1887552}\label{structIoT_1_1XBee_1_1RemoteATCommandResponse_ad9948844ed6c4a5a04d1433dd1887552}} 
+\index{IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}!command@{command}}
+\index{command@{command}!IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}}
+\doxysubsubsection{\texorpdfstring{command}{command}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+X\+Bee\+::\+Remote\+A\+T\+Command\+Response\+::command}
+
+
+
+Hexadecimal text representation of the 16-\/bit network address of the remote device. 
+
+
+
+Definition at line 458 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1RemoteATCommandResponse_ab22ee39ed07bde39f6096f8e7f663b2d}\label{structIoT_1_1XBee_1_1RemoteATCommandResponse_ab22ee39ed07bde39f6096f8e7f663b2d}} 
+\index{IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}!data@{data}}
+\index{data@{data}!IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily std\+::vector$<$Poco\+::\+U\+Int8$>$ Io\+T\+::\+X\+Bee\+::\+Remote\+A\+T\+Command\+Response\+::data}
+
+Command status\+:
+\begin{DoxyItemize}
+\item 0 = OK
+\item 1 = E\+R\+R\+OR
+\item 2 = Invalid Command
+\item 3 = Invalid Parameter
+\item 4 = Tx Failure 
+\end{DoxyItemize}
+
+Definition at line 469 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1RemoteATCommandResponse_a63892ae7f9050a159117ae4471cde5de}\label{structIoT_1_1XBee_1_1RemoteATCommandResponse_a63892ae7f9050a159117ae4471cde5de}} 
+\index{IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}!deviceAddress@{deviceAddress}}
+\index{deviceAddress@{deviceAddress}!IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}}
+\doxysubsubsection{\texorpdfstring{deviceAddress}{deviceAddress}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+X\+Bee\+::\+Remote\+A\+T\+Command\+Response\+::device\+Address}
+
+
+
+Correlates response frame with command frame. 
+
+
+
+Definition at line 452 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1RemoteATCommandResponse_a57312980121bac799f4b88ab881a3e4a}\label{structIoT_1_1XBee_1_1RemoteATCommandResponse_a57312980121bac799f4b88ab881a3e4a}} 
+\index{IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}!frameID@{frameID}}
+\index{frameID@{frameID}!IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}}
+\doxysubsubsection{\texorpdfstring{frameID}{frameID}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int8 Io\+T\+::\+X\+Bee\+::\+Remote\+A\+T\+Command\+Response\+::frame\+ID}
+
+
+
+Definition at line 449 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1RemoteATCommandResponse_a2235e7946fa310d6122d1ae5558b3e68}\label{structIoT_1_1XBee_1_1RemoteATCommandResponse_a2235e7946fa310d6122d1ae5558b3e68}} 
+\index{IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}!networkAddress@{networkAddress}}
+\index{networkAddress@{networkAddress}!IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}}
+\doxysubsubsection{\texorpdfstring{networkAddress}{networkAddress}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+X\+Bee\+::\+Remote\+A\+T\+Command\+Response\+::network\+Address}
+
+
+
+Hexadecimal text representation of 64-\/bit address of the remote device. 
+
+
+
+Definition at line 455 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1RemoteATCommandResponse_aa889642753ade1b4b1800222c6f9ef15}\label{structIoT_1_1XBee_1_1RemoteATCommandResponse_aa889642753ade1b4b1800222c6f9ef15}} 
+\index{IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}!status@{status}}
+\index{status@{status}!IoT::XBee::RemoteATCommandResponse@{IoT::XBee::RemoteATCommandResponse}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int8 Io\+T\+::\+X\+Bee\+::\+Remote\+A\+T\+Command\+Response\+::status}
+
+
+
+Two character AT command. 
+
+
+
+Definition at line 461 of file X\+Bee\+Node.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+X\+Bee/\mbox{\hyperlink{XBeeNode_8h}{X\+Bee\+Node.\+h}}\end{DoxyCompactItemize}

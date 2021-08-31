@@ -1,0 +1,177 @@
+\hypertarget{classIoT_1_1Tf_1_1MasterConnection}{}\doxysection{IoT\+::Tf\+::Master\+Connection Class Reference}
+\label{classIoT_1_1Tf_1_1MasterConnection}\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}
+
+
+{\ttfamily \#include $<$Master\+Connection.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Tf\+::Master\+Connection\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Tf\+::Master\+Connection\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Tf_1_1MasterConnection_1_1DeviceEvent}{Device\+Event}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1Tf_1_1MasterConnection_1_1Version}{Version}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61b}{Device\+State}} \{ \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61ba90b90d9ad6605bdfac9234e96dba25ff}{D\+E\+V\+I\+C\+E\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}}, 
+\mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61ba397c4d16f98b5422b5e5882fe33d1418}{D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}}, 
+\mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61ba0d20f082aa093f95d3f5f000ba5657c3}{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}}
+ \}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection}{Master\+Connection}} $>$ \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_ae6cbca3c51ab80503608eb63aa1577b4}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_a4c2006e51fe881c84fb5079fca626417}{$\sim$\+Master\+Connection}} ()
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_a35ffb0fe05901b19e78a921b12df2d14}{connect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host=\char`\"{}localhost\char`\"{}, Poco\+::\+U\+Int16 port=4223)=0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection}{Master\+Connection}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_a8e27e25346bca96f2367af0930306d5b}{disconnect}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_a55ad93e13b0bfa696f3d065b65d309f1}{connected}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Disconnects from the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_ae6cbca3c51ab80503608eb63aa1577b4}{Ptr}} \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_ac4042fea69326ea95f038b8785a8b00f}{create}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Tf_1_1MasterConnection_1_1DeviceEvent}{Device\+Event}} $>$ \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_adaffc4de15053b482108b7eb88fe716b}{device\+State\+Changed}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_a00b093d16d322b06302c7ba7745512c7}{Master\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection}{Master\+Connection}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 27 of file Master\+Connection.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Tf_1_1MasterConnection_ae6cbca3c51ab80503608eb63aa1577b4}\label{classIoT_1_1Tf_1_1MasterConnection_ae6cbca3c51ab80503608eb63aa1577b4}} 
+\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection}{Master\+Connection}}$>$ \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_ae6cbca3c51ab80503608eb63aa1577b4}{Io\+T\+::\+Tf\+::\+Master\+Connection\+::\+Ptr}}}
+
+
+
+Definition at line 30 of file Master\+Connection.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61b}\label{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61b}} 
+\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}!DeviceState@{DeviceState}}
+\index{DeviceState@{DeviceState}!IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}
+\doxysubsubsection{\texorpdfstring{DeviceState}{DeviceState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61b}{Io\+T\+::\+Tf\+::\+Master\+Connection\+::\+Device\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEVICE\_AVAILABLE@{DEVICE\_AVAILABLE}!IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}!DEVICE\_AVAILABLE@{DEVICE\_AVAILABLE}}}\mbox{\Hypertarget{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61ba90b90d9ad6605bdfac9234e96dba25ff}\label{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61ba90b90d9ad6605bdfac9234e96dba25ff}} 
+D\+E\+V\+I\+C\+E\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEVICE\_CONNECTED@{DEVICE\_CONNECTED}!IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}!DEVICE\_CONNECTED@{DEVICE\_CONNECTED}}}\mbox{\Hypertarget{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61ba397c4d16f98b5422b5e5882fe33d1418}\label{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61ba397c4d16f98b5422b5e5882fe33d1418}} 
+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEVICE\_DISCONNECTED@{DEVICE\_DISCONNECTED}!IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}!DEVICE\_DISCONNECTED@{DEVICE\_DISCONNECTED}}}\mbox{\Hypertarget{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61ba0d20f082aa093f95d3f5f000ba5657c3}\label{classIoT_1_1Tf_1_1MasterConnection_a3615eb89ab4725024621ea25a68be61ba0d20f082aa093f95d3f5f000ba5657c3}} 
+D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 32 of file Master\+Connection.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Tf_1_1MasterConnection_a4c2006e51fe881c84fb5079fca626417}\label{classIoT_1_1Tf_1_1MasterConnection_a4c2006e51fe881c84fb5079fca626417}} 
+\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}!````~MasterConnection@{$\sim$MasterConnection}}
+\index{````~MasterConnection@{$\sim$MasterConnection}!IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}
+\doxysubsubsection{\texorpdfstring{$\sim$MasterConnection()}{~MasterConnection()}}
+{\footnotesize\ttfamily Io\+T\+::\+Tf\+::\+Master\+Connection\+::$\sim$\+Master\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Tf_1_1MasterConnection_a00b093d16d322b06302c7ba7745512c7}\label{classIoT_1_1Tf_1_1MasterConnection_a00b093d16d322b06302c7ba7745512c7}} 
+\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}!MasterConnection@{MasterConnection}}
+\index{MasterConnection@{MasterConnection}!IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}
+\doxysubsubsection{\texorpdfstring{MasterConnection()}{MasterConnection()}}
+{\footnotesize\ttfamily Io\+T\+::\+Tf\+::\+Master\+Connection\+::\+Master\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection}{Master\+Connection}} instance. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Tf_1_1MasterConnection_a35ffb0fe05901b19e78a921b12df2d14}\label{classIoT_1_1Tf_1_1MasterConnection_a35ffb0fe05901b19e78a921b12df2d14}} 
+\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}!connect@{connect}}
+\index{connect@{connect}!IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Tf\+::\+Master\+Connection\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host = {\ttfamily \char`\"{}localhost\char`\"{}},  }\item[{Poco\+::\+U\+Int16}]{port = {\ttfamily 4223} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection}{Master\+Connection}}. 
+
+\mbox{\Hypertarget{classIoT_1_1Tf_1_1MasterConnection_a55ad93e13b0bfa696f3d065b65d309f1}\label{classIoT_1_1Tf_1_1MasterConnection_a55ad93e13b0bfa696f3d065b65d309f1}} 
+\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}!connected@{connected}}
+\index{connected@{connected}!IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}
+\doxysubsubsection{\texorpdfstring{connected()}{connected()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Tf\+::\+Master\+Connection\+::connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Disconnects from the server. 
+
+\mbox{\Hypertarget{classIoT_1_1Tf_1_1MasterConnection_ac4042fea69326ea95f038b8785a8b00f}\label{classIoT_1_1Tf_1_1MasterConnection_ac4042fea69326ea95f038b8785a8b00f}} 
+\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}!create@{create}}
+\index{create@{create}!IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection_ae6cbca3c51ab80503608eb63aa1577b4}{Ptr}} Io\+T\+::\+Tf\+::\+Master\+Connection\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns true if the \mbox{\hyperlink{classIoT_1_1Tf_1_1MasterConnection}{Master\+Connection}} is connected to a server. \mbox{\Hypertarget{classIoT_1_1Tf_1_1MasterConnection_a8e27e25346bca96f2367af0930306d5b}\label{classIoT_1_1Tf_1_1MasterConnection_a8e27e25346bca96f2367af0930306d5b}} 
+\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Tf\+::\+Master\+Connection\+::disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Connects to the server/brick daemon at the given host and port. ~\newline
+ 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1Tf_1_1MasterConnection_adaffc4de15053b482108b7eb88fe716b}\label{classIoT_1_1Tf_1_1MasterConnection_adaffc4de15053b482108b7eb88fe716b}} 
+\index{IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}!deviceStateChanged@{deviceStateChanged}}
+\index{deviceStateChanged@{deviceStateChanged}!IoT::Tf::MasterConnection@{IoT::Tf::MasterConnection}}
+\doxysubsubsection{\texorpdfstring{deviceStateChanged}{deviceStateChanged}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Tf_1_1MasterConnection_1_1DeviceEvent}{Device\+Event}}$>$ Io\+T\+::\+Tf\+::\+Master\+Connection\+::device\+State\+Changed}
+
+
+
+Definition at line 57 of file Master\+Connection.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Tf/\mbox{\hyperlink{MasterConnection_8h}{Master\+Connection.\+h}}\end{DoxyCompactItemize}

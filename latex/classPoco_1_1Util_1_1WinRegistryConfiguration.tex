@@ -1,0 +1,139 @@
+\hypertarget{classPoco_1_1Util_1_1WinRegistryConfiguration}{}\doxysection{Poco\+::Util\+::Win\+Registry\+Configuration Class Reference}
+\label{classPoco_1_1Util_1_1WinRegistryConfiguration}\index{Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}}
+
+
+{\ttfamily \#include $<$Win\+Registry\+Configuration.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Util\+::Win\+Registry\+Configuration\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Util\+::Win\+Registry\+Configuration\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1WinRegistryConfiguration_aa09accee4dfa283dd1e25db06b5e2e98}{Win\+Registry\+Configuration}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&root\+Path, R\+E\+G\+S\+AM extra\+Sam=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1WinRegistryConfiguration_aa4f47a75b72120051059dcbfef296a92}{$\sim$\+Win\+Registry\+Configuration}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Util_1_1WinRegistryConfiguration_ae54688b4775112fb61bac7e9d272e7b9}{get\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, std\+::string \&value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Util_1_1WinRegistryConfiguration}{Win\+Registry\+Configuration}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1WinRegistryConfiguration_a2dbe3d5369b2b686fcabebf09cb7ae5f}{set\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1WinRegistryConfiguration_a3ae130d94ed4be1d4d964b135dbe76d7}{enumerate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_ab77c4dc36e335ec05107a155786cb91f}{Keys}} \&range) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1WinRegistryConfiguration_abcc127e5220523fad20e5f0adbd0e828}{remove\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key)
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1Util_1_1WinRegistryConfiguration_a342bdb29e2cc311a22c1e5885537f0b4}{convert\+To\+Reg\+Format}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, std\+::string \&key\+Name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Util_1_1WinRegistryConfiguration_a51cbd6b7b53245f2ce13b61d98fe0195}{Win\+Configuration\+Test}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An implementation of \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} that stores configuration data in the Windows registry.
+
+Removing key is not supported. An attempt to remove a key results in a Not\+Implemented\+Exception being thrown. 
+
+Definition at line 32 of file Win\+Registry\+Configuration.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1WinRegistryConfiguration_aa09accee4dfa283dd1e25db06b5e2e98}\label{classPoco_1_1Util_1_1WinRegistryConfiguration_aa09accee4dfa283dd1e25db06b5e2e98}} 
+\index{Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}!WinRegistryConfiguration@{WinRegistryConfiguration}}
+\index{WinRegistryConfiguration@{WinRegistryConfiguration}!Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}}
+\doxysubsubsection{\texorpdfstring{WinRegistryConfiguration()}{WinRegistryConfiguration()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Win\+Registry\+Configuration\+::\+Win\+Registry\+Configuration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{root\+Path,  }\item[{R\+E\+G\+S\+AM}]{extra\+Sam = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1WinRegistryConfiguration_aa4f47a75b72120051059dcbfef296a92}\label{classPoco_1_1Util_1_1WinRegistryConfiguration_aa4f47a75b72120051059dcbfef296a92}} 
+\index{Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}!````~WinRegistryConfiguration@{$\sim$WinRegistryConfiguration}}
+\index{````~WinRegistryConfiguration@{$\sim$WinRegistryConfiguration}!Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}}
+\doxysubsubsection{\texorpdfstring{$\sim$WinRegistryConfiguration()}{~WinRegistryConfiguration()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Win\+Registry\+Configuration\+::$\sim$\+Win\+Registry\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Util_1_1WinRegistryConfiguration}{Win\+Registry\+Configuration}}. The root\+Path must start with one of the root key names like H\+K\+E\+Y\+\_\+\+C\+L\+A\+S\+S\+E\+S\+\_\+\+R\+O\+OT, e.\+g. H\+K\+E\+Y\+\_\+\+L\+O\+C\+A\+L\+\_\+\+M\+A\+C\+H\+I\+NE\textbackslash{}\+S\+Y\+S\+T\+EM\textbackslash{}\+Current\+Control\+Set\textbackslash{}\+Services. All further keys are relativ to the root path and can be dot seperated, e.\+g. the path My\+Service.\+Service\+Name will be converted to H\+K\+E\+Y\+\_\+\+L\+O\+C\+A\+L\+\_\+\+M\+A\+C\+H\+I\+NE\textbackslash{}\+S\+Y\+S\+T\+EM\textbackslash{}\+Current\+Control\+Set\textbackslash{}\+Services\textbackslash{}\+My\+Service\textbackslash{}\+Service\+Name. The extra\+Sam parameter will be passed along to \mbox{\hyperlink{classPoco_1_1Util_1_1WinRegistryKey}{Win\+Registry\+Key}}, to control registry virtualization for example. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1WinRegistryConfiguration_a342bdb29e2cc311a22c1e5885537f0b4}\label{classPoco_1_1Util_1_1WinRegistryConfiguration_a342bdb29e2cc311a22c1e5885537f0b4}} 
+\index{Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}!convertToRegFormat@{convertToRegFormat}}
+\index{convertToRegFormat@{convertToRegFormat}!Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}}
+\doxysubsubsection{\texorpdfstring{convertToRegFormat()}{convertToRegFormat()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Util\+::\+Win\+Registry\+Configuration\+::convert\+To\+Reg\+Format (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{std\+::string \&}]{key\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1WinRegistryConfiguration_a3ae130d94ed4be1d4d964b135dbe76d7}\label{classPoco_1_1Util_1_1WinRegistryConfiguration_a3ae130d94ed4be1d4d964b135dbe76d7}} 
+\index{Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}!enumerate@{enumerate}}
+\index{enumerate@{enumerate}!Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}}
+\doxysubsubsection{\texorpdfstring{enumerate()}{enumerate()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Win\+Registry\+Configuration\+::enumerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_ab77c4dc36e335ec05107a155786cb91f}{Keys}} \&}]{range }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Sets the property with the given key to the given value. An already existing value for the key is overwritten.
+
+Must be overridden by subclasses. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a64885a63b3990485d518b37697aa1057}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1WinRegistryConfiguration_ae54688b4775112fb61bac7e9d272e7b9}\label{classPoco_1_1Util_1_1WinRegistryConfiguration_ae54688b4775112fb61bac7e9d272e7b9}} 
+\index{Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}!getRaw@{getRaw}}
+\index{getRaw@{getRaw}!Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}}
+\doxysubsubsection{\texorpdfstring{getRaw()}{getRaw()}}
+{\footnotesize\ttfamily bool Poco\+::\+Util\+::\+Win\+Registry\+Configuration\+::get\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Util_1_1WinRegistryConfiguration}{Win\+Registry\+Configuration}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a07e5732151cd6056cfa15809f3a5ac55}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1WinRegistryConfiguration_abcc127e5220523fad20e5f0adbd0e828}\label{classPoco_1_1Util_1_1WinRegistryConfiguration_abcc127e5220523fad20e5f0adbd0e828}} 
+\index{Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}!removeRaw@{removeRaw}}
+\index{removeRaw@{removeRaw}!Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}}
+\doxysubsubsection{\texorpdfstring{removeRaw()}{removeRaw()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Win\+Registry\+Configuration\+::remove\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Returns in range the names of all subkeys under the given key. If an empty key is passed, all root level keys are returned. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a9b26c960b912239e815c0f0a2607a132}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1WinRegistryConfiguration_a2dbe3d5369b2b686fcabebf09cb7ae5f}\label{classPoco_1_1Util_1_1WinRegistryConfiguration_a2dbe3d5369b2b686fcabebf09cb7ae5f}} 
+\index{Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}!setRaw@{setRaw}}
+\index{setRaw@{setRaw}!Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}}
+\doxysubsubsection{\texorpdfstring{setRaw()}{setRaw()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Win\+Registry\+Configuration\+::set\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+If the property with the given key exists, stores the property\textquotesingle{}s value in value and returns true. Otherwise, returns false.
+
+Must be overridden by subclasses. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a620fb5eedbf878c312d7259c9c251509}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1WinRegistryConfiguration_a51cbd6b7b53245f2ce13b61d98fe0195}\label{classPoco_1_1Util_1_1WinRegistryConfiguration_a51cbd6b7b53245f2ce13b61d98fe0195}} 
+\index{Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}!WinConfigurationTest@{WinConfigurationTest}}
+\index{WinConfigurationTest@{WinConfigurationTest}!Poco::Util::WinRegistryConfiguration@{Poco::Util::WinRegistryConfiguration}}
+\doxysubsubsection{\texorpdfstring{WinConfigurationTest}{WinConfigurationTest}}
+{\footnotesize\ttfamily friend class Win\+Configuration\+Test\hspace{0.3cm}{\ttfamily [friend]}}
+
+Takes a key in the format of A.\+B.\+C and converts it to registry format A\textbackslash{}B\textbackslash{}C, the last entry is the key\+Name, the rest is returned as path 
+
+Definition at line 63 of file Win\+Registry\+Configuration.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Util/\mbox{\hyperlink{WinRegistryConfiguration_8h}{Win\+Registry\+Configuration.\+h}}\end{DoxyCompactItemize}

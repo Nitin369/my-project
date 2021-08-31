@@ -1,0 +1,120 @@
+\hypertarget{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher}{}\doxysection{IoT\+::M\+Q\+TT\+::M\+Q\+T\+T\+Client\+Event\+Dispatcher Class Reference}
+\label{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher}\index{IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}}
+
+
+{\ttfamily \#include $<$M\+Q\+T\+T\+Client\+Event\+Dispatcher.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::M\+Q\+TT\+::M\+Q\+T\+T\+Client\+Event\+Dispatcher\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::M\+Q\+TT\+::M\+Q\+T\+T\+Client\+Event\+Dispatcher\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a6f1fb123058fd46b266802218677f861}{M\+Q\+T\+T\+Client\+Event\+Dispatcher}} (\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientRemoteObject}{M\+Q\+T\+T\+Client\+Remote\+Object}} $\ast$p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a14d7bb586169695c72bd34e7b012903a}{protocol}})
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_ad89ba06d413ddcda5a17d0e34ac62452}{$\sim$\+M\+Q\+T\+T\+Client\+Event\+Dispatcher}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher}{M\+Q\+T\+T\+Client\+Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a989f75b68f25f819d981b493d80ccefb}{event\+\_\+\+\_\+connection\+Closed}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher}{M\+Q\+T\+T\+Client\+Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_aa7a792a9b03e84ab0f0706dc3f13d299}{event\+\_\+\+\_\+connection\+Established}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1ConnectionEstablishedEvent}{Io\+T\+::\+M\+Q\+T\+T\+::\+Connection\+Established\+Event}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a8070adc95b9a5ef38de816b6f3722b65}{event\+\_\+\+\_\+connection\+Lost}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1ConnectionLostEvent}{Io\+T\+::\+M\+Q\+T\+T\+::\+Connection\+Lost\+Event}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a55d2a1916366273d5326f2f92bd44d74}{event\+\_\+\+\_\+message\+Arrived}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1MessageArrivedEvent}{Io\+T\+::\+M\+Q\+T\+T\+::\+Message\+Arrived\+Event}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a60b656898b6dc9956fbdfcd3d0df7969}{event\+\_\+\+\_\+message\+Delivered}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1MessageDeliveredEvent}{Io\+T\+::\+M\+Q\+T\+T\+::\+Message\+Delivered\+Event}} \&data)
+\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_aa02c2bf1a49d08bf3d13eb050da4bf8b}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The interface for \mbox{\hyperlink{namespaceIoT_1_1MQTT}{M\+Q\+TT}} clients. \begin{DoxyVerb}Implementations are expected to receive their client ID and
+server URI via an implementation defined configuration mechanism.
+Once configured, a MQTTClient always uses the same client ID and
+connects to the same server. A MQTT client should automatically
+attempt to reconnect if the connection to the server is lost. 
+\end{DoxyVerb}
+ 
+
+Definition at line 30 of file M\+Q\+T\+T\+Client\+Event\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a6f1fb123058fd46b266802218677f861}\label{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a6f1fb123058fd46b266802218677f861}} 
+\index{IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}!MQTTClientEventDispatcher@{MQTTClientEventDispatcher}}
+\index{MQTTClientEventDispatcher@{MQTTClientEventDispatcher}!IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{MQTTClientEventDispatcher()}{MQTTClientEventDispatcher()}}
+{\footnotesize\ttfamily Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Event\+Dispatcher\+::\+M\+Q\+T\+T\+Client\+Event\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientRemoteObject}{M\+Q\+T\+T\+Client\+Remote\+Object}} $\ast$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_ad89ba06d413ddcda5a17d0e34ac62452}\label{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_ad89ba06d413ddcda5a17d0e34ac62452}} 
+\index{IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}!````~MQTTClientEventDispatcher@{$\sim$MQTTClientEventDispatcher}}
+\index{````~MQTTClientEventDispatcher@{$\sim$MQTTClientEventDispatcher}!IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$MQTTClientEventDispatcher()}{~MQTTClientEventDispatcher()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Event\+Dispatcher\+::$\sim$\+M\+Q\+T\+T\+Client\+Event\+Dispatcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher}{M\+Q\+T\+T\+Client\+Event\+Dispatcher}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a989f75b68f25f819d981b493d80ccefb}\label{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a989f75b68f25f819d981b493d80ccefb}} 
+\index{IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}!event\_\_connectionClosed@{event\_\_connectionClosed}}
+\index{event\_\_connectionClosed@{event\_\_connectionClosed}!IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_connectionClosed()}{event\_\_connectionClosed()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Event\+Dispatcher\+::event\+\_\+\+\_\+connection\+Closed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher}{M\+Q\+T\+T\+Client\+Event\+Dispatcher}}. 
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_aa7a792a9b03e84ab0f0706dc3f13d299}\label{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_aa7a792a9b03e84ab0f0706dc3f13d299}} 
+\index{IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}!event\_\_connectionEstablished@{event\_\_connectionEstablished}}
+\index{event\_\_connectionEstablished@{event\_\_connectionEstablished}!IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_connectionEstablished()}{event\_\_connectionEstablished()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Event\+Dispatcher\+::event\+\_\+\+\_\+connection\+Established (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1ConnectionEstablishedEvent}{Io\+T\+::\+M\+Q\+T\+T\+::\+Connection\+Established\+Event}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a8070adc95b9a5ef38de816b6f3722b65}\label{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a8070adc95b9a5ef38de816b6f3722b65}} 
+\index{IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}!event\_\_connectionLost@{event\_\_connectionLost}}
+\index{event\_\_connectionLost@{event\_\_connectionLost}!IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_connectionLost()}{event\_\_connectionLost()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Event\+Dispatcher\+::event\+\_\+\+\_\+connection\+Lost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1ConnectionLostEvent}{Io\+T\+::\+M\+Q\+T\+T\+::\+Connection\+Lost\+Event}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a55d2a1916366273d5326f2f92bd44d74}\label{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a55d2a1916366273d5326f2f92bd44d74}} 
+\index{IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}!event\_\_messageArrived@{event\_\_messageArrived}}
+\index{event\_\_messageArrived@{event\_\_messageArrived}!IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_messageArrived()}{event\_\_messageArrived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Event\+Dispatcher\+::event\+\_\+\+\_\+message\+Arrived (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1MessageArrivedEvent}{Io\+T\+::\+M\+Q\+T\+T\+::\+Message\+Arrived\+Event}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a60b656898b6dc9956fbdfcd3d0df7969}\label{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_a60b656898b6dc9956fbdfcd3d0df7969}} 
+\index{IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}!event\_\_messageDelivered@{event\_\_messageDelivered}}
+\index{event\_\_messageDelivered@{event\_\_messageDelivered}!IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_messageDelivered()}{event\_\_messageDelivered()}}
+{\footnotesize\ttfamily void Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Event\+Dispatcher\+::event\+\_\+\+\_\+message\+Delivered (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1MessageDeliveredEvent}{Io\+T\+::\+M\+Q\+T\+T\+::\+Message\+Delivered\+Event}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_aa02c2bf1a49d08bf3d13eb050da4bf8b}\label{classIoT_1_1MQTT_1_1MQTTClientEventDispatcher_aa02c2bf1a49d08bf3d13eb050da4bf8b}} 
+\index{IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::MQTT::MQTTClientEventDispatcher@{IoT::MQTT::MQTTClientEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Event\+Dispatcher\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 74 of file M\+Q\+T\+T\+Client\+Event\+Dispatcher.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+M\+Q\+T\+T/\mbox{\hyperlink{MQTTClientEventDispatcher_8h}{M\+Q\+T\+T\+Client\+Event\+Dispatcher.\+h}}\end{DoxyCompactItemize}

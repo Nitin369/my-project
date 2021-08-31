@@ -1,0 +1,89 @@
+\hypertarget{classIoT_1_1Devices_1_1SwitchEventDispatcher}{}\doxysection{IoT\+::Devices\+::Switch\+Event\+Dispatcher Class Reference}
+\label{classIoT_1_1Devices_1_1SwitchEventDispatcher}\index{IoT::Devices::SwitchEventDispatcher@{IoT::Devices::SwitchEventDispatcher}}
+
+
+{\ttfamily \#include $<$Switch\+Event\+Dispatcher.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::Switch\+Event\+Dispatcher\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::Switch\+Event\+Dispatcher\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchEventDispatcher_a960316e5b0d50595cae4d0f714331aea}{Switch\+Event\+Dispatcher}} (\mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchRemoteObject}{Switch\+Remote\+Object}} $\ast$p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a14d7bb586169695c72bd34e7b012903a}{protocol}})
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchEventDispatcher_a37bb5ab35e770a367123a08cc8b3774f}{$\sim$\+Switch\+Event\+Dispatcher}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchEventDispatcher}{Switch\+Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchEventDispatcher_a05af232851fd913bec3c6854dd25f3dc}{event\+\_\+\+\_\+state\+Changed}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool \&data)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchEventDispatcher}{Switch\+Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchEventDispatcher_a2d1a7a61e00ff8c566a628395579979e}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The base class for switchable things (that can be turned on and off).
+
+A \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}} has a current state and a target state. Depending upon the implementation, the current state and target state may be different for a short amount of time (e.\+g., while the device is powering on).
+
+In addition to the methods defined in this interface, a \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}} implementation should expose the following properties\+:
+\begin{DoxyItemize}
+\item display\+State (string, optional)\+: The current state of the \mbox{\hyperlink{classIoT_1_1Devices_1_1Switch}{Switch}}, formatted as string for display purposes. 
+\end{DoxyItemize}
+
+Definition at line 30 of file Switch\+Event\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchEventDispatcher_a960316e5b0d50595cae4d0f714331aea}\label{classIoT_1_1Devices_1_1SwitchEventDispatcher_a960316e5b0d50595cae4d0f714331aea}} 
+\index{IoT::Devices::SwitchEventDispatcher@{IoT::Devices::SwitchEventDispatcher}!SwitchEventDispatcher@{SwitchEventDispatcher}}
+\index{SwitchEventDispatcher@{SwitchEventDispatcher}!IoT::Devices::SwitchEventDispatcher@{IoT::Devices::SwitchEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{SwitchEventDispatcher()}{SwitchEventDispatcher()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Switch\+Event\+Dispatcher\+::\+Switch\+Event\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchRemoteObject}{Switch\+Remote\+Object}} $\ast$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchEventDispatcher_a37bb5ab35e770a367123a08cc8b3774f}\label{classIoT_1_1Devices_1_1SwitchEventDispatcher_a37bb5ab35e770a367123a08cc8b3774f}} 
+\index{IoT::Devices::SwitchEventDispatcher@{IoT::Devices::SwitchEventDispatcher}!````~SwitchEventDispatcher@{$\sim$SwitchEventDispatcher}}
+\index{````~SwitchEventDispatcher@{$\sim$SwitchEventDispatcher}!IoT::Devices::SwitchEventDispatcher@{IoT::Devices::SwitchEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$SwitchEventDispatcher()}{~SwitchEventDispatcher()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Devices\+::\+Switch\+Event\+Dispatcher\+::$\sim$\+Switch\+Event\+Dispatcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchEventDispatcher}{Switch\+Event\+Dispatcher}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchEventDispatcher_a05af232851fd913bec3c6854dd25f3dc}\label{classIoT_1_1Devices_1_1SwitchEventDispatcher_a05af232851fd913bec3c6854dd25f3dc}} 
+\index{IoT::Devices::SwitchEventDispatcher@{IoT::Devices::SwitchEventDispatcher}!event\_\_stateChanged@{event\_\_stateChanged}}
+\index{event\_\_stateChanged@{event\_\_stateChanged}!IoT::Devices::SwitchEventDispatcher@{IoT::Devices::SwitchEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_stateChanged()}{event\_\_stateChanged()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+Switch\+Event\+Dispatcher\+::event\+\_\+\+\_\+state\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1SwitchEventDispatcher}{Switch\+Event\+Dispatcher}}. 
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1SwitchEventDispatcher_a2d1a7a61e00ff8c566a628395579979e}\label{classIoT_1_1Devices_1_1SwitchEventDispatcher_a2d1a7a61e00ff8c566a628395579979e}} 
+\index{IoT::Devices::SwitchEventDispatcher@{IoT::Devices::SwitchEventDispatcher}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Devices::SwitchEventDispatcher@{IoT::Devices::SwitchEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+Devices\+::\+Switch\+Event\+Dispatcher\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 64 of file Switch\+Event\+Dispatcher.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{SwitchEventDispatcher_8h}{Switch\+Event\+Dispatcher.\+h}}\end{DoxyCompactItemize}

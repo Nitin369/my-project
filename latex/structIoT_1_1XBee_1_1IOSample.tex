@@ -1,0 +1,138 @@
+\hypertarget{structIoT_1_1XBee_1_1IOSample}{}\doxysection{IoT\+::X\+Bee\+::I\+O\+Sample Struct Reference}
+\label{structIoT_1_1XBee_1_1IOSample}\index{IoT::XBee::IOSample@{IoT::XBee::IOSample}}
+
+
+{\ttfamily \#include $<$X\+Bee\+Node.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1XBee_1_1IOSample_aa0fbbaddfa31d5943144d3341a8d867c}{device\+Address}}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1XBee_1_1IOSample_aa4cdabb59f63f97ae5b810e521fe5576}{network\+Address}}
+\begin{DoxyCompactList}\small\item\em Hexadecimal text representation of 64-\/bit address of the remote device. \end{DoxyCompactList}\item 
+Poco\+::\+U\+Int8 \mbox{\hyperlink{structIoT_1_1XBee_1_1IOSample_a2b383a0001085413c4420b1bac71c425}{options}}
+\begin{DoxyCompactList}\small\item\em Hexadecimal text representation of the 16-\/bit network address of the remote device. \end{DoxyCompactList}\item 
+Poco\+::\+U\+Int8 \mbox{\hyperlink{structIoT_1_1XBee_1_1IOSample_ad1f350d3e72d85e484b57ea1ddebb791}{n\+Sample\+Sets}}
+\item 
+Poco\+::\+U\+Int16 \mbox{\hyperlink{structIoT_1_1XBee_1_1IOSample_af60914be265242f86b58125ffedb14a2}{digital\+Channel\+Mask}}
+\begin{DoxyCompactList}\small\item\em Number of sample sets. Always 1. \end{DoxyCompactList}\item 
+Poco\+::\+U\+Int8 \mbox{\hyperlink{structIoT_1_1XBee_1_1IOSample_a4fe9f5dfc4a1e52b74a49640eeeb5a39}{analog\+Channel\+Mask}}
+\item 
+Poco\+::\+U\+Int16 \mbox{\hyperlink{structIoT_1_1XBee_1_1IOSample_a213df841593ef1adea1979bb0e597544}{digital\+Samples}}
+\item 
+std\+::vector$<$ Poco\+::\+Int16 $>$ \mbox{\hyperlink{structIoT_1_1XBee_1_1IOSample_a564c0fb00e80b0f166cc30c8c8d7c92f}{analog\+Samples}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Zig\+Bee IO Data Sample Rx Indicator. \begin{DoxyVerb}Frame Type: 0x92 
+\end{DoxyVerb}
+ 
+
+Definition at line 476 of file X\+Bee\+Node.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1IOSample_a4fe9f5dfc4a1e52b74a49640eeeb5a39}\label{structIoT_1_1XBee_1_1IOSample_a4fe9f5dfc4a1e52b74a49640eeeb5a39}} 
+\index{IoT::XBee::IOSample@{IoT::XBee::IOSample}!analogChannelMask@{analogChannelMask}}
+\index{analogChannelMask@{analogChannelMask}!IoT::XBee::IOSample@{IoT::XBee::IOSample}}
+\doxysubsubsection{\texorpdfstring{analogChannelMask}{analogChannelMask}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int8 Io\+T\+::\+X\+Bee\+::\+I\+O\+Sample\+::analog\+Channel\+Mask}
+
+Bitmask field that indicates which digital IO lines on the remote have sampling enabled (if any). 
+
+Definition at line 499 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1IOSample_a564c0fb00e80b0f166cc30c8c8d7c92f}\label{structIoT_1_1XBee_1_1IOSample_a564c0fb00e80b0f166cc30c8c8d7c92f}} 
+\index{IoT::XBee::IOSample@{IoT::XBee::IOSample}!analogSamples@{analogSamples}}
+\index{analogSamples@{analogSamples}!IoT::XBee::IOSample@{IoT::XBee::IOSample}}
+\doxysubsubsection{\texorpdfstring{analogSamples}{analogSamples}}
+{\footnotesize\ttfamily std\+::vector$<$Poco\+::\+Int16$>$ Io\+T\+::\+X\+Bee\+::\+I\+O\+Sample\+::analog\+Samples}
+
+If the sample set includes any digital IO lines (digital\+Channel\+Mask $>$ 0), these two bytes contain samples for all enabled digital IO lines D\+IO lines that do not have sampling enabled return 0. Bits in these 2 bytes map the same as they do in the digital\+Channel\+Mask field. 
+
+Definition at line 509 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1IOSample_aa0fbbaddfa31d5943144d3341a8d867c}\label{structIoT_1_1XBee_1_1IOSample_aa0fbbaddfa31d5943144d3341a8d867c}} 
+\index{IoT::XBee::IOSample@{IoT::XBee::IOSample}!deviceAddress@{deviceAddress}}
+\index{deviceAddress@{deviceAddress}!IoT::XBee::IOSample@{IoT::XBee::IOSample}}
+\doxysubsubsection{\texorpdfstring{deviceAddress}{deviceAddress}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+X\+Bee\+::\+I\+O\+Sample\+::device\+Address}
+
+
+
+Definition at line 481 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1IOSample_af60914be265242f86b58125ffedb14a2}\label{structIoT_1_1XBee_1_1IOSample_af60914be265242f86b58125ffedb14a2}} 
+\index{IoT::XBee::IOSample@{IoT::XBee::IOSample}!digitalChannelMask@{digitalChannelMask}}
+\index{digitalChannelMask@{digitalChannelMask}!IoT::XBee::IOSample@{IoT::XBee::IOSample}}
+\doxysubsubsection{\texorpdfstring{digitalChannelMask}{digitalChannelMask}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+X\+Bee\+::\+I\+O\+Sample\+::digital\+Channel\+Mask}
+
+
+
+Number of sample sets. Always 1. 
+
+
+
+Definition at line 495 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1IOSample_a213df841593ef1adea1979bb0e597544}\label{structIoT_1_1XBee_1_1IOSample_a213df841593ef1adea1979bb0e597544}} 
+\index{IoT::XBee::IOSample@{IoT::XBee::IOSample}!digitalSamples@{digitalSamples}}
+\index{digitalSamples@{digitalSamples}!IoT::XBee::IOSample@{IoT::XBee::IOSample}}
+\doxysubsubsection{\texorpdfstring{digitalSamples}{digitalSamples}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Io\+T\+::\+X\+Bee\+::\+I\+O\+Sample\+::digital\+Samples}
+
+Bitmask field that indicates which analog IO lines on the remote have sampling enabled (if any). 
+
+Definition at line 503 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1IOSample_aa4cdabb59f63f97ae5b810e521fe5576}\label{structIoT_1_1XBee_1_1IOSample_aa4cdabb59f63f97ae5b810e521fe5576}} 
+\index{IoT::XBee::IOSample@{IoT::XBee::IOSample}!networkAddress@{networkAddress}}
+\index{networkAddress@{networkAddress}!IoT::XBee::IOSample@{IoT::XBee::IOSample}}
+\doxysubsubsection{\texorpdfstring{networkAddress}{networkAddress}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+X\+Bee\+::\+I\+O\+Sample\+::network\+Address}
+
+
+
+Hexadecimal text representation of 64-\/bit address of the remote device. 
+
+
+
+Definition at line 484 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1IOSample_ad1f350d3e72d85e484b57ea1ddebb791}\label{structIoT_1_1XBee_1_1IOSample_ad1f350d3e72d85e484b57ea1ddebb791}} 
+\index{IoT::XBee::IOSample@{IoT::XBee::IOSample}!nSampleSets@{nSampleSets}}
+\index{nSampleSets@{nSampleSets}!IoT::XBee::IOSample@{IoT::XBee::IOSample}}
+\doxysubsubsection{\texorpdfstring{nSampleSets}{nSampleSets}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int8 Io\+T\+::\+X\+Bee\+::\+I\+O\+Sample\+::n\+Sample\+Sets}
+
+Receive options\+:
+\begin{DoxyItemize}
+\item 0x01 -\/ Packet Acknowledged
+\item 0x02 -\/ Packet was a broadcast packet 
+\end{DoxyItemize}
+
+Definition at line 492 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1IOSample_a2b383a0001085413c4420b1bac71c425}\label{structIoT_1_1XBee_1_1IOSample_a2b383a0001085413c4420b1bac71c425}} 
+\index{IoT::XBee::IOSample@{IoT::XBee::IOSample}!options@{options}}
+\index{options@{options}!IoT::XBee::IOSample@{IoT::XBee::IOSample}}
+\doxysubsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int8 Io\+T\+::\+X\+Bee\+::\+I\+O\+Sample\+::options}
+
+
+
+Hexadecimal text representation of the 16-\/bit network address of the remote device. 
+
+
+
+Definition at line 487 of file X\+Bee\+Node.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+X\+Bee/\mbox{\hyperlink{XBeeNode_8h}{X\+Bee\+Node.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,678 @@
+\hypertarget{classPoco_1_1BasicFIFOBuffer}{}\doxysection{Poco\+::Basic\+F\+I\+F\+O\+Buffer$<$ T $>$ Class Template Reference}
+\label{classPoco_1_1BasicFIFOBuffer}\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+
+
+{\ttfamily \#include $<$F\+I\+F\+O\+Buffer.\+h$>$}
+
+
+
+Collaboration diagram for Poco\+::Basic\+F\+I\+F\+O\+Buffer$<$ T $>$\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a83b3f6bbe3dcdf55ff100d6960ba814e}{Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a7bba198a85d5e07f6b7a16a5e7f6a663}{Basic\+F\+I\+F\+O\+Buffer}} (std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_adbcc608a36b70f58de8da4cd87865867}{size}}, bool notify=false)
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_af14df7ff03043633c38c06ee8aeacf99}{Basic\+F\+I\+F\+O\+Buffer}} (T $\ast$p\+Buffer, std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_adbcc608a36b70f58de8da4cd87865867}{size}}, bool notify=false)
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a0270386dec5a5a14849e108b9ce0912b}{Basic\+F\+I\+F\+O\+Buffer}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$p\+Buffer, std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_adbcc608a36b70f58de8da4cd87865867}{size}}, bool notify=false)
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a1464dc205c3469d80793904f4c70ec6b}{$\sim$\+Basic\+F\+I\+F\+O\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the F\+I\+F\+O\+Buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a8ac921a122c774ab059e95ef85e5b32c}{resize}} (std\+::size\+\_\+t new\+Size, bool preserve\+Content=true)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a37dc83ee60f38c67a0a31aab38267d2c}{peek}} (T $\ast$p\+Buffer, std\+::size\+\_\+t length) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_ae732d043dc985085735a3357f6719782}{peek}} (\mbox{\hyperlink{classPoco_1_1Buffer}{Poco\+::\+Buffer}}$<$ T $>$ \&\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a0a32eec8e357415c4353760ced1e156a}{buffer}}, std\+::size\+\_\+t length=0) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a236942ca33240e861b6f5a82cb6a6b6e}{read}} (T $\ast$p\+Buffer, std\+::size\+\_\+t length)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_aced098ea64074608c4a5089455932169}{read}} (\mbox{\hyperlink{classPoco_1_1Buffer}{Poco\+::\+Buffer}}$<$ T $>$ \&\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a0a32eec8e357415c4353760ced1e156a}{buffer}}, std\+::size\+\_\+t length=0)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a704ce5abb458526710ff90b2916701bd}{write}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$p\+Buffer, std\+::size\+\_\+t length)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a76afe94a9065a7511e5069e80b01870a}{write}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Buffer}{Buffer}}$<$ T $>$ \&\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a0a32eec8e357415c4353760ced1e156a}{buffer}}, std\+::size\+\_\+t length=0)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_adbcc608a36b70f58de8da4cd87865867}{size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the size of the buffer. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a9a4a5c61ab64d15fa212058ebeb9cad7}{used}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the size of the used portion of the buffer. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a66717277a226805c8b9a188640bcb4f5}{available}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the size of the available portion of the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a0f462e1ed9f2f0e8d5d1858865898e2c}{drain}} (std\+::size\+\_\+t length=0)
+\item 
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_aa2293652ceba519620d908ee6e06fe88}{copy}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$ptr, std\+::size\+\_\+t length)
+\item 
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a57fe6b6ef5c229d51a8aec22eefbb6ae}{advance}} (std\+::size\+\_\+t length)
+\item 
+T $\ast$ \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a3f13e8540f7a8cfe7e8a1204c45d34d0}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Returns the pointer to the beginning of the buffer. \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a000fa31cbb001443ca6cd1c8a09b8a9d}{next}} ()
+\begin{DoxyCompactList}\small\item\em Returns the pointer to the next available position in the buffer. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_ab69b100da790f9f7b3aa5a9ada5e7c42}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t index)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \& \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_af6b8f542bcabc43059e899da8d3e74c7}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t index) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Buffer}{Buffer}}$<$ T $>$ \& \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a0a32eec8e357415c4353760ced1e156a}{buffer}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns const reference to the underlying buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a8a95f9ea3aa869f9ffd894816835d70a}{set\+Error}} (bool error=true)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a218d3f9d47a349e0ddfda2daeddde9a8}{is\+Valid}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a78b49ca539862982ec2f7504bf3f4788}{set\+E\+OF}} (bool eof=true)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_ab988dae1be5312fff9ff7898f1aa3c1e}{has\+E\+OF}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if E\+OF flag has been set. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a05796d2cb8eb51c21333960a285c48bc}{is\+E\+OF}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if E\+OF flag has been set and buffer is empty. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a30bc69e366373a34957870e60ad4b877}{is\+Empty}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true is buffer is empty, false otherwise. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a1fc67f7981d00ac4a2655f366fa08ed4}{is\+Full}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true is buffer is full, false otherwise. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a7294440636064728e59254c73bb33811}{is\+Readable}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_ae5405543c6d4a033f3db54416d0023d4}{is\+Writable}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a90d66d6ef49f806e934df455b77cb8a1}{set\+Notify}} (bool notify=true)
+\begin{DoxyCompactList}\small\item\em Enables/disables notifications. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a44dd0ea7ea443c55625b20dc66d21642}{get\+Notify}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if notifications are enabled, false otherwise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}} \& \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a523017bb4c117139c279baa622fe62a1}{mutex}} ()
+\begin{DoxyCompactList}\small\item\em Returns reference to mutex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ bool $>$ \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_aa5a024e58fa2ae89e107c88ba97045b5}{writable}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ bool $>$ \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a573bfc03741a2798550e5fe21f6fe337}{readable}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Poco\+::\+Basic\+F\+I\+F\+O\+Buffer$<$ T $>$}
+
+A simple buffer class with support for re-\/entrant, F\+I\+F\+O-\/style read/write operations, as well as (optional) empty/non-\/empty/full (i.\+e. writable/readable) transition notifications. \mbox{\hyperlink{classPoco_1_1Buffer}{Buffer}} can be flagged with end-\/of-\/file and error flags, which renders it un-\/readable/writable.
+
+Critical portions of code are protected by a recursive mutex. However, to achieve thread-\/safety in cases where multiple member function calls are involved and have to be atomic, the mutex must be locked externally.
+
+\mbox{\hyperlink{classPoco_1_1Buffer}{Buffer}} size, as well as amount of unread data and available space introspections are supported as well.
+
+This class is useful anywhere where a F\+I\+FO functionality is needed. 
+
+Definition at line 35 of file F\+I\+F\+O\+Buffer.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a83b3f6bbe3dcdf55ff100d6960ba814e}\label{classPoco_1_1BasicFIFOBuffer_a83b3f6bbe3dcdf55ff100d6960ba814e}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!Type@{Type}}
+\index{Type@{Type}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef T \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer_a83b3f6bbe3dcdf55ff100d6960ba814e}{Type}}}
+
+
+
+Definition at line 54 of file F\+I\+F\+O\+Buffer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a7bba198a85d5e07f6b7a16a5e7f6a663}\label{classPoco_1_1BasicFIFOBuffer_a7bba198a85d5e07f6b7a16a5e7f6a663}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!BasicFIFOBuffer@{BasicFIFOBuffer}}
+\index{BasicFIFOBuffer@{BasicFIFOBuffer}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BasicFIFOBuffer()}{BasicFIFOBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Basic\+F\+I\+F\+O\+Buffer}} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{size,  }\item[{bool}]{notify = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classPoco_1_1Event}{Event}} indicating \char`\"{}readability\char`\"{} of the buffer, triggered as follows\+:
+
+
+\begin{DoxyItemize}
+\item when buffer transitions from non-\/empty to empty, Readable event observers are notified, with false ~\newline
+ value as the argument
+\item when F\+I\+F\+O\+Buffer transitions from empty to non-\/empty, Readable event observers are notified, with true value as the argument 
+\end{DoxyItemize}
+
+Definition at line 80 of file F\+I\+F\+O\+Buffer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_af14df7ff03043633c38c06ee8aeacf99}\label{classPoco_1_1BasicFIFOBuffer_af14df7ff03043633c38c06ee8aeacf99}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!BasicFIFOBuffer@{BasicFIFOBuffer}}
+\index{BasicFIFOBuffer@{BasicFIFOBuffer}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BasicFIFOBuffer()}{BasicFIFOBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Basic\+F\+I\+F\+O\+Buffer}} (\begin{DoxyParamCaption}\item[{T $\ast$}]{p\+Buffer,  }\item[{std\+::size\+\_\+t}]{size,  }\item[{bool}]{notify = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 91 of file F\+I\+F\+O\+Buffer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a0270386dec5a5a14849e108b9ce0912b}\label{classPoco_1_1BasicFIFOBuffer_a0270386dec5a5a14849e108b9ce0912b}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!BasicFIFOBuffer@{BasicFIFOBuffer}}
+\index{BasicFIFOBuffer@{BasicFIFOBuffer}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BasicFIFOBuffer()}{BasicFIFOBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Basic\+F\+I\+F\+O\+Buffer}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$}]{p\+Buffer,  }\item[{std\+::size\+\_\+t}]{size,  }\item[{bool}]{notify = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 102 of file F\+I\+F\+O\+Buffer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a1464dc205c3469d80793904f4c70ec6b}\label{classPoco_1_1BasicFIFOBuffer_a1464dc205c3469d80793904f4c70ec6b}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!````~BasicFIFOBuffer@{$\sim$BasicFIFOBuffer}}
+\index{````~BasicFIFOBuffer@{$\sim$BasicFIFOBuffer}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$BasicFIFOBuffer()}{~BasicFIFOBuffer()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Basic\+F\+I\+F\+O\+Buffer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the F\+I\+F\+O\+Buffer. 
+
+
+
+Definition at line 113 of file F\+I\+F\+O\+Buffer.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a57fe6b6ef5c229d51a8aec22eefbb6ae}\label{classPoco_1_1BasicFIFOBuffer_a57fe6b6ef5c229d51a8aec22eefbb6ae}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!advance@{advance}}
+\index{advance@{advance}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{advance()}{advance()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::advance (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Advances buffer by length elements. Should be called A\+F\+T\+ER the data was copied into the buffer. 
+
+Definition at line 334 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a66717277a226805c8b9a188640bcb4f5}\label{classPoco_1_1BasicFIFOBuffer_a66717277a226805c8b9a188640bcb4f5}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!available@{available}}
+\index{available@{available}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the size of the available portion of the buffer. 
+
+
+
+Definition at line 284 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a3f13e8540f7a8cfe7e8a1204c45d34d0}\label{classPoco_1_1BasicFIFOBuffer_a3f13e8540f7a8cfe7e8a1204c45d34d0}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T$\ast$ \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the pointer to the beginning of the buffer. 
+
+
+
+Definition at line 358 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a0a32eec8e357415c4353760ced1e156a}\label{classPoco_1_1BasicFIFOBuffer_a0a32eec8e357415c4353760ced1e156a}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!buffer@{buffer}}
+\index{buffer@{buffer}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{buffer()}{buffer()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Buffer}{Buffer}}$<$T$>$\& \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns const reference to the underlying buffer. 
+
+
+
+Definition at line 404 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_aa2293652ceba519620d908ee6e06fe88}\label{classPoco_1_1BasicFIFOBuffer_aa2293652ceba519620d908ee6e06fe88}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!copy@{copy}}
+\index{copy@{copy}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$}]{ptr,  }\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copies the supplied data to the buffer and adjusts the used buffer size. 
+
+Definition at line 313 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a0f462e1ed9f2f0e8d5d1858865898e2c}\label{classPoco_1_1BasicFIFOBuffer_a0f462e1ed9f2f0e8d5d1858865898e2c}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!drain@{drain}}
+\index{drain@{drain}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{drain()}{drain()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::drain (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{length = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Drains length number of elements from the buffer. If length is zero or greater than buffer current content length, buffer is emptied. 
+
+Definition at line 290 of file F\+I\+F\+O\+Buffer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a44dd0ea7ea443c55625b20dc66d21642}\label{classPoco_1_1BasicFIFOBuffer_a44dd0ea7ea443c55625b20dc66d21642}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!getNotify@{getNotify}}
+\index{getNotify@{getNotify}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getNotify()}{getNotify()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::get\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if notifications are enabled, false otherwise. 
+
+
+
+Definition at line 508 of file F\+I\+F\+O\+Buffer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_ab988dae1be5312fff9ff7898f1aa3c1e}\label{classPoco_1_1BasicFIFOBuffer_ab988dae1be5312fff9ff7898f1aa3c1e}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!hasEOF@{hasEOF}}
+\index{hasEOF@{hasEOF}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{hasEOF()}{hasEOF()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::has\+E\+OF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if E\+OF flag has been set. 
+
+
+
+Definition at line 464 of file F\+I\+F\+O\+Buffer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a30bc69e366373a34957870e60ad4b877}\label{classPoco_1_1BasicFIFOBuffer_a30bc69e366373a34957870e60ad4b877}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true is buffer is empty, false otherwise. 
+
+
+
+Definition at line 476 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a05796d2cb8eb51c21333960a285c48bc}\label{classPoco_1_1BasicFIFOBuffer_a05796d2cb8eb51c21333960a285c48bc}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!isEOF@{isEOF}}
+\index{isEOF@{isEOF}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEOF()}{isEOF()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::is\+E\+OF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if E\+OF flag has been set and buffer is empty. 
+
+
+
+Definition at line 470 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a1fc67f7981d00ac4a2655f366fa08ed4}\label{classPoco_1_1BasicFIFOBuffer_a1fc67f7981d00ac4a2655f366fa08ed4}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!isFull@{isFull}}
+\index{isFull@{isFull}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isFull()}{isFull()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::is\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true is buffer is full, false otherwise. 
+
+
+
+Definition at line 482 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 9
+Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a7294440636064728e59254c73bb33811}\label{classPoco_1_1BasicFIFOBuffer_a7294440636064728e59254c73bb33811}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!isReadable@{isReadable}}
+\index{isReadable@{isReadable}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isReadable()}{isReadable()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::is\+Readable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if buffer contains data and is not in error state. 
+
+Definition at line 488 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 11
+Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a218d3f9d47a349e0ddfda2daeddde9a8}\label{classPoco_1_1BasicFIFOBuffer_a218d3f9d47a349e0ddfda2daeddde9a8}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!isValid@{isValid}}
+\index{isValid@{isValid}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if error flag is not set on the buffer, otherwise returns false. 
+
+Definition at line 437 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_ae5405543c6d4a033f3db54416d0023d4}\label{classPoco_1_1BasicFIFOBuffer_ae5405543c6d4a033f3db54416d0023d4}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!isWritable@{isWritable}}
+\index{isWritable@{isWritable}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isWritable()}{isWritable()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::is\+Writable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if buffer is not full and is not in error state. 
+
+Definition at line 495 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 14
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a523017bb4c117139c279baa622fe62a1}\label{classPoco_1_1BasicFIFOBuffer_a523017bb4c117139c279baa622fe62a1}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!mutex@{mutex}}
+\index{mutex@{mutex}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mutex()}{mutex()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}}\& \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns reference to mutex. 
+
+
+
+Definition at line 514 of file F\+I\+F\+O\+Buffer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a000fa31cbb001443ca6cd1c8a09b8a9d}\label{classPoco_1_1BasicFIFOBuffer_a000fa31cbb001443ca6cd1c8a09b8a9d}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!next@{next}}
+\index{next@{next}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T$\ast$ \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the pointer to the next available position in the buffer. 
+
+
+
+Definition at line 373 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_ab69b100da790f9f7b3aa5a9ada5e7c42}\label{classPoco_1_1BasicFIFOBuffer_ab69b100da790f9f7b3aa5a9ada5e7c42}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T\& \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns value at index position. Throws Invalid\+Access\+Exception if index is larger than the last valid (used) buffer position. 
+
+Definition at line 380 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_af6b8f542bcabc43059e899da8d3e74c7}\label{classPoco_1_1BasicFIFOBuffer_af6b8f542bcabc43059e899da8d3e74c7}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\& \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns value at index position. Throws Invalid\+Access\+Exception if index is larger than the last valid (used) buffer position. 
+
+Definition at line 392 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 18
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_ae732d043dc985085735a3357f6719782}\label{classPoco_1_1BasicFIFOBuffer_ae732d043dc985085735a3357f6719782}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!peek@{peek}}
+\index{peek@{peek}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::peek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Buffer}{Poco\+::\+Buffer}}$<$ T $>$ \&}]{buffer,  }\item[{std\+::size\+\_\+t}]{length = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Peeks into the data currently in the F\+I\+FO without actually extracting it. Resizes the supplied buffer to the size of data written to it. If length is not supplied by the caller or is greater than length of currently used data, the current F\+I\+FO used data length is substituted for it.
+
+Returns the number of elements copied in the supplied buffer. 
+
+Definition at line 157 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 19
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a37dc83ee60f38c67a0a31aab38267d2c}\label{classPoco_1_1BasicFIFOBuffer_a37dc83ee60f38c67a0a31aab38267d2c}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!peek@{peek}}
+\index{peek@{peek}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::peek (\begin{DoxyParamCaption}\item[{T $\ast$}]{p\+Buffer,  }\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Peeks into the data currently in the F\+I\+FO without actually extracting it. If length is zero, the return is immediate. If length is greater than used length, it is substituted with the the current F\+I\+FO used length.
+
+Returns the number of elements copied in the supplied buffer. 
+
+Definition at line 138 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 20
+Here is the caller graph for this function\+:
+% FIG 21
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_aced098ea64074608c4a5089455932169}\label{classPoco_1_1BasicFIFOBuffer_aced098ea64074608c4a5089455932169}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!read@{read}}
+\index{read@{read}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Buffer}{Poco\+::\+Buffer}}$<$ T $>$ \&}]{buffer,  }\item[{std\+::size\+\_\+t}]{length = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copies the data currently in the F\+I\+FO into the supplied buffer. Resizes the supplied buffer to the size of data written to it.
+
+Returns the size of the copied data. 
+
+Definition at line 199 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 22
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a236942ca33240e861b6f5a82cb6a6b6e}\label{classPoco_1_1BasicFIFOBuffer_a236942ca33240e861b6f5a82cb6a6b6e}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!read@{read}}
+\index{read@{read}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::read (\begin{DoxyParamCaption}\item[{T $\ast$}]{p\+Buffer,  }\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copies the data currently in the F\+I\+FO into the supplied buffer, which must be preallocated to at least the length size before calling this function.
+
+Returns the size of the copied data. 
+
+Definition at line 176 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 23
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a8ac921a122c774ab059e95ef85e5b32c}\label{classPoco_1_1BasicFIFOBuffer_a8ac921a122c774ab059e95ef85e5b32c}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!resize@{resize}}
+\index{resize@{resize}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::resize (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{new\+Size,  }\item[{bool}]{preserve\+Content = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resizes the buffer. If preserve\+Content is true, the content of the old buffer is preserved. New size can be larger or smaller than the current size, but it must not be 0. Additionally, if the new length is smaller than currently used length and preserve\+Content is true, Invalid\+Access\+Exception is thrown. 
+
+Definition at line 118 of file F\+I\+F\+O\+Buffer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a78b49ca539862982ec2f7504bf3f4788}\label{classPoco_1_1BasicFIFOBuffer_a78b49ca539862982ec2f7504bf3f4788}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!setEOF@{setEOF}}
+\index{setEOF@{setEOF}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setEOF()}{setEOF()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::set\+E\+OF (\begin{DoxyParamCaption}\item[{bool}]{eof = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets end-\/of-\/file flag on the buffer.
+
+Setting E\+OF flag to true prevents writing to the buffer; reading from the buffer will still be allowed until all data present in the buffer at the E\+OF set time is drained. After that, to re-\/enable F\+I\+F\+O\+Buffer for reading/writing, E\+OF must be set to false.
+
+Setting E\+OF flag to false clears E\+OF state if it was previously set. If E\+OF was not set, it has no effect. 
+
+Definition at line 444 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 24
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a8a95f9ea3aa869f9ffd894816835d70a}\label{classPoco_1_1BasicFIFOBuffer_a8a95f9ea3aa869f9ffd894816835d70a}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!setError@{setError}}
+\index{setError@{setError}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setError()}{setError()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::set\+Error (\begin{DoxyParamCaption}\item[{bool}]{error = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the error flag on the buffer and empties it. If notifications are enabled, they will be triggered if appropriate.
+
+Setting error flag to true prevents reading and writing to the buffer; to re-\/enable F\+I\+F\+O\+Buffer for reading/writing, the error flag must be set to false. 
+
+Definition at line 410 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 25
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a90d66d6ef49f806e934df455b77cb8a1}\label{classPoco_1_1BasicFIFOBuffer_a90d66d6ef49f806e934df455b77cb8a1}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!setNotify@{setNotify}}
+\index{setNotify@{setNotify}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setNotify()}{setNotify()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::set\+Notify (\begin{DoxyParamCaption}\item[{bool}]{notify = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enables/disables notifications. 
+
+
+
+Definition at line 502 of file F\+I\+F\+O\+Buffer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_adbcc608a36b70f58de8da4cd87865867}\label{classPoco_1_1BasicFIFOBuffer_adbcc608a36b70f58de8da4cd87865867}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!size@{size}}
+\index{size@{size}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the size of the buffer. 
+
+
+
+Definition at line 272 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 26
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a9a4a5c61ab64d15fa212058ebeb9cad7}\label{classPoco_1_1BasicFIFOBuffer_a9a4a5c61ab64d15fa212058ebeb9cad7}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!used@{used}}
+\index{used@{used}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{used()}{used()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::used (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the size of the used portion of the buffer. 
+
+
+
+Definition at line 278 of file F\+I\+F\+O\+Buffer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a76afe94a9065a7511e5069e80b01870a}\label{classPoco_1_1BasicFIFOBuffer_a76afe94a9065a7511e5069e80b01870a}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!write@{write}}
+\index{write@{write}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Buffer}{Buffer}}$<$ T $>$ \&}]{buffer,  }\item[{std\+::size\+\_\+t}]{length = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Writes data from supplied buffer to the F\+I\+FO buffer. If there is no sufficient space for the whole buffer to be written, data up to available length is written. The length of data to be written is determined from the length argument or buffer size (when length argument is default zero or greater than buffer size).
+
+Returns the length of data written. 
+
+Definition at line 255 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 27
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a704ce5abb458526710ff90b2916701bd}\label{classPoco_1_1BasicFIFOBuffer_a704ce5abb458526710ff90b2916701bd}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!write@{write}}
+\index{write@{write}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T $\ast$}]{p\+Buffer,  }\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Writes data from supplied buffer to the F\+I\+FO buffer. If there is no sufficient space for the whole buffer to be written, data up to available length is written. The length of data to be written is determined from the length argument. Function does nothing and returns zero if length argument is equal to zero.
+
+Returns the length of data written. 
+
+Definition at line 221 of file F\+I\+F\+O\+Buffer.\+h.
+
+Here is the call graph for this function\+:
+% FIG 28
+Here is the caller graph for this function\+:
+% FIG 29
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_a573bfc03741a2798550e5fe21f6fe337}\label{classPoco_1_1BasicFIFOBuffer_a573bfc03741a2798550e5fe21f6fe337}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!readable@{readable}}
+\index{readable@{readable}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{readable}{readable}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$bool$>$ \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::readable\hspace{0.3cm}{\ttfamily [mutable]}}
+
+\mbox{\hyperlink{classPoco_1_1Event}{Event}} indicating \char`\"{}writability\char`\"{} of the buffer, triggered as follows\+:
+
+
+\begin{DoxyItemize}
+\item when buffer transitions from non-\/full to full, Writable event observers are notified, with false value as the argument
+\item when buffer transitions from full to non-\/full, Writable event observers are notified, with true value as the argument 
+\end{DoxyItemize}
+
+Definition at line 68 of file F\+I\+F\+O\+Buffer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicFIFOBuffer_aa5a024e58fa2ae89e107c88ba97045b5}\label{classPoco_1_1BasicFIFOBuffer_aa5a024e58fa2ae89e107c88ba97045b5}} 
+\index{Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}!writable@{writable}}
+\index{writable@{writable}!Poco::BasicFIFOBuffer$<$ T $>$@{Poco::BasicFIFOBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{writable}{writable}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$bool$>$ \mbox{\hyperlink{classPoco_1_1BasicFIFOBuffer}{Poco\+::\+Basic\+F\+I\+F\+O\+Buffer}}$<$ T $>$\+::writable\hspace{0.3cm}{\ttfamily [mutable]}}
+
+
+
+Definition at line 56 of file F\+I\+F\+O\+Buffer.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{FIFOBuffer_8h}{F\+I\+F\+O\+Buffer.\+h}}\end{DoxyCompactItemize}

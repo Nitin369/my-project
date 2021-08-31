@@ -1,0 +1,98 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1Authorizer}{}\doxysection{Poco\+::Remoting\+NG\+::Authorizer Class Reference}
+\label{classPoco_1_1RemotingNG_1_1Authorizer}\index{Poco::RemotingNG::Authorizer@{Poco::RemotingNG::Authorizer}}
+
+
+{\ttfamily \#include $<$Authorizer.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::Authorizer\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::Authorizer\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer}{Authorizer}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer_a72815d7ed340008fe050bf161176e498}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer_ab27e2fee542011902be2a5e68afa7b23}{Authorizer}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer_a684c9af5222051e43bf506f125f88cef}{$\sim$\+Authorizer}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer}{Authorizer}}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer_a7574665b4b1e6815183aac401e6d59ab}{authorize}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&method, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&permission)=0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer}{Authorizer}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer}{Authorizer}} interface is used for authorizing incoming requests. \begin{DoxyVerb}Authorizers are specific to a transport and external authentication/ 
+authorization mechanism and must be implemented specifically for an application.
+
+An implementation of Authorizer is responsible for the following:
+  - Ensure that the current session, connection or request is properly 
+    authenticated (e.g., via username and password, using HTTP Basic
+    Authentication or another transport-specific authentication mechanism).
+    For transports that support an Authenticator, this is usually taken
+    care of by the Authenticator.
+  - Check whether the user account associated with the request has
+    the required permission for a specific method call. 
+\end{DoxyVerb}
+ 
+
+Definition at line 32 of file Authorizer.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Authorizer_a72815d7ed340008fe050bf161176e498}\label{classPoco_1_1RemotingNG_1_1Authorizer_a72815d7ed340008fe050bf161176e498}} 
+\index{Poco::RemotingNG::Authorizer@{Poco::RemotingNG::Authorizer}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::RemotingNG::Authorizer@{Poco::RemotingNG::Authorizer}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer}{Authorizer}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer_a72815d7ed340008fe050bf161176e498}{Poco\+::\+Remoting\+N\+G\+::\+Authorizer\+::\+Ptr}}}
+
+
+
+Definition at line 48 of file Authorizer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Authorizer_ab27e2fee542011902be2a5e68afa7b23}\label{classPoco_1_1RemotingNG_1_1Authorizer_ab27e2fee542011902be2a5e68afa7b23}} 
+\index{Poco::RemotingNG::Authorizer@{Poco::RemotingNG::Authorizer}!Authorizer@{Authorizer}}
+\index{Authorizer@{Authorizer}!Poco::RemotingNG::Authorizer@{Poco::RemotingNG::Authorizer}}
+\doxysubsubsection{\texorpdfstring{Authorizer()}{Authorizer()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+Authorizer\+::\+Authorizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Authorizer_a684c9af5222051e43bf506f125f88cef}\label{classPoco_1_1RemotingNG_1_1Authorizer_a684c9af5222051e43bf506f125f88cef}} 
+\index{Poco::RemotingNG::Authorizer@{Poco::RemotingNG::Authorizer}!````~Authorizer@{$\sim$Authorizer}}
+\index{````~Authorizer@{$\sim$Authorizer}!Poco::RemotingNG::Authorizer@{Poco::RemotingNG::Authorizer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Authorizer()}{~Authorizer()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Remoting\+N\+G\+::\+Authorizer\+::$\sim$\+Authorizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer}{Authorizer}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Authorizer_a7574665b4b1e6815183aac401e6d59ab}\label{classPoco_1_1RemotingNG_1_1Authorizer_a7574665b4b1e6815183aac401e6d59ab}} 
+\index{Poco::RemotingNG::Authorizer@{Poco::RemotingNG::Authorizer}!authorize@{authorize}}
+\index{authorize@{authorize}!Poco::RemotingNG::Authorizer@{Poco::RemotingNG::Authorizer}}
+\doxysubsubsection{\texorpdfstring{authorize()}{authorize()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Remoting\+N\+G\+::\+Authorizer\+::authorize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{method,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{permission }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Authorizer}{Authorizer}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{Authorizer_8h}{Authorizer.\+h}}\end{DoxyCompactItemize}

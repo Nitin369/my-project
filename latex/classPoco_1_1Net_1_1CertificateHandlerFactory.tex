@@ -1,0 +1,71 @@
+\hypertarget{classPoco_1_1Net_1_1CertificateHandlerFactory}{}\doxysection{Poco\+::Net\+::Certificate\+Handler\+Factory Class Reference}
+\label{classPoco_1_1Net_1_1CertificateHandlerFactory}\index{Poco::Net::CertificateHandlerFactory@{Poco::Net::CertificateHandlerFactory}}
+
+
+{\ttfamily \#include $<$Certificate\+Handler\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::Certificate\+Handler\+Factory\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1CertificateHandlerFactory_ad3511b1331f145cca85488d64b5403c0}{Certificate\+Handler\+Factory}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1CertificateHandlerFactory_ab344fc7a7e2d17d616789b7656505e31}{$\sim$\+Certificate\+Handler\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1CertificateHandlerFactory}{Certificate\+Handler\+Factory}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1InvalidCertificateHandler}{Invalid\+Certificate\+Handler}} $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1CertificateHandlerFactory_ac091071540088550f11caebb33a9193d}{create}} (bool server) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1CertificateHandlerFactory}{Certificate\+Handler\+Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1Net_1_1CertificateHandlerFactory}{Certificate\+Handler\+Factory}} is responsible for creating Invalid\+Certificate\+Handlers. \begin{DoxyVerb}You don't need to access this class directly. Use the macro
+    POCO_REGISTER_CHFACTORY(namespace, InvalidCertificateHandlerName) 
+instead (see the documentation of InvalidCertificateHandler for an example). 
+\end{DoxyVerb}
+ 
+
+Definition at line 33 of file Certificate\+Handler\+Factory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1CertificateHandlerFactory_ad3511b1331f145cca85488d64b5403c0}\label{classPoco_1_1Net_1_1CertificateHandlerFactory_ad3511b1331f145cca85488d64b5403c0}} 
+\index{Poco::Net::CertificateHandlerFactory@{Poco::Net::CertificateHandlerFactory}!CertificateHandlerFactory@{CertificateHandlerFactory}}
+\index{CertificateHandlerFactory@{CertificateHandlerFactory}!Poco::Net::CertificateHandlerFactory@{Poco::Net::CertificateHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{CertificateHandlerFactory()}{CertificateHandlerFactory()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Certificate\+Handler\+Factory\+::\+Certificate\+Handler\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1CertificateHandlerFactory_ab344fc7a7e2d17d616789b7656505e31}\label{classPoco_1_1Net_1_1CertificateHandlerFactory_ab344fc7a7e2d17d616789b7656505e31}} 
+\index{Poco::Net::CertificateHandlerFactory@{Poco::Net::CertificateHandlerFactory}!````~CertificateHandlerFactory@{$\sim$CertificateHandlerFactory}}
+\index{````~CertificateHandlerFactory@{$\sim$CertificateHandlerFactory}!Poco::Net::CertificateHandlerFactory@{Poco::Net::CertificateHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$CertificateHandlerFactory()}{~CertificateHandlerFactory()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+Certificate\+Handler\+Factory\+::$\sim$\+Certificate\+Handler\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1CertificateHandlerFactory}{Certificate\+Handler\+Factory}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1CertificateHandlerFactory_ac091071540088550f11caebb33a9193d}\label{classPoco_1_1Net_1_1CertificateHandlerFactory_ac091071540088550f11caebb33a9193d}} 
+\index{Poco::Net::CertificateHandlerFactory@{Poco::Net::CertificateHandlerFactory}!create@{create}}
+\index{create@{create}!Poco::Net::CertificateHandlerFactory@{Poco::Net::CertificateHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1Net_1_1InvalidCertificateHandler}{Invalid\+Certificate\+Handler}}$\ast$ Poco\+::\+Net\+::\+Certificate\+Handler\+Factory\+::create (\begin{DoxyParamCaption}\item[{bool}]{server }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1CertificateHandlerFactory}{Certificate\+Handler\+Factory}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Net_1_1CertificateHandlerFactoryImpl_afc1d28d89d164e60261be6215f219bcf}{Poco\+::\+Net\+::\+Certificate\+Handler\+Factory\+Impl$<$ T $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{CertificateHandlerFactory_8h}{Certificate\+Handler\+Factory.\+h}}\end{DoxyCompactItemize}

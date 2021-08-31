@@ -1,0 +1,65 @@
+\hypertarget{classPoco_1_1RotateByIntervalStrategy}{}\doxysection{Poco\+::Rotate\+By\+Interval\+Strategy Class Reference}
+\label{classPoco_1_1RotateByIntervalStrategy}\index{Poco::RotateByIntervalStrategy@{Poco::RotateByIntervalStrategy}}
+
+
+{\ttfamily \#include $<$Rotate\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Rotate\+By\+Interval\+Strategy\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Rotate\+By\+Interval\+Strategy\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RotateByIntervalStrategy_a6ceaa3dbfdcb7f7fd6a544b8b6815841}{Rotate\+By\+Interval\+Strategy}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&span)
+\item 
+\mbox{\hyperlink{classPoco_1_1RotateByIntervalStrategy_a0a019b92cdc8c096f18dbcd2e581219f}{$\sim$\+Rotate\+By\+Interval\+Strategy}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1RotateByIntervalStrategy_a03928159e148dbfd6f97511ccb7148ee}{must\+Rotate}} (\mbox{\hyperlink{classPoco_1_1LogFile}{Log\+File}} $\ast$p\+File)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The file is rotated when the log file exceeds a given age.
+
+For this to work reliably across all platforms and file systems (there are severe issues on most platforms finding out the real creation date of a file), the creation date of the file is written into the log file as the first entry. 
+
+Definition at line 129 of file Rotate\+Strategy.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RotateByIntervalStrategy_a6ceaa3dbfdcb7f7fd6a544b8b6815841}\label{classPoco_1_1RotateByIntervalStrategy_a6ceaa3dbfdcb7f7fd6a544b8b6815841}} 
+\index{Poco::RotateByIntervalStrategy@{Poco::RotateByIntervalStrategy}!RotateByIntervalStrategy@{RotateByIntervalStrategy}}
+\index{RotateByIntervalStrategy@{RotateByIntervalStrategy}!Poco::RotateByIntervalStrategy@{Poco::RotateByIntervalStrategy}}
+\doxysubsubsection{\texorpdfstring{RotateByIntervalStrategy()}{RotateByIntervalStrategy()}}
+{\footnotesize\ttfamily Poco\+::\+Rotate\+By\+Interval\+Strategy\+::\+Rotate\+By\+Interval\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{span }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RotateByIntervalStrategy_a0a019b92cdc8c096f18dbcd2e581219f}\label{classPoco_1_1RotateByIntervalStrategy_a0a019b92cdc8c096f18dbcd2e581219f}} 
+\index{Poco::RotateByIntervalStrategy@{Poco::RotateByIntervalStrategy}!````~RotateByIntervalStrategy@{$\sim$RotateByIntervalStrategy}}
+\index{````~RotateByIntervalStrategy@{$\sim$RotateByIntervalStrategy}!Poco::RotateByIntervalStrategy@{Poco::RotateByIntervalStrategy}}
+\doxysubsubsection{\texorpdfstring{$\sim$RotateByIntervalStrategy()}{~RotateByIntervalStrategy()}}
+{\footnotesize\ttfamily Poco\+::\+Rotate\+By\+Interval\+Strategy\+::$\sim$\+Rotate\+By\+Interval\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RotateByIntervalStrategy_a03928159e148dbfd6f97511ccb7148ee}\label{classPoco_1_1RotateByIntervalStrategy_a03928159e148dbfd6f97511ccb7148ee}} 
+\index{Poco::RotateByIntervalStrategy@{Poco::RotateByIntervalStrategy}!mustRotate@{mustRotate}}
+\index{mustRotate@{mustRotate}!Poco::RotateByIntervalStrategy@{Poco::RotateByIntervalStrategy}}
+\doxysubsubsection{\texorpdfstring{mustRotate()}{mustRotate()}}
+{\footnotesize\ttfamily bool Poco\+::\+Rotate\+By\+Interval\+Strategy\+::must\+Rotate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1LogFile}{Log\+File}} $\ast$}]{p\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1RotateStrategy_ae5611e2abc8addb8714d47b67417e5fd}{Poco\+::\+Rotate\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{RotateStrategy_8h}{Rotate\+Strategy.\+h}}\end{DoxyCompactItemize}

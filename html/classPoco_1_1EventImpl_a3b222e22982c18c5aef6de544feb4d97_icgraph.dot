@@ -1,0 +1,22 @@
+digraph "Poco::EventImpl::setImpl"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Poco::EventImpl::setImpl",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Poco::Event::set",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Event.html#a99a0419c5b9481bfc28efb3fa21f7979",tooltip="Destroys the event."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Poco::SynchronizedObject\l::notify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1SynchronizedObject.html#a0812822a50f1b3bdf5bfff61d027a73d",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Poco::ActiveResultHolder\l::notify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResultHolder.html#a8a5dab5dee70f49649e7869b6464780f",tooltip="Notifies the invoking thread that the result became available."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Poco::ActiveResult\l\< ResultType \>::notify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResult.html#a7fd66c3d5914d989c6323626cf22bfcb",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Poco::ActiveResult\l\< void \>::notify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResult_3_01void_01_4.html#a9cfee3d5dae96d616d0201a60417d161",tooltip=" "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Poco::ActiveResultHolder\l\< void \>::notify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResultHolder_3_01void_01_4.html#a4dea8b28e5c2ef931be6da9aa68f56b5",tooltip="Notifies the invoking thread that the result became available."];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Poco::Activity\< IoT\l::UDP::UDPEndpointImpl\l \>::run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Activity.html#a892d0678d0100ae0efbea64c1732efb8",tooltip=" "];
+}

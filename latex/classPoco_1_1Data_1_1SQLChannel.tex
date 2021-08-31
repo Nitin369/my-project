@@ -1,0 +1,304 @@
+\hypertarget{classPoco_1_1Data_1_1SQLChannel}{}\doxysection{Poco\+::Data\+::S\+Q\+L\+Channel Class Reference}
+\label{classPoco_1_1Data_1_1SQLChannel}\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+
+
+{\ttfamily \#include $<$S\+Q\+L\+Channel.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::S\+Q\+L\+Channel\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Data\+::S\+Q\+L\+Channel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a197073c74d4e5cd0d3304914f7b946b0}{S\+Q\+L\+Channel}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_aa0763481433fedbad89b6fc313375b91}{S\+Q\+L\+Channel}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&connector, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&connect, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name=\char`\"{}-\/\char`\"{})
+\begin{DoxyCompactList}\small\item\em Creates \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel}{S\+Q\+L\+Channel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_aadcc10380e2cf16abaa01135b449ac6e}{open}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a4b85b306e79e2d2a014fecd81775b3a5}{close}} ()
+\begin{DoxyCompactList}\small\item\em Opens the \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel}{S\+Q\+L\+Channel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a04aa9bb2063d9774468670977e53d564}{log}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&msg)
+\begin{DoxyCompactList}\small\item\em Closes the \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel}{S\+Q\+L\+Channel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_abfe5e1774d6540ac75833c4858e12cfc}{set\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Sends the message\textquotesingle{}s text to the syslog service. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a151d422cdb85dda97185100760457a55}{get\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_af6e175bbf5933a114e5d576fdf1103ee}{wait}} ()
+\begin{DoxyCompactList}\small\item\em Returns the value of the property with the given name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_ade5932bf3cb37b7b116f111b78c1cb83}{register\+Channel}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_ab5cb619d3a3bf319e89a4155280560c8}{P\+R\+O\+P\+\_\+\+C\+O\+N\+N\+E\+CT}}
+\begin{DoxyCompactList}\small\item\em Registers the channel with the global \mbox{\hyperlink{classPoco_1_1LoggingFactory}{Logging\+Factory}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_ad6bb278762eae2927748a2882d4c8417}{P\+R\+O\+P\+\_\+\+C\+O\+N\+N\+E\+C\+T\+OR}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a840798e6682d75cb674da69f7ab41fcc}{P\+R\+O\+P\+\_\+\+N\+A\+ME}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a998286ab7998ecf646a34a71d54ecfb9}{P\+R\+O\+P\+\_\+\+T\+A\+B\+LE}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a279bbe2d3a04589d4d427ee1080fc2e2}{P\+R\+O\+P\+\_\+\+A\+R\+C\+H\+I\+V\+E\+\_\+\+T\+A\+B\+LE}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a40ba34915c31aed8ee1602bd040cdfde}{P\+R\+O\+P\+\_\+\+M\+A\+X\+\_\+\+A\+GE}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_afd0496d6023e5e1756d2467da5bf89c7}{P\+R\+O\+P\+\_\+\+A\+S\+Y\+NC}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a7d816c5aa7ae66730f4be3adfb9595d1}{P\+R\+O\+P\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a35b46c74e7a59df10207922e3b2cbb57}{P\+R\+O\+P\+\_\+\+T\+H\+R\+OW}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel_a638a163c0018c4fee06331030d033aff}{$\sim$\+S\+Q\+L\+Channel}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This \mbox{\hyperlink{classPoco_1_1Channel}{Channel}} implements logging to a S\+QL database. The channel is dependent on the schema. The D\+DL for table creation (subject to target D\+DL dialect dependent modifications) is\+:
+
+"C\+R\+E\+A\+TE T\+A\+B\+LE T\+\_\+\+P\+O\+C\+O\+\_\+\+L\+OG (Source V\+A\+R\+C\+H\+AR, Name V\+A\+R\+C\+H\+AR, Process\+Id I\+N\+T\+E\+G\+ER, \mbox{\hyperlink{classPoco_1_1Thread}{Thread}} V\+A\+R\+C\+H\+AR, Thread\+Id I\+N\+T\+E\+G\+ER, Priority I\+N\+T\+E\+G\+ER, Text V\+A\+R\+C\+H\+AR, \mbox{\hyperlink{classPoco_1_1DateTime}{Date\+Time}} D\+A\+TE)"
+
+The table name is configurable through \char`\"{}table\char`\"{} property. Other than \mbox{\hyperlink{classPoco_1_1DateTime}{Date\+Time}} filed name used for optiona time-\/based archiving purposes, currently the field names are not mandated. However, it is recomended to use names as specified above.
+
+To provide as non-\/intrusive operation as possbile, the log entries are cached and inserted into the target database asynchronously by default . The blocking, however, will occur before the next entry insertion with default timeout of 1 second. The default settings can be overriden (see async, timeout and throw properties for details). If throw property is false, insertion timeouts are ignored, otherwise a Timeout\+Exception is thrown. To force insertion of every entry, set timeout to 0. This setting, however, introduces a risk of long blocking periods in case of remote server communication delays. 
+
+Definition at line 38 of file S\+Q\+L\+Channel.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_a197073c74d4e5cd0d3304914f7b946b0}\label{classPoco_1_1Data_1_1SQLChannel_a197073c74d4e5cd0d3304914f7b946b0}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!SQLChannel@{SQLChannel}}
+\index{SQLChannel@{SQLChannel}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{SQLChannel()}{SQLChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::\+S\+Q\+L\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_aa0763481433fedbad89b6fc313375b91}\label{classPoco_1_1Data_1_1SQLChannel_aa0763481433fedbad89b6fc313375b91}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!SQLChannel@{SQLChannel}}
+\index{SQLChannel@{SQLChannel}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{SQLChannel()}{SQLChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::\+S\+Q\+L\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{connector,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{connect,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name = {\ttfamily \char`\"{}-\/\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Creates \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel}{S\+Q\+L\+Channel}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_a638a163c0018c4fee06331030d033aff}\label{classPoco_1_1Data_1_1SQLChannel_a638a163c0018c4fee06331030d033aff}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!````~SQLChannel@{$\sim$SQLChannel}}
+\index{````~SQLChannel@{$\sim$SQLChannel}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{$\sim$SQLChannel()}{~SQLChannel()}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::$\sim$\+S\+Q\+L\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_a4b85b306e79e2d2a014fecd81775b3a5}\label{classPoco_1_1Data_1_1SQLChannel_a4b85b306e79e2d2a014fecd81775b3a5}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!close@{close}}
+\index{close@{close}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Opens the \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel}{S\+Q\+L\+Channel}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Channel_a2056a173f804c51411942649bd4d6408}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_a151d422cdb85dda97185100760457a55}\label{classPoco_1_1Data_1_1SQLChannel_a151d422cdb85dda97185100760457a55}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{getProperty()}{getProperty()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::get\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the property with the given value.
+
+The following properties are supported\+:
+\begin{DoxyItemize}
+\item name\+: The name used to identify the source of log messages. Defaults to \char`\"{}-\/\char`\"{}.
+\item target\+: The target data storage type (\char`\"{}\+S\+Q\+Lite\char`\"{}, \char`\"{}\+O\+D\+B\+C\char`\"{}, ...).
+\item connector\+: The target data storage connector name.
+\item connect\+: The target data storage connection string.
+\item table\+: Destination log table name. Defaults to \char`\"{}\+T\+\_\+\+P\+O\+C\+O\+\_\+\+L\+O\+G\char`\"{}. Table must exist in the target database.
+\item keep\+: Max row age for the log table. To disable archiving, set this property to empty string or \char`\"{}forever\char`\"{}.
+\item archive\+: Archive table name. Defaults to \char`\"{}\+T\+\_\+\+P\+O\+C\+O\+\_\+\+L\+O\+G\+\_\+\+A\+R\+C\+H\+I\+V\+E\char`\"{}. Table must exist in the target database. To disable archiving, set this property to empty string.
+\item async\+: Indicates asynchronous execution. When excuting asynchronously, messages are sent to the target using asyncronous execution. However, prior to the next message being processed and sent to the target, the previous operation must have been either completed or timed out (see timeout and throw properties for details on how abnormal conditos are handled).
+\item timeout\+: Timeout (ms) to wait for previous log operation completion. Values \char`\"{}0\char`\"{} and \char`\"{}\char`\"{} mean no timeout. Only valid when logging is asynchronous, otherwise ignored.
+\item throw\+: Boolean value indicating whether to throw in case of timeout. Setting this property to false may result in log entries being lost. True values are (case insensitive) \char`\"{}true\char`\"{}, \char`\"{}t\char`\"{}, \char`\"{}yes\char`\"{}, \char`\"{}y\char`\"{}. Anything else yields false. 
+\end{DoxyItemize}
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Channel_a187321f59674dfde457599885a4f6ec0}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_a04aa9bb2063d9774468670977e53d564}\label{classPoco_1_1Data_1_1SQLChannel_a04aa9bb2063d9774468670977e53d564}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!log@{log}}
+\index{log@{log}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Closes the \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel}{S\+Q\+L\+Channel}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Channel_aeafdcc5ce2e0e38d96f15a60a563da4e}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_aadcc10380e2cf16abaa01135b449ac6e}\label{classPoco_1_1Data_1_1SQLChannel_aadcc10380e2cf16abaa01135b449ac6e}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!open@{open}}
+\index{open@{open}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a \mbox{\hyperlink{classPoco_1_1Data_1_1SQLChannel}{S\+Q\+L\+Channel}} with the given connector, connect string, timeout, table and name. The connector must be already registered. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Channel_aef60226200d2e287068a62d9af5a4f6e}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_ade5932bf3cb37b7b116f111b78c1cb83}\label{classPoco_1_1Data_1_1SQLChannel_ade5932bf3cb37b7b116f111b78c1cb83}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!registerChannel@{registerChannel}}
+\index{registerChannel@{registerChannel}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{registerChannel()}{registerChannel()}}
+{\footnotesize\ttfamily static void Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::register\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Waits for the completion of the previous operation and returns the result. If chanel is in synchronous mode, returns 0 immediately. \mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_abfe5e1774d6540ac75833c4858e12cfc}\label{classPoco_1_1Data_1_1SQLChannel_abfe5e1774d6540ac75833c4858e12cfc}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{setProperty()}{setProperty()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::set\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sends the message\textquotesingle{}s text to the syslog service. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Channel_a67c2a274e476745b902ced03fb485c6e}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_af6e175bbf5933a114e5d576fdf1103ee}\label{classPoco_1_1Data_1_1SQLChannel_af6e175bbf5933a114e5d576fdf1103ee}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!wait@{wait}}
+\index{wait@{wait}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the value of the property with the given name. 
+
+
+
+Definition at line 198 of file S\+Q\+L\+Channel.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_a279bbe2d3a04589d4d427ee1080fc2e2}\label{classPoco_1_1Data_1_1SQLChannel_a279bbe2d3a04589d4d427ee1080fc2e2}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!PROP\_ARCHIVE\_TABLE@{PROP\_ARCHIVE\_TABLE}}
+\index{PROP\_ARCHIVE\_TABLE@{PROP\_ARCHIVE\_TABLE}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_ARCHIVE\_TABLE}{PROP\_ARCHIVE\_TABLE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::\+P\+R\+O\+P\+\_\+\+A\+R\+C\+H\+I\+V\+E\+\_\+\+T\+A\+B\+LE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 137 of file S\+Q\+L\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_afd0496d6023e5e1756d2467da5bf89c7}\label{classPoco_1_1Data_1_1SQLChannel_afd0496d6023e5e1756d2467da5bf89c7}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!PROP\_ASYNC@{PROP\_ASYNC}}
+\index{PROP\_ASYNC@{PROP\_ASYNC}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_ASYNC}{PROP\_ASYNC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::\+P\+R\+O\+P\+\_\+\+A\+S\+Y\+NC\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 139 of file S\+Q\+L\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_ab5cb619d3a3bf319e89a4155280560c8}\label{classPoco_1_1Data_1_1SQLChannel_ab5cb619d3a3bf319e89a4155280560c8}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!PROP\_CONNECT@{PROP\_CONNECT}}
+\index{PROP\_CONNECT@{PROP\_CONNECT}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_CONNECT}{PROP\_CONNECT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::\+P\+R\+O\+P\+\_\+\+C\+O\+N\+N\+E\+CT\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Registers the channel with the global \mbox{\hyperlink{classPoco_1_1LoggingFactory}{Logging\+Factory}}. 
+
+
+
+Definition at line 133 of file S\+Q\+L\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_ad6bb278762eae2927748a2882d4c8417}\label{classPoco_1_1Data_1_1SQLChannel_ad6bb278762eae2927748a2882d4c8417}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!PROP\_CONNECTOR@{PROP\_CONNECTOR}}
+\index{PROP\_CONNECTOR@{PROP\_CONNECTOR}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_CONNECTOR}{PROP\_CONNECTOR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::\+P\+R\+O\+P\+\_\+\+C\+O\+N\+N\+E\+C\+T\+OR\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 134 of file S\+Q\+L\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_a40ba34915c31aed8ee1602bd040cdfde}\label{classPoco_1_1Data_1_1SQLChannel_a40ba34915c31aed8ee1602bd040cdfde}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!PROP\_MAX\_AGE@{PROP\_MAX\_AGE}}
+\index{PROP\_MAX\_AGE@{PROP\_MAX\_AGE}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_MAX\_AGE}{PROP\_MAX\_AGE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::\+P\+R\+O\+P\+\_\+\+M\+A\+X\+\_\+\+A\+GE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 138 of file S\+Q\+L\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_a840798e6682d75cb674da69f7ab41fcc}\label{classPoco_1_1Data_1_1SQLChannel_a840798e6682d75cb674da69f7ab41fcc}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!PROP\_NAME@{PROP\_NAME}}
+\index{PROP\_NAME@{PROP\_NAME}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_NAME}{PROP\_NAME}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::\+P\+R\+O\+P\+\_\+\+N\+A\+ME\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 135 of file S\+Q\+L\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_a998286ab7998ecf646a34a71d54ecfb9}\label{classPoco_1_1Data_1_1SQLChannel_a998286ab7998ecf646a34a71d54ecfb9}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!PROP\_TABLE@{PROP\_TABLE}}
+\index{PROP\_TABLE@{PROP\_TABLE}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_TABLE}{PROP\_TABLE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::\+P\+R\+O\+P\+\_\+\+T\+A\+B\+LE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 136 of file S\+Q\+L\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_a35b46c74e7a59df10207922e3b2cbb57}\label{classPoco_1_1Data_1_1SQLChannel_a35b46c74e7a59df10207922e3b2cbb57}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!PROP\_THROW@{PROP\_THROW}}
+\index{PROP\_THROW@{PROP\_THROW}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_THROW}{PROP\_THROW}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::\+P\+R\+O\+P\+\_\+\+T\+H\+R\+OW\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 141 of file S\+Q\+L\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SQLChannel_a7d816c5aa7ae66730f4be3adfb9595d1}\label{classPoco_1_1Data_1_1SQLChannel_a7d816c5aa7ae66730f4be3adfb9595d1}} 
+\index{Poco::Data::SQLChannel@{Poco::Data::SQLChannel}!PROP\_TIMEOUT@{PROP\_TIMEOUT}}
+\index{PROP\_TIMEOUT@{PROP\_TIMEOUT}!Poco::Data::SQLChannel@{Poco::Data::SQLChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_TIMEOUT}{PROP\_TIMEOUT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Data\+::\+S\+Q\+L\+Channel\+::\+P\+R\+O\+P\+\_\+\+T\+I\+M\+E\+O\+UT\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 140 of file S\+Q\+L\+Channel.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{SQLChannel_8h}{S\+Q\+L\+Channel.\+h}}\end{DoxyCompactItemize}

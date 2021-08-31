@@ -1,0 +1,574 @@
+\hypertarget{classPoco_1_1Net_1_1HTTPClientSession}{}\doxysection{Poco\+::Net\+::H\+T\+T\+P\+Client\+Session Class Reference}
+\label{classPoco_1_1Net_1_1HTTPClientSession}\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+Client\+Session.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::H\+T\+T\+P\+Client\+Session\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::H\+T\+T\+P\+Client\+Session\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1Net_1_1HTTPClientSession_1_1ProxyConfig}{Proxy\+Config}}
+\begin{DoxyCompactList}\small\item\em H\+T\+TP proxy server configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a1a8193e4330290efb684c07932b7e669}{H\+T\+T\+P\+Client\+Session}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a2f547c0e94d50aa28e07b4d74673f74b}{H\+T\+T\+P\+Client\+Session}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a182567e432a2641121f20753721cb476}{socket}})
+\begin{DoxyCompactList}\small\item\em Creates an unconnected \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a04f543b3ce15817a86282d8bc9c957db}{H\+T\+T\+P\+Client\+Session}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&address)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a5ce34661bd3a3c5cff819204be471402}{H\+T\+T\+P\+Client\+Session}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host, Poco\+::\+U\+Int16 port=\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a4bb8d1f27a6a2cfdb30dfa32775ba27ca7bc48abc88c649b13f10ea2acd5eb40e}{H\+T\+T\+P\+Session\+::\+H\+T\+T\+P\+\_\+\+P\+O\+RT}})
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} using the given address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a2caf8d25b8d370c90bbec223818f6caa}{H\+T\+T\+P\+Client\+Session}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host, Poco\+::\+U\+Int16 port, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Net_1_1HTTPClientSession_1_1ProxyConfig}{Proxy\+Config}} \&proxy\+Config)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} using the given host and port. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_ac9215e7afeaff8a819545404dfd57836}{$\sim$\+H\+T\+T\+P\+Client\+Session}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} using the given host, port and proxy configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a2698c66358e1943de81a75688feb0706}{set\+Host}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a10e9cee355c5ae0b577f9dc519dc7d69}{get\+Host}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_af92377ff12882281b2f63b645b805b7c}{set\+Port}} (Poco\+::\+U\+Int16 port)
+\begin{DoxyCompactList}\small\item\em Returns the host name of the target H\+T\+TP server. \end{DoxyCompactList}\item 
+Poco\+::\+U\+Int16 \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_ae1095be6b2fefd52fa241aa3de27516d}{get\+Port}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_af80efd8df680a3eac649f50f1e8f1a82}{set\+Proxy}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host, Poco\+::\+U\+Int16 port=\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a4bb8d1f27a6a2cfdb30dfa32775ba27ca7bc48abc88c649b13f10ea2acd5eb40e}{H\+T\+T\+P\+Session\+::\+H\+T\+T\+P\+\_\+\+P\+O\+RT}})
+\begin{DoxyCompactList}\small\item\em Returns the port number of the target H\+T\+TP server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a2f516bcc6ef7405c6057f625cc405ad5}{set\+Proxy\+Host}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host)
+\begin{DoxyCompactList}\small\item\em Sets the proxy host name and port number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_ab50972d2bd3e0979c069967de0449370}{set\+Proxy\+Port}} (Poco\+::\+U\+Int16 port)
+\begin{DoxyCompactList}\small\item\em Sets the host name of the proxy server. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a4f3c8312bee0e4eaa31c665456e0c7d3}{get\+Proxy\+Host}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the port number of the proxy server. \end{DoxyCompactList}\item 
+Poco\+::\+U\+Int16 \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_af5a9b79a0a66a1305371c73af3e8c953}{get\+Proxy\+Port}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the proxy host name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a0f7cf95ecb8272f991fce9e23c3f7495}{set\+Proxy\+Credentials}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&username, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Returns the proxy port number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a9cb37d841e82417e67ee1baf14e63385}{set\+Proxy\+Username}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&username)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a910d4de5bb1e9fb34cf22825f8f9f725}{get\+Proxy\+Username}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a77fcb9fd390ff50540798cb9cfff9e83}{set\+Proxy\+Password}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Returns the username for proxy authentication. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_aa42cce8aeb837ce3db241967a81f8dee}{get\+Proxy\+Password}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a93c4c0d1c3483cab55c2dd3f36148523}{set\+Proxy\+Config}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Net_1_1HTTPClientSession_1_1ProxyConfig}{Proxy\+Config}} \&config)
+\begin{DoxyCompactList}\small\item\em Returns the password for proxy authentication. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Net_1_1HTTPClientSession_1_1ProxyConfig}{Proxy\+Config}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a44272d050b785cb74cdd573f8921c2dc}{get\+Proxy\+Config}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the proxy configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a942490aa4ca7e2457d6ef784343b6a7f}{set\+Keep\+Alive\+Timeout}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout)
+\begin{DoxyCompactList}\small\item\em Returns the global proxy configuration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a9bf4165f166a066859825830a7c7ee78}{get\+Keep\+Alive\+Timeout}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the connection timeout for H\+T\+TP connections. \end{DoxyCompactList}\item 
+virtual std\+::ostream \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a1739c6ac53078ebf6aaf4bf6cfab5c5a}{send\+Request}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest}{H\+T\+T\+P\+Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Returns the connection timeout for H\+T\+TP connections. \end{DoxyCompactList}\item 
+virtual std\+::istream \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a43b4f42c34a2d9b3ed3263745645f99a}{receive\+Response}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPResponse}{H\+T\+T\+P\+Response}} \&response)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a333fb50be0047f2aebdcf2561c18a794}{reset}} ()
+\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_aeb16f52db3b2ddf4782a29fcebe40b9b}{secure}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_adbd4fc6d262876a3c9001ee9aebf6abf}{bypass\+Proxy}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_aa11cc676a0f47cf84f454a9f5013e9c9}{set\+Global\+Proxy\+Config}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Net_1_1HTTPClientSession_1_1ProxyConfig}{Proxy\+Config}} \&config)
+\begin{DoxyCompactList}\small\item\em Returns the proxy configuration. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Net_1_1HTTPClientSession_1_1ProxyConfig}{Proxy\+Config}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_ac385a751dd8e830c74a1d46c96e58c78}{get\+Global\+Proxy\+Config}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a37d518408f8740605cd7fd56fc290663a423a42aa7cad10c0cb760e38e90129b2}{D\+E\+F\+A\+U\+L\+T\+\_\+\+K\+E\+E\+P\+\_\+\+A\+L\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT}} = 8
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_ac8f4f4a59fb654116ab2424554a4abb8}{reconnect}} ()
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_ab777183142f73b28e223c8f963a1ff89}{write}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$buffer, std\+::streamsize length)
+\begin{DoxyCompactList}\small\item\em Connects the underlying socket to the H\+T\+TP server. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_afe2f6478c813361320777d265de7421b}{proxy\+Request\+Prefix}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Tries to re-\/connect if keep-\/alive is on. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a7f76572fee61e515b2501f6925dd6118}{must\+Reconnect}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a10e9d6dc90539e710575a573d6822d20}{proxy\+Authenticate}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest}{H\+T\+T\+P\+Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Checks if we can reuse a persistent connection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a16e1a7dca73098f4b7e61b049eab3b29}{proxy\+Authenticate\+Impl}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest}{H\+T\+T\+P\+Request}} \&request)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a0cbec25865b49715530e5eee4a3f36d0}{proxy\+Connect}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a2ac7cb4455cdeb8513fabba0803fcd83}{proxy\+Tunnel}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_aae91499d85b5a2d8fbe7c9439fe78fcf}{Web\+Socket}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class implements the client-\/side of a H\+T\+TP session.
+
+To send a H\+T\+TP request to a H\+T\+TP server, first instantiate a \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} object and specify the server\textquotesingle{}s host name and port number.
+
+Then create a \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest}{H\+T\+T\+P\+Request}} object, fill it accordingly, and pass it as argument to the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a1739c6ac53078ebf6aaf4bf6cfab5c5a}{send\+Request()}} method.
+
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a1739c6ac53078ebf6aaf4bf6cfab5c5a}{send\+Request()}} will return an output stream that can be used to send the request body, if there is any.
+
+After you are done sending the request body, create a \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPResponse}{H\+T\+T\+P\+Response}} object and pass it to \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a43b4f42c34a2d9b3ed3263745645f99a}{receive\+Response()}}.
+
+This will return an input stream that can be used to read the response body.
+
+See R\+FC 2616 \href{http://www.faqs.org/rfcs/rfc2616.html}{\texttt{ http\+://www.\+faqs.\+org/rfcs/rfc2616.\+html}} for more information about the H\+T\+TP protocol.
+
+Proxies and proxy authorization (only H\+T\+TP Basic Authorization) is supported. Use \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_af80efd8df680a3eac649f50f1e8f1a82}{set\+Proxy()}} and \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a0f7cf95ecb8272f991fce9e23c3f7495}{set\+Proxy\+Credentials()}} to set up a session through a proxy. 
+
+Definition at line 39 of file H\+T\+T\+P\+Client\+Session.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a37d518408f8740605cd7fd56fc290663}\label{classPoco_1_1Net_1_1HTTPClientSession_a37d518408f8740605cd7fd56fc290663}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns true if the proxy should be bypassed for the current host. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEFAULT\_KEEP\_ALIVE\_TIMEOUT@{DEFAULT\_KEEP\_ALIVE\_TIMEOUT}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!DEFAULT\_KEEP\_ALIVE\_TIMEOUT@{DEFAULT\_KEEP\_ALIVE\_TIMEOUT}}}\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a37d518408f8740605cd7fd56fc290663a423a42aa7cad10c0cb760e38e90129b2}\label{classPoco_1_1Net_1_1HTTPClientSession_a37d518408f8740605cd7fd56fc290663a423a42aa7cad10c0cb760e38e90129b2}} 
+D\+E\+F\+A\+U\+L\+T\+\_\+\+K\+E\+E\+P\+\_\+\+A\+L\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 251 of file H\+T\+T\+P\+Client\+Session.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a1a8193e4330290efb684c07932b7e669}\label{classPoco_1_1Net_1_1HTTPClientSession_a1a8193e4330290efb684c07932b7e669}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!HTTPClientSession@{HTTPClientSession}}
+\index{HTTPClientSession@{HTTPClientSession}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{HTTPClientSession()}{HTTPClientSession()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::\+H\+T\+T\+P\+Client\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a2f547c0e94d50aa28e07b4d74673f74b}\label{classPoco_1_1Net_1_1HTTPClientSession_a2f547c0e94d50aa28e07b4d74673f74b}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!HTTPClientSession@{HTTPClientSession}}
+\index{HTTPClientSession@{HTTPClientSession}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{HTTPClientSession()}{HTTPClientSession()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::\+H\+T\+T\+P\+Client\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&}]{socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Creates an unconnected \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a04f543b3ce15817a86282d8bc9c957db}\label{classPoco_1_1Net_1_1HTTPClientSession_a04f543b3ce15817a86282d8bc9c957db}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!HTTPClientSession@{HTTPClientSession}}
+\index{HTTPClientSession@{HTTPClientSession}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{HTTPClientSession()}{HTTPClientSession()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::\+H\+T\+T\+P\+Client\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} using the given socket. The socket must not be connected. The session takes ownership of the socket. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a5ce34661bd3a3c5cff819204be471402}\label{classPoco_1_1Net_1_1HTTPClientSession_a5ce34661bd3a3c5cff819204be471402}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!HTTPClientSession@{HTTPClientSession}}
+\index{HTTPClientSession@{HTTPClientSession}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{HTTPClientSession()}{HTTPClientSession()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::\+H\+T\+T\+P\+Client\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host,  }\item[{Poco\+::\+U\+Int16}]{port = {\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a4bb8d1f27a6a2cfdb30dfa32775ba27ca7bc48abc88c649b13f10ea2acd5eb40e}{H\+T\+T\+P\+Session\+::\+H\+T\+T\+P\+\_\+\+P\+O\+RT}}} }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} using the given address. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a2caf8d25b8d370c90bbec223818f6caa}\label{classPoco_1_1Net_1_1HTTPClientSession_a2caf8d25b8d370c90bbec223818f6caa}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!HTTPClientSession@{HTTPClientSession}}
+\index{HTTPClientSession@{HTTPClientSession}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{HTTPClientSession()}{HTTPClientSession()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::\+H\+T\+T\+P\+Client\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host,  }\item[{Poco\+::\+U\+Int16}]{port,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Net_1_1HTTPClientSession_1_1ProxyConfig}{Proxy\+Config}} \&}]{proxy\+Config }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} using the given host and port. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_ac9215e7afeaff8a819545404dfd57836}\label{classPoco_1_1Net_1_1HTTPClientSession_ac9215e7afeaff8a819545404dfd57836}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!````~HTTPClientSession@{$\sim$HTTPClientSession}}
+\index{````~HTTPClientSession@{$\sim$HTTPClientSession}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{$\sim$HTTPClientSession()}{~HTTPClientSession()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::$\sim$\+H\+T\+T\+P\+Client\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} using the given host, port and proxy configuration. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_adbd4fc6d262876a3c9001ee9aebf6abf}\label{classPoco_1_1Net_1_1HTTPClientSession_adbd4fc6d262876a3c9001ee9aebf6abf}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!bypassProxy@{bypassProxy}}
+\index{bypassProxy@{bypassProxy}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{bypassProxy()}{bypassProxy()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::bypass\+Proxy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return true iff the session uses S\+SL or T\+LS, or false otherwise. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_ac385a751dd8e830c74a1d46c96e58c78}\label{classPoco_1_1Net_1_1HTTPClientSession_ac385a751dd8e830c74a1d46c96e58c78}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!getGlobalProxyConfig@{getGlobalProxyConfig}}
+\index{getGlobalProxyConfig@{getGlobalProxyConfig}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{getGlobalProxyConfig()}{getGlobalProxyConfig()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Net_1_1HTTPClientSession_1_1ProxyConfig}{H\+T\+T\+P\+Client\+Session\+::\+Proxy\+Config}} \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::get\+Global\+Proxy\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Sets the global proxy configuration.
+
+The global proxy configuration is used by all \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} instances, unless a different proxy configuration is explicitly set.
+
+Warning\+: Setting the global proxy configuration is not thread safe. The global proxy configuration should be set at start up, before the first \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} instance is created. 
+
+Definition at line 351 of file H\+T\+T\+P\+Client\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a10e9cee355c5ae0b577f9dc519dc7d69}\label{classPoco_1_1Net_1_1HTTPClientSession_a10e9cee355c5ae0b577f9dc519dc7d69}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!getHost@{getHost}}
+\index{getHost@{getHost}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{getHost()}{getHost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::get\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the host name of the target H\+T\+TP server.
+
+The host must not be changed once there is an open connection to the server. 
+
+Definition at line 309 of file H\+T\+T\+P\+Client\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a9bf4165f166a066859825830a7c7ee78}\label{classPoco_1_1Net_1_1HTTPClientSession_a9bf4165f166a066859825830a7c7ee78}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!getKeepAliveTimeout@{getKeepAliveTimeout}}
+\index{getKeepAliveTimeout@{getKeepAliveTimeout}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{getKeepAliveTimeout()}{getKeepAliveTimeout()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::get\+Keep\+Alive\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the connection timeout for H\+T\+TP connections. 
+
+
+
+Definition at line 357 of file H\+T\+T\+P\+Client\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_ae1095be6b2fefd52fa241aa3de27516d}\label{classPoco_1_1Net_1_1HTTPClientSession_ae1095be6b2fefd52fa241aa3de27516d}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!getPort@{getPort}}
+\index{getPort@{getPort}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the port number of the target H\+T\+TP server.
+
+The port number must not be changed once there is an open connection to the server. 
+
+Definition at line 315 of file H\+T\+T\+P\+Client\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a44272d050b785cb74cdd573f8921c2dc}\label{classPoco_1_1Net_1_1HTTPClientSession_a44272d050b785cb74cdd573f8921c2dc}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!getProxyConfig@{getProxyConfig}}
+\index{getProxyConfig@{getProxyConfig}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{getProxyConfig()}{getProxyConfig()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Net_1_1HTTPClientSession_1_1ProxyConfig}{H\+T\+T\+P\+Client\+Session\+::\+Proxy\+Config}} \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::get\+Proxy\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the proxy configuration. 
+
+
+
+Definition at line 345 of file H\+T\+T\+P\+Client\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a4f3c8312bee0e4eaa31c665456e0c7d3}\label{classPoco_1_1Net_1_1HTTPClientSession_a4f3c8312bee0e4eaa31c665456e0c7d3}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!getProxyHost@{getProxyHost}}
+\index{getProxyHost@{getProxyHost}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{getProxyHost()}{getProxyHost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::get\+Proxy\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the port number of the proxy server. 
+
+
+
+Definition at line 321 of file H\+T\+T\+P\+Client\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_aa42cce8aeb837ce3db241967a81f8dee}\label{classPoco_1_1Net_1_1HTTPClientSession_aa42cce8aeb837ce3db241967a81f8dee}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!getProxyPassword@{getProxyPassword}}
+\index{getProxyPassword@{getProxyPassword}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{getProxyPassword()}{getProxyPassword()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::get\+Proxy\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the password for proxy authentication. Only Basic authentication is supported. 
+
+Definition at line 339 of file H\+T\+T\+P\+Client\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_af5a9b79a0a66a1305371c73af3e8c953}\label{classPoco_1_1Net_1_1HTTPClientSession_af5a9b79a0a66a1305371c73af3e8c953}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!getProxyPort@{getProxyPort}}
+\index{getProxyPort@{getProxyPort}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{getProxyPort()}{getProxyPort()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::get\+Proxy\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the proxy host name. 
+
+
+
+Definition at line 327 of file H\+T\+T\+P\+Client\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a910d4de5bb1e9fb34cf22825f8f9f725}\label{classPoco_1_1Net_1_1HTTPClientSession_a910d4de5bb1e9fb34cf22825f8f9f725}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!getProxyUsername@{getProxyUsername}}
+\index{getProxyUsername@{getProxyUsername}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{getProxyUsername()}{getProxyUsername()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::get\+Proxy\+Username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the username for proxy authentication. Only Basic authentication is supported. 
+
+Definition at line 333 of file H\+T\+T\+P\+Client\+Session.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a7f76572fee61e515b2501f6925dd6118}\label{classPoco_1_1Net_1_1HTTPClientSession_a7f76572fee61e515b2501f6925dd6118}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!mustReconnect@{mustReconnect}}
+\index{mustReconnect@{mustReconnect}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{mustReconnect()}{mustReconnect()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::must\+Reconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Returns the prefix prepended to the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} for proxy requests (e.\+g., \char`\"{}http\+://myhost.\+com\char`\"{}). \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a10e9d6dc90539e710575a573d6822d20}\label{classPoco_1_1Net_1_1HTTPClientSession_a10e9d6dc90539e710575a573d6822d20}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!proxyAuthenticate@{proxyAuthenticate}}
+\index{proxyAuthenticate@{proxyAuthenticate}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{proxyAuthenticate()}{proxyAuthenticate()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::proxy\+Authenticate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest}{H\+T\+T\+P\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Checks if we can reuse a persistent connection. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSClientSession_a49ca8ad6ec34c462e68a1db9832b0572}{Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Client\+Session}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a16e1a7dca73098f4b7e61b049eab3b29}\label{classPoco_1_1Net_1_1HTTPClientSession_a16e1a7dca73098f4b7e61b049eab3b29}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!proxyAuthenticateImpl@{proxyAuthenticateImpl}}
+\index{proxyAuthenticateImpl@{proxyAuthenticateImpl}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{proxyAuthenticateImpl()}{proxyAuthenticateImpl()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::proxy\+Authenticate\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest}{H\+T\+T\+P\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the proxy credentials (Proxy-\/\+Authorization header), if proxy username and password have been set. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a0cbec25865b49715530e5eee4a3f36d0}\label{classPoco_1_1Net_1_1HTTPClientSession_a0cbec25865b49715530e5eee4a3f36d0}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!proxyConnect@{proxyConnect}}
+\index{proxyConnect@{proxyConnect}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{proxyConnect()}{proxyConnect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::proxy\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the proxy credentials (Proxy-\/\+Authorization header), if proxy username and password have been set. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_afe2f6478c813361320777d265de7421b}\label{classPoco_1_1Net_1_1HTTPClientSession_afe2f6478c813361320777d265de7421b}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!proxyRequestPrefix@{proxyRequestPrefix}}
+\index{proxyRequestPrefix@{proxyRequestPrefix}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{proxyRequestPrefix()}{proxyRequestPrefix()}}
+{\footnotesize\ttfamily virtual std\+::string Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::proxy\+Request\+Prefix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Tries to re-\/connect if keep-\/alive is on. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSClientSession_a13e19718eaeb9522765e2ba5aca98081}{Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Client\+Session}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a2ac7cb4455cdeb8513fabba0803fcd83}\label{classPoco_1_1Net_1_1HTTPClientSession_a2ac7cb4455cdeb8513fabba0803fcd83}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!proxyTunnel@{proxyTunnel}}
+\index{proxyTunnel@{proxyTunnel}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{proxyTunnel()}{proxyTunnel()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::proxy\+Tunnel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sends a C\+O\+N\+N\+E\+CT request to the proxy server and returns a \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} for the resulting connection. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a43b4f42c34a2d9b3ed3263745645f99a}\label{classPoco_1_1Net_1_1HTTPClientSession_a43b4f42c34a2d9b3ed3263745645f99a}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!receiveResponse@{receiveResponse}}
+\index{receiveResponse@{receiveResponse}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{receiveResponse()}{receiveResponse()}}
+{\footnotesize\ttfamily virtual std\+::istream\& Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::receive\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPResponse}{H\+T\+T\+P\+Response}} \&}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sends the header for the given H\+T\+TP request to the server.
+
+The \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} will set the request\textquotesingle{}s Host and Keep-\/\+Alive headers accordingly.
+
+The returned output stream can be used to write the request body. The stream is valid until \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a43b4f42c34a2d9b3ed3263745645f99a}{receive\+Response()}} is called or the session is destroyed.
+
+In case a network or server failure happens while writing the request body to the returned stream, the stream state will change to bad or fail. In this case, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a333fb50be0047f2aebdcf2561c18a794}{reset()}} should be called if the session will be reused and persistent connections are enabled to ensure a new connection will be set up for the next request. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_ac8f4f4a59fb654116ab2424554a4abb8}\label{classPoco_1_1Net_1_1HTTPClientSession_ac8f4f4a59fb654116ab2424554a4abb8}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!reconnect@{reconnect}}
+\index{reconnect@{reconnect}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{reconnect()}{reconnect()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::reconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a333fb50be0047f2aebdcf2561c18a794}\label{classPoco_1_1Net_1_1HTTPClientSession_a333fb50be0047f2aebdcf2561c18a794}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!reset@{reset}}
+\index{reset@{reset}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Receives the header for the response to the previous H\+T\+TP request.
+
+The returned input stream can be used to read the response body. The stream is valid until \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a1739c6ac53078ebf6aaf4bf6cfab5c5a}{send\+Request()}} is called or the session is destroyed.
+
+It must be ensured that the response stream is fully consumed before sending a new request and persistent connections are enabled. Otherwise, the unread part of the response body may be treated as part of the next request\textquotesingle{}s response header, resulting in a Poco\+::\+Net\+::\+Message\+Exception being thrown.
+
+In case a network or server failure happens while reading the response body from the returned stream, the stream state will change to bad or fail. In this case, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a333fb50be0047f2aebdcf2561c18a794}{reset()}} should be called if the session will be reused and persistent connections are enabled to ensure a new connection will be set up for the next request. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_aeb16f52db3b2ddf4782a29fcebe40b9b}\label{classPoco_1_1Net_1_1HTTPClientSession_aeb16f52db3b2ddf4782a29fcebe40b9b}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!secure@{secure}}
+\index{secure@{secure}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{secure()}{secure()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::secure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Resets the session and closes the socket.
+
+The next request will initiate a new connection, even if persistent connections are enabled.
+
+This should be called whenever something went wrong when sending a request (e.\+g., \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a1739c6ac53078ebf6aaf4bf6cfab5c5a}{send\+Request()}} or \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession_a43b4f42c34a2d9b3ed3263745645f99a}{receive\+Response()}} throws an exception, or the request or response stream changes into fail or bad state, but not eof state). 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSClientSession_a889edc14c9e077c1ad383ce75458313d}{Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Client\+Session}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a1739c6ac53078ebf6aaf4bf6cfab5c5a}\label{classPoco_1_1Net_1_1HTTPClientSession_a1739c6ac53078ebf6aaf4bf6cfab5c5a}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!sendRequest@{sendRequest}}
+\index{sendRequest@{sendRequest}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{sendRequest()}{sendRequest()}}
+{\footnotesize\ttfamily virtual std\+::ostream\& Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::send\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequest}{H\+T\+T\+P\+Request}} \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the connection timeout for H\+T\+TP connections. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_aa11cc676a0f47cf84f454a9f5013e9c9}\label{classPoco_1_1Net_1_1HTTPClientSession_aa11cc676a0f47cf84f454a9f5013e9c9}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!setGlobalProxyConfig@{setGlobalProxyConfig}}
+\index{setGlobalProxyConfig@{setGlobalProxyConfig}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{setGlobalProxyConfig()}{setGlobalProxyConfig()}}
+{\footnotesize\ttfamily static void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::set\+Global\+Proxy\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Net_1_1HTTPClientSession_1_1ProxyConfig}{Proxy\+Config}} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the proxy configuration. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a2698c66358e1943de81a75688feb0706}\label{classPoco_1_1Net_1_1HTTPClientSession_a2698c66358e1943de81a75688feb0706}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!setHost@{setHost}}
+\index{setHost@{setHost}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{setHost()}{setHost()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::set\+Host (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host }\end{DoxyParamCaption})}
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPClientSession}{H\+T\+T\+P\+Client\+Session}} and closes the underlying socket. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a942490aa4ca7e2457d6ef784343b6a7f}\label{classPoco_1_1Net_1_1HTTPClientSession_a942490aa4ca7e2457d6ef784343b6a7f}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!setKeepAliveTimeout@{setKeepAliveTimeout}}
+\index{setKeepAliveTimeout@{setKeepAliveTimeout}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{setKeepAliveTimeout()}{setKeepAliveTimeout()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::set\+Keep\+Alive\+Timeout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout }\end{DoxyParamCaption})}
+
+
+
+Returns the global proxy configuration. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_af92377ff12882281b2f63b645b805b7c}\label{classPoco_1_1Net_1_1HTTPClientSession_af92377ff12882281b2f63b645b805b7c}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!setPort@{setPort}}
+\index{setPort@{setPort}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{setPort()}{setPort()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::set\+Port (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{port }\end{DoxyParamCaption})}
+
+
+
+Returns the host name of the target H\+T\+TP server. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_af80efd8df680a3eac649f50f1e8f1a82}\label{classPoco_1_1Net_1_1HTTPClientSession_af80efd8df680a3eac649f50f1e8f1a82}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!setProxy@{setProxy}}
+\index{setProxy@{setProxy}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{setProxy()}{setProxy()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::set\+Proxy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host,  }\item[{Poco\+::\+U\+Int16}]{port = {\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a4bb8d1f27a6a2cfdb30dfa32775ba27ca7bc48abc88c649b13f10ea2acd5eb40e}{H\+T\+T\+P\+Session\+::\+H\+T\+T\+P\+\_\+\+P\+O\+RT}}} }\end{DoxyParamCaption})}
+
+
+
+Returns the port number of the target H\+T\+TP server. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a93c4c0d1c3483cab55c2dd3f36148523}\label{classPoco_1_1Net_1_1HTTPClientSession_a93c4c0d1c3483cab55c2dd3f36148523}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!setProxyConfig@{setProxyConfig}}
+\index{setProxyConfig@{setProxyConfig}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{setProxyConfig()}{setProxyConfig()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::set\+Proxy\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Net_1_1HTTPClientSession_1_1ProxyConfig}{Proxy\+Config}} \&}]{config }\end{DoxyParamCaption})}
+
+
+
+Returns the password for proxy authentication. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a0f7cf95ecb8272f991fce9e23c3f7495}\label{classPoco_1_1Net_1_1HTTPClientSession_a0f7cf95ecb8272f991fce9e23c3f7495}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!setProxyCredentials@{setProxyCredentials}}
+\index{setProxyCredentials@{setProxyCredentials}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{setProxyCredentials()}{setProxyCredentials()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::set\+Proxy\+Credentials (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{username,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Returns the proxy port number. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a2f516bcc6ef7405c6057f625cc405ad5}\label{classPoco_1_1Net_1_1HTTPClientSession_a2f516bcc6ef7405c6057f625cc405ad5}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!setProxyHost@{setProxyHost}}
+\index{setProxyHost@{setProxyHost}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{setProxyHost()}{setProxyHost()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::set\+Proxy\+Host (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host }\end{DoxyParamCaption})}
+
+
+
+Sets the proxy host name and port number. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a77fcb9fd390ff50540798cb9cfff9e83}\label{classPoco_1_1Net_1_1HTTPClientSession_a77fcb9fd390ff50540798cb9cfff9e83}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!setProxyPassword@{setProxyPassword}}
+\index{setProxyPassword@{setProxyPassword}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{setProxyPassword()}{setProxyPassword()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::set\+Proxy\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Returns the username for proxy authentication. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_ab50972d2bd3e0979c069967de0449370}\label{classPoco_1_1Net_1_1HTTPClientSession_ab50972d2bd3e0979c069967de0449370}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!setProxyPort@{setProxyPort}}
+\index{setProxyPort@{setProxyPort}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{setProxyPort()}{setProxyPort()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::set\+Proxy\+Port (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{port }\end{DoxyParamCaption})}
+
+
+
+Sets the host name of the proxy server. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_a9cb37d841e82417e67ee1baf14e63385}\label{classPoco_1_1Net_1_1HTTPClientSession_a9cb37d841e82417e67ee1baf14e63385}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!setProxyUsername@{setProxyUsername}}
+\index{setProxyUsername@{setProxyUsername}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{setProxyUsername()}{setProxyUsername()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::set\+Proxy\+Username (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{username }\end{DoxyParamCaption})}
+
+Sets the username and password for proxy authentication. Only Basic authentication is supported. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_ab777183142f73b28e223c8f963a1ff89}\label{classPoco_1_1Net_1_1HTTPClientSession_ab777183142f73b28e223c8f963a1ff89}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!write@{write}}
+\index{write@{write}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+H\+T\+T\+P\+Client\+Session\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Connects the underlying socket to the H\+T\+TP server. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a1caa7029dcf1266db4bc4a5cc363c8e0}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Session}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPClientSession_aae91499d85b5a2d8fbe7c9439fe78fcf}\label{classPoco_1_1Net_1_1HTTPClientSession_aae91499d85b5a2d8fbe7c9439fe78fcf}} 
+\index{Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}!WebSocket@{WebSocket}}
+\index{WebSocket@{WebSocket}!Poco::Net::HTTPClientSession@{Poco::Net::HTTPClientSession}}
+\doxysubsubsection{\texorpdfstring{WebSocket}{WebSocket}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1WebSocket}{Web\+Socket}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 302 of file H\+T\+T\+P\+Client\+Session.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{HTTPClientSession_8h}{H\+T\+T\+P\+Client\+Session.\+h}}\end{DoxyCompactItemize}

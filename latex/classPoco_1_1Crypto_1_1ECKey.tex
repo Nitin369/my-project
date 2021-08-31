@@ -1,0 +1,185 @@
+\hypertarget{classPoco_1_1Crypto_1_1ECKey}{}\doxysection{Poco\+::Crypto\+::E\+C\+Key Class Reference}
+\label{classPoco_1_1Crypto_1_1ECKey}\index{Poco::Crypto::ECKey@{Poco::Crypto::ECKey}}
+
+
+{\ttfamily \#include $<$E\+C\+Key.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Crypto\+::E\+C\+Key\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Crypto\+::E\+C\+Key\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey_a4f8182cc985b22ae6379301b63af6fb7}{E\+C\+Key}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1EVPPKey}{E\+V\+P\+P\+Key}} \&key)
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey_a9ced1123f6f32175041269147b52778d}{E\+C\+Key}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1X509Certificate}{X509\+Certificate}} \&cert)
+\begin{DoxyCompactList}\small\item\em Constructs \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKeyImpl}{E\+C\+Key\+Impl}} by extracting the EC key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey_a3c984bd6d61d99c79ce3454346b9042d}{E\+C\+Key}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1PKCS12Container}{P\+K\+C\+S12\+Container}} \&cert)
+\begin{DoxyCompactList}\small\item\em Extracts the EC public key from the given certificate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey_a15c08d67292e6acfe37f3a9553aa68ad}{E\+C\+Key}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&ecc\+Group)
+\begin{DoxyCompactList}\small\item\em Extracts the EC private key from the given certificate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey_ac3666b0cbfd05c85cdb137871788f48e}{E\+C\+Key}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&public\+Key\+File, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&private\+Key\+File, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&private\+Key\+Passphrase=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey_a95d980bb4fece744fb05bbe08cbb10fc}{E\+C\+Key}} (std\+::istream $\ast$p\+Public\+Key\+Stream, std\+::istream $\ast$p\+Private\+Key\+Stream=0, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&private\+Key\+Passphrase=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey_adbab3838d0f8d7b18af7f52c605f0482}{$\sim$\+E\+C\+Key}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKeyImpl_a00c13fecf037bab7b00dc15f14d85c4d}{E\+C\+Key\+Impl\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey_a9c4aaf1abc43e4b2716fd93fdaa58daf}{impl}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey}{E\+C\+Key}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey_aea51a68de61eee19bb73138125d0bf53}{get\+Curve\+Name}} (int nid=-\/1)
+\begin{DoxyCompactList}\small\item\em Returns the impl object. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey_a9510c7d3d17cf68b1558b5290c70097d}{get\+Curve\+N\+ID}} (std\+::string \&\mbox{\hyperlink{classPoco_1_1Crypto_1_1KeyPair_a6576b80f0f0975988aea16a031c8f761}{name}})
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey_a31fbe861b077a0a29ebeb4094a098666}{has\+Curve}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Crypto_1_1KeyPair_a6576b80f0f0975988aea16a031c8f761}{name}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class stores an EC key pair, consisting of private and public key. Storage of the private key is optional.
+
+If a private key is available, the \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey}{E\+C\+Key}} can be used for decrypting data (encrypted with the public key) or computing secure digital signatures. 
+
+Definition at line 35 of file E\+C\+Key.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1ECKey_a4f8182cc985b22ae6379301b63af6fb7}\label{classPoco_1_1Crypto_1_1ECKey_a4f8182cc985b22ae6379301b63af6fb7}} 
+\index{Poco::Crypto::ECKey@{Poco::Crypto::ECKey}!ECKey@{ECKey}}
+\index{ECKey@{ECKey}!Poco::Crypto::ECKey@{Poco::Crypto::ECKey}}
+\doxysubsubsection{\texorpdfstring{ECKey()}{ECKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+E\+C\+Key\+::\+E\+C\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1EVPPKey}{E\+V\+P\+P\+Key}} \&}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1ECKey_a9ced1123f6f32175041269147b52778d}\label{classPoco_1_1Crypto_1_1ECKey_a9ced1123f6f32175041269147b52778d}} 
+\index{Poco::Crypto::ECKey@{Poco::Crypto::ECKey}!ECKey@{ECKey}}
+\index{ECKey@{ECKey}!Poco::Crypto::ECKey@{Poco::Crypto::ECKey}}
+\doxysubsubsection{\texorpdfstring{ECKey()}{ECKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+E\+C\+Key\+::\+E\+C\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1X509Certificate}{X509\+Certificate}} \&}]{cert }\end{DoxyParamCaption})}
+
+
+
+Constructs \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKeyImpl}{E\+C\+Key\+Impl}} by extracting the EC key. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1ECKey_a3c984bd6d61d99c79ce3454346b9042d}\label{classPoco_1_1Crypto_1_1ECKey_a3c984bd6d61d99c79ce3454346b9042d}} 
+\index{Poco::Crypto::ECKey@{Poco::Crypto::ECKey}!ECKey@{ECKey}}
+\index{ECKey@{ECKey}!Poco::Crypto::ECKey@{Poco::Crypto::ECKey}}
+\doxysubsubsection{\texorpdfstring{ECKey()}{ECKey()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+E\+C\+Key\+::\+E\+C\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1PKCS12Container}{P\+K\+C\+S12\+Container}} \&}]{cert }\end{DoxyParamCaption})}
+
+
+
+Extracts the EC public key from the given certificate. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1ECKey_a15c08d67292e6acfe37f3a9553aa68ad}\label{classPoco_1_1Crypto_1_1ECKey_a15c08d67292e6acfe37f3a9553aa68ad}} 
+\index{Poco::Crypto::ECKey@{Poco::Crypto::ECKey}!ECKey@{ECKey}}
+\index{ECKey@{ECKey}!Poco::Crypto::ECKey@{Poco::Crypto::ECKey}}
+\doxysubsubsection{\texorpdfstring{ECKey()}{ECKey()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+E\+C\+Key\+::\+E\+C\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{ecc\+Group }\end{DoxyParamCaption})}
+
+
+
+Extracts the EC private key from the given certificate. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1ECKey_ac3666b0cbfd05c85cdb137871788f48e}\label{classPoco_1_1Crypto_1_1ECKey_ac3666b0cbfd05c85cdb137871788f48e}} 
+\index{Poco::Crypto::ECKey@{Poco::Crypto::ECKey}!ECKey@{ECKey}}
+\index{ECKey@{ECKey}!Poco::Crypto::ECKey@{Poco::Crypto::ECKey}}
+\doxysubsubsection{\texorpdfstring{ECKey()}{ECKey()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+E\+C\+Key\+::\+E\+C\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{public\+Key\+File,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{private\+Key\+File,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{private\+Key\+Passphrase = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey}{E\+C\+Key}}. Creates a new public/private keypair using the given parameters. Can be used to sign data and verify signatures. \mbox{\Hypertarget{classPoco_1_1Crypto_1_1ECKey_a95d980bb4fece744fb05bbe08cbb10fc}\label{classPoco_1_1Crypto_1_1ECKey_a95d980bb4fece744fb05bbe08cbb10fc}} 
+\index{Poco::Crypto::ECKey@{Poco::Crypto::ECKey}!ECKey@{ECKey}}
+\index{ECKey@{ECKey}!Poco::Crypto::ECKey@{Poco::Crypto::ECKey}}
+\doxysubsubsection{\texorpdfstring{ECKey()}{ECKey()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+E\+C\+Key\+::\+E\+C\+Key (\begin{DoxyParamCaption}\item[{std\+::istream $\ast$}]{p\+Public\+Key\+Stream,  }\item[{std\+::istream $\ast$}]{p\+Private\+Key\+Stream = {\ttfamily 0},  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{private\+Key\+Passphrase = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey}{E\+C\+Key}}, by reading public and private key from the given files and using the given passphrase for the private key.
+
+Cannot be used for signing or decryption unless a private key is available.
+
+If a private key is specified, you don\textquotesingle{}t need to specify a public key file. Open\+S\+SL will auto-\/create the public key from the private key. \mbox{\Hypertarget{classPoco_1_1Crypto_1_1ECKey_adbab3838d0f8d7b18af7f52c605f0482}\label{classPoco_1_1Crypto_1_1ECKey_adbab3838d0f8d7b18af7f52c605f0482}} 
+\index{Poco::Crypto::ECKey@{Poco::Crypto::ECKey}!````~ECKey@{$\sim$ECKey}}
+\index{````~ECKey@{$\sim$ECKey}!Poco::Crypto::ECKey@{Poco::Crypto::ECKey}}
+\doxysubsubsection{\texorpdfstring{$\sim$ECKey()}{~ECKey()}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+E\+C\+Key\+::$\sim$\+E\+C\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey}{E\+C\+Key}}, by reading public and private key from the given streams and using the given passphrase for the private key.
+
+Cannot be used for signing or decryption unless a private key is available.
+
+If a private key is specified, you don\textquotesingle{}t need to specify a public key file. Open\+S\+SL will auto-\/create the public key from the private key. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1ECKey_aea51a68de61eee19bb73138125d0bf53}\label{classPoco_1_1Crypto_1_1ECKey_aea51a68de61eee19bb73138125d0bf53}} 
+\index{Poco::Crypto::ECKey@{Poco::Crypto::ECKey}!getCurveName@{getCurveName}}
+\index{getCurveName@{getCurveName}!Poco::Crypto::ECKey@{Poco::Crypto::ECKey}}
+\doxysubsubsection{\texorpdfstring{getCurveName()}{getCurveName()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Crypto\+::\+E\+C\+Key\+::get\+Curve\+Name (\begin{DoxyParamCaption}\item[{int}]{nid = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the impl object. 
+
+
+
+Definition at line 115 of file E\+C\+Key.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1ECKey_a9510c7d3d17cf68b1558b5290c70097d}\label{classPoco_1_1Crypto_1_1ECKey_a9510c7d3d17cf68b1558b5290c70097d}} 
+\index{Poco::Crypto::ECKey@{Poco::Crypto::ECKey}!getCurveNID@{getCurveNID}}
+\index{getCurveNID@{getCurveNID}!Poco::Crypto::ECKey@{Poco::Crypto::ECKey}}
+\doxysubsubsection{\texorpdfstring{getCurveNID()}{getCurveNID()}}
+{\footnotesize\ttfamily int Poco\+::\+Crypto\+::\+E\+C\+Key\+::get\+Curve\+N\+ID (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns elliptical curve name corresponding to the given nid; if nid is not found, returns empty string.
+
+If nid is -\/1, returns first curve name.
+
+If no curves are found, returns empty string; 
+
+Definition at line 121 of file E\+C\+Key.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1ECKey_a31fbe861b077a0a29ebeb4094a098666}\label{classPoco_1_1Crypto_1_1ECKey_a31fbe861b077a0a29ebeb4094a098666}} 
+\index{Poco::Crypto::ECKey@{Poco::Crypto::ECKey}!hasCurve@{hasCurve}}
+\index{hasCurve@{hasCurve}!Poco::Crypto::ECKey@{Poco::Crypto::ECKey}}
+\doxysubsubsection{\texorpdfstring{hasCurve()}{hasCurve()}}
+{\footnotesize\ttfamily bool Poco\+::\+Crypto\+::\+E\+C\+Key\+::has\+Curve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns the N\+ID of the specified curve.
+
+If name is empty, returns the first curve N\+ID and updates the name accordingly. 
+
+Definition at line 127 of file E\+C\+Key.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1ECKey_a9c4aaf1abc43e4b2716fd93fdaa58daf}\label{classPoco_1_1Crypto_1_1ECKey_a9c4aaf1abc43e4b2716fd93fdaa58daf}} 
+\index{Poco::Crypto::ECKey@{Poco::Crypto::ECKey}!impl@{impl}}
+\index{impl@{impl}!Poco::Crypto::ECKey@{Poco::Crypto::ECKey}}
+\doxysubsubsection{\texorpdfstring{impl()}{impl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKeyImpl_a00c13fecf037bab7b00dc15f14d85c4d}{E\+C\+Key\+Impl\+::\+Ptr}} Poco\+::\+Crypto\+::\+E\+C\+Key\+::impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Crypto_1_1ECKey}{E\+C\+Key}}. 
+
+
+
+Definition at line 109 of file E\+C\+Key.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Crypto/\mbox{\hyperlink{ECKey_8h}{E\+C\+Key.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,158 @@
+\hypertarget{classPoco_1_1Util_1_1IniFileConfiguration}{}\doxysection{Poco\+::Util\+::Ini\+File\+Configuration Class Reference}
+\label{classPoco_1_1Util_1_1IniFileConfiguration}\index{Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}}
+
+
+{\ttfamily \#include $<$Ini\+File\+Configuration.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Util\+::Ini\+File\+Configuration\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Util\+::Ini\+File\+Configuration\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration_a22af0aac48ff503f08ac08ca6e31a1c0}{Ini\+File\+Configuration}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration_aa428e0c668f61ac741d5d75a84b190f7}{Ini\+File\+Configuration}} (std\+::istream \&istr)
+\begin{DoxyCompactList}\small\item\em Creates an empty \mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration}{Ini\+File\+Configuration}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration_a21ed54599a2ba9c77e9542f6de9038f3}{Ini\+File\+Configuration}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration_a60f34919f904ce53cdc127df213cb109}{load}} (std\+::istream \&istr)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration_a9cf5d770c5813c64306602ae8643342f}{load}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration_a280fda1394675a0c208cdc8ba28742ba}{get\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, std\+::string \&value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration_a86df5e7067bbf7648a98674ce0ae82f7}{set\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration_a161a4715879c63596e3a64ca385f5f3f}{enumerate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_ab77c4dc36e335ec05107a155786cb91f}{Keys}} \&range) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration_abfb8ac2d707381ddea4533107c712e6f}{remove\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key)
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration_a348a80fa1d4a747dfac1c08ee1f7f36b}{$\sim$\+Ini\+File\+Configuration}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This implementation of a Configuration reads properties from a legacy Windows initialization (.ini) file.
+
+The file syntax is implemented as follows.
+\begin{DoxyItemize}
+\item a line starting with a semicolon is treated as a comment and ignored
+\item a line starting with a square bracket denotes a section key \mbox{[}$<$key$>$\mbox{]}
+\item every other line denotes a property assignment in the form 
+\end{DoxyItemize}
+
+= 
+
+The name of a property is composed of the section key and the value key, separated by a period ($<$section key$>$.
+
+).
+
+Property names are not case sensitive. Leading and trailing whitespace is removed from both keys and values. 
+
+Definition at line 38 of file Ini\+File\+Configuration.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1IniFileConfiguration_a22af0aac48ff503f08ac08ca6e31a1c0}\label{classPoco_1_1Util_1_1IniFileConfiguration_a22af0aac48ff503f08ac08ca6e31a1c0}} 
+\index{Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}!IniFileConfiguration@{IniFileConfiguration}}
+\index{IniFileConfiguration@{IniFileConfiguration}!Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}}
+\doxysubsubsection{\texorpdfstring{IniFileConfiguration()}{IniFileConfiguration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Ini\+File\+Configuration\+::\+Ini\+File\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1IniFileConfiguration_aa428e0c668f61ac741d5d75a84b190f7}\label{classPoco_1_1Util_1_1IniFileConfiguration_aa428e0c668f61ac741d5d75a84b190f7}} 
+\index{Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}!IniFileConfiguration@{IniFileConfiguration}}
+\index{IniFileConfiguration@{IniFileConfiguration}!Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}}
+\doxysubsubsection{\texorpdfstring{IniFileConfiguration()}{IniFileConfiguration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Ini\+File\+Configuration\+::\+Ini\+File\+Configuration (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})}
+
+
+
+Creates an empty \mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration}{Ini\+File\+Configuration}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1IniFileConfiguration_a21ed54599a2ba9c77e9542f6de9038f3}\label{classPoco_1_1Util_1_1IniFileConfiguration_a21ed54599a2ba9c77e9542f6de9038f3}} 
+\index{Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}!IniFileConfiguration@{IniFileConfiguration}}
+\index{IniFileConfiguration@{IniFileConfiguration}!Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}}
+\doxysubsubsection{\texorpdfstring{IniFileConfiguration()}{IniFileConfiguration()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Ini\+File\+Configuration\+::\+Ini\+File\+Configuration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+Creates an \mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration}{Ini\+File\+Configuration}} and loads the configuration data from the given stream, which must be in initialization file format. \mbox{\Hypertarget{classPoco_1_1Util_1_1IniFileConfiguration_a348a80fa1d4a747dfac1c08ee1f7f36b}\label{classPoco_1_1Util_1_1IniFileConfiguration_a348a80fa1d4a747dfac1c08ee1f7f36b}} 
+\index{Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}!````~IniFileConfiguration@{$\sim$IniFileConfiguration}}
+\index{````~IniFileConfiguration@{$\sim$IniFileConfiguration}!Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}}
+\doxysubsubsection{\texorpdfstring{$\sim$IniFileConfiguration()}{~IniFileConfiguration()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Ini\+File\+Configuration\+::$\sim$\+Ini\+File\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1IniFileConfiguration_a161a4715879c63596e3a64ca385f5f3f}\label{classPoco_1_1Util_1_1IniFileConfiguration_a161a4715879c63596e3a64ca385f5f3f}} 
+\index{Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}!enumerate@{enumerate}}
+\index{enumerate@{enumerate}!Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}}
+\doxysubsubsection{\texorpdfstring{enumerate()}{enumerate()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Ini\+File\+Configuration\+::enumerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_ab77c4dc36e335ec05107a155786cb91f}{Keys}} \&}]{range }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Sets the property with the given key to the given value. An already existing value for the key is overwritten.
+
+Must be overridden by subclasses. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a64885a63b3990485d518b37697aa1057}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1IniFileConfiguration_a280fda1394675a0c208cdc8ba28742ba}\label{classPoco_1_1Util_1_1IniFileConfiguration_a280fda1394675a0c208cdc8ba28742ba}} 
+\index{Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}!getRaw@{getRaw}}
+\index{getRaw@{getRaw}!Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}}
+\doxysubsubsection{\texorpdfstring{getRaw()}{getRaw()}}
+{\footnotesize\ttfamily bool Poco\+::\+Util\+::\+Ini\+File\+Configuration\+::get\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Loads the configuration data from the given file, which must be in initialization file format. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a07e5732151cd6056cfa15809f3a5ac55}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1IniFileConfiguration_a9cf5d770c5813c64306602ae8643342f}\label{classPoco_1_1Util_1_1IniFileConfiguration_a9cf5d770c5813c64306602ae8643342f}} 
+\index{Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}!load@{load}}
+\index{load@{load}!Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Ini\+File\+Configuration\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+Loads the configuration data from the given stream, which must be in initialization file format. \mbox{\Hypertarget{classPoco_1_1Util_1_1IniFileConfiguration_a60f34919f904ce53cdc127df213cb109}\label{classPoco_1_1Util_1_1IniFileConfiguration_a60f34919f904ce53cdc127df213cb109}} 
+\index{Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}!load@{load}}
+\index{load@{load}!Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Ini\+File\+Configuration\+::load (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})}
+
+Creates an \mbox{\hyperlink{classPoco_1_1Util_1_1IniFileConfiguration}{Ini\+File\+Configuration}} and loads the configuration data from the given file, which must be in initialization file format. \mbox{\Hypertarget{classPoco_1_1Util_1_1IniFileConfiguration_abfb8ac2d707381ddea4533107c712e6f}\label{classPoco_1_1Util_1_1IniFileConfiguration_abfb8ac2d707381ddea4533107c712e6f}} 
+\index{Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}!removeRaw@{removeRaw}}
+\index{removeRaw@{removeRaw}!Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}}
+\doxysubsubsection{\texorpdfstring{removeRaw()}{removeRaw()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Ini\+File\+Configuration\+::remove\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Returns in range the names of all subkeys under the given key. If an empty key is passed, all root level keys are returned. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a9b26c960b912239e815c0f0a2607a132}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1IniFileConfiguration_a86df5e7067bbf7648a98674ce0ae82f7}\label{classPoco_1_1Util_1_1IniFileConfiguration_a86df5e7067bbf7648a98674ce0ae82f7}} 
+\index{Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}!setRaw@{setRaw}}
+\index{setRaw@{setRaw}!Poco::Util::IniFileConfiguration@{Poco::Util::IniFileConfiguration}}
+\doxysubsubsection{\texorpdfstring{setRaw()}{setRaw()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Ini\+File\+Configuration\+::set\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+If the property with the given key exists, stores the property\textquotesingle{}s value in value and returns true. Otherwise, returns false.
+
+Must be overridden by subclasses. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a620fb5eedbf878c312d7259c9c251509}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Util/\mbox{\hyperlink{IniFileConfiguration_8h}{Ini\+File\+Configuration.\+h}}\end{DoxyCompactItemize}

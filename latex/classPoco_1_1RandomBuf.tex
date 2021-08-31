@@ -1,0 +1,60 @@
+\hypertarget{classPoco_1_1RandomBuf}{}\doxysection{Poco\+::Random\+Buf Class Reference}
+\label{classPoco_1_1RandomBuf}\index{Poco::RandomBuf@{Poco::RandomBuf}}
+
+
+{\ttfamily \#include $<$Random\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Random\+Buf\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Random\+Buf\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RandomBuf_a336c97fe59054db8f9d9ea8b3115112e}{Random\+Buf}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1RandomBuf_af4aa03d63039c02b662eb444b80d7da3}{$\sim$\+Random\+Buf}} ()
+\item 
+int \mbox{\hyperlink{classPoco_1_1RandomBuf_a17c8163369dc7199b4ae22daf55a46cd}{read\+From\+Device}} (char $\ast$buffer, std\+::streamsize length)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This streambuf generates random data. On Windows NT, the cryptographic A\+PI is used. On Unix, /dev/random is used, if available. Otherwise, a random number generator, some more-\/or-\/less random data and a S\+H\+A-\/1 digest is used to generate random data. 
+
+Definition at line 31 of file Random\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RandomBuf_a336c97fe59054db8f9d9ea8b3115112e}\label{classPoco_1_1RandomBuf_a336c97fe59054db8f9d9ea8b3115112e}} 
+\index{Poco::RandomBuf@{Poco::RandomBuf}!RandomBuf@{RandomBuf}}
+\index{RandomBuf@{RandomBuf}!Poco::RandomBuf@{Poco::RandomBuf}}
+\doxysubsubsection{\texorpdfstring{RandomBuf()}{RandomBuf()}}
+{\footnotesize\ttfamily Poco\+::\+Random\+Buf\+::\+Random\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RandomBuf_af4aa03d63039c02b662eb444b80d7da3}\label{classPoco_1_1RandomBuf_af4aa03d63039c02b662eb444b80d7da3}} 
+\index{Poco::RandomBuf@{Poco::RandomBuf}!````~RandomBuf@{$\sim$RandomBuf}}
+\index{````~RandomBuf@{$\sim$RandomBuf}!Poco::RandomBuf@{Poco::RandomBuf}}
+\doxysubsubsection{\texorpdfstring{$\sim$RandomBuf()}{~RandomBuf()}}
+{\footnotesize\ttfamily Poco\+::\+Random\+Buf\+::$\sim$\+Random\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RandomBuf_a17c8163369dc7199b4ae22daf55a46cd}\label{classPoco_1_1RandomBuf_a17c8163369dc7199b4ae22daf55a46cd}} 
+\index{Poco::RandomBuf@{Poco::RandomBuf}!readFromDevice@{readFromDevice}}
+\index{readFromDevice@{readFromDevice}!Poco::RandomBuf@{Poco::RandomBuf}}
+\doxysubsubsection{\texorpdfstring{readFromDevice()}{readFromDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Random\+Buf\+::read\+From\+Device (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{RandomStream_8h}{Random\+Stream.\+h}}\end{DoxyCompactItemize}

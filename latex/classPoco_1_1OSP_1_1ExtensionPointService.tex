@@ -1,0 +1,349 @@
+\hypertarget{classPoco_1_1OSP_1_1ExtensionPointService}{}\doxysection{Poco\+::O\+SP\+::Extension\+Point\+Service Class Reference}
+\label{classPoco_1_1OSP_1_1ExtensionPointService}\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+
+
+{\ttfamily \#include $<$Extension\+Point\+Service.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::O\+SP\+::Extension\+Point\+Service\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::O\+SP\+::Extension\+Point\+Service\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService}{Extension\+Point\+Service}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a4020470afb10a2053a3b390641e5f233}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1dfc58201a9ee916a7abd0d692b901b5}{Extension\+Point\+Service}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleEvents}{Bundle\+Events}} \&events)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a4f751f17003614a9738cfea5db0afe94}{register\+Extension\+Point}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&id, \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPoint_af5ba874ca9342c114ac73f4c0fde5c3a}{Extension\+Point\+::\+Ptr}} p\+Extension\+Point)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService}{Extension\+Point\+Service}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_aa969dfcdcc57a0ddb76c5cd24a0ffe6d}{unregister\+Extension\+Point}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&id)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_af091f0f94793d50faf04c4b1327689f4}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_adf9d950e7659656a11d84309f495b922}{isA}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&other\+Type) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a4020470afb10a2053a3b390641e5f233}{Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a2918988c9dbe7797dab9cee6007bbf37}{Const\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a0ea022340003aeaf286e3f269a0b2c64}{S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+A\+ME}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_af29ac88b373627b0d8bc3109dff5ba41}{E\+X\+T\+E\+N\+S\+I\+O\+N\+S\+\_\+\+X\+ML}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a4e403f2644d5d8a5851f2af9050e7541}{E\+X\+T\+E\+N\+S\+I\+O\+N\+S\+\_\+\+E\+L\+EM}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a812bfa2d2ace789dbdb71c371ca44189}{E\+X\+T\+E\+N\+S\+I\+O\+N\+\_\+\+E\+L\+EM}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a0e9db1673fe6d3b4c108f70828e51854}{P\+O\+I\+N\+T\+\_\+\+A\+T\+TR}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11f}{Direction}} \{ \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11fa7d776fa32ef4d0b6545c96b5cb73f911}{D\+I\+R\+\_\+\+F\+O\+R\+W\+A\+RD}}, 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11fa3301765f7cf04f9bffa25bc3c71ca1b8}{D\+I\+R\+\_\+\+R\+E\+V\+E\+R\+SE}}
+ \}
+\begin{DoxyCompactList}\small\item\em The direction in which to traverse the extension points. \end{DoxyCompactList}\item 
+typedef void(Extension\+Point\+Service\+::$\ast$ \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a08ca4aa3eca840df81fc0485382ec00d}{Generic\+Handler}}) (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&id, \mbox{\hyperlink{classPoco_1_1XML_1_1Element}{Poco\+::\+X\+M\+L\+::\+Element}} $\ast$p\+Extension\+Element)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_ad452b7d2763353913e9e655a7560bb23}{on\+Bundle\+Started}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleEvent}{Bundle\+Event}} \&event)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a33c5866c2ee95b72f878e20ee9965fdc}{on\+Bundle\+Stopped}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleEvent}{Bundle\+Event}} \&event)
+\begin{DoxyCompactList}\small\item\em Handles an E\+V\+\_\+\+B\+U\+N\+D\+L\+E\+\_\+\+S\+T\+A\+R\+T\+ED event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a38d5b45b2aca6729d9071d040785e6df}{handle\+Extensions}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle, \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a08ca4aa3eca840df81fc0485382ec00d}{Generic\+Handler}} handler, \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11f}{Direction}} dir=\mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11fa7d776fa32ef4d0b6545c96b5cb73f911}{D\+I\+R\+\_\+\+F\+O\+R\+W\+A\+RD}})
+\begin{DoxyCompactList}\small\item\em Handles an E\+V\+\_\+\+B\+U\+N\+D\+L\+E\+\_\+\+S\+T\+O\+P\+P\+ED event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a470e45b0f9f4dd10afd685c10b14ae44}{handle\+Extensions}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle, std\+::istream \&istr, \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a08ca4aa3eca840df81fc0485382ec00d}{Generic\+Handler}} handler, \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11f}{Direction}} dir=\mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11fa7d776fa32ef4d0b6545c96b5cb73f911}{D\+I\+R\+\_\+\+F\+O\+R\+W\+A\+RD}})
+\begin{DoxyCompactList}\small\item\em Handles the \char`\"{}extensions.\+xml\char`\"{} file, if it exists. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a59b9f3e7bdfcf5f7cc6325849f8c4594}{handle\+Extension}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&id, \mbox{\hyperlink{classPoco_1_1XML_1_1Element}{Poco\+::\+X\+M\+L\+::\+Element}} $\ast$p\+Extension\+Element)
+\begin{DoxyCompactList}\small\item\em Handles the \char`\"{}extensions.\+xml\char`\"{} file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a9e15e01d48aa2806914558fea43536d5}{remove\+Extension}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&id, \mbox{\hyperlink{classPoco_1_1XML_1_1Element}{Poco\+::\+X\+M\+L\+::\+Element}} $\ast$p\+Extension\+Element)
+\begin{DoxyCompactList}\small\item\em Handles a single \char`\"{}extension\char`\"{} element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPoint_af5ba874ca9342c114ac73f4c0fde5c3a}{Extension\+Point\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_ac9a3f6cb1aecec76862ae752bbdaba93}{find\+Extension\+Point}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&id)
+\begin{DoxyCompactList}\small\item\em Handles a single \char`\"{}extension\char`\"{} element for extension removal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_ae4266ddb38882963fcb74aa669a35653}{$\sim$\+Extension\+Point\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Returns the extension point with the given ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService}{Extension\+Point\+Service}} allows a bundle to define extension points (or \char`\"{}hooks\char`\"{}) where other bundles can \char`\"{}hook in\char`\"{} functionality, thus extending the bundle.
+
+The service listens for E\+V\+\_\+\+B\+U\+N\+D\+L\+E\+\_\+\+S\+T\+A\+R\+T\+ED events. For every started bundle, the service tries to retrieve the bundle\textquotesingle{}s \char`\"{}extensions.\+xml\char`\"{} file. If the file exists, the file is parsed using a D\+OM parser.
+
+The \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService}{Extension\+Point\+Service}} then iterates over all \char`\"{}extension\char`\"{} elements in that document. Every \char`\"{}extension\char`\"{} element must specify an attribute named \char`\"{}point\char`\"{} that specifies the \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPoint}{Extension\+Point}} object to invoke for this element. The service then invokes the \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPoint_a667347045bd8acccd6fac30092c33e1a}{Extension\+Point\+::handle\+Extension()}} member function with the bundle and the \char`\"{}extension\char`\"{} element as arguments.
+
+The \char`\"{}extensions.\+xml\char`\"{} file basically looks as follows\+: $<$extensions$>$ $<$extension point=\char`\"{}$<$id$>$\char`\"{}$>$
+
+$<$/extension$>$
+
+$<$/extensions$>$
+
+The service name of the \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService}{Extension\+Point\+Service}} is \char`\"{}osp.\+core.\+xp\char`\"{}. 
+
+Definition at line 41 of file Extension\+Point\+Service.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a08ca4aa3eca840df81fc0485382ec00d}\label{classPoco_1_1OSP_1_1ExtensionPointService_a08ca4aa3eca840df81fc0485382ec00d}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!GenericHandler@{GenericHandler}}
+\index{GenericHandler@{GenericHandler}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{GenericHandler}{GenericHandler}}
+{\footnotesize\ttfamily typedef void(Extension\+Point\+Service\+::$\ast$ Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::\+Generic\+Handler) (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&id, \mbox{\hyperlink{classPoco_1_1XML_1_1Element}{Poco\+::\+X\+M\+L\+::\+Element}} $\ast$p\+Extension\+Element)\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 106 of file Extension\+Point\+Service.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a4020470afb10a2053a3b390641e5f233}\label{classPoco_1_1OSP_1_1ExtensionPointService_a4020470afb10a2053a3b390641e5f233}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService}{Extension\+Point\+Service}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a4020470afb10a2053a3b390641e5f233}{Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::\+Ptr}}}
+
+
+
+Definition at line 75 of file Extension\+Point\+Service.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11f}\label{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11f}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!Direction@{Direction}}
+\index{Direction@{Direction}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{Direction}{Direction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11f}{Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::\+Direction}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The direction in which to traverse the extension points. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIR\_FORWARD@{DIR\_FORWARD}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!DIR\_FORWARD@{DIR\_FORWARD}}}\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11fa7d776fa32ef4d0b6545c96b5cb73f911}\label{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11fa7d776fa32ef4d0b6545c96b5cb73f911}} 
+D\+I\+R\+\_\+\+F\+O\+R\+W\+A\+RD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIR\_REVERSE@{DIR\_REVERSE}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!DIR\_REVERSE@{DIR\_REVERSE}}}\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11fa3301765f7cf04f9bffa25bc3c71ca1b8}\label{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11fa3301765f7cf04f9bffa25bc3c71ca1b8}} 
+D\+I\+R\+\_\+\+R\+E\+V\+E\+R\+SE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 108 of file Extension\+Point\+Service.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a1dfc58201a9ee916a7abd0d692b901b5}\label{classPoco_1_1OSP_1_1ExtensionPointService_a1dfc58201a9ee916a7abd0d692b901b5}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!ExtensionPointService@{ExtensionPointService}}
+\index{ExtensionPointService@{ExtensionPointService}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{ExtensionPointService()}{ExtensionPointService()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::\+Extension\+Point\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleEvents}{Bundle\+Events}} \&}]{events }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_ae4266ddb38882963fcb74aa669a35653}\label{classPoco_1_1OSP_1_1ExtensionPointService_ae4266ddb38882963fcb74aa669a35653}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!````~ExtensionPointService@{$\sim$ExtensionPointService}}
+\index{````~ExtensionPointService@{$\sim$ExtensionPointService}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{$\sim$ExtensionPointService()}{~ExtensionPointService()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::$\sim$\+Extension\+Point\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the extension point with the given ID. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_ac9a3f6cb1aecec76862ae752bbdaba93}\label{classPoco_1_1OSP_1_1ExtensionPointService_ac9a3f6cb1aecec76862ae752bbdaba93}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!findExtensionPoint@{findExtensionPoint}}
+\index{findExtensionPoint@{findExtensionPoint}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{findExtensionPoint()}{findExtensionPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPoint_af5ba874ca9342c114ac73f4c0fde5c3a}{Extension\+Point\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::find\+Extension\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Handles a single \char`\"{}extension\char`\"{} element for extension removal. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a59b9f3e7bdfcf5f7cc6325849f8c4594}\label{classPoco_1_1OSP_1_1ExtensionPointService_a59b9f3e7bdfcf5f7cc6325849f8c4594}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!handleExtension@{handleExtension}}
+\index{handleExtension@{handleExtension}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{handleExtension()}{handleExtension()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::handle\+Extension (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}}}]{p\+Bundle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{id,  }\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Element}{Poco\+::\+X\+M\+L\+::\+Element}} $\ast$}]{p\+Extension\+Element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Handles the \char`\"{}extensions.\+xml\char`\"{} file. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a38d5b45b2aca6729d9071d040785e6df}\label{classPoco_1_1OSP_1_1ExtensionPointService_a38d5b45b2aca6729d9071d040785e6df}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!handleExtensions@{handleExtensions}}
+\index{handleExtensions@{handleExtensions}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{handleExtensions()}{handleExtensions()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::handle\+Extensions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}}}]{p\+Bundle,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a08ca4aa3eca840df81fc0485382ec00d}{Generic\+Handler}}}]{handler,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11f}{Direction}}}]{dir = {\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11fa7d776fa32ef4d0b6545c96b5cb73f911}{D\+I\+R\+\_\+\+F\+O\+R\+W\+A\+RD}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Handles an E\+V\+\_\+\+B\+U\+N\+D\+L\+E\+\_\+\+S\+T\+O\+P\+P\+ED event. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a470e45b0f9f4dd10afd685c10b14ae44}\label{classPoco_1_1OSP_1_1ExtensionPointService_a470e45b0f9f4dd10afd685c10b14ae44}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!handleExtensions@{handleExtensions}}
+\index{handleExtensions@{handleExtensions}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{handleExtensions()}{handleExtensions()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::handle\+Extensions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}}}]{p\+Bundle,  }\item[{std\+::istream \&}]{istr,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a08ca4aa3eca840df81fc0485382ec00d}{Generic\+Handler}}}]{handler,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11f}{Direction}}}]{dir = {\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a1349c8aedb78dc26c16799c74beef11fa7d776fa32ef4d0b6545c96b5cb73f911}{D\+I\+R\+\_\+\+F\+O\+R\+W\+A\+RD}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Handles the \char`\"{}extensions.\+xml\char`\"{} file, if it exists. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_adf9d950e7659656a11d84309f495b922}\label{classPoco_1_1OSP_1_1ExtensionPointService_adf9d950e7659656a11d84309f495b922}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!isA@{isA}}
+\index{isA@{isA}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{isA()}{isA()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::isA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&}]{other\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the type information for the object\textquotesingle{}s class.
+
+Subclasses must override this member function.
+
+The implementation of \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_adf9d950e7659656a11d84309f495b922}{is\+A()}} is usually as follows\+: const std\+::type\+\_\+info\& My\+Service\+::type() const \{ return typeid(\+My\+Service); \}
+
+If a service class implements a service interface, the type information for the interface class should be returned instead\+: const std\+::type\+\_\+info\& My\+Service\+Impl\+::type() const \{ return typeid(\+My\+Service); \} 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a46c8cf8f6356230490f9ba59a5cb40e2}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_ad452b7d2763353913e9e655a7560bb23}\label{classPoco_1_1OSP_1_1ExtensionPointService_ad452b7d2763353913e9e655a7560bb23}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!onBundleStarted@{onBundleStarted}}
+\index{onBundleStarted@{onBundleStarted}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{onBundleStarted()}{onBundleStarted()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::on\+Bundle\+Started (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleEvent}{Bundle\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a33c5866c2ee95b72f878e20ee9965fdc}\label{classPoco_1_1OSP_1_1ExtensionPointService_a33c5866c2ee95b72f878e20ee9965fdc}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!onBundleStopped@{onBundleStopped}}
+\index{onBundleStopped@{onBundleStopped}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{onBundleStopped()}{onBundleStopped()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::on\+Bundle\+Stopped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleEvent}{Bundle\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Handles an E\+V\+\_\+\+B\+U\+N\+D\+L\+E\+\_\+\+S\+T\+A\+R\+T\+ED event. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a4f751f17003614a9738cfea5db0afe94}\label{classPoco_1_1OSP_1_1ExtensionPointService_a4f751f17003614a9738cfea5db0afe94}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!registerExtensionPoint@{registerExtensionPoint}}
+\index{registerExtensionPoint@{registerExtensionPoint}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{registerExtensionPoint()}{registerExtensionPoint()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::register\+Extension\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}}}]{p\+Bundle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{id,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPoint_af5ba874ca9342c114ac73f4c0fde5c3a}{Extension\+Point\+::\+Ptr}}}]{p\+Extension\+Point }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService}{Extension\+Point\+Service}}. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a9e15e01d48aa2806914558fea43536d5}\label{classPoco_1_1OSP_1_1ExtensionPointService_a9e15e01d48aa2806914558fea43536d5}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!removeExtension@{removeExtension}}
+\index{removeExtension@{removeExtension}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{removeExtension()}{removeExtension()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::remove\+Extension (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}}}]{p\+Bundle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{id,  }\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Element}{Poco\+::\+X\+M\+L\+::\+Element}} $\ast$}]{p\+Extension\+Element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Handles a single \char`\"{}extension\char`\"{} element. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_af091f0f94793d50faf04c4b1327689f4}\label{classPoco_1_1OSP_1_1ExtensionPointService_af091f0f94793d50faf04c4b1327689f4}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!type@{type}}
+\index{type@{type}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info\& Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a71ff82992f3ecfa2de28d647b15eede8}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_aa969dfcdcc57a0ddb76c5cd24a0ffe6d}\label{classPoco_1_1OSP_1_1ExtensionPointService_aa969dfcdcc57a0ddb76c5cd24a0ffe6d}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!unregisterExtensionPoint@{unregisterExtensionPoint}}
+\index{unregisterExtensionPoint@{unregisterExtensionPoint}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{unregisterExtensionPoint()}{unregisterExtensionPoint()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::unregister\+Extension\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{id }\end{DoxyParamCaption})}
+
+Registers the given extension point under the given ID. If the bundle registering the extension point is stopped, the extension point will be automatically unregistered.
+
+Throws a Poco\+::\+Exists\+Exception if an extension point with the given ID has already been registered. 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a2918988c9dbe7797dab9cee6007bbf37}\label{classPoco_1_1OSP_1_1ExtensionPointService_a2918988c9dbe7797dab9cee6007bbf37}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!ConstPtr@{ConstPtr}}
+\index{ConstPtr@{ConstPtr}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{ConstPtr}{ConstPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef \mbox{\hyperlink{classPoco_1_1OSP_1_1ExtensionPointService_a4020470afb10a2053a3b390641e5f233}{Ptr}} Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::\+Const\+Ptr}
+
+
+
+Definition at line 76 of file Extension\+Point\+Service.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a812bfa2d2ace789dbdb71c371ca44189}\label{classPoco_1_1OSP_1_1ExtensionPointService_a812bfa2d2ace789dbdb71c371ca44189}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!EXTENSION\_ELEM@{EXTENSION\_ELEM}}
+\index{EXTENSION\_ELEM@{EXTENSION\_ELEM}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{EXTENSION\_ELEM}{EXTENSION\_ELEM}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::\+E\+X\+T\+E\+N\+S\+I\+O\+N\+\_\+\+E\+L\+EM\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 98 of file Extension\+Point\+Service.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a4e403f2644d5d8a5851f2af9050e7541}\label{classPoco_1_1OSP_1_1ExtensionPointService_a4e403f2644d5d8a5851f2af9050e7541}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!EXTENSIONS\_ELEM@{EXTENSIONS\_ELEM}}
+\index{EXTENSIONS\_ELEM@{EXTENSIONS\_ELEM}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{EXTENSIONS\_ELEM}{EXTENSIONS\_ELEM}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::\+E\+X\+T\+E\+N\+S\+I\+O\+N\+S\+\_\+\+E\+L\+EM\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 97 of file Extension\+Point\+Service.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_af29ac88b373627b0d8bc3109dff5ba41}\label{classPoco_1_1OSP_1_1ExtensionPointService_af29ac88b373627b0d8bc3109dff5ba41}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!EXTENSIONS\_XML@{EXTENSIONS\_XML}}
+\index{EXTENSIONS\_XML@{EXTENSIONS\_XML}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{EXTENSIONS\_XML}{EXTENSIONS\_XML}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::\+E\+X\+T\+E\+N\+S\+I\+O\+N\+S\+\_\+\+X\+ML\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 96 of file Extension\+Point\+Service.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a0e9db1673fe6d3b4c108f70828e51854}\label{classPoco_1_1OSP_1_1ExtensionPointService_a0e9db1673fe6d3b4c108f70828e51854}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!POINT\_ATTR@{POINT\_ATTR}}
+\index{POINT\_ATTR@{POINT\_ATTR}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{POINT\_ATTR}{POINT\_ATTR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::\+P\+O\+I\+N\+T\+\_\+\+A\+T\+TR\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 99 of file Extension\+Point\+Service.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ExtensionPointService_a0ea022340003aeaf286e3f269a0b2c64}\label{classPoco_1_1OSP_1_1ExtensionPointService_a0ea022340003aeaf286e3f269a0b2c64}} 
+\index{Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}!SERVICE\_NAME@{SERVICE\_NAME}}
+\index{SERVICE\_NAME@{SERVICE\_NAME}!Poco::OSP::ExtensionPointService@{Poco::OSP::ExtensionPointService}}
+\doxysubsubsection{\texorpdfstring{SERVICE\_NAME}{SERVICE\_NAME}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+O\+S\+P\+::\+Extension\+Point\+Service\+::\+S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+A\+ME\hspace{0.3cm}{\ttfamily [static]}}
+
+Unregisters the extension point with the given ID.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the extension point with the given ID does not exist. 
+
+Definition at line 95 of file Extension\+Point\+Service.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{ExtensionPointService_8h}{Extension\+Point\+Service.\+h}}\end{DoxyCompactItemize}

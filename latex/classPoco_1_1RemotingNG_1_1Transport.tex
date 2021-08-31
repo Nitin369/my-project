@@ -1,0 +1,290 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1Transport}{}\doxysection{Poco\+::Remoting\+NG\+::Transport Class Reference}
+\label{classPoco_1_1RemotingNG_1_1Transport}\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+
+
+{\ttfamily \#include $<$Transport.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::Transport\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::Transport\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_afac7eb42f78c45d41096307467768450}{Ptr}}
+\item 
+typedef std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_ac02975dc99bbc3b0223800607b5eb241}{Name\+Value\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a36f82f92fa20f7ff6ebb1d6a1ef914d9}{Transport}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a612cf050604d54e7391c3d5499512def}{$\sim$\+Transport}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a00fd1fa2bdf04412d7d99a226758c90a}{end\+Point}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a5149443282c5e3e8321efa0f8100347a}{connect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a00fd1fa2bdf04412d7d99a226758c90a}{end\+Point}})=0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a4d2d83026d6966a82e32fbbae36c14e6}{disconnect}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_af15c91b7f595855d06b6ee7e717ddea6}{connected}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Disconnects the transport. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a15503615c6875f4a62257792e6e9288e}{begin\+Message}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&message\+Name, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}} message\+Type)=0
+\begin{DoxyCompactList}\small\item\em Returns true iff the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} is connected to a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}, false otherwise. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_aa6d52470d41cd5745fd6718ab3b410ad}{send\+Message}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&message\+Name, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}} message\+Type)=0
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_ab3d447faa49ee0fd0368a0410be164e7}{begin\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&message\+Name, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}} message\+Type)=0
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_acfb2df40ad48ef04c43997a193e5208f}{send\+Request}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&message\+Name, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}} message\+Type)=0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a2c14a664920b61048982d1c779bcb76a}{end\+Request}} ()=0
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_aa19377ca46f2d8bdfb576f2c83d1f2ac}{lock}} ()
+\begin{DoxyCompactList}\small\item\em Ends a request -\/ reply message exchange. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_aa93494bba04ca8d6280c691a300a5d7d}{unlock}} ()
+\begin{DoxyCompactList}\small\item\em Locks the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}\textquotesingle{}s mutex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} objects are responsible for setting up and maintaining a network (or other kind of) connection between \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}} objects on the client side and \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} objects on the server side, and for exchanging messages over that connection.
+
+A \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} object also maintains \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} and \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}} objects.
+
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} objects must support two message exchange patterns (M\+EP)\+:
+\begin{DoxyItemize}
+\item One-\/\+Way\+: a message is sent from the client to the server and the client does not expect to receive a reply from the server. With this pattern, the server has no way to provide status information back to the client, and the client has no way to know whether the call was successful.
+\item Request-\/\+Reply\+: a message is sent from the client to the server and the client expects to receive a reply from the server. The reply may be a regular reply containing a return value and/or output parameters, or it may be a fault message, reporting an exception to the client.
+\end{DoxyItemize}
+
+Provided a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} object is already connected, sending a one-\/way message is a three-\/step process\+:
+\begin{DoxyEnumerate}
+\item A new one-\/way message is started with a call to \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a15503615c6875f4a62257792e6e9288e}{begin\+Message()}}. This will prepare the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} to deliver a one-\/way message to the server, as well as setting up a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} for creating the one-\/way message.
+\item The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} returned by \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a15503615c6875f4a62257792e6e9288e}{begin\+Message()}} is used to compose the actual message.
+\item The one-\/way message is delivered to the server with a call to \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_aa6d52470d41cd5745fd6718ab3b410ad}{send\+Message()}}. This completes the message exchange.
+\end{DoxyEnumerate}
+
+Doing a request-\/reply message exchange is a five-\/step process.
+\begin{DoxyEnumerate}
+\item A new request message is started with a call to \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_ab3d447faa49ee0fd0368a0410be164e7}{begin\+Request()}}. This will prepare the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} to deliver a request message, as well as setting up a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} for creating the request message.
+\item The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} returned by \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_ab3d447faa49ee0fd0368a0410be164e7}{begin\+Request()}} is used to compose the actual message.
+\item The request is delivered to the server with a call to \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_acfb2df40ad48ef04c43997a193e5208f}{send\+Request()}}. After delivering the request, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_acfb2df40ad48ef04c43997a193e5208f}{send\+Request()}} will wait for a reply from the server, and set up a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}} for reading the reply.
+\item The reply message is read using the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}} returned by \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_acfb2df40ad48ef04c43997a193e5208f}{send\+Request()}}.
+\item A call to \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a2c14a664920b61048982d1c779bcb76a}{end\+Request()}} ends the message exchange.
+\end{DoxyEnumerate}
+
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} objects must be able to deal with incomplete message exchange sequences. For example, if an exception occurs between a call to \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_ab3d447faa49ee0fd0368a0410be164e7}{begin\+Request()}} and the corresponding call to \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_acfb2df40ad48ef04c43997a193e5208f}{send\+Request()}}, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_acfb2df40ad48ef04c43997a193e5208f}{send\+Request()}} and \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a2c14a664920b61048982d1c779bcb76a}{end\+Request()}} will not be called for this exchange. When \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_ab3d447faa49ee0fd0368a0410be164e7}{begin\+Request()}} or \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a15503615c6875f4a62257792e6e9288e}{begin\+Message()}} is called the next time, it must do the necessary cleanup to reset the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} object to a well-\/defined state. 
+
+Definition at line 41 of file Transport.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_ac02975dc99bbc3b0223800607b5eb241}\label{classPoco_1_1RemotingNG_1_1Transport_ac02975dc99bbc3b0223800607b5eb241}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!NameValueMap@{NameValueMap}}
+\index{NameValueMap@{NameValueMap}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{NameValueMap}{NameValueMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string,std\+::string$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_ac02975dc99bbc3b0223800607b5eb241}{Poco\+::\+Remoting\+N\+G\+::\+Transport\+::\+Name\+Value\+Map}}}
+
+
+
+Definition at line 93 of file Transport.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_afac7eb42f78c45d41096307467768450}\label{classPoco_1_1RemotingNG_1_1Transport_afac7eb42f78c45d41096307467768450}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_afac7eb42f78c45d41096307467768450}{Poco\+::\+Remoting\+N\+G\+::\+Transport\+::\+Ptr}}}
+
+
+
+Definition at line 92 of file Transport.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_a36f82f92fa20f7ff6ebb1d6a1ef914d9}\label{classPoco_1_1RemotingNG_1_1Transport_a36f82f92fa20f7ff6ebb1d6a1ef914d9}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!Transport@{Transport}}
+\index{Transport@{Transport}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{Transport()}{Transport()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+Transport\+::\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_a612cf050604d54e7391c3d5499512def}\label{classPoco_1_1RemotingNG_1_1Transport_a612cf050604d54e7391c3d5499512def}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!````~Transport@{$\sim$Transport}}
+\index{````~Transport@{$\sim$Transport}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{$\sim$Transport()}{~Transport()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Remoting\+N\+G\+::\+Transport\+::$\sim$\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Transport_adb0ac4c8d8fe041cb413bbad78ce4ab4}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Transport}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_a15503615c6875f4a62257792e6e9288e}\label{classPoco_1_1RemotingNG_1_1Transport_a15503615c6875f4a62257792e6e9288e}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!beginMessage@{beginMessage}}
+\index{beginMessage@{beginMessage}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{beginMessage()}{beginMessage()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}}\& Poco\+::\+Remoting\+N\+G\+::\+Transport\+::begin\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{message\+Name,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}}}]{message\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns true iff the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} is connected to a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}, false otherwise. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Transport_a98b70c17ecc106e83e0f20237e6d976f}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_ab3d447faa49ee0fd0368a0410be164e7}\label{classPoco_1_1RemotingNG_1_1Transport_ab3d447faa49ee0fd0368a0410be164e7}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!beginRequest@{beginRequest}}
+\index{beginRequest@{beginRequest}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{beginRequest()}{beginRequest()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}}\& Poco\+::\+Remoting\+N\+G\+::\+Transport\+::begin\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{message\+Name,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}}}]{message\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Deliver the one-\/way message to the server and complete the message exchange.
+
+All parameters must have the same value as the parameters passed to \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_a15503615c6875f4a62257792e6e9288e}{begin\+Message()}}. If not, the behavior is undefined. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Transport_a4e335096c3646f7f644cdfee918a6e63}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_a5149443282c5e3e8321efa0f8100347a}\label{classPoco_1_1RemotingNG_1_1Transport_a5149443282c5e3e8321efa0f8100347a}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!connect@{connect}}
+\index{connect@{connect}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Remoting\+N\+G\+::\+Transport\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{end\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the endpoint to which this \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} is connected. If not connected, an empty string will be returned. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Transport_aeebde2b47c9ebd07e016bc34580f6f5a}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_af15c91b7f595855d06b6ee7e717ddea6}\label{classPoco_1_1RemotingNG_1_1Transport_af15c91b7f595855d06b6ee7e717ddea6}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!connected@{connected}}
+\index{connected@{connected}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{connected()}{connected()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Remoting\+N\+G\+::\+Transport\+::connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Disconnects the transport. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Transport_aaa8c63465e14222e3acaaa681c5dbd74}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_a4d2d83026d6966a82e32fbbae36c14e6}\label{classPoco_1_1RemotingNG_1_1Transport_a4d2d83026d6966a82e32fbbae36c14e6}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Remoting\+N\+G\+::\+Transport\+::disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Connects the transport to the given endpoint.
+
+The format of the endpoint is specific to the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}. Some \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} implementations may accept a complete \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} as endpoint. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Transport_a224085b1d13c0d52282977a24dcad2c9}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_a00fd1fa2bdf04412d7d99a226758c90a}\label{classPoco_1_1RemotingNG_1_1Transport_a00fd1fa2bdf04412d7d99a226758c90a}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!endPoint@{endPoint}}
+\index{endPoint@{endPoint}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{endPoint()}{endPoint()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Remoting\+N\+G\+::\+Transport\+::end\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Transport_a650219c6ba33477aafd663e24f4410ef}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_a2c14a664920b61048982d1c779bcb76a}\label{classPoco_1_1RemotingNG_1_1Transport_a2c14a664920b61048982d1c779bcb76a}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!endRequest@{endRequest}}
+\index{endRequest@{endRequest}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{endRequest()}{endRequest()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Remoting\+N\+G\+::\+Transport\+::end\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Deliver the request message to the server, wait for a response and prepare a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}} for reading the reply.
+
+All parameters must have the same value as the parameters passed to \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport_ab3d447faa49ee0fd0368a0410be164e7}{begin\+Request()}}. If not, the behavior is undefined.
+
+Returns a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}} for reading the reply message. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Transport_a741e4772db79ccf429adb8eb5e08154e}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_aa19377ca46f2d8bdfb576f2c83d1f2ac}\label{classPoco_1_1RemotingNG_1_1Transport_aa19377ca46f2d8bdfb576f2c83d1f2ac}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!lock@{lock}}
+\index{lock@{lock}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Transport\+::lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ends a request -\/ reply message exchange. 
+
+
+
+Definition at line 166 of file Transport.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_aa6d52470d41cd5745fd6718ab3b410ad}\label{classPoco_1_1RemotingNG_1_1Transport_aa6d52470d41cd5745fd6718ab3b410ad}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Remoting\+N\+G\+::\+Transport\+::send\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{message\+Name,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}}}]{message\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Prepare a one-\/way message and set up a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} for writing the request.
+
+The message\+Type should be M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+Q\+U\+E\+ST or M\+E\+S\+S\+A\+G\+E\+\_\+\+E\+V\+E\+NT. Whether this is checked is up to the actual implementation.
+
+Returns a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} for composing the message.
+
+No response message will be sent back for a one-\/way request. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Transport_a633437f7ea764ac8d481bfec45d62439}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_acfb2df40ad48ef04c43997a193e5208f}\label{classPoco_1_1RemotingNG_1_1Transport_acfb2df40ad48ef04c43997a193e5208f}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!sendRequest@{sendRequest}}
+\index{sendRequest@{sendRequest}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{sendRequest()}{sendRequest()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}}\& Poco\+::\+Remoting\+N\+G\+::\+Transport\+::send\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{message\+Name,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1SerializerBase_a34ca6c6c1593497310cb202332eb99f0}{Serializer\+Base\+::\+Message\+Type}}}]{message\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Prepare a two-\/way (request -\/ reply) message exchange and set up a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} for writing the request.
+
+The message\+Type should be M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+Q\+U\+E\+ST or M\+E\+S\+S\+A\+G\+E\+\_\+\+E\+V\+E\+NT. Whether this is checked is up to the actual implementation.
+
+Returns a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Serializer}{Serializer}} for composing the request message. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Transport_adc20ed33b81330c2d9fc002d2d08525f}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Transport}}.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Transport_aa93494bba04ca8d6280c691a300a5d7d}\label{classPoco_1_1RemotingNG_1_1Transport_aa93494bba04ca8d6280c691a300a5d7d}} 
+\index{Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}!unlock@{unlock}}
+\index{unlock@{unlock}!Poco::RemotingNG::Transport@{Poco::RemotingNG::Transport}}
+\doxysubsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Transport\+::unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Locks the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}\textquotesingle{}s mutex. 
+
+
+
+Definition at line 172 of file Transport.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{Transport_8h}{Transport.\+h}}\end{DoxyCompactItemize}

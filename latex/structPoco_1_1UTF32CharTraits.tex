@@ -1,0 +1,298 @@
+\hypertarget{structPoco_1_1UTF32CharTraits}{}\doxysection{Poco\+::U\+T\+F32\+Char\+Traits Struct Reference}
+\label{structPoco_1_1UTF32CharTraits}\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+
+
+{\ttfamily \#include $<$U\+T\+F\+String.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::fpos$<$ std\+::mbstate\+\_\+t $>$ \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a68c518faa39bb86d05bc97778b09dd6e}{u32streampos}}
+\item 
+typedef U\+Int32 \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}}
+\item 
+typedef int \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}}
+\item 
+typedef std\+::streamoff \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a49b3be0d06c1cff78495ead9095b89c6}{off\+\_\+type}}
+\item 
+typedef \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a68c518faa39bb86d05bc97778b09dd6e}{u32streampos}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a94c2452a2d80ec25c63b9e18296ace9f}{pos\+\_\+type}}
+\item 
+typedef std\+::mbstate\+\_\+t \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a5a88d9a6f3e5e1eef1b7fd45ac960d65}{state\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a903031906db3c84b345f728207826dba}{assign}} (\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} \&c1, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} \&c2)
+\item 
+static bool \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_adc9fb6742396a87ac7e638094dbc909a}{eq}} (\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} c1, \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} c2)
+\item 
+static bool \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a3cf66a83c68415d971395de97eaccb0d}{lt}} (\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} c1, \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} c2)
+\item 
+static int \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_af4104867934e551dc02ef1e7fb55b812}{compare}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$s1, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$s2, size\+\_\+t n)
+\item 
+static size\+\_\+t \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a4fe8a87833b306d283910057c033d6f0}{length}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$s)
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$ \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a10c1e83f73928625357fed51b57cd716}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$s, size\+\_\+t n, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} \&a)
+\item 
+static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$ \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a7f44122aebfa50af4fd4a6e4218c2de4}{move}} (\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$s1, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$s2, size\+\_\+t n)
+\item 
+static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$ \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_acb6885d9333b1b459ddecc78f803fccc}{copy}} (\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$s1, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$s2, size\+\_\+t n)
+\item 
+static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$ \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_aed209acb1437a30ad52fc1abda08923a}{assign}} (\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$s, size\+\_\+t n, \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} a)
+\item 
+static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_afc79734eade5d20b1b8ce7fcc75b49ef}{not\+\_\+eof}} (\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}} c)
+\item 
+static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a673269565facf583196f46b41be7dad1}{to\+\_\+char\+\_\+type}} (\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}} c)
+\item 
+static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a59738f95f9a3dbe61059669d5a1e0aad}{to\+\_\+int\+\_\+type}} (\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} c)
+\item 
+static bool \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a640d93c4c58d5906cc9d39a6f4892944}{eq\+\_\+int\+\_\+type}} (\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}} c1, \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}} c2)
+\item 
+static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ae0726637ba0d2bc0208b19942a2235c4}{eof}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 148 of file U\+T\+F\+String.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}\label{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!char\_type@{char\_type}}
+\index{char\_type@{char\_type}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{char\_type}{char\_type}}
+{\footnotesize\ttfamily typedef U\+Int32 \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{Poco\+::\+U\+T\+F32\+Char\+Traits\+::char\+\_\+type}}}
+
+
+
+Definition at line 151 of file U\+T\+F\+String.\+h.
+
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}\label{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!int\_type@{int\_type}}
+\index{int\_type@{int\_type}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{int\_type}{int\_type}}
+{\footnotesize\ttfamily typedef int \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{Poco\+::\+U\+T\+F32\+Char\+Traits\+::int\+\_\+type}}}
+
+
+
+Definition at line 152 of file U\+T\+F\+String.\+h.
+
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a49b3be0d06c1cff78495ead9095b89c6}\label{structPoco_1_1UTF32CharTraits_a49b3be0d06c1cff78495ead9095b89c6}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!off\_type@{off\_type}}
+\index{off\_type@{off\_type}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{off\_type}{off\_type}}
+{\footnotesize\ttfamily typedef std\+::streamoff \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a49b3be0d06c1cff78495ead9095b89c6}{Poco\+::\+U\+T\+F32\+Char\+Traits\+::off\+\_\+type}}}
+
+
+
+Definition at line 153 of file U\+T\+F\+String.\+h.
+
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a94c2452a2d80ec25c63b9e18296ace9f}\label{structPoco_1_1UTF32CharTraits_a94c2452a2d80ec25c63b9e18296ace9f}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!pos\_type@{pos\_type}}
+\index{pos\_type@{pos\_type}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{pos\_type}{pos\_type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a68c518faa39bb86d05bc97778b09dd6e}{u32streampos}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a94c2452a2d80ec25c63b9e18296ace9f}{Poco\+::\+U\+T\+F32\+Char\+Traits\+::pos\+\_\+type}}}
+
+
+
+Definition at line 154 of file U\+T\+F\+String.\+h.
+
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a5a88d9a6f3e5e1eef1b7fd45ac960d65}\label{structPoco_1_1UTF32CharTraits_a5a88d9a6f3e5e1eef1b7fd45ac960d65}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!state\_type@{state\_type}}
+\index{state\_type@{state\_type}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{state\_type}{state\_type}}
+{\footnotesize\ttfamily typedef std\+::mbstate\+\_\+t \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a5a88d9a6f3e5e1eef1b7fd45ac960d65}{Poco\+::\+U\+T\+F32\+Char\+Traits\+::state\+\_\+type}}}
+
+
+
+Definition at line 155 of file U\+T\+F\+String.\+h.
+
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a68c518faa39bb86d05bc97778b09dd6e}\label{structPoco_1_1UTF32CharTraits_a68c518faa39bb86d05bc97778b09dd6e}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!u32streampos@{u32streampos}}
+\index{u32streampos@{u32streampos}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{u32streampos}{u32streampos}}
+{\footnotesize\ttfamily typedef std\+::fpos$<$std\+::mbstate\+\_\+t$>$ \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a68c518faa39bb86d05bc97778b09dd6e}{Poco\+::\+U\+T\+F32\+Char\+Traits\+::u32streampos}}}
+
+
+
+Definition at line 150 of file U\+T\+F\+String.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a903031906db3c84b345f728207826dba}\label{structPoco_1_1UTF32CharTraits_a903031906db3c84b345f728207826dba}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!assign@{assign}}
+\index{assign@{assign}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+U\+T\+F32\+Char\+Traits\+::assign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} \&}]{c1,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} \&}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 157 of file U\+T\+F\+String.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_aed209acb1437a30ad52fc1abda08923a}\label{structPoco_1_1UTF32CharTraits_aed209acb1437a30ad52fc1abda08923a}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!assign@{assign}}
+\index{assign@{assign}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}}$\ast$ Poco\+::\+U\+T\+F32\+Char\+Traits\+::assign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$}]{s,  }\item[{size\+\_\+t}]{n,  }\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 230 of file U\+T\+F\+String.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_af4104867934e551dc02ef1e7fb55b812}\label{structPoco_1_1UTF32CharTraits_af4104867934e551dc02ef1e7fb55b812}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!compare@{compare}}
+\index{compare@{compare}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily static int Poco\+::\+U\+T\+F32\+Char\+Traits\+::compare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$}]{s1,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$}]{s2,  }\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 172 of file U\+T\+F\+String.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_acb6885d9333b1b459ddecc78f803fccc}\label{structPoco_1_1UTF32CharTraits_acb6885d9333b1b459ddecc78f803fccc}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!copy@{copy}}
+\index{copy@{copy}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}}$\ast$ Poco\+::\+U\+T\+F32\+Char\+Traits\+::copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$}]{s1,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$}]{s2,  }\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 221 of file U\+T\+F\+String.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_ae0726637ba0d2bc0208b19942a2235c4}\label{structPoco_1_1UTF32CharTraits_ae0726637ba0d2bc0208b19942a2235c4}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!eof@{eof}}
+\index{eof@{eof}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{eof()}{eof()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}} Poco\+::\+U\+T\+F32\+Char\+Traits\+::eof (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 258 of file U\+T\+F\+String.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_adc9fb6742396a87ac7e638094dbc909a}\label{structPoco_1_1UTF32CharTraits_adc9fb6742396a87ac7e638094dbc909a}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!eq@{eq}}
+\index{eq@{eq}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{eq()}{eq()}}
+{\footnotesize\ttfamily static bool Poco\+::\+U\+T\+F32\+Char\+Traits\+::eq (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}}}]{c1,  }\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 162 of file U\+T\+F\+String.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a640d93c4c58d5906cc9d39a6f4892944}\label{structPoco_1_1UTF32CharTraits_a640d93c4c58d5906cc9d39a6f4892944}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!eq\_int\_type@{eq\_int\_type}}
+\index{eq\_int\_type@{eq\_int\_type}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{eq\_int\_type()}{eq\_int\_type()}}
+{\footnotesize\ttfamily static bool Poco\+::\+U\+T\+F32\+Char\+Traits\+::eq\+\_\+int\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}}}]{c1,  }\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 253 of file U\+T\+F\+String.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a10c1e83f73928625357fed51b57cd716}\label{structPoco_1_1UTF32CharTraits_a10c1e83f73928625357fed51b57cd716}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!find@{find}}
+\index{find@{find}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}}$\ast$ Poco\+::\+U\+T\+F32\+Char\+Traits\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$}]{s,  }\item[{size\+\_\+t}]{n,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 192 of file U\+T\+F\+String.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a4fe8a87833b306d283910057c033d6f0}\label{structPoco_1_1UTF32CharTraits_a4fe8a87833b306d283910057c033d6f0}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!length@{length}}
+\index{length@{length}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily static size\+\_\+t Poco\+::\+U\+T\+F32\+Char\+Traits\+::length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 184 of file U\+T\+F\+String.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a3cf66a83c68415d971395de97eaccb0d}\label{structPoco_1_1UTF32CharTraits_a3cf66a83c68415d971395de97eaccb0d}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!lt@{lt}}
+\index{lt@{lt}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{lt()}{lt()}}
+{\footnotesize\ttfamily static bool Poco\+::\+U\+T\+F32\+Char\+Traits\+::lt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}}}]{c1,  }\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 167 of file U\+T\+F\+String.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a7f44122aebfa50af4fd4a6e4218c2de4}\label{structPoco_1_1UTF32CharTraits_a7f44122aebfa50af4fd4a6e4218c2de4}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!move@{move}}
+\index{move@{move}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}}$\ast$ Poco\+::\+U\+T\+F32\+Char\+Traits\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$}]{s1,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} $\ast$}]{s2,  }\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 203 of file U\+T\+F\+String.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_afc79734eade5d20b1b8ce7fcc75b49ef}\label{structPoco_1_1UTF32CharTraits_afc79734eade5d20b1b8ce7fcc75b49ef}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!not\_eof@{not\_eof}}
+\index{not\_eof@{not\_eof}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{not\_eof()}{not\_eof()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}} Poco\+::\+U\+T\+F32\+Char\+Traits\+::not\+\_\+eof (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 238 of file U\+T\+F\+String.\+h.
+
+Here is the call graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a673269565facf583196f46b41be7dad1}\label{structPoco_1_1UTF32CharTraits_a673269565facf583196f46b41be7dad1}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!to\_char\_type@{to\_char\_type}}
+\index{to\_char\_type@{to\_char\_type}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{to\_char\_type()}{to\_char\_type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}} Poco\+::\+U\+T\+F32\+Char\+Traits\+::to\+\_\+char\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 243 of file U\+T\+F\+String.\+h.
+
+Here is the call graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{structPoco_1_1UTF32CharTraits_a59738f95f9a3dbe61059669d5a1e0aad}\label{structPoco_1_1UTF32CharTraits_a59738f95f9a3dbe61059669d5a1e0aad}} 
+\index{Poco::UTF32CharTraits@{Poco::UTF32CharTraits}!to\_int\_type@{to\_int\_type}}
+\index{to\_int\_type@{to\_int\_type}!Poco::UTF32CharTraits@{Poco::UTF32CharTraits}}
+\doxysubsubsection{\texorpdfstring{to\_int\_type()}{to\_int\_type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structPoco_1_1UTF32CharTraits_a2032c5ece3204567a76fc048a609c151}{int\+\_\+type}} Poco\+::\+U\+T\+F32\+Char\+Traits\+::to\+\_\+int\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoco_1_1UTF32CharTraits_ac92c076e8f72664251a69e082acf0d6d}{char\+\_\+type}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 248 of file U\+T\+F\+String.\+h.
+
+Here is the call graph for this function\+:
+% FIG 13
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{UTFString_8h}{U\+T\+F\+String.\+h}}\end{DoxyCompactItemize}

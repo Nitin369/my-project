@@ -1,0 +1,147 @@
+\hypertarget{classPoco_1_1OSP_1_1Configuration}{}\doxysection{Poco\+::O\+SP\+::Configuration Class Reference}
+\label{classPoco_1_1OSP_1_1Configuration}\index{Poco::OSP::Configuration@{Poco::OSP::Configuration}}
+
+
+{\ttfamily \#include $<$Configuration.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::O\+SP\+::Configuration\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::O\+SP\+::Configuration\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration}{Configuration}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_af4c9daf6a954f9ad1c3bcc2f2e778ae4}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_a2fb70fdec5cf31a092dd74efabfdc216}{Configuration}} (\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Poco\+::\+Util\+::\+Abstract\+Configuration}} $\ast$p\+Config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_af4c9daf6a954f9ad1c3bcc2f2e778ae4}{Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_a3dabd088891e47b471c21a41cf7d0a2e}{Const\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_a688ecee1ae8ae308cc28d4bf1cf62c5f}{get\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, std\+::string \&value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration}{Configuration}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_a3a66570aeb7f60623b4c7c63f13c0391}{set\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_a5e329e2c6df7e2d0f9004d9f2f6d0243}{enumerate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_ab77c4dc36e335ec05107a155786cb91f}{Keys}} \&range) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_a1d8c18258a73d90a7c68e07ed4261b82}{remove\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_a1d908e0db126f9627bf3dbb48db43a80}{$\sim$\+Configuration}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A simple wrapper class for \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Poco\+::\+Util\+::\+Abstract\+Configuration}}, used by the \mbox{\hyperlink{classPoco_1_1OSP_1_1PreferencesService}{Preferences\+Service}}. 
+
+Definition at line 32 of file Configuration.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Configuration_af4c9daf6a954f9ad1c3bcc2f2e778ae4}\label{classPoco_1_1OSP_1_1Configuration_af4c9daf6a954f9ad1c3bcc2f2e778ae4}} 
+\index{Poco::OSP::Configuration@{Poco::OSP::Configuration}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::OSP::Configuration@{Poco::OSP::Configuration}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration}{Configuration}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_af4c9daf6a954f9ad1c3bcc2f2e778ae4}{Poco\+::\+O\+S\+P\+::\+Configuration\+::\+Ptr}}}
+
+
+
+Definition at line 37 of file Configuration.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Configuration_a2fb70fdec5cf31a092dd74efabfdc216}\label{classPoco_1_1OSP_1_1Configuration_a2fb70fdec5cf31a092dd74efabfdc216}} 
+\index{Poco::OSP::Configuration@{Poco::OSP::Configuration}!Configuration@{Configuration}}
+\index{Configuration@{Configuration}!Poco::OSP::Configuration@{Poco::OSP::Configuration}}
+\doxysubsubsection{\texorpdfstring{Configuration()}{Configuration()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Configuration\+::\+Configuration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Poco\+::\+Util\+::\+Abstract\+Configuration}} $\ast$}]{p\+Config }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Configuration_a1d908e0db126f9627bf3dbb48db43a80}\label{classPoco_1_1OSP_1_1Configuration_a1d908e0db126f9627bf3dbb48db43a80}} 
+\index{Poco::OSP::Configuration@{Poco::OSP::Configuration}!````~Configuration@{$\sim$Configuration}}
+\index{````~Configuration@{$\sim$Configuration}!Poco::OSP::Configuration@{Poco::OSP::Configuration}}
+\doxysubsubsection{\texorpdfstring{$\sim$Configuration()}{~Configuration()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Configuration\+::$\sim$\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Configuration_a5e329e2c6df7e2d0f9004d9f2f6d0243}\label{classPoco_1_1OSP_1_1Configuration_a5e329e2c6df7e2d0f9004d9f2f6d0243}} 
+\index{Poco::OSP::Configuration@{Poco::OSP::Configuration}!enumerate@{enumerate}}
+\index{enumerate@{enumerate}!Poco::OSP::Configuration@{Poco::OSP::Configuration}}
+\doxysubsubsection{\texorpdfstring{enumerate()}{enumerate()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Configuration\+::enumerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_ab77c4dc36e335ec05107a155786cb91f}{Keys}} \&}]{range }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Sets the property with the given key to the given value. An already existing value for the key is overwritten.
+
+Must be overridden by subclasses. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a64885a63b3990485d518b37697aa1057}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Configuration_a688ecee1ae8ae308cc28d4bf1cf62c5f}\label{classPoco_1_1OSP_1_1Configuration_a688ecee1ae8ae308cc28d4bf1cf62c5f}} 
+\index{Poco::OSP::Configuration@{Poco::OSP::Configuration}!getRaw@{getRaw}}
+\index{getRaw@{getRaw}!Poco::OSP::Configuration@{Poco::OSP::Configuration}}
+\doxysubsubsection{\texorpdfstring{getRaw()}{getRaw()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Configuration\+::get\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration}{Configuration}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a07e5732151cd6056cfa15809f3a5ac55}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Configuration_a1d8c18258a73d90a7c68e07ed4261b82}\label{classPoco_1_1OSP_1_1Configuration_a1d8c18258a73d90a7c68e07ed4261b82}} 
+\index{Poco::OSP::Configuration@{Poco::OSP::Configuration}!removeRaw@{removeRaw}}
+\index{removeRaw@{removeRaw}!Poco::OSP::Configuration@{Poco::OSP::Configuration}}
+\doxysubsubsection{\texorpdfstring{removeRaw()}{removeRaw()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Configuration\+::remove\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Returns in range the names of all subkeys under the given key. If an empty key is passed, all root level keys are returned. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a9b26c960b912239e815c0f0a2607a132}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Configuration_a3a66570aeb7f60623b4c7c63f13c0391}\label{classPoco_1_1OSP_1_1Configuration_a3a66570aeb7f60623b4c7c63f13c0391}} 
+\index{Poco::OSP::Configuration@{Poco::OSP::Configuration}!setRaw@{setRaw}}
+\index{setRaw@{setRaw}!Poco::OSP::Configuration@{Poco::OSP::Configuration}}
+\doxysubsubsection{\texorpdfstring{setRaw()}{setRaw()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Configuration\+::set\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+If the property with the given key exists, stores the property\textquotesingle{}s value in value and returns true. Otherwise, returns false.
+
+Must be overridden by subclasses. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a620fb5eedbf878c312d7259c9c251509}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Configuration_a3dabd088891e47b471c21a41cf7d0a2e}\label{classPoco_1_1OSP_1_1Configuration_a3dabd088891e47b471c21a41cf7d0a2e}} 
+\index{Poco::OSP::Configuration@{Poco::OSP::Configuration}!ConstPtr@{ConstPtr}}
+\index{ConstPtr@{ConstPtr}!Poco::OSP::Configuration@{Poco::OSP::Configuration}}
+\doxysubsubsection{\texorpdfstring{ConstPtr}{ConstPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef \mbox{\hyperlink{classPoco_1_1OSP_1_1Configuration_af4c9daf6a954f9ad1c3bcc2f2e778ae4}{Ptr}} Poco\+::\+O\+S\+P\+::\+Configuration\+::\+Const\+Ptr}
+
+
+
+Definition at line 38 of file Configuration.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{Configuration_8h}{Configuration.\+h}}\end{DoxyCompactItemize}

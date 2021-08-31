@@ -1,0 +1,435 @@
+\hypertarget{classPoco_1_1Clock}{}\doxysection{Poco\+::Clock Class Reference}
+\label{classPoco_1_1Clock}\index{Poco::Clock@{Poco::Clock}}
+
+
+{\ttfamily \#include $<$Clock.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Int64 \mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+Val}}
+\item 
+typedef Int64 \mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+Diff}}
+\begin{DoxyCompactList}\small\item\em Monotonic clock value in microsecond resolution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Clock_a7b259ec8f9b6736dfae34b425778d0da}{Clock}} ()
+\begin{DoxyCompactList}\small\item\em Maximum clock value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Clock_a4a77f517c1f796c19afbcf130318871c}{Clock}} (\mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+Val}} tv)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} with the current system clock value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Clock_ac710a464898a99facf39edf78f979ecc}{Clock}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&other)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} from the given clock value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Clock_a234f6b49166375a20e3df1df154ca814}{$\sim$\+Clock}} ()
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \& \mbox{\hyperlink{classPoco_1_1Clock_adb320ff5e303146fe591da0ac7b45581}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&other)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Clock}{Clock}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \& \mbox{\hyperlink{classPoco_1_1Clock_aa727c68f2cbb264446529b12b373c414}{operator=}} (\mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+Val}} tv)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Clock_a3dd487129936750b54d896305027c080}{swap}} (\mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&clock)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Clock_a521efa07a2a801269b7b4ae84b08e9de}{update}} ()
+\begin{DoxyCompactList}\small\item\em Swaps the \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} with another one. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Clock_a1f64d05c7fbf9bb244c41a7890489d80}{operator==}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Updates the \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} with the current system clock. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Clock_a6c141abd20adc2328315966ee7d6a765}{operator!=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Clock_a73982306a8f40984f0c25442367d90f4}{operator$>$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Clock_aea9a7665b41b50bfbc45010c26b24051}{operator$>$=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Clock_a2bd705a8c920e08672b1a52fe7796609}{operator$<$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Clock_a4132dc735630eeb102ffa0711ccb26f2}{operator$<$=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \mbox{\hyperlink{classPoco_1_1Clock_a3e8a2e564ce5b3f2ea5f8353c1962f15}{operator+}} (\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+Diff}} d) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \mbox{\hyperlink{classPoco_1_1Clock_a55a0587ee67bb88bf5b0e5e02f08653d}{operator-\/}} (\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+Diff}} d) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+Diff}} \mbox{\hyperlink{classPoco_1_1Clock_a8997807e10ade336f609896ca3928652}{operator-\/}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \& \mbox{\hyperlink{classPoco_1_1Clock_aec4a359a592f8602ecc9b257c181c689}{operator+=}} (\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+Diff}} d)
+\item 
+\mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \& \mbox{\hyperlink{classPoco_1_1Clock_a85837c29074bfd20a5657a5fcbe92923}{operator-\/=}} (\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+Diff}} d)
+\item 
+\mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+Val}} \mbox{\hyperlink{classPoco_1_1Clock_a84a5bae29883a40b5a6b8971366efeee}{microseconds}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+Val}} \mbox{\hyperlink{classPoco_1_1Clock_ae78d3f7223fab4dc1d08cdbe74752ad9}{raw}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+Diff}} \mbox{\hyperlink{classPoco_1_1Clock_ae2e72c4859dfe2c775ca6b4c434358b6}{elapsed}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Clock_ade622c447602f65c4bc16591598ed67d}{is\+Elapsed}} (\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+Diff}} interval) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+Diff}} \mbox{\hyperlink{classPoco_1_1Clock_aaf45dab3da91f75231a5defa40ba4680}{resolution}} ()
+\item 
+static \mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+Diff}} \mbox{\hyperlink{classPoco_1_1Clock_a06da85597c6656a3daacea64a2cb3353}{accuracy}} ()
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Clock_adcc973fce2c226c21aaa9cf137310c11}{monotonic}} ()
+\begin{DoxyCompactList}\small\item\em Returns the system\textquotesingle{}s clock accuracy in microseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+Val}} \mbox{\hyperlink{classPoco_1_1Clock_a1695be550676b77ba1e6ee31da9cc941}{C\+L\+O\+C\+K\+V\+A\+L\+\_\+\+M\+IN}}
+\begin{DoxyCompactList}\small\item\em Difference between two Clock\+Val values in microseconds. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+Val}} \mbox{\hyperlink{classPoco_1_1Clock_a79a7a75890d29503ee47f8a95bcb9c44}{C\+L\+O\+C\+K\+V\+A\+L\+\_\+\+M\+AX}}
+\begin{DoxyCompactList}\small\item\em Minimum clock value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} stores a monotonic$\ast$ clock value with (theoretical) microseconds resolution. Clocks can be compared with each other and simple arithmetics are supported.
+
+\mbox{[}$\ast$\mbox{]} Note that \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} values are only monotonic if the operating system provides a monotonic clock. The \mbox{\hyperlink{classPoco_1_1Clock_adcc973fce2c226c21aaa9cf137310c11}{monotonic()}} function can be used to check whether the system\textquotesingle{}s clock is monotonic.
+
+Monotonic \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} is available on Windows, Linux, OS X and on P\+O\+S\+IX platforms supporting clock\+\_\+gettime() with C\+L\+O\+C\+K\+\_\+\+M\+O\+N\+O\+T\+O\+N\+IC. ~\newline
+
+
+\mbox{\hyperlink{classPoco_1_1Clock}{Clock}} values are relative to a system-\/dependent epoch time (usually the system\textquotesingle{}s startup time) and have no relation to the time of day. 
+
+Definition at line 29 of file Clock.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}\label{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}} 
+\index{Poco::Clock@{Poco::Clock}!ClockDiff@{ClockDiff}}
+\index{ClockDiff@{ClockDiff}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{ClockDiff}{ClockDiff}}
+{\footnotesize\ttfamily typedef Int64 \mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Poco\+::\+Clock\+::\+Clock\+Diff}}}
+
+
+
+Monotonic clock value in microsecond resolution. 
+
+
+
+Definition at line 51 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}\label{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}} 
+\index{Poco::Clock@{Poco::Clock}!ClockVal@{ClockVal}}
+\index{ClockVal@{ClockVal}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{ClockVal}{ClockVal}}
+{\footnotesize\ttfamily typedef Int64 \mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Poco\+::\+Clock\+::\+Clock\+Val}}}
+
+
+
+Definition at line 48 of file Clock.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Clock_a7b259ec8f9b6736dfae34b425778d0da}\label{classPoco_1_1Clock_a7b259ec8f9b6736dfae34b425778d0da}} 
+\index{Poco::Clock@{Poco::Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{Clock()}{Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Clock\+::\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Maximum clock value. 
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Clock_a4a77f517c1f796c19afbcf130318871c}\label{classPoco_1_1Clock_a4a77f517c1f796c19afbcf130318871c}} 
+\index{Poco::Clock@{Poco::Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{Clock()}{Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Clock\+::\+Clock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+Val}}}]{tv }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} with the current system clock value. 
+
+\mbox{\Hypertarget{classPoco_1_1Clock_ac710a464898a99facf39edf78f979ecc}\label{classPoco_1_1Clock_ac710a464898a99facf39edf78f979ecc}} 
+\index{Poco::Clock@{Poco::Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{Clock()}{Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Clock\+::\+Clock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} from the given clock value. 
+
+\mbox{\Hypertarget{classPoco_1_1Clock_a234f6b49166375a20e3df1df154ca814}\label{classPoco_1_1Clock_a234f6b49166375a20e3df1df154ca814}} 
+\index{Poco::Clock@{Poco::Clock}!````~Clock@{$\sim$Clock}}
+\index{````~Clock@{$\sim$Clock}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{$\sim$Clock()}{~Clock()}}
+{\footnotesize\ttfamily Poco\+::\+Clock\+::$\sim$\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Clock_a06da85597c6656a3daacea64a2cb3353}\label{classPoco_1_1Clock_a06da85597c6656a3daacea64a2cb3353}} 
+\index{Poco::Clock@{Poco::Clock}!accuracy@{accuracy}}
+\index{accuracy@{accuracy}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{accuracy()}{accuracy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+Diff}} Poco\+::\+Clock\+::accuracy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the resolution in units per second. Since the \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} clas has microsecond resolution, the returned value is always 1000000. \mbox{\Hypertarget{classPoco_1_1Clock_ae2e72c4859dfe2c775ca6b4c434358b6}\label{classPoco_1_1Clock_ae2e72c4859dfe2c775ca6b4c434358b6}} 
+\index{Poco::Clock@{Poco::Clock}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{elapsed()}{elapsed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+::\+Clock\+Diff}} Poco\+::\+Clock\+::elapsed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the clock value expressed in microseconds since the system-\/specific epoch time (usually system startup).
+
+Same as \mbox{\hyperlink{classPoco_1_1Clock_a84a5bae29883a40b5a6b8971366efeee}{microseconds()}}. 
+
+Definition at line 204 of file Clock.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Clock_ade622c447602f65c4bc16591598ed67d}\label{classPoco_1_1Clock_ade622c447602f65c4bc16591598ed67d}} 
+\index{Poco::Clock@{Poco::Clock}!isElapsed@{isElapsed}}
+\index{isElapsed@{isElapsed}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{isElapsed()}{isElapsed()}}
+{\footnotesize\ttfamily bool Poco\+::\+Clock\+::is\+Elapsed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+::\+Clock\+Diff}}}]{interval }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the time elapsed since the time denoted by the \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} instance. Equivalent to \mbox{\hyperlink{classPoco_1_1Clock_a7b259ec8f9b6736dfae34b425778d0da}{Clock()}} -\/ $\ast$this. 
+
+Definition at line 211 of file Clock.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Clock_a84a5bae29883a40b5a6b8971366efeee}\label{classPoco_1_1Clock_a84a5bae29883a40b5a6b8971366efeee}} 
+\index{Poco::Clock@{Poco::Clock}!microseconds@{microseconds}}
+\index{microseconds@{microseconds}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{microseconds()}{microseconds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+::\+Clock\+Val}} Poco\+::\+Clock\+::microseconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 198 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_adcc973fce2c226c21aaa9cf137310c11}\label{classPoco_1_1Clock_adcc973fce2c226c21aaa9cf137310c11}} 
+\index{Poco::Clock@{Poco::Clock}!monotonic@{monotonic}}
+\index{monotonic@{monotonic}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{monotonic()}{monotonic()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Clock\+::monotonic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the system\textquotesingle{}s clock accuracy in microseconds. 
+
+\mbox{\Hypertarget{classPoco_1_1Clock_a6c141abd20adc2328315966ee7d6a765}\label{classPoco_1_1Clock_a6c141abd20adc2328315966ee7d6a765}} 
+\index{Poco::Clock@{Poco::Clock}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Poco\+::\+Clock\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 136 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_a3e8a2e564ce5b3f2ea5f8353c1962f15}\label{classPoco_1_1Clock_a3e8a2e564ce5b3f2ea5f8353c1962f15}} 
+\index{Poco::Clock@{Poco::Clock}!operator+@{operator+}}
+\index{operator+@{operator+}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} Poco\+::\+Clock\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+::\+Clock\+Diff}}}]{d }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 166 of file Clock.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1Clock_aec4a359a592f8602ecc9b257c181c689}\label{classPoco_1_1Clock_aec4a359a592f8602ecc9b257c181c689}} 
+\index{Poco::Clock@{Poco::Clock}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \& Poco\+::\+Clock\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+::\+Clock\+Diff}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 184 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_a55a0587ee67bb88bf5b0e5e02f08653d}\label{classPoco_1_1Clock_a55a0587ee67bb88bf5b0e5e02f08653d}} 
+\index{Poco::Clock@{Poco::Clock}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} Poco\+::\+Clock\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+::\+Clock\+Diff}}}]{d }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 172 of file Clock.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1Clock_a8997807e10ade336f609896ca3928652}\label{classPoco_1_1Clock_a8997807e10ade336f609896ca3928652}} 
+\index{Poco::Clock@{Poco::Clock}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+::\+Clock\+Diff}} Poco\+::\+Clock\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 178 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_a85837c29074bfd20a5657a5fcbe92923}\label{classPoco_1_1Clock_a85837c29074bfd20a5657a5fcbe92923}} 
+\index{Poco::Clock@{Poco::Clock}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \& Poco\+::\+Clock\+::operator-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+::\+Clock\+Diff}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 191 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_a2bd705a8c920e08672b1a52fe7796609}\label{classPoco_1_1Clock_a2bd705a8c920e08672b1a52fe7796609}} 
+\index{Poco::Clock@{Poco::Clock}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Poco\+::\+Clock\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 154 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_a4132dc735630eeb102ffa0711ccb26f2}\label{classPoco_1_1Clock_a4132dc735630eeb102ffa0711ccb26f2}} 
+\index{Poco::Clock@{Poco::Clock}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Poco\+::\+Clock\+::operator$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 160 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_aa727c68f2cbb264446529b12b373c414}\label{classPoco_1_1Clock_aa727c68f2cbb264446529b12b373c414}} 
+\index{Poco::Clock@{Poco::Clock}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock}{Clock}}\& Poco\+::\+Clock\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+Val}}}]{tv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Clock_adb320ff5e303146fe591da0ac7b45581}\label{classPoco_1_1Clock_adb320ff5e303146fe591da0ac7b45581}} 
+\index{Poco::Clock@{Poco::Clock}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock}{Clock}}\& Poco\+::\+Clock\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Clock}{Clock}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Clock_a1f64d05c7fbf9bb244c41a7890489d80}\label{classPoco_1_1Clock_a1f64d05c7fbf9bb244c41a7890489d80}} 
+\index{Poco::Clock@{Poco::Clock}!operator==@{operator==}}
+\index{operator==@{operator==}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Poco\+::\+Clock\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} with the current system clock. 
+
+
+
+Definition at line 130 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_a73982306a8f40984f0c25442367d90f4}\label{classPoco_1_1Clock_a73982306a8f40984f0c25442367d90f4}} 
+\index{Poco::Clock@{Poco::Clock}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Poco\+::\+Clock\+::operator$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 142 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_aea9a7665b41b50bfbc45010c26b24051}\label{classPoco_1_1Clock_aea9a7665b41b50bfbc45010c26b24051}} 
+\index{Poco::Clock@{Poco::Clock}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Poco\+::\+Clock\+::operator$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 148 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_ae78d3f7223fab4dc1d08cdbe74752ad9}\label{classPoco_1_1Clock_ae78d3f7223fab4dc1d08cdbe74752ad9}} 
+\index{Poco::Clock@{Poco::Clock}!raw@{raw}}
+\index{raw@{raw}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{raw()}{raw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+::\+Clock\+Val}} Poco\+::\+Clock\+::raw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the clock value expressed in microseconds since the system-\/specific epoch time (usually system startup). 
+
+Definition at line 231 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_aaf45dab3da91f75231a5defa40ba4680}\label{classPoco_1_1Clock_aaf45dab3da91f75231a5defa40ba4680}} 
+\index{Poco::Clock@{Poco::Clock}!resolution@{resolution}}
+\index{resolution@{resolution}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{resolution()}{resolution()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Clock_aa6caf8526c63c2222fb24dbed8300627}{Clock\+::\+Clock\+Diff}} Poco\+::\+Clock\+::resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns true iff the given interval has passed since the time denoted by the \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} instance. 
+
+Definition at line 219 of file Clock.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1Clock_a3dd487129936750b54d896305027c080}\label{classPoco_1_1Clock_a3dd487129936750b54d896305027c080}} 
+\index{Poco::Clock@{Poco::Clock}!swap@{swap}}
+\index{swap@{swap}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Poco\+::\+Clock\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Clock}{Clock}} \&}]{clock }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1Clock_a521efa07a2a801269b7b4ae84b08e9de}\label{classPoco_1_1Clock_a521efa07a2a801269b7b4ae84b08e9de}} 
+\index{Poco::Clock@{Poco::Clock}!update@{update}}
+\index{update@{update}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Poco\+::\+Clock\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Swaps the \mbox{\hyperlink{classPoco_1_1Clock}{Clock}} with another one. 
+
+Here is the caller graph for this function\+:
+% FIG 9
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Clock_a79a7a75890d29503ee47f8a95bcb9c44}\label{classPoco_1_1Clock_a79a7a75890d29503ee47f8a95bcb9c44}} 
+\index{Poco::Clock@{Poco::Clock}!CLOCKVAL\_MAX@{CLOCKVAL\_MAX}}
+\index{CLOCKVAL\_MAX@{CLOCKVAL\_MAX}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{CLOCKVAL\_MAX}{CLOCKVAL\_MAX}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+Val}} Poco\+::\+Clock\+::\+C\+L\+O\+C\+K\+V\+A\+L\+\_\+\+M\+AX\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Minimum clock value. 
+
+
+
+Definition at line 55 of file Clock.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Clock_a1695be550676b77ba1e6ee31da9cc941}\label{classPoco_1_1Clock_a1695be550676b77ba1e6ee31da9cc941}} 
+\index{Poco::Clock@{Poco::Clock}!CLOCKVAL\_MIN@{CLOCKVAL\_MIN}}
+\index{CLOCKVAL\_MIN@{CLOCKVAL\_MIN}!Poco::Clock@{Poco::Clock}}
+\doxysubsubsection{\texorpdfstring{CLOCKVAL\_MIN}{CLOCKVAL\_MIN}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Clock_a041901e7fad75a6014e3c730cc8fb406}{Clock\+Val}} Poco\+::\+Clock\+::\+C\+L\+O\+C\+K\+V\+A\+L\+\_\+\+M\+IN\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Difference between two Clock\+Val values in microseconds. 
+
+
+
+Definition at line 54 of file Clock.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Clock_8h}{Clock.\+h}}\end{DoxyCompactItemize}

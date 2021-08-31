@@ -1,0 +1,62 @@
+\hypertarget{classPoco_1_1AccessExpireCache}{}\doxysection{Poco\+::Access\+Expire\+Cache$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$ Class Template Reference}
+\label{classPoco_1_1AccessExpireCache}\index{Poco::AccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::AccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$}}
+
+
+{\ttfamily \#include $<$Access\+Expire\+Cache.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Access\+Expire\+Cache$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Access\+Expire\+Cache$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1AccessExpireCache_a215c3389cd4f4ccb6e7cb4b2d9a23260}{Access\+Expire\+Cache}} (\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}} expire=600000)
+\item 
+\mbox{\hyperlink{classPoco_1_1AccessExpireCache_a35ed9e7c3c316a2294e4fa962570937f}{$\sim$\+Access\+Expire\+Cache}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Key, class T\+Value, class T\+Mutex = Fast\+Mutex, class T\+Event\+Mutex = Fast\+Mutex$>$\newline
+class Poco\+::\+Access\+Expire\+Cache$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$}
+
+An \mbox{\hyperlink{classPoco_1_1AccessExpireCache}{Access\+Expire\+Cache}} caches entries for a fixed time period (per default 10 minutes). Entries expire when they are not accessed with \mbox{\hyperlink{classPoco_1_1AbstractCache_a7f812c1ea00ed55ed9364c28cd32cb33}{get()}} during this time period. Each access resets the start time for expiration. Be careful when using an \mbox{\hyperlink{classPoco_1_1AccessExpireCache}{Access\+Expire\+Cache}}. A cache is often used like cache.\+has(x) followed by cache.\+get x). Note that it could happen that the \char`\"{}has\char`\"{} call works, then the current execution thread gets descheduled, time passes, the entry gets invalid, thus leading to an empty \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}} being returned when \char`\"{}get\char`\"{} is invoked. 
+
+Definition at line 36 of file Access\+Expire\+Cache.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1AccessExpireCache_a215c3389cd4f4ccb6e7cb4b2d9a23260}\label{classPoco_1_1AccessExpireCache_a215c3389cd4f4ccb6e7cb4b2d9a23260}} 
+\index{Poco::AccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::AccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$}!AccessExpireCache@{AccessExpireCache}}
+\index{AccessExpireCache@{AccessExpireCache}!Poco::AccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::AccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{AccessExpireCache()}{AccessExpireCache()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1AccessExpireCache}{Poco\+::\+Access\+Expire\+Cache}}$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$\+::\mbox{\hyperlink{classPoco_1_1AccessExpireCache}{Access\+Expire\+Cache}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}}}]{expire = {\ttfamily 600000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 47 of file Access\+Expire\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AccessExpireCache_a35ed9e7c3c316a2294e4fa962570937f}\label{classPoco_1_1AccessExpireCache_a35ed9e7c3c316a2294e4fa962570937f}} 
+\index{Poco::AccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::AccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$}!````~AccessExpireCache@{$\sim$AccessExpireCache}}
+\index{````~AccessExpireCache@{$\sim$AccessExpireCache}!Poco::AccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::AccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$AccessExpireCache()}{~AccessExpireCache()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1AccessExpireCache}{Poco\+::\+Access\+Expire\+Cache}}$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1AccessExpireCache}{Access\+Expire\+Cache}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 52 of file Access\+Expire\+Cache.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{AccessExpireCache_8h}{Access\+Expire\+Cache.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,281 @@
+\hypertarget{classPoco_1_1Net_1_1SMTPChannel}{}\doxysection{Poco\+::Net\+::S\+M\+T\+P\+Channel Class Reference}
+\label{classPoco_1_1Net_1_1SMTPChannel}\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+
+
+This \mbox{\hyperlink{classPoco_1_1Channel}{Channel}} implements S\+M\+TP (email) logging.  
+
+
+
+
+{\ttfamily \#include $<$S\+M\+T\+P\+Channel.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::S\+M\+T\+P\+Channel\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::S\+M\+T\+P\+Channel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_ab2b4efe35be548016c5bcc095bd1f8a4}{S\+M\+T\+P\+Channel}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_acf88835baceaec5c1076fa18cb07bd41}{S\+M\+T\+P\+Channel}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&mailhost, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&recipient)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel}{S\+M\+T\+P\+Channel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_ab840607b1a87b69e4912d48513220e02}{open}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel}{S\+M\+T\+P\+Channel}} with the given target mailhost, sender, and recipient. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_ae9c4efbccf55c27c13b78b9fb3aeea7a}{close}} ()
+\begin{DoxyCompactList}\small\item\em Opens the \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel}{S\+M\+T\+P\+Channel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_ad417c9d0ed302f9cb149aafd7cc2a7d2}{log}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&msg)
+\begin{DoxyCompactList}\small\item\em Closes the \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel}{S\+M\+T\+P\+Channel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_af10726a63442bc71fc045e438dec2223}{set\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Sends the message\textquotesingle{}s text to the recipient. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_af0f99274c0c3a2d42c6e288cd067d275}{get\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_ae3ddaf6b6705cfc280eebdf01d83d4b2}{register\+Channel}} ()
+\begin{DoxyCompactList}\small\item\em Returns the value of the property with the given name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_a3b281ba6166f67bc5c1d8b6957c83f21}{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+H\+O\+ST}}
+\begin{DoxyCompactList}\small\item\em Registers the channel with the global \mbox{\hyperlink{classPoco_1_1LoggingFactory}{Logging\+Factory}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_a569b9c060e612d4850d00816fe93c3d0}{P\+R\+O\+P\+\_\+\+S\+E\+N\+D\+ER}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_aabc06e8c0a9ef671b2d46650a5774896}{P\+R\+O\+P\+\_\+\+R\+E\+C\+I\+P\+I\+E\+NT}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_a9ad5852dd11f13da385546b46980b07c}{P\+R\+O\+P\+\_\+\+L\+O\+C\+AL}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_ae5a66ba10ac8c875dabeaafa780e73c4}{P\+R\+O\+P\+\_\+\+A\+T\+T\+A\+C\+H\+M\+E\+NT}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_a2e5b16dc17c95e886aae7a282adea540}{P\+R\+O\+P\+\_\+\+T\+Y\+PE}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_a4691248926c53095c366cdf69b1589e6}{P\+R\+O\+P\+\_\+\+D\+E\+L\+E\+TE}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_a96b60300a197c29e6589e81f84993ceb}{P\+R\+O\+P\+\_\+\+T\+H\+R\+OW}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel_a9b919599b20b09a506c5320c69205d05}{$\sim$\+S\+M\+T\+P\+Channel}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This \mbox{\hyperlink{classPoco_1_1Channel}{Channel}} implements S\+M\+TP (email) logging. 
+
+Definition at line 32 of file S\+M\+T\+P\+Channel.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_ab2b4efe35be548016c5bcc095bd1f8a4}\label{classPoco_1_1Net_1_1SMTPChannel_ab2b4efe35be548016c5bcc095bd1f8a4}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!SMTPChannel@{SMTPChannel}}
+\index{SMTPChannel@{SMTPChannel}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{SMTPChannel()}{SMTPChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::\+S\+M\+T\+P\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_acf88835baceaec5c1076fa18cb07bd41}\label{classPoco_1_1Net_1_1SMTPChannel_acf88835baceaec5c1076fa18cb07bd41}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!SMTPChannel@{SMTPChannel}}
+\index{SMTPChannel@{SMTPChannel}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{SMTPChannel()}{SMTPChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::\+S\+M\+T\+P\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{mailhost,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{recipient }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel}{S\+M\+T\+P\+Channel}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_a9b919599b20b09a506c5320c69205d05}\label{classPoco_1_1Net_1_1SMTPChannel_a9b919599b20b09a506c5320c69205d05}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!````~SMTPChannel@{$\sim$SMTPChannel}}
+\index{````~SMTPChannel@{$\sim$SMTPChannel}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{$\sim$SMTPChannel()}{~SMTPChannel()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::$\sim$\+S\+M\+T\+P\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_ae9c4efbccf55c27c13b78b9fb3aeea7a}\label{classPoco_1_1Net_1_1SMTPChannel_ae9c4efbccf55c27c13b78b9fb3aeea7a}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!close@{close}}
+\index{close@{close}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Opens the \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel}{S\+M\+T\+P\+Channel}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Channel_a2056a173f804c51411942649bd4d6408}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_af0f99274c0c3a2d42c6e288cd067d275}\label{classPoco_1_1Net_1_1SMTPChannel_af0f99274c0c3a2d42c6e288cd067d275}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{getProperty()}{getProperty()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::get\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the property with the given value.
+
+The following properties are supported\+:
+\begin{DoxyItemize}
+\item mailhost\+: The S\+M\+TP server. Default is \char`\"{}localhost\char`\"{}.
+\item sender\+: The sender address.
+\item recipient\+: The recipient address.
+\item local\+: If true, local time is used. Default is true.
+\item attachment\+: Filename of the file to attach.
+\item type\+: Content type of the file to attach.
+\item delete\+: Boolean value indicating whether to delete the attachment file after sending.
+\item throw\+: Boolean value indicating whether to throw exception upon failure. 
+\end{DoxyItemize}
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Channel_a187321f59674dfde457599885a4f6ec0}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_ad417c9d0ed302f9cb149aafd7cc2a7d2}\label{classPoco_1_1Net_1_1SMTPChannel_ad417c9d0ed302f9cb149aafd7cc2a7d2}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!log@{log}}
+\index{log@{log}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Closes the \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel}{S\+M\+T\+P\+Channel}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Channel_aeafdcc5ce2e0e38d96f15a60a563da4e}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_ab840607b1a87b69e4912d48513220e02}\label{classPoco_1_1Net_1_1SMTPChannel_ab840607b1a87b69e4912d48513220e02}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!open@{open}}
+\index{open@{open}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPChannel}{S\+M\+T\+P\+Channel}} with the given target mailhost, sender, and recipient. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Channel_aef60226200d2e287068a62d9af5a4f6e}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_ae3ddaf6b6705cfc280eebdf01d83d4b2}\label{classPoco_1_1Net_1_1SMTPChannel_ae3ddaf6b6705cfc280eebdf01d83d4b2}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!registerChannel@{registerChannel}}
+\index{registerChannel@{registerChannel}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{registerChannel()}{registerChannel()}}
+{\footnotesize\ttfamily static void Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::register\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the value of the property with the given name. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_af10726a63442bc71fc045e438dec2223}\label{classPoco_1_1Net_1_1SMTPChannel_af10726a63442bc71fc045e438dec2223}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{setProperty()}{setProperty()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::set\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sends the message\textquotesingle{}s text to the recipient. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Channel_a67c2a274e476745b902ced03fb485c6e}{Poco\+::\+Channel}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_ae5a66ba10ac8c875dabeaafa780e73c4}\label{classPoco_1_1Net_1_1SMTPChannel_ae5a66ba10ac8c875dabeaafa780e73c4}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!PROP\_ATTACHMENT@{PROP\_ATTACHMENT}}
+\index{PROP\_ATTACHMENT@{PROP\_ATTACHMENT}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_ATTACHMENT}{PROP\_ATTACHMENT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::\+P\+R\+O\+P\+\_\+\+A\+T\+T\+A\+C\+H\+M\+E\+NT\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 76 of file S\+M\+T\+P\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_a4691248926c53095c366cdf69b1589e6}\label{classPoco_1_1Net_1_1SMTPChannel_a4691248926c53095c366cdf69b1589e6}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!PROP\_DELETE@{PROP\_DELETE}}
+\index{PROP\_DELETE@{PROP\_DELETE}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_DELETE}{PROP\_DELETE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::\+P\+R\+O\+P\+\_\+\+D\+E\+L\+E\+TE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 78 of file S\+M\+T\+P\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_a9ad5852dd11f13da385546b46980b07c}\label{classPoco_1_1Net_1_1SMTPChannel_a9ad5852dd11f13da385546b46980b07c}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!PROP\_LOCAL@{PROP\_LOCAL}}
+\index{PROP\_LOCAL@{PROP\_LOCAL}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_LOCAL}{PROP\_LOCAL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::\+P\+R\+O\+P\+\_\+\+L\+O\+C\+AL\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 75 of file S\+M\+T\+P\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_a3b281ba6166f67bc5c1d8b6957c83f21}\label{classPoco_1_1Net_1_1SMTPChannel_a3b281ba6166f67bc5c1d8b6957c83f21}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!PROP\_MAILHOST@{PROP\_MAILHOST}}
+\index{PROP\_MAILHOST@{PROP\_MAILHOST}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_MAILHOST}{PROP\_MAILHOST}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::\+P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+H\+O\+ST\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Registers the channel with the global \mbox{\hyperlink{classPoco_1_1LoggingFactory}{Logging\+Factory}}. 
+
+
+
+Definition at line 72 of file S\+M\+T\+P\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_aabc06e8c0a9ef671b2d46650a5774896}\label{classPoco_1_1Net_1_1SMTPChannel_aabc06e8c0a9ef671b2d46650a5774896}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!PROP\_RECIPIENT@{PROP\_RECIPIENT}}
+\index{PROP\_RECIPIENT@{PROP\_RECIPIENT}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_RECIPIENT}{PROP\_RECIPIENT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::\+P\+R\+O\+P\+\_\+\+R\+E\+C\+I\+P\+I\+E\+NT\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 74 of file S\+M\+T\+P\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_a569b9c060e612d4850d00816fe93c3d0}\label{classPoco_1_1Net_1_1SMTPChannel_a569b9c060e612d4850d00816fe93c3d0}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!PROP\_SENDER@{PROP\_SENDER}}
+\index{PROP\_SENDER@{PROP\_SENDER}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_SENDER}{PROP\_SENDER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::\+P\+R\+O\+P\+\_\+\+S\+E\+N\+D\+ER\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 73 of file S\+M\+T\+P\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_a96b60300a197c29e6589e81f84993ceb}\label{classPoco_1_1Net_1_1SMTPChannel_a96b60300a197c29e6589e81f84993ceb}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!PROP\_THROW@{PROP\_THROW}}
+\index{PROP\_THROW@{PROP\_THROW}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_THROW}{PROP\_THROW}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::\+P\+R\+O\+P\+\_\+\+T\+H\+R\+OW\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 79 of file S\+M\+T\+P\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SMTPChannel_a2e5b16dc17c95e886aae7a282adea540}\label{classPoco_1_1Net_1_1SMTPChannel_a2e5b16dc17c95e886aae7a282adea540}} 
+\index{Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}!PROP\_TYPE@{PROP\_TYPE}}
+\index{PROP\_TYPE@{PROP\_TYPE}!Poco::Net::SMTPChannel@{Poco::Net::SMTPChannel}}
+\doxysubsubsection{\texorpdfstring{PROP\_TYPE}{PROP\_TYPE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+S\+M\+T\+P\+Channel\+::\+P\+R\+O\+P\+\_\+\+T\+Y\+PE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 77 of file S\+M\+T\+P\+Channel.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{SMTPChannel_8h}{S\+M\+T\+P\+Channel.\+h}}\end{DoxyCompactItemize}

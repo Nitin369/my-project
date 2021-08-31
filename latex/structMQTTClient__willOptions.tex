@@ -1,0 +1,96 @@
+\hypertarget{structMQTTClient__willOptions}{}\doxysection{M\+Q\+T\+T\+Client\+\_\+will\+Options Struct Reference}
+\label{structMQTTClient__willOptions}\index{MQTTClient\_willOptions@{MQTTClient\_willOptions}}
+
+
+{\ttfamily \#include $<$M\+Q\+T\+T\+Client.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char \mbox{\hyperlink{structMQTTClient__willOptions_a6bea1e78e0a6d87c8b4c8b9c2075fd68}{struct\+\_\+id}} \mbox{[}4\mbox{]}
+\item 
+int \mbox{\hyperlink{structMQTTClient__willOptions_af05e1e3e865af050c5fefac5e597cc7a}{struct\+\_\+version}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{structMQTTClient__willOptions_a9273da2e77ed9b60b018b43c8d868d47}{topic\+Name}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{structMQTTClient__willOptions_af367d507f25f09942ff12376b50a5ffb}{message}}
+\item 
+int \mbox{\hyperlink{structMQTTClient__willOptions_a09d69c3e208f40ab963dbd0ac2edcd5b}{retained}}
+\item 
+int \mbox{\hyperlink{structMQTTClient__willOptions_a10a24c6ed7a204e6eb21d48ad8fb13cb}{qos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{structMQTTClient__willOptions}{M\+Q\+T\+T\+Client\+\_\+will\+Options}} defines the M\+Q\+TT \char`\"{}\+Last Will and Testament\char`\"{} (L\+WT) settings for the client. In the event that a client unexpectedly loses its connection to the server, the server publishes the L\+WT message to the L\+WT topic on behalf of the client. This allows other clients (subscribed to the L\+WT topic) to be made aware that the client has disconnected. To enable the L\+WT function for a specific client, a valid pointer to an \mbox{\hyperlink{structMQTTClient__willOptions}{M\+Q\+T\+T\+Client\+\_\+will\+Options}} structure is passed in the \mbox{\hyperlink{structMQTTClient__connectOptions}{M\+Q\+T\+T\+Client\+\_\+connect\+Options}} structure used in the \mbox{\hyperlink{Paho_2MQTTClient_8h_a096b8153668ce1fde395e348abe2cfdd}{M\+Q\+T\+T\+Client\+\_\+connect()}} call that connects the client to the server. The pointer to \mbox{\hyperlink{structMQTTClient__willOptions}{M\+Q\+T\+T\+Client\+\_\+will\+Options}} can be set to N\+U\+LL if the L\+WT function is not required. 
+
+Definition at line 426 of file M\+Q\+T\+T\+Client.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structMQTTClient__willOptions_af367d507f25f09942ff12376b50a5ffb}\label{structMQTTClient__willOptions_af367d507f25f09942ff12376b50a5ffb}} 
+\index{MQTTClient\_willOptions@{MQTTClient\_willOptions}!message@{message}}
+\index{message@{message}!MQTTClient\_willOptions@{MQTTClient\_willOptions}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ M\+Q\+T\+T\+Client\+\_\+will\+Options\+::message}
+
+The L\+WT payload. 
+
+Definition at line 435 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structMQTTClient__willOptions_a10a24c6ed7a204e6eb21d48ad8fb13cb}\label{structMQTTClient__willOptions_a10a24c6ed7a204e6eb21d48ad8fb13cb}} 
+\index{MQTTClient\_willOptions@{MQTTClient\_willOptions}!qos@{qos}}
+\index{qos@{qos}!MQTTClient\_willOptions@{MQTTClient\_willOptions}}
+\doxysubsubsection{\texorpdfstring{qos}{qos}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Client\+\_\+will\+Options\+::qos}
+
+The quality of service setting for the L\+WT message (see \mbox{\hyperlink{structMQTTClient__message_ab981c28422ec70dbf8127a4f7164d964}{M\+Q\+T\+T\+Client\+\_\+message.\+qos}} and \mbox{\hyperlink{structMQTTClient__willOptions_a10a24c6ed7a204e6eb21d48ad8fb13cb}{qos}}). 
+
+Definition at line 444 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structMQTTClient__willOptions_a09d69c3e208f40ab963dbd0ac2edcd5b}\label{structMQTTClient__willOptions_a09d69c3e208f40ab963dbd0ac2edcd5b}} 
+\index{MQTTClient\_willOptions@{MQTTClient\_willOptions}!retained@{retained}}
+\index{retained@{retained}!MQTTClient\_willOptions@{MQTTClient\_willOptions}}
+\doxysubsubsection{\texorpdfstring{retained}{retained}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Client\+\_\+will\+Options\+::retained}
+
+The retained flag for the L\+WT message (see \mbox{\hyperlink{structMQTTClient__message_aad83220f265db124174ad79f528bb367}{M\+Q\+T\+T\+Client\+\_\+message.\+retained}}). 
+
+Definition at line 439 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structMQTTClient__willOptions_a6bea1e78e0a6d87c8b4c8b9c2075fd68}\label{structMQTTClient__willOptions_a6bea1e78e0a6d87c8b4c8b9c2075fd68}} 
+\index{MQTTClient\_willOptions@{MQTTClient\_willOptions}!struct\_id@{struct\_id}}
+\index{struct\_id@{struct\_id}!MQTTClient\_willOptions@{MQTTClient\_willOptions}}
+\doxysubsubsection{\texorpdfstring{struct\_id}{struct\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char M\+Q\+T\+T\+Client\+\_\+will\+Options\+::struct\+\_\+id\mbox{[}4\mbox{]}}
+
+The eyecatcher for this structure. must be M\+Q\+TW. 
+
+Definition at line 429 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structMQTTClient__willOptions_af05e1e3e865af050c5fefac5e597cc7a}\label{structMQTTClient__willOptions_af05e1e3e865af050c5fefac5e597cc7a}} 
+\index{MQTTClient\_willOptions@{MQTTClient\_willOptions}!struct\_version@{struct\_version}}
+\index{struct\_version@{struct\_version}!MQTTClient\_willOptions@{MQTTClient\_willOptions}}
+\doxysubsubsection{\texorpdfstring{struct\_version}{struct\_version}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Client\+\_\+will\+Options\+::struct\+\_\+version}
+
+The version number of this structure. Must be 0 
+
+Definition at line 431 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structMQTTClient__willOptions_a9273da2e77ed9b60b018b43c8d868d47}\label{structMQTTClient__willOptions_a9273da2e77ed9b60b018b43c8d868d47}} 
+\index{MQTTClient\_willOptions@{MQTTClient\_willOptions}!topicName@{topicName}}
+\index{topicName@{topicName}!MQTTClient\_willOptions@{MQTTClient\_willOptions}}
+\doxysubsubsection{\texorpdfstring{topicName}{topicName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ M\+Q\+T\+T\+Client\+\_\+will\+Options\+::topic\+Name}
+
+The L\+WT topic to which the L\+WT message will be published. 
+
+Definition at line 433 of file M\+Q\+T\+T\+Client.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+M\+Q\+T\+T/\+Paho/\mbox{\hyperlink{Paho_2MQTTClient_8h}{M\+Q\+T\+T\+Client.\+h}}\end{DoxyCompactItemize}

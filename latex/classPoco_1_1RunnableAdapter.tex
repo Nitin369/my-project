@@ -1,0 +1,130 @@
+\hypertarget{classPoco_1_1RunnableAdapter}{}\doxysection{Poco\+::Runnable\+Adapter$<$ C $>$ Class Template Reference}
+\label{classPoco_1_1RunnableAdapter}\index{Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}}
+
+
+{\ttfamily \#include $<$Runnable\+Adapter.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Runnable\+Adapter$<$ C $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Runnable\+Adapter$<$ C $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(C\+::$\ast$ \mbox{\hyperlink{classPoco_1_1RunnableAdapter_acf17fa731339d33250b7f80d4ac0e460}{Callback}}) ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RunnableAdapter_a8aafe12eeda94aa0c26c68fc20bcb284}{Runnable\+Adapter}} (C \&object, \mbox{\hyperlink{classPoco_1_1RunnableAdapter_acf17fa731339d33250b7f80d4ac0e460}{Callback}} method)
+\item 
+\mbox{\hyperlink{classPoco_1_1RunnableAdapter_ac99cfb1db4a74f2ec842e0a5e1223dc0}{Runnable\+Adapter}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Runnable\+Adapter}} \&ra)
+\item 
+\mbox{\hyperlink{classPoco_1_1RunnableAdapter_ade85138b2bab9855ea8343cf7652486a}{$\sim$\+Runnable\+Adapter}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Runnable\+Adapter}} \& \mbox{\hyperlink{classPoco_1_1RunnableAdapter_a13c9c833947275e354e8b8e7af22062c}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Runnable\+Adapter}} \&ra)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RunnableAdapter_a1ec5ab27d27279d3b6df731264eb0582}{run}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class C$>$\newline
+class Poco\+::\+Runnable\+Adapter$<$ C $>$}
+
+This adapter simplifies using ordinary methods as targets for threads. Usage\+: Runnable\+Adapter$<$\+My\+Class$>$ ra(my\+Object, \&\+My\+Object\+::do\+Something)); \mbox{\hyperlink{classPoco_1_1Thread}{Thread}} thr; thr.\+Start(ra);
+
+For using a freestanding or static member function as a thread target, please see the \mbox{\hyperlink{classPoco_1_1ThreadTarget}{Thread\+Target}} class. 
+
+Definition at line 31 of file Runnable\+Adapter.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1RunnableAdapter_acf17fa731339d33250b7f80d4ac0e460}\label{classPoco_1_1RunnableAdapter_acf17fa731339d33250b7f80d4ac0e460}} 
+\index{Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}!Callback@{Callback}}
+\index{Callback@{Callback}!Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{Callback}{Callback}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+typedef void(C\+::$\ast$ \mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Poco\+::\+Runnable\+Adapter}}$<$ C $>$\+::Callback) ()}
+
+
+
+Definition at line 43 of file Runnable\+Adapter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RunnableAdapter_a8aafe12eeda94aa0c26c68fc20bcb284}\label{classPoco_1_1RunnableAdapter_a8aafe12eeda94aa0c26c68fc20bcb284}} 
+\index{Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}!RunnableAdapter@{RunnableAdapter}}
+\index{RunnableAdapter@{RunnableAdapter}!Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{RunnableAdapter()}{RunnableAdapter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Poco\+::\+Runnable\+Adapter}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Runnable\+Adapter}} (\begin{DoxyParamCaption}\item[{C \&}]{object,  }\item[{\mbox{\hyperlink{classPoco_1_1RunnableAdapter_acf17fa731339d33250b7f80d4ac0e460}{Callback}}}]{method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file Runnable\+Adapter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RunnableAdapter_ac99cfb1db4a74f2ec842e0a5e1223dc0}\label{classPoco_1_1RunnableAdapter_ac99cfb1db4a74f2ec842e0a5e1223dc0}} 
+\index{Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}!RunnableAdapter@{RunnableAdapter}}
+\index{RunnableAdapter@{RunnableAdapter}!Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{RunnableAdapter()}{RunnableAdapter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Poco\+::\+Runnable\+Adapter}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Runnable\+Adapter}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Runnable\+Adapter}}$<$ C $>$ \&}]{ra }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 49 of file Runnable\+Adapter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RunnableAdapter_ade85138b2bab9855ea8343cf7652486a}\label{classPoco_1_1RunnableAdapter_ade85138b2bab9855ea8343cf7652486a}} 
+\index{Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}!````~RunnableAdapter@{$\sim$RunnableAdapter}}
+\index{````~RunnableAdapter@{$\sim$RunnableAdapter}!Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$RunnableAdapter()}{~RunnableAdapter()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Poco\+::\+Runnable\+Adapter}}$<$ C $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Runnable\+Adapter}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 53 of file Runnable\+Adapter.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RunnableAdapter_a13c9c833947275e354e8b8e7af22062c}\label{classPoco_1_1RunnableAdapter_a13c9c833947275e354e8b8e7af22062c}} 
+\index{Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Runnable\+Adapter}}\& \mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Poco\+::\+Runnable\+Adapter}}$<$ C $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Runnable\+Adapter}}$<$ C $>$ \&}]{ra }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file Runnable\+Adapter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RunnableAdapter_a1ec5ab27d27279d3b6df731264eb0582}\label{classPoco_1_1RunnableAdapter_a1ec5ab27d27279d3b6df731264eb0582}} 
+\index{Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}!run@{run}}
+\index{run@{run}!Poco::RunnableAdapter$<$ C $>$@{Poco::RunnableAdapter$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Poco\+::\+Runnable\+Adapter}}$<$ C $>$\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Runnable_ad89816e81207bf5f1e52d5df860d11d4}{Poco\+::\+Runnable}}.
+
+
+
+Definition at line 64 of file Runnable\+Adapter.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{RunnableAdapter_8h}{Runnable\+Adapter.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,183 @@
+\hypertarget{classIoT_1_1Devices_1_1GNSSSensor}{}\doxysection{IoT\+::Devices\+::G\+N\+S\+S\+Sensor Class Reference}
+\label{classIoT_1_1Devices_1_1GNSSSensor}\index{IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}}
+
+
+{\ttfamily \#include $<$G\+N\+S\+S\+Sensor.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::G\+N\+S\+S\+Sensor\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::G\+N\+S\+S\+Sensor\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor_a5e19e540482e7125482fcaf9caf3e04c}{G\+N\+S\+S\+Sensor}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor_a2493544f7fea963c493ef16dff79efac}{$\sim$\+G\+N\+S\+S\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor}{G\+N\+S\+S\+Sensor}}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor_a0e84963bb4357185b1a827c389b933ef}{position\+Available}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor}{G\+N\+S\+S\+Sensor}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{structIoT_1_1Devices_1_1LatLon}{Lat\+Lon}} \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor_aeec325a3751fb809385feaebc6f52274}{position}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Returns true if a valid position is available. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor_a0373f7582d59b1a668e2fea954cc2fd9}{course}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor_aee43c0d16f43af9318d9fd8db713cf57}{speed}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Returns the current course in degrees \mbox{[}0, 360). \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor_ad4805e5532fca859a9ce324a02274bbd}{magnetic\+Variation}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor_ab6e0d179a707c9d80dd04c872f937893}{altitude}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor_a256b5ae87ffe3a97dee700b2e9b0877e}{hdop}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Devices_1_1PositionUpdate}{Position\+Update}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor_aa4b944c909e0c943c9ee5632f5a573f9}{position\+Update}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ void $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor_ab501f834a0b367461808a9260275546b}{position\+Lost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The interface for G\+N\+S\+S/\+G\+PS receivers. \begin{DoxyVerb}Implementations of this class should also support the
+following (optional) properties for configuration:
+
+  - positionChangedPeriod (int): the minimum time interval
+    in milliseconds between firings of the positionUpdate event.
+  - positionChangedDelta (int): the minimum distance (in meters)
+    the receiver must move before the positionUpdate event
+    is fired again.
+  - positionTimeout (int): Timeout in milliseconds after which the
+    positionLost event is fired if no valid position has been
+    received from the GNSS receiver. 
+\end{DoxyVerb}
+ 
+
+Definition at line 56 of file G\+N\+S\+S\+Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensor_a5e19e540482e7125482fcaf9caf3e04c}\label{classIoT_1_1Devices_1_1GNSSSensor_a5e19e540482e7125482fcaf9caf3e04c}} 
+\index{IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}!GNSSSensor@{GNSSSensor}}
+\index{GNSSSensor@{GNSSSensor}!IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}}
+\doxysubsubsection{\texorpdfstring{GNSSSensor()}{GNSSSensor()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+::\+G\+N\+S\+S\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fired when the G\+N\+SS receiver no longer provides position updates or has otherwise indicated that it is no longer able to determine the position. \mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensor_a2493544f7fea963c493ef16dff79efac}\label{classIoT_1_1Devices_1_1GNSSSensor_a2493544f7fea963c493ef16dff79efac}} 
+\index{IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}!````~GNSSSensor@{$\sim$GNSSSensor}}
+\index{````~GNSSSensor@{$\sim$GNSSSensor}!IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}}
+\doxysubsubsection{\texorpdfstring{$\sim$GNSSSensor()}{~GNSSSensor()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+::$\sim$\+G\+N\+S\+S\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor}{G\+N\+S\+S\+Sensor}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensor_ab6e0d179a707c9d80dd04c872f937893}\label{classIoT_1_1Devices_1_1GNSSSensor_ab6e0d179a707c9d80dd04c872f937893}} 
+\index{IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}!altitude@{altitude}}
+\index{altitude@{altitude}!IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}}
+\doxysubsubsection{\texorpdfstring{altitude()}{altitude()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+::altitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the current magnetic variation in degrees \mbox{[}0, 360). Returns -\/1 if no magnetic variation is available. Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensor_a0373f7582d59b1a668e2fea954cc2fd9}\label{classIoT_1_1Devices_1_1GNSSSensor_a0373f7582d59b1a668e2fea954cc2fd9}} 
+\index{IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}!course@{course}}
+\index{course@{course}!IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}}
+\doxysubsubsection{\texorpdfstring{course()}{course()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+::course (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the last obtained position.
+
+If no position is available, latitude and longitude will both be 0. To disambiguate with a real position, also check \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor_a0e84963bb4357185b1a827c389b933ef}{position\+Available()}}. Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensor_a256b5ae87ffe3a97dee700b2e9b0877e}\label{classIoT_1_1Devices_1_1GNSSSensor_a256b5ae87ffe3a97dee700b2e9b0877e}} 
+\index{IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}!hdop@{hdop}}
+\index{hdop@{hdop}!IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}}
+\doxysubsubsection{\texorpdfstring{hdop()}{hdop()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+::hdop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the current altitude above sea level in meters. Returns -\/9999 if no altitude is available. Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensor_ad4805e5532fca859a9ce324a02274bbd}\label{classIoT_1_1Devices_1_1GNSSSensor_ad4805e5532fca859a9ce324a02274bbd}} 
+\index{IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}!magneticVariation@{magneticVariation}}
+\index{magneticVariation@{magneticVariation}!IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}}
+\doxysubsubsection{\texorpdfstring{magneticVariation()}{magneticVariation()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+::magnetic\+Variation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the current speed in nautical knots. If no speed is available, returns -\/1. Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensor_aeec325a3751fb809385feaebc6f52274}\label{classIoT_1_1Devices_1_1GNSSSensor_aeec325a3751fb809385feaebc6f52274}} 
+\index{IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}!position@{position}}
+\index{position@{position}!IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structIoT_1_1Devices_1_1LatLon}{Lat\+Lon}} Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+::position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns true if a valid position is available. 
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensor_a0e84963bb4357185b1a827c389b933ef}\label{classIoT_1_1Devices_1_1GNSSSensor_a0e84963bb4357185b1a827c389b933ef}} 
+\index{IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}!positionAvailable@{positionAvailable}}
+\index{positionAvailable@{positionAvailable}!IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}}
+\doxysubsubsection{\texorpdfstring{positionAvailable()}{positionAvailable()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+::position\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensor}{G\+N\+S\+S\+Sensor}}. 
+
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensor_aee43c0d16f43af9318d9fd8db713cf57}\label{classIoT_1_1Devices_1_1GNSSSensor_aee43c0d16f43af9318d9fd8db713cf57}} 
+\index{IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}!speed@{speed}}
+\index{speed@{speed}!IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}}
+\doxysubsubsection{\texorpdfstring{speed()}{speed()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+::speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the current course in degrees \mbox{[}0, 360). 
+
+Here is the caller graph for this function\+:
+% FIG 8
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensor_ab501f834a0b367461808a9260275546b}\label{classIoT_1_1Devices_1_1GNSSSensor_ab501f834a0b367461808a9260275546b}} 
+\index{IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}!positionLost@{positionLost}}
+\index{positionLost@{positionLost}!IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}}
+\doxysubsubsection{\texorpdfstring{positionLost}{positionLost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$void$>$ Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+::position\+Lost}
+
+Fired when a position update (e.\+g., a valid N\+M\+EA 0183 R\+MC message) has been received from the receiver.
+
+Actual behavior of this event (e.\+g., minimum interval between fires) are implementation specific and can be configured via properties. 
+
+Definition at line 80 of file G\+N\+S\+S\+Sensor.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensor_aa4b944c909e0c943c9ee5632f5a573f9}\label{classIoT_1_1Devices_1_1GNSSSensor_aa4b944c909e0c943c9ee5632f5a573f9}} 
+\index{IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}!positionUpdate@{positionUpdate}}
+\index{positionUpdate@{positionUpdate}!IoT::Devices::GNSSSensor@{IoT::Devices::GNSSSensor}}
+\doxysubsubsection{\texorpdfstring{positionUpdate}{positionUpdate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Devices_1_1PositionUpdate}{Position\+Update}}$>$ Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+::position\+Update}
+
+
+
+Definition at line 72 of file G\+N\+S\+S\+Sensor.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{GNSSSensor_8h}{G\+N\+S\+S\+Sensor.\+h}}\end{DoxyCompactItemize}

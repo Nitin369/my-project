@@ -1,0 +1,144 @@
+\hypertarget{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper}{}\doxysection{IoT\+::Web\+Event\+::Web\+Event\+Notifier\+Server\+Helper Class Reference}
+\label{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper}\index{IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}}
+
+
+{\ttfamily \#include $<$Web\+Event\+Notifier\+Server\+Helper.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifier}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier}} \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_af69d70acf6a2548372995c3fdc6821f8}{Service}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_a51df031451693db88b6f3150d1183f71}{Web\+Event\+Notifier\+Server\+Helper}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_ad7760425d8e7b470e31d3ccb55f43157}{$\sim$\+Web\+Event\+Notifier\+Server\+Helper}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper}{Web\+Event\+Notifier\+Server\+Helper}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierRemoteObject}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier\+Remote\+Object}} $>$ \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_a788f18981b992be10df02fa2393a75dd}{create\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifier}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper}{Web\+Event\+Notifier\+Server\+Helper}}. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_a8880a914255e589157963c259dd808b2}{register\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifier}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\begin{DoxyCompactList}\small\item\em Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifier}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier}} instance. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_af0226819df42731d4983d14855e54143}{register\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierRemoteObject}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier\+Remote\+Object}} $>$ p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static void \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_a3208070f076c95a417de7fb13b9dca9d}{shutdown}} ()
+\item 
+static void \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_ad9b0dcd4f1e782923d5ad06f3955e172}{unregister\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\begin{DoxyCompactList}\small\item\em Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifier}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier}} from the O\+RB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simplified Remoting-\/capable interface to the Poco\+::\+O\+S\+P\+::\+Web\+Event\+::\+Web\+Event\+Service, usable from both C++ and Java\+Script. 
+
+Definition at line 34 of file Web\+Event\+Notifier\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_af69d70acf6a2548372995c3fdc6821f8}\label{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_af69d70acf6a2548372995c3fdc6821f8}} 
+\index{IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}!Service@{Service}}
+\index{Service@{Service}!IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}}
+\doxysubsubsection{\texorpdfstring{Service}{Service}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifier}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier}} \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_af69d70acf6a2548372995c3fdc6821f8}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier\+Server\+Helper\+::\+Service}}}
+
+
+
+Definition at line 40 of file Web\+Event\+Notifier\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_a51df031451693db88b6f3150d1183f71}\label{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_a51df031451693db88b6f3150d1183f71}} 
+\index{IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}!WebEventNotifierServerHelper@{WebEventNotifierServerHelper}}
+\index{WebEventNotifierServerHelper@{WebEventNotifierServerHelper}!IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}}
+\doxysubsubsection{\texorpdfstring{WebEventNotifierServerHelper()}{WebEventNotifierServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier\+Server\+Helper\+::\+Web\+Event\+Notifier\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_ad7760425d8e7b470e31d3ccb55f43157}\label{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_ad7760425d8e7b470e31d3ccb55f43157}} 
+\index{IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}!````~WebEventNotifierServerHelper@{$\sim$WebEventNotifierServerHelper}}
+\index{````~WebEventNotifierServerHelper@{$\sim$WebEventNotifierServerHelper}!IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}}
+\doxysubsubsection{\texorpdfstring{$\sim$WebEventNotifierServerHelper()}{~WebEventNotifierServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier\+Server\+Helper\+::$\sim$\+Web\+Event\+Notifier\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper}{Web\+Event\+Notifier\+Server\+Helper}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_a788f18981b992be10df02fa2393a75dd}\label{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_a788f18981b992be10df02fa2393a75dd}} 
+\index{IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}!createRemoteObject@{createRemoteObject}}
+\index{createRemoteObject@{createRemoteObject}!IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}}
+\doxysubsubsection{\texorpdfstring{createRemoteObject()}{createRemoteObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierRemoteObject}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier\+Remote\+Object}} $>$ Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier\+Server\+Helper\+::create\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifier}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper}{Web\+Event\+Notifier\+Server\+Helper}}. 
+
+
+
+Definition at line 88 of file Web\+Event\+Notifier\+Server\+Helper.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_a8880a914255e589157963c259dd808b2}\label{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_a8880a914255e589157963c259dd808b2}} 
+\index{IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}!registerObject@{registerObject}}
+\index{registerObject@{registerObject}!IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerObject()}{registerObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier\+Server\+Helper\+::register\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifier}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifier}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier}} instance. 
+
+
+
+Definition at line 94 of file Web\+Event\+Notifier\+Server\+Helper.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_af0226819df42731d4983d14855e54143}\label{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_af0226819df42731d4983d14855e54143}} 
+\index{IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}!registerRemoteObject@{registerRemoteObject}}
+\index{registerRemoteObject@{registerRemoteObject}!IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerRemoteObject()}{registerRemoteObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier\+Server\+Helper\+::register\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifierRemoteObject}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier\+Remote\+Object}} $>$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifier}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier}} instance and registers it with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. 
+
+Definition at line 100 of file Web\+Event\+Notifier\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_a3208070f076c95a417de7fb13b9dca9d}\label{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_a3208070f076c95a417de7fb13b9dca9d}} 
+\index{IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily static void Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier\+Server\+Helper\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers the given Remote\+Object with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. \mbox{\Hypertarget{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_ad9b0dcd4f1e782923d5ad06f3955e172}\label{classIoT_1_1WebEvent_1_1WebEventNotifierServerHelper_ad9b0dcd4f1e782923d5ad06f3955e172}} 
+\index{IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}!unregisterObject@{unregisterObject}}
+\index{unregisterObject@{unregisterObject}!IoT::WebEvent::WebEventNotifierServerHelper@{IoT::WebEvent::WebEventNotifierServerHelper}}
+\doxysubsubsection{\texorpdfstring{unregisterObject()}{unregisterObject()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier\+Server\+Helper\+::unregister\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1WebEvent_1_1WebEventNotifier}{Io\+T\+::\+Web\+Event\+::\+Web\+Event\+Notifier}} from the O\+RB. 
+
+
+
+Definition at line 106 of file Web\+Event\+Notifier\+Server\+Helper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Web\+Event/\mbox{\hyperlink{WebEventNotifierServerHelper_8h}{Web\+Event\+Notifier\+Server\+Helper.\+h}}\end{DoxyCompactItemize}

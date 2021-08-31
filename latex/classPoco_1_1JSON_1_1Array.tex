@@ -1,0 +1,413 @@
+\hypertarget{classPoco_1_1JSON_1_1Array}{}\doxysection{Poco\+::J\+S\+ON\+::Array Class Reference}
+\label{classPoco_1_1JSON_1_1Array}\index{Poco::JSON::Array@{Poco::JSON::Array}}
+
+
+{\ttfamily \#include $<$Array.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} $>$ \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a09c556bcd84c2bcf02a375b9b5e52f2f}{Value\+Vec}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} $>$\+::iterator \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_af2fb7bb43a75a6c15c65b92c94baf18a}{Iterator}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} $>$\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a2699e63ff33feec50e6c6359bf32acd2}{Const\+Iterator}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}} $>$ \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aeceb3f751138fa25594300ea1daec83f}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a62a118c047826e2a813e1e1a80533b5a}{Array}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a1b333c85d86a401bf90b0b01e1a4acee}{Array}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}} \&copy)
+\begin{DoxyCompactList}\small\item\em Creates an empty \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a629f720a7a93e6753acfc958eb79bdec}{$\sim$\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Creates an \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}} by copying another one. \end{DoxyCompactList}\item 
+Value\+Vec\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a292f1b58947fae4dd471d31c858d5001}{begin}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}}. \end{DoxyCompactList}\item 
+Value\+Vec\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_ace578ec6e80ffbbf8ef4bc969ddc8be6}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the begin iterator for values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_abd2b52e98f6a14138efb158b304099c0}{get}} (unsigned int index) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the end iterator for values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aeceb3f751138fa25594300ea1daec83f}{Array\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a48412d9bd9da136d39512fd9b71cf842}{get\+Array}} (unsigned int index) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_af0737149a8ad424bd2cecbae7fe6711c}{get\+Element}} (unsigned int index) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}} $>$ \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a10f00d48d7d69d4d54038da9a2136342}{get\+Object}} (unsigned int index) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aab209d91ea7b1d150830c720236cc9bb}{size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a20ba504b1c3ba6eaac87619a5d6504c2}{is\+Array}} (unsigned int index) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the size of the array. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a7e4e1b54ddac927ada18045b73a683c9}{is\+Array}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \&value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true when the element is an array. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a7ad4ead496c8b14d195ddfef8825247a}{is\+Array}} (\mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a2699e63ff33feec50e6c6359bf32acd2}{Const\+Iterator}} \&value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true when the element is an array. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a362487e8be7d098ebbd90ad75f2b84da}{is\+Null}} (unsigned int index) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true when the element is an array. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aef0fab1fde18cf9de6577a5c5444d24e}{is\+Object}} (unsigned int index) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a882e28789891c595b51079572d4a39e7}{is\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \&value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true when the element is an object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a4fc60f3183ac8d8e1d00cc318470fd58}{is\+Object}} (\mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a2699e63ff33feec50e6c6359bf32acd2}{Const\+Iterator}} \&value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true when the element is an object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a7d8e7e05f5170f822b831e753fb85e9b}{opt\+Element}} (unsigned int index, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&def) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true when the element is an object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a10417adb4a420dd943f86b167d6f642a}{add}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a9e2f77ad02f173b4a67247c18982dbf7}{set}} (unsigned int index, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \&value)
+\begin{DoxyCompactList}\small\item\em Add the given value to the array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aa7595d2a4f5e07471d474a6b795791c1}{stringify}} (std\+::ostream \&out, unsigned int indent=0, int step=-\/1) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Update the element on the given index to specified value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a96472ba8a624a7373367ee7882d74198}{remove}} (unsigned int index)
+\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a21596b20ad674a340fb3a9ee5bda1954}{operator const Poco\+::\+Dynamic\+::\+Array \&}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Removes the element on the given index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a0c2ae5b2725589c38d2f900e2173ac1a}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Utility function for creation of array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{namespacePoco_1_1Dynamic_aa5b593277159c1643b9ee39b7b31e379}{Poco\+::\+Dynamic\+::\+Array}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_ae27a4f5366f23a180ac3da6378d6686d}{make\+Array}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aeceb3f751138fa25594300ea1daec83f}{J\+S\+O\+N\+::\+Array\+::\+Ptr}} \&arr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a \mbox{\hyperlink{namespacePoco_1_1JSON}{J\+S\+ON}} array. \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}} provides a representation based on shared pointers and optimized for performance. It is possible to convert \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}} to \mbox{\hyperlink{namespacePoco_1_1Dynamic_aa5b593277159c1643b9ee39b7b31e379}{Poco\+::\+Dynamic\+::\+Array}}. Conversion requires copying and therefore has performance penalty; the benefit is in improved syntax, eg\+:
+
+// use pointers to avoid copying using namespace \mbox{\hyperlink{namespacePoco_1_1JSON}{Poco\+::\+J\+S\+ON}}; std\+::string json = \char`\"{}\mbox{[} \{\textbackslash{}\char`\"{}test" \+: 0\}, \{ "test1" \+: \mbox{[}1, 2, 3\mbox{]}, "test2" \+: 4 \} \mbox{]}"; \mbox{\hyperlink{classPoco_1_1JSON_1_1Parser}{Parser}} parser; Var result = parser.\+parse(json); \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aeceb3f751138fa25594300ea1daec83f}{Array\+::\+Ptr}} arr = result.\+extract$<$\+Array\+::\+Ptr$>$(); \mbox{\hyperlink{classPoco_1_1JSON_1_1Object_a03dbde848f00716887308883f547eef7}{Object\+::\+Ptr}} object = arr-\/$>$get\+Object(0); // object == \{"test" \+: 0\} int i = object-\/$>$get\+Element$<$int$>$(\char`\"{}test\char`\"{}); // i == 0; \mbox{\hyperlink{classPoco_1_1JSON_1_1Object_a03dbde848f00716887308883f547eef7}{Object\+::\+Ptr}} sub\+Object = $\ast$arr-\/$>$get\+Object(1); // sub\+Object == \{"test" \+: 0\} \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}} sub\+Arr\+::\+Ptr = sub\+Object-\/$>$get\+Array(\char`\"{}test1\char`\"{}); // sub\+Arr == \mbox{[}1, 2, 3\mbox{]} i = result = sub\+Arr-\/$>$get(0); // i == 1;
+
+// copy/convert to \mbox{\hyperlink{namespacePoco_1_1Dynamic_aa5b593277159c1643b9ee39b7b31e379}{Poco\+::\+Dynamic\+::\+Array}} \mbox{\hyperlink{namespacePoco_1_1Dynamic_aa5b593277159c1643b9ee39b7b31e379}{Poco\+::\+Dynamic\+::\+Array}} da = $\ast$arr; i = da\mbox{[}0\mbox{]}\mbox{[}\char`\"{}test\char`\"{}\mbox{]}; // i == 0 i = da\mbox{[}1\mbox{]}\mbox{[}\char`\"{}test1\char`\"{}\mbox{]}\mbox{[}1\mbox{]}; // i == 2 \hypertarget{classPoco_1_1JSON_1_1Array_autotoc_md0}{}\doxysubsubsection{i = da\mbox{[}1\mbox{]}\mbox{[}\char`\"{}test2\char`\"{}\mbox{]};    // i == 4}\label{classPoco_1_1JSON_1_1Array_autotoc_md0}
+
+
+Definition at line 37 of file Array.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a2699e63ff33feec50e6c6359bf32acd2}\label{classPoco_1_1JSON_1_1Array_a2699e63ff33feec50e6c6359bf32acd2}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!ConstIterator@{ConstIterator}}
+\index{ConstIterator@{ConstIterator}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{ConstIterator}{ConstIterator}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}}$>$\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a2699e63ff33feec50e6c6359bf32acd2}{Poco\+::\+J\+S\+O\+N\+::\+Array\+::\+Const\+Iterator}}}
+
+
+
+Definition at line 65 of file Array.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_af2fb7bb43a75a6c15c65b92c94baf18a}\label{classPoco_1_1JSON_1_1Array_af2fb7bb43a75a6c15c65b92c94baf18a}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}}$>$\+::iterator \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_af2fb7bb43a75a6c15c65b92c94baf18a}{Poco\+::\+J\+S\+O\+N\+::\+Array\+::\+Iterator}}}
+
+
+
+Definition at line 64 of file Array.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_aeceb3f751138fa25594300ea1daec83f}\label{classPoco_1_1JSON_1_1Array_aeceb3f751138fa25594300ea1daec83f}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}}$>$ \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aeceb3f751138fa25594300ea1daec83f}{Poco\+::\+J\+S\+O\+N\+::\+Array\+::\+Ptr}}}
+
+
+
+Definition at line 66 of file Array.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a09c556bcd84c2bcf02a375b9b5e52f2f}\label{classPoco_1_1JSON_1_1Array_a09c556bcd84c2bcf02a375b9b5e52f2f}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!ValueVec@{ValueVec}}
+\index{ValueVec@{ValueVec}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{ValueVec}{ValueVec}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}}$>$ \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a09c556bcd84c2bcf02a375b9b5e52f2f}{Poco\+::\+J\+S\+O\+N\+::\+Array\+::\+Value\+Vec}}}
+
+
+
+Definition at line 63 of file Array.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a62a118c047826e2a813e1e1a80533b5a}\label{classPoco_1_1JSON_1_1Array_a62a118c047826e2a813e1e1a80533b5a}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!Array@{Array}}
+\index{Array@{Array}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+J\+S\+O\+N\+::\+Array\+::\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a1b333c85d86a401bf90b0b01e1a4acee}\label{classPoco_1_1JSON_1_1Array_a1b333c85d86a401bf90b0b01e1a4acee}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!Array@{Array}}
+\index{Array@{Array}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+J\+S\+O\+N\+::\+Array\+::\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}} \&}]{copy }\end{DoxyParamCaption})}
+
+
+
+Creates an empty \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}}. 
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a629f720a7a93e6753acfc958eb79bdec}\label{classPoco_1_1JSON_1_1Array_a629f720a7a93e6753acfc958eb79bdec}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!````~Array@{$\sim$Array}}
+\index{````~Array@{$\sim$Array}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{$\sim$Array()}{~Array()}}
+{\footnotesize\ttfamily virtual Poco\+::\+J\+S\+O\+N\+::\+Array\+::$\sim$\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates an \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}} by copying another one. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a10417adb4a420dd943f86b167d6f642a}\label{classPoco_1_1JSON_1_1Array_a10417adb4a420dd943f86b167d6f642a}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!add@{add}}
+\index{add@{add}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Array\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 224 of file Array.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a292f1b58947fae4dd471d31c858d5001}\label{classPoco_1_1JSON_1_1Array_a292f1b58947fae4dd471d31c858d5001}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!begin@{begin}}
+\index{begin@{begin}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily Array\+::\+Value\+Vec\+::const\+\_\+iterator Poco\+::\+J\+S\+O\+N\+::\+Array\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}}. 
+
+
+
+Definition at line 186 of file Array.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a0c2ae5b2725589c38d2f900e2173ac1a}\label{classPoco_1_1JSON_1_1Array_a0c2ae5b2725589c38d2f900e2173ac1a}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!clear@{clear}}
+\index{clear@{clear}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Array\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Utility function for creation of array. 
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_ace578ec6e80ffbbf8ef4bc969ddc8be6}\label{classPoco_1_1JSON_1_1Array_ace578ec6e80ffbbf8ef4bc969ddc8be6}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!end@{end}}
+\index{end@{end}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily Array\+::\+Value\+Vec\+::const\+\_\+iterator Poco\+::\+J\+S\+O\+N\+::\+Array\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the begin iterator for values. 
+
+
+
+Definition at line 192 of file Array.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_abd2b52e98f6a14138efb158b304099c0}\label{classPoco_1_1JSON_1_1Array_abd2b52e98f6a14138efb158b304099c0}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!get@{get}}
+\index{get@{get}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} Poco\+::\+J\+S\+O\+N\+::\+Array\+::get (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Returns the end iterator for values. 
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a48412d9bd9da136d39512fd9b71cf842}\label{classPoco_1_1JSON_1_1Array_a48412d9bd9da136d39512fd9b71cf842}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!getArray@{getArray}}
+\index{getArray@{getArray}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{getArray()}{getArray()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aeceb3f751138fa25594300ea1daec83f}{Array\+::\+Ptr}} Poco\+::\+J\+S\+O\+N\+::\+Array\+::get\+Array (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption}) const}
+
+Retrieves the element at the given index. Will return an empty value when the element doesn\textquotesingle{}t exist. \mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_af0737149a8ad424bd2cecbae7fe6711c}\label{classPoco_1_1JSON_1_1Array_af0737149a8ad424bd2cecbae7fe6711c}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!getElement@{getElement}}
+\index{getElement@{getElement}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{getElement()}{getElement()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Poco\+::\+J\+S\+O\+N\+::\+Array\+::get\+Element (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieves an array. When the element is not an \mbox{\hyperlink{classPoco_1_1JSON_1_1Array}{Array}} or doesn\textquotesingle{}t exist, an empty \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}} is returned. Retrieves an element and tries to convert it to the template type. The convert$<$\+T$>$ method of \mbox{\hyperlink{namespacePoco_1_1Dynamic}{Dynamic}} is called which can also throw exceptions for invalid values. Note\+: This will not work for an array or an object. 
+
+Definition at line 92 of file Array.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a10f00d48d7d69d4d54038da9a2136342}\label{classPoco_1_1JSON_1_1Array_a10f00d48d7d69d4d54038da9a2136342}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!getObject@{getObject}}
+\index{getObject@{getObject}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{getObject()}{getObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1JSON_1_1Object}{Object}}$>$ Poco\+::\+J\+S\+O\+N\+::\+Array\+::get\+Object (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a7e4e1b54ddac927ada18045b73a683c9}\label{classPoco_1_1JSON_1_1Array_a7e4e1b54ddac927ada18045b73a683c9}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!isArray@{isArray}}
+\index{isArray@{isArray}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{isArray()}{isArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+J\+S\+O\+N\+::\+Array\+::is\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \&}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true when the element is an array. 
+
+
+
+Definition at line 212 of file Array.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a7ad4ead496c8b14d195ddfef8825247a}\label{classPoco_1_1JSON_1_1Array_a7ad4ead496c8b14d195ddfef8825247a}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!isArray@{isArray}}
+\index{isArray@{isArray}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{isArray()}{isArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+J\+S\+O\+N\+::\+Array\+::is\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a2699e63ff33feec50e6c6359bf32acd2}{Const\+Iterator}} \&}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true when the element is an array. 
+
+
+
+Definition at line 218 of file Array.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a20ba504b1c3ba6eaac87619a5d6504c2}\label{classPoco_1_1JSON_1_1Array_a20ba504b1c3ba6eaac87619a5d6504c2}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!isArray@{isArray}}
+\index{isArray@{isArray}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{isArray()}{isArray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+J\+S\+O\+N\+::\+Array\+::is\+Array (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the size of the array. 
+
+
+
+Definition at line 205 of file Array.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a362487e8be7d098ebbd90ad75f2b84da}\label{classPoco_1_1JSON_1_1Array_a362487e8be7d098ebbd90ad75f2b84da}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!isNull@{isNull}}
+\index{isNull@{isNull}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{isNull()}{isNull()}}
+{\footnotesize\ttfamily bool Poco\+::\+J\+S\+O\+N\+::\+Array\+::is\+Null (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Returns true when the element is an array. 
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a882e28789891c595b51079572d4a39e7}\label{classPoco_1_1JSON_1_1Array_a882e28789891c595b51079572d4a39e7}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!isObject@{isObject}}
+\index{isObject@{isObject}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{isObject()}{isObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+J\+S\+O\+N\+::\+Array\+::is\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \&}]{value }\end{DoxyParamCaption}) const}
+
+
+
+Returns true when the element is an object. 
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a4fc60f3183ac8d8e1d00cc318470fd58}\label{classPoco_1_1JSON_1_1Array_a4fc60f3183ac8d8e1d00cc318470fd58}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!isObject@{isObject}}
+\index{isObject@{isObject}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{isObject()}{isObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+J\+S\+O\+N\+::\+Array\+::is\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1JSON_1_1Array_a2699e63ff33feec50e6c6359bf32acd2}{Const\+Iterator}} \&}]{value }\end{DoxyParamCaption}) const}
+
+
+
+Returns true when the element is an object. 
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_aef0fab1fde18cf9de6577a5c5444d24e}\label{classPoco_1_1JSON_1_1Array_aef0fab1fde18cf9de6577a5c5444d24e}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!isObject@{isObject}}
+\index{isObject@{isObject}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{isObject()}{isObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+J\+S\+O\+N\+::\+Array\+::is\+Object (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption}) const}
+
+Returns true when the element is null or when the element doesn\textquotesingle{}t exist. \mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_ae27a4f5366f23a180ac3da6378d6686d}\label{classPoco_1_1JSON_1_1Array_ae27a4f5366f23a180ac3da6378d6686d}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!makeArray@{makeArray}}
+\index{makeArray@{makeArray}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{makeArray()}{makeArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{namespacePoco_1_1Dynamic_aa5b593277159c1643b9ee39b7b31e379}{Poco\+::\+Dynamic\+::\+Array}} Poco\+::\+J\+S\+O\+N\+::\+Array\+::make\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Array_aeceb3f751138fa25594300ea1daec83f}{J\+S\+O\+N\+::\+Array\+::\+Ptr}} \&}]{arr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a21596b20ad674a340fb3a9ee5bda1954}\label{classPoco_1_1JSON_1_1Array_a21596b20ad674a340fb3a9ee5bda1954}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!operator const Poco::Dynamic::Array \&@{operator const Poco::Dynamic::Array \&}}
+\index{operator const Poco::Dynamic::Array \&@{operator const Poco::Dynamic::Array \&}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{operator const Poco::Dynamic::Array \&()}{operator const Poco::Dynamic::Array \&()}}
+{\footnotesize\ttfamily Poco\+::\+J\+S\+O\+N\+::\+Array\+::operator \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1Dynamic_aa5b593277159c1643b9ee39b7b31e379}{Poco\+::\+Dynamic\+::\+Array}} \& (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Removes the element on the given index. 
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a7d8e7e05f5170f822b831e753fb85e9b}\label{classPoco_1_1JSON_1_1Array_a7d8e7e05f5170f822b831e753fb85e9b}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!optElement@{optElement}}
+\index{optElement@{optElement}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{optElement()}{optElement()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Poco\+::\+J\+S\+O\+N\+::\+Array\+::opt\+Element (\begin{DoxyParamCaption}\item[{unsigned int}]{index,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{def }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true when the element is an object. 
+
+Returns the element at the given index. When the element is null, doesn\textquotesingle{}t exist or can\textquotesingle{}t be converted to the given type, the default value will be returned 
+
+Definition at line 133 of file Array.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a96472ba8a624a7373367ee7882d74198}\label{classPoco_1_1JSON_1_1Array_a96472ba8a624a7373367ee7882d74198}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!remove@{remove}}
+\index{remove@{remove}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Array\+::remove (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prints the array to out. When indent has zero value, the array will be printed without newline breaks and spaces between elements. 
+
+Definition at line 237 of file Array.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_a9e2f77ad02f173b4a67247c18982dbf7}\label{classPoco_1_1JSON_1_1Array_a9e2f77ad02f173b4a67247c18982dbf7}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!set@{set}}
+\index{set@{set}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Array\+::set (\begin{DoxyParamCaption}\item[{unsigned int}]{index,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add the given value to the array. 
+
+
+
+Definition at line 230 of file Array.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_aab209d91ea7b1d150830c720236cc9bb}\label{classPoco_1_1JSON_1_1Array_aab209d91ea7b1d150830c720236cc9bb}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!size@{size}}
+\index{size@{size}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+J\+S\+O\+N\+::\+Array\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieves an object. When the element is not an object or doesn\textquotesingle{}t exist, an empty \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}} is returned. 
+
+Definition at line 199 of file Array.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Array_aa7595d2a4f5e07471d474a6b795791c1}\label{classPoco_1_1JSON_1_1Array_aa7595d2a4f5e07471d474a6b795791c1}} 
+\index{Poco::JSON::Array@{Poco::JSON::Array}!stringify@{stringify}}
+\index{stringify@{stringify}!Poco::JSON::Array@{Poco::JSON::Array}}
+\doxysubsubsection{\texorpdfstring{stringify()}{stringify()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Array\+::stringify (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{unsigned int}]{indent = {\ttfamily 0},  }\item[{int}]{step = {\ttfamily -\/1} }\end{DoxyParamCaption}) const}
+
+
+
+Update the element on the given index to specified value. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+J\+S\+O\+N/\mbox{\hyperlink{JSON_2Array_8h}{Array.\+h}}\end{DoxyCompactItemize}

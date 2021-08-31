@@ -1,0 +1,178 @@
+\hypertarget{classPoco_1_1SharedLibrary}{}\doxysection{Poco\+::Shared\+Library Class Reference}
+\label{classPoco_1_1SharedLibrary}\index{Poco::SharedLibrary@{Poco::SharedLibrary}}
+
+
+{\ttfamily \#include $<$Shared\+Library.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Shared\+Library\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Shared\+Library\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1SharedLibrary_a1b39947274f1d315f86877869786c527}{Flags}} \{ \mbox{\hyperlink{classPoco_1_1SharedLibrary_a1b39947274f1d315f86877869786c527a5ebf5bfe344a2dd408f265dbc320f252}{S\+H\+L\+I\+B\+\_\+\+G\+L\+O\+B\+AL}} = 1, 
+\mbox{\hyperlink{classPoco_1_1SharedLibrary_a1b39947274f1d315f86877869786c527a604e3f1fb6714c96f5abc9a1e4ccc559}{S\+H\+L\+I\+B\+\_\+\+L\+O\+C\+AL}} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1SharedLibrary_aaa0e1461d0c0d85679f6639133dc1912}{Shared\+Library}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1SharedLibrary_adbce85eac5864a1de9f083bd5647b92b}{Shared\+Library}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1SharedLibrary}{Shared\+Library}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1SharedLibrary_a32e5b8023bf0685566f2e2474363eba1}{Shared\+Library}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, int flags)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1SharedLibrary_a1ecce454e0b07e72914a654d129e532c}{$\sim$\+Shared\+Library}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1SharedLibrary_a2295db3941a99f9017847930bf2f0f8d}{load}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\item 
+void \mbox{\hyperlink{classPoco_1_1SharedLibrary_a6661c3cb83c2848b8e4686001c901fe4}{load}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, int flags)
+\item 
+void \mbox{\hyperlink{classPoco_1_1SharedLibrary_a7c7c75e217297ae63905125875bda092}{unload}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1SharedLibrary_afd21890fee6845ee0a3e602f80e1ed21}{is\+Loaded}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Unloads a shared library. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1SharedLibrary_ad9b1234393cdbc5c1eb0719773fe9681}{has\+Symbol}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Returns true iff a library has been loaded. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{classPoco_1_1SharedLibrary_aa96cadd54d08039dafccced050d04410}{get\+Symbol}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1SharedLibrary_a7804cbb4292e9dc762e46babc6f637f7}{get\+Path}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1SharedLibrary_a71e361a9f4626ad797af667171b2b041}{suffix}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1SharedLibrary}{Shared\+Library}} class dynamically loads shared libraries at run-\/time. 
+
+Definition at line 44 of file Shared\+Library.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1SharedLibrary_a1b39947274f1d315f86877869786c527}\label{classPoco_1_1SharedLibrary_a1b39947274f1d315f86877869786c527}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!Flags@{Flags}}
+\index{Flags@{Flags}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{Flags}{Flags}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1SharedLibrary_a1b39947274f1d315f86877869786c527}{Poco\+::\+Shared\+Library\+::\+Flags}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SHLIB\_GLOBAL@{SHLIB\_GLOBAL}!Poco::SharedLibrary@{Poco::SharedLibrary}}\index{Poco::SharedLibrary@{Poco::SharedLibrary}!SHLIB\_GLOBAL@{SHLIB\_GLOBAL}}}\mbox{\Hypertarget{classPoco_1_1SharedLibrary_a1b39947274f1d315f86877869786c527a5ebf5bfe344a2dd408f265dbc320f252}\label{classPoco_1_1SharedLibrary_a1b39947274f1d315f86877869786c527a5ebf5bfe344a2dd408f265dbc320f252}} 
+S\+H\+L\+I\+B\+\_\+\+G\+L\+O\+B\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SHLIB\_LOCAL@{SHLIB\_LOCAL}!Poco::SharedLibrary@{Poco::SharedLibrary}}\index{Poco::SharedLibrary@{Poco::SharedLibrary}!SHLIB\_LOCAL@{SHLIB\_LOCAL}}}\mbox{\Hypertarget{classPoco_1_1SharedLibrary_a1b39947274f1d315f86877869786c527a604e3f1fb6714c96f5abc9a1e4ccc559}\label{classPoco_1_1SharedLibrary_a1b39947274f1d315f86877869786c527a604e3f1fb6714c96f5abc9a1e4ccc559}} 
+S\+H\+L\+I\+B\+\_\+\+L\+O\+C\+AL&On platforms that use dlopen(), use R\+T\+L\+D\+\_\+\+G\+L\+O\+B\+AL. This is the default if no flags are given.
+
+This flag is ignored on platforms that do not use dlopen(). \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 49 of file Shared\+Library.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1SharedLibrary_aaa0e1461d0c0d85679f6639133dc1912}\label{classPoco_1_1SharedLibrary_aaa0e1461d0c0d85679f6639133dc1912}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!SharedLibrary@{SharedLibrary}}
+\index{SharedLibrary@{SharedLibrary}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{SharedLibrary()}{SharedLibrary()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Shared\+Library\+::\+Shared\+Library (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1SharedLibrary_adbce85eac5864a1de9f083bd5647b92b}\label{classPoco_1_1SharedLibrary_adbce85eac5864a1de9f083bd5647b92b}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!SharedLibrary@{SharedLibrary}}
+\index{SharedLibrary@{SharedLibrary}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{SharedLibrary()}{SharedLibrary()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Shared\+Library\+::\+Shared\+Library (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1SharedLibrary}{Shared\+Library}} object. 
+
+\mbox{\Hypertarget{classPoco_1_1SharedLibrary_a32e5b8023bf0685566f2e2474363eba1}\label{classPoco_1_1SharedLibrary_a32e5b8023bf0685566f2e2474363eba1}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!SharedLibrary@{SharedLibrary}}
+\index{SharedLibrary@{SharedLibrary}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{SharedLibrary()}{SharedLibrary()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Shared\+Library\+::\+Shared\+Library (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1SharedLibrary}{Shared\+Library}} object and loads a library from the given path. \mbox{\Hypertarget{classPoco_1_1SharedLibrary_a1ecce454e0b07e72914a654d129e532c}\label{classPoco_1_1SharedLibrary_a1ecce454e0b07e72914a654d129e532c}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!````~SharedLibrary@{$\sim$SharedLibrary}}
+\index{````~SharedLibrary@{$\sim$SharedLibrary}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{$\sim$SharedLibrary()}{~SharedLibrary()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Shared\+Library\+::$\sim$\+Shared\+Library (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a \mbox{\hyperlink{classPoco_1_1SharedLibrary}{Shared\+Library}} object and loads a library from the given path, using the given flags. See the Flags enumeration for valid values. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1SharedLibrary_a7804cbb4292e9dc762e46babc6f637f7}\label{classPoco_1_1SharedLibrary_a7804cbb4292e9dc762e46babc6f637f7}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!getPath@{getPath}}
+\index{getPath@{getPath}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Shared\+Library\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the address of the symbol with the given name. For functions, this is the entry point of the function. Throws a Not\+Found\+Exception if the symbol does not exist. \mbox{\Hypertarget{classPoco_1_1SharedLibrary_aa96cadd54d08039dafccced050d04410}\label{classPoco_1_1SharedLibrary_aa96cadd54d08039dafccced050d04410}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{getSymbol()}{getSymbol()}}
+{\footnotesize\ttfamily void$\ast$ Poco\+::\+Shared\+Library\+::get\+Symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Returns true iff the loaded library contains a symbol with the given name. \mbox{\Hypertarget{classPoco_1_1SharedLibrary_ad9b1234393cdbc5c1eb0719773fe9681}\label{classPoco_1_1SharedLibrary_ad9b1234393cdbc5c1eb0719773fe9681}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!hasSymbol@{hasSymbol}}
+\index{hasSymbol@{hasSymbol}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{hasSymbol()}{hasSymbol()}}
+{\footnotesize\ttfamily bool Poco\+::\+Shared\+Library\+::has\+Symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Returns true iff a library has been loaded. 
+
+\mbox{\Hypertarget{classPoco_1_1SharedLibrary_afd21890fee6845ee0a3e602f80e1ed21}\label{classPoco_1_1SharedLibrary_afd21890fee6845ee0a3e602f80e1ed21}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!isLoaded@{isLoaded}}
+\index{isLoaded@{isLoaded}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{isLoaded()}{isLoaded()}}
+{\footnotesize\ttfamily bool Poco\+::\+Shared\+Library\+::is\+Loaded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Unloads a shared library. 
+
+\mbox{\Hypertarget{classPoco_1_1SharedLibrary_a2295db3941a99f9017847930bf2f0f8d}\label{classPoco_1_1SharedLibrary_a2295db3941a99f9017847930bf2f0f8d}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!load@{load}}
+\index{load@{load}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Shared\+Library\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+Destroys the \mbox{\hyperlink{classPoco_1_1SharedLibrary}{Shared\+Library}}. The actual library remains loaded. \mbox{\Hypertarget{classPoco_1_1SharedLibrary_a6661c3cb83c2848b8e4686001c901fe4}\label{classPoco_1_1SharedLibrary_a6661c3cb83c2848b8e4686001c901fe4}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!load@{load}}
+\index{load@{load}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Shared\+Library\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+Loads a shared library from the given path. Throws a Library\+Already\+Loaded\+Exception if a library has already been loaded. Throws a Library\+Load\+Exception if the library cannot be loaded. \mbox{\Hypertarget{classPoco_1_1SharedLibrary_a71e361a9f4626ad797af667171b2b041}\label{classPoco_1_1SharedLibrary_a71e361a9f4626ad797af667171b2b041}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!suffix@{suffix}}
+\index{suffix@{suffix}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{suffix()}{suffix()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Shared\+Library\+::suffix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the path of the library, as specified in a call to \mbox{\hyperlink{classPoco_1_1SharedLibrary_a2295db3941a99f9017847930bf2f0f8d}{load()}} or the constructor. \mbox{\Hypertarget{classPoco_1_1SharedLibrary_a7c7c75e217297ae63905125875bda092}\label{classPoco_1_1SharedLibrary_a7c7c75e217297ae63905125875bda092}} 
+\index{Poco::SharedLibrary@{Poco::SharedLibrary}!unload@{unload}}
+\index{unload@{unload}!Poco::SharedLibrary@{Poco::SharedLibrary}}
+\doxysubsubsection{\texorpdfstring{unload()}{unload()}}
+{\footnotesize\ttfamily void Poco\+::\+Shared\+Library\+::unload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Loads a shared library from the given path, using the given flags. See the Flags enumeration for valid values. Throws a Library\+Already\+Loaded\+Exception if a library has already been loaded. Throws a Library\+Load\+Exception if the library cannot be loaded. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{SharedLibrary_8h}{Shared\+Library.\+h}}\end{DoxyCompactItemize}

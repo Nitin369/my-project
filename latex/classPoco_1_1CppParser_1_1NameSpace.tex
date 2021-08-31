@@ -1,0 +1,371 @@
+\hypertarget{classPoco_1_1CppParser_1_1NameSpace}{}\doxysection{Poco\+::Cpp\+Parser\+::Name\+Space Class Reference}
+\label{classPoco_1_1CppParser_1_1NameSpace}\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+
+
+This class represents a namespace.  
+
+
+
+
+{\ttfamily \#include $<$Name\+Space.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Cpp\+Parser\+::Name\+Space\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Cpp\+Parser\+::Name\+Space\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::multimap$<$ std\+::string, \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Symbol}} $\ast$ $>$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}}
+\item 
+typedef Symbol\+Table\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a4a1e5b9309bae19fe4d9ecabf21ef907}{Iterator}}
+\item 
+typedef std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_ad6b92c6afd704d5987ba7e62a6ec1d26}{Alias\+Map}}
+\item 
+typedef std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_ae89b6d37bc18c2f3dfbc56784c622298}{Name\+Space\+Vec}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_ad47b6cd12f0f65219a49fcfd92ae379c}{Name\+Space}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a831bd6dd00de79b08dab72df56082f98}{Name\+Space}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a61e91b585a9d5aa28ba734c3f580213a}{name}}, \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}} $\ast$p\+Name\+Space=0)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a52421a7604bf1675994703f51e045790}{$\sim$\+Name\+Space}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_ac239e9cbee0f91bad08d1b484ddd1d6a}{add\+Symbol}} (\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Symbol}} $\ast$p\+Symbol)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a7ac36527b7159dd80a6e5aa68c98d89a}{import\+Symbol}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a92622f9b05f753b0060b0c25d31db435}{full\+Name}})
+\begin{DoxyCompactList}\small\item\em Adds a symbol to the namespace. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6ea08096b5cd91c1be7c894d62fde265}{import\+Name\+Space}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a78973e9797d816dd5646093b908b4eb5}{name\+Space}})
+\begin{DoxyCompactList}\small\item\em Imports a symbol from another namespace (using $<$symbol$>$). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a4a1e5b9309bae19fe4d9ecabf21ef907}{Iterator}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a4b35bcecda4964489698fa8508261b14}{begin}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Imports a namespace (using namespace $<$namespace$>$). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a4a1e5b9309bae19fe4d9ecabf21ef907}{Iterator}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_adb64c97f42e8894a679443cfc603ebeb}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator for iterating over the \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}}\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Symbol}}\textquotesingle{}s. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Symbol}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a8aee24d50965e14f5f0d81dc8d198b62}{lookup}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a61e91b585a9d5aa28ba734c3f580213a}{name}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator for iterating over the \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}}\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Symbol}}\textquotesingle{}s. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a0a1ca38917b7ae0aef6c158bc6c62de5}{name\+Spaces}} (\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&table) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the root namespace. Never delete this one! \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_aae267530da96e4fe5e48e9b3b8b271f5}{type\+Defs}} (\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&table) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Fills the symbol table with all namespaces. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a43309a81bd228c2dc067348a2aee3ba4}{enums}} (\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&table) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Fills the symbol table with all type definitions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_adea799bafb47af05a15d0473ca3e2a45}{classes}} (\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&table) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Fills the symbol table with all enums. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_acc349feac9f52727d570399581260bb9}{functions}} (\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&table) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Fills the symbol table with all classes and structs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a14c730d997d791c9853067f7b6a6e057}{variables}} (\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&table) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Fills the symbol table with all functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_ad6b92c6afd704d5987ba7e62a6ec1d26}{Alias\+Map}} \& \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6bbca6c9208ca5da2389e9eef5c72652}{imported\+Symbols}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Fills the symbol table with all variables. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_ae89b6d37bc18c2f3dfbc56784c622298}{Name\+Space\+Vec}} \& \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a1ded28150658c489943a5aa1295fb07e}{imported\+Name\+Spaces}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a67448d9c53f4abcae2a53711ad0e23d4}{Symbol\+::\+Kind}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a10c89f9df3b177f6d18c505ec1447dae}{kind}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns a vector containing all imported namespaces. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_ad95afea3455f2529aa867e77fa116dc9}{to\+String}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the symbol\textquotesingle{}s kind. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a3a5139b26402914dc3bcf92bd45535a6}{root}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_aedd8df312f98001c8e535d7b3e5629b1}{extract}} (\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a67448d9c53f4abcae2a53711ad0e23d4}{Symbol\+::\+Kind}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a10c89f9df3b177f6d18c505ec1447dae}{kind}}, \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&table) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_ade23a78bb490a44149480bde9fafc858}{split\+Name}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a61e91b585a9d5aa28ba734c3f580213a}{name}}, std\+::string \&head, std\+::string \&tail)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a namespace. 
+
+Definition at line 34 of file Name\+Space.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_ad6b92c6afd704d5987ba7e62a6ec1d26}\label{classPoco_1_1CppParser_1_1NameSpace_ad6b92c6afd704d5987ba7e62a6ec1d26}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!AliasMap@{AliasMap}}
+\index{AliasMap@{AliasMap}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{AliasMap}{AliasMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, std\+::string$>$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_ad6b92c6afd704d5987ba7e62a6ec1d26}{Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::\+Alias\+Map}}}
+
+
+
+Definition at line 40 of file Name\+Space.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a4a1e5b9309bae19fe4d9ecabf21ef907}\label{classPoco_1_1CppParser_1_1NameSpace_a4a1e5b9309bae19fe4d9ecabf21ef907}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily typedef Symbol\+Table\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a4a1e5b9309bae19fe4d9ecabf21ef907}{Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::\+Iterator}}}
+
+
+
+Definition at line 39 of file Name\+Space.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_ae89b6d37bc18c2f3dfbc56784c622298}\label{classPoco_1_1CppParser_1_1NameSpace_ae89b6d37bc18c2f3dfbc56784c622298}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!NameSpaceVec@{NameSpaceVec}}
+\index{NameSpaceVec@{NameSpaceVec}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{NameSpaceVec}{NameSpaceVec}}
+{\footnotesize\ttfamily typedef std\+::vector$<$std\+::string$>$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_ae89b6d37bc18c2f3dfbc56784c622298}{Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::\+Name\+Space\+Vec}}}
+
+
+
+Definition at line 41 of file Name\+Space.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}\label{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!SymbolTable@{SymbolTable}}
+\index{SymbolTable@{SymbolTable}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{SymbolTable}{SymbolTable}}
+{\footnotesize\ttfamily typedef std\+::multimap$<$std\+::string, \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Symbol}}$\ast$$>$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::\+Symbol\+Table}}}
+
+
+
+Definition at line 38 of file Name\+Space.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_ad47b6cd12f0f65219a49fcfd92ae379c}\label{classPoco_1_1CppParser_1_1NameSpace_ad47b6cd12f0f65219a49fcfd92ae379c}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!NameSpace@{NameSpace}}
+\index{NameSpace@{NameSpace}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{NameSpace()}{NameSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::\+Name\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a831bd6dd00de79b08dab72df56082f98}\label{classPoco_1_1CppParser_1_1NameSpace_a831bd6dd00de79b08dab72df56082f98}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!NameSpace@{NameSpace}}
+\index{NameSpace@{NameSpace}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{NameSpace()}{NameSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::\+Name\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}} $\ast$}]{p\+Name\+Space = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}}. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a52421a7604bf1675994703f51e045790}\label{classPoco_1_1CppParser_1_1NameSpace_a52421a7604bf1675994703f51e045790}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!````~NameSpace@{$\sim$NameSpace}}
+\index{````~NameSpace@{$\sim$NameSpace}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{$\sim$NameSpace()}{~NameSpace()}}
+{\footnotesize\ttfamily Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::$\sim$\+Name\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_ac239e9cbee0f91bad08d1b484ddd1d6a}\label{classPoco_1_1CppParser_1_1NameSpace_ac239e9cbee0f91bad08d1b484ddd1d6a}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!addSymbol@{addSymbol}}
+\index{addSymbol@{addSymbol}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{addSymbol()}{addSymbol()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::add\+Symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Symbol}} $\ast$}]{p\+Symbol }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}}. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a4b35bcecda4964489698fa8508261b14}\label{classPoco_1_1CppParser_1_1NameSpace_a4b35bcecda4964489698fa8508261b14}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!begin@{begin}}
+\index{begin@{begin}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a4a1e5b9309bae19fe4d9ecabf21ef907}{Iterator}} Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imports a namespace (using namespace $<$namespace$>$). 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_adea799bafb47af05a15d0473ca3e2a45}\label{classPoco_1_1CppParser_1_1NameSpace_adea799bafb47af05a15d0473ca3e2a45}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!classes@{classes}}
+\index{classes@{classes}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{classes()}{classes()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::classes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&}]{table }\end{DoxyParamCaption}) const}
+
+
+
+Fills the symbol table with all enums. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_adb64c97f42e8894a679443cfc603ebeb}\label{classPoco_1_1CppParser_1_1NameSpace_adb64c97f42e8894a679443cfc603ebeb}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!end@{end}}
+\index{end@{end}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a4a1e5b9309bae19fe4d9ecabf21ef907}{Iterator}} Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns an iterator for iterating over the \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}}\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Symbol}}\textquotesingle{}s. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a43309a81bd228c2dc067348a2aee3ba4}\label{classPoco_1_1CppParser_1_1NameSpace_a43309a81bd228c2dc067348a2aee3ba4}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!enums@{enums}}
+\index{enums@{enums}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{enums()}{enums()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::enums (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&}]{table }\end{DoxyParamCaption}) const}
+
+
+
+Fills the symbol table with all type definitions. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_aedd8df312f98001c8e535d7b3e5629b1}\label{classPoco_1_1CppParser_1_1NameSpace_aedd8df312f98001c8e535d7b3e5629b1}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!extract@{extract}}
+\index{extract@{extract}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{extract()}{extract()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::extract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a67448d9c53f4abcae2a53711ad0e23d4}{Symbol\+::\+Kind}}}]{kind,  }\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&}]{table }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Looks up the given name in the symbol table and returns the corresponsing symbol, or null if no symbol can be found. The name can include a namespace. \mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_acc349feac9f52727d570399581260bb9}\label{classPoco_1_1CppParser_1_1NameSpace_acc349feac9f52727d570399581260bb9}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!functions@{functions}}
+\index{functions@{functions}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{functions()}{functions()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::functions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&}]{table }\end{DoxyParamCaption}) const}
+
+
+
+Fills the symbol table with all classes and structs. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a1ded28150658c489943a5aa1295fb07e}\label{classPoco_1_1CppParser_1_1NameSpace_a1ded28150658c489943a5aa1295fb07e}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!importedNameSpaces@{importedNameSpaces}}
+\index{importedNameSpaces@{importedNameSpaces}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{importedNameSpaces()}{importedNameSpaces()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_ae89b6d37bc18c2f3dfbc56784c622298}{Name\+Space\+::\+Name\+Space\+Vec}} \& Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::imported\+Name\+Spaces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a const reference to a Symbol\+Table containing all imported symbols. 
+
+Definition at line 131 of file Name\+Space.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a6bbca6c9208ca5da2389e9eef5c72652}\label{classPoco_1_1CppParser_1_1NameSpace_a6bbca6c9208ca5da2389e9eef5c72652}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!importedSymbols@{importedSymbols}}
+\index{importedSymbols@{importedSymbols}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{importedSymbols()}{importedSymbols()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_ad6b92c6afd704d5987ba7e62a6ec1d26}{Name\+Space\+::\+Alias\+Map}} \& Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::imported\+Symbols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fills the symbol table with all variables. 
+
+
+
+Definition at line 125 of file Name\+Space.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a6ea08096b5cd91c1be7c894d62fde265}\label{classPoco_1_1CppParser_1_1NameSpace_a6ea08096b5cd91c1be7c894d62fde265}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!importNameSpace@{importNameSpace}}
+\index{importNameSpace@{importNameSpace}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{importNameSpace()}{importNameSpace()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::import\+Name\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name\+Space }\end{DoxyParamCaption})}
+
+
+
+Imports a symbol from another namespace (using $<$symbol$>$). 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a7ac36527b7159dd80a6e5aa68c98d89a}\label{classPoco_1_1CppParser_1_1NameSpace_a7ac36527b7159dd80a6e5aa68c98d89a}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!importSymbol@{importSymbol}}
+\index{importSymbol@{importSymbol}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{importSymbol()}{importSymbol()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::import\+Symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{full\+Name }\end{DoxyParamCaption})}
+
+
+
+Adds a symbol to the namespace. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a10c89f9df3b177f6d18c505ec1447dae}\label{classPoco_1_1CppParser_1_1NameSpace_a10c89f9df3b177f6d18c505ec1447dae}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!kind@{kind}}
+\index{kind@{kind}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a67448d9c53f4abcae2a53711ad0e23d4}{Symbol\+::\+Kind}} Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns a vector containing all imported namespaces. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a6708cf40021563dcd93bb275bf87296c}{Poco\+::\+Cpp\+Parser\+::\+Symbol}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct_abf3296eb8dd11c02296d31e8ea932f1b}{Poco\+::\+Cpp\+Parser\+::\+Struct}}.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a8aee24d50965e14f5f0d81dc8d198b62}\label{classPoco_1_1CppParser_1_1NameSpace_a8aee24d50965e14f5f0d81dc8d198b62}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!lookup@{lookup}}
+\index{lookup@{lookup}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{lookup()}{lookup()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Symbol}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::lookup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Returns an iterator for iterating over the \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}}\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Symbol}}\textquotesingle{}s. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a0a1ca38917b7ae0aef6c158bc6c62de5}\label{classPoco_1_1CppParser_1_1NameSpace_a0a1ca38917b7ae0aef6c158bc6c62de5}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!nameSpaces@{nameSpaces}}
+\index{nameSpaces@{nameSpaces}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{nameSpaces()}{nameSpaces()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::name\+Spaces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&}]{table }\end{DoxyParamCaption}) const}
+
+
+
+Returns the root namespace. Never delete this one! 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a3a5139b26402914dc3bcf92bd45535a6}\label{classPoco_1_1CppParser_1_1NameSpace_a3a5139b26402914dc3bcf92bd45535a6}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!root@{root}}
+\index{root@{root}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{root()}{root()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Looks up the given name in the symbol table and returns the corresponsing symbol, or null if no symbol can be found. The name can include a namespace. \mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_ade23a78bb490a44149480bde9fafc858}\label{classPoco_1_1CppParser_1_1NameSpace_ade23a78bb490a44149480bde9fafc858}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!splitName@{splitName}}
+\index{splitName@{splitName}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{splitName()}{splitName()}}
+{\footnotesize\ttfamily static void Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::split\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{std\+::string \&}]{head,  }\item[{std\+::string \&}]{tail }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_ad95afea3455f2529aa867e77fa116dc9}\label{classPoco_1_1CppParser_1_1NameSpace_ad95afea3455f2529aa867e77fa116dc9}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!toString@{toString}}
+\index{toString@{toString}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the symbol\textquotesingle{}s kind. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol_a65b4edf0efe958309c8ef2620f4c8bf4}{Poco\+::\+Cpp\+Parser\+::\+Symbol}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct_a68ac12328df8a1ded9a459faaccd8f5b}{Poco\+::\+Cpp\+Parser\+::\+Struct}}.
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_aae267530da96e4fe5e48e9b3b8b271f5}\label{classPoco_1_1CppParser_1_1NameSpace_aae267530da96e4fe5e48e9b3b8b271f5}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!typeDefs@{typeDefs}}
+\index{typeDefs@{typeDefs}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{typeDefs()}{typeDefs()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::type\+Defs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&}]{table }\end{DoxyParamCaption}) const}
+
+
+
+Fills the symbol table with all namespaces. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1NameSpace_a14c730d997d791c9853067f7b6a6e057}\label{classPoco_1_1CppParser_1_1NameSpace_a14c730d997d791c9853067f7b6a6e057}} 
+\index{Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}!variables@{variables}}
+\index{variables@{variables}!Poco::CppParser::NameSpace@{Poco::CppParser::NameSpace}}
+\doxysubsubsection{\texorpdfstring{variables()}{variables()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Name\+Space\+::variables (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Symbol\+Table}} \&}]{table }\end{DoxyParamCaption}) const}
+
+
+
+Fills the symbol table with all functions. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Cpp\+Parser/\mbox{\hyperlink{NameSpace_8h}{Name\+Space.\+h}}\end{DoxyCompactItemize}

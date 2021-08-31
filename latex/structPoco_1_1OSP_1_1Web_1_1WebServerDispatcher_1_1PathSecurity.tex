@@ -1,0 +1,135 @@
+\hypertarget{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity}{}\doxysection{Poco\+::O\+SP\+::Web\+::Web\+Server\+Dispatcher\+::Path\+Security Struct Reference}
+\label{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity}\index{Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}}
+
+
+Security attributes for a registered path.  
+
+
+
+
+{\ttfamily \#include $<$Web\+Server\+Dispatcher.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_a015536205b2fe0c9f7d4d978233e6de8}{Path\+Security}} ()
+\item 
+\mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_add33843f932fe7f4cfd704ef3836fb01}{Path\+Security}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466}{Specialization\+Mode}} a\+Mode, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&a\+Realm, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&a\+Permission, bool a\+Secure=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466}{Specialization\+Mode}} \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_ab75297674e6df6a883f42dddb322b917}{mode}}
+\item 
+std\+::string \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_abaa8673c31777f0fd875433fc066414c}{realm}}
+\begin{DoxyCompactList}\small\item\em specialization mode (does not apply to pattern) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_a4854abbe55d7440dd43ac1adc5d3e83e}{permission}}
+\begin{DoxyCompactList}\small\item\em realm if a permission (and thus authentication) is required \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_a6f3158d9e9746a58d403363a6783fb2f}{session}}
+\begin{DoxyCompactList}\small\item\em required permission (empty for none) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_a39798c5ee569caec39e3a9be6e92cb10}{secure}}
+\begin{DoxyCompactList}\small\item\em name of session for session-\/based authentication \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Security attributes for a registered path. 
+
+Definition at line 68 of file Web\+Server\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_a015536205b2fe0c9f7d4d978233e6de8}\label{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_a015536205b2fe0c9f7d4d978233e6de8}} 
+\index{Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}!PathSecurity@{PathSecurity}}
+\index{PathSecurity@{PathSecurity}!Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}}
+\doxysubsubsection{\texorpdfstring{PathSecurity()}{PathSecurity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Path\+Security\+::\+Path\+Security (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 71 of file Web\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_add33843f932fe7f4cfd704ef3836fb01}\label{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_add33843f932fe7f4cfd704ef3836fb01}} 
+\index{Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}!PathSecurity@{PathSecurity}}
+\index{PathSecurity@{PathSecurity}!Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}}
+\doxysubsubsection{\texorpdfstring{PathSecurity()}{PathSecurity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Path\+Security\+::\+Path\+Security (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466}{Specialization\+Mode}}}]{a\+Mode,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{a\+Realm,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{a\+Permission,  }\item[{bool}]{a\+Secure = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 77 of file Web\+Server\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_ab75297674e6df6a883f42dddb322b917}\label{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_ab75297674e6df6a883f42dddb322b917}} 
+\index{Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}!mode@{mode}}
+\index{mode@{mode}!Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_a0460c221b31367400ec75e0e39ef9466}{Specialization\+Mode}} Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Path\+Security\+::mode}
+
+
+
+Definition at line 85 of file Web\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_a4854abbe55d7440dd43ac1adc5d3e83e}\label{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_a4854abbe55d7440dd43ac1adc5d3e83e}} 
+\index{Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}!permission@{permission}}
+\index{permission@{permission}!Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}}
+\doxysubsubsection{\texorpdfstring{permission}{permission}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Path\+Security\+::permission}
+
+
+
+realm if a permission (and thus authentication) is required 
+
+
+
+Definition at line 87 of file Web\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_abaa8673c31777f0fd875433fc066414c}\label{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_abaa8673c31777f0fd875433fc066414c}} 
+\index{Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}!realm@{realm}}
+\index{realm@{realm}!Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}}
+\doxysubsubsection{\texorpdfstring{realm}{realm}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Path\+Security\+::realm}
+
+
+
+specialization mode (does not apply to pattern) 
+
+
+
+Definition at line 86 of file Web\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_a39798c5ee569caec39e3a9be6e92cb10}\label{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_a39798c5ee569caec39e3a9be6e92cb10}} 
+\index{Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}!secure@{secure}}
+\index{secure@{secure}!Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}}
+\doxysubsubsection{\texorpdfstring{secure}{secure}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Path\+Security\+::secure}
+
+
+
+name of session for session-\/based authentication 
+
+
+
+Definition at line 89 of file Web\+Server\+Dispatcher.\+h.
+
+\mbox{\Hypertarget{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_a6f3158d9e9746a58d403363a6783fb2f}\label{structPoco_1_1OSP_1_1Web_1_1WebServerDispatcher_1_1PathSecurity_a6f3158d9e9746a58d403363a6783fb2f}} 
+\index{Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}!session@{session}}
+\index{session@{session}!Poco::OSP::Web::WebServerDispatcher::PathSecurity@{Poco::OSP::Web::WebServerDispatcher::PathSecurity}}
+\doxysubsubsection{\texorpdfstring{session}{session}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Server\+Dispatcher\+::\+Path\+Security\+::session}
+
+
+
+required permission (empty for none) 
+
+
+
+Definition at line 88 of file Web\+Server\+Dispatcher.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\+Web/\mbox{\hyperlink{WebServerDispatcher_8h}{Web\+Server\+Dispatcher.\+h}}\end{DoxyCompactItemize}

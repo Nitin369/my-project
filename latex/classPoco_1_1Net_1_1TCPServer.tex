@@ -1,0 +1,302 @@
+\hypertarget{classPoco_1_1Net_1_1TCPServer}{}\doxysection{Poco\+::Net\+::T\+C\+P\+Server Class Reference}
+\label{classPoco_1_1Net_1_1TCPServer}\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+
+
+{\ttfamily \#include $<$T\+C\+P\+Server.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::T\+C\+P\+Server\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::T\+C\+P\+Server\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a0e2692906c078075a91d8e1b8d5806b9}{T\+C\+P\+Server}} (\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory_ae0d969474f313a3d530187fc72024688}{T\+C\+P\+Server\+Connection\+Factory\+::\+Ptr}} p\+Factory, Poco\+::\+U\+Int16 port\+Number=0, \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams_a2764661030f4c5fd7da346cb2fdddb83}{T\+C\+P\+Server\+Params\+::\+Ptr}} p\+Params=0)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_ad70fef4f2ba86945abe9a6ce3b9cad39}{T\+C\+P\+Server}} (\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory_ae0d969474f313a3d530187fc72024688}{T\+C\+P\+Server\+Connection\+Factory\+::\+Ptr}} p\+Factory, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a6ee6be81654b293141abc25e9bd0d30f}{socket}}, \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams_a2764661030f4c5fd7da346cb2fdddb83}{T\+C\+P\+Server\+Params\+::\+Ptr}} p\+Params=0)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_aeec6e901870e9e33429976d17200bdcf}{T\+C\+P\+Server}} (\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory_ae0d969474f313a3d530187fc72024688}{T\+C\+P\+Server\+Connection\+Factory\+::\+Ptr}} p\+Factory, \mbox{\hyperlink{classPoco_1_1ThreadPool}{Poco\+::\+Thread\+Pool}} \&thread\+Pool, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a6ee6be81654b293141abc25e9bd0d30f}{socket}}, \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams_a2764661030f4c5fd7da346cb2fdddb83}{T\+C\+P\+Server\+Params\+::\+Ptr}} p\+Params=0)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_aaf1386c44a13f26dca831f54f6257f3a}{$\sim$\+T\+C\+P\+Server}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams}{T\+C\+P\+Server\+Params}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a6c689b68536f9ac1cefe180e4a00927e}{params}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer}{T\+C\+P\+Server}} and its \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory}{T\+C\+P\+Server\+Connection\+Factory}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a6ff153080fed486a3cb26e774b42ba60}{start}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a9e4c0b8310cc06328e6bedfa649aed66}{stop}} ()
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_adb989551ec0c23a65542c261bb134328}{current\+Threads}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_aee2fdf0ff13c936c8bfe366063ebfdb4}{max\+Threads}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of currently used connection threads. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a1edced53972cedbf77eab201c4781ace}{total\+Connections}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the maximum number of threads available. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a252e17555a6a67f24fe478239286df89}{current\+Connections}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of handled connections. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a1425611ac8189b46e9cfa71c905e6028}{max\+Concurrent\+Connections}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of currently handled connections. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_aaf5fca39eb0c7c35e9debe9a08302a23}{queued\+Connections}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the maximum number of concurrently handled connections. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_ac5bcdb3c3af656373e472f48561865a9}{refused\+Connections}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of queued connections. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a6ee6be81654b293141abc25e9bd0d30f}{socket}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of refused connections. \end{DoxyCompactList}\item 
+Poco\+::\+U\+Int16 \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a9b653aa0e98a43ccabd599087719a773}{port}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the underlying server socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a379293584aabdd0f8099be0294994636}{run}} ()
+\begin{DoxyCompactList}\small\item\em Returns the port the server socket listens on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a6ba8f2418beab79ed90014051f93bbe0}{thread\+Name}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a6ee6be81654b293141abc25e9bd0d30f}{socket}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class implements a multithreaded T\+CP server. \begin{DoxyVerb}The server uses a ServerSocket to listen for incoming
+connections. The ServerSocket must have been bound to
+an address before it is passed to the TCPServer constructor.
+Additionally, the ServerSocket must be put into listening
+state before the TCPServer is started by calling the start()
+method.
+
+The server uses a thread pool to assign threads to incoming
+connections. Before incoming connections are assigned to
+a connection thread, they are put into a queue.
+Connection threads fetch new connections from the queue as soon
+as they become free. Thus, a connection thread may serve more
+than one connection.
+
+As soon as a connection thread fetches the next connection from
+the queue, it creates a TCPServerConnection object for it
+(using the TCPServerConnectionFactory passed to the constructor)
+and calls the TCPServerConnection's start() method. When the
+start() method returns, the connection object is deleted.
+
+The number of connection threads is adjusted dynamically, depending
+on the number of connections waiting to be served.
+
+It is possible to specify a maximum number of queued connections.
+This prevents the connection queue from overflowing in the 
+case of an extreme server load. In such a case, connections that
+cannot be queued are silently and immediately closed.
+
+TCPServer uses a separate thread to accept incoming connections.
+Thus, the call to start() returns immediately, and the server
+continues to run in the background.
+
+To stop the server from accepting new connections, call stop().
+
+After calling stop(), no new connections will be accepted and
+all queued connections will be discarded.
+Already served connections, however, will continue being served. 
+\end{DoxyVerb}
+ 
+
+Definition at line 39 of file T\+C\+P\+Server.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_a0e2692906c078075a91d8e1b8d5806b9}\label{classPoco_1_1Net_1_1TCPServer_a0e2692906c078075a91d8e1b8d5806b9}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!TCPServer@{TCPServer}}
+\index{TCPServer@{TCPServer}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{TCPServer()}{TCPServer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+T\+C\+P\+Server\+::\+T\+C\+P\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory_ae0d969474f313a3d530187fc72024688}{T\+C\+P\+Server\+Connection\+Factory\+::\+Ptr}}}]{p\+Factory,  }\item[{Poco\+::\+U\+Int16}]{port\+Number = {\ttfamily 0},  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams_a2764661030f4c5fd7da346cb2fdddb83}{T\+C\+P\+Server\+Params\+::\+Ptr}}}]{p\+Params = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_ad70fef4f2ba86945abe9a6ce3b9cad39}\label{classPoco_1_1Net_1_1TCPServer_ad70fef4f2ba86945abe9a6ce3b9cad39}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!TCPServer@{TCPServer}}
+\index{TCPServer@{TCPServer}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{TCPServer()}{TCPServer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+T\+C\+P\+Server\+::\+T\+C\+P\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory_ae0d969474f313a3d530187fc72024688}{T\+C\+P\+Server\+Connection\+Factory\+::\+Ptr}}}]{p\+Factory,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&}]{socket,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams_a2764661030f4c5fd7da346cb2fdddb83}{T\+C\+P\+Server\+Params\+::\+Ptr}}}]{p\+Params = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer}{T\+C\+P\+Server}}, with \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} listening on the given port. Default port is zero, allowing any available port. The port number can be queried through \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a9b653aa0e98a43ccabd599087719a773}{T\+C\+P\+Server\+::port()}} member.
+
+The server takes ownership of the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory}{T\+C\+P\+Server\+Connection\+Factory}} and deletes it when it\textquotesingle{}s no longer needed.
+
+The server also takes ownership of the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams}{T\+C\+P\+Server\+Params}} object. If no \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams}{T\+C\+P\+Server\+Params}} object is given, the server\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher}{T\+C\+P\+Server\+Dispatcher}} creates its own one.
+
+New threads are taken from the default thread pool. \mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_aeec6e901870e9e33429976d17200bdcf}\label{classPoco_1_1Net_1_1TCPServer_aeec6e901870e9e33429976d17200bdcf}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!TCPServer@{TCPServer}}
+\index{TCPServer@{TCPServer}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{TCPServer()}{TCPServer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+T\+C\+P\+Server\+::\+T\+C\+P\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory_ae0d969474f313a3d530187fc72024688}{T\+C\+P\+Server\+Connection\+Factory\+::\+Ptr}}}]{p\+Factory,  }\item[{\mbox{\hyperlink{classPoco_1_1ThreadPool}{Poco\+::\+Thread\+Pool}} \&}]{thread\+Pool,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&}]{socket,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams_a2764661030f4c5fd7da346cb2fdddb83}{T\+C\+P\+Server\+Params\+::\+Ptr}}}]{p\+Params = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer}{T\+C\+P\+Server}}, using the given \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}}.
+
+The server takes ownership of the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory}{T\+C\+P\+Server\+Connection\+Factory}} and deletes it when it\textquotesingle{}s no longer needed.
+
+The server also takes ownership of the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams}{T\+C\+P\+Server\+Params}} object. If no \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams}{T\+C\+P\+Server\+Params}} object is given, the server\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher}{T\+C\+P\+Server\+Dispatcher}} creates its own one.
+
+New threads are taken from the default thread pool. \mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_aaf1386c44a13f26dca831f54f6257f3a}\label{classPoco_1_1Net_1_1TCPServer_aaf1386c44a13f26dca831f54f6257f3a}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!````~TCPServer@{$\sim$TCPServer}}
+\index{````~TCPServer@{$\sim$TCPServer}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{$\sim$TCPServer()}{~TCPServer()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+T\+C\+P\+Server\+::$\sim$\+T\+C\+P\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer}{T\+C\+P\+Server}}, using the given \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}}.
+
+The server takes ownership of the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory}{T\+C\+P\+Server\+Connection\+Factory}} and deletes it when it\textquotesingle{}s no longer needed.
+
+The server also takes ownership of the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams}{T\+C\+P\+Server\+Params}} object. If no \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams}{T\+C\+P\+Server\+Params}} object is given, the server\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher}{T\+C\+P\+Server\+Dispatcher}} creates its own one.
+
+New threads are taken from the given thread pool. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_a252e17555a6a67f24fe478239286df89}\label{classPoco_1_1Net_1_1TCPServer_a252e17555a6a67f24fe478239286df89}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!currentConnections@{currentConnections}}
+\index{currentConnections@{currentConnections}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{currentConnections()}{currentConnections()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+::current\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the total number of handled connections. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_adb989551ec0c23a65542c261bb134328}\label{classPoco_1_1Net_1_1TCPServer_adb989551ec0c23a65542c261bb134328}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!currentThreads@{currentThreads}}
+\index{currentThreads@{currentThreads}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{currentThreads()}{currentThreads()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+::current\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Stops the server.
+
+No new connections will be accepted. Already handled connections will continue to be served.
+
+Once the server has been stopped, it cannot be restarted. \mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_a1425611ac8189b46e9cfa71c905e6028}\label{classPoco_1_1Net_1_1TCPServer_a1425611ac8189b46e9cfa71c905e6028}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!maxConcurrentConnections@{maxConcurrentConnections}}
+\index{maxConcurrentConnections@{maxConcurrentConnections}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{maxConcurrentConnections()}{maxConcurrentConnections()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+::max\+Concurrent\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of currently handled connections. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_aee2fdf0ff13c936c8bfe366063ebfdb4}\label{classPoco_1_1Net_1_1TCPServer_aee2fdf0ff13c936c8bfe366063ebfdb4}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!maxThreads@{maxThreads}}
+\index{maxThreads@{maxThreads}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{maxThreads()}{maxThreads()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+::max\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of currently used connection threads. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_a6c689b68536f9ac1cefe180e4a00927e}\label{classPoco_1_1Net_1_1TCPServer_a6c689b68536f9ac1cefe180e4a00927e}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!params@{params}}
+\index{params@{params}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{params()}{params()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerParams}{T\+C\+P\+Server\+Params}}\& Poco\+::\+Net\+::\+T\+C\+P\+Server\+::params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer}{T\+C\+P\+Server}} and its \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerConnectionFactory}{T\+C\+P\+Server\+Connection\+Factory}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_a9b653aa0e98a43ccabd599087719a773}\label{classPoco_1_1Net_1_1TCPServer_a9b653aa0e98a43ccabd599087719a773}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!port@{port}}
+\index{port@{port}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{port()}{port()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int16 Poco\+::\+Net\+::\+T\+C\+P\+Server\+::port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the underlying server socket. 
+
+
+
+Definition at line 200 of file T\+C\+P\+Server.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_aaf5fca39eb0c7c35e9debe9a08302a23}\label{classPoco_1_1Net_1_1TCPServer_aaf5fca39eb0c7c35e9debe9a08302a23}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!queuedConnections@{queuedConnections}}
+\index{queuedConnections@{queuedConnections}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{queuedConnections()}{queuedConnections()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+::queued\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the maximum number of concurrently handled connections. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_ac5bcdb3c3af656373e472f48561865a9}\label{classPoco_1_1Net_1_1TCPServer_ac5bcdb3c3af656373e472f48561865a9}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!refusedConnections@{refusedConnections}}
+\index{refusedConnections@{refusedConnections}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{refusedConnections()}{refusedConnections()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+::refused\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of queued connections. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_a379293584aabdd0f8099be0294994636}\label{classPoco_1_1Net_1_1TCPServer_a379293584aabdd0f8099be0294994636}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!run@{run}}
+\index{run@{run}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+T\+C\+P\+Server\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Returns the port the server socket listens on. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Runnable_ad89816e81207bf5f1e52d5df860d11d4}{Poco\+::\+Runnable}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_a6ee6be81654b293141abc25e9bd0d30f}\label{classPoco_1_1Net_1_1TCPServer_a6ee6be81654b293141abc25e9bd0d30f}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!socket@{socket}}
+\index{socket@{socket}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{socket()}{socket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \& Poco\+::\+Net\+::\+T\+C\+P\+Server\+::socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of refused connections. 
+
+
+
+Definition at line 194 of file T\+C\+P\+Server.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_a6ff153080fed486a3cb26e774b42ba60}\label{classPoco_1_1Net_1_1TCPServer_a6ff153080fed486a3cb26e774b42ba60}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!start@{start}}
+\index{start@{start}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+T\+C\+P\+Server\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a const reference to the T\+C\+P\+Server\+Param object used by the server\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServerDispatcher}{T\+C\+P\+Server\+Dispatcher}}. ~\newline
+ \mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_a9e4c0b8310cc06328e6bedfa649aed66}\label{classPoco_1_1Net_1_1TCPServer_a9e4c0b8310cc06328e6bedfa649aed66}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!stop@{stop}}
+\index{stop@{stop}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+T\+C\+P\+Server\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts the server. A new thread will be created that waits for and accepts incoming connections.
+
+Before \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a6ff153080fed486a3cb26e774b42ba60}{start()}} is called, the \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} passed to \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer}{T\+C\+P\+Server}} must have been bound and put into listening state. \mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_a6ba8f2418beab79ed90014051f93bbe0}\label{classPoco_1_1Net_1_1TCPServer_a6ba8f2418beab79ed90014051f93bbe0}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!threadName@{threadName}}
+\index{threadName@{threadName}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{threadName()}{threadName()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Net\+::\+T\+C\+P\+Server\+::thread\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&}]{socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Runs the server. The server will run until the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a9e4c0b8310cc06328e6bedfa649aed66}{stop()}} method is called, or the server object is destroyed, which implicitly calls the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a9e4c0b8310cc06328e6bedfa649aed66}{stop()}} method. \mbox{\Hypertarget{classPoco_1_1Net_1_1TCPServer_a1edced53972cedbf77eab201c4781ace}\label{classPoco_1_1Net_1_1TCPServer_a1edced53972cedbf77eab201c4781ace}} 
+\index{Poco::Net::TCPServer@{Poco::Net::TCPServer}!totalConnections@{totalConnections}}
+\index{totalConnections@{totalConnections}!Poco::Net::TCPServer@{Poco::Net::TCPServer}}
+\doxysubsubsection{\texorpdfstring{totalConnections()}{totalConnections()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+T\+C\+P\+Server\+::total\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the maximum number of threads available. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{TCPServer_8h}{T\+C\+P\+Server.\+h}}\end{DoxyCompactItemize}

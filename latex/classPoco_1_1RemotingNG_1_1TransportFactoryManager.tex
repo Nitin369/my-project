@@ -1,0 +1,112 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1TransportFactoryManager}{}\doxysection{Poco\+::Remoting\+NG\+::Transport\+Factory\+Manager Class Reference}
+\label{classPoco_1_1RemotingNG_1_1TransportFactoryManager}\index{Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}}
+
+
+A \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactoryManager}{Transport\+Factory\+Manager}} manages \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactory}{Transport\+Factory}} objects.  
+
+
+
+
+{\ttfamily \#include $<$Transport\+Factory\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} $\ast$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactoryManager_a320abcd4a7780aa93ccd0c81da53b215}{create\+Transport}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} $\ast$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactoryManager_ac239e854b23d3fcdbe13e97bdc8bf03b}{create\+Transport}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactoryManager_ab9bb901e0723e620d9db2a0a725617a6}{register\+Factory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactory_aa8b3852407aba065027f54fa68ece8ee}{Transport\+Factory\+::\+Ptr}} p\+Factory)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactoryManager_a6c0559eb86817c763c42f332fdd25e09}{unregister\+Factory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\begin{DoxyCompactList}\small\item\em Registers the factory if it doesn\textquotesingle{}t exist yet. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactoryManager_a1824923fb77b69d6b677e8cf5abe421d}{has\+Factory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactoryManager}{Transport\+Factory\+Manager}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactoryManager_afa49e136913b34e65175cb456173c400}{instance}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if for the protocol a factory was registered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactoryManager_a78536d1ec4abe7c0e5f9f598e1d19356}{Poco\+::\+Singleton\+Holder$<$ Transport\+Factory\+Manager $>$}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactoryManager}{Transport\+Factory\+Manager}} manages \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactory}{Transport\+Factory}} objects. 
+
+Definition at line 38 of file Transport\+Factory\+Manager.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TransportFactoryManager_a320abcd4a7780aa93ccd0c81da53b215}\label{classPoco_1_1RemotingNG_1_1TransportFactoryManager_a320abcd4a7780aa93ccd0c81da53b215}} 
+\index{Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}!createTransport@{createTransport}}
+\index{createTransport@{createTransport}!Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}}
+\doxysubsubsection{\texorpdfstring{createTransport()}{createTransport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}$\ast$ Poco\+::\+Remoting\+N\+G\+::\+Transport\+Factory\+Manager\+::create\+Transport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TransportFactoryManager_ac239e854b23d3fcdbe13e97bdc8bf03b}\label{classPoco_1_1RemotingNG_1_1TransportFactoryManager_ac239e854b23d3fcdbe13e97bdc8bf03b}} 
+\index{Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}!createTransport@{createTransport}}
+\index{createTransport@{createTransport}!Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}}
+\doxysubsubsection{\texorpdfstring{createTransport()}{createTransport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}}$\ast$ Poco\+::\+Remoting\+N\+G\+::\+Transport\+Factory\+Manager\+::create\+Transport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} for the given protocol.
+
+The newly created \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} is unconnected.
+
+Throws an exception if the protocol is unknown \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TransportFactoryManager_a1824923fb77b69d6b677e8cf5abe421d}\label{classPoco_1_1RemotingNG_1_1TransportFactoryManager_a1824923fb77b69d6b677e8cf5abe421d}} 
+\index{Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}!hasFactory@{hasFactory}}
+\index{hasFactory@{hasFactory}!Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}}
+\doxysubsubsection{\texorpdfstring{hasFactory()}{hasFactory()}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Transport\+Factory\+Manager\+::has\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption}) const}
+
+Removes the factory from the manager. If for the given protocol no factory is found, the error is silently ignored. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TransportFactoryManager_afa49e136913b34e65175cb456173c400}\label{classPoco_1_1RemotingNG_1_1TransportFactoryManager_afa49e136913b34e65175cb456173c400}} 
+\index{Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}!instance@{instance}}
+\index{instance@{instance}!Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactoryManager}{Transport\+Factory\+Manager}}\& Poco\+::\+Remoting\+N\+G\+::\+Transport\+Factory\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if for the protocol a factory was registered. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TransportFactoryManager_ab9bb901e0723e620d9db2a0a725617a6}\label{classPoco_1_1RemotingNG_1_1TransportFactoryManager_ab9bb901e0723e620d9db2a0a725617a6}} 
+\index{Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}!registerFactory@{registerFactory}}
+\index{registerFactory@{registerFactory}!Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}}
+\doxysubsubsection{\texorpdfstring{registerFactory()}{registerFactory()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Transport\+Factory\+Manager\+::register\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactory_aa8b3852407aba065027f54fa68ece8ee}{Transport\+Factory\+::\+Ptr}}}]{p\+Factory }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} for the given protocol and connects it to the endpoint specified by the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}.
+
+Throws an exception if the protocol is unknown. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TransportFactoryManager_a6c0559eb86817c763c42f332fdd25e09}\label{classPoco_1_1RemotingNG_1_1TransportFactoryManager_a6c0559eb86817c763c42f332fdd25e09}} 
+\index{Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}!unregisterFactory@{unregisterFactory}}
+\index{unregisterFactory@{unregisterFactory}!Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}}
+\doxysubsubsection{\texorpdfstring{unregisterFactory()}{unregisterFactory()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Transport\+Factory\+Manager\+::unregister\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})}
+
+
+
+Registers the factory if it doesn\textquotesingle{}t exist yet. 
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TransportFactoryManager_a78536d1ec4abe7c0e5f9f598e1d19356}\label{classPoco_1_1RemotingNG_1_1TransportFactoryManager_a78536d1ec4abe7c0e5f9f598e1d19356}} 
+\index{Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}!Poco::SingletonHolder$<$ TransportFactoryManager $>$@{Poco::SingletonHolder$<$ TransportFactoryManager $>$}}
+\index{Poco::SingletonHolder$<$ TransportFactoryManager $>$@{Poco::SingletonHolder$<$ TransportFactoryManager $>$}!Poco::RemotingNG::TransportFactoryManager@{Poco::RemotingNG::TransportFactoryManager}}
+\doxysubsubsection{\texorpdfstring{Poco::SingletonHolder$<$ TransportFactoryManager $>$}{Poco::SingletonHolder< TransportFactoryManager >}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1SingletonHolder}{Poco\+::\+Singleton\+Holder}}$<$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TransportFactoryManager}{Transport\+Factory\+Manager}} $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 86 of file Transport\+Factory\+Manager.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{TransportFactoryManager_8h}{Transport\+Factory\+Manager.\+h}}\end{DoxyCompactItemize}

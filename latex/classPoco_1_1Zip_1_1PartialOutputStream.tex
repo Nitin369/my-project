@@ -1,0 +1,90 @@
+\hypertarget{classPoco_1_1Zip_1_1PartialOutputStream}{}\doxysection{Poco\+::Zip\+::Partial\+Output\+Stream Class Reference}
+\label{classPoco_1_1Zip_1_1PartialOutputStream}\index{Poco::Zip::PartialOutputStream@{Poco::Zip::PartialOutputStream}}
+
+
+{\ttfamily \#include $<$Partial\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Zip\+::Partial\+Output\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Zip\+::Partial\+Output\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Zip_1_1PartialOutputStream_a26835987151ebf8745382646e7e8b106}{Partial\+Output\+Stream}} (std\+::ostream \&ostr, std\+::size\+\_\+t start, std\+::size\+\_\+t end, bool init\+Stream=true)
+\item 
+\mbox{\hyperlink{classPoco_1_1Zip_1_1PartialOutputStream_aa538f913e0bd49a67a8ca749d4231922}{$\sim$\+Partial\+Output\+Stream}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Zip_1_1PartialOutputStream_a182750a71b1d7e1130c6a83e852d2f63}{close}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Zip_1_1PartialOutputStream}{Partial\+Output\+Stream}}. \end{DoxyCompactList}\item 
+Poco\+::\+U\+Int64 \mbox{\hyperlink{classPoco_1_1Zip_1_1PartialOutputStream_a10a43c6ab55ebbc09da491bb3ffb7efb}{bytes\+Written}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em must be called for the stream to properly terminate it \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This stream copies all characters written to it to one or multiple output streams. 
+
+Definition at line 143 of file Partial\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1PartialOutputStream_a26835987151ebf8745382646e7e8b106}\label{classPoco_1_1Zip_1_1PartialOutputStream_a26835987151ebf8745382646e7e8b106}} 
+\index{Poco::Zip::PartialOutputStream@{Poco::Zip::PartialOutputStream}!PartialOutputStream@{PartialOutputStream}}
+\index{PartialOutputStream@{PartialOutputStream}!Poco::Zip::PartialOutputStream@{Poco::Zip::PartialOutputStream}}
+\doxysubsubsection{\texorpdfstring{PartialOutputStream()}{PartialOutputStream()}}
+{\footnotesize\ttfamily Poco\+::\+Zip\+::\+Partial\+Output\+Stream\+::\+Partial\+Output\+Stream (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{std\+::size\+\_\+t}]{start,  }\item[{std\+::size\+\_\+t}]{end,  }\item[{bool}]{init\+Stream = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1PartialOutputStream_aa538f913e0bd49a67a8ca749d4231922}\label{classPoco_1_1Zip_1_1PartialOutputStream_aa538f913e0bd49a67a8ca749d4231922}} 
+\index{Poco::Zip::PartialOutputStream@{Poco::Zip::PartialOutputStream}!````~PartialOutputStream@{$\sim$PartialOutputStream}}
+\index{````~PartialOutputStream@{$\sim$PartialOutputStream}!Poco::Zip::PartialOutputStream@{Poco::Zip::PartialOutputStream}}
+\doxysubsubsection{\texorpdfstring{$\sim$PartialOutputStream()}{~PartialOutputStream()}}
+{\footnotesize\ttfamily Poco\+::\+Zip\+::\+Partial\+Output\+Stream\+::$\sim$\+Partial\+Output\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Zip_1_1PartialOutputStream}{Partial\+Output\+Stream}} and connects it to the given output stream. Bytes written are guaranteed to be in the range \mbox{[}start, real\+End -\/ end\mbox{]}. If init\+Stream is true the status of the stream will be cleared on the first access. start and end acts as offset values for the written content. A start value greater than zero, means that the first bytes are not written but discarded instead, an end value not equal to zero means that the last end bytes are not written! Examples\+: start = 3; end = 1 write(\char`\"{}hello\char`\"{}, 5) -\/$>$ \char`\"{}l\char`\"{}
+
+start = 3; end = 0 write(\char`\"{}hello\char`\"{}, 5) -\/$>$ \char`\"{}lo\char`\"{} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1PartialOutputStream_a10a43c6ab55ebbc09da491bb3ffb7efb}\label{classPoco_1_1Zip_1_1PartialOutputStream_a10a43c6ab55ebbc09da491bb3ffb7efb}} 
+\index{Poco::Zip::PartialOutputStream@{Poco::Zip::PartialOutputStream}!bytesWritten@{bytesWritten}}
+\index{bytesWritten@{bytesWritten}!Poco::Zip::PartialOutputStream@{Poco::Zip::PartialOutputStream}}
+\doxysubsubsection{\texorpdfstring{bytesWritten()}{bytesWritten()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int64 Poco\+::\+Zip\+::\+Partial\+Output\+Stream\+::bytes\+Written (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+must be called for the stream to properly terminate it 
+
+
+
+Definition at line 180 of file Partial\+Stream.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1PartialOutputStream_a182750a71b1d7e1130c6a83e852d2f63}\label{classPoco_1_1Zip_1_1PartialOutputStream_a182750a71b1d7e1130c6a83e852d2f63}} 
+\index{Poco::Zip::PartialOutputStream@{Poco::Zip::PartialOutputStream}!close@{close}}
+\index{close@{close}!Poco::Zip::PartialOutputStream@{Poco::Zip::PartialOutputStream}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Zip\+::\+Partial\+Output\+Stream\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Zip_1_1PartialOutputStream}{Partial\+Output\+Stream}}. 
+
+
+
+Definition at line 173 of file Partial\+Stream.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Zip/\mbox{\hyperlink{PartialStream_8h}{Partial\+Stream.\+h}}\end{DoxyCompactItemize}

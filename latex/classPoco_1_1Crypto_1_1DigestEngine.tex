@@ -1,0 +1,149 @@
+\hypertarget{classPoco_1_1Crypto_1_1DigestEngine}{}\doxysection{Poco\+::Crypto\+::Digest\+Engine Class Reference}
+\label{classPoco_1_1Crypto_1_1DigestEngine}\index{Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}}
+
+
+{\ttfamily \#include $<$Digest\+Engine.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Crypto\+::Digest\+Engine\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Crypto\+::Digest\+Engine\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1DigestEngine_ab781b2a42d26ca79a646841052b2abd3}{Digest\+Engine}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1DigestEngine_ad4c421db8297a5a698a4bbab506e2d11}{$\sim$\+Digest\+Engine}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Crypto_1_1DigestEngine_a1bca7ee507381101136d8d557e1858b8}{algorithm}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Crypto_1_1DigestEngine}{Digest\+Engine}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Crypto_1_1DigestEngine_ae96f9a05dc572fa7cf60e69f60b3cb7e}{nid}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the name of the digest algorithm. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Crypto_1_1DigestEngine_a408b6375d0e6b49228e7accfb728640f}{digest\+Length}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the N\+ID (Open\+S\+SL object identifier) of the digest algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Crypto_1_1DigestEngine_a6639e95ab6aa300b511f1a0c53c08c63}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Returns the length of the digest in bytes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DigestEngine_a8e6e74183768a08e8f00112e5c6c055e}{Poco\+::\+Digest\+Engine\+::\+Digest}} \& \mbox{\hyperlink{classPoco_1_1Crypto_1_1DigestEngine_a1874c029db16ce242522101af23df291}{digest}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Crypto_1_1DigestEngine_a14854e7c244f1fc703eecf500e991c78}{update\+Impl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$data, std\+::size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Converts a string created by digest\+To\+Hex back to its Digest presentation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class implements a \mbox{\hyperlink{classPoco_1_1DigestEngine}{Poco\+::\+Digest\+Engine}} for all digest algorithms supported by Open\+S\+SL. 
+
+Definition at line 31 of file Digest\+Engine.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1DigestEngine_ab781b2a42d26ca79a646841052b2abd3}\label{classPoco_1_1Crypto_1_1DigestEngine_ab781b2a42d26ca79a646841052b2abd3}} 
+\index{Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}!DigestEngine@{DigestEngine}}
+\index{DigestEngine@{DigestEngine}!Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}}
+\doxysubsubsection{\texorpdfstring{DigestEngine()}{DigestEngine()}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+Digest\+Engine\+::\+Digest\+Engine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1DigestEngine_ad4c421db8297a5a698a4bbab506e2d11}\label{classPoco_1_1Crypto_1_1DigestEngine_ad4c421db8297a5a698a4bbab506e2d11}} 
+\index{Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}!````~DigestEngine@{$\sim$DigestEngine}}
+\index{````~DigestEngine@{$\sim$DigestEngine}!Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$DigestEngine()}{~DigestEngine()}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+Digest\+Engine\+::$\sim$\+Digest\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a \mbox{\hyperlink{classPoco_1_1Crypto_1_1DigestEngine}{Digest\+Engine}} using the digest with the given name (e.\+g., \char`\"{}\+M\+D5\char`\"{}, \char`\"{}\+S\+H\+A1\char`\"{}, \char`\"{}\+S\+H\+A256\char`\"{}, \char`\"{}\+S\+H\+A512\char`\"{}, etc.). See the Open\+S\+SL documentation for a list of supported digest algorithms.
+
+Throws a Poco\+::\+Not\+Found\+Exception if no algorithm with the given name exists. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1DigestEngine_acd89843e29de7efb30d267f02bd444f2}{Poco\+::\+Digest\+Engine}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1DigestEngine_a1bca7ee507381101136d8d557e1858b8}\label{classPoco_1_1Crypto_1_1DigestEngine_a1bca7ee507381101136d8d557e1858b8}} 
+\index{Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}!algorithm@{algorithm}}
+\index{algorithm@{algorithm}!Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}}
+\doxysubsubsection{\texorpdfstring{algorithm()}{algorithm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Crypto\+::\+Digest\+Engine\+::algorithm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Crypto_1_1DigestEngine}{Digest\+Engine}}. 
+
+
+
+Definition at line 71 of file Digest\+Engine.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1DigestEngine_a1874c029db16ce242522101af23df291}\label{classPoco_1_1Crypto_1_1DigestEngine_a1874c029db16ce242522101af23df291}} 
+\index{Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}!digest@{digest}}
+\index{digest@{digest}!Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}}
+\doxysubsubsection{\texorpdfstring{digest()}{digest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DigestEngine_a8e6e74183768a08e8f00112e5c6c055e}{Poco\+::\+Digest\+Engine\+::\+Digest}}\& Poco\+::\+Crypto\+::\+Digest\+Engine\+::digest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Resets the engine so that a new digest can be computed. 
+
+Implements \mbox{\hyperlink{classPoco_1_1DigestEngine_acbb5e07fd2f4ae327c3a6897867e07f3}{Poco\+::\+Digest\+Engine}}.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1DigestEngine_a408b6375d0e6b49228e7accfb728640f}\label{classPoco_1_1Crypto_1_1DigestEngine_a408b6375d0e6b49228e7accfb728640f}} 
+\index{Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}!digestLength@{digestLength}}
+\index{digestLength@{digestLength}!Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}}
+\doxysubsubsection{\texorpdfstring{digestLength()}{digestLength()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Crypto\+::\+Digest\+Engine\+::digest\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the N\+ID (Open\+S\+SL object identifier) of the digest algorithm. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1DigestEngine_a971c0aa31b67436f710841a87ac4d5ca}{Poco\+::\+Digest\+Engine}}.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1DigestEngine_ae96f9a05dc572fa7cf60e69f60b3cb7e}\label{classPoco_1_1Crypto_1_1DigestEngine_ae96f9a05dc572fa7cf60e69f60b3cb7e}} 
+\index{Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}!nid@{nid}}
+\index{nid@{nid}!Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}}
+\doxysubsubsection{\texorpdfstring{nid()}{nid()}}
+{\footnotesize\ttfamily int Poco\+::\+Crypto\+::\+Digest\+Engine\+::nid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the name of the digest algorithm. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1DigestEngine_a6639e95ab6aa300b511f1a0c53c08c63}\label{classPoco_1_1Crypto_1_1DigestEngine_a6639e95ab6aa300b511f1a0c53c08c63}} 
+\index{Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}!reset@{reset}}
+\index{reset@{reset}!Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Poco\+::\+Crypto\+::\+Digest\+Engine\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the length of the digest in bytes. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1DigestEngine_ac6e2b8d7740b289e9432ae673823ae0f}{Poco\+::\+Digest\+Engine}}.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1DigestEngine_a14854e7c244f1fc703eecf500e991c78}\label{classPoco_1_1Crypto_1_1DigestEngine_a14854e7c244f1fc703eecf500e991c78}} 
+\index{Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}!updateImpl@{updateImpl}}
+\index{updateImpl@{updateImpl}!Poco::Crypto::DigestEngine@{Poco::Crypto::DigestEngine}}
+\doxysubsubsection{\texorpdfstring{updateImpl()}{updateImpl()}}
+{\footnotesize\ttfamily void Poco\+::\+Crypto\+::\+Digest\+Engine\+::update\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Converts a string created by digest\+To\+Hex back to its Digest presentation. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1DigestEngine_a172d52d2fd5c279b4571f6cd5b57fccf}{Poco\+::\+Digest\+Engine}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Crypto/\mbox{\hyperlink{Crypto_2DigestEngine_8h}{Digest\+Engine.\+h}}\end{DoxyCompactItemize}

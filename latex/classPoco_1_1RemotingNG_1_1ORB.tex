@@ -1,0 +1,378 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1ORB}{}\doxysection{Poco\+::Remoting\+NG\+::O\+RB Class Reference}
+\label{classPoco_1_1RemotingNG_1_1ORB}\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+
+
+{\ttfamily \#include $<$O\+R\+B.\+h$>$}
+
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::O\+RB\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1RemotingNG_1_1ORB_1_1ObjectRegistration}{Object\+Registration}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classPoco_1_1Event}{Event}} argument for object\+Registered and object\+Unregistered events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Listener\+::\+Ptr}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_ac7e588f030b00914a08d8987ba42c185}{Listener\+Vec}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_ad67c859ee1d336fcb8ee29bbcd343ea1}{shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the global \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a95ce65a28cb2e160c3f1ab09ddd3a638}{invoke}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} \&listener, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}} \&transport) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_af05432ea9fdb8de4481bf7af80ab8cca}{invoke}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&object\+Path, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}} \&transport) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_af6006bd4957ca20ed7e13d2c626ca915}{Identifiable\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_afe4cdad854d6c4ebd936b7017d0455fb}{find\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_af6006bd4957ca20ed7e13d2c626ca915}{Identifiable\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a4d8ca78eb8a344df7df9d7364a85a09f}{find\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&transport) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a450e63efa8b3ae5d41bdc2fffaedccf4}{register\+Listener}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Listener\+::\+Ptr}} p\+Listener)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_ab86e8995f3f404a1273a92d1cec33153}{unregister\+Listener}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id, bool auto\+Remove\+Objects=false)
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_ac7e588f030b00914a08d8987ba42c185}{Listener\+Vec}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_ac693f2002129974e601bbde126cdd8d3}{listeners}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_af38711da32143a8511443cca4bce4b14}{listener\+Ids}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns a vector containing all registered \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} objects. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a0e5b01c0449f83a9aa17695883b2dcda}{listener\+Ids}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns a vector containing the I\+Ds of all registered \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} objects. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Listener\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_ae24e3f1a1852bc493737334d8033021a}{find\+Listener}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_acb06bc76cd157a2f1af9fc9501d077a2}{register\+Skeleton}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_ab08a5b8b65aa0f3fb807f8f8b5f61fcc}{Skeleton\+::\+Ptr}} p\+Skeleton)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a9769630790cad6404d458a7ab25f404c}{unregister\+Skeleton}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid, bool auto\+Remove\+Objects=false)
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_ab08a5b8b65aa0f3fb807f8f8b5f61fcc}{Skeleton\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a0c85cd31e52b1f2467806cfc72926ce0}{skeleton\+For\+Class}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a06b74cd9db90aed173475425e30d36f4}{register\+Proxy\+Factory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ProxyFactory_adce24bbdd07ffcfd6d3163305a565697}{Proxy\+Factory\+::\+Ptr}} p\+Proxy\+Factory)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a33199890ebf205d320182c1075c9d9d8}{unregister\+Proxy\+Factory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a3a72bab5182855c9d2734a3bbf733a06}{register\+Class}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ProxyFactory_adce24bbdd07ffcfd6d3163305a565697}{Proxy\+Factory\+::\+Ptr}} p\+Proxy\+Factory, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_ab08a5b8b65aa0f3fb807f8f8b5f61fcc}{Skeleton\+::\+Ptr}} p\+Skeleton)
+\begin{DoxyCompactList}\small\item\em Unregisters a proxy factory for the given type, if found. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a085c11d33afa4d52e1dd60457c9f21ba}{unregister\+Class}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid, bool auto\+Remove\+Objects=false)
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a3808d7ee98f0a3148efb1f5670d152e8}{register\+Object}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_af3776a637b207d01ec206c8239bce711}{Remote\+Object\+::\+Ptr}} p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a1ab31cc1811986679f7d09fbb980211e}{unregister\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a4e34138ff7f0a3937ad5ad5ea81888dc}{register\+Event\+Dispatcher}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a9f8f26e37d33bcccf5fbaeffb59da9e8}{Event\+Dispatcher\+::\+Ptr}} p\+Dispatcher)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_aa57fb71c9e385cb85603726756a42b28}{unregister\+Event\+Dispatcher}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a0cb6ff3585f66592d6658e934b7cc8e8}{unregister\+Event\+Dispatchers}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a9f8f26e37d33bcccf5fbaeffb59da9e8}{Event\+Dispatcher\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a41548da41fb4d78812e32d6655753c42}{find\+Event\+Dispatcher}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a82c332f47d5a6bf4cf301bec55cf3554}{instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1RemotingNG_1_1ORB_1_1ObjectRegistration}{Object\+Registration}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_afe9f8d12f5b18fc4de762958f6bfa27f}{object\+Registered}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1RemotingNG_1_1ORB_1_1ObjectRegistration}{Object\+Registration}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a86d732445b2f9b11e0dbb05bf1c63ef8}{object\+Unregistered}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a86a88154bcab0fce92afb364ba417066}{Poco\+::\+Singleton\+Holder$<$ O\+R\+B $>$}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Object Request Broker, or \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}, is the central object in the Remoting machinery. The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} is a singleton which manages \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} and \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} instances on the server side, as well as \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}} creation on the client side.
+
+A client can use \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_afe4cdad854d6c4ebd936b7017d0455fb}{find\+Object()}} to obtain an interface for accessing a service object. Depending on whether the service object has been registered on the same \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}, or not, the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} will either return a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} (with forwards calls locally, without the need for serialization/deserialization), or a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}}.
+
+It is recommended to use the various helper classes (client helper, server helper) generated by the Remoting code generator to obtain an instance of an object instead of using \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_afe4cdad854d6c4ebd936b7017d0455fb}{find\+Object()}} directly. 
+
+Definition at line 48 of file O\+R\+B.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_ac7e588f030b00914a08d8987ba42c185}\label{classPoco_1_1RemotingNG_1_1ORB_ac7e588f030b00914a08d8987ba42c185}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!ListenerVec@{ListenerVec}}
+\index{ListenerVec@{ListenerVec}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{ListenerVec}{ListenerVec}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Listener\+::\+Ptr}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_ac7e588f030b00914a08d8987ba42c185}{Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::\+Listener\+Vec}}}
+
+
+
+Definition at line 64 of file O\+R\+B.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a41548da41fb4d78812e32d6655753c42}\label{classPoco_1_1RemotingNG_1_1ORB_a41548da41fb4d78812e32d6655753c42}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!findEventDispatcher@{findEventDispatcher}}
+\index{findEventDispatcher@{findEventDispatcher}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{findEventDispatcher()}{findEventDispatcher()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a9f8f26e37d33bcccf5fbaeffb59da9e8}{Event\+Dispatcher\+::\+Ptr}} Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::find\+Event\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption}) const}
+
+Unregisters all \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}} objects registered for the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} with the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_ae24e3f1a1852bc493737334d8033021a}\label{classPoco_1_1RemotingNG_1_1ORB_ae24e3f1a1852bc493737334d8033021a}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!findListener@{findListener}}
+\index{findListener@{findListener}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{findListener()}{findListener()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Listener\+::\+Ptr}} Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::find\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption}) const}
+
+Returns a vector containing the I\+Ds of all registered \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} objects supporting the given protocol. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_afe4cdad854d6c4ebd936b7017d0455fb}\label{classPoco_1_1RemotingNG_1_1ORB_afe4cdad854d6c4ebd936b7017d0455fb}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!findObject@{findObject}}
+\index{findObject@{findObject}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{findObject()}{findObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_af6006bd4957ca20ed7e13d2c626ca915}{Identifiable\+::\+Ptr}} Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::find\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption}) const}
+
+Invoke a method on the object registered for the given object path.
+
+The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} will look up the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} registered for the object, and perform the actual invocation through the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}}.
+
+Returns true if the object with the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} was found, false otherwise.
+
+The format of object\+Path is $<$protocol$>$/$<$endpoint$>$/$<$type\+Id$>$/$<$object\+Id$>$. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a4d8ca78eb8a344df7df9d7364a85a09f}\label{classPoco_1_1RemotingNG_1_1ORB_a4d8ca78eb8a344df7df9d7364a85a09f}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!findObject@{findObject}}
+\index{findObject@{findObject}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{findObject()}{findObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_af6006bd4957ca20ed7e13d2c626ca915}{Identifiable\+::\+Ptr}} Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::find\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{transport }\end{DoxyParamCaption}) const}
+
+Return an interface for the service object identified by the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}.
+
+Depending on whether the service object has been registered on the same \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}, or not, the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} will either return a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} (with forwards calls locally, without the need for serialization/deserialization), or a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}}.
+
+The \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} must have the following format\+: $<$scheme$>$\+://$<$authority$>$/$<$protocol$>$/$<$type\+Id$>$/$<$object\+Id$>$
+
+This method is usually not called directly, but indirectly through the generated client helper class instead. The client helper class performs an appropriate cast to the actual interface class.
+
+The strategy for determining whether the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} references a local object is as follows\+: First, check whether the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} matches one of the U\+R\+Is registered with the local \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}. If so, return the matching \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} instance. If no matching \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} is found, ask all registered \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} instances whether they \char`\"{}know\char`\"{} the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. To do this, first the protocol, Type\+Id and Object\+Id are extracted from the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. Then, each \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} handling the protocol is asked to create an \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} for Type\+Id and Object\+Id. If this \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} matches one of the registered U\+R\+Is, check whether the respective \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} actually handles the endpoint contained in the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} (by calling \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a6626c744e63983b38069a8d7f5f05658}{Listener\+::handles\+U\+R\+I()}}). If so, return the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}}. Otherwise, return a new \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}} object. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a82c332f47d5a6bf4cf301bec55cf3554}\label{classPoco_1_1RemotingNG_1_1ORB_a82c332f47d5a6bf4cf301bec55cf3554}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!instance@{instance}}
+\index{instance@{instance}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}\& Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Fired when an object has been unregistered by calling \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a1ab31cc1811986679f7d09fbb980211e}{unregister\+Object()}}. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a95ce65a28cb2e160c3f1ab09ddd3a638}\label{classPoco_1_1RemotingNG_1_1ORB_a95ce65a28cb2e160c3f1ab09ddd3a638}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!invoke@{invoke}}
+\index{invoke@{invoke}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{invoke()}{invoke()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::invoke (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} \&}]{listener,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}} \&}]{transport }\end{DoxyParamCaption}) const}
+
+Stops all \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} instances and removes them, as well as all \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} and \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} instances from the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_af05432ea9fdb8de4481bf7af80ab8cca}\label{classPoco_1_1RemotingNG_1_1ORB_af05432ea9fdb8de4481bf7af80ab8cca}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!invoke@{invoke}}
+\index{invoke@{invoke}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{invoke()}{invoke()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::invoke (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{object\+Path,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}} \&}]{transport }\end{DoxyParamCaption}) const}
+
+Invoke a method on the object registered for the given \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} and \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}.
+
+The \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} will look up the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} registered for the object, and perform the actual invocation through the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}}.
+
+Returns true if the object with the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} was found, false otherwise.
+
+\mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} can be a complete \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}, or a \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} path. In any case, only the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} path will be considered. The given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} can be an alias \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}, which will be matched against registered aliases. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_af38711da32143a8511443cca4bce4b14}\label{classPoco_1_1RemotingNG_1_1ORB_af38711da32143a8511443cca4bce4b14}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!listenerIds@{listenerIds}}
+\index{listenerIds@{listenerIds}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{listenerIds()}{listenerIds()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::listener\+Ids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a vector containing all registered \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} objects. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a0e5b01c0449f83a9aa17695883b2dcda}\label{classPoco_1_1RemotingNG_1_1ORB_a0e5b01c0449f83a9aa17695883b2dcda}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!listenerIds@{listenerIds}}
+\index{listenerIds@{listenerIds}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{listenerIds()}{listenerIds()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::listener\+Ids (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption}) const}
+
+
+
+Returns a vector containing the I\+Ds of all registered \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} objects. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_ac693f2002129974e601bbde126cdd8d3}\label{classPoco_1_1RemotingNG_1_1ORB_ac693f2002129974e601bbde126cdd8d3}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!listeners@{listeners}}
+\index{listeners@{listeners}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{listeners()}{listeners()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_ac7e588f030b00914a08d8987ba42c185}{Listener\+Vec}} Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Unregisters a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}, identified by its ID.
+
+Will automatically remove all service objects associated with that listener if auto\+Remove\+Objects is set to true, otherwise it will check if objects are still registered and will fail with a Remoting\+Exception. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a3a72bab5182855c9d2734a3bbf733a06}\label{classPoco_1_1RemotingNG_1_1ORB_a3a72bab5182855c9d2734a3bbf733a06}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!registerClass@{registerClass}}
+\index{registerClass@{registerClass}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{registerClass()}{registerClass()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::register\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ProxyFactory_adce24bbdd07ffcfd6d3163305a565697}{Proxy\+Factory\+::\+Ptr}}}]{p\+Proxy\+Factory,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_ab08a5b8b65aa0f3fb807f8f8b5f61fcc}{Skeleton\+::\+Ptr}}}]{p\+Skeleton }\end{DoxyParamCaption})}
+
+
+
+Unregisters a proxy factory for the given type, if found. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a4e34138ff7f0a3937ad5ad5ea81888dc}\label{classPoco_1_1RemotingNG_1_1ORB_a4e34138ff7f0a3937ad5ad5ea81888dc}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!registerEventDispatcher@{registerEventDispatcher}}
+\index{registerEventDispatcher@{registerEventDispatcher}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{registerEventDispatcher()}{registerEventDispatcher()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::register\+Event\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a9f8f26e37d33bcccf5fbaeffb59da9e8}{Event\+Dispatcher\+::\+Ptr}}}]{p\+Dispatcher }\end{DoxyParamCaption})}
+
+Unregisters a service object identified by \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} from the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}, if found.
+
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} and \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} must still exist. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a450e63efa8b3ae5d41bdc2fffaedccf4}\label{classPoco_1_1RemotingNG_1_1ORB_a450e63efa8b3ae5d41bdc2fffaedccf4}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!registerListener@{registerListener}}
+\index{registerListener@{registerListener}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{registerListener()}{registerListener()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::register\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Listener\+::\+Ptr}}}]{p\+Listener }\end{DoxyParamCaption})}
+
+Return an interface for the service object identified by the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}, Type\+ID and transport name. This is useful for \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Transport}{Transport}} implementations that allow the use of U\+R\+Is that do not conform to the standard Remoting \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} format.
+
+Depending on whether the service object has been registered on the same \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}, or not, the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} will either return a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} (with forwards calls locally, without the need for serialization/deserialization), or a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}}.
+
+This method is usually not called directly, but indirectly through the generated client helper class instead. The client helper class performs an appropriate cast to the actual interface class.
+
+If the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} exactly matches one of the U\+R\+Is registered with the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}, the corresponding \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} instance is returned. Otherwise a new \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Proxy}{Proxy}} instance is created and returned. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a3808d7ee98f0a3148efb1f5670d152e8}\label{classPoco_1_1RemotingNG_1_1ORB_a3808d7ee98f0a3148efb1f5670d152e8}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!registerObject@{registerObject}}
+\index{registerObject@{registerObject}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{registerObject()}{registerObject()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::register\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_af3776a637b207d01ec206c8239bce711}{Remote\+Object\+::\+Ptr}}}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})}
+
+Unregisters \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ProxyFactory}{Proxy\+Factory}}, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} and \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} for the given class identified by Type\+ID.
+
+If objects are still registered and auto\+Remove\+Objects is false, it will fail with a Remoting\+Exception. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a06b74cd9db90aed173475425e30d36f4}\label{classPoco_1_1RemotingNG_1_1ORB_a06b74cd9db90aed173475425e30d36f4}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!registerProxyFactory@{registerProxyFactory}}
+\index{registerProxyFactory@{registerProxyFactory}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{registerProxyFactory()}{registerProxyFactory()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::register\+Proxy\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ProxyFactory_adce24bbdd07ffcfd6d3163305a565697}{Proxy\+Factory\+::\+Ptr}}}]{p\+Proxy\+Factory }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} for the given type.
+
+Throws an exception if no \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} exists for the given Type\+Id. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_acb06bc76cd157a2f1af9fc9501d077a2}\label{classPoco_1_1RemotingNG_1_1ORB_acb06bc76cd157a2f1af9fc9501d077a2}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!registerSkeleton@{registerSkeleton}}
+\index{registerSkeleton@{registerSkeleton}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{registerSkeleton()}{registerSkeleton()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::register\+Skeleton (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_ab08a5b8b65aa0f3fb807f8f8b5f61fcc}{Skeleton\+::\+Ptr}}}]{p\+Skeleton }\end{DoxyParamCaption})}
+
+Returns the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} object with the given ID, or a null pointer if no \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} with this ID exists. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_ad67c859ee1d336fcb8ee29bbcd343ea1}\label{classPoco_1_1RemotingNG_1_1ORB_ad67c859ee1d336fcb8ee29bbcd343ea1}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the global \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a0c85cd31e52b1f2467806cfc72926ce0}\label{classPoco_1_1RemotingNG_1_1ORB_a0c85cd31e52b1f2467806cfc72926ce0}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!skeletonForClass@{skeletonForClass}}
+\index{skeletonForClass@{skeletonForClass}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{skeletonForClass()}{skeletonForClass()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_ab08a5b8b65aa0f3fb807f8f8b5f61fcc}{Skeleton\+::\+Ptr}} Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::skeleton\+For\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid }\end{DoxyParamCaption}) const}
+
+Unregisters the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} for the given type, if found.
+
+If objects are still registered and auto\+Remove\+Objects is false, it will fail with a Remoting\+Exception. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a085c11d33afa4d52e1dd60457c9f21ba}\label{classPoco_1_1RemotingNG_1_1ORB_a085c11d33afa4d52e1dd60457c9f21ba}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!unregisterClass@{unregisterClass}}
+\index{unregisterClass@{unregisterClass}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{unregisterClass()}{unregisterClass()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::unregister\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid,  }\item[{bool}]{auto\+Remove\+Objects = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Registers a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ProxyFactory}{Proxy\+Factory}} for the given class identified by Type\+ID and \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}}.
+
+Duplicate registration of a class is ignored. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_aa57fb71c9e385cb85603726756a42b28}\label{classPoco_1_1RemotingNG_1_1ORB_aa57fb71c9e385cb85603726756a42b28}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!unregisterEventDispatcher@{unregisterEventDispatcher}}
+\index{unregisterEventDispatcher@{unregisterEventDispatcher}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{unregisterEventDispatcher()}{unregisterEventDispatcher()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::unregister\+Event\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})}
+
+Registers an \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}} for the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} with the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}.
+
+Multiple \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}} objects can be registered for the same \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}}, as long as each \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}} uses a different protocol. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a0cb6ff3585f66592d6658e934b7cc8e8}\label{classPoco_1_1RemotingNG_1_1ORB_a0cb6ff3585f66592d6658e934b7cc8e8}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!unregisterEventDispatchers@{unregisterEventDispatchers}}
+\index{unregisterEventDispatchers@{unregisterEventDispatchers}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{unregisterEventDispatchers()}{unregisterEventDispatchers()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::unregister\+Event\+Dispatchers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})}
+
+Unregisters the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher}{Event\+Dispatcher}} handling the given protocol from the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} with the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_ab86e8995f3f404a1273a92d1cec33153}\label{classPoco_1_1RemotingNG_1_1ORB_ab86e8995f3f404a1273a92d1cec33153}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!unregisterListener@{unregisterListener}}
+\index{unregisterListener@{unregisterListener}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{unregisterListener()}{unregisterListener()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::unregister\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id,  }\item[{bool}]{auto\+Remove\+Objects = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Registers the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} at the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}}. The local endpoint of the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} must be unique. Registration will fail with an exception if it is not.
+
+Returns a string uniquely identifying the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}}, which can be used for registering service objects (see \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a3808d7ee98f0a3148efb1f5670d152e8}{register\+Object()}}). \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a1ab31cc1811986679f7d09fbb980211e}\label{classPoco_1_1RemotingNG_1_1ORB_a1ab31cc1811986679f7d09fbb980211e}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!unregisterObject@{unregisterObject}}
+\index{unregisterObject@{unregisterObject}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{unregisterObject()}{unregisterObject()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::unregister\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})}
+
+Registers a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} with the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} and the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} instance uniquely identified by the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener}{Listener}} ID.
+
+A class (Type\+Id) must have already been registered for the object.
+
+Duplicate registration of an object results in an exception.
+
+If the registration fails due to the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} being in shutdown mode, an exception is thrown.
+
+If an \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} has been assigned to the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}} (by calling remoting\+\_\+\+\_\+set\+U\+R\+I()), that \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}\textquotesingle{}s path is registered as an alias for the object.
+
+Returns the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} created for the object. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a33199890ebf205d320182c1075c9d9d8}\label{classPoco_1_1RemotingNG_1_1ORB_a33199890ebf205d320182c1075c9d9d8}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!unregisterProxyFactory@{unregisterProxyFactory}}
+\index{unregisterProxyFactory@{unregisterProxyFactory}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{unregisterProxyFactory()}{unregisterProxyFactory()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::unregister\+Proxy\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid }\end{DoxyParamCaption})}
+
+Registers a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ProxyFactory}{Proxy\+Factory}} for the given class identified by Type\+ID.
+
+Duplicate registration of a class is ignored. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a9769630790cad6404d458a7ab25f404c}\label{classPoco_1_1RemotingNG_1_1ORB_a9769630790cad6404d458a7ab25f404c}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!unregisterSkeleton@{unregisterSkeleton}}
+\index{unregisterSkeleton@{unregisterSkeleton}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{unregisterSkeleton()}{unregisterSkeleton()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::unregister\+Skeleton (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid,  }\item[{bool}]{auto\+Remove\+Objects = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Registers a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} for the given class identified by Type\+ID.
+
+Duplicate registration of a class is ignored. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a86a88154bcab0fce92afb364ba417066}\label{classPoco_1_1RemotingNG_1_1ORB_a86a88154bcab0fce92afb364ba417066}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!Poco::SingletonHolder$<$ ORB $>$@{Poco::SingletonHolder$<$ ORB $>$}}
+\index{Poco::SingletonHolder$<$ ORB $>$@{Poco::SingletonHolder$<$ ORB $>$}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{Poco::SingletonHolder$<$ ORB $>$}{Poco::SingletonHolder< ORB >}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1SingletonHolder}{Poco\+::\+Singleton\+Holder}}$<$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB}{O\+RB}} $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 294 of file O\+R\+B.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_afe9f8d12f5b18fc4de762958f6bfa27f}\label{classPoco_1_1RemotingNG_1_1ORB_afe9f8d12f5b18fc4de762958f6bfa27f}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!objectRegistered@{objectRegistered}}
+\index{objectRegistered@{objectRegistered}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{objectRegistered}{objectRegistered}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1RemotingNG_1_1ORB_1_1ObjectRegistration}{Object\+Registration}}$>$ Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::object\+Registered}
+
+
+
+Definition at line 75 of file O\+R\+B.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1ORB_a86d732445b2f9b11e0dbb05bf1c63ef8}\label{classPoco_1_1RemotingNG_1_1ORB_a86d732445b2f9b11e0dbb05bf1c63ef8}} 
+\index{Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}!objectUnregistered@{objectUnregistered}}
+\index{objectUnregistered@{objectUnregistered}!Poco::RemotingNG::ORB@{Poco::RemotingNG::ORB}}
+\doxysubsubsection{\texorpdfstring{objectUnregistered}{objectUnregistered}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1RemotingNG_1_1ORB_1_1ObjectRegistration}{Object\+Registration}}$>$ Poco\+::\+Remoting\+N\+G\+::\+O\+R\+B\+::object\+Unregistered}
+
+Fired when an object has been registered by calling \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ORB_a3808d7ee98f0a3148efb1f5670d152e8}{register\+Object()}}. 
+
+Definition at line 79 of file O\+R\+B.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{ORB_8h}{O\+R\+B.\+h}}\end{DoxyCompactItemize}

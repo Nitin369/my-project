@@ -1,0 +1,160 @@
+\hypertarget{classIoT_1_1Devices_1_1LEDServerHelper}{}\doxysection{IoT\+::Devices\+::L\+E\+D\+Server\+Helper Class Reference}
+\label{classIoT_1_1Devices_1_1LEDServerHelper}\index{IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}}
+
+
+{\ttfamily \#include $<$L\+E\+D\+Server\+Helper.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper_ab9775d4df7152e554925fd9a396c4f2b}{Service}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper_a489abb055269a1fec91560cfb02a1a8f}{L\+E\+D\+Server\+Helper}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper_a50c089a0c6797cc6e3cbcab6a1e3017e}{$\sim$\+L\+E\+D\+Server\+Helper}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper}{L\+E\+D\+Server\+Helper}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject}{Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper_a84794b381e3dc43c9df9a3240e49e25a}{create\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper}{L\+E\+D\+Server\+Helper}}. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper_a097733679a4bfa2fbbf9bf782cc674cb}{register\+Object}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} $>$ p\+Service\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\begin{DoxyCompactList}\small\item\em Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} instance. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper_ae573d7127523f13f38989a429eee1d60}{register\+Remote\+Object}} (\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject}{Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object}} $>$ p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&listener\+Id)
+\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper_af962e627f2c5c9d0ff6a5b93575478c6}{shutdown}} ()
+\item 
+static void \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper_a17be5c18f42eed942dcd1c110f1d1752}{unregister\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri)
+\begin{DoxyCompactList}\small\item\em Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} from the O\+RB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for L\+E\+Ds. \begin{DoxyVerb}Each instance of the LED class represents a single physical
+LED. Some LED devices support different brightness levels,
+this is accounted for by allowing to specify a brightness
+level in range 0.0 to 1.0, where 0.0 turns the LED off and
+1.0 is the maximum brightness. 
+
+Some implementations may also support blinking LEDs.
+This is exposed via the "blinkOn" and "blinkOff" properties,
+which take as values the time in milliseconds the LED should
+be on, or off, respectively. There is also a shortcut
+method, blink(), which allows setting both properties at once.
+
+To turn on blinking, both "blinkOn" and "blinkOff" must be 
+set to a non-zero value. Furthermore, the brightness must
+be non-zero. 
+\end{DoxyVerb}
+ 
+
+Definition at line 34 of file L\+E\+D\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDServerHelper_ab9775d4df7152e554925fd9a396c4f2b}\label{classIoT_1_1Devices_1_1LEDServerHelper_ab9775d4df7152e554925fd9a396c4f2b}} 
+\index{IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}!Service@{Service}}
+\index{Service@{Service}!IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}}
+\doxysubsubsection{\texorpdfstring{Service}{Service}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper_ab9775d4df7152e554925fd9a396c4f2b}{Io\+T\+::\+Devices\+::\+L\+E\+D\+Server\+Helper\+::\+Service}}}
+
+
+
+Definition at line 54 of file L\+E\+D\+Server\+Helper.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDServerHelper_a489abb055269a1fec91560cfb02a1a8f}\label{classIoT_1_1Devices_1_1LEDServerHelper_a489abb055269a1fec91560cfb02a1a8f}} 
+\index{IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}!LEDServerHelper@{LEDServerHelper}}
+\index{LEDServerHelper@{LEDServerHelper}!IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}}
+\doxysubsubsection{\texorpdfstring{LEDServerHelper()}{LEDServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+L\+E\+D\+Server\+Helper\+::\+L\+E\+D\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDServerHelper_a50c089a0c6797cc6e3cbcab6a1e3017e}\label{classIoT_1_1Devices_1_1LEDServerHelper_a50c089a0c6797cc6e3cbcab6a1e3017e}} 
+\index{IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}!````~LEDServerHelper@{$\sim$LEDServerHelper}}
+\index{````~LEDServerHelper@{$\sim$LEDServerHelper}!IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}}
+\doxysubsubsection{\texorpdfstring{$\sim$LEDServerHelper()}{~LEDServerHelper()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+L\+E\+D\+Server\+Helper\+::$\sim$\+L\+E\+D\+Server\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper}{L\+E\+D\+Server\+Helper}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDServerHelper_a84794b381e3dc43c9df9a3240e49e25a}\label{classIoT_1_1Devices_1_1LEDServerHelper_a84794b381e3dc43c9df9a3240e49e25a}} 
+\index{IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}!createRemoteObject@{createRemoteObject}}
+\index{createRemoteObject@{createRemoteObject}!IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}}
+\doxysubsubsection{\texorpdfstring{createRemoteObject()}{createRemoteObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject}{Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object}} $>$ Io\+T\+::\+Devices\+::\+L\+E\+D\+Server\+Helper\+::create\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDServerHelper}{L\+E\+D\+Server\+Helper}}. 
+
+
+
+Definition at line 102 of file L\+E\+D\+Server\+Helper.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDServerHelper_a097733679a4bfa2fbbf9bf782cc674cb}\label{classIoT_1_1Devices_1_1LEDServerHelper_a097733679a4bfa2fbbf9bf782cc674cb}} 
+\index{IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}!registerObject@{registerObject}}
+\index{registerObject@{registerObject}!IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerObject()}{registerObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Devices\+::\+L\+E\+D\+Server\+Helper\+::register\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} $>$}]{p\+Service\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates and returns a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} instance. 
+
+
+
+Definition at line 108 of file L\+E\+D\+Server\+Helper.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDServerHelper_ae573d7127523f13f38989a429eee1d60}\label{classIoT_1_1Devices_1_1LEDServerHelper_ae573d7127523f13f38989a429eee1d60}} 
+\index{IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}!registerRemoteObject@{registerRemoteObject}}
+\index{registerRemoteObject@{registerRemoteObject}!IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}}
+\doxysubsubsection{\texorpdfstring{registerRemoteObject()}{registerRemoteObject()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Devices\+::\+L\+E\+D\+Server\+Helper\+::register\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject}{Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object}} $>$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{listener\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a Remote\+Object wrapper for the given \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} instance and registers it with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. 
+
+Definition at line 114 of file L\+E\+D\+Server\+Helper.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDServerHelper_af962e627f2c5c9d0ff6a5b93575478c6}\label{classIoT_1_1Devices_1_1LEDServerHelper_af962e627f2c5c9d0ff6a5b93575478c6}} 
+\index{IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily static void Io\+T\+::\+Devices\+::\+L\+E\+D\+Server\+Helper\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers the given Remote\+Object with the O\+RB and the Listener instance uniquely identified by the Listener\textquotesingle{}s ID.
+
+Returns the U\+RI created for the object. \mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDServerHelper_a17be5c18f42eed942dcd1c110f1d1752}\label{classIoT_1_1Devices_1_1LEDServerHelper_a17be5c18f42eed942dcd1c110f1d1752}} 
+\index{IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}!unregisterObject@{unregisterObject}}
+\index{unregisterObject@{unregisterObject}!IoT::Devices::LEDServerHelper@{IoT::Devices::LEDServerHelper}}
+\doxysubsubsection{\texorpdfstring{unregisterObject()}{unregisterObject()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+L\+E\+D\+Server\+Helper\+::unregister\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Removes the Skeleton for \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} from the O\+RB. 
+
+
+
+Definition at line 120 of file L\+E\+D\+Server\+Helper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{LEDServerHelper_8h}{L\+E\+D\+Server\+Helper.\+h}}\end{DoxyCompactItemize}

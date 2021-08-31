@@ -1,0 +1,441 @@
+\hypertarget{classPoco_1_1ListMap}{}\doxysection{Poco\+::List\+Map$<$ Key, Mapped, Container, Case\+Sensitive $>$ Class Template Reference}
+\label{classPoco_1_1ListMap}\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+
+
+{\ttfamily \#include $<$List\+Map.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Key \mbox{\hyperlink{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}{Key\+Type}}
+\item 
+typedef Mapped \mbox{\hyperlink{classPoco_1_1ListMap_a9325b892fe5e5c4a5476e48bb46c0d67}{Mapped\+Type}}
+\item 
+typedef Mapped \& \mbox{\hyperlink{classPoco_1_1ListMap_a2cefa736cda20878268394545443a11c}{Reference}}
+\item 
+typedef Mapped $\ast$ \mbox{\hyperlink{classPoco_1_1ListMap_ad0c2bbdbddbc477142ef7cc3bff5f6a4}{Pointer}}
+\item 
+typedef Container\+::value\+\_\+type \mbox{\hyperlink{classPoco_1_1ListMap_a0d93732b278424c325410072bd79f9f2}{Value\+Type}}
+\item 
+typedef Container\+::size\+\_\+type \mbox{\hyperlink{classPoco_1_1ListMap_a8f83e651557a35e04d01dfb24d4fe1f8}{Size\+Type}}
+\item 
+typedef Container\+::iterator \mbox{\hyperlink{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}{Iterator}}
+\item 
+typedef Container\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1ListMap_aa63760ba80d6b2762e692f244ff180eb}{Const\+Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ListMap_aebf83e3ba39fab07fbb519461c5d389f}{List\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty \mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1ListMap_a53f1882f00665e29e4d03cb38605c46f}{List\+Map}} (std\+::size\+\_\+t initial\+Reserve)
+\item 
+\mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}} \& \mbox{\hyperlink{classPoco_1_1ListMap_a8b1bdf5f9155cf906448536fa65ffba3}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}} \&map)
+\begin{DoxyCompactList}\small\item\em Assigns another \mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1ListMap_a80a4e317ac7bc51ce76798fff16cbecb}{swap}} (\mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}} \&map)
+\begin{DoxyCompactList}\small\item\em Swaps the \mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}} with another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1ListMap_aa63760ba80d6b2762e692f244ff180eb}{Const\+Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap_a0b86b6c1514165e1cc840b7ae7fa3336}{begin}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the beginning of the map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1ListMap_aa63760ba80d6b2762e692f244ff180eb}{Const\+Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap_a5711d270657f7cb7187503e254b7b810}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the end of the map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}{Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap_a1c1b53c9bac3a6cb5e6a07ab11c41818}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Returns the beginning of the map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}{Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap_aa53a868abf421b15545100e99e7727e6}{end}} ()
+\begin{DoxyCompactList}\small\item\em Returns the end of the map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1ListMap_aa63760ba80d6b2762e692f244ff180eb}{Const\+Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap_a53a7b592dd49b8045786e500b2d92aca}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}{Key\+Type}} \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}{Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap_aacd2d26dadb25609d8d95b4f876feff1}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}{Key\+Type}} \&key)
+\item 
+\mbox{\hyperlink{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}{Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap_a7a38f592414e99cecce8a6854ff9a761}{insert}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap_a0d93732b278424c325410072bd79f9f2}{Value\+Type}} \&val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1ListMap_ab79fa5b13c9de72c6d4a6fff4f81bfb9}{erase}} (\mbox{\hyperlink{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}{Iterator}} it)
+\item 
+\mbox{\hyperlink{classPoco_1_1ListMap_a8f83e651557a35e04d01dfb24d4fe1f8}{Size\+Type}} \mbox{\hyperlink{classPoco_1_1ListMap_a55541f899f43f1904554d780dac9ceaa}{erase}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}{Key\+Type}} \&key)
+\item 
+void \mbox{\hyperlink{classPoco_1_1ListMap_a521f9cea3577a2b5e4d1dff22a81c659}{clear}} ()
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ListMap_a427c643665c517401d0d4e52333b88d0}{size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1ListMap_af15a7af1eb6c478b3cd42aac713f62be}{empty}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1ListMap_a10397e9939885f02664f9a4c73de2879}{Const\+Reference}} \mbox{\hyperlink{classPoco_1_1ListMap_a5bd41a93cb502c94037511f79ce4a178}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}{Key\+Type}} \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1ListMap_a2cefa736cda20878268394545443a11c}{Reference}} \mbox{\hyperlink{classPoco_1_1ListMap_a4df0afc9d654fd7df83a247cd3bf74c1}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}{Key\+Type}} \&key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef Mapped \& \mbox{\hyperlink{classPoco_1_1ListMap_a10397e9939885f02664f9a4c73de2879}{Const\+Reference}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef Mapped $\ast$ \mbox{\hyperlink{classPoco_1_1ListMap_a12f0fc6ccc21e01aa0e97974c087375c}{Const\+Pointer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Key, class Mapped, class Container = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$\newline
+class Poco\+::\+List\+Map$<$ Key, Mapped, Container, Case\+Sensitive $>$}
+
+This class implements a multimap in terms of a sequential container. The use for this type of associative container is wherever automatic ordering of elements is not desirable. Naturally, this container will have inferior data retrieval performance and it is not recommended for use with large datasets. The main purpose within P\+O\+CO is for Internet messages (email message, http headers etc), to prevent automatic header entry reordering. 
+
+Definition at line 34 of file List\+Map.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1ListMap_aa63760ba80d6b2762e692f244ff180eb}\label{classPoco_1_1ListMap_aa63760ba80d6b2762e692f244ff180eb}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!ConstIterator@{ConstIterator}}
+\index{ConstIterator@{ConstIterator}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{ConstIterator}{ConstIterator}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+typedef Container\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::\mbox{\hyperlink{classPoco_1_1ListMap_aa63760ba80d6b2762e692f244ff180eb}{Const\+Iterator}}}
+
+
+
+Definition at line 54 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}\label{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+typedef Container\+::iterator \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::\mbox{\hyperlink{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}{Iterator}}}
+
+
+
+Definition at line 53 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}\label{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!KeyType@{KeyType}}
+\index{KeyType@{KeyType}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{KeyType}{KeyType}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+typedef Key \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::\mbox{\hyperlink{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}{Key\+Type}}}
+
+
+
+Definition at line 44 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a9325b892fe5e5c4a5476e48bb46c0d67}\label{classPoco_1_1ListMap_a9325b892fe5e5c4a5476e48bb46c0d67}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!MappedType@{MappedType}}
+\index{MappedType@{MappedType}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{MappedType}{MappedType}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+typedef Mapped \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::\mbox{\hyperlink{classPoco_1_1ListMap_a9325b892fe5e5c4a5476e48bb46c0d67}{Mapped\+Type}}}
+
+
+
+Definition at line 45 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_ad0c2bbdbddbc477142ef7cc3bff5f6a4}\label{classPoco_1_1ListMap_ad0c2bbdbddbc477142ef7cc3bff5f6a4}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!Pointer@{Pointer}}
+\index{Pointer@{Pointer}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{Pointer}{Pointer}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+typedef Mapped$\ast$ \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::\mbox{\hyperlink{classPoco_1_1ListMap_ad0c2bbdbddbc477142ef7cc3bff5f6a4}{Pointer}}}
+
+
+
+Definition at line 48 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a2cefa736cda20878268394545443a11c}\label{classPoco_1_1ListMap_a2cefa736cda20878268394545443a11c}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!Reference@{Reference}}
+\index{Reference@{Reference}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{Reference}{Reference}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+typedef Mapped\& \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::\mbox{\hyperlink{classPoco_1_1ListMap_a2cefa736cda20878268394545443a11c}{Reference}}}
+
+
+
+Definition at line 46 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a8f83e651557a35e04d01dfb24d4fe1f8}\label{classPoco_1_1ListMap_a8f83e651557a35e04d01dfb24d4fe1f8}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!SizeType@{SizeType}}
+\index{SizeType@{SizeType}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{SizeType}{SizeType}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+typedef Container\+::size\+\_\+type \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::\mbox{\hyperlink{classPoco_1_1ListMap_a8f83e651557a35e04d01dfb24d4fe1f8}{Size\+Type}}}
+
+
+
+Definition at line 52 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a0d93732b278424c325410072bd79f9f2}\label{classPoco_1_1ListMap_a0d93732b278424c325410072bd79f9f2}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!ValueType@{ValueType}}
+\index{ValueType@{ValueType}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{ValueType}{ValueType}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+typedef Container\+::value\+\_\+type \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::\mbox{\hyperlink{classPoco_1_1ListMap_a0d93732b278424c325410072bd79f9f2}{Value\+Type}}}
+
+
+
+Definition at line 51 of file List\+Map.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1ListMap_aebf83e3ba39fab07fbb519461c5d389f}\label{classPoco_1_1ListMap_aebf83e3ba39fab07fbb519461c5d389f}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!ListMap@{ListMap}}
+\index{ListMap@{ListMap}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{ListMap()}{ListMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::\mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an empty \mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}}. 
+
+
+
+Definition at line 56 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a53f1882f00665e29e4d03cb38605c46f}\label{classPoco_1_1ListMap_a53f1882f00665e29e4d03cb38605c46f}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!ListMap@{ListMap}}
+\index{ListMap@{ListMap}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{ListMap()}{ListMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::\mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{initial\+Reserve }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 61 of file List\+Map.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1ListMap_a1c1b53c9bac3a6cb5e6a07ab11c41818}\label{classPoco_1_1ListMap_a1c1b53c9bac3a6cb5e6a07ab11c41818}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!begin@{begin}}
+\index{begin@{begin}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}{Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the beginning of the map. 
+
+
+
+Definition at line 93 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a0b86b6c1514165e1cc840b7ae7fa3336}\label{classPoco_1_1ListMap_a0b86b6c1514165e1cc840b7ae7fa3336}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!begin@{begin}}
+\index{begin@{begin}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap_aa63760ba80d6b2762e692f244ff180eb}{Const\+Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the beginning of the map. 
+
+
+
+Definition at line 81 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a521f9cea3577a2b5e4d1dff22a81c659}\label{classPoco_1_1ListMap_a521f9cea3577a2b5e4d1dff22a81c659}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!clear@{clear}}
+\index{clear@{clear}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+void \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 174 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_af15a7af1eb6c478b3cd42aac713f62be}\label{classPoco_1_1ListMap_af15a7af1eb6c478b3cd42aac713f62be}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!empty@{empty}}
+\index{empty@{empty}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+bool \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 184 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_aa53a868abf421b15545100e99e7727e6}\label{classPoco_1_1ListMap_aa53a868abf421b15545100e99e7727e6}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!end@{end}}
+\index{end@{end}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}{Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the end of the map. 
+
+
+
+Definition at line 99 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a5711d270657f7cb7187503e254b7b810}\label{classPoco_1_1ListMap_a5711d270657f7cb7187503e254b7b810}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!end@{end}}
+\index{end@{end}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap_aa63760ba80d6b2762e692f244ff180eb}{Const\+Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the end of the map. 
+
+
+
+Definition at line 87 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a55541f899f43f1904554d780dac9ceaa}\label{classPoco_1_1ListMap_a55541f899f43f1904554d780dac9ceaa}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!erase@{erase}}
+\index{erase@{erase}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap_a8f83e651557a35e04d01dfb24d4fe1f8}{Size\+Type}} \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}{Key\+Type}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 152 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_ab79fa5b13c9de72c6d4a6fff4f81bfb9}\label{classPoco_1_1ListMap_ab79fa5b13c9de72c6d4a6fff4f81bfb9}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!erase@{erase}}
+\index{erase@{erase}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+void \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}{Iterator}}}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 147 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_aacd2d26dadb25609d8d95b4f876feff1}\label{classPoco_1_1ListMap_aacd2d26dadb25609d8d95b4f876feff1}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!find@{find}}
+\index{find@{find}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}{Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}{Key\+Type}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Finds the first occurrence of the key and returns iterator pointing to the found entry or iterator pointing to the end if entry is not found. 
+
+Definition at line 120 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a53a7b592dd49b8045786e500b2d92aca}\label{classPoco_1_1ListMap_a53a7b592dd49b8045786e500b2d92aca}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!find@{find}}
+\index{find@{find}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap_aa63760ba80d6b2762e692f244ff180eb}{Const\+Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}{Key\+Type}} \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Finds the first occurrence of the key and returns iterator pointing to the found entry or iterator pointing to the end if entry is not found. 
+
+Definition at line 105 of file List\+Map.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1ListMap_a7a38f592414e99cecce8a6854ff9a761}\label{classPoco_1_1ListMap_a7a38f592414e99cecce8a6854ff9a761}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!insert@{insert}}
+\index{insert@{insert}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap_ac24980819d69f5d97fa815fe37ed0eb3}{Iterator}} \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap_a0d93732b278424c325410072bd79f9f2}{Value\+Type}} \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Inserts the value into the map. If one or more values already exist, new value is inserted at the end of the block. Thus, all the equal value entries are located sequentially at all times. Returns iterator pointing to the newly inserted value ~\newline
+ 
+
+Definition at line 135 of file List\+Map.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1ListMap_a8b1bdf5f9155cf906448536fa65ffba3}\label{classPoco_1_1ListMap_a8b1bdf5f9155cf906448536fa65ffba3}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}}\& \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$ \&}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns another \mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}}. 
+
+
+
+Definition at line 67 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a4df0afc9d654fd7df83a247cd3bf74c1}\label{classPoco_1_1ListMap_a4df0afc9d654fd7df83a247cd3bf74c1}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap_a2cefa736cda20878268394545443a11c}{Reference}} \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}{Key\+Type}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 198 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a5bd41a93cb502c94037511f79ce4a178}\label{classPoco_1_1ListMap_a5bd41a93cb502c94037511f79ce4a178}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{classPoco_1_1ListMap_a10397e9939885f02664f9a4c73de2879}{Const\+Reference}} \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ListMap_a81de7724d1be4680bb13bf25e9c747ef}{Key\+Type}} \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 189 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a427c643665c517401d0d4e52333b88d0}\label{classPoco_1_1ListMap_a427c643665c517401d0d4e52333b88d0}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!size@{size}}
+\index{size@{size}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 179 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a80a4e317ac7bc51ce76798fff16cbecb}\label{classPoco_1_1ListMap_a80a4e317ac7bc51ce76798fff16cbecb}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!swap@{swap}}
+\index{swap@{swap}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+void \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$ \&}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Swaps the \mbox{\hyperlink{classPoco_1_1ListMap}{List\+Map}} with another one. 
+
+
+
+Definition at line 75 of file List\+Map.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1ListMap_a12f0fc6ccc21e01aa0e97974c087375c}\label{classPoco_1_1ListMap_a12f0fc6ccc21e01aa0e97974c087375c}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!ConstPointer@{ConstPointer}}
+\index{ConstPointer@{ConstPointer}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{ConstPointer}{ConstPointer}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef Mapped$\ast$ \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::Const\+Pointer}
+
+
+
+Definition at line 49 of file List\+Map.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ListMap_a10397e9939885f02664f9a4c73de2879}\label{classPoco_1_1ListMap_a10397e9939885f02664f9a4c73de2879}} 
+\index{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}!ConstReference@{ConstReference}}
+\index{ConstReference@{ConstReference}!Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$@{Poco::ListMap$<$ Key, Mapped, Container, CaseSensitive $>$}}
+\doxysubsubsection{\texorpdfstring{ConstReference}{ConstReference}}
+{\footnotesize\ttfamily template$<$class Key , class Mapped , class Container  = std\+::list$<$std\+::pair$<$\+Key, Mapped$>$ $>$, bool Case\+Sensitive = false$>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} typedef Mapped\& \mbox{\hyperlink{classPoco_1_1ListMap}{Poco\+::\+List\+Map}}$<$ Key, Mapped, Container, Case\+Sensitive $>$\+::Const\+Reference}
+
+
+
+Definition at line 47 of file List\+Map.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ListMap_8h}{List\+Map.\+h}}\end{DoxyCompactItemize}

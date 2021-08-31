@@ -1,0 +1,76 @@
+\hypertarget{classPoco_1_1InflatingInputStream}{}\doxysection{Poco\+::Inflating\+Input\+Stream Class Reference}
+\label{classPoco_1_1InflatingInputStream}\index{Poco::InflatingInputStream@{Poco::InflatingInputStream}}
+
+
+{\ttfamily \#include $<$Inflating\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Inflating\+Input\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Inflating\+Input\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1InflatingInputStream_a5c079dec1779f0905483fafb2225396f}{Inflating\+Input\+Stream}} (std\+::istream \&istr, \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7b}{Inflating\+Stream\+Buf\+::\+Stream\+Type}} type=\mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7baab2dfd094f00f0ff115f19d8a89e7dac}{Inflating\+Stream\+Buf\+::\+S\+T\+R\+E\+A\+M\+\_\+\+Z\+L\+IB}})
+\item 
+\mbox{\hyperlink{classPoco_1_1InflatingInputStream_a6047b7116a78c3980c19d93a932dce8b}{Inflating\+Input\+Stream}} (std\+::istream \&istr, int window\+Bits)
+\item 
+\mbox{\hyperlink{classPoco_1_1InflatingInputStream_afc1a711208987844d7b8499e204385de}{$\sim$\+Inflating\+Input\+Stream}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1InflatingInputStream_ab6805dc5473a81be1344dd3df9b6492b}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1InflatingInputStream}{Inflating\+Input\+Stream}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This stream decompresses all data passing through it using zlib\textquotesingle{}s inflate algorithm. Example\+: std\+::ifstream istr(\char`\"{}data.\+gz\char`\"{}, std\+::ios\+::binary); \mbox{\hyperlink{classPoco_1_1InflatingInputStream}{Inflating\+Input\+Stream}} inflater(istr, Inflating\+Stream\+Buf\+::\+S\+T\+R\+E\+A\+M\+\_\+\+G\+Z\+I\+P); std\+::string data; inflater $>$$>$ data;
+
+The underlying input stream can contain more than one gzip/deflate stream. After a gzip/deflate stream has been processed, \mbox{\hyperlink{classPoco_1_1InflatingInputStream_ab6805dc5473a81be1344dd3df9b6492b}{reset()}} can be called to inflate the next stream. 
+
+Definition at line 176 of file Inflating\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1InflatingInputStream_a5c079dec1779f0905483fafb2225396f}\label{classPoco_1_1InflatingInputStream_a5c079dec1779f0905483fafb2225396f}} 
+\index{Poco::InflatingInputStream@{Poco::InflatingInputStream}!InflatingInputStream@{InflatingInputStream}}
+\index{InflatingInputStream@{InflatingInputStream}!Poco::InflatingInputStream@{Poco::InflatingInputStream}}
+\doxysubsubsection{\texorpdfstring{InflatingInputStream()}{InflatingInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Inflating\+Input\+Stream\+::\+Inflating\+Input\+Stream (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{\mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7b}{Inflating\+Stream\+Buf\+::\+Stream\+Type}}}]{type = {\ttfamily \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_a7678081659f4d69ff0fcd2a80388ea7baab2dfd094f00f0ff115f19d8a89e7dac}{Inflating\+Stream\+Buf\+::\+S\+T\+R\+E\+A\+M\+\_\+\+Z\+L\+IB}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1InflatingInputStream_a6047b7116a78c3980c19d93a932dce8b}\label{classPoco_1_1InflatingInputStream_a6047b7116a78c3980c19d93a932dce8b}} 
+\index{Poco::InflatingInputStream@{Poco::InflatingInputStream}!InflatingInputStream@{InflatingInputStream}}
+\index{InflatingInputStream@{InflatingInputStream}!Poco::InflatingInputStream@{Poco::InflatingInputStream}}
+\doxysubsubsection{\texorpdfstring{InflatingInputStream()}{InflatingInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Inflating\+Input\+Stream\+::\+Inflating\+Input\+Stream (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{int}]{window\+Bits }\end{DoxyParamCaption})}
+
+Creates an \mbox{\hyperlink{classPoco_1_1InflatingInputStream}{Inflating\+Input\+Stream}} for expanding the compressed data read from the given input stream. \mbox{\Hypertarget{classPoco_1_1InflatingInputStream_afc1a711208987844d7b8499e204385de}\label{classPoco_1_1InflatingInputStream_afc1a711208987844d7b8499e204385de}} 
+\index{Poco::InflatingInputStream@{Poco::InflatingInputStream}!````~InflatingInputStream@{$\sim$InflatingInputStream}}
+\index{````~InflatingInputStream@{$\sim$InflatingInputStream}!Poco::InflatingInputStream@{Poco::InflatingInputStream}}
+\doxysubsubsection{\texorpdfstring{$\sim$InflatingInputStream()}{~InflatingInputStream()}}
+{\footnotesize\ttfamily Poco\+::\+Inflating\+Input\+Stream\+::$\sim$\+Inflating\+Input\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates an \mbox{\hyperlink{classPoco_1_1InflatingInputStream}{Inflating\+Input\+Stream}} for expanding the compressed data read from the given input stream.
+
+Please refer to the zlib documentation of \mbox{\hyperlink{zlib_8h_a611fc206e69f34e812ca8b590982fdd5}{inflate\+Init2()}} for a description of the window\+Bits parameter. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1InflatingInputStream_ab6805dc5473a81be1344dd3df9b6492b}\label{classPoco_1_1InflatingInputStream_ab6805dc5473a81be1344dd3df9b6492b}} 
+\index{Poco::InflatingInputStream@{Poco::InflatingInputStream}!reset@{reset}}
+\index{reset@{reset}!Poco::InflatingInputStream@{Poco::InflatingInputStream}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Poco\+::\+Inflating\+Input\+Stream\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1InflatingInputStream}{Inflating\+Input\+Stream}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{InflatingStream_8h}{Inflating\+Stream.\+h}}\end{DoxyCompactItemize}

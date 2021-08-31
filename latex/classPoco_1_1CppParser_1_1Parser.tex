@@ -1,0 +1,369 @@
+\hypertarget{classPoco_1_1CppParser_1_1Parser}{}\doxysection{Poco\+::Cpp\+Parser\+::Parser Class Reference}
+\label{classPoco_1_1CppParser_1_1Parser}\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+
+
+{\ttfamily \#include $<$Parser.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a5ebedc33148d85ca7a99737cb906913a}{Parser}} (\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Name\+Space\+::\+Symbol\+Table}} \&gst, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&file, std\+::istream \&istr)
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a0aab646306e3d394b62d444733f49b4d}{$\sim$\+Parser}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser}{Parser}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a6a2acf7615e181d9d54bf3103954071b}{parse}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser}{Parser}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_af3b4c4e9b8fefa9ec495aec328c4f4b7}{parse\+File}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next)
+\begin{DoxyCompactList}\small\item\em Parses the file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_ab212d86baa9c19f87178554f78fe22fa}{parse\+Name\+Space}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_aaf5a5b4959d81e1df2763f682ad2db74}{parse\+Class}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a2656544f61a45d9aabc0057fbfc7f777}{parse\+Class}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next, std\+::string \&decl)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a9ff91ee2d54af364715051365b6af0b8}{parse\+Template}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a239e99aeda3f06f7ff0dadec79b31027}{parse\+Template\+Args}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next, std\+::string \&decl)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_ab728004351c966209ad341ec3b07838b}{parse\+Var\+Func}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a24be16d11e4ef075eda80464e1bb939f}{parse\+Var\+Func}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next, std\+::string \&decl)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_ab37bd789e48de5118acb5bae1c62a6c5}{parse\+Friend}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_aacd2a3459e121f9c9ad6426ba31fa297}{parse\+Extern}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a5db68b92059cd3ee04eef2e4486185b7}{parse\+Type\+Def}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a90c5ed1ee2225fc9845361b829dbc405}{parse\+Using}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a07be44f301f79c70d0709beddcd89b25}{parse\+Func}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next, std\+::string \&decl)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_ab08cec09cfd75b8e3a3bac000b8fccda}{parse\+Parameters}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next, \mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Function}} $\ast$p\+Func)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_aa441491ff8a6d8b8714814eea0f3a3cb}{parse\+Block}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_aa28f82bbdaa66e1b74ee3a77106a8f89}{parse\+Enum}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a18cf39d14826c6399333aeb61044fa8e}{parse\+Enum\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next, \mbox{\hyperlink{classPoco_1_1CppParser_1_1Enum}{Enum}} $\ast$p\+Enum)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_ae6f1065686e41363da6aa2d397af2d9f}{parse\+Base\+Class\+List}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next, \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Struct}} $\ast$p\+Class)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_af4ae6fa7eb3b1cff20f6bd03f9e71fef}{parse\+Class\+Members}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next, \mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Struct}} $\ast$p\+Class)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a8049b1f4da02713b55c4ac1546988d1e}{parse\+Access}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_af9a5095e880ec88b5350e9f246803b37}{parse\+Identifier}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Next, std\+::string \&id)
+\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a447976217eb40c3d807fc7de992da855}{add\+Symbol}} (\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Symbol}} $\ast$p\+Symbol, int line\+Number, bool add\+G\+ST=true)
+\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a3b7455339f15e673a57a85f8bd36fd4a}{push\+Name\+Space}} (\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}} $\ast$p\+Name\+Space, int line\+Number, bool add\+G\+ST=true)
+\item 
+void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_ab617aca684a44f400ae044bf8db7cfc4}{pop\+Name\+Space}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a9d843ba496fe5cefee9c4f349948a4c1}{current\+Name\+Space}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a6bae5363abd57981670dfc3308c2a79e}{next}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a5b56798a32dbd4bb49c64b391bd310c7}{next\+Preprocessed}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$ \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_afa6fb8230cb5f07e6d872b18ddb7510c}{next\+Token}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a779883078a51418604ad629601dee9d5}{is\+Identifier}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Token)
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a44de00639be67cb2fbed280cb71c6c5c}{is\+Operator}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Token, int kind)
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_ae55e697308016b79d40aaf2f42448aa4}{is\+Keyword}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Token, int kind)
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_ae84657a374b70970d52853a7c7e1b9f2}{is\+E\+OF}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Token)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a911d7361360f1aa06c29850bf8e0fc62}{expect\+Operator}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Token, int kind, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&msg)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_a0f68ad150e4e089245bc2fe0b373a63a}{syntax\+Error}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&msg)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_adc67c05634c97886bb985eab4443202a}{append}} (std\+::string \&decl, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&token)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser_ae2dad202c6bd1fa4c320e82ef179b355}{append}} (std\+::string \&decl, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$p\+Token)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A minimal parser for C++ (header files). \begin{DoxyVerb}The parser reads a (preprocessed) source or header file and
+builds a symbol table containing as much information as
+the parser is able to extract from the file.
+
+A special comment syntax is used for inline API documentation.
+
+A comment starting with three consecutive slashes (///) contains
+API documentation for a symbol (class, function, typedef, enum, etc.).
+API documentation comments always come after the declaration, with the
+exception of structs and classes, where the comments are expected
+immediately before the opening brace. 
+\end{DoxyVerb}
+ 
+
+Definition at line 40 of file Parser.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a5ebedc33148d85ca7a99737cb906913a}\label{classPoco_1_1CppParser_1_1Parser_a5ebedc33148d85ca7a99737cb906913a}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{Parser()}{Parser()}}
+{\footnotesize\ttfamily Poco\+::\+Cpp\+Parser\+::\+Parser\+::\+Parser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Name\+Space\+::\+Symbol\+Table}} \&}]{gst,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{file,  }\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a0aab646306e3d394b62d444733f49b4d}\label{classPoco_1_1CppParser_1_1Parser_a0aab646306e3d394b62d444733f49b4d}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!````~Parser@{$\sim$Parser}}
+\index{````~Parser@{$\sim$Parser}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{$\sim$Parser()}{~Parser()}}
+{\footnotesize\ttfamily Poco\+::\+Cpp\+Parser\+::\+Parser\+::$\sim$\+Parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser}{Parser}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a447976217eb40c3d807fc7de992da855}\label{classPoco_1_1CppParser_1_1Parser_a447976217eb40c3d807fc7de992da855}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!addSymbol@{addSymbol}}
+\index{addSymbol@{addSymbol}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{addSymbol()}{addSymbol()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Parser\+::add\+Symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1Symbol}{Symbol}} $\ast$}]{p\+Symbol,  }\item[{int}]{line\+Number,  }\item[{bool}]{add\+G\+ST = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_ae2dad202c6bd1fa4c320e82ef179b355}\label{classPoco_1_1CppParser_1_1Parser_ae2dad202c6bd1fa4c320e82ef179b355}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!append@{append}}
+\index{append@{append}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+Cpp\+Parser\+::\+Parser\+::append (\begin{DoxyParamCaption}\item[{std\+::string \&}]{decl,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_adc67c05634c97886bb985eab4443202a}\label{classPoco_1_1CppParser_1_1Parser_adc67c05634c97886bb985eab4443202a}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!append@{append}}
+\index{append@{append}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+Cpp\+Parser\+::\+Parser\+::append (\begin{DoxyParamCaption}\item[{std\+::string \&}]{decl,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a9d843ba496fe5cefee9c4f349948a4c1}\label{classPoco_1_1CppParser_1_1Parser_a9d843ba496fe5cefee9c4f349948a4c1}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!currentNameSpace@{currentNameSpace}}
+\index{currentNameSpace@{currentNameSpace}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{currentNameSpace()}{currentNameSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::current\+Name\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a911d7361360f1aa06c29850bf8e0fc62}\label{classPoco_1_1CppParser_1_1Parser_a911d7361360f1aa06c29850bf8e0fc62}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!expectOperator@{expectOperator}}
+\index{expectOperator@{expectOperator}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{expectOperator()}{expectOperator()}}
+{\footnotesize\ttfamily static void Poco\+::\+Cpp\+Parser\+::\+Parser\+::expect\+Operator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Token,  }\item[{int}]{kind,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_ae84657a374b70970d52853a7c7e1b9f2}\label{classPoco_1_1CppParser_1_1Parser_ae84657a374b70970d52853a7c7e1b9f2}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!isEOF@{isEOF}}
+\index{isEOF@{isEOF}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{isEOF()}{isEOF()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Cpp\+Parser\+::\+Parser\+::is\+E\+OF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a779883078a51418604ad629601dee9d5}\label{classPoco_1_1CppParser_1_1Parser_a779883078a51418604ad629601dee9d5}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!isIdentifier@{isIdentifier}}
+\index{isIdentifier@{isIdentifier}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{isIdentifier()}{isIdentifier()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Cpp\+Parser\+::\+Parser\+::is\+Identifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_ae55e697308016b79d40aaf2f42448aa4}\label{classPoco_1_1CppParser_1_1Parser_ae55e697308016b79d40aaf2f42448aa4}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!isKeyword@{isKeyword}}
+\index{isKeyword@{isKeyword}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{isKeyword()}{isKeyword()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Cpp\+Parser\+::\+Parser\+::is\+Keyword (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Token,  }\item[{int}]{kind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a44de00639be67cb2fbed280cb71c6c5c}\label{classPoco_1_1CppParser_1_1Parser_a44de00639be67cb2fbed280cb71c6c5c}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!isOperator@{isOperator}}
+\index{isOperator@{isOperator}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{isOperator()}{isOperator()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Cpp\+Parser\+::\+Parser\+::is\+Operator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Token,  }\item[{int}]{kind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a6bae5363abd57981670dfc3308c2a79e}\label{classPoco_1_1CppParser_1_1Parser_a6bae5363abd57981670dfc3308c2a79e}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!next@{next}}
+\index{next@{next}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a5b56798a32dbd4bb49c64b391bd310c7}\label{classPoco_1_1CppParser_1_1Parser_a5b56798a32dbd4bb49c64b391bd310c7}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!nextPreprocessed@{nextPreprocessed}}
+\index{nextPreprocessed@{nextPreprocessed}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{nextPreprocessed()}{nextPreprocessed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::next\+Preprocessed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_afa6fb8230cb5f07e6d872b18ddb7510c}\label{classPoco_1_1CppParser_1_1Parser_afa6fb8230cb5f07e6d872b18ddb7510c}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!nextToken@{nextToken}}
+\index{nextToken@{nextToken}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{nextToken()}{nextToken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::next\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a6a2acf7615e181d9d54bf3103954071b}\label{classPoco_1_1CppParser_1_1Parser_a6a2acf7615e181d9d54bf3103954071b}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parse@{parse}}
+\index{parse@{parse}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parser}{Parser}}. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a8049b1f4da02713b55c4ac1546988d1e}\label{classPoco_1_1CppParser_1_1Parser_a8049b1f4da02713b55c4ac1546988d1e}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseAccess@{parseAccess}}
+\index{parseAccess@{parseAccess}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseAccess()}{parseAccess()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Access (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_ae6f1065686e41363da6aa2d397af2d9f}\label{classPoco_1_1CppParser_1_1Parser_ae6f1065686e41363da6aa2d397af2d9f}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseBaseClassList@{parseBaseClassList}}
+\index{parseBaseClassList@{parseBaseClassList}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseBaseClassList()}{parseBaseClassList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Base\+Class\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next,  }\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Struct}} $\ast$}]{p\+Class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_aa441491ff8a6d8b8714814eea0f3a3cb}\label{classPoco_1_1CppParser_1_1Parser_aa441491ff8a6d8b8714814eea0f3a3cb}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseBlock@{parseBlock}}
+\index{parseBlock@{parseBlock}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseBlock()}{parseBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_aaf5a5b4959d81e1df2763f682ad2db74}\label{classPoco_1_1CppParser_1_1Parser_aaf5a5b4959d81e1df2763f682ad2db74}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseClass@{parseClass}}
+\index{parseClass@{parseClass}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseClass()}{parseClass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a2656544f61a45d9aabc0057fbfc7f777}\label{classPoco_1_1CppParser_1_1Parser_a2656544f61a45d9aabc0057fbfc7f777}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseClass@{parseClass}}
+\index{parseClass@{parseClass}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseClass()}{parseClass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next,  }\item[{std\+::string \&}]{decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_af4ae6fa7eb3b1cff20f6bd03f9e71fef}\label{classPoco_1_1CppParser_1_1Parser_af4ae6fa7eb3b1cff20f6bd03f9e71fef}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseClassMembers@{parseClassMembers}}
+\index{parseClassMembers@{parseClassMembers}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseClassMembers()}{parseClassMembers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Class\+Members (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next,  }\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1Struct}{Struct}} $\ast$}]{p\+Class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_aa28f82bbdaa66e1b74ee3a77106a8f89}\label{classPoco_1_1CppParser_1_1Parser_aa28f82bbdaa66e1b74ee3a77106a8f89}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseEnum@{parseEnum}}
+\index{parseEnum@{parseEnum}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseEnum()}{parseEnum()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Enum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a18cf39d14826c6399333aeb61044fa8e}\label{classPoco_1_1CppParser_1_1Parser_a18cf39d14826c6399333aeb61044fa8e}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseEnumValue@{parseEnumValue}}
+\index{parseEnumValue@{parseEnumValue}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseEnumValue()}{parseEnumValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Enum\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next,  }\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1Enum}{Enum}} $\ast$}]{p\+Enum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_aacd2a3459e121f9c9ad6426ba31fa297}\label{classPoco_1_1CppParser_1_1Parser_aacd2a3459e121f9c9ad6426ba31fa297}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseExtern@{parseExtern}}
+\index{parseExtern@{parseExtern}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseExtern()}{parseExtern()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Extern (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_af3b4c4e9b8fefa9ec495aec328c4f4b7}\label{classPoco_1_1CppParser_1_1Parser_af3b4c4e9b8fefa9ec495aec328c4f4b7}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseFile@{parseFile}}
+\index{parseFile@{parseFile}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseFile()}{parseFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Parses the file. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_ab37bd789e48de5118acb5bae1c62a6c5}\label{classPoco_1_1CppParser_1_1Parser_ab37bd789e48de5118acb5bae1c62a6c5}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseFriend@{parseFriend}}
+\index{parseFriend@{parseFriend}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseFriend()}{parseFriend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Friend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a07be44f301f79c70d0709beddcd89b25}\label{classPoco_1_1CppParser_1_1Parser_a07be44f301f79c70d0709beddcd89b25}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseFunc@{parseFunc}}
+\index{parseFunc@{parseFunc}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseFunc()}{parseFunc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next,  }\item[{std\+::string \&}]{decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_af9a5095e880ec88b5350e9f246803b37}\label{classPoco_1_1CppParser_1_1Parser_af9a5095e880ec88b5350e9f246803b37}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseIdentifier@{parseIdentifier}}
+\index{parseIdentifier@{parseIdentifier}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseIdentifier()}{parseIdentifier()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Identifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next,  }\item[{std\+::string \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_ab212d86baa9c19f87178554f78fe22fa}\label{classPoco_1_1CppParser_1_1Parser_ab212d86baa9c19f87178554f78fe22fa}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseNameSpace@{parseNameSpace}}
+\index{parseNameSpace@{parseNameSpace}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseNameSpace()}{parseNameSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Name\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_ab08cec09cfd75b8e3a3bac000b8fccda}\label{classPoco_1_1CppParser_1_1Parser_ab08cec09cfd75b8e3a3bac000b8fccda}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseParameters@{parseParameters}}
+\index{parseParameters@{parseParameters}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseParameters()}{parseParameters()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next,  }\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1Function}{Function}} $\ast$}]{p\+Func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a9ff91ee2d54af364715051365b6af0b8}\label{classPoco_1_1CppParser_1_1Parser_a9ff91ee2d54af364715051365b6af0b8}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseTemplate@{parseTemplate}}
+\index{parseTemplate@{parseTemplate}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseTemplate()}{parseTemplate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Template (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a239e99aeda3f06f7ff0dadec79b31027}\label{classPoco_1_1CppParser_1_1Parser_a239e99aeda3f06f7ff0dadec79b31027}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseTemplateArgs@{parseTemplateArgs}}
+\index{parseTemplateArgs@{parseTemplateArgs}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseTemplateArgs()}{parseTemplateArgs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Template\+Args (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next,  }\item[{std\+::string \&}]{decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a5db68b92059cd3ee04eef2e4486185b7}\label{classPoco_1_1CppParser_1_1Parser_a5db68b92059cd3ee04eef2e4486185b7}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseTypeDef@{parseTypeDef}}
+\index{parseTypeDef@{parseTypeDef}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseTypeDef()}{parseTypeDef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Type\+Def (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a90c5ed1ee2225fc9845361b829dbc405}\label{classPoco_1_1CppParser_1_1Parser_a90c5ed1ee2225fc9845361b829dbc405}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseUsing@{parseUsing}}
+\index{parseUsing@{parseUsing}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseUsing()}{parseUsing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Using (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_ab728004351c966209ad341ec3b07838b}\label{classPoco_1_1CppParser_1_1Parser_ab728004351c966209ad341ec3b07838b}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseVarFunc@{parseVarFunc}}
+\index{parseVarFunc@{parseVarFunc}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseVarFunc()}{parseVarFunc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Var\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a24be16d11e4ef075eda80464e1bb939f}\label{classPoco_1_1CppParser_1_1Parser_a24be16d11e4ef075eda80464e1bb939f}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!parseVarFunc@{parseVarFunc}}
+\index{parseVarFunc@{parseVarFunc}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{parseVarFunc()}{parseVarFunc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}}$\ast$ Poco\+::\+Cpp\+Parser\+::\+Parser\+::parse\+Var\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Token}{Poco\+::\+Token}} $\ast$}]{p\+Next,  }\item[{std\+::string \&}]{decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_ab617aca684a44f400ae044bf8db7cfc4}\label{classPoco_1_1CppParser_1_1Parser_ab617aca684a44f400ae044bf8db7cfc4}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!popNameSpace@{popNameSpace}}
+\index{popNameSpace@{popNameSpace}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{popNameSpace()}{popNameSpace()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Parser\+::pop\+Name\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a3b7455339f15e673a57a85f8bd36fd4a}\label{classPoco_1_1CppParser_1_1Parser_a3b7455339f15e673a57a85f8bd36fd4a}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!pushNameSpace@{pushNameSpace}}
+\index{pushNameSpace@{pushNameSpace}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{pushNameSpace()}{pushNameSpace()}}
+{\footnotesize\ttfamily void Poco\+::\+Cpp\+Parser\+::\+Parser\+::push\+Name\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace}{Name\+Space}} $\ast$}]{p\+Name\+Space,  }\item[{int}]{line\+Number,  }\item[{bool}]{add\+G\+ST = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Parser_a0f68ad150e4e089245bc2fe0b373a63a}\label{classPoco_1_1CppParser_1_1Parser_a0f68ad150e4e089245bc2fe0b373a63a}} 
+\index{Poco::CppParser::Parser@{Poco::CppParser::Parser}!syntaxError@{syntaxError}}
+\index{syntaxError@{syntaxError}!Poco::CppParser::Parser@{Poco::CppParser::Parser}}
+\doxysubsubsection{\texorpdfstring{syntaxError()}{syntaxError()}}
+{\footnotesize\ttfamily static void Poco\+::\+Cpp\+Parser\+::\+Parser\+::syntax\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Cpp\+Parser/\mbox{\hyperlink{CppParser_2Parser_8h}{Parser.\+h}}\end{DoxyCompactItemize}

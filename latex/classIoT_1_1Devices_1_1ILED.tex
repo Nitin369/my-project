@@ -1,0 +1,209 @@
+\hypertarget{classIoT_1_1Devices_1_1ILED}{}\doxysection{IoT\+::Devices\+::I\+L\+ED Class Reference}
+\label{classIoT_1_1Devices_1_1ILED}\index{IoT::Devices::ILED@{IoT::Devices::ILED}}
+
+
+{\ttfamily \#include $<$I\+L\+E\+D.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::I\+L\+ED\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::I\+L\+ED\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED}{I\+L\+ED}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a56b6f3d39d22970ad0452f8d883aeaff}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a098e642ed03f948367acd350ea8563fe}{I\+L\+ED}} ()
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a4000120ad5ca53802dd984d071593819}{$\sim$\+I\+L\+ED}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED}{I\+L\+ED}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a8aaa0f5303c392c53877f6569402f984}{blink}} (int on\+Milliseconds, int off\+Milliseconds)=0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED}{I\+L\+ED}}. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a3905564465a0b8486825dcd3a8fe74bf}{get\+Brightness}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+bool \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a8dc706be7458822dcf1352756940fbc6}{isA}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&other\+Type) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a39ffc821084bc75a93acacd72fb666b4}{off}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns true if the class is a subclass of the class given by other\+Type. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a2d9e720373d2d169c65177cce8232f79}{on}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_aca6e44f9bd3cfcf2af8f6c808c423b12}{set\+Brightness}} (double brightness)=0
+\begin{DoxyCompactList}\small\item\em Returns the Type\+Id of the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a6b94a01101e43e9f24384e6d7a995400}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a98ed4cba2c10ae871314f64f44b12ece}{remoting\+\_\+\+\_\+type\+Id}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The base class for L\+E\+Ds. \begin{DoxyVerb}Each instance of the LED class represents a single physical
+LED. Some LED devices support different brightness levels,
+this is accounted for by allowing to specify a brightness
+level in range 0.0 to 1.0, where 0.0 turns the LED off and
+1.0 is the maximum brightness. 
+
+Some implementations may also support blinking LEDs.
+This is exposed via the "blinkOn" and "blinkOff" properties,
+which take as values the time in milliseconds the LED should
+be on, or off, respectively. There is also a shortcut
+method, blink(), which allows setting both properties at once.
+
+To turn on blinking, both "blinkOn" and "blinkOff" must be 
+set to a non-zero value. Furthermore, the brightness must
+be non-zero. 
+\end{DoxyVerb}
+ 
+
+Definition at line 30 of file I\+L\+E\+D.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1ILED_a56b6f3d39d22970ad0452f8d883aeaff}\label{classIoT_1_1Devices_1_1ILED_a56b6f3d39d22970ad0452f8d883aeaff}} 
+\index{IoT::Devices::ILED@{IoT::Devices::ILED}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::Devices::ILED@{IoT::Devices::ILED}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1Devices_1_1ILED}{I\+L\+ED}}$>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a56b6f3d39d22970ad0452f8d883aeaff}{Io\+T\+::\+Devices\+::\+I\+L\+E\+D\+::\+Ptr}}}
+
+
+
+Definition at line 50 of file I\+L\+E\+D.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1ILED_a098e642ed03f948367acd350ea8563fe}\label{classIoT_1_1Devices_1_1ILED_a098e642ed03f948367acd350ea8563fe}} 
+\index{IoT::Devices::ILED@{IoT::Devices::ILED}!ILED@{ILED}}
+\index{ILED@{ILED}!IoT::Devices::ILED@{IoT::Devices::ILED}}
+\doxysubsubsection{\texorpdfstring{ILED()}{ILED()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+I\+L\+E\+D\+::\+I\+L\+ED (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1ILED_a4000120ad5ca53802dd984d071593819}\label{classIoT_1_1Devices_1_1ILED_a4000120ad5ca53802dd984d071593819}} 
+\index{IoT::Devices::ILED@{IoT::Devices::ILED}!````~ILED@{$\sim$ILED}}
+\index{````~ILED@{$\sim$ILED}!IoT::Devices::ILED@{IoT::Devices::ILED}}
+\doxysubsubsection{\texorpdfstring{$\sim$ILED()}{~ILED()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Devices\+::\+I\+L\+E\+D\+::$\sim$\+I\+L\+ED (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED}{I\+L\+ED}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1ILED_a8aaa0f5303c392c53877f6569402f984}\label{classIoT_1_1Devices_1_1ILED_a8aaa0f5303c392c53877f6569402f984}} 
+\index{IoT::Devices::ILED@{IoT::Devices::ILED}!blink@{blink}}
+\index{blink@{blink}!IoT::Devices::ILED@{IoT::Devices::ILED}}
+\doxysubsubsection{\texorpdfstring{blink()}{blink()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+I\+L\+E\+D\+::blink (\begin{DoxyParamCaption}\item[{int}]{on\+Milliseconds,  }\item[{int}]{off\+Milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED}{I\+L\+ED}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a9d914d1217359cad4f0fbdd9bbadde19}{Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1ILED_a3905564465a0b8486825dcd3a8fe74bf}\label{classIoT_1_1Devices_1_1ILED_a3905564465a0b8486825dcd3a8fe74bf}} 
+\index{IoT::Devices::ILED@{IoT::Devices::ILED}!getBrightness@{getBrightness}}
+\index{getBrightness@{getBrightness}!IoT::Devices::ILED@{IoT::Devices::ILED}}
+\doxysubsubsection{\texorpdfstring{getBrightness()}{getBrightness()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+I\+L\+E\+D\+::get\+Brightness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Turns on blinking of the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}}.
+
+May not be supported by all implementations. 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_aa302feca1cbad5d3b9ff4f94b9188285}{Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1ILED_a8dc706be7458822dcf1352756940fbc6}\label{classIoT_1_1Devices_1_1ILED_a8dc706be7458822dcf1352756940fbc6}} 
+\index{IoT::Devices::ILED@{IoT::Devices::ILED}!isA@{isA}}
+\index{isA@{isA}!IoT::Devices::ILED@{IoT::Devices::ILED}}
+\doxysubsubsection{\texorpdfstring{isA()}{isA()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+Devices\+::\+I\+L\+E\+D\+::isA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&}]{other\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the current brightness of the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} in range 0.\+0 to 1.\+0.
+
+0.\+0 means off, every value $>$ 0.\+0 means on, with 1.\+0 being the maximum brightness level.
+
+Note that most \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} devices do not support different brightness levels and can only be turned on or off. 
+
+Reimplemented from \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a5147d8397d770fe73aaaed10a94fd0fa}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1ILED_a39ffc821084bc75a93acacd72fb666b4}\label{classIoT_1_1Devices_1_1ILED_a39ffc821084bc75a93acacd72fb666b4}} 
+\index{IoT::Devices::ILED@{IoT::Devices::ILED}!off@{off}}
+\index{off@{off}!IoT::Devices::ILED@{IoT::Devices::ILED}}
+\doxysubsubsection{\texorpdfstring{off()}{off()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+I\+L\+E\+D\+::off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns true if the class is a subclass of the class given by other\+Type. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a4b140aba8a1260b9a45b7d4437a9edd8}{Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1ILED_a2d9e720373d2d169c65177cce8232f79}\label{classIoT_1_1Devices_1_1ILED_a2d9e720373d2d169c65177cce8232f79}} 
+\index{IoT::Devices::ILED@{IoT::Devices::ILED}!on@{on}}
+\index{on@{on}!IoT::Devices::ILED@{IoT::Devices::ILED}}
+\doxysubsubsection{\texorpdfstring{on()}{on()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+I\+L\+E\+D\+::on (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Convenience method that turns the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} off by calling set\+Brightness(0.\+0). 
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a8dc5b9d363f4b57589e51ac9abde8a99}{Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1ILED_a98ed4cba2c10ae871314f64f44b12ece}\label{classIoT_1_1Devices_1_1ILED_a98ed4cba2c10ae871314f64f44b12ece}} 
+\index{IoT::Devices::ILED@{IoT::Devices::ILED}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Devices::ILED@{IoT::Devices::ILED}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}}\& Io\+T\+::\+Devices\+::\+I\+L\+E\+D\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convenience method that turns the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} on by calling set\+Brightness(1.\+0). Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1ILED_aca6e44f9bd3cfcf2af8f6c808c423b12}\label{classIoT_1_1Devices_1_1ILED_aca6e44f9bd3cfcf2af8f6c808c423b12}} 
+\index{IoT::Devices::ILED@{IoT::Devices::ILED}!setBrightness@{setBrightness}}
+\index{setBrightness@{setBrightness}!IoT::Devices::ILED@{IoT::Devices::ILED}}
+\doxysubsubsection{\texorpdfstring{setBrightness()}{setBrightness()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+I\+L\+E\+D\+::set\+Brightness (\begin{DoxyParamCaption}\item[{double}]{brightness }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the Type\+Id of the class. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_aff8ef303e9b1c04e24caa42ccdad528c}{Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1ILED_a6b94a01101e43e9f24384e6d7a995400}\label{classIoT_1_1Devices_1_1ILED_a6b94a01101e43e9f24384e6d7a995400}} 
+\index{IoT::Devices::ILED@{IoT::Devices::ILED}!type@{type}}
+\index{type@{type}!IoT::Devices::ILED@{IoT::Devices::ILED}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info\& Io\+T\+::\+Devices\+::\+I\+L\+E\+D\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the brightness of the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}}.
+
+0.\+0 means off, every value $>$ 0.\+0 means on, with 1.\+0 being the maximum brightness level.
+
+Note that most \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} devices do not support different brightness levels and can only be turned on or off. 
+
+Reimplemented from \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_ab6924e586b55df5c087dfd13aa84c04b}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{ILED_8h}{I\+L\+E\+D.\+h}}\end{DoxyCompactItemize}

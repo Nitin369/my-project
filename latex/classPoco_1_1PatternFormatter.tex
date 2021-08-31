@@ -1,0 +1,196 @@
+\hypertarget{classPoco_1_1PatternFormatter}{}\doxysection{Poco\+::Pattern\+Formatter Class Reference}
+\label{classPoco_1_1PatternFormatter}\index{Poco::PatternFormatter@{Poco::PatternFormatter}}
+
+
+{\ttfamily \#include $<$Pattern\+Formatter.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Pattern\+Formatter\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Pattern\+Formatter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1PatternFormatter_ad5a868e27bd46528226ca3254599c82d}{Pattern\+Formatter}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1PatternFormatter_a21b0e941978149500aa174547922b674}{Pattern\+Formatter}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1PatternFormatter_a633be054397b170d113be8be4f317774}{format}})
+\item 
+\mbox{\hyperlink{classPoco_1_1PatternFormatter_a1602aafa2b851ddf778deb92d6a75c38}{$\sim$\+Pattern\+Formatter}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1PatternFormatter_a633be054397b170d113be8be4f317774}{format}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&msg, std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1PatternFormatter}{Pattern\+Formatter}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1PatternFormatter_afd6282cc378cb77e651f69e073b98505}{set\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1PatternFormatter_a6cc10f2c96b6f41779082aec72637b3a}{get\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1PatternFormatter_a0c95e7d1891d82807606f823b47493f2}{P\+R\+O\+P\+\_\+\+P\+A\+T\+T\+E\+RN}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1PatternFormatter_ab5adcdad6821bb6fb85bc903f3dd548c}{P\+R\+O\+P\+\_\+\+T\+I\+M\+ES}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1PatternFormatter_ac850324816d8982f9b5b8eb80abbb2ca}{get\+Priority\+Name}} (int)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This \mbox{\hyperlink{classPoco_1_1Formatter}{Formatter}} allows for custom formatting of log messages based on format patterns.
+
+The format pattern is used as a template to format the message and is copied character by character except for the following special characters, which are replaced by the corresponding value.
+
+
+\begin{DoxyItemize}
+\item s -\/ message source
+\item t -\/ message text
+\item l -\/ message priority level (1 .. 7)
+\item p -\/ message priority (Fatal, Critical, \mbox{\hyperlink{classPoco_1_1Error}{Error}}, Warning, Notice, Information, Debug, Trace)
+\item q -\/ abbreviated message priority (F, C, E, W, N, I, D, T)
+\item P -\/ message process identifier
+\item T -\/ message thread name
+\item I -\/ message thread identifier (numeric)
+\item N -\/ node or host name
+\item U -\/ message source file path (empty string if not set)
+\item u -\/ message source line number (0 if not set)
+\item w -\/ message date/time abbreviated weekday (Mon, Tue, ...)
+\item W -\/ message date/time full weekday (Monday, Tuesday, ...)
+\item b -\/ message date/time abbreviated month (Jan, Feb, ...)
+\item B -\/ message date/time full month (January, February, ...)
+\item d -\/ message date/time zero-\/padded day of month (01 .. 31)
+\item e -\/ message date/time day of month (1 .. 31)
+\item f -\/ message date/time space-\/padded day of month ( 1 .. 31)
+\item m -\/ message date/time zero-\/padded month (01 .. 12)
+\item n -\/ message date/time month (1 .. 12)
+\item o -\/ message date/time space-\/padded month ( 1 .. 12)
+\item y -\/ message date/time year without century (70)
+\item Y -\/ message date/time year with century (1970)
+\item H -\/ message date/time hour (00 .. 23)
+\item h -\/ message date/time hour (00 .. 12)
+\item a -\/ message date/time am/pm
+\item A -\/ message date/time A\+M/\+PM
+\item M -\/ message date/time minute (00 .. 59)
+\item S -\/ message date/time second (00 .. 59)
+\item i -\/ message date/time millisecond (000 .. 999)
+\item c -\/ message date/time centisecond (0 .. 9)
+\item F -\/ message date/time fractional seconds/microseconds (000000 -\/ 999999)
+\item z -\/ time zone differential in I\+SO 8601 format (Z or +N\+N.\+NN)
+\item Z -\/ time zone differential in R\+FC format (G\+MT or +N\+N\+NN)
+\item L -\/ convert time to local time (must be specified before any date/time specifier; does not itself output anything)
+\item E -\/ epoch time (U\+TC, seconds since midnight, January 1, 1970)
+\item v\mbox{[}width\mbox{]} -\/ the message source (s) but text length is padded/cropped to \textquotesingle{}width\textquotesingle{}
+\item \%\mbox{[}name\mbox{]} -\/ the value of the message parameter with the given name
+\item \%\% -\/ percent sign 
+\end{DoxyItemize}
+
+Definition at line 32 of file Pattern\+Formatter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1PatternFormatter_ad5a868e27bd46528226ca3254599c82d}\label{classPoco_1_1PatternFormatter_ad5a868e27bd46528226ca3254599c82d}} 
+\index{Poco::PatternFormatter@{Poco::PatternFormatter}!PatternFormatter@{PatternFormatter}}
+\index{PatternFormatter@{PatternFormatter}!Poco::PatternFormatter@{Poco::PatternFormatter}}
+\doxysubsubsection{\texorpdfstring{PatternFormatter()}{PatternFormatter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Pattern\+Formatter\+::\+Pattern\+Formatter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1PatternFormatter_a21b0e941978149500aa174547922b674}\label{classPoco_1_1PatternFormatter_a21b0e941978149500aa174547922b674}} 
+\index{Poco::PatternFormatter@{Poco::PatternFormatter}!PatternFormatter@{PatternFormatter}}
+\index{PatternFormatter@{PatternFormatter}!Poco::PatternFormatter@{Poco::PatternFormatter}}
+\doxysubsubsection{\texorpdfstring{PatternFormatter()}{PatternFormatter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Pattern\+Formatter\+::\+Pattern\+Formatter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{format }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1PatternFormatter}{Pattern\+Formatter}}. The format pattern must be specified with a call to set\+Property. \mbox{\Hypertarget{classPoco_1_1PatternFormatter_a1602aafa2b851ddf778deb92d6a75c38}\label{classPoco_1_1PatternFormatter_a1602aafa2b851ddf778deb92d6a75c38}} 
+\index{Poco::PatternFormatter@{Poco::PatternFormatter}!````~PatternFormatter@{$\sim$PatternFormatter}}
+\index{````~PatternFormatter@{$\sim$PatternFormatter}!Poco::PatternFormatter@{Poco::PatternFormatter}}
+\doxysubsubsection{\texorpdfstring{$\sim$PatternFormatter()}{~PatternFormatter()}}
+{\footnotesize\ttfamily Poco\+::\+Pattern\+Formatter\+::$\sim$\+Pattern\+Formatter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1PatternFormatter}{Pattern\+Formatter}} that uses the given format pattern. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1PatternFormatter_a633be054397b170d113be8be4f317774}\label{classPoco_1_1PatternFormatter_a633be054397b170d113be8be4f317774}} 
+\index{Poco::PatternFormatter@{Poco::PatternFormatter}!format@{format}}
+\index{format@{format}!Poco::PatternFormatter@{Poco::PatternFormatter}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily void Poco\+::\+Pattern\+Formatter\+::format (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&}]{msg,  }\item[{std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1PatternFormatter}{Pattern\+Formatter}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Formatter_a7dd62f0f22b9d1afb6d49b1a658235ae}{Poco\+::\+Formatter}}.
+
+\mbox{\Hypertarget{classPoco_1_1PatternFormatter_ac850324816d8982f9b5b8eb80abbb2ca}\label{classPoco_1_1PatternFormatter_ac850324816d8982f9b5b8eb80abbb2ca}} 
+\index{Poco::PatternFormatter@{Poco::PatternFormatter}!getPriorityName@{getPriorityName}}
+\index{getPriorityName@{getPriorityName}!Poco::PatternFormatter@{Poco::PatternFormatter}}
+\doxysubsubsection{\texorpdfstring{getPriorityName()}{getPriorityName()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Pattern\+Formatter\+::get\+Priority\+Name (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1PatternFormatter_a6cc10f2c96b6f41779082aec72637b3a}\label{classPoco_1_1PatternFormatter_a6cc10f2c96b6f41779082aec72637b3a}} 
+\index{Poco::PatternFormatter@{Poco::PatternFormatter}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!Poco::PatternFormatter@{Poco::PatternFormatter}}
+\doxysubsubsection{\texorpdfstring{getProperty()}{getProperty()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Pattern\+Formatter\+::get\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the property with the given name to the given value.
+
+The following properties are supported\+: \begin{DoxyVerb}* pattern: The format pattern. See the PatternFormatter class
+  for details.
+* times: Specifies whether times are adjusted for local time
+  or taken as they are in UTC. Supported values are "local" and "UTC".
+\end{DoxyVerb}
+
+
+If any other property name is given, a Property\+Not\+Supported exception is thrown. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Formatter_ade474219b6298aae45df0031a9eccdca}{Poco\+::\+Formatter}}.
+
+\mbox{\Hypertarget{classPoco_1_1PatternFormatter_afd6282cc378cb77e651f69e073b98505}\label{classPoco_1_1PatternFormatter_afd6282cc378cb77e651f69e073b98505}} 
+\index{Poco::PatternFormatter@{Poco::PatternFormatter}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!Poco::PatternFormatter@{Poco::PatternFormatter}}
+\doxysubsubsection{\texorpdfstring{setProperty()}{setProperty()}}
+{\footnotesize\ttfamily void Poco\+::\+Pattern\+Formatter\+::set\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Formats the message according to the specified format pattern and places the result in text. ~\newline
+ 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Formatter_af080e8c4d794b98c3748b7cfcba16453}{Poco\+::\+Formatter}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1PatternFormatter_a0c95e7d1891d82807606f823b47493f2}\label{classPoco_1_1PatternFormatter_a0c95e7d1891d82807606f823b47493f2}} 
+\index{Poco::PatternFormatter@{Poco::PatternFormatter}!PROP\_PATTERN@{PROP\_PATTERN}}
+\index{PROP\_PATTERN@{PROP\_PATTERN}!Poco::PatternFormatter@{Poco::PatternFormatter}}
+\doxysubsubsection{\texorpdfstring{PROP\_PATTERN}{PROP\_PATTERN}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Pattern\+Formatter\+::\+P\+R\+O\+P\+\_\+\+P\+A\+T\+T\+E\+RN\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the value of the property with the given name or throws a Property\+Not\+Supported exception if the given name is not recognized. 
+
+Definition at line 116 of file Pattern\+Formatter.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PatternFormatter_ab5adcdad6821bb6fb85bc903f3dd548c}\label{classPoco_1_1PatternFormatter_ab5adcdad6821bb6fb85bc903f3dd548c}} 
+\index{Poco::PatternFormatter@{Poco::PatternFormatter}!PROP\_TIMES@{PROP\_TIMES}}
+\index{PROP\_TIMES@{PROP\_TIMES}!Poco::PatternFormatter@{Poco::PatternFormatter}}
+\doxysubsubsection{\texorpdfstring{PROP\_TIMES}{PROP\_TIMES}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Pattern\+Formatter\+::\+P\+R\+O\+P\+\_\+\+T\+I\+M\+ES\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 117 of file Pattern\+Formatter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{PatternFormatter_8h}{Pattern\+Formatter.\+h}}\end{DoxyCompactItemize}

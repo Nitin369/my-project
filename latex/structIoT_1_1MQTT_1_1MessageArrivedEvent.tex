@@ -1,0 +1,89 @@
+\hypertarget{structIoT_1_1MQTT_1_1MessageArrivedEvent}{}\doxysection{IoT\+::M\+Q\+TT\+::Message\+Arrived\+Event Struct Reference}
+\label{structIoT_1_1MQTT_1_1MessageArrivedEvent}\index{IoT::MQTT::MessageArrivedEvent@{IoT::MQTT::MessageArrivedEvent}}
+
+
+Event arguments for \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_abe5ac696e443a5ea63509ba35b353b22}{M\+Q\+T\+T\+Client\+::message\+Arrived}}.  
+
+
+
+
+{\ttfamily \#include $<$M\+Q\+T\+T\+Client.\+h$>$}
+
+
+
+Collaboration diagram for IoT\+::M\+Q\+TT\+::Message\+Arrived\+Event\+:
+% FIG 0
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1MQTT_1_1MessageArrivedEvent_afa2df29b1985528896bbb1343cd128b4}{topic}}
+\item 
+\mbox{\hyperlink{structIoT_1_1MQTT_1_1Message}{Message}} \mbox{\hyperlink{structIoT_1_1MQTT_1_1MessageArrivedEvent_a3b4b572f57f0f21c80dae2225cf93c2b}{message}}
+\begin{DoxyCompactList}\small\item\em The topic the message has been published to. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structIoT_1_1MQTT_1_1MessageArrivedEvent_a0cdd644e6a8757dc32e733e05f10c8c1}{dup}}
+\begin{DoxyCompactList}\small\item\em The published message. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structIoT_1_1MQTT_1_1MessageArrivedEvent_a7ad7aa48a49ffe6e802d33b42672c39e}{handled}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Event arguments for \mbox{\hyperlink{classIoT_1_1MQTT_1_1MQTTClient_abe5ac696e443a5ea63509ba35b353b22}{M\+Q\+T\+T\+Client\+::message\+Arrived}}. 
+
+Definition at line 90 of file M\+Q\+T\+T\+Client.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MessageArrivedEvent_a0cdd644e6a8757dc32e733e05f10c8c1}\label{structIoT_1_1MQTT_1_1MessageArrivedEvent_a0cdd644e6a8757dc32e733e05f10c8c1}} 
+\index{IoT::MQTT::MessageArrivedEvent@{IoT::MQTT::MessageArrivedEvent}!dup@{dup}}
+\index{dup@{dup}!IoT::MQTT::MessageArrivedEvent@{IoT::MQTT::MessageArrivedEvent}}
+\doxysubsubsection{\texorpdfstring{dup}{dup}}
+{\footnotesize\ttfamily bool Io\+T\+::\+M\+Q\+T\+T\+::\+Message\+Arrived\+Event\+::dup}
+
+
+
+The published message. 
+
+
+
+Definition at line 99 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MessageArrivedEvent_a7ad7aa48a49ffe6e802d33b42672c39e}\label{structIoT_1_1MQTT_1_1MessageArrivedEvent_a7ad7aa48a49ffe6e802d33b42672c39e}} 
+\index{IoT::MQTT::MessageArrivedEvent@{IoT::MQTT::MessageArrivedEvent}!handled@{handled}}
+\index{handled@{handled}!IoT::MQTT::MessageArrivedEvent@{IoT::MQTT::MessageArrivedEvent}}
+\doxysubsubsection{\texorpdfstring{handled}{handled}}
+{\footnotesize\ttfamily bool Io\+T\+::\+M\+Q\+T\+T\+::\+Message\+Arrived\+Event\+::handled}
+
+The dup flag indicates whether or not this message is a duplicate. It is only meaningful when receiving Qo\+S1 messages. When true, the client application should take appropriate action to deal with the duplicate message. 
+
+Definition at line 105 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MessageArrivedEvent_a3b4b572f57f0f21c80dae2225cf93c2b}\label{structIoT_1_1MQTT_1_1MessageArrivedEvent_a3b4b572f57f0f21c80dae2225cf93c2b}} 
+\index{IoT::MQTT::MessageArrivedEvent@{IoT::MQTT::MessageArrivedEvent}!message@{message}}
+\index{message@{message}!IoT::MQTT::MessageArrivedEvent@{IoT::MQTT::MessageArrivedEvent}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structIoT_1_1MQTT_1_1Message}{Message}} Io\+T\+::\+M\+Q\+T\+T\+::\+Message\+Arrived\+Event\+::message}
+
+
+
+The topic the message has been published to. 
+
+
+
+Definition at line 96 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MessageArrivedEvent_afa2df29b1985528896bbb1343cd128b4}\label{structIoT_1_1MQTT_1_1MessageArrivedEvent_afa2df29b1985528896bbb1343cd128b4}} 
+\index{IoT::MQTT::MessageArrivedEvent@{IoT::MQTT::MessageArrivedEvent}!topic@{topic}}
+\index{topic@{topic}!IoT::MQTT::MessageArrivedEvent@{IoT::MQTT::MessageArrivedEvent}}
+\doxysubsubsection{\texorpdfstring{topic}{topic}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+Message\+Arrived\+Event\+::topic}
+
+
+
+Definition at line 93 of file M\+Q\+T\+T\+Client.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+M\+Q\+T\+T/\mbox{\hyperlink{MQTTClient_8h}{M\+Q\+T\+T\+Client.\+h}}\end{DoxyCompactItemize}

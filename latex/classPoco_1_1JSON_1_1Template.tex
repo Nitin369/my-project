@@ -1,0 +1,179 @@
+\hypertarget{classPoco_1_1JSON_1_1Template}{}\doxysection{Poco\+::J\+S\+ON\+::Template Class Reference}
+\label{classPoco_1_1JSON_1_1Template}\index{Poco::JSON::Template@{Poco::JSON::Template}}
+
+
+{\ttfamily \#include $<$Template.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1JSON_1_1Template}{Template}} $>$ \mbox{\hyperlink{classPoco_1_1JSON_1_1Template_a39033c1aff96be7d06887b81133d112e}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Template_a27cceba6d3d2449b3403f94c598c1441}{Template}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Template_ab1c944f89841fdc96d0230d2baa4c75c}{Template}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&template\+Path)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1JSON_1_1Template}{Template}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1JSON_1_1Template_a3d0286a060d8c26ac9243b5aea875e0b}{$\sim$\+Template}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1JSON_1_1Template}{Template}} from the file with the given template\+Path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1Template_a9205d85cc12494acb0fcc3d2994e8ee2}{parse}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1JSON_1_1Template}{Template}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1Template_a4c2edc1cbda54ac78d0e49b4934e4d81}{parse}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&source)
+\begin{DoxyCompactList}\small\item\em Parse a template from a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1Template_ada38f0a04b21573dc19a554f9a15ec99}{parse}} (std\+::istream \&in)
+\begin{DoxyCompactList}\small\item\em Parse a template from a string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \mbox{\hyperlink{classPoco_1_1JSON_1_1Template_a2a2eb87c7b821cbbee90a1274e4c2651}{parse\+Time}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Parse a template from an input stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1Template_ac72d679feb033f47b1cb0984635b37ce}{render}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \&data, std\+::ostream \&out) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the time when the template was parsed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Template}{Template}} is a template engine which uses \mbox{\hyperlink{namespacePoco_1_1JSON}{J\+S\+ON}} as input for generating output. There are commands for looping over \mbox{\hyperlink{namespacePoco_1_1JSON}{J\+S\+ON}} arrays, include other templates, conditional output, etc.
+
+All text is send to the outputstream. A command is placed between $<$? and \hypertarget{classPoco_1_1JSON_1_1Template_autotoc_md2}{}\doxysubsubsection{?$>$}\label{classPoco_1_1JSON_1_1Template_autotoc_md2}
+These are the available commands\+: \begin{DoxyVerb}<? echo query ?>
+\end{DoxyVerb}
+
+
+\DoxyHorRuler{0}
+ The result of the query is send to the output stream This command can also be written as $<$?= query ?$>$ \begin{DoxyVerb}<? if query ?> <? else ?> <? endif ?>
+\end{DoxyVerb}
+
+
+\DoxyHorRuler{0}
+ When the result of query is true, all the text between if and else (or endif when there is no else) is send to the output stream. When the result of query is false, all the text between else and endif is send to the output stream. An empty object, an empty array or a null value is considered as a false value. For numbers a zero is false. An empty String is also false. \begin{DoxyVerb}<? ifexist query ?> <? else ?> <? endif ?>
+\end{DoxyVerb}
+
+
+\DoxyHorRuler{0}
+ This can be used to check the existence of the value. Use this for example when a zero value is ok (which returns false for $<$? if ?$>$. \begin{DoxyVerb}<? for variable query ?> <? endfor ?>
+\end{DoxyVerb}
+
+
+\DoxyHorRuler{0}
+ The result of the query must be an array. For each element in the array the text between for and endfor is send to the output stream. The active element is stored in the variable. \begin{DoxyVerb}<? include "filename" ?>
+\end{DoxyVerb}
+
+
+\DoxyHorRuler{0}
+ Includes a template. When the filename is relative it will try to resolve the filename against the active template. When this file doesn\textquotesingle{}t exist, it can still be found when the J\+S\+O\+N\+Template\+Cache is used.
+
+A query is passed to \mbox{\hyperlink{classPoco_1_1JSON_1_1Query}{Poco\+::\+J\+S\+O\+N\+::\+Query}} to get the value. 
+
+Definition at line 42 of file Template.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Template_a39033c1aff96be7d06887b81133d112e}\label{classPoco_1_1JSON_1_1Template_a39033c1aff96be7d06887b81133d112e}} 
+\index{Poco::JSON::Template@{Poco::JSON::Template}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::JSON::Template@{Poco::JSON::Template}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1JSON_1_1Template}{Template}}$>$ \mbox{\hyperlink{classPoco_1_1JSON_1_1Template_a39033c1aff96be7d06887b81133d112e}{Poco\+::\+J\+S\+O\+N\+::\+Template\+::\+Ptr}}}
+
+
+
+Definition at line 92 of file Template.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Template_a27cceba6d3d2449b3403f94c598c1441}\label{classPoco_1_1JSON_1_1Template_a27cceba6d3d2449b3403f94c598c1441}} 
+\index{Poco::JSON::Template@{Poco::JSON::Template}!Template@{Template}}
+\index{Template@{Template}!Poco::JSON::Template@{Poco::JSON::Template}}
+\doxysubsubsection{\texorpdfstring{Template()}{Template()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+J\+S\+O\+N\+::\+Template\+::\+Template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Template_ab1c944f89841fdc96d0230d2baa4c75c}\label{classPoco_1_1JSON_1_1Template_ab1c944f89841fdc96d0230d2baa4c75c}} 
+\index{Poco::JSON::Template@{Poco::JSON::Template}!Template@{Template}}
+\index{Template@{Template}!Poco::JSON::Template@{Poco::JSON::Template}}
+\doxysubsubsection{\texorpdfstring{Template()}{Template()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+J\+S\+O\+N\+::\+Template\+::\+Template (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&}]{template\+Path }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1JSON_1_1Template}{Template}}. 
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Template_a3d0286a060d8c26ac9243b5aea875e0b}\label{classPoco_1_1JSON_1_1Template_a3d0286a060d8c26ac9243b5aea875e0b}} 
+\index{Poco::JSON::Template@{Poco::JSON::Template}!````~Template@{$\sim$Template}}
+\index{````~Template@{$\sim$Template}!Poco::JSON::Template@{Poco::JSON::Template}}
+\doxysubsubsection{\texorpdfstring{$\sim$Template()}{~Template()}}
+{\footnotesize\ttfamily virtual Poco\+::\+J\+S\+O\+N\+::\+Template\+::$\sim$\+Template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1JSON_1_1Template}{Template}} from the file with the given template\+Path. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Template_a9205d85cc12494acb0fcc3d2994e8ee2}\label{classPoco_1_1JSON_1_1Template_a9205d85cc12494acb0fcc3d2994e8ee2}} 
+\index{Poco::JSON::Template@{Poco::JSON::Template}!parse@{parse}}
+\index{parse@{parse}!Poco::JSON::Template@{Poco::JSON::Template}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Template\+::parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1JSON_1_1Template}{Template}}. 
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Template_a4c2edc1cbda54ac78d0e49b4934e4d81}\label{classPoco_1_1JSON_1_1Template_a4c2edc1cbda54ac78d0e49b4934e4d81}} 
+\index{Poco::JSON::Template@{Poco::JSON::Template}!parse@{parse}}
+\index{parse@{parse}!Poco::JSON::Template@{Poco::JSON::Template}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Template\+::parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse a template from a file. 
+
+
+
+Definition at line 137 of file Template.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Template_ada38f0a04b21573dc19a554f9a15ec99}\label{classPoco_1_1JSON_1_1Template_ada38f0a04b21573dc19a554f9a15ec99}} 
+\index{Poco::JSON::Template@{Poco::JSON::Template}!parse@{parse}}
+\index{parse@{parse}!Poco::JSON::Template@{Poco::JSON::Template}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Template\+::parse (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})}
+
+
+
+Parse a template from a string. 
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Template_a2a2eb87c7b821cbbee90a1274e4c2651}\label{classPoco_1_1JSON_1_1Template_a2a2eb87c7b821cbbee90a1274e4c2651}} 
+\index{Poco::JSON::Template@{Poco::JSON::Template}!parseTime@{parseTime}}
+\index{parseTime@{parseTime}!Poco::JSON::Template@{Poco::JSON::Template}}
+\doxysubsubsection{\texorpdfstring{parseTime()}{parseTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} Poco\+::\+J\+S\+O\+N\+::\+Template\+::parse\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse a template from an input stream. 
+
+
+
+Definition at line 144 of file Template.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1Template_ac72d679feb033f47b1cb0984635b37ce}\label{classPoco_1_1JSON_1_1Template_ac72d679feb033f47b1cb0984635b37ce}} 
+\index{Poco::JSON::Template@{Poco::JSON::Template}!render@{render}}
+\index{render@{render}!Poco::JSON::Template@{Poco::JSON::Template}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Template\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}} \&}]{data,  }\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption}) const}
+
+
+
+Returns the time when the template was parsed. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+J\+S\+O\+N/\mbox{\hyperlink{Template_8h}{Template.\+h}}\end{DoxyCompactItemize}

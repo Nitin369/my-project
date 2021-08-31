@@ -1,0 +1,265 @@
+\hypertarget{classPoco_1_1BasicBufferedStreamBuf}{}\doxysection{Poco\+::Basic\+Buffered\+Stream\+Buf$<$ ch, tr, ba $>$ Class Template Reference}
+\label{classPoco_1_1BasicBufferedStreamBuf}\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+
+
+{\ttfamily \#include $<$Buffered\+Stream\+Buf.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Basic\+Buffered\+Stream\+Buf$<$ ch, tr, ba $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Basic\+Buffered\+Stream\+Buf$<$ ch, tr, ba $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a618b2a4c426b3bd2eb7e51a2f12c6e3a}{Basic\+Buffered\+Stream\+Buf}} (std\+::streamsize buffer\+Size, \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{openmode}} mode)
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a638d8c2e911df90d237d934ef248ec4d}{$\sim$\+Basic\+Buffered\+Stream\+Buf}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a072f33e9ac6888c8a6b2d070eae5e5cf}{int\+\_\+type}} \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a9f5a4894c3ac9bc10dc59510b53dd0ba}{overflow}} (\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a072f33e9ac6888c8a6b2d070eae5e5cf}{int\+\_\+type}} c)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a072f33e9ac6888c8a6b2d070eae5e5cf}{int\+\_\+type}} \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a42e3db1d6f8e787e9b8c600a161bd6e5}{underflow}} ()
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a5b7ffded1b2b978a22e6fda28384d586}{sync}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::basic\+\_\+streambuf$<$ ch, tr $>$ \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_aa9cc2e9468255cfb474b0419f03c921e}{Base}}
+\item 
+typedef std\+::basic\+\_\+ios$<$ ch, tr $>$ \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a3ec782fb6e54d710b61552732c29c0ba}{I\+OS}}
+\item 
+typedef ch \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a3ffc84f456738a0c3e782d25bd26300b}{char\+\_\+type}}
+\item 
+typedef tr \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a41a097acbe8eb77b1242ce05d6df8c82}{char\+\_\+traits}}
+\item 
+typedef ba \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a77faf57bc04132587d933c079c86500a}{Allocator}}
+\item 
+typedef Base\+::int\+\_\+type \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a072f33e9ac6888c8a6b2d070eae5e5cf}{int\+\_\+type}}
+\item 
+typedef Base\+::pos\+\_\+type \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a70dc41a1ea74ba986a72745ae67a060c}{pos\+\_\+type}}
+\item 
+typedef Base\+::off\+\_\+type \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a831be32e1663d6bd8c9a648995685171}{off\+\_\+type}}
+\item 
+typedef I\+O\+S\+::openmode \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{openmode}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a4bbf0cb1ae9b966563dd08d19ab6b5b2}{set\+Mode}} (\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{openmode}} mode)
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{openmode}} \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a79db3d098616089edc9d64a0816dcfcf}{get\+Mode}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename ch, typename tr, typename ba = Buffer\+Allocator$<$ch$>$$>$\newline
+class Poco\+::\+Basic\+Buffered\+Stream\+Buf$<$ ch, tr, ba $>$}
+
+This is an implementation of a buffered streambuf that greatly simplifies the implementation of custom streambufs of various kinds. Derived classes only have to override the methods read\+From\+Device() or write\+To\+Device().
+
+This streambuf only supports unidirectional streams. In other words, the \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Basic\+Buffered\+Stream\+Buf}} can be used for the implementation of an istream or an ostream, but not for an iostream. 
+
+Definition at line 35 of file Buffered\+Stream\+Buf.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a77faf57bc04132587d933c079c86500a}\label{classPoco_1_1BasicBufferedStreamBuf_a77faf57bc04132587d933c079c86500a}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{Allocator}{Allocator}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef ba \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a77faf57bc04132587d933c079c86500a}{Allocator}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 52 of file Buffered\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_aa9cc2e9468255cfb474b0419f03c921e}\label{classPoco_1_1BasicBufferedStreamBuf_aa9cc2e9468255cfb474b0419f03c921e}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!Base@{Base}}
+\index{Base@{Base}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{Base}{Base}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef std\+::basic\+\_\+streambuf$<$ch, tr$>$ \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_aa9cc2e9468255cfb474b0419f03c921e}{Base}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 48 of file Buffered\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a41a097acbe8eb77b1242ce05d6df8c82}\label{classPoco_1_1BasicBufferedStreamBuf_a41a097acbe8eb77b1242ce05d6df8c82}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!char\_traits@{char\_traits}}
+\index{char\_traits@{char\_traits}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{char\_traits}{char\_traits}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef tr \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a41a097acbe8eb77b1242ce05d6df8c82}{char\+\_\+traits}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 51 of file Buffered\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a3ffc84f456738a0c3e782d25bd26300b}\label{classPoco_1_1BasicBufferedStreamBuf_a3ffc84f456738a0c3e782d25bd26300b}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!char\_type@{char\_type}}
+\index{char\_type@{char\_type}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{char\_type}{char\_type}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef ch \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a3ffc84f456738a0c3e782d25bd26300b}{char\+\_\+type}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 50 of file Buffered\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a072f33e9ac6888c8a6b2d070eae5e5cf}\label{classPoco_1_1BasicBufferedStreamBuf_a072f33e9ac6888c8a6b2d070eae5e5cf}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!int\_type@{int\_type}}
+\index{int\_type@{int\_type}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{int\_type}{int\_type}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef Base\+::int\+\_\+type \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a072f33e9ac6888c8a6b2d070eae5e5cf}{int\+\_\+type}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 53 of file Buffered\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a3ec782fb6e54d710b61552732c29c0ba}\label{classPoco_1_1BasicBufferedStreamBuf_a3ec782fb6e54d710b61552732c29c0ba}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!IOS@{IOS}}
+\index{IOS@{IOS}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{IOS}{IOS}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef std\+::basic\+\_\+ios$<$ch, tr$>$ \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a3ec782fb6e54d710b61552732c29c0ba}{I\+OS}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 49 of file Buffered\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a831be32e1663d6bd8c9a648995685171}\label{classPoco_1_1BasicBufferedStreamBuf_a831be32e1663d6bd8c9a648995685171}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!off\_type@{off\_type}}
+\index{off\_type@{off\_type}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{off\_type}{off\_type}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef Base\+::off\+\_\+type \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a831be32e1663d6bd8c9a648995685171}{off\+\_\+type}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 55 of file Buffered\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}\label{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!openmode@{openmode}}
+\index{openmode@{openmode}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{openmode}{openmode}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef I\+O\+S\+::openmode \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{openmode}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 56 of file Buffered\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a70dc41a1ea74ba986a72745ae67a060c}\label{classPoco_1_1BasicBufferedStreamBuf_a70dc41a1ea74ba986a72745ae67a060c}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!pos\_type@{pos\_type}}
+\index{pos\_type@{pos\_type}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{pos\_type}{pos\_type}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef Base\+::pos\+\_\+type \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a70dc41a1ea74ba986a72745ae67a060c}{pos\+\_\+type}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 54 of file Buffered\+Stream\+Buf.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a618b2a4c426b3bd2eb7e51a2f12c6e3a}\label{classPoco_1_1BasicBufferedStreamBuf_a618b2a4c426b3bd2eb7e51a2f12c6e3a}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!BasicBufferedStreamBuf@{BasicBufferedStreamBuf}}
+\index{BasicBufferedStreamBuf@{BasicBufferedStreamBuf}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{BasicBufferedStreamBuf()}{BasicBufferedStreamBuf()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Basic\+Buffered\+Stream\+Buf}} (\begin{DoxyParamCaption}\item[{std\+::streamsize}]{buffer\+Size,  }\item[{\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{openmode}}}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 59 of file Buffered\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a638d8c2e911df90d237d934ef248ec4d}\label{classPoco_1_1BasicBufferedStreamBuf_a638d8c2e911df90d237d934ef248ec4d}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!````~BasicBufferedStreamBuf@{$\sim$BasicBufferedStreamBuf}}
+\index{````~BasicBufferedStreamBuf@{$\sim$BasicBufferedStreamBuf}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$BasicBufferedStreamBuf()}{~BasicBufferedStreamBuf()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Basic\+Buffered\+Stream\+Buf}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 68 of file Buffered\+Stream\+Buf.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a79db3d098616089edc9d64a0816dcfcf}\label{classPoco_1_1BasicBufferedStreamBuf_a79db3d098616089edc9d64a0816dcfcf}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!getMode@{getMode}}
+\index{getMode@{getMode}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{getMode()}{getMode()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{openmode}} \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::get\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 123 of file Buffered\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a9f5a4894c3ac9bc10dc59510b53dd0ba}\label{classPoco_1_1BasicBufferedStreamBuf_a9f5a4894c3ac9bc10dc59510b53dd0ba}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!overflow@{overflow}}
+\index{overflow@{overflow}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{overflow()}{overflow()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+virtual \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a072f33e9ac6888c8a6b2d070eae5e5cf}{int\+\_\+type}} \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::overflow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a072f33e9ac6888c8a6b2d070eae5e5cf}{int\+\_\+type}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 73 of file Buffered\+Stream\+Buf.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a4bbf0cb1ae9b966563dd08d19ab6b5b2}\label{classPoco_1_1BasicBufferedStreamBuf_a4bbf0cb1ae9b966563dd08d19ab6b5b2}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!setMode@{setMode}}
+\index{setMode@{setMode}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{setMode()}{setMode()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+void \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::set\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{openmode}}}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 118 of file Buffered\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a5b7ffded1b2b978a22e6fda28384d586}\label{classPoco_1_1BasicBufferedStreamBuf_a5b7ffded1b2b978a22e6fda28384d586}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!sync@{sync}}
+\index{sync@{sync}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{sync()}{sync()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+virtual int \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1InflatingStreamBuf_ae0e7a562233dbc865481f325c5aadf29}{Poco\+::\+Inflating\+Stream\+Buf}}, and \mbox{\hyperlink{classPoco_1_1DeflatingStreamBuf_a0a882d04a2ef93b3854a77f2ac760a97}{Poco\+::\+Deflating\+Stream\+Buf}}.
+
+
+
+Definition at line 108 of file Buffered\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedStreamBuf_a42e3db1d6f8e787e9b8c600a161bd6e5}\label{classPoco_1_1BasicBufferedStreamBuf_a42e3db1d6f8e787e9b8c600a161bd6e5}} 
+\index{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}!underflow@{underflow}}
+\index{underflow@{underflow}!Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{underflow()}{underflow()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+virtual \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_a072f33e9ac6888c8a6b2d070eae5e5cf}{int\+\_\+type}} \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf}{Poco\+::\+Basic\+Buffered\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::underflow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 87 of file Buffered\+Stream\+Buf.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{BufferedStreamBuf_8h}{Buffered\+Stream\+Buf.\+h}}\end{DoxyCompactItemize}

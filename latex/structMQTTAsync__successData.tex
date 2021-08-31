@@ -1,0 +1,145 @@
+\hypertarget{structMQTTAsync__successData}{}\doxysection{M\+Q\+T\+T\+Async\+\_\+success\+Data Struct Reference}
+\label{structMQTTAsync__successData}\index{MQTTAsync\_successData@{MQTTAsync\_successData}}
+
+
+{\ttfamily \#include $<$M\+Q\+T\+T\+Async.\+h$>$}
+
+
+
+Collaboration diagram for M\+Q\+T\+T\+Async\+\_\+success\+Data\+:
+% FIG 0
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} \mbox{\hyperlink{structMQTTAsync__successData_afd00f6f09b4cd92b5815202fc339be68}{token}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int \mbox{\hyperlink{structMQTTAsync__successData_af12fc9f6b7a42449f8299e5a8e4f0e7e}{qos}}\\
+\>int $\ast$ \mbox{\hyperlink{structMQTTAsync__successData_aa4ad4a4023c5b9796e44b9dfd0df53e7}{qosList}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{structMQTTAsync__message}{MQTTAsync\_message}} \mbox{\hyperlink{structMQTTAsync__successData_a0b2e85af2333e5775907d3f2b53907d4}{message}}\\
+\>\>char $\ast$ \mbox{\hyperlink{structMQTTAsync__successData_af3eef8b306fc96c9a0e36f2d0fd1e322}{destinationName}}\\
+\>\} \mbox{\hyperlink{structMQTTAsync__successData_a61d994959ff1350ab2a0986d33ecd204}{pub}}\\
+\>struct \{\\
+\>\>char $\ast$ \mbox{\hyperlink{structMQTTAsync__successData_a622eceefeaf9679af35841b1e7564f48}{serverURI}}\\
+\>\>int \mbox{\hyperlink{structMQTTAsync__successData_a2803f7c3e77845d14d7d54004b6c16f9}{MQTTVersion}}\\
+\>\>int \mbox{\hyperlink{structMQTTAsync__successData_a71879fec2eb0c6b891a48ed813b2a9da}{sessionPresent}}\\
+\>\} \mbox{\hyperlink{structMQTTAsync__successData_a6a37b0ed78a4c1eff62bc87ce84300e1}{connect}}\\
+\} \mbox{\hyperlink{structMQTTAsync__successData_af2b2a98191b00dbd7c592f2ef013ba87}{alt}}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The data returned on completion of a successful A\+PI call in the response callback on\+Success. 
+
+Definition at line 354 of file M\+Q\+T\+T\+Async.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structMQTTAsync__successData_af2b2a98191b00dbd7c592f2ef013ba87}\label{structMQTTAsync__successData_af2b2a98191b00dbd7c592f2ef013ba87}} 
+\index{MQTTAsync\_successData@{MQTTAsync\_successData}!alt@{alt}}
+\index{alt@{alt}!MQTTAsync\_successData@{MQTTAsync\_successData}}
+\doxysubsubsection{\texorpdfstring{alt}{alt}}
+{\footnotesize\ttfamily union \{ ... \}  M\+Q\+T\+T\+Async\+\_\+success\+Data\+::alt}
+
+A union of the different values that can be returned for subscribe, unsubscribe and publish. \mbox{\Hypertarget{structMQTTAsync__successData_a6a37b0ed78a4c1eff62bc87ce84300e1}\label{structMQTTAsync__successData_a6a37b0ed78a4c1eff62bc87ce84300e1}} 
+\index{MQTTAsync\_successData@{MQTTAsync\_successData}!connect@{connect}}
+\index{connect@{connect}!MQTTAsync\_successData@{MQTTAsync\_successData}}
+\doxysubsubsection{\texorpdfstring{connect}{connect}}
+{\footnotesize\ttfamily struct \{ ... \}  M\+Q\+T\+T\+Async\+\_\+success\+Data\+::connect}
+
+\mbox{\Hypertarget{structMQTTAsync__successData_af3eef8b306fc96c9a0e36f2d0fd1e322}\label{structMQTTAsync__successData_af3eef8b306fc96c9a0e36f2d0fd1e322}} 
+\index{MQTTAsync\_successData@{MQTTAsync\_successData}!destinationName@{destinationName}}
+\index{destinationName@{destinationName}!MQTTAsync\_successData@{MQTTAsync\_successData}}
+\doxysubsubsection{\texorpdfstring{destinationName}{destinationName}}
+{\footnotesize\ttfamily char$\ast$ M\+Q\+T\+T\+Async\+\_\+success\+Data\+::destination\+Name}
+
+
+
+Definition at line 369 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__successData_a0b2e85af2333e5775907d3f2b53907d4}\label{structMQTTAsync__successData_a0b2e85af2333e5775907d3f2b53907d4}} 
+\index{MQTTAsync\_successData@{MQTTAsync\_successData}!message@{message}}
+\index{message@{message}!MQTTAsync\_successData@{MQTTAsync\_successData}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMQTTAsync__message}{M\+Q\+T\+T\+Async\+\_\+message}} M\+Q\+T\+T\+Async\+\_\+success\+Data\+::message}
+
+
+
+Definition at line 368 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__successData_a2803f7c3e77845d14d7d54004b6c16f9}\label{structMQTTAsync__successData_a2803f7c3e77845d14d7d54004b6c16f9}} 
+\index{MQTTAsync\_successData@{MQTTAsync\_successData}!MQTTVersion@{MQTTVersion}}
+\index{MQTTVersion@{MQTTVersion}!MQTTAsync\_successData@{MQTTAsync\_successData}}
+\doxysubsubsection{\texorpdfstring{MQTTVersion}{MQTTVersion}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Async\+\_\+success\+Data\+::\+M\+Q\+T\+T\+Version}
+
+
+
+Definition at line 375 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__successData_a61d994959ff1350ab2a0986d33ecd204}\label{structMQTTAsync__successData_a61d994959ff1350ab2a0986d33ecd204}} 
+\index{MQTTAsync\_successData@{MQTTAsync\_successData}!pub@{pub}}
+\index{pub@{pub}!MQTTAsync\_successData@{MQTTAsync\_successData}}
+\doxysubsubsection{\texorpdfstring{pub}{pub}}
+{\footnotesize\ttfamily struct \{ ... \}  M\+Q\+T\+T\+Async\+\_\+success\+Data\+::pub}
+
+For publish, the message being sent to the server. \mbox{\Hypertarget{structMQTTAsync__successData_af12fc9f6b7a42449f8299e5a8e4f0e7e}\label{structMQTTAsync__successData_af12fc9f6b7a42449f8299e5a8e4f0e7e}} 
+\index{MQTTAsync\_successData@{MQTTAsync\_successData}!qos@{qos}}
+\index{qos@{qos}!MQTTAsync\_successData@{MQTTAsync\_successData}}
+\doxysubsubsection{\texorpdfstring{qos}{qos}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Async\+\_\+success\+Data\+::qos}
+
+For subscribe, the granted QoS of the subscription returned by the server. 
+
+Definition at line 362 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__successData_aa4ad4a4023c5b9796e44b9dfd0df53e7}\label{structMQTTAsync__successData_aa4ad4a4023c5b9796e44b9dfd0df53e7}} 
+\index{MQTTAsync\_successData@{MQTTAsync\_successData}!qosList@{qosList}}
+\index{qosList@{qosList}!MQTTAsync\_successData@{MQTTAsync\_successData}}
+\doxysubsubsection{\texorpdfstring{qosList}{qosList}}
+{\footnotesize\ttfamily int$\ast$ M\+Q\+T\+T\+Async\+\_\+success\+Data\+::qos\+List}
+
+For subscribe\+Many, the list of granted Qo\+Ss of the subscriptions returned by the server. 
+
+Definition at line 364 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__successData_a622eceefeaf9679af35841b1e7564f48}\label{structMQTTAsync__successData_a622eceefeaf9679af35841b1e7564f48}} 
+\index{MQTTAsync\_successData@{MQTTAsync\_successData}!serverURI@{serverURI}}
+\index{serverURI@{serverURI}!MQTTAsync\_successData@{MQTTAsync\_successData}}
+\doxysubsubsection{\texorpdfstring{serverURI}{serverURI}}
+{\footnotesize\ttfamily char$\ast$ M\+Q\+T\+T\+Async\+\_\+success\+Data\+::server\+U\+RI}
+
+
+
+Definition at line 374 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__successData_a71879fec2eb0c6b891a48ed813b2a9da}\label{structMQTTAsync__successData_a71879fec2eb0c6b891a48ed813b2a9da}} 
+\index{MQTTAsync\_successData@{MQTTAsync\_successData}!sessionPresent@{sessionPresent}}
+\index{sessionPresent@{sessionPresent}!MQTTAsync\_successData@{MQTTAsync\_successData}}
+\doxysubsubsection{\texorpdfstring{sessionPresent}{sessionPresent}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Async\+\_\+success\+Data\+::session\+Present}
+
+
+
+Definition at line 376 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__successData_afd00f6f09b4cd92b5815202fc339be68}\label{structMQTTAsync__successData_afd00f6f09b4cd92b5815202fc339be68}} 
+\index{MQTTAsync\_successData@{MQTTAsync\_successData}!token@{token}}
+\index{token@{token}!MQTTAsync\_successData@{MQTTAsync\_successData}}
+\doxysubsubsection{\texorpdfstring{token}{token}}
+{\footnotesize\ttfamily \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} M\+Q\+T\+T\+Async\+\_\+success\+Data\+::token}
+
+A token identifying the successful request. Can be used to refer to the request later. 
+
+Definition at line 357 of file M\+Q\+T\+T\+Async.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+M\+Q\+T\+T/\+Paho/\mbox{\hyperlink{MQTTAsync_8h}{M\+Q\+T\+T\+Async.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,150 @@
+\hypertarget{classPoco_1_1Net_1_1X509Certificate}{}\doxysection{Poco\+::Net\+::X509\+Certificate Class Reference}
+\label{classPoco_1_1Net_1_1X509Certificate}\index{Poco::Net::X509Certificate@{Poco::Net::X509Certificate}}
+
+
+{\ttfamily \#include $<$X509\+Certificate.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::X509\+Certificate\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::X509\+Certificate\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate_a160d8b197c8cd12da01628e415af85fb}{X509\+Certificate}} (std\+::istream \&istr)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate_ad5e945cea5c8c60a76da91dad55e4c6b}{X509\+Certificate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate_aa7aa6c63f80ac93a7f834b0a05ce297c}{X509\+Certificate}} (X509 $\ast$p\+Cert)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate_a523fb081f691004167fbafe0061920b5}{X509\+Certificate}} (X509 $\ast$p\+Cert, bool shared)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate_a598a3dd74cfe3adb8b7e79536e1c5301}{X509\+Certificate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1X509Certificate}{Poco\+::\+Crypto\+::\+X509\+Certificate}} \&cert)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate}{X509\+Certificate}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate_ad1c9bfea691a75962096ae442861f66a}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1X509Certificate}{Poco\+::\+Crypto\+::\+X509\+Certificate}} \&cert)
+\begin{DoxyCompactList}\small\item\em Creates the certificate by copying another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate_a1d8165219decd65240e4ffc8efe08d5f}{$\sim$\+X509\+Certificate}} ()
+\begin{DoxyCompactList}\small\item\em Assigns a certificate. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate_a89071da2ce71df0d104f42f5da794eed}{verify}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host\+Name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate}{X509\+Certificate}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate_ad1749cc6f44c78ab05f428de5728d6b9}{verify}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1X509Certificate}{Poco\+::\+Crypto\+::\+X509\+Certificate}} \&cert, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate_aa95aaacdc589582ba3e9ec2ac4f71635}{contains\+Wildcards}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Crypto_1_1X509Certificate_abf67215d478a3a2f5ad46ac15f9c529e}{common\+Name}})
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate_ac5c58b0e616761d0b4489c88b3fcc153}{match\+Wildcard}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&alias, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class extends \mbox{\hyperlink{classPoco_1_1Crypto_1_1X509Certificate}{Poco\+::\+Crypto\+::\+X509\+Certificate}} with the feature to validate a certificate. 
+
+Definition at line 38 of file X509\+Certificate.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1X509Certificate_a160d8b197c8cd12da01628e415af85fb}\label{classPoco_1_1Net_1_1X509Certificate_a160d8b197c8cd12da01628e415af85fb}} 
+\index{Poco::Net::X509Certificate@{Poco::Net::X509Certificate}!X509Certificate@{X509Certificate}}
+\index{X509Certificate@{X509Certificate}!Poco::Net::X509Certificate@{Poco::Net::X509Certificate}}
+\doxysubsubsection{\texorpdfstring{X509Certificate()}{X509Certificate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+X509\+Certificate\+::\+X509\+Certificate (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1X509Certificate_ad5e945cea5c8c60a76da91dad55e4c6b}\label{classPoco_1_1Net_1_1X509Certificate_ad5e945cea5c8c60a76da91dad55e4c6b}} 
+\index{Poco::Net::X509Certificate@{Poco::Net::X509Certificate}!X509Certificate@{X509Certificate}}
+\index{X509Certificate@{X509Certificate}!Poco::Net::X509Certificate@{Poco::Net::X509Certificate}}
+\doxysubsubsection{\texorpdfstring{X509Certificate()}{X509Certificate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+X509\+Certificate\+::\+X509\+Certificate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate}{X509\+Certificate}} object by reading a certificate in P\+EM format from a stream. \mbox{\Hypertarget{classPoco_1_1Net_1_1X509Certificate_aa7aa6c63f80ac93a7f834b0a05ce297c}\label{classPoco_1_1Net_1_1X509Certificate_aa7aa6c63f80ac93a7f834b0a05ce297c}} 
+\index{Poco::Net::X509Certificate@{Poco::Net::X509Certificate}!X509Certificate@{X509Certificate}}
+\index{X509Certificate@{X509Certificate}!Poco::Net::X509Certificate@{Poco::Net::X509Certificate}}
+\doxysubsubsection{\texorpdfstring{X509Certificate()}{X509Certificate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+X509\+Certificate\+::\+X509\+Certificate (\begin{DoxyParamCaption}\item[{X509 $\ast$}]{p\+Cert }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate}{X509\+Certificate}} object by reading a certificate in P\+EM format from a file. \mbox{\Hypertarget{classPoco_1_1Net_1_1X509Certificate_a523fb081f691004167fbafe0061920b5}\label{classPoco_1_1Net_1_1X509Certificate_a523fb081f691004167fbafe0061920b5}} 
+\index{Poco::Net::X509Certificate@{Poco::Net::X509Certificate}!X509Certificate@{X509Certificate}}
+\index{X509Certificate@{X509Certificate}!Poco::Net::X509Certificate@{Poco::Net::X509Certificate}}
+\doxysubsubsection{\texorpdfstring{X509Certificate()}{X509Certificate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+X509\+Certificate\+::\+X509\+Certificate (\begin{DoxyParamCaption}\item[{X509 $\ast$}]{p\+Cert,  }\item[{bool}]{shared }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate}{X509\+Certificate}} from an existing Open\+S\+SL certificate. Ownership is taken of the certificate. \mbox{\Hypertarget{classPoco_1_1Net_1_1X509Certificate_a598a3dd74cfe3adb8b7e79536e1c5301}\label{classPoco_1_1Net_1_1X509Certificate_a598a3dd74cfe3adb8b7e79536e1c5301}} 
+\index{Poco::Net::X509Certificate@{Poco::Net::X509Certificate}!X509Certificate@{X509Certificate}}
+\index{X509Certificate@{X509Certificate}!Poco::Net::X509Certificate@{Poco::Net::X509Certificate}}
+\doxysubsubsection{\texorpdfstring{X509Certificate()}{X509Certificate()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+X509\+Certificate\+::\+X509\+Certificate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1X509Certificate}{Poco\+::\+Crypto\+::\+X509\+Certificate}} \&}]{cert }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate}{X509\+Certificate}} from an existing Open\+S\+SL certificate. Ownership is taken of the certificate. If shared is true, the certificate\textquotesingle{}s reference count is incremented. \mbox{\Hypertarget{classPoco_1_1Net_1_1X509Certificate_a1d8165219decd65240e4ffc8efe08d5f}\label{classPoco_1_1Net_1_1X509Certificate_a1d8165219decd65240e4ffc8efe08d5f}} 
+\index{Poco::Net::X509Certificate@{Poco::Net::X509Certificate}!````~X509Certificate@{$\sim$X509Certificate}}
+\index{````~X509Certificate@{$\sim$X509Certificate}!Poco::Net::X509Certificate@{Poco::Net::X509Certificate}}
+\doxysubsubsection{\texorpdfstring{$\sim$X509Certificate()}{~X509Certificate()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+X509\+Certificate\+::$\sim$\+X509\+Certificate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Assigns a certificate. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1X509Certificate_aa95aaacdc589582ba3e9ec2ac4f71635}\label{classPoco_1_1Net_1_1X509Certificate_aa95aaacdc589582ba3e9ec2ac4f71635}} 
+\index{Poco::Net::X509Certificate@{Poco::Net::X509Certificate}!containsWildcards@{containsWildcards}}
+\index{containsWildcards@{containsWildcards}!Poco::Net::X509Certificate@{Poco::Net::X509Certificate}}
+\doxysubsubsection{\texorpdfstring{containsWildcards()}{containsWildcards()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Net\+::\+X509\+Certificate\+::contains\+Wildcards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{common\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Verifies the validity of the certificate against the host name.
+
+For this check to be successful, the certificate must contain a domain name that matches the domain name of the host.
+
+Returns true if verification succeeded, or false otherwise. \mbox{\Hypertarget{classPoco_1_1Net_1_1X509Certificate_ac5c58b0e616761d0b4489c88b3fcc153}\label{classPoco_1_1Net_1_1X509Certificate_ac5c58b0e616761d0b4489c88b3fcc153}} 
+\index{Poco::Net::X509Certificate@{Poco::Net::X509Certificate}!matchWildcard@{matchWildcard}}
+\index{matchWildcard@{matchWildcard}!Poco::Net::X509Certificate@{Poco::Net::X509Certificate}}
+\doxysubsubsection{\texorpdfstring{matchWildcard()}{matchWildcard()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Net\+::\+X509\+Certificate\+::match\+Wildcard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{alias,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1X509Certificate_ad1c9bfea691a75962096ae442861f66a}\label{classPoco_1_1Net_1_1X509Certificate_ad1c9bfea691a75962096ae442861f66a}} 
+\index{Poco::Net::X509Certificate@{Poco::Net::X509Certificate}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Net::X509Certificate@{Poco::Net::X509Certificate}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate}{X509\+Certificate}}\& Poco\+::\+Net\+::\+X509\+Certificate\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1X509Certificate}{Poco\+::\+Crypto\+::\+X509\+Certificate}} \&}]{cert }\end{DoxyParamCaption})}
+
+
+
+Creates the certificate by copying another one. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1X509Certificate_ad1749cc6f44c78ab05f428de5728d6b9}\label{classPoco_1_1Net_1_1X509Certificate_ad1749cc6f44c78ab05f428de5728d6b9}} 
+\index{Poco::Net::X509Certificate@{Poco::Net::X509Certificate}!verify@{verify}}
+\index{verify@{verify}!Poco::Net::X509Certificate@{Poco::Net::X509Certificate}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static bool Poco\+::\+Net\+::\+X509\+Certificate\+::verify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Crypto_1_1X509Certificate}{Poco\+::\+Crypto\+::\+X509\+Certificate}} \&}]{cert,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Verifies the validity of the certificate against the host name.
+
+For this check to be successful, the certificate must contain a domain name that matches the domain name of the host.
+
+Returns true if verification succeeded, or false otherwise. \mbox{\Hypertarget{classPoco_1_1Net_1_1X509Certificate_a89071da2ce71df0d104f42f5da794eed}\label{classPoco_1_1Net_1_1X509Certificate_a89071da2ce71df0d104f42f5da794eed}} 
+\index{Poco::Net::X509Certificate@{Poco::Net::X509Certificate}!verify@{verify}}
+\index{verify@{verify}!Poco::Net::X509Certificate@{Poco::Net::X509Certificate}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+X509\+Certificate\+::verify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host\+Name }\end{DoxyParamCaption}) const}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1X509Certificate}{X509\+Certificate}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{Net_2X509Certificate_8h}{X509\+Certificate.\+h}}\end{DoxyCompactItemize}

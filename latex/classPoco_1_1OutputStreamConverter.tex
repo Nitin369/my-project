@@ -1,0 +1,49 @@
+\hypertarget{classPoco_1_1OutputStreamConverter}{}\doxysection{Poco\+::Output\+Stream\+Converter Class Reference}
+\label{classPoco_1_1OutputStreamConverter}\index{Poco::OutputStreamConverter@{Poco::OutputStreamConverter}}
+
+
+{\ttfamily \#include $<$Stream\+Converter.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Output\+Stream\+Converter\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Output\+Stream\+Converter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OutputStreamConverter_aa77d874e5a28576dc46b6dc4917aebde}{Output\+Stream\+Converter}} (std\+::ostream \&ostr, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} \&in\+Encoding, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} \&out\+Encoding, int default\+Char=\textquotesingle{}?\textquotesingle{})
+\item 
+\mbox{\hyperlink{classPoco_1_1OutputStreamConverter_ae1567776392f3016ef144662a3aac58a}{$\sim$\+Output\+Stream\+Converter}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This stream converts all characters written to the underlying ostream from one character encoding into another. If a character cannot be represented in out\+Encoding, default\+Char is used instead. If a byte sequence written to the stream is not valid in in\+Encoding, default\+Char is used instead and the encoding error count is incremented. 
+
+Definition at line 109 of file Stream\+Converter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OutputStreamConverter_aa77d874e5a28576dc46b6dc4917aebde}\label{classPoco_1_1OutputStreamConverter_aa77d874e5a28576dc46b6dc4917aebde}} 
+\index{Poco::OutputStreamConverter@{Poco::OutputStreamConverter}!OutputStreamConverter@{OutputStreamConverter}}
+\index{OutputStreamConverter@{OutputStreamConverter}!Poco::OutputStreamConverter@{Poco::OutputStreamConverter}}
+\doxysubsubsection{\texorpdfstring{OutputStreamConverter()}{OutputStreamConverter()}}
+{\footnotesize\ttfamily Poco\+::\+Output\+Stream\+Converter\+::\+Output\+Stream\+Converter (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} \&}]{in\+Encoding,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} \&}]{out\+Encoding,  }\item[{int}]{default\+Char = {\ttfamily \textquotesingle{}?\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1OutputStreamConverter_ae1567776392f3016ef144662a3aac58a}\label{classPoco_1_1OutputStreamConverter_ae1567776392f3016ef144662a3aac58a}} 
+\index{Poco::OutputStreamConverter@{Poco::OutputStreamConverter}!````~OutputStreamConverter@{$\sim$OutputStreamConverter}}
+\index{````~OutputStreamConverter@{$\sim$OutputStreamConverter}!Poco::OutputStreamConverter@{Poco::OutputStreamConverter}}
+\doxysubsubsection{\texorpdfstring{$\sim$OutputStreamConverter()}{~OutputStreamConverter()}}
+{\footnotesize\ttfamily Poco\+::\+Output\+Stream\+Converter\+::$\sim$\+Output\+Stream\+Converter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1OutputStreamConverter}{Output\+Stream\+Converter}} and connects it to the given input stream. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{StreamConverter_8h}{Stream\+Converter.\+h}}\end{DoxyCompactItemize}

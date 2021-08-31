@@ -1,0 +1,61 @@
+\hypertarget{classPoco_1_1XML_1_1NodeAppender}{}\doxysection{Poco\+::X\+ML\+::Node\+Appender Class Reference}
+\label{classPoco_1_1XML_1_1NodeAppender}\index{Poco::XML::NodeAppender@{Poco::XML::NodeAppender}}
+
+
+{\ttfamily \#include $<$Node\+Appender.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1NodeAppender_ae1121936a1b3cd2090cda8626c1e55eb}{Node\+Appender}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Element}{Element}} $\ast$parent)
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1NodeAppender_a6f10d8507090a416172f67d97df0399f}{$\sim$\+Node\+Appender}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1NodeAppender_a9995937be5e35f3831e1993fab08348a}{append\+Child}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$new\+Child)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1XML_1_1NodeAppender}{Node\+Appender}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1XML_1_1NodeAppender}{Node\+Appender}} class provides a very fast way to build larger D\+OM documents.
+
+In the D\+OM, child nodes are usually appended to a parent node using the \mbox{\hyperlink{classPoco_1_1XML_1_1NodeAppender_a9995937be5e35f3831e1993fab08348a}{append\+Child()}} method. For nodes containing more than a few children, this method can be quite slow, due to the way it\textquotesingle{}s implemented, and because of the requirements of the D\+OM specification.
+
+While the \mbox{\hyperlink{classPoco_1_1XML_1_1NodeAppender}{Node\+Appender}} is being used on an \mbox{\hyperlink{classPoco_1_1XML_1_1Element}{Element}}, no children-\/modifying methods of that \mbox{\hyperlink{classPoco_1_1XML_1_1Element}{Element}} must be used.
+
+This class is not part of the D\+OM specification. 
+
+Definition at line 35 of file Node\+Appender.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1NodeAppender_ae1121936a1b3cd2090cda8626c1e55eb}\label{classPoco_1_1XML_1_1NodeAppender_ae1121936a1b3cd2090cda8626c1e55eb}} 
+\index{Poco::XML::NodeAppender@{Poco::XML::NodeAppender}!NodeAppender@{NodeAppender}}
+\index{NodeAppender@{NodeAppender}!Poco::XML::NodeAppender@{Poco::XML::NodeAppender}}
+\doxysubsubsection{\texorpdfstring{NodeAppender()}{NodeAppender()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Node\+Appender\+::\+Node\+Appender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Element}{Element}} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1NodeAppender_a6f10d8507090a416172f67d97df0399f}\label{classPoco_1_1XML_1_1NodeAppender_a6f10d8507090a416172f67d97df0399f}} 
+\index{Poco::XML::NodeAppender@{Poco::XML::NodeAppender}!````~NodeAppender@{$\sim$NodeAppender}}
+\index{````~NodeAppender@{$\sim$NodeAppender}!Poco::XML::NodeAppender@{Poco::XML::NodeAppender}}
+\doxysubsubsection{\texorpdfstring{$\sim$NodeAppender()}{~NodeAppender()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Node\+Appender\+::$\sim$\+Node\+Appender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1XML_1_1NodeAppender}{Node\+Appender}} for the given parent node, which must be an \mbox{\hyperlink{classPoco_1_1XML_1_1Element}{Element}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1NodeAppender_a9995937be5e35f3831e1993fab08348a}\label{classPoco_1_1XML_1_1NodeAppender_a9995937be5e35f3831e1993fab08348a}} 
+\index{Poco::XML::NodeAppender@{Poco::XML::NodeAppender}!appendChild@{appendChild}}
+\index{appendChild@{appendChild}!Poco::XML::NodeAppender@{Poco::XML::NodeAppender}}
+\doxysubsubsection{\texorpdfstring{appendChild()}{appendChild()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Node\+Appender\+::append\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$}]{new\+Child }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1XML_1_1NodeAppender}{Node\+Appender}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+D\+O\+M/\mbox{\hyperlink{NodeAppender_8h}{Node\+Appender.\+h}}\end{DoxyCompactItemize}

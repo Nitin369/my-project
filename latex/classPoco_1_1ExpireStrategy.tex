@@ -1,0 +1,303 @@
+\hypertarget{classPoco_1_1ExpireStrategy}{}\doxysection{Poco\+::Expire\+Strategy$<$ T\+Key, T\+Value $>$ Class Template Reference}
+\label{classPoco_1_1ExpireStrategy}\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+
+
+An \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Expire\+Strategy}} implements time based expiration of cache entries.  
+
+
+
+
+{\ttfamily \#include $<$Expire\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Expire\+Strategy$<$ T\+Key, T\+Value $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Expire\+Strategy$<$ T\+Key, T\+Value $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::multimap$<$ \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}}, T\+Key $>$ \mbox{\hyperlink{classPoco_1_1ExpireStrategy_ab87e015dd76fc653be9ad249c6e67dfc}{Time\+Index}}
+\item 
+typedef Time\+Index\+::iterator \mbox{\hyperlink{classPoco_1_1ExpireStrategy_a5ece691cb80feb68d59f517ef395bb6a}{Index\+Iterator}}
+\item 
+typedef Time\+Index\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1ExpireStrategy_acb6146952384387df8a020cd308dfa0c}{Const\+Index\+Iterator}}
+\item 
+typedef std\+::map$<$ T\+Key, \mbox{\hyperlink{classPoco_1_1ExpireStrategy_a5ece691cb80feb68d59f517ef395bb6a}{Index\+Iterator}} $>$ \mbox{\hyperlink{classPoco_1_1ExpireStrategy_a31d71436b141762f4a848bce722215b1}{Keys}}
+\item 
+typedef Keys\+::iterator \mbox{\hyperlink{classPoco_1_1ExpireStrategy_a154a23a1ec14d25471ba4ac457f9944c}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ExpireStrategy_af5f05cf959eb42fcd67f023d7bc05908}{Expire\+Strategy}} (\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}} expire\+Time\+In\+Milli\+Sec)
+\item 
+\mbox{\hyperlink{classPoco_1_1ExpireStrategy_a7e0586b6dbff8444823d19360bb62fe4}{$\sim$\+Expire\+Strategy}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1ExpireStrategy_a96c57c841210411ad0115902dc9fd9ce}{on\+Add}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1KeyValueArgs}{Key\+Value\+Args}}$<$ T\+Key, T\+Value $>$ \&args)
+\item 
+void \mbox{\hyperlink{classPoco_1_1ExpireStrategy_a042307a81e5ca09b9dc270ef3b84dc6f}{on\+Remove}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key)
+\item 
+void \mbox{\hyperlink{classPoco_1_1ExpireStrategy_a15ca99f7e3e187882df654e1da285c07}{on\+Get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key)
+\item 
+void \mbox{\hyperlink{classPoco_1_1ExpireStrategy_ab7abcc01f311831f6e556910fb904ea1}{on\+Clear}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1EventArgs}{Event\+Args}} \&args)
+\begin{DoxyCompactList}\small\item\em Informs the strategy that a read-\/access happens to an element. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1ExpireStrategy_aebee1be484bc5c9f9fa4e931526a3fe4}{on\+Is\+Valid}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, \mbox{\hyperlink{classPoco_1_1ValidArgs}{Valid\+Args}}$<$ T\+Key $>$ \&args)
+\begin{DoxyCompactList}\small\item\em Removes all elements from the cache. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1ExpireStrategy_a92edd15c044d548e62f1d77d0314efd6}{on\+Replace}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, std\+::set$<$ T\+Key $>$ \&elems\+To\+Remove)
+\begin{DoxyCompactList}\small\item\em Used to query if a key is still valid (i.\+e. cached). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}} \mbox{\hyperlink{classPoco_1_1ExpireStrategy_a92fc41447058eb99304ca5019cf147d2}{\+\_\+expire\+Time}}
+\item 
+\mbox{\hyperlink{classPoco_1_1ExpireStrategy_a31d71436b141762f4a848bce722215b1}{Keys}} \mbox{\hyperlink{classPoco_1_1ExpireStrategy_aedb5a1e4e9b87c99cea1a87ef14906ac}{\+\_\+keys}}
+\item 
+\mbox{\hyperlink{classPoco_1_1ExpireStrategy_ab87e015dd76fc653be9ad249c6e67dfc}{Time\+Index}} \mbox{\hyperlink{classPoco_1_1ExpireStrategy_a86682488b32952b372af5743c1d36991}{\+\_\+key\+Index}}
+\begin{DoxyCompactList}\small\item\em For faster replacement of keys, the iterator points to the \+\_\+key\+Index map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Key, class T\+Value$>$\newline
+class Poco\+::\+Expire\+Strategy$<$ T\+Key, T\+Value $>$}
+
+An \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Expire\+Strategy}} implements time based expiration of cache entries. 
+
+Definition at line 40 of file Expire\+Strategy.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_acb6146952384387df8a020cd308dfa0c}\label{classPoco_1_1ExpireStrategy_acb6146952384387df8a020cd308dfa0c}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!ConstIndexIterator@{ConstIndexIterator}}
+\index{ConstIndexIterator@{ConstIndexIterator}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{ConstIndexIterator}{ConstIndexIterator}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef Time\+Index\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1ExpireStrategy_acb6146952384387df8a020cd308dfa0c}{Const\+Index\+Iterator}}}
+
+
+
+Definition at line 46 of file Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_a5ece691cb80feb68d59f517ef395bb6a}\label{classPoco_1_1ExpireStrategy_a5ece691cb80feb68d59f517ef395bb6a}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!IndexIterator@{IndexIterator}}
+\index{IndexIterator@{IndexIterator}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{IndexIterator}{IndexIterator}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef Time\+Index\+::iterator \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1ExpireStrategy_a5ece691cb80feb68d59f517ef395bb6a}{Index\+Iterator}}}
+
+
+
+Definition at line 45 of file Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_a154a23a1ec14d25471ba4ac457f9944c}\label{classPoco_1_1ExpireStrategy_a154a23a1ec14d25471ba4ac457f9944c}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef Keys\+::iterator \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1ExpireStrategy_a154a23a1ec14d25471ba4ac457f9944c}{Iterator}}}
+
+
+
+Definition at line 48 of file Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_a31d71436b141762f4a848bce722215b1}\label{classPoco_1_1ExpireStrategy_a31d71436b141762f4a848bce722215b1}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!Keys@{Keys}}
+\index{Keys@{Keys}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{Keys}{Keys}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef std\+::map$<$T\+Key, \mbox{\hyperlink{classPoco_1_1ExpireStrategy_a5ece691cb80feb68d59f517ef395bb6a}{Index\+Iterator}}$>$ \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1ExpireStrategy_a31d71436b141762f4a848bce722215b1}{Keys}}}
+
+
+
+Definition at line 47 of file Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_ab87e015dd76fc653be9ad249c6e67dfc}\label{classPoco_1_1ExpireStrategy_ab87e015dd76fc653be9ad249c6e67dfc}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!TimeIndex@{TimeIndex}}
+\index{TimeIndex@{TimeIndex}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{TimeIndex}{TimeIndex}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef std\+::multimap$<$\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}}, T\+Key$>$ \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1ExpireStrategy_ab87e015dd76fc653be9ad249c6e67dfc}{Time\+Index}}}
+
+
+
+Definition at line 44 of file Expire\+Strategy.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_af5f05cf959eb42fcd67f023d7bc05908}\label{classPoco_1_1ExpireStrategy_af5f05cf959eb42fcd67f023d7bc05908}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!ExpireStrategy@{ExpireStrategy}}
+\index{ExpireStrategy@{ExpireStrategy}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{ExpireStrategy()}{ExpireStrategy()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+\mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Expire\+Strategy}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}}}]{expire\+Time\+In\+Milli\+Sec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an expire strategy. Note that the smallest allowed caching time is 25ms. Anything lower than that is not useful with current operating systems. 
+
+Definition at line 51 of file Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_a7e0586b6dbff8444823d19360bb62fe4}\label{classPoco_1_1ExpireStrategy_a7e0586b6dbff8444823d19360bb62fe4}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!````~ExpireStrategy@{$\sim$ExpireStrategy}}
+\index{````~ExpireStrategy@{$\sim$ExpireStrategy}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$ExpireStrategy()}{~ExpireStrategy()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+\mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Expire\+Strategy}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 58 of file Expire\+Strategy.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_a96c57c841210411ad0115902dc9fd9ce}\label{classPoco_1_1ExpireStrategy_a96c57c841210411ad0115902dc9fd9ce}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!onAdd@{onAdd}}
+\index{onAdd@{onAdd}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onAdd()}{onAdd()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::on\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1KeyValueArgs}{Key\+Value\+Args}}$<$ T\+Key, T\+Value $>$ \&}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a40bb84cd0085c3ff59064cd3d13a21dd}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 62 of file Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_ab7abcc01f311831f6e556910fb904ea1}\label{classPoco_1_1ExpireStrategy_ab7abcc01f311831f6e556910fb904ea1}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!onClear@{onClear}}
+\index{onClear@{onClear}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onClear()}{onClear()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::on\+Clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1EventArgs}{Event\+Args}} \&}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Informs the strategy that a read-\/access happens to an element. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a84d1033a199ef6eea12207f7a40bca72}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 91 of file Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_a15ca99f7e3e187882df654e1da285c07}\label{classPoco_1_1ExpireStrategy_a15ca99f7e3e187882df654e1da285c07}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!onGet@{onGet}}
+\index{onGet@{onGet}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onGet()}{onGet()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::on\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes an entry from the strategy. If the entry is not found the remove is ignored. 
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a802663d39fa378d09ca76b37daccf8e9}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 86 of file Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_aebee1be484bc5c9f9fa4e931526a3fe4}\label{classPoco_1_1ExpireStrategy_aebee1be484bc5c9f9fa4e931526a3fe4}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!onIsValid@{onIsValid}}
+\index{onIsValid@{onIsValid}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onIsValid()}{onIsValid()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::on\+Is\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{classPoco_1_1ValidArgs}{Valid\+Args}}$<$ T\+Key $>$ \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Removes all elements from the cache. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_ade01399ff91ed48ca9ab2656c184dc7e}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 97 of file Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_a042307a81e5ca09b9dc270ef3b84dc6f}\label{classPoco_1_1ExpireStrategy_a042307a81e5ca09b9dc270ef3b84dc6f}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!onRemove@{onRemove}}
+\index{onRemove@{onRemove}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onRemove()}{onRemove()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::on\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Adds the key to the strategy. If for the key already an entry exists, an exception will be thrown. 
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a3c74a0e9b7469f4246ee083252d995ac}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 76 of file Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_a92edd15c044d548e62f1d77d0314efd6}\label{classPoco_1_1ExpireStrategy_a92edd15c044d548e62f1d77d0314efd6}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!onReplace@{onReplace}}
+\index{onReplace@{onReplace}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onReplace()}{onReplace()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::on\+Replace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{std\+::set$<$ T\+Key $>$ \&}]{elems\+To\+Remove }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Used to query if a key is still valid (i.\+e. cached). 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a344d2caa3f8b5ea1507a5a26c49f7eae}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 111 of file Expire\+Strategy.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_a92fc41447058eb99304ca5019cf147d2}\label{classPoco_1_1ExpireStrategy_a92fc41447058eb99304ca5019cf147d2}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!\_expireTime@{\_expireTime}}
+\index{\_expireTime@{\_expireTime}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{\_expireTime}{\_expireTime}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}} \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\+\_\+expire\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 125 of file Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_a86682488b32952b372af5743c1d36991}\label{classPoco_1_1ExpireStrategy_a86682488b32952b372af5743c1d36991}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!\_keyIndex@{\_keyIndex}}
+\index{\_keyIndex@{\_keyIndex}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{\_keyIndex}{\_keyIndex}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+\mbox{\hyperlink{classPoco_1_1ExpireStrategy_ab87e015dd76fc653be9ad249c6e67dfc}{Time\+Index}} \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\+\_\+key\+Index\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+For faster replacement of keys, the iterator points to the \+\_\+key\+Index map. 
+
+
+
+Definition at line 127 of file Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireStrategy_aedb5a1e4e9b87c99cea1a87ef14906ac}\label{classPoco_1_1ExpireStrategy_aedb5a1e4e9b87c99cea1a87ef14906ac}} 
+\index{Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}!\_keys@{\_keys}}
+\index{\_keys@{\_keys}!Poco::ExpireStrategy$<$ TKey, TValue $>$@{Poco::ExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{\_keys}{\_keys}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+\mbox{\hyperlink{classPoco_1_1ExpireStrategy_a31d71436b141762f4a848bce722215b1}{Keys}} \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Poco\+::\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\+\_\+keys\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 126 of file Expire\+Strategy.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ExpireStrategy_8h}{Expire\+Strategy.\+h}}\end{DoxyCompactItemize}

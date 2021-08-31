@@ -1,0 +1,314 @@
+\hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions}{}\doxysection{IoT\+::M\+Q\+TT\+::M\+Q\+T\+T\+Client\+Impl\+::Connect\+Options Struct Reference}
+\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions}\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+
+
+{\ttfamily \#include $<$M\+Q\+T\+T\+Client\+Impl.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a5eed4788c92792a2f27f9bed30aca9be}{keep\+Alive\+Interval}}
+\item 
+int \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a2c5d2d3b7d9a5a443f917599e03b5917}{retry\+Interval}}
+\begin{DoxyCompactList}\small\item\em Keep-\/alive interval in seconds. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a5a6e851118048ec568a8fb11c6d08437}{connect\+Timeout}}
+\begin{DoxyCompactList}\small\item\em Retry interval in seconds. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a34fc471f5e324fd7857585982581b9f0}{clean\+Session}}
+\begin{DoxyCompactList}\small\item\em Connect timeout in seconds. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_af042505875258841c7689d1e48ad9b12}{reliable}}
+\begin{DoxyCompactList}\small\item\em Start with a clean session. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_aac7f398bd5e5da21d8f6af12505d706d}{username}}
+\begin{DoxyCompactList}\small\item\em If set to true, only one message at a time can be \char`\"{}in flight\char`\"{}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a5aa9d02f4b3473fcc7f7bb08c254d0fd}{password}}
+\begin{DoxyCompactList}\small\item\em Username for \mbox{\hyperlink{namespaceIoT_1_1MQTT}{M\+Q\+TT}} v3.\+1. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a7f02060e865153860a35b0c2a27fb111}{will\+Topic}}
+\begin{DoxyCompactList}\small\item\em Password for \mbox{\hyperlink{namespaceIoT_1_1MQTT}{M\+Q\+TT}} v3.\+1. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a8fd21fcc0dbd7f4c2aec5b6b62b4a932}{will\+Message}}
+\begin{DoxyCompactList}\small\item\em Last will topic name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a3aaca6c7cfdc2a6dabc780650d99ba39}{will\+Retained}}
+\begin{DoxyCompactList}\small\item\em Last will message. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a20a9ae6142a081ab2402b0f67e6f037b}{will\+QoS}}
+\begin{DoxyCompactList}\small\item\em Retained flag for will message. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a7c90f1df918143a8900875d87986b8a2}{server\+U\+R\+Is}}
+\begin{DoxyCompactList}\small\item\em Quality of Service level for will message (0-\/2). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a779c3146cc25046b567685531827b94a}{mqtt\+Version}}
+\begin{DoxyCompactList}\small\item\em Optional list of server U\+R\+Is. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a87357bd19b25631b1f1ba43e02846141}{ssl\+Trust\+Store}}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_aac423f65f81a99ceab7cfe89890599cf}{ssl\+Key\+Store}}
+\begin{DoxyCompactList}\small\item\em The file in P\+EM format containing the public digital certificates trusted by the client. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_abaafc168063689ebaf9a8ad5409b7022}{ssl\+Private\+Key}}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a9ebb94cec23ecd3b371085f31f773ed7}{ssl\+Private\+Key\+Password}}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a6c82706552de20b3774ae7d6641e8557}{ssl\+Enabled\+Cipher\+Suites}}
+\begin{DoxyCompactList}\small\item\em The password to load the client\textquotesingle{}s private\+Key if encrypted. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a2dc767c928d4eed480a9f6a459a45e7e}{ssl\+Enable\+Server\+Cert\+Auth}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 46 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a34fc471f5e324fd7857585982581b9f0}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a34fc471f5e324fd7857585982581b9f0}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!cleanSession@{cleanSession}}
+\index{cleanSession@{cleanSession}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{cleanSession}{cleanSession}}
+{\footnotesize\ttfamily bool Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::clean\+Session}
+
+
+
+Connect timeout in seconds. 
+
+
+
+Definition at line 57 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a5a6e851118048ec568a8fb11c6d08437}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a5a6e851118048ec568a8fb11c6d08437}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!connectTimeout@{connectTimeout}}
+\index{connectTimeout@{connectTimeout}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{connectTimeout}{connectTimeout}}
+{\footnotesize\ttfamily int Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::connect\+Timeout}
+
+
+
+Retry interval in seconds. 
+
+
+
+Definition at line 54 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a5eed4788c92792a2f27f9bed30aca9be}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a5eed4788c92792a2f27f9bed30aca9be}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!keepAliveInterval@{keepAliveInterval}}
+\index{keepAliveInterval@{keepAliveInterval}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{keepAliveInterval}{keepAliveInterval}}
+{\footnotesize\ttfamily int Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::keep\+Alive\+Interval}
+
+
+
+Definition at line 48 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a779c3146cc25046b567685531827b94a}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a779c3146cc25046b567685531827b94a}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!mqttVersion@{mqttVersion}}
+\index{mqttVersion@{mqttVersion}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{mqttVersion}{mqttVersion}}
+{\footnotesize\ttfamily int Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::mqtt\+Version}
+
+
+
+Optional list of server U\+R\+Is. 
+
+
+
+Definition at line 84 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a5aa9d02f4b3473fcc7f7bb08c254d0fd}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a5aa9d02f4b3473fcc7f7bb08c254d0fd}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!password@{password}}
+\index{password@{password}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::password}
+
+
+
+Username for \mbox{\hyperlink{namespaceIoT_1_1MQTT}{M\+Q\+TT}} v3.\+1. 
+
+
+
+Definition at line 66 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_af042505875258841c7689d1e48ad9b12}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_af042505875258841c7689d1e48ad9b12}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!reliable@{reliable}}
+\index{reliable@{reliable}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{reliable}{reliable}}
+{\footnotesize\ttfamily bool Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::reliable}
+
+
+
+Start with a clean session. 
+
+
+
+Definition at line 60 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a2c5d2d3b7d9a5a443f917599e03b5917}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a2c5d2d3b7d9a5a443f917599e03b5917}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!retryInterval@{retryInterval}}
+\index{retryInterval@{retryInterval}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{retryInterval}{retryInterval}}
+{\footnotesize\ttfamily int Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::retry\+Interval}
+
+
+
+Keep-\/alive interval in seconds. 
+
+
+
+Definition at line 51 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a7c90f1df918143a8900875d87986b8a2}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a7c90f1df918143a8900875d87986b8a2}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!serverURIs@{serverURIs}}
+\index{serverURIs@{serverURIs}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{serverURIs}{serverURIs}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::server\+U\+R\+Is}
+
+
+
+Quality of Service level for will message (0-\/2). 
+
+
+
+Definition at line 81 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a6c82706552de20b3774ae7d6641e8557}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a6c82706552de20b3774ae7d6641e8557}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!sslEnabledCipherSuites@{sslEnabledCipherSuites}}
+\index{sslEnabledCipherSuites@{sslEnabledCipherSuites}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{sslEnabledCipherSuites}{sslEnabledCipherSuites}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::ssl\+Enabled\+Cipher\+Suites}
+
+
+
+The password to load the client\textquotesingle{}s private\+Key if encrypted. 
+
+
+
+Definition at line 105 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a2dc767c928d4eed480a9f6a459a45e7e}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a2dc767c928d4eed480a9f6a459a45e7e}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!sslEnableServerCertAuth@{sslEnableServerCertAuth}}
+\index{sslEnableServerCertAuth@{sslEnableServerCertAuth}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{sslEnableServerCertAuth}{sslEnableServerCertAuth}}
+{\footnotesize\ttfamily bool Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::ssl\+Enable\+Server\+Cert\+Auth}
+
+The list of cipher suites that the client will present to the server during the S\+SL handshake. For a full explanation of the cipher list format, please see the Open\+S\+SL on-\/line documentation\+: \href{http://www.openssl.org/docs/apps/ciphers.html\#CIPHER_LIST_FORMAT}{\texttt{ http\+://www.\+openssl.\+org/docs/apps/ciphers.\+html\#\+C\+I\+P\+H\+E\+R\+\_\+\+L\+I\+S\+T\+\_\+\+F\+O\+R\+M\+AT}} If this setting is ommitted, its default value will be \char`\"{}\+A\+L\+L\char`\"{}, that is, all the cipher suites -\/excluding those offering no encryption-\/ will be considered. This setting can be used to set an S\+SL anonymous connection (\char`\"{}a\+N\+U\+L\+L\char`\"{} string value, for instance). 
+
+Definition at line 115 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_aac423f65f81a99ceab7cfe89890599cf}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_aac423f65f81a99ceab7cfe89890599cf}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!sslKeyStore@{sslKeyStore}}
+\index{sslKeyStore@{sslKeyStore}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{sslKeyStore}{sslKeyStore}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::ssl\+Key\+Store}
+
+
+
+The file in P\+EM format containing the public digital certificates trusted by the client. 
+
+
+
+Definition at line 94 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_abaafc168063689ebaf9a8ad5409b7022}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_abaafc168063689ebaf9a8ad5409b7022}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!sslPrivateKey@{sslPrivateKey}}
+\index{sslPrivateKey@{sslPrivateKey}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{sslPrivateKey}{sslPrivateKey}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::ssl\+Private\+Key}
+
+The file in P\+EM format containing the public certificate chain of the client. It may also include the client\textquotesingle{}s private key. 
+
+Definition at line 98 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a9ebb94cec23ecd3b371085f31f773ed7}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a9ebb94cec23ecd3b371085f31f773ed7}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!sslPrivateKeyPassword@{sslPrivateKeyPassword}}
+\index{sslPrivateKeyPassword@{sslPrivateKeyPassword}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{sslPrivateKeyPassword}{sslPrivateKeyPassword}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::ssl\+Private\+Key\+Password}
+
+If not included in the ssl\+Key\+Store, this setting points to the file in P\+EM format containing the client\textquotesingle{}s private key. 
+
+Definition at line 102 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a87357bd19b25631b1f1ba43e02846141}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a87357bd19b25631b1f1ba43e02846141}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!sslTrustStore@{sslTrustStore}}
+\index{sslTrustStore@{sslTrustStore}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{sslTrustStore}{sslTrustStore}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::ssl\+Trust\+Store}
+
+Sets the version of \mbox{\hyperlink{namespaceIoT_1_1MQTT}{M\+Q\+TT}} to be used on the connect. Valid values are 0, 3 and 4.
+\begin{DoxyItemize}
+\item 0 = default\+: start with 3.\+1.\+1, and if that fails, fall back to 3.\+1
+\item 3 = only try version 3.\+1 ~\newline
+
+\item 4 = only try version 3.\+1.\+1 
+\end{DoxyItemize}
+
+Definition at line 91 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_aac7f398bd5e5da21d8f6af12505d706d}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_aac7f398bd5e5da21d8f6af12505d706d}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!username@{username}}
+\index{username@{username}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{username}{username}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::username}
+
+
+
+If set to true, only one message at a time can be \char`\"{}in flight\char`\"{}. 
+
+
+
+Definition at line 63 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a8fd21fcc0dbd7f4c2aec5b6b62b4a932}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a8fd21fcc0dbd7f4c2aec5b6b62b4a932}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!willMessage@{willMessage}}
+\index{willMessage@{willMessage}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{willMessage}{willMessage}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::will\+Message}
+
+
+
+Last will topic name. 
+
+
+
+Definition at line 72 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a20a9ae6142a081ab2402b0f67e6f037b}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a20a9ae6142a081ab2402b0f67e6f037b}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!willQoS@{willQoS}}
+\index{willQoS@{willQoS}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{willQoS}{willQoS}}
+{\footnotesize\ttfamily int Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::will\+QoS}
+
+
+
+Retained flag for will message. 
+
+
+
+Definition at line 78 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a3aaca6c7cfdc2a6dabc780650d99ba39}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a3aaca6c7cfdc2a6dabc780650d99ba39}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!willRetained@{willRetained}}
+\index{willRetained@{willRetained}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{willRetained}{willRetained}}
+{\footnotesize\ttfamily bool Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::will\+Retained}
+
+
+
+Last will message. 
+
+
+
+Definition at line 75 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a7f02060e865153860a35b0c2a27fb111}\label{structIoT_1_1MQTT_1_1MQTTClientImpl_1_1ConnectOptions_a7f02060e865153860a35b0c2a27fb111}} 
+\index{IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}!willTopic@{willTopic}}
+\index{willTopic@{willTopic}!IoT::MQTT::MQTTClientImpl::ConnectOptions@{IoT::MQTT::MQTTClientImpl::ConnectOptions}}
+\doxysubsubsection{\texorpdfstring{willTopic}{willTopic}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+M\+Q\+T\+T\+::\+M\+Q\+T\+T\+Client\+Impl\+::\+Connect\+Options\+::will\+Topic}
+
+
+
+Password for \mbox{\hyperlink{namespaceIoT_1_1MQTT}{M\+Q\+TT}} v3.\+1. 
+
+
+
+Definition at line 69 of file M\+Q\+T\+T\+Client\+Impl.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+M\+Q\+T\+T/\+M\+Q\+T\+T\+Client\+Impl/\mbox{\hyperlink{MQTTClientImpl_8h}{M\+Q\+T\+T\+Client\+Impl.\+h}}\end{DoxyCompactItemize}

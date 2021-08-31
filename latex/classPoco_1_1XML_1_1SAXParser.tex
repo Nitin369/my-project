@@ -1,0 +1,403 @@
+\hypertarget{classPoco_1_1XML_1_1SAXParser}{}\doxysection{Poco\+::X\+ML\+::S\+A\+X\+Parser Class Reference}
+\label{classPoco_1_1XML_1_1SAXParser}\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+
+
+{\ttfamily \#include $<$S\+A\+X\+Parser.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::S\+A\+X\+Parser\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::X\+ML\+::S\+A\+X\+Parser\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a60417713f8f9ce397908db4c31f7da03}{S\+A\+X\+Parser}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a25e8afdbd4eceb169e40f837a122a234}{S\+A\+X\+Parser}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&encoding)
+\begin{DoxyCompactList}\small\item\em Creates an \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser}{S\+A\+X\+Parser}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a7ec8010210bff639879c356d11d48b51}{$\sim$\+S\+A\+X\+Parser}} ()
+\begin{DoxyCompactList}\small\item\em Creates an \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser}{S\+A\+X\+Parser}} with the given encoding. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_aa47ea1aad133a0db6de03a94f7c66872}{set\+Encoding}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&encoding)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser}{S\+A\+X\+Parser}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a10752ef35a1cd4d7baa24608b0eae2bf}{get\+Encoding}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_aefb0e176a97f13a636dfeb5f3a469821}{add\+Encoding}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&name, \mbox{\hyperlink{classPoco_1_1TextEncoding}{Poco\+::\+Text\+Encoding}} $\ast$p\+Encoding)
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a2975e078be4d79dd88e3cf2b969b8245}{set\+Entity\+Resolver}} (\mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolver}{Entity\+Resolver}} $\ast$p\+Resolver)
+\begin{DoxyCompactList}\small\item\em Adds an encoding to the parser. Does not take ownership of the pointer! \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolver}{Entity\+Resolver}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a7eeb6aea2b85497577666c94c2a7e8d4}{get\+Entity\+Resolver}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_af7f0322472942e48c762be542cbe5a43}{set\+D\+T\+D\+Handler}} (\mbox{\hyperlink{classPoco_1_1XML_1_1DTDHandler}{D\+T\+D\+Handler}} $\ast$p\+D\+T\+D\+Handler)
+\begin{DoxyCompactList}\small\item\em Return the current entity resolver. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1DTDHandler}{D\+T\+D\+Handler}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a78701720842aad85041e2d73b3aaf93f}{get\+D\+T\+D\+Handler}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a8fb3cf40cb0a7a445f96701e113d3ef7}{set\+Content\+Handler}} (\mbox{\hyperlink{classPoco_1_1XML_1_1ContentHandler}{Content\+Handler}} $\ast$p\+Content\+Handler)
+\begin{DoxyCompactList}\small\item\em Return the current D\+TD handler. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1ContentHandler}{Content\+Handler}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a2cd3a311a657aa8d25d73a17bb9c9b07}{get\+Content\+Handler}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a44927a1d28f0fe9c7667086e4e3ebaec}{set\+Error\+Handler}} (\mbox{\hyperlink{classPoco_1_1XML_1_1ErrorHandler}{Error\+Handler}} $\ast$p\+Error\+Handler)
+\begin{DoxyCompactList}\small\item\em Return the current content handler. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1ErrorHandler}{Error\+Handler}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a7fceeed7ac8ad3cc13ba199c135c2b73}{get\+Error\+Handler}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_aebe01e5834fe99b836382902428ed389}{set\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&feature\+Id, bool state)
+\begin{DoxyCompactList}\small\item\em Return the current error handler. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_ae59a75d46c03ba61d4c028e64e995cf2}{get\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&feature\+Id) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_ac367e201dbb69ee164f8a4371abccf29}{set\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&property\+Id, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_adae11660787c4b1511408c4f51eb477e}{set\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&property\+Id, void $\ast$value)
+\item 
+void $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a8c042b41a365c15cb3705a5fb06e4147}{get\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&property\+Id) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_ab749595aff9ff165b02bfa878315a36d}{parse}} (\mbox{\hyperlink{classPoco_1_1XML_1_1InputSource}{Input\+Source}} $\ast$p\+Source)
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_af02c4ba9fa0c0f067f2ac1db9415acbb}{parse}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&system\+Id)
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a6e12b90d2ad958290978a09fb71015d1}{parse\+Memory\+NP}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$xml, std\+::size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a70052b62c3bb4a674c4ebd9dedaa0f4b}{parse\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&xml)
+\begin{DoxyCompactList}\small\item\em Extensions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a91f5cb96c6f43bbbb9e761c5c7129dd9}{F\+E\+A\+T\+U\+R\+E\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+R\+E\+A\+DS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_a37333f95334ebbd44447f77029d74d7c}{setup\+Parse}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides a S\+A\+X2 (Simple A\+PI for \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}}) interface to expat, the \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} parser toolkit. The following S\+A\+X2 features and properties are supported\+:
+\begin{DoxyItemize}
+\item \href{http://xml.org/sax/features/external-general-entities}{\texttt{ http\+://xml.\+org/sax/features/external-\/general-\/entities}}
+\item \href{http://xml.org/sax/features/external-parameter-entities}{\texttt{ http\+://xml.\+org/sax/features/external-\/parameter-\/entities}}
+\item \href{http://xml.org/sax/features/namespaces}{\texttt{ http\+://xml.\+org/sax/features/namespaces}}
+\item \href{http://xml.org/sax/features/namespace-prefixes}{\texttt{ http\+://xml.\+org/sax/features/namespace-\/prefixes}}
+\item \href{http://xml.org/sax/properties/lexical-handler}{\texttt{ http\+://xml.\+org/sax/properties/lexical-\/handler}}
+\item \href{http://xml.org/sax/properties/declaration-handler}{\texttt{ http\+://xml.\+org/sax/properties/declaration-\/handler}}
+\end{DoxyItemize}
+
+The following proprietary extensions are supported\+:
+\begin{DoxyItemize}
+\item \href{http://www.appinf.com/features/enable-partial-reads}{\texttt{ http\+://www.\+appinf.\+com/features/enable-\/partial-\/reads}} -- see \mbox{\hyperlink{classPoco_1_1XML_1_1ParserEngine_ab1c6f59348cd810a2522f34018701cc9}{Parser\+Engine\+::set\+Enable\+Partial\+Reads()}} 
+\end{DoxyItemize}
+
+Definition at line 32 of file S\+A\+X\+Parser.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a60417713f8f9ce397908db4c31f7da03}\label{classPoco_1_1XML_1_1SAXParser_a60417713f8f9ce397908db4c31f7da03}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!SAXParser@{SAXParser}}
+\index{SAXParser@{SAXParser}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{SAXParser()}{SAXParser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::\+S\+A\+X\+Parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a25e8afdbd4eceb169e40f837a122a234}\label{classPoco_1_1XML_1_1SAXParser_a25e8afdbd4eceb169e40f837a122a234}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!SAXParser@{SAXParser}}
+\index{SAXParser@{SAXParser}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{SAXParser()}{SAXParser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::\+S\+A\+X\+Parser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{encoding }\end{DoxyParamCaption})}
+
+
+
+Creates an \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser}{S\+A\+X\+Parser}}. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a7ec8010210bff639879c356d11d48b51}\label{classPoco_1_1XML_1_1SAXParser_a7ec8010210bff639879c356d11d48b51}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!````~SAXParser@{$\sim$SAXParser}}
+\index{````~SAXParser@{$\sim$SAXParser}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{$\sim$SAXParser()}{~SAXParser()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::$\sim$\+S\+A\+X\+Parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser}{S\+A\+X\+Parser}} with the given encoding. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_aefb0e176a97f13a636dfeb5f3a469821}\label{classPoco_1_1XML_1_1SAXParser_aefb0e176a97f13a636dfeb5f3a469821}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!addEncoding@{addEncoding}}
+\index{addEncoding@{addEncoding}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{addEncoding()}{addEncoding()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::add\+Encoding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{name,  }\item[{\mbox{\hyperlink{classPoco_1_1TextEncoding}{Poco\+::\+Text\+Encoding}} $\ast$}]{p\+Encoding }\end{DoxyParamCaption})}
+
+Returns the name of the encoding used by the parser if no encoding is specified in the \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} document. \mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a2cd3a311a657aa8d25d73a17bb9c9b07}\label{classPoco_1_1XML_1_1SAXParser_a2cd3a311a657aa8d25d73a17bb9c9b07}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!getContentHandler@{getContentHandler}}
+\index{getContentHandler@{getContentHandler}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{getContentHandler()}{getContentHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1ContentHandler}{Content\+Handler}}$\ast$ Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::get\+Content\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Allow an application to register a content event handler.
+
+If the application does not register a content handler, all content events reported by the S\+AX parser will be silently ignored.
+
+Applications may register a new or different handler in the middle of a parse, and the S\+AX parser must begin using the new handler immediately. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_a3712bc89e526df945aec6ca77c190292}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a78701720842aad85041e2d73b3aaf93f}\label{classPoco_1_1XML_1_1SAXParser_a78701720842aad85041e2d73b3aaf93f}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!getDTDHandler@{getDTDHandler}}
+\index{getDTDHandler@{getDTDHandler}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{getDTDHandler()}{getDTDHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1DTDHandler}{D\+T\+D\+Handler}}$\ast$ Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::get\+D\+T\+D\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Allow an application to register a D\+TD event handler.
+
+If the application does not register a D\+TD handler, all D\+TD events reported by the S\+AX parser will be silently ignored.
+
+Applications may register a new or different handler in the middle of a parse, and the S\+AX parser must begin using the new handler immediately. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_a867310897d242f0f0ff448142e2607e1}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a10752ef35a1cd4d7baa24608b0eae2bf}\label{classPoco_1_1XML_1_1SAXParser_a10752ef35a1cd4d7baa24608b0eae2bf}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!getEncoding@{getEncoding}}
+\index{getEncoding@{getEncoding}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{getEncoding()}{getEncoding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}}\& Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::get\+Encoding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Sets the encoding used by the parser if no encoding is specified in the \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} document. \mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a7eeb6aea2b85497577666c94c2a7e8d4}\label{classPoco_1_1XML_1_1SAXParser_a7eeb6aea2b85497577666c94c2a7e8d4}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!getEntityResolver@{getEntityResolver}}
+\index{getEntityResolver@{getEntityResolver}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{getEntityResolver()}{getEntityResolver()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolver}{Entity\+Resolver}}$\ast$ Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::get\+Entity\+Resolver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Allow an application to register an entity resolver.
+
+If the application does not register an entity resolver, the \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} will perform its own default resolution.
+
+Applications may register a new or different resolver in the middle of a parse, and the S\+AX parser must begin using the new resolver immediately. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_a54d0689fc32d4921148dde326bbebaeb}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a7fceeed7ac8ad3cc13ba199c135c2b73}\label{classPoco_1_1XML_1_1SAXParser_a7fceeed7ac8ad3cc13ba199c135c2b73}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!getErrorHandler@{getErrorHandler}}
+\index{getErrorHandler@{getErrorHandler}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{getErrorHandler()}{getErrorHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1ErrorHandler}{Error\+Handler}}$\ast$ Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::get\+Error\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Allow an application to register an error event handler.
+
+If the application does not register an error handler, all error events reported by the S\+AX parser will be silently ignored; however, normal processing may not continue. It is highly recommended that all S\+AX applications implement an error handler to avoid unexpected bugs.
+
+Applications may register a new or different handler in the middle of a parse, and the S\+AX parser must begin using the new handler immediately. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_aec99f805755edec6890b1ab1dbc489c9}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_ae59a75d46c03ba61d4c028e64e995cf2}\label{classPoco_1_1XML_1_1SAXParser_ae59a75d46c03ba61d4c028e64e995cf2}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!getFeature@{getFeature}}
+\index{getFeature@{getFeature}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{getFeature()}{getFeature()}}
+{\footnotesize\ttfamily bool Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::get\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{feature\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the state of a feature.
+
+The feature name is any fully-\/qualified \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. It is possible for an \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} to expose a feature value but to be unable to change the current value. Some feature values may be immutable or mutable only in specific contexts, such as before, during, or after a parse.
+
+All X\+M\+L\+Readers are required to support setting \href{http://xml.org/sax/features/namespaces}{\texttt{ http\+://xml.\+org/sax/features/namespaces}} to true and \href{http://xml.org/sax/features/namespace-prefixes}{\texttt{ http\+://xml.\+org/sax/features/namespace-\/prefixes}} to false. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_aa0ca0c14599632508d6a09f8d50f2b2e}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a8c042b41a365c15cb3705a5fb06e4147}\label{classPoco_1_1XML_1_1SAXParser_a8c042b41a365c15cb3705a5fb06e4147}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{getProperty()}{getProperty()}}
+{\footnotesize\ttfamily void$\ast$ Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::get\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{property\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the value of a property. See also \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_ac367e201dbb69ee164f8a4371abccf29}{set\+Property(const X\+M\+L\+String\&, const X\+M\+L\+String\&)}}. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_afe7fc11527a67f5871098cf7a9d897b6}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_af02c4ba9fa0c0f067f2ac1db9415acbb}\label{classPoco_1_1XML_1_1SAXParser_af02c4ba9fa0c0f067f2ac1db9415acbb}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!parse@{parse}}
+\index{parse@{parse}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{system\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Parse an \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} document.
+
+The application can use this method to instruct the \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} reader to begin parsing an \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} document from any valid input source (a character stream, a byte stream, or a \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}).
+
+Applications may not invoke this method while a parse is in progress (they should create a new \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} instead for each nested \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} document). Once a parse is complete, an application may reuse the same \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} object, possibly with a different input source. Configuration of the \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} object (such as handler bindings and values established for feature flags and properties) is unchanged by completion of a parse, unless the definition of that aspect of the configuration explicitly specifies other behavior. (For example, feature flags or properties exposing characteristics of the document being parsed.)
+
+During the parse, the \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} will provide information about the \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} document through the registered event handlers.
+
+This method is synchronous\+: it will not return until parsing has ended. If a client application wants to terminate parsing early, it should throw an exception. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_a0dda21988ed95a12a1135ae5b5425f84}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_ab749595aff9ff165b02bfa878315a36d}\label{classPoco_1_1XML_1_1SAXParser_ab749595aff9ff165b02bfa878315a36d}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!parse@{parse}}
+\index{parse@{parse}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1InputSource}{Input\+Source}} $\ast$}]{p\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Look up the value of a property. String values are returned as X\+M\+L\+Char$\ast$ The property name is any fully-\/qualified \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. It is possible for an \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} to recognize a property name but temporarily be unable to return its value. Some property values may be available only in specific contexts, such as before, during, or after a parse.
+
+X\+M\+L\+Readers are not required to recognize any specific property names, though an initial core set is documented for S\+A\+X2.
+
+Implementors are free (and encouraged) to invent their own properties, using names built on their own U\+R\+Is. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_aafa45ffeb18d9d9ebe9c7859bb413a37}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a6e12b90d2ad958290978a09fb71015d1}\label{classPoco_1_1XML_1_1SAXParser_a6e12b90d2ad958290978a09fb71015d1}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!parseMemoryNP@{parseMemoryNP}}
+\index{parseMemoryNP@{parseMemoryNP}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{parseMemoryNP()}{parseMemoryNP()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::parse\+Memory\+NP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{xml,  }\item[{std\+::size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Parse an \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} document from a system identifier. See also \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser_ab749595aff9ff165b02bfa878315a36d}{parse(\+Input\+Source$\ast$)}}. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_a81e5710a93ebee6105f0788f0a3bc9c8}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a70052b62c3bb4a674c4ebd9dedaa0f4b}\label{classPoco_1_1XML_1_1SAXParser_a70052b62c3bb4a674c4ebd9dedaa0f4b}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!parseString@{parseString}}
+\index{parseString@{parseString}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{parseString()}{parseString()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::parse\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{xml }\end{DoxyParamCaption})}
+
+
+
+Extensions. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a8fb3cf40cb0a7a445f96701e113d3ef7}\label{classPoco_1_1XML_1_1SAXParser_a8fb3cf40cb0a7a445f96701e113d3ef7}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!setContentHandler@{setContentHandler}}
+\index{setContentHandler@{setContentHandler}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{setContentHandler()}{setContentHandler()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::set\+Content\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1ContentHandler}{Content\+Handler}} $\ast$}]{p\+Content\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the current D\+TD handler. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_aadacd358e57071fbfbb3671bed4f1f61}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_af7f0322472942e48c762be542cbe5a43}\label{classPoco_1_1XML_1_1SAXParser_af7f0322472942e48c762be542cbe5a43}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!setDTDHandler@{setDTDHandler}}
+\index{setDTDHandler@{setDTDHandler}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{setDTDHandler()}{setDTDHandler()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::set\+D\+T\+D\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1DTDHandler}{D\+T\+D\+Handler}} $\ast$}]{p\+D\+T\+D\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the current entity resolver. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_a785d035abaff5ff0d36cacb471e677eb}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_aa47ea1aad133a0db6de03a94f7c66872}\label{classPoco_1_1XML_1_1SAXParser_aa47ea1aad133a0db6de03a94f7c66872}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!setEncoding@{setEncoding}}
+\index{setEncoding@{setEncoding}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{setEncoding()}{setEncoding()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::set\+Encoding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{encoding }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1XML_1_1SAXParser}{S\+A\+X\+Parser}}. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a2975e078be4d79dd88e3cf2b969b8245}\label{classPoco_1_1XML_1_1SAXParser_a2975e078be4d79dd88e3cf2b969b8245}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!setEntityResolver@{setEntityResolver}}
+\index{setEntityResolver@{setEntityResolver}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{setEntityResolver()}{setEntityResolver()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::set\+Entity\+Resolver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1EntityResolver}{Entity\+Resolver}} $\ast$}]{p\+Resolver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds an encoding to the parser. Does not take ownership of the pointer! 
+
+\mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_a3522d5bf823a6b4046579a5f658c46ad}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a44927a1d28f0fe9c7667086e4e3ebaec}\label{classPoco_1_1XML_1_1SAXParser_a44927a1d28f0fe9c7667086e4e3ebaec}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!setErrorHandler@{setErrorHandler}}
+\index{setErrorHandler@{setErrorHandler}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{setErrorHandler()}{setErrorHandler()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::set\+Error\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1ErrorHandler}{Error\+Handler}} $\ast$}]{p\+Error\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the current content handler. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_a869666d9022d918cc4d9f2159864a6ac}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_aebe01e5834fe99b836382902428ed389}\label{classPoco_1_1XML_1_1SAXParser_aebe01e5834fe99b836382902428ed389}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!setFeature@{setFeature}}
+\index{setFeature@{setFeature}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{setFeature()}{setFeature()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::set\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{feature\+Id,  }\item[{bool}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the current error handler. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_a55e0134e8925f3869c2c591cd05afac5}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_ac367e201dbb69ee164f8a4371abccf29}\label{classPoco_1_1XML_1_1SAXParser_ac367e201dbb69ee164f8a4371abccf29}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{setProperty()}{setProperty()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::set\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{property\+Id,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Look up the value of a feature.
+
+The feature name is any fully-\/qualified \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. It is possible for an \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} to recognize a feature name but temporarily be unable to return its value. Some feature values may be available only in specific contexts, such as before, during, or after a parse. Also, some feature values may not be programmatically accessible. (In the case of an adapter for S\+A\+X1 Parser, there is no implementation-\/independent way to expose whether the underlying parser is performing validation, expanding external entities, and so forth.)
+
+All X\+M\+L\+Readers are required to recognize the \href{http://xml.org/sax/features/namespaces}{\texttt{ http\+://xml.\+org/sax/features/namespaces}} and the \href{http://xml.org/sax/features/namespace-prefixes}{\texttt{ http\+://xml.\+org/sax/features/namespace-\/prefixes}} feature names. Implementors are free (and encouraged) to invent their own features, using names built on their own U\+R\+Is. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_a904688bc750abb8cb8fb18e24a89a7ab}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_adae11660787c4b1511408c4f51eb477e}\label{classPoco_1_1XML_1_1SAXParser_adae11660787c4b1511408c4f51eb477e}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{setProperty()}{setProperty()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::set\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{property\+Id,  }\item[{void $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the value of a property.
+
+The property name is any fully-\/qualified \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. It is possible for an \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} to recognize a property name but to be unable to change the current value. Some property values may be immutable or mutable only in specific contexts, such as before, during, or after a parse.
+
+X\+M\+L\+Readers are not required to recognize setting any specific property names, though a core set is defined by S\+A\+X2.
+
+This method is also the standard mechanism for setting extended handlers. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader_a9947ad99fd9da1bbbafb5780982f5d89}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Reader}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a37333f95334ebbd44447f77029d74d7c}\label{classPoco_1_1XML_1_1SAXParser_a37333f95334ebbd44447f77029d74d7c}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!setupParse@{setupParse}}
+\index{setupParse@{setupParse}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{setupParse()}{setupParse()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::setup\+Parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1SAXParser_a91f5cb96c6f43bbbb9e761c5c7129dd9}\label{classPoco_1_1XML_1_1SAXParser_a91f5cb96c6f43bbbb9e761c5c7129dd9}} 
+\index{Poco::XML::SAXParser@{Poco::XML::SAXParser}!FEATURE\_PARTIAL\_READS@{FEATURE\_PARTIAL\_READS}}
+\index{FEATURE\_PARTIAL\_READS@{FEATURE\_PARTIAL\_READS}!Poco::XML::SAXParser@{Poco::XML::SAXParser}}
+\doxysubsubsection{\texorpdfstring{FEATURE\_PARTIAL\_READS}{FEATURE\_PARTIAL\_READS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} Poco\+::\+X\+M\+L\+::\+S\+A\+X\+Parser\+::\+F\+E\+A\+T\+U\+R\+E\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+R\+E\+A\+DS\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 90 of file S\+A\+X\+Parser.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+S\+A\+X/\mbox{\hyperlink{SAXParser_8h}{S\+A\+X\+Parser.\+h}}\end{DoxyCompactItemize}

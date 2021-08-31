@@ -1,0 +1,310 @@
+\hypertarget{classPoco_1_1ColorConsoleChannel}{}\doxysection{Poco\+::Color\+Console\+Channel Class Reference}
+\label{classPoco_1_1ColorConsoleChannel}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}
+
+
+{\ttfamily \#include $<$Console\+Channel.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Color\+Console\+Channel\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Color\+Console\+Channel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ab85d016ddf70819d8499db2cb8657343}{Color\+Console\+Channel}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_a84a9b182b2749a74771413748cdcd7d4}{Color\+Console\+Channel}} (std\+::ostream \&str)
+\begin{DoxyCompactList}\small\item\em Creates the channel and attaches std\+::clog. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_a45255c80eaa346e4f1ba80947ea641d5}{log}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&msg)
+\begin{DoxyCompactList}\small\item\em Creates the channel using the given stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_a5a9ef6dab49578cab4b0cde8e464564f}{set\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Logs the given message to the channel\textquotesingle{}s stream. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_a4ea83f2029131ffc5f54b27be1c85306}{get\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61a}{Color}} \{ \newline
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa29f9c63b13e5a62324644032bc7af5cb}{C\+C\+\_\+\+D\+E\+F\+A\+U\+LT}} = 0x0027, 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa2ef4283a1f86ac822243af20b91419da}{C\+C\+\_\+\+B\+L\+A\+CK}} = 0x001e, 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aac9d3c5d87474f46c4e1860ccc41ec7a6}{C\+C\+\_\+\+R\+ED}} = 0x001f, 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa5ed6e00b783f9adfbf0325f19815e1c3}{C\+C\+\_\+\+G\+R\+E\+EN}} = 0x0020, 
+\newline
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aaf4e119900e23d53e9895a97904343804}{C\+C\+\_\+\+B\+R\+O\+WN}} = 0x0021, 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa7844e20d4a8e6ea39bdf3e0bd28b1cd5}{C\+C\+\_\+\+B\+L\+UE}} = 0x0022, 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa05b75da3955c973871734c97000d57e2}{C\+C\+\_\+\+M\+A\+G\+E\+N\+TA}} = 0x0023, 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa7ac5a43a6fa356a2842b01454359568e}{C\+C\+\_\+\+C\+Y\+AN}} = 0x0024, 
+\newline
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa0ea0ee3be229f771bc39da9108f8e0d6}{C\+C\+\_\+\+G\+R\+AY}} = 0x0025, 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aaadabeda02ce743f10d9c67d972e2d5b0}{C\+C\+\_\+\+D\+A\+R\+K\+G\+R\+AY}} = 0x011e, 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aae72641a941047afd92cf94e1bc960514}{C\+C\+\_\+\+L\+I\+G\+H\+T\+R\+ED}} = 0x011f, 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa78a831f8f906145c4e8f0451f3103028}{C\+C\+\_\+\+L\+I\+G\+H\+T\+G\+R\+E\+EN}} = 0x0120, 
+\newline
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa3a72623062c3cd0b26a2511d336f7a7c}{C\+C\+\_\+\+Y\+E\+L\+L\+OW}} = 0x0121, 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa86d71a0a316d21b7f4b57c12acc1562b}{C\+C\+\_\+\+L\+I\+G\+H\+T\+B\+L\+UE}} = 0x0122, 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa618c649e39a008bb7c24f0170792936f}{C\+C\+\_\+\+L\+I\+G\+H\+T\+M\+A\+G\+E\+N\+TA}} = 0x0123, 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aaa16891722a52094541dd3a86df9cde4a}{C\+C\+\_\+\+L\+I\+G\+H\+T\+C\+Y\+AN}} = 0x0124, 
+\newline
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa3f83b016d56f55917ea74db9648fe463}{C\+C\+\_\+\+W\+H\+I\+TE}} = 0x0125
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_a449d6ee7d62098c717c2fff6fbb9a0c4}{$\sim$\+Color\+Console\+Channel}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61a}{Color}} \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_a4e9bf2e9cedde8a23e42e3a0a6faafed}{parse\+Color}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&color) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_afa9c4fa65c37021b780f54f823993fb7}{format\+Color}} (\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61a}{Color}} color) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_aac6f4a2bdc093684b2ae94437639b01e}{init\+Colors}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A channel that writes to an ostream. \begin{DoxyVerb}Only the message's text is written, followed
+by a newline.
+
+Messages can be colored depending on priority.
+The console device must support ANSI escape codes
+in order to display colored messages.
+
+To enable message coloring, set the "enableColors"
+property to true (default). Furthermore, colors can be
+configured by setting the following properties
+(default values are given in parenthesis):
+
+  * traceColor (gray)
+  * debugColor (gray)
+  * informationColor (default)
+  * noticeColor (default)
+  * warningColor (yellow)
+  * errorColor (lightRed)
+  * criticalColor (lightRed)
+  * fatalColor (lightRed)
+
+The following color values are supported:
+
+  * default
+  * black
+  * red
+  * green
+  * brown
+  * blue
+  * magenta
+  * cyan
+  * gray
+  * darkgray
+  * lightRed
+  * lightGreen
+  * yellow
+  * lightBlue
+  * lightMagenta
+  * lightCyan
+  * white
+
+Chain this channel to a FormattingChannel with an
+appropriate Formatter to control what is contained 
+in the text.
+
+Similar to StreamChannel, except that a static
+mutex is used to protect against multiple
+console channels concurrently writing to the
+same stream. 
+\end{DoxyVerb}
+ 
+
+Definition at line 66 of file Console\+Channel.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61a}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61a}} 
+\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!Color@{Color}}
+\index{Color@{Color}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61a}{Poco\+::\+Color\+Console\+Channel\+::\+Color}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the value of the property with the given name. See \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_a5a9ef6dab49578cab4b0cde8e464564f}{set\+Property()}} for a description of the supported properties. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_DEFAULT@{CC\_DEFAULT}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_DEFAULT@{CC\_DEFAULT}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa29f9c63b13e5a62324644032bc7af5cb}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa29f9c63b13e5a62324644032bc7af5cb}} 
+C\+C\+\_\+\+D\+E\+F\+A\+U\+LT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_BLACK@{CC\_BLACK}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_BLACK@{CC\_BLACK}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa2ef4283a1f86ac822243af20b91419da}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa2ef4283a1f86ac822243af20b91419da}} 
+C\+C\+\_\+\+B\+L\+A\+CK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_RED@{CC\_RED}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_RED@{CC\_RED}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aac9d3c5d87474f46c4e1860ccc41ec7a6}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aac9d3c5d87474f46c4e1860ccc41ec7a6}} 
+C\+C\+\_\+\+R\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_GREEN@{CC\_GREEN}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_GREEN@{CC\_GREEN}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa5ed6e00b783f9adfbf0325f19815e1c3}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa5ed6e00b783f9adfbf0325f19815e1c3}} 
+C\+C\+\_\+\+G\+R\+E\+EN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_BROWN@{CC\_BROWN}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_BROWN@{CC\_BROWN}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aaf4e119900e23d53e9895a97904343804}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aaf4e119900e23d53e9895a97904343804}} 
+C\+C\+\_\+\+B\+R\+O\+WN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_BLUE@{CC\_BLUE}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_BLUE@{CC\_BLUE}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa7844e20d4a8e6ea39bdf3e0bd28b1cd5}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa7844e20d4a8e6ea39bdf3e0bd28b1cd5}} 
+C\+C\+\_\+\+B\+L\+UE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_MAGENTA@{CC\_MAGENTA}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_MAGENTA@{CC\_MAGENTA}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa05b75da3955c973871734c97000d57e2}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa05b75da3955c973871734c97000d57e2}} 
+C\+C\+\_\+\+M\+A\+G\+E\+N\+TA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_CYAN@{CC\_CYAN}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_CYAN@{CC\_CYAN}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa7ac5a43a6fa356a2842b01454359568e}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa7ac5a43a6fa356a2842b01454359568e}} 
+C\+C\+\_\+\+C\+Y\+AN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_GRAY@{CC\_GRAY}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_GRAY@{CC\_GRAY}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa0ea0ee3be229f771bc39da9108f8e0d6}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa0ea0ee3be229f771bc39da9108f8e0d6}} 
+C\+C\+\_\+\+G\+R\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_DARKGRAY@{CC\_DARKGRAY}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_DARKGRAY@{CC\_DARKGRAY}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aaadabeda02ce743f10d9c67d972e2d5b0}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aaadabeda02ce743f10d9c67d972e2d5b0}} 
+C\+C\+\_\+\+D\+A\+R\+K\+G\+R\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_LIGHTRED@{CC\_LIGHTRED}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_LIGHTRED@{CC\_LIGHTRED}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aae72641a941047afd92cf94e1bc960514}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aae72641a941047afd92cf94e1bc960514}} 
+C\+C\+\_\+\+L\+I\+G\+H\+T\+R\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_LIGHTGREEN@{CC\_LIGHTGREEN}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_LIGHTGREEN@{CC\_LIGHTGREEN}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa78a831f8f906145c4e8f0451f3103028}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa78a831f8f906145c4e8f0451f3103028}} 
+C\+C\+\_\+\+L\+I\+G\+H\+T\+G\+R\+E\+EN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_YELLOW@{CC\_YELLOW}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_YELLOW@{CC\_YELLOW}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa3a72623062c3cd0b26a2511d336f7a7c}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa3a72623062c3cd0b26a2511d336f7a7c}} 
+C\+C\+\_\+\+Y\+E\+L\+L\+OW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_LIGHTBLUE@{CC\_LIGHTBLUE}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_LIGHTBLUE@{CC\_LIGHTBLUE}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa86d71a0a316d21b7f4b57c12acc1562b}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa86d71a0a316d21b7f4b57c12acc1562b}} 
+C\+C\+\_\+\+L\+I\+G\+H\+T\+B\+L\+UE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_LIGHTMAGENTA@{CC\_LIGHTMAGENTA}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_LIGHTMAGENTA@{CC\_LIGHTMAGENTA}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa618c649e39a008bb7c24f0170792936f}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa618c649e39a008bb7c24f0170792936f}} 
+C\+C\+\_\+\+L\+I\+G\+H\+T\+M\+A\+G\+E\+N\+TA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_LIGHTCYAN@{CC\_LIGHTCYAN}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_LIGHTCYAN@{CC\_LIGHTCYAN}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aaa16891722a52094541dd3a86df9cde4a}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aaa16891722a52094541dd3a86df9cde4a}} 
+C\+C\+\_\+\+L\+I\+G\+H\+T\+C\+Y\+AN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CC\_WHITE@{CC\_WHITE}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!CC\_WHITE@{CC\_WHITE}}}\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa3f83b016d56f55917ea74db9648fe463}\label{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61aa3f83b016d56f55917ea74db9648fe463}} 
+C\+C\+\_\+\+W\+H\+I\+TE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 151 of file Console\+Channel.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_ab85d016ddf70819d8499db2cb8657343}\label{classPoco_1_1ColorConsoleChannel_ab85d016ddf70819d8499db2cb8657343}} 
+\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!ColorConsoleChannel@{ColorConsoleChannel}}
+\index{ColorConsoleChannel@{ColorConsoleChannel}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{ColorConsoleChannel()}{ColorConsoleChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Color\+Console\+Channel\+::\+Color\+Console\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_a84a9b182b2749a74771413748cdcd7d4}\label{classPoco_1_1ColorConsoleChannel_a84a9b182b2749a74771413748cdcd7d4}} 
+\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!ColorConsoleChannel@{ColorConsoleChannel}}
+\index{ColorConsoleChannel@{ColorConsoleChannel}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{ColorConsoleChannel()}{ColorConsoleChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Color\+Console\+Channel\+::\+Color\+Console\+Channel (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{str }\end{DoxyParamCaption})}
+
+
+
+Creates the channel and attaches std\+::clog. 
+
+\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_a449d6ee7d62098c717c2fff6fbb9a0c4}\label{classPoco_1_1ColorConsoleChannel_a449d6ee7d62098c717c2fff6fbb9a0c4}} 
+\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!````~ColorConsoleChannel@{$\sim$ColorConsoleChannel}}
+\index{````~ColorConsoleChannel@{$\sim$ColorConsoleChannel}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{$\sim$ColorConsoleChannel()}{~ColorConsoleChannel()}}
+{\footnotesize\ttfamily Poco\+::\+Color\+Console\+Channel\+::$\sim$\+Color\+Console\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_afa9c4fa65c37021b780f54f823993fb7}\label{classPoco_1_1ColorConsoleChannel_afa9c4fa65c37021b780f54f823993fb7}} 
+\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!formatColor@{formatColor}}
+\index{formatColor@{formatColor}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{formatColor()}{formatColor()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Color\+Console\+Channel\+::format\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61a}{Color}}}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_a4ea83f2029131ffc5f54b27be1c85306}\label{classPoco_1_1ColorConsoleChannel_a4ea83f2029131ffc5f54b27be1c85306}} 
+\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{getProperty()}{getProperty()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Color\+Console\+Channel\+::get\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the property with the given name.
+
+The following properties are supported\+:
+\begin{DoxyItemize}
+\item enable\+Colors\+: Enable or disable colors.
+\item trace\+Color\+: Specify color for trace messages.
+\item debug\+Color\+: Specify color for debug messages.
+\item information\+Color\+: Specify color for information messages.
+\item notice\+Color\+: Specify color for notice messages.
+\item warning\+Color\+: Specify color for warning messages.
+\item error\+Color\+: Specify color for error messages.
+\item critical\+Color\+: Specify color for critical messages.
+\item fatal\+Color\+: Specify color for fatal messages.
+\end{DoxyItemize}
+
+See the class documentation for a list of supported color values. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Channel_a187321f59674dfde457599885a4f6ec0}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_aac6f4a2bdc093684b2ae94437639b01e}\label{classPoco_1_1ColorConsoleChannel_aac6f4a2bdc093684b2ae94437639b01e}} 
+\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!initColors@{initColors}}
+\index{initColors@{initColors}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{initColors()}{initColors()}}
+{\footnotesize\ttfamily void Poco\+::\+Color\+Console\+Channel\+::init\+Colors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_a45255c80eaa346e4f1ba80947ea641d5}\label{classPoco_1_1ColorConsoleChannel_a45255c80eaa346e4f1ba80947ea641d5}} 
+\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!log@{log}}
+\index{log@{log}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Poco\+::\+Color\+Console\+Channel\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the channel using the given stream. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Channel_aeafdcc5ce2e0e38d96f15a60a563da4e}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_a4e9bf2e9cedde8a23e42e3a0a6faafed}\label{classPoco_1_1ColorConsoleChannel_a4e9bf2e9cedde8a23e42e3a0a6faafed}} 
+\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!parseColor@{parseColor}}
+\index{parseColor@{parseColor}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{parseColor()}{parseColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1ColorConsoleChannel_ac6e9e31ee5923038b8b77d8ef56ad61a}{Color}} Poco\+::\+Color\+Console\+Channel\+::parse\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1ColorConsoleChannel_a5a9ef6dab49578cab4b0cde8e464564f}\label{classPoco_1_1ColorConsoleChannel_a5a9ef6dab49578cab4b0cde8e464564f}} 
+\index{Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!Poco::ColorConsoleChannel@{Poco::ColorConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{setProperty()}{setProperty()}}
+{\footnotesize\ttfamily void Poco\+::\+Color\+Console\+Channel\+::set\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Logs the given message to the channel\textquotesingle{}s stream. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Channel_a67c2a274e476745b902ced03fb485c6e}{Poco\+::\+Channel}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ConsoleChannel_8h}{Console\+Channel.\+h}}\end{DoxyCompactItemize}

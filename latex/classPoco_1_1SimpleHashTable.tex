@@ -1,0 +1,466 @@
+\hypertarget{classPoco_1_1SimpleHashTable}{}\doxysection{Poco\+::Simple\+Hash\+Table$<$ Key, Value, Key\+Hash\+Function $>$ Class Template Reference}
+\label{classPoco_1_1SimpleHashTable}\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+
+
+{\ttfamily \#include $<$Simple\+Hash\+Table.\+h$>$}
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1SimpleHashTable_1_1HashEntry}{Hash\+Entry}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1SimpleHashTable_1_1HashEntry}{Hash\+Entry}} $\ast$ $>$ \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a4eb9b126087cc76c3e6f22b12166b695}{Hash\+Table\+Vector}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1SimpleHashTable_a288391c43fc1cd6da41d49501a2c667d}{Simple\+Hash\+Table}} (U\+Int32 \mbox{\hyperlink{classPoco_1_1SimpleHashTable_aab6e634cb928686b465c5e3b82c84cdf}{capacity}}=251)
+\item 
+\mbox{\hyperlink{classPoco_1_1SimpleHashTable_a03549ec1fbfb6dc0289476f193a80f10}{Simple\+Hash\+Table}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}} \&ht)
+\item 
+\mbox{\hyperlink{classPoco_1_1SimpleHashTable_a17144f44d947ac5908da10a93e8af245}{$\sim$\+Simple\+Hash\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}} \& \mbox{\hyperlink{classPoco_1_1SimpleHashTable_ac9ad91be5ef2768e766346a168846ac4}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}} \&ht)
+\item 
+void \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a4eb45195038a0aacc206104705d8325f}{swap}} (\mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}} \&ht)
+\item 
+void \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a3ebe86b993959fe33a8b14e08f99765e}{clear}} ()
+\item 
+U\+Int32 \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a5408e2147e6164a7c682c116a3b3c650}{insert}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value \&value)
+\item 
+Value \& \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a1491c181165fba78b8eb6515e917c5a5}{insert\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key, U\+Int32 hsh, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value \&value)
+\item 
+U\+Int32 \mbox{\hyperlink{classPoco_1_1SimpleHashTable_acd9da154317772825953b22df8db07da}{update}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a01f8a1f065ebf48a53095ea537550b16}{update\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key, U\+Int32 hsh, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value \&value)
+\item 
+U\+Int32 \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a9eab7cbd588fbdd1c1e99089c1f2327e}{hash}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value \& \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a1c8f21e421791d3ac979a05c366aa860}{get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Throws an exception if the value does not exist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value \& \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a5819f68bcac615a13d9ba06b5e4f3a91}{get\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key, U\+Int32 hsh) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Throws an exception if the value does not exist. \end{DoxyCompactList}\item 
+Value \& \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a5f9f3235a42117c920c2053f3aeeb85e}{get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key)
+\begin{DoxyCompactList}\small\item\em Throws an exception if the value does not exist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value \& \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a8220750c6f8051646b9c47fdb4bb638b}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+Value \& \mbox{\hyperlink{classPoco_1_1SimpleHashTable_acf8a333b81bd1477e3db37d93e5b41d9}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \& \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a0e850f1426a44ce412c69252c1e4173e}{get\+Key\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key, U\+Int32 hsh)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a5cb70dbb377fd6f25837cd9a03b56468}{get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key, Value \&v) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets v to the found value, returns false if no value was found. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a040cacc7effaed8ccb222273fb09c88a}{get\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key, U\+Int32 hsh, Value \&v) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets v to the found value, returns false if no value was found. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a1e263586bb6c38485453526ff2d98b6b}{exists}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a0f62ab4bf4a901eb35255b995d59ad3b}{exists\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&key, U\+Int32 hsh) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a335313587573651f1f69ebde485f6602}{size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of elements already inserted into the \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}}. \end{DoxyCompactList}\item 
+U\+Int32 \mbox{\hyperlink{classPoco_1_1SimpleHashTable_aab6e634cb928686b465c5e3b82c84cdf}{capacity}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a770d3348975c63d5541fc46a2ca52119}{resize}} (U\+Int32 new\+Size)
+\begin{DoxyCompactList}\small\item\em Resizes the hashtable, rehashes all existing entries. Expensive! \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1HashStatistic}{Hash\+Statistic}} \mbox{\hyperlink{classPoco_1_1SimpleHashTable_a064e8cc76240886059236b435a418359}{current\+State}} (bool details=false) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the current internal state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Key, class Value, class Key\+Hash\+Function = Hash\+Function$<$\+Key$>$$>$\newline
+class Poco\+::\+Simple\+Hash\+Table$<$ Key, Value, Key\+Hash\+Function $>$}
+
+A \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}} stores a key value pair that can be looked up via a hashed key. \begin{DoxyVerb}In comparision to a HashTable, this class handles collisions by sequentially searching the next
+free location. This also means that the maximum size of this table is limited, i.e. if the hash table
+is full, it will throw an exception and that this class does not support remove operations.
+On the plus side it is faster than the HashTable.
+
+This class is NOT thread safe. 
+\end{DoxyVerb}
+ 
+
+Definition at line 38 of file Simple\+Hash\+Table.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a4eb9b126087cc76c3e6f22b12166b695}\label{classPoco_1_1SimpleHashTable_a4eb9b126087cc76c3e6f22b12166b695}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!HashTableVector@{HashTableVector}}
+\index{HashTableVector@{HashTableVector}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{HashTableVector}{HashTableVector}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+typedef std\+::vector$<$\mbox{\hyperlink{classPoco_1_1SimpleHashTable_1_1HashEntry}{Hash\+Entry}}$\ast$$>$ \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::\mbox{\hyperlink{classPoco_1_1SimpleHashTable_a4eb9b126087cc76c3e6f22b12166b695}{Hash\+Table\+Vector}}}
+
+
+
+Definition at line 59 of file Simple\+Hash\+Table.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a288391c43fc1cd6da41d49501a2c667d}\label{classPoco_1_1SimpleHashTable_a288391c43fc1cd6da41d49501a2c667d}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!SimpleHashTable@{SimpleHashTable}}
+\index{SimpleHashTable@{SimpleHashTable}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{SimpleHashTable()}{SimpleHashTable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::\mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}} (\begin{DoxyParamCaption}\item[{U\+Int32}]{capacity = {\ttfamily 251} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 61 of file Simple\+Hash\+Table.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a03549ec1fbfb6dc0289476f193a80f10}\label{classPoco_1_1SimpleHashTable_a03549ec1fbfb6dc0289476f193a80f10}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!SimpleHashTable@{SimpleHashTable}}
+\index{SimpleHashTable@{SimpleHashTable}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{SimpleHashTable()}{SimpleHashTable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::\mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$ \&}]{ht }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file Simple\+Hash\+Table.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a17144f44d947ac5908da10a93e8af245}\label{classPoco_1_1SimpleHashTable_a17144f44d947ac5908da10a93e8af245}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!````~SimpleHashTable@{$\sim$SimpleHashTable}}
+\index{````~SimpleHashTable@{$\sim$SimpleHashTable}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$SimpleHashTable()}{~SimpleHashTable()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}}. 
+
+
+
+Definition at line 80 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_aab6e634cb928686b465c5e3b82c84cdf}\label{classPoco_1_1SimpleHashTable_aab6e634cb928686b465c5e3b82c84cdf}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!capacity@{capacity}}
+\index{capacity@{capacity}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{capacity()}{capacity()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+U\+Int32 \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 332 of file Simple\+Hash\+Table.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a3ebe86b993959fe33a8b14e08f99765e}\label{classPoco_1_1SimpleHashTable_a3ebe86b993959fe33a8b14e08f99765e}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!clear@{clear}}
+\index{clear@{clear}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+void \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 104 of file Simple\+Hash\+Table.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a064e8cc76240886059236b435a418359}\label{classPoco_1_1SimpleHashTable_a064e8cc76240886059236b435a418359}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!currentState@{currentState}}
+\index{currentState@{currentState}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{currentState()}{currentState()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1HashStatistic}{Hash\+Statistic}} \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::current\+State (\begin{DoxyParamCaption}\item[{bool}]{details = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the current internal state. 
+
+
+
+Definition at line 354 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a1e263586bb6c38485453526ff2d98b6b}\label{classPoco_1_1SimpleHashTable_a1e263586bb6c38485453526ff2d98b6b}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!exists@{exists}}
+\index{exists@{exists}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+bool \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 300 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a0f62ab4bf4a901eb35255b995d59ad3b}\label{classPoco_1_1SimpleHashTable_a0f62ab4bf4a901eb35255b995d59ad3b}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!existsRaw@{existsRaw}}
+\index{existsRaw@{existsRaw}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{existsRaw()}{existsRaw()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+bool \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::exists\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key,  }\item[{U\+Int32}]{hsh }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 306 of file Simple\+Hash\+Table.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a5f9f3235a42117c920c2053f3aeeb85e}\label{classPoco_1_1SimpleHashTable_a5f9f3235a42117c920c2053f3aeeb85e}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!get@{get}}
+\index{get@{get}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+Value\& \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Throws an exception if the value does not exist. 
+
+
+
+Definition at line 215 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a1c8f21e421791d3ac979a05c366aa860}\label{classPoco_1_1SimpleHashTable_a1c8f21e421791d3ac979a05c366aa860}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!get@{get}}
+\index{get@{get}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value\& \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Throws an exception if the value does not exist. 
+
+
+
+Definition at line 187 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a5cb70dbb377fd6f25837cd9a03b56468}\label{classPoco_1_1SimpleHashTable_a5cb70dbb377fd6f25837cd9a03b56468}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!get@{get}}
+\index{get@{get}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+bool \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key,  }\item[{Value \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets v to the found value, returns false if no value was found. 
+
+
+
+Definition at line 271 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a0e850f1426a44ce412c69252c1e4173e}\label{classPoco_1_1SimpleHashTable_a0e850f1426a44ce412c69252c1e4173e}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!getKeyRaw@{getKeyRaw}}
+\index{getKeyRaw@{getKeyRaw}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{getKeyRaw()}{getKeyRaw()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key\& \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::get\+Key\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key,  }\item[{U\+Int32}]{hsh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Throws an exception if the key does not exist. returns a reference to the internally stored key. Useful when someone does an insert and wants for performance reason only to store a pointer to the key in another collection 
+
+Definition at line 247 of file Simple\+Hash\+Table.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a5819f68bcac615a13d9ba06b5e4f3a91}\label{classPoco_1_1SimpleHashTable_a5819f68bcac615a13d9ba06b5e4f3a91}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!getRaw@{getRaw}}
+\index{getRaw@{getRaw}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{getRaw()}{getRaw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value\& \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::get\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key,  }\item[{U\+Int32}]{hsh }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Throws an exception if the value does not exist. 
+
+
+
+Definition at line 194 of file Simple\+Hash\+Table.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a040cacc7effaed8ccb222273fb09c88a}\label{classPoco_1_1SimpleHashTable_a040cacc7effaed8ccb222273fb09c88a}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!getRaw@{getRaw}}
+\index{getRaw@{getRaw}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{getRaw()}{getRaw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+bool \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::get\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key,  }\item[{U\+Int32}]{hsh,  }\item[{Value \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets v to the found value, returns false if no value was found. 
+
+
+
+Definition at line 278 of file Simple\+Hash\+Table.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a9eab7cbd588fbdd1c1e99089c1f2327e}\label{classPoco_1_1SimpleHashTable_a9eab7cbd588fbdd1c1e99089c1f2327e}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!hash@{hash}}
+\index{hash@{hash}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+U\+Int32 \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::hash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 182 of file Simple\+Hash\+Table.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a5408e2147e6164a7c682c116a3b3c650}\label{classPoco_1_1SimpleHashTable_a5408e2147e6164a7c682c116a3b3c650}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!insert@{insert}}
+\index{insert@{insert}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+U\+Int32 \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the hash value of the inserted item. Throws an exception if the entry was already inserted 
+
+Definition at line 114 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a1491c181165fba78b8eb6515e917c5a5}\label{classPoco_1_1SimpleHashTable_a1491c181165fba78b8eb6515e917c5a5}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!insertRaw@{insertRaw}}
+\index{insertRaw@{insertRaw}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{insertRaw()}{insertRaw()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+Value\& \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::insert\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key,  }\item[{U\+Int32}]{hsh,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the hash value of the inserted item. Throws an exception if the entry was already inserted 
+
+Definition at line 123 of file Simple\+Hash\+Table.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_ac9ad91be5ef2768e766346a168846ac4}\label{classPoco_1_1SimpleHashTable_ac9ad91be5ef2768e766346a168846ac4}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}}\& \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$ \&}]{ht }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 86 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_acf8a333b81bd1477e3db37d93e5b41d9}\label{classPoco_1_1SimpleHashTable_acf8a333b81bd1477e3db37d93e5b41d9}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+Value\& \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 227 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a8220750c6f8051646b9c47fdb4bb638b}\label{classPoco_1_1SimpleHashTable_a8220750c6f8051646b9c47fdb4bb638b}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value\& \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 222 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a770d3348975c63d5541fc46a2ca52119}\label{classPoco_1_1SimpleHashTable_a770d3348975c63d5541fc46a2ca52119}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!resize@{resize}}
+\index{resize@{resize}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+void \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::resize (\begin{DoxyParamCaption}\item[{U\+Int32}]{new\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resizes the hashtable, rehashes all existing entries. Expensive! 
+
+
+
+Definition at line 337 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a335313587573651f1f69ebde485f6602}\label{classPoco_1_1SimpleHashTable_a335313587573651f1f69ebde485f6602}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!size@{size}}
+\index{size@{size}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of elements already inserted into the \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}}. 
+
+
+
+Definition at line 326 of file Simple\+Hash\+Table.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a4eb45195038a0aacc206104705d8325f}\label{classPoco_1_1SimpleHashTable_a4eb45195038a0aacc206104705d8325f}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!swap@{swap}}
+\index{swap@{swap}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+void \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$ \&}]{ht }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 96 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 18
+Here is the caller graph for this function\+:
+% FIG 19
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_acd9da154317772825953b22df8db07da}\label{classPoco_1_1SimpleHashTable_acd9da154317772825953b22df8db07da}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!update@{update}}
+\index{update@{update}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+U\+Int32 \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the hash value of the inserted item. Replaces an existing entry if it finds one 
+
+Definition at line 148 of file Simple\+Hash\+Table.\+h.
+
+Here is the call graph for this function\+:
+% FIG 20
+\mbox{\Hypertarget{classPoco_1_1SimpleHashTable_a01f8a1f065ebf48a53095ea537550b16}\label{classPoco_1_1SimpleHashTable_a01f8a1f065ebf48a53095ea537550b16}} 
+\index{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}!updateRaw@{updateRaw}}
+\index{updateRaw@{updateRaw}!Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$@{Poco::SimpleHashTable$<$ Key, Value, KeyHashFunction $>$}}
+\doxysubsubsection{\texorpdfstring{updateRaw()}{updateRaw()}}
+{\footnotesize\ttfamily template$<$class Key , class Value , class Key\+Hash\+Function  = Hash\+Function$<$\+Key$>$$>$ \\
+void \mbox{\hyperlink{classPoco_1_1SimpleHashTable}{Poco\+::\+Simple\+Hash\+Table}}$<$ Key, Value, Key\+Hash\+Function $>$\+::update\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Key \&}]{key,  }\item[{U\+Int32}]{hsh,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Value \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the hash value of the inserted item. Replaces an existing entry if it finds one 
+
+Definition at line 157 of file Simple\+Hash\+Table.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 21
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{SimpleHashTable_8h}{Simple\+Hash\+Table.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,137 @@
+\hypertarget{classPoco_1_1FIFOIOS}{}\doxysection{Poco\+::F\+I\+F\+O\+I\+OS Class Reference}
+\label{classPoco_1_1FIFOIOS}\index{Poco::FIFOIOS@{Poco::FIFOIOS}}
+
+
+{\ttfamily \#include $<$F\+I\+F\+O\+Buffer\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::F\+I\+F\+O\+I\+OS\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::F\+I\+F\+O\+I\+OS\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FIFOIOS_a938aca953e62375ec03fd1bc59bf5281}{F\+I\+F\+O\+I\+OS}} (\mbox{\hyperlink{namespacePoco_af5cc76cc5962c03b1302383336f5af80}{F\+I\+F\+O\+Buffer}} \&buffer)
+\item 
+\mbox{\hyperlink{classPoco_1_1FIFOIOS_a729bf5f6d22b9e59fb13736e8890289b}{F\+I\+F\+O\+I\+OS}} (char $\ast$p\+Buffer, std\+::size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1FIFOIOS}{F\+I\+F\+O\+I\+OS}} and assigns the given buffer to it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1FIFOIOS_a25f47cdc16c65541cce58f6f4b41c803}{F\+I\+F\+O\+I\+OS}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$p\+Buffer, std\+::size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1FIFOIOS}{F\+I\+F\+O\+I\+OS}} and assigns the given buffer to it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1FIFOIOS_af4e9068eba3e0cf41d7d854440d34987}{F\+I\+F\+O\+I\+OS}} (std\+::size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1FIFOIOS}{F\+I\+F\+O\+I\+OS}} and assigns the given buffer to it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1FIFOIOS_a175ccc54463b917cc7b307e08e560a89}{$\sim$\+F\+I\+F\+O\+I\+OS}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1FIFOIOS}{F\+I\+F\+O\+I\+OS}} of the given length. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1FIFOBufferStreamBuf}{F\+I\+F\+O\+Buffer\+Stream\+Buf}} $\ast$ \mbox{\hyperlink{classPoco_1_1FIFOIOS_a8f4ec42334b3be933a19db3e061206d8}{rdbuf}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1FIFOIOS_a32e57f2fc17e8927ff24938c351d77d0}{close}} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the internal \mbox{\hyperlink{classPoco_1_1FIFOBufferStreamBuf}{F\+I\+F\+O\+Buffer\+Stream\+Buf}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FIFOBufferStreamBuf}{F\+I\+F\+O\+Buffer\+Stream\+Buf}} \mbox{\hyperlink{classPoco_1_1FIFOIOS_a4bd0ae9f6b3d8b833a70fdc5467ee8ab}{\+\_\+buf}}
+\begin{DoxyCompactList}\small\item\em Flushes the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for F\+I\+F\+O\+Buffer\+Input\+Stream and \mbox{\hyperlink{classPoco_1_1FIFOBufferStream}{F\+I\+F\+O\+Buffer\+Stream}}.
+
+This class is needed to ensure the correct initialization order of the stream buffer and base classes. 
+
+Definition at line 75 of file F\+I\+F\+O\+Buffer\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1FIFOIOS_a938aca953e62375ec03fd1bc59bf5281}\label{classPoco_1_1FIFOIOS_a938aca953e62375ec03fd1bc59bf5281}} 
+\index{Poco::FIFOIOS@{Poco::FIFOIOS}!FIFOIOS@{FIFOIOS}}
+\index{FIFOIOS@{FIFOIOS}!Poco::FIFOIOS@{Poco::FIFOIOS}}
+\doxysubsubsection{\texorpdfstring{FIFOIOS()}{FIFOIOS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Poco\+::\+F\+I\+F\+O\+I\+O\+S\+::\+F\+I\+F\+O\+I\+OS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacePoco_af5cc76cc5962c03b1302383336f5af80}{F\+I\+F\+O\+Buffer}} \&}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classPoco_1_1FIFOIOS_a729bf5f6d22b9e59fb13736e8890289b}\label{classPoco_1_1FIFOIOS_a729bf5f6d22b9e59fb13736e8890289b}} 
+\index{Poco::FIFOIOS@{Poco::FIFOIOS}!FIFOIOS@{FIFOIOS}}
+\index{FIFOIOS@{FIFOIOS}!Poco::FIFOIOS@{Poco::FIFOIOS}}
+\doxysubsubsection{\texorpdfstring{FIFOIOS()}{FIFOIOS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Poco\+::\+F\+I\+F\+O\+I\+O\+S\+::\+F\+I\+F\+O\+I\+OS (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Buffer,  }\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1FIFOIOS}{F\+I\+F\+O\+I\+OS}} and assigns the given buffer to it. 
+
+\mbox{\Hypertarget{classPoco_1_1FIFOIOS_a25f47cdc16c65541cce58f6f4b41c803}\label{classPoco_1_1FIFOIOS_a25f47cdc16c65541cce58f6f4b41c803}} 
+\index{Poco::FIFOIOS@{Poco::FIFOIOS}!FIFOIOS@{FIFOIOS}}
+\index{FIFOIOS@{FIFOIOS}!Poco::FIFOIOS@{Poco::FIFOIOS}}
+\doxysubsubsection{\texorpdfstring{FIFOIOS()}{FIFOIOS()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Poco\+::\+F\+I\+F\+O\+I\+O\+S\+::\+F\+I\+F\+O\+I\+OS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{p\+Buffer,  }\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1FIFOIOS}{F\+I\+F\+O\+I\+OS}} and assigns the given buffer to it. 
+
+\mbox{\Hypertarget{classPoco_1_1FIFOIOS_af4e9068eba3e0cf41d7d854440d34987}\label{classPoco_1_1FIFOIOS_af4e9068eba3e0cf41d7d854440d34987}} 
+\index{Poco::FIFOIOS@{Poco::FIFOIOS}!FIFOIOS@{FIFOIOS}}
+\index{FIFOIOS@{FIFOIOS}!Poco::FIFOIOS@{Poco::FIFOIOS}}
+\doxysubsubsection{\texorpdfstring{FIFOIOS()}{FIFOIOS()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Poco\+::\+F\+I\+F\+O\+I\+O\+S\+::\+F\+I\+F\+O\+I\+OS (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1FIFOIOS}{F\+I\+F\+O\+I\+OS}} and assigns the given buffer to it. 
+
+\mbox{\Hypertarget{classPoco_1_1FIFOIOS_a175ccc54463b917cc7b307e08e560a89}\label{classPoco_1_1FIFOIOS_a175ccc54463b917cc7b307e08e560a89}} 
+\index{Poco::FIFOIOS@{Poco::FIFOIOS}!````~FIFOIOS@{$\sim$FIFOIOS}}
+\index{````~FIFOIOS@{$\sim$FIFOIOS}!Poco::FIFOIOS@{Poco::FIFOIOS}}
+\doxysubsubsection{\texorpdfstring{$\sim$FIFOIOS()}{~FIFOIOS()}}
+{\footnotesize\ttfamily Poco\+::\+F\+I\+F\+O\+I\+O\+S\+::$\sim$\+F\+I\+F\+O\+I\+OS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1FIFOIOS}{F\+I\+F\+O\+I\+OS}} of the given length. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1FIFOIOS_a32e57f2fc17e8927ff24938c351d77d0}\label{classPoco_1_1FIFOIOS_a32e57f2fc17e8927ff24938c351d77d0}} 
+\index{Poco::FIFOIOS@{Poco::FIFOIOS}!close@{close}}
+\index{close@{close}!Poco::FIFOIOS@{Poco::FIFOIOS}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+F\+I\+F\+O\+I\+O\+S\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a pointer to the internal \mbox{\hyperlink{classPoco_1_1FIFOBufferStreamBuf}{F\+I\+F\+O\+Buffer\+Stream\+Buf}}. 
+
+\mbox{\Hypertarget{classPoco_1_1FIFOIOS_a8f4ec42334b3be933a19db3e061206d8}\label{classPoco_1_1FIFOIOS_a8f4ec42334b3be933a19db3e061206d8}} 
+\index{Poco::FIFOIOS@{Poco::FIFOIOS}!rdbuf@{rdbuf}}
+\index{rdbuf@{rdbuf}!Poco::FIFOIOS@{Poco::FIFOIOS}}
+\doxysubsubsection{\texorpdfstring{rdbuf()}{rdbuf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1FIFOBufferStreamBuf}{F\+I\+F\+O\+Buffer\+Stream\+Buf}}$\ast$ Poco\+::\+F\+I\+F\+O\+I\+O\+S\+::rdbuf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destroys the \mbox{\hyperlink{classPoco_1_1FIFOIOS}{F\+I\+F\+O\+I\+OS}}.
+
+Flushes the buffer. 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1FIFOIOS_a4bd0ae9f6b3d8b833a70fdc5467ee8ab}\label{classPoco_1_1FIFOIOS_a4bd0ae9f6b3d8b833a70fdc5467ee8ab}} 
+\index{Poco::FIFOIOS@{Poco::FIFOIOS}!\_buf@{\_buf}}
+\index{\_buf@{\_buf}!Poco::FIFOIOS@{Poco::FIFOIOS}}
+\doxysubsubsection{\texorpdfstring{\_buf}{\_buf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1FIFOBufferStreamBuf}{F\+I\+F\+O\+Buffer\+Stream\+Buf}} Poco\+::\+F\+I\+F\+O\+I\+O\+S\+::\+\_\+buf\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Flushes the stream. 
+
+
+
+Definition at line 107 of file F\+I\+F\+O\+Buffer\+Stream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{FIFOBufferStream_8h}{F\+I\+F\+O\+Buffer\+Stream.\+h}}\end{DoxyCompactItemize}

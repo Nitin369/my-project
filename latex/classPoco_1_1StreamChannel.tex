@@ -1,0 +1,82 @@
+\hypertarget{classPoco_1_1StreamChannel}{}\doxysection{Poco\+::Stream\+Channel Class Reference}
+\label{classPoco_1_1StreamChannel}\index{Poco::StreamChannel@{Poco::StreamChannel}}
+
+
+{\ttfamily \#include $<$Stream\+Channel.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Stream\+Channel\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Stream\+Channel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1StreamChannel_ab1adaa08611ff4685f02f70cf8215f2d}{Stream\+Channel}} (std\+::ostream \&str)
+\item 
+void \mbox{\hyperlink{classPoco_1_1StreamChannel_a864fec3191c345ec38bf5ec7c587271b}{log}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&msg)
+\begin{DoxyCompactList}\small\item\em Creates the channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1StreamChannel_aa614d8f8766b553a06cca698a9b013d1}{$\sim$\+Stream\+Channel}} ()
+\begin{DoxyCompactList}\small\item\em Logs the given message to the channel\textquotesingle{}s stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A channel that writes to an ostream. \begin{DoxyVerb}Only the message's text is written, followed
+by a newline.
+
+Chain this channel to a FormattingChannel with an
+appropriate Formatter to control what is contained 
+in the text. 
+\end{DoxyVerb}
+ 
+
+Definition at line 32 of file Stream\+Channel.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1StreamChannel_ab1adaa08611ff4685f02f70cf8215f2d}\label{classPoco_1_1StreamChannel_ab1adaa08611ff4685f02f70cf8215f2d}} 
+\index{Poco::StreamChannel@{Poco::StreamChannel}!StreamChannel@{StreamChannel}}
+\index{StreamChannel@{StreamChannel}!Poco::StreamChannel@{Poco::StreamChannel}}
+\doxysubsubsection{\texorpdfstring{StreamChannel()}{StreamChannel()}}
+{\footnotesize\ttfamily Poco\+::\+Stream\+Channel\+::\+Stream\+Channel (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{str }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1StreamChannel_aa614d8f8766b553a06cca698a9b013d1}\label{classPoco_1_1StreamChannel_aa614d8f8766b553a06cca698a9b013d1}} 
+\index{Poco::StreamChannel@{Poco::StreamChannel}!````~StreamChannel@{$\sim$StreamChannel}}
+\index{````~StreamChannel@{$\sim$StreamChannel}!Poco::StreamChannel@{Poco::StreamChannel}}
+\doxysubsubsection{\texorpdfstring{$\sim$StreamChannel()}{~StreamChannel()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Stream\+Channel\+::$\sim$\+Stream\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Logs the given message to the channel\textquotesingle{}s stream. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1StreamChannel_a864fec3191c345ec38bf5ec7c587271b}\label{classPoco_1_1StreamChannel_a864fec3191c345ec38bf5ec7c587271b}} 
+\index{Poco::StreamChannel@{Poco::StreamChannel}!log@{log}}
+\index{log@{log}!Poco::StreamChannel@{Poco::StreamChannel}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Poco\+::\+Stream\+Channel\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the channel. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Channel_aeafdcc5ce2e0e38d96f15a60a563da4e}{Poco\+::\+Channel}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{StreamChannel_8h}{Stream\+Channel.\+h}}\end{DoxyCompactItemize}

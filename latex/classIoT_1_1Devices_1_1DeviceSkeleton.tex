@@ -1,0 +1,101 @@
+\hypertarget{classIoT_1_1Devices_1_1DeviceSkeleton}{}\doxysection{IoT\+::Devices\+::Device\+Skeleton Class Reference}
+\label{classIoT_1_1Devices_1_1DeviceSkeleton}\index{IoT::Devices::DeviceSkeleton@{IoT::Devices::DeviceSkeleton}}
+
+
+{\ttfamily \#include $<$Device\+Skeleton.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::Device\+Skeleton\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::Device\+Skeleton\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1DeviceSkeleton_a58d4a97cae3651d4565c20d3589a9dfb}{Device\+Skeleton}} ()
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Devices_1_1DeviceSkeleton_af069ef81252d2b039465ee9500878c27}{$\sim$\+Device\+Skeleton}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1DeviceSkeleton}{Device\+Skeleton}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Devices_1_1DeviceSkeleton_a1c536f502a77aca67d0c51a91bf3ab35}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys a \mbox{\hyperlink{classIoT_1_1Devices_1_1DeviceSkeleton}{Device\+Skeleton}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1DeviceSkeleton_ad632d61e2b82c322f8e26d053501bc34}{D\+E\+F\+A\+U\+L\+T\+\_\+\+NS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The base class for all devices and sensors. \begin{DoxyVerb}This class defines a generic interface for setting
+and querying device properties and features.
+
+Every implementation of Device should expose the
+following properties:
+  - symbolicName (string): A name in reverse DNS notation
+    that identifies the device type (e.g., "io.macchina.serialport").
+  - name (string): A human-readable device type (e.g., "Serial Port"). 
+\end{DoxyVerb}
+ 
+
+Definition at line 30 of file Device\+Skeleton.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1DeviceSkeleton_a58d4a97cae3651d4565c20d3589a9dfb}\label{classIoT_1_1Devices_1_1DeviceSkeleton_a58d4a97cae3651d4565c20d3589a9dfb}} 
+\index{IoT::Devices::DeviceSkeleton@{IoT::Devices::DeviceSkeleton}!DeviceSkeleton@{DeviceSkeleton}}
+\index{DeviceSkeleton@{DeviceSkeleton}!IoT::Devices::DeviceSkeleton@{IoT::Devices::DeviceSkeleton}}
+\doxysubsubsection{\texorpdfstring{DeviceSkeleton()}{DeviceSkeleton()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Device\+Skeleton\+::\+Device\+Skeleton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1DeviceSkeleton_af069ef81252d2b039465ee9500878c27}\label{classIoT_1_1Devices_1_1DeviceSkeleton_af069ef81252d2b039465ee9500878c27}} 
+\index{IoT::Devices::DeviceSkeleton@{IoT::Devices::DeviceSkeleton}!````~DeviceSkeleton@{$\sim$DeviceSkeleton}}
+\index{````~DeviceSkeleton@{$\sim$DeviceSkeleton}!IoT::Devices::DeviceSkeleton@{IoT::Devices::DeviceSkeleton}}
+\doxysubsubsection{\texorpdfstring{$\sim$DeviceSkeleton()}{~DeviceSkeleton()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Devices\+::\+Device\+Skeleton\+::$\sim$\+Device\+Skeleton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1DeviceSkeleton}{Device\+Skeleton}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1DeviceSkeleton_a1c536f502a77aca67d0c51a91bf3ab35}\label{classIoT_1_1Devices_1_1DeviceSkeleton_a1c536f502a77aca67d0c51a91bf3ab35}} 
+\index{IoT::Devices::DeviceSkeleton@{IoT::Devices::DeviceSkeleton}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Devices::DeviceSkeleton@{IoT::Devices::DeviceSkeleton}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+Devices\+::\+Device\+Skeleton\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroys a \mbox{\hyperlink{classIoT_1_1Devices_1_1DeviceSkeleton}{Device\+Skeleton}}. 
+
+
+
+Definition at line 55 of file Device\+Skeleton.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1DeviceSkeleton_ad632d61e2b82c322f8e26d053501bc34}\label{classIoT_1_1Devices_1_1DeviceSkeleton_ad632d61e2b82c322f8e26d053501bc34}} 
+\index{IoT::Devices::DeviceSkeleton@{IoT::Devices::DeviceSkeleton}!DEFAULT\_NS@{DEFAULT\_NS}}
+\index{DEFAULT\_NS@{DEFAULT\_NS}!IoT::Devices::DeviceSkeleton@{IoT::Devices::DeviceSkeleton}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_NS}{DEFAULT\_NS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Io\+T\+::\+Devices\+::\+Device\+Skeleton\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+NS\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 51 of file Device\+Skeleton.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{DeviceSkeleton_8h}{Device\+Skeleton.\+h}}\end{DoxyCompactItemize}

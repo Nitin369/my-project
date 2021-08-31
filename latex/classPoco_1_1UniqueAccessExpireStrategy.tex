@@ -1,0 +1,312 @@
+\hypertarget{classPoco_1_1UniqueAccessExpireStrategy}{}\doxysection{Poco\+::Unique\+Access\+Expire\+Strategy$<$ T\+Key, T\+Value $>$ Class Template Reference}
+\label{classPoco_1_1UniqueAccessExpireStrategy}\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+
+
+{\ttfamily \#include $<$Unique\+Access\+Expire\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Unique\+Access\+Expire\+Strategy$<$ T\+Key, T\+Value $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Unique\+Access\+Expire\+Strategy$<$ T\+Key, T\+Value $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ T\+Key, \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} $>$ \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a771152f3c6a34dd02867f488e17b9585}{Key\+Expire}}
+\item 
+typedef std\+::multimap$<$ \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}}, \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a771152f3c6a34dd02867f488e17b9585}{Key\+Expire}} $>$ \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a348e823c797754c74030f860b1122a95}{Time\+Index}}
+\item 
+typedef Time\+Index\+::iterator \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a6648c85c248c15fc0d008d8ddbcc1061}{Index\+Iterator}}
+\item 
+typedef Time\+Index\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a0232d97c37148da8ab62625973d8cd3d}{Const\+Index\+Iterator}}
+\item 
+typedef std\+::map$<$ T\+Key, \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a6648c85c248c15fc0d008d8ddbcc1061}{Index\+Iterator}} $>$ \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a3b8833639c81a2e124d90cff308d73da}{Keys}}
+\item 
+typedef Keys\+::iterator \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a79833e0264a699611642ebde97e6e06b}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a1c4822504b9302a60fb242c63b60deb2}{Unique\+Access\+Expire\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Create an unique expire strategy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a23475321d68ac91ffb05f5120f0abbc3}{$\sim$\+Unique\+Access\+Expire\+Strategy}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a5112138c8db52af72b59f0d2e381f519}{on\+Add}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1KeyValueArgs}{Key\+Value\+Args}}$<$ T\+Key, T\+Value $>$ \&args)
+\item 
+void \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a4ff61cbd0f2807ae2659373ff5b69e38}{on\+Remove}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key)
+\item 
+void \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_ab87c7b87c748566c0a75b5429db390a0}{on\+Get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&key)
+\item 
+void \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_ac1ad410df33c52e49baff0e6eacc8753}{on\+Clear}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1EventArgs}{Event\+Args}} \&args)
+\begin{DoxyCompactList}\small\item\em Informs the strategy that a read-\/access happens to an element. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_ab7604cbb0e737c88f5568f5eebaf215d}{on\+Is\+Valid}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, \mbox{\hyperlink{classPoco_1_1ValidArgs}{Valid\+Args}}$<$ T\+Key $>$ \&args)
+\begin{DoxyCompactList}\small\item\em Removes all elements from the cache. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a751d3b6bf1144c19a9e9561a13921fe1}{on\+Replace}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, std\+::set$<$ T\+Key $>$ \&elems\+To\+Remove)
+\begin{DoxyCompactList}\small\item\em Used to query if a key is still valid (i.\+e. cached). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a3b8833639c81a2e124d90cff308d73da}{Keys}} \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a0f01877c5c5bdd5f256049a940f918ae}{\+\_\+keys}}
+\item 
+\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a348e823c797754c74030f860b1122a95}{Time\+Index}} \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_ac2797e14d9a367eda0dc6bb733a67645}{\+\_\+key\+Index}}
+\begin{DoxyCompactList}\small\item\em For faster replacement of keys, the iterator points to the \+\_\+key\+Index map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Key, class T\+Value$>$\newline
+class Poco\+::\+Unique\+Access\+Expire\+Strategy$<$ T\+Key, T\+Value $>$}
+
+An \mbox{\hyperlink{classPoco_1_1UniqueExpireStrategy}{Unique\+Expire\+Strategy}} implements time based expiration of cache entries. In contrast to \mbox{\hyperlink{classPoco_1_1ExpireStrategy}{Expire\+Strategy}} which only allows to set a per cache expiration value, it allows to define expiration per Cache\+Entry. Each T\+Value object must thus offer the following method\+:
+
+const \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}}\& get\+Timeout() const;
+
+which returns the timespan for how long an object will be valid without being accessed. 
+
+Definition at line 42 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_a0232d97c37148da8ab62625973d8cd3d}\label{classPoco_1_1UniqueAccessExpireStrategy_a0232d97c37148da8ab62625973d8cd3d}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!ConstIndexIterator@{ConstIndexIterator}}
+\index{ConstIndexIterator@{ConstIndexIterator}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{ConstIndexIterator}{ConstIndexIterator}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef Time\+Index\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a0232d97c37148da8ab62625973d8cd3d}{Const\+Index\+Iterator}}}
+
+
+
+Definition at line 56 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_a6648c85c248c15fc0d008d8ddbcc1061}\label{classPoco_1_1UniqueAccessExpireStrategy_a6648c85c248c15fc0d008d8ddbcc1061}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!IndexIterator@{IndexIterator}}
+\index{IndexIterator@{IndexIterator}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{IndexIterator}{IndexIterator}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef Time\+Index\+::iterator \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a6648c85c248c15fc0d008d8ddbcc1061}{Index\+Iterator}}}
+
+
+
+Definition at line 55 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_a79833e0264a699611642ebde97e6e06b}\label{classPoco_1_1UniqueAccessExpireStrategy_a79833e0264a699611642ebde97e6e06b}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef Keys\+::iterator \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a79833e0264a699611642ebde97e6e06b}{Iterator}}}
+
+
+
+Definition at line 58 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_a771152f3c6a34dd02867f488e17b9585}\label{classPoco_1_1UniqueAccessExpireStrategy_a771152f3c6a34dd02867f488e17b9585}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!KeyExpire@{KeyExpire}}
+\index{KeyExpire@{KeyExpire}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{KeyExpire}{KeyExpire}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef std\+::pair$<$T\+Key, \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}$>$ \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a771152f3c6a34dd02867f488e17b9585}{Key\+Expire}}}
+
+
+
+Definition at line 53 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_a3b8833639c81a2e124d90cff308d73da}\label{classPoco_1_1UniqueAccessExpireStrategy_a3b8833639c81a2e124d90cff308d73da}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!Keys@{Keys}}
+\index{Keys@{Keys}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{Keys}{Keys}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef std\+::map$<$T\+Key, \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a6648c85c248c15fc0d008d8ddbcc1061}{Index\+Iterator}}$>$ \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a3b8833639c81a2e124d90cff308d73da}{Keys}}}
+
+
+
+Definition at line 57 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_a348e823c797754c74030f860b1122a95}\label{classPoco_1_1UniqueAccessExpireStrategy_a348e823c797754c74030f860b1122a95}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!TimeIndex@{TimeIndex}}
+\index{TimeIndex@{TimeIndex}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{TimeIndex}{TimeIndex}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+typedef std\+::multimap$<$\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}}, \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a771152f3c6a34dd02867f488e17b9585}{Key\+Expire}}$>$ \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a348e823c797754c74030f860b1122a95}{Time\+Index}}}
+
+
+
+Definition at line 54 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_a1c4822504b9302a60fb242c63b60deb2}\label{classPoco_1_1UniqueAccessExpireStrategy_a1c4822504b9302a60fb242c63b60deb2}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!UniqueAccessExpireStrategy@{UniqueAccessExpireStrategy}}
+\index{UniqueAccessExpireStrategy@{UniqueAccessExpireStrategy}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{UniqueAccessExpireStrategy()}{UniqueAccessExpireStrategy()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Unique\+Access\+Expire\+Strategy}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create an unique expire strategy. 
+
+
+
+Definition at line 61 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_a23475321d68ac91ffb05f5120f0abbc3}\label{classPoco_1_1UniqueAccessExpireStrategy_a23475321d68ac91ffb05f5120f0abbc3}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!````~UniqueAccessExpireStrategy@{$\sim$UniqueAccessExpireStrategy}}
+\index{````~UniqueAccessExpireStrategy@{$\sim$UniqueAccessExpireStrategy}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$UniqueAccessExpireStrategy()}{~UniqueAccessExpireStrategy()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Unique\+Access\+Expire\+Strategy}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_a5112138c8db52af72b59f0d2e381f519}\label{classPoco_1_1UniqueAccessExpireStrategy_a5112138c8db52af72b59f0d2e381f519}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!onAdd@{onAdd}}
+\index{onAdd@{onAdd}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onAdd()}{onAdd()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::on\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1KeyValueArgs}{Key\+Value\+Args}}$<$ T\+Key, T\+Value $>$ \&}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a40bb84cd0085c3ff59064cd3d13a21dd}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 70 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_ac1ad410df33c52e49baff0e6eacc8753}\label{classPoco_1_1UniqueAccessExpireStrategy_ac1ad410df33c52e49baff0e6eacc8753}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!onClear@{onClear}}
+\index{onClear@{onClear}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onClear()}{onClear()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::on\+Clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1EventArgs}{Event\+Args}} \&}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Informs the strategy that a read-\/access happens to an element. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a84d1033a199ef6eea12207f7a40bca72}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 114 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_ab87c7b87c748566c0a75b5429db390a0}\label{classPoco_1_1UniqueAccessExpireStrategy_ab87c7b87c748566c0a75b5429db390a0}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!onGet@{onGet}}
+\index{onGet@{onGet}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onGet()}{onGet()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::on\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Removes an entry from the strategy. If the entry is not found the remove is ignored. 
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a802663d39fa378d09ca76b37daccf8e9}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 96 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_ab7604cbb0e737c88f5568f5eebaf215d}\label{classPoco_1_1UniqueAccessExpireStrategy_ab7604cbb0e737c88f5568f5eebaf215d}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!onIsValid@{onIsValid}}
+\index{onIsValid@{onIsValid}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onIsValid()}{onIsValid()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::on\+Is\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{classPoco_1_1ValidArgs}{Valid\+Args}}$<$ T\+Key $>$ \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Removes all elements from the cache. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_ade01399ff91ed48ca9ab2656c184dc7e}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 120 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_a4ff61cbd0f2807ae2659373ff5b69e38}\label{classPoco_1_1UniqueAccessExpireStrategy_a4ff61cbd0f2807ae2659373ff5b69e38}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!onRemove@{onRemove}}
+\index{onRemove@{onRemove}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onRemove()}{onRemove()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::on\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T\+Key \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Adds the key to the strategy. If for the key already an entry exists, an exception will be thrown. 
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a3c74a0e9b7469f4246ee083252d995ac}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 86 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_a751d3b6bf1144c19a9e9561a13921fe1}\label{classPoco_1_1UniqueAccessExpireStrategy_a751d3b6bf1144c19a9e9561a13921fe1}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!onReplace@{onReplace}}
+\index{onReplace@{onReplace}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{onReplace()}{onReplace()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+void \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::on\+Replace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{std\+::set$<$ T\+Key $>$ \&}]{elems\+To\+Remove }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Used to query if a key is still valid (i.\+e. cached). 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractStrategy_a344d2caa3f8b5ea1507a5a26c49f7eae}{Poco\+::\+Abstract\+Strategy$<$ T\+Key, T\+Value $>$}}.
+
+
+
+Definition at line 135 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_ac2797e14d9a367eda0dc6bb733a67645}\label{classPoco_1_1UniqueAccessExpireStrategy_ac2797e14d9a367eda0dc6bb733a67645}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!\_keyIndex@{\_keyIndex}}
+\index{\_keyIndex@{\_keyIndex}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{\_keyIndex}{\_keyIndex}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a348e823c797754c74030f860b1122a95}{Time\+Index}} \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\+\_\+key\+Index\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+For faster replacement of keys, the iterator points to the \+\_\+key\+Index map. 
+
+
+
+Definition at line 151 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireStrategy_a0f01877c5c5bdd5f256049a940f918ae}\label{classPoco_1_1UniqueAccessExpireStrategy_a0f01877c5c5bdd5f256049a940f918ae}} 
+\index{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}!\_keys@{\_keys}}
+\index{\_keys@{\_keys}!Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$@{Poco::UniqueAccessExpireStrategy$<$ TKey, TValue $>$}}
+\doxysubsubsection{\texorpdfstring{\_keys}{\_keys}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value $>$ \\
+\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy_a3b8833639c81a2e124d90cff308d73da}{Keys}} \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireStrategy}{Poco\+::\+Unique\+Access\+Expire\+Strategy}}$<$ T\+Key, T\+Value $>$\+::\+\_\+keys\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 150 of file Unique\+Access\+Expire\+Strategy.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{UniqueAccessExpireStrategy_8h}{Unique\+Access\+Expire\+Strategy.\+h}}\end{DoxyCompactItemize}

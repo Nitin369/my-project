@@ -1,0 +1,71 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1URIUtility}{}\doxysection{Poco\+::Remoting\+NG\+::U\+R\+I\+Utility Class Reference}
+\label{classPoco_1_1RemotingNG_1_1URIUtility}\index{Poco::RemotingNG::URIUtility@{Poco::RemotingNG::URIUtility}}
+
+
+This class provides utility methods for parsing and creating \mbox{\hyperlink{namespacePoco_1_1RemotingNG}{Remoting\+NG}} U\+R\+Is.  
+
+
+
+
+{\ttfamily \#include $<$U\+R\+I\+Utility.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1URIUtility_a25931ed96ad95da9a00b46d73738bab7}{create\+U\+R\+I\+Path}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&protocol)
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1URIUtility_a6c2ef6a9442d5391a6bffa109cbe9353}{create\+U\+R\+I\+Authority}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&host, Poco\+::\+U\+Int16 port)
+\begin{DoxyCompactList}\small\item\em Creates an \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} path from the given input parameters. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1URIUtility_ab496a51b21bc08adb8e035da2ef26297}{parse\+U\+R\+I\+Path}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&uri, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&tid, std\+::string \&protocol)
+\begin{DoxyCompactList}\small\item\em Creates an \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} authority (e.\+g. host\+:port) from the given parameters. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1URIUtility_adb6268045a6c5fc3b65c647e9f45bd8c}{match\+Path}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path\+Template)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides utility methods for parsing and creating \mbox{\hyperlink{namespacePoco_1_1RemotingNG}{Remoting\+NG}} U\+R\+Is. 
+
+Definition at line 30 of file U\+R\+I\+Utility.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1URIUtility_a6c2ef6a9442d5391a6bffa109cbe9353}\label{classPoco_1_1RemotingNG_1_1URIUtility_a6c2ef6a9442d5391a6bffa109cbe9353}} 
+\index{Poco::RemotingNG::URIUtility@{Poco::RemotingNG::URIUtility}!createURIAuthority@{createURIAuthority}}
+\index{createURIAuthority@{createURIAuthority}!Poco::RemotingNG::URIUtility@{Poco::RemotingNG::URIUtility}}
+\doxysubsubsection{\texorpdfstring{createURIAuthority()}{createURIAuthority()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Remoting\+N\+G\+::\+U\+R\+I\+Utility\+::create\+U\+R\+I\+Authority (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{host,  }\item[{Poco\+::\+U\+Int16}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates an \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} path from the given input parameters. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1URIUtility_a25931ed96ad95da9a00b46d73738bab7}\label{classPoco_1_1RemotingNG_1_1URIUtility_a25931ed96ad95da9a00b46d73738bab7}} 
+\index{Poco::RemotingNG::URIUtility@{Poco::RemotingNG::URIUtility}!createURIPath@{createURIPath}}
+\index{createURIPath@{createURIPath}!Poco::RemotingNG::URIUtility@{Poco::RemotingNG::URIUtility}}
+\doxysubsubsection{\texorpdfstring{createURIPath()}{createURIPath()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Remoting\+N\+G\+::\+U\+R\+I\+Utility\+::create\+U\+R\+I\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1URIUtility_adb6268045a6c5fc3b65c647e9f45bd8c}\label{classPoco_1_1RemotingNG_1_1URIUtility_adb6268045a6c5fc3b65c647e9f45bd8c}} 
+\index{Poco::RemotingNG::URIUtility@{Poco::RemotingNG::URIUtility}!matchPath@{matchPath}}
+\index{matchPath@{matchPath}!Poco::RemotingNG::URIUtility@{Poco::RemotingNG::URIUtility}}
+\doxysubsubsection{\texorpdfstring{matchPath()}{matchPath()}}
+{\footnotesize\ttfamily static bool Poco\+::\+Remoting\+N\+G\+::\+U\+R\+I\+Utility\+::match\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path\+Template }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses an \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} containing a path created by \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1URIUtility_a25931ed96ad95da9a00b46d73738bab7}{create\+U\+R\+I\+Path()}}.
+
+Throws an exception if the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} format is not recognized. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1URIUtility_ab496a51b21bc08adb8e035da2ef26297}\label{classPoco_1_1RemotingNG_1_1URIUtility_ab496a51b21bc08adb8e035da2ef26297}} 
+\index{Poco::RemotingNG::URIUtility@{Poco::RemotingNG::URIUtility}!parseURIPath@{parseURIPath}}
+\index{parseURIPath@{parseURIPath}!Poco::RemotingNG::URIUtility@{Poco::RemotingNG::URIUtility}}
+\doxysubsubsection{\texorpdfstring{parseURIPath()}{parseURIPath()}}
+{\footnotesize\ttfamily static void Poco\+::\+Remoting\+N\+G\+::\+U\+R\+I\+Utility\+::parse\+U\+R\+I\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{uri,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Identifiable\+::\+Type\+Id}} \&}]{tid,  }\item[{std\+::string \&}]{protocol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates an \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} authority (e.\+g. host\+:port) from the given parameters. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{URIUtility_8h}{U\+R\+I\+Utility.\+h}}\end{DoxyCompactItemize}

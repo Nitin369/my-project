@@ -1,0 +1,170 @@
+\hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher}{}\doxysection{IoT\+::X\+Bee\+::X\+Bee\+Node\+Event\+Dispatcher Class Reference}
+\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher}\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+
+
+{\ttfamily \#include $<$X\+Bee\+Node\+Event\+Dispatcher.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::X\+Bee\+::X\+Bee\+Node\+Event\+Dispatcher\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::X\+Bee\+::X\+Bee\+Node\+Event\+Dispatcher\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ac8684fc2d5902dd8d45e961989fc1965}{X\+Bee\+Node\+Event\+Dispatcher}} (\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeRemoteObject}{X\+Bee\+Node\+Remote\+Object}} $\ast$p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a14d7bb586169695c72bd34e7b012903a}{protocol}})
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a92635108992256273197e507c7e2612f}{$\sim$\+X\+Bee\+Node\+Event\+Dispatcher}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher}{X\+Bee\+Node\+Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a3cdf0c7b2a1b33f1a40fd1924bb57ad2}{event\+\_\+\+\_\+command\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ATCommandResponse}{Io\+T\+::\+X\+Bee\+::\+A\+T\+Command\+Response}} \&data)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher}{X\+Bee\+Node\+Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ac1505ffc76ed44214ceabab8eec62710}{event\+\_\+\+\_\+explicit\+Addressing\+Zig\+Bee\+Packet\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ExplicitAddressingZigBeeReceivePacket}{Io\+T\+::\+X\+Bee\+::\+Explicit\+Addressing\+Zig\+Bee\+Receive\+Packet}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a2a9deab5c334a79370ec0d60ae0631e9}{event\+\_\+\+\_\+frame\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1APIFrame}{Io\+T\+::\+X\+Bee\+::\+A\+P\+I\+Frame}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a7a1a1036cbca2e843efc236720922592}{event\+\_\+\+\_\+io\+Data\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ReceivePacket}{Io\+T\+::\+X\+Bee\+::\+Receive\+Packet}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a62a2b14890a1b271d220415af0b45c35}{event\+\_\+\+\_\+io\+Sample\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1IOSample}{Io\+T\+::\+X\+Bee\+::\+I\+O\+Sample}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ac3a95f9a3da91c4cef4c60a823af4bb5}{event\+\_\+\+\_\+modem\+Status\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ModemStatus}{Io\+T\+::\+X\+Bee\+::\+Modem\+Status}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ae4354a2c4a8df753e04b75a315dec7e7}{event\+\_\+\+\_\+packet\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ReceivePacket}{Io\+T\+::\+X\+Bee\+::\+Receive\+Packet}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ab2b29b75052bcf68401684c75a3c2e35}{event\+\_\+\+\_\+remote\+Command\+Response\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1RemoteATCommandResponse}{Io\+T\+::\+X\+Bee\+::\+Remote\+A\+T\+Command\+Response}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a88d75cf6702543b489438aac29352850}{event\+\_\+\+\_\+sensor\+Read\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1SensorRead}{Io\+T\+::\+X\+Bee\+::\+Sensor\+Read}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a4f558e3cca10fb2c56b0472c96ebe6cf}{event\+\_\+\+\_\+transmit\+Status\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1TransmitStatus}{Io\+T\+::\+X\+Bee\+::\+Transmit\+Status}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ab5c4105d4eec7e4b6d4047ee85fb3665}{event\+\_\+\+\_\+zig\+Bee\+Packet\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeReceivePacket}{Io\+T\+::\+X\+Bee\+::\+Zig\+Bee\+Receive\+Packet}} \&data)
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a41376238ccf6df915124b0ad5a0d37c6}{event\+\_\+\+\_\+zig\+Bee\+Transmit\+Status\+Received}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeTransmitStatus}{Io\+T\+::\+X\+Bee\+::\+Zig\+Bee\+Transmit\+Status}} \&data)
+\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a8a4cd14cb679cd49cba746f2ce00f485}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class provides a high-\/level interface to a Digi \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device using the Digi \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} A\+PI frame-\/based protocol. This class can be used with all \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} devices supporting the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} A\+PI frame-\/based protocol, including Zig\+Bee devices. Actually supported methods and events are depending on the kind of \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} device, e.\+g., an 802.\+15.\+4 module won\textquotesingle{}t support Zig\+Bee-\/specific A\+PI frames, and vice-\/versa. Please refer to the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} product manual for detailed information about the A\+PI. 
+
+Definition at line 30 of file X\+Bee\+Node\+Event\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ac8684fc2d5902dd8d45e961989fc1965}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ac8684fc2d5902dd8d45e961989fc1965}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!XBeeNodeEventDispatcher@{XBeeNodeEventDispatcher}}
+\index{XBeeNodeEventDispatcher@{XBeeNodeEventDispatcher}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{XBeeNodeEventDispatcher()}{XBeeNodeEventDispatcher()}}
+{\footnotesize\ttfamily Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::\+X\+Bee\+Node\+Event\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeRemoteObject}{X\+Bee\+Node\+Remote\+Object}} $\ast$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a92635108992256273197e507c7e2612f}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a92635108992256273197e507c7e2612f}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!````~XBeeNodeEventDispatcher@{$\sim$XBeeNodeEventDispatcher}}
+\index{````~XBeeNodeEventDispatcher@{$\sim$XBeeNodeEventDispatcher}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$XBeeNodeEventDispatcher()}{~XBeeNodeEventDispatcher()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::$\sim$\+X\+Bee\+Node\+Event\+Dispatcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher}{X\+Bee\+Node\+Event\+Dispatcher}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a3cdf0c7b2a1b33f1a40fd1924bb57ad2}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a3cdf0c7b2a1b33f1a40fd1924bb57ad2}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!event\_\_commandResponseReceived@{event\_\_commandResponseReceived}}
+\index{event\_\_commandResponseReceived@{event\_\_commandResponseReceived}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_commandResponseReceived()}{event\_\_commandResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::event\+\_\+\+\_\+command\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ATCommandResponse}{Io\+T\+::\+X\+Bee\+::\+A\+T\+Command\+Response}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher}{X\+Bee\+Node\+Event\+Dispatcher}}. 
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ac1505ffc76ed44214ceabab8eec62710}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ac1505ffc76ed44214ceabab8eec62710}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!event\_\_explicitAddressingZigBeePacketReceived@{event\_\_explicitAddressingZigBeePacketReceived}}
+\index{event\_\_explicitAddressingZigBeePacketReceived@{event\_\_explicitAddressingZigBeePacketReceived}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_explicitAddressingZigBeePacketReceived()}{event\_\_explicitAddressingZigBeePacketReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::event\+\_\+\+\_\+explicit\+Addressing\+Zig\+Bee\+Packet\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ExplicitAddressingZigBeeReceivePacket}{Io\+T\+::\+X\+Bee\+::\+Explicit\+Addressing\+Zig\+Bee\+Receive\+Packet}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a2a9deab5c334a79370ec0d60ae0631e9}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a2a9deab5c334a79370ec0d60ae0631e9}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!event\_\_frameReceived@{event\_\_frameReceived}}
+\index{event\_\_frameReceived@{event\_\_frameReceived}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_frameReceived()}{event\_\_frameReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::event\+\_\+\+\_\+frame\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1APIFrame}{Io\+T\+::\+X\+Bee\+::\+A\+P\+I\+Frame}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a7a1a1036cbca2e843efc236720922592}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a7a1a1036cbca2e843efc236720922592}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!event\_\_ioDataReceived@{event\_\_ioDataReceived}}
+\index{event\_\_ioDataReceived@{event\_\_ioDataReceived}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_ioDataReceived()}{event\_\_ioDataReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::event\+\_\+\+\_\+io\+Data\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ReceivePacket}{Io\+T\+::\+X\+Bee\+::\+Receive\+Packet}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a62a2b14890a1b271d220415af0b45c35}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a62a2b14890a1b271d220415af0b45c35}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!event\_\_ioSampleReceived@{event\_\_ioSampleReceived}}
+\index{event\_\_ioSampleReceived@{event\_\_ioSampleReceived}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_ioSampleReceived()}{event\_\_ioSampleReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::event\+\_\+\+\_\+io\+Sample\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1IOSample}{Io\+T\+::\+X\+Bee\+::\+I\+O\+Sample}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ac3a95f9a3da91c4cef4c60a823af4bb5}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ac3a95f9a3da91c4cef4c60a823af4bb5}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!event\_\_modemStatusReceived@{event\_\_modemStatusReceived}}
+\index{event\_\_modemStatusReceived@{event\_\_modemStatusReceived}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_modemStatusReceived()}{event\_\_modemStatusReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::event\+\_\+\+\_\+modem\+Status\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ModemStatus}{Io\+T\+::\+X\+Bee\+::\+Modem\+Status}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ae4354a2c4a8df753e04b75a315dec7e7}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ae4354a2c4a8df753e04b75a315dec7e7}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!event\_\_packetReceived@{event\_\_packetReceived}}
+\index{event\_\_packetReceived@{event\_\_packetReceived}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_packetReceived()}{event\_\_packetReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::event\+\_\+\+\_\+packet\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ReceivePacket}{Io\+T\+::\+X\+Bee\+::\+Receive\+Packet}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ab2b29b75052bcf68401684c75a3c2e35}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ab2b29b75052bcf68401684c75a3c2e35}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!event\_\_remoteCommandResponseReceived@{event\_\_remoteCommandResponseReceived}}
+\index{event\_\_remoteCommandResponseReceived@{event\_\_remoteCommandResponseReceived}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_remoteCommandResponseReceived()}{event\_\_remoteCommandResponseReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::event\+\_\+\+\_\+remote\+Command\+Response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1RemoteATCommandResponse}{Io\+T\+::\+X\+Bee\+::\+Remote\+A\+T\+Command\+Response}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a88d75cf6702543b489438aac29352850}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a88d75cf6702543b489438aac29352850}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!event\_\_sensorReadReceived@{event\_\_sensorReadReceived}}
+\index{event\_\_sensorReadReceived@{event\_\_sensorReadReceived}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_sensorReadReceived()}{event\_\_sensorReadReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::event\+\_\+\+\_\+sensor\+Read\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1SensorRead}{Io\+T\+::\+X\+Bee\+::\+Sensor\+Read}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a4f558e3cca10fb2c56b0472c96ebe6cf}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a4f558e3cca10fb2c56b0472c96ebe6cf}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!event\_\_transmitStatusReceived@{event\_\_transmitStatusReceived}}
+\index{event\_\_transmitStatusReceived@{event\_\_transmitStatusReceived}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_transmitStatusReceived()}{event\_\_transmitStatusReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::event\+\_\+\+\_\+transmit\+Status\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1TransmitStatus}{Io\+T\+::\+X\+Bee\+::\+Transmit\+Status}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ab5c4105d4eec7e4b6d4047ee85fb3665}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_ab5c4105d4eec7e4b6d4047ee85fb3665}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!event\_\_zigBeePacketReceived@{event\_\_zigBeePacketReceived}}
+\index{event\_\_zigBeePacketReceived@{event\_\_zigBeePacketReceived}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_zigBeePacketReceived()}{event\_\_zigBeePacketReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::event\+\_\+\+\_\+zig\+Bee\+Packet\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeReceivePacket}{Io\+T\+::\+X\+Bee\+::\+Zig\+Bee\+Receive\+Packet}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a41376238ccf6df915124b0ad5a0d37c6}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a41376238ccf6df915124b0ad5a0d37c6}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!event\_\_zigBeeTransmitStatusReceived@{event\_\_zigBeeTransmitStatusReceived}}
+\index{event\_\_zigBeeTransmitStatusReceived@{event\_\_zigBeeTransmitStatusReceived}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_zigBeeTransmitStatusReceived()}{event\_\_zigBeeTransmitStatusReceived()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::event\+\_\+\+\_\+zig\+Bee\+Transmit\+Status\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1XBee_1_1ZigBeeTransmitStatus}{Io\+T\+::\+X\+Bee\+::\+Zig\+Bee\+Transmit\+Status}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a8a4cd14cb679cd49cba746f2ce00f485}\label{classIoT_1_1XBee_1_1XBeeNodeEventDispatcher_a8a4cd14cb679cd49cba746f2ce00f485}} 
+\index{IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::XBee::XBeeNodeEventDispatcher@{IoT::XBee::XBeeNodeEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Node\+Event\+Dispatcher\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 103 of file X\+Bee\+Node\+Event\+Dispatcher.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+X\+Bee/\mbox{\hyperlink{XBeeNodeEventDispatcher_8h}{X\+Bee\+Node\+Event\+Dispatcher.\+h}}\end{DoxyCompactItemize}

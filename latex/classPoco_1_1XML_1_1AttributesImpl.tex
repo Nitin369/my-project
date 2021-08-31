@@ -1,0 +1,671 @@
+\hypertarget{classPoco_1_1XML_1_1AttributesImpl}{}\doxysection{Poco\+::X\+ML\+::Attributes\+Impl Class Reference}
+\label{classPoco_1_1XML_1_1AttributesImpl}\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+
+
+{\ttfamily \#include $<$Attributes\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::Attributes\+Impl\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::X\+ML\+::Attributes\+Impl\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1XML_1_1AttributesImpl_1_1Attribute}{Attribute}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{structPoco_1_1XML_1_1AttributesImpl_1_1Attribute}{Attribute}} $>$ \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a5e250eb7d6cec31259691968fa1a3806}{Attribute\+Vec}}
+\item 
+typedef Attribute\+Vec\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a69f0d32c00bdcfd59936dbf8f0fbb78b}{iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_acff6ae46a7277c2eda7b015cb2ccb974}{Attributes\+Impl}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_ab490f333b843961721cc7b1cd68abbb9}{Attributes\+Impl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes}{Attributes}} \&attributes)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a018769b28250f81ce52bc2005475e91f}{Attributes\+Impl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}} \&attributes)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}} by copying another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_accff6660406d15948069de3691526b44}{$\sim$\+Attributes\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}} by copying another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a24e2a960774a447373c6b59a56111ff0}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}} \&attributes)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a645d1d0b4d58681887496d41c2560bfd}{get\+Index}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a62468b3ed4888a172c15dc102fa13054}{get\+Index}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&namespace\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Look up the index of an attribute by a qualified name. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a1133de15f8603041841904e2fe6b20c4}{get\+Length}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Look up the index of an attribute by a namspace name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a8cac2fb4215a71bc0d53bdf95655f963}{get\+Local\+Name}} (int i) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a06ac921cb50d190d53a161a4a80f95f2}{get\+Q\+Name}} (int i) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Look up a local attribute name by index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a03b6d37f52584d26b773dcfe6bff0618}{get\+Type}} (int i) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Look up a qualified attribute name by index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a2d4b8c0e5e9eb9af404493e25d809358}{get\+Type}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&qname) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a1427b525506b2bbce984c25ca30dfc03}{get\+Type}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&namespace\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_ae392223f6373be5260d85d322393cd6b}{get\+Value}} (int i) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_aa1f5a66cc85e860826c30551c5b46e16}{get\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&qname) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a6fddba4a76325c638b70d2b126292165}{get\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&namespace\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_aeb0d6eeeb80aee71afd679b437b65c33}{get\+U\+RI}} (int i) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_affb4c6231494757a3c05fa4f38875e69}{is\+Specified}} (int i) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_ac99b49ca1cc3260cc619382ef63d32bd}{is\+Specified}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&qname) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a40a73fa60d14f5c506afdc5ecb3394ec}{is\+Specified}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&namespace\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a398646c95dd599a2aea165bf72ce3f34}{set\+Value}} (int i, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a481ebec07af25486400916028b037937}{set\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&qname, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value of an attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a50514445b58b8de5b5317b6b0ca445e3}{set\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&namespace\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value of an attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a20fb4100682ffd547e54bccbc9facbb5}{set\+Attributes}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes}{Attributes}} \&attributes)
+\begin{DoxyCompactList}\small\item\em Sets the value of an attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_acfda3f6eef5415e6a3a0e853c5ea0d32}{set\+Attribute}} (int i, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&namespace\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&qname, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&type, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&value)
+\begin{DoxyCompactList}\small\item\em Copies the attributes from another \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes}{Attributes}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a61000257b12756ccea13c8a2dab6b39b}{add\+Attribute}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&namespace\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&qname, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&type, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&value)
+\begin{DoxyCompactList}\small\item\em Sets an attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_abfd019686cd293e1dd85208eb0de92dd}{add\+Attribute}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&namespace\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&qname, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&type, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&value, bool specified)
+\begin{DoxyCompactList}\small\item\em Adds an attribute to the end of the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a69b83a4403d2c0dcfb3af45146ab2afb}{add\+Attribute}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$namespace\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$local\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$qname, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$type, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$value, bool specified)
+\begin{DoxyCompactList}\small\item\em Adds an attribute to the end of the list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPoco_1_1XML_1_1AttributesImpl_1_1Attribute}{Attribute}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a0fd31b56685ddd6560a6a33dba63b8be}{add\+Attribute}} ()
+\begin{DoxyCompactList}\small\item\em Adds an attribute to the end of the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a8d0acc8618e20d8c6aadf29b680a7c90}{remove\+Attribute}} (int i)
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a6b48e4996e410644d4d5f635117f0bd8}{remove\+Attribute}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&qname)
+\begin{DoxyCompactList}\small\item\em Removes an attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a31050eeb56ec3a99e6ba1eb043709336}{remove\+Attribute}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&namespace\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name)
+\begin{DoxyCompactList}\small\item\em Removes an attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a648d8fa485afba785b9080a27670bf87}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Removes an attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_af4d4457c72ea5f16afafbe0d7e6e6f18}{reserve}} (std\+::size\+\_\+t capacity)
+\begin{DoxyCompactList}\small\item\em Removes all attributes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a7df6dc28f0ddd86159bb40b64ed80b7b}{set\+Local\+Name}} (int i, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name)
+\begin{DoxyCompactList}\small\item\em Reserves capacity in the internal vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a9bc3fdef5b2202cbecbc06d9651fc02a}{set\+Q\+Name}} (int i, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&qname)
+\begin{DoxyCompactList}\small\item\em Sets the local name of an attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_ae72e08a893046c800156053a29d5bb44}{set\+Type}} (int i, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&type)
+\begin{DoxyCompactList}\small\item\em Sets the qualified name of an attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a10e02fe3ac6c2c940df01041dc1dae6e}{set\+U\+RI}} (int i, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&namespace\+U\+RI)
+\begin{DoxyCompactList}\small\item\em Sets the type of an attribute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a69f0d32c00bdcfd59936dbf8f0fbb78b}{iterator}} \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a2d5ed6200e3471aa5b6983735bcd316a}{begin}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the namespace \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} of an attribute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a69f0d32c00bdcfd59936dbf8f0fbb78b}{iterator}} \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a39a152ecdc0da7a461b00ece987145e4}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Iterator support. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPoco_1_1XML_1_1AttributesImpl_1_1Attribute}{Attribute}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_aaa8d35aced263b1ed36cf665dfd8cbd1}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&qname) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Iterator support. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPoco_1_1XML_1_1AttributesImpl_1_1Attribute}{Attribute}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a692adefb2ee4ca071b57e40d44d395b7}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&namespace\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&local\+Name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides a default implementation of the S\+A\+X2 \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes}{Attributes}} interface, with the addition of manipulators so that the list can be modified or reused.
+
+There are two typical uses of this class\+:
+\begin{DoxyEnumerate}
+\item to take a persistent snapshot of an \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes}{Attributes}} object in a start\+Element event; or
+\item to construct or modify an \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes}{Attributes}} object in a S\+A\+X2 driver or filter. 
+\end{DoxyEnumerate}
+
+Definition at line 32 of file Attributes\+Impl.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a5e250eb7d6cec31259691968fa1a3806}\label{classPoco_1_1XML_1_1AttributesImpl_a5e250eb7d6cec31259691968fa1a3806}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!AttributeVec@{AttributeVec}}
+\index{AttributeVec@{AttributeVec}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{AttributeVec}{AttributeVec}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{structPoco_1_1XML_1_1AttributesImpl_1_1Attribute}{Attribute}}$>$ \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a5e250eb7d6cec31259691968fa1a3806}{Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::\+Attribute\+Vec}}}
+
+
+
+Definition at line 50 of file Attributes\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a69f0d32c00bdcfd59936dbf8f0fbb78b}\label{classPoco_1_1XML_1_1AttributesImpl_a69f0d32c00bdcfd59936dbf8f0fbb78b}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!iterator@{iterator}}
+\index{iterator@{iterator}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily typedef Attribute\+Vec\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a69f0d32c00bdcfd59936dbf8f0fbb78b}{Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::iterator}}}
+
+
+
+Definition at line 51 of file Attributes\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_acff6ae46a7277c2eda7b015cb2ccb974}\label{classPoco_1_1XML_1_1AttributesImpl_acff6ae46a7277c2eda7b015cb2ccb974}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!AttributesImpl@{AttributesImpl}}
+\index{AttributesImpl@{AttributesImpl}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{AttributesImpl()}{AttributesImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::\+Attributes\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_ab490f333b843961721cc7b1cd68abbb9}\label{classPoco_1_1XML_1_1AttributesImpl_ab490f333b843961721cc7b1cd68abbb9}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!AttributesImpl@{AttributesImpl}}
+\index{AttributesImpl@{AttributesImpl}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{AttributesImpl()}{AttributesImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::\+Attributes\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes}{Attributes}} \&}]{attributes }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}}. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a018769b28250f81ce52bc2005475e91f}\label{classPoco_1_1XML_1_1AttributesImpl_a018769b28250f81ce52bc2005475e91f}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!AttributesImpl@{AttributesImpl}}
+\index{AttributesImpl@{AttributesImpl}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{AttributesImpl()}{AttributesImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::\+Attributes\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}} \&}]{attributes }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}} by copying another one. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_accff6660406d15948069de3691526b44}\label{classPoco_1_1XML_1_1AttributesImpl_accff6660406d15948069de3691526b44}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!````~AttributesImpl@{$\sim$AttributesImpl}}
+\index{````~AttributesImpl@{$\sim$AttributesImpl}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{$\sim$AttributesImpl()}{~AttributesImpl()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::$\sim$\+Attributes\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}} by copying another one. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a0fd31b56685ddd6560a6a33dba63b8be}\label{classPoco_1_1XML_1_1AttributesImpl_a0fd31b56685ddd6560a6a33dba63b8be}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!addAttribute@{addAttribute}}
+\index{addAttribute@{addAttribute}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{addAttribute()}{addAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPoco_1_1XML_1_1AttributesImpl_1_1Attribute}{Attributes\+Impl\+::\+Attribute}} \& Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::add\+Attribute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds an attribute to the end of the list. 
+
+
+
+Definition at line 180 of file Attributes\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a69b83a4403d2c0dcfb3af45146ab2afb}\label{classPoco_1_1XML_1_1AttributesImpl_a69b83a4403d2c0dcfb3af45146ab2afb}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!addAttribute@{addAttribute}}
+\index{addAttribute@{addAttribute}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{addAttribute()}{addAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::add\+Attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$}]{namespace\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$}]{local\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$}]{qname,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$}]{type,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a5568873bf2fed7403036ef80480ad6b3}{X\+M\+L\+Char}} $\ast$}]{value,  }\item[{bool}]{specified }\end{DoxyParamCaption})}
+
+
+
+Adds an attribute to the end of the list. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a61000257b12756ccea13c8a2dab6b39b}\label{classPoco_1_1XML_1_1AttributesImpl_a61000257b12756ccea13c8a2dab6b39b}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!addAttribute@{addAttribute}}
+\index{addAttribute@{addAttribute}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{addAttribute()}{addAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::add\+Attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{namespace\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{qname,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{type,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets an attribute. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_abfd019686cd293e1dd85208eb0de92dd}\label{classPoco_1_1XML_1_1AttributesImpl_abfd019686cd293e1dd85208eb0de92dd}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!addAttribute@{addAttribute}}
+\index{addAttribute@{addAttribute}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{addAttribute()}{addAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::add\+Attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{namespace\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{qname,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{type,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{value,  }\item[{bool}]{specified }\end{DoxyParamCaption})}
+
+
+
+Adds an attribute to the end of the list. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a2d5ed6200e3471aa5b6983735bcd316a}\label{classPoco_1_1XML_1_1AttributesImpl_a2d5ed6200e3471aa5b6983735bcd316a}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!begin@{begin}}
+\index{begin@{begin}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a69f0d32c00bdcfd59936dbf8f0fbb78b}{Attributes\+Impl\+::iterator}} Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the namespace \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} of an attribute. 
+
+
+
+Definition at line 168 of file Attributes\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a648d8fa485afba785b9080a27670bf87}\label{classPoco_1_1XML_1_1AttributesImpl_a648d8fa485afba785b9080a27670bf87}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!clear@{clear}}
+\index{clear@{clear}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes an attribute. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a39a152ecdc0da7a461b00ece987145e4}\label{classPoco_1_1XML_1_1AttributesImpl_a39a152ecdc0da7a461b00ece987145e4}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!end@{end}}
+\index{end@{end}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl_a69f0d32c00bdcfd59936dbf8f0fbb78b}{Attributes\+Impl\+::iterator}} Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterator support. 
+
+
+
+Definition at line 174 of file Attributes\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a692adefb2ee4ca071b57e40d44d395b7}\label{classPoco_1_1XML_1_1AttributesImpl_a692adefb2ee4ca071b57e40d44d395b7}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!find@{find}}
+\index{find@{find}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPoco_1_1XML_1_1AttributesImpl_1_1Attribute}{Attribute}}$\ast$ Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{namespace\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_aaa8d35aced263b1ed36cf665dfd8cbd1}\label{classPoco_1_1XML_1_1AttributesImpl_aaa8d35aced263b1ed36cf665dfd8cbd1}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!find@{find}}
+\index{find@{find}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPoco_1_1XML_1_1AttributesImpl_1_1Attribute}{Attribute}}$\ast$ Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{qname }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Iterator support. 
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a645d1d0b4d58681887496d41c2560bfd}\label{classPoco_1_1XML_1_1AttributesImpl_a645d1d0b4d58681887496d41c2560bfd}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{getIndex()}{getIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::get\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Assignment operator. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes_a0b70342a559d00b04268f355e639291b}{Poco\+::\+X\+M\+L\+::\+Attributes}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a62468b3ed4888a172c15dc102fa13054}\label{classPoco_1_1XML_1_1AttributesImpl_a62468b3ed4888a172c15dc102fa13054}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{getIndex()}{getIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::get\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{namespace\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Look up the index of an attribute by a qualified name. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes_af2eaa207f845d9a03fe727ce52c880db}{Poco\+::\+X\+M\+L\+::\+Attributes}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a1133de15f8603041841904e2fe6b20c4}\label{classPoco_1_1XML_1_1AttributesImpl_a1133de15f8603041841904e2fe6b20c4}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!getLength@{getLength}}
+\index{getLength@{getLength}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily int Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Look up the index of an attribute by a namspace name. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes_acbca432d740ad95a118c7c6afa4c053d}{Poco\+::\+X\+M\+L\+::\+Attributes}}.
+
+
+
+Definition at line 187 of file Attributes\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a8cac2fb4215a71bc0d53bdf95655f963}\label{classPoco_1_1XML_1_1AttributesImpl_a8cac2fb4215a71bc0d53bdf95655f963}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!getLocalName@{getLocalName}}
+\index{getLocalName@{getLocalName}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{getLocalName()}{getLocalName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::get\+Local\+Name (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return the number of attributes in the list.
+
+Once you know the number of attributes, you can iterate through the list. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes_a05db291c2a0a3c99aa4357fab7d8cb9e}{Poco\+::\+X\+M\+L\+::\+Attributes}}.
+
+
+
+Definition at line 193 of file Attributes\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a06ac921cb50d190d53a161a4a80f95f2}\label{classPoco_1_1XML_1_1AttributesImpl_a06ac921cb50d190d53a161a4a80f95f2}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!getQName@{getQName}}
+\index{getQName@{getQName}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{getQName()}{getQName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::get\+Q\+Name (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Look up a local attribute name by index. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes_a00a7dba29122c66a60dc57ab69fbe088}{Poco\+::\+X\+M\+L\+::\+Attributes}}.
+
+
+
+Definition at line 200 of file Attributes\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a1427b525506b2bbce984c25ca30dfc03}\label{classPoco_1_1XML_1_1AttributesImpl_a1427b525506b2bbce984c25ca30dfc03}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!getType@{getType}}
+\index{getType@{getType}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::get\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{namespace\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Look up an attribute type by a qualified name.
+
+See get\+Type(int) for a description of the possible types. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes_a0237ccee90074850cebf912746ce2ba2}{Poco\+::\+X\+M\+L\+::\+Attributes}}.
+
+
+
+Definition at line 224 of file Attributes\+Impl.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a2d4b8c0e5e9eb9af404493e25d809358}\label{classPoco_1_1XML_1_1AttributesImpl_a2d4b8c0e5e9eb9af404493e25d809358}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!getType@{getType}}
+\index{getType@{getType}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::get\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{qname }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Look up an attribute type by index.
+
+The attribute type is one of the strings \char`\"{}\+C\+D\+A\+T\+A\char`\"{}, \char`\"{}\+I\+D\char`\"{}, \char`\"{}\+I\+D\+R\+E\+F\char`\"{}, \char`\"{}\+I\+D\+R\+E\+F\+S\char`\"{}, \char`\"{}\+N\+M\+T\+O\+K\+E\+N\char`\"{}, \char`\"{}\+N\+M\+T\+O\+K\+E\+N\+S\char`\"{}, \char`\"{}\+E\+N\+T\+I\+T\+Y\char`\"{}, \char`\"{}\+E\+N\+T\+I\+T\+I\+E\+S\char`\"{}, or \char`\"{}\+N\+O\+T\+A\+T\+I\+O\+N\char`\"{} (always in upper case).
+
+If the parser has not read a declaration for the attribute, or if the parser does not report attribute types, then it must return the value \char`\"{}\+C\+D\+A\+T\+A\char`\"{} as stated in the \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} 1.\+0 Recommendation (clause 3.\+3.\+3, \char`\"{}\+Attribute-\/\+Value Normalization\char`\"{}).
+
+For an enumerated attribute that is not a notation, the parser will report the type as \char`\"{}\+N\+M\+T\+O\+K\+E\+N\char`\"{}. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes_a8ef46ca15bdc1456c894786171de696c}{Poco\+::\+X\+M\+L\+::\+Attributes}}.
+
+
+
+Definition at line 214 of file Attributes\+Impl.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a03b6d37f52584d26b773dcfe6bff0618}\label{classPoco_1_1XML_1_1AttributesImpl_a03b6d37f52584d26b773dcfe6bff0618}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!getType@{getType}}
+\index{getType@{getType}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::get\+Type (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Look up a qualified attribute name by index. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes_a84e97a27846b4ac1fcabf9617653887c}{Poco\+::\+X\+M\+L\+::\+Attributes}}.
+
+
+
+Definition at line 207 of file Attributes\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_aeb0d6eeeb80aee71afd679b437b65c33}\label{classPoco_1_1XML_1_1AttributesImpl_aeb0d6eeeb80aee71afd679b437b65c33}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!getURI@{getURI}}
+\index{getURI@{getURI}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{getURI()}{getURI()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::get\+U\+RI (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Look up an attribute value by a namespace name.
+
+See get\+Value(int) for a description of the possible values. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes_af7204bfff936c979d4d9151db9f2e9d7}{Poco\+::\+X\+M\+L\+::\+Attributes}}.
+
+
+
+Definition at line 261 of file Attributes\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a6fddba4a76325c638b70d2b126292165}\label{classPoco_1_1XML_1_1AttributesImpl_a6fddba4a76325c638b70d2b126292165}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!getValue@{getValue}}
+\index{getValue@{getValue}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::get\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{uri,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Look up an attribute value by a qualified name.
+
+See get\+Value(int) for a description of the possible values. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes_ab5a46420f49111d5d236e43a95b79dfe}{Poco\+::\+X\+M\+L\+::\+Attributes}}.
+
+
+
+Definition at line 251 of file Attributes\+Impl.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_aa1f5a66cc85e860826c30551c5b46e16}\label{classPoco_1_1XML_1_1AttributesImpl_aa1f5a66cc85e860826c30551c5b46e16}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!getValue@{getValue}}
+\index{getValue@{getValue}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::get\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{qname }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Look up an attribute value by index.
+
+If the attribute value is a list of tokens (I\+D\+R\+E\+FS, E\+N\+T\+I\+T\+I\+ES, or N\+M\+T\+O\+K\+E\+NS), the tokens will be concatenated into a single string with each token separated by a single space. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes_ae560b589e120c834f33852f2904f1748}{Poco\+::\+X\+M\+L\+::\+Attributes}}.
+
+
+
+Definition at line 241 of file Attributes\+Impl.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_ae392223f6373be5260d85d322393cd6b}\label{classPoco_1_1XML_1_1AttributesImpl_ae392223f6373be5260d85d322393cd6b}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!getValue@{getValue}}
+\index{getValue@{getValue}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::get\+Value (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Look up an attribute type by a namespace name.
+
+See get\+Type(int) for a description of the possible types. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes_aab8855c0dab808afc4d4f91bc176ee39}{Poco\+::\+X\+M\+L\+::\+Attributes}}.
+
+
+
+Definition at line 234 of file Attributes\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a40a73fa60d14f5c506afdc5ecb3394ec}\label{classPoco_1_1XML_1_1AttributesImpl_a40a73fa60d14f5c506afdc5ecb3394ec}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!isSpecified@{isSpecified}}
+\index{isSpecified@{isSpecified}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{isSpecified()}{isSpecified()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::is\+Specified (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{namespace\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true unless the attribute value was provided by D\+TD defaulting. Extension from Attributes2 interface. 
+
+Definition at line 285 of file Attributes\+Impl.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_ac99b49ca1cc3260cc619382ef63d32bd}\label{classPoco_1_1XML_1_1AttributesImpl_ac99b49ca1cc3260cc619382ef63d32bd}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!isSpecified@{isSpecified}}
+\index{isSpecified@{isSpecified}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{isSpecified()}{isSpecified()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::is\+Specified (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{qname }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true unless the attribute value was provided by D\+TD defaulting. Extension from Attributes2 interface. 
+
+Definition at line 275 of file Attributes\+Impl.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_affb4c6231494757a3c05fa4f38875e69}\label{classPoco_1_1XML_1_1AttributesImpl_affb4c6231494757a3c05fa4f38875e69}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!isSpecified@{isSpecified}}
+\index{isSpecified@{isSpecified}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{isSpecified()}{isSpecified()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::is\+Specified (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 268 of file Attributes\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a24e2a960774a447373c6b59a56111ff0}\label{classPoco_1_1XML_1_1AttributesImpl_a24e2a960774a447373c6b59a56111ff0}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}}\& Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}} \&}]{attributes }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1XML_1_1AttributesImpl}{Attributes\+Impl}}. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a31050eeb56ec3a99e6ba1eb043709336}\label{classPoco_1_1XML_1_1AttributesImpl_a31050eeb56ec3a99e6ba1eb043709336}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!removeAttribute@{removeAttribute}}
+\index{removeAttribute@{removeAttribute}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{removeAttribute()}{removeAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::remove\+Attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{namespace\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name }\end{DoxyParamCaption})}
+
+
+
+Removes an attribute. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a6b48e4996e410644d4d5f635117f0bd8}\label{classPoco_1_1XML_1_1AttributesImpl_a6b48e4996e410644d4d5f635117f0bd8}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!removeAttribute@{removeAttribute}}
+\index{removeAttribute@{removeAttribute}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{removeAttribute()}{removeAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::remove\+Attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{qname }\end{DoxyParamCaption})}
+
+
+
+Removes an attribute. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a8d0acc8618e20d8c6aadf29b680a7c90}\label{classPoco_1_1XML_1_1AttributesImpl_a8d0acc8618e20d8c6aadf29b680a7c90}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!removeAttribute@{removeAttribute}}
+\index{removeAttribute@{removeAttribute}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{removeAttribute()}{removeAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::remove\+Attribute (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+Add an (empty) attribute to the end of the list. For internal use only. The returned \mbox{\hyperlink{structPoco_1_1XML_1_1AttributesImpl_1_1Attribute}{Attribute}} element must be filled by the caller. \mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_af4d4457c72ea5f16afafbe0d7e6e6f18}\label{classPoco_1_1XML_1_1AttributesImpl_af4d4457c72ea5f16afafbe0d7e6e6f18}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!reserve@{reserve}}
+\index{reserve@{reserve}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{reserve()}{reserve()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::reserve (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Removes all attributes. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_acfda3f6eef5415e6a3a0e853c5ea0d32}\label{classPoco_1_1XML_1_1AttributesImpl_acfda3f6eef5415e6a3a0e853c5ea0d32}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!setAttribute@{setAttribute}}
+\index{setAttribute@{setAttribute}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{setAttribute()}{setAttribute()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::set\+Attribute (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{namespace\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{qname,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{type,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Copies the attributes from another \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes}{Attributes}} object. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a20fb4100682ffd547e54bccbc9facbb5}\label{classPoco_1_1XML_1_1AttributesImpl_a20fb4100682ffd547e54bccbc9facbb5}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!setAttributes@{setAttributes}}
+\index{setAttributes@{setAttributes}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{setAttributes()}{setAttributes()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::set\+Attributes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1Attributes}{Attributes}} \&}]{attributes }\end{DoxyParamCaption})}
+
+
+
+Sets the value of an attribute. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a7df6dc28f0ddd86159bb40b64ed80b7b}\label{classPoco_1_1XML_1_1AttributesImpl_a7df6dc28f0ddd86159bb40b64ed80b7b}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!setLocalName@{setLocalName}}
+\index{setLocalName@{setLocalName}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{setLocalName()}{setLocalName()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::set\+Local\+Name (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name }\end{DoxyParamCaption})}
+
+
+
+Reserves capacity in the internal vector. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a9bc3fdef5b2202cbecbc06d9651fc02a}\label{classPoco_1_1XML_1_1AttributesImpl_a9bc3fdef5b2202cbecbc06d9651fc02a}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!setQName@{setQName}}
+\index{setQName@{setQName}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{setQName()}{setQName()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::set\+Q\+Name (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{qname }\end{DoxyParamCaption})}
+
+
+
+Sets the local name of an attribute. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_ae72e08a893046c800156053a29d5bb44}\label{classPoco_1_1XML_1_1AttributesImpl_ae72e08a893046c800156053a29d5bb44}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!setType@{setType}}
+\index{setType@{setType}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::set\+Type (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{type }\end{DoxyParamCaption})}
+
+
+
+Sets the qualified name of an attribute. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a10e02fe3ac6c2c940df01041dc1dae6e}\label{classPoco_1_1XML_1_1AttributesImpl_a10e02fe3ac6c2c940df01041dc1dae6e}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!setURI@{setURI}}
+\index{setURI@{setURI}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{setURI()}{setURI()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::set\+U\+RI (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{namespace\+U\+RI }\end{DoxyParamCaption})}
+
+
+
+Sets the type of an attribute. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a50514445b58b8de5b5317b6b0ca445e3}\label{classPoco_1_1XML_1_1AttributesImpl_a50514445b58b8de5b5317b6b0ca445e3}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!setValue@{setValue}}
+\index{setValue@{setValue}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::set\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{namespace\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{local\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of an attribute. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a481ebec07af25486400916028b037937}\label{classPoco_1_1XML_1_1AttributesImpl_a481ebec07af25486400916028b037937}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!setValue@{setValue}}
+\index{setValue@{setValue}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::set\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{qname,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of an attribute. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1AttributesImpl_a398646c95dd599a2aea165bf72ce3f34}\label{classPoco_1_1XML_1_1AttributesImpl_a398646c95dd599a2aea165bf72ce3f34}} 
+\index{Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}!setValue@{setValue}}
+\index{setValue@{setValue}!Poco::XML::AttributesImpl@{Poco::XML::AttributesImpl}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Attributes\+Impl\+::set\+Value (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{value }\end{DoxyParamCaption})}
+
+Returns true unless the attribute value was provided by D\+TD defaulting. Extension from Attributes2 interface. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+S\+A\+X/\mbox{\hyperlink{AttributesImpl_8h}{Attributes\+Impl.\+h}}\end{DoxyCompactItemize}

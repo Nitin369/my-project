@@ -1,0 +1,252 @@
+\hypertarget{classPoco_1_1FileStreamBuf}{}\doxysection{Poco\+::File\+Stream\+Buf Class Reference}
+\label{classPoco_1_1FileStreamBuf}\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+
+
+This stream buffer handles Fileio.  
+
+
+
+
+{\ttfamily \#include $<$File\+Stream\+\_\+\+P\+O\+S\+I\+X.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::File\+Stream\+Buf\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::File\+Stream\+Buf\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FileStreamBuf_ac5a3b40604303a9db4132ffb170c56be}{File\+Stream\+Buf}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1FileStreamBuf_abe2944fad7961a2f703c0de1d1eb1d3f}{$\sim$\+File\+Stream\+Buf}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1FileStreamBuf}{File\+Stream\+Buf}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1FileStreamBuf_a359370c49bdb87544470674331ec98af}{open}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, std\+::ios\+::openmode mode)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1FileStream}{File\+Stream}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1FileStreamBuf_a138cae6c41502968f69c98ae72f6cb71}{close}} ()
+\begin{DoxyCompactList}\small\item\em Opens the given file in the given mode. \end{DoxyCompactList}\item 
+std\+::streampos \mbox{\hyperlink{classPoco_1_1FileStreamBuf_a84163e7e3f67565d2d30c060d30cf445}{seekoff}} (std\+::streamoff off, std\+::ios\+::seekdir dir, std\+::ios\+::openmode mode=std\+::ios\+::in$\vert$std\+::ios\+::out)
+\item 
+std\+::streampos \mbox{\hyperlink{classPoco_1_1FileStreamBuf_a58feb5652259bc57ae3e6c9fc7fb8a85}{seekpos}} (std\+::streampos pos, std\+::ios\+::openmode mode=std\+::ios\+::in$\vert$std\+::ios\+::out)
+\begin{DoxyCompactList}\small\item\em Change position by offset, according to way and mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1FileStreamBuf_ac5a3b40604303a9db4132ffb170c56be}{File\+Stream\+Buf}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1FileStreamBuf_abe2944fad7961a2f703c0de1d1eb1d3f}{$\sim$\+File\+Stream\+Buf}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1FileStreamBuf}{File\+Stream\+Buf}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1FileStreamBuf_a359370c49bdb87544470674331ec98af}{open}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, std\+::ios\+::openmode mode)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1FileStream}{File\+Stream}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1FileStreamBuf_a138cae6c41502968f69c98ae72f6cb71}{close}} ()
+\begin{DoxyCompactList}\small\item\em Opens the given file in the given mode. \end{DoxyCompactList}\item 
+std\+::streampos \mbox{\hyperlink{classPoco_1_1FileStreamBuf_a84163e7e3f67565d2d30c060d30cf445}{seekoff}} (std\+::streamoff off, std\+::ios\+::seekdir dir, std\+::ios\+::openmode mode=std\+::ios\+::in$\vert$std\+::ios\+::out)
+\item 
+std\+::streampos \mbox{\hyperlink{classPoco_1_1FileStreamBuf_a58feb5652259bc57ae3e6c9fc7fb8a85}{seekpos}} (std\+::streampos pos, std\+::ios\+::openmode mode=std\+::ios\+::in$\vert$std\+::ios\+::out)
+\begin{DoxyCompactList}\small\item\em change position by offset, according to way and mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{classPoco_1_1FileStreamBuf_add32e7300da9e0dd048b7953c5dd157ea69c3538bb708318ce928100e9ce32cea}{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}} = 4096
+ \}
+\begin{DoxyCompactList}\small\item\em Change to specified position, according to mode. \end{DoxyCompactList}\item 
+enum \{ \mbox{\hyperlink{classPoco_1_1FileStreamBuf_add32e7300da9e0dd048b7953c5dd157ea69c3538bb708318ce928100e9ce32cea}{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}} = 4096
+ \}
+\begin{DoxyCompactList}\small\item\em change to specified position, according to mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPoco_1_1FileStreamBuf_a67f29dbc1554a1aa2207b62312aac725}{read\+From\+Device}} (char $\ast$buffer, std\+::streamsize length)
+\item 
+int \mbox{\hyperlink{classPoco_1_1FileStreamBuf_abb0bc2319b04734ab694ed1f672f57f8}{write\+To\+Device}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$buffer, std\+::streamsize length)
+\item 
+int \mbox{\hyperlink{classPoco_1_1FileStreamBuf_a67f29dbc1554a1aa2207b62312aac725}{read\+From\+Device}} (char $\ast$buffer, std\+::streamsize length)
+\item 
+int \mbox{\hyperlink{classPoco_1_1FileStreamBuf_abb0bc2319b04734ab694ed1f672f57f8}{write\+To\+Device}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$buffer, std\+::streamsize length)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This stream buffer handles Fileio. 
+
+Definition at line 32 of file File\+Stream\+\_\+\+P\+O\+S\+I\+X.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_aa185a8c472881840382660addef1001d}\label{classPoco_1_1FileStreamBuf_aa185a8c472881840382660addef1001d}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Change to specified position, according to mode. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUFFER\_SIZE@{BUFFER\_SIZE}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!BUFFER\_SIZE@{BUFFER\_SIZE}}}\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_add32e7300da9e0dd048b7953c5dd157ea69c3538bb708318ce928100e9ce32cea}\label{classPoco_1_1FileStreamBuf_add32e7300da9e0dd048b7953c5dd157ea69c3538bb708318ce928100e9ce32cea}} 
+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 56 of file File\+Stream\+\_\+\+P\+O\+S\+I\+X.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_add32e7300da9e0dd048b7953c5dd157e}\label{classPoco_1_1FileStreamBuf_add32e7300da9e0dd048b7953c5dd157e}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+change to specified position, according to mode 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUFFER\_SIZE@{BUFFER\_SIZE}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!BUFFER\_SIZE@{BUFFER\_SIZE}}}\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_add32e7300da9e0dd048b7953c5dd157ea69c3538bb708318ce928100e9ce32cea}\label{classPoco_1_1FileStreamBuf_add32e7300da9e0dd048b7953c5dd157ea69c3538bb708318ce928100e9ce32cea}} 
+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 55 of file File\+Stream\+\_\+\+W\+I\+N32.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_ac5a3b40604303a9db4132ffb170c56be}\label{classPoco_1_1FileStreamBuf_ac5a3b40604303a9db4132ffb170c56be}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!FileStreamBuf@{FileStreamBuf}}
+\index{FileStreamBuf@{FileStreamBuf}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{FileStreamBuf()}{FileStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+File\+Stream\+Buf\+::\+File\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_abe2944fad7961a2f703c0de1d1eb1d3f}\label{classPoco_1_1FileStreamBuf_abe2944fad7961a2f703c0de1d1eb1d3f}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!````~FileStreamBuf@{$\sim$FileStreamBuf}}
+\index{````~FileStreamBuf@{$\sim$FileStreamBuf}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{$\sim$FileStreamBuf()}{~FileStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+File\+Stream\+Buf\+::$\sim$\+File\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1FileStreamBuf}{File\+Stream\+Buf}}. 
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_ac5a3b40604303a9db4132ffb170c56be}\label{classPoco_1_1FileStreamBuf_ac5a3b40604303a9db4132ffb170c56be}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!FileStreamBuf@{FileStreamBuf}}
+\index{FileStreamBuf@{FileStreamBuf}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{FileStreamBuf()}{FileStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+File\+Stream\+Buf\+::\+File\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_abe2944fad7961a2f703c0de1d1eb1d3f}\label{classPoco_1_1FileStreamBuf_abe2944fad7961a2f703c0de1d1eb1d3f}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!````~FileStreamBuf@{$\sim$FileStreamBuf}}
+\index{````~FileStreamBuf@{$\sim$FileStreamBuf}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{$\sim$FileStreamBuf()}{~FileStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+File\+Stream\+Buf\+::$\sim$\+File\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1FileStreamBuf}{File\+Stream\+Buf}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_a138cae6c41502968f69c98ae72f6cb71}\label{classPoco_1_1FileStreamBuf_a138cae6c41502968f69c98ae72f6cb71}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!close@{close}}
+\index{close@{close}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+File\+Stream\+Buf\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Opens the given file in the given mode. 
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_a138cae6c41502968f69c98ae72f6cb71}\label{classPoco_1_1FileStreamBuf_a138cae6c41502968f69c98ae72f6cb71}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!close@{close}}
+\index{close@{close}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+File\+Stream\+Buf\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Opens the given file in the given mode. 
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_a359370c49bdb87544470674331ec98af}\label{classPoco_1_1FileStreamBuf_a359370c49bdb87544470674331ec98af}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!open@{open}}
+\index{open@{open}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+File\+Stream\+Buf\+::open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{std\+::ios\+::openmode}]{mode }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1FileStream}{File\+Stream}}. 
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_a359370c49bdb87544470674331ec98af}\label{classPoco_1_1FileStreamBuf_a359370c49bdb87544470674331ec98af}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!open@{open}}
+\index{open@{open}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+File\+Stream\+Buf\+::open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{std\+::ios\+::openmode}]{mode }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1FileStream}{File\+Stream}}. 
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_a67f29dbc1554a1aa2207b62312aac725}\label{classPoco_1_1FileStreamBuf_a67f29dbc1554a1aa2207b62312aac725}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!readFromDevice@{readFromDevice}}
+\index{readFromDevice@{readFromDevice}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{readFromDevice()}{readFromDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Poco\+::\+File\+Stream\+Buf\+::read\+From\+Device (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_a67f29dbc1554a1aa2207b62312aac725}\label{classPoco_1_1FileStreamBuf_a67f29dbc1554a1aa2207b62312aac725}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!readFromDevice@{readFromDevice}}
+\index{readFromDevice@{readFromDevice}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{readFromDevice()}{readFromDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Poco\+::\+File\+Stream\+Buf\+::read\+From\+Device (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_a84163e7e3f67565d2d30c060d30cf445}\label{classPoco_1_1FileStreamBuf_a84163e7e3f67565d2d30c060d30cf445}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!seekoff@{seekoff}}
+\index{seekoff@{seekoff}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{seekoff()}{seekoff()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::streampos Poco\+::\+File\+Stream\+Buf\+::seekoff (\begin{DoxyParamCaption}\item[{std\+::streamoff}]{off,  }\item[{std\+::ios\+::seekdir}]{dir,  }\item[{std\+::ios\+::openmode}]{mode = {\ttfamily std\+:\+:ios\+:\+:in$\vert$std\+:\+:ios\+:\+:out} }\end{DoxyParamCaption})}
+
+Closes the \mbox{\hyperlink{classPoco_1_1File}{File}} stream buffer. Returns true if successful, false otherwise. \mbox{\Hypertarget{classPoco_1_1FileStreamBuf_a84163e7e3f67565d2d30c060d30cf445}\label{classPoco_1_1FileStreamBuf_a84163e7e3f67565d2d30c060d30cf445}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!seekoff@{seekoff}}
+\index{seekoff@{seekoff}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{seekoff()}{seekoff()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::streampos Poco\+::\+File\+Stream\+Buf\+::seekoff (\begin{DoxyParamCaption}\item[{std\+::streamoff}]{off,  }\item[{std\+::ios\+::seekdir}]{dir,  }\item[{std\+::ios\+::openmode}]{mode = {\ttfamily std\+:\+:ios\+:\+:in$\vert$std\+:\+:ios\+:\+:out} }\end{DoxyParamCaption})}
+
+Closes the \mbox{\hyperlink{classPoco_1_1File}{File}} stream buffer. Returns true if successful, false otherwise. \mbox{\Hypertarget{classPoco_1_1FileStreamBuf_a58feb5652259bc57ae3e6c9fc7fb8a85}\label{classPoco_1_1FileStreamBuf_a58feb5652259bc57ae3e6c9fc7fb8a85}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!seekpos@{seekpos}}
+\index{seekpos@{seekpos}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{seekpos()}{seekpos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::streampos Poco\+::\+File\+Stream\+Buf\+::seekpos (\begin{DoxyParamCaption}\item[{std\+::streampos}]{pos,  }\item[{std\+::ios\+::openmode}]{mode = {\ttfamily std\+:\+:ios\+:\+:in$\vert$std\+:\+:ios\+:\+:out} }\end{DoxyParamCaption})}
+
+
+
+change position by offset, according to way and mode 
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_a58feb5652259bc57ae3e6c9fc7fb8a85}\label{classPoco_1_1FileStreamBuf_a58feb5652259bc57ae3e6c9fc7fb8a85}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!seekpos@{seekpos}}
+\index{seekpos@{seekpos}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{seekpos()}{seekpos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::streampos Poco\+::\+File\+Stream\+Buf\+::seekpos (\begin{DoxyParamCaption}\item[{std\+::streampos}]{pos,  }\item[{std\+::ios\+::openmode}]{mode = {\ttfamily std\+:\+:ios\+:\+:in$\vert$std\+:\+:ios\+:\+:out} }\end{DoxyParamCaption})}
+
+
+
+Change position by offset, according to way and mode. 
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_abb0bc2319b04734ab694ed1f672f57f8}\label{classPoco_1_1FileStreamBuf_abb0bc2319b04734ab694ed1f672f57f8}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!writeToDevice@{writeToDevice}}
+\index{writeToDevice@{writeToDevice}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{writeToDevice()}{writeToDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Poco\+::\+File\+Stream\+Buf\+::write\+To\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1FileStreamBuf_abb0bc2319b04734ab694ed1f672f57f8}\label{classPoco_1_1FileStreamBuf_abb0bc2319b04734ab694ed1f672f57f8}} 
+\index{Poco::FileStreamBuf@{Poco::FileStreamBuf}!writeToDevice@{writeToDevice}}
+\index{writeToDevice@{writeToDevice}!Poco::FileStreamBuf@{Poco::FileStreamBuf}}
+\doxysubsubsection{\texorpdfstring{writeToDevice()}{writeToDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Poco\+::\+File\+Stream\+Buf\+::write\+To\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{FileStream__POSIX_8h}{File\+Stream\+\_\+\+P\+O\+S\+I\+X.\+h}}\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{FileStream__WIN32_8h}{File\+Stream\+\_\+\+W\+I\+N32.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,165 @@
+\hypertarget{classIoT_1_1Devices_1_1IBarcodeReader}{}\doxysection{IoT\+::Devices\+::I\+Barcode\+Reader Class Reference}
+\label{classIoT_1_1Devices_1_1IBarcodeReader}\index{IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}}
+
+
+{\ttfamily \#include $<$I\+Barcode\+Reader.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::I\+Barcode\+Reader\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::I\+Barcode\+Reader\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader}{I\+Barcode\+Reader}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader_a7efc1aadb78cc7d5f2f8b482ff4286a7}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader_a21b069855335ed90bff0d552078d2950}{I\+Barcode\+Reader}} ()
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader_a08dfa67fc6963f9b4599027bfa82fc96}{$\sim$\+I\+Barcode\+Reader}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader}{I\+Barcode\+Reader}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader_a22db665e38d736db652bdab34c6ce11a}{isA}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&other\+Type) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader}{I\+Barcode\+Reader}}. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader_afb00b0800ee96b7ddc6fa4daa33ed2f2}{remoting\+\_\+\+\_\+enable\+Events}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}} p\+Listener, bool enable=bool(true))=0
+\begin{DoxyCompactList}\small\item\em Returns true if the class is a subclass of the class given by other\+Type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader_a4354782be492386f329911c0a169b791}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the Type\+Id of the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader_a95ca08428fa95530339330714c1d3c14}{remoting\+\_\+\+\_\+type\+Id}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Devices_1_1BarcodeReadEvent}{Barcode\+Read\+Event}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader_a22de9ad89a62c140a4f24aa3ffe76b70}{barcode\+Read}}
+\begin{DoxyCompactList}\small\item\em Returns the type information for the object\textquotesingle{}s class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The base class for barcode reader devices. \begin{DoxyVerb}Only a single event, barcodeRead, is supported.
+Any device-specific configuration should be
+done via device features and properties. 
+\end{DoxyVerb}
+ 
+
+Definition at line 31 of file I\+Barcode\+Reader.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IBarcodeReader_a7efc1aadb78cc7d5f2f8b482ff4286a7}\label{classIoT_1_1Devices_1_1IBarcodeReader_a7efc1aadb78cc7d5f2f8b482ff4286a7}} 
+\index{IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader}{I\+Barcode\+Reader}}$>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader_a7efc1aadb78cc7d5f2f8b482ff4286a7}{Io\+T\+::\+Devices\+::\+I\+Barcode\+Reader\+::\+Ptr}}}
+
+
+
+Definition at line 39 of file I\+Barcode\+Reader.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IBarcodeReader_a21b069855335ed90bff0d552078d2950}\label{classIoT_1_1Devices_1_1IBarcodeReader_a21b069855335ed90bff0d552078d2950}} 
+\index{IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}!IBarcodeReader@{IBarcodeReader}}
+\index{IBarcodeReader@{IBarcodeReader}!IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}}
+\doxysubsubsection{\texorpdfstring{IBarcodeReader()}{IBarcodeReader()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+I\+Barcode\+Reader\+::\+I\+Barcode\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IBarcodeReader_a08dfa67fc6963f9b4599027bfa82fc96}\label{classIoT_1_1Devices_1_1IBarcodeReader_a08dfa67fc6963f9b4599027bfa82fc96}} 
+\index{IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}!````~IBarcodeReader@{$\sim$IBarcodeReader}}
+\index{````~IBarcodeReader@{$\sim$IBarcodeReader}!IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}}
+\doxysubsubsection{\texorpdfstring{$\sim$IBarcodeReader()}{~IBarcodeReader()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Devices\+::\+I\+Barcode\+Reader\+::$\sim$\+I\+Barcode\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader}{I\+Barcode\+Reader}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IBarcodeReader_a22db665e38d736db652bdab34c6ce11a}\label{classIoT_1_1Devices_1_1IBarcodeReader_a22db665e38d736db652bdab34c6ce11a}} 
+\index{IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}!isA@{isA}}
+\index{isA@{isA}!IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}}
+\doxysubsubsection{\texorpdfstring{isA()}{isA()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+Devices\+::\+I\+Barcode\+Reader\+::isA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&}]{other\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1IBarcodeReader}{I\+Barcode\+Reader}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a46c8cf8f6356230490f9ba59a5cb40e2}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IBarcodeReader_afb00b0800ee96b7ddc6fa4daa33ed2f2}\label{classIoT_1_1Devices_1_1IBarcodeReader_afb00b0800ee96b7ddc6fa4daa33ed2f2}} 
+\index{IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}!remoting\_\_enableEvents@{remoting\_\_enableEvents}}
+\index{remoting\_\_enableEvents@{remoting\_\_enableEvents}!IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_enableEvents()}{remoting\_\_enableEvents()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Devices\+::\+I\+Barcode\+Reader\+::remoting\+\_\+\+\_\+enable\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}}}]{p\+Listener,  }\item[{bool}]{enable = {\ttfamily bool(true)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns true if the class is a subclass of the class given by other\+Type. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1Devices_1_1BarcodeReaderRemoteObject_ab423add819a6c8291beb7a76d5faa7ea}{Io\+T\+::\+Devices\+::\+Barcode\+Reader\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IBarcodeReader_a95ca08428fa95530339330714c1d3c14}\label{classIoT_1_1Devices_1_1IBarcodeReader_a95ca08428fa95530339330714c1d3c14}} 
+\index{IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}}\& Io\+T\+::\+Devices\+::\+I\+Barcode\+Reader\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Enable or disable delivery of remote events.
+
+The given Listener instance must implement the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventListener}{Poco\+::\+Remoting\+N\+G\+::\+Event\+Listener}} interface, otherwise this method will fail with a Remoting\+Exception.
+
+This method is only used with Proxy objects; calling this method on a Remote\+Object will do nothing. Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IBarcodeReader_a4354782be492386f329911c0a169b791}\label{classIoT_1_1Devices_1_1IBarcodeReader_a4354782be492386f329911c0a169b791}} 
+\index{IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}!type@{type}}
+\index{type@{type}!IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info\& Io\+T\+::\+Devices\+::\+I\+Barcode\+Reader\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the Type\+Id of the class. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a71ff82992f3ecfa2de28d647b15eede8}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1IBarcodeReader_a22de9ad89a62c140a4f24aa3ffe76b70}\label{classIoT_1_1Devices_1_1IBarcodeReader_a22de9ad89a62c140a4f24aa3ffe76b70}} 
+\index{IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}!barcodeRead@{barcodeRead}}
+\index{barcodeRead@{barcodeRead}!IoT::Devices::IBarcodeReader@{IoT::Devices::IBarcodeReader}}
+\doxysubsubsection{\texorpdfstring{barcodeRead}{barcodeRead}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Devices_1_1BarcodeReadEvent}{Barcode\+Read\+Event}} $>$ Io\+T\+::\+Devices\+::\+I\+Barcode\+Reader\+::barcode\+Read}
+
+
+
+Returns the type information for the object\textquotesingle{}s class. 
+
+
+
+Definition at line 65 of file I\+Barcode\+Reader.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{IBarcodeReader_8h}{I\+Barcode\+Reader.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,470 @@
+\hypertarget{classIoT_1_1XBee_1_1XBeeFrame}{}\doxysection{IoT\+::X\+Bee\+::X\+Bee\+Frame Class Reference}
+\label{classIoT_1_1XBee_1_1XBeeFrame}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+
+
+This class encapsulates a Digi \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} A\+PI frame.  
+
+
+
+
+{\ttfamily \#include $<$X\+Bee\+Frame.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a7357bf97835580cd6438638f2dbacdc9a2cf3583ecf4ce103612646e99a6dae00}{X\+B\+E\+E\+\_\+\+M\+A\+X\+\_\+\+F\+R\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}} = 1024, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a7357bf97835580cd6438638f2dbacdc9a24aa6a16593e0549ef3ec4999e57e7d3}{X\+B\+E\+E\+\_\+\+M\+A\+X\+\_\+\+D\+A\+T\+A\+\_\+\+L\+E\+N\+G\+TH}} = X\+B\+E\+E\+\_\+\+M\+A\+X\+\_\+\+F\+R\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH -\/ 5, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a7357bf97835580cd6438638f2dbacdc9a1b2790f2ba1f17b9c4f2a0d4e6fb63f6}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+S\+T\+A\+R\+T\+\_\+\+D\+E\+L\+IM}} = 0x7E
+ \}
+\item 
+enum \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7}{Frame\+Type}} \{ \newline
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ab8273478092f02920f39199b07ae495b}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+64\+B\+I\+T\+\_\+\+A\+D\+D\+R\+E\+SS}} = 0x00, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7acea49acec0d64ef8b505369fd3bd4470}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+16\+B\+I\+T\+\_\+\+A\+D\+D\+R\+E\+SS}} = 0x01, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a86340267ffd1a9780278a8043a604f6e}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+A\+T\+\_\+\+C\+O\+M\+M\+A\+ND}} = 0x08, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a9e36f3f7992108260066782fe95e5c70}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+A\+T\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+\+V\+A\+L\+UE}} = 0x09, 
+\newline
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a82756d72b4ae52629ca302c0b7d0aede}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+Z\+I\+G\+B\+E\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+\_\+\+R\+E\+Q\+U\+E\+ST}} = 0x10, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ac033f4d454966f78a549a0fe307bb753}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+E\+X\+P\+L\+\_\+\+A\+D\+D\+R\+\_\+\+Z\+I\+G\+B\+E\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+F\+R\+A\+ME}} = 0x11, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a9ec2f7d3e76100328f9cc339127a98c7}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+A\+T\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+Q\+U\+E\+ST}} = 0x17, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a22cf31b4c886029eccf16b6503a6c76f}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+R\+O\+U\+TE}} = 0x21, 
+\newline
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a07b8ba220b0d7b38abc5938175b4ebd0}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+64\+B\+I\+T\+\_\+\+A\+D\+D\+R\+E\+SS}} = 0x80, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ae0ba13af5d2b7c7fbd919fb00254c3cc}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+16\+B\+I\+T\+\_\+\+A\+D\+D\+R\+E\+SS}} = 0x81, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ab4cfbc02efc0a91e1d59e0f90bb548e6}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+64\+B\+I\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+IO}} = 0x82, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7add22e6d42c3a2af59a2e48263b29cb63}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+16\+B\+I\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+IO}} = 0x83, 
+\newline
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7af9fc690b490422031be7e74b1c6b0a52}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+A\+T\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} = 0x88, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a4e0016bb0df55e7d6ef66b809ad3f902}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+M\+O\+D\+E\+M\+\_\+\+S\+T\+A\+T\+US}} = 0x8A, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a6d2d48b13d7aa3182c56e49d09e7b417}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+Z\+I\+G\+B\+E\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+\_\+\+S\+T\+A\+T\+US}} = 0x8B, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ae52af46fc62feff94069470d500a76d3}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+\_\+\+S\+T\+A\+T\+US}} = 0x89, 
+\newline
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a875458b29decd1598ad8fc9cf654fb90}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+Z\+I\+G\+B\+E\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+P\+A\+C\+K\+ET}} = 0x90, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a31774f14887f4b14d9a93aebd352936e}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+Z\+I\+G\+B\+E\+E\+\_\+\+E\+X\+P\+L\+I\+C\+I\+T\+\_\+\+R\+X\+\_\+\+I\+N\+D\+I\+C\+A\+T\+OR}} = 0x91, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a83b1d2ab7a09a2f09f91fbbef01ab061}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+Z\+I\+G\+B\+E\+E\+\_\+\+I\+O\+\_\+\+D\+A\+T\+A\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+R\+X\+\_\+\+I\+N\+D\+I\+C\+A\+T\+OR}} = 0x92, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ae57b42f33cb8a53690f625c70b0cbb64}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+X\+B\+E\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+I\+N\+D\+I\+C\+A\+T\+OR}} = 0x94, 
+\newline
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ace3d82926ea527cd8cc44f0137bd9789}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+N\+O\+D\+E\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+OR}} = 0x95, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a2a4954d731b3a0398e878a6901f7eafb}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+A\+T\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} = 0x97, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a6387850add8c0361e2ec63b85b6b8967}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+S\+T\+A\+T\+US}} = 0x\+A0, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ae1b783d09d82b8fa56292a808c413e29}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+O\+U\+T\+E\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+I\+N\+D\+I\+C\+A\+T\+OR}} = 0x\+A1, 
+\newline
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a57c8fe0e49047315330413948a23842e}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+M\+A\+N\+Y\+\_\+\+T\+O\+\_\+\+O\+N\+E\+\_\+\+R\+O\+U\+T\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+OR}} = 0x\+A3, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a84784bcd46c87066e88aefa3b5f66975}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+I\+N\+V\+A\+L\+ID}} = 0x\+FF
+ \}
+\item 
+enum \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68f}{Read\+Status}} \{ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68fa9817aee384bcb54f9125eeb60dac47a4}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+OK}}, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68fa9eabcdb183bd085e29e5042047f9afce}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+N\+O\+T\+\_\+\+E\+N\+O\+U\+G\+H\+\_\+\+D\+A\+TA}}, 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68fa18aab3864731fb2bedda65ad7ea5f021}{X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_afcdbbe9fdddcb23662e7f90c2f37932d}{X\+Bee\+Frame}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a928be68d6f5e0382286283fbec0de139}{X\+Bee\+Frame}} (\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7}{Frame\+Type}} frame\+Type, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_ab99cb2ebbe0df653395082fb8166e6c9}{data}}, std\+::size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Creates an empty \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_ab6ec11f9ad036ae601f6d521f4b567ca}{X\+Bee\+Frame}} (\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7}{Frame\+Type}} frame\+Type, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_ab99cb2ebbe0df653395082fb8166e6c9}{data}})
+\item 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a89dd54eb7270fa81bf0bfd08349c68ed}{X\+Bee\+Frame}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&other)
+\item 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a39d5a53ac9b8d8002a5423510dd8e41e}{$\sim$\+X\+Bee\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} by copying another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \& \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_ad84cdc5423797616d9e020f29fe7c2d7}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&other)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a586ecc5f2af9d3ded5cbeaf9bd64f423}{swap}} (\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7}{Frame\+Type}} \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a0e96c9aa9598967dfb58617969388318}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Swaps the contents of the frame with another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_ab99cb2ebbe0df653395082fb8166e6c9}{data}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the frame type. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_aec4e4b68e681ab9826ee97b7b117c62d}{data\+Size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the frame data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a83b67cdf418a00600a2b85d5a6e97a77}{frame}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the frame data size. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_aa339ba90addd6f756733b045533fb9f8}{frame\+Size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the raw A\+PI frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a85193c159c93fe4a8884809dfcf41acc}{escape}} ()
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_ae318753d8cb87e4fe86a46e351555d45}{unescape}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68f}{Read\+Status}} \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_ad726e0afdbf01777b860de9f01a1ef34}{read}} (\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a83b67cdf418a00600a2b85d5a6e97a77}{frame}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$buffer, std\+::size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Returns the raw frame size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a34bdecf3f2e40cd40700a82532dce9f0}{init}} (\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7}{Frame\+Type}} frame\+Type, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_ab99cb2ebbe0df653395082fb8166e6c9}{data}}, std\+::size\+\_\+t length)
+\item 
+unsigned char \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_ae2f21c788b525f66124b31f3a717b74c}{checksum}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class encapsulates a Digi \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} A\+PI frame. 
+
+Definition at line 31 of file X\+Bee\+Frame.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a7357bf97835580cd6438638f2dbacdc9}\label{classIoT_1_1XBee_1_1XBeeFrame_a7357bf97835580cd6438638f2dbacdc9}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_MAX\_FRAME\_LENGTH@{XBEE\_MAX\_FRAME\_LENGTH}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_MAX\_FRAME\_LENGTH@{XBEE\_MAX\_FRAME\_LENGTH}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a7357bf97835580cd6438638f2dbacdc9a2cf3583ecf4ce103612646e99a6dae00}\label{classIoT_1_1XBee_1_1XBeeFrame_a7357bf97835580cd6438638f2dbacdc9a2cf3583ecf4ce103612646e99a6dae00}} 
+X\+B\+E\+E\+\_\+\+M\+A\+X\+\_\+\+F\+R\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_MAX\_DATA\_LENGTH@{XBEE\_MAX\_DATA\_LENGTH}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_MAX\_DATA\_LENGTH@{XBEE\_MAX\_DATA\_LENGTH}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a7357bf97835580cd6438638f2dbacdc9a24aa6a16593e0549ef3ec4999e57e7d3}\label{classIoT_1_1XBee_1_1XBeeFrame_a7357bf97835580cd6438638f2dbacdc9a24aa6a16593e0549ef3ec4999e57e7d3}} 
+X\+B\+E\+E\+\_\+\+M\+A\+X\+\_\+\+D\+A\+T\+A\+\_\+\+L\+E\+N\+G\+TH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_START\_DELIM@{XBEE\_FRAME\_START\_DELIM}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_START\_DELIM@{XBEE\_FRAME\_START\_DELIM}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a7357bf97835580cd6438638f2dbacdc9a1b2790f2ba1f17b9c4f2a0d4e6fb63f6}\label{classIoT_1_1XBee_1_1XBeeFrame_a7357bf97835580cd6438638f2dbacdc9a1b2790f2ba1f17b9c4f2a0d4e6fb63f6}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+S\+T\+A\+R\+T\+\_\+\+D\+E\+L\+IM&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 35 of file X\+Bee\+Frame.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!FrameType@{FrameType}}
+\index{FrameType@{FrameType}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{FrameType}{FrameType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7}{Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::\+Frame\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_TRANSMIT\_REQUEST\_64BIT\_ADDRESS@{XBEE\_FRAME\_TRANSMIT\_REQUEST\_64BIT\_ADDRESS}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_TRANSMIT\_REQUEST\_64BIT\_ADDRESS@{XBEE\_FRAME\_TRANSMIT\_REQUEST\_64BIT\_ADDRESS}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ab8273478092f02920f39199b07ae495b}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ab8273478092f02920f39199b07ae495b}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+64\+B\+I\+T\+\_\+\+A\+D\+D\+R\+E\+SS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_TRANSMIT\_REQUEST\_16BIT\_ADDRESS@{XBEE\_FRAME\_TRANSMIT\_REQUEST\_16BIT\_ADDRESS}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_TRANSMIT\_REQUEST\_16BIT\_ADDRESS@{XBEE\_FRAME\_TRANSMIT\_REQUEST\_16BIT\_ADDRESS}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7acea49acec0d64ef8b505369fd3bd4470}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7acea49acec0d64ef8b505369fd3bd4470}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+16\+B\+I\+T\+\_\+\+A\+D\+D\+R\+E\+SS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_AT\_COMMAND@{XBEE\_FRAME\_AT\_COMMAND}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_AT\_COMMAND@{XBEE\_FRAME\_AT\_COMMAND}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a86340267ffd1a9780278a8043a604f6e}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a86340267ffd1a9780278a8043a604f6e}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+A\+T\+\_\+\+C\+O\+M\+M\+A\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_AT\_COMMAND\_QUEUE\_PARAMETER\_VALUE@{XBEE\_FRAME\_AT\_COMMAND\_QUEUE\_PARAMETER\_VALUE}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_AT\_COMMAND\_QUEUE\_PARAMETER\_VALUE@{XBEE\_FRAME\_AT\_COMMAND\_QUEUE\_PARAMETER\_VALUE}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a9e36f3f7992108260066782fe95e5c70}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a9e36f3f7992108260066782fe95e5c70}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+A\+T\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+\+V\+A\+L\+UE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_ZIGBEE\_TRANSMIT\_REQUEST@{XBEE\_FRAME\_ZIGBEE\_TRANSMIT\_REQUEST}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_ZIGBEE\_TRANSMIT\_REQUEST@{XBEE\_FRAME\_ZIGBEE\_TRANSMIT\_REQUEST}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a82756d72b4ae52629ca302c0b7d0aede}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a82756d72b4ae52629ca302c0b7d0aede}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+Z\+I\+G\+B\+E\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+\_\+\+R\+E\+Q\+U\+E\+ST&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_EXPL\_ADDR\_ZIGBEE\_COMMAND\_FRAME@{XBEE\_FRAME\_EXPL\_ADDR\_ZIGBEE\_COMMAND\_FRAME}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_EXPL\_ADDR\_ZIGBEE\_COMMAND\_FRAME@{XBEE\_FRAME\_EXPL\_ADDR\_ZIGBEE\_COMMAND\_FRAME}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ac033f4d454966f78a549a0fe307bb753}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ac033f4d454966f78a549a0fe307bb753}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+E\+X\+P\+L\+\_\+\+A\+D\+D\+R\+\_\+\+Z\+I\+G\+B\+E\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+F\+R\+A\+ME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_REMOTE\_AT\_COMMAND\_REQUEST@{XBEE\_FRAME\_REMOTE\_AT\_COMMAND\_REQUEST}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_REMOTE\_AT\_COMMAND\_REQUEST@{XBEE\_FRAME\_REMOTE\_AT\_COMMAND\_REQUEST}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a9ec2f7d3e76100328f9cc339127a98c7}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a9ec2f7d3e76100328f9cc339127a98c7}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+A\+T\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+Q\+U\+E\+ST&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_CREATE\_SOURCE\_ROUTE@{XBEE\_FRAME\_CREATE\_SOURCE\_ROUTE}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_CREATE\_SOURCE\_ROUTE@{XBEE\_FRAME\_CREATE\_SOURCE\_ROUTE}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a22cf31b4c886029eccf16b6503a6c76f}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a22cf31b4c886029eccf16b6503a6c76f}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+R\+O\+U\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_RECEIVE\_PACKET\_64BIT\_ADDRESS@{XBEE\_FRAME\_RECEIVE\_PACKET\_64BIT\_ADDRESS}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_RECEIVE\_PACKET\_64BIT\_ADDRESS@{XBEE\_FRAME\_RECEIVE\_PACKET\_64BIT\_ADDRESS}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a07b8ba220b0d7b38abc5938175b4ebd0}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a07b8ba220b0d7b38abc5938175b4ebd0}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+64\+B\+I\+T\+\_\+\+A\+D\+D\+R\+E\+SS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_RECEIVE\_PACKET\_16BIT\_ADDRESS@{XBEE\_FRAME\_RECEIVE\_PACKET\_16BIT\_ADDRESS}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_RECEIVE\_PACKET\_16BIT\_ADDRESS@{XBEE\_FRAME\_RECEIVE\_PACKET\_16BIT\_ADDRESS}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ae0ba13af5d2b7c7fbd919fb00254c3cc}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ae0ba13af5d2b7c7fbd919fb00254c3cc}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+16\+B\+I\+T\+\_\+\+A\+D\+D\+R\+E\+SS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_RECEIVE\_PACKET\_64BIT\_ADDRESS\_IO@{XBEE\_FRAME\_RECEIVE\_PACKET\_64BIT\_ADDRESS\_IO}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_RECEIVE\_PACKET\_64BIT\_ADDRESS\_IO@{XBEE\_FRAME\_RECEIVE\_PACKET\_64BIT\_ADDRESS\_IO}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ab4cfbc02efc0a91e1d59e0f90bb548e6}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ab4cfbc02efc0a91e1d59e0f90bb548e6}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+64\+B\+I\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+IO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_RECEIVE\_PACKET\_16BIT\_ADDRESS\_IO@{XBEE\_FRAME\_RECEIVE\_PACKET\_16BIT\_ADDRESS\_IO}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_RECEIVE\_PACKET\_16BIT\_ADDRESS\_IO@{XBEE\_FRAME\_RECEIVE\_PACKET\_16BIT\_ADDRESS\_IO}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7add22e6d42c3a2af59a2e48263b29cb63}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7add22e6d42c3a2af59a2e48263b29cb63}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+16\+B\+I\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+IO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_AT\_COMMAND\_RESPONSE@{XBEE\_FRAME\_AT\_COMMAND\_RESPONSE}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_AT\_COMMAND\_RESPONSE@{XBEE\_FRAME\_AT\_COMMAND\_RESPONSE}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7af9fc690b490422031be7e74b1c6b0a52}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7af9fc690b490422031be7e74b1c6b0a52}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+A\+T\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_MODEM\_STATUS@{XBEE\_FRAME\_MODEM\_STATUS}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_MODEM\_STATUS@{XBEE\_FRAME\_MODEM\_STATUS}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a4e0016bb0df55e7d6ef66b809ad3f902}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a4e0016bb0df55e7d6ef66b809ad3f902}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+M\+O\+D\+E\+M\+\_\+\+S\+T\+A\+T\+US&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_ZIGBEE\_TRANSMIT\_STATUS@{XBEE\_FRAME\_ZIGBEE\_TRANSMIT\_STATUS}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_ZIGBEE\_TRANSMIT\_STATUS@{XBEE\_FRAME\_ZIGBEE\_TRANSMIT\_STATUS}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a6d2d48b13d7aa3182c56e49d09e7b417}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a6d2d48b13d7aa3182c56e49d09e7b417}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+Z\+I\+G\+B\+E\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+\_\+\+S\+T\+A\+T\+US&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_TRANSMIT\_STATUS@{XBEE\_FRAME\_TRANSMIT\_STATUS}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_TRANSMIT\_STATUS@{XBEE\_FRAME\_TRANSMIT\_STATUS}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ae52af46fc62feff94069470d500a76d3}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ae52af46fc62feff94069470d500a76d3}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+\_\+\+S\+T\+A\+T\+US&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_ZIGBEE\_RECEIVE\_PACKET@{XBEE\_FRAME\_ZIGBEE\_RECEIVE\_PACKET}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_ZIGBEE\_RECEIVE\_PACKET@{XBEE\_FRAME\_ZIGBEE\_RECEIVE\_PACKET}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a875458b29decd1598ad8fc9cf654fb90}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a875458b29decd1598ad8fc9cf654fb90}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+Z\+I\+G\+B\+E\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+P\+A\+C\+K\+ET&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_ZIGBEE\_EXPLICIT\_RX\_INDICATOR@{XBEE\_FRAME\_ZIGBEE\_EXPLICIT\_RX\_INDICATOR}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_ZIGBEE\_EXPLICIT\_RX\_INDICATOR@{XBEE\_FRAME\_ZIGBEE\_EXPLICIT\_RX\_INDICATOR}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a31774f14887f4b14d9a93aebd352936e}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a31774f14887f4b14d9a93aebd352936e}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+Z\+I\+G\+B\+E\+E\+\_\+\+E\+X\+P\+L\+I\+C\+I\+T\+\_\+\+R\+X\+\_\+\+I\+N\+D\+I\+C\+A\+T\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_ZIGBEE\_IO\_DATA\_SAMPLE\_RX\_INDICATOR@{XBEE\_FRAME\_ZIGBEE\_IO\_DATA\_SAMPLE\_RX\_INDICATOR}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_ZIGBEE\_IO\_DATA\_SAMPLE\_RX\_INDICATOR@{XBEE\_FRAME\_ZIGBEE\_IO\_DATA\_SAMPLE\_RX\_INDICATOR}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a83b1d2ab7a09a2f09f91fbbef01ab061}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a83b1d2ab7a09a2f09f91fbbef01ab061}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+Z\+I\+G\+B\+E\+E\+\_\+\+I\+O\+\_\+\+D\+A\+T\+A\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+R\+X\+\_\+\+I\+N\+D\+I\+C\+A\+T\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_XBEE\_SENSOR\_READ\_INDICATOR@{XBEE\_FRAME\_XBEE\_SENSOR\_READ\_INDICATOR}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_XBEE\_SENSOR\_READ\_INDICATOR@{XBEE\_FRAME\_XBEE\_SENSOR\_READ\_INDICATOR}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ae57b42f33cb8a53690f625c70b0cbb64}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ae57b42f33cb8a53690f625c70b0cbb64}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+X\+B\+E\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+I\+N\+D\+I\+C\+A\+T\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_NODE\_IDENTIFICATION\_INDICATOR@{XBEE\_FRAME\_NODE\_IDENTIFICATION\_INDICATOR}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_NODE\_IDENTIFICATION\_INDICATOR@{XBEE\_FRAME\_NODE\_IDENTIFICATION\_INDICATOR}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ace3d82926ea527cd8cc44f0137bd9789}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ace3d82926ea527cd8cc44f0137bd9789}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+N\+O\+D\+E\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_REMOTE\_AT\_COMMAND\_RESPONSE@{XBEE\_FRAME\_REMOTE\_AT\_COMMAND\_RESPONSE}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_REMOTE\_AT\_COMMAND\_RESPONSE@{XBEE\_FRAME\_REMOTE\_AT\_COMMAND\_RESPONSE}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a2a4954d731b3a0398e878a6901f7eafb}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a2a4954d731b3a0398e878a6901f7eafb}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+A\+T\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_OTA\_FIRMWARE\_UPDATE\_STATUS@{XBEE\_FRAME\_OTA\_FIRMWARE\_UPDATE\_STATUS}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_OTA\_FIRMWARE\_UPDATE\_STATUS@{XBEE\_FRAME\_OTA\_FIRMWARE\_UPDATE\_STATUS}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a6387850add8c0361e2ec63b85b6b8967}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a6387850add8c0361e2ec63b85b6b8967}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+S\+T\+A\+T\+US&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_ROUTE\_RECORD\_INDICATOR@{XBEE\_FRAME\_ROUTE\_RECORD\_INDICATOR}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_ROUTE\_RECORD\_INDICATOR@{XBEE\_FRAME\_ROUTE\_RECORD\_INDICATOR}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ae1b783d09d82b8fa56292a808c413e29}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7ae1b783d09d82b8fa56292a808c413e29}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+R\+O\+U\+T\+E\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+I\+N\+D\+I\+C\+A\+T\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_MANY\_TO\_ONE\_ROUTE\_REQUEST\_INDICATOR@{XBEE\_FRAME\_MANY\_TO\_ONE\_ROUTE\_REQUEST\_INDICATOR}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_MANY\_TO\_ONE\_ROUTE\_REQUEST\_INDICATOR@{XBEE\_FRAME\_MANY\_TO\_ONE\_ROUTE\_REQUEST\_INDICATOR}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a57c8fe0e49047315330413948a23842e}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a57c8fe0e49047315330413948a23842e}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+M\+A\+N\+Y\+\_\+\+T\+O\+\_\+\+O\+N\+E\+\_\+\+R\+O\+U\+T\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_INVALID@{XBEE\_FRAME\_INVALID}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_INVALID@{XBEE\_FRAME\_INVALID}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a84784bcd46c87066e88aefa3b5f66975}\label{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7a84784bcd46c87066e88aefa3b5f66975}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+I\+N\+V\+A\+L\+ID&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 42 of file X\+Bee\+Frame.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68f}\label{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68f}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!ReadStatus@{ReadStatus}}
+\index{ReadStatus@{ReadStatus}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{ReadStatus}{ReadStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68f}{Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::\+Read\+Status}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_OK@{XBEE\_FRAME\_OK}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_OK@{XBEE\_FRAME\_OK}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68fa9817aee384bcb54f9125eeb60dac47a4}\label{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68fa9817aee384bcb54f9125eeb60dac47a4}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+OK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_NOT\_ENOUGH\_DATA@{XBEE\_FRAME\_NOT\_ENOUGH\_DATA}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_NOT\_ENOUGH\_DATA@{XBEE\_FRAME\_NOT\_ENOUGH\_DATA}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68fa9eabcdb183bd085e29e5042047f9afce}\label{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68fa9eabcdb183bd085e29e5042047f9afce}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+N\+O\+T\+\_\+\+E\+N\+O\+U\+G\+H\+\_\+\+D\+A\+TA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBEE\_FRAME\_NOT\_FOUND@{XBEE\_FRAME\_NOT\_FOUND}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBEE\_FRAME\_NOT\_FOUND@{XBEE\_FRAME\_NOT\_FOUND}}}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68fa18aab3864731fb2bedda65ad7ea5f021}\label{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68fa18aab3864731fb2bedda65ad7ea5f021}} 
+X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 72 of file X\+Bee\+Frame.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_afcdbbe9fdddcb23662e7f90c2f37932d}\label{classIoT_1_1XBee_1_1XBeeFrame_afcdbbe9fdddcb23662e7f90c2f37932d}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBeeFrame@{XBeeFrame}}
+\index{XBeeFrame@{XBeeFrame}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{XBeeFrame()}{XBeeFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::\+X\+Bee\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a928be68d6f5e0382286283fbec0de139}\label{classIoT_1_1XBee_1_1XBeeFrame_a928be68d6f5e0382286283fbec0de139}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBeeFrame@{XBeeFrame}}
+\index{XBeeFrame@{XBeeFrame}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{XBeeFrame()}{XBeeFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::\+X\+Bee\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7}{Frame\+Type}}}]{frame\+Type,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Creates an empty \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}}. 
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_ab6ec11f9ad036ae601f6d521f4b567ca}\label{classIoT_1_1XBee_1_1XBeeFrame_ab6ec11f9ad036ae601f6d521f4b567ca}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBeeFrame@{XBeeFrame}}
+\index{XBeeFrame@{XBeeFrame}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{XBeeFrame()}{XBeeFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::\+X\+Bee\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7}{Frame\+Type}}}]{frame\+Type,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{data }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} of the given type, with the given frame data. \mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a89dd54eb7270fa81bf0bfd08349c68ed}\label{classIoT_1_1XBee_1_1XBeeFrame_a89dd54eb7270fa81bf0bfd08349c68ed}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!XBeeFrame@{XBeeFrame}}
+\index{XBeeFrame@{XBeeFrame}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{XBeeFrame()}{XBeeFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::\+X\+Bee\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&}]{other }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} of the given type, with the given frame data. \mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a39d5a53ac9b8d8002a5423510dd8e41e}\label{classIoT_1_1XBee_1_1XBeeFrame_a39d5a53ac9b8d8002a5423510dd8e41e}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!````~XBeeFrame@{$\sim$XBeeFrame}}
+\index{````~XBeeFrame@{$\sim$XBeeFrame}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{$\sim$XBeeFrame()}{~XBeeFrame()}}
+{\footnotesize\ttfamily Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::$\sim$\+X\+Bee\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} by copying another one. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_ae2f21c788b525f66124b31f3a717b74c}\label{classIoT_1_1XBee_1_1XBeeFrame_ae2f21c788b525f66124b31f3a717b74c}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!checksum@{checksum}}
+\index{checksum@{checksum}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{checksum()}{checksum()}}
+{\footnotesize\ttfamily unsigned char Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::checksum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 187 of file X\+Bee\+Frame.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_ab99cb2ebbe0df653395082fb8166e6c9}\label{classIoT_1_1XBee_1_1XBeeFrame_ab99cb2ebbe0df653395082fb8166e6c9}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!data@{data}}
+\index{data@{data}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the frame type. 
+
+
+
+Definition at line 163 of file X\+Bee\+Frame.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_aec4e4b68e681ab9826ee97b7b117c62d}\label{classIoT_1_1XBee_1_1XBeeFrame_aec4e4b68e681ab9826ee97b7b117c62d}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!dataSize@{dataSize}}
+\index{dataSize@{dataSize}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{dataSize()}{dataSize()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::data\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a pointer to the frame data. 
+
+
+
+Definition at line 169 of file X\+Bee\+Frame.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a85193c159c93fe4a8884809dfcf41acc}\label{classIoT_1_1XBee_1_1XBeeFrame_a85193c159c93fe4a8884809dfcf41acc}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!escape@{escape}}
+\index{escape@{escape}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{escape()}{escape()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::escape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Attempts to read a frame from the given buffer.
+
+Returns\+:
+\begin{DoxyItemize}
+\item X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+OK if a valid frame was found.
+\item X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+N\+O\+T\+\_\+\+E\+N\+O\+U\+G\+H\+\_\+\+D\+A\+TA if the buffer does not contain enough data to read the entire frame. Retry again with a buffer containing more data.
+\item X\+B\+E\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND if no valid frame was found. 
+\end{DoxyItemize}\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a83b67cdf418a00600a2b85d5a6e97a77}\label{classIoT_1_1XBee_1_1XBeeFrame_a83b67cdf418a00600a2b85d5a6e97a77}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!frame@{frame}}
+\index{frame@{frame}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{frame()}{frame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the frame data size. 
+
+
+
+Definition at line 175 of file X\+Bee\+Frame.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_aa339ba90addd6f756733b045533fb9f8}\label{classIoT_1_1XBee_1_1XBeeFrame_aa339ba90addd6f756733b045533fb9f8}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!frameSize@{frameSize}}
+\index{frameSize@{frameSize}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{frameSize()}{frameSize()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::frame\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a pointer to the raw A\+PI frame. 
+
+
+
+Definition at line 181 of file X\+Bee\+Frame.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a34bdecf3f2e40cd40700a82532dce9f0}\label{classIoT_1_1XBee_1_1XBeeFrame_a34bdecf3f2e40cd40700a82532dce9f0}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!init@{init}}
+\index{init@{init}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7}{Frame\+Type}}}]{frame\+Type,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unescapes the frame, if AP=2 A\+PI mode is used.
+
+See \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a85193c159c93fe4a8884809dfcf41acc}{escape()}} for more information. \mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_ad84cdc5423797616d9e020f29fe7c2d7}\label{classIoT_1_1XBee_1_1XBeeFrame_ad84cdc5423797616d9e020f29fe7c2d7}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!operator=@{operator=}}
+\index{operator=@{operator=}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}}\& Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}}. 
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_ad726e0afdbf01777b860de9f01a1ef34}\label{classIoT_1_1XBee_1_1XBeeFrame_ad726e0afdbf01777b860de9f01a1ef34}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!read@{read}}
+\index{read@{read}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a75b9e371bf8bd7a4fa28a7015b5da68f}{Read\+Status}} Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&}]{frame,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{buffer,  }\item[{std\+::size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the raw frame size. 
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a586ecc5f2af9d3ded5cbeaf9bd64f423}\label{classIoT_1_1XBee_1_1XBeeFrame_a586ecc5f2af9d3ded5cbeaf9bd64f423}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!swap@{swap}}
+\index{swap@{swap}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_a0e96c9aa9598967dfb58617969388318}\label{classIoT_1_1XBee_1_1XBeeFrame_a0e96c9aa9598967dfb58617969388318}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!type@{type}}
+\index{type@{type}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame_a4586c66529a0a52ad4ddf1f268e4dba7}{X\+Bee\+Frame\+::\+Frame\+Type}} Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Swaps the contents of the frame with another one. 
+
+
+
+Definition at line 157 of file X\+Bee\+Frame.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeeFrame_ae318753d8cb87e4fe86a46e351555d45}\label{classIoT_1_1XBee_1_1XBeeFrame_ae318753d8cb87e4fe86a46e351555d45}} 
+\index{IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}!unescape@{unescape}}
+\index{unescape@{unescape}!IoT::XBee::XBeeFrame@{IoT::XBee::XBeeFrame}}
+\doxysubsubsection{\texorpdfstring{unescape()}{unescape()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Frame\+::unescape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Escapes the frame, as required for AP=2 A\+PI mode.
+
+When sending or receiving a U\+A\+RT data frame, specific data values must be escaped (flagged) so they do not interfere with the U\+A\+RT or U\+A\+RT data frame operation. To escape an interfering data byte, insert 0x7D and follow it with the byte to be escaped X\+O\+R’d with 0x20.
+
+Data bytes that need to be escaped\+:
+\begin{DoxyItemize}
+\item 0x7E – Frame Delimiter
+\item 0x7D – Escape
+\item 0x11 – X\+ON
+\item 0x13 – X\+O\+FF 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+X\+Bee/\mbox{\hyperlink{XBeeFrame_8h}{X\+Bee\+Frame.\+h}}\end{DoxyCompactItemize}

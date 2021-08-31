@@ -1,0 +1,265 @@
+\hypertarget{classPoco_1_1Crypto_1_1Cipher}{}\doxysection{Poco\+::Crypto\+::Cipher Class Reference}
+\label{classPoco_1_1Crypto_1_1Cipher}\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+
+
+{\ttfamily \#include $<$Cipher.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Crypto\+::Cipher\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Crypto\+::Cipher\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389b}{Encoding}} \{ \newline
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baed27224b9338bd41ee0ce1623e1e3bb6}{E\+N\+C\+\_\+\+N\+O\+NE}} = 0x00, 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389bac1c23798a802015c03159d90ec733324}{E\+N\+C\+\_\+\+B\+A\+S\+E64}} = 0x01, 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baf5d35750bf272cd7f3e85ed9e6573dbf}{E\+N\+C\+\_\+\+B\+I\+N\+H\+EX}} = 0x02, 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389ba3df4453832330c6306e674bfefd7c674}{E\+N\+C\+\_\+\+B\+A\+S\+E64\+\_\+\+N\+O\+\_\+\+LF}} = 0x81, 
+\newline
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389ba8ca84518e020de5960879be8ad8b2714}{E\+N\+C\+\_\+\+B\+I\+N\+H\+E\+X\+\_\+\+N\+O\+\_\+\+LF}} = 0x82
+ \}
+\begin{DoxyCompactList}\small\item\em Transport encoding to use for \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a8effae971627f5a47245c2558035bc64}{encrypt\+String()}} and \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a813880d0d88dad75620910caa3341543}{decrypt\+String()}}. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher}{Cipher}} $>$ \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_aa26818cbe6b4a91f97dbfb098343afb4}{Ptr}}
+\item 
+typedef std\+::vector$<$ unsigned char $>$ \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a4e1cc1f29690f8bd3da71cb0e084315b}{Byte\+Vec}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a22308214487980353a7fea3927d0dac4}{$\sim$\+Cipher}} ()
+\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a3d9a190b5afb5c4187f60eb2c8a36495}{name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher}{Cipher}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}} $\ast$ \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_ad98fc14372345b2234eb4de2c5dc00de}{create\+Encryptor}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the name of the \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher}{Cipher}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}} $\ast$ \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5ff6f0b7c3eb92c908150f51e9a9fdc7}{create\+Decryptor}} ()=0
+\begin{DoxyCompactList}\small\item\em Creates an encryptor object to be used with a Crypto\+Stream. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a8effae971627f5a47245c2558035bc64}{encrypt\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&str, \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389b}{Encoding}} encoding=\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baed27224b9338bd41ee0ce1623e1e3bb6}{E\+N\+C\+\_\+\+N\+O\+NE}})
+\begin{DoxyCompactList}\small\item\em Creates a decryptor object to be used with a Crypto\+Stream. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a813880d0d88dad75620910caa3341543}{decrypt\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&str, \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389b}{Encoding}} encoding=\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baed27224b9338bd41ee0ce1623e1e3bb6}{E\+N\+C\+\_\+\+N\+O\+NE}})
+\begin{DoxyCompactList}\small\item\em Directly encrypt a string and encode it using the given encoding. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_ab135ff06757badf57e234174bf2d5348}{encrypt}} (std\+::istream \&source, std\+::ostream \&sink, \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389b}{Encoding}} encoding=\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baed27224b9338bd41ee0ce1623e1e3bb6}{E\+N\+C\+\_\+\+N\+O\+NE}})
+\begin{DoxyCompactList}\small\item\em Directly decrypt a string that is encoded with the given encoding. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_ab5401dfd5b3c82f36420541c88dac41c}{decrypt}} (std\+::istream \&source, std\+::ostream \&sink, \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389b}{Encoding}} encoding=\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baed27224b9338bd41ee0ce1623e1e3bb6}{E\+N\+C\+\_\+\+N\+O\+NE}})
+\begin{DoxyCompactList}\small\item\em Directly encrypts an input stream and encodes it using the given encoding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a2fe0fa3a8524a00fb1a60ba2664c0fc2}{Cipher}} ()
+\begin{DoxyCompactList}\small\item\em Directly decrypt an input stream that is encoded with the given encoding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the abstract base class from which all implementations of symmetric/asymmetric encryption algorithms must inherit. Use the \mbox{\hyperlink{classPoco_1_1Crypto_1_1CipherFactory}{Cipher\+Factory}} class to obtain an instance of this class\+: \begin{DoxyVerb}CipherFactory& factory = CipherFactory::defaultFactory();
+// Creates a 256-bit AES cipher
+Cipher* pCipher = factory.createCipher(CipherKey("aes-256"));
+Cipher* pRSACipher = factory.createCipher(RSAKey(RSAKey::KL_1024, RSAKey::EXP_SMALL));
+\end{DoxyVerb}
+
+
+Check the different Key constructors on how to initialize/create a key. The above example auto-\/generates random keys.
+
+Note that you won\textquotesingle{}t be able to decrypt data encrypted with a random key once the \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher}{Cipher}} is destroyed unless you persist the generated key and IV. An example usage for random keys is to encrypt data saved in a temporary file.
+
+Once your key is set up, you can use the \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher}{Cipher}} object to encrypt or decrypt strings or, in conjunction with a \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoInputStream}{Crypto\+Input\+Stream}} or a \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoOutputStream}{Crypto\+Output\+Stream}}, to encrypt streams of data.
+
+Since encrypted strings will contain arbitrary binary data that will cause problems in applications that are not binary-\/safe (eg., when sending encrypted data in e-\/mails), the \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a8effae971627f5a47245c2558035bc64}{encrypt\+String()}} and \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a813880d0d88dad75620910caa3341543}{decrypt\+String()}} can encode (or decode, respectively) encrypted data using a \char`\"{}transport encoding\char`\"{}. Supported encodings are Base64 and Bin\+Hex.
+
+The following example encrypts and decrypts a string utilizing Base64 encoding\+: \begin{DoxyVerb}std::string plainText = "This is my secret information";
+std::string encrypted = pCipher->encryptString(plainText, Cipher::ENC_BASE64);
+std::string decrypted = pCipher->decryptString(encrypted, Cipher::ENC_BASE64);
+\end{DoxyVerb}
+
+
+In order to encrypt a stream of data (eg. to encrypt files), you can use a Crypto\+Stream\+: \begin{DoxyVerb}// Create an output stream that will encrypt all data going through it
+// and write pass it to the underlying file stream.
+Poco::FileOutputStream sink("encrypted.dat");
+CryptoOutputStream encryptor(sink, pCipher->createEncryptor());
+
+Poco::FileInputStream source("source.txt");
+Poco::StreamCopier::copyStream(source, encryptor);
+
+// Always close output streams to flush all internal buffers
+encryptor.close();
+sink.close(); 
+\end{DoxyVerb}
+ 
+
+Definition at line 36 of file Cipher.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a4e1cc1f29690f8bd3da71cb0e084315b}\label{classPoco_1_1Crypto_1_1Cipher_a4e1cc1f29690f8bd3da71cb0e084315b}} 
+\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!ByteVec@{ByteVec}}
+\index{ByteVec@{ByteVec}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+\doxysubsubsection{\texorpdfstring{ByteVec}{ByteVec}}
+{\footnotesize\ttfamily typedef std\+::vector$<$unsigned char$>$ \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a4e1cc1f29690f8bd3da71cb0e084315b}{Poco\+::\+Crypto\+::\+Cipher\+::\+Byte\+Vec}}}
+
+
+
+Definition at line 88 of file Cipher.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_aa26818cbe6b4a91f97dbfb098343afb4}\label{classPoco_1_1Crypto_1_1Cipher_aa26818cbe6b4a91f97dbfb098343afb4}} 
+\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher}{Cipher}}$>$ \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_aa26818cbe6b4a91f97dbfb098343afb4}{Poco\+::\+Crypto\+::\+Cipher\+::\+Ptr}}}
+
+
+
+Definition at line 87 of file Cipher.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389b}\label{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389b}} 
+\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!Encoding@{Encoding}}
+\index{Encoding@{Encoding}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+\doxysubsubsection{\texorpdfstring{Encoding}{Encoding}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389b}{Poco\+::\+Crypto\+::\+Cipher\+::\+Encoding}}}
+
+
+
+Transport encoding to use for \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a8effae971627f5a47245c2558035bc64}{encrypt\+String()}} and \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a813880d0d88dad75620910caa3341543}{decrypt\+String()}}. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENC\_NONE@{ENC\_NONE}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!ENC\_NONE@{ENC\_NONE}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baed27224b9338bd41ee0ce1623e1e3bb6}\label{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baed27224b9338bd41ee0ce1623e1e3bb6}} 
+E\+N\+C\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENC\_BASE64@{ENC\_BASE64}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!ENC\_BASE64@{ENC\_BASE64}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389bac1c23798a802015c03159d90ec733324}\label{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389bac1c23798a802015c03159d90ec733324}} 
+E\+N\+C\+\_\+\+B\+A\+S\+E64&Plain binary output. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENC\_BINHEX@{ENC\_BINHEX}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!ENC\_BINHEX@{ENC\_BINHEX}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baf5d35750bf272cd7f3e85ed9e6573dbf}\label{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baf5d35750bf272cd7f3e85ed9e6573dbf}} 
+E\+N\+C\+\_\+\+B\+I\+N\+H\+EX&Base64-\/encoded output. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENC\_BASE64\_NO\_LF@{ENC\_BASE64\_NO\_LF}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!ENC\_BASE64\_NO\_LF@{ENC\_BASE64\_NO\_LF}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389ba3df4453832330c6306e674bfefd7c674}\label{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389ba3df4453832330c6306e674bfefd7c674}} 
+E\+N\+C\+\_\+\+B\+A\+S\+E64\+\_\+\+N\+O\+\_\+\+LF&Bin\+Hex-\/encoded output. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENC\_BINHEX\_NO\_LF@{ENC\_BINHEX\_NO\_LF}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!ENC\_BINHEX\_NO\_LF@{ENC\_BINHEX\_NO\_LF}}}\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389ba8ca84518e020de5960879be8ad8b2714}\label{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389ba8ca84518e020de5960879be8ad8b2714}} 
+E\+N\+C\+\_\+\+B\+I\+N\+H\+E\+X\+\_\+\+N\+O\+\_\+\+LF&Base64-\/encoded output, no linefeeds. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 90 of file Cipher.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a22308214487980353a7fea3927d0dac4}\label{classPoco_1_1Crypto_1_1Cipher_a22308214487980353a7fea3927d0dac4}} 
+\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!````~Cipher@{$\sim$Cipher}}
+\index{````~Cipher@{$\sim$Cipher}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+\doxysubsubsection{\texorpdfstring{$\sim$Cipher()}{~Cipher()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Crypto\+::\+Cipher\+::$\sim$\+Cipher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a2fe0fa3a8524a00fb1a60ba2664c0fc2}\label{classPoco_1_1Crypto_1_1Cipher_a2fe0fa3a8524a00fb1a60ba2664c0fc2}} 
+\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!Cipher@{Cipher}}
+\index{Cipher@{Cipher}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+\doxysubsubsection{\texorpdfstring{Cipher()}{Cipher()}}
+{\footnotesize\ttfamily Poco\+::\+Crypto\+::\+Cipher\+::\+Cipher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Directly decrypt an input stream that is encoded with the given encoding. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a5ff6f0b7c3eb92c908150f51e9a9fdc7}\label{classPoco_1_1Crypto_1_1Cipher_a5ff6f0b7c3eb92c908150f51e9a9fdc7}} 
+\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!createDecryptor@{createDecryptor}}
+\index{createDecryptor@{createDecryptor}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+\doxysubsubsection{\texorpdfstring{createDecryptor()}{createDecryptor()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}}$\ast$ Poco\+::\+Crypto\+::\+Cipher\+::create\+Decryptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates an encryptor object to be used with a Crypto\+Stream. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSACipherImpl_a2f27821ee40d6bb45a1b7613147283c9}{Poco\+::\+Crypto\+::\+R\+S\+A\+Cipher\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Crypto_1_1CipherImpl_a0c6e24f0c6e0028f4436c2e588acf4c1}{Poco\+::\+Crypto\+::\+Cipher\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_ad98fc14372345b2234eb4de2c5dc00de}\label{classPoco_1_1Crypto_1_1Cipher_ad98fc14372345b2234eb4de2c5dc00de}} 
+\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!createEncryptor@{createEncryptor}}
+\index{createEncryptor@{createEncryptor}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+\doxysubsubsection{\texorpdfstring{createEncryptor()}{createEncryptor()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1Crypto_1_1CryptoTransform}{Crypto\+Transform}}$\ast$ Poco\+::\+Crypto\+::\+Cipher\+::create\+Encryptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the name of the \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher}{Cipher}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSACipherImpl_ae9f7f95d12a7787be6f4c3ed5f7ea8d1}{Poco\+::\+Crypto\+::\+R\+S\+A\+Cipher\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Crypto_1_1CipherImpl_ab3d2556d2a8fb305af507323732f3823}{Poco\+::\+Crypto\+::\+Cipher\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_ab5401dfd5b3c82f36420541c88dac41c}\label{classPoco_1_1Crypto_1_1Cipher_ab5401dfd5b3c82f36420541c88dac41c}} 
+\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Crypto\+::\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{source,  }\item[{std\+::ostream \&}]{sink,  }\item[{\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389b}{Encoding}}}]{encoding = {\ttfamily \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baed27224b9338bd41ee0ce1623e1e3bb6}{E\+N\+C\+\_\+\+N\+O\+NE}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Directly encrypts an input stream and encodes it using the given encoding. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a813880d0d88dad75620910caa3341543}\label{classPoco_1_1Crypto_1_1Cipher_a813880d0d88dad75620910caa3341543}} 
+\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!decryptString@{decryptString}}
+\index{decryptString@{decryptString}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+\doxysubsubsection{\texorpdfstring{decryptString()}{decryptString()}}
+{\footnotesize\ttfamily virtual std\+::string Poco\+::\+Crypto\+::\+Cipher\+::decrypt\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{str,  }\item[{\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389b}{Encoding}}}]{encoding = {\ttfamily \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baed27224b9338bd41ee0ce1623e1e3bb6}{E\+N\+C\+\_\+\+N\+O\+NE}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Directly encrypt a string and encode it using the given encoding. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_ab135ff06757badf57e234174bf2d5348}\label{classPoco_1_1Crypto_1_1Cipher_ab135ff06757badf57e234174bf2d5348}} 
+\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Crypto\+::\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{source,  }\item[{std\+::ostream \&}]{sink,  }\item[{\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389b}{Encoding}}}]{encoding = {\ttfamily \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baed27224b9338bd41ee0ce1623e1e3bb6}{E\+N\+C\+\_\+\+N\+O\+NE}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Directly decrypt a string that is encoded with the given encoding. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a8effae971627f5a47245c2558035bc64}\label{classPoco_1_1Crypto_1_1Cipher_a8effae971627f5a47245c2558035bc64}} 
+\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!encryptString@{encryptString}}
+\index{encryptString@{encryptString}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+\doxysubsubsection{\texorpdfstring{encryptString()}{encryptString()}}
+{\footnotesize\ttfamily virtual std\+::string Poco\+::\+Crypto\+::\+Cipher\+::encrypt\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{str,  }\item[{\mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389b}{Encoding}}}]{encoding = {\ttfamily \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher_a5b1c8a678200c39ad2cef51d1b93389baed27224b9338bd41ee0ce1623e1e3bb6}{E\+N\+C\+\_\+\+N\+O\+NE}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a decryptor object to be used with a Crypto\+Stream. 
+
+\mbox{\Hypertarget{classPoco_1_1Crypto_1_1Cipher_a3d9a190b5afb5c4187f60eb2c8a36495}\label{classPoco_1_1Crypto_1_1Cipher_a3d9a190b5afb5c4187f60eb2c8a36495}} 
+\index{Poco::Crypto::Cipher@{Poco::Crypto::Cipher}!name@{name}}
+\index{name@{name}!Poco::Crypto::Cipher@{Poco::Crypto::Cipher}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Crypto\+::\+Cipher\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Crypto_1_1Cipher}{Cipher}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Crypto_1_1RSACipherImpl_a081f703c5fe63264f0f1926eb4ecf3be}{Poco\+::\+Crypto\+::\+R\+S\+A\+Cipher\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Crypto_1_1CipherImpl_a9026ae73def0167617cc9cb475397cb6}{Poco\+::\+Crypto\+::\+Cipher\+Impl}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Crypto/\mbox{\hyperlink{Cipher_8h}{Cipher.\+h}}\end{DoxyCompactItemize}

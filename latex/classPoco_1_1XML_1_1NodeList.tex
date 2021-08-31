@@ -1,0 +1,74 @@
+\hypertarget{classPoco_1_1XML_1_1NodeList}{}\doxysection{Poco\+::X\+ML\+::Node\+List Class Reference}
+\label{classPoco_1_1XML_1_1NodeList}\index{Poco::XML::NodeList@{Poco::XML::NodeList}}
+
+
+{\ttfamily \#include $<$Node\+List.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::Node\+List\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::X\+ML\+::Node\+List\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1NodeList_a919ca40fe2249ef3178d53e3d6b3e8d2}{item}} (unsigned long index) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual unsigned long \mbox{\hyperlink{classPoco_1_1XML_1_1NodeList_ad228d78f7ba6fff93a566b3457ced857}{length}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1XML_1_1NodeList_a2442fc82af0c885caa582c26c928fb19}{$\sim$\+Node\+List}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1XML_1_1NodeList}{Node\+List}} interface provides the abstraction of an ordered collection of nodes, without defining or constraining how this collection is implemented.
+
+The items in the \mbox{\hyperlink{classPoco_1_1XML_1_1NodeList}{Node\+List}} are accessible via an integral index, starting from 0.
+
+A \mbox{\hyperlink{classPoco_1_1XML_1_1NodeList}{Node\+List}} returned from a method must be released with a call to \mbox{\hyperlink{classPoco_1_1XML_1_1DOMObject_a59fcc225a5bcf0fcf7e49d06ecba249a}{release()}} when no longer needed. 
+
+Definition at line 34 of file Node\+List.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1NodeList_a2442fc82af0c885caa582c26c928fb19}\label{classPoco_1_1XML_1_1NodeList_a2442fc82af0c885caa582c26c928fb19}} 
+\index{Poco::XML::NodeList@{Poco::XML::NodeList}!````~NodeList@{$\sim$NodeList}}
+\index{````~NodeList@{$\sim$NodeList}!Poco::XML::NodeList@{Poco::XML::NodeList}}
+\doxysubsubsection{\texorpdfstring{$\sim$NodeList()}{~NodeList()}}
+{\footnotesize\ttfamily virtual Poco\+::\+X\+M\+L\+::\+Node\+List\+::$\sim$\+Node\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Returns the number of nodes in the list. The range of valid node indices is 0 to length -\/ 1 inclusive. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1NodeList_a919ca40fe2249ef3178d53e3d6b3e8d2}\label{classPoco_1_1XML_1_1NodeList_a919ca40fe2249ef3178d53e3d6b3e8d2}} 
+\index{Poco::XML::NodeList@{Poco::XML::NodeList}!item@{item}}
+\index{item@{item}!Poco::XML::NodeList@{Poco::XML::NodeList}}
+\doxysubsubsection{\texorpdfstring{item()}{item()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Node\+List\+::item (\begin{DoxyParamCaption}\item[{unsigned long}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1XML_1_1ElementsByTagNameListNS_ab23bbc7561061189073bad441219bc5d}{Poco\+::\+X\+M\+L\+::\+Elements\+By\+Tag\+Name\+List\+NS}}, \mbox{\hyperlink{classPoco_1_1XML_1_1ElementsByTagNameList_a40fd38ade17abfd578be3731275e0c2c}{Poco\+::\+X\+M\+L\+::\+Elements\+By\+Tag\+Name\+List}}, and \mbox{\hyperlink{classPoco_1_1XML_1_1ChildNodesList_a2320817a9f4235ff0b5c7bee4a0ec9ab}{Poco\+::\+X\+M\+L\+::\+Child\+Nodes\+List}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1NodeList_ad228d78f7ba6fff93a566b3457ced857}\label{classPoco_1_1XML_1_1NodeList_ad228d78f7ba6fff93a566b3457ced857}} 
+\index{Poco::XML::NodeList@{Poco::XML::NodeList}!length@{length}}
+\index{length@{length}!Poco::XML::NodeList@{Poco::XML::NodeList}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily virtual unsigned long Poco\+::\+X\+M\+L\+::\+Node\+List\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the index\textquotesingle{}th item in the collection. If index is greater than or equal to the number of nodes in the list, this returns null. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1XML_1_1ElementsByTagNameListNS_a10d062811afc76953761aa9a1b004a7b}{Poco\+::\+X\+M\+L\+::\+Elements\+By\+Tag\+Name\+List\+NS}}, \mbox{\hyperlink{classPoco_1_1XML_1_1ElementsByTagNameList_a155e94236cac5ba4c858bd3c11d6c18d}{Poco\+::\+X\+M\+L\+::\+Elements\+By\+Tag\+Name\+List}}, and \mbox{\hyperlink{classPoco_1_1XML_1_1ChildNodesList_a3affdb9878b4ff3eed714d24f90f0b46}{Poco\+::\+X\+M\+L\+::\+Child\+Nodes\+List}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+D\+O\+M/\mbox{\hyperlink{NodeList_8h}{Node\+List.\+h}}\end{DoxyCompactItemize}

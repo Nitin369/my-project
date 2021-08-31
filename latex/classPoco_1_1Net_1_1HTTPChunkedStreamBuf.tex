@@ -1,0 +1,97 @@
+\hypertarget{classPoco_1_1Net_1_1HTTPChunkedStreamBuf}{}\doxysection{Poco\+::Net\+::H\+T\+T\+P\+Chunked\+Stream\+Buf Class Reference}
+\label{classPoco_1_1Net_1_1HTTPChunkedStreamBuf}\index{Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}}
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+Chunked\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::H\+T\+T\+P\+Chunked\+Stream\+Buf\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::H\+T\+T\+P\+Chunked\+Stream\+Buf\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{H\+T\+T\+P\+Basic\+Stream\+Buf\+::openmode}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_a3cd3e8c3ce44424ff78563f92523c773}{openmode}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_aa2ada134292b16473723e5c5ec903f99}{H\+T\+T\+P\+Chunked\+Stream\+Buf}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession}{H\+T\+T\+P\+Session}} \&session, \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{openmode}} mode)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_a52b63fe8825e9df320a208569ffd7d9a}{$\sim$\+H\+T\+T\+P\+Chunked\+Stream\+Buf}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_a1108a24e43d2cd798a906da382077af1}{close}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_aa933119aefbabc148129ab7484832942}{read\+From\+Device}} (char $\ast$buffer, std\+::streamsize length)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_ab4c56d206cf7015a2dbe661b913d60cb}{write\+To\+Device}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$buffer, std\+::streamsize length)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is the streambuf class used for reading and writing H\+T\+TP message bodies in chunked transfer coding. 
+
+Definition at line 38 of file H\+T\+T\+P\+Chunked\+Stream.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_a3cd3e8c3ce44424ff78563f92523c773}\label{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_a3cd3e8c3ce44424ff78563f92523c773}} 
+\index{Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}!openmode@{openmode}}
+\index{openmode@{openmode}!Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}}
+\doxysubsubsection{\texorpdfstring{openmode}{openmode}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{H\+T\+T\+P\+Basic\+Stream\+Buf\+::openmode}} \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_a3cd3e8c3ce44424ff78563f92523c773}{Poco\+::\+Net\+::\+H\+T\+T\+P\+Chunked\+Stream\+Buf\+::openmode}}}
+
+
+
+Definition at line 43 of file H\+T\+T\+P\+Chunked\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_aa2ada134292b16473723e5c5ec903f99}\label{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_aa2ada134292b16473723e5c5ec903f99}} 
+\index{Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}!HTTPChunkedStreamBuf@{HTTPChunkedStreamBuf}}
+\index{HTTPChunkedStreamBuf@{HTTPChunkedStreamBuf}!Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}}
+\doxysubsubsection{\texorpdfstring{HTTPChunkedStreamBuf()}{HTTPChunkedStreamBuf()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Chunked\+Stream\+Buf\+::\+H\+T\+T\+P\+Chunked\+Stream\+Buf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession}{H\+T\+T\+P\+Session}} \&}]{session,  }\item[{\mbox{\hyperlink{classPoco_1_1BasicBufferedStreamBuf_accf972e7f04ea1c832f488d99d342cdd}{openmode}}}]{mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_a52b63fe8825e9df320a208569ffd7d9a}\label{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_a52b63fe8825e9df320a208569ffd7d9a}} 
+\index{Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}!````~HTTPChunkedStreamBuf@{$\sim$HTTPChunkedStreamBuf}}
+\index{````~HTTPChunkedStreamBuf@{$\sim$HTTPChunkedStreamBuf}!Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}}
+\doxysubsubsection{\texorpdfstring{$\sim$HTTPChunkedStreamBuf()}{~HTTPChunkedStreamBuf()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Chunked\+Stream\+Buf\+::$\sim$\+H\+T\+T\+P\+Chunked\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_a1108a24e43d2cd798a906da382077af1}\label{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_a1108a24e43d2cd798a906da382077af1}} 
+\index{Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}!close@{close}}
+\index{close@{close}!Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Chunked\+Stream\+Buf\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_aa933119aefbabc148129ab7484832942}\label{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_aa933119aefbabc148129ab7484832942}} 
+\index{Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}!readFromDevice@{readFromDevice}}
+\index{readFromDevice@{readFromDevice}!Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}}
+\doxysubsubsection{\texorpdfstring{readFromDevice()}{readFromDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+H\+T\+T\+P\+Chunked\+Stream\+Buf\+::read\+From\+Device (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_ab4c56d206cf7015a2dbe661b913d60cb}\label{classPoco_1_1Net_1_1HTTPChunkedStreamBuf_ab4c56d206cf7015a2dbe661b913d60cb}} 
+\index{Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}!writeToDevice@{writeToDevice}}
+\index{writeToDevice@{writeToDevice}!Poco::Net::HTTPChunkedStreamBuf@{Poco::Net::HTTPChunkedStreamBuf}}
+\doxysubsubsection{\texorpdfstring{writeToDevice()}{writeToDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Net\+::\+H\+T\+T\+P\+Chunked\+Stream\+Buf\+::write\+To\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{HTTPChunkedStream_8h}{H\+T\+T\+P\+Chunked\+Stream.\+h}}\end{DoxyCompactItemize}

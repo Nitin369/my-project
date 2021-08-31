@@ -1,0 +1,118 @@
+\hypertarget{classPoco_1_1Net_1_1MultipartWriter}{}\doxysection{Poco\+::Net\+::Multipart\+Writer Class Reference}
+\label{classPoco_1_1Net_1_1MultipartWriter}\index{Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}}
+
+
+{\ttfamily \#include $<$Multipart\+Writer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter_a9ae90dbe47b5f51d5c3602909bcd1409}{Multipart\+Writer}} (std\+::ostream \&ostr)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter_a961d9c12e390770d922a618f52396053}{Multipart\+Writer}} (std\+::ostream \&ostr, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter_aac9ed4288d570a227158ae0d8b21c6d8}{boundary}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter_aab56555df329678feedfde083e6ae915}{$\sim$\+Multipart\+Writer}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter_a163051f043aac77e49e8a1228f2a9a08}{next\+Part}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&header)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter}{Multipart\+Writer}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter_a43790b24cca533dbbb35710b8d6aac40}{close}} ()
+\item 
+std\+::ostream \& \mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter_a8b3a51f6e153d982172a59431636967c}{stream}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter_aac9ed4288d570a227158ae0d8b21c6d8}{boundary}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the writer\textquotesingle{}s stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter_aa0c7323d787d7720f346d60223973743}{create\+Boundary}} ()
+\begin{DoxyCompactList}\small\item\em Returns the multipart boundary used by this writer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to write M\+I\+ME multipart messages to an output stream.
+
+The format of multipart messages is described in section 5.\+1 of R\+FC 2046.
+
+To create a multipart message, first create a \mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter}{Multipart\+Writer}} object. Then, for each part, call \mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter_a163051f043aac77e49e8a1228f2a9a08}{next\+Part()}} and write the content to the output stream. Repeat for all parts. After the last part has been written, call \mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter_a43790b24cca533dbbb35710b8d6aac40}{close()}} to finish the multipart message. 
+
+Definition at line 34 of file Multipart\+Writer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MultipartWriter_a9ae90dbe47b5f51d5c3602909bcd1409}\label{classPoco_1_1Net_1_1MultipartWriter_a9ae90dbe47b5f51d5c3602909bcd1409}} 
+\index{Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}!MultipartWriter@{MultipartWriter}}
+\index{MultipartWriter@{MultipartWriter}!Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}}
+\doxysubsubsection{\texorpdfstring{MultipartWriter()}{MultipartWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Multipart\+Writer\+::\+Multipart\+Writer (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MultipartWriter_a961d9c12e390770d922a618f52396053}\label{classPoco_1_1Net_1_1MultipartWriter_a961d9c12e390770d922a618f52396053}} 
+\index{Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}!MultipartWriter@{MultipartWriter}}
+\index{MultipartWriter@{MultipartWriter}!Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}}
+\doxysubsubsection{\texorpdfstring{MultipartWriter()}{MultipartWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Multipart\+Writer\+::\+Multipart\+Writer (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{boundary }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter}{Multipart\+Writer}}, using the given output stream.
+
+Creates a random boundary string. \mbox{\Hypertarget{classPoco_1_1Net_1_1MultipartWriter_aab56555df329678feedfde083e6ae915}\label{classPoco_1_1Net_1_1MultipartWriter_aab56555df329678feedfde083e6ae915}} 
+\index{Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}!````~MultipartWriter@{$\sim$MultipartWriter}}
+\index{````~MultipartWriter@{$\sim$MultipartWriter}!Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}}
+\doxysubsubsection{\texorpdfstring{$\sim$MultipartWriter()}{~MultipartWriter()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Multipart\+Writer\+::$\sim$\+Multipart\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter}{Multipart\+Writer}}, using the given output stream and boundary string. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MultipartWriter_aac9ed4288d570a227158ae0d8b21c6d8}\label{classPoco_1_1Net_1_1MultipartWriter_aac9ed4288d570a227158ae0d8b21c6d8}} 
+\index{Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}!boundary@{boundary}}
+\index{boundary@{boundary}!Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}}
+\doxysubsubsection{\texorpdfstring{boundary()}{boundary()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Net\+::\+Multipart\+Writer\+::boundary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the writer\textquotesingle{}s stream. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MultipartWriter_a43790b24cca533dbbb35710b8d6aac40}\label{classPoco_1_1Net_1_1MultipartWriter_a43790b24cca533dbbb35710b8d6aac40}} 
+\index{Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}!close@{close}}
+\index{close@{close}!Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Multipart\+Writer\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Opens a new message part and writes the message boundary string, followed by the message header to the stream. \mbox{\Hypertarget{classPoco_1_1Net_1_1MultipartWriter_aa0c7323d787d7720f346d60223973743}\label{classPoco_1_1Net_1_1MultipartWriter_aa0c7323d787d7720f346d60223973743}} 
+\index{Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}!createBoundary@{createBoundary}}
+\index{createBoundary@{createBoundary}!Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}}
+\doxysubsubsection{\texorpdfstring{createBoundary()}{createBoundary()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Net\+::\+Multipart\+Writer\+::create\+Boundary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the multipart boundary used by this writer. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MultipartWriter_a163051f043aac77e49e8a1228f2a9a08}\label{classPoco_1_1Net_1_1MultipartWriter_a163051f043aac77e49e8a1228f2a9a08}} 
+\index{Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}!nextPart@{nextPart}}
+\index{nextPart@{nextPart}!Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}}
+\doxysubsubsection{\texorpdfstring{nextPart()}{nextPart()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Multipart\+Writer\+::next\+Part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&}]{header }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter}{Multipart\+Writer}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MultipartWriter_a8b3a51f6e153d982172a59431636967c}\label{classPoco_1_1Net_1_1MultipartWriter_a8b3a51f6e153d982172a59431636967c}} 
+\index{Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}!stream@{stream}}
+\index{stream@{stream}!Poco::Net::MultipartWriter@{Poco::Net::MultipartWriter}}
+\doxysubsubsection{\texorpdfstring{stream()}{stream()}}
+{\footnotesize\ttfamily std\+::ostream \& Poco\+::\+Net\+::\+Multipart\+Writer\+::stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Closes the multipart message and writes the terminating boundary string.
+
+Does not close the underlying stream. 
+
+Definition at line 102 of file Multipart\+Writer.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{MultipartWriter_8h}{Multipart\+Writer.\+h}}\end{DoxyCompactItemize}

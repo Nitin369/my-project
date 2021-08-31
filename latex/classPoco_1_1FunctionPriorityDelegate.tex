@@ -1,0 +1,221 @@
+\hypertarget{classPoco_1_1FunctionPriorityDelegate}{}\doxysection{Poco\+::Function\+Priority\+Delegate$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$ Class Template Reference}
+\label{classPoco_1_1FunctionPriorityDelegate}\index{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}}
+
+
+{\ttfamily \#include $<$Function\+Priority\+Delegate.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Function\+Priority\+Delegate$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Function\+Priority\+Delegate$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_af5884d22425fb310f3b47920e34d3336}{Notify\+Function}}) (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, T\+Args \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_ac3f7c3f11da5a3e8f209205cb479723b}{Function\+Priority\+Delegate}} (\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_af5884d22425fb310f3b47920e34d3336}{Notify\+Function}} function, int prio)
+\item 
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_a61cdf46b0880aa7208af4bcfe0f838b9}{Function\+Priority\+Delegate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}} \&\mbox{\hyperlink{namespacePoco_a3c92b935465d543414d807c7884396ff}{delegate}})
+\item 
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}} \& \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_a37acbfca66f13d4dddac345c34b74023}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}} \&\mbox{\hyperlink{namespacePoco_a3c92b935465d543414d807c7884396ff}{delegate}})
+\item 
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_aecfdd2acc0b20a4e78da978120dc2745}{$\sim$\+Function\+Priority\+Delegate}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_a448b899dba79d60698ca79017034aa2d}{notify}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$sender, T\+Args \&arguments)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_ac5e41b6a42a2cb73e6d5d2a85781c193}{equals}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}$<$ T\+Args $>$ \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}$<$ T\+Args $>$ $\ast$ \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_a11b9850cc20ff9d8ebf9ca6efe931d33}{clone}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Compares the \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}} with the other one for equality. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_a2b9b30d75ee29bb23949b904464061df}{disable}} ()
+\begin{DoxyCompactList}\small\item\em Returns a deep copy of the \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_af5884d22425fb310f3b47920e34d3336}{Notify\+Function}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_a4e953e880570c08c3161f23a3bdcd42c}{\+\_\+function}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_a4354552aeb80e8aada60c7b76b382c55}{\+\_\+mutex}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Args, bool use\+Sender = true, bool sender\+Is\+Const = true$>$\newline
+class Poco\+::\+Function\+Priority\+Delegate$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$}
+
+Wraps a freestanding function or static member function for use as a \mbox{\hyperlink{classPoco_1_1PriorityDelegate}{Priority\+Delegate}}. 
+
+Definition at line 32 of file Function\+Priority\+Delegate.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_af5884d22425fb310f3b47920e34d3336}\label{classPoco_1_1FunctionPriorityDelegate_af5884d22425fb310f3b47920e34d3336}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}!NotifyFunction@{NotifyFunction}}
+\index{NotifyFunction@{NotifyFunction}!Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}}
+\doxysubsubsection{\texorpdfstring{NotifyFunction}{NotifyFunction}}
+{\footnotesize\ttfamily template$<$class T\+Args , bool use\+Sender = true, bool sender\+Is\+Const = true$>$ \\
+typedef void($\ast$ \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+::Notify\+Function) (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, T\+Args \&)}
+
+
+
+Definition at line 37 of file Function\+Priority\+Delegate.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_ac3f7c3f11da5a3e8f209205cb479723b}\label{classPoco_1_1FunctionPriorityDelegate_ac3f7c3f11da5a3e8f209205cb479723b}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}!FunctionPriorityDelegate@{FunctionPriorityDelegate}}
+\index{FunctionPriorityDelegate@{FunctionPriorityDelegate}!Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}}
+\doxysubsubsection{\texorpdfstring{FunctionPriorityDelegate()}{FunctionPriorityDelegate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Args , bool use\+Sender = true, bool sender\+Is\+Const = true$>$ \\
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+::\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_af5884d22425fb310f3b47920e34d3336}{Notify\+Function}}}]{function,  }\item[{int}]{prio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 39 of file Function\+Priority\+Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_a61cdf46b0880aa7208af4bcfe0f838b9}\label{classPoco_1_1FunctionPriorityDelegate_a61cdf46b0880aa7208af4bcfe0f838b9}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}!FunctionPriorityDelegate@{FunctionPriorityDelegate}}
+\index{FunctionPriorityDelegate@{FunctionPriorityDelegate}!Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}}
+\doxysubsubsection{\texorpdfstring{FunctionPriorityDelegate()}{FunctionPriorityDelegate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Args , bool use\+Sender = true, bool sender\+Is\+Const = true$>$ \\
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+::\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$ \&}]{delegate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file Function\+Priority\+Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_aecfdd2acc0b20a4e78da978120dc2745}\label{classPoco_1_1FunctionPriorityDelegate_aecfdd2acc0b20a4e78da978120dc2745}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}!````~FunctionPriorityDelegate@{$\sim$FunctionPriorityDelegate}}
+\index{````~FunctionPriorityDelegate@{$\sim$FunctionPriorityDelegate}!Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$FunctionPriorityDelegate()}{~FunctionPriorityDelegate()}}
+{\footnotesize\ttfamily template$<$class T\+Args , bool use\+Sender = true, bool sender\+Is\+Const = true$>$ \\
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 61 of file Function\+Priority\+Delegate.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_a11b9850cc20ff9d8ebf9ca6efe931d33}\label{classPoco_1_1FunctionPriorityDelegate_a11b9850cc20ff9d8ebf9ca6efe931d33}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}!clone@{clone}}
+\index{clone@{clone}!Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class T\+Args , bool use\+Sender = true, bool sender\+Is\+Const = true$>$ \\
+\mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}$<$T\+Args$>$$\ast$ \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Compares the \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}} with the other one for equality. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractDelegate_a393d3875965620d28bd33d0aff121a45}{Poco\+::\+Abstract\+Delegate$<$ T\+Args $>$}}.
+
+
+
+Definition at line 82 of file Function\+Priority\+Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_a2b9b30d75ee29bb23949b904464061df}\label{classPoco_1_1FunctionPriorityDelegate_a2b9b30d75ee29bb23949b904464061df}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}!disable@{disable}}
+\index{disable@{disable}!Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily template$<$class T\+Args , bool use\+Sender = true, bool sender\+Is\+Const = true$>$ \\
+void \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+::disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns a deep copy of the \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractDelegate_a71bbaf832bc6020519606e557d3d0583}{Poco\+::\+Abstract\+Delegate$<$ T\+Args $>$}}.
+
+
+
+Definition at line 87 of file Function\+Priority\+Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_ac5e41b6a42a2cb73e6d5d2a85781c193}\label{classPoco_1_1FunctionPriorityDelegate_ac5e41b6a42a2cb73e6d5d2a85781c193}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}!equals@{equals}}
+\index{equals@{equals}!Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily template$<$class T\+Args , bool use\+Sender = true, bool sender\+Is\+Const = true$>$ \\
+bool \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}$<$ T\+Args $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Invokes the delegate\textquotesingle{}s callback function. Returns true if successful, or false if the delegate has been disabled or has expired. 
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractDelegate_a405a001017c3a763b81968ab2e3eb793}{Poco\+::\+Abstract\+Delegate$<$ T\+Args $>$}}.
+
+
+
+Definition at line 76 of file Function\+Priority\+Delegate.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_a448b899dba79d60698ca79017034aa2d}\label{classPoco_1_1FunctionPriorityDelegate_a448b899dba79d60698ca79017034aa2d}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}!notify@{notify}}
+\index{notify@{notify}!Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily template$<$class T\+Args , bool use\+Sender = true, bool sender\+Is\+Const = true$>$ \\
+bool \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{sender,  }\item[{T\+Args \&}]{arguments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractDelegate_ac42cac397911b41a4a79f33b62d0f569}{Poco\+::\+Abstract\+Delegate$<$ T\+Args $>$}}.
+
+
+
+Definition at line 65 of file Function\+Priority\+Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_a37acbfca66f13d4dddac345c34b74023}\label{classPoco_1_1FunctionPriorityDelegate_a37acbfca66f13d4dddac345c34b74023}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T\+Args , bool use\+Sender = true, bool sender\+Is\+Const = true$>$ \\
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}}\& \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$ \&}]{delegate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 51 of file Function\+Priority\+Delegate.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_a4e953e880570c08c3161f23a3bdcd42c}\label{classPoco_1_1FunctionPriorityDelegate_a4e953e880570c08c3161f23a3bdcd42c}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}!\_function@{\_function}}
+\index{\_function@{\_function}!Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}}
+\doxysubsubsection{\texorpdfstring{\_function}{\_function}}
+{\footnotesize\ttfamily template$<$class T\+Args , bool use\+Sender = true, bool sender\+Is\+Const = true$>$ \\
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_af5884d22425fb310f3b47920e34d3336}{Notify\+Function}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+::\+\_\+function\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 94 of file Function\+Priority\+Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_a4354552aeb80e8aada60c7b76b382c55}\label{classPoco_1_1FunctionPriorityDelegate_a4354552aeb80e8aada60c7b76b382c55}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}!\_mutex@{\_mutex}}
+\index{\_mutex@{\_mutex}!Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, useSender, senderIsConst $>$}}
+\doxysubsubsection{\texorpdfstring{\_mutex}{\_mutex}}
+{\footnotesize\ttfamily template$<$class T\+Args , bool use\+Sender = true, bool sender\+Is\+Const = true$>$ \\
+\mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, use\+Sender, sender\+Is\+Const $>$\+::\+\_\+mutex\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 95 of file Function\+Priority\+Delegate.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{FunctionPriorityDelegate_8h}{Function\+Priority\+Delegate.\+h}}\end{DoxyCompactItemize}

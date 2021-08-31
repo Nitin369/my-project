@@ -1,0 +1,278 @@
+\hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{}\doxysection{Poco\+::Basic\+Buffered\+Bidirectional\+Stream\+Buf$<$ ch, tr, ba $>$ Class Template Reference}
+\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf}\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+
+
+{\ttfamily \#include $<$Buffered\+Bidirectional\+Stream\+Buf.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Basic\+Buffered\+Bidirectional\+Stream\+Buf$<$ ch, tr, ba $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Basic\+Buffered\+Bidirectional\+Stream\+Buf$<$ ch, tr, ba $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a86bbb9e2435730d2b804eaccc3d78e10}{Basic\+Buffered\+Bidirectional\+Stream\+Buf}} (std\+::streamsize buffer\+Size, \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a78df46b205222fbc3f3fe0cdffe65e6c}{openmode}} mode)
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a504739ca368bacd0ca1e7f3fc40b8ee2}{$\sim$\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_ac17fd85cf953892c3b76da2457299be3}{int\+\_\+type}} \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_aac671a335f33c4047cd2ac3900390938}{overflow}} (\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_ac17fd85cf953892c3b76da2457299be3}{int\+\_\+type}} c)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_ac17fd85cf953892c3b76da2457299be3}{int\+\_\+type}} \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a5e0848111a95ab094b7f15d81e95de90}{underflow}} ()
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_acea0410bf28d4fa188a2bbe5690dd010}{sync}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::basic\+\_\+streambuf$<$ ch, tr $>$ \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af2be1c0cb5571c913e5daeece083de5f}{Base}}
+\item 
+typedef std\+::basic\+\_\+ios$<$ ch, tr $>$ \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af1bfe9bf84fa6d05eaa06e92fe5b17ed}{I\+OS}}
+\item 
+typedef ch \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a11e135cbb2d9d7f9a11bd0f4f2a49710}{char\+\_\+type}}
+\item 
+typedef tr \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a14fbda2e994ef249c88572895d4516d5}{char\+\_\+traits}}
+\item 
+typedef ba \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a361188c9b2c4f443c2cce9993a5308ee}{Allocator}}
+\item 
+typedef Base\+::int\+\_\+type \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_ac17fd85cf953892c3b76da2457299be3}{int\+\_\+type}}
+\item 
+typedef Base\+::pos\+\_\+type \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a2ac6295553f8a0c1c3e2e0b4d696d06b}{pos\+\_\+type}}
+\item 
+typedef Base\+::off\+\_\+type \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a6a69bb7ffc066d1aa017016b958c9d10}{off\+\_\+type}}
+\item 
+typedef I\+O\+S\+::openmode \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a78df46b205222fbc3f3fe0cdffe65e6c}{openmode}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af9be975bd17b82bb3a7cd7979962119a}{set\+Mode}} (\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a78df46b205222fbc3f3fe0cdffe65e6c}{openmode}} mode)
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a78df46b205222fbc3f3fe0cdffe65e6c}{openmode}} \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a0237245b7935f7a2ff24ec1c12b44a1f}{get\+Mode}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af1d2fa0bdbce56f826ba12f2d5ee5c36}{reset\+Buffers}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename ch, typename tr, typename ba = Buffer\+Allocator$<$ch$>$$>$\newline
+class Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf$<$ ch, tr, ba $>$}
+
+This is an implementation of a buffered bidirectional streambuf that greatly simplifies the implementation of custom streambufs of various kinds. Derived classes only have to override the methods read\+From\+Device() or write\+To\+Device().
+
+In contrast to Basic\+Buffered\+Streambuf, this class supports simultaneous read and write access, so in addition to istream and ostream this streambuf can also be used for implementing an iostream. 
+
+Definition at line 35 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a361188c9b2c4f443c2cce9993a5308ee}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a361188c9b2c4f443c2cce9993a5308ee}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{Allocator}{Allocator}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef ba \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a361188c9b2c4f443c2cce9993a5308ee}{Allocator}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 52 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af2be1c0cb5571c913e5daeece083de5f}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af2be1c0cb5571c913e5daeece083de5f}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!Base@{Base}}
+\index{Base@{Base}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{Base}{Base}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef std\+::basic\+\_\+streambuf$<$ch, tr$>$ \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af2be1c0cb5571c913e5daeece083de5f}{Base}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 48 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a14fbda2e994ef249c88572895d4516d5}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a14fbda2e994ef249c88572895d4516d5}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!char\_traits@{char\_traits}}
+\index{char\_traits@{char\_traits}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{char\_traits}{char\_traits}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef tr \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a14fbda2e994ef249c88572895d4516d5}{char\+\_\+traits}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 51 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a11e135cbb2d9d7f9a11bd0f4f2a49710}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a11e135cbb2d9d7f9a11bd0f4f2a49710}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!char\_type@{char\_type}}
+\index{char\_type@{char\_type}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{char\_type}{char\_type}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef ch \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a11e135cbb2d9d7f9a11bd0f4f2a49710}{char\+\_\+type}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 50 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_ac17fd85cf953892c3b76da2457299be3}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_ac17fd85cf953892c3b76da2457299be3}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!int\_type@{int\_type}}
+\index{int\_type@{int\_type}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{int\_type}{int\_type}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef Base\+::int\+\_\+type \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_ac17fd85cf953892c3b76da2457299be3}{int\+\_\+type}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 53 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af1bfe9bf84fa6d05eaa06e92fe5b17ed}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af1bfe9bf84fa6d05eaa06e92fe5b17ed}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!IOS@{IOS}}
+\index{IOS@{IOS}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{IOS}{IOS}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef std\+::basic\+\_\+ios$<$ch, tr$>$ \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af1bfe9bf84fa6d05eaa06e92fe5b17ed}{I\+OS}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 49 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a6a69bb7ffc066d1aa017016b958c9d10}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a6a69bb7ffc066d1aa017016b958c9d10}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!off\_type@{off\_type}}
+\index{off\_type@{off\_type}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{off\_type}{off\_type}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef Base\+::off\+\_\+type \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a6a69bb7ffc066d1aa017016b958c9d10}{off\+\_\+type}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 55 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a78df46b205222fbc3f3fe0cdffe65e6c}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a78df46b205222fbc3f3fe0cdffe65e6c}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!openmode@{openmode}}
+\index{openmode@{openmode}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{openmode}{openmode}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef I\+O\+S\+::openmode \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a78df46b205222fbc3f3fe0cdffe65e6c}{openmode}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 56 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a2ac6295553f8a0c1c3e2e0b4d696d06b}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a2ac6295553f8a0c1c3e2e0b4d696d06b}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!pos\_type@{pos\_type}}
+\index{pos\_type@{pos\_type}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{pos\_type}{pos\_type}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+typedef Base\+::pos\+\_\+type \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a2ac6295553f8a0c1c3e2e0b4d696d06b}{pos\+\_\+type}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 54 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a86bbb9e2435730d2b804eaccc3d78e10}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a86bbb9e2435730d2b804eaccc3d78e10}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!BasicBufferedBidirectionalStreamBuf@{BasicBufferedBidirectionalStreamBuf}}
+\index{BasicBufferedBidirectionalStreamBuf@{BasicBufferedBidirectionalStreamBuf}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{BasicBufferedBidirectionalStreamBuf()}{BasicBufferedBidirectionalStreamBuf()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Basic\+Buffered\+Bidirectional\+Stream\+Buf}} (\begin{DoxyParamCaption}\item[{std\+::streamsize}]{buffer\+Size,  }\item[{\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a78df46b205222fbc3f3fe0cdffe65e6c}{openmode}}}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 59 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a504739ca368bacd0ca1e7f3fc40b8ee2}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a504739ca368bacd0ca1e7f3fc40b8ee2}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!````~BasicBufferedBidirectionalStreamBuf@{$\sim$BasicBufferedBidirectionalStreamBuf}}
+\index{````~BasicBufferedBidirectionalStreamBuf@{$\sim$BasicBufferedBidirectionalStreamBuf}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$BasicBufferedBidirectionalStreamBuf()}{~BasicBufferedBidirectionalStreamBuf()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Basic\+Buffered\+Bidirectional\+Stream\+Buf}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 68 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a0237245b7935f7a2ff24ec1c12b44a1f}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a0237245b7935f7a2ff24ec1c12b44a1f}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!getMode@{getMode}}
+\index{getMode@{getMode}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{getMode()}{getMode()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a78df46b205222fbc3f3fe0cdffe65e6c}{openmode}} \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::get\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 124 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_aac671a335f33c4047cd2ac3900390938}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_aac671a335f33c4047cd2ac3900390938}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!overflow@{overflow}}
+\index{overflow@{overflow}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{overflow()}{overflow()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+virtual \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_ac17fd85cf953892c3b76da2457299be3}{int\+\_\+type}} \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::overflow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_ac17fd85cf953892c3b76da2457299be3}{int\+\_\+type}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 74 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af1d2fa0bdbce56f826ba12f2d5ee5c36}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af1d2fa0bdbce56f826ba12f2d5ee5c36}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!resetBuffers@{resetBuffers}}
+\index{resetBuffers@{resetBuffers}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{resetBuffers()}{resetBuffers()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+void \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::reset\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 129 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af9be975bd17b82bb3a7cd7979962119a}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_af9be975bd17b82bb3a7cd7979962119a}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!setMode@{setMode}}
+\index{setMode@{setMode}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{setMode()}{setMode()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+void \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::set\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a78df46b205222fbc3f3fe0cdffe65e6c}{openmode}}}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 119 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_acea0410bf28d4fa188a2bbe5690dd010}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_acea0410bf28d4fa188a2bbe5690dd010}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!sync@{sync}}
+\index{sync@{sync}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{sync()}{sync()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+virtual int \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 109 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a5e0848111a95ab094b7f15d81e95de90}\label{classPoco_1_1BasicBufferedBidirectionalStreamBuf_a5e0848111a95ab094b7f15d81e95de90}} 
+\index{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}!underflow@{underflow}}
+\index{underflow@{underflow}!Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$@{Poco::BasicBufferedBidirectionalStreamBuf$<$ ch, tr, ba $>$}}
+\doxysubsubsection{\texorpdfstring{underflow()}{underflow()}}
+{\footnotesize\ttfamily template$<$typename ch , typename tr , typename ba  = Buffer\+Allocator$<$ch$>$$>$ \\
+virtual \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf_ac17fd85cf953892c3b76da2457299be3}{int\+\_\+type}} \mbox{\hyperlink{classPoco_1_1BasicBufferedBidirectionalStreamBuf}{Poco\+::\+Basic\+Buffered\+Bidirectional\+Stream\+Buf}}$<$ ch, tr, ba $>$\+::underflow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 88 of file Buffered\+Bidirectional\+Stream\+Buf.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{BufferedBidirectionalStreamBuf_8h}{Buffered\+Bidirectional\+Stream\+Buf.\+h}}\end{DoxyCompactItemize}

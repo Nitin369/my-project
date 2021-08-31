@@ -1,0 +1,172 @@
+\hypertarget{classPoco_1_1URIStreamOpener}{}\doxysection{Poco\+::U\+R\+I\+Stream\+Opener Class Reference}
+\label{classPoco_1_1URIStreamOpener}\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}}
+
+
+{\ttfamily \#include $<$U\+R\+I\+Stream\+Opener.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{classPoco_1_1URIStreamOpener_a1e02a3d31bfe8eeb4929dd08aa03876aa1f6772ad38902f23e959629ab33ef082}{M\+A\+X\+\_\+\+R\+E\+D\+I\+R\+E\+C\+TS}} = 10
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1URIStreamOpener_a5383e1b2172dfbc1047536cb3cc10bf5}{U\+R\+I\+Stream\+Opener}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1URIStreamOpener_a978c8c1addb7aece014987f8ce14385c}{$\sim$\+U\+R\+I\+Stream\+Opener}} ()
+\item 
+std\+::istream $\ast$ \mbox{\hyperlink{classPoco_1_1URIStreamOpener_afd57c5568129928eee2c3ed93e9269a4}{open}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} \&uri) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::istream $\ast$ \mbox{\hyperlink{classPoco_1_1URIStreamOpener_a166d57fd2eebed5e7fae23905b02c58c}{open}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path\+Or\+U\+RI) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::istream $\ast$ \mbox{\hyperlink{classPoco_1_1URIStreamOpener_acd380f43bd292f8b4b8209ba3d37a67b}{open}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&base\+Path\+Or\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path\+Or\+U\+RI) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1URIStreamOpener_a106ae2b189cf73fd72b99469722f18ab}{register\+Stream\+Factory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&scheme, \mbox{\hyperlink{classPoco_1_1URIStreamFactory}{U\+R\+I\+Stream\+Factory}} $\ast$p\+Factory)
+\item 
+void \mbox{\hyperlink{classPoco_1_1URIStreamOpener_a087fd5a435c22a3674cccf02936bd87e}{unregister\+Stream\+Factory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&scheme)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1URIStreamOpener_a23b2db25aca78a98f1d26a0d37ac0cc8}{supports\+Scheme}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&scheme)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}} \& \mbox{\hyperlink{classPoco_1_1URIStreamOpener_a984a989fe7dc72fcdd7acec494022c73}{default\+Opener}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream $\ast$ \mbox{\hyperlink{classPoco_1_1URIStreamOpener_a7b39d8b9bcd5c684c7315c738256444a}{open\+File}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&path) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns a reference to the default \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}}. \end{DoxyCompactList}\item 
+std\+::istream $\ast$ \mbox{\hyperlink{classPoco_1_1URIStreamOpener_a853267566fae730a38bf7aabcf8dc0a8}{open\+U\+RI}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&scheme, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} \&uri) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}} class is used to create and open input streams for resourced identified by Uniform Resource Identifiers.
+
+For every \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} scheme used, a \mbox{\hyperlink{classPoco_1_1URIStreamFactory}{U\+R\+I\+Stream\+Factory}} must be registered. A \mbox{\hyperlink{classPoco_1_1FileStreamFactory}{File\+Stream\+Factory}} is automatically registered for file U\+R\+Is. 
+
+Definition at line 37 of file U\+R\+I\+Stream\+Opener.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1URIStreamOpener_a1e02a3d31bfe8eeb4929dd08aa03876a}\label{classPoco_1_1URIStreamOpener_a1e02a3d31bfe8eeb4929dd08aa03876a}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAX\_REDIRECTS@{MAX\_REDIRECTS}!Poco::URIStreamOpener@{Poco::URIStreamOpener}}\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}!MAX\_REDIRECTS@{MAX\_REDIRECTS}}}\mbox{\Hypertarget{classPoco_1_1URIStreamOpener_a1e02a3d31bfe8eeb4929dd08aa03876aa1f6772ad38902f23e959629ab33ef082}\label{classPoco_1_1URIStreamOpener_a1e02a3d31bfe8eeb4929dd08aa03876aa1f6772ad38902f23e959629ab33ef082}} 
+M\+A\+X\+\_\+\+R\+E\+D\+I\+R\+E\+C\+TS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 45 of file U\+R\+I\+Stream\+Opener.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1URIStreamOpener_a5383e1b2172dfbc1047536cb3cc10bf5}\label{classPoco_1_1URIStreamOpener_a5383e1b2172dfbc1047536cb3cc10bf5}} 
+\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}!URIStreamOpener@{URIStreamOpener}}
+\index{URIStreamOpener@{URIStreamOpener}!Poco::URIStreamOpener@{Poco::URIStreamOpener}}
+\doxysubsubsection{\texorpdfstring{URIStreamOpener()}{URIStreamOpener()}}
+{\footnotesize\ttfamily Poco\+::\+U\+R\+I\+Stream\+Opener\+::\+U\+R\+I\+Stream\+Opener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1URIStreamOpener_a978c8c1addb7aece014987f8ce14385c}\label{classPoco_1_1URIStreamOpener_a978c8c1addb7aece014987f8ce14385c}} 
+\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}!````~URIStreamOpener@{$\sim$URIStreamOpener}}
+\index{````~URIStreamOpener@{$\sim$URIStreamOpener}!Poco::URIStreamOpener@{Poco::URIStreamOpener}}
+\doxysubsubsection{\texorpdfstring{$\sim$URIStreamOpener()}{~URIStreamOpener()}}
+{\footnotesize\ttfamily Poco\+::\+U\+R\+I\+Stream\+Opener\+::$\sim$\+U\+R\+I\+Stream\+Opener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}} and registers a \mbox{\hyperlink{classPoco_1_1FileStreamFactory}{File\+Stream\+Factory}} for file U\+R\+Is. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1URIStreamOpener_a984a989fe7dc72fcdd7acec494022c73}\label{classPoco_1_1URIStreamOpener_a984a989fe7dc72fcdd7acec494022c73}} 
+\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}!defaultOpener@{defaultOpener}}
+\index{defaultOpener@{defaultOpener}!Poco::URIStreamOpener@{Poco::URIStreamOpener}}
+\doxysubsubsection{\texorpdfstring{defaultOpener()}{defaultOpener()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}}\& Poco\+::\+U\+R\+I\+Stream\+Opener\+::default\+Opener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns true iff a \mbox{\hyperlink{classPoco_1_1URIStreamFactory}{U\+R\+I\+Stream\+Factory}} for the given scheme has been registered. \mbox{\Hypertarget{classPoco_1_1URIStreamOpener_acd380f43bd292f8b4b8209ba3d37a67b}\label{classPoco_1_1URIStreamOpener_acd380f43bd292f8b4b8209ba3d37a67b}} 
+\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}!open@{open}}
+\index{open@{open}!Poco::URIStreamOpener@{Poco::URIStreamOpener}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily std\+::istream$\ast$ Poco\+::\+U\+R\+I\+Stream\+Opener\+::open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{base\+Path\+Or\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path\+Or\+U\+RI }\end{DoxyParamCaption}) const}
+
+Tries to create and open an input stream for the resource specified by the given path or uniform resource identifier.
+
+If the stream cannot be opened for any reason, an \mbox{\hyperlink{classPoco_1_1Exception}{Exception}} is thrown.
+
+The method first tries to interpret the given path\+Or\+U\+RI as an \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. If this fails, the path\+Or\+U\+RI is treated as local filesystem path. If this also fails, an exception is thrown.
+
+Whoever calls the method is responsible for deleting the returned stream. \mbox{\Hypertarget{classPoco_1_1URIStreamOpener_a166d57fd2eebed5e7fae23905b02c58c}\label{classPoco_1_1URIStreamOpener_a166d57fd2eebed5e7fae23905b02c58c}} 
+\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}!open@{open}}
+\index{open@{open}!Poco::URIStreamOpener@{Poco::URIStreamOpener}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily std\+::istream$\ast$ Poco\+::\+U\+R\+I\+Stream\+Opener\+::open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path\+Or\+U\+RI }\end{DoxyParamCaption}) const}
+
+Tries to create and open an input stream for the resource specified by the given uniform resource identifier.
+
+If no \mbox{\hyperlink{classPoco_1_1URIStreamFactory}{U\+R\+I\+Stream\+Factory}} has been registered for the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}\textquotesingle{}s scheme, a Unknown\+U\+R\+I\+Scheme exception is thrown. If the stream cannot be opened for any reason, an I\+O\+Exception is thrown.
+
+The given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} must be a valid one. This excludes file system paths.
+
+Whoever calls the method is responsible for deleting the returned stream. \mbox{\Hypertarget{classPoco_1_1URIStreamOpener_afd57c5568129928eee2c3ed93e9269a4}\label{classPoco_1_1URIStreamOpener_afd57c5568129928eee2c3ed93e9269a4}} 
+\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}!open@{open}}
+\index{open@{open}!Poco::URIStreamOpener@{Poco::URIStreamOpener}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily std\+::istream$\ast$ Poco\+::\+U\+R\+I\+Stream\+Opener\+::open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} \&}]{uri }\end{DoxyParamCaption}) const}
+
+Destroys the \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}} and deletes all registered \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} stream factories. \mbox{\Hypertarget{classPoco_1_1URIStreamOpener_a7b39d8b9bcd5c684c7315c738256444a}\label{classPoco_1_1URIStreamOpener_a7b39d8b9bcd5c684c7315c738256444a}} 
+\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}!openFile@{openFile}}
+\index{openFile@{openFile}!Poco::URIStreamOpener@{Poco::URIStreamOpener}}
+\doxysubsubsection{\texorpdfstring{openFile()}{openFile()}}
+{\footnotesize\ttfamily std\+::istream$\ast$ Poco\+::\+U\+R\+I\+Stream\+Opener\+::open\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&}]{path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns a reference to the default \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}}. 
+
+\mbox{\Hypertarget{classPoco_1_1URIStreamOpener_a853267566fae730a38bf7aabcf8dc0a8}\label{classPoco_1_1URIStreamOpener_a853267566fae730a38bf7aabcf8dc0a8}} 
+\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}!openURI@{openURI}}
+\index{openURI@{openURI}!Poco::URIStreamOpener@{Poco::URIStreamOpener}}
+\doxysubsubsection{\texorpdfstring{openURI()}{openURI()}}
+{\footnotesize\ttfamily std\+::istream$\ast$ Poco\+::\+U\+R\+I\+Stream\+Opener\+::open\+U\+RI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{scheme,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} \&}]{uri }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1URIStreamOpener_a106ae2b189cf73fd72b99469722f18ab}\label{classPoco_1_1URIStreamOpener_a106ae2b189cf73fd72b99469722f18ab}} 
+\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}!registerStreamFactory@{registerStreamFactory}}
+\index{registerStreamFactory@{registerStreamFactory}!Poco::URIStreamOpener@{Poco::URIStreamOpener}}
+\doxysubsubsection{\texorpdfstring{registerStreamFactory()}{registerStreamFactory()}}
+{\footnotesize\ttfamily void Poco\+::\+U\+R\+I\+Stream\+Opener\+::register\+Stream\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{scheme,  }\item[{\mbox{\hyperlink{classPoco_1_1URIStreamFactory}{U\+R\+I\+Stream\+Factory}} $\ast$}]{p\+Factory }\end{DoxyParamCaption})}
+
+Tries to create and open an input stream for the resource specified by the given path or uniform resource identifier.
+
+path\+Or\+U\+RI is resolved against base\+Path\+Or\+U\+RI (see \mbox{\hyperlink{classPoco_1_1URI_af90b3af1aa4ffd404478ccaf781c1f6c}{U\+R\+I\+::resolve()}} and \mbox{\hyperlink{classPoco_1_1Path_a189c6fdf0f9ef9c1e47b34573be4c1c8}{Path\+::resolve()}} for more information).
+
+If the stream cannot be opened for any reason, an \mbox{\hyperlink{classPoco_1_1Exception}{Exception}} is thrown.
+
+Whoever calls the method is responsible for deleting the returned stream. \mbox{\Hypertarget{classPoco_1_1URIStreamOpener_a23b2db25aca78a98f1d26a0d37ac0cc8}\label{classPoco_1_1URIStreamOpener_a23b2db25aca78a98f1d26a0d37ac0cc8}} 
+\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}!supportsScheme@{supportsScheme}}
+\index{supportsScheme@{supportsScheme}!Poco::URIStreamOpener@{Poco::URIStreamOpener}}
+\doxysubsubsection{\texorpdfstring{supportsScheme()}{supportsScheme()}}
+{\footnotesize\ttfamily bool Poco\+::\+U\+R\+I\+Stream\+Opener\+::supports\+Scheme (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{scheme }\end{DoxyParamCaption})}
+
+Unregisters and deletes the \mbox{\hyperlink{classPoco_1_1URIStreamFactory}{U\+R\+I\+Stream\+Factory}} for the given scheme.
+
+Throws a Not\+Found\+Exception if no \mbox{\hyperlink{classPoco_1_1URIStreamFactory}{U\+R\+I\+Stream\+Factory}} has been registered for the given scheme. \mbox{\Hypertarget{classPoco_1_1URIStreamOpener_a087fd5a435c22a3674cccf02936bd87e}\label{classPoco_1_1URIStreamOpener_a087fd5a435c22a3674cccf02936bd87e}} 
+\index{Poco::URIStreamOpener@{Poco::URIStreamOpener}!unregisterStreamFactory@{unregisterStreamFactory}}
+\index{unregisterStreamFactory@{unregisterStreamFactory}!Poco::URIStreamOpener@{Poco::URIStreamOpener}}
+\doxysubsubsection{\texorpdfstring{unregisterStreamFactory()}{unregisterStreamFactory()}}
+{\footnotesize\ttfamily void Poco\+::\+U\+R\+I\+Stream\+Opener\+::unregister\+Stream\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{scheme }\end{DoxyParamCaption})}
+
+Registers a \mbox{\hyperlink{classPoco_1_1URIStreamFactory}{U\+R\+I\+Stream\+Factory}} for the given scheme. If another factory has already been registered for the scheme, an Exists\+Exception is thrown.
+
+The \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}} takes ownership of the factory and deletes it when it is no longer needed (in other words, when the \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}} is deleted). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{URIStreamOpener_8h}{U\+R\+I\+Stream\+Opener.\+h}}\end{DoxyCompactItemize}

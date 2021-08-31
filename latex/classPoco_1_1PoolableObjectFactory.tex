@@ -1,0 +1,106 @@
+\hypertarget{classPoco_1_1PoolableObjectFactory}{}\doxysection{Poco\+::Poolable\+Object\+Factory$<$ C, P $>$ Class Template Reference}
+\label{classPoco_1_1PoolableObjectFactory}\index{Poco::PoolableObjectFactory$<$ C, P $>$@{Poco::PoolableObjectFactory$<$ C, P $>$}}
+
+
+{\ttfamily \#include $<$Object\+Pool.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+P \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory_a1c96b0b89af99871aafd2c7f81f4f31a}{create\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Create and return a new object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory_aa22bd6fe96108daec7fb8c7a63339b70}{validate\+Object}} (P p\+Object)
+\item 
+void \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory_a74fd3f730b9fa36c7a78bad6a332e46f}{activate\+Object}} (P p\+Object)
+\item 
+void \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory_a0a9bef351a5ab543c2e76cf432a615fb}{deactivate\+Object}} (P p\+Object)
+\item 
+void \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory_aff89e50d307e63fcf8ce4d7580e5c4ff}{destroy\+Object}} (P p\+Object)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class C, class P = C$\ast$$>$\newline
+class Poco\+::\+Poolable\+Object\+Factory$<$ C, P $>$}
+
+A \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory}{Poolable\+Object\+Factory}} is responsible for creating and resetting objects managed by an \mbox{\hyperlink{classPoco_1_1ObjectPool}{Object\+Pool}}.
+
+Together with an \mbox{\hyperlink{classPoco_1_1ObjectPool}{Object\+Pool}}, a \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory}{Poolable\+Object\+Factory}} is used as a policy class to change the behavior of the \mbox{\hyperlink{classPoco_1_1ObjectPool}{Object\+Pool}} when creating new objects, returning used objects back to the pool and destroying objects, when the pool itself is destroyed or shrinked. 
+
+Definition at line 35 of file Object\+Pool.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1PoolableObjectFactory_a74fd3f730b9fa36c7a78bad6a332e46f}\label{classPoco_1_1PoolableObjectFactory_a74fd3f730b9fa36c7a78bad6a332e46f}} 
+\index{Poco::PoolableObjectFactory$<$ C, P $>$@{Poco::PoolableObjectFactory$<$ C, P $>$}!activateObject@{activateObject}}
+\index{activateObject@{activateObject}!Poco::PoolableObjectFactory$<$ C, P $>$@{Poco::PoolableObjectFactory$<$ C, P $>$}}
+\doxysubsubsection{\texorpdfstring{activateObject()}{activateObject()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$$>$ \\
+void \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory}{Poco\+::\+Poolable\+Object\+Factory}}$<$ C, P $>$\+::activate\+Object (\begin{DoxyParamCaption}\item[{P}]{p\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Called before an object is handed out by the pool. Also called for newly created objects, before they are given out for the first time. 
+
+Definition at line 65 of file Object\+Pool.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PoolableObjectFactory_a1c96b0b89af99871aafd2c7f81f4f31a}\label{classPoco_1_1PoolableObjectFactory_a1c96b0b89af99871aafd2c7f81f4f31a}} 
+\index{Poco::PoolableObjectFactory$<$ C, P $>$@{Poco::PoolableObjectFactory$<$ C, P $>$}!createObject@{createObject}}
+\index{createObject@{createObject}!Poco::PoolableObjectFactory$<$ C, P $>$@{Poco::PoolableObjectFactory$<$ C, P $>$}}
+\doxysubsubsection{\texorpdfstring{createObject()}{createObject()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$$>$ \\
+P \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory}{Poco\+::\+Poolable\+Object\+Factory}}$<$ C, P $>$\+::create\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create and return a new object. 
+
+
+
+Definition at line 46 of file Object\+Pool.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PoolableObjectFactory_a0a9bef351a5ab543c2e76cf432a615fb}\label{classPoco_1_1PoolableObjectFactory_a0a9bef351a5ab543c2e76cf432a615fb}} 
+\index{Poco::PoolableObjectFactory$<$ C, P $>$@{Poco::PoolableObjectFactory$<$ C, P $>$}!deactivateObject@{deactivateObject}}
+\index{deactivateObject@{deactivateObject}!Poco::PoolableObjectFactory$<$ C, P $>$@{Poco::PoolableObjectFactory$<$ C, P $>$}}
+\doxysubsubsection{\texorpdfstring{deactivateObject()}{deactivateObject()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$$>$ \\
+void \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory}{Poco\+::\+Poolable\+Object\+Factory}}$<$ C, P $>$\+::deactivate\+Object (\begin{DoxyParamCaption}\item[{P}]{p\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Called after an object has been given back to the pool and the object is still valid (a prior call to \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory_aa22bd6fe96108daec7fb8c7a63339b70}{validate\+Object()}} returned true).
+
+To maintain the integrity of the pool, this method must not throw an exception. 
+
+Definition at line 72 of file Object\+Pool.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PoolableObjectFactory_aff89e50d307e63fcf8ce4d7580e5c4ff}\label{classPoco_1_1PoolableObjectFactory_aff89e50d307e63fcf8ce4d7580e5c4ff}} 
+\index{Poco::PoolableObjectFactory$<$ C, P $>$@{Poco::PoolableObjectFactory$<$ C, P $>$}!destroyObject@{destroyObject}}
+\index{destroyObject@{destroyObject}!Poco::PoolableObjectFactory$<$ C, P $>$@{Poco::PoolableObjectFactory$<$ C, P $>$}}
+\doxysubsubsection{\texorpdfstring{destroyObject()}{destroyObject()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$$>$ \\
+void \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory}{Poco\+::\+Poolable\+Object\+Factory}}$<$ C, P $>$\+::destroy\+Object (\begin{DoxyParamCaption}\item[{P}]{p\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destroy an object.
+
+To maintain the integrity of the pool, this method must not throw an exception. 
+
+Definition at line 82 of file Object\+Pool.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1PoolableObjectFactory_aa22bd6fe96108daec7fb8c7a63339b70}\label{classPoco_1_1PoolableObjectFactory_aa22bd6fe96108daec7fb8c7a63339b70}} 
+\index{Poco::PoolableObjectFactory$<$ C, P $>$@{Poco::PoolableObjectFactory$<$ C, P $>$}!validateObject@{validateObject}}
+\index{validateObject@{validateObject}!Poco::PoolableObjectFactory$<$ C, P $>$@{Poco::PoolableObjectFactory$<$ C, P $>$}}
+\doxysubsubsection{\texorpdfstring{validateObject()}{validateObject()}}
+{\footnotesize\ttfamily template$<$class C , class P  = C$\ast$$>$ \\
+bool \mbox{\hyperlink{classPoco_1_1PoolableObjectFactory}{Poco\+::\+Poolable\+Object\+Factory}}$<$ C, P $>$\+::validate\+Object (\begin{DoxyParamCaption}\item[{P}]{p\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks whether the object is still valid and can be reused.
+
+Returns true if the object is valid, false otherwise.
+
+To maintain the integrity of the pool, this method must not throw an exception. 
+
+Definition at line 52 of file Object\+Pool.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ObjectPool_8h}{Object\+Pool.\+h}}\end{DoxyCompactItemize}

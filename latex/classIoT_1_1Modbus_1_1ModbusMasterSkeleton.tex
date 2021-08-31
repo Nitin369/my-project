@@ -1,0 +1,116 @@
+\hypertarget{classIoT_1_1Modbus_1_1ModbusMasterSkeleton}{}\doxysection{IoT\+::Modbus\+::Modbus\+Master\+Skeleton Class Reference}
+\label{classIoT_1_1Modbus_1_1ModbusMasterSkeleton}\index{IoT::Modbus::ModbusMasterSkeleton@{IoT::Modbus::ModbusMasterSkeleton}}
+
+
+{\ttfamily \#include $<$Modbus\+Master\+Skeleton.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Modbus\+::Modbus\+Master\+Skeleton\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Modbus\+::Modbus\+Master\+Skeleton\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterSkeleton_ac6ec92c8876b50e4a070e5e7391ac34f}{Modbus\+Master\+Skeleton}} ()
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterSkeleton_a1977af8ad07eac1e85989cf0d4b589f0}{$\sim$\+Modbus\+Master\+Skeleton}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterSkeleton}{Modbus\+Master\+Skeleton}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterSkeleton_a7a4c189c434b61006210ef80cd48bf15}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterSkeleton}{Modbus\+Master\+Skeleton}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterSkeleton_adee05c086c36155877fba4569a9f5a10}{D\+E\+F\+A\+U\+L\+T\+\_\+\+NS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class defines the interface for \mbox{\hyperlink{namespaceIoT_1_1Modbus}{Modbus}} clients. \begin{DoxyVerb}The interface supports two basic modes of operation:
+   - Asynchronous requests: One of the sendXXXRequest() methods is used
+     to send a request to the device. The method returns as soon as the
+     request has been sent over the wire. The device's response is
+     reported asynchronously via an appropriate XXXResponseReceived event.
+   - Synchronous requests: After sending the request, the method waits
+     for the response from the device and directly returns it to the caller.
+     In case no response is received within the specified timeout, a
+     Poco::TimeoutException is thrown. If an exception message is received
+     from the device, a ModbusException is thrown. If an incomplete or invalid
+     message is received, a Poco::ProtocolException is thrown.
+
+Note that asynchronous and synchronous (blocking) mode cannot be used
+simultaneously. Calling one of the asynchronous request methods will enable
+asynchronous mode. Calling one of the synchronous request methods will
+disable asynchronous mode. Switching to synchronous mode while a response
+to an asynchronous request is pending will lead to undefined results,
+including possible mismatch of requests and responses.
+
+In asynchronous operation, requests are associated with a transaction ID,
+to tell apart multiple concurrent transactions. Transaction IDs are not guaranteed
+to be unique for subsequent requests. In fact, for Modbus RTU, which does not
+allow multiple simultaneous requests, the transaction ID will always be zero. 
+\end{DoxyVerb}
+ 
+
+Definition at line 30 of file Modbus\+Master\+Skeleton.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterSkeleton_ac6ec92c8876b50e4a070e5e7391ac34f}\label{classIoT_1_1Modbus_1_1ModbusMasterSkeleton_ac6ec92c8876b50e4a070e5e7391ac34f}} 
+\index{IoT::Modbus::ModbusMasterSkeleton@{IoT::Modbus::ModbusMasterSkeleton}!ModbusMasterSkeleton@{ModbusMasterSkeleton}}
+\index{ModbusMasterSkeleton@{ModbusMasterSkeleton}!IoT::Modbus::ModbusMasterSkeleton@{IoT::Modbus::ModbusMasterSkeleton}}
+\doxysubsubsection{\texorpdfstring{ModbusMasterSkeleton()}{ModbusMasterSkeleton()}}
+{\footnotesize\ttfamily Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Skeleton\+::\+Modbus\+Master\+Skeleton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterSkeleton_a1977af8ad07eac1e85989cf0d4b589f0}\label{classIoT_1_1Modbus_1_1ModbusMasterSkeleton_a1977af8ad07eac1e85989cf0d4b589f0}} 
+\index{IoT::Modbus::ModbusMasterSkeleton@{IoT::Modbus::ModbusMasterSkeleton}!````~ModbusMasterSkeleton@{$\sim$ModbusMasterSkeleton}}
+\index{````~ModbusMasterSkeleton@{$\sim$ModbusMasterSkeleton}!IoT::Modbus::ModbusMasterSkeleton@{IoT::Modbus::ModbusMasterSkeleton}}
+\doxysubsubsection{\texorpdfstring{$\sim$ModbusMasterSkeleton()}{~ModbusMasterSkeleton()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Skeleton\+::$\sim$\+Modbus\+Master\+Skeleton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterSkeleton}{Modbus\+Master\+Skeleton}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterSkeleton_a7a4c189c434b61006210ef80cd48bf15}\label{classIoT_1_1Modbus_1_1ModbusMasterSkeleton_a7a4c189c434b61006210ef80cd48bf15}} 
+\index{IoT::Modbus::ModbusMasterSkeleton@{IoT::Modbus::ModbusMasterSkeleton}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Modbus::ModbusMasterSkeleton@{IoT::Modbus::ModbusMasterSkeleton}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Skeleton\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroys a \mbox{\hyperlink{classIoT_1_1Modbus_1_1ModbusMasterSkeleton}{Modbus\+Master\+Skeleton}}. 
+
+
+
+Definition at line 70 of file Modbus\+Master\+Skeleton.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1Modbus_1_1ModbusMasterSkeleton_adee05c086c36155877fba4569a9f5a10}\label{classIoT_1_1Modbus_1_1ModbusMasterSkeleton_adee05c086c36155877fba4569a9f5a10}} 
+\index{IoT::Modbus::ModbusMasterSkeleton@{IoT::Modbus::ModbusMasterSkeleton}!DEFAULT\_NS@{DEFAULT\_NS}}
+\index{DEFAULT\_NS@{DEFAULT\_NS}!IoT::Modbus::ModbusMasterSkeleton@{IoT::Modbus::ModbusMasterSkeleton}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_NS}{DEFAULT\_NS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Io\+T\+::\+Modbus\+::\+Modbus\+Master\+Skeleton\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+NS\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 66 of file Modbus\+Master\+Skeleton.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Modbus/\mbox{\hyperlink{ModbusMasterSkeleton_8h}{Modbus\+Master\+Skeleton.\+h}}\end{DoxyCompactItemize}

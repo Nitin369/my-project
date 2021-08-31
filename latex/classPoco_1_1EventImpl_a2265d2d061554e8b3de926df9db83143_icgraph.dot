@@ -1,0 +1,40 @@
+digraph "Poco::EventImpl::waitImpl"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Poco::EventImpl::waitImpl",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Poco::Event::tryWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Event.html#a510fe07cd7bcf07144ec704d8f3c8740",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Poco::ActiveResultHolder\l::tryWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResultHolder.html#a04beca2ffa3215fa8fe64fe170c41766",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Poco::ActiveResult\l\< ResultType \>::available",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResult.html#a0d7a09114160081d2a8d0a52ab728d44",tooltip="Returns true if a result is available."];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Poco::ActiveResult\l\< void \>::available",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResult_3_01void_01_4.html#a23ba335d4b31c1c03beca5b21c17ecff",tooltip="Returns true if a result is available."];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Poco::ActiveResult\l\< ResultType \>::tryWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResult.html#a0605a9f1b3fe54b9d1a08219f1270ac5",tooltip=" "];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Poco::ActiveResult\l\< void \>::tryWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResult_3_01void_01_4.html#abb652a375ecb894b0220d79b950c85c0",tooltip=" "];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Poco::SynchronizedObject\l::tryWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1SynchronizedObject.html#ac5403c7e078a330da055fc7a736f8c7e",tooltip=" "];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Poco::Condition::tryWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Condition.html#af30e8c23a52a026aee012b3cfe5de453",tooltip=" "];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Poco::ActiveResultHolder\l\< void \>::tryWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResultHolder_3_01void_01_4.html#a7df446f8c439d02406cec7421d023306",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Poco::Event::wait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Event.html#a0da7c72337aab427cdd62307d1bb8769",tooltip=" "];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Poco::ActiveResultHolder\l::wait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResultHolder.html#a3cc73efb5b363f9de55d6427d06b741e",tooltip="Pauses the caller until the result becomes available."];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Poco::ActiveResult\l\< ResultType \>::wait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResult.html#aa2be387f0a7ea3e9f91ad844101872f6",tooltip="Pauses the caller until the result becomes available."];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Poco::ActiveResult\l\< void \>::wait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResult_3_01void_01_4.html#a7f3ffa2eceb134d18a3d8c9746b8757c",tooltip="Pauses the caller until the result becomes available."];
+  Node11 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Poco::SynchronizedObject\l::wait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1SynchronizedObject.html#aafdb756036b9954a17f39f647be2e3e1",tooltip=" "];
+  Node11 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="Poco::Activity\< IoT\l::UDP::UDPEndpointImpl\l \>::wait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Activity.html#a7ac1dcc3ebaf0c74993291a7fa143b32",tooltip="Waits for the activity to complete."];
+  Node11 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="Poco::ActiveResultHolder\l\< void \>::wait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveResultHolder_3_01void_01_4.html#a4d40c13859f820384f0c9378234ec78a",tooltip="Pauses the caller until the result becomes available."];
+}

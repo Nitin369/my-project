@@ -1,0 +1,62 @@
+\hypertarget{classPoco_1_1ExpireLRUCache}{}\doxysection{Poco\+::Expire\+L\+R\+U\+Cache$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$ Class Template Reference}
+\label{classPoco_1_1ExpireLRUCache}\index{Poco::ExpireLRUCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::ExpireLRUCache$<$ TKey, TValue, TMutex, TEventMutex $>$}}
+
+
+{\ttfamily \#include $<$Expire\+L\+R\+U\+Cache.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Expire\+L\+R\+U\+Cache$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Expire\+L\+R\+U\+Cache$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ExpireLRUCache_ab9429ea690c51fb1c62341c44d7c78cb}{Expire\+L\+R\+U\+Cache}} (long cache\+Size=1024, \mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}} expire=600000)
+\item 
+\mbox{\hyperlink{classPoco_1_1ExpireLRUCache_af4ea44396e6555f8ed234b7e9f666285}{$\sim$\+Expire\+L\+R\+U\+Cache}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Key, class T\+Value, class T\+Mutex = Fast\+Mutex, class T\+Event\+Mutex = Fast\+Mutex$>$\newline
+class Poco\+::\+Expire\+L\+R\+U\+Cache$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$}
+
+An \mbox{\hyperlink{classPoco_1_1ExpireLRUCache}{Expire\+L\+R\+U\+Cache}} combines L\+RU caching and time based expire caching. It cache entries for a fixed time period (per default 10 minutes) but also limits the size of the cache (per default\+: 1024). 
+
+Definition at line 38 of file Expire\+L\+R\+U\+Cache.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1ExpireLRUCache_ab9429ea690c51fb1c62341c44d7c78cb}\label{classPoco_1_1ExpireLRUCache_ab9429ea690c51fb1c62341c44d7c78cb}} 
+\index{Poco::ExpireLRUCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::ExpireLRUCache$<$ TKey, TValue, TMutex, TEventMutex $>$}!ExpireLRUCache@{ExpireLRUCache}}
+\index{ExpireLRUCache@{ExpireLRUCache}!Poco::ExpireLRUCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::ExpireLRUCache$<$ TKey, TValue, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{ExpireLRUCache()}{ExpireLRUCache()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1ExpireLRUCache}{Poco\+::\+Expire\+L\+R\+U\+Cache}}$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$\+::\mbox{\hyperlink{classPoco_1_1ExpireLRUCache}{Expire\+L\+R\+U\+Cache}} (\begin{DoxyParamCaption}\item[{long}]{cache\+Size = {\ttfamily 1024},  }\item[{\mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}}}]{expire = {\ttfamily 600000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 44 of file Expire\+L\+R\+U\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ExpireLRUCache_af4ea44396e6555f8ed234b7e9f666285}\label{classPoco_1_1ExpireLRUCache_af4ea44396e6555f8ed234b7e9f666285}} 
+\index{Poco::ExpireLRUCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::ExpireLRUCache$<$ TKey, TValue, TMutex, TEventMutex $>$}!````~ExpireLRUCache@{$\sim$ExpireLRUCache}}
+\index{````~ExpireLRUCache@{$\sim$ExpireLRUCache}!Poco::ExpireLRUCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::ExpireLRUCache$<$ TKey, TValue, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$ExpireLRUCache()}{~ExpireLRUCache()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1ExpireLRUCache}{Poco\+::\+Expire\+L\+R\+U\+Cache}}$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1ExpireLRUCache}{Expire\+L\+R\+U\+Cache}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 51 of file Expire\+L\+R\+U\+Cache.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ExpireLRUCache_8h}{Expire\+L\+R\+U\+Cache.\+h}}\end{DoxyCompactItemize}

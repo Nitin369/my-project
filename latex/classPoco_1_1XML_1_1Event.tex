@@ -1,0 +1,314 @@
+\hypertarget{classPoco_1_1XML_1_1Event}{}\doxysection{Poco\+::X\+ML\+::Event Class Reference}
+\label{classPoco_1_1XML_1_1Event}\index{Poco::XML::Event@{Poco::XML::Event}}
+
+
+{\ttfamily \#include $<$Event.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::Event\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::X\+ML\+::Event\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3c}{Phase\+Type}} \{ \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3ca2f8f0038eb575a70a0428ceb4287c717}{C\+A\+P\+T\+U\+R\+I\+N\+G\+\_\+\+P\+H\+A\+SE}} = 1, 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3cab6f2f018327fcac4a7f43a7e9bb6c727}{A\+T\+\_\+\+T\+A\+R\+G\+ET}} = 2, 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3caf4c3772bd1116329cb3bb0eb590a418f}{B\+U\+B\+B\+L\+I\+N\+G\+\_\+\+P\+H\+A\+SE}} = 3
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a28f089cab706c9999fb326fd879bff21}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a692351ea4869d0265404bdc339709c4c}{target}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em The name of the event (case-\/insensitive). The name must be an \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1Event_acc35332dd61d23e747d9ffda0c9beb63}{current\+Target}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Used to indicate the \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} to which the event was originally dispatched. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3c}{Phase\+Type}} \mbox{\hyperlink{classPoco_1_1XML_1_1Event_ad90055ef506a9a9795b298d7ae1a0f82}{event\+Phase}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1XML_1_1Event_afb11ad153277460b59c5e91386099755}{bubbles}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Used to indicate which phase of event flow is currently being evaluated. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a34bc813e77d6a8b859ecf8566cac09c5}{cancelable}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+Poco\+::\+U\+Int64 \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a10bc1cefb1bbe591bbbc05f95eaa36d1}{time\+Stamp}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a149de1634a27306411486cb70199d582}{stop\+Propagation}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a7bb70080eddd05adbabf1d5d67357e36}{prevent\+Default}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a4add643eb83bdf3f418c497341726c00}{init\+Event}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&event\+Type, bool can\+Bubble, bool is\+Cancelable)
+\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a53b52cb95ee5861cdd2bc2d76ed75018}{auto\+Release}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Event_a92ece9da8c147253b11e1979a4d421fe}{Event}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&\mbox{\hyperlink{classPoco_1_1XML_1_1Event_a28f089cab706c9999fb326fd879bff21}{type}})
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Event_ac41680380ac4e41db4758505a77de415}{Event}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&\mbox{\hyperlink{classPoco_1_1XML_1_1Event_a28f089cab706c9999fb326fd879bff21}{type}}, \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} $\ast$p\+Target, bool can\+Bubble, bool is\+Cancelable)
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Event_aa788447d52828e77b95146dea38a9cda}{$\sim$\+Event}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a590b5ae7fd1a29f5f2c585c5433caf55}{is\+Canceled}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a7dfe09dd1d69961a832bf9b9d06eaf48}{is\+Stopped}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em returns true if and only if the event has been cancelled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a2c1747d68875b25165f21b4b397d16c8}{set\+Target}} (\mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} $\ast$p\+Target)
+\begin{DoxyCompactList}\small\item\em returns true if and only if propagation of the event has been stopped. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1Event_aaefe629e80fe4cfa074d78faefdd1a0c}{set\+Current\+Phase}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3c}{Phase\+Type}} phase)
+\begin{DoxyCompactList}\small\item\em sets the target \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1XML_1_1Event_ae632e1713db104a3d117cd7a20cf8057}{set\+Current\+Target}} (\mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} $\ast$p\+Target)
+\begin{DoxyCompactList}\small\item\em sets the current phase \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1XML_1_1Event_ac34827723212e57cadf597d4436fd432}{Abstract\+Node}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} interface is used to provide contextual information about an event to the handler processing the event. An object which implements the \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} interface is generally passed as the first parameter to an event handler. More specific context information is passed to event handlers by deriving additional interfaces from \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} which contain information directly relating to the type of event they accompany. These derived interfaces are also implemented by the object passed to the event listener. 
+
+Definition at line 36 of file Event.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3c}\label{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3c}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!PhaseType@{PhaseType}}
+\index{PhaseType@{PhaseType}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{PhaseType}{PhaseType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3c}{Poco\+::\+X\+M\+L\+::\+Event\+::\+Phase\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAPTURING\_PHASE@{CAPTURING\_PHASE}!Poco::XML::Event@{Poco::XML::Event}}\index{Poco::XML::Event@{Poco::XML::Event}!CAPTURING\_PHASE@{CAPTURING\_PHASE}}}\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3ca2f8f0038eb575a70a0428ceb4287c717}\label{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3ca2f8f0038eb575a70a0428ceb4287c717}} 
+C\+A\+P\+T\+U\+R\+I\+N\+G\+\_\+\+P\+H\+A\+SE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT\_TARGET@{AT\_TARGET}!Poco::XML::Event@{Poco::XML::Event}}\index{Poco::XML::Event@{Poco::XML::Event}!AT\_TARGET@{AT\_TARGET}}}\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3cab6f2f018327fcac4a7f43a7e9bb6c727}\label{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3cab6f2f018327fcac4a7f43a7e9bb6c727}} 
+A\+T\+\_\+\+T\+A\+R\+G\+ET&The event is currently being evaluated at the target \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUBBLING\_PHASE@{BUBBLING\_PHASE}!Poco::XML::Event@{Poco::XML::Event}}\index{Poco::XML::Event@{Poco::XML::Event}!BUBBLING\_PHASE@{BUBBLING\_PHASE}}}\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3caf4c3772bd1116329cb3bb0eb590a418f}\label{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3caf4c3772bd1116329cb3bb0eb590a418f}} 
+B\+U\+B\+B\+L\+I\+N\+G\+\_\+\+P\+H\+A\+SE&The current event phase is the bubbling phase. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 46 of file Event.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a92ece9da8c147253b11e1979a4d421fe}\label{classPoco_1_1XML_1_1Event_a92ece9da8c147253b11e1979a4d421fe}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!Event@{Event}}
+\index{Event@{Event}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{Event()}{Event()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Event\+::\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_ac41680380ac4e41db4758505a77de415}\label{classPoco_1_1XML_1_1Event_ac41680380ac4e41db4758505a77de415}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!Event@{Event}}
+\index{Event@{Event}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{Event()}{Event()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Event\+::\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{type,  }\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} $\ast$}]{p\+Target,  }\item[{bool}]{can\+Bubble,  }\item[{bool}]{is\+Cancelable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_aa788447d52828e77b95146dea38a9cda}\label{classPoco_1_1XML_1_1Event_aa788447d52828e77b95146dea38a9cda}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!````~Event@{$\sim$Event}}
+\index{````~Event@{$\sim$Event}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{$\sim$Event()}{~Event()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Event\+::$\sim$\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a53b52cb95ee5861cdd2bc2d76ed75018}\label{classPoco_1_1XML_1_1Event_a53b52cb95ee5861cdd2bc2d76ed75018}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!autoRelease@{autoRelease}}
+\index{autoRelease@{autoRelease}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{autoRelease()}{autoRelease()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Event\+::auto\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The init\+Event method is used to initialize the value of an \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} created through the \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentEvent}{Document\+Event}} interface. This method may only be called before the \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} has been dispatched via the dispatch\+Event method, though it may be called multiple times during that phase if necessary. If called multiple times the final invocation takes precedence. If called from a subclass of \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} interface only the values specified in the init\+Event method are modified, all other attributes are left unchanged. ~\newline
+ 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1DOMObject_a39f0ede64e7f87d462b79dd53d844c6c}{Poco\+::\+X\+M\+L\+::\+D\+O\+M\+Object}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_afb11ad153277460b59c5e91386099755}\label{classPoco_1_1XML_1_1Event_afb11ad153277460b59c5e91386099755}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!bubbles@{bubbles}}
+\index{bubbles@{bubbles}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{bubbles()}{bubbles()}}
+{\footnotesize\ttfamily bool Poco\+::\+X\+M\+L\+::\+Event\+::bubbles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used to indicate which phase of event flow is currently being evaluated. 
+
+
+
+Definition at line 178 of file Event.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a34bc813e77d6a8b859ecf8566cac09c5}\label{classPoco_1_1XML_1_1Event_a34bc813e77d6a8b859ecf8566cac09c5}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!cancelable@{cancelable}}
+\index{cancelable@{cancelable}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{cancelable()}{cancelable()}}
+{\footnotesize\ttfamily bool Poco\+::\+X\+M\+L\+::\+Event\+::cancelable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Used to indicate whether or not an event is a bubbling event. If the event can bubble the value is true, else the value is false. 
+
+Definition at line 184 of file Event.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_acc35332dd61d23e747d9ffda0c9beb63}\label{classPoco_1_1XML_1_1Event_acc35332dd61d23e747d9ffda0c9beb63}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!currentTarget@{currentTarget}}
+\index{currentTarget@{currentTarget}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{currentTarget()}{currentTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} $\ast$ Poco\+::\+X\+M\+L\+::\+Event\+::current\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used to indicate the \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} to which the event was originally dispatched. 
+
+
+
+Definition at line 166 of file Event.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_ad90055ef506a9a9795b298d7ae1a0f82}\label{classPoco_1_1XML_1_1Event_ad90055ef506a9a9795b298d7ae1a0f82}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!eventPhase@{eventPhase}}
+\index{eventPhase@{eventPhase}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{eventPhase()}{eventPhase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3c}{Event\+::\+Phase\+Type}} Poco\+::\+X\+M\+L\+::\+Event\+::event\+Phase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Used to indicate the \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} whose Event\+Listeners are currently being processed. This is particularly useful during capturing and bubbling. 
+
+Definition at line 172 of file Event.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a4add643eb83bdf3f418c497341726c00}\label{classPoco_1_1XML_1_1Event_a4add643eb83bdf3f418c497341726c00}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!initEvent@{initEvent}}
+\index{initEvent@{initEvent}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{initEvent()}{initEvent()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Event\+::init\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{event\+Type,  }\item[{bool}]{can\+Bubble,  }\item[{bool}]{is\+Cancelable }\end{DoxyParamCaption})}
+
+If an event is cancelable, the prevent\+Default method is used to signify that the event is to be canceled, meaning any default action normally taken by the implementation as a result of the event will not occur. If, during any stage of event flow, the prevent\+Default method is called the event is canceled. \mbox{\hyperlink{classPoco_1_1Any}{Any}} default action associated with the event will not occur. Calling this method for a non-\/cancelable event has no effect. Once prevent\+Default has been called it will remain in effect throughout the remainder of the event\textquotesingle{}s propagation. This method may be used during any stage of event flow. ~\newline
+ \mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a590b5ae7fd1a29f5f2c585c5433caf55}\label{classPoco_1_1XML_1_1Event_a590b5ae7fd1a29f5f2c585c5433caf55}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!isCanceled@{isCanceled}}
+\index{isCanceled@{isCanceled}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{isCanceled()}{isCanceled()}}
+{\footnotesize\ttfamily bool Poco\+::\+X\+M\+L\+::\+Event\+::is\+Canceled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 196 of file Event.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a7dfe09dd1d69961a832bf9b9d06eaf48}\label{classPoco_1_1XML_1_1Event_a7dfe09dd1d69961a832bf9b9d06eaf48}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!isStopped@{isStopped}}
+\index{isStopped@{isStopped}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{isStopped()}{isStopped()}}
+{\footnotesize\ttfamily bool Poco\+::\+X\+M\+L\+::\+Event\+::is\+Stopped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+returns true if and only if the event has been cancelled. 
+
+
+
+Definition at line 202 of file Event.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a7bb70080eddd05adbabf1d5d67357e36}\label{classPoco_1_1XML_1_1Event_a7bb70080eddd05adbabf1d5d67357e36}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!preventDefault@{preventDefault}}
+\index{preventDefault@{preventDefault}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{preventDefault()}{preventDefault()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Event\+::prevent\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The stop\+Propagation method is used prevent further propagation of an event during event flow. If this method is called by any \mbox{\hyperlink{classPoco_1_1XML_1_1EventListener}{Event\+Listener}} the event will cease propagating through the tree. The event will complete dispatch to all listeners on the current \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} before event flow stops. This method may be used during any stage of event flow. ~\newline
+ \mbox{\Hypertarget{classPoco_1_1XML_1_1Event_aaefe629e80fe4cfa074d78faefdd1a0c}\label{classPoco_1_1XML_1_1Event_aaefe629e80fe4cfa074d78faefdd1a0c}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!setCurrentPhase@{setCurrentPhase}}
+\index{setCurrentPhase@{setCurrentPhase}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{setCurrentPhase()}{setCurrentPhase()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Event\+::set\+Current\+Phase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Event_a72c471b4464b252dee1ca04c13e45e3c}{Phase\+Type}}}]{phase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+sets the target 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_ae632e1713db104a3d117cd7a20cf8057}\label{classPoco_1_1XML_1_1Event_ae632e1713db104a3d117cd7a20cf8057}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!setCurrentTarget@{setCurrentTarget}}
+\index{setCurrentTarget@{setCurrentTarget}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{setCurrentTarget()}{setCurrentTarget()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Event\+::set\+Current\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} $\ast$}]{p\+Target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+sets the current phase 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a2c1747d68875b25165f21b4b397d16c8}\label{classPoco_1_1XML_1_1Event_a2c1747d68875b25165f21b4b397d16c8}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Event\+::set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} $\ast$}]{p\+Target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+returns true if and only if propagation of the event has been stopped. 
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a149de1634a27306411486cb70199d582}\label{classPoco_1_1XML_1_1Event_a149de1634a27306411486cb70199d582}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!stopPropagation@{stopPropagation}}
+\index{stopPropagation@{stopPropagation}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{stopPropagation()}{stopPropagation()}}
+{\footnotesize\ttfamily void Poco\+::\+X\+M\+L\+::\+Event\+::stop\+Propagation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Used to specify the time (in milliseconds relative to the epoch) at which the event was created. Due to the fact that some systems may not provide this information the value of time\+Stamp may be not available for all events. When not available, a value of 0 will be returned. Examples of epoch time are the time of the system start or 0\+:0\+:0 U\+TC 1st January 1970. This implementation always returns 0. \mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a692351ea4869d0265404bdc339709c4c}\label{classPoco_1_1XML_1_1Event_a692351ea4869d0265404bdc339709c4c}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!target@{target}}
+\index{target@{target}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{target()}{target()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} $\ast$ Poco\+::\+X\+M\+L\+::\+Event\+::target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The name of the event (case-\/insensitive). The name must be an \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} name. 
+
+
+
+Definition at line 160 of file Event.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a10bc1cefb1bbe591bbbc05f95eaa36d1}\label{classPoco_1_1XML_1_1Event_a10bc1cefb1bbe591bbbc05f95eaa36d1}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!timeStamp@{timeStamp}}
+\index{timeStamp@{timeStamp}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{timeStamp()}{timeStamp()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int64 Poco\+::\+X\+M\+L\+::\+Event\+::time\+Stamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Used to indicate whether or not an event can have its default action prevented. If the default action can be prevented the value is true, else the value is false. 
+
+Definition at line 190 of file Event.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_a28f089cab706c9999fb326fd879bff21}\label{classPoco_1_1XML_1_1Event_a28f089cab706c9999fb326fd879bff21}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!type@{type}}
+\index{type@{type}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& Poco\+::\+X\+M\+L\+::\+Event\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 154 of file Event.\+h.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1Event_ac34827723212e57cadf597d4436fd432}\label{classPoco_1_1XML_1_1Event_ac34827723212e57cadf597d4436fd432}} 
+\index{Poco::XML::Event@{Poco::XML::Event}!AbstractNode@{AbstractNode}}
+\index{AbstractNode@{AbstractNode}!Poco::XML::Event@{Poco::XML::Event}}
+\doxysubsubsection{\texorpdfstring{AbstractNode}{AbstractNode}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode}{Abstract\+Node}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 147 of file Event.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+D\+O\+M/\mbox{\hyperlink{DOM_2Event_8h}{Event.\+h}}\end{DoxyCompactItemize}

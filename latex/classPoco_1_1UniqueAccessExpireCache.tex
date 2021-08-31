@@ -1,0 +1,68 @@
+\hypertarget{classPoco_1_1UniqueAccessExpireCache}{}\doxysection{Poco\+::Unique\+Access\+Expire\+Cache$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$ Class Template Reference}
+\label{classPoco_1_1UniqueAccessExpireCache}\index{Poco::UniqueAccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::UniqueAccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$}}
+
+
+{\ttfamily \#include $<$Unique\+Access\+Expire\+Cache.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Unique\+Access\+Expire\+Cache$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Unique\+Access\+Expire\+Cache$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireCache_ab885cd576d6e054fb915bb9ed5abe804}{Unique\+Access\+Expire\+Cache}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireCache_a1da5f03572a336e6a51b833a3e03a02b}{$\sim$\+Unique\+Access\+Expire\+Cache}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Key, class T\+Value, class T\+Mutex = Fast\+Mutex, class T\+Event\+Mutex = Fast\+Mutex$>$\newline
+class Poco\+::\+Unique\+Access\+Expire\+Cache$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$}
+
+An \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireCache}{Unique\+Access\+Expire\+Cache}} caches entries for a given time span. In contrast to \mbox{\hyperlink{classPoco_1_1ExpireCache}{Expire\+Cache}} which only allows to set a per cache expiration value, it allows to define expiration per Cache\+Entry. Each T\+Value object must thus offer the following method\+:
+
+const \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}}\& get\+Timeout() const;
+
+which returns the relative timespan for how long the entry should be valid without being accessed! The absolute expire timepoint is calculated as \mbox{\hyperlink{namespacePoco_1_1Data_1_1Keywords_a839e06ffbdee1328f646e4c83e0ae1fd}{now()}} + get\+Timeout(). Accessing an object will update this absolute expire timepoint. You can use the \mbox{\hyperlink{classPoco_1_1AccessExpirationDecorator}{Poco\+::\+Access\+Expiration\+Decorator}} to add the get\+Expiration method to values that do not have a get\+Expiration function.
+
+Be careful when using an \mbox{\hyperlink{classPoco_1_1UniqueAccessExpireCache}{Unique\+Access\+Expire\+Cache}}. A cache is often used like cache.\+has(x) followed by cache.\+get x). Note that it could happen that the \char`\"{}has\char`\"{} call works, then the current execution thread gets descheduled, time passes, the entry gets invalid, thus leading to an empty \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}} being returned when \char`\"{}get\char`\"{} is invoked. 
+
+Definition at line 36 of file Unique\+Access\+Expire\+Cache.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireCache_ab885cd576d6e054fb915bb9ed5abe804}\label{classPoco_1_1UniqueAccessExpireCache_ab885cd576d6e054fb915bb9ed5abe804}} 
+\index{Poco::UniqueAccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::UniqueAccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$}!UniqueAccessExpireCache@{UniqueAccessExpireCache}}
+\index{UniqueAccessExpireCache@{UniqueAccessExpireCache}!Poco::UniqueAccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::UniqueAccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{UniqueAccessExpireCache()}{UniqueAccessExpireCache()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireCache}{Poco\+::\+Unique\+Access\+Expire\+Cache}}$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$\+::\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireCache}{Unique\+Access\+Expire\+Cache}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file Unique\+Access\+Expire\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1UniqueAccessExpireCache_a1da5f03572a336e6a51b833a3e03a02b}\label{classPoco_1_1UniqueAccessExpireCache_a1da5f03572a336e6a51b833a3e03a02b}} 
+\index{Poco::UniqueAccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::UniqueAccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$}!````~UniqueAccessExpireCache@{$\sim$UniqueAccessExpireCache}}
+\index{````~UniqueAccessExpireCache@{$\sim$UniqueAccessExpireCache}!Poco::UniqueAccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$@{Poco::UniqueAccessExpireCache$<$ TKey, TValue, TMutex, TEventMutex $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$UniqueAccessExpireCache()}{~UniqueAccessExpireCache()}}
+{\footnotesize\ttfamily template$<$class T\+Key , class T\+Value , class T\+Mutex  = Fast\+Mutex, class T\+Event\+Mutex  = Fast\+Mutex$>$ \\
+\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireCache}{Poco\+::\+Unique\+Access\+Expire\+Cache}}$<$ T\+Key, T\+Value, T\+Mutex, T\+Event\+Mutex $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1UniqueAccessExpireCache}{Unique\+Access\+Expire\+Cache}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 62 of file Unique\+Access\+Expire\+Cache.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{UniqueAccessExpireCache_8h}{Unique\+Access\+Expire\+Cache.\+h}}\end{DoxyCompactItemize}

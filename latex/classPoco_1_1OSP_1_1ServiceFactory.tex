@@ -1,0 +1,103 @@
+\hypertarget{classPoco_1_1OSP_1_1ServiceFactory}{}\doxysection{Poco\+::O\+SP\+::Service\+Factory Class Reference}
+\label{classPoco_1_1OSP_1_1ServiceFactory}\index{Poco::OSP::ServiceFactory@{Poco::OSP::ServiceFactory}}
+
+
+{\ttfamily \#include $<$Service\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::O\+SP\+::Service\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::O\+SP\+::Service\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_ae37f76a4fc067928d4ace33c617920bd}{Service\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceFactory_a6b54a8a5e8f439ed61b340772f71c53b}{create\+Service}} ()=0
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceFactory_a9e924e639c1d7cb41118786ed26dac55}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Creates and returns a new instance of a \mbox{\hyperlink{classPoco_1_1OSP_1_1Service}{Service}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceFactory_a7c3bc36a289e8051518fdac36fd76fdc}{isA}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&other\+Type) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceFactory_a4f81de024beb5cd81f02d2cbc6ec2d62}{Service\+Factory}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceFactory_a9780094940a38d74ac0178655c240f3f}{$\sim$\+Service\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceFactory}{Service\+Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceFactory}{Service\+Factory}} is a special \mbox{\hyperlink{classPoco_1_1OSP_1_1Service}{Service}} that, as its name implies, acts as a factory for \mbox{\hyperlink{classPoco_1_1OSP_1_1Service}{Service}} objects.
+
+If a subclass of \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceFactory}{Service\+Factory}} is registered as a service, the factory will be used to create a new instance of the service whenever the service is requested from the \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceRegistry}{Service\+Registry}}. 
+
+Definition at line 31 of file Service\+Factory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceFactory_a4f81de024beb5cd81f02d2cbc6ec2d62}\label{classPoco_1_1OSP_1_1ServiceFactory_a4f81de024beb5cd81f02d2cbc6ec2d62}} 
+\index{Poco::OSP::ServiceFactory@{Poco::OSP::ServiceFactory}!ServiceFactory@{ServiceFactory}}
+\index{ServiceFactory@{ServiceFactory}!Poco::OSP::ServiceFactory@{Poco::OSP::ServiceFactory}}
+\doxysubsubsection{\texorpdfstring{ServiceFactory()}{ServiceFactory()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Service\+Factory\+::\+Service\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceFactory_a9780094940a38d74ac0178655c240f3f}\label{classPoco_1_1OSP_1_1ServiceFactory_a9780094940a38d74ac0178655c240f3f}} 
+\index{Poco::OSP::ServiceFactory@{Poco::OSP::ServiceFactory}!````~ServiceFactory@{$\sim$ServiceFactory}}
+\index{````~ServiceFactory@{$\sim$ServiceFactory}!Poco::OSP::ServiceFactory@{Poco::OSP::ServiceFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$ServiceFactory()}{~ServiceFactory()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Service\+Factory\+::$\sim$\+Service\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceFactory}{Service\+Factory}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceFactory_a6b54a8a5e8f439ed61b340772f71c53b}\label{classPoco_1_1OSP_1_1ServiceFactory_a6b54a8a5e8f439ed61b340772f71c53b}} 
+\index{Poco::OSP::ServiceFactory@{Poco::OSP::ServiceFactory}!createService@{createService}}
+\index{createService@{createService}!Poco::OSP::ServiceFactory@{Poco::OSP::ServiceFactory}}
+\doxysubsubsection{\texorpdfstring{createService()}{createService()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_ae37f76a4fc067928d4ace33c617920bd}{Service\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Service\+Factory\+::create\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceFactory_a7c3bc36a289e8051518fdac36fd76fdc}\label{classPoco_1_1OSP_1_1ServiceFactory_a7c3bc36a289e8051518fdac36fd76fdc}} 
+\index{Poco::OSP::ServiceFactory@{Poco::OSP::ServiceFactory}!isA@{isA}}
+\index{isA@{isA}!Poco::OSP::ServiceFactory@{Poco::OSP::ServiceFactory}}
+\doxysubsubsection{\texorpdfstring{isA()}{isA()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Service\+Factory\+::isA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&}]{other\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the type information for the object\textquotesingle{}s class.
+
+Subclasses must override this member function.
+
+The implementation of \mbox{\hyperlink{classPoco_1_1OSP_1_1ServiceFactory_a7c3bc36a289e8051518fdac36fd76fdc}{is\+A()}} is usually as follows\+: const std\+::type\+\_\+info\& My\+Service\+::type() const \{ return typeid(\+My\+Service); \}
+
+If a service class implements a service interface, the type information for the interface class should be returned instead\+: const std\+::type\+\_\+info\& My\+Service\+Impl\+::type() const \{ return typeid(\+My\+Service); \} 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a46c8cf8f6356230490f9ba59a5cb40e2}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1ServiceFactory_a9e924e639c1d7cb41118786ed26dac55}\label{classPoco_1_1OSP_1_1ServiceFactory_a9e924e639c1d7cb41118786ed26dac55}} 
+\index{Poco::OSP::ServiceFactory@{Poco::OSP::ServiceFactory}!type@{type}}
+\index{type@{type}!Poco::OSP::ServiceFactory@{Poco::OSP::ServiceFactory}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info\& Poco\+::\+O\+S\+P\+::\+Service\+Factory\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates and returns a new instance of a \mbox{\hyperlink{classPoco_1_1OSP_1_1Service}{Service}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a71ff82992f3ecfa2de28d647b15eede8}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{ServiceFactory_8h}{Service\+Factory.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,259 @@
+\hypertarget{classPoco_1_1Util_1_1LayeredConfiguration}{}\doxysection{Poco\+::Util\+::Layered\+Configuration Class Reference}
+\label{classPoco_1_1Util_1_1LayeredConfiguration}\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+
+
+{\ttfamily \#include $<$Layered\+Configuration.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Util\+::Layered\+Configuration\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Util\+::Layered\+Configuration\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1Util_1_1LayeredConfiguration_1_1ConfigItem}{Config\+Item}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_a69d8236df0942dd0dd7b5b1142ead76d}{Layered\+Configuration}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_a2f646de6012fcfdc5e47ec00fbab4168}{add}} (\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$p\+Config)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_a862a10c939034ce44af3a54e74dda541}{add}} (\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$p\+Config, bool shared)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_ace7fda230f6aab1fccc4b7da4c00cfee}{add}} (\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$p\+Config, int priority)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_a97779c4263624a8024849e39c2b9e56e}{add}} (\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$p\+Config, int priority, bool shared)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_a00a52d4edcaf58ad2b9504a37e3c2df3}{add}} (\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$p\+Config, int priority, bool writeable, bool shared)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_a498522b30808f21c49116ac2f7067f41}{add\+Writeable}} (\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$p\+Config, int priority)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_a0251b7634453f3094ca393936060420f}{add\+Writeable}} (\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$p\+Config, int priority, bool shared)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_add3d21f2677119e5910ba49586d7361f}{add\+Front}} (\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$p\+Config)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_ad755ff74f3e14e1d9bdadc3f666a013d}{add\+Front}} (\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$p\+Config, bool shared)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_a9194ae915496d7681da8ee57f33eee56}{remove\+Configuration}} (\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$p\+Config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $>$ \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_af8844275920c804a67ac6b61e0503e14}{Config\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_a296726d8a6b82d0eac64cac2bede1fa4}{get\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, std\+::string \&value) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff events are enabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_aa6017e03f6f332d815ca015805585946}{set\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_a677ccdfe7de5c757e7cae30f1a48636d}{enumerate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_ab77c4dc36e335ec05107a155786cb91f}{Keys}} \&range) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_afe08f76008a72fda0858847b8d47e2a7}{remove\+Raw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_a5012e33063c3986ce65881101534d410}{lowest}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_aeae132c10ca114da89033bd0f1c3b0a2}{highest}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_abdf3a2d627ceb8944b048ef8c5c4f03e}{insert}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Util_1_1LayeredConfiguration_1_1ConfigItem}{Config\+Item}} \&item)
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_a80345314bbe52849ed668a0a723721cb}{$\sim$\+Layered\+Configuration}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}} consists of a number of Abstract\+Configurations. \begin{DoxyVerb}When reading a configuration property in a LayeredConfiguration,
+all added configurations are searched, in order of their priority.
+Configurations with lower priority values have precedence.
+
+When setting a property, the property is always written to the first writeable 
+configuration (see addWriteable()). 
+If no writeable configuration has been added to the LayeredConfiguration, and an
+attempt is made to set a property, a RuntimeException is thrown.
+
+Every configuration added to the LayeredConfiguration has a priority value.
+The priority determines the position where the configuration is inserted,
+with lower priority values coming before higher priority values.
+
+If no priority is specified, a priority of 0 is assumed. 
+\end{DoxyVerb}
+ 
+
+Definition at line 33 of file Layered\+Configuration.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_af8844275920c804a67ac6b61e0503e14}\label{classPoco_1_1Util_1_1LayeredConfiguration_af8844275920c804a67ac6b61e0503e14}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!ConfigPtr@{ConfigPtr}}
+\index{ConfigPtr@{ConfigPtr}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{ConfigPtr}{ConfigPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}}$>$ \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration_af8844275920c804a67ac6b61e0503e14}{Poco\+::\+Util\+::\+Layered\+Configuration\+::\+Config\+Ptr}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Removes the given configuration from the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}.
+
+Does nothing if the given configuration is not part of the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. 
+
+Definition at line 117 of file Layered\+Configuration.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_a69d8236df0942dd0dd7b5b1142ead76d}\label{classPoco_1_1Util_1_1LayeredConfiguration_a69d8236df0942dd0dd7b5b1142ead76d}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!LayeredConfiguration@{LayeredConfiguration}}
+\index{LayeredConfiguration@{LayeredConfiguration}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{LayeredConfiguration()}{LayeredConfiguration()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Layered\+Configuration\+::\+Layered\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_a80345314bbe52849ed668a0a723721cb}\label{classPoco_1_1Util_1_1LayeredConfiguration_a80345314bbe52849ed668a0a723721cb}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!````~LayeredConfiguration@{$\sim$LayeredConfiguration}}
+\index{````~LayeredConfiguration@{$\sim$LayeredConfiguration}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{$\sim$LayeredConfiguration()}{~LayeredConfiguration()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Layered\+Configuration\+::$\sim$\+Layered\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_a2f646de6012fcfdc5e47ec00fbab4168}\label{classPoco_1_1Util_1_1LayeredConfiguration_a2f646de6012fcfdc5e47ec00fbab4168}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!add@{add}}
+\index{add@{add}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$}]{p\+Config }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_a862a10c939034ce44af3a54e74dda541}\label{classPoco_1_1Util_1_1LayeredConfiguration_a862a10c939034ce44af3a54e74dda541}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!add@{add}}
+\index{add@{add}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$}]{p\+Config,  }\item[{bool}]{shared }\end{DoxyParamCaption})}
+
+Adds a read-\/only configuration to the back of the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. The \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}} does not take ownership of the given configuration. In other words, the configuration\textquotesingle{}s reference count is incremented. \mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_ace7fda230f6aab1fccc4b7da4c00cfee}\label{classPoco_1_1Util_1_1LayeredConfiguration_ace7fda230f6aab1fccc4b7da4c00cfee}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!add@{add}}
+\index{add@{add}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$}]{p\+Config,  }\item[{int}]{priority }\end{DoxyParamCaption})}
+
+Adds a read-\/only configuration to the back of the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. If shared is false, the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}} takes ownership of the given configuration (and the configuration\textquotesingle{}s reference count remains unchanged). \mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_a97779c4263624a8024849e39c2b9e56e}\label{classPoco_1_1Util_1_1LayeredConfiguration_a97779c4263624a8024849e39c2b9e56e}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!add@{add}}
+\index{add@{add}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$}]{p\+Config,  }\item[{int}]{priority,  }\item[{bool}]{shared }\end{DoxyParamCaption})}
+
+Adds a read-\/only configuration to the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. The \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}} does not take ownership of the given configuration. In other words, the configuration\textquotesingle{}s reference count is incremented. \mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_a00a52d4edcaf58ad2b9504a37e3c2df3}\label{classPoco_1_1Util_1_1LayeredConfiguration_a00a52d4edcaf58ad2b9504a37e3c2df3}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!add@{add}}
+\index{add@{add}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$}]{p\+Config,  }\item[{int}]{priority,  }\item[{bool}]{writeable,  }\item[{bool}]{shared }\end{DoxyParamCaption})}
+
+Adds a read-\/only configuration the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. If shared is false, the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}} takes ownership of the given configuration (and the configuration\textquotesingle{}s reference count remains unchanged). \mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_add3d21f2677119e5910ba49586d7361f}\label{classPoco_1_1Util_1_1LayeredConfiguration_add3d21f2677119e5910ba49586d7361f}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!addFront@{addFront}}
+\index{addFront@{addFront}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{addFront()}{addFront()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::add\+Front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$}]{p\+Config }\end{DoxyParamCaption})}
+
+Adds a writeable configuration to the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. If shared is false, the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}} takes ownership of the given configuration (and the configuration\textquotesingle{}s reference count remains unchanged). \mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_ad755ff74f3e14e1d9bdadc3f666a013d}\label{classPoco_1_1Util_1_1LayeredConfiguration_ad755ff74f3e14e1d9bdadc3f666a013d}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!addFront@{addFront}}
+\index{addFront@{addFront}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{addFront()}{addFront()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::add\+Front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$}]{p\+Config,  }\item[{bool}]{shared }\end{DoxyParamCaption})}
+
+Adds a read-\/only configuration to the front of the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. The \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}} does not take ownership of the given configuration. In other words, the configuration\textquotesingle{}s reference count is incremented. \mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_a498522b30808f21c49116ac2f7067f41}\label{classPoco_1_1Util_1_1LayeredConfiguration_a498522b30808f21c49116ac2f7067f41}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!addWriteable@{addWriteable}}
+\index{addWriteable@{addWriteable}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{addWriteable()}{addWriteable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::add\+Writeable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$}]{p\+Config,  }\item[{int}]{priority }\end{DoxyParamCaption})}
+
+Adds a configuration to the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. If shared is false, the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}} takes ownership of the given configuration (and the configuration\textquotesingle{}s reference count remains unchanged). \mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_a0251b7634453f3094ca393936060420f}\label{classPoco_1_1Util_1_1LayeredConfiguration_a0251b7634453f3094ca393936060420f}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!addWriteable@{addWriteable}}
+\index{addWriteable@{addWriteable}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{addWriteable()}{addWriteable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::add\+Writeable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$}]{p\+Config,  }\item[{int}]{priority,  }\item[{bool}]{shared }\end{DoxyParamCaption})}
+
+Adds a writeable configuration to the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. The \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}} does not take ownership of the given configuration. In other words, the configuration\textquotesingle{}s reference count is incremented. \mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_a677ccdfe7de5c757e7cae30f1a48636d}\label{classPoco_1_1Util_1_1LayeredConfiguration_a677ccdfe7de5c757e7cae30f1a48636d}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!enumerate@{enumerate}}
+\index{enumerate@{enumerate}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{enumerate()}{enumerate()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::enumerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_ab77c4dc36e335ec05107a155786cb91f}{Keys}} \&}]{range }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Sets the property with the given key to the given value. An already existing value for the key is overwritten.
+
+Must be overridden by subclasses. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a64885a63b3990485d518b37697aa1057}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_a296726d8a6b82d0eac64cac2bede1fa4}\label{classPoco_1_1Util_1_1LayeredConfiguration_a296726d8a6b82d0eac64cac2bede1fa4}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!getRaw@{getRaw}}
+\index{getRaw@{getRaw}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{getRaw()}{getRaw()}}
+{\footnotesize\ttfamily bool Poco\+::\+Util\+::\+Layered\+Configuration\+::get\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{std\+::string \&}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Returns true iff events are enabled. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a07e5732151cd6056cfa15809f3a5ac55}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_aeae132c10ca114da89033bd0f1c3b0a2}\label{classPoco_1_1Util_1_1LayeredConfiguration_aeae132c10ca114da89033bd0f1c3b0a2}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!highest@{highest}}
+\index{highest@{highest}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{highest()}{highest()}}
+{\footnotesize\ttfamily int Poco\+::\+Util\+::\+Layered\+Configuration\+::highest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_abdf3a2d627ceb8944b048ef8c5c4f03e}\label{classPoco_1_1Util_1_1LayeredConfiguration_abdf3a2d627ceb8944b048ef8c5c4f03e}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!insert@{insert}}
+\index{insert@{insert}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Util_1_1LayeredConfiguration_1_1ConfigItem}{Config\+Item}} \&}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_a5012e33063c3986ce65881101534d410}\label{classPoco_1_1Util_1_1LayeredConfiguration_a5012e33063c3986ce65881101534d410}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!lowest@{lowest}}
+\index{lowest@{lowest}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{lowest()}{lowest()}}
+{\footnotesize\ttfamily int Poco\+::\+Util\+::\+Layered\+Configuration\+::lowest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_a9194ae915496d7681da8ee57f33eee56}\label{classPoco_1_1Util_1_1LayeredConfiguration_a9194ae915496d7681da8ee57f33eee56}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!removeConfiguration@{removeConfiguration}}
+\index{removeConfiguration@{removeConfiguration}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{removeConfiguration()}{removeConfiguration()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::remove\+Configuration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration}{Abstract\+Configuration}} $\ast$}]{p\+Config }\end{DoxyParamCaption})}
+
+Adds a read-\/only configuration to the front of the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}}. If shared is true, the \mbox{\hyperlink{classPoco_1_1Util_1_1LayeredConfiguration}{Layered\+Configuration}} takes ownership of the given configuration. \mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_afe08f76008a72fda0858847b8d47e2a7}\label{classPoco_1_1Util_1_1LayeredConfiguration_afe08f76008a72fda0858847b8d47e2a7}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!removeRaw@{removeRaw}}
+\index{removeRaw@{removeRaw}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{removeRaw()}{removeRaw()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::remove\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Returns in range the names of all subkeys under the given key. If an empty key is passed, all root level keys are returned. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a9b26c960b912239e815c0f0a2607a132}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1LayeredConfiguration_aa6017e03f6f332d815ca015805585946}\label{classPoco_1_1Util_1_1LayeredConfiguration_aa6017e03f6f332d815ca015805585946}} 
+\index{Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}!setRaw@{setRaw}}
+\index{setRaw@{setRaw}!Poco::Util::LayeredConfiguration@{Poco::Util::LayeredConfiguration}}
+\doxysubsubsection{\texorpdfstring{setRaw()}{setRaw()}}
+{\footnotesize\ttfamily void Poco\+::\+Util\+::\+Layered\+Configuration\+::set\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+If the property with the given key exists, stores the property\textquotesingle{}s value in value and returns true. Otherwise, returns false.
+
+Must be overridden by subclasses. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Util_1_1AbstractConfiguration_a620fb5eedbf878c312d7259c9c251509}{Poco\+::\+Util\+::\+Abstract\+Configuration}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Util/\mbox{\hyperlink{LayeredConfiguration_8h}{Layered\+Configuration.\+h}}\end{DoxyCompactItemize}

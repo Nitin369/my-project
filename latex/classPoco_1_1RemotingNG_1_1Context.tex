@@ -1,0 +1,264 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1Context}{}\doxysection{Poco\+::Remoting\+NG\+::Context Class Reference}
+\label{classPoco_1_1RemotingNG_1_1Context}\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+
+
+{\ttfamily \#include $<$Context.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::Context\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::Context\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a9694297148d1bd20121e589787a70af4}{Ptr}}
+\item 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a35ad0ca1ab6f748d41c7426381e85acb}{Attributes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_af8781116dba87d1e29c355b498bdda00}{Context}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a789411988114eba9dd9e47adb7e4a323}{$\sim$\+Context}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_ade807611ebc276e3890ee57f277baf08}{has}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_ad536a0ac54535b19c2faa369c1d7d2f4}{get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}} has an attribute with the given value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a659732a700e8cfac37a8e280030ca909}{get\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a5a95cb8ae07cd45c491cffa311683aff}{get\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, T deflt) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a05894f26452edbe201110448b0d7e033}{set}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a30e7cfd6bf0489c409915d0f7556bff7}{set\+Value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key, T value)
+\begin{DoxyCompactList}\small\item\em Sets/\+Overwrites an attribute value. \end{DoxyCompactList}\item 
+Attributes\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a915b95f896e8d87676fbadf653db4f20}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&key) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+Attributes\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_aba20985e04a87b89dbde7c227faf1857}{begin}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Searches for an attribute. Returns \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_af419dd0fb867102e2f85c363f1aa81f1}{end()}} if not found. \end{DoxyCompactList}\item 
+Attributes\+::const\+\_\+iterator \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_af419dd0fb867102e2f85c363f1aa81f1}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the begin iterator for attributes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Credentials}{Credentials}} \& \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a41a5346c16404e63a9da6cc5e78f450c}{get\+Credentials}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the end iterator for attributes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_ab7c05ac5d27c448398202bb520a90653}{set\+Credentials}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Credentials}{Credentials}} \&creds)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Credentials}{Credentials}} associated with the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a6974c50db3ae43be1244cece56c98213}{clear\+Credentials}} ()
+\begin{DoxyCompactList}\small\item\em Sets the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Credentials}{Credentials}} associated with the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a6836c11a20302eb7837e5b86a1022a31}{set}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a9694297148d1bd20121e589787a70af4}{Context\+::\+Ptr}} p\+Context)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a9694297148d1bd20121e589787a70af4}{Context\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a91b0990ae34e4fca3bc34c00f0e90cc6}{get}} ()
+\begin{DoxyCompactList}\small\item\em Sets the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}} object for the current thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}} object is used to pass transport-\/specific information (such as caller IP address or authentication information) to a service method in a generic way.
+
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}} objects are created and filled by the transport, and are accessed via thread-\/local storage. 
+
+Definition at line 38 of file Context.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_a35ad0ca1ab6f748d41c7426381e85acb}\label{classPoco_1_1RemotingNG_1_1Context_a35ad0ca1ab6f748d41c7426381e85acb}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!Attributes@{Attributes}}
+\index{Attributes@{Attributes}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{Attributes}{Attributes}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a35ad0ca1ab6f748d41c7426381e85acb}{Poco\+::\+Remoting\+N\+G\+::\+Context\+::\+Attributes}}}
+
+
+
+Definition at line 48 of file Context.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_a9694297148d1bd20121e589787a70af4}\label{classPoco_1_1RemotingNG_1_1Context_a9694297148d1bd20121e589787a70af4}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a9694297148d1bd20121e589787a70af4}{Poco\+::\+Remoting\+N\+G\+::\+Context\+::\+Ptr}}}
+
+
+
+Definition at line 47 of file Context.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_af8781116dba87d1e29c355b498bdda00}\label{classPoco_1_1RemotingNG_1_1Context_af8781116dba87d1e29c355b498bdda00}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!Context@{Context}}
+\index{Context@{Context}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{Context()}{Context()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+Context\+::\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_a789411988114eba9dd9e47adb7e4a323}\label{classPoco_1_1RemotingNG_1_1Context_a789411988114eba9dd9e47adb7e4a323}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!````~Context@{$\sim$Context}}
+\index{````~Context@{$\sim$Context}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{$\sim$Context()}{~Context()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+Context\+::$\sim$\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an empty \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_aba20985e04a87b89dbde7c227faf1857}\label{classPoco_1_1RemotingNG_1_1Context_aba20985e04a87b89dbde7c227faf1857}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!begin@{begin}}
+\index{begin@{begin}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily Attributes\+::const\+\_\+iterator Poco\+::\+Remoting\+N\+G\+::\+Context\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Searches for an attribute. Returns \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_af419dd0fb867102e2f85c363f1aa81f1}{end()}} if not found. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_a6974c50db3ae43be1244cece56c98213}\label{classPoco_1_1RemotingNG_1_1Context_a6974c50db3ae43be1244cece56c98213}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!clearCredentials@{clearCredentials}}
+\index{clearCredentials@{clearCredentials}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{clearCredentials()}{clearCredentials()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Context\+::clear\+Credentials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Credentials}{Credentials}} associated with the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}}. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_af419dd0fb867102e2f85c363f1aa81f1}\label{classPoco_1_1RemotingNG_1_1Context_af419dd0fb867102e2f85c363f1aa81f1}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!end@{end}}
+\index{end@{end}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily Attributes\+::const\+\_\+iterator Poco\+::\+Remoting\+N\+G\+::\+Context\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the begin iterator for attributes. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_a915b95f896e8d87676fbadf653db4f20}\label{classPoco_1_1RemotingNG_1_1Context_a915b95f896e8d87676fbadf653db4f20}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!find@{find}}
+\index{find@{find}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily Attributes\+::const\+\_\+iterator Poco\+::\+Remoting\+N\+G\+::\+Context\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_a91b0990ae34e4fca3bc34c00f0e90cc6}\label{classPoco_1_1RemotingNG_1_1Context_a91b0990ae34e4fca3bc34c00f0e90cc6}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!get@{get}}
+\index{get@{get}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a9694297148d1bd20121e589787a70af4}{Context\+::\+Ptr}} Poco\+::\+Remoting\+N\+G\+::\+Context\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}} object for the current thread. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_ad536a0ac54535b19c2faa369c1d7d2f4}\label{classPoco_1_1RemotingNG_1_1Context_ad536a0ac54535b19c2faa369c1d7d2f4}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!get@{get}}
+\index{get@{get}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}}\& Poco\+::\+Remoting\+N\+G\+::\+Context\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption}) const}
+
+
+
+Returns true iff the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}} has an attribute with the given value. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_a41a5346c16404e63a9da6cc5e78f450c}\label{classPoco_1_1RemotingNG_1_1Context_a41a5346c16404e63a9da6cc5e78f450c}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!getCredentials@{getCredentials}}
+\index{getCredentials@{getCredentials}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{getCredentials()}{getCredentials()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Credentials}{Credentials}} \& Poco\+::\+Remoting\+N\+G\+::\+Context\+::get\+Credentials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the end iterator for attributes. 
+
+
+
+Definition at line 158 of file Context.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_a659732a700e8cfac37a8e280030ca909}\label{classPoco_1_1RemotingNG_1_1Context_a659732a700e8cfac37a8e280030ca909}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!getValue@{getValue}}
+\index{getValue@{getValue}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Poco\+::\+Remoting\+N\+G\+::\+Context\+::get\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the attribute with the given key.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the attribute does not exist. Convenience function that returns the attribute with the given key, casted to the desired type.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the attribute does not exist. Throws a Poco\+::\+Bad\+Cast\+Exception if the cast is invalid. 
+
+Definition at line 73 of file Context.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_a5a95cb8ae07cd45c491cffa311683aff}\label{classPoco_1_1RemotingNG_1_1Context_a5a95cb8ae07cd45c491cffa311683aff}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!getValue@{getValue}}
+\index{getValue@{getValue}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Poco\+::\+Remoting\+N\+G\+::\+Context\+::get\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{T}]{deflt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convenience function that returns the attribute with the given key, casted to the desired type. If the attribute does not exist, the given default value is returned.
+
+Throws a Poco\+::\+Bad\+Cast\+Exception if the cast is invalid. 
+
+Definition at line 85 of file Context.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_ade807611ebc276e3890ee57f277baf08}\label{classPoco_1_1RemotingNG_1_1Context_ade807611ebc276e3890ee57f277baf08}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!has@{has}}
+\index{has@{has}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Context\+::has (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key }\end{DoxyParamCaption}) const}
+
+Returns the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}} object for the current thread. Result may be null if no \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}} is available. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_a05894f26452edbe201110448b0d7e033}\label{classPoco_1_1RemotingNG_1_1Context_a05894f26452edbe201110448b0d7e033}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!set@{set}}
+\index{set@{set}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Context\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_a6836c11a20302eb7837e5b86a1022a31}\label{classPoco_1_1RemotingNG_1_1Context_a6836c11a20302eb7837e5b86a1022a31}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!set@{set}}
+\index{set@{set}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+Remoting\+N\+G\+::\+Context\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context_a9694297148d1bd20121e589787a70af4}{Context\+::\+Ptr}}}]{p\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}}. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_ab7c05ac5d27c448398202bb520a90653}\label{classPoco_1_1RemotingNG_1_1Context_ab7c05ac5d27c448398202bb520a90653}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!setCredentials@{setCredentials}}
+\index{setCredentials@{setCredentials}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{setCredentials()}{setCredentials()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Context\+::set\+Credentials (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Credentials}{Credentials}} \&}]{creds }\end{DoxyParamCaption})}
+
+
+
+Returns the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Credentials}{Credentials}} associated with the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Context}{Context}}. 
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Context_a30e7cfd6bf0489c409915d0f7556bff7}\label{classPoco_1_1RemotingNG_1_1Context_a30e7cfd6bf0489c409915d0f7556bff7}} 
+\index{Poco::RemotingNG::Context@{Poco::RemotingNG::Context}!setValue@{setValue}}
+\index{setValue@{setValue}!Poco::RemotingNG::Context@{Poco::RemotingNG::Context}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Poco\+::\+Remoting\+N\+G\+::\+Context\+::set\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{key,  }\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets/\+Overwrites an attribute value. 
+
+Sets/\+Overwrites an attribute value. 
+
+Definition at line 103 of file Context.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{RemotingNG_2Context_8h}{Context.\+h}}\end{DoxyCompactItemize}

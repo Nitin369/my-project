@@ -1,0 +1,174 @@
+\hypertarget{ClassLibrary_8h}{}\doxysection{App\+Frame\+Work/include/\+Poco/\+Class\+Library.h File Reference}
+\label{ClassLibrary_8h}\index{AppFrameWork/include/Poco/ClassLibrary.h@{AppFrameWork/include/Poco/ClassLibrary.h}}
+{\ttfamily \#include \char`\"{}Poco/\+Foundation.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Poco/\+Manifest.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+Include dependency graph for Class\+Library.\+h\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ClassLibrary_8h_af7fe2177129d055abe44d9f16fc90411}{P\+O\+C\+O\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+A\+PI}}
+\item 
+\#define \mbox{\hyperlink{ClassLibrary_8h_a6cfeb64ee287c214edeb401e8ca228fc}{P\+O\+C\+O\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+N\+A\+M\+E\+D\+\_\+\+M\+A\+N\+I\+F\+E\+ST}}(name)
+\item 
+\#define \mbox{\hyperlink{ClassLibrary_8h_ad156b217429318912f77949f2534cad6}{P\+O\+C\+O\+\_\+\+B\+E\+G\+I\+N\+\_\+\+M\+A\+N\+I\+F\+E\+S\+T\+\_\+\+I\+M\+PL}}(fn\+Name,  base)
+\item 
+\#define \mbox{\hyperlink{ClassLibrary_8h_a2899a9d833c81ef7faa2f5c7c8472a72}{P\+O\+C\+O\+\_\+\+B\+E\+G\+I\+N\+\_\+\+M\+A\+N\+I\+F\+E\+ST}}(base)~\mbox{\hyperlink{ClassLibrary_8h_ad156b217429318912f77949f2534cad6}{P\+O\+C\+O\+\_\+\+B\+E\+G\+I\+N\+\_\+\+M\+A\+N\+I\+F\+E\+S\+T\+\_\+\+I\+M\+PL}}(\mbox{\hyperlink{ClassLibrary_8h_aa6310c1c04a580392d1e693c20f5b0b5}{poco\+Build\+Manifest}}, base)
+\item 
+\#define \mbox{\hyperlink{ClassLibrary_8h_a6c9c246dbb8dbdd00183d9c6ac04928c}{P\+O\+C\+O\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+D\+\_\+\+M\+A\+N\+I\+F\+E\+ST}}(name,  base)
+\item 
+\#define \mbox{\hyperlink{ClassLibrary_8h_a90cdfb1dbe16408f3afcbfd9000f27b6}{P\+O\+C\+O\+\_\+\+E\+N\+D\+\_\+\+M\+A\+N\+I\+F\+E\+ST}}
+\item 
+\#define \mbox{\hyperlink{ClassLibrary_8h_aa98b2c358388b9d8204eb6014f4e239a}{P\+O\+C\+O\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+SS}}(cls)~p\+Manifest-\/$>$insert(new \mbox{\hyperlink{classPoco_1_1MetaObject}{Poco\+::\+Meta\+Object}}$<$cls, \+\_\+\+Base$>$(\#cls));
+\item 
+\#define \mbox{\hyperlink{ClassLibrary_8h_a5510322b27982dcfd097ac957db21444}{P\+O\+C\+O\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+S\+I\+N\+G\+L\+E\+T\+ON}}(cls)~p\+Manifest-\/$>$insert(new \mbox{\hyperlink{classPoco_1_1MetaSingleton}{Poco\+::\+Meta\+Singleton}}$<$cls, \+\_\+\+Base$>$(\#cls));
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{ClassLibrary_8h_af7fe2177129d055abe44d9f16fc90411}{P\+O\+C\+O\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+A\+PI}} \mbox{\hyperlink{ClassLibrary_8h_aa6310c1c04a580392d1e693c20f5b0b5}{poco\+Build\+Manifest}} (\mbox{\hyperlink{classPoco_1_1ManifestBase}{Poco\+::\+Manifest\+Base}} $\ast$p\+Manifest)
+\item 
+void \mbox{\hyperlink{ClassLibrary_8h_af7fe2177129d055abe44d9f16fc90411}{P\+O\+C\+O\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+A\+PI}} \mbox{\hyperlink{ClassLibrary_8h_a4f3b31b65dfff3caa2941f4af18c2d46}{poco\+Initialize\+Library}} ()
+\item 
+void \mbox{\hyperlink{ClassLibrary_8h_af7fe2177129d055abe44d9f16fc90411}{P\+O\+C\+O\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+A\+PI}} \mbox{\hyperlink{ClassLibrary_8h_acd8081fc61dd8247d3ef4cb61d71eaca}{poco\+Uninitialize\+Library}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ClassLibrary_8h_a2899a9d833c81ef7faa2f5c7c8472a72}\label{ClassLibrary_8h_a2899a9d833c81ef7faa2f5c7c8472a72}} 
+\index{ClassLibrary.h@{ClassLibrary.h}!POCO\_BEGIN\_MANIFEST@{POCO\_BEGIN\_MANIFEST}}
+\index{POCO\_BEGIN\_MANIFEST@{POCO\_BEGIN\_MANIFEST}!ClassLibrary.h@{ClassLibrary.h}}
+\doxysubsubsection{\texorpdfstring{POCO\_BEGIN\_MANIFEST}{POCO\_BEGIN\_MANIFEST}}
+{\footnotesize\ttfamily \#define P\+O\+C\+O\+\_\+\+B\+E\+G\+I\+N\+\_\+\+M\+A\+N\+I\+F\+E\+ST(\begin{DoxyParamCaption}\item[{}]{base }\end{DoxyParamCaption})~\mbox{\hyperlink{ClassLibrary_8h_ad156b217429318912f77949f2534cad6}{P\+O\+C\+O\+\_\+\+B\+E\+G\+I\+N\+\_\+\+M\+A\+N\+I\+F\+E\+S\+T\+\_\+\+I\+M\+PL}}(\mbox{\hyperlink{ClassLibrary_8h_aa6310c1c04a580392d1e693c20f5b0b5}{poco\+Build\+Manifest}}, base)}
+
+
+
+Definition at line 79 of file Class\+Library.\+h.
+
+\mbox{\Hypertarget{ClassLibrary_8h_ad156b217429318912f77949f2534cad6}\label{ClassLibrary_8h_ad156b217429318912f77949f2534cad6}} 
+\index{ClassLibrary.h@{ClassLibrary.h}!POCO\_BEGIN\_MANIFEST\_IMPL@{POCO\_BEGIN\_MANIFEST\_IMPL}}
+\index{POCO\_BEGIN\_MANIFEST\_IMPL@{POCO\_BEGIN\_MANIFEST\_IMPL}!ClassLibrary.h@{ClassLibrary.h}}
+\doxysubsubsection{\texorpdfstring{POCO\_BEGIN\_MANIFEST\_IMPL}{POCO\_BEGIN\_MANIFEST\_IMPL}}
+{\footnotesize\ttfamily \#define P\+O\+C\+O\+\_\+\+B\+E\+G\+I\+N\+\_\+\+M\+A\+N\+I\+F\+E\+S\+T\+\_\+\+I\+M\+PL(\begin{DoxyParamCaption}\item[{}]{fn\+Name,  }\item[{}]{base }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} fnName(\mbox{\hyperlink{classPoco_1_1ManifestBase}{Poco::ManifestBase}}* pManifest\_)                                       \(\backslash\)}
+\DoxyCodeLine{    \{                                                                               \(\backslash\)}
+\DoxyCodeLine{        typedef base \_Base;                                                         \(\backslash\)}
+\DoxyCodeLine{        typedef \mbox{\hyperlink{classPoco_1_1Manifest}{Poco::Manifest<\_Base>}} \_Manifest;                                   \(\backslash\)}
+\DoxyCodeLine{        std::string requiredType(\textcolor{keyword}{typeid}(\_Manifest).name());                         \(\backslash\)}
+\DoxyCodeLine{        std::string actualType(pManifest\_-\/>className());                            \(\backslash\)}
+\DoxyCodeLine{        if (requiredType == actualType)                                             \(\backslash\)}
+\DoxyCodeLine{        \{                                                                           \(\backslash\)}
+\DoxyCodeLine{            Poco::Manifest<\_Base>* pManifest = \textcolor{keyword}{static\_cast<}\_Manifest*\textcolor{keyword}{>}(pManifest\_);}
+
+\end{DoxyCode}
+
+
+Definition at line 67 of file Class\+Library.\+h.
+
+\mbox{\Hypertarget{ClassLibrary_8h_a6c9c246dbb8dbdd00183d9c6ac04928c}\label{ClassLibrary_8h_a6c9c246dbb8dbdd00183d9c6ac04928c}} 
+\index{ClassLibrary.h@{ClassLibrary.h}!POCO\_BEGIN\_NAMED\_MANIFEST@{POCO\_BEGIN\_NAMED\_MANIFEST}}
+\index{POCO\_BEGIN\_NAMED\_MANIFEST@{POCO\_BEGIN\_NAMED\_MANIFEST}!ClassLibrary.h@{ClassLibrary.h}}
+\doxysubsubsection{\texorpdfstring{POCO\_BEGIN\_NAMED\_MANIFEST}{POCO\_BEGIN\_NAMED\_MANIFEST}}
+{\footnotesize\ttfamily \#define P\+O\+C\+O\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+D\+\_\+\+M\+A\+N\+I\+F\+E\+ST(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{base }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{ClassLibrary_8h_a6cfeb64ee287c214edeb401e8ca228fc}{POCO\_DECLARE\_NAMED\_MANIFEST}}(name)            \(\backslash\)}
+\DoxyCodeLine{    POCO\_BEGIN\_MANIFEST\_IMPL(\mbox{\hyperlink{Foundation_8h_af133c298935c569a1eda26998b1d0137}{POCO\_JOIN}}(\mbox{\hyperlink{ClassLibrary_8h_aa6310c1c04a580392d1e693c20f5b0b5}{pocoBuildManifest}}, name), base)}
+
+\end{DoxyCode}
+
+
+Definition at line 83 of file Class\+Library.\+h.
+
+\mbox{\Hypertarget{ClassLibrary_8h_a6cfeb64ee287c214edeb401e8ca228fc}\label{ClassLibrary_8h_a6cfeb64ee287c214edeb401e8ca228fc}} 
+\index{ClassLibrary.h@{ClassLibrary.h}!POCO\_DECLARE\_NAMED\_MANIFEST@{POCO\_DECLARE\_NAMED\_MANIFEST}}
+\index{POCO\_DECLARE\_NAMED\_MANIFEST@{POCO\_DECLARE\_NAMED\_MANIFEST}!ClassLibrary.h@{ClassLibrary.h}}
+\doxysubsubsection{\texorpdfstring{POCO\_DECLARE\_NAMED\_MANIFEST}{POCO\_DECLARE\_NAMED\_MANIFEST}}
+{\footnotesize\ttfamily \#define P\+O\+C\+O\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+N\+A\+M\+E\+D\+\_\+\+M\+A\+N\+I\+F\+E\+ST(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{extern} \textcolor{stringliteral}{"C"}  \(\backslash\)}
+\DoxyCodeLine{\{           \(\backslash\)}
+\DoxyCodeLine{    bool \mbox{\hyperlink{ClassLibrary_8h_af7fe2177129d055abe44d9f16fc90411}{POCO\_LIBRARY\_API}} \mbox{\hyperlink{Foundation_8h_af133c298935c569a1eda26998b1d0137}{POCO\_JOIN}}(\mbox{\hyperlink{ClassLibrary_8h_aa6310c1c04a580392d1e693c20f5b0b5}{pocoBuildManifest}}, name)(\mbox{\hyperlink{classPoco_1_1ManifestBase}{Poco::ManifestBase}}* pManifest); \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 49 of file Class\+Library.\+h.
+
+\mbox{\Hypertarget{ClassLibrary_8h_a90cdfb1dbe16408f3afcbfd9000f27b6}\label{ClassLibrary_8h_a90cdfb1dbe16408f3afcbfd9000f27b6}} 
+\index{ClassLibrary.h@{ClassLibrary.h}!POCO\_END\_MANIFEST@{POCO\_END\_MANIFEST}}
+\index{POCO\_END\_MANIFEST@{POCO\_END\_MANIFEST}!ClassLibrary.h@{ClassLibrary.h}}
+\doxysubsubsection{\texorpdfstring{POCO\_END\_MANIFEST}{POCO\_END\_MANIFEST}}
+{\footnotesize\ttfamily \#define P\+O\+C\+O\+\_\+\+E\+N\+D\+\_\+\+M\+A\+N\+I\+F\+E\+ST}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{true};    \(\backslash\)}
+\DoxyCodeLine{        \}                   \(\backslash\)}
+\DoxyCodeLine{        else \textcolor{keywordflow}{return} \textcolor{keyword}{false};  \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 88 of file Class\+Library.\+h.
+
+\mbox{\Hypertarget{ClassLibrary_8h_aa98b2c358388b9d8204eb6014f4e239a}\label{ClassLibrary_8h_aa98b2c358388b9d8204eb6014f4e239a}} 
+\index{ClassLibrary.h@{ClassLibrary.h}!POCO\_EXPORT\_CLASS@{POCO\_EXPORT\_CLASS}}
+\index{POCO\_EXPORT\_CLASS@{POCO\_EXPORT\_CLASS}!ClassLibrary.h@{ClassLibrary.h}}
+\doxysubsubsection{\texorpdfstring{POCO\_EXPORT\_CLASS}{POCO\_EXPORT\_CLASS}}
+{\footnotesize\ttfamily \#define P\+O\+C\+O\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+SS(\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})~p\+Manifest-\/$>$insert(new \mbox{\hyperlink{classPoco_1_1MetaObject}{Poco\+::\+Meta\+Object}}$<$cls, \+\_\+\+Base$>$(\#cls));}
+
+
+
+Definition at line 95 of file Class\+Library.\+h.
+
+\mbox{\Hypertarget{ClassLibrary_8h_a5510322b27982dcfd097ac957db21444}\label{ClassLibrary_8h_a5510322b27982dcfd097ac957db21444}} 
+\index{ClassLibrary.h@{ClassLibrary.h}!POCO\_EXPORT\_SINGLETON@{POCO\_EXPORT\_SINGLETON}}
+\index{POCO\_EXPORT\_SINGLETON@{POCO\_EXPORT\_SINGLETON}!ClassLibrary.h@{ClassLibrary.h}}
+\doxysubsubsection{\texorpdfstring{POCO\_EXPORT\_SINGLETON}{POCO\_EXPORT\_SINGLETON}}
+{\footnotesize\ttfamily \#define P\+O\+C\+O\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+S\+I\+N\+G\+L\+E\+T\+ON(\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})~p\+Manifest-\/$>$insert(new \mbox{\hyperlink{classPoco_1_1MetaSingleton}{Poco\+::\+Meta\+Singleton}}$<$cls, \+\_\+\+Base$>$(\#cls));}
+
+
+
+Definition at line 99 of file Class\+Library.\+h.
+
+\mbox{\Hypertarget{ClassLibrary_8h_af7fe2177129d055abe44d9f16fc90411}\label{ClassLibrary_8h_af7fe2177129d055abe44d9f16fc90411}} 
+\index{ClassLibrary.h@{ClassLibrary.h}!POCO\_LIBRARY\_API@{POCO\_LIBRARY\_API}}
+\index{POCO\_LIBRARY\_API@{POCO\_LIBRARY\_API}!ClassLibrary.h@{ClassLibrary.h}}
+\doxysubsubsection{\texorpdfstring{POCO\_LIBRARY\_API}{POCO\_LIBRARY\_API}}
+{\footnotesize\ttfamily \#define P\+O\+C\+O\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+A\+PI}
+
+
+
+Definition at line 31 of file Class\+Library.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ClassLibrary_8h_aa6310c1c04a580392d1e693c20f5b0b5}\label{ClassLibrary_8h_aa6310c1c04a580392d1e693c20f5b0b5}} 
+\index{ClassLibrary.h@{ClassLibrary.h}!pocoBuildManifest@{pocoBuildManifest}}
+\index{pocoBuildManifest@{pocoBuildManifest}!ClassLibrary.h@{ClassLibrary.h}}
+\doxysubsubsection{\texorpdfstring{pocoBuildManifest()}{pocoBuildManifest()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{ClassLibrary_8h_af7fe2177129d055abe44d9f16fc90411}{P\+O\+C\+O\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+A\+PI}} poco\+Build\+Manifest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1ManifestBase}{Poco\+::\+Manifest\+Base}} $\ast$}]{p\+Manifest }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ClassLibrary_8h_a4f3b31b65dfff3caa2941f4af18c2d46}\label{ClassLibrary_8h_a4f3b31b65dfff3caa2941f4af18c2d46}} 
+\index{ClassLibrary.h@{ClassLibrary.h}!pocoInitializeLibrary@{pocoInitializeLibrary}}
+\index{pocoInitializeLibrary@{pocoInitializeLibrary}!ClassLibrary.h@{ClassLibrary.h}}
+\doxysubsubsection{\texorpdfstring{pocoInitializeLibrary()}{pocoInitializeLibrary()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{ClassLibrary_8h_af7fe2177129d055abe44d9f16fc90411}{P\+O\+C\+O\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+A\+PI}} poco\+Initialize\+Library (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ClassLibrary_8h_acd8081fc61dd8247d3ef4cb61d71eaca}\label{ClassLibrary_8h_acd8081fc61dd8247d3ef4cb61d71eaca}} 
+\index{ClassLibrary.h@{ClassLibrary.h}!pocoUninitializeLibrary@{pocoUninitializeLibrary}}
+\index{pocoUninitializeLibrary@{pocoUninitializeLibrary}!ClassLibrary.h@{ClassLibrary.h}}
+\doxysubsubsection{\texorpdfstring{pocoUninitializeLibrary()}{pocoUninitializeLibrary()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{ClassLibrary_8h_af7fe2177129d055abe44d9f16fc90411}{P\+O\+C\+O\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+A\+PI}} poco\+Uninitialize\+Library (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

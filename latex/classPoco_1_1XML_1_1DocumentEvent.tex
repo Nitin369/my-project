@@ -1,0 +1,56 @@
+\hypertarget{classPoco_1_1XML_1_1DocumentEvent}{}\doxysection{Poco\+::X\+ML\+::Document\+Event Class Reference}
+\label{classPoco_1_1XML_1_1DocumentEvent}\index{Poco::XML::DocumentEvent@{Poco::XML::DocumentEvent}}
+
+
+{\ttfamily \#include $<$Document\+Event.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::Document\+Event\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentEvent_add56fd31ee1aa86568544425c32b53ab}{create\+Event}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&event\+Type) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentEvent_a1e05fa87017637db8e77480018253309}{$\sim$\+Document\+Event}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentEvent}{Document\+Event}} interface provides a mechanism by which the user can create an \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} of a type supported by the implementation. It is expected that the \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentEvent}{Document\+Event}} interface will be implemented on the same object which implements the \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} interface in an implementation which supports the \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} model. 
+
+Definition at line 34 of file Document\+Event.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DocumentEvent_a1e05fa87017637db8e77480018253309}\label{classPoco_1_1XML_1_1DocumentEvent_a1e05fa87017637db8e77480018253309}} 
+\index{Poco::XML::DocumentEvent@{Poco::XML::DocumentEvent}!````~DocumentEvent@{$\sim$DocumentEvent}}
+\index{````~DocumentEvent@{$\sim$DocumentEvent}!Poco::XML::DocumentEvent@{Poco::XML::DocumentEvent}}
+\doxysubsubsection{\texorpdfstring{$\sim$DocumentEvent()}{~DocumentEvent()}}
+{\footnotesize\ttfamily virtual Poco\+::\+X\+M\+L\+::\+Document\+Event\+::$\sim$\+Document\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Creates an event of the specified type.
+
+The event\+Type parameter specifies the type of \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} interface to be created. If the \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} interface specified is supported by the implementation this method will return a new \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} of the interface type requested. If the \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} is to be dispatched via the dispatch\+Event method the appropriate event init method must be called after creation in order to initialize the \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}}\textquotesingle{}s values. As an example, a user wishing to synthesize some kind of U\+I\+Event would call create\+Event with the parameter \char`\"{}\+U\+I\+Events\char`\"{}. The init\+U\+I\+Event method could then be called on the newly created U\+I\+Event to set the specific type of U\+I\+Event to be dispatched and set its context information. The create\+Event method is used in creating Events when it is either inconvenient or unnecessary for the user to create an \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} themselves. In cases where the implementation provided \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} is insufficient, users may supply their own \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} implementations for use with the dispatch\+Event method. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DocumentEvent_add56fd31ee1aa86568544425c32b53ab}\label{classPoco_1_1XML_1_1DocumentEvent_add56fd31ee1aa86568544425c32b53ab}} 
+\index{Poco::XML::DocumentEvent@{Poco::XML::DocumentEvent}!createEvent@{createEvent}}
+\index{createEvent@{createEvent}!Poco::XML::DocumentEvent@{Poco::XML::DocumentEvent}}
+\doxysubsubsection{\texorpdfstring{createEvent()}{createEvent()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}}$\ast$ Poco\+::\+X\+M\+L\+::\+Document\+Event\+::create\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{event\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1XML_1_1Document_a317f7972a50cd957a249c86d5159c2fc}{Poco\+::\+X\+M\+L\+::\+Document}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+D\+O\+M/\mbox{\hyperlink{DocumentEvent_8h}{Document\+Event.\+h}}\end{DoxyCompactItemize}

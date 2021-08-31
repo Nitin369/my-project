@@ -1,0 +1,133 @@
+\hypertarget{classIoT_1_1Devices_1_1LED}{}\doxysection{IoT\+::Devices\+::L\+ED Class Reference}
+\label{classIoT_1_1Devices_1_1LED}\index{IoT::Devices::LED@{IoT::Devices::LED}}
+
+
+{\ttfamily \#include $<$L\+E\+D.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::L\+ED\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::L\+ED\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1LED_a50e10751b9add5e33a18e918504ff9ca}{L\+ED}} ()
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1LED_a38ae580d565ddc362b8dbecd790bf076}{$\sim$\+L\+ED}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LED_a82d65e9c477a6a47c0a960ded8aabb8c}{on}} ()=0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LED_ab403e562816389af93fd0e052e9d2a3f}{off}} ()=0
+\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1LED_a18b8d9ad418ee4047de75e886c84be8c}{get\+Brightness}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LED_ae2f637544b8ecf6bc3305cb5700c2c8c}{set\+Brightness}} (double brightness)=0
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LED_aa32527bd11fc553475f02294d11a25b5}{blink}} (int on\+Milliseconds, int off\+Milliseconds)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for L\+E\+Ds. \begin{DoxyVerb}Each instance of the LED class represents a single physical
+LED. Some LED devices support different brightness levels,
+this is accounted for by allowing to specify a brightness
+level in range 0.0 to 1.0, where 0.0 turns the LED off and
+1.0 is the maximum brightness. 
+
+Some implementations may also support blinking LEDs.
+This is exposed via the "blinkOn" and "blinkOff" properties,
+which take as values the time in milliseconds the LED should
+be on, or off, respectively. There is also a shortcut
+method, blink(), which allows setting both properties at once.
+
+To turn on blinking, both "blinkOn" and "blinkOff" must be 
+set to a non-zero value. Furthermore, the brightness must
+be non-zero. 
+\end{DoxyVerb}
+ 
+
+Definition at line 31 of file L\+E\+D.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LED_a50e10751b9add5e33a18e918504ff9ca}\label{classIoT_1_1Devices_1_1LED_a50e10751b9add5e33a18e918504ff9ca}} 
+\index{IoT::Devices::LED@{IoT::Devices::LED}!LED@{LED}}
+\index{LED@{LED}!IoT::Devices::LED@{IoT::Devices::LED}}
+\doxysubsubsection{\texorpdfstring{LED()}{LED()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+L\+E\+D\+::\+L\+ED (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LED_a38ae580d565ddc362b8dbecd790bf076}\label{classIoT_1_1Devices_1_1LED_a38ae580d565ddc362b8dbecd790bf076}} 
+\index{IoT::Devices::LED@{IoT::Devices::LED}!````~LED@{$\sim$LED}}
+\index{````~LED@{$\sim$LED}!IoT::Devices::LED@{IoT::Devices::LED}}
+\doxysubsubsection{\texorpdfstring{$\sim$LED()}{~LED()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+L\+E\+D\+::$\sim$\+L\+ED (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LED_aa32527bd11fc553475f02294d11a25b5}\label{classIoT_1_1Devices_1_1LED_aa32527bd11fc553475f02294d11a25b5}} 
+\index{IoT::Devices::LED@{IoT::Devices::LED}!blink@{blink}}
+\index{blink@{blink}!IoT::Devices::LED@{IoT::Devices::LED}}
+\doxysubsubsection{\texorpdfstring{blink()}{blink()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+L\+E\+D\+::blink (\begin{DoxyParamCaption}\item[{int}]{on\+Milliseconds,  }\item[{int}]{off\+Milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the brightness of the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}}.
+
+0.\+0 means off, every value $>$ 0.\+0 means on, with 1.\+0 being the maximum brightness level.
+
+Note that most \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} devices do not support different brightness levels and can only be turned on or off. Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LED_a18b8d9ad418ee4047de75e886c84be8c}\label{classIoT_1_1Devices_1_1LED_a18b8d9ad418ee4047de75e886c84be8c}} 
+\index{IoT::Devices::LED@{IoT::Devices::LED}!getBrightness@{getBrightness}}
+\index{getBrightness@{getBrightness}!IoT::Devices::LED@{IoT::Devices::LED}}
+\doxysubsubsection{\texorpdfstring{getBrightness()}{getBrightness()}}
+{\footnotesize\ttfamily virtual double Io\+T\+::\+Devices\+::\+L\+E\+D\+::get\+Brightness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Convenience method that turns the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} off by calling set\+Brightness(0.\+0). Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LED_ab403e562816389af93fd0e052e9d2a3f}\label{classIoT_1_1Devices_1_1LED_ab403e562816389af93fd0e052e9d2a3f}} 
+\index{IoT::Devices::LED@{IoT::Devices::LED}!off@{off}}
+\index{off@{off}!IoT::Devices::LED@{IoT::Devices::LED}}
+\doxysubsubsection{\texorpdfstring{off()}{off()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+L\+E\+D\+::off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Convenience method that turns the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} on by calling set\+Brightness(1.\+0). Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LED_a82d65e9c477a6a47c0a960ded8aabb8c}\label{classIoT_1_1Devices_1_1LED_a82d65e9c477a6a47c0a960ded8aabb8c}} 
+\index{IoT::Devices::LED@{IoT::Devices::LED}!on@{on}}
+\index{on@{on}!IoT::Devices::LED@{IoT::Devices::LED}}
+\doxysubsubsection{\texorpdfstring{on()}{on()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+L\+E\+D\+::on (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}}. 
+
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LED_ae2f637544b8ecf6bc3305cb5700c2c8c}\label{classIoT_1_1Devices_1_1LED_ae2f637544b8ecf6bc3305cb5700c2c8c}} 
+\index{IoT::Devices::LED@{IoT::Devices::LED}!setBrightness@{setBrightness}}
+\index{setBrightness@{setBrightness}!IoT::Devices::LED@{IoT::Devices::LED}}
+\doxysubsubsection{\texorpdfstring{setBrightness()}{setBrightness()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Devices\+::\+L\+E\+D\+::set\+Brightness (\begin{DoxyParamCaption}\item[{double}]{brightness }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the current brightness of the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} in range 0.\+0 to 1.\+0.
+
+0.\+0 means off, every value $>$ 0.\+0 means on, with 1.\+0 being the maximum brightness level.
+
+Note that most \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} devices do not support different brightness levels and can only be turned on or off. Here is the caller graph for this function\+:
+% FIG 6
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{LED_8h}{L\+E\+D.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,494 @@
+\hypertarget{classIoT_1_1BtLE_1_1GATTClient}{}\doxysection{IoT\+::Bt\+LE\+::G\+A\+T\+T\+Client Class Reference}
+\label{classIoT_1_1BtLE_1_1GATTClient}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+
+
+{\ttfamily \#include $<$G\+A\+T\+T\+Client.\+h$>$}
+
+
+
+Collaboration diagram for IoT\+::Bt\+LE\+::G\+A\+T\+T\+Client\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Characteristic}{Characteristic}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Characteristic}{Characteristic}} description. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Descriptor}{Descriptor}}
+\begin{DoxyCompactList}\small\item\em Handle \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Descriptor}{Descriptor}}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Indication}{Indication}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Notification}{Notification}}
+\item 
+struct \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Service}{Service}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Service}{Service}} description. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37}{Connect\+Mode}} \{ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37a192800c68adc4d4a6d446a84e1cfd043}{G\+A\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+A\+IT}}, 
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37ad57a51c4ba3ea7adcbc78ea9fe26a383}{G\+A\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+N\+O\+W\+A\+IT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Connect mode -\/ synchronous or asynchronous. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16}{State}} \{ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16a0723a7ed91228a27cea6d6a91352dfa8}{G\+A\+T\+T\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}}, 
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16a36aa62ce8c6e59ac4f932e592b149e05}{G\+A\+T\+T\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG}}, 
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16a02f0031fa85e707192e3d96eddf2d5d6}{G\+A\+T\+T\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}}, 
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16a5d1c3386217484e2da6abf805c79de75}{G\+A\+T\+T\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+I\+NG}}
+ \}
+\begin{DoxyCompactList}\small\item\em State of the connection to the peripheral device. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440}{Security\+Level}} \{ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440aa698f3f1b951a1ebd6f64f82a635f393}{G\+A\+T\+T\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+L\+OW}}, 
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440a7cfefd657a6e2824d8d760a0c2038706}{G\+A\+T\+T\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+M\+E\+D\+I\+UM}}, 
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440a5ae34bbe55d932053f6c5b6274af4b1e}{G\+A\+T\+T\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+H\+I\+GH}}
+ \}
+\begin{DoxyCompactList}\small\item\em Security level of the connection to the peripheral device. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107}{Property}} \{ \newline
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107aaf31288bfe5356e12ccc200a924991d4}{G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST}} = 0x01, 
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107a20e6028a6916b301581c1c0b9e025433}{G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+R\+E\+AD}} = 0x02, 
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107a6cd99ce4f0cca0480239476ddfb1699d}{G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+W\+R\+I\+T\+E\+\_\+\+N\+O\+\_\+\+R\+E\+SP}} = 0x04, 
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107ae998a761184133507dd69c074c13fd57}{G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+W\+R\+I\+TE}} = 0x08, 
+\newline
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107aab60b7c9364165d550e9064783132c39}{G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+N\+O\+T\+I\+FY}} = 0x10, 
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107acc564335357c923d0f1bcb84670c6b0e}{G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+I\+N\+D\+I\+C\+A\+TE}} = 0x20, 
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107aaf17232a97efb5fad94bf72b9fa32825}{G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+W\+R\+I\+T\+E\+\_\+\+S\+I\+G\+N\+ED}} = 0x40, 
+\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107a3d52244ef8bb709593d4c8e29e1998e6}{G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+E\+X\+T\+E\+N\+D\+ED}} = 0x80
+ \}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Characteristic}{Characteristic}} property flags. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient}{G\+A\+T\+T\+Client}} $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_ab093df797837bad5ba0493d8b23ecd0f}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a1f976476194ce0f79195978a0da8f986}{connect}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a7268a4014c6c2be6287e39496cbc6dec}{address}}, \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37}{Connect\+Mode}} mode=\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37a192800c68adc4d4a6d446a84e1cfd043}{G\+A\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+A\+IT}})=0
+\begin{DoxyCompactList}\small\item\em Fired when a \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Notification}{Notification}} has been received from the peripheral. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_ad68e722c0bb38bc439b52389bbeca29e}{disconnect}} ()=0
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16}{State}} \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_aff3802e70b077d13b648f9d748f9f997}{state}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Disconnects from the peripheral. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a7268a4014c6c2be6287e39496cbc6dec}{address}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Returns the current state of the client. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Service}{Service}} $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a8871fbff17792a16db6904c98f595b68}{services}} ()=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Service}{Service}} $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a6d58ecb850c83d2f6ff90f2b9acd639d}{included\+Services}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&service\+U\+U\+ID)=0
+\begin{DoxyCompactList}\small\item\em Returns a list of all services supported by the peripheral. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Characteristic}{Characteristic}} $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a15d41d8685edd8f8c99ae368826e1f74}{characteristics}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&service\+U\+U\+ID)=0
+\begin{DoxyCompactList}\small\item\em Returns a list of all services included by the service identified by the given handles. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Descriptor}{Descriptor}} $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_ae0e28fc9b8b654aac25699c3ce231d9b}{descriptors}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&service\+U\+U\+ID)=0
+\begin{DoxyCompactList}\small\item\em Returns a list of all characteristics of the service with the given U\+U\+ID. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a83d91461e864331c13c97eb01d357935}{read}} (Poco\+::\+U\+Int16 handle)=0
+\begin{DoxyCompactList}\small\item\em Returns a list of all handle descriptors for the service with the given U\+U\+ID. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a24a4e1ea95a0d8f18addf95e8f5d9d5c}{write}} (Poco\+::\+U\+Int16 handle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value, bool with\+Response=true)=0
+\begin{DoxyCompactList}\small\item\em Reads the value of the characteristic\textquotesingle{}s value with the given value handle. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a33dad64d87b67cdc7116aa07bdea572f}{set\+Security\+Level}} (\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440}{Security\+Level}} level)=0
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440}{Security\+Level}} \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_af0f75c8c887b4fc62ad7d09ff891dad4}{get\+Security\+Level}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Sets the connection\textquotesingle{}s security level. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_aab31054446c4135a7a6afb0e33e97233}{set\+M\+TU}} (Poco\+::\+U\+Int8 mtu)=0
+\begin{DoxyCompactList}\small\item\em Returns the connection\textquotesingle{}s current security level. \end{DoxyCompactList}\item 
+virtual Poco\+::\+U\+Int8 \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_ae5cc95f5c09b31ffcaf14c29f5940fd1}{get\+M\+TU}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Sets the connection\textquotesingle{}s M\+TU size. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a7ea1e8d17ef08ccb1b6bbe656b7fb7eb}{set\+Timeout}} (long milliseconds)=0
+\item 
+virtual long \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_ac2b2669aff87d1a1305795db4cc4df18}{get\+Timeout}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Sets the timeout for communication with the peripheral device. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_aefd418e3625d982e3c63d10bb6df982b}{$\sim$\+G\+A\+T\+T\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Returns the timeout for communication with the peripheral device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ void $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_ad524457876d47055e0928385a9248eb6}{connected}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ void $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a2b67adaff46bd1ad5e4082a8c8d91120}{disconnected}}
+\begin{DoxyCompactList}\small\item\em Fired when a connection with the peripheral has been established. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_aad730fadec6d132b0715de5e85d891f4}{error}}
+\begin{DoxyCompactList}\small\item\em Fired when the connection with the peripheral has been disconnected. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Indication}{Indication}} $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_adc5b8a2c7a55d3a3497696e064f95ece}{indication\+Received}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Notification}{Notification}} $>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_ac18d84f7c542f69ec903ca87c4fb25f9}{notification\+Received}}
+\begin{DoxyCompactList}\small\item\em Fired when an \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Indication}{Indication}} has been received from the peripheral. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides a low-\/level interface to a Bluetooth LE peripheral device using the Bluetooth Generic Attribute Profile (G\+A\+TT). 
+
+Definition at line 34 of file G\+A\+T\+T\+Client.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_ab093df797837bad5ba0493d8b23ecd0f}\label{classIoT_1_1BtLE_1_1GATTClient_ab093df797837bad5ba0493d8b23ecd0f}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient}{G\+A\+T\+T\+Client}}$>$ \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_ab093df797837bad5ba0493d8b23ecd0f}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::\+Ptr}}}
+
+
+
+Definition at line 39 of file G\+A\+T\+T\+Client.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37}\label{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!ConnectMode@{ConnectMode}}
+\index{ConnectMode@{ConnectMode}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{ConnectMode}{ConnectMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::\+Connect\+Mode}}}
+
+
+
+Connect mode -\/ synchronous or asynchronous. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_CONNECT\_WAIT@{GATT\_CONNECT\_WAIT}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_CONNECT\_WAIT@{GATT\_CONNECT\_WAIT}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37a192800c68adc4d4a6d446a84e1cfd043}\label{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37a192800c68adc4d4a6d446a84e1cfd043}} 
+G\+A\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+A\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_CONNECT\_NOWAIT@{GATT\_CONNECT\_NOWAIT}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_CONNECT\_NOWAIT@{GATT\_CONNECT\_NOWAIT}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37ad57a51c4ba3ea7adcbc78ea9fe26a383}\label{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37ad57a51c4ba3ea7adcbc78ea9fe26a383}} 
+G\+A\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+N\+O\+W\+A\+IT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 41 of file G\+A\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107}\label{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!Property@{Property}}
+\index{Property@{Property}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{Property}{Property}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::\+Property}}}
+
+
+
+\mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Characteristic}{Characteristic}} property flags. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_PROP\_BROADCAST@{GATT\_PROP\_BROADCAST}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_PROP\_BROADCAST@{GATT\_PROP\_BROADCAST}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107aaf31288bfe5356e12ccc200a924991d4}\label{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107aaf31288bfe5356e12ccc200a924991d4}} 
+G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_PROP\_READ@{GATT\_PROP\_READ}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_PROP\_READ@{GATT\_PROP\_READ}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107a20e6028a6916b301581c1c0b9e025433}\label{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107a20e6028a6916b301581c1c0b9e025433}} 
+G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+R\+E\+AD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_PROP\_WRITE\_NO\_RESP@{GATT\_PROP\_WRITE\_NO\_RESP}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_PROP\_WRITE\_NO\_RESP@{GATT\_PROP\_WRITE\_NO\_RESP}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107a6cd99ce4f0cca0480239476ddfb1699d}\label{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107a6cd99ce4f0cca0480239476ddfb1699d}} 
+G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+W\+R\+I\+T\+E\+\_\+\+N\+O\+\_\+\+R\+E\+SP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_PROP\_WRITE@{GATT\_PROP\_WRITE}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_PROP\_WRITE@{GATT\_PROP\_WRITE}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107ae998a761184133507dd69c074c13fd57}\label{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107ae998a761184133507dd69c074c13fd57}} 
+G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+W\+R\+I\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_PROP\_NOTIFY@{GATT\_PROP\_NOTIFY}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_PROP\_NOTIFY@{GATT\_PROP\_NOTIFY}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107aab60b7c9364165d550e9064783132c39}\label{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107aab60b7c9364165d550e9064783132c39}} 
+G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+N\+O\+T\+I\+FY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_PROP\_INDICATE@{GATT\_PROP\_INDICATE}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_PROP\_INDICATE@{GATT\_PROP\_INDICATE}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107acc564335357c923d0f1bcb84670c6b0e}\label{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107acc564335357c923d0f1bcb84670c6b0e}} 
+G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+I\+N\+D\+I\+C\+A\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_PROP\_WRITE\_SIGNED@{GATT\_PROP\_WRITE\_SIGNED}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_PROP\_WRITE\_SIGNED@{GATT\_PROP\_WRITE\_SIGNED}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107aaf17232a97efb5fad94bf72b9fa32825}\label{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107aaf17232a97efb5fad94bf72b9fa32825}} 
+G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+W\+R\+I\+T\+E\+\_\+\+S\+I\+G\+N\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_PROP\_EXTENDED@{GATT\_PROP\_EXTENDED}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_PROP\_EXTENDED@{GATT\_PROP\_EXTENDED}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107a3d52244ef8bb709593d4c8e29e1998e6}\label{classIoT_1_1BtLE_1_1GATTClient_a02afc23c14faa6d8c927c3ebc7210107a3d52244ef8bb709593d4c8e29e1998e6}} 
+G\+A\+T\+T\+\_\+\+P\+R\+O\+P\+\_\+\+E\+X\+T\+E\+N\+D\+ED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 65 of file G\+A\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440}\label{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!SecurityLevel@{SecurityLevel}}
+\index{SecurityLevel@{SecurityLevel}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{SecurityLevel}{SecurityLevel}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::\+Security\+Level}}}
+
+
+
+Security level of the connection to the peripheral device. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_SECURITY\_LOW@{GATT\_SECURITY\_LOW}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_SECURITY\_LOW@{GATT\_SECURITY\_LOW}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440aa698f3f1b951a1ebd6f64f82a635f393}\label{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440aa698f3f1b951a1ebd6f64f82a635f393}} 
+G\+A\+T\+T\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+L\+OW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_SECURITY\_MEDIUM@{GATT\_SECURITY\_MEDIUM}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_SECURITY\_MEDIUM@{GATT\_SECURITY\_MEDIUM}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440a7cfefd657a6e2824d8d760a0c2038706}\label{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440a7cfefd657a6e2824d8d760a0c2038706}} 
+G\+A\+T\+T\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+M\+E\+D\+I\+UM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_SECURITY\_HIGH@{GATT\_SECURITY\_HIGH}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_SECURITY\_HIGH@{GATT\_SECURITY\_HIGH}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440a5ae34bbe55d932053f6c5b6274af4b1e}\label{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440a5ae34bbe55d932053f6c5b6274af4b1e}} 
+G\+A\+T\+T\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+H\+I\+GH&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 57 of file G\+A\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16}\label{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!State@{State}}
+\index{State@{State}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16}{Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::\+State}}}
+
+
+
+State of the connection to the peripheral device. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_STATE\_DISCONNECTED@{GATT\_STATE\_DISCONNECTED}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_STATE\_DISCONNECTED@{GATT\_STATE\_DISCONNECTED}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16a0723a7ed91228a27cea6d6a91352dfa8}\label{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16a0723a7ed91228a27cea6d6a91352dfa8}} 
+G\+A\+T\+T\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_STATE\_CONNECTING@{GATT\_STATE\_CONNECTING}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_STATE\_CONNECTING@{GATT\_STATE\_CONNECTING}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16a36aa62ce8c6e59ac4f932e592b149e05}\label{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16a36aa62ce8c6e59ac4f932e592b149e05}} 
+G\+A\+T\+T\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_STATE\_CONNECTED@{GATT\_STATE\_CONNECTED}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_STATE\_CONNECTED@{GATT\_STATE\_CONNECTED}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16a02f0031fa85e707192e3d96eddf2d5d6}\label{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16a02f0031fa85e707192e3d96eddf2d5d6}} 
+G\+A\+T\+T\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GATT\_STATE\_DISCONNECTING@{GATT\_STATE\_DISCONNECTING}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!GATT\_STATE\_DISCONNECTING@{GATT\_STATE\_DISCONNECTING}}}\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16a5d1c3386217484e2da6abf805c79de75}\label{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16a5d1c3386217484e2da6abf805c79de75}} 
+G\+A\+T\+T\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 48 of file G\+A\+T\+T\+Client.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_aefd418e3625d982e3c63d10bb6df982b}\label{classIoT_1_1BtLE_1_1GATTClient_aefd418e3625d982e3c63d10bb6df982b}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!````~GATTClient@{$\sim$GATTClient}}
+\index{````~GATTClient@{$\sim$GATTClient}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{$\sim$GATTClient()}{~GATTClient()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::$\sim$\+G\+A\+T\+T\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the timeout for communication with the peripheral device. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a7268a4014c6c2be6287e39496cbc6dec}\label{classIoT_1_1BtLE_1_1GATTClient_a7268a4014c6c2be6287e39496cbc6dec}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!address@{address}}
+\index{address@{address}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the current state of the client. 
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a15d41d8685edd8f8c99ae368826e1f74}\label{classIoT_1_1BtLE_1_1GATTClient_a15d41d8685edd8f8c99ae368826e1f74}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!characteristics@{characteristics}}
+\index{characteristics@{characteristics}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{characteristics()}{characteristics()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Characteristic}{Characteristic}}$>$ Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::characteristics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{service\+U\+U\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns a list of all services included by the service identified by the given handles. 
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a1f976476194ce0f79195978a0da8f986}\label{classIoT_1_1BtLE_1_1GATTClient_a1f976476194ce0f79195978a0da8f986}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!connect@{connect}}
+\index{connect@{connect}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{address,  }\item[{\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37}{Connect\+Mode}}}]{mode = {\ttfamily \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a48d7597a6dcf795624077aaeb0478d37a192800c68adc4d4a6d446a84e1cfd043}{G\+A\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+A\+IT}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Fired when a \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Notification}{Notification}} has been received from the peripheral. 
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_ae0e28fc9b8b654aac25699c3ce231d9b}\label{classIoT_1_1BtLE_1_1GATTClient_ae0e28fc9b8b654aac25699c3ce231d9b}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!descriptors@{descriptors}}
+\index{descriptors@{descriptors}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{descriptors()}{descriptors()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Descriptor}{Descriptor}}$>$ Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::descriptors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{service\+U\+U\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns a list of all characteristics of the service with the given U\+U\+ID. 
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_ad68e722c0bb38bc439b52389bbeca29e}\label{classIoT_1_1BtLE_1_1GATTClient_ad68e722c0bb38bc439b52389bbeca29e}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Connects the \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient}{G\+A\+T\+T\+Client}} to the Bluetooth LE peripheral with the given address. The address consists of six hexadecimal byte values, separated by a colon, e.\+g.\+: \char`\"{}68\+:\+C9\+:0\+B\+:06\+:23\+:09\char`\"{}.
+
+If mode is G\+A\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+A\+IT, waits for the connection to be established (or for an error to be reported).
+
+If wait is G\+A\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+N\+O\+W\+A\+IT, returns immediately. The connection state is reported via the connected event. \mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_ae5cc95f5c09b31ffcaf14c29f5940fd1}\label{classIoT_1_1BtLE_1_1GATTClient_ae5cc95f5c09b31ffcaf14c29f5940fd1}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!getMTU@{getMTU}}
+\index{getMTU@{getMTU}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{getMTU()}{getMTU()}}
+{\footnotesize\ttfamily virtual Poco\+::\+U\+Int8 Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::get\+M\+TU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the connection\textquotesingle{}s M\+TU size. 
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_af0f75c8c887b4fc62ad7d09ff891dad4}\label{classIoT_1_1BtLE_1_1GATTClient_af0f75c8c887b4fc62ad7d09ff891dad4}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!getSecurityLevel@{getSecurityLevel}}
+\index{getSecurityLevel@{getSecurityLevel}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{getSecurityLevel()}{getSecurityLevel()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440}{Security\+Level}} Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::get\+Security\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the connection\textquotesingle{}s security level. 
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_ac2b2669aff87d1a1305795db4cc4df18}\label{classIoT_1_1BtLE_1_1GATTClient_ac2b2669aff87d1a1305795db4cc4df18}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!getTimeout@{getTimeout}}
+\index{getTimeout@{getTimeout}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{getTimeout()}{getTimeout()}}
+{\footnotesize\ttfamily virtual long Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::get\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the timeout for communication with the peripheral device. 
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a6d58ecb850c83d2f6ff90f2b9acd639d}\label{classIoT_1_1BtLE_1_1GATTClient_a6d58ecb850c83d2f6ff90f2b9acd639d}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!includedServices@{includedServices}}
+\index{includedServices@{includedServices}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{includedServices()}{includedServices()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Service}{Service}}$>$ Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::included\+Services (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{service\+U\+U\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns a list of all services supported by the peripheral. 
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a83d91461e864331c13c97eb01d357935}\label{classIoT_1_1BtLE_1_1GATTClient_a83d91461e864331c13c97eb01d357935}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!read@{read}}
+\index{read@{read}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::read (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns a list of all handle descriptors for the service with the given U\+U\+ID. 
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a8871fbff17792a16db6904c98f595b68}\label{classIoT_1_1BtLE_1_1GATTClient_a8871fbff17792a16db6904c98f595b68}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!services@{services}}
+\index{services@{services}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{services()}{services()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Service}{Service}}$>$ Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::services (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the address of the connected device, or an empty string if no device is connected. \mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_aab31054446c4135a7a6afb0e33e97233}\label{classIoT_1_1BtLE_1_1GATTClient_aab31054446c4135a7a6afb0e33e97233}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!setMTU@{setMTU}}
+\index{setMTU@{setMTU}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{setMTU()}{setMTU()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::set\+M\+TU (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int8}]{mtu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the connection\textquotesingle{}s current security level. 
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a33dad64d87b67cdc7116aa07bdea572f}\label{classIoT_1_1BtLE_1_1GATTClient_a33dad64d87b67cdc7116aa07bdea572f}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!setSecurityLevel@{setSecurityLevel}}
+\index{setSecurityLevel@{setSecurityLevel}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{setSecurityLevel()}{setSecurityLevel()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::set\+Security\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_adaece975e5598edd75e505812dcef440}{Security\+Level}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes the value of the characteristic\textquotesingle{}s value with the given handle. If with\+Response is true, expects a response from the peripheral device. \mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a7ea1e8d17ef08ccb1b6bbe656b7fb7eb}\label{classIoT_1_1BtLE_1_1GATTClient_a7ea1e8d17ef08ccb1b6bbe656b7fb7eb}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!setTimeout@{setTimeout}}
+\index{setTimeout@{setTimeout}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{setTimeout()}{setTimeout()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::set\+Timeout (\begin{DoxyParamCaption}\item[{long}]{milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the connection\textquotesingle{}s M\+TU size, which may be 0 for the default size. \mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_aff3802e70b077d13b648f9d748f9f997}\label{classIoT_1_1BtLE_1_1GATTClient_aff3802e70b077d13b648f9d748f9f997}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!state@{state}}
+\index{state@{state}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classIoT_1_1BtLE_1_1GATTClient_a0a22a71808818d150cfc7a697442cb16}{State}} Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Disconnects from the peripheral. 
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a24a4e1ea95a0d8f18addf95e8f5d9d5c}\label{classIoT_1_1BtLE_1_1GATTClient_a24a4e1ea95a0d8f18addf95e8f5d9d5c}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!write@{write}}
+\index{write@{write}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::write (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int16}]{handle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value,  }\item[{bool}]{with\+Response = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads the value of the characteristic\textquotesingle{}s value with the given value handle. 
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_ad524457876d47055e0928385a9248eb6}\label{classIoT_1_1BtLE_1_1GATTClient_ad524457876d47055e0928385a9248eb6}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!connected@{connected}}
+\index{connected@{connected}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{connected}{connected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$void$>$ Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::connected}
+
+
+
+Definition at line 142 of file G\+A\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_a2b67adaff46bd1ad5e4082a8c8d91120}\label{classIoT_1_1BtLE_1_1GATTClient_a2b67adaff46bd1ad5e4082a8c8d91120}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!disconnected@{disconnected}}
+\index{disconnected@{disconnected}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{disconnected}{disconnected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$void$>$ Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::disconnected}
+
+
+
+Fired when a connection with the peripheral has been established. 
+
+
+
+Definition at line 145 of file G\+A\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_aad730fadec6d132b0715de5e85d891f4}\label{classIoT_1_1BtLE_1_1GATTClient_aad730fadec6d132b0715de5e85d891f4}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!error@{error}}
+\index{error@{error}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string$>$ Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::error}
+
+
+
+Fired when the connection with the peripheral has been disconnected. 
+
+
+
+Definition at line 148 of file G\+A\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_adc5b8a2c7a55d3a3497696e064f95ece}\label{classIoT_1_1BtLE_1_1GATTClient_adc5b8a2c7a55d3a3497696e064f95ece}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!indicationReceived@{indicationReceived}}
+\index{indicationReceived@{indicationReceived}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{indicationReceived}{indicationReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Indication}{Indication}}$>$ Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::indication\+Received}
+
+Fired when the connection attempt with the peripheral has failed. The event argument contains more information about the error. 
+
+Definition at line 152 of file G\+A\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1BtLE_1_1GATTClient_ac18d84f7c542f69ec903ca87c4fb25f9}\label{classIoT_1_1BtLE_1_1GATTClient_ac18d84f7c542f69ec903ca87c4fb25f9}} 
+\index{IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}!notificationReceived@{notificationReceived}}
+\index{notificationReceived@{notificationReceived}!IoT::BtLE::GATTClient@{IoT::BtLE::GATTClient}}
+\doxysubsubsection{\texorpdfstring{notificationReceived}{notificationReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Notification}{Notification}}$>$ Io\+T\+::\+Bt\+L\+E\+::\+G\+A\+T\+T\+Client\+::notification\+Received}
+
+
+
+Fired when an \mbox{\hyperlink{structIoT_1_1BtLE_1_1GATTClient_1_1Indication}{Indication}} has been received from the peripheral. 
+
+
+
+Definition at line 155 of file G\+A\+T\+T\+Client.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Bt\+L\+E/\mbox{\hyperlink{GATTClient_8h}{G\+A\+T\+T\+Client.\+h}}\end{DoxyCompactItemize}

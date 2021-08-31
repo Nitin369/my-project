@@ -1,0 +1,772 @@
+\hypertarget{classPoco_1_1Net_1_1MailMessage}{}\doxysection{Poco\+::Net\+::Mail\+Message Class Reference}
+\label{classPoco_1_1Net_1_1MailMessage}\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+
+
+{\ttfamily \#include $<$Mail\+Message.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::Mail\+Message\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::Mail\+Message\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1Net_1_1MailMessage_1_1Part}{Part}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a0f031eb7b511d32fc24d2d4f575a5c99}{Content\+Disposition}} \{ \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a0f031eb7b511d32fc24d2d4f575a5c99a4e0643f095a1d4289212c7a92ed5aa80}{C\+O\+N\+T\+E\+N\+T\+\_\+\+I\+N\+L\+I\+NE}}, 
+\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a0f031eb7b511d32fc24d2d4f575a5c99ab9be22a7acd14c4d5ae68783e65879a1}{C\+O\+N\+T\+E\+N\+T\+\_\+\+A\+T\+T\+A\+C\+H\+M\+E\+NT}}
+ \}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}} \{ \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640a1580d3dfc4d25ba2fc4fb9b90d7ef2e7}{E\+N\+C\+O\+D\+I\+N\+G\+\_\+7\+B\+IT}}, 
+\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640a132118f33eb0355a68dfc58677b45925}{E\+N\+C\+O\+D\+I\+N\+G\+\_\+8\+B\+IT}}, 
+\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640aecd9b53295d72fb468e40e67ac524d9d}{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+P\+R\+I\+N\+T\+A\+B\+LE}}, 
+\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640a4f9aa89b296c9840857d04037d8d1ec2}{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+B\+A\+S\+E64}}
+ \}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1Net_1_1MailRecipient}{Mail\+Recipient}} $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aad7f256245f9d92f657ea6cd1ae28ee0}{Recipients}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{structPoco_1_1Net_1_1MailMessage_1_1Part}{Part}} $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a7912923ec1f14c5811c344fb317e93d7}{Part\+Vec}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ac662ddd0900ba667a36d0ab5b86aef2a}{Mail\+Message}} (\mbox{\hyperlink{classPoco_1_1Net_1_1PartStoreFactory}{Part\+Store\+Factory}} $\ast$p\+Store\+Factory=0)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aedeac80ffcfc0ea17e70d3c247c7efdc}{$\sim$\+Mail\+Message}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ae9b291a7f5c16507de90734a78c9dfbb}{add\+Recipient}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MailRecipient}{Mail\+Recipient}} \&recipient)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ac98ddd6e9bf4e92b085b51d68e5cff24}{set\+Recipients}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aad7f256245f9d92f657ea6cd1ae28ee0}{Recipients}} \&recipient)
+\begin{DoxyCompactList}\small\item\em Adds a recipient for the message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aad7f256245f9d92f657ea6cd1ae28ee0}{Recipients}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ad0a532e36dd2bf0ff5941d414bde42e7}{recipients}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Clears existing and sets new recipient list for the message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ad63183dda188d266beb4e87271114fd3}{set\+Subject}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&subject)
+\begin{DoxyCompactList}\small\item\em Returns the recipients of the message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a024b7213473f94e6220c46c168e944c4}{get\+Subject}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ad2eefdde731e871c8c9503d28ecc3bb3}{set\+Sender}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&sender)
+\begin{DoxyCompactList}\small\item\em Returns the subject of the message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a0148f126ff942e9102ea795a9dc38375}{get\+Sender}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ae2c33fac5541ab9981d16e61f68376e7}{set\+Content}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&content, \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}} encoding=\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640aecd9b53295d72fb468e40e67ac524d9d}{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+P\+R\+I\+N\+T\+A\+B\+LE}})
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aa3bb56af3294b45bbd10c7a57aecd6ba}{get\+Content}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a2d3295245c2f38b98821f90531ebdd6a}{set\+Content\+Type}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&media\+Type)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a1b306d1cbc666ae9452a46f4bc2fe555}{set\+Content\+Type}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MediaType}{Media\+Type}} \&media\+Type)
+\begin{DoxyCompactList}\small\item\em Sets the content type for the message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a22c3141077fc4fa60441e1405d1589dd}{get\+Content\+Type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the content type for the message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a93353754cb07f02334dd0f5a704271d7}{set\+Date}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} \&date\+Time)
+\begin{DoxyCompactList}\small\item\em Returns the content type for the message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a6b532008435e0c561567e8ecae493fbe}{get\+Date}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the Date header to the given date/time value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a1177687a08c26bc2511f7b764b7d84c9}{is\+Multipart}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the value of the Date header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_af7ed062dc23a648ceb64756a3d6b9f44}{add\+Part}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{classPoco_1_1Net_1_1PartSource}{Part\+Source}} $\ast$p\+Source, \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a0f031eb7b511d32fc24d2d4f575a5c99}{Content\+Disposition}} disposition, \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}} encoding)
+\begin{DoxyCompactList}\small\item\em Returns true iff the message is a multipart message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aa7b18009495d07aae60f5cd83a705cea}{add\+Content}} (\mbox{\hyperlink{classPoco_1_1Net_1_1PartSource}{Part\+Source}} $\ast$p\+Source, \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}} encoding=\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640aecd9b53295d72fb468e40e67ac524d9d}{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+P\+R\+I\+N\+T\+A\+B\+LE}})
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a7278060049cd20d65c129cd52e94941e}{add\+Attachment}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{classPoco_1_1Net_1_1PartSource}{Part\+Source}} $\ast$p\+Source, \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}} encoding=\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640a4f9aa89b296c9840857d04037d8d1ec2}{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+B\+A\+S\+E64}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1PartSource}{Part\+Source}} $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a8126077ae72b0d410dcb092d43efce71}{create\+Part\+Store}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&content, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&media\+Type, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&filename=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a7912923ec1f14c5811c344fb317e93d7}{Part\+Vec}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a17836f7ec009858e543ab94a4f8718bd}{parts}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a865e73b893badfd8530a2a27bf26f372}{read}} (std\+::istream \&istr, \mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}} \&handler)
+\begin{DoxyCompactList}\small\item\em Returns const reference to the vector containing part stores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_adab222b2492eec5a8033dcf33db8c779}{read}} (std\+::istream \&istr)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_abf9276ab339ecc127a192036c7efa543}{write}} (std\+::ostream \&ostr) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a807c461f00cf15e513f910dd08fef414}{encode\+Word}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&text, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&charset=\char`\"{}U\+TF-\/8\char`\"{})
+\begin{DoxyCompactList}\small\item\em Writes the mail message to the given output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a34547f7ded96694466ee240885012128}{H\+E\+A\+D\+E\+R\+\_\+\+S\+U\+B\+J\+E\+CT}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_acd012c91048b409a11ed96fbf69387f0}{H\+E\+A\+D\+E\+R\+\_\+\+F\+R\+OM}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a4ab9a033ba3ed5264afffa45a57d3e7a}{H\+E\+A\+D\+E\+R\+\_\+\+TO}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aee06712b04f4ef55569fb1939bfba941}{H\+E\+A\+D\+E\+R\+\_\+\+CC}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a20be4bd2e17f3904b4d987fe96a694ce}{H\+E\+A\+D\+E\+R\+\_\+\+B\+CC}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a1d9c70ee4b5249fe4a45cc7aa7a24a04}{H\+E\+A\+D\+E\+R\+\_\+\+D\+A\+TE}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_acad4855ee2bd613f7babd95da28fa1a6}{H\+E\+A\+D\+E\+R\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+Y\+PE}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a219c19b0ff22ee5f06a1d84be9941da2}{H\+E\+A\+D\+E\+R\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+E\+N\+C\+O\+D\+I\+NG}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ad494b6e54bfe64ed94e560c6f319f298}{H\+E\+A\+D\+E\+R\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+ON}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a1a2e12a06ebf9d0fb7edbe064dd945a5}{H\+E\+A\+D\+E\+R\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+ID}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a5dc635d29f89a7b6a4ecef596af4d068}{H\+E\+A\+D\+E\+R\+\_\+\+M\+I\+M\+E\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a0f8d26077bff0c1920713911d72917ab}{E\+M\+P\+T\+Y\+\_\+\+H\+E\+A\+D\+ER}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a0d225b8b72158a8fb61bd7536138ad19}{T\+E\+X\+T\+\_\+\+P\+L\+A\+IN}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aa165bab66089fe11df51f76ef9f2a848}{C\+T\+E\+\_\+7\+B\+IT}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a788cda661681945caec9828d256889d4}{C\+T\+E\+\_\+8\+B\+IT}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a700ce51c798e23fc4aed6806818ed135}{C\+T\+E\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+P\+R\+I\+N\+T\+A\+B\+LE}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a57fb45383b523375d38ac8f7654bafe4}{C\+T\+E\+\_\+\+B\+A\+S\+E64}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a6ef67d724e0f9e6927827aaed67f4a9a}{make\+Multipart}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ad259d3af89c1ddaf78c3b92862377516}{write\+Header}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&header, std\+::ostream \&ostr) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ad217298b7ea257c3a831abddefff1c3d}{write\+Multipart}} (\mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&header, std\+::ostream \&ostr) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a0f7be5846c599429c5fdbeb94a3ce120}{write\+Part}} (\mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter}{Multipart\+Writer}} \&writer, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Net_1_1MailMessage_1_1Part}{Part}} \&part) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a825aa24bc7dd965ca1cae45857876a43}{write\+Encoded}} (std\+::istream \&istr, std\+::ostream \&ostr, \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}} encoding) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ae16bab084dd04979d67d6164314fb565}{set\+Recipient\+Headers}} (\mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&headers) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_af23eef8d6682ceb0e0aa233820e93875}{read\+Header}} (std\+::istream \&istr)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ad61b380a14af91c90641dcea38d5c464}{read\+Multipart}} (std\+::istream \&istr, \mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}} \&handler)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a16263f44a64ff000379fbdf85d342d3e}{read\+Part}} (std\+::istream \&istr, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&header, \mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}} \&handler)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a784a8b52101402e8561798a08210bd4c}{handle\+Part}} (std\+::istream \&istr, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&header, \mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}} \&handler)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a5eea47887cc0f52980f98dbc4855987b}{content\+Transfer\+Encoding\+To\+String}} (\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}} encoding)
+\item 
+static int \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a47809ffb651d81ce5385f4b020532ffc}{line\+Length}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&str)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_ad97dcd96e20eec60b1078820332c4cbf}{append\+Recipient}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MailRecipient}{Mail\+Recipient}} \&recipient, std\+::string \&str)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents an e-\/mail message for use with the \mbox{\hyperlink{classPoco_1_1Net_1_1SMTPClientSession}{S\+M\+T\+P\+Client\+Session}} and P\+O\+P\+Client\+Session classes.
+
+\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}} supports both old-\/style plain text messages, as well as M\+I\+ME multipart mail messages with attachments.
+
+For multi-\/part messages, the following content transfer encodings are supported\+: 7bit, 8bit, quoted-\/printable and base64. 
+
+Definition at line 41 of file Mail\+Message.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a7912923ec1f14c5811c344fb317e93d7}\label{classPoco_1_1Net_1_1MailMessage_a7912923ec1f14c5811c344fb317e93d7}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!PartVec@{PartVec}}
+\index{PartVec@{PartVec}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{PartVec}{PartVec}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{structPoco_1_1Net_1_1MailMessage_1_1Part}{Part}}$>$ \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a7912923ec1f14c5811c344fb317e93d7}{Poco\+::\+Net\+::\+Mail\+Message\+::\+Part\+Vec}}}
+
+
+
+Definition at line 78 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_aad7f256245f9d92f657ea6cd1ae28ee0}\label{classPoco_1_1Net_1_1MailMessage_aad7f256245f9d92f657ea6cd1ae28ee0}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!Recipients@{Recipients}}
+\index{Recipients@{Recipients}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{Recipients}{Recipients}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classPoco_1_1Net_1_1MailRecipient}{Mail\+Recipient}}$>$ \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aad7f256245f9d92f657ea6cd1ae28ee0}{Poco\+::\+Net\+::\+Mail\+Message\+::\+Recipients}}}
+
+
+
+Definition at line 54 of file Mail\+Message.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a0f031eb7b511d32fc24d2d4f575a5c99}\label{classPoco_1_1Net_1_1MailMessage_a0f031eb7b511d32fc24d2d4f575a5c99}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!ContentDisposition@{ContentDisposition}}
+\index{ContentDisposition@{ContentDisposition}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{ContentDisposition}{ContentDisposition}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a0f031eb7b511d32fc24d2d4f575a5c99}{Poco\+::\+Net\+::\+Mail\+Message\+::\+Content\+Disposition}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTENT\_INLINE@{CONTENT\_INLINE}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!CONTENT\_INLINE@{CONTENT\_INLINE}}}\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a0f031eb7b511d32fc24d2d4f575a5c99a4e0643f095a1d4289212c7a92ed5aa80}\label{classPoco_1_1Net_1_1MailMessage_a0f031eb7b511d32fc24d2d4f575a5c99a4e0643f095a1d4289212c7a92ed5aa80}} 
+C\+O\+N\+T\+E\+N\+T\+\_\+\+I\+N\+L\+I\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTENT\_ATTACHMENT@{CONTENT\_ATTACHMENT}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!CONTENT\_ATTACHMENT@{CONTENT\_ATTACHMENT}}}\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a0f031eb7b511d32fc24d2d4f575a5c99ab9be22a7acd14c4d5ae68783e65879a1}\label{classPoco_1_1Net_1_1MailMessage_a0f031eb7b511d32fc24d2d4f575a5c99ab9be22a7acd14c4d5ae68783e65879a1}} 
+C\+O\+N\+T\+E\+N\+T\+\_\+\+A\+T\+T\+A\+C\+H\+M\+E\+NT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 56 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}\label{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!ContentTransferEncoding@{ContentTransferEncoding}}
+\index{ContentTransferEncoding@{ContentTransferEncoding}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{ContentTransferEncoding}{ContentTransferEncoding}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Poco\+::\+Net\+::\+Mail\+Message\+::\+Content\+Transfer\+Encoding}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENCODING\_7BIT@{ENCODING\_7BIT}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!ENCODING\_7BIT@{ENCODING\_7BIT}}}\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640a1580d3dfc4d25ba2fc4fb9b90d7ef2e7}\label{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640a1580d3dfc4d25ba2fc4fb9b90d7ef2e7}} 
+E\+N\+C\+O\+D\+I\+N\+G\+\_\+7\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENCODING\_8BIT@{ENCODING\_8BIT}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!ENCODING\_8BIT@{ENCODING\_8BIT}}}\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640a132118f33eb0355a68dfc58677b45925}\label{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640a132118f33eb0355a68dfc58677b45925}} 
+E\+N\+C\+O\+D\+I\+N\+G\+\_\+8\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENCODING\_QUOTED\_PRINTABLE@{ENCODING\_QUOTED\_PRINTABLE}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!ENCODING\_QUOTED\_PRINTABLE@{ENCODING\_QUOTED\_PRINTABLE}}}\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640aecd9b53295d72fb468e40e67ac524d9d}\label{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640aecd9b53295d72fb468e40e67ac524d9d}} 
+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+P\+R\+I\+N\+T\+A\+B\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENCODING\_BASE64@{ENCODING\_BASE64}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!ENCODING\_BASE64@{ENCODING\_BASE64}}}\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640a4f9aa89b296c9840857d04037d8d1ec2}\label{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640a4f9aa89b296c9840857d04037d8d1ec2}} 
+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+B\+A\+S\+E64&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 62 of file Mail\+Message.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ac662ddd0900ba667a36d0ab5b86aef2a}\label{classPoco_1_1Net_1_1MailMessage_ac662ddd0900ba667a36d0ab5b86aef2a}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!MailMessage@{MailMessage}}
+\index{MailMessage@{MailMessage}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{MailMessage()}{MailMessage()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Mail\+Message\+::\+Mail\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1PartStoreFactory}{Part\+Store\+Factory}} $\ast$}]{p\+Store\+Factory = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_aedeac80ffcfc0ea17e70d3c247c7efdc}\label{classPoco_1_1Net_1_1MailMessage_aedeac80ffcfc0ea17e70d3c247c7efdc}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!````~MailMessage@{$\sim$MailMessage}}
+\index{````~MailMessage@{$\sim$MailMessage}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{$\sim$MailMessage()}{~MailMessage()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+Mail\+Message\+::$\sim$\+Mail\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates an empty \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}}.
+
+If p\+Store\+Factory is not null, message attachments will be handled by the object created by the factory. Most common reason is to temporarily save attachments to the file system in order to avoid potential memory exhaustion when attachment files are very large. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a7278060049cd20d65c129cd52e94941e}\label{classPoco_1_1Net_1_1MailMessage_a7278060049cd20d65c129cd52e94941e}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!addAttachment@{addAttachment}}
+\index{addAttachment@{addAttachment}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{addAttachment()}{addAttachment()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::add\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1PartSource}{Part\+Source}} $\ast$}]{p\+Source,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}}}]{encoding = {\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640a4f9aa89b296c9840857d04037d8d1ec2}{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+B\+A\+S\+E64}}} }\end{DoxyParamCaption})}
+
+Adds a part to the mail message by calling add\+Part(\char`\"{}\char`\"{}, p\+Source, C\+O\+N\+T\+E\+N\+T\+\_\+\+I\+N\+L\+I\+NE, encoding);
+
+The part name, and the filename specified in the part source must not contain any non-\/\+A\+S\+C\+II characters. To include non-\/\+A\+S\+C\+II characters in the part name or filename, use R\+FC 2047 word encoding (see \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a807c461f00cf15e513f910dd08fef414}{encode\+Word()}}). \mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_aa7b18009495d07aae60f5cd83a705cea}\label{classPoco_1_1Net_1_1MailMessage_aa7b18009495d07aae60f5cd83a705cea}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!addContent@{addContent}}
+\index{addContent@{addContent}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{addContent()}{addContent()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::add\+Content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1PartSource}{Part\+Source}} $\ast$}]{p\+Source,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}}}]{encoding = {\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640aecd9b53295d72fb468e40e67ac524d9d}{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+P\+R\+I\+N\+T\+A\+B\+LE}}} }\end{DoxyParamCaption})}
+
+Adds a part/attachment to the mail message.
+
+The \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}} takes ownership of the \mbox{\hyperlink{classPoco_1_1Net_1_1PartSource}{Part\+Source}} and deletes it when it is no longer needed.
+
+The \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}} will be converted to a multipart message if it is not already one.
+
+The part name, and the filename specified in the part source must not contain any non-\/\+A\+S\+C\+II characters. To include non-\/\+A\+S\+C\+II characters in the part name or filename, use R\+FC 2047 word encoding (see \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a807c461f00cf15e513f910dd08fef414}{encode\+Word()}}). \mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_af7ed062dc23a648ceb64756a3d6b9f44}\label{classPoco_1_1Net_1_1MailMessage_af7ed062dc23a648ceb64756a3d6b9f44}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!addPart@{addPart}}
+\index{addPart@{addPart}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{addPart()}{addPart()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::add\+Part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1PartSource}{Part\+Source}} $\ast$}]{p\+Source,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a0f031eb7b511d32fc24d2d4f575a5c99}{Content\+Disposition}}}]{disposition,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}}}]{encoding }\end{DoxyParamCaption})}
+
+
+
+Returns true iff the message is a multipart message. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ae9b291a7f5c16507de90734a78c9dfbb}\label{classPoco_1_1Net_1_1MailMessage_ae9b291a7f5c16507de90734a78c9dfbb}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!addRecipient@{addRecipient}}
+\index{addRecipient@{addRecipient}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{addRecipient()}{addRecipient()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::add\+Recipient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MailRecipient}{Mail\+Recipient}} \&}]{recipient }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ad97dcd96e20eec60b1078820332c4cbf}\label{classPoco_1_1Net_1_1MailMessage_ad97dcd96e20eec60b1078820332c4cbf}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!appendRecipient@{appendRecipient}}
+\index{appendRecipient@{appendRecipient}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{appendRecipient()}{appendRecipient()}}
+{\footnotesize\ttfamily static void Poco\+::\+Net\+::\+Mail\+Message\+::append\+Recipient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MailRecipient}{Mail\+Recipient}} \&}]{recipient,  }\item[{std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a5eea47887cc0f52980f98dbc4855987b}\label{classPoco_1_1Net_1_1MailMessage_a5eea47887cc0f52980f98dbc4855987b}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!contentTransferEncodingToString@{contentTransferEncodingToString}}
+\index{contentTransferEncodingToString@{contentTransferEncodingToString}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{contentTransferEncodingToString()}{contentTransferEncodingToString()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Net\+::\+Mail\+Message\+::content\+Transfer\+Encoding\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}}}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a8126077ae72b0d410dcb092d43efce71}\label{classPoco_1_1Net_1_1MailMessage_a8126077ae72b0d410dcb092d43efce71}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!createPartStore@{createPartStore}}
+\index{createPartStore@{createPartStore}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{createPartStore()}{createPartStore()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1PartSource}{Part\+Source}}$\ast$ Poco\+::\+Net\+::\+Mail\+Message\+::create\+Part\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{content,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{media\+Type,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{filename = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Adds an attachment to the mail message by calling add\+Part(name, p\+Source, C\+O\+N\+T\+E\+N\+T\+\_\+\+A\+T\+T\+A\+C\+H\+M\+E\+N\+T, encoding);
+
+The part name, and the filename specified in the part source must not contain any non-\/\+A\+S\+C\+II characters. To include non-\/\+A\+S\+C\+II characters in the part name or filename, use R\+FC 2047 word encoding (see \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a807c461f00cf15e513f910dd08fef414}{encode\+Word()}}). \mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a807c461f00cf15e513f910dd08fef414}\label{classPoco_1_1Net_1_1MailMessage_a807c461f00cf15e513f910dd08fef414}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!encodeWord@{encodeWord}}
+\index{encodeWord@{encodeWord}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{encodeWord()}{encodeWord()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::encode\+Word (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{charset = {\ttfamily \char`\"{}UTF-\/8\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Writes the mail message to the given output stream. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_aa3bb56af3294b45bbd10c7a57aecd6ba}\label{classPoco_1_1Net_1_1MailMessage_aa3bb56af3294b45bbd10c7a57aecd6ba}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!getContent@{getContent}}
+\index{getContent@{getContent}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{getContent()}{getContent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Net\+::\+Mail\+Message\+::get\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the content of the mail message.
+
+If the content transfer encoding is E\+N\+C\+O\+D\+I\+N\+G\+\_\+7\+B\+IT or E\+N\+C\+O\+D\+I\+N\+G\+\_\+8\+B\+IT, the content string must be formatted according to the rules of an internet email message.
+
+The message will be sent as a single-\/part message.
+
+Note that single CR or LF characters as line delimiters must not be used. Content lines always should be terminated with a proper C\+R\+LF sequence. 
+
+Definition at line 302 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a22c3141077fc4fa60441e1405d1589dd}\label{classPoco_1_1Net_1_1MailMessage_a22c3141077fc4fa60441e1405d1589dd}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!getContentType@{getContentType}}
+\index{getContentType@{getContentType}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{getContentType()}{getContentType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Net\+::\+Mail\+Message\+::get\+Content\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Sets the content type for the message. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a6b532008435e0c561567e8ecae493fbe}\label{classPoco_1_1Net_1_1MailMessage_a6b532008435e0c561567e8ecae493fbe}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!getDate@{getDate}}
+\index{getDate@{getDate}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} Poco\+::\+Net\+::\+Mail\+Message\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Sets the Date header to the given date/time value. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a0148f126ff942e9102ea795a9dc38375}\label{classPoco_1_1Net_1_1MailMessage_a0148f126ff942e9102ea795a9dc38375}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!getSender@{getSender}}
+\index{getSender@{getSender}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{getSender()}{getSender()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Net\+::\+Mail\+Message\+::get\+Sender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Sets the sender of the message (which ends up in the From header field).
+
+The sender must either be a valid email address, or a real name followed by an email address enclosed in $<$ and $>$.
+
+The sender must not contain any non-\/\+A\+S\+C\+II characters. To include non-\/\+A\+S\+C\+II characters in the sender, use R\+FC 2047 word encoding (see \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a807c461f00cf15e513f910dd08fef414}{encode\+Word()}}). \mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a024b7213473f94e6220c46c168e944c4}\label{classPoco_1_1Net_1_1MailMessage_a024b7213473f94e6220c46c168e944c4}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!getSubject@{getSubject}}
+\index{getSubject@{getSubject}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{getSubject()}{getSubject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Net\+::\+Mail\+Message\+::get\+Subject (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Sets the subject of the message.
+
+The subject must not contain any non-\/\+A\+S\+C\+II characters. To include non-\/\+A\+S\+C\+II characters in the subject, use R\+FC 2047 word encoding (see \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a807c461f00cf15e513f910dd08fef414}{encode\+Word()}}). \mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a784a8b52101402e8561798a08210bd4c}\label{classPoco_1_1Net_1_1MailMessage_a784a8b52101402e8561798a08210bd4c}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!handlePart@{handlePart}}
+\index{handlePart@{handlePart}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{handlePart()}{handlePart()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::handle\+Part (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&}]{header,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}} \&}]{handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a1177687a08c26bc2511f7b764b7d84c9}\label{classPoco_1_1Net_1_1MailMessage_a1177687a08c26bc2511f7b764b7d84c9}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!isMultipart@{isMultipart}}
+\index{isMultipart@{isMultipart}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{isMultipart()}{isMultipart()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Mail\+Message\+::is\+Multipart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the value of the Date header. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a47809ffb651d81ce5385f4b020532ffc}\label{classPoco_1_1Net_1_1MailMessage_a47809ffb651d81ce5385f4b020532ffc}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!lineLength@{lineLength}}
+\index{lineLength@{lineLength}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{lineLength()}{lineLength()}}
+{\footnotesize\ttfamily static int Poco\+::\+Net\+::\+Mail\+Message\+::line\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a6ef67d724e0f9e6927827aaed67f4a9a}\label{classPoco_1_1Net_1_1MailMessage_a6ef67d724e0f9e6927827aaed67f4a9a}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!makeMultipart@{makeMultipart}}
+\index{makeMultipart@{makeMultipart}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{makeMultipart()}{makeMultipart()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::make\+Multipart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a17836f7ec009858e543ab94a4f8718bd}\label{classPoco_1_1Net_1_1MailMessage_a17836f7ec009858e543ab94a4f8718bd}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!parts@{parts}}
+\index{parts@{parts}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{parts()}{parts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_a7912923ec1f14c5811c344fb317e93d7}{Mail\+Message\+::\+Part\+Vec}} \& Poco\+::\+Net\+::\+Mail\+Message\+::parts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns either default \mbox{\hyperlink{classPoco_1_1Net_1_1StringPartSource}{String\+Part\+Source}} part store or, if the part store factory was provided during construction, the one created by \mbox{\hyperlink{classPoco_1_1Net_1_1PartStoreFactory}{Part\+Store\+Factory}}. Returned part store is allocated on the heap; it is caller\textquotesingle{}s responsibility to delete it after use. Typical use is handler passing it back to \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}}, which takes care of the cleanup. 
+
+Definition at line 308 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_adab222b2492eec5a8033dcf33db8c779}\label{classPoco_1_1Net_1_1MailMessage_adab222b2492eec5a8033dcf33db8c779}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!read@{read}}
+\index{read@{read}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::read (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reads the \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}} from the given input stream.
+
+If the message has multiple parts, the parts are reported to the \mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}}. If the message is not a multi-\/part message, the content is stored in a string available by calling \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aa3bb56af3294b45bbd10c7a57aecd6ba}{get\+Content()}}. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader_aabf5802666bb656970cb2a44bd5f2e57}{Poco\+::\+Net\+::\+Message\+Header}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a865e73b893badfd8530a2a27bf26f372}\label{classPoco_1_1Net_1_1MailMessage_a865e73b893badfd8530a2a27bf26f372}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!read@{read}}
+\index{read@{read}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::read (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}} \&}]{handler }\end{DoxyParamCaption})}
+
+
+
+Returns const reference to the vector containing part stores. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_af23eef8d6682ceb0e0aa233820e93875}\label{classPoco_1_1Net_1_1MailMessage_af23eef8d6682ceb0e0aa233820e93875}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!readHeader@{readHeader}}
+\index{readHeader@{readHeader}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{readHeader()}{readHeader()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::read\+Header (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ad61b380a14af91c90641dcea38d5c464}\label{classPoco_1_1Net_1_1MailMessage_ad61b380a14af91c90641dcea38d5c464}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!readMultipart@{readMultipart}}
+\index{readMultipart@{readMultipart}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{readMultipart()}{readMultipart()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::read\+Multipart (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}} \&}]{handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a16263f44a64ff000379fbdf85d342d3e}\label{classPoco_1_1Net_1_1MailMessage_a16263f44a64ff000379fbdf85d342d3e}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!readPart@{readPart}}
+\index{readPart@{readPart}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{readPart()}{readPart()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::read\+Part (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&}]{header,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}} \&}]{handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ad0a532e36dd2bf0ff5941d414bde42e7}\label{classPoco_1_1Net_1_1MailMessage_ad0a532e36dd2bf0ff5941d414bde42e7}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!recipients@{recipients}}
+\index{recipients@{recipients}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{recipients()}{recipients()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aad7f256245f9d92f657ea6cd1ae28ee0}{Mail\+Message\+::\+Recipients}} \& Poco\+::\+Net\+::\+Mail\+Message\+::recipients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clears existing and sets new recipient list for the message. 
+
+
+
+Definition at line 296 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ae2c33fac5541ab9981d16e61f68376e7}\label{classPoco_1_1Net_1_1MailMessage_ae2c33fac5541ab9981d16e61f68376e7}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!setContent@{setContent}}
+\index{setContent@{setContent}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{setContent()}{setContent()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::set\+Content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{content,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}}}]{encoding = {\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640aecd9b53295d72fb468e40e67ac524d9d}{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+P\+R\+I\+N\+T\+A\+B\+LE}}} }\end{DoxyParamCaption})}
+
+Returns the sender of the message (taken from the From header field). \mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a1b306d1cbc666ae9452a46f4bc2fe555}\label{classPoco_1_1Net_1_1MailMessage_a1b306d1cbc666ae9452a46f4bc2fe555}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!setContentType@{setContentType}}
+\index{setContentType@{setContentType}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{setContentType()}{setContentType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::set\+Content\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MediaType}{Media\+Type}} \&}]{media\+Type }\end{DoxyParamCaption})}
+
+
+
+Sets the content type for the message. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a2d3295245c2f38b98821f90531ebdd6a}\label{classPoco_1_1Net_1_1MailMessage_a2d3295245c2f38b98821f90531ebdd6a}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!setContentType@{setContentType}}
+\index{setContentType@{setContentType}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{setContentType()}{setContentType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::set\+Content\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{media\+Type }\end{DoxyParamCaption})}
+
+Returns the content of the mail message.
+
+A content will only be returned for single-\/part messages. The content of multi-\/part mail messages will be reported through the registered \mbox{\hyperlink{classPoco_1_1Net_1_1PartHandler}{Part\+Handler}}. \mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a93353754cb07f02334dd0f5a704271d7}\label{classPoco_1_1Net_1_1MailMessage_a93353754cb07f02334dd0f5a704271d7}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!setDate@{setDate}}
+\index{setDate@{setDate}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{setDate()}{setDate()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::set\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} \&}]{date\+Time }\end{DoxyParamCaption})}
+
+
+
+Returns the content type for the message. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ae16bab084dd04979d67d6164314fb565}\label{classPoco_1_1Net_1_1MailMessage_ae16bab084dd04979d67d6164314fb565}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!setRecipientHeaders@{setRecipientHeaders}}
+\index{setRecipientHeaders@{setRecipientHeaders}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{setRecipientHeaders()}{setRecipientHeaders()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::set\+Recipient\+Headers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&}]{headers }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ac98ddd6e9bf4e92b085b51d68e5cff24}\label{classPoco_1_1Net_1_1MailMessage_ac98ddd6e9bf4e92b085b51d68e5cff24}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!setRecipients@{setRecipients}}
+\index{setRecipients@{setRecipients}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{setRecipients()}{setRecipients()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::set\+Recipients (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aad7f256245f9d92f657ea6cd1ae28ee0}{Recipients}} \&}]{recipient }\end{DoxyParamCaption})}
+
+
+
+Adds a recipient for the message. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ad2eefdde731e871c8c9503d28ecc3bb3}\label{classPoco_1_1Net_1_1MailMessage_ad2eefdde731e871c8c9503d28ecc3bb3}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!setSender@{setSender}}
+\index{setSender@{setSender}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{setSender()}{setSender()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::set\+Sender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{sender }\end{DoxyParamCaption})}
+
+
+
+Returns the subject of the message. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ad63183dda188d266beb4e87271114fd3}\label{classPoco_1_1Net_1_1MailMessage_ad63183dda188d266beb4e87271114fd3}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!setSubject@{setSubject}}
+\index{setSubject@{setSubject}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{setSubject()}{setSubject()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::set\+Subject (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{subject }\end{DoxyParamCaption})}
+
+
+
+Returns the recipients of the message. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_abf9276ab339ecc127a192036c7efa543}\label{classPoco_1_1Net_1_1MailMessage_abf9276ab339ecc127a192036c7efa543}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!write@{write}}
+\index{write@{write}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reads the \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}} from the given input stream.
+
+The raw message (including all M\+I\+ME parts) is stored in a string and available by calling \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_aa3bb56af3294b45bbd10c7a57aecd6ba}{get\+Content()}}. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader_a17d364fb83f557d453465a33143ef220}{Poco\+::\+Net\+::\+Message\+Header}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a825aa24bc7dd965ca1cae45857876a43}\label{classPoco_1_1Net_1_1MailMessage_a825aa24bc7dd965ca1cae45857876a43}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!writeEncoded@{writeEncoded}}
+\index{writeEncoded@{writeEncoded}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{writeEncoded()}{writeEncoded()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::write\+Encoded (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr,  }\item[{std\+::ostream \&}]{ostr,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage_addba32716c61a2d538b406ce0165e640}{Content\+Transfer\+Encoding}}}]{encoding }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ad259d3af89c1ddaf78c3b92862377516}\label{classPoco_1_1Net_1_1MailMessage_ad259d3af89c1ddaf78c3b92862377516}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!writeHeader@{writeHeader}}
+\index{writeHeader@{writeHeader}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{writeHeader()}{writeHeader()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::write\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&}]{header,  }\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ad217298b7ea257c3a831abddefff1c3d}\label{classPoco_1_1Net_1_1MailMessage_ad217298b7ea257c3a831abddefff1c3d}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!writeMultipart@{writeMultipart}}
+\index{writeMultipart@{writeMultipart}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{writeMultipart()}{writeMultipart()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::write\+Multipart (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MessageHeader}{Message\+Header}} \&}]{header,  }\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a0f7be5846c599429c5fdbeb94a3ce120}\label{classPoco_1_1Net_1_1MailMessage_a0f7be5846c599429c5fdbeb94a3ce120}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!writePart@{writePart}}
+\index{writePart@{writePart}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{writePart()}{writePart()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Mail\+Message\+::write\+Part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1MultipartWriter}{Multipart\+Writer}} \&}]{writer,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1Net_1_1MailMessage_1_1Part}{Part}} \&}]{part }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_aa165bab66089fe11df51f76ef9f2a848}\label{classPoco_1_1Net_1_1MailMessage_aa165bab66089fe11df51f76ef9f2a848}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!CTE\_7BIT@{CTE\_7BIT}}
+\index{CTE\_7BIT@{CTE\_7BIT}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{CTE\_7BIT}{CTE\_7BIT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+C\+T\+E\+\_\+7\+B\+IT\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 259 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a788cda661681945caec9828d256889d4}\label{classPoco_1_1Net_1_1MailMessage_a788cda661681945caec9828d256889d4}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!CTE\_8BIT@{CTE\_8BIT}}
+\index{CTE\_8BIT@{CTE\_8BIT}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{CTE\_8BIT}{CTE\_8BIT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+C\+T\+E\+\_\+8\+B\+IT\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 260 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a57fb45383b523375d38ac8f7654bafe4}\label{classPoco_1_1Net_1_1MailMessage_a57fb45383b523375d38ac8f7654bafe4}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!CTE\_BASE64@{CTE\_BASE64}}
+\index{CTE\_BASE64@{CTE\_BASE64}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{CTE\_BASE64}{CTE\_BASE64}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+C\+T\+E\+\_\+\+B\+A\+S\+E64\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 262 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a700ce51c798e23fc4aed6806818ed135}\label{classPoco_1_1Net_1_1MailMessage_a700ce51c798e23fc4aed6806818ed135}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!CTE\_QUOTED\_PRINTABLE@{CTE\_QUOTED\_PRINTABLE}}
+\index{CTE\_QUOTED\_PRINTABLE@{CTE\_QUOTED\_PRINTABLE}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{CTE\_QUOTED\_PRINTABLE}{CTE\_QUOTED\_PRINTABLE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+C\+T\+E\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+P\+R\+I\+N\+T\+A\+B\+LE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 261 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a0f8d26077bff0c1920713911d72917ab}\label{classPoco_1_1Net_1_1MailMessage_a0f8d26077bff0c1920713911d72917ab}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!EMPTY\_HEADER@{EMPTY\_HEADER}}
+\index{EMPTY\_HEADER@{EMPTY\_HEADER}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{EMPTY\_HEADER}{EMPTY\_HEADER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+E\+M\+P\+T\+Y\+\_\+\+H\+E\+A\+D\+ER\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 257 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a20be4bd2e17f3904b4d987fe96a694ce}\label{classPoco_1_1Net_1_1MailMessage_a20be4bd2e17f3904b4d987fe96a694ce}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!HEADER\_BCC@{HEADER\_BCC}}
+\index{HEADER\_BCC@{HEADER\_BCC}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{HEADER\_BCC}{HEADER\_BCC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+H\+E\+A\+D\+E\+R\+\_\+\+B\+CC\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 250 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_aee06712b04f4ef55569fb1939bfba941}\label{classPoco_1_1Net_1_1MailMessage_aee06712b04f4ef55569fb1939bfba941}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!HEADER\_CC@{HEADER\_CC}}
+\index{HEADER\_CC@{HEADER\_CC}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{HEADER\_CC}{HEADER\_CC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+H\+E\+A\+D\+E\+R\+\_\+\+CC\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 249 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_ad494b6e54bfe64ed94e560c6f319f298}\label{classPoco_1_1Net_1_1MailMessage_ad494b6e54bfe64ed94e560c6f319f298}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!HEADER\_CONTENT\_DISPOSITION@{HEADER\_CONTENT\_DISPOSITION}}
+\index{HEADER\_CONTENT\_DISPOSITION@{HEADER\_CONTENT\_DISPOSITION}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{HEADER\_CONTENT\_DISPOSITION}{HEADER\_CONTENT\_DISPOSITION}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+H\+E\+A\+D\+E\+R\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+ON\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 254 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a1a2e12a06ebf9d0fb7edbe064dd945a5}\label{classPoco_1_1Net_1_1MailMessage_a1a2e12a06ebf9d0fb7edbe064dd945a5}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!HEADER\_CONTENT\_ID@{HEADER\_CONTENT\_ID}}
+\index{HEADER\_CONTENT\_ID@{HEADER\_CONTENT\_ID}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{HEADER\_CONTENT\_ID}{HEADER\_CONTENT\_ID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+H\+E\+A\+D\+E\+R\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+ID\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 255 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a219c19b0ff22ee5f06a1d84be9941da2}\label{classPoco_1_1Net_1_1MailMessage_a219c19b0ff22ee5f06a1d84be9941da2}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!HEADER\_CONTENT\_TRANSFER\_ENCODING@{HEADER\_CONTENT\_TRANSFER\_ENCODING}}
+\index{HEADER\_CONTENT\_TRANSFER\_ENCODING@{HEADER\_CONTENT\_TRANSFER\_ENCODING}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{HEADER\_CONTENT\_TRANSFER\_ENCODING}{HEADER\_CONTENT\_TRANSFER\_ENCODING}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+H\+E\+A\+D\+E\+R\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+E\+N\+C\+O\+D\+I\+NG\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 253 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_acad4855ee2bd613f7babd95da28fa1a6}\label{classPoco_1_1Net_1_1MailMessage_acad4855ee2bd613f7babd95da28fa1a6}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!HEADER\_CONTENT\_TYPE@{HEADER\_CONTENT\_TYPE}}
+\index{HEADER\_CONTENT\_TYPE@{HEADER\_CONTENT\_TYPE}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{HEADER\_CONTENT\_TYPE}{HEADER\_CONTENT\_TYPE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+H\+E\+A\+D\+E\+R\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+Y\+PE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 252 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a1d9c70ee4b5249fe4a45cc7aa7a24a04}\label{classPoco_1_1Net_1_1MailMessage_a1d9c70ee4b5249fe4a45cc7aa7a24a04}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!HEADER\_DATE@{HEADER\_DATE}}
+\index{HEADER\_DATE@{HEADER\_DATE}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{HEADER\_DATE}{HEADER\_DATE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+H\+E\+A\+D\+E\+R\+\_\+\+D\+A\+TE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 251 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_acd012c91048b409a11ed96fbf69387f0}\label{classPoco_1_1Net_1_1MailMessage_acd012c91048b409a11ed96fbf69387f0}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!HEADER\_FROM@{HEADER\_FROM}}
+\index{HEADER\_FROM@{HEADER\_FROM}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{HEADER\_FROM}{HEADER\_FROM}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+H\+E\+A\+D\+E\+R\+\_\+\+F\+R\+OM\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 247 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a5dc635d29f89a7b6a4ecef596af4d068}\label{classPoco_1_1Net_1_1MailMessage_a5dc635d29f89a7b6a4ecef596af4d068}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!HEADER\_MIME\_VERSION@{HEADER\_MIME\_VERSION}}
+\index{HEADER\_MIME\_VERSION@{HEADER\_MIME\_VERSION}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{HEADER\_MIME\_VERSION}{HEADER\_MIME\_VERSION}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+H\+E\+A\+D\+E\+R\+\_\+\+M\+I\+M\+E\+\_\+\+V\+E\+R\+S\+I\+ON\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 256 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a34547f7ded96694466ee240885012128}\label{classPoco_1_1Net_1_1MailMessage_a34547f7ded96694466ee240885012128}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!HEADER\_SUBJECT@{HEADER\_SUBJECT}}
+\index{HEADER\_SUBJECT@{HEADER\_SUBJECT}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{HEADER\_SUBJECT}{HEADER\_SUBJECT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+H\+E\+A\+D\+E\+R\+\_\+\+S\+U\+B\+J\+E\+CT\hspace{0.3cm}{\ttfamily [static]}}
+
+If the given string contains non-\/\+A\+S\+C\+II characters, encodes the given string using R\+FC 2047 \char`\"{}\+Q\char`\"{} word encoding.
+
+The given text must already be encoded in the character set given in charset (default is U\+T\+F-\/8).
+
+Returns the encoded string, or the original string if it consists only of A\+S\+C\+II characters. 
+
+Definition at line 246 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a4ab9a033ba3ed5264afffa45a57d3e7a}\label{classPoco_1_1Net_1_1MailMessage_a4ab9a033ba3ed5264afffa45a57d3e7a}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!HEADER\_TO@{HEADER\_TO}}
+\index{HEADER\_TO@{HEADER\_TO}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{HEADER\_TO}{HEADER\_TO}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+H\+E\+A\+D\+E\+R\+\_\+\+TO\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 248 of file Mail\+Message.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1MailMessage_a0d225b8b72158a8fb61bd7536138ad19}\label{classPoco_1_1Net_1_1MailMessage_a0d225b8b72158a8fb61bd7536138ad19}} 
+\index{Poco::Net::MailMessage@{Poco::Net::MailMessage}!TEXT\_PLAIN@{TEXT\_PLAIN}}
+\index{TEXT\_PLAIN@{TEXT\_PLAIN}!Poco::Net::MailMessage@{Poco::Net::MailMessage}}
+\doxysubsubsection{\texorpdfstring{TEXT\_PLAIN}{TEXT\_PLAIN}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Net\+::\+Mail\+Message\+::\+T\+E\+X\+T\+\_\+\+P\+L\+A\+IN\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 258 of file Mail\+Message.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{MailMessage_8h}{Mail\+Message.\+h}}\end{DoxyCompactItemize}

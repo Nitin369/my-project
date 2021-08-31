@@ -1,0 +1,165 @@
+\hypertarget{unionPoco_1_1Placeholder}{}\doxysection{Poco\+::Placeholder$<$ PlaceholderT, SizeV $>$ Union Template Reference}
+\label{unionPoco_1_1Placeholder}\index{Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}}
+
+
+{\ttfamily \#include $<$Any.\+h$>$}
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1Placeholder_1_1Size}{Size}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{unionPoco_1_1Placeholder_abf7a5c6cec405ba1556391b380da9f97}{Placeholder}} ()
+\item 
+void \mbox{\hyperlink{unionPoco_1_1Placeholder_ac84619c55c3385cf7c0dc84464b3cd43}{erase}} ()
+\item 
+bool \mbox{\hyperlink{unionPoco_1_1Placeholder_aa5bbabc2b5e268a65f59a57222b5b468}{is\+Local}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{unionPoco_1_1Placeholder_ae19edc66c55a8b3fe59e8e1d45df51d6}{set\+Local}} (bool local) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+PlaceholderT $\ast$ \mbox{\hyperlink{unionPoco_1_1Placeholder_aa29a09ca3519f3785002222d8c215017}{content}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{unionPoco_1_1Placeholder_a9820c685b67a3355c042bb0b3365d9e2}{Any}}
+\item 
+class \mbox{\hyperlink{unionPoco_1_1Placeholder_a49473a9548189f7ada421f4c870a9d77}{Dynamic\+::\+Var}}
+\item 
+class \mbox{\hyperlink{unionPoco_1_1Placeholder_aa51f386de3183a0af533df134a250ba0}{Dynamic\+::\+Var\+Holder}}
+\item 
+{\footnotesize template$<$class $>$ }\\class \mbox{\hyperlink{unionPoco_1_1Placeholder_a23cc172af5bb10aba4ceb1909a250d91}{Dynamic\+::\+Var\+Holder\+Impl}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename PlaceholderT, unsigned int SizeV = P\+O\+C\+O\+\_\+\+S\+M\+A\+L\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+ZE$>$\newline
+union Poco\+::\+Placeholder$<$ Placeholder\+T, Size\+V $>$}
+
+Value\+Holder union (used by \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} and \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Poco\+::\+Dynamic\+::\+Var}} for small object optimization, when enabled).
+
+If Holder$<$\+Type$>$ fits into P\+O\+C\+O\+\_\+\+S\+M\+A\+L\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+ZE bytes of storage, it will be placement-\/new-\/allocated into the local buffer (i.\+e. there will be no heap-\/allocation). The local buffer size is one byte larger -\/ \mbox{[}P\+O\+C\+O\+\_\+\+S\+M\+A\+L\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+ZE + 1\mbox{]}, additional byte value indicating where the object was allocated (0 =$>$ heap, 1 =$>$ local). 
+
+Definition at line 50 of file Any.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{unionPoco_1_1Placeholder_abf7a5c6cec405ba1556391b380da9f97}\label{unionPoco_1_1Placeholder_abf7a5c6cec405ba1556391b380da9f97}} 
+\index{Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}!Placeholder@{Placeholder}}
+\index{Placeholder@{Placeholder}!Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}}
+\doxysubsubsection{\texorpdfstring{Placeholder()}{Placeholder()}}
+{\footnotesize\ttfamily template$<$typename PlaceholderT , unsigned int SizeV = P\+O\+C\+O\+\_\+\+S\+M\+A\+L\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+ZE$>$ \\
+\mbox{\hyperlink{unionPoco_1_1Placeholder}{Poco\+::\+Placeholder}}$<$ PlaceholderT, SizeV $>$\+::\mbox{\hyperlink{unionPoco_1_1Placeholder}{Placeholder}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file Any.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{unionPoco_1_1Placeholder_aa29a09ca3519f3785002222d8c215017}\label{unionPoco_1_1Placeholder_aa29a09ca3519f3785002222d8c215017}} 
+\index{Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}!content@{content}}
+\index{content@{content}!Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}}
+\doxysubsubsection{\texorpdfstring{content()}{content()}}
+{\footnotesize\ttfamily template$<$typename PlaceholderT , unsigned int SizeV = P\+O\+C\+O\+\_\+\+S\+M\+A\+L\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+ZE$>$ \\
+PlaceholderT$\ast$ \mbox{\hyperlink{unionPoco_1_1Placeholder}{Poco\+::\+Placeholder}}$<$ PlaceholderT, SizeV $>$\+::content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 86 of file Any.\+h.
+
+\mbox{\Hypertarget{unionPoco_1_1Placeholder_ac84619c55c3385cf7c0dc84464b3cd43}\label{unionPoco_1_1Placeholder_ac84619c55c3385cf7c0dc84464b3cd43}} 
+\index{Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}!erase@{erase}}
+\index{erase@{erase}!Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily template$<$typename PlaceholderT , unsigned int SizeV = P\+O\+C\+O\+\_\+\+S\+M\+A\+L\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+ZE$>$ \\
+void \mbox{\hyperlink{unionPoco_1_1Placeholder}{Poco\+::\+Placeholder}}$<$ PlaceholderT, SizeV $>$\+::erase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 71 of file Any.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{unionPoco_1_1Placeholder_aa5bbabc2b5e268a65f59a57222b5b468}\label{unionPoco_1_1Placeholder_aa5bbabc2b5e268a65f59a57222b5b468}} 
+\index{Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}!isLocal@{isLocal}}
+\index{isLocal@{isLocal}!Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}}
+\doxysubsubsection{\texorpdfstring{isLocal()}{isLocal()}}
+{\footnotesize\ttfamily template$<$typename PlaceholderT , unsigned int SizeV = P\+O\+C\+O\+\_\+\+S\+M\+A\+L\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+ZE$>$ \\
+bool \mbox{\hyperlink{unionPoco_1_1Placeholder}{Poco\+::\+Placeholder}}$<$ PlaceholderT, SizeV $>$\+::is\+Local (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 76 of file Any.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{unionPoco_1_1Placeholder_ae19edc66c55a8b3fe59e8e1d45df51d6}\label{unionPoco_1_1Placeholder_ae19edc66c55a8b3fe59e8e1d45df51d6}} 
+\index{Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}!setLocal@{setLocal}}
+\index{setLocal@{setLocal}!Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}}
+\doxysubsubsection{\texorpdfstring{setLocal()}{setLocal()}}
+{\footnotesize\ttfamily template$<$typename PlaceholderT , unsigned int SizeV = P\+O\+C\+O\+\_\+\+S\+M\+A\+L\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+ZE$>$ \\
+void \mbox{\hyperlink{unionPoco_1_1Placeholder}{Poco\+::\+Placeholder}}$<$ PlaceholderT, SizeV $>$\+::set\+Local (\begin{DoxyParamCaption}\item[{bool}]{local }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 81 of file Any.\+h.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{unionPoco_1_1Placeholder_a9820c685b67a3355c042bb0b3365d9e2}\label{unionPoco_1_1Placeholder_a9820c685b67a3355c042bb0b3365d9e2}} 
+\index{Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}!Any@{Any}}
+\index{Any@{Any}!Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}}
+\doxysubsubsection{\texorpdfstring{Any}{Any}}
+{\footnotesize\ttfamily template$<$typename PlaceholderT , unsigned int SizeV = P\+O\+C\+O\+\_\+\+S\+M\+A\+L\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+ZE$>$ \\
+friend class \mbox{\hyperlink{classPoco_1_1Any}{Any}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 104 of file Any.\+h.
+
+\mbox{\Hypertarget{unionPoco_1_1Placeholder_a49473a9548189f7ada421f4c870a9d77}\label{unionPoco_1_1Placeholder_a49473a9548189f7ada421f4c870a9d77}} 
+\index{Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}!Dynamic::Var@{Dynamic::Var}}
+\index{Dynamic::Var@{Dynamic::Var}!Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}}
+\doxysubsubsection{\texorpdfstring{Dynamic::Var}{Dynamic::Var}}
+{\footnotesize\ttfamily template$<$typename PlaceholderT , unsigned int SizeV = P\+O\+C\+O\+\_\+\+S\+M\+A\+L\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+ZE$>$ \\
+friend class \mbox{\hyperlink{classPoco_1_1Dynamic_1_1Var}{Dynamic\+::\+Var}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 105 of file Any.\+h.
+
+\mbox{\Hypertarget{unionPoco_1_1Placeholder_aa51f386de3183a0af533df134a250ba0}\label{unionPoco_1_1Placeholder_aa51f386de3183a0af533df134a250ba0}} 
+\index{Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}!Dynamic::VarHolder@{Dynamic::VarHolder}}
+\index{Dynamic::VarHolder@{Dynamic::VarHolder}!Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}}
+\doxysubsubsection{\texorpdfstring{Dynamic::VarHolder}{Dynamic::VarHolder}}
+{\footnotesize\ttfamily template$<$typename PlaceholderT , unsigned int SizeV = P\+O\+C\+O\+\_\+\+S\+M\+A\+L\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+ZE$>$ \\
+friend class \mbox{\hyperlink{classPoco_1_1Dynamic_1_1VarHolder}{Dynamic\+::\+Var\+Holder}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 106 of file Any.\+h.
+
+\mbox{\Hypertarget{unionPoco_1_1Placeholder_a23cc172af5bb10aba4ceb1909a250d91}\label{unionPoco_1_1Placeholder_a23cc172af5bb10aba4ceb1909a250d91}} 
+\index{Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}!Dynamic::VarHolderImpl@{Dynamic::VarHolderImpl}}
+\index{Dynamic::VarHolderImpl@{Dynamic::VarHolderImpl}!Poco::Placeholder$<$ PlaceholderT, SizeV $>$@{Poco::Placeholder$<$ PlaceholderT, SizeV $>$}}
+\doxysubsubsection{\texorpdfstring{Dynamic::VarHolderImpl}{Dynamic::VarHolderImpl}}
+{\footnotesize\ttfamily template$<$typename PlaceholderT , unsigned int SizeV = P\+O\+C\+O\+\_\+\+S\+M\+A\+L\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+I\+ZE$>$ \\
+template$<$class $>$ \\
+friend class \mbox{\hyperlink{classPoco_1_1Dynamic_1_1VarHolderImpl}{Dynamic\+::\+Var\+Holder\+Impl}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 107 of file Any.\+h.
+
+
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Any_8h}{Any.\+h}}\end{DoxyCompactItemize}

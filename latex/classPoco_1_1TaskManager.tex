@@ -1,0 +1,254 @@
+\hypertarget{classPoco_1_1TaskManager}{}\doxysection{Poco\+::Task\+Manager Class Reference}
+\label{classPoco_1_1TaskManager}\index{Poco::TaskManager@{Poco::TaskManager}}
+
+
+{\ttfamily \#include $<$Task\+Manager.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Task}{Task}} $>$ \mbox{\hyperlink{classPoco_1_1TaskManager_a431d40f8cb3fdb17a48d916a6cfa57df}{Task\+Ptr}}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{classPoco_1_1TaskManager_a431d40f8cb3fdb17a48d916a6cfa57df}{Task\+Ptr}} $>$ \mbox{\hyperlink{classPoco_1_1TaskManager_abb1c384f5fbf56ba1761cb20857fac6b}{Task\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1TaskManager_a15a253d75b99924bc83d40dc5742f51d}{Task\+Manager}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1TaskManager_a2cf79fb1d336d135edb842cf965b37c0}{Task\+Manager}} (\mbox{\hyperlink{classPoco_1_1ThreadPool}{Thread\+Pool}} \&pool)
+\item 
+\mbox{\hyperlink{classPoco_1_1TaskManager_a468fdf25caf71461d01cec77d4d26e28}{$\sim$\+Task\+Manager}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1TaskManager_a5fc6d977ecdbea270b9dfb5a7b3ac934}{start}} (\mbox{\hyperlink{classPoco_1_1Task}{Task}} $\ast$p\+Task)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1TaskManager}{Task\+Manager}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1TaskManager_abcbbe15ca080ce3a9cdf6f133312f625}{cancel\+All}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1TaskManager_afd962887bf3270ab327b419790faaf45}{join\+All}} ()
+\begin{DoxyCompactList}\small\item\em Requests cancellation of all tasks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1TaskManager_abb1c384f5fbf56ba1761cb20857fac6b}{Task\+List}} \mbox{\hyperlink{classPoco_1_1TaskManager_a79ff7d34894ae1f71dc7f3124af67aab}{task\+List}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classPoco_1_1TaskManager_a91ee9cbd27a0280599c4699a4331b473}{count}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns a copy of the internal task list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1TaskManager_ad68254d2c820203f04c9eb1c1845883f}{add\+Observer}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractObserver}{Abstract\+Observer}} \&observer)
+\begin{DoxyCompactList}\small\item\em Returns the number of tasks in the internal task list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1TaskManager_a6b4e721de886766005409c0dea3df80f}{remove\+Observer}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractObserver}{Abstract\+Observer}} \&observer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} int \mbox{\hyperlink{classPoco_1_1TaskManager_a16e8584c5bfd46355e1e1e0854f8ef08}{M\+I\+N\+\_\+\+P\+R\+O\+G\+R\+E\+S\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+T\+E\+R\+V\+AL}}
+\begin{DoxyCompactList}\small\item\em Unregisters an observer with the \mbox{\hyperlink{classPoco_1_1NotificationCenter}{Notification\+Center}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1TaskManager_ad8d035378fd814d8dff93f28eb5efda3}{post\+Notification}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Notification_a135c7b6ff2d0e72b57b40c52534c7744}{Notification\+::\+Ptr}} \&p\+Nf)
+\item 
+void \mbox{\hyperlink{classPoco_1_1TaskManager_a0ac897fcbd831db1ac41451759803d8c}{task\+Started}} (\mbox{\hyperlink{classPoco_1_1Task}{Task}} $\ast$p\+Task)
+\item 
+void \mbox{\hyperlink{classPoco_1_1TaskManager_a6836221b9b667d7016d8df1b1c104225}{task\+Progress}} (\mbox{\hyperlink{classPoco_1_1Task}{Task}} $\ast$p\+Task, float progress)
+\item 
+void \mbox{\hyperlink{classPoco_1_1TaskManager_aca539d2ef95885882ca0c2c5aa1bb70b}{task\+Cancelled}} (\mbox{\hyperlink{classPoco_1_1Task}{Task}} $\ast$p\+Task)
+\item 
+void \mbox{\hyperlink{classPoco_1_1TaskManager_a3ec315eec67929fcc1cd7d561346374d}{task\+Finished}} (\mbox{\hyperlink{classPoco_1_1Task}{Task}} $\ast$p\+Task)
+\item 
+void \mbox{\hyperlink{classPoco_1_1TaskManager_a8026cdd475fd777cc319876b9621a357}{task\+Failed}} (\mbox{\hyperlink{classPoco_1_1Task}{Task}} $\ast$p\+Task, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Exception}{Exception}} \&exc)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1TaskManager_aaa7728226b6ce66782e8816b1658dd9a}{Task}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1TaskManager}{Task\+Manager}} manages a collection of tasks and monitors their lifetime.
+
+A \mbox{\hyperlink{classPoco_1_1TaskManager}{Task\+Manager}} has a built-\/in \mbox{\hyperlink{classPoco_1_1NotificationCenter}{Notification\+Center}} that is used to send out notifications on task progress and task states. See the \mbox{\hyperlink{classPoco_1_1TaskNotification}{Task\+Notification}} class and its subclasses for the various events that result in a notification. To keep the number of notifications small, a \mbox{\hyperlink{classPoco_1_1TaskProgressNotification}{Task\+Progress\+Notification}} will only be sent out once in 100 milliseconds. 
+
+Definition at line 40 of file Task\+Manager.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1TaskManager_abb1c384f5fbf56ba1761cb20857fac6b}\label{classPoco_1_1TaskManager_abb1c384f5fbf56ba1761cb20857fac6b}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!TaskList@{TaskList}}
+\index{TaskList@{TaskList}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{TaskList}{TaskList}}
+{\footnotesize\ttfamily typedef std\+::list$<$\mbox{\hyperlink{classPoco_1_1TaskManager_a431d40f8cb3fdb17a48d916a6cfa57df}{Task\+Ptr}}$>$ \mbox{\hyperlink{classPoco_1_1TaskManager_abb1c384f5fbf56ba1761cb20857fac6b}{Poco\+::\+Task\+Manager\+::\+Task\+List}}}
+
+
+
+Definition at line 53 of file Task\+Manager.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1TaskManager_a431d40f8cb3fdb17a48d916a6cfa57df}\label{classPoco_1_1TaskManager_a431d40f8cb3fdb17a48d916a6cfa57df}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!TaskPtr@{TaskPtr}}
+\index{TaskPtr@{TaskPtr}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{TaskPtr}{TaskPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Task}{Task}}$>$ \mbox{\hyperlink{classPoco_1_1TaskManager_a431d40f8cb3fdb17a48d916a6cfa57df}{Poco\+::\+Task\+Manager\+::\+Task\+Ptr}}}
+
+
+
+Definition at line 52 of file Task\+Manager.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1TaskManager_a15a253d75b99924bc83d40dc5742f51d}\label{classPoco_1_1TaskManager_a15a253d75b99924bc83d40dc5742f51d}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!TaskManager@{TaskManager}}
+\index{TaskManager@{TaskManager}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{TaskManager()}{TaskManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Task\+Manager\+::\+Task\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1TaskManager_a2cf79fb1d336d135edb842cf965b37c0}\label{classPoco_1_1TaskManager_a2cf79fb1d336d135edb842cf965b37c0}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!TaskManager@{TaskManager}}
+\index{TaskManager@{TaskManager}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{TaskManager()}{TaskManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Task\+Manager\+::\+Task\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1ThreadPool}{Thread\+Pool}} \&}]{pool }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1TaskManager}{Task\+Manager}}, using the default \mbox{\hyperlink{classPoco_1_1ThreadPool}{Thread\+Pool}}. \mbox{\Hypertarget{classPoco_1_1TaskManager_a468fdf25caf71461d01cec77d4d26e28}\label{classPoco_1_1TaskManager_a468fdf25caf71461d01cec77d4d26e28}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!````~TaskManager@{$\sim$TaskManager}}
+\index{````~TaskManager@{$\sim$TaskManager}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$TaskManager()}{~TaskManager()}}
+{\footnotesize\ttfamily Poco\+::\+Task\+Manager\+::$\sim$\+Task\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1TaskManager}{Task\+Manager}}, using the given \mbox{\hyperlink{classPoco_1_1ThreadPool}{Thread\+Pool}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1TaskManager_ad68254d2c820203f04c9eb1c1845883f}\label{classPoco_1_1TaskManager_ad68254d2c820203f04c9eb1c1845883f}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!addObserver@{addObserver}}
+\index{addObserver@{addObserver}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{addObserver()}{addObserver()}}
+{\footnotesize\ttfamily void Poco\+::\+Task\+Manager\+::add\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractObserver}{Abstract\+Observer}} \&}]{observer }\end{DoxyParamCaption})}
+
+
+
+Returns the number of tasks in the internal task list. 
+
+\mbox{\Hypertarget{classPoco_1_1TaskManager_abcbbe15ca080ce3a9cdf6f133312f625}\label{classPoco_1_1TaskManager_abcbbe15ca080ce3a9cdf6f133312f625}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!cancelAll@{cancelAll}}
+\index{cancelAll@{cancelAll}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{cancelAll()}{cancelAll()}}
+{\footnotesize\ttfamily void Poco\+::\+Task\+Manager\+::cancel\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts the given task in a thread obtained from the thread pool.
+
+The \mbox{\hyperlink{classPoco_1_1TaskManager}{Task\+Manager}} takes ownership of the \mbox{\hyperlink{classPoco_1_1Task}{Task}} object and deletes it when it it finished. \mbox{\Hypertarget{classPoco_1_1TaskManager_a91ee9cbd27a0280599c4699a4331b473}\label{classPoco_1_1TaskManager_a91ee9cbd27a0280599c4699a4331b473}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!count@{count}}
+\index{count@{count}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Poco\+::\+Task\+Manager\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a copy of the internal task list. 
+
+
+
+Definition at line 128 of file Task\+Manager.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1TaskManager_afd962887bf3270ab327b419790faaf45}\label{classPoco_1_1TaskManager_afd962887bf3270ab327b419790faaf45}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!joinAll@{joinAll}}
+\index{joinAll@{joinAll}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{joinAll()}{joinAll()}}
+{\footnotesize\ttfamily void Poco\+::\+Task\+Manager\+::join\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Requests cancellation of all tasks. 
+
+\mbox{\Hypertarget{classPoco_1_1TaskManager_ad8d035378fd814d8dff93f28eb5efda3}\label{classPoco_1_1TaskManager_ad8d035378fd814d8dff93f28eb5efda3}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!postNotification@{postNotification}}
+\index{postNotification@{postNotification}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{postNotification()}{postNotification()}}
+{\footnotesize\ttfamily void Poco\+::\+Task\+Manager\+::post\+Notification (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Notification_a135c7b6ff2d0e72b57b40c52534c7744}{Notification\+::\+Ptr}} \&}]{p\+Nf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1TaskManager_a6b4e721de886766005409c0dea3df80f}\label{classPoco_1_1TaskManager_a6b4e721de886766005409c0dea3df80f}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!removeObserver@{removeObserver}}
+\index{removeObserver@{removeObserver}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{removeObserver()}{removeObserver()}}
+{\footnotesize\ttfamily void Poco\+::\+Task\+Manager\+::remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractObserver}{Abstract\+Observer}} \&}]{observer }\end{DoxyParamCaption})}
+
+Registers an observer with the \mbox{\hyperlink{classPoco_1_1NotificationCenter}{Notification\+Center}}. Usage\+: Observer$<$\+My\+Class, My\+Notification$>$ obs($\ast$this, \&\+My\+Class\+::handle\+Notification); notification\+Center.\+add\+Observer(obs); \mbox{\Hypertarget{classPoco_1_1TaskManager_a5fc6d977ecdbea270b9dfb5a7b3ac934}\label{classPoco_1_1TaskManager_a5fc6d977ecdbea270b9dfb5a7b3ac934}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!start@{start}}
+\index{start@{start}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Poco\+::\+Task\+Manager\+::start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Task}{Task}} $\ast$}]{p\+Task }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1TaskManager}{Task\+Manager}}. 
+
+\mbox{\Hypertarget{classPoco_1_1TaskManager_aca539d2ef95885882ca0c2c5aa1bb70b}\label{classPoco_1_1TaskManager_aca539d2ef95885882ca0c2c5aa1bb70b}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!taskCancelled@{taskCancelled}}
+\index{taskCancelled@{taskCancelled}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{taskCancelled()}{taskCancelled()}}
+{\footnotesize\ttfamily void Poco\+::\+Task\+Manager\+::task\+Cancelled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Task}{Task}} $\ast$}]{p\+Task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1TaskManager_a8026cdd475fd777cc319876b9621a357}\label{classPoco_1_1TaskManager_a8026cdd475fd777cc319876b9621a357}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!taskFailed@{taskFailed}}
+\index{taskFailed@{taskFailed}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{taskFailed()}{taskFailed()}}
+{\footnotesize\ttfamily void Poco\+::\+Task\+Manager\+::task\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Task}{Task}} $\ast$}]{p\+Task,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Exception}{Exception}} \&}]{exc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1TaskManager_a3ec315eec67929fcc1cd7d561346374d}\label{classPoco_1_1TaskManager_a3ec315eec67929fcc1cd7d561346374d}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!taskFinished@{taskFinished}}
+\index{taskFinished@{taskFinished}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{taskFinished()}{taskFinished()}}
+{\footnotesize\ttfamily void Poco\+::\+Task\+Manager\+::task\+Finished (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Task}{Task}} $\ast$}]{p\+Task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1TaskManager_a79ff7d34894ae1f71dc7f3124af67aab}\label{classPoco_1_1TaskManager_a79ff7d34894ae1f71dc7f3124af67aab}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!taskList@{taskList}}
+\index{taskList@{taskList}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{taskList()}{taskList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1TaskManager_abb1c384f5fbf56ba1761cb20857fac6b}{Task\+List}} Poco\+::\+Task\+Manager\+::task\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Waits for the completion of all the threads in the \mbox{\hyperlink{classPoco_1_1TaskManager}{Task\+Manager}}\textquotesingle{}s thread pool.
+
+Note\+: \mbox{\hyperlink{classPoco_1_1TaskManager_afd962887bf3270ab327b419790faaf45}{join\+All()}} will wait for A\+LL tasks in the \mbox{\hyperlink{classPoco_1_1TaskManager}{Task\+Manager}}\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1ThreadPool}{Thread\+Pool}} to complete. If the \mbox{\hyperlink{classPoco_1_1ThreadPool}{Thread\+Pool}} has threads created by other facilities, these threads must also complete before \mbox{\hyperlink{classPoco_1_1TaskManager_afd962887bf3270ab327b419790faaf45}{join\+All()}} can return. \mbox{\Hypertarget{classPoco_1_1TaskManager_a6836221b9b667d7016d8df1b1c104225}\label{classPoco_1_1TaskManager_a6836221b9b667d7016d8df1b1c104225}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!taskProgress@{taskProgress}}
+\index{taskProgress@{taskProgress}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{taskProgress()}{taskProgress()}}
+{\footnotesize\ttfamily void Poco\+::\+Task\+Manager\+::task\+Progress (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Task}{Task}} $\ast$}]{p\+Task,  }\item[{float}]{progress }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1TaskManager_a0ac897fcbd831db1ac41451759803d8c}\label{classPoco_1_1TaskManager_a0ac897fcbd831db1ac41451759803d8c}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!taskStarted@{taskStarted}}
+\index{taskStarted@{taskStarted}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{taskStarted()}{taskStarted()}}
+{\footnotesize\ttfamily void Poco\+::\+Task\+Manager\+::task\+Started (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Task}{Task}} $\ast$}]{p\+Task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Posts a notification to the task manager\textquotesingle{}s notification center. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1TaskManager_aaa7728226b6ce66782e8816b1658dd9a}\label{classPoco_1_1TaskManager_aaa7728226b6ce66782e8816b1658dd9a}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!Task@{Task}}
+\index{Task@{Task}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{Task}{Task}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Task}{Task}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 121 of file Task\+Manager.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1TaskManager_a16e8584c5bfd46355e1e1e0854f8ef08}\label{classPoco_1_1TaskManager_a16e8584c5bfd46355e1e1e0854f8ef08}} 
+\index{Poco::TaskManager@{Poco::TaskManager}!MIN\_PROGRESS\_NOTIFICATION\_INTERVAL@{MIN\_PROGRESS\_NOTIFICATION\_INTERVAL}}
+\index{MIN\_PROGRESS\_NOTIFICATION\_INTERVAL@{MIN\_PROGRESS\_NOTIFICATION\_INTERVAL}!Poco::TaskManager@{Poco::TaskManager}}
+\doxysubsubsection{\texorpdfstring{MIN\_PROGRESS\_NOTIFICATION\_INTERVAL}{MIN\_PROGRESS\_NOTIFICATION\_INTERVAL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} int Poco\+::\+Task\+Manager\+::\+M\+I\+N\+\_\+\+P\+R\+O\+G\+R\+E\+S\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+N\+T\+E\+R\+V\+AL\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Unregisters an observer with the \mbox{\hyperlink{classPoco_1_1NotificationCenter}{Notification\+Center}}. 
+
+
+
+Definition at line 101 of file Task\+Manager.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{TaskManager_8h}{Task\+Manager.\+h}}\end{DoxyCompactItemize}

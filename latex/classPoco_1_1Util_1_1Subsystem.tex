@@ -1,0 +1,166 @@
+\hypertarget{classPoco_1_1Util_1_1Subsystem}{}\doxysection{Poco\+::Util\+::Subsystem Class Reference}
+\label{classPoco_1_1Util_1_1Subsystem}\index{Poco::Util::Subsystem@{Poco::Util::Subsystem}}
+
+
+{\ttfamily \#include $<$Subsystem.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Util\+::Subsystem\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Util\+::Subsystem\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem_a584b0ddd59f3229edb53a2e7eaccc17d}{Subsystem}} ()
+\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem_a5ae9dd61f69ee662d46e5c5c9cd82427}{name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem}{Subsystem}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem_a6382a1288ce62ab39b4cf715733e34d1}{initialize}} (\mbox{\hyperlink{classPoco_1_1Util_1_1Application}{Application}} \&app)=0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem_a302a6967d4fc46e0b20e5a30dc854737}{uninitialize}} ()=0
+\begin{DoxyCompactList}\small\item\em Initializes the subsystem. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem_a19b564e4e05a76edd4b5d7f269042277}{reinitialize}} (\mbox{\hyperlink{classPoco_1_1Util_1_1Application}{Application}} \&app)
+\begin{DoxyCompactList}\small\item\em Uninitializes the subsystem. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem_a76c464d69ab21cc9ee4bebb5b29822fc}{define\+Options}} (\mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}} \&options)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem_a5ded54ee2c588c0079dc4fec35c74f0e}{$\sim$\+Subsystem}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem_a23f25bcc02a0e94c2f5a4188496b04d0}{Application}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem}{Subsystem}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Subsystems extend an application in a modular way. \begin{DoxyVerb}The Subsystem class provides a common interface
+for subsystems so that subsystems can be automatically
+initialized at startup and uninitialized at shutdown.
+
+Subsystems should also support dynamic reconfiguration,
+so that they can be reconfigured anytime during the
+life of a running application.
+
+The degree to which dynamic reconfiguration is supported
+is up to the actual subsystem implementation. It can
+range from ignoring the reconfiguration request (not
+recommended), to changing certain settings that affect
+the performance, to a complete reinitialization. 
+\end{DoxyVerb}
+ 
+
+Definition at line 35 of file Subsystem.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1Subsystem_a584b0ddd59f3229edb53a2e7eaccc17d}\label{classPoco_1_1Util_1_1Subsystem_a584b0ddd59f3229edb53a2e7eaccc17d}} 
+\index{Poco::Util::Subsystem@{Poco::Util::Subsystem}!Subsystem@{Subsystem}}
+\index{Subsystem@{Subsystem}!Poco::Util::Subsystem@{Poco::Util::Subsystem}}
+\doxysubsubsection{\texorpdfstring{Subsystem()}{Subsystem()}}
+{\footnotesize\ttfamily Poco\+::\+Util\+::\+Subsystem\+::\+Subsystem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1Subsystem_a5ded54ee2c588c0079dc4fec35c74f0e}\label{classPoco_1_1Util_1_1Subsystem_a5ded54ee2c588c0079dc4fec35c74f0e}} 
+\index{Poco::Util::Subsystem@{Poco::Util::Subsystem}!````~Subsystem@{$\sim$Subsystem}}
+\index{````~Subsystem@{$\sim$Subsystem}!Poco::Util::Subsystem@{Poco::Util::Subsystem}}
+\doxysubsubsection{\texorpdfstring{$\sim$Subsystem()}{~Subsystem()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Util\+::\+Subsystem\+::$\sim$\+Subsystem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called before the \mbox{\hyperlink{classPoco_1_1Util_1_1Application}{Application}}\textquotesingle{}s command line processing begins. If a subsystem wants to support command line arguments, it must override this method. The default implementation does not define any options.
+
+To effectively handle options, a subsystem should either bind the option to a configuration property or specify a callback to handle the option. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1Subsystem_a76c464d69ab21cc9ee4bebb5b29822fc}\label{classPoco_1_1Util_1_1Subsystem_a76c464d69ab21cc9ee4bebb5b29822fc}} 
+\index{Poco::Util::Subsystem@{Poco::Util::Subsystem}!defineOptions@{defineOptions}}
+\index{defineOptions@{defineOptions}!Poco::Util::Subsystem@{Poco::Util::Subsystem}}
+\doxysubsubsection{\texorpdfstring{defineOptions()}{defineOptions()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Util\+::\+Subsystem\+::define\+Options (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1OptionSet}{Option\+Set}} \&}]{options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Re-\/initializes the subsystem.
+
+The default implementation just calls \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem_a302a6967d4fc46e0b20e5a30dc854737}{uninitialize()}} followed by \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem_a6382a1288ce62ab39b4cf715733e34d1}{initialize()}}. Actual implementations might want to use a less radical and possibly more performant approach. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1OSP_1_1OSPSubsystem_a3ea0a3f1c7b5a669b7df650c656b180d}{Poco\+::\+O\+S\+P\+::\+O\+S\+P\+Subsystem}}, \mbox{\hyperlink{classPoco_1_1Util_1_1Application_a387af69805eec896f1938c79167186dd}{Poco\+::\+Util\+::\+Application}}, and \mbox{\hyperlink{classPoco_1_1Util_1_1ServerApplication_aeb9576c971c170fa354434f1fd8d9ee4}{Poco\+::\+Util\+::\+Server\+Application}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1Subsystem_a6382a1288ce62ab39b4cf715733e34d1}\label{classPoco_1_1Util_1_1Subsystem_a6382a1288ce62ab39b4cf715733e34d1}} 
+\index{Poco::Util::Subsystem@{Poco::Util::Subsystem}!initialize@{initialize}}
+\index{initialize@{initialize}!Poco::Util::Subsystem@{Poco::Util::Subsystem}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Util\+::\+Subsystem\+::initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1Application}{Application}} \&}]{app }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Returns the name of the subsystem. Must be implemented by subclasses. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1OSP_1_1OSPSubsystem_aaeca9468ba71e4634b6434a8556bd115}{Poco\+::\+O\+S\+P\+::\+O\+S\+P\+Subsystem}}, \mbox{\hyperlink{classPoco_1_1Util_1_1Application_a82f62471a68493049a7d3955f34976ca}{Poco\+::\+Util\+::\+Application}}, and \mbox{\hyperlink{classPoco_1_1Util_1_1LoggingSubsystem_a81f067ac1380d8eac9dbdd8126e059c6}{Poco\+::\+Util\+::\+Logging\+Subsystem}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1Subsystem_a5ae9dd61f69ee662d46e5c5c9cd82427}\label{classPoco_1_1Util_1_1Subsystem_a5ae9dd61f69ee662d46e5c5c9cd82427}} 
+\index{Poco::Util::Subsystem@{Poco::Util::Subsystem}!name@{name}}
+\index{name@{name}!Poco::Util::Subsystem@{Poco::Util::Subsystem}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Poco\+::\+Util\+::\+Subsystem\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem}{Subsystem}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Util_1_1Application_ad2aa675448f563949b464c0e59d03ade}{Poco\+::\+Util\+::\+Application}}, \mbox{\hyperlink{classPoco_1_1OSP_1_1OSPSubsystem_a1242618628933f1fe2fddaee7fbecbe0}{Poco\+::\+O\+S\+P\+::\+O\+S\+P\+Subsystem}}, and \mbox{\hyperlink{classPoco_1_1Util_1_1LoggingSubsystem_af275dfea1a027e359346123670168f1d}{Poco\+::\+Util\+::\+Logging\+Subsystem}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1Subsystem_a19b564e4e05a76edd4b5d7f269042277}\label{classPoco_1_1Util_1_1Subsystem_a19b564e4e05a76edd4b5d7f269042277}} 
+\index{Poco::Util::Subsystem@{Poco::Util::Subsystem}!reinitialize@{reinitialize}}
+\index{reinitialize@{reinitialize}!Poco::Util::Subsystem@{Poco::Util::Subsystem}}
+\doxysubsubsection{\texorpdfstring{reinitialize()}{reinitialize()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Util\+::\+Subsystem\+::reinitialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Util_1_1Application}{Application}} \&}]{app }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Uninitializes the subsystem. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Util_1_1Application_acf6923ae08f4345e928871b87deed928}{Poco\+::\+Util\+::\+Application}}.
+
+\mbox{\Hypertarget{classPoco_1_1Util_1_1Subsystem_a302a6967d4fc46e0b20e5a30dc854737}\label{classPoco_1_1Util_1_1Subsystem_a302a6967d4fc46e0b20e5a30dc854737}} 
+\index{Poco::Util::Subsystem@{Poco::Util::Subsystem}!uninitialize@{uninitialize}}
+\index{uninitialize@{uninitialize}!Poco::Util::Subsystem@{Poco::Util::Subsystem}}
+\doxysubsubsection{\texorpdfstring{uninitialize()}{uninitialize()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Util\+::\+Subsystem\+::uninitialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Initializes the subsystem. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Util_1_1Application_ae441fc171418cf80cc88922cae09ce8f}{Poco\+::\+Util\+::\+Application}}, \mbox{\hyperlink{classPoco_1_1OSP_1_1OSPSubsystem_aeeeee0259c22b010ed3f7f78b867ecdf}{Poco\+::\+O\+S\+P\+::\+O\+S\+P\+Subsystem}}, and \mbox{\hyperlink{classPoco_1_1Util_1_1LoggingSubsystem_a43799fb2fdfa7f7107e937734537804c}{Poco\+::\+Util\+::\+Logging\+Subsystem}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Util_1_1Subsystem_a23f25bcc02a0e94c2f5a4188496b04d0}\label{classPoco_1_1Util_1_1Subsystem_a23f25bcc02a0e94c2f5a4188496b04d0}} 
+\index{Poco::Util::Subsystem@{Poco::Util::Subsystem}!Application@{Application}}
+\index{Application@{Application}!Poco::Util::Subsystem@{Poco::Util::Subsystem}}
+\doxysubsubsection{\texorpdfstring{Application}{Application}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Util_1_1Application}{Application}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Util_1_1Subsystem}{Subsystem}}. 
+
+
+
+Definition at line 89 of file Subsystem.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Util/\mbox{\hyperlink{Subsystem_8h}{Subsystem.\+h}}\end{DoxyCompactItemize}

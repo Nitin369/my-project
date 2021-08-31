@@ -1,0 +1,104 @@
+\hypertarget{classPoco_1_1ThreadLocalStorage}{}\doxysection{Poco\+::Thread\+Local\+Storage Class Reference}
+\label{classPoco_1_1ThreadLocalStorage}\index{Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}}
+
+
+{\ttfamily \#include $<$Thread\+Local.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ThreadLocalStorage_ac50f5981c1fdd21fc7ae0bfcaaea8d21}{Thread\+Local\+Storage}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1ThreadLocalStorage_a1b729a38ac30f69ac2a22f73017e3938}{$\sim$\+Thread\+Local\+Storage}} ()
+\begin{DoxyCompactList}\small\item\em Creates the T\+LS. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1TLSAbstractSlot}{T\+L\+S\+Abstract\+Slot}} $\ast$\& \mbox{\hyperlink{classPoco_1_1ThreadLocalStorage_a99b87ab70a12d48b28bb3be580eb8e58}{get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$key)
+\begin{DoxyCompactList}\small\item\em Deletes the T\+LS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1ThreadLocalStorage}{Thread\+Local\+Storage}} \& \mbox{\hyperlink{classPoco_1_1ThreadLocalStorage_aa7416c2a9f274cc93fc42c2fe1700f97}{current}} ()
+\begin{DoxyCompactList}\small\item\em Returns the slot for the given key. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1ThreadLocalStorage_a224f305e8eb8c896f8d155bb2854c6a5}{clear}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1ThreadLocalStorage_adbc148eaddd341d7ae4d07c9e9e33bfd}{Thread}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class manages the local storage for each thread. Never use this class directly, always use the \mbox{\hyperlink{classPoco_1_1ThreadLocal}{Thread\+Local}} template for managing thread local storage. 
+
+Definition at line 70 of file Thread\+Local.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1ThreadLocalStorage_ac50f5981c1fdd21fc7ae0bfcaaea8d21}\label{classPoco_1_1ThreadLocalStorage_ac50f5981c1fdd21fc7ae0bfcaaea8d21}} 
+\index{Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}!ThreadLocalStorage@{ThreadLocalStorage}}
+\index{ThreadLocalStorage@{ThreadLocalStorage}!Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}}
+\doxysubsubsection{\texorpdfstring{ThreadLocalStorage()}{ThreadLocalStorage()}}
+{\footnotesize\ttfamily Poco\+::\+Thread\+Local\+Storage\+::\+Thread\+Local\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1ThreadLocalStorage_a1b729a38ac30f69ac2a22f73017e3938}\label{classPoco_1_1ThreadLocalStorage_a1b729a38ac30f69ac2a22f73017e3938}} 
+\index{Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}!````~ThreadLocalStorage@{$\sim$ThreadLocalStorage}}
+\index{````~ThreadLocalStorage@{$\sim$ThreadLocalStorage}!Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}}
+\doxysubsubsection{\texorpdfstring{$\sim$ThreadLocalStorage()}{~ThreadLocalStorage()}}
+{\footnotesize\ttfamily Poco\+::\+Thread\+Local\+Storage\+::$\sim$\+Thread\+Local\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the T\+LS. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1ThreadLocalStorage_a224f305e8eb8c896f8d155bb2854c6a5}\label{classPoco_1_1ThreadLocalStorage_a224f305e8eb8c896f8d155bb2854c6a5}} 
+\index{Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}!clear@{clear}}
+\index{clear@{clear}!Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily static void Poco\+::\+Thread\+Local\+Storage\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the T\+LS object for the current thread (which may also be the main thread). \mbox{\Hypertarget{classPoco_1_1ThreadLocalStorage_aa7416c2a9f274cc93fc42c2fe1700f97}\label{classPoco_1_1ThreadLocalStorage_aa7416c2a9f274cc93fc42c2fe1700f97}} 
+\index{Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}!current@{current}}
+\index{current@{current}!Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1ThreadLocalStorage}{Thread\+Local\+Storage}}\& Poco\+::\+Thread\+Local\+Storage\+::current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the slot for the given key. 
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1ThreadLocalStorage_a99b87ab70a12d48b28bb3be580eb8e58}\label{classPoco_1_1ThreadLocalStorage_a99b87ab70a12d48b28bb3be580eb8e58}} 
+\index{Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}!get@{get}}
+\index{get@{get}!Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1TLSAbstractSlot}{T\+L\+S\+Abstract\+Slot}}$\ast$\& Poco\+::\+Thread\+Local\+Storage\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{key }\end{DoxyParamCaption})}
+
+
+
+Deletes the T\+LS. 
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1ThreadLocalStorage_adbc148eaddd341d7ae4d07c9e9e33bfd}\label{classPoco_1_1ThreadLocalStorage_adbc148eaddd341d7ae4d07c9e9e33bfd}} 
+\index{Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}!Thread@{Thread}}
+\index{Thread@{Thread}!Poco::ThreadLocalStorage@{Poco::ThreadLocalStorage}}
+\doxysubsubsection{\texorpdfstring{Thread}{Thread}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Thread}{Thread}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 98 of file Thread\+Local.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ThreadLocal_8h}{Thread\+Local.\+h}}\end{DoxyCompactItemize}

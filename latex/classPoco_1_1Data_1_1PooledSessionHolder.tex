@@ -1,0 +1,129 @@
+\hypertarget{classPoco_1_1Data_1_1PooledSessionHolder}{}\doxysection{Poco\+::Data\+::Pooled\+Session\+Holder Class Reference}
+\label{classPoco_1_1Data_1_1PooledSessionHolder}\index{Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}}
+
+
+This class is used by \mbox{\hyperlink{classPoco_1_1Data_1_1SessionPool}{Session\+Pool}} to manage \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}} objects.  
+
+
+
+
+{\ttfamily \#include $<$Pooled\+Session\+Holder.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::Pooled\+Session\+Holder\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Data\+::Pooled\+Session\+Holder\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionHolder_a8d8a46c2cfd2296a0204cdb91b042b3c}{Pooled\+Session\+Holder}} (\mbox{\hyperlink{classPoco_1_1Data_1_1SessionPool}{Session\+Pool}} \&\mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionHolder_a09381512172242ca379bce7006f35003}{owner}}, \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}} $\ast$p\+Session\+Impl)
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionHolder_af8f7610afa6f6d645f2f0a14be554520}{$\sim$\+Pooled\+Session\+Holder}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionHolder}{Pooled\+Session\+Holder}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}} $\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionHolder_ab48f058d8cacaf43f78efb43077587b3}{session}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionHolder}{Pooled\+Session\+Holder}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SessionPool}{Session\+Pool}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionHolder_a09381512172242ca379bce7006f35003}{owner}} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionHolder_a0ef3f5d8bc24b43fc91e4296d2853f0c}{access}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the Session\+Holder\textquotesingle{}s owner. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionHolder_ab39d662f072b1953360abecda8fbb23f}{idle}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Updates the last access timestamp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is used by \mbox{\hyperlink{classPoco_1_1Data_1_1SessionPool}{Session\+Pool}} to manage \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}} objects. 
+
+Definition at line 37 of file Pooled\+Session\+Holder.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1PooledSessionHolder_a8d8a46c2cfd2296a0204cdb91b042b3c}\label{classPoco_1_1Data_1_1PooledSessionHolder_a8d8a46c2cfd2296a0204cdb91b042b3c}} 
+\index{Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}!PooledSessionHolder@{PooledSessionHolder}}
+\index{PooledSessionHolder@{PooledSessionHolder}!Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}}
+\doxysubsubsection{\texorpdfstring{PooledSessionHolder()}{PooledSessionHolder()}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+Pooled\+Session\+Holder\+::\+Pooled\+Session\+Holder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1SessionPool}{Session\+Pool}} \&}]{owner,  }\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}} $\ast$}]{p\+Session\+Impl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1PooledSessionHolder_af8f7610afa6f6d645f2f0a14be554520}\label{classPoco_1_1Data_1_1PooledSessionHolder_af8f7610afa6f6d645f2f0a14be554520}} 
+\index{Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}!````~PooledSessionHolder@{$\sim$PooledSessionHolder}}
+\index{````~PooledSessionHolder@{$\sim$PooledSessionHolder}!Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}}
+\doxysubsubsection{\texorpdfstring{$\sim$PooledSessionHolder()}{~PooledSessionHolder()}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+Pooled\+Session\+Holder\+::$\sim$\+Pooled\+Session\+Holder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionHolder}{Pooled\+Session\+Holder}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1PooledSessionHolder_a0ef3f5d8bc24b43fc91e4296d2853f0c}\label{classPoco_1_1Data_1_1PooledSessionHolder_a0ef3f5d8bc24b43fc91e4296d2853f0c}} 
+\index{Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}!access@{access}}
+\index{access@{access}!Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}}
+\doxysubsubsection{\texorpdfstring{access()}{access()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Pooled\+Session\+Holder\+::access (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a reference to the Session\+Holder\textquotesingle{}s owner. 
+
+
+
+Definition at line 82 of file Pooled\+Session\+Holder.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Data_1_1PooledSessionHolder_ab39d662f072b1953360abecda8fbb23f}\label{classPoco_1_1Data_1_1PooledSessionHolder_ab39d662f072b1953360abecda8fbb23f}} 
+\index{Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}!idle@{idle}}
+\index{idle@{idle}!Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}}
+\doxysubsubsection{\texorpdfstring{idle()}{idle()}}
+{\footnotesize\ttfamily int Poco\+::\+Data\+::\+Pooled\+Session\+Holder\+::idle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the last access timestamp. 
+
+
+
+Definition at line 90 of file Pooled\+Session\+Holder.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Data_1_1PooledSessionHolder_a09381512172242ca379bce7006f35003}\label{classPoco_1_1Data_1_1PooledSessionHolder_a09381512172242ca379bce7006f35003}} 
+\index{Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}!owner@{owner}}
+\index{owner@{owner}!Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}}
+\doxysubsubsection{\texorpdfstring{owner()}{owner()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1SessionPool}{Session\+Pool}} \& Poco\+::\+Data\+::\+Pooled\+Session\+Holder\+::owner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a pointer to the \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}}. 
+
+
+
+Definition at line 76 of file Pooled\+Session\+Holder.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1PooledSessionHolder_ab48f058d8cacaf43f78efb43077587b3}\label{classPoco_1_1Data_1_1PooledSessionHolder_ab48f058d8cacaf43f78efb43077587b3}} 
+\index{Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}!session@{session}}
+\index{session@{session}!Poco::Data::PooledSessionHolder@{Poco::Data::PooledSessionHolder}}
+\doxysubsubsection{\texorpdfstring{session()}{session()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}} $\ast$ Poco\+::\+Data\+::\+Pooled\+Session\+Holder\+::session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionHolder}{Pooled\+Session\+Holder}}. 
+
+
+
+Definition at line 70 of file Pooled\+Session\+Holder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{PooledSessionHolder_8h}{Pooled\+Session\+Holder.\+h}}\end{DoxyCompactItemize}

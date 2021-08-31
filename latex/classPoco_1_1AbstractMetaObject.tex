@@ -1,0 +1,173 @@
+\hypertarget{classPoco_1_1AbstractMetaObject}{}\doxysection{Poco\+::Abstract\+Meta\+Object$<$ B $>$ Class Template Reference}
+\label{classPoco_1_1AbstractMetaObject}\index{Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}}
+
+
+{\ttfamily \#include $<$Meta\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Abstract\+Meta\+Object$<$ B $>$\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1AbstractMetaObject_a2a71fd63054ed18a89a6471bc474b18e}{Abstract\+Meta\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{classPoco_1_1AbstractMetaObject_a62e20079e8dccd0fcd855a089287403a}{name}})
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1AbstractMetaObject_a3443fe6ce6f6f14d153b2ff49c36d7a9}{$\sim$\+Abstract\+Meta\+Object}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{classPoco_1_1AbstractMetaObject_a62e20079e8dccd0fcd855a089287403a}{name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual B $\ast$ \mbox{\hyperlink{classPoco_1_1AbstractMetaObject_a16a6e6f64bcd30380a836ac4e6519044}{create}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual B \& \mbox{\hyperlink{classPoco_1_1AbstractMetaObject_a1eacd645cac07f230743d2cdf141dd77}{instance}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1AbstractMetaObject_acf1efcd0dc424e77b59d2f157210c72f}{can\+Create}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1AbstractMetaObject_aed9acf390a803aa080f9e32cfc27c889}{destroy}} (B $\ast$p\+Object) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+B $\ast$ \mbox{\hyperlink{classPoco_1_1AbstractMetaObject_af214cd06b8e1622e2e461b6f96c56bc0}{auto\+Delete}} (B $\ast$p\+Object) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1AbstractMetaObject_ab3074ec8c5f6547e2789284b2a14e362}{is\+Auto\+Delete}} (B $\ast$p\+Object) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class B$>$\newline
+class Poco\+::\+Abstract\+Meta\+Object$<$ B $>$}
+
+A \mbox{\hyperlink{classPoco_1_1MetaObject}{Meta\+Object}} stores some information about a C++ class. The \mbox{\hyperlink{classPoco_1_1MetaObject}{Meta\+Object}} class is used by the \mbox{\hyperlink{classPoco_1_1Manifest}{Manifest}} class. \mbox{\hyperlink{classPoco_1_1AbstractMetaObject}{Abstract\+Meta\+Object}} is a common base class for all \mbox{\hyperlink{classPoco_1_1MetaObject}{Meta\+Object}} in a rooted class hierarchy. A \mbox{\hyperlink{classPoco_1_1MetaObject}{Meta\+Object}} can also be used as an object factory for its class. 
+
+Definition at line 33 of file Meta\+Object.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1AbstractMetaObject_a2a71fd63054ed18a89a6471bc474b18e}\label{classPoco_1_1AbstractMetaObject_a2a71fd63054ed18a89a6471bc474b18e}} 
+\index{Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}!AbstractMetaObject@{AbstractMetaObject}}
+\index{AbstractMetaObject@{AbstractMetaObject}!Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}}
+\doxysubsubsection{\texorpdfstring{AbstractMetaObject()}{AbstractMetaObject()}}
+{\footnotesize\ttfamily template$<$class B $>$ \\
+\mbox{\hyperlink{classPoco_1_1AbstractMetaObject}{Poco\+::\+Abstract\+Meta\+Object}}$<$ B $>$\+::\mbox{\hyperlink{classPoco_1_1AbstractMetaObject}{Abstract\+Meta\+Object}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file Meta\+Object.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1AbstractMetaObject_a3443fe6ce6f6f14d153b2ff49c36d7a9}\label{classPoco_1_1AbstractMetaObject_a3443fe6ce6f6f14d153b2ff49c36d7a9}} 
+\index{Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}!````~AbstractMetaObject@{$\sim$AbstractMetaObject}}
+\index{````~AbstractMetaObject@{$\sim$AbstractMetaObject}!Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$AbstractMetaObject()}{~AbstractMetaObject()}}
+{\footnotesize\ttfamily template$<$class B $>$ \\
+virtual \mbox{\hyperlink{classPoco_1_1AbstractMetaObject}{Poco\+::\+Abstract\+Meta\+Object}}$<$ B $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1AbstractMetaObject}{Abstract\+Meta\+Object}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 47 of file Meta\+Object.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1AbstractMetaObject_af214cd06b8e1622e2e461b6f96c56bc0}\label{classPoco_1_1AbstractMetaObject_af214cd06b8e1622e2e461b6f96c56bc0}} 
+\index{Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}!autoDelete@{autoDelete}}
+\index{autoDelete@{autoDelete}!Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}}
+\doxysubsubsection{\texorpdfstring{autoDelete()}{autoDelete()}}
+{\footnotesize\ttfamily template$<$class B $>$ \\
+B$\ast$ \mbox{\hyperlink{classPoco_1_1AbstractMetaObject}{Poco\+::\+Abstract\+Meta\+Object}}$<$ B $>$\+::auto\+Delete (\begin{DoxyParamCaption}\item[{B $\ast$}]{p\+Object }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Give ownership of p\+Object to the meta object. The meta object will delete all objects it owns when it is destroyed.
+
+Returns p\+Object. 
+
+Definition at line 87 of file Meta\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1AbstractMetaObject_acf1efcd0dc424e77b59d2f157210c72f}\label{classPoco_1_1AbstractMetaObject_acf1efcd0dc424e77b59d2f157210c72f}} 
+\index{Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}!canCreate@{canCreate}}
+\index{canCreate@{canCreate}!Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}}
+\doxysubsubsection{\texorpdfstring{canCreate()}{canCreate()}}
+{\footnotesize\ttfamily template$<$class B $>$ \\
+virtual bool \mbox{\hyperlink{classPoco_1_1AbstractMetaObject}{Poco\+::\+Abstract\+Meta\+Object}}$<$ B $>$\+::can\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a reference to the only instance of the class. Used for singletons only. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1MetaSingleton_a7212c1987d03e1b44a0a09e01cb021c4}{Poco\+::\+Meta\+Singleton$<$ C, B $>$}}, and \mbox{\hyperlink{classPoco_1_1MetaObject_af094042a8571eca26d80b35dae35e7ed}{Poco\+::\+Meta\+Object$<$ C, B $>$}}.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1AbstractMetaObject_a16a6e6f64bcd30380a836ac4e6519044}\label{classPoco_1_1AbstractMetaObject_a16a6e6f64bcd30380a836ac4e6519044}} 
+\index{Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}!create@{create}}
+\index{create@{create}!Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily template$<$class B $>$ \\
+virtual B$\ast$ \mbox{\hyperlink{classPoco_1_1AbstractMetaObject}{Poco\+::\+Abstract\+Meta\+Object}}$<$ B $>$\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1MetaSingleton_a19361db9fa33f075b53cf2e435d6b887}{Poco\+::\+Meta\+Singleton$<$ C, B $>$}}, and \mbox{\hyperlink{classPoco_1_1MetaObject_a51d8c83b62b7dee8838f2b00a25a37d8}{Poco\+::\+Meta\+Object$<$ C, B $>$}}.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1AbstractMetaObject_aed9acf390a803aa080f9e32cfc27c889}\label{classPoco_1_1AbstractMetaObject_aed9acf390a803aa080f9e32cfc27c889}} 
+\index{Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}!destroy@{destroy}}
+\index{destroy@{destroy}!Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily template$<$class B $>$ \\
+virtual void \mbox{\hyperlink{classPoco_1_1AbstractMetaObject}{Poco\+::\+Abstract\+Meta\+Object}}$<$ B $>$\+::destroy (\begin{DoxyParamCaption}\item[{B $\ast$}]{p\+Object }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns true iff the create method can be used to create instances of the class. Returns false if the class is a singleton. If p\+Object was owned by meta object, the ownership of the deleted object is removed and the object is deleted. 
+
+Definition at line 73 of file Meta\+Object.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1AbstractMetaObject_a1eacd645cac07f230743d2cdf141dd77}\label{classPoco_1_1AbstractMetaObject_a1eacd645cac07f230743d2cdf141dd77}} 
+\index{Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}!instance@{instance}}
+\index{instance@{instance}!Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily template$<$class B $>$ \\
+virtual B\& \mbox{\hyperlink{classPoco_1_1AbstractMetaObject}{Poco\+::\+Abstract\+Meta\+Object}}$<$ B $>$\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Create a new instance of a class. Cannot be used for singletons. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1MetaSingleton_a9f795e716bceeedda140e8077e1f17dd}{Poco\+::\+Meta\+Singleton$<$ C, B $>$}}, and \mbox{\hyperlink{classPoco_1_1MetaObject_aad8ff2ff1bf3c47ad194dde32670dfca}{Poco\+::\+Meta\+Object$<$ C, B $>$}}.
+
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1AbstractMetaObject_ab3074ec8c5f6547e2789284b2a14e362}\label{classPoco_1_1AbstractMetaObject_ab3074ec8c5f6547e2789284b2a14e362}} 
+\index{Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}!isAutoDelete@{isAutoDelete}}
+\index{isAutoDelete@{isAutoDelete}!Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}}
+\doxysubsubsection{\texorpdfstring{isAutoDelete()}{isAutoDelete()}}
+{\footnotesize\ttfamily template$<$class B $>$ \\
+virtual bool \mbox{\hyperlink{classPoco_1_1AbstractMetaObject}{Poco\+::\+Abstract\+Meta\+Object}}$<$ B $>$\+::is\+Auto\+Delete (\begin{DoxyParamCaption}\item[{B $\ast$}]{p\+Object }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns true if the object is owned by meta object.
+
+Overloaded in \mbox{\hyperlink{classPoco_1_1MetaSingleton}{Meta\+Singleton}} -\/ returns true if the class is a singleton. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1MetaSingleton_a62e84d55e1ebf1c18ba612839d18eb75}{Poco\+::\+Meta\+Singleton$<$ C, B $>$}}.
+
+
+
+Definition at line 104 of file Meta\+Object.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1AbstractMetaObject_a62e20079e8dccd0fcd855a089287403a}\label{classPoco_1_1AbstractMetaObject_a62e20079e8dccd0fcd855a089287403a}} 
+\index{Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}!name@{name}}
+\index{name@{name}!Poco::AbstractMetaObject$<$ B $>$@{Poco::AbstractMetaObject$<$ B $>$}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily template$<$class B $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ \mbox{\hyperlink{classPoco_1_1AbstractMetaObject}{Poco\+::\+Abstract\+Meta\+Object}}$<$ B $>$\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 55 of file Meta\+Object.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 7
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{MetaObject_8h}{Meta\+Object.\+h}}\end{DoxyCompactItemize}

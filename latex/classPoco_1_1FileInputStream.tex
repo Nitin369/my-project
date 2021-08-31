@@ -1,0 +1,74 @@
+\hypertarget{classPoco_1_1FileInputStream}{}\doxysection{Poco\+::File\+Input\+Stream Class Reference}
+\label{classPoco_1_1FileInputStream}\index{Poco::FileInputStream@{Poco::FileInputStream}}
+
+
+{\ttfamily \#include $<$File\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::File\+Input\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::File\+Input\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FileInputStream_aa36e769b01eed54dabd3f6a71bca3790}{File\+Input\+Stream}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1FileInputStream_ad4374c7bf2c4d9aa7a0ddefdd20e54ad}{File\+Input\+Stream}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, std\+::ios\+::openmode mode=std\+::ios\+::in)
+\begin{DoxyCompactList}\small\item\em Creates an unopened \mbox{\hyperlink{classPoco_1_1FileInputStream}{File\+Input\+Stream}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1FileInputStream_abaa5e827a592a7da7349f96564e9399c}{$\sim$\+File\+Input\+Stream}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An input stream for reading from a file. \begin{DoxyVerb}Files are always opened in binary mode, a text mode
+with CR-LF translation is not supported. Thus, the
+file is always opened as if the std::ios::binary flag
+was specified.
+Use an InputLineEndingConverter if you require CR-LF translation.
+
+On Windows platforms, if POCO_WIN32_UTF8 is #define'd,
+UTF-8 encoded Unicode paths are correctly handled. 
+\end{DoxyVerb}
+ 
+
+Definition at line 82 of file File\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1FileInputStream_aa36e769b01eed54dabd3f6a71bca3790}\label{classPoco_1_1FileInputStream_aa36e769b01eed54dabd3f6a71bca3790}} 
+\index{Poco::FileInputStream@{Poco::FileInputStream}!FileInputStream@{FileInputStream}}
+\index{FileInputStream@{FileInputStream}!Poco::FileInputStream@{Poco::FileInputStream}}
+\doxysubsubsection{\texorpdfstring{FileInputStream()}{FileInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+File\+Input\+Stream\+::\+File\+Input\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1FileInputStream_ad4374c7bf2c4d9aa7a0ddefdd20e54ad}\label{classPoco_1_1FileInputStream_ad4374c7bf2c4d9aa7a0ddefdd20e54ad}} 
+\index{Poco::FileInputStream@{Poco::FileInputStream}!FileInputStream@{FileInputStream}}
+\index{FileInputStream@{FileInputStream}!Poco::FileInputStream@{Poco::FileInputStream}}
+\doxysubsubsection{\texorpdfstring{FileInputStream()}{FileInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+File\+Input\+Stream\+::\+File\+Input\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{std\+::ios\+::openmode}]{mode = {\ttfamily std\+:\+:ios\+:\+:in} }\end{DoxyParamCaption})}
+
+
+
+Creates an unopened \mbox{\hyperlink{classPoco_1_1FileInputStream}{File\+Input\+Stream}}. 
+
+\mbox{\Hypertarget{classPoco_1_1FileInputStream_abaa5e827a592a7da7349f96564e9399c}\label{classPoco_1_1FileInputStream_abaa5e827a592a7da7349f96564e9399c}} 
+\index{Poco::FileInputStream@{Poco::FileInputStream}!````~FileInputStream@{$\sim$FileInputStream}}
+\index{````~FileInputStream@{$\sim$FileInputStream}!Poco::FileInputStream@{Poco::FileInputStream}}
+\doxysubsubsection{\texorpdfstring{$\sim$FileInputStream()}{~FileInputStream()}}
+{\footnotesize\ttfamily Poco\+::\+File\+Input\+Stream\+::$\sim$\+File\+Input\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1FileInputStream}{File\+Input\+Stream}} for the file given by path, using the given mode.
+
+The std\+::ios\+::in flag is always set, regardless of the actual value specified for mode.
+
+Throws a File\+Not\+Found\+Exception (or a similar exception) if the file does not exist or is not accessible for other reasons. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{FileStream_8h}{File\+Stream.\+h}}\end{DoxyCompactItemize}

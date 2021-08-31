@@ -1,0 +1,256 @@
+\hypertarget{classPoco_1_1ActiveResultHolder}{}\doxysection{Poco\+::Active\+Result\+Holder$<$ Result\+Type $>$ Class Template Reference}
+\label{classPoco_1_1ActiveResultHolder}\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+
+
+{\ttfamily \#include $<$Active\+Result.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Active\+Result\+Holder$<$ Result\+Type $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Active\+Result\+Holder$<$ Result\+Type $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ActiveResultHolder_a2abb07db8633116bb49c96974756a17f}{Active\+Result\+Holder}} ()
+\item 
+Result\+Type \& \mbox{\hyperlink{classPoco_1_1ActiveResultHolder_addde49962814655f71551febccd66be7}{data}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the actual result. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1ActiveResultHolder_ad9937b4607536c95ad2a226303c1e0e4}{data}} (Result\+Type $\ast$p\+Data)
+\item 
+void \mbox{\hyperlink{classPoco_1_1ActiveResultHolder_a3cc73efb5b363f9de55d6427d06b741e}{wait}} ()
+\begin{DoxyCompactList}\small\item\em Pauses the caller until the result becomes available. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1ActiveResultHolder_a04beca2ffa3215fa8fe64fe170c41766}{try\+Wait}} (long milliseconds)
+\item 
+void \mbox{\hyperlink{classPoco_1_1ActiveResultHolder_a39042b1e58ff7effd2e195cd5601285f}{wait}} (long milliseconds)
+\item 
+void \mbox{\hyperlink{classPoco_1_1ActiveResultHolder_a8a5dab5dee70f49649e7869b6464780f}{notify}} ()
+\begin{DoxyCompactList}\small\item\em Notifies the invoking thread that the result became available. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1ActiveResultHolder_a6f0adcf7907b92689e078df9ea0747dd}{failed}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1ActiveResultHolder_a2811e1dc292aa846d3ee4efc54e8b0ea}{error}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Exception}{Exception}} $\ast$ \mbox{\hyperlink{classPoco_1_1ActiveResultHolder_a638e81243ae136e6c15172b5f5b8cbe7}{exception}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1ActiveResultHolder_a9ec9ddb91aac696d2f9e0357b56252b4}{error}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Exception}{Exception}} \&exc)
+\begin{DoxyCompactList}\small\item\em Sets the exception. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1ActiveResultHolder_a09799cc4d7a4113ee90a714ea871ac40}{error}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Sets the exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ActiveResultHolder_a93b58b4753d2128f779b4ee8a7f053f3}{$\sim$\+Active\+Result\+Holder}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Result\+Type$>$\newline
+class Poco\+::\+Active\+Result\+Holder$<$ Result\+Type $>$}
+
+This class holds the result of an asynchronous method invocation. It is used to pass the result from the execution thread back to the invocation thread. The class uses reference counting for memory management. Do not use this class directly, use \mbox{\hyperlink{classPoco_1_1ActiveResult}{Active\+Result}} instead. 
+
+Definition at line 35 of file Active\+Result.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_a2abb07db8633116bb49c96974756a17f}\label{classPoco_1_1ActiveResultHolder_a2abb07db8633116bb49c96974756a17f}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!ActiveResultHolder@{ActiveResultHolder}}
+\index{ActiveResultHolder@{ActiveResultHolder}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{ActiveResultHolder()}{ActiveResultHolder()}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+\mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::\mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Active\+Result\+Holder}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file Active\+Result.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_a93b58b4753d2128f779b4ee8a7f053f3}\label{classPoco_1_1ActiveResultHolder_a93b58b4753d2128f779b4ee8a7f053f3}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!````~ActiveResultHolder@{$\sim$ActiveResultHolder}}
+\index{````~ActiveResultHolder@{$\sim$ActiveResultHolder}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$ActiveResultHolder()}{~ActiveResultHolder()}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+\mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Active\+Result\+Holder}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 132 of file Active\+Result.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_addde49962814655f71551febccd66be7}\label{classPoco_1_1ActiveResultHolder_addde49962814655f71551febccd66be7}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!data@{data}}
+\index{data@{data}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+Result\+Type\& \mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a reference to the actual result. 
+
+
+
+Definition at line 51 of file Active\+Result.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_ad9937b4607536c95ad2a226303c1e0e4}\label{classPoco_1_1ActiveResultHolder_ad9937b4607536c95ad2a226303c1e0e4}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!data@{data}}
+\index{data@{data}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::data (\begin{DoxyParamCaption}\item[{Result\+Type $\ast$}]{p\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 58 of file Active\+Result.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_a2811e1dc292aa846d3ee4efc54e8b0ea}\label{classPoco_1_1ActiveResultHolder_a2811e1dc292aa846d3ee4efc54e8b0ea}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!error@{error}}
+\index{error@{error}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+std\+::string \mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+If the active method threw an exception, a textual representation of the exception is returned. An empty string is returned if the active method completed successfully. 
+
+Definition at line 99 of file Active\+Result.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_a9ec9ddb91aac696d2f9e0357b56252b4}\label{classPoco_1_1ActiveResultHolder_a9ec9ddb91aac696d2f9e0357b56252b4}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!error@{error}}
+\index{error@{error}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Exception}{Exception}} \&}]{exc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the exception. 
+
+
+
+Definition at line 117 of file Active\+Result.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_a09799cc4d7a4113ee90a714ea871ac40}\label{classPoco_1_1ActiveResultHolder_a09799cc4d7a4113ee90a714ea871ac40}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!error@{error}}
+\index{error@{error}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the exception. 
+
+
+
+Definition at line 124 of file Active\+Result.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_a638e81243ae136e6c15172b5f5b8cbe7}\label{classPoco_1_1ActiveResultHolder_a638e81243ae136e6c15172b5f5b8cbe7}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!exception@{exception}}
+\index{exception@{exception}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{exception()}{exception()}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+\mbox{\hyperlink{classPoco_1_1Exception}{Exception}}$\ast$ \mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+If the active method threw an exception, a clone of the exception object is returned, otherwise null. 
+
+Definition at line 110 of file Active\+Result.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_a6f0adcf7907b92689e078df9ea0747dd}\label{classPoco_1_1ActiveResultHolder_a6f0adcf7907b92689e078df9ea0747dd}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!failed@{failed}}
+\index{failed@{failed}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{failed()}{failed()}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::failed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if the active method failed (and threw an exception). Information about the exception can be obtained by calling \mbox{\hyperlink{classPoco_1_1ActiveResultHolder_a2811e1dc292aa846d3ee4efc54e8b0ea}{error()}}. 
+
+Definition at line 92 of file Active\+Result.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_a8a5dab5dee70f49649e7869b6464780f}\label{classPoco_1_1ActiveResultHolder_a8a5dab5dee70f49649e7869b6464780f}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!notify@{notify}}
+\index{notify@{notify}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Notifies the invoking thread that the result became available. 
+
+
+
+Definition at line 86 of file Active\+Result.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_a04beca2ffa3215fa8fe64fe170c41766}\label{classPoco_1_1ActiveResultHolder_a04beca2ffa3215fa8fe64fe170c41766}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!tryWait@{tryWait}}
+\index{tryWait@{tryWait}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{tryWait()}{tryWait()}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::try\+Wait (\begin{DoxyParamCaption}\item[{long}]{milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Waits up to the specified interval for the result to become available. Returns true if the result became available, false otherwise. 
+
+Definition at line 70 of file Active\+Result.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_a3cc73efb5b363f9de55d6427d06b741e}\label{classPoco_1_1ActiveResultHolder_a3cc73efb5b363f9de55d6427d06b741e}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!wait@{wait}}
+\index{wait@{wait}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pauses the caller until the result becomes available. 
+
+
+
+Definition at line 64 of file Active\+Result.\+h.
+
+Here is the call graph for this function\+:
+% FIG 12
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classPoco_1_1ActiveResultHolder_a39042b1e58ff7effd2e195cd5601285f}\label{classPoco_1_1ActiveResultHolder_a39042b1e58ff7effd2e195cd5601285f}} 
+\index{Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}!wait@{wait}}
+\index{wait@{wait}!Poco::ActiveResultHolder$<$ ResultType $>$@{Poco::ActiveResultHolder$<$ ResultType $>$}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Result\+Type $>$ \\
+void \mbox{\hyperlink{classPoco_1_1ActiveResultHolder}{Poco\+::\+Active\+Result\+Holder}}$<$ Result\+Type $>$\+::wait (\begin{DoxyParamCaption}\item[{long}]{milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Waits up to the specified interval for the result to become available. Throws a Timeout\+Exception if the result did not became available. 
+
+Definition at line 78 of file Active\+Result.\+h.
+
+Here is the call graph for this function\+:
+% FIG 14
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ActiveResult_8h}{Active\+Result.\+h}}\end{DoxyCompactItemize}

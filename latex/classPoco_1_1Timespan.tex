@@ -1,0 +1,654 @@
+\hypertarget{classPoco_1_1Timespan}{}\doxysection{Poco\+::Timespan Class Reference}
+\label{classPoco_1_1Timespan}\index{Poco::Timespan@{Poco::Timespan}}
+
+
+A class that represents time spans up to microsecond resolution.  
+
+
+
+
+{\ttfamily \#include $<$Timespan.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan_acc95ed1f40654ce472e5acd9b5a24701}{Timespan}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan_aa14b5458c93a7e6f697099801f83f783}{Timespan}} (\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timespan_ac39985b57da0a5725fc776e4f22771ba}{microseconds}})
+\begin{DoxyCompactList}\small\item\em Creates a zero \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timespan_a70ca571b4b695dd0054f3769a4e6cd22}{Timespan}} (long \mbox{\hyperlink{classPoco_1_1Timespan_a2aacf7ce621afb57ca3b1bf932ead8df}{seconds}}, long \mbox{\hyperlink{classPoco_1_1Timespan_ac39985b57da0a5725fc776e4f22771ba}{microseconds}})
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timespan_a3730315060108f84e03256b39f84e076}{Timespan}} (int \mbox{\hyperlink{classPoco_1_1Timespan_abf6b6c1cddd45e5846ff1c640f1d6af6}{days}}, int \mbox{\hyperlink{classPoco_1_1Timespan_aa12fe590c6a4d7f744c84cef524d964a}{hours}}, int \mbox{\hyperlink{classPoco_1_1Timespan_aa2f27eecebab48c8858de14bef5d9944}{minutes}}, int \mbox{\hyperlink{classPoco_1_1Timespan_a2aacf7ce621afb57ca3b1bf932ead8df}{seconds}}, int micro\+Seconds)
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan_a0ae5beebc5fb421286f554ae19d4888b}{Timespan}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&timespan)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timespan_ad488ed650c7ce8c0b1c9e449c6343cfa}{$\sim$\+Timespan}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} from another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \& \mbox{\hyperlink{classPoco_1_1Timespan_a74e71e124eb175a6a68313d58fe211b4}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&timespan)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \& \mbox{\hyperlink{classPoco_1_1Timespan_a8d2a62880d851f555667463c6bc83670}{operator=}} (\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timespan_ac39985b57da0a5725fc776e4f22771ba}{microseconds}})
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \& \mbox{\hyperlink{classPoco_1_1Timespan_aecb9d81c142f2253441bbf61a1e06b54}{assign}} (int \mbox{\hyperlink{classPoco_1_1Timespan_abf6b6c1cddd45e5846ff1c640f1d6af6}{days}}, int \mbox{\hyperlink{classPoco_1_1Timespan_aa12fe590c6a4d7f744c84cef524d964a}{hours}}, int \mbox{\hyperlink{classPoco_1_1Timespan_aa2f27eecebab48c8858de14bef5d9944}{minutes}}, int \mbox{\hyperlink{classPoco_1_1Timespan_a2aacf7ce621afb57ca3b1bf932ead8df}{seconds}}, int micro\+Seconds)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \& \mbox{\hyperlink{classPoco_1_1Timespan_aa34058606a6d06350ee45aac0e2996f9}{assign}} (long \mbox{\hyperlink{classPoco_1_1Timespan_a2aacf7ce621afb57ca3b1bf932ead8df}{seconds}}, long \mbox{\hyperlink{classPoco_1_1Timespan_ac39985b57da0a5725fc776e4f22771ba}{microseconds}})
+\begin{DoxyCompactList}\small\item\em Assigns a new span. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Timespan_a4c72cabe7f90e4df9ae5f31e8d341d5c}{swap}} (\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&timespan)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timespan_a4c3e47e493d658de79a127adf5691704}{operator==}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Swaps the \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} with another one. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Timespan_aadabbadefc14596bf41c5da39f5d375f}{operator!=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timespan_abcfbd396645c58a52871b6f5f8ed5f7d}{operator$>$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timespan_a9b3e1a6f5a630eae620a03f122e55d31}{operator$>$=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timespan_ae58fbf1f864b6452f37bc81923858688}{operator$<$}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timespan_a3d52c0c5784a285383d37d84e3201f1a}{operator$<$=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&ts) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timespan_a521fd22dd3d7334caa97558fddd34683}{operator==}} (\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} micro\+Seconds) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timespan_aff248e4e16e3d73f13128c6037275525}{operator!=}} (\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} micro\+Seconds) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timespan_a28fe574a9340074c275d367b312632ad}{operator$>$}} (\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} micro\+Seconds) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timespan_a276ba8c7ad18e36d9ad99acf19f42f3a}{operator$>$=}} (\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} micro\+Seconds) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timespan_abe468ecc531ce6112f306f2a7b922590}{operator$<$}} (\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} micro\+Seconds) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Timespan_afc17abe4609611103f342cb0c2c35abb}{operator$<$=}} (\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} micro\+Seconds) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \mbox{\hyperlink{classPoco_1_1Timespan_afb5ae04eb145115560dda62a53703a4d}{operator+}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&d) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \mbox{\hyperlink{classPoco_1_1Timespan_aeeee86da6d5ee473abd39cbbc25f19a9}{operator-\/}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&d) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \& \mbox{\hyperlink{classPoco_1_1Timespan_a3c48555ecbe00a60ff12d0f73272c1f6}{operator+=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&d)
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \& \mbox{\hyperlink{classPoco_1_1Timespan_ac089e9ba7f59b522a81aa5ea7b4917c0}{operator-\/=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&d)
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \mbox{\hyperlink{classPoco_1_1Timespan_ab3698ac46575c366b9de40b4a810a182}{operator+}} (\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} micro\+Seconds) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \mbox{\hyperlink{classPoco_1_1Timespan_a3c666ade43edef7be0cde628a3175d6c}{operator-\/}} (\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} micro\+Seconds) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \& \mbox{\hyperlink{classPoco_1_1Timespan_a6901f5abb223f177851df4db4d07d445}{operator+=}} (\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} micro\+Seconds)
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \& \mbox{\hyperlink{classPoco_1_1Timespan_a035334312edf3af8edc066d929d65d33}{operator-\/=}} (\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} micro\+Seconds)
+\item 
+int \mbox{\hyperlink{classPoco_1_1Timespan_abf6b6c1cddd45e5846ff1c640f1d6af6}{days}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classPoco_1_1Timespan_aa12fe590c6a4d7f744c84cef524d964a}{hours}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of days. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Timespan_a79a3c1a7603f29e534cb1d6a5db0720f}{total\+Hours}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of hours (0 to 23). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Timespan_aa2f27eecebab48c8858de14bef5d9944}{minutes}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of hours. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Timespan_a0e6b4ab9b4e933a835d0c5446e3f1843}{total\+Minutes}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of minutes (0 to 59). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Timespan_a2aacf7ce621afb57ca3b1bf932ead8df}{seconds}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of minutes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Timespan_a8aa469d368ec945934941d108080f811}{total\+Seconds}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of seconds (0 to 59). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Timespan_ac7671303d72f931a45a22e1c46ad0abd}{milliseconds}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of seconds. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timespan_a8fa8d146a4091195affab44b6cbbb70e}{total\+Milliseconds}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of milliseconds (0 to 999). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Timespan_ac39985b57da0a5725fc776e4f22771ba}{microseconds}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of milliseconds. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Timespan_a003438fe7fd622b8ab86312c2456d5f7}{useconds}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timespan_a7218268ecc0b49d443551feeed77c74d}{total\+Microseconds}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timespan_add89c49b2013a1e686e0866b4f7418ee}{M\+I\+L\+L\+I\+S\+E\+C\+O\+N\+DS}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of microseconds. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timespan_a1653ed0a095e1ed5b25fcc5299f49530}{S\+E\+C\+O\+N\+DS}}
+\begin{DoxyCompactList}\small\item\em The number of microseconds in a millisecond. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timespan_acb88a613b38637785caef8d508418c56}{M\+I\+N\+U\+T\+ES}}
+\begin{DoxyCompactList}\small\item\em The number of microseconds in a second. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timespan_a4123477e00bf743be3b5284d3c32d73a}{H\+O\+U\+RS}}
+\begin{DoxyCompactList}\small\item\em The number of microseconds in a minute. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timespan_ac31604cc61508dd3e92b8f6b948648d7}{D\+A\+YS}}
+\begin{DoxyCompactList}\small\item\em The number of microseconds in a hour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that represents time spans up to microsecond resolution. 
+
+Definition at line 30 of file Timespan.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}\label{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}} 
+\index{Poco::Timespan@{Poco::Timespan}!TimeDiff@{TimeDiff}}
+\index{TimeDiff@{TimeDiff}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{TimeDiff}{TimeDiff}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1Timestamp_a23501cdddede36b1551ce48525777b31}{Timestamp\+::\+Time\+Diff}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Poco\+::\+Timespan\+::\+Time\+Diff}}}
+
+
+
+Definition at line 34 of file Timespan.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Timespan_acc95ed1f40654ce472e5acd9b5a24701}\label{classPoco_1_1Timespan_acc95ed1f40654ce472e5acd9b5a24701}} 
+\index{Poco::Timespan@{Poco::Timespan}!Timespan@{Timespan}}
+\index{Timespan@{Timespan}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{Timespan()}{Timespan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Poco\+::\+Timespan\+::\+Timespan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_aa14b5458c93a7e6f697099801f83f783}\label{classPoco_1_1Timespan_aa14b5458c93a7e6f697099801f83f783}} 
+\index{Poco::Timespan@{Poco::Timespan}!Timespan@{Timespan}}
+\index{Timespan@{Timespan}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{Timespan()}{Timespan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Poco\+::\+Timespan\+::\+Timespan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}}]{microseconds }\end{DoxyParamCaption})}
+
+
+
+Creates a zero \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a70ca571b4b695dd0054f3769a4e6cd22}\label{classPoco_1_1Timespan_a70ca571b4b695dd0054f3769a4e6cd22}} 
+\index{Poco::Timespan@{Poco::Timespan}!Timespan@{Timespan}}
+\index{Timespan@{Timespan}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{Timespan()}{Timespan()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Poco\+::\+Timespan\+::\+Timespan (\begin{DoxyParamCaption}\item[{long}]{seconds,  }\item[{long}]{microseconds }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a3730315060108f84e03256b39f84e076}\label{classPoco_1_1Timespan_a3730315060108f84e03256b39f84e076}} 
+\index{Poco::Timespan@{Poco::Timespan}!Timespan@{Timespan}}
+\index{Timespan@{Timespan}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{Timespan()}{Timespan()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Poco\+::\+Timespan\+::\+Timespan (\begin{DoxyParamCaption}\item[{int}]{days,  }\item[{int}]{hours,  }\item[{int}]{minutes,  }\item[{int}]{seconds,  }\item[{int}]{micro\+Seconds }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}. Useful for creating a \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} from a struct timeval. \mbox{\Hypertarget{classPoco_1_1Timespan_a0ae5beebc5fb421286f554ae19d4888b}\label{classPoco_1_1Timespan_a0ae5beebc5fb421286f554ae19d4888b}} 
+\index{Poco::Timespan@{Poco::Timespan}!Timespan@{Timespan}}
+\index{Timespan@{Timespan}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{Timespan()}{Timespan()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Poco\+::\+Timespan\+::\+Timespan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{timespan }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_ad488ed650c7ce8c0b1c9e449c6343cfa}\label{classPoco_1_1Timespan_ad488ed650c7ce8c0b1c9e449c6343cfa}} 
+\index{Poco::Timespan@{Poco::Timespan}!````~Timespan@{$\sim$Timespan}}
+\index{````~Timespan@{$\sim$Timespan}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{$\sim$Timespan()}{~Timespan()}}
+{\footnotesize\ttfamily Poco\+::\+Timespan\+::$\sim$\+Timespan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} from another one. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Timespan_aecb9d81c142f2253441bbf61a1e06b54}\label{classPoco_1_1Timespan_aecb9d81c142f2253441bbf61a1e06b54}} 
+\index{Poco::Timespan@{Poco::Timespan}!assign@{assign}}
+\index{assign@{assign}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}\& Poco\+::\+Timespan\+::assign (\begin{DoxyParamCaption}\item[{int}]{days,  }\item[{int}]{hours,  }\item[{int}]{minutes,  }\item[{int}]{seconds,  }\item[{int}]{micro\+Seconds }\end{DoxyParamCaption})}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_aa34058606a6d06350ee45aac0e2996f9}\label{classPoco_1_1Timespan_aa34058606a6d06350ee45aac0e2996f9}} 
+\index{Poco::Timespan@{Poco::Timespan}!assign@{assign}}
+\index{assign@{assign}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}\& Poco\+::\+Timespan\+::assign (\begin{DoxyParamCaption}\item[{long}]{seconds,  }\item[{long}]{microseconds }\end{DoxyParamCaption})}
+
+
+
+Assigns a new span. 
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_abf6b6c1cddd45e5846ff1c640f1d6af6}\label{classPoco_1_1Timespan_abf6b6c1cddd45e5846ff1c640f1d6af6}} 
+\index{Poco::Timespan@{Poco::Timespan}!days@{days}}
+\index{days@{days}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{days()}{days()}}
+{\footnotesize\ttfamily int Poco\+::\+Timespan\+::days (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 147 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_aa12fe590c6a4d7f744c84cef524d964a}\label{classPoco_1_1Timespan_aa12fe590c6a4d7f744c84cef524d964a}} 
+\index{Poco::Timespan@{Poco::Timespan}!hours@{hours}}
+\index{hours@{hours}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{hours()}{hours()}}
+{\footnotesize\ttfamily int Poco\+::\+Timespan\+::hours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of days. 
+
+
+
+Definition at line 153 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_ac39985b57da0a5725fc776e4f22771ba}\label{classPoco_1_1Timespan_ac39985b57da0a5725fc776e4f22771ba}} 
+\index{Poco::Timespan@{Poco::Timespan}!microseconds@{microseconds}}
+\index{microseconds@{microseconds}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{microseconds()}{microseconds()}}
+{\footnotesize\ttfamily int Poco\+::\+Timespan\+::microseconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the total number of milliseconds. 
+
+
+
+Definition at line 201 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_ac7671303d72f931a45a22e1c46ad0abd}\label{classPoco_1_1Timespan_ac7671303d72f931a45a22e1c46ad0abd}} 
+\index{Poco::Timespan@{Poco::Timespan}!milliseconds@{milliseconds}}
+\index{milliseconds@{milliseconds}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{milliseconds()}{milliseconds()}}
+{\footnotesize\ttfamily int Poco\+::\+Timespan\+::milliseconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the total number of seconds. 
+
+
+
+Definition at line 189 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_aa2f27eecebab48c8858de14bef5d9944}\label{classPoco_1_1Timespan_aa2f27eecebab48c8858de14bef5d9944}} 
+\index{Poco::Timespan@{Poco::Timespan}!minutes@{minutes}}
+\index{minutes@{minutes}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{minutes()}{minutes()}}
+{\footnotesize\ttfamily int Poco\+::\+Timespan\+::minutes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the total number of hours. 
+
+
+
+Definition at line 165 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_aadabbadefc14596bf41c5da39f5d375f}\label{classPoco_1_1Timespan_aadabbadefc14596bf41c5da39f5d375f}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Timespan\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 225 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_aff248e4e16e3d73f13128c6037275525}\label{classPoco_1_1Timespan_aff248e4e16e3d73f13128c6037275525}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Timespan\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}}]{micro\+Seconds }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 261 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_afb5ae04eb145115560dda62a53703a4d}\label{classPoco_1_1Timespan_afb5ae04eb145115560dda62a53703a4d}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator+@{operator+}}
+\index{operator+@{operator+}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} Poco\+::\+Timespan\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{d }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_ab3698ac46575c366b9de40b4a810a182}\label{classPoco_1_1Timespan_ab3698ac46575c366b9de40b4a810a182}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator+@{operator+}}
+\index{operator+@{operator+}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} Poco\+::\+Timespan\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}}]{micro\+Seconds }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a3c48555ecbe00a60ff12d0f73272c1f6}\label{classPoco_1_1Timespan_a3c48555ecbe00a60ff12d0f73272c1f6}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}\& Poco\+::\+Timespan\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a6901f5abb223f177851df4db4d07d445}\label{classPoco_1_1Timespan_a6901f5abb223f177851df4db4d07d445}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}\& Poco\+::\+Timespan\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}}]{micro\+Seconds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_aeeee86da6d5ee473abd39cbbc25f19a9}\label{classPoco_1_1Timespan_aeeee86da6d5ee473abd39cbbc25f19a9}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} Poco\+::\+Timespan\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{d }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a3c666ade43edef7be0cde628a3175d6c}\label{classPoco_1_1Timespan_a3c666ade43edef7be0cde628a3175d6c}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} Poco\+::\+Timespan\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}}]{micro\+Seconds }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_ac089e9ba7f59b522a81aa5ea7b4917c0}\label{classPoco_1_1Timespan_ac089e9ba7f59b522a81aa5ea7b4917c0}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}\& Poco\+::\+Timespan\+::operator-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a035334312edf3af8edc066d929d65d33}\label{classPoco_1_1Timespan_a035334312edf3af8edc066d929d65d33}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}\& Poco\+::\+Timespan\+::operator-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}}]{micro\+Seconds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_ae58fbf1f864b6452f37bc81923858688}\label{classPoco_1_1Timespan_ae58fbf1f864b6452f37bc81923858688}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Timespan\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 243 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_abe468ecc531ce6112f306f2a7b922590}\label{classPoco_1_1Timespan_abe468ecc531ce6112f306f2a7b922590}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Timespan\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}}]{micro\+Seconds }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 279 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a3d52c0c5784a285383d37d84e3201f1a}\label{classPoco_1_1Timespan_a3d52c0c5784a285383d37d84e3201f1a}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Timespan\+::operator$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 249 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_afc17abe4609611103f342cb0c2c35abb}\label{classPoco_1_1Timespan_afc17abe4609611103f342cb0c2c35abb}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Timespan\+::operator$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}}]{micro\+Seconds }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 285 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a74e71e124eb175a6a68313d58fe211b4}\label{classPoco_1_1Timespan_a74e71e124eb175a6a68313d58fe211b4}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}\& Poco\+::\+Timespan\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{timespan }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a8d2a62880d851f555667463c6bc83670}\label{classPoco_1_1Timespan_a8d2a62880d851f555667463c6bc83670}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}}\& Poco\+::\+Timespan\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}}]{microseconds }\end{DoxyParamCaption})}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a4c3e47e493d658de79a127adf5691704}\label{classPoco_1_1Timespan_a4c3e47e493d658de79a127adf5691704}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator==@{operator==}}
+\index{operator==@{operator==}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Timespan\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Swaps the \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} with another one. 
+
+
+
+Definition at line 219 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a521fd22dd3d7334caa97558fddd34683}\label{classPoco_1_1Timespan_a521fd22dd3d7334caa97558fddd34683}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator==@{operator==}}
+\index{operator==@{operator==}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Timespan\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}}]{micro\+Seconds }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 255 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_abcfbd396645c58a52871b6f5f8ed5f7d}\label{classPoco_1_1Timespan_abcfbd396645c58a52871b6f5f8ed5f7d}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Timespan\+::operator$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 231 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a28fe574a9340074c275d367b312632ad}\label{classPoco_1_1Timespan_a28fe574a9340074c275d367b312632ad}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Timespan\+::operator$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}}]{micro\+Seconds }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 267 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a9b3e1a6f5a630eae620a03f122e55d31}\label{classPoco_1_1Timespan_a9b3e1a6f5a630eae620a03f122e55d31}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Timespan\+::operator$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{ts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 237 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a276ba8c7ad18e36d9ad99acf19f42f3a}\label{classPoco_1_1Timespan_a276ba8c7ad18e36d9ad99acf19f42f3a}} 
+\index{Poco::Timespan@{Poco::Timespan}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Poco\+::\+Timespan\+::operator$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}}}]{micro\+Seconds }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 273 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a2aacf7ce621afb57ca3b1bf932ead8df}\label{classPoco_1_1Timespan_a2aacf7ce621afb57ca3b1bf932ead8df}} 
+\index{Poco::Timespan@{Poco::Timespan}!seconds@{seconds}}
+\index{seconds@{seconds}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{seconds()}{seconds()}}
+{\footnotesize\ttfamily int Poco\+::\+Timespan\+::seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the total number of minutes. 
+
+
+
+Definition at line 177 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a4c72cabe7f90e4df9ae5f31e8d341d5c}\label{classPoco_1_1Timespan_a4c72cabe7f90e4df9ae5f31e8d341d5c}} 
+\index{Poco::Timespan@{Poco::Timespan}!swap@{swap}}
+\index{swap@{swap}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Poco\+::\+Timespan\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timespan}{Timespan}} \&}]{timespan }\end{DoxyParamCaption})}
+
+Assigns a new span. Useful for assigning from a struct timeval. Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Timespan_a79a3c1a7603f29e534cb1d6a5db0720f}\label{classPoco_1_1Timespan_a79a3c1a7603f29e534cb1d6a5db0720f}} 
+\index{Poco::Timespan@{Poco::Timespan}!totalHours@{totalHours}}
+\index{totalHours@{totalHours}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{totalHours()}{totalHours()}}
+{\footnotesize\ttfamily int Poco\+::\+Timespan\+::total\+Hours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of hours (0 to 23). 
+
+
+
+Definition at line 159 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a7218268ecc0b49d443551feeed77c74d}\label{classPoco_1_1Timespan_a7218268ecc0b49d443551feeed77c74d}} 
+\index{Poco::Timespan@{Poco::Timespan}!totalMicroseconds@{totalMicroseconds}}
+\index{totalMicroseconds@{totalMicroseconds}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{totalMicroseconds()}{totalMicroseconds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Timespan\+::\+Time\+Diff}} Poco\+::\+Timespan\+::total\+Microseconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the fractions of a second in microseconds (0 to 999999). 
+
+Definition at line 213 of file Timespan.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Timespan_a8fa8d146a4091195affab44b6cbbb70e}\label{classPoco_1_1Timespan_a8fa8d146a4091195affab44b6cbbb70e}} 
+\index{Poco::Timespan@{Poco::Timespan}!totalMilliseconds@{totalMilliseconds}}
+\index{totalMilliseconds@{totalMilliseconds}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{totalMilliseconds()}{totalMilliseconds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Timespan\+::\+Time\+Diff}} Poco\+::\+Timespan\+::total\+Milliseconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of milliseconds (0 to 999). 
+
+
+
+Definition at line 195 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a0e6b4ab9b4e933a835d0c5446e3f1843}\label{classPoco_1_1Timespan_a0e6b4ab9b4e933a835d0c5446e3f1843}} 
+\index{Poco::Timespan@{Poco::Timespan}!totalMinutes@{totalMinutes}}
+\index{totalMinutes@{totalMinutes}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{totalMinutes()}{totalMinutes()}}
+{\footnotesize\ttfamily int Poco\+::\+Timespan\+::total\+Minutes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of minutes (0 to 59). 
+
+
+
+Definition at line 171 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a8aa469d368ec945934941d108080f811}\label{classPoco_1_1Timespan_a8aa469d368ec945934941d108080f811}} 
+\index{Poco::Timespan@{Poco::Timespan}!totalSeconds@{totalSeconds}}
+\index{totalSeconds@{totalSeconds}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{totalSeconds()}{totalSeconds()}}
+{\footnotesize\ttfamily int Poco\+::\+Timespan\+::total\+Seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of seconds (0 to 59). 
+
+
+
+Definition at line 183 of file Timespan.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Timespan_a003438fe7fd622b8ab86312c2456d5f7}\label{classPoco_1_1Timespan_a003438fe7fd622b8ab86312c2456d5f7}} 
+\index{Poco::Timespan@{Poco::Timespan}!useconds@{useconds}}
+\index{useconds@{useconds}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{useconds()}{useconds()}}
+{\footnotesize\ttfamily int Poco\+::\+Timespan\+::useconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the fractions of a millisecond in microseconds (0 to 999). 
+
+Definition at line 207 of file Timespan.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Timespan_ac31604cc61508dd3e92b8f6b948648d7}\label{classPoco_1_1Timespan_ac31604cc61508dd3e92b8f6b948648d7}} 
+\index{Poco::Timespan@{Poco::Timespan}!DAYS@{DAYS}}
+\index{DAYS@{DAYS}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{DAYS}{DAYS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} Poco\+::\+Timespan\+::\+D\+A\+YS\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The number of microseconds in a hour. 
+
+
+
+Definition at line 137 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a4123477e00bf743be3b5284d3c32d73a}\label{classPoco_1_1Timespan_a4123477e00bf743be3b5284d3c32d73a}} 
+\index{Poco::Timespan@{Poco::Timespan}!HOURS@{HOURS}}
+\index{HOURS@{HOURS}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{HOURS}{HOURS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} Poco\+::\+Timespan\+::\+H\+O\+U\+RS\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The number of microseconds in a minute. 
+
+
+
+Definition at line 136 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_add89c49b2013a1e686e0866b4f7418ee}\label{classPoco_1_1Timespan_add89c49b2013a1e686e0866b4f7418ee}} 
+\index{Poco::Timespan@{Poco::Timespan}!MILLISECONDS@{MILLISECONDS}}
+\index{MILLISECONDS@{MILLISECONDS}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{MILLISECONDS}{MILLISECONDS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} Poco\+::\+Timespan\+::\+M\+I\+L\+L\+I\+S\+E\+C\+O\+N\+DS\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the total number of microseconds. 
+
+
+
+Definition at line 133 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_acb88a613b38637785caef8d508418c56}\label{classPoco_1_1Timespan_acb88a613b38637785caef8d508418c56}} 
+\index{Poco::Timespan@{Poco::Timespan}!MINUTES@{MINUTES}}
+\index{MINUTES@{MINUTES}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{MINUTES}{MINUTES}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} Poco\+::\+Timespan\+::\+M\+I\+N\+U\+T\+ES\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The number of microseconds in a second. 
+
+
+
+Definition at line 135 of file Timespan.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Timespan_a1653ed0a095e1ed5b25fcc5299f49530}\label{classPoco_1_1Timespan_a1653ed0a095e1ed5b25fcc5299f49530}} 
+\index{Poco::Timespan@{Poco::Timespan}!SECONDS@{SECONDS}}
+\index{SECONDS@{SECONDS}!Poco::Timespan@{Poco::Timespan}}
+\doxysubsubsection{\texorpdfstring{SECONDS}{SECONDS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan_aac701bdb503f0267f07d0c17c0794c07}{Time\+Diff}} Poco\+::\+Timespan\+::\+S\+E\+C\+O\+N\+DS\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The number of microseconds in a millisecond. 
+
+
+
+Definition at line 134 of file Timespan.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Timespan_8h}{Timespan.\+h}}\end{DoxyCompactItemize}

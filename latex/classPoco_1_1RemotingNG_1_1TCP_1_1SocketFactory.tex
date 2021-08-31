@@ -1,0 +1,90 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory}{}\doxysection{Poco\+::Remoting\+NG\+::T\+CP\+::Socket\+Factory Class Reference}
+\label{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory}\index{Poco::RemotingNG::TCP::SocketFactory@{Poco::RemotingNG::TCP::SocketFactory}}
+
+
+{\ttfamily \#include $<$Socket\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::T\+CP\+::Socket\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::T\+CP\+::Socket\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory}{Socket\+Factory}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_a0a12d060c8d98bc4ab89838104947da3}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_a744ef8eabbd4918ac6fa400fe399c56d}{Socket\+Factory}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_a4aa4785c924309798b87411a1d1a2ee3}{$\sim$\+Socket\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory}{Socket\+Factory}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Poco\+::\+Net\+::\+Stream\+Socket}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_acfa9ba2ed82ec6cf6b5b9bc6436251e6}{create\+Socket}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{Poco\+::\+U\+RI}} \&uri)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory}{Socket\+Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory}{Socket\+Factory}} is used by the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ConnectionManager}{Connection\+Manager}} to create a socket for the connection to the listener on the server.
+
+The default implementation simply creates a \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Poco\+::\+Net\+::\+Stream\+Socket}}. If a secure connection should be created, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_acfa9ba2ed82ec6cf6b5b9bc6436251e6}{create\+Socket()}} should be overridden in a subclass, creating a \mbox{\hyperlink{classPoco_1_1Net_1_1SecureStreamSocket}{Poco\+::\+Net\+::\+Secure\+Stream\+Socket}} instead.
+
+The Remoting NG \mbox{\hyperlink{namespacePoco_1_1RemotingNG_1_1TCP}{T\+CP}} transport uses the \char`\"{}remoting.\+tcp\char`\"{} \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} scheme for unencrypted socket connections and the \char`\"{}remoting.\+tcps\char`\"{} \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} scheme for S\+S\+L/\+T\+LS connections. Subclasses supporting S\+S\+L/\+T\+LS should check the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} scheme and create an appropriate socket. 
+
+Definition at line 35 of file Socket\+Factory.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_a0a12d060c8d98bc4ab89838104947da3}\label{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_a0a12d060c8d98bc4ab89838104947da3}} 
+\index{Poco::RemotingNG::TCP::SocketFactory@{Poco::RemotingNG::TCP::SocketFactory}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::RemotingNG::TCP::SocketFactory@{Poco::RemotingNG::TCP::SocketFactory}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory}{Socket\+Factory}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_a0a12d060c8d98bc4ab89838104947da3}{Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Socket\+Factory\+::\+Ptr}}}
+
+
+
+Definition at line 51 of file Socket\+Factory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_a744ef8eabbd4918ac6fa400fe399c56d}\label{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_a744ef8eabbd4918ac6fa400fe399c56d}} 
+\index{Poco::RemotingNG::TCP::SocketFactory@{Poco::RemotingNG::TCP::SocketFactory}!SocketFactory@{SocketFactory}}
+\index{SocketFactory@{SocketFactory}!Poco::RemotingNG::TCP::SocketFactory@{Poco::RemotingNG::TCP::SocketFactory}}
+\doxysubsubsection{\texorpdfstring{SocketFactory()}{SocketFactory()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Socket\+Factory\+::\+Socket\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_a4aa4785c924309798b87411a1d1a2ee3}\label{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_a4aa4785c924309798b87411a1d1a2ee3}} 
+\index{Poco::RemotingNG::TCP::SocketFactory@{Poco::RemotingNG::TCP::SocketFactory}!````~SocketFactory@{$\sim$SocketFactory}}
+\index{````~SocketFactory@{$\sim$SocketFactory}!Poco::RemotingNG::TCP::SocketFactory@{Poco::RemotingNG::TCP::SocketFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$SocketFactory()}{~SocketFactory()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Socket\+Factory\+::$\sim$\+Socket\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory}{Socket\+Factory}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_acfa9ba2ed82ec6cf6b5b9bc6436251e6}\label{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory_acfa9ba2ed82ec6cf6b5b9bc6436251e6}} 
+\index{Poco::RemotingNG::TCP::SocketFactory@{Poco::RemotingNG::TCP::SocketFactory}!createSocket@{createSocket}}
+\index{createSocket@{createSocket}!Poco::RemotingNG::TCP::SocketFactory@{Poco::RemotingNG::TCP::SocketFactory}}
+\doxysubsubsection{\texorpdfstring{createSocket()}{createSocket()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Poco\+::\+Net\+::\+Stream\+Socket}} Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Socket\+Factory\+::create\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{Poco\+::\+U\+RI}} \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1SocketFactory}{Socket\+Factory}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\+T\+C\+P/\mbox{\hyperlink{SocketFactory_8h}{Socket\+Factory.\+h}}\end{DoxyCompactItemize}

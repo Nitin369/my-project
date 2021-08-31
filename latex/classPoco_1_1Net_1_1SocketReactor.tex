@@ -1,0 +1,270 @@
+\hypertarget{classPoco_1_1Net_1_1SocketReactor}{}\doxysection{Poco\+::Net\+::Socket\+Reactor Class Reference}
+\label{classPoco_1_1Net_1_1SocketReactor}\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+
+
+{\ttfamily \#include $<$Socket\+Reactor.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::Socket\+Reactor\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::Socket\+Reactor\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a486e92aff17984752a8e71be7a1b1643}{Socket\+Reactor}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a79c05df73604e18d00f631d6ec983c1a}{Socket\+Reactor}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_af4a8a9f9e806ad3a129122aaa623d31e}{$\sim$\+Socket\+Reactor}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}, using the given timeout. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a6871c7b7de994a255a5d55ec26b8c178}{run}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_aa63b954aded0ade13d59e60aa8241492}{stop}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_aac64524d1d1ee6148262e472768fd710}{wake\+Up}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a516e53eef4ac2e0331685359684fd868}{set\+Timeout}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout)
+\begin{DoxyCompactList}\small\item\em Wakes up idle reactor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a83f920d100fe1f8c0f0ca3628e10dd8c}{get\+Timeout}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_af6d366d0de6f903709f61a07e21ab508}{add\+Event\+Handler}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&socket, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractObserver}{Poco\+::\+Abstract\+Observer}} \&observer)
+\begin{DoxyCompactList}\small\item\em Returns the timeout. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_abfb5ea7e2378c999495e294bb1a9ef01}{has\+Event\+Handler}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&socket, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractObserver}{Poco\+::\+Abstract\+Observer}} \&observer)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a2c239f3cedcfb75af342c231bf7e8f9d}{remove\+Event\+Handler}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&socket, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractObserver}{Poco\+::\+Abstract\+Observer}} \&observer)
+\begin{DoxyCompactList}\small\item\em Returns true if the observer is registered with \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} for the given socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_af776c3f9c6205e278c4c522c98b7da27}{on\+Timeout}} ()
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a12ff2423749461fce52913012383f923}{on\+Idle}} ()
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a1270a2f51648df02d8f698c311421213}{on\+Shutdown}} ()
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a03c7d88e752c9df493d7d762813afbab}{on\+Busy}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a93b8e692d6a2e233a3f763855287949d}{dispatch}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&socket, \mbox{\hyperlink{classPoco_1_1Net_1_1SocketNotification}{Socket\+Notification}} $\ast$p\+Notification)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_ad65fd72558fd3ae7a1f420dc0ef5b67f}{dispatch}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketNotification}{Socket\+Notification}} $\ast$p\+Notification)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_aed88f88d7eb72cb6fef98e51c7b79a49}{Socket\+Notifier}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class, which is part of the Reactor pattern, implements the \char`\"{}\+Initiation Dispatcher\char`\"{}.
+
+The Reactor pattern has been described in the book \char`\"{}\+Pattern Languages of Program Design\char`\"{} by Jim Coplien and Douglas C. Schmidt (Addison Wesley, 1995).
+
+The Reactor design pattern handles service requests that are delivered concurrently to an application by one or more clients. Each service in an application may consist of several methods and is represented by a separate event handler. The event handler is responsible for servicing service-\/specific requests. The \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} dispatches the event handlers.
+
+\mbox{\hyperlink{classPoco_1_1Event}{Event}} handlers (any class can be an event handler -\/ there is no base class for event handlers) can be registered with the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_af6d366d0de6f903709f61a07e21ab508}{add\+Event\+Handler()}} method and deregistered with the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a2c239f3cedcfb75af342c231bf7e8f9d}{remove\+Event\+Handler()}} method.
+
+An event handler is always registered for a certain socket, which is given in the call to \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_af6d366d0de6f903709f61a07e21ab508}{add\+Event\+Handler()}}. \mbox{\hyperlink{classPoco_1_1Any}{Any}} method of the event handler class can be registered to handle the event -\/ the only requirement is that the method takes a pointer to an instance of \mbox{\hyperlink{classPoco_1_1Net_1_1SocketNotification}{Socket\+Notification}} (or a subclass of it) as argument.
+
+Once started, the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} waits for events on the registered sockets, using \mbox{\hyperlink{classPoco_1_1Net_1_1Socket_a4b64fe1fc3848e6dec346b49f0708248}{Socket\+::select()}}. If an event is detected, the corresponding event handler is invoked. There are five event types (and corresponding notification classes) defined\+: \mbox{\hyperlink{classPoco_1_1Net_1_1ReadableNotification}{Readable\+Notification}}, \mbox{\hyperlink{classPoco_1_1Net_1_1WritableNotification}{Writable\+Notification}}, \mbox{\hyperlink{classPoco_1_1Net_1_1ErrorNotification}{Error\+Notification}}, \mbox{\hyperlink{classPoco_1_1Net_1_1TimeoutNotification}{Timeout\+Notification}}, \mbox{\hyperlink{classPoco_1_1Net_1_1IdleNotification}{Idle\+Notification}} and \mbox{\hyperlink{classPoco_1_1Net_1_1ShutdownNotification}{Shutdown\+Notification}}.
+
+The \mbox{\hyperlink{classPoco_1_1Net_1_1ReadableNotification}{Readable\+Notification}} will be dispatched if a socket becomes readable. The \mbox{\hyperlink{classPoco_1_1Net_1_1WritableNotification}{Writable\+Notification}} will be dispatched if a socket becomes writable. The \mbox{\hyperlink{classPoco_1_1Net_1_1ErrorNotification}{Error\+Notification}} will be dispatched if there is an error condition on a socket.
+
+If the timeout expires and no event has occurred, a \mbox{\hyperlink{classPoco_1_1Net_1_1TimeoutNotification}{Timeout\+Notification}} will be dispatched to all event handlers registered for it. This is done in the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_af776c3f9c6205e278c4c522c98b7da27}{on\+Timeout()}} method which can be overridden by subclasses to perform custom timeout processing.
+
+If there are no sockets for the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} to pass to \mbox{\hyperlink{classPoco_1_1Net_1_1Socket_a4b64fe1fc3848e6dec346b49f0708248}{Socket\+::select()}}, an \mbox{\hyperlink{classPoco_1_1Net_1_1IdleNotification}{Idle\+Notification}} will be dispatched to all event handlers registered for it. This is done in the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a12ff2423749461fce52913012383f923}{on\+Idle()}} method which can be overridden by subclasses to perform custom idle processing. Since \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a12ff2423749461fce52913012383f923}{on\+Idle()}} will be called repeatedly in a loop, it is recommended to do a short sleep or yield in the event handler.
+
+Finally, when the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} is about to shut down (as a result of \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_aa63b954aded0ade13d59e60aa8241492}{stop()}} being called), it dispatches a \mbox{\hyperlink{classPoco_1_1Net_1_1ShutdownNotification}{Shutdown\+Notification}} to all event handlers. This is done in the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a1270a2f51648df02d8f698c311421213}{on\+Shutdown()}} method which can be overridded by subclasses to perform custom shutdown processing.
+
+The \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} is implemented so that it can run in its own thread. It is also possible to run multiple Socket\+Reactors in parallel, as long as they work on different sockets.
+
+It is safe to call \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_af6d366d0de6f903709f61a07e21ab508}{add\+Event\+Handler()}} and \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a2c239f3cedcfb75af342c231bf7e8f9d}{remove\+Event\+Handler()}} from another thread while the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} is running. Also, it is safe to call \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_af6d366d0de6f903709f61a07e21ab508}{add\+Event\+Handler()}} and \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_a2c239f3cedcfb75af342c231bf7e8f9d}{remove\+Event\+Handler()}} from event handlers. 
+
+Definition at line 46 of file Socket\+Reactor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_a486e92aff17984752a8e71be7a1b1643}\label{classPoco_1_1Net_1_1SocketReactor_a486e92aff17984752a8e71be7a1b1643}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!SocketReactor@{SocketReactor}}
+\index{SocketReactor@{SocketReactor}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{SocketReactor()}{SocketReactor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Socket\+Reactor\+::\+Socket\+Reactor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_a79c05df73604e18d00f631d6ec983c1a}\label{classPoco_1_1Net_1_1SocketReactor_a79c05df73604e18d00f631d6ec983c1a}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!SocketReactor@{SocketReactor}}
+\index{SocketReactor@{SocketReactor}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{SocketReactor()}{SocketReactor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Socket\+Reactor\+::\+Socket\+Reactor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_af4a8a9f9e806ad3a129122aaa623d31e}\label{classPoco_1_1Net_1_1SocketReactor_af4a8a9f9e806ad3a129122aaa623d31e}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!````~SocketReactor@{$\sim$SocketReactor}}
+\index{````~SocketReactor@{$\sim$SocketReactor}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{$\sim$SocketReactor()}{~SocketReactor()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Net\+::\+Socket\+Reactor\+::$\sim$\+Socket\+Reactor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}, using the given timeout. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_af6d366d0de6f903709f61a07e21ab508}\label{classPoco_1_1Net_1_1SocketReactor_af6d366d0de6f903709f61a07e21ab508}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!addEventHandler@{addEventHandler}}
+\index{addEventHandler@{addEventHandler}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{addEventHandler()}{addEventHandler()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Reactor\+::add\+Event\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&}]{socket,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractObserver}{Poco\+::\+Abstract\+Observer}} \&}]{observer }\end{DoxyParamCaption})}
+
+
+
+Returns the timeout. 
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_a93b8e692d6a2e233a3f763855287949d}\label{classPoco_1_1Net_1_1SocketReactor_a93b8e692d6a2e233a3f763855287949d}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Reactor\+::dispatch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&}]{socket,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketNotification}{Socket\+Notification}} $\ast$}]{p\+Notification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Called when the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} is busy and at least one notification has been dispatched.
+
+Can be overridden by subclasses to perform additional periodic tasks. The default implementation does nothing. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_ad65fd72558fd3ae7a1f420dc0ef5b67f}\label{classPoco_1_1Net_1_1SocketReactor_ad65fd72558fd3ae7a1f420dc0ef5b67f}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Reactor\+::dispatch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketNotification}{Socket\+Notification}} $\ast$}]{p\+Notification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Dispatches the given notification to all observers registered for the given socket. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_a83f920d100fe1f8c0f0ca3628e10dd8c}\label{classPoco_1_1Net_1_1SocketReactor_a83f920d100fe1f8c0f0ca3628e10dd8c}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!getTimeout@{getTimeout}}
+\index{getTimeout@{getTimeout}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{getTimeout()}{getTimeout()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}}\& Poco\+::\+Net\+::\+Socket\+Reactor\+::get\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Sets the timeout.
+
+If no other event occurs for the given timeout interval, a timeout event is sent to all event listeners.
+
+The default timeout is 250 milliseconds;
+
+The timeout is passed to the \mbox{\hyperlink{classPoco_1_1Net_1_1Socket_a4b64fe1fc3848e6dec346b49f0708248}{Socket\+::select()}} method. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_abfb5ea7e2378c999495e294bb1a9ef01}\label{classPoco_1_1Net_1_1SocketReactor_abfb5ea7e2378c999495e294bb1a9ef01}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!hasEventHandler@{hasEventHandler}}
+\index{hasEventHandler@{hasEventHandler}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{hasEventHandler()}{hasEventHandler()}}
+{\footnotesize\ttfamily bool Poco\+::\+Net\+::\+Socket\+Reactor\+::has\+Event\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&}]{socket,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractObserver}{Poco\+::\+Abstract\+Observer}} \&}]{observer }\end{DoxyParamCaption})}
+
+Registers an event handler with the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}.
+
+Usage\+: Poco\+::\+Observer$<$\+My\+Event\+Handler, Socket\+Notification$>$ obs($\ast$this, \&\+My\+Event\+Handler\+::handle\+My\+Event); reactor.\+add\+Event\+Handler(obs); Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_a03c7d88e752c9df493d7d762813afbab}\label{classPoco_1_1Net_1_1SocketReactor_a03c7d88e752c9df493d7d762813afbab}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!onBusy@{onBusy}}
+\index{onBusy@{onBusy}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{onBusy()}{onBusy()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Reactor\+::on\+Busy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called when the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} is about to terminate.
+
+Can be overridden by subclasses. The default implementation dispatches the \mbox{\hyperlink{classPoco_1_1Net_1_1ShutdownNotification}{Shutdown\+Notification}} and thus should be called by overriding implementations. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_a12ff2423749461fce52913012383f923}\label{classPoco_1_1Net_1_1SocketReactor_a12ff2423749461fce52913012383f923}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!onIdle@{onIdle}}
+\index{onIdle@{onIdle}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{onIdle()}{onIdle()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Reactor\+::on\+Idle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called if the timeout expires and no other events are available.
+
+Can be overridden by subclasses. The default implementation dispatches the \mbox{\hyperlink{classPoco_1_1Net_1_1TimeoutNotification}{Timeout\+Notification}} and thus should be called by overriding implementations. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_a1270a2f51648df02d8f698c311421213}\label{classPoco_1_1Net_1_1SocketReactor_a1270a2f51648df02d8f698c311421213}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!onShutdown@{onShutdown}}
+\index{onShutdown@{onShutdown}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{onShutdown()}{onShutdown()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Reactor\+::on\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called if no sockets are available to call select() on.
+
+Can be overridden by subclasses. The default implementation dispatches the \mbox{\hyperlink{classPoco_1_1Net_1_1IdleNotification}{Idle\+Notification}} and thus should be called by overriding implementations. \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_af776c3f9c6205e278c4c522c98b7da27}\label{classPoco_1_1Net_1_1SocketReactor_af776c3f9c6205e278c4c522c98b7da27}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!onTimeout@{onTimeout}}
+\index{onTimeout@{onTimeout}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{onTimeout()}{onTimeout()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Net\+::\+Socket\+Reactor\+::on\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Unregisters an event handler with the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}.
+
+Usage\+: Poco\+::\+Observer$<$\+My\+Event\+Handler, Socket\+Notification$>$ obs($\ast$this, \&\+My\+Event\+Handler\+::handle\+My\+Event); reactor.\+remove\+Event\+Handler(obs); \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_a2c239f3cedcfb75af342c231bf7e8f9d}\label{classPoco_1_1Net_1_1SocketReactor_a2c239f3cedcfb75af342c231bf7e8f9d}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!removeEventHandler@{removeEventHandler}}
+\index{removeEventHandler@{removeEventHandler}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{removeEventHandler()}{removeEventHandler()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Reactor\+::remove\+Event\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \&}]{socket,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractObserver}{Poco\+::\+Abstract\+Observer}} \&}]{observer }\end{DoxyParamCaption})}
+
+
+
+Returns true if the observer is registered with \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} for the given socket. 
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_a6871c7b7de994a255a5d55ec26b8c178}\label{classPoco_1_1Net_1_1SocketReactor_a6871c7b7de994a255a5d55ec26b8c178}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!run@{run}}
+\index{run@{run}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Reactor\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Runnable_ad89816e81207bf5f1e52d5df860d11d4}{Poco\+::\+Runnable}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_a516e53eef4ac2e0331685359684fd868}\label{classPoco_1_1Net_1_1SocketReactor_a516e53eef4ac2e0331685359684fd868}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!setTimeout@{setTimeout}}
+\index{setTimeout@{setTimeout}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{setTimeout()}{setTimeout()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Reactor\+::set\+Timeout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout }\end{DoxyParamCaption})}
+
+
+
+Wakes up idle reactor. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_aa63b954aded0ade13d59e60aa8241492}\label{classPoco_1_1Net_1_1SocketReactor_aa63b954aded0ade13d59e60aa8241492}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!stop@{stop}}
+\index{stop@{stop}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Reactor\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Runs the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}. The reactor will run until \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor_aa63b954aded0ade13d59e60aa8241492}{stop()}} is called (in a separate thread). \mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_aac64524d1d1ee6148262e472768fd710}\label{classPoco_1_1Net_1_1SocketReactor_aac64524d1d1ee6148262e472768fd710}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!wakeUp@{wakeUp}}
+\index{wakeUp@{wakeUp}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{wakeUp()}{wakeUp()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Socket\+Reactor\+::wake\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stops the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}.
+
+The reactor will be stopped when the next event (including a timeout event) occurs. Here is the caller graph for this function\+:
+% FIG 5
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketReactor_aed88f88d7eb72cb6fef98e51c7b79a49}\label{classPoco_1_1Net_1_1SocketReactor_aed88f88d7eb72cb6fef98e51c7b79a49}} 
+\index{Poco::Net::SocketReactor@{Poco::Net::SocketReactor}!SocketNotifier@{SocketNotifier}}
+\index{SocketNotifier@{SocketNotifier}!Poco::Net::SocketReactor@{Poco::Net::SocketReactor}}
+\doxysubsubsection{\texorpdfstring{SocketNotifier}{SocketNotifier}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1SocketNotifier}{Socket\+Notifier}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 230 of file Socket\+Reactor.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{SocketReactor_8h}{Socket\+Reactor.\+h}}\end{DoxyCompactItemize}

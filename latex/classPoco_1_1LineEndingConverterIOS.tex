@@ -1,0 +1,128 @@
+\hypertarget{classPoco_1_1LineEndingConverterIOS}{}\doxysection{Poco\+::Line\+Ending\+Converter\+I\+OS Class Reference}
+\label{classPoco_1_1LineEndingConverterIOS}\index{Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}}
+
+
+{\ttfamily \#include $<$Line\+Ending\+Converter.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Line\+Ending\+Converter\+I\+OS\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Line\+Ending\+Converter\+I\+OS\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1LineEndingConverterIOS_af5a9de7fb06171e25c6d5a3d6256b0f1}{Line\+Ending\+Converter\+I\+OS}} (std\+::istream \&istr)
+\item 
+\mbox{\hyperlink{classPoco_1_1LineEndingConverterIOS_a90130a420663e24fe3f96e6d1b07ecf3}{Line\+Ending\+Converter\+I\+OS}} (std\+::ostream \&ostr)
+\item 
+\mbox{\hyperlink{classPoco_1_1LineEndingConverterIOS_a89e9817908624d5aedd854e848dc2dfe}{$\sim$\+Line\+Ending\+Converter\+I\+OS}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1LineEndingConverterIOS_a01301421e7ebbed5494e972e18255795}{set\+New\+Line}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&new\+Line\+Characters)
+\begin{DoxyCompactList}\small\item\em Destroys the stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1LineEndingConverterIOS_af35f784a1e04c00144d044dbeebda6c8}{get\+New\+Line}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1LineEndingConverterStreamBuf}{Line\+Ending\+Converter\+Stream\+Buf}} $\ast$ \mbox{\hyperlink{classPoco_1_1LineEndingConverterIOS_a88fa8681edf827834b08e1e37bc6ae8d}{rdbuf}} ()
+\begin{DoxyCompactList}\small\item\em Returns the line ending currently in use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1LineEndingConverterStreamBuf}{Line\+Ending\+Converter\+Stream\+Buf}} \mbox{\hyperlink{classPoco_1_1LineEndingConverterIOS_aa1add38c5aee14cb3dffd90ce90f1d7a}{\+\_\+buf}}
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the underlying streambuf. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for \mbox{\hyperlink{classPoco_1_1InputLineEndingConverter}{Input\+Line\+Ending\+Converter}} and \mbox{\hyperlink{classPoco_1_1OutputLineEndingConverter}{Output\+Line\+Ending\+Converter}}. \begin{DoxyVerb}This class provides common methods and is also needed to ensure 
+the correct initialization order of the stream buffer and base classes. 
+\end{DoxyVerb}
+ 
+
+Definition at line 92 of file Line\+Ending\+Converter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1LineEndingConverterIOS_af5a9de7fb06171e25c6d5a3d6256b0f1}\label{classPoco_1_1LineEndingConverterIOS_af5a9de7fb06171e25c6d5a3d6256b0f1}} 
+\index{Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}!LineEndingConverterIOS@{LineEndingConverterIOS}}
+\index{LineEndingConverterIOS@{LineEndingConverterIOS}!Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}}
+\doxysubsubsection{\texorpdfstring{LineEndingConverterIOS()}{LineEndingConverterIOS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Line\+Ending\+Converter\+I\+O\+S\+::\+Line\+Ending\+Converter\+I\+OS (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1LineEndingConverterIOS_a90130a420663e24fe3f96e6d1b07ecf3}\label{classPoco_1_1LineEndingConverterIOS_a90130a420663e24fe3f96e6d1b07ecf3}} 
+\index{Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}!LineEndingConverterIOS@{LineEndingConverterIOS}}
+\index{LineEndingConverterIOS@{LineEndingConverterIOS}!Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}}
+\doxysubsubsection{\texorpdfstring{LineEndingConverterIOS()}{LineEndingConverterIOS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Line\+Ending\+Converter\+I\+O\+S\+::\+Line\+Ending\+Converter\+I\+OS (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1LineEndingConverterIOS}{Line\+Ending\+Converter\+I\+OS}} and connects it to the given input stream. \mbox{\Hypertarget{classPoco_1_1LineEndingConverterIOS_a89e9817908624d5aedd854e848dc2dfe}\label{classPoco_1_1LineEndingConverterIOS_a89e9817908624d5aedd854e848dc2dfe}} 
+\index{Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}!````~LineEndingConverterIOS@{$\sim$LineEndingConverterIOS}}
+\index{````~LineEndingConverterIOS@{$\sim$LineEndingConverterIOS}!Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}}
+\doxysubsubsection{\texorpdfstring{$\sim$LineEndingConverterIOS()}{~LineEndingConverterIOS()}}
+{\footnotesize\ttfamily Poco\+::\+Line\+Ending\+Converter\+I\+O\+S\+::$\sim$\+Line\+Ending\+Converter\+I\+OS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1LineEndingConverterIOS}{Line\+Ending\+Converter\+I\+OS}} and connects it to the given output stream. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1LineEndingConverterIOS_af35f784a1e04c00144d044dbeebda6c8}\label{classPoco_1_1LineEndingConverterIOS_af35f784a1e04c00144d044dbeebda6c8}} 
+\index{Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}!getNewLine@{getNewLine}}
+\index{getNewLine@{getNewLine}!Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}}
+\doxysubsubsection{\texorpdfstring{getNewLine()}{getNewLine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Line\+Ending\+Converter\+I\+O\+S\+::get\+New\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Sets the target line ending for the converter.
+
+Possible values are\+:
+\begin{DoxyItemize}
+\item N\+E\+W\+L\+I\+N\+E\+\_\+\+D\+E\+F\+A\+U\+LT (whatever is appropriate for the current platform)
+\item N\+E\+W\+L\+I\+N\+E\+\_\+\+C\+R\+LF (Windows),
+\item N\+E\+W\+L\+I\+N\+E\+\_\+\+LF (Unix),
+\item N\+E\+W\+L\+I\+N\+E\+\_\+\+CR (Macintosh)
+\end{DoxyItemize}
+
+In theory, any character sequence can be used as newline sequence. In practice, however, only the above three make sense.
+
+If an empty string is given, all newline characters are removed from the stream. \mbox{\Hypertarget{classPoco_1_1LineEndingConverterIOS_a88fa8681edf827834b08e1e37bc6ae8d}\label{classPoco_1_1LineEndingConverterIOS_a88fa8681edf827834b08e1e37bc6ae8d}} 
+\index{Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}!rdbuf@{rdbuf}}
+\index{rdbuf@{rdbuf}!Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}}
+\doxysubsubsection{\texorpdfstring{rdbuf()}{rdbuf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1LineEndingConverterStreamBuf}{Line\+Ending\+Converter\+Stream\+Buf}}$\ast$ Poco\+::\+Line\+Ending\+Converter\+I\+O\+S\+::rdbuf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the line ending currently in use. 
+
+\mbox{\Hypertarget{classPoco_1_1LineEndingConverterIOS_a01301421e7ebbed5494e972e18255795}\label{classPoco_1_1LineEndingConverterIOS_a01301421e7ebbed5494e972e18255795}} 
+\index{Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}!setNewLine@{setNewLine}}
+\index{setNewLine@{setNewLine}!Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}}
+\doxysubsubsection{\texorpdfstring{setNewLine()}{setNewLine()}}
+{\footnotesize\ttfamily void Poco\+::\+Line\+Ending\+Converter\+I\+O\+S\+::set\+New\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{new\+Line\+Characters }\end{DoxyParamCaption})}
+
+
+
+Destroys the stream. 
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1LineEndingConverterIOS_aa1add38c5aee14cb3dffd90ce90f1d7a}\label{classPoco_1_1LineEndingConverterIOS_aa1add38c5aee14cb3dffd90ce90f1d7a}} 
+\index{Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}!\_buf@{\_buf}}
+\index{\_buf@{\_buf}!Poco::LineEndingConverterIOS@{Poco::LineEndingConverterIOS}}
+\doxysubsubsection{\texorpdfstring{\_buf}{\_buf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1LineEndingConverterStreamBuf}{Line\+Ending\+Converter\+Stream\+Buf}} Poco\+::\+Line\+Ending\+Converter\+I\+O\+S\+::\+\_\+buf\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns a pointer to the underlying streambuf. 
+
+
+
+Definition at line 132 of file Line\+Ending\+Converter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{LineEndingConverter_8h}{Line\+Ending\+Converter.\+h}}\end{DoxyCompactItemize}

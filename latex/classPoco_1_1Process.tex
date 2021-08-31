@@ -1,0 +1,243 @@
+\hypertarget{classPoco_1_1Process}{}\doxysection{Poco\+::Process Class Reference}
+\label{classPoco_1_1Process}\index{Poco::Process@{Poco::Process}}
+
+
+This class provides methods for working with processes.  
+
+
+
+
+{\ttfamily \#include $<$Process.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Process\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Process\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1ProcessImpl_a7e5e3e897fe79abce142a7a58eefacaa}{P\+I\+D\+Impl}} \mbox{\hyperlink{classPoco_1_1Process_ad401f1531e85e260c7bb75aad081de1f}{P\+ID}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1ProcessImpl_abf4b32dde8f6428c1791060b39883bfd}{Args\+Impl}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1ProcessImpl_ad1c670f7bfae32ead17ba9f72e483655}{Env\+Impl}} \mbox{\hyperlink{classPoco_1_1Process_a63a875d88170fabc479a6734310d51bb}{Env}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1Process_ad401f1531e85e260c7bb75aad081de1f}{P\+ID}} \mbox{\hyperlink{classPoco_1_1Process_a8c9aea46e76accaffe76597c0ee6da54}{id}} ()
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Process_aed884610ec720e9aa5854555f2af7d77}{times}} (long \&user\+Time, long \&kernel\+Time)
+\begin{DoxyCompactList}\small\item\em Returns the process ID of the current process. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} \mbox{\hyperlink{classPoco_1_1Process_a2dd969e0d5d36b7d0600a088d68ea3dc}{launch}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&command, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}} \&args)
+\item 
+static \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} \mbox{\hyperlink{classPoco_1_1Process_a9a6997035bcdfcfdc3d214dface29aaa}{launch}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&command, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}} \&args, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&initial\+Directory)
+\item 
+static \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} \mbox{\hyperlink{classPoco_1_1Process_a065b2ab585cf402a0fd7dad78470fc59}{launch}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&command, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}} \&args, \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$in\+Pipe, \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$out\+Pipe, \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$err\+Pipe)
+\item 
+static \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} \mbox{\hyperlink{classPoco_1_1Process_a4139f0991dc024a9b29d89e354583a41}{launch}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&command, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}} \&args, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&initial\+Directory, \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$in\+Pipe, \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$out\+Pipe, \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$err\+Pipe)
+\item 
+static \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} \mbox{\hyperlink{classPoco_1_1Process_a577e0d971e51b386df3fe3beaeaefaa8}{launch}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&command, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}} \&args, \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$in\+Pipe, \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$out\+Pipe, \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$err\+Pipe, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a63a875d88170fabc479a6734310d51bb}{Env}} \&env)
+\item 
+static \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} \mbox{\hyperlink{classPoco_1_1Process_aa933a14817c5e4cd6472792d353af0eb}{launch}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&command, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}} \&args, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&initial\+Directory, \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$in\+Pipe, \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$out\+Pipe, \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$err\+Pipe, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a63a875d88170fabc479a6734310d51bb}{Env}} \&env)
+\item 
+static int \mbox{\hyperlink{classPoco_1_1Process_a8dc0eeae516ba7a847f4331ece26ff5f}{wait}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} \&handle)
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Process_a6ee704d1c9f1297ce23689667c2510fd}{is\+Running}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} \&handle)
+\item 
+static bool \mbox{\hyperlink{classPoco_1_1Process_ad9f33dfefb7afb729d4035fb05fa98ee}{is\+Running}} (\mbox{\hyperlink{classPoco_1_1Process_ad401f1531e85e260c7bb75aad081de1f}{P\+ID}} pid)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Process_a7599ce9ae980df8f0d32d331066082a4}{kill}} (\mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} \&handle)
+\begin{DoxyCompactList}\small\item\em Check if the process specified by given pid is running or not. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1Process_a53a96c211866ada8c61119c553bf3e5b}{kill}} (\mbox{\hyperlink{classPoco_1_1Process_ad401f1531e85e260c7bb75aad081de1f}{P\+ID}} pid)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Process_ac98608f902fdd6dcc81d4a7210615b8c}{request\+Termination}} (\mbox{\hyperlink{classPoco_1_1Process_ad401f1531e85e260c7bb75aad081de1f}{P\+ID}} pid)
+\begin{DoxyCompactList}\small\item\em Kills the process with the given pid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides methods for working with processes. 
+
+Definition at line 87 of file Process.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}\label{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}} 
+\index{Poco::Process@{Poco::Process}!Args@{Args}}
+\index{Args@{Args}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{Args}{Args}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1ProcessImpl_abf4b32dde8f6428c1791060b39883bfd}{Args\+Impl}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Poco\+::\+Process\+::\+Args}}}
+
+
+
+Definition at line 92 of file Process.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Process_a63a875d88170fabc479a6734310d51bb}\label{classPoco_1_1Process_a63a875d88170fabc479a6734310d51bb}} 
+\index{Poco::Process@{Poco::Process}!Env@{Env}}
+\index{Env@{Env}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{Env}{Env}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1ProcessImpl_ad1c670f7bfae32ead17ba9f72e483655}{Env\+Impl}} \mbox{\hyperlink{classPoco_1_1Process_a63a875d88170fabc479a6734310d51bb}{Poco\+::\+Process\+::\+Env}}}
+
+
+
+Definition at line 93 of file Process.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Process_ad401f1531e85e260c7bb75aad081de1f}\label{classPoco_1_1Process_ad401f1531e85e260c7bb75aad081de1f}} 
+\index{Poco::Process@{Poco::Process}!PID@{PID}}
+\index{PID@{PID}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{PID}{PID}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1ProcessImpl_a7e5e3e897fe79abce142a7a58eefacaa}{P\+I\+D\+Impl}} \mbox{\hyperlink{classPoco_1_1Process_ad401f1531e85e260c7bb75aad081de1f}{Poco\+::\+Process\+::\+P\+ID}}}
+
+
+
+Definition at line 91 of file Process.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Process_a8c9aea46e76accaffe76597c0ee6da54}\label{classPoco_1_1Process_a8c9aea46e76accaffe76597c0ee6da54}} 
+\index{Poco::Process@{Poco::Process}!id@{id}}
+\index{id@{id}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Process_ad401f1531e85e260c7bb75aad081de1f}{Process\+::\+P\+ID}} Poco\+::\+Process\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 255 of file Process.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Process_a6ee704d1c9f1297ce23689667c2510fd}\label{classPoco_1_1Process_a6ee704d1c9f1297ce23689667c2510fd}} 
+\index{Poco::Process@{Poco::Process}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static bool Poco\+::\+Process\+::is\+Running (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} \&}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Waits for the process specified by handle to terminate and returns the exit code of the process. \mbox{\Hypertarget{classPoco_1_1Process_ad9f33dfefb7afb729d4035fb05fa98ee}\label{classPoco_1_1Process_ad9f33dfefb7afb729d4035fb05fa98ee}} 
+\index{Poco::Process@{Poco::Process}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static bool Poco\+::\+Process\+::is\+Running (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Process_ad401f1531e85e260c7bb75aad081de1f}{P\+ID}}}]{pid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+check if the process specified by handle is running or not
+
+This is preferable on Windows where process I\+Ds may be reused. \mbox{\Hypertarget{classPoco_1_1Process_a53a96c211866ada8c61119c553bf3e5b}\label{classPoco_1_1Process_a53a96c211866ada8c61119c553bf3e5b}} 
+\index{Poco::Process@{Poco::Process}!kill@{kill}}
+\index{kill@{kill}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{kill()}{kill()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+Process\+::kill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Process_ad401f1531e85e260c7bb75aad081de1f}{P\+ID}}}]{pid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Kills the process specified by handle.
+
+This is preferable on Windows where process I\+Ds may be reused. \mbox{\Hypertarget{classPoco_1_1Process_a7599ce9ae980df8f0d32d331066082a4}\label{classPoco_1_1Process_a7599ce9ae980df8f0d32d331066082a4}} 
+\index{Poco::Process@{Poco::Process}!kill@{kill}}
+\index{kill@{kill}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{kill()}{kill()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+Process\+::kill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} \&}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if the process specified by given pid is running or not. 
+
+\mbox{\Hypertarget{classPoco_1_1Process_a2dd969e0d5d36b7d0600a088d68ea3dc}\label{classPoco_1_1Process_a2dd969e0d5d36b7d0600a088d68ea3dc}} 
+\index{Poco::Process@{Poco::Process}!launch@{launch}}
+\index{launch@{launch}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} Poco\+::\+Process\+::launch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{command,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}} \&}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the number of seconds spent by the current process in user and kernel mode. \mbox{\Hypertarget{classPoco_1_1Process_a9a6997035bcdfcfdc3d214dface29aaa}\label{classPoco_1_1Process_a9a6997035bcdfcfdc3d214dface29aaa}} 
+\index{Poco::Process@{Poco::Process}!launch@{launch}}
+\index{launch@{launch}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} Poco\+::\+Process\+::launch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{command,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}} \&}]{args,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{initial\+Directory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new process for the given command and returns a \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} of the new process. The given arguments are passed to the command on the command line. \mbox{\Hypertarget{classPoco_1_1Process_a4139f0991dc024a9b29d89e354583a41}\label{classPoco_1_1Process_a4139f0991dc024a9b29d89e354583a41}} 
+\index{Poco::Process@{Poco::Process}!launch@{launch}}
+\index{launch@{launch}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} Poco\+::\+Process\+::launch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{command,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}} \&}]{args,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{initial\+Directory,  }\item[{\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$}]{in\+Pipe,  }\item[{\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$}]{out\+Pipe,  }\item[{\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$}]{err\+Pipe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new process for the given command and returns a \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} of the new process. The given arguments are passed to the command on the command line.
+
+If in\+Pipe, out\+Pipe or err\+Pipe is non-\/null, the corresponding standard input, standard output or standard error stream of the launched process is redirected to the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}}. \mbox{\hyperlink{classPoco_1_1PipeInputStream}{Pipe\+Input\+Stream}} or \mbox{\hyperlink{classPoco_1_1PipeOutputStream}{Pipe\+Output\+Stream}} can be used to send receive data from, or send data to the process.
+
+Note\+: the same \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} can be used for both out\+Pipe and err\+Pipe.
+
+After a \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} has been passed as in\+Pipe, only write operations are valid. After a \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} has been passed as out\+Pipe or err\+Pipe, only read operations are valid.
+
+It is forbidden to pass the same pipe as in\+Pipe and out\+Pipe or err\+Pipe.
+
+Usage example\+: \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} out\+Pipe; \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Process\+::\+Args}} args; \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} ph(launch(\char`\"{}/bin/ps\char`\"{}, args, 0, \&out\+Pipe, 0)); \mbox{\hyperlink{classPoco_1_1PipeInputStream}{Pipe\+Input\+Stream}} istr(out\+Pipe); ... // read output of ps from istr int rc = ph.\+wait(); \mbox{\Hypertarget{classPoco_1_1Process_aa933a14817c5e4cd6472792d353af0eb}\label{classPoco_1_1Process_aa933a14817c5e4cd6472792d353af0eb}} 
+\index{Poco::Process@{Poco::Process}!launch@{launch}}
+\index{launch@{launch}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} Poco\+::\+Process\+::launch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{command,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}} \&}]{args,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{initial\+Directory,  }\item[{\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$}]{in\+Pipe,  }\item[{\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$}]{out\+Pipe,  }\item[{\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$}]{err\+Pipe,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a63a875d88170fabc479a6734310d51bb}{Env}} \&}]{env }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new process for the given command and returns a \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} of the new process. The given arguments are passed to the command on the command line.
+
+If in\+Pipe, out\+Pipe or err\+Pipe is non-\/null, the corresponding standard input, standard output or standard error stream of the launched process is redirected to the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}}.
+
+The launched process is given the specified environment variables. \mbox{\Hypertarget{classPoco_1_1Process_a065b2ab585cf402a0fd7dad78470fc59}\label{classPoco_1_1Process_a065b2ab585cf402a0fd7dad78470fc59}} 
+\index{Poco::Process@{Poco::Process}!launch@{launch}}
+\index{launch@{launch}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} Poco\+::\+Process\+::launch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{command,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}} \&}]{args,  }\item[{\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$}]{in\+Pipe,  }\item[{\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$}]{out\+Pipe,  }\item[{\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$}]{err\+Pipe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new process for the given command and returns a \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} of the new process. The given arguments are passed to the command on the command line. The process starts executing in the specified initial directory. \mbox{\Hypertarget{classPoco_1_1Process_a577e0d971e51b386df3fe3beaeaefaa8}\label{classPoco_1_1Process_a577e0d971e51b386df3fe3beaeaefaa8}} 
+\index{Poco::Process@{Poco::Process}!launch@{launch}}
+\index{launch@{launch}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} Poco\+::\+Process\+::launch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{command,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Args}} \&}]{args,  }\item[{\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$}]{in\+Pipe,  }\item[{\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$}]{out\+Pipe,  }\item[{\mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} $\ast$}]{err\+Pipe,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Process_a63a875d88170fabc479a6734310d51bb}{Env}} \&}]{env }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new process for the given command and returns a \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} of the new process. The given arguments are passed to the command on the command line. The process starts executing in the specified initial directory.
+
+If in\+Pipe, out\+Pipe or err\+Pipe is non-\/null, the corresponding standard input, standard output or standard error stream of the launched process is redirected to the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}}. \mbox{\hyperlink{classPoco_1_1PipeInputStream}{Pipe\+Input\+Stream}} or \mbox{\hyperlink{classPoco_1_1PipeOutputStream}{Pipe\+Output\+Stream}} can be used to send receive data from, or send data to the process.
+
+Note\+: the same \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} can be used for both out\+Pipe and err\+Pipe.
+
+After a \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} has been passed as in\+Pipe, only write operations are valid. After a \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} has been passed as out\+Pipe or err\+Pipe, only read operations are valid.
+
+It is forbidden to pass the same pipe as in\+Pipe and out\+Pipe or err\+Pipe.
+
+Usage example\+: \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}} out\+Pipe; \mbox{\hyperlink{classPoco_1_1Process_a3cfaa973bb60f88f4f83deeddebddf3b}{Process\+::\+Args}} args; \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} ph(launch(\char`\"{}/bin/ps\char`\"{}, args, 0, \&out\+Pipe, 0)); \mbox{\hyperlink{classPoco_1_1PipeInputStream}{Pipe\+Input\+Stream}} istr(out\+Pipe); ... // read output of ps from istr int rc = ph.\+wait(); \mbox{\Hypertarget{classPoco_1_1Process_ac98608f902fdd6dcc81d4a7210615b8c}\label{classPoco_1_1Process_ac98608f902fdd6dcc81d4a7210615b8c}} 
+\index{Poco::Process@{Poco::Process}!requestTermination@{requestTermination}}
+\index{requestTermination@{requestTermination}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{requestTermination()}{requestTermination()}}
+{\footnotesize\ttfamily static void Poco\+::\+Process\+::request\+Termination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Process_ad401f1531e85e260c7bb75aad081de1f}{P\+ID}}}]{pid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Kills the process with the given pid. 
+
+\mbox{\Hypertarget{classPoco_1_1Process_aed884610ec720e9aa5854555f2af7d77}\label{classPoco_1_1Process_aed884610ec720e9aa5854555f2af7d77}} 
+\index{Poco::Process@{Poco::Process}!times@{times}}
+\index{times@{times}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{times()}{times()}}
+{\footnotesize\ttfamily void Poco\+::\+Process\+::times (\begin{DoxyParamCaption}\item[{long \&}]{user\+Time,  }\item[{long \&}]{kernel\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the process ID of the current process. 
+
+
+
+Definition at line 261 of file Process.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Process_a8dc0eeae516ba7a847f4331ece26ff5f}\label{classPoco_1_1Process_a8dc0eeae516ba7a847f4331ece26ff5f}} 
+\index{Poco::Process@{Poco::Process}!wait@{wait}}
+\index{wait@{wait}!Poco::Process@{Poco::Process}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily static int Poco\+::\+Process\+::wait (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} \&}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new process for the given command and returns a \mbox{\hyperlink{classPoco_1_1ProcessHandle}{Process\+Handle}} of the new process. The given arguments are passed to the command on the command line. The process starts executing in the specified initial directory. If in\+Pipe, out\+Pipe or err\+Pipe is non-\/null, the corresponding standard input, standard output or standard error stream of the launched process is redirected to the \mbox{\hyperlink{classPoco_1_1Pipe}{Pipe}}. The launched process is given the specified environment variables. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Process_8h}{Process.\+h}}\end{DoxyCompactItemize}

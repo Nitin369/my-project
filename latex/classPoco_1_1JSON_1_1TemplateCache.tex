@@ -1,0 +1,100 @@
+\hypertarget{classPoco_1_1JSON_1_1TemplateCache}{}\doxysection{Poco\+::J\+S\+ON\+::Template\+Cache Class Reference}
+\label{classPoco_1_1JSON_1_1TemplateCache}\index{Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}}
+
+
+{\ttfamily \#include $<$Template\+Cache.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1TemplateCache_aebea59c1ab73bf237addac96974a54ab}{Template\+Cache}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1JSON_1_1TemplateCache_a0465b2f7f4f2290f5d3956c4fbeeeadd}{$\sim$\+Template\+Cache}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1TemplateCache_ad9bc0ef2fa2a4de20078570f38f50e22}{add\+Path}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&path)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1JSON_1_1TemplateCache}{Template\+Cache}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1JSON_1_1Template_a39033c1aff96be7d06887b81133d112e}{Template\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1JSON_1_1TemplateCache_a067adc23bedd88ec292bd97b852f9563}{get\+Template}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&path)
+\item 
+void \mbox{\hyperlink{classPoco_1_1JSON_1_1TemplateCache_a16b6cd7a835f48586b1c17cdaaed7356}{set\+Logger}} (\mbox{\hyperlink{classPoco_1_1Logger}{Logger}} \&logger)
+\begin{DoxyCompactList}\small\item\em Returns the only instance of this cache. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1JSON_1_1TemplateCache}{Template\+Cache}} $\ast$ \mbox{\hyperlink{classPoco_1_1JSON_1_1TemplateCache_ae355be734258d6d7617aa22c7b2f31d2}{instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Use to cache parsed templates. Templates are stored in a map with the full path as key. When a template file has changed, the cache will remove the old template from the cache and load a new one. 
+
+Definition at line 36 of file Template\+Cache.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1TemplateCache_aebea59c1ab73bf237addac96974a54ab}\label{classPoco_1_1JSON_1_1TemplateCache_aebea59c1ab73bf237addac96974a54ab}} 
+\index{Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}!TemplateCache@{TemplateCache}}
+\index{TemplateCache@{TemplateCache}!Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}}
+\doxysubsubsection{\texorpdfstring{TemplateCache()}{TemplateCache()}}
+{\footnotesize\ttfamily Poco\+::\+J\+S\+O\+N\+::\+Template\+Cache\+::\+Template\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1TemplateCache_a0465b2f7f4f2290f5d3956c4fbeeeadd}\label{classPoco_1_1JSON_1_1TemplateCache_a0465b2f7f4f2290f5d3956c4fbeeeadd}} 
+\index{Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}!````~TemplateCache@{$\sim$TemplateCache}}
+\index{````~TemplateCache@{$\sim$TemplateCache}!Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}}
+\doxysubsubsection{\texorpdfstring{$\sim$TemplateCache()}{~TemplateCache()}}
+{\footnotesize\ttfamily virtual Poco\+::\+J\+S\+O\+N\+::\+Template\+Cache\+::$\sim$\+Template\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates an empty \mbox{\hyperlink{classPoco_1_1JSON_1_1TemplateCache}{Template\+Cache}}.
+
+The cache must be created and not destroyed as long as it is used. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1TemplateCache_ad9bc0ef2fa2a4de20078570f38f50e22}\label{classPoco_1_1JSON_1_1TemplateCache_ad9bc0ef2fa2a4de20078570f38f50e22}} 
+\index{Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}!addPath@{addPath}}
+\index{addPath@{addPath}!Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}}
+\doxysubsubsection{\texorpdfstring{addPath()}{addPath()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Template\+Cache\+::add\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1JSON_1_1TemplateCache}{Template\+Cache}}. 
+
+
+
+Definition at line 86 of file Template\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1TemplateCache_a067adc23bedd88ec292bd97b852f9563}\label{classPoco_1_1JSON_1_1TemplateCache_a067adc23bedd88ec292bd97b852f9563}} 
+\index{Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}!getTemplate@{getTemplate}}
+\index{getTemplate@{getTemplate}!Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}}
+\doxysubsubsection{\texorpdfstring{getTemplate()}{getTemplate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1JSON_1_1Template_a39033c1aff96be7d06887b81133d112e}{Template\+::\+Ptr}} Poco\+::\+J\+S\+O\+N\+::\+Template\+Cache\+::get\+Template (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Path}} \&}]{path }\end{DoxyParamCaption})}
+
+Add a path for resolving template paths. The order of check is F\+I\+FO. \mbox{\Hypertarget{classPoco_1_1JSON_1_1TemplateCache_ae355be734258d6d7617aa22c7b2f31d2}\label{classPoco_1_1JSON_1_1TemplateCache_ae355be734258d6d7617aa22c7b2f31d2}} 
+\index{Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}!instance@{instance}}
+\index{instance@{instance}!Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1JSON_1_1TemplateCache}{Template\+Cache}} $\ast$ Poco\+::\+J\+S\+O\+N\+::\+Template\+Cache\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a template from the cache. When the template file is not yet loaded or when the file has changed, the template will be (re)loaded and parsed. A shared pointer is returned, so it is safe to use this template even when the template isn\textquotesingle{}t stored anymore in the cache. 
+
+Definition at line 92 of file Template\+Cache.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1JSON_1_1TemplateCache_a16b6cd7a835f48586b1c17cdaaed7356}\label{classPoco_1_1JSON_1_1TemplateCache_a16b6cd7a835f48586b1c17cdaaed7356}} 
+\index{Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}!setLogger@{setLogger}}
+\index{setLogger@{setLogger}!Poco::JSON::TemplateCache@{Poco::JSON::TemplateCache}}
+\doxysubsubsection{\texorpdfstring{setLogger()}{setLogger()}}
+{\footnotesize\ttfamily void Poco\+::\+J\+S\+O\+N\+::\+Template\+Cache\+::set\+Logger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Logger}{Logger}} \&}]{logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the only instance of this cache. 
+
+
+
+Definition at line 98 of file Template\+Cache.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+J\+S\+O\+N/\mbox{\hyperlink{TemplateCache_8h}{Template\+Cache.\+h}}\end{DoxyCompactItemize}

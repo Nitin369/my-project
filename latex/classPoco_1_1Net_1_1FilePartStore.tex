@@ -1,0 +1,94 @@
+\hypertarget{classPoco_1_1Net_1_1FilePartStore}{}\doxysection{Poco\+::Net\+::File\+Part\+Store Class Reference}
+\label{classPoco_1_1Net_1_1FilePartStore}\index{Poco::Net::FilePartStore@{Poco::Net::FilePartStore}}
+
+
+{\ttfamily \#include $<$Part\+Store.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::File\+Part\+Store\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::File\+Part\+Store\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1FilePartStore_ab8159df3b46e8f5912dbb22fb623bcc2}{File\+Part\+Store}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&content, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Net_1_1PartSource_a281adaac391cd0e3f53ef546bfbf84f2}{media\+Type}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Net_1_1FilePartStore_ad33736a47624ea77961ecaaf718e1c9a}{filename}}=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1FilePartStore_af76b4fa968b529431ecb39727d7b07a0}{$\sim$\+File\+Part\+Store}} ()
+\item 
+std\+::istream \& \mbox{\hyperlink{classPoco_1_1Net_1_1FilePartStore_a7ef416e69a6e1940926e3afea4391217}{stream}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1FilePartStore}{File\+Part\+Store}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1FilePartStore_ad33736a47624ea77961ecaaf718e1c9a}{filename}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns a file input stream for the given file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1FilePartStore_a13a4c02219e7320b0a4eb1a440e0e6e3}{path}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An implementation of \mbox{\hyperlink{classPoco_1_1Net_1_1PartSource}{Part\+Source}} for persisting parts (usually email attachment files) to the file system. 
+
+Definition at line 47 of file Part\+Store.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1FilePartStore_ab8159df3b46e8f5912dbb22fb623bcc2}\label{classPoco_1_1Net_1_1FilePartStore_ab8159df3b46e8f5912dbb22fb623bcc2}} 
+\index{Poco::Net::FilePartStore@{Poco::Net::FilePartStore}!FilePartStore@{FilePartStore}}
+\index{FilePartStore@{FilePartStore}!Poco::Net::FilePartStore@{Poco::Net::FilePartStore}}
+\doxysubsubsection{\texorpdfstring{FilePartStore()}{FilePartStore()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+File\+Part\+Store\+::\+File\+Part\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{content,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{media\+Type,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{filename = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1FilePartStore_af76b4fa968b529431ecb39727d7b07a0}\label{classPoco_1_1Net_1_1FilePartStore_af76b4fa968b529431ecb39727d7b07a0}} 
+\index{Poco::Net::FilePartStore@{Poco::Net::FilePartStore}!````~FilePartStore@{$\sim$FilePartStore}}
+\index{````~FilePartStore@{$\sim$FilePartStore}!Poco::Net::FilePartStore@{Poco::Net::FilePartStore}}
+\doxysubsubsection{\texorpdfstring{$\sim$FilePartStore()}{~FilePartStore()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+File\+Part\+Store\+::$\sim$\+File\+Part\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1FilePartStore}{File\+Part\+Store}} for the given M\+I\+ME type. For security purposes, attachment filename is N\+OT used to save file to the file system. A unique temporary file name is used to persist the file. The given filename parameter is the message part (attachment) filename (see \mbox{\hyperlink{classPoco_1_1Net_1_1FilePartStore_ad33736a47624ea77961ecaaf718e1c9a}{filename()}}) only.
+
+Throws an exception if the file cannot be opened. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1FilePartStore_ad33736a47624ea77961ecaaf718e1c9a}\label{classPoco_1_1Net_1_1FilePartStore_ad33736a47624ea77961ecaaf718e1c9a}} 
+\index{Poco::Net::FilePartStore@{Poco::Net::FilePartStore}!filename@{filename}}
+\index{filename@{filename}!Poco::Net::FilePartStore@{Poco::Net::FilePartStore}}
+\doxysubsubsection{\texorpdfstring{filename()}{filename()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Net\+::\+File\+Part\+Store\+::filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns a file input stream for the given file. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Net_1_1PartSource_a0e61234e27a21757d02f00490195c5c3}{Poco\+::\+Net\+::\+Part\+Source}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1FilePartStore_a13a4c02219e7320b0a4eb1a440e0e6e3}\label{classPoco_1_1Net_1_1FilePartStore_a13a4c02219e7320b0a4eb1a440e0e6e3}} 
+\index{Poco::Net::FilePartStore@{Poco::Net::FilePartStore}!path@{path}}
+\index{path@{path}!Poco::Net::FilePartStore@{Poco::Net::FilePartStore}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Net\+::\+File\+Part\+Store\+::path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the filename portion of the path. This is the name under which the file is known to the user of this class (typically, \mbox{\hyperlink{classPoco_1_1Net_1_1MailMessage}{Mail\+Message}} class). The real name of the file as saved to the filesystem can be obtained by calling \mbox{\hyperlink{classPoco_1_1Net_1_1FilePartStore_a13a4c02219e7320b0a4eb1a440e0e6e3}{path()}} member function. \mbox{\Hypertarget{classPoco_1_1Net_1_1FilePartStore_a7ef416e69a6e1940926e3afea4391217}\label{classPoco_1_1Net_1_1FilePartStore_a7ef416e69a6e1940926e3afea4391217}} 
+\index{Poco::Net::FilePartStore@{Poco::Net::FilePartStore}!stream@{stream}}
+\index{stream@{stream}!Poco::Net::FilePartStore@{Poco::Net::FilePartStore}}
+\doxysubsubsection{\texorpdfstring{stream()}{stream()}}
+{\footnotesize\ttfamily std\+::istream\& Poco\+::\+Net\+::\+File\+Part\+Store\+::stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1FilePartStore}{File\+Part\+Store}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Net_1_1PartSource_ac134c69c00e1683bc0134ba4b5d1b79a}{Poco\+::\+Net\+::\+Part\+Source}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{PartStore_8h}{Part\+Store.\+h}}\end{DoxyCompactItemize}

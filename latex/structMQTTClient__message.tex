@@ -1,0 +1,131 @@
+\hypertarget{structMQTTClient__message}{}\doxysection{M\+Q\+T\+T\+Client\+\_\+message Struct Reference}
+\label{structMQTTClient__message}\index{MQTTClient\_message@{MQTTClient\_message}}
+
+
+{\ttfamily \#include $<$M\+Q\+T\+T\+Client.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{structMQTTClient__message_a7f5160eeef15b17f7c8ac493015f558d}{struct\+\_\+id}} \mbox{[}4\mbox{]}
+\item 
+int \mbox{\hyperlink{structMQTTClient__message_a27b983a1ac95eb5c335d40840129c0c8}{struct\+\_\+version}}
+\item 
+int \mbox{\hyperlink{structMQTTClient__message_a85b39bde61ef9f5ed853ad6489145a94}{payloadlen}}
+\item 
+void $\ast$ \mbox{\hyperlink{structMQTTClient__message_a90437a223f235ad4412d0c7c69f08125}{payload}}
+\item 
+int \mbox{\hyperlink{structMQTTClient__message_ab981c28422ec70dbf8127a4f7164d964}{qos}}
+\item 
+int \mbox{\hyperlink{structMQTTClient__message_aad83220f265db124174ad79f528bb367}{retained}}
+\item 
+int \mbox{\hyperlink{structMQTTClient__message_abbb5f23377bd9f39cc79756786fa45cc}{dup}}
+\item 
+int \mbox{\hyperlink{structMQTTClient__message_a3be81df63644606036c0a139564a1d92}{msgid}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A structure representing the payload and attributes of an M\+Q\+TT message. The message topic is not part of this structure (see \mbox{\hyperlink{Paho_2MQTTClient_8h_a83c3ee2a8491b6f07caab05abad44b39}{M\+Q\+T\+T\+Client\+\_\+publish\+Message()}}, \mbox{\hyperlink{Paho_2MQTTClient_8h_a4ba831564fda110a340bf68502e631bf}{M\+Q\+T\+T\+Client\+\_\+publish()}}, \mbox{\hyperlink{Paho_2MQTTClient_8h_ab7cca95b90f5292ffb5890b6c7bd37bc}{M\+Q\+T\+T\+Client\+\_\+receive()}}, \mbox{\hyperlink{Paho_2MQTTClient_8h_a8ce72761f1b720344d5f268a75c6d0ed}{M\+Q\+T\+T\+Client\+\_\+free\+Message()}} and \mbox{\hyperlink{Paho_2MQTTClient_8h_aa42130dd069e7e949bcab37b6dce64a5}{M\+Q\+T\+T\+Client\+\_\+message\+Arrived()}}). 
+
+Definition at line 211 of file M\+Q\+T\+T\+Client.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structMQTTClient__message_abbb5f23377bd9f39cc79756786fa45cc}\label{structMQTTClient__message_abbb5f23377bd9f39cc79756786fa45cc}} 
+\index{MQTTClient\_message@{MQTTClient\_message}!dup@{dup}}
+\index{dup@{dup}!MQTTClient\_message@{MQTTClient\_message}}
+\doxysubsubsection{\texorpdfstring{dup}{dup}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Client\+\_\+message\+::dup}
+
+The dup flag indicates whether or not this message is a duplicate. It is only meaningful when receiving Qo\+S1 messages. When true, the client application should take appropriate action to deal with the duplicate message. 
+
+Definition at line 260 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structMQTTClient__message_a3be81df63644606036c0a139564a1d92}\label{structMQTTClient__message_a3be81df63644606036c0a139564a1d92}} 
+\index{MQTTClient\_message@{MQTTClient\_message}!msgid@{msgid}}
+\index{msgid@{msgid}!MQTTClient\_message@{MQTTClient\_message}}
+\doxysubsubsection{\texorpdfstring{msgid}{msgid}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Client\+\_\+message\+::msgid}
+
+The message identifier is normally reserved for internal use by the M\+Q\+TT client and server. 
+
+Definition at line 264 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structMQTTClient__message_a90437a223f235ad4412d0c7c69f08125}\label{structMQTTClient__message_a90437a223f235ad4412d0c7c69f08125}} 
+\index{MQTTClient\_message@{MQTTClient\_message}!payload@{payload}}
+\index{payload@{payload}!MQTTClient\_message@{MQTTClient\_message}}
+\doxysubsubsection{\texorpdfstring{payload}{payload}}
+{\footnotesize\ttfamily void$\ast$ M\+Q\+T\+T\+Client\+\_\+message\+::payload}
+
+A pointer to the payload of the M\+Q\+TT message. 
+
+Definition at line 220 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structMQTTClient__message_a85b39bde61ef9f5ed853ad6489145a94}\label{structMQTTClient__message_a85b39bde61ef9f5ed853ad6489145a94}} 
+\index{MQTTClient\_message@{MQTTClient\_message}!payloadlen@{payloadlen}}
+\index{payloadlen@{payloadlen}!MQTTClient\_message@{MQTTClient\_message}}
+\doxysubsubsection{\texorpdfstring{payloadlen}{payloadlen}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Client\+\_\+message\+::payloadlen}
+
+The length of the M\+Q\+TT message payload in bytes. 
+
+Definition at line 218 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structMQTTClient__message_ab981c28422ec70dbf8127a4f7164d964}\label{structMQTTClient__message_ab981c28422ec70dbf8127a4f7164d964}} 
+\index{MQTTClient\_message@{MQTTClient\_message}!qos@{qos}}
+\index{qos@{qos}!MQTTClient\_message@{MQTTClient\_message}}
+\doxysubsubsection{\texorpdfstring{qos}{qos}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Client\+\_\+message\+::qos}
+
+The quality of service (QoS) assigned to the message. There are three levels of QoS\+: 
+\begin{DoxyDescription}
+\item[{\bfseries{Qo\+S0}} ]Fire and forget -\/ the message may not be delivered 
+\item[{\bfseries{Qo\+S1}} ]At least once -\/ the message will be delivered, but may be delivered more than once in some circumstances. 
+\item[{\bfseries{Qo\+S2}} ]Once and one only -\/ the message will be delivered exactly once. 
+\end{DoxyDescription}
+
+Definition at line 234 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structMQTTClient__message_aad83220f265db124174ad79f528bb367}\label{structMQTTClient__message_aad83220f265db124174ad79f528bb367}} 
+\index{MQTTClient\_message@{MQTTClient\_message}!retained@{retained}}
+\index{retained@{retained}!MQTTClient\_message@{MQTTClient\_message}}
+\doxysubsubsection{\texorpdfstring{retained}{retained}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Client\+\_\+message\+::retained}
+
+The retained flag serves two purposes depending on whether the message it is associated with is being published or received.
+
+{\bfseries{retained = true}}~\newline
+ For messages being published, a true setting indicates that the M\+Q\+TT server should retain a copy of the message. The message will then be transmitted to new subscribers to a topic that matches the message topic. For subscribers registering a new subscription, the flag being true indicates that the received message is not a new one, but one that has been retained by the M\+Q\+TT server.
+
+{\bfseries{retained = false}} ~\newline
+ For publishers, this ndicates that this message should not be retained by the M\+Q\+TT server. For subscribers, a false setting indicates this is a normal message, received as a result of it being published to the server. 
+
+Definition at line 253 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structMQTTClient__message_a7f5160eeef15b17f7c8ac493015f558d}\label{structMQTTClient__message_a7f5160eeef15b17f7c8ac493015f558d}} 
+\index{MQTTClient\_message@{MQTTClient\_message}!struct\_id@{struct\_id}}
+\index{struct\_id@{struct\_id}!MQTTClient\_message@{MQTTClient\_message}}
+\doxysubsubsection{\texorpdfstring{struct\_id}{struct\_id}}
+{\footnotesize\ttfamily char M\+Q\+T\+T\+Client\+\_\+message\+::struct\+\_\+id\mbox{[}4\mbox{]}}
+
+The eyecatcher for this structure. must be M\+Q\+TM. 
+
+Definition at line 214 of file M\+Q\+T\+T\+Client.\+h.
+
+\mbox{\Hypertarget{structMQTTClient__message_a27b983a1ac95eb5c335d40840129c0c8}\label{structMQTTClient__message_a27b983a1ac95eb5c335d40840129c0c8}} 
+\index{MQTTClient\_message@{MQTTClient\_message}!struct\_version@{struct\_version}}
+\index{struct\_version@{struct\_version}!MQTTClient\_message@{MQTTClient\_message}}
+\doxysubsubsection{\texorpdfstring{struct\_version}{struct\_version}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Client\+\_\+message\+::struct\+\_\+version}
+
+The version number of this structure. Must be 0 
+
+Definition at line 216 of file M\+Q\+T\+T\+Client.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+M\+Q\+T\+T/\+Paho/\mbox{\hyperlink{Paho_2MQTTClient_8h}{M\+Q\+T\+T\+Client.\+h}}\end{DoxyCompactItemize}

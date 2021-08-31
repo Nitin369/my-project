@@ -1,0 +1,143 @@
+\hypertarget{classPoco_1_1TimerCallback}{}\doxysection{Poco\+::Timer\+Callback$<$ C $>$ Class Template Reference}
+\label{classPoco_1_1TimerCallback}\index{Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}}
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Timer\+Callback$<$ C $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Timer\+Callback$<$ C $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(C\+::$\ast$ \mbox{\hyperlink{classPoco_1_1TimerCallback_a48dbe9d97df47d96847c2ccfe2d74f67}{Callback}}) (\mbox{\hyperlink{classPoco_1_1Timer}{Timer}} \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1TimerCallback_a99b1cd1e3181878cf5501454d96e162f}{Timer\+Callback}} (C \&object, \mbox{\hyperlink{classPoco_1_1TimerCallback_a48dbe9d97df47d96847c2ccfe2d74f67}{Callback}} method)
+\item 
+\mbox{\hyperlink{classPoco_1_1TimerCallback_adeb5f50811b04b4892e906b3e42d8845}{Timer\+Callback}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TimerCallback}{Timer\+Callback}} \&callback)
+\item 
+\mbox{\hyperlink{classPoco_1_1TimerCallback_ad8c2ee7fb3d56c2b46b58e2cdbf7ea8d}{$\sim$\+Timer\+Callback}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1TimerCallback}{Timer\+Callback}} \& \mbox{\hyperlink{classPoco_1_1TimerCallback_a927aa4ef9f92ef562b698cdb5fca60c7}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TimerCallback}{Timer\+Callback}} \&callback)
+\item 
+void \mbox{\hyperlink{classPoco_1_1TimerCallback_aecbf11092e9645f890b90e8ed8bf6b77}{invoke}} (\mbox{\hyperlink{classPoco_1_1Timer}{Timer}} \&timer) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1AbstractTimerCallback}{Abstract\+Timer\+Callback}} $\ast$ \mbox{\hyperlink{classPoco_1_1TimerCallback_a8aec4fb55c7b5857715d46baf80a79e4}{clone}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class C$>$\newline
+class Poco\+::\+Timer\+Callback$<$ C $>$}
+
+This template class implements an adapter that sits between a \mbox{\hyperlink{classPoco_1_1Timer}{Timer}} and an object\textquotesingle{}s method invoked by the timer. It is quite similar in concept to the \mbox{\hyperlink{classPoco_1_1RunnableAdapter}{Runnable\+Adapter}}, but provides some \mbox{\hyperlink{classPoco_1_1Timer}{Timer}} specific additional methods. See the \mbox{\hyperlink{classPoco_1_1Timer}{Timer}} class for information on how to use this template class. 
+
+Definition at line 177 of file Timer.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1TimerCallback_a48dbe9d97df47d96847c2ccfe2d74f67}\label{classPoco_1_1TimerCallback_a48dbe9d97df47d96847c2ccfe2d74f67}} 
+\index{Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}!Callback@{Callback}}
+\index{Callback@{Callback}!Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{Callback}{Callback}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+typedef void(C\+::$\ast$ \mbox{\hyperlink{classPoco_1_1TimerCallback}{Poco\+::\+Timer\+Callback}}$<$ C $>$\+::Callback) (\mbox{\hyperlink{classPoco_1_1Timer}{Timer}} \&)}
+
+
+
+Definition at line 186 of file Timer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1TimerCallback_a99b1cd1e3181878cf5501454d96e162f}\label{classPoco_1_1TimerCallback_a99b1cd1e3181878cf5501454d96e162f}} 
+\index{Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}!TimerCallback@{TimerCallback}}
+\index{TimerCallback@{TimerCallback}!Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{TimerCallback()}{TimerCallback()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1TimerCallback}{Poco\+::\+Timer\+Callback}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1TimerCallback}{Timer\+Callback}} (\begin{DoxyParamCaption}\item[{C \&}]{object,  }\item[{\mbox{\hyperlink{classPoco_1_1TimerCallback_a48dbe9d97df47d96847c2ccfe2d74f67}{Callback}}}]{method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 188 of file Timer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1TimerCallback_adeb5f50811b04b4892e906b3e42d8845}\label{classPoco_1_1TimerCallback_adeb5f50811b04b4892e906b3e42d8845}} 
+\index{Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}!TimerCallback@{TimerCallback}}
+\index{TimerCallback@{TimerCallback}!Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{TimerCallback()}{TimerCallback()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1TimerCallback}{Poco\+::\+Timer\+Callback}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1TimerCallback}{Timer\+Callback}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TimerCallback}{Timer\+Callback}}$<$ C $>$ \&}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 192 of file Timer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1TimerCallback_ad8c2ee7fb3d56c2b46b58e2cdbf7ea8d}\label{classPoco_1_1TimerCallback_ad8c2ee7fb3d56c2b46b58e2cdbf7ea8d}} 
+\index{Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}!````~TimerCallback@{$\sim$TimerCallback}}
+\index{````~TimerCallback@{$\sim$TimerCallback}!Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$TimerCallback()}{~TimerCallback()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1TimerCallback}{Poco\+::\+Timer\+Callback}}$<$ C $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1TimerCallback}{Timer\+Callback}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 196 of file Timer.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1TimerCallback_a8aec4fb55c7b5857715d46baf80a79e4}\label{classPoco_1_1TimerCallback_a8aec4fb55c7b5857715d46baf80a79e4}} 
+\index{Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}!clone@{clone}}
+\index{clone@{clone}!Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1AbstractTimerCallback}{Abstract\+Timer\+Callback}}$\ast$ \mbox{\hyperlink{classPoco_1_1TimerCallback}{Poco\+::\+Timer\+Callback}}$<$ C $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractTimerCallback_ad0a63911e64196d48a585b253d498c4f}{Poco\+::\+Abstract\+Timer\+Callback}}.
+
+
+
+Definition at line 215 of file Timer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1TimerCallback_aecbf11092e9645f890b90e8ed8bf6b77}\label{classPoco_1_1TimerCallback_aecbf11092e9645f890b90e8ed8bf6b77}} 
+\index{Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}!invoke@{invoke}}
+\index{invoke@{invoke}!Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1TimerCallback}{Poco\+::\+Timer\+Callback}}$<$ C $>$\+::invoke (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Timer}{Timer}} \&}]{timer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractTimerCallback_a1caff2e7aef86655735563a744b3daed}{Poco\+::\+Abstract\+Timer\+Callback}}.
+
+
+
+Definition at line 210 of file Timer.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1TimerCallback_a927aa4ef9f92ef562b698cdb5fca60c7}\label{classPoco_1_1TimerCallback_a927aa4ef9f92ef562b698cdb5fca60c7}} 
+\index{Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::TimerCallback$<$ C $>$@{Poco::TimerCallback$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1TimerCallback}{Timer\+Callback}}\& \mbox{\hyperlink{classPoco_1_1TimerCallback}{Poco\+::\+Timer\+Callback}}$<$ C $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TimerCallback}{Timer\+Callback}}$<$ C $>$ \&}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 200 of file Timer.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Timer_8h}{Timer.\+h}}\end{DoxyCompactItemize}

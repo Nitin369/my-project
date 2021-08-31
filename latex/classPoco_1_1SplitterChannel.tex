@@ -1,0 +1,150 @@
+\hypertarget{classPoco_1_1SplitterChannel}{}\doxysection{Poco\+::Splitter\+Channel Class Reference}
+\label{classPoco_1_1SplitterChannel}\index{Poco::SplitterChannel@{Poco::SplitterChannel}}
+
+
+{\ttfamily \#include $<$Splitter\+Channel.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Splitter\+Channel\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Splitter\+Channel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1SplitterChannel_a7a2b3f27639e7a18d9ca95088d1dd59e}{Splitter\+Channel}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1SplitterChannel_a84809fef594d920c47fb3df1411e7ce2}{add\+Channel}} (\mbox{\hyperlink{classPoco_1_1Channel}{Channel}} $\ast$p\+Channel)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1SplitterChannel}{Splitter\+Channel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1SplitterChannel_a5025fdd12dae9e15a2af90d0c6e93da9}{remove\+Channel}} (\mbox{\hyperlink{classPoco_1_1Channel}{Channel}} $\ast$p\+Channel)
+\begin{DoxyCompactList}\small\item\em Attaches a channel, which may not be null. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1SplitterChannel_afe2c7b266faea535387d3fb928b4e5b7}{log}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&msg)
+\begin{DoxyCompactList}\small\item\em Removes a channel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1SplitterChannel_ab95fe91e054b42a77975c10335b588d0}{set\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\item 
+void \mbox{\hyperlink{classPoco_1_1SplitterChannel_aeae8ef6e64f6a3a130cb6e33ef8458b6}{close}} ()
+\item 
+int \mbox{\hyperlink{classPoco_1_1SplitterChannel_a3d61f0bfdea956bc4a8e317b0d40d266}{count}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Removes all channels. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1Channel}{Channel}} $\ast$ $>$ \& \mbox{\hyperlink{classPoco_1_1SplitterChannel_a05d4780757f86fa53e84e57eb64fc6e9}{get\+Channel\+Vec}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1SplitterChannel_a7ab89f19ee5e22180dd96bd0dc263136}{$\sim$\+Splitter\+Channel}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of channels in the \mbox{\hyperlink{classPoco_1_1SplitterChannel}{Splitter\+Channel}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This channel sends a message to multiple channels simultaneously. 
+
+Definition at line 32 of file Splitter\+Channel.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1SplitterChannel_a7a2b3f27639e7a18d9ca95088d1dd59e}\label{classPoco_1_1SplitterChannel_a7a2b3f27639e7a18d9ca95088d1dd59e}} 
+\index{Poco::SplitterChannel@{Poco::SplitterChannel}!SplitterChannel@{SplitterChannel}}
+\index{SplitterChannel@{SplitterChannel}!Poco::SplitterChannel@{Poco::SplitterChannel}}
+\doxysubsubsection{\texorpdfstring{SplitterChannel()}{SplitterChannel()}}
+{\footnotesize\ttfamily Poco\+::\+Splitter\+Channel\+::\+Splitter\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1SplitterChannel_a7ab89f19ee5e22180dd96bd0dc263136}\label{classPoco_1_1SplitterChannel_a7ab89f19ee5e22180dd96bd0dc263136}} 
+\index{Poco::SplitterChannel@{Poco::SplitterChannel}!````~SplitterChannel@{$\sim$SplitterChannel}}
+\index{````~SplitterChannel@{$\sim$SplitterChannel}!Poco::SplitterChannel@{Poco::SplitterChannel}}
+\doxysubsubsection{\texorpdfstring{$\sim$SplitterChannel()}{~SplitterChannel()}}
+{\footnotesize\ttfamily Poco\+::\+Splitter\+Channel\+::$\sim$\+Splitter\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the number of channels in the \mbox{\hyperlink{classPoco_1_1SplitterChannel}{Splitter\+Channel}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1SplitterChannel_a84809fef594d920c47fb3df1411e7ce2}\label{classPoco_1_1SplitterChannel_a84809fef594d920c47fb3df1411e7ce2}} 
+\index{Poco::SplitterChannel@{Poco::SplitterChannel}!addChannel@{addChannel}}
+\index{addChannel@{addChannel}!Poco::SplitterChannel@{Poco::SplitterChannel}}
+\doxysubsubsection{\texorpdfstring{addChannel()}{addChannel()}}
+{\footnotesize\ttfamily void Poco\+::\+Splitter\+Channel\+::add\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Channel}{Channel}} $\ast$}]{p\+Channel }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1SplitterChannel}{Splitter\+Channel}}. 
+
+\mbox{\Hypertarget{classPoco_1_1SplitterChannel_aeae8ef6e64f6a3a130cb6e33ef8458b6}\label{classPoco_1_1SplitterChannel_aeae8ef6e64f6a3a130cb6e33ef8458b6}} 
+\index{Poco::SplitterChannel@{Poco::SplitterChannel}!close@{close}}
+\index{close@{close}!Poco::SplitterChannel@{Poco::SplitterChannel}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Splitter\+Channel\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets or changes a configuration property.
+
+Only the \char`\"{}channel\char`\"{} property is supported, which allows adding a comma-\/separated list of channels via the \mbox{\hyperlink{classPoco_1_1LoggingRegistry}{Logging\+Registry}}. The \char`\"{}channel\char`\"{} property is set-\/only. To simplify file-\/based configuration, all property names starting with \char`\"{}channel\char`\"{} are treated as \char`\"{}channel\char`\"{}. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Channel_a2056a173f804c51411942649bd4d6408}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1SplitterChannel_a3d61f0bfdea956bc4a8e317b0d40d266}\label{classPoco_1_1SplitterChannel_a3d61f0bfdea956bc4a8e317b0d40d266}} 
+\index{Poco::SplitterChannel@{Poco::SplitterChannel}!count@{count}}
+\index{count@{count}!Poco::SplitterChannel@{Poco::SplitterChannel}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Poco\+::\+Splitter\+Channel\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Removes all channels. 
+
+\mbox{\Hypertarget{classPoco_1_1SplitterChannel_a05d4780757f86fa53e84e57eb64fc6e9}\label{classPoco_1_1SplitterChannel_a05d4780757f86fa53e84e57eb64fc6e9}} 
+\index{Poco::SplitterChannel@{Poco::SplitterChannel}!getChannelVec@{getChannelVec}}
+\index{getChannelVec@{getChannelVec}!Poco::SplitterChannel@{Poco::SplitterChannel}}
+\doxysubsubsection{\texorpdfstring{getChannelVec()}{getChannelVec()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$\mbox{\hyperlink{classPoco_1_1Channel}{Channel}}$\ast$$>$\& Poco\+::\+Splitter\+Channel\+::get\+Channel\+Vec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 75 of file Splitter\+Channel.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1SplitterChannel_afe2c7b266faea535387d3fb928b4e5b7}\label{classPoco_1_1SplitterChannel_afe2c7b266faea535387d3fb928b4e5b7}} 
+\index{Poco::SplitterChannel@{Poco::SplitterChannel}!log@{log}}
+\index{log@{log}!Poco::SplitterChannel@{Poco::SplitterChannel}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Poco\+::\+Splitter\+Channel\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes a channel. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Channel_aeafdcc5ce2e0e38d96f15a60a563da4e}{Poco\+::\+Channel}}.
+
+\mbox{\Hypertarget{classPoco_1_1SplitterChannel_a5025fdd12dae9e15a2af90d0c6e93da9}\label{classPoco_1_1SplitterChannel_a5025fdd12dae9e15a2af90d0c6e93da9}} 
+\index{Poco::SplitterChannel@{Poco::SplitterChannel}!removeChannel@{removeChannel}}
+\index{removeChannel@{removeChannel}!Poco::SplitterChannel@{Poco::SplitterChannel}}
+\doxysubsubsection{\texorpdfstring{removeChannel()}{removeChannel()}}
+{\footnotesize\ttfamily void Poco\+::\+Splitter\+Channel\+::remove\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Channel}{Channel}} $\ast$}]{p\+Channel }\end{DoxyParamCaption})}
+
+
+
+Attaches a channel, which may not be null. 
+
+\mbox{\Hypertarget{classPoco_1_1SplitterChannel_ab95fe91e054b42a77975c10335b588d0}\label{classPoco_1_1SplitterChannel_ab95fe91e054b42a77975c10335b588d0}} 
+\index{Poco::SplitterChannel@{Poco::SplitterChannel}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!Poco::SplitterChannel@{Poco::SplitterChannel}}
+\doxysubsubsection{\texorpdfstring{setProperty()}{setProperty()}}
+{\footnotesize\ttfamily void Poco\+::\+Splitter\+Channel\+::set\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sends the given \mbox{\hyperlink{classPoco_1_1Message}{Message}} to all attaches channels. ~\newline
+ 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Channel_a67c2a274e476745b902ced03fb485c6e}{Poco\+::\+Channel}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{SplitterChannel_8h}{Splitter\+Channel.\+h}}\end{DoxyCompactItemize}

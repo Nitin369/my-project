@@ -1,0 +1,239 @@
+\hypertarget{classPoco_1_1Optional}{}\doxysection{Poco\+::Optional$<$ C $>$ Class Template Reference}
+\label{classPoco_1_1Optional}\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+
+
+{\ttfamily \#include $<$Optional.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Optional_a46e069e471a6205b6007baba1031f1d8}{Optional}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Optional_aed145732fb855ad830170c2a51c7de3c}{Optional}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} C \&\mbox{\hyperlink{classPoco_1_1Optional_a69bcb485f299bfb15877c04fc28c5ce1}{value}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Optional_a284c966da20ba69456bd00aeb146893d}{Optional}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Optional}{Optional}} \&other)
+\item 
+\mbox{\hyperlink{classPoco_1_1Optional_ad3430a8752ed9eceb00d9908a959c722}{$\sim$\+Optional}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Optional}{Optional}} \& \mbox{\hyperlink{classPoco_1_1Optional_adedfedd5655a8115a34303ce1fb8b30d}{assign}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} C \&\mbox{\hyperlink{classPoco_1_1Optional_a69bcb485f299bfb15877c04fc28c5ce1}{value}})
+\begin{DoxyCompactList}\small\item\em Assigns a value to the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Optional}{Optional}} \& \mbox{\hyperlink{classPoco_1_1Optional_a81c949a65fec63d7c34b711da293b04a}{assign}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Optional}{Optional}} \&other)
+\begin{DoxyCompactList}\small\item\em Assigns another \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Optional}{Optional}} \& \mbox{\hyperlink{classPoco_1_1Optional_aeb73bb245dc5bd80b4e4a2ce94c86558}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} C \&\mbox{\hyperlink{classPoco_1_1Optional_a69bcb485f299bfb15877c04fc28c5ce1}{value}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Optional}{Optional}} \& \mbox{\hyperlink{classPoco_1_1Optional_a32675321b7595f3d92f603b64cb9eb62}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Optional}{Optional}} \&other)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Optional_aeb2a3b39e737a152b4babfbf0320cf4d}{swap}} (\mbox{\hyperlink{classPoco_1_1Optional}{Optional}} \&other)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} C \& \mbox{\hyperlink{classPoco_1_1Optional_a69bcb485f299bfb15877c04fc28c5ce1}{value}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} C \& \mbox{\hyperlink{classPoco_1_1Optional_a1b4b89a3299918db7f183f0485abea0c}{value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} C \&deflt) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Optional_aa976774a4bcc0efe46d7abb7e970b40a}{is\+Specified}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}\textquotesingle{}s value has been specified. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Optional_a66683a23049ac6758ba3a4803c07f32a}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename C$>$\newline
+class Poco\+::\+Optional$<$ C $>$}
+
+\mbox{\hyperlink{classPoco_1_1Optional}{Optional}} is a simple wrapper class for value types that allows to introduce a specified/unspecified state to value objects.
+
+An \mbox{\hyperlink{classPoco_1_1Optional}{Optional}} can be default constructed. In this case, the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}} will have a Null value and \mbox{\hyperlink{classPoco_1_1Optional_aa976774a4bcc0efe46d7abb7e970b40a}{is\+Specified()}} will return false. Calling \mbox{\hyperlink{classPoco_1_1Optional_a69bcb485f299bfb15877c04fc28c5ce1}{value()}}(without default value) on a Null object will throw a Null\+Value\+Exception.
+
+An \mbox{\hyperlink{classPoco_1_1Optional}{Optional}} can also be constructed from a value. It is possible to assign a value to an \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}, and to reset an \mbox{\hyperlink{classPoco_1_1Optional}{Optional}} to contain a Null value by calling \mbox{\hyperlink{classPoco_1_1Optional_a66683a23049ac6758ba3a4803c07f32a}{clear()}}.
+
+For use with \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}, the value type should support default construction.
+
+Note that the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}} class is basically the same as \mbox{\hyperlink{classPoco_1_1Nullable}{Nullable}}. However, serializers may treat \mbox{\hyperlink{classPoco_1_1Nullable}{Nullable}} and \mbox{\hyperlink{classPoco_1_1Optional}{Optional}} differently. An example is \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} serialization based on \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} Schema, where \mbox{\hyperlink{classPoco_1_1Optional}{Optional}} would be used for an element with min\+Occurs == 0, whereas \mbox{\hyperlink{classPoco_1_1Nullable}{Nullable}} would be used on an element with nillable == true. 
+
+Definition at line 32 of file Optional.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Optional_a46e069e471a6205b6007baba1031f1d8}\label{classPoco_1_1Optional_a46e069e471a6205b6007baba1031f1d8}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!Optional@{Optional}}
+\index{Optional@{Optional}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{Optional()}{Optional()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1Optional}{Optional}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 58 of file Optional.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Optional_aed145732fb855ad830170c2a51c7de3c}\label{classPoco_1_1Optional_aed145732fb855ad830170c2a51c7de3c}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!Optional@{Optional}}
+\index{Optional@{Optional}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{Optional()}{Optional()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1Optional}{Optional}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} C \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 65 of file Optional.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Optional_a284c966da20ba69456bd00aeb146893d}\label{classPoco_1_1Optional_a284c966da20ba69456bd00aeb146893d}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!Optional@{Optional}}
+\index{Optional@{Optional}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{Optional()}{Optional()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1Optional}{Optional}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}$<$ C $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 72 of file Optional.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Optional_ad3430a8752ed9eceb00d9908a959c722}\label{classPoco_1_1Optional_ad3430a8752ed9eceb00d9908a959c722}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!````~Optional@{$\sim$Optional}}
+\index{````~Optional@{$\sim$Optional}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Optional()}{~Optional()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Optional}{Optional}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}. 
+
+
+
+Definition at line 79 of file Optional.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Optional_adedfedd5655a8115a34303ce1fb8b30d}\label{classPoco_1_1Optional_adedfedd5655a8115a34303ce1fb8b30d}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!assign@{assign}}
+\index{assign@{assign}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Optional}{Optional}}\& \mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::assign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} C \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns a value to the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}. 
+
+
+
+Definition at line 84 of file Optional.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Optional_a81c949a65fec63d7c34b711da293b04a}\label{classPoco_1_1Optional_a81c949a65fec63d7c34b711da293b04a}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!assign@{assign}}
+\index{assign@{assign}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Optional}{Optional}}\& \mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::assign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}$<$ C $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns another \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}. 
+
+
+
+Definition at line 92 of file Optional.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Optional_a66683a23049ac6758ba3a4803c07f32a}\label{classPoco_1_1Optional_a66683a23049ac6758ba3a4803c07f32a}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!clear@{clear}}
+\index{clear@{clear}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clears the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}. 
+
+
+
+Definition at line 141 of file Optional.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Optional_aa976774a4bcc0efe46d7abb7e970b40a}\label{classPoco_1_1Optional_aa976774a4bcc0efe46d7abb7e970b40a}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!isSpecified@{isSpecified}}
+\index{isSpecified@{isSpecified}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{isSpecified()}{isSpecified()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::is\+Specified (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true iff the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}\textquotesingle{}s value has been specified. 
+
+
+
+Definition at line 135 of file Optional.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Optional_aeb73bb245dc5bd80b4e4a2ce94c86558}\label{classPoco_1_1Optional_aeb73bb245dc5bd80b4e4a2ce94c86558}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Optional}{Optional}}\& \mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} C \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 100 of file Optional.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Optional_a32675321b7595f3d92f603b64cb9eb62}\label{classPoco_1_1Optional_a32675321b7595f3d92f603b64cb9eb62}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Optional}{Optional}}\& \mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}$<$ C $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 105 of file Optional.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Optional_aeb2a3b39e737a152b4babfbf0320cf4d}\label{classPoco_1_1Optional_aeb2a3b39e737a152b4babfbf0320cf4d}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!swap@{swap}}
+\index{swap@{swap}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Optional}{Optional}}$<$ C $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 110 of file Optional.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Optional_a69bcb485f299bfb15877c04fc28c5ce1}\label{classPoco_1_1Optional_a69bcb485f299bfb15877c04fc28c5ce1}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!value@{value}}
+\index{value@{value}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} C\& \mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}\textquotesingle{}s value.
+
+Throws a Poco\+::\+Null\+Value\+Exception if the value has not been specified. 
+
+Definition at line 116 of file Optional.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Optional_a1b4b89a3299918db7f183f0485abea0c}\label{classPoco_1_1Optional_a1b4b89a3299918db7f183f0485abea0c}} 
+\index{Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}!value@{value}}
+\index{value@{value}!Poco::Optional$<$ C $>$@{Poco::Optional$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} C\& \mbox{\hyperlink{classPoco_1_1Optional}{Poco\+::\+Optional}}$<$ C $>$\+::value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} C \&}]{deflt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}\textquotesingle{}s value, or the given default value if the \mbox{\hyperlink{classPoco_1_1Optional}{Optional}}\textquotesingle{}s value has not been specified. 
+
+Definition at line 127 of file Optional.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Optional_8h}{Optional.\+h}}\end{DoxyCompactItemize}

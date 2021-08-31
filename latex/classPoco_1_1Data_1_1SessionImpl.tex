@@ -1,0 +1,557 @@
+\hypertarget{classPoco_1_1Data_1_1SessionImpl}{}\doxysection{Poco\+::Data\+::Session\+Impl Class Reference}
+\label{classPoco_1_1Data_1_1SessionImpl}\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+
+
+{\ttfamily \#include $<$Session\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::Session\+Impl\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Data\+::Session\+Impl\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_aaaf95786788b65c667bb656c648044d0}{Session\+Impl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a25cd3353029f8c1bfc9a70a249e4b38b}{connection\+String}}, std\+::size\+\_\+t timeout=\mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a5e8fac3c026749487f40f2778acaeb0d}{L\+O\+G\+I\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+D\+E\+F\+A\+U\+LT}})
+\begin{DoxyCompactList}\small\item\em Default connection/login timeout in seconds. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a4b031220bdaf67f88ca5c01fad4e151c}{$\sim$\+Session\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl}{Statement\+Impl}} $\ast$ \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_aab568cf020086dd7b905d407fe167cac}{create\+Statement\+Impl}} ()=0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_abcd451a94e4a95a453b39c92cdc6400d}{open}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a25cd3353029f8c1bfc9a70a249e4b38b}{connection\+String}}=\char`\"{}\char`\"{})=0
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl}{Statement\+Impl}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a56bd07900120854b00f175a3fbeec243}{close}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a9e1034c140a3ca8fea39def72151e7df}{is\+Connected}} ()=0
+\begin{DoxyCompactList}\small\item\em Closes the connection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_ac7da10e6b96c9956f5e04ced7d95727a}{set\+Login\+Timeout}} (std\+::size\+\_\+t timeout)
+\begin{DoxyCompactList}\small\item\em Returns true if session is connected, false otherwise. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a16020ff9c2e1765c8610b4a4bac07b3d}{get\+Login\+Timeout}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the session login timeout value. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a253415881cfd1618ef096f25dc205a4f}{set\+Connection\+Timeout}} (std\+::size\+\_\+t timeout)=0
+\begin{DoxyCompactList}\small\item\em Returns the session login timeout value. \end{DoxyCompactList}\item 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_aa894c52922462cdbf331479f41437409}{get\+Connection\+Timeout}} ()=0
+\begin{DoxyCompactList}\small\item\em Sets the session connection timeout value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a973cea92664fa5cdc82590540312c077}{reconnect}} ()
+\begin{DoxyCompactList}\small\item\em Returns the session connection timeout value. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a0fda66a85d855d967a9ef447b1295e95}{begin}} ()=0
+\begin{DoxyCompactList}\small\item\em Closes the connection and opens it again. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a404f99414f020dd7f3d60ae9743346fa}{commit}} ()=0
+\begin{DoxyCompactList}\small\item\em Starts a transaction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_aea797135cd77d40d0c8379da4cabf56e}{rollback}} ()=0
+\begin{DoxyCompactList}\small\item\em Commits and ends a transaction. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a525d97a47746636608cc1dedebdca248}{can\+Transact}} ()=0
+\begin{DoxyCompactList}\small\item\em Aborts a transaction. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a9b7a4e8eb8ad3abb55861b0ab47c7dec}{is\+Transaction}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns true if session has transaction capabilities. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a4482eda0169c2d1c23588bf56e2367bd}{set\+Transaction\+Isolation}} (Poco\+::\+U\+Int32)=0
+\begin{DoxyCompactList}\small\item\em Returns true iff a transaction is a transaction is in progress, false otherwise. \end{DoxyCompactList}\item 
+virtual Poco\+::\+U\+Int32 \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a3d764022ce7b39e192d9ba72bfc59b77}{get\+Transaction\+Isolation}} ()=0
+\begin{DoxyCompactList}\small\item\em Sets the transaction isolation level. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_ab30a2a0ddf3992548cba99e8f978c9d8}{has\+Transaction\+Isolation}} (Poco\+::\+U\+Int32)=0
+\begin{DoxyCompactList}\small\item\em Returns the transaction isolation level. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a055672883c7cff02ecca6632313aa6a6}{is\+Transaction\+Isolation}} (Poco\+::\+U\+Int32)=0
+\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a5387fc595aa97443533aba5a2c19e0e2}{connector\+Name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a25cd3353029f8c1bfc9a70a249e4b38b}{connection\+String}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the name of the connector. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_ab896ad7518e750999b9549b79d457f57}{uri}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns formatted \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a0bc9a9d0e5a2de2a276325033bbe2613}{set\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool state)=0
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} for this session. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a5b63f60915d5c65f45c053a70a481acb}{get\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)=0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_ae8ce1167ab86396cbef04cd208323f00}{set\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&value)=0
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a6a8d8b9930f13e448c475aa3ede6beba}{get\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_afe21ea666979506cf9f237ef3ca9fbc4}{uri}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&connector, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a25cd3353029f8c1bfc9a70a249e4b38b}{connection\+String}})
+\begin{DoxyCompactList}\small\item\em Returns the connection string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a346572563b31d3ae591bd33bdf5668ce}{L\+O\+G\+I\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+I\+N\+F\+I\+N\+I\+TE}} = 0
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a5e8fac3c026749487f40f2778acaeb0d}{L\+O\+G\+I\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+D\+E\+F\+A\+U\+LT}} = 60
+\begin{DoxyCompactList}\small\item\em Infinite connection/login timeout. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_aee5e994591ac544347d1e1d61fb633c1}{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+I\+N\+F\+I\+N\+I\+TE}} = 0
+\begin{DoxyCompactList}\small\item\em Default connection/login timeout in seconds. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a4d65f78bff411273fee932be828432de}{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+D\+E\+F\+A\+U\+LT}} = \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_aee5e994591ac544347d1e1d61fb633c1}{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+I\+N\+F\+I\+N\+I\+TE}}
+\begin{DoxyCompactList}\small\item\em Infinite connection/login timeout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a43b29ec5ebadde7822250d72094cb154}{set\+Connection\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a25cd3353029f8c1bfc9a70a249e4b38b}{connection\+String}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for \mbox{\hyperlink{classPoco_1_1Data_1_1Session}{Session}} functionality that subclasses must extend. \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}} objects are noncopyable. 
+
+Definition at line 37 of file Session\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_aaaf95786788b65c667bb656c648044d0}\label{classPoco_1_1Data_1_1SessionImpl_aaaf95786788b65c667bb656c648044d0}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!SessionImpl@{SessionImpl}}
+\index{SessionImpl@{SessionImpl}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{SessionImpl()}{SessionImpl()}}
+{\footnotesize\ttfamily Poco\+::\+Data\+::\+Session\+Impl\+::\+Session\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{connection\+String,  }\item[{std\+::size\+\_\+t}]{timeout = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_a5e8fac3c026749487f40f2778acaeb0d}{L\+O\+G\+I\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+D\+E\+F\+A\+U\+LT}}} }\end{DoxyParamCaption})}
+
+
+
+Default connection/login timeout in seconds. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a4b031220bdaf67f88ca5c01fad4e151c}\label{classPoco_1_1Data_1_1SessionImpl_a4b031220bdaf67f88ca5c01fad4e151c}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!````~SessionImpl@{$\sim$SessionImpl}}
+\index{````~SessionImpl@{$\sim$SessionImpl}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{$\sim$SessionImpl()}{~SessionImpl()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Data\+::\+Session\+Impl\+::$\sim$\+Session\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}}. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_a3371fe496db2e2cdc33d4c4d9484d66e}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a0fda66a85d855d967a9ef447b1295e95}\label{classPoco_1_1Data_1_1SessionImpl_a0fda66a85d855d967a9ef447b1295e95}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!begin@{begin}}
+\index{begin@{begin}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Data\+::\+Session\+Impl\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Closes the connection and opens it again. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_a763c2a93b38055087fe8d531859e175c}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a94effd6569c4826afc858bb3e580e34d}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a525d97a47746636608cc1dedebdca248}\label{classPoco_1_1Data_1_1SessionImpl_a525d97a47746636608cc1dedebdca248}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!canTransact@{canTransact}}
+\index{canTransact@{canTransact}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{canTransact()}{canTransact()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Data\+::\+Session\+Impl\+::can\+Transact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Aborts a transaction. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_ae0b376a0aa439bb32e24b90db3b77da9}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_aff94d397b146824f367a5261312054cc}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a56bd07900120854b00f175a3fbeec243}\label{classPoco_1_1Data_1_1SessionImpl_a56bd07900120854b00f175a3fbeec243}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!close@{close}}
+\index{close@{close}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Data\+::\+Session\+Impl\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Opens the session using the supplied string. Can also be used with default empty string to reconnect a disconnected session. If the connection is not established within requested timeout (specified in seconds), a Connection\+Failed\+Exception is thrown. Zero timout means indefinite 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_a16b72bb2a77991a4f8b22fa535e3e1fb}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a107cac845d9513de04d4dd95939109c5}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a404f99414f020dd7f3d60ae9743346fa}\label{classPoco_1_1Data_1_1SessionImpl_a404f99414f020dd7f3d60ae9743346fa}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!commit@{commit}}
+\index{commit@{commit}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Data\+::\+Session\+Impl\+::commit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Starts a transaction. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_a971059ea3236d43ce3688c25f8af4ab9}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_aac50d5fec2883140f40d8ca95eef290e}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a25cd3353029f8c1bfc9a70a249e4b38b}\label{classPoco_1_1Data_1_1SessionImpl_a25cd3353029f8c1bfc9a70a249e4b38b}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!connectionString@{connectionString}}
+\index{connectionString@{connectionString}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{connectionString()}{connectionString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Data\+::\+Session\+Impl\+::connection\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the name of the connector. 
+
+
+
+Definition at line 189 of file Session\+Impl.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a5387fc595aa97443533aba5a2c19e0e2}\label{classPoco_1_1Data_1_1SessionImpl_a5387fc595aa97443533aba5a2c19e0e2}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!connectorName@{connectorName}}
+\index{connectorName@{connectorName}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{connectorName()}{connectorName()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+Data\+::\+Session\+Impl\+::connector\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true iff the transaction isolation level corresponds to the supplied bitmask. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_ad4571772a90f47b95a744d082213ffae}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_aa7dfe67859bdd57d4bf4f8132c1371be}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_aab568cf020086dd7b905d407fe167cac}\label{classPoco_1_1Data_1_1SessionImpl_aab568cf020086dd7b905d407fe167cac}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!createStatementImpl@{createStatementImpl}}
+\index{createStatementImpl@{createStatementImpl}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{createStatementImpl()}{createStatementImpl()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl}{Statement\+Impl}}$\ast$ Poco\+::\+Data\+::\+Session\+Impl\+::create\+Statement\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_a64482beba5026630249da8209a18f15e}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a1567cd572a4c132375aff5d63cb5b7bf}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_aa894c52922462cdbf331479f41437409}\label{classPoco_1_1Data_1_1SessionImpl_aa894c52922462cdbf331479f41437409}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!getConnectionTimeout@{getConnectionTimeout}}
+\index{getConnectionTimeout@{getConnectionTimeout}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{getConnectionTimeout()}{getConnectionTimeout()}}
+{\footnotesize\ttfamily virtual std\+::size\+\_\+t Poco\+::\+Data\+::\+Session\+Impl\+::get\+Connection\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the session connection timeout value. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_a4427aee6d9825026da57fab64662730a}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a53ad7742a642a9f11f63172b6386a68d}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a5b63f60915d5c65f45c053a70a481acb}\label{classPoco_1_1Data_1_1SessionImpl_a5b63f60915d5c65f45c053a70a481acb}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!getFeature@{getFeature}}
+\index{getFeature@{getFeature}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{getFeature()}{getFeature()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Data\+::\+Session\+Impl\+::get\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set the state of a feature.
+
+Features are a generic extension mechanism for session implementations. and are defined by the underlying \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}} instance.
+
+Throws a Not\+Supported\+Exception if the requested feature is not supported by the underlying implementation. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_ac8086b635c37b671c6c16882fa98c431}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl$<$ C $>$}}, \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_ac8086b635c37b671c6c16882fa98c431}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl$<$ Session\+Impl $>$}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a0aac3b4187c912ac390cd68181dccf48}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a16020ff9c2e1765c8610b4a4bac07b3d}\label{classPoco_1_1Data_1_1SessionImpl_a16020ff9c2e1765c8610b4a4bac07b3d}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!getLoginTimeout@{getLoginTimeout}}
+\index{getLoginTimeout@{getLoginTimeout}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{getLoginTimeout()}{getLoginTimeout()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+Data\+::\+Session\+Impl\+::get\+Login\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the session login timeout value. 
+
+
+
+Definition at line 201 of file Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a6a8d8b9930f13e448c475aa3ede6beba}\label{classPoco_1_1Data_1_1SessionImpl_a6a8d8b9930f13e448c475aa3ede6beba}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{getProperty()}{getProperty()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} Poco\+::\+Data\+::\+Session\+Impl\+::get\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set the value of a property.
+
+Properties are a generic extension mechanism for session implementations. and are defined by the underlying \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}} instance.
+
+Throws a Not\+Supported\+Exception if the requested property is not supported by the underlying implementation. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a2c82ebed3018fd837831af44bff8a41b}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl$<$ C $>$}}, \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a2c82ebed3018fd837831af44bff8a41b}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl$<$ Session\+Impl $>$}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a1e1d77f546c853691d4ec7d4e3fa4e28}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a3d764022ce7b39e192d9ba72bfc59b77}\label{classPoco_1_1Data_1_1SessionImpl_a3d764022ce7b39e192d9ba72bfc59b77}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!getTransactionIsolation@{getTransactionIsolation}}
+\index{getTransactionIsolation@{getTransactionIsolation}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{getTransactionIsolation()}{getTransactionIsolation()}}
+{\footnotesize\ttfamily virtual Poco\+::\+U\+Int32 Poco\+::\+Data\+::\+Session\+Impl\+::get\+Transaction\+Isolation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the transaction isolation level. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_ab93a797c801659cff4fb5b1a3a4b6127}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a9aafa072a66b67ccba412bb7d2347de7}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_ab30a2a0ddf3992548cba99e8f978c9d8}\label{classPoco_1_1Data_1_1SessionImpl_ab30a2a0ddf3992548cba99e8f978c9d8}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!hasTransactionIsolation@{hasTransactionIsolation}}
+\index{hasTransactionIsolation@{hasTransactionIsolation}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{hasTransactionIsolation()}{hasTransactionIsolation()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Data\+::\+Session\+Impl\+::has\+Transaction\+Isolation (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int32}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the transaction isolation level. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_ab63b46055ed5e5ec1de7785600344c87}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_a5e246a2fc2e8e7eff42d5ca3decddd20}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a9e1034c140a3ca8fea39def72151e7df}\label{classPoco_1_1Data_1_1SessionImpl_a9e1034c140a3ca8fea39def72151e7df}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Data\+::\+Session\+Impl\+::is\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Closes the connection. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_a335e123f6719f2368e0773f7a921d959}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a44f203fced98eaac1bafdfa0b829effa}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a9b7a4e8eb8ad3abb55861b0ab47c7dec}\label{classPoco_1_1Data_1_1SessionImpl_a9b7a4e8eb8ad3abb55861b0ab47c7dec}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!isTransaction@{isTransaction}}
+\index{isTransaction@{isTransaction}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{isTransaction()}{isTransaction()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Data\+::\+Session\+Impl\+::is\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns true if session has transaction capabilities. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_af029a493e7140268005c7f764401f971}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a46e33f35885eb022b1939e012c762afa}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a055672883c7cff02ecca6632313aa6a6}\label{classPoco_1_1Data_1_1SessionImpl_a055672883c7cff02ecca6632313aa6a6}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!isTransactionIsolation@{isTransactionIsolation}}
+\index{isTransactionIsolation@{isTransactionIsolation}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{isTransactionIsolation()}{isTransactionIsolation()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Data\+::\+Session\+Impl\+::is\+Transaction\+Isolation (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int32}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true iff the transaction isolation level corresponding to the supplied bitmask is supported. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_ad84006c73815e39d757584214a51d72a}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_a4521729fc640502013b1a693f3b7e869}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_abcd451a94e4a95a453b39c92cdc6400d}\label{classPoco_1_1Data_1_1SessionImpl_abcd451a94e4a95a453b39c92cdc6400d}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!open@{open}}
+\index{open@{open}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Data\+::\+Session\+Impl\+::open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{connection\+String = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1Data_1_1StatementImpl}{Statement\+Impl}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_a63b9cae2cf7189be0949416652d3e915}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_ae9093e890331c9c927dc39585e7a7404}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a973cea92664fa5cdc82590540312c077}\label{classPoco_1_1Data_1_1SessionImpl_a973cea92664fa5cdc82590540312c077}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!reconnect@{reconnect}}
+\index{reconnect@{reconnect}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{reconnect()}{reconnect()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Session\+Impl\+::reconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the session connection timeout value. 
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_aea797135cd77d40d0c8379da4cabf56e}\label{classPoco_1_1Data_1_1SessionImpl_aea797135cd77d40d0c8379da4cabf56e}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!rollback@{rollback}}
+\index{rollback@{rollback}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{rollback()}{rollback()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Data\+::\+Session\+Impl\+::rollback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Commits and ends a transaction. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_a2e753fc71a0c90c0208234bb409ed767}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a9728d427d833afcffa8f1f8c3d789a40}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a43b29ec5ebadde7822250d72094cb154}\label{classPoco_1_1Data_1_1SessionImpl_a43b29ec5ebadde7822250d72094cb154}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!setConnectionString@{setConnectionString}}
+\index{setConnectionString@{setConnectionString}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{setConnectionString()}{setConnectionString()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Session\+Impl\+::set\+Connection\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{connection\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Look up the value of a property.
+
+Properties are a generic extension mechanism for session implementations. and are defined by the underlying \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}} instance.
+
+Throws a Not\+Supported\+Exception if the requested property is not supported by the underlying implementation. \mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a253415881cfd1618ef096f25dc205a4f}\label{classPoco_1_1Data_1_1SessionImpl_a253415881cfd1618ef096f25dc205a4f}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!setConnectionTimeout@{setConnectionTimeout}}
+\index{setConnectionTimeout@{setConnectionTimeout}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{setConnectionTimeout()}{setConnectionTimeout()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Data\+::\+Session\+Impl\+::set\+Connection\+Timeout (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the session login timeout value. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_aaa1b41fb5935ff201e0d7cf8e5432632}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_adc56650a233b5575a090a5e5beff35d0}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a0bc9a9d0e5a2de2a276325033bbe2613}\label{classPoco_1_1Data_1_1SessionImpl_a0bc9a9d0e5a2de2a276325033bbe2613}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!setFeature@{setFeature}}
+\index{setFeature@{setFeature}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{setFeature()}{setFeature()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Data\+::\+Session\+Impl\+::set\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} for this session. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a0c0d1f17ea4ec19af6694fdadade7827}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl$<$ C $>$}}, \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a0c0d1f17ea4ec19af6694fdadade7827}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl$<$ Session\+Impl $>$}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a44650e1ccc780864b3b104d523355bb6}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_ac7da10e6b96c9956f5e04ced7d95727a}\label{classPoco_1_1Data_1_1SessionImpl_ac7da10e6b96c9956f5e04ced7d95727a}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!setLoginTimeout@{setLoginTimeout}}
+\index{setLoginTimeout@{setLoginTimeout}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{setLoginTimeout()}{setLoginTimeout()}}
+{\footnotesize\ttfamily void Poco\+::\+Data\+::\+Session\+Impl\+::set\+Login\+Timeout (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if session is connected, false otherwise. 
+
+
+
+Definition at line 195 of file Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_ae8ce1167ab86396cbef04cd208323f00}\label{classPoco_1_1Data_1_1SessionImpl_ae8ce1167ab86396cbef04cd208323f00}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{setProperty()}{setProperty()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Data\+::\+Session\+Impl\+::set\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Any}{Poco\+::\+Any}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Look up the state of a feature.
+
+Features are a generic extension mechanism for session implementations. and are defined by the underlying \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl}{Session\+Impl}} instance.
+
+Throws a Not\+Supported\+Exception if the requested feature is not supported by the underlying implementation. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a748fee01445219ca5529e9827d167f10}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl$<$ C $>$}}, \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractSessionImpl_a748fee01445219ca5529e9827d167f10}{Poco\+::\+Data\+::\+Abstract\+Session\+Impl$<$ Session\+Impl $>$}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a21ed28dcbe6624abf87306751aaefade}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a4482eda0169c2d1c23588bf56e2367bd}\label{classPoco_1_1Data_1_1SessionImpl_a4482eda0169c2d1c23588bf56e2367bd}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!setTransactionIsolation@{setTransactionIsolation}}
+\index{setTransactionIsolation@{setTransactionIsolation}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{setTransactionIsolation()}{setTransactionIsolation()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+Data\+::\+Session\+Impl\+::set\+Transaction\+Isolation (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int32}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns true iff a transaction is a transaction is in progress, false otherwise. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1Data_1_1PooledSessionImpl_a29c0428b5d9d356a70f6255a4a9a98a9}{Poco\+::\+Data\+::\+Pooled\+Session\+Impl}}, and \mbox{\hyperlink{classPoco_1_1Data_1_1SQLite_1_1SessionImpl_a91031454ef370e63b45f98b1ea633b9a}{Poco\+::\+Data\+::\+S\+Q\+Lite\+::\+Session\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_ab896ad7518e750999b9549b79d457f57}\label{classPoco_1_1Data_1_1SessionImpl_ab896ad7518e750999b9549b79d457f57}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!uri@{uri}}
+\index{uri@{uri}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{uri()}{uri()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Data\+::\+Session\+Impl\+::uri (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns formatted \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. 
+
+
+
+Definition at line 214 of file Session\+Impl.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_afe21ea666979506cf9f237ef3ca9fbc4}\label{classPoco_1_1Data_1_1SessionImpl_afe21ea666979506cf9f237ef3ca9fbc4}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!uri@{uri}}
+\index{uri@{uri}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{uri()}{uri()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Data\+::\+Session\+Impl\+::uri (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{connector,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{connection\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the connection string. 
+
+
+
+Definition at line 207 of file Session\+Impl.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a4d65f78bff411273fee932be828432de}\label{classPoco_1_1Data_1_1SessionImpl_a4d65f78bff411273fee932be828432de}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!CONNECTION\_TIMEOUT\_DEFAULT@{CONNECTION\_TIMEOUT\_DEFAULT}}
+\index{CONNECTION\_TIMEOUT\_DEFAULT@{CONNECTION\_TIMEOUT\_DEFAULT}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{CONNECTION\_TIMEOUT\_DEFAULT}{CONNECTION\_TIMEOUT\_DEFAULT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::size\+\_\+t Poco\+::\+Data\+::\+Session\+Impl\+::\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+D\+E\+F\+A\+U\+LT = \mbox{\hyperlink{classPoco_1_1Data_1_1SessionImpl_aee5e994591ac544347d1e1d61fb633c1}{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+I\+N\+F\+I\+N\+I\+TE}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Infinite connection/login timeout. 
+
+
+
+Definition at line 51 of file Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_aee5e994591ac544347d1e1d61fb633c1}\label{classPoco_1_1Data_1_1SessionImpl_aee5e994591ac544347d1e1d61fb633c1}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!CONNECTION\_TIMEOUT\_INFINITE@{CONNECTION\_TIMEOUT\_INFINITE}}
+\index{CONNECTION\_TIMEOUT\_INFINITE@{CONNECTION\_TIMEOUT\_INFINITE}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{CONNECTION\_TIMEOUT\_INFINITE}{CONNECTION\_TIMEOUT\_INFINITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::size\+\_\+t Poco\+::\+Data\+::\+Session\+Impl\+::\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+I\+N\+F\+I\+N\+I\+TE = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Default connection/login timeout in seconds. 
+
+
+
+Definition at line 48 of file Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a5e8fac3c026749487f40f2778acaeb0d}\label{classPoco_1_1Data_1_1SessionImpl_a5e8fac3c026749487f40f2778acaeb0d}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!LOGIN\_TIMEOUT\_DEFAULT@{LOGIN\_TIMEOUT\_DEFAULT}}
+\index{LOGIN\_TIMEOUT\_DEFAULT@{LOGIN\_TIMEOUT\_DEFAULT}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{LOGIN\_TIMEOUT\_DEFAULT}{LOGIN\_TIMEOUT\_DEFAULT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::size\+\_\+t Poco\+::\+Data\+::\+Session\+Impl\+::\+L\+O\+G\+I\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+D\+E\+F\+A\+U\+LT = 60\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Infinite connection/login timeout. 
+
+
+
+Definition at line 45 of file Session\+Impl.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1SessionImpl_a346572563b31d3ae591bd33bdf5668ce}\label{classPoco_1_1Data_1_1SessionImpl_a346572563b31d3ae591bd33bdf5668ce}} 
+\index{Poco::Data::SessionImpl@{Poco::Data::SessionImpl}!LOGIN\_TIMEOUT\_INFINITE@{LOGIN\_TIMEOUT\_INFINITE}}
+\index{LOGIN\_TIMEOUT\_INFINITE@{LOGIN\_TIMEOUT\_INFINITE}!Poco::Data::SessionImpl@{Poco::Data::SessionImpl}}
+\doxysubsubsection{\texorpdfstring{LOGIN\_TIMEOUT\_INFINITE}{LOGIN\_TIMEOUT\_INFINITE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::size\+\_\+t Poco\+::\+Data\+::\+Session\+Impl\+::\+L\+O\+G\+I\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+I\+N\+F\+I\+N\+I\+TE = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 42 of file Session\+Impl.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{SessionImpl_8h}{Session\+Impl.\+h}}\end{DoxyCompactItemize}

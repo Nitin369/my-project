@@ -1,0 +1,123 @@
+\hypertarget{classPoco_1_1XML_1_1DocumentFragment}{}\doxysection{Poco\+::X\+ML\+::Document\+Fragment Class Reference}
+\label{classPoco_1_1XML_1_1DocumentFragment}\index{Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}}
+
+
+{\ttfamily \#include $<$Document\+Fragment.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::Document\+Fragment\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::X\+ML\+::Document\+Fragment\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment_ab68097ae5a8c06d213415ce5c320d13b}{node\+Name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+unsigned short \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment_a130156ee6876a8472b40c7b6846f4912}{node\+Type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment_ad85205c4b338b1dbae107f765f3bb7c4}{Document\+Fragment}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document)
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment_a83d5bce2186868e6f50fd00219064a5f}{Document\+Fragment}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} \&fragment)
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment_a3d0099638cd00788a046a1170b78977a}{$\sim$\+Document\+Fragment}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment_a00d90d81cdf3397d6266f21ab017b197}{copy\+Node}} (bool deep, \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment_a883538034e58fc5c0de7d4e4cab3cef7}{Document}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} is a \char`\"{}lightweight\char`\"{} or \char`\"{}minimal\char`\"{} \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} object. It is very common to want to be able to extract a portion of a document\textquotesingle{}s tree or to create a new fragment of a document. Imagine implementing a user command like cut or rearranging a document by moving fragments around. It is desirable to have an object which can hold such fragments and it is quite natural to use a \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} for this purpose. While it is true that a \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} object could fulfill this role, a \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} object can potentially be a heavyweight object, depending on the underlying implementation. What is really needed for this is a very lightweight object. \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} is such an object.
+
+Furthermore, various operations -- such as inserting nodes as children of another \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} -- may take \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} objects as arguments; this results in all the child nodes of the \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} being moved to the child list of this node.
+
+The children of a \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} node are zero or more nodes representing the tops of any sub-\/trees defining the structure of the document. \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} nodes do not need to be well-\/formed \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} documents (although they do need to follow the rules imposed upon well-\/formed \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} parsed entities, which can have multiple top nodes). For example, a \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} might have only one child and that child node could be a \mbox{\hyperlink{classPoco_1_1XML_1_1Text}{Text}} node. Such a structure model represents neither an H\+T\+ML document nor a well-\/formed \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} document.
+
+When a \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} is inserted into a \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} (or indeed any other \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} that may take children) the children of the \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} and not the \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} itself are inserted into the \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}. This makes the \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} very useful when the user wishes to create nodes that are siblings; the \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} acts as the parent of these nodes so that the user can use the standard methods from the \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} interface, such as insert\+Before and append\+Child. 
+
+Definition at line 32 of file Document\+Fragment.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DocumentFragment_ad85205c4b338b1dbae107f765f3bb7c4}\label{classPoco_1_1XML_1_1DocumentFragment_ad85205c4b338b1dbae107f765f3bb7c4}} 
+\index{Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}!DocumentFragment@{DocumentFragment}}
+\index{DocumentFragment@{DocumentFragment}!Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}}
+\doxysubsubsection{\texorpdfstring{DocumentFragment()}{DocumentFragment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Document\+Fragment\+::\+Document\+Fragment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DocumentFragment_a83d5bce2186868e6f50fd00219064a5f}\label{classPoco_1_1XML_1_1DocumentFragment_a83d5bce2186868e6f50fd00219064a5f}} 
+\index{Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}!DocumentFragment@{DocumentFragment}}
+\index{DocumentFragment@{DocumentFragment}!Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}}
+\doxysubsubsection{\texorpdfstring{DocumentFragment()}{DocumentFragment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Document\+Fragment\+::\+Document\+Fragment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1DocumentFragment}{Document\+Fragment}} \&}]{fragment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DocumentFragment_a3d0099638cd00788a046a1170b78977a}\label{classPoco_1_1XML_1_1DocumentFragment_a3d0099638cd00788a046a1170b78977a}} 
+\index{Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}!````~DocumentFragment@{$\sim$DocumentFragment}}
+\index{````~DocumentFragment@{$\sim$DocumentFragment}!Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}}
+\doxysubsubsection{\texorpdfstring{$\sim$DocumentFragment()}{~DocumentFragment()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Document\+Fragment\+::$\sim$\+Document\+Fragment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DocumentFragment_a00d90d81cdf3397d6266f21ab017b197}\label{classPoco_1_1XML_1_1DocumentFragment_a00d90d81cdf3397d6266f21ab017b197}} 
+\index{Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}!copyNode@{copyNode}}
+\index{copyNode@{copyNode}!Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}}
+\doxysubsubsection{\texorpdfstring{copyNode()}{copyNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Document\+Fragment\+::copy\+Node (\begin{DoxyParamCaption}\item[{bool}]{deep,  }\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode_ae0a8579dd6ecfed5ff9c3f3daec40d90}{Poco\+::\+X\+M\+L\+::\+Abstract\+Node}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DocumentFragment_ab68097ae5a8c06d213415ce5c320d13b}\label{classPoco_1_1XML_1_1DocumentFragment_ab68097ae5a8c06d213415ce5c320d13b}} 
+\index{Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}!nodeName@{nodeName}}
+\index{nodeName@{nodeName}!Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}}
+\doxysubsubsection{\texorpdfstring{nodeName()}{nodeName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}}\& Poco\+::\+X\+M\+L\+::\+Document\+Fragment\+::node\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode_a19a18ccbfab094d220e02a0a7b05c5f1}{Poco\+::\+X\+M\+L\+::\+Abstract\+Node}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DocumentFragment_a130156ee6876a8472b40c7b6846f4912}\label{classPoco_1_1XML_1_1DocumentFragment_a130156ee6876a8472b40c7b6846f4912}} 
+\index{Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}!nodeType@{nodeType}}
+\index{nodeType@{nodeType}!Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}}
+\doxysubsubsection{\texorpdfstring{nodeType()}{nodeType()}}
+{\footnotesize\ttfamily unsigned short Poco\+::\+X\+M\+L\+::\+Document\+Fragment\+::node\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the value of this node. Throws an exception if the node is read-\/only. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Node_ac001e1819b1eb928ca1ae6f6f90e1159}{Poco\+::\+X\+M\+L\+::\+Node}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1DocumentFragment_a883538034e58fc5c0de7d4e4cab3cef7}\label{classPoco_1_1XML_1_1DocumentFragment_a883538034e58fc5c0de7d4e4cab3cef7}} 
+\index{Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}!Document@{Document}}
+\index{Document@{Document}!Poco::XML::DocumentFragment@{Poco::XML::DocumentFragment}}
+\doxysubsubsection{\texorpdfstring{Document}{Document}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 79 of file Document\+Fragment.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+D\+O\+M/\mbox{\hyperlink{DocumentFragment_8h}{Document\+Fragment.\+h}}\end{DoxyCompactItemize}

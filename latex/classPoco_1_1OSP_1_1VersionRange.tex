@@ -1,0 +1,200 @@
+\hypertarget{classPoco_1_1OSP_1_1VersionRange}{}\doxysection{Poco\+::O\+SP\+::Version\+Range Class Reference}
+\label{classPoco_1_1OSP_1_1VersionRange}\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+
+
+{\ttfamily \#include $<$Version\+Range.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a5484e27e848be179e232e177066bb604}{Version\+Range}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a18712c0456b968a9903b47dc859ab818}{Version\+Range}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Version}{Version}} \&lower, bool \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a6f375c96292c453bd04beebfa7c90de4}{include\+Lower}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Version}{Version}} \&upper, bool \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a07be2a9c6714cd6b9f11e0536101e57e}{include\+Upper}})
+\begin{DoxyCompactList}\small\item\em Creates an empty \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a40cc395aab1deafa6761e70386c14908}{Version\+Range}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}} \&range)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a209016128f86dbc334088aa014b60a4b}{$\sim$\+Version\+Range}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}} by copying another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}} \& \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a824b2201d32bd12de0774a05656b31fd}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}} \&range)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a7a63c4b66441680a65e63a4162a70914}{swap}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}} \&range)
+\begin{DoxyCompactList}\small\item\em Assigns another \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Version}{Version}} \& \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_ac3d65780bfdfcb67836bce35b2f9e25c}{lower\+Bound}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Swaps the \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}} with another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Version}{Version}} \& \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a3602291005f4ac0ed6819c580dec4817}{upper\+Bound}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the lower bound of the interval. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a6f375c96292c453bd04beebfa7c90de4}{include\+Lower}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the upper bound of the interval. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a07be2a9c6714cd6b9f11e0536101e57e}{include\+Upper}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff the lower bound lies within the interval. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a376d001609a8f3cdfbace0d117bdc378}{is\+In\+Range}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Version}{Version}} \&version) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff the upper bound lies within the interval. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a545783ae7f9721fdf0412099f8ee2ab0}{is\+Empty}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff the version lies within the range. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange_a18058b477056597d6c6e6b89c06c8a5c}{to\+String}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff the version range is empty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This utility class represents a range of versions. \begin{DoxyVerb}A version range can be an open, half closed or
+closed interval. 
+\end{DoxyVerb}
+ 
+
+Definition at line 31 of file Version\+Range.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_a5484e27e848be179e232e177066bb604}\label{classPoco_1_1OSP_1_1VersionRange_a5484e27e848be179e232e177066bb604}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!VersionRange@{VersionRange}}
+\index{VersionRange@{VersionRange}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{VersionRange()}{VersionRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Version\+Range\+::\+Version\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_a18712c0456b968a9903b47dc859ab818}\label{classPoco_1_1OSP_1_1VersionRange_a18712c0456b968a9903b47dc859ab818}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!VersionRange@{VersionRange}}
+\index{VersionRange@{VersionRange}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{VersionRange()}{VersionRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Version\+Range\+::\+Version\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Version}{Version}} \&}]{lower,  }\item[{bool}]{include\+Lower,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Version}{Version}} \&}]{upper,  }\item[{bool}]{include\+Upper }\end{DoxyParamCaption})}
+
+
+
+Creates an empty \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}}. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_a40cc395aab1deafa6761e70386c14908}\label{classPoco_1_1OSP_1_1VersionRange_a40cc395aab1deafa6761e70386c14908}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!VersionRange@{VersionRange}}
+\index{VersionRange@{VersionRange}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{VersionRange()}{VersionRange()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Version\+Range\+::\+Version\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}} \&}]{range }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}}. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_a209016128f86dbc334088aa014b60a4b}\label{classPoco_1_1OSP_1_1VersionRange_a209016128f86dbc334088aa014b60a4b}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!````~VersionRange@{$\sim$VersionRange}}
+\index{````~VersionRange@{$\sim$VersionRange}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{$\sim$VersionRange()}{~VersionRange()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Version\+Range\+::$\sim$\+Version\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}} by copying another one. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_a6f375c96292c453bd04beebfa7c90de4}\label{classPoco_1_1OSP_1_1VersionRange_a6f375c96292c453bd04beebfa7c90de4}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!includeLower@{includeLower}}
+\index{includeLower@{includeLower}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{includeLower()}{includeLower()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Version\+Range\+::include\+Lower (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the upper bound of the interval. 
+
+
+
+Definition at line 100 of file Version\+Range.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_a07be2a9c6714cd6b9f11e0536101e57e}\label{classPoco_1_1OSP_1_1VersionRange_a07be2a9c6714cd6b9f11e0536101e57e}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!includeUpper@{includeUpper}}
+\index{includeUpper@{includeUpper}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{includeUpper()}{includeUpper()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Version\+Range\+::include\+Upper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true iff the lower bound lies within the interval. 
+
+
+
+Definition at line 106 of file Version\+Range.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_a545783ae7f9721fdf0412099f8ee2ab0}\label{classPoco_1_1OSP_1_1VersionRange_a545783ae7f9721fdf0412099f8ee2ab0}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Version\+Range\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true iff the version lies within the range. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_a376d001609a8f3cdfbace0d117bdc378}\label{classPoco_1_1OSP_1_1VersionRange_a376d001609a8f3cdfbace0d117bdc378}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!isInRange@{isInRange}}
+\index{isInRange@{isInRange}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{isInRange()}{isInRange()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Version\+Range\+::is\+In\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Version}{Version}} \&}]{version }\end{DoxyParamCaption}) const}
+
+
+
+Returns true iff the upper bound lies within the interval. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_ac3d65780bfdfcb67836bce35b2f9e25c}\label{classPoco_1_1OSP_1_1VersionRange_ac3d65780bfdfcb67836bce35b2f9e25c}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!lowerBound@{lowerBound}}
+\index{lowerBound@{lowerBound}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{lowerBound()}{lowerBound()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Version}{Version}} \& Poco\+::\+O\+S\+P\+::\+Version\+Range\+::lower\+Bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Swaps the \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}} with another one. 
+
+
+
+Definition at line 88 of file Version\+Range.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_a824b2201d32bd12de0774a05656b31fd}\label{classPoco_1_1OSP_1_1VersionRange_a824b2201d32bd12de0774a05656b31fd}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}}\& Poco\+::\+O\+S\+P\+::\+Version\+Range\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}} \&}]{range }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}}. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_a7a63c4b66441680a65e63a4162a70914}\label{classPoco_1_1OSP_1_1VersionRange_a7a63c4b66441680a65e63a4162a70914}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!swap@{swap}}
+\index{swap@{swap}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Version\+Range\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}} \&}]{range }\end{DoxyParamCaption})}
+
+
+
+Assigns another \mbox{\hyperlink{classPoco_1_1OSP_1_1VersionRange}{Version\+Range}}. 
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_a18058b477056597d6c6e6b89c06c8a5c}\label{classPoco_1_1OSP_1_1VersionRange_a18058b477056597d6c6e6b89c06c8a5c}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!toString@{toString}}
+\index{toString@{toString}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+O\+S\+P\+::\+Version\+Range\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true iff the version range is empty. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1VersionRange_a3602291005f4ac0ed6819c580dec4817}\label{classPoco_1_1OSP_1_1VersionRange_a3602291005f4ac0ed6819c580dec4817}} 
+\index{Poco::OSP::VersionRange@{Poco::OSP::VersionRange}!upperBound@{upperBound}}
+\index{upperBound@{upperBound}!Poco::OSP::VersionRange@{Poco::OSP::VersionRange}}
+\doxysubsubsection{\texorpdfstring{upperBound()}{upperBound()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Version}{Version}} \& Poco\+::\+O\+S\+P\+::\+Version\+Range\+::upper\+Bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the lower bound of the interval. 
+
+
+
+Definition at line 94 of file Version\+Range.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{VersionRange_8h}{Version\+Range.\+h}}\end{DoxyCompactItemize}

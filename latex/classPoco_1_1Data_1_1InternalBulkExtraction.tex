@@ -1,0 +1,216 @@
+\hypertarget{classPoco_1_1Data_1_1InternalBulkExtraction}{}\doxysection{Poco\+::Data\+::Internal\+Bulk\+Extraction$<$ C $>$ Class Template Reference}
+\label{classPoco_1_1Data_1_1InternalBulkExtraction}\index{Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}}
+
+
+{\ttfamily \#include $<$Bulk\+Extraction.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::Internal\+Bulk\+Extraction$<$ C $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Data\+::Internal\+Bulk\+Extraction$<$ C $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef C \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction_a52cc1dbb409177e7c01293efac3efa2f}{Val\+Type}}
+\item 
+typedef C\+::value\+\_\+type \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction_aa7f8fa2d81c01664fb6201cbef3b5108}{C\+Val\+Type}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_ae5b58e7b6cec67f954c9c888025fbc1c}{Val\+Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction_a5db926168e600b1a17cf27f86e056c87}{Val\+Ptr}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Internal\+Bulk\+Extraction}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_ae5b58e7b6cec67f954c9c888025fbc1c}{Val\+Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction_ab7f167a405d03a235e0e6e3e75b5fb71}{Type}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_aca4c8560840184cf02ee495c166e1f44}{Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction_a1c026705cc1b7622dd7315f2b7cc9e34}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction_a5d9418667d13c77995948d2041afaa33}{Internal\+Bulk\+Extraction}} (C \&\mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_ac1d64d1f5cba5f26f93c1f218a9ff0f2}{result}}, \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}}$<$ C $>$ $\ast$p\+Column, Poco\+::\+U\+Int32 limit, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}} \&pos=\mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}}(0))
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction_a74b15e7dfa5b1ec6cdc184bf3e1be21f}{$\sim$\+Internal\+Bulk\+Extraction}} ()
+\begin{DoxyCompactList}\small\item\em Destroys \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Internal\+Bulk\+Extraction}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction_a2fd0e17c5644a97b4ab93237e0d98c51}{reset}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_a2f24218c10dba6ecff60e100cc9d094b}{C\+Val\+Type}} \& \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction_a291612cdf1c85f169804cbd0df7cfe88}{value}} (int index) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction_a4ca198789b38882af8e1baae761a3e88}{is\+Null}} (std\+::size\+\_\+t row) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Gets the limit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}}$<$ C $>$ \& \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction_a0a7c04971204d9eb3e44eeceddb6d40f}{column}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class C$>$\newline
+class Poco\+::\+Data\+::\+Internal\+Bulk\+Extraction$<$ C $>$}
+
+Container \mbox{\hyperlink{namespacePoco_1_1Data}{Data}} Type specialization extension for extraction of values from a query result set. \begin{DoxyVerb}This class is intended for PocoData internal use - it is used by StatementImpl 
+to automaticaly create internal BulkExtraction in cases when statement returns data and no external storage
+was supplied. It is later used by RecordSet to retrieve the fetched data after statement execution.
+It takes ownership of the Column pointer supplied as constructor argument. Column object, in turn
+owns the data container pointer.
+
+InternalBulkExtraction objects can not be copied or assigned. 
+\end{DoxyVerb}
+ 
+
+Definition at line 139 of file Bulk\+Extraction.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1InternalBulkExtraction_aa7f8fa2d81c01664fb6201cbef3b5108}\label{classPoco_1_1Data_1_1InternalBulkExtraction_aa7f8fa2d81c01664fb6201cbef3b5108}} 
+\index{Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}!CValType@{CValType}}
+\index{CValType@{CValType}!Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{CValType}{CValType}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+typedef C\+::value\+\_\+type \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Poco\+::\+Data\+::\+Internal\+Bulk\+Extraction}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_a2f24218c10dba6ecff60e100cc9d094b}{C\+Val\+Type}}}
+
+
+
+Definition at line 152 of file Bulk\+Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1InternalBulkExtraction_a1c026705cc1b7622dd7315f2b7cc9e34}\label{classPoco_1_1Data_1_1InternalBulkExtraction_a1c026705cc1b7622dd7315f2b7cc9e34}} 
+\index{Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_aca4c8560840184cf02ee495c166e1f44}{Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Poco\+::\+Data\+::\+Internal\+Bulk\+Extraction}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_a8bf4fe7842a0b54f205347f458beff12}{Ptr}}}
+
+
+
+Definition at line 155 of file Bulk\+Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1InternalBulkExtraction_ab7f167a405d03a235e0e6e3e75b5fb71}\label{classPoco_1_1Data_1_1InternalBulkExtraction_ab7f167a405d03a235e0e6e3e75b5fb71}} 
+\index{Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}!Type@{Type}}
+\index{Type@{Type}!Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Internal\+Bulk\+Extraction}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_ae5b58e7b6cec67f954c9c888025fbc1c}{Val\+Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Poco\+::\+Data\+::\+Internal\+Bulk\+Extraction}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_aca4c8560840184cf02ee495c166e1f44}{Type}}}
+
+
+
+Definition at line 154 of file Bulk\+Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1InternalBulkExtraction_a5db926168e600b1a17cf27f86e056c87}\label{classPoco_1_1Data_1_1InternalBulkExtraction_a5db926168e600b1a17cf27f86e056c87}} 
+\index{Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}!ValPtr@{ValPtr}}
+\index{ValPtr@{ValPtr}!Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{ValPtr}{ValPtr}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_ae5b58e7b6cec67f954c9c888025fbc1c}{Val\+Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Poco\+::\+Data\+::\+Internal\+Bulk\+Extraction}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_add5e7cf48f0fc3c3c7af2f4dbbcd22ef}{Val\+Ptr}}}
+
+
+
+Definition at line 153 of file Bulk\+Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1InternalBulkExtraction_a52cc1dbb409177e7c01293efac3efa2f}\label{classPoco_1_1Data_1_1InternalBulkExtraction_a52cc1dbb409177e7c01293efac3efa2f}} 
+\index{Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}!ValType@{ValType}}
+\index{ValType@{ValType}!Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{ValType}{ValType}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+typedef C \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Poco\+::\+Data\+::\+Internal\+Bulk\+Extraction}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_ae5b58e7b6cec67f954c9c888025fbc1c}{Val\+Type}}}
+
+
+
+Definition at line 151 of file Bulk\+Extraction.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1InternalBulkExtraction_a5d9418667d13c77995948d2041afaa33}\label{classPoco_1_1Data_1_1InternalBulkExtraction_a5d9418667d13c77995948d2041afaa33}} 
+\index{Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}!InternalBulkExtraction@{InternalBulkExtraction}}
+\index{InternalBulkExtraction@{InternalBulkExtraction}!Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{InternalBulkExtraction()}{InternalBulkExtraction()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Poco\+::\+Data\+::\+Internal\+Bulk\+Extraction}}$<$ C $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Internal\+Bulk\+Extraction}} (\begin{DoxyParamCaption}\item[{C \&}]{result,  }\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}}$<$ C $>$ $\ast$}]{p\+Column,  }\item[{Poco\+::\+U\+Int32}]{limit,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}} \&}]{pos = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}}(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 157 of file Bulk\+Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1InternalBulkExtraction_a74b15e7dfa5b1ec6cdc184bf3e1be21f}\label{classPoco_1_1Data_1_1InternalBulkExtraction_a74b15e7dfa5b1ec6cdc184bf3e1be21f}} 
+\index{Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}!````~InternalBulkExtraction@{$\sim$InternalBulkExtraction}}
+\index{````~InternalBulkExtraction@{$\sim$InternalBulkExtraction}!Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$InternalBulkExtraction()}{~InternalBulkExtraction()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Poco\+::\+Data\+::\+Internal\+Bulk\+Extraction}}$<$ C $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Internal\+Bulk\+Extraction}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Internal\+Bulk\+Extraction}}. 
+
+
+
+Definition at line 167 of file Bulk\+Extraction.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1InternalBulkExtraction_a0a7c04971204d9eb3e44eeceddb6d40f}\label{classPoco_1_1Data_1_1InternalBulkExtraction_a0a7c04971204d9eb3e44eeceddb6d40f}} 
+\index{Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}!column@{column}}
+\index{column@{column}!Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{column()}{column()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Column}{Column}}$<$C$>$\& \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Poco\+::\+Data\+::\+Internal\+Bulk\+Extraction}}$<$ C $>$\+::column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 195 of file Bulk\+Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1InternalBulkExtraction_a4ca198789b38882af8e1baae761a3e88}\label{classPoco_1_1Data_1_1InternalBulkExtraction_a4ca198789b38882af8e1baae761a3e88}} 
+\index{Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}!isNull@{isNull}}
+\index{isNull@{isNull}!Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{isNull()}{isNull()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Poco\+::\+Data\+::\+Internal\+Bulk\+Extraction}}$<$ C $>$\+::is\+Null (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{row }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the limit. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_abfb27f78eabcfbcf0317528b06d3028b}{Poco\+::\+Data\+::\+Bulk\+Extraction$<$ C $>$}}.
+
+
+
+Definition at line 190 of file Bulk\+Extraction.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Data_1_1InternalBulkExtraction_a2fd0e17c5644a97b4ab93237e0d98c51}\label{classPoco_1_1Data_1_1InternalBulkExtraction_a2fd0e17c5644a97b4ab93237e0d98c51}} 
+\index{Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}!reset@{reset}}
+\index{reset@{reset}!Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Poco\+::\+Data\+::\+Internal\+Bulk\+Extraction}}$<$ C $>$\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Extracts a value from the param, starting at the given column position. Returns the number of rows extracted. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_a11169aac13a76460e109bd131f5a04fb}{Poco\+::\+Data\+::\+Bulk\+Extraction$<$ C $>$}}.
+
+
+
+Definition at line 173 of file Bulk\+Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1InternalBulkExtraction_a291612cdf1c85f169804cbd0df7cfe88}\label{classPoco_1_1Data_1_1InternalBulkExtraction_a291612cdf1c85f169804cbd0df7cfe88}} 
+\index{Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}!value@{value}}
+\index{value@{value}!Poco::Data::InternalBulkExtraction$<$ C $>$@{Poco::Data::InternalBulkExtraction$<$ C $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily template$<$class C $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1BulkExtraction_a2f24218c10dba6ecff60e100cc9d094b}{C\+Val\+Type}}\& \mbox{\hyperlink{classPoco_1_1Data_1_1InternalBulkExtraction}{Poco\+::\+Data\+::\+Internal\+Bulk\+Extraction}}$<$ C $>$\+::value (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 178 of file Bulk\+Extraction.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{BulkExtraction_8h}{Bulk\+Extraction.\+h}}\end{DoxyCompactItemize}

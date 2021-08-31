@@ -1,0 +1,326 @@
+\hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor}{}\doxysection{Poco\+::Net\+::Parallel\+Socket\+Acceptor$<$ Service\+Handler, SR $>$ Class Template Reference}
+\label{classPoco_1_1Net_1_1ParallelSocketAcceptor}\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+
+
+{\ttfamily \#include $<$Parallel\+Socket\+Acceptor.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketReactor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Reactor}}$<$ SR $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a64b9632d14f2641e91f4eece0d5e0d35}{Parallel\+Reactor}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a421559c6c5d718cfcc8b4272335e4a22}{Parallel\+Socket\+Acceptor}} (\mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a195fd32427d16fc04bba78c34c766d2f}{socket}}, unsigned threads=\mbox{\hyperlink{classPoco_1_1Environment_a89d4217cc1ab4eae39592a1136b82f82}{Poco\+::\+Environment\+::processor\+Count}}())
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a1db9da478475fde4ab6cb5ab38721b89}{Parallel\+Socket\+Acceptor}} (\mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a195fd32427d16fc04bba78c34c766d2f}{socket}}, \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a59af64f08e6e93bba7dd393373534446}{reactor}}, unsigned threads=\mbox{\hyperlink{classPoco_1_1Environment_a89d4217cc1ab4eae39592a1136b82f82}{Poco\+::\+Environment\+::processor\+Count}}())
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a0139d87cc92e3b84fcb264dc242354ff}{$\sim$\+Parallel\+Socket\+Acceptor}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Parallel\+Socket\+Acceptor}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a1746866d4759585584e7f508b168f701}{set\+Reactor}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a59af64f08e6e93bba7dd393373534446}{reactor}})
+\begin{DoxyCompactList}\small\item\em Sets the reactor for this acceptor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a5a87b01e93a0cb5c0646246f2a4bcfde}{register\+Acceptor}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a59af64f08e6e93bba7dd393373534446}{reactor}})
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a0d04c724457efe626ebc92f6e21007f1}{unregister\+Acceptor}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a38f858babc9853692aa2da749ce886bf}{on\+Accept}} (\mbox{\hyperlink{classPoco_1_1Net_1_1ReadableNotification}{Readable\+Notification}} $\ast$p\+Notification)
+\begin{DoxyCompactList}\small\item\em Accepts connection and creates event handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ typename \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketReactor_ac2cb6a3db08a5db75cc7d92b565cb89d}{Parallel\+Reactor\+::\+Ptr}} $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a463b2e60246ade9dbc9c977b6e71385d}{Reactor\+Vec}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Service\+Handler $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a6dc105fc3a7187e40c5784fcf24714fc}{create\+Service\+Handler}} (\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a195fd32427d16fc04bba78c34c766d2f}{socket}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a59af64f08e6e93bba7dd393373534446}{reactor}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a195fd32427d16fc04bba78c34c766d2f}{socket}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAcceptor}{Socket\+Acceptor}}\textquotesingle{}s socket. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_ab68b0579316811103bc40e7aa75d5647}{init}} ()
+\begin{DoxyCompactList}\small\item\em Populates the reactors vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a463b2e60246ade9dbc9c977b6e71385d}{Reactor\+Vec}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_ae30be2682e8225547a546901532e4fb9}{reactors}} ()
+\begin{DoxyCompactList}\small\item\em Returns reference to vector of reactors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_ab3324a06bcb6b9a1a19ed2497d3fd339}{reactor}} (std\+::size\+\_\+t idx)
+\begin{DoxyCompactList}\small\item\em Returns reference to the reactor at position idx. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \& \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a354e396e861bdaf4d2639444591ea643}{next}} ()
+\begin{DoxyCompactList}\small\item\em Returns reference to the next reactor index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Service\+Handler, class SR$>$\newline
+class Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor$<$ Service\+Handler, S\+R $>$}
+
+This class implements the Acceptor part of the Acceptor-\/\+Connector design pattern. Only the difference from single-\/threaded version is documented here, For full description see \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAcceptor}{Poco\+::\+Net\+::\+Socket\+Acceptor}} documentation.
+
+This is a multi-\/threaded version of \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAcceptor}{Socket\+Acceptor}}, it differs from the single-\/threaded version in number of reactors (defaulting to number of processors) that can be specified at construction time and is rotated in a round-\/robin fashion by event handler. See \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a38f858babc9853692aa2da749ce886bf}{Parallel\+Socket\+Acceptor\+::on\+Accept}} and \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a6dc105fc3a7187e40c5784fcf24714fc}{Parallel\+Socket\+Acceptor\+::create\+Service\+Handler}} documentation and implementation for details. 
+
+Definition at line 45 of file Parallel\+Socket\+Acceptor.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a64b9632d14f2641e91f4eece0d5e0d35}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a64b9632d14f2641e91f4eece0d5e0d35}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!ParallelReactor@{ParallelReactor}}
+\index{ParallelReactor@{ParallelReactor}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{ParallelReactor}{ParallelReactor}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketReactor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Reactor}}$<$SR$>$ \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a64b9632d14f2641e91f4eece0d5e0d35}{Parallel\+Reactor}}}
+
+
+
+Definition at line 58 of file Parallel\+Socket\+Acceptor.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a463b2e60246ade9dbc9c977b6e71385d}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a463b2e60246ade9dbc9c977b6e71385d}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!ReactorVec@{ReactorVec}}
+\index{ReactorVec@{ReactorVec}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{ReactorVec}{ReactorVec}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+typedef std\+::vector$<$typename \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketReactor_ac2cb6a3db08a5db75cc7d92b565cb89d}{Parallel\+Reactor\+::\+Ptr}}$>$ \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a463b2e60246ade9dbc9c977b6e71385d}{Reactor\+Vec}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 199 of file Parallel\+Socket\+Acceptor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a421559c6c5d718cfcc8b4272335e4a22}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a421559c6c5d718cfcc8b4272335e4a22}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!ParallelSocketAcceptor@{ParallelSocketAcceptor}}
+\index{ParallelSocketAcceptor@{ParallelSocketAcceptor}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{ParallelSocketAcceptor()}{ParallelSocketAcceptor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Parallel\+Socket\+Acceptor}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&}]{socket,  }\item[{unsigned}]{threads = {\ttfamily \mbox{\hyperlink{classPoco_1_1Environment_a89d4217cc1ab4eae39592a1136b82f82}{Poco\+::\+Environment\+::processor\+Count}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Parallel\+Socket\+Acceptor}} using the given \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}}, sets number of threads and populates the reactors vector. 
+
+Definition at line 60 of file Parallel\+Socket\+Acceptor.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a1db9da478475fde4ab6cb5ab38721b89}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a1db9da478475fde4ab6cb5ab38721b89}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!ParallelSocketAcceptor@{ParallelSocketAcceptor}}
+\index{ParallelSocketAcceptor@{ParallelSocketAcceptor}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{ParallelSocketAcceptor()}{ParallelSocketAcceptor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Parallel\+Socket\+Acceptor}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&}]{socket,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} \&}]{reactor,  }\item[{unsigned}]{threads = {\ttfamily \mbox{\hyperlink{classPoco_1_1Environment_a89d4217cc1ab4eae39592a1136b82f82}{Poco\+::\+Environment\+::processor\+Count}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Parallel\+Socket\+Acceptor}} using the given \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}}, sets the number of threads, populates the reactors vector and registers itself with the given \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}. 
+
+Definition at line 72 of file Parallel\+Socket\+Acceptor.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a0139d87cc92e3b84fcb264dc242354ff}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a0139d87cc92e3b84fcb264dc242354ff}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!````~ParallelSocketAcceptor@{$\sim$ParallelSocketAcceptor}}
+\index{````~ParallelSocketAcceptor@{$\sim$ParallelSocketAcceptor}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParallelSocketAcceptor()}{~ParallelSocketAcceptor()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Parallel\+Socket\+Acceptor}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Parallel\+Socket\+Acceptor}}. 
+
+
+
+Definition at line 89 of file Parallel\+Socket\+Acceptor.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a6dc105fc3a7187e40c5784fcf24714fc}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a6dc105fc3a7187e40c5784fcf24714fc}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!createServiceHandler@{createServiceHandler}}
+\index{createServiceHandler@{createServiceHandler}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{createServiceHandler()}{createServiceHandler()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+virtual Service\+Handler$\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::create\+Service\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \&}]{socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Create and initialize a new Service\+Handler instance.
+
+Subclasses can override this method. 
+
+Definition at line 164 of file Parallel\+Socket\+Acceptor.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_ab68b0579316811103bc40e7aa75d5647}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_ab68b0579316811103bc40e7aa75d5647}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!init@{init}}
+\index{init@{init}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Populates the reactors vector. 
+
+
+
+Definition at line 190 of file Parallel\+Socket\+Acceptor.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a354e396e861bdaf4d2639444591ea643}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a354e396e861bdaf4d2639444591ea643}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!next@{next}}
+\index{next@{next}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+std\+::size\+\_\+t\& \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns reference to the next reactor index. 
+
+
+
+Definition at line 213 of file Parallel\+Socket\+Acceptor.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a38f858babc9853692aa2da749ce886bf}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a38f858babc9853692aa2da749ce886bf}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!onAccept@{onAccept}}
+\index{onAccept@{onAccept}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{onAccept()}{onAccept()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::on\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1ReadableNotification}{Readable\+Notification}} $\ast$}]{p\+Notification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accepts connection and creates event handler. 
+
+
+
+Definition at line 154 of file Parallel\+Socket\+Acceptor.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a59af64f08e6e93bba7dd393373534446}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a59af64f08e6e93bba7dd393373534446}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!reactor@{reactor}}
+\index{reactor@{reactor}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{reactor()}{reactor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}$\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::reactor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns a pointer to the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} where this \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAcceptor}{Socket\+Acceptor}} is registered.
+
+The pointer may be null. 
+
+Definition at line 175 of file Parallel\+Socket\+Acceptor.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_ab3324a06bcb6b9a1a19ed2497d3fd339}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_ab3324a06bcb6b9a1a19ed2497d3fd339}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!reactor@{reactor}}
+\index{reactor@{reactor}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{reactor()}{reactor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}$\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::reactor (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns reference to the reactor at position idx. 
+
+
+
+Definition at line 207 of file Parallel\+Socket\+Acceptor.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_ae30be2682e8225547a546901532e4fb9}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_ae30be2682e8225547a546901532e4fb9}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!reactors@{reactors}}
+\index{reactors@{reactors}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{reactors()}{reactors()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+\mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor_a463b2e60246ade9dbc9c977b6e71385d}{Reactor\+Vec}}\& \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::reactors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns reference to vector of reactors. 
+
+
+
+Definition at line 201 of file Parallel\+Socket\+Acceptor.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a5a87b01e93a0cb5c0646246f2a4bcfde}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a5a87b01e93a0cb5c0646246f2a4bcfde}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!registerAcceptor@{registerAcceptor}}
+\index{registerAcceptor@{registerAcceptor}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{registerAcceptor()}{registerAcceptor()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::register\+Acceptor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} \&}]{reactor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Registers the \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Parallel\+Socket\+Acceptor}} with a \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}.
+
+A subclass can override this function to e.\+g. register an event handler for timeout event.
+
+The overriding method must either call the base class implementation or register the accept handler on its own. 
+
+Definition at line 119 of file Parallel\+Socket\+Acceptor.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a1746866d4759585584e7f508b168f701}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a1746866d4759585584e7f508b168f701}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!setReactor@{setReactor}}
+\index{setReactor@{setReactor}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{setReactor()}{setReactor()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::set\+Reactor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} \&}]{reactor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the reactor for this acceptor. 
+
+
+
+Definition at line 107 of file Parallel\+Socket\+Acceptor.\+h.
+
+Here is the call graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a195fd32427d16fc04bba78c34c766d2f}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a195fd32427d16fc04bba78c34c766d2f}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!socket@{socket}}
+\index{socket@{socket}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{socket()}{socket()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+\mbox{\hyperlink{classPoco_1_1Net_1_1Socket}{Socket}}\& \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns a reference to the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketAcceptor}{Socket\+Acceptor}}\textquotesingle{}s socket. 
+
+
+
+Definition at line 184 of file Parallel\+Socket\+Acceptor.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classPoco_1_1Net_1_1ParallelSocketAcceptor_a0d04c724457efe626ebc92f6e21007f1}\label{classPoco_1_1Net_1_1ParallelSocketAcceptor_a0d04c724457efe626ebc92f6e21007f1}} 
+\index{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}!unregisterAcceptor@{unregisterAcceptor}}
+\index{unregisterAcceptor@{unregisterAcceptor}!Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$@{Poco::Net::ParallelSocketAcceptor$<$ ServiceHandler, SR $>$}}
+\doxysubsubsection{\texorpdfstring{unregisterAcceptor()}{unregisterAcceptor()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler , class SR $>$ \\
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Poco\+::\+Net\+::\+Parallel\+Socket\+Acceptor}}$<$ Service\+Handler, SR $>$\+::unregister\+Acceptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Unregisters the \mbox{\hyperlink{classPoco_1_1Net_1_1ParallelSocketAcceptor}{Parallel\+Socket\+Acceptor}}.
+
+A subclass can override this function to e.\+g. unregister its event handler for a timeout event.
+
+The overriding method must either call the base class implementation or unregister the accept handler on its own. 
+
+Definition at line 137 of file Parallel\+Socket\+Acceptor.\+h.
+
+Here is the call graph for this function\+:
+% FIG 14
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{ParallelSocketAcceptor_8h}{Parallel\+Socket\+Acceptor.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,528 @@
+\hypertarget{classPoco_1_1OSP_1_1BundleLoader}{}\doxysection{Poco\+::O\+SP\+::Bundle\+Loader Class Reference}
+\label{classPoco_1_1OSP_1_1BundleLoader}\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+
+
+{\ttfamily \#include $<$Bundle\+Loader.\+h$>$}
+
+
+
+Collaboration diagram for Poco\+::O\+SP\+::Bundle\+Loader\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1OSP_1_1BundleLoader_1_1BundleError}{Bundle\+Error}}
+\item 
+struct \mbox{\hyperlink{structPoco_1_1OSP_1_1BundleLoader_1_1BundleInfo}{Bundle\+Info}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1ClassLoader}{Poco\+::\+Class\+Loader}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator}{Bundle\+Activator}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ac5a1d006da8e8fec574d85f810bc7f5e}{Activator\+Class\+Loader}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ac5a1d006da8e8fec574d85f810bc7f5e}{Activator\+Class\+Loader}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_aaad79a1b5d46974ef89a3fecce0ca664}{Activator\+Class\+Loader\+Ptr}}
+\item 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{structPoco_1_1OSP_1_1BundleLoader_1_1BundleInfo}{Bundle\+Info}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a8fbebb264e869f2472fe9cfef913ebb7}{Bundle\+Map}}
+\item 
+typedef std\+::set$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$ $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a03da06766ed03b85d6beae1d42f2176b}{Bundle\+Set}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a0dd9ac8f536c6dd4eb6a5872fff87bfd}{Bundle\+Loader}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}} \&code\+Cache, \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFactory_a267b71c8c6273c1edc1cb035cb419c29}{Bundle\+Factory\+::\+Ptr}} p\+Bundle\+Factory, \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContextFactory_acb578c43ba930d03a05075aead25d5fb}{Bundle\+Context\+Factory\+::\+Ptr}} p\+Bundle\+Context\+Factory, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ab57d5eb9a3e982f65f4d8ac3bfa478d4}{os\+Name}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&os\+Arch, bool auto\+Update\+Code\+Cache=true)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ad987124fff94831d441414e5ae84d7bb}{Bundle\+Loader}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}} \&code\+Cache, \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFactory_a267b71c8c6273c1edc1cb035cb419c29}{Bundle\+Factory\+::\+Ptr}} p\+Bundle\+Factory, \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContextFactory_acb578c43ba930d03a05075aead25d5fb}{Bundle\+Context\+Factory\+::\+Ptr}} p\+Bundle\+Context\+Factory, bool auto\+Update\+Code\+Cache=true, std\+::string logging\+App\+ID=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader}{Bundle\+Loader}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_abf355cd702bad0b2460c51f822f58be0}{$\sim$\+Bundle\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader}{Bundle\+Loader}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ab7cd9820f6fc1a0a11c4741c36c5418f}{find\+Bundle}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&symbolic\+Name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader}{Bundle\+Loader}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_afe3a4c3deeac4117acc336a5a50d88e3}{find\+Bundle}} (int id) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_aab037286f1cfca01ffbae8a5bcffcec9}{create\+Bundle}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ac880ee8e652da27cc3e4c4e6b6a6f345}{load\+Bundle}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a58ca389654c5fba1ee22a879c2cfc4cf}{load\+Bundle}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} p\+Bundle)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a4f64f5ec12d083100ddddf59ae53e6b9}{unload\+Bundle}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} p\+Bundle)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a4add75786e60a150e00be7cafaa3f177}{list\+Bundles}} (std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} $>$ \&bundles) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a45c29d2796e2543279ea1bd16fcc12c4}{list\+Bundles}} (std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} $>$ \&bundles, \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter_a506d5fcc28761d21591eafcddc0695b4}{Bundle\+Filter\+::\+Ptr}} p\+Filter) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ae18027dcd036eb7ec1436a501eb0a28a}{resolve\+All\+Bundles}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a9734ad281c94d29cdd10a87ec609af16}{start\+All\+Bundles}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a4a1c10402a36160355c54729c1930f57}{stop\+All\+Bundles}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ab91a82bc283d4780a9192b6660544482}{unload\+All\+Bundles}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleEvents}{Bundle\+Events}} \& \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a12ca92652e07a8e1420b31e1e264b2af}{events}} ()
+\begin{DoxyCompactList}\small\item\em Stops and unloads all bundles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ab57d5eb9a3e982f65f4d8ac3bfa478d4}{os\+Name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_af4c81db7553c6b4977c97b2cb5225961}{os\+Architecture}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the name of the operating system. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a83411891bda4ab0021a13989fe716892}{path\+For\+Library}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&library\+Name)
+\begin{DoxyCompactList}\small\item\em Returns the name of the hardware architecture. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_aa5828edfe1d25ef213ea99267222dc5d}{context\+For\+Bundle}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} p\+Bundle) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_aa10273bb21210fe0972a4d9d5196477a}{next\+Bundle\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext}{Bundle\+Context}} for the given bundle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1BundleLoader_1_1BundleError}{Bundle\+Error}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a8759570d662f1ca0cd99628fd55c7071}{bundle\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_afb2726d2b8ce5a041dcd0ec6012d96a7}{resolve\+Bundle}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle)
+\begin{DoxyCompactList}\small\item\em Returns a new unique bundle ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a7248caf1645250df08d2aadaa6dd8c0f}{start\+Bundle}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle)
+\begin{DoxyCompactList}\small\item\em Resolves the given bundle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a3ae59102778c224f729aa4fe1bfbff6c}{stop\+Bundle}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle)
+\begin{DoxyCompactList}\small\item\em Starts the given bundle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_aa3e9e0c3a17930a1fcb33c15fd57b94e}{uninstall\+Bundle}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle)
+\begin{DoxyCompactList}\small\item\em Stops the given bundle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a4682e80869885a1b482fd155e24d69ae}{resolve\+Dependency}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1BundleManifest_1_1Dependency}{Bundle\+Manifest\+::\+Dependency}} \&dependency)
+\begin{DoxyCompactList}\small\item\em Uninstalls the given bundle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ac05742e1654debae21318ad7dd0b3b49}{is\+Resolving}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Resolves a single dependency of a bundle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_af89df5900d8f889767c93cb0bd613e8f}{start\+Dependencies}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator}{Bundle\+Activator}} $\ast$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a72b945a6033bf13e5d8e14f15e77f4f8}{load\+Activator}} (\mbox{\hyperlink{structPoco_1_1OSP_1_1BundleLoader_1_1BundleInfo}{Bundle\+Info}} \&bundle\+Info)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a2f4bd4e064687a4caf583a6b056399f7}{unload\+Activator}} (\mbox{\hyperlink{structPoco_1_1OSP_1_1BundleLoader_1_1BundleInfo}{Bundle\+Info}} \&bundle\+Info)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a300a7ce73aade235af48401ed3b2bc4a}{install\+Libraries}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle)
+\begin{DoxyCompactList}\small\item\em Unloads the activator for the given bundle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a2a9a596cce64dcd54cc229725ab749e8}{uninstall\+Libraries}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a81b080671bdadbff3ea8d45ff960d81c}{install\+Library}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Poco\+::\+Path}} \&p, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} $\ast$p\+TS=0)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_adb7f9eda12e6525131383f3478c09ea5}{library\+Name\+For}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ab8d79069f1de2eba6dc32114dd8cd437}{list\+Libraries}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle, std\+::vector$<$ std\+::string $>$ \&list)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_af0f959dcf0256853ae99cbd725cf126a}{sort\+Bundles}} (std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} $>$ \&bundles) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a27007bce59575b3623688fb0e944731b}{library\+Path\+For}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$p\+Bundle)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a141aff4169504cc82ec8f2c4973a50b2}{make\+Valid\+File\+Name}} (std\+::string \&name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a2b8dc7250e74bde2e1a403e1d88c8fac}{Bundle}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader}{Bundle\+Loader}} is used internally by the framework to manage \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} and \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext}{Bundle\+Context}} objects, and to load shared libraries containing \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator}{Bundle\+Activator}} classes.
+
+The \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader}{Bundle\+Loader}} uses the logger osp.\+core.\+Bundle\+Loader to write diagnostic messages. 
+
+Definition at line 53 of file Bundle\+Loader.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_ac5a1d006da8e8fec574d85f810bc7f5e}\label{classPoco_1_1OSP_1_1BundleLoader_ac5a1d006da8e8fec574d85f810bc7f5e}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!ActivatorClassLoader@{ActivatorClassLoader}}
+\index{ActivatorClassLoader@{ActivatorClassLoader}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{ActivatorClassLoader}{ActivatorClassLoader}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1ClassLoader}{Poco\+::\+Class\+Loader}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator}{Bundle\+Activator}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ac5a1d006da8e8fec574d85f810bc7f5e}{Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::\+Activator\+Class\+Loader}}}
+
+
+
+Definition at line 62 of file Bundle\+Loader.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_aaad79a1b5d46974ef89a3fecce0ca664}\label{classPoco_1_1OSP_1_1BundleLoader_aaad79a1b5d46974ef89a3fecce0ca664}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!ActivatorClassLoaderPtr@{ActivatorClassLoaderPtr}}
+\index{ActivatorClassLoaderPtr@{ActivatorClassLoaderPtr}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{ActivatorClassLoaderPtr}{ActivatorClassLoaderPtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_ac5a1d006da8e8fec574d85f810bc7f5e}{Activator\+Class\+Loader}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_aaad79a1b5d46974ef89a3fecce0ca664}{Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::\+Activator\+Class\+Loader\+Ptr}}}
+
+
+
+Definition at line 63 of file Bundle\+Loader.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a8fbebb264e869f2472fe9cfef913ebb7}\label{classPoco_1_1OSP_1_1BundleLoader_a8fbebb264e869f2472fe9cfef913ebb7}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!BundleMap@{BundleMap}}
+\index{BundleMap@{BundleMap}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{BundleMap}{BundleMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \mbox{\hyperlink{structPoco_1_1OSP_1_1BundleLoader_1_1BundleInfo}{Bundle\+Info}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a8fbebb264e869f2472fe9cfef913ebb7}{Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::\+Bundle\+Map}}}
+
+
+
+Definition at line 71 of file Bundle\+Loader.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a03da06766ed03b85d6beae1d42f2176b}\label{classPoco_1_1OSP_1_1BundleLoader_a03da06766ed03b85d6beae1d42f2176b}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!BundleSet@{BundleSet}}
+\index{BundleSet@{BundleSet}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{BundleSet}{BundleSet}}
+{\footnotesize\ttfamily typedef std\+::set$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}}$\ast$$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_a03da06766ed03b85d6beae1d42f2176b}{Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::\+Bundle\+Set}}}
+
+
+
+Definition at line 72 of file Bundle\+Loader.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a0dd9ac8f536c6dd4eb6a5872fff87bfd}\label{classPoco_1_1OSP_1_1BundleLoader_a0dd9ac8f536c6dd4eb6a5872fff87bfd}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!BundleLoader@{BundleLoader}}
+\index{BundleLoader@{BundleLoader}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{BundleLoader()}{BundleLoader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::\+Bundle\+Loader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}} \&}]{code\+Cache,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFactory_a267b71c8c6273c1edc1cb035cb419c29}{Bundle\+Factory\+::\+Ptr}}}]{p\+Bundle\+Factory,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContextFactory_acb578c43ba930d03a05075aead25d5fb}{Bundle\+Context\+Factory\+::\+Ptr}}}]{p\+Bundle\+Context\+Factory,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{os\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{os\+Arch,  }\item[{bool}]{auto\+Update\+Code\+Cache = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Fired when an error occurs while resolving or starting a bundle. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_ad987124fff94831d441414e5ae84d7bb}\label{classPoco_1_1OSP_1_1BundleLoader_ad987124fff94831d441414e5ae84d7bb}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!BundleLoader@{BundleLoader}}
+\index{BundleLoader@{BundleLoader}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{BundleLoader()}{BundleLoader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::\+Bundle\+Loader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}} \&}]{code\+Cache,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFactory_a267b71c8c6273c1edc1cb035cb419c29}{Bundle\+Factory\+::\+Ptr}}}]{p\+Bundle\+Factory,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContextFactory_acb578c43ba930d03a05075aead25d5fb}{Bundle\+Context\+Factory\+::\+Ptr}}}]{p\+Bundle\+Context\+Factory,  }\item[{bool}]{auto\+Update\+Code\+Cache = {\ttfamily true},  }\item[{std\+::string}]{logging\+App\+ID = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader}{Bundle\+Loader}}. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_abf355cd702bad0b2460c51f822f58be0}\label{classPoco_1_1OSP_1_1BundleLoader_abf355cd702bad0b2460c51f822f58be0}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!````~BundleLoader@{$\sim$BundleLoader}}
+\index{````~BundleLoader@{$\sim$BundleLoader}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{$\sim$BundleLoader()}{~BundleLoader()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::$\sim$\+Bundle\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader}{Bundle\+Loader}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_aa5828edfe1d25ef213ea99267222dc5d}\label{classPoco_1_1OSP_1_1BundleLoader_aa5828edfe1d25ef213ea99267222dc5d}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!contextForBundle@{contextForBundle}}
+\index{contextForBundle@{contextForBundle}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{contextForBundle()}{contextForBundle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::context\+For\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}}}]{p\+Bundle }\end{DoxyParamCaption}) const}
+
+Returns the full path for the library with the given library\+Name. If library\+Name is the empty string, return the path to the code cache directory. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_aab037286f1cfca01ffbae8a5bcffcec9}\label{classPoco_1_1OSP_1_1BundleLoader_aab037286f1cfca01ffbae8a5bcffcec9}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!createBundle@{createBundle}}
+\index{createBundle@{createBundle}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{createBundle()}{createBundle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::create\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+Returns the \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} object for the bundle with the given ID, or N\+U\+LL if the bundle does not exist. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a12ca92652e07a8e1420b31e1e264b2af}\label{classPoco_1_1OSP_1_1BundleLoader_a12ca92652e07a8e1420b31e1e264b2af}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!events@{events}}
+\index{events@{events}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{events()}{events()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleEvents}{Bundle\+Events}} \& Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Stops and unloads all bundles. 
+
+
+
+Definition at line 334 of file Bundle\+Loader.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_ab7cd9820f6fc1a0a11c4741c36c5418f}\label{classPoco_1_1OSP_1_1BundleLoader_ab7cd9820f6fc1a0a11c4741c36c5418f}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!findBundle@{findBundle}}
+\index{findBundle@{findBundle}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{findBundle()}{findBundle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::find\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{symbolic\+Name }\end{DoxyParamCaption}) const}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader}{Bundle\+Loader}}. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_afe3a4c3deeac4117acc336a5a50d88e3}\label{classPoco_1_1OSP_1_1BundleLoader_afe3a4c3deeac4117acc336a5a50d88e3}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!findBundle@{findBundle}}
+\index{findBundle@{findBundle}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{findBundle()}{findBundle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_a1ad8ff895c4fceafdecfb500d27a6d54}{Bundle\+::\+Const\+Ptr}} Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::find\+Bundle (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+Returns the \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} object for the bundle with the given symbolic name, or N\+U\+LL if the bundle does not exist. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a300a7ce73aade235af48401ed3b2bc4a}\label{classPoco_1_1OSP_1_1BundleLoader_a300a7ce73aade235af48401ed3b2bc4a}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!installLibraries@{installLibraries}}
+\index{installLibraries@{installLibraries}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{installLibraries()}{installLibraries()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::install\+Libraries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Unloads the activator for the given bundle. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a81b080671bdadbff3ea8d45ff960d81c}\label{classPoco_1_1OSP_1_1BundleLoader_a81b080671bdadbff3ea8d45ff960d81c}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!installLibrary@{installLibrary}}
+\index{installLibrary@{installLibrary}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{installLibrary()}{installLibrary()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::install\+Library (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Poco\+::\+Path}} \&}]{p,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} $\ast$}]{p\+TS = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Removes all shared libraries belonging to the given bundle from the code cache. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_ac05742e1654debae21318ad7dd0b3b49}\label{classPoco_1_1OSP_1_1BundleLoader_ac05742e1654debae21318ad7dd0b3b49}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!isResolving@{isResolving}}
+\index{isResolving@{isResolving}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{isResolving()}{isResolving()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::is\+Resolving (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Resolves a single dependency of a bundle. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_adb7f9eda12e6525131383f3478c09ea5}\label{classPoco_1_1OSP_1_1BundleLoader_adb7f9eda12e6525131383f3478c09ea5}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!libraryNameFor@{libraryNameFor}}
+\index{libraryNameFor@{libraryNameFor}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{libraryNameFor()}{libraryNameFor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string\& Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::library\+Name\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Copies the library to the code cache. If timestamp is provided, the file creation date is modified to the given time. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a27007bce59575b3623688fb0e944731b}\label{classPoco_1_1OSP_1_1BundleLoader_a27007bce59575b3623688fb0e944731b}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!libraryPathFor@{libraryPathFor}}
+\index{libraryPathFor@{libraryPathFor}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{libraryPathFor()}{libraryPathFor()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::library\+Path\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sorts all bundles topologically, based on their dependencies.
+
+The bundles are sorted in such a way so that bundles can be safely stopped in the resulting order. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a4add75786e60a150e00be7cafaa3f177}\label{classPoco_1_1OSP_1_1BundleLoader_a4add75786e60a150e00be7cafaa3f177}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!listBundles@{listBundles}}
+\index{listBundles@{listBundles}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{listBundles()}{listBundles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::list\+Bundles (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} $>$ \&}]{bundles }\end{DoxyParamCaption}) const}
+
+Unloads the given bundle.
+
+The bundle is removed from the bundle map and its activator library, if loaded, is unloaded. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a45c29d2796e2543279ea1bd16fcc12c4}\label{classPoco_1_1OSP_1_1BundleLoader_a45c29d2796e2543279ea1bd16fcc12c4}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!listBundles@{listBundles}}
+\index{listBundles@{listBundles}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{listBundles()}{listBundles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::list\+Bundles (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} $>$ \&}]{bundles,  }\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter_a506d5fcc28761d21591eafcddc0695b4}{Bundle\+Filter\+::\+Ptr}}}]{p\+Filter }\end{DoxyParamCaption}) const}
+
+Fills the given vector with all bundles known to the loader. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_ab8d79069f1de2eba6dc32114dd8cd437}\label{classPoco_1_1OSP_1_1BundleLoader_ab8d79069f1de2eba6dc32114dd8cd437}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!listLibraries@{listLibraries}}
+\index{listLibraries@{listLibraries}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{listLibraries()}{listLibraries()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::list\+Libraries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the library name for the library containing the activator for the given bundle. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a72b945a6033bf13e5d8e14f15e77f4f8}\label{classPoco_1_1OSP_1_1BundleLoader_a72b945a6033bf13e5d8e14f15e77f4f8}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!loadActivator@{loadActivator}}
+\index{loadActivator@{loadActivator}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{loadActivator()}{loadActivator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator}{Bundle\+Activator}}$\ast$ Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::load\+Activator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoco_1_1OSP_1_1BundleLoader_1_1BundleInfo}{Bundle\+Info}} \&}]{bundle\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Starts all bundles that the given bundle requires to run. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a58ca389654c5fba1ee22a879c2cfc4cf}\label{classPoco_1_1OSP_1_1BundleLoader_a58ca389654c5fba1ee22a879c2cfc4cf}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!loadBundle@{loadBundle}}
+\index{loadBundle@{loadBundle}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{loadBundle()}{loadBundle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::load\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}}}]{p\+Bundle }\end{DoxyParamCaption})}
+
+Loads a bundle from the given path. A new \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} object is created for the bundle, and the \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}}\textquotesingle{}s state is B\+U\+N\+D\+L\+E\+\_\+\+I\+N\+S\+T\+A\+L\+L\+ED.
+
+The bundle is then added to the bundle map. If another version of the same bundle is already loaded, a Bundle\+Version\+Conflict\+Exception is thrown.
+
+Returns the new \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} object. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_ac880ee8e652da27cc3e4c4e6b6a6f345}\label{classPoco_1_1OSP_1_1BundleLoader_ac880ee8e652da27cc3e4c4e6b6a6f345}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!loadBundle@{loadBundle}}
+\index{loadBundle@{loadBundle}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{loadBundle()}{loadBundle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::load\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+Loads a bundle from the given path.
+
+A new \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} object is created for the bundle, and the \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}}\textquotesingle{}s state is B\+U\+N\+D\+L\+E\+\_\+\+I\+N\+S\+T\+A\+L\+L\+ED. The bundle is not added to the bundle map. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a141aff4169504cc82ec8f2c4973a50b2}\label{classPoco_1_1OSP_1_1BundleLoader_a141aff4169504cc82ec8f2c4973a50b2}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!makeValidFileName@{makeValidFileName}}
+\index{makeValidFileName@{makeValidFileName}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{makeValidFileName()}{makeValidFileName()}}
+{\footnotesize\ttfamily static void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::make\+Valid\+File\+Name (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Returns the library path for the library containing the activator for the given bundle. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_aa10273bb21210fe0972a4d9d5196477a}\label{classPoco_1_1OSP_1_1BundleLoader_aa10273bb21210fe0972a4d9d5196477a}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!nextBundleId@{nextBundleId}}
+\index{nextBundleId@{nextBundleId}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{nextBundleId()}{nextBundleId()}}
+{\footnotesize\ttfamily int Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::next\+Bundle\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext}{Bundle\+Context}} for the given bundle. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_af4c81db7553c6b4977c97b2cb5225961}\label{classPoco_1_1OSP_1_1BundleLoader_af4c81db7553c6b4977c97b2cb5225961}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!osArchitecture@{osArchitecture}}
+\index{osArchitecture@{osArchitecture}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{osArchitecture()}{osArchitecture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::os\+Architecture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the name of the operating system. 
+
+
+
+Definition at line 346 of file Bundle\+Loader.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_ab57d5eb9a3e982f65f4d8ac3bfa478d4}\label{classPoco_1_1OSP_1_1BundleLoader_ab57d5eb9a3e982f65f4d8ac3bfa478d4}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!osName@{osName}}
+\index{osName@{osName}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{osName()}{osName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::os\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleEvents}{Bundle\+Events}} object. 
+
+Definition at line 340 of file Bundle\+Loader.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a83411891bda4ab0021a13989fe716892}\label{classPoco_1_1OSP_1_1BundleLoader_a83411891bda4ab0021a13989fe716892}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!pathForLibrary@{pathForLibrary}}
+\index{pathForLibrary@{pathForLibrary}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{pathForLibrary()}{pathForLibrary()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::path\+For\+Library (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{library\+Name }\end{DoxyParamCaption})}
+
+
+
+Returns the name of the hardware architecture. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_ae18027dcd036eb7ec1436a501eb0a28a}\label{classPoco_1_1OSP_1_1BundleLoader_ae18027dcd036eb7ec1436a501eb0a28a}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!resolveAllBundles@{resolveAllBundles}}
+\index{resolveAllBundles@{resolveAllBundles}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{resolveAllBundles()}{resolveAllBundles()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::resolve\+All\+Bundles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fills the given vector with all bundles known to the loader, filtered by the given \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleFilter}{Bundle\+Filter}}. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_afb2726d2b8ce5a041dcd0ec6012d96a7}\label{classPoco_1_1OSP_1_1BundleLoader_afb2726d2b8ce5a041dcd0ec6012d96a7}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!resolveBundle@{resolveBundle}}
+\index{resolveBundle@{resolveBundle}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{resolveBundle()}{resolveBundle()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::resolve\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns a new unique bundle ID. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a4682e80869885a1b482fd155e24d69ae}\label{classPoco_1_1OSP_1_1BundleLoader_a4682e80869885a1b482fd155e24d69ae}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!resolveDependency@{resolveDependency}}
+\index{resolveDependency@{resolveDependency}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{resolveDependency()}{resolveDependency()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::resolve\+Dependency (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1BundleManifest_1_1Dependency}{Bundle\+Manifest\+::\+Dependency}} \&}]{dependency }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Uninstalls the given bundle. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_af0f959dcf0256853ae99cbd725cf126a}\label{classPoco_1_1OSP_1_1BundleLoader_af0f959dcf0256853ae99cbd725cf126a}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!sortBundles@{sortBundles}}
+\index{sortBundles@{sortBundles}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{sortBundles()}{sortBundles()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::sort\+Bundles (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}} $>$ \&}]{bundles }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Lists all shared libraries contained in the bundle for the current platform. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a9734ad281c94d29cdd10a87ec609af16}\label{classPoco_1_1OSP_1_1BundleLoader_a9734ad281c94d29cdd10a87ec609af16}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!startAllBundles@{startAllBundles}}
+\index{startAllBundles@{startAllBundles}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{startAllBundles()}{startAllBundles()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::start\+All\+Bundles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resolves all bundles.
+
+If a bundle cannot be resolved, an error is logged and the loader will continue to resolve other bundles. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a7248caf1645250df08d2aadaa6dd8c0f}\label{classPoco_1_1OSP_1_1BundleLoader_a7248caf1645250df08d2aadaa6dd8c0f}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!startBundle@{startBundle}}
+\index{startBundle@{startBundle}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{startBundle()}{startBundle()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::start\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Resolves the given bundle. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_af89df5900d8f889767c93cb0bd613e8f}\label{classPoco_1_1OSP_1_1BundleLoader_af89df5900d8f889767c93cb0bd613e8f}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!startDependencies@{startDependencies}}
+\index{startDependencies@{startDependencies}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{startDependencies()}{startDependencies()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::start\+Dependencies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns true iff the given bundle is currently being resolved. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a4a1c10402a36160355c54729c1930f57}\label{classPoco_1_1OSP_1_1BundleLoader_a4a1c10402a36160355c54729c1930f57}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!stopAllBundles@{stopAllBundles}}
+\index{stopAllBundles@{stopAllBundles}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{stopAllBundles()}{stopAllBundles()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::stop\+All\+Bundles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts all bundles, ordered by their run level. If a bundle has the lazy\+Start property set, that bundle won\textquotesingle{}t be started unless another bundle requires it.
+
+Bundles with lower run levels will be started before bundles with higher run levels.
+
+If a bundle cannot be started, an error will be logged, and the loader will continue to load other bundles. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a3ae59102778c224f729aa4fe1bfbff6c}\label{classPoco_1_1OSP_1_1BundleLoader_a3ae59102778c224f729aa4fe1bfbff6c}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!stopBundle@{stopBundle}}
+\index{stopBundle@{stopBundle}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{stopBundle()}{stopBundle()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::stop\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Starts the given bundle. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_aa3e9e0c3a17930a1fcb33c15fd57b94e}\label{classPoco_1_1OSP_1_1BundleLoader_aa3e9e0c3a17930a1fcb33c15fd57b94e}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!uninstallBundle@{uninstallBundle}}
+\index{uninstallBundle@{uninstallBundle}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{uninstallBundle()}{uninstallBundle()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::uninstall\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Stops the given bundle. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a2a9a596cce64dcd54cc229725ab749e8}\label{classPoco_1_1OSP_1_1BundleLoader_a2a9a596cce64dcd54cc229725ab749e8}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!uninstallLibraries@{uninstallLibraries}}
+\index{uninstallLibraries@{uninstallLibraries}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{uninstallLibraries()}{uninstallLibraries()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::uninstall\+Libraries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}} $\ast$}]{p\+Bundle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Copies all shared libraries in the bundle (for the current platform) to the code cache. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a2f4bd4e064687a4caf583a6b056399f7}\label{classPoco_1_1OSP_1_1BundleLoader_a2f4bd4e064687a4caf583a6b056399f7}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!unloadActivator@{unloadActivator}}
+\index{unloadActivator@{unloadActivator}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{unloadActivator()}{unloadActivator()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::unload\+Activator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoco_1_1OSP_1_1BundleLoader_1_1BundleInfo}{Bundle\+Info}} \&}]{bundle\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Loads the activator for the given bundle, unless it has already been loaded. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_ab91a82bc283d4780a9192b6660544482}\label{classPoco_1_1OSP_1_1BundleLoader_ab91a82bc283d4780a9192b6660544482}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!unloadAllBundles@{unloadAllBundles}}
+\index{unloadAllBundles@{unloadAllBundles}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{unloadAllBundles()}{unloadAllBundles()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::unload\+All\+Bundles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stops all bundles.
+
+Bundles are stopped in order of their depedencies. \mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a4f64f5ec12d083100ddddf59ae53e6b9}\label{classPoco_1_1OSP_1_1BundleLoader_a4f64f5ec12d083100ddddf59ae53e6b9}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!unloadBundle@{unloadBundle}}
+\index{unloadBundle@{unloadBundle}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{unloadBundle()}{unloadBundle()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::unload\+Bundle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle_afd7ae27457a25e7f2171247794938ed1}{Bundle\+::\+Ptr}}}]{p\+Bundle }\end{DoxyParamCaption})}
+
+Loads the given \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}}, which must have been created with \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleLoader_aab037286f1cfca01ffbae8a5bcffcec9}{create\+Bundle()}}.
+
+The bundle is then added to the bundle map. If another version of the same bundle is already loaded, a Bundle\+Version\+Conflict\+Exception is thrown. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a2b8dc7250e74bde2e1a403e1d88c8fac}\label{classPoco_1_1OSP_1_1BundleLoader_a2b8dc7250e74bde2e1a403e1d88c8fac}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!Bundle@{Bundle}}
+\index{Bundle@{Bundle}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{Bundle}{Bundle}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1OSP_1_1Bundle}{Bundle}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 319 of file Bundle\+Loader.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleLoader_a8759570d662f1ca0cd99628fd55c7071}\label{classPoco_1_1OSP_1_1BundleLoader_a8759570d662f1ca0cd99628fd55c7071}} 
+\index{Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}!bundleError@{bundleError}}
+\index{bundleError@{bundleError}!Poco::OSP::BundleLoader@{Poco::OSP::BundleLoader}}
+\doxysubsubsection{\texorpdfstring{bundleError}{bundleError}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structPoco_1_1OSP_1_1BundleLoader_1_1BundleError}{Bundle\+Error}}$>$ Poco\+::\+O\+S\+P\+::\+Bundle\+Loader\+::bundle\+Error}
+
+
+
+Definition at line 81 of file Bundle\+Loader.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{BundleLoader_8h}{Bundle\+Loader.\+h}}\end{DoxyCompactItemize}

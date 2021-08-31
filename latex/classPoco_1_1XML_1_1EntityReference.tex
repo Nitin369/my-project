@@ -1,0 +1,121 @@
+\hypertarget{classPoco_1_1XML_1_1EntityReference}{}\doxysection{Poco\+::X\+ML\+::Entity\+Reference Class Reference}
+\label{classPoco_1_1XML_1_1EntityReference}\index{Poco::XML::EntityReference@{Poco::XML::EntityReference}}
+
+
+{\ttfamily \#include $<$Entity\+Reference.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::Entity\+Reference\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::X\+ML\+::Entity\+Reference\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \& \mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference_a09fc372fc5e3163465593a7b3892a96f}{node\+Name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+unsigned short \mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference_a5bc8cf6be2ef282a8b86426934862f80}{node\+Type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference_a4f570b4d5848ae7362c65e102d727433}{Entity\+Reference}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&name)
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference_a9206ce18311c211ec65247721e3b23ef}{Entity\+Reference}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference}{Entity\+Reference}} \&ref)
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference_acd36791af6b3bd31ef27565f3efa090f}{$\sim$\+Entity\+Reference}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference_a4ef5573dc5874c8a254e40a8e33be8aa}{copy\+Node}} (bool deep, \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$p\+Owner\+Document) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference_a883538034e58fc5c0de7d4e4cab3cef7}{Document}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference}{Entity\+Reference}} objects may be inserted into the structure model when an entity reference is in the source document, or when the user wishes to insert an entity reference. Note that character references and references to predefined entities are considered to be expanded by the H\+T\+ML or \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} processor so that characters are represented by their \mbox{\hyperlink{classPoco_1_1Unicode}{Unicode}} equivalent rather than by an entity reference. Moreover, the \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} processor may completely expand references to entities while building the structure model, instead of providing \mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference}{Entity\+Reference}} objects. If it does provide such objects, then for a given \mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference}{Entity\+Reference}} node, it may be that there is no \mbox{\hyperlink{classPoco_1_1XML_1_1Entity}{Entity}} node representing the referenced entity. If such an \mbox{\hyperlink{classPoco_1_1XML_1_1Entity}{Entity}} exists, then the child list of the \mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference}{Entity\+Reference}} node is the same as that of the \mbox{\hyperlink{classPoco_1_1XML_1_1Entity}{Entity}} node.
+
+As for \mbox{\hyperlink{classPoco_1_1XML_1_1Entity}{Entity}} nodes, \mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference}{Entity\+Reference}} nodes and all their descendants are readonly.
+
+The resolution of the children of the \mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference}{Entity\+Reference}} (the replacement value of the referenced \mbox{\hyperlink{classPoco_1_1XML_1_1Entity}{Entity}}) may be lazily evaluated; actions by the user (such as calling the child\+Nodes method on the \mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference}{Entity\+Reference}} node) are assumed to trigger the evaluation. 
+
+Definition at line 32 of file Entity\+Reference.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EntityReference_a4f570b4d5848ae7362c65e102d727433}\label{classPoco_1_1XML_1_1EntityReference_a4f570b4d5848ae7362c65e102d727433}} 
+\index{Poco::XML::EntityReference@{Poco::XML::EntityReference}!EntityReference@{EntityReference}}
+\index{EntityReference@{EntityReference}!Poco::XML::EntityReference@{Poco::XML::EntityReference}}
+\doxysubsubsection{\texorpdfstring{EntityReference()}{EntityReference()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Entity\+Reference\+::\+Entity\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EntityReference_a9206ce18311c211ec65247721e3b23ef}\label{classPoco_1_1XML_1_1EntityReference_a9206ce18311c211ec65247721e3b23ef}} 
+\index{Poco::XML::EntityReference@{Poco::XML::EntityReference}!EntityReference@{EntityReference}}
+\index{EntityReference@{EntityReference}!Poco::XML::EntityReference@{Poco::XML::EntityReference}}
+\doxysubsubsection{\texorpdfstring{EntityReference()}{EntityReference()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Entity\+Reference\+::\+Entity\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1XML_1_1EntityReference}{Entity\+Reference}} \&}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EntityReference_acd36791af6b3bd31ef27565f3efa090f}\label{classPoco_1_1XML_1_1EntityReference_acd36791af6b3bd31ef27565f3efa090f}} 
+\index{Poco::XML::EntityReference@{Poco::XML::EntityReference}!````~EntityReference@{$\sim$EntityReference}}
+\index{````~EntityReference@{$\sim$EntityReference}!Poco::XML::EntityReference@{Poco::XML::EntityReference}}
+\doxysubsubsection{\texorpdfstring{$\sim$EntityReference()}{~EntityReference()}}
+{\footnotesize\ttfamily Poco\+::\+X\+M\+L\+::\+Entity\+Reference\+::$\sim$\+Entity\+Reference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EntityReference_a4ef5573dc5874c8a254e40a8e33be8aa}\label{classPoco_1_1XML_1_1EntityReference_a4ef5573dc5874c8a254e40a8e33be8aa}} 
+\index{Poco::XML::EntityReference@{Poco::XML::EntityReference}!copyNode@{copyNode}}
+\index{copyNode@{copyNode}!Poco::XML::EntityReference@{Poco::XML::EntityReference}}
+\doxysubsubsection{\texorpdfstring{copyNode()}{copyNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}}$\ast$ Poco\+::\+X\+M\+L\+::\+Entity\+Reference\+::copy\+Node (\begin{DoxyParamCaption}\item[{bool}]{deep,  }\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}} $\ast$}]{p\+Owner\+Document }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode_ae0a8579dd6ecfed5ff9c3f3daec40d90}{Poco\+::\+X\+M\+L\+::\+Abstract\+Node}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EntityReference_a09fc372fc5e3163465593a7b3892a96f}\label{classPoco_1_1XML_1_1EntityReference_a09fc372fc5e3163465593a7b3892a96f}} 
+\index{Poco::XML::EntityReference@{Poco::XML::EntityReference}!nodeName@{nodeName}}
+\index{nodeName@{nodeName}!Poco::XML::EntityReference@{Poco::XML::EntityReference}}
+\doxysubsubsection{\texorpdfstring{nodeName()}{nodeName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}}\& Poco\+::\+X\+M\+L\+::\+Entity\+Reference\+::node\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode_a19a18ccbfab094d220e02a0a7b05c5f1}{Poco\+::\+X\+M\+L\+::\+Abstract\+Node}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EntityReference_a5bc8cf6be2ef282a8b86426934862f80}\label{classPoco_1_1XML_1_1EntityReference_a5bc8cf6be2ef282a8b86426934862f80}} 
+\index{Poco::XML::EntityReference@{Poco::XML::EntityReference}!nodeType@{nodeType}}
+\index{nodeType@{nodeType}!Poco::XML::EntityReference@{Poco::XML::EntityReference}}
+\doxysubsubsection{\texorpdfstring{nodeType()}{nodeType()}}
+{\footnotesize\ttfamily unsigned short Poco\+::\+X\+M\+L\+::\+Entity\+Reference\+::node\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the value of this node. Throws an exception if the node is read-\/only. 
+
+Implements \mbox{\hyperlink{classPoco_1_1XML_1_1Node_ac001e1819b1eb928ca1ae6f6f90e1159}{Poco\+::\+X\+M\+L\+::\+Node}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EntityReference_a883538034e58fc5c0de7d4e4cab3cef7}\label{classPoco_1_1XML_1_1EntityReference_a883538034e58fc5c0de7d4e4cab3cef7}} 
+\index{Poco::XML::EntityReference@{Poco::XML::EntityReference}!Document@{Document}}
+\index{Document@{Document}!Poco::XML::EntityReference@{Poco::XML::EntityReference}}
+\doxysubsubsection{\texorpdfstring{Document}{Document}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1XML_1_1Document}{Document}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 68 of file Entity\+Reference.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+D\+O\+M/\mbox{\hyperlink{EntityReference_8h}{Entity\+Reference.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,143 @@
+\hypertarget{classPoco_1_1SHA1Engine}{}\doxysection{Poco\+::S\+H\+A1\+Engine Class Reference}
+\label{classPoco_1_1SHA1Engine}\index{Poco::SHA1Engine@{Poco::SHA1Engine}}
+
+
+{\ttfamily \#include $<$S\+H\+A1\+Engine.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::S\+H\+A1\+Engine\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::S\+H\+A1\+Engine\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{classPoco_1_1SHA1Engine_aa6c0a3d1ae9db457c91f370bbf42509facc552e3fb27e5eb4ced71f6930d4e75d}{B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}} = 64, 
+\mbox{\hyperlink{classPoco_1_1SHA1Engine_aa6c0a3d1ae9db457c91f370bbf42509faf2b79ddce42a1af39afee8b0291cdac0}{D\+I\+G\+E\+S\+T\+\_\+\+S\+I\+ZE}} = 20
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1SHA1Engine_adce3909b7381f8c0d2423f6859e95277}{S\+H\+A1\+Engine}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1SHA1Engine_accd56c7b1c012284fde78e84f84dd140}{$\sim$\+S\+H\+A1\+Engine}} ()
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1SHA1Engine_ab9379099ef79f9101c22f7f0e2775bb4}{digest\+Length}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Updates the digest with the given data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1SHA1Engine_a6c97514438dd48c37d3ecb73a7f9fea3}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Returns the length of the digest in bytes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DigestEngine_a8e6e74183768a08e8f00112e5c6c055e}{Digest\+Engine\+::\+Digest}} \& \mbox{\hyperlink{classPoco_1_1SHA1Engine_af075123dbd5ad48461ab38373aaccfd5}{digest}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1SHA1Engine_aee560eedc434ad3b102ef88d97a681b2}{update\+Impl}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$data, std\+::size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Converts a string created by digest\+To\+Hex back to its Digest presentation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class implementes the S\+H\+A-\/1 message digest algorithm. (F\+I\+PS 180-\/1, see \href{http://www.itl.nist.gov/fipspubs/fip180-1.htm}{\texttt{ http\+://www.\+itl.\+nist.\+gov/fipspubs/fip180-\/1.\+htm}}) 
+
+Definition at line 36 of file S\+H\+A1\+Engine.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1SHA1Engine_aa6c0a3d1ae9db457c91f370bbf42509f}\label{classPoco_1_1SHA1Engine_aa6c0a3d1ae9db457c91f370bbf42509f}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLOCK\_SIZE@{BLOCK\_SIZE}!Poco::SHA1Engine@{Poco::SHA1Engine}}\index{Poco::SHA1Engine@{Poco::SHA1Engine}!BLOCK\_SIZE@{BLOCK\_SIZE}}}\mbox{\Hypertarget{classPoco_1_1SHA1Engine_aa6c0a3d1ae9db457c91f370bbf42509facc552e3fb27e5eb4ced71f6930d4e75d}\label{classPoco_1_1SHA1Engine_aa6c0a3d1ae9db457c91f370bbf42509facc552e3fb27e5eb4ced71f6930d4e75d}} 
+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIGEST\_SIZE@{DIGEST\_SIZE}!Poco::SHA1Engine@{Poco::SHA1Engine}}\index{Poco::SHA1Engine@{Poco::SHA1Engine}!DIGEST\_SIZE@{DIGEST\_SIZE}}}\mbox{\Hypertarget{classPoco_1_1SHA1Engine_aa6c0a3d1ae9db457c91f370bbf42509faf2b79ddce42a1af39afee8b0291cdac0}\label{classPoco_1_1SHA1Engine_aa6c0a3d1ae9db457c91f370bbf42509faf2b79ddce42a1af39afee8b0291cdac0}} 
+D\+I\+G\+E\+S\+T\+\_\+\+S\+I\+ZE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 41 of file S\+H\+A1\+Engine.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1SHA1Engine_adce3909b7381f8c0d2423f6859e95277}\label{classPoco_1_1SHA1Engine_adce3909b7381f8c0d2423f6859e95277}} 
+\index{Poco::SHA1Engine@{Poco::SHA1Engine}!SHA1Engine@{SHA1Engine}}
+\index{SHA1Engine@{SHA1Engine}!Poco::SHA1Engine@{Poco::SHA1Engine}}
+\doxysubsubsection{\texorpdfstring{SHA1Engine()}{SHA1Engine()}}
+{\footnotesize\ttfamily Poco\+::\+S\+H\+A1\+Engine\+::\+S\+H\+A1\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1SHA1Engine_accd56c7b1c012284fde78e84f84dd140}\label{classPoco_1_1SHA1Engine_accd56c7b1c012284fde78e84f84dd140}} 
+\index{Poco::SHA1Engine@{Poco::SHA1Engine}!````~SHA1Engine@{$\sim$SHA1Engine}}
+\index{````~SHA1Engine@{$\sim$SHA1Engine}!Poco::SHA1Engine@{Poco::SHA1Engine}}
+\doxysubsubsection{\texorpdfstring{$\sim$SHA1Engine()}{~SHA1Engine()}}
+{\footnotesize\ttfamily Poco\+::\+S\+H\+A1\+Engine\+::$\sim$\+S\+H\+A1\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1SHA1Engine_af075123dbd5ad48461ab38373aaccfd5}\label{classPoco_1_1SHA1Engine_af075123dbd5ad48461ab38373aaccfd5}} 
+\index{Poco::SHA1Engine@{Poco::SHA1Engine}!digest@{digest}}
+\index{digest@{digest}!Poco::SHA1Engine@{Poco::SHA1Engine}}
+\doxysubsubsection{\texorpdfstring{digest()}{digest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DigestEngine_a8e6e74183768a08e8f00112e5c6c055e}{Digest\+Engine\+::\+Digest}}\& Poco\+::\+S\+H\+A1\+Engine\+::digest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Resets the engine so that a new digest can be computed. 
+
+Implements \mbox{\hyperlink{classPoco_1_1DigestEngine_acbb5e07fd2f4ae327c3a6897867e07f3}{Poco\+::\+Digest\+Engine}}.
+
+\mbox{\Hypertarget{classPoco_1_1SHA1Engine_ab9379099ef79f9101c22f7f0e2775bb4}\label{classPoco_1_1SHA1Engine_ab9379099ef79f9101c22f7f0e2775bb4}} 
+\index{Poco::SHA1Engine@{Poco::SHA1Engine}!digestLength@{digestLength}}
+\index{digestLength@{digestLength}!Poco::SHA1Engine@{Poco::SHA1Engine}}
+\doxysubsubsection{\texorpdfstring{digestLength()}{digestLength()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Poco\+::\+S\+H\+A1\+Engine\+::digest\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the digest with the given data. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1DigestEngine_a971c0aa31b67436f710841a87ac4d5ca}{Poco\+::\+Digest\+Engine}}.
+
+\mbox{\Hypertarget{classPoco_1_1SHA1Engine_a6c97514438dd48c37d3ecb73a7f9fea3}\label{classPoco_1_1SHA1Engine_a6c97514438dd48c37d3ecb73a7f9fea3}} 
+\index{Poco::SHA1Engine@{Poco::SHA1Engine}!reset@{reset}}
+\index{reset@{reset}!Poco::SHA1Engine@{Poco::SHA1Engine}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Poco\+::\+S\+H\+A1\+Engine\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the length of the digest in bytes. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1DigestEngine_ac6e2b8d7740b289e9432ae673823ae0f}{Poco\+::\+Digest\+Engine}}.
+
+\mbox{\Hypertarget{classPoco_1_1SHA1Engine_aee560eedc434ad3b102ef88d97a681b2}\label{classPoco_1_1SHA1Engine_aee560eedc434ad3b102ef88d97a681b2}} 
+\index{Poco::SHA1Engine@{Poco::SHA1Engine}!updateImpl@{updateImpl}}
+\index{updateImpl@{updateImpl}!Poco::SHA1Engine@{Poco::SHA1Engine}}
+\doxysubsubsection{\texorpdfstring{updateImpl()}{updateImpl()}}
+{\footnotesize\ttfamily void Poco\+::\+S\+H\+A1\+Engine\+::update\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Converts a string created by digest\+To\+Hex back to its Digest presentation. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1DigestEngine_a172d52d2fd5c279b4571f6cd5b57fccf}{Poco\+::\+Digest\+Engine}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{SHA1Engine_8h}{S\+H\+A1\+Engine.\+h}}\end{DoxyCompactItemize}

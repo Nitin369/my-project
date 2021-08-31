@@ -1,0 +1,116 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1Skeleton}{}\doxysection{Poco\+::Remoting\+NG\+::Skeleton Class Reference}
+\label{classPoco_1_1RemotingNG_1_1Skeleton}\index{Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}}
+
+
+{\ttfamily \#include $<$Skeleton.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::Skeleton\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::Skeleton\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_ab08a5b8b65aa0f3fb807f8f8b5f61fcc}{Ptr}}
+\item 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1MethodHandler_ade0c00750e114ea66320dac5d4fa8d7a}{Method\+Handler\+::\+Ptr}} $>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_a058f3c183e26eab153b3a66016d1ba17}{Method\+Handlers}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_adbcf71ad41f9c9a3de0ed0c7686158eb}{Skeleton}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_ad72ae46f4c68552be1414c5e0a77c3e9}{$\sim$\+Skeleton}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_a8785cef67b3247bb5297378db2030842}{invoke}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}} \&transport, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_af3776a637b207d01ec206c8239bce711}{Remote\+Object\+::\+Ptr}} p\+Remote\+Object)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_af686bf4959be6da712b7a5ef176723e3}{add\+Method\+Handler}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1MethodHandler_ade0c00750e114ea66320dac5d4fa8d7a}{Method\+Handler\+::\+Ptr}} p\+Method\+Handler)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}} is responsible for demultiplexing incoming requests to the correct service object method, using \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1MethodHandler}{Method\+Handler}} objects. 
+
+Definition at line 39 of file Skeleton.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Skeleton_a058f3c183e26eab153b3a66016d1ba17}\label{classPoco_1_1RemotingNG_1_1Skeleton_a058f3c183e26eab153b3a66016d1ba17}} 
+\index{Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}!MethodHandlers@{MethodHandlers}}
+\index{MethodHandlers@{MethodHandlers}!Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}}
+\doxysubsubsection{\texorpdfstring{MethodHandlers}{MethodHandlers}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1MethodHandler_ade0c00750e114ea66320dac5d4fa8d7a}{Method\+Handler\+::\+Ptr}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_a058f3c183e26eab153b3a66016d1ba17}{Poco\+::\+Remoting\+N\+G\+::\+Skeleton\+::\+Method\+Handlers}}}
+
+
+
+Definition at line 45 of file Skeleton.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Skeleton_ab08a5b8b65aa0f3fb807f8f8b5f61fcc}\label{classPoco_1_1RemotingNG_1_1Skeleton_ab08a5b8b65aa0f3fb807f8f8b5f61fcc}} 
+\index{Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}}$>$ \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton_ab08a5b8b65aa0f3fb807f8f8b5f61fcc}{Poco\+::\+Remoting\+N\+G\+::\+Skeleton\+::\+Ptr}}}
+
+
+
+Definition at line 44 of file Skeleton.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Skeleton_adbcf71ad41f9c9a3de0ed0c7686158eb}\label{classPoco_1_1RemotingNG_1_1Skeleton_adbcf71ad41f9c9a3de0ed0c7686158eb}} 
+\index{Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}!Skeleton@{Skeleton}}
+\index{Skeleton@{Skeleton}!Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}}
+\doxysubsubsection{\texorpdfstring{Skeleton()}{Skeleton()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+Skeleton\+::\+Skeleton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Skeleton_ad72ae46f4c68552be1414c5e0a77c3e9}\label{classPoco_1_1RemotingNG_1_1Skeleton_ad72ae46f4c68552be1414c5e0a77c3e9}} 
+\index{Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}!````~Skeleton@{$\sim$Skeleton}}
+\index{````~Skeleton@{$\sim$Skeleton}!Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}}
+\doxysubsubsection{\texorpdfstring{$\sim$Skeleton()}{~Skeleton()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Remoting\+N\+G\+::\+Skeleton\+::$\sim$\+Skeleton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Skeleton_af686bf4959be6da712b7a5ef176723e3}\label{classPoco_1_1RemotingNG_1_1Skeleton_af686bf4959be6da712b7a5ef176723e3}} 
+\index{Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}!addMethodHandler@{addMethodHandler}}
+\index{addMethodHandler@{addMethodHandler}!Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}}
+\doxysubsubsection{\texorpdfstring{addMethodHandler()}{addMethodHandler()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+Skeleton\+::add\+Method\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1MethodHandler_ade0c00750e114ea66320dac5d4fa8d7a}{Method\+Handler\+::\+Ptr}}}]{p\+Method\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Invoke a method on the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject}{Remote\+Object}}.
+
+First, obtains a \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer}{Deserializer}} from the given \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}} by calling begin\+Request(). Then, determines the method name from the request (by calling \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Deserializer_aec58eaccd6f754de65c69a7d132a025d}{Deserializer\+::find\+Message()}}), obtains the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1MethodHandler}{Method\+Handler}} for the method and invokes the method using the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1MethodHandler}{Method\+Handler}}.
+
+If no \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1MethodHandler}{Method\+Handler}} is found, a Method\+Not\+Found\+Exception is sent back to the client. If the type of the received message is neither M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+Q\+U\+E\+ST nor M\+E\+S\+S\+A\+G\+E\+\_\+\+E\+V\+E\+NT, a Unexpected\+Message\+Exception will be thrown.
+
+After processing the request, end\+Request() is called on the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}}.
+
+Returns true if the method was found, false otherwise. \mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1Skeleton_a8785cef67b3247bb5297378db2030842}\label{classPoco_1_1RemotingNG_1_1Skeleton_a8785cef67b3247bb5297378db2030842}} 
+\index{Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}!invoke@{invoke}}
+\index{invoke@{invoke}!Poco::RemotingNG::Skeleton@{Poco::RemotingNG::Skeleton}}
+\doxysubsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily bool Poco\+::\+Remoting\+N\+G\+::\+Skeleton\+::invoke (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1ServerTransport}{Server\+Transport}} \&}]{transport,  }\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1RemoteObject_af3776a637b207d01ec206c8239bce711}{Remote\+Object\+::\+Ptr}}}]{p\+Remote\+Object }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Skeleton}{Skeleton}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\mbox{\hyperlink{Skeleton_8h}{Skeleton.\+h}}\end{DoxyCompactItemize}

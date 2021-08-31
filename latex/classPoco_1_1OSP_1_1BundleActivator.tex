@@ -1,0 +1,88 @@
+\hypertarget{classPoco_1_1OSP_1_1BundleActivator}{}\doxysection{Poco\+::O\+SP\+::Bundle\+Activator Class Reference}
+\label{classPoco_1_1OSP_1_1BundleActivator}\index{Poco::OSP::BundleActivator@{Poco::OSP::BundleActivator}}
+
+
+{\ttfamily \#include $<$Bundle\+Activator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator_a86ba6c4816e5b1e151449a0d41bf7ba5}{start}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}} p\+Context)=0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator_aa9dedcdab137f26891a8de1c9885501f}{stop}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}} p\+Context)=0
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator_a4e1a679638be82dec45f328042b624c4}{$\sim$\+Bundle\+Activator}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator_a00ccc501ebd8fef6ddc4633062c7cc9b}{Bundle\+Activator}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator}{Bundle\+Activator}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator}{Bundle\+Activator}} is the entry point for every bundle contributing executable code and requiring special action upon startup or shutdown.
+
+A bundle should provide its own \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator}{Bundle\+Activator}} class derived from this class.
+
+The \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator}{Bundle\+Activator}} (or, correctly speaking, a class derived from it) is the only class loaded from the bundle by the \mbox{\hyperlink{namespacePoco_1_1OSP}{O\+SP}} framework.
+
+To prevent lengthy startup and shutdown sequences, the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator_a86ba6c4816e5b1e151449a0d41bf7ba5}{start()}} and \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator_aa9dedcdab137f26891a8de1c9885501f}{stop()}} method should do their work in a timely fashion. 
+
+Definition at line 34 of file Bundle\+Activator.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleActivator_a4e1a679638be82dec45f328042b624c4}\label{classPoco_1_1OSP_1_1BundleActivator_a4e1a679638be82dec45f328042b624c4}} 
+\index{Poco::OSP::BundleActivator@{Poco::OSP::BundleActivator}!````~BundleActivator@{$\sim$BundleActivator}}
+\index{````~BundleActivator@{$\sim$BundleActivator}!Poco::OSP::BundleActivator@{Poco::OSP::BundleActivator}}
+\doxysubsubsection{\texorpdfstring{$\sim$BundleActivator()}{~BundleActivator()}}
+{\footnotesize\ttfamily virtual Poco\+::\+O\+S\+P\+::\+Bundle\+Activator\+::$\sim$\+Bundle\+Activator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Called during the \char`\"{}stopping\char`\"{} phase of the bundle.
+
+Typical things to do in this member function are
+\begin{DoxyItemize}
+\item unregistering services with the service registry
+\item unsubscribing from events
+\item cleaning up the mess left behind from the bundle 
+\end{DoxyItemize}\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleActivator_a00ccc501ebd8fef6ddc4633062c7cc9b}\label{classPoco_1_1OSP_1_1BundleActivator_a00ccc501ebd8fef6ddc4633062c7cc9b}} 
+\index{Poco::OSP::BundleActivator@{Poco::OSP::BundleActivator}!BundleActivator@{BundleActivator}}
+\index{BundleActivator@{BundleActivator}!Poco::OSP::BundleActivator@{Poco::OSP::BundleActivator}}
+\doxysubsubsection{\texorpdfstring{BundleActivator()}{BundleActivator()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Bundle\+Activator\+::\+Bundle\+Activator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator}{Bundle\+Activator}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleActivator_a86ba6c4816e5b1e151449a0d41bf7ba5}\label{classPoco_1_1OSP_1_1BundleActivator_a86ba6c4816e5b1e151449a0d41bf7ba5}} 
+\index{Poco::OSP::BundleActivator@{Poco::OSP::BundleActivator}!start@{start}}
+\index{start@{start}!Poco::OSP::BundleActivator@{Poco::OSP::BundleActivator}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+O\+S\+P\+::\+Bundle\+Activator\+::start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}}}]{p\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1BundleActivator_aa9dedcdab137f26891a8de1c9885501f}\label{classPoco_1_1OSP_1_1BundleActivator_aa9dedcdab137f26891a8de1c9885501f}} 
+\index{Poco::OSP::BundleActivator@{Poco::OSP::BundleActivator}!stop@{stop}}
+\index{stop@{stop}!Poco::OSP::BundleActivator@{Poco::OSP::BundleActivator}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+O\+S\+P\+::\+Bundle\+Activator\+::stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}}}]{p\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Called during the \char`\"{}starting\char`\"{} phase of a bundle, after all dependencies have been resolved.
+
+Typical things to do in this member function are
+\begin{DoxyItemize}
+\item registering services with the service registry
+\item subscribing to events
+\item preparing the environment so that the bundle can do its work
+\end{DoxyItemize}
+
+The \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext}{Bundle\+Context}} object passed as argument is valid through the entire lifetime of the bundle (until \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleActivator_aa9dedcdab137f26891a8de1c9885501f}{stop()}} returns) and can be stored for later reference. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{BundleActivator_8h}{Bundle\+Activator.\+h}}\end{DoxyCompactItemize}

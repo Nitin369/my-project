@@ -1,0 +1,85 @@
+\hypertarget{classPoco_1_1XML_1_1EventTarget}{}\doxysection{Poco\+::X\+ML\+::Event\+Target Class Reference}
+\label{classPoco_1_1XML_1_1EventTarget}\index{Poco::XML::EventTarget@{Poco::XML::EventTarget}}
+
+
+{\ttfamily \#include $<$Event\+Target.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::Event\+Target\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::X\+ML\+::Event\+Target\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget_aed316ca12b247dfd31d052b186422695}{add\+Event\+Listener}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&type, \mbox{\hyperlink{classPoco_1_1XML_1_1EventListener}{Event\+Listener}} $\ast$listener, bool use\+Capture)=0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget_adc6bca1251e799e38f0d152c58ae38ef}{remove\+Event\+Listener}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&type, \mbox{\hyperlink{classPoco_1_1XML_1_1EventListener}{Event\+Listener}} $\ast$listener, bool use\+Capture)=0
+\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget_a69cdde398020d2a08d2b0b969fe9ad73}{dispatch\+Event}} (\mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} $\ast$evt)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget_a901c4f7fa9615f5c602e9fea01efe667}{$\sim$\+Event\+Target}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} interface is implemented by all Nodes in an implementation which supports the D\+OM \mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} Model. Therefore, this interface can be obtained by using binding-\/specific casting methods on an instance of the \mbox{\hyperlink{classPoco_1_1XML_1_1Node}{Node}} interface. The interface allows registration and removal of Event\+Listeners on an \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} and dispatch of events to that \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}}. 
+
+Definition at line 36 of file Event\+Target.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EventTarget_a901c4f7fa9615f5c602e9fea01efe667}\label{classPoco_1_1XML_1_1EventTarget_a901c4f7fa9615f5c602e9fea01efe667}} 
+\index{Poco::XML::EventTarget@{Poco::XML::EventTarget}!````~EventTarget@{$\sim$EventTarget}}
+\index{````~EventTarget@{$\sim$EventTarget}!Poco::XML::EventTarget@{Poco::XML::EventTarget}}
+\doxysubsubsection{\texorpdfstring{$\sim$EventTarget()}{~EventTarget()}}
+{\footnotesize\ttfamily virtual Poco\+::\+X\+M\+L\+::\+Event\+Target\+::$\sim$\+Event\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+This method allows the dispatch of events into the implementations event model. Events dispatched in this manner will have the same capturing and bubbling behavior as events dispatched directly by the implementation. The target of the event is the \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} on which dispatch\+Event is called. ~\newline
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EventTarget_aed316ca12b247dfd31d052b186422695}\label{classPoco_1_1XML_1_1EventTarget_aed316ca12b247dfd31d052b186422695}} 
+\index{Poco::XML::EventTarget@{Poco::XML::EventTarget}!addEventListener@{addEventListener}}
+\index{addEventListener@{addEventListener}!Poco::XML::EventTarget@{Poco::XML::EventTarget}}
+\doxysubsubsection{\texorpdfstring{addEventListener()}{addEventListener()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+X\+M\+L\+::\+Event\+Target\+::add\+Event\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{type,  }\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1EventListener}{Event\+Listener}} $\ast$}]{listener,  }\item[{bool}]{use\+Capture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode_a9db60a2af8990e7479f403949ecc3493}{Poco\+::\+X\+M\+L\+::\+Abstract\+Node}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EventTarget_a69cdde398020d2a08d2b0b969fe9ad73}\label{classPoco_1_1XML_1_1EventTarget_a69cdde398020d2a08d2b0b969fe9ad73}} 
+\index{Poco::XML::EventTarget@{Poco::XML::EventTarget}!dispatchEvent@{dispatchEvent}}
+\index{dispatchEvent@{dispatchEvent}!Poco::XML::EventTarget@{Poco::XML::EventTarget}}
+\doxysubsubsection{\texorpdfstring{dispatchEvent()}{dispatchEvent()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+X\+M\+L\+::\+Event\+Target\+::dispatch\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1Event}{Event}} $\ast$}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This method allows the removal of event listeners from the event target. If an \mbox{\hyperlink{classPoco_1_1XML_1_1EventListener}{Event\+Listener}} is removed from an \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} while it is processing an event, it will not be triggered by the current actions. Event\+Listeners can never be invoked after being removed. Calling remove\+Event\+Listener with arguments which do not identify any currently registered \mbox{\hyperlink{classPoco_1_1XML_1_1EventListener}{Event\+Listener}} on the \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} has no effect. ~\newline
+ 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1XML_1_1Document_a9e8998be4c1619b514324eecf2b37da6}{Poco\+::\+X\+M\+L\+::\+Document}}, and \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode_a17557f0910d07b6824dfcb6bd0729d37}{Poco\+::\+X\+M\+L\+::\+Abstract\+Node}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1EventTarget_adc6bca1251e799e38f0d152c58ae38ef}\label{classPoco_1_1XML_1_1EventTarget_adc6bca1251e799e38f0d152c58ae38ef}} 
+\index{Poco::XML::EventTarget@{Poco::XML::EventTarget}!removeEventListener@{removeEventListener}}
+\index{removeEventListener@{removeEventListener}!Poco::XML::EventTarget@{Poco::XML::EventTarget}}
+\doxysubsubsection{\texorpdfstring{removeEventListener()}{removeEventListener()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+X\+M\+L\+::\+Event\+Target\+::remove\+Event\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{namespacePoco_1_1XML_a288dd5005eea5f995c0169e0688593ae}{X\+M\+L\+String}} \&}]{type,  }\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1EventListener}{Event\+Listener}} $\ast$}]{listener,  }\item[{bool}]{use\+Capture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This method allows the registration of event listeners on the event target. If an \mbox{\hyperlink{classPoco_1_1XML_1_1EventListener}{Event\+Listener}} is added to an \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} while it is processing an event, it will not be triggered by the current actions but may be triggered during a later stage of event flow, such as the bubbling phase. If multiple identical Event\+Listeners are registered on the same \mbox{\hyperlink{classPoco_1_1XML_1_1EventTarget}{Event\+Target}} with the same parameters the duplicate instances are discarded. They do not cause the \mbox{\hyperlink{classPoco_1_1XML_1_1EventListener}{Event\+Listener}} to be called twice and since they are discarded they do not need to be removed with the remove\+Event\+Listener method. ~\newline
+ 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1XML_1_1AbstractNode_aecc0015c3cb9e7e4c654275a3c3567a8}{Poco\+::\+X\+M\+L\+::\+Abstract\+Node}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+D\+O\+M/\mbox{\hyperlink{EventTarget_8h}{Event\+Target.\+h}}\end{DoxyCompactItemize}

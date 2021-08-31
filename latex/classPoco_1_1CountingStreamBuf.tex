@@ -1,0 +1,229 @@
+\hypertarget{classPoco_1_1CountingStreamBuf}{}\doxysection{Poco\+::Counting\+Stream\+Buf Class Reference}
+\label{classPoco_1_1CountingStreamBuf}\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+
+
+{\ttfamily \#include $<$Counting\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Counting\+Stream\+Buf\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Counting\+Stream\+Buf\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1CountingStreamBuf_ab2714dbdb2483b60e19954d0db9ef56a}{Counting\+Stream\+Buf}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1CountingStreamBuf_a1d3c0699ddca6cd40defdd7e909311ea}{Counting\+Stream\+Buf}} (std\+::istream \&istr)
+\begin{DoxyCompactList}\small\item\em Creates an unconnected \mbox{\hyperlink{classPoco_1_1CountingStreamBuf}{Counting\+Stream\+Buf}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1CountingStreamBuf_a8930735662a626dbcea06dae39673905}{Counting\+Stream\+Buf}} (std\+::ostream \&ostr)
+\item 
+\mbox{\hyperlink{classPoco_1_1CountingStreamBuf_aa949369c9bf7c0e8044942418e3ff9af}{$\sim$\+Counting\+Stream\+Buf}} ()
+\item 
+int \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_adf22db13969c83cd76a70be8ed649645}{chars}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the Counting\+Stream. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_af47e72169d0ab700d0b53c7c8394176e}{lines}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of characters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_a51fde0ee9ef05aa9d7b90863f180ade1}{pos}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of lines. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_ae5840b04e916ab6ff57cd59d17b26d2a}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of characters on the current line. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_a9d60f3198e4ed6903b9bd796e8a31679}{set\+Current\+Line\+Number}} (int line)
+\begin{DoxyCompactList}\small\item\em Resets all counters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_ae146bcddaae4a5a2fb58c38281d793a4}{get\+Current\+Line\+Number}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_a4af126ddbe0d619d5b37252999f9c7b8}{add\+Chars}} (int \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_adf22db13969c83cd76a70be8ed649645}{chars}})
+\begin{DoxyCompactList}\small\item\em Returns the current line number (same as \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_af47e72169d0ab700d0b53c7c8394176e}{lines()}}). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_a90847a68e5f0d36f3670aaffcd9c427a}{add\+Lines}} (int \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_af47e72169d0ab700d0b53c7c8394176e}{lines}})
+\begin{DoxyCompactList}\small\item\em Add to the total number of characters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_a0bb5b2937eaee6d110cf23c0e73ceea0}{add\+Pos}} (int \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_a51fde0ee9ef05aa9d7b90863f180ade1}{pos}})
+\begin{DoxyCompactList}\small\item\em Add to the total number of lines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_a751c197e925d648bdb0e5cf1051cc03b}{read\+From\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Add to the number of characters on the current line. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_aec3f2dc4ab64d48a40a77b0f47865d03}{write\+To\+Device}} (char c)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This stream buffer counts all characters and lines going through it. 
+
+Definition at line 32 of file Counting\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_ab2714dbdb2483b60e19954d0db9ef56a}\label{classPoco_1_1CountingStreamBuf_ab2714dbdb2483b60e19954d0db9ef56a}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!CountingStreamBuf@{CountingStreamBuf}}
+\index{CountingStreamBuf@{CountingStreamBuf}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{CountingStreamBuf()}{CountingStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Counting\+Stream\+Buf\+::\+Counting\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_a1d3c0699ddca6cd40defdd7e909311ea}\label{classPoco_1_1CountingStreamBuf_a1d3c0699ddca6cd40defdd7e909311ea}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!CountingStreamBuf@{CountingStreamBuf}}
+\index{CountingStreamBuf@{CountingStreamBuf}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{CountingStreamBuf()}{CountingStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Counting\+Stream\+Buf\+::\+Counting\+Stream\+Buf (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})}
+
+
+
+Creates an unconnected \mbox{\hyperlink{classPoco_1_1CountingStreamBuf}{Counting\+Stream\+Buf}}. 
+
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_a8930735662a626dbcea06dae39673905}\label{classPoco_1_1CountingStreamBuf_a8930735662a626dbcea06dae39673905}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!CountingStreamBuf@{CountingStreamBuf}}
+\index{CountingStreamBuf@{CountingStreamBuf}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{CountingStreamBuf()}{CountingStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Counting\+Stream\+Buf\+::\+Counting\+Stream\+Buf (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1CountingStreamBuf}{Counting\+Stream\+Buf}} and connects it to the given input stream. \mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_aa949369c9bf7c0e8044942418e3ff9af}\label{classPoco_1_1CountingStreamBuf_aa949369c9bf7c0e8044942418e3ff9af}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!````~CountingStreamBuf@{$\sim$CountingStreamBuf}}
+\index{````~CountingStreamBuf@{$\sim$CountingStreamBuf}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{$\sim$CountingStreamBuf()}{~CountingStreamBuf()}}
+{\footnotesize\ttfamily Poco\+::\+Counting\+Stream\+Buf\+::$\sim$\+Counting\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1CountingStreamBuf}{Counting\+Stream\+Buf}} and connects it to the given output stream. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_a4af126ddbe0d619d5b37252999f9c7b8}\label{classPoco_1_1CountingStreamBuf_a4af126ddbe0d619d5b37252999f9c7b8}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!addChars@{addChars}}
+\index{addChars@{addChars}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{addChars()}{addChars()}}
+{\footnotesize\ttfamily void Poco\+::\+Counting\+Stream\+Buf\+::add\+Chars (\begin{DoxyParamCaption}\item[{int}]{chars }\end{DoxyParamCaption})}
+
+
+
+Returns the current line number (same as \mbox{\hyperlink{classPoco_1_1CountingStreamBuf_af47e72169d0ab700d0b53c7c8394176e}{lines()}}). 
+
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_a90847a68e5f0d36f3670aaffcd9c427a}\label{classPoco_1_1CountingStreamBuf_a90847a68e5f0d36f3670aaffcd9c427a}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!addLines@{addLines}}
+\index{addLines@{addLines}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{addLines()}{addLines()}}
+{\footnotesize\ttfamily void Poco\+::\+Counting\+Stream\+Buf\+::add\+Lines (\begin{DoxyParamCaption}\item[{int}]{lines }\end{DoxyParamCaption})}
+
+
+
+Add to the total number of characters. 
+
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_a0bb5b2937eaee6d110cf23c0e73ceea0}\label{classPoco_1_1CountingStreamBuf_a0bb5b2937eaee6d110cf23c0e73ceea0}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!addPos@{addPos}}
+\index{addPos@{addPos}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{addPos()}{addPos()}}
+{\footnotesize\ttfamily void Poco\+::\+Counting\+Stream\+Buf\+::add\+Pos (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Add to the total number of lines. 
+
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_adf22db13969c83cd76a70be8ed649645}\label{classPoco_1_1CountingStreamBuf_adf22db13969c83cd76a70be8ed649645}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!chars@{chars}}
+\index{chars@{chars}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{chars()}{chars()}}
+{\footnotesize\ttfamily int Poco\+::\+Counting\+Stream\+Buf\+::chars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the Counting\+Stream. 
+
+
+
+Definition at line 188 of file Counting\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_ae146bcddaae4a5a2fb58c38281d793a4}\label{classPoco_1_1CountingStreamBuf_ae146bcddaae4a5a2fb58c38281d793a4}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!getCurrentLineNumber@{getCurrentLineNumber}}
+\index{getCurrentLineNumber@{getCurrentLineNumber}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{getCurrentLineNumber()}{getCurrentLineNumber()}}
+{\footnotesize\ttfamily int Poco\+::\+Counting\+Stream\+Buf\+::get\+Current\+Line\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the current line number.
+
+This is mainly useful when parsing C/\+C++ preprocessed source code containing \#line directives. 
+
+Definition at line 206 of file Counting\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_af47e72169d0ab700d0b53c7c8394176e}\label{classPoco_1_1CountingStreamBuf_af47e72169d0ab700d0b53c7c8394176e}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!lines@{lines}}
+\index{lines@{lines}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{lines()}{lines()}}
+{\footnotesize\ttfamily int Poco\+::\+Counting\+Stream\+Buf\+::lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the total number of characters. 
+
+
+
+Definition at line 194 of file Counting\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_a51fde0ee9ef05aa9d7b90863f180ade1}\label{classPoco_1_1CountingStreamBuf_a51fde0ee9ef05aa9d7b90863f180ade1}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!pos@{pos}}
+\index{pos@{pos}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{pos()}{pos()}}
+{\footnotesize\ttfamily int Poco\+::\+Counting\+Stream\+Buf\+::pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the total number of lines. 
+
+
+
+Definition at line 200 of file Counting\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_a751c197e925d648bdb0e5cf1051cc03b}\label{classPoco_1_1CountingStreamBuf_a751c197e925d648bdb0e5cf1051cc03b}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!readFromDevice@{readFromDevice}}
+\index{readFromDevice@{readFromDevice}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{readFromDevice()}{readFromDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Counting\+Stream\+Buf\+::read\+From\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Add to the number of characters on the current line. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1BasicUnbufferedStreamBuf}{Poco\+::\+Basic\+Unbuffered\+Stream\+Buf$<$ ch, tr $>$}}.
+
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_ae5840b04e916ab6ff57cd59d17b26d2a}\label{classPoco_1_1CountingStreamBuf_ae5840b04e916ab6ff57cd59d17b26d2a}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!reset@{reset}}
+\index{reset@{reset}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Poco\+::\+Counting\+Stream\+Buf\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of characters on the current line. 
+
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_a9d60f3198e4ed6903b9bd796e8a31679}\label{classPoco_1_1CountingStreamBuf_a9d60f3198e4ed6903b9bd796e8a31679}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!setCurrentLineNumber@{setCurrentLineNumber}}
+\index{setCurrentLineNumber@{setCurrentLineNumber}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{setCurrentLineNumber()}{setCurrentLineNumber()}}
+{\footnotesize\ttfamily void Poco\+::\+Counting\+Stream\+Buf\+::set\+Current\+Line\+Number (\begin{DoxyParamCaption}\item[{int}]{line }\end{DoxyParamCaption})}
+
+
+
+Resets all counters. 
+
+\mbox{\Hypertarget{classPoco_1_1CountingStreamBuf_aec3f2dc4ab64d48a40a77b0f47865d03}\label{classPoco_1_1CountingStreamBuf_aec3f2dc4ab64d48a40a77b0f47865d03}} 
+\index{Poco::CountingStreamBuf@{Poco::CountingStreamBuf}!writeToDevice@{writeToDevice}}
+\index{writeToDevice@{writeToDevice}!Poco::CountingStreamBuf@{Poco::CountingStreamBuf}}
+\doxysubsubsection{\texorpdfstring{writeToDevice()}{writeToDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Counting\+Stream\+Buf\+::write\+To\+Device (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{CountingStream_8h}{Counting\+Stream.\+h}}\end{DoxyCompactItemize}

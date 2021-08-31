@@ -1,0 +1,103 @@
+\hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf}{}\doxysection{Poco\+::Remoting\+NG\+::T\+CP\+::Channel\+Stream\+Buf Class Reference}
+\label{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf}\index{Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}}
+
+
+{\ttfamily \#include $<$Channel\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Remoting\+NG\+::T\+CP\+::Channel\+Stream\+Buf\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Remoting\+NG\+::T\+CP\+::Channel\+Stream\+Buf\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a0a9f1a2d3f98e6ee4bdbf2c099817ec0}{Channel\+Stream\+Buf}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Connection_a2972ab11fc05d4be80329c78f018a8ee}{Connection\+::\+Ptr}} p\+Connection, Poco\+::\+U\+Int32 frame\+Type, Poco\+::\+U\+Int32 channel, \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} timeout)
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a17937922f667b9f09a8e90da96d34f91}{Channel\+Stream\+Buf}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Connection_a2972ab11fc05d4be80329c78f018a8ee}{Connection\+::\+Ptr}} p\+Connection, Poco\+::\+U\+Int32 frame\+Type, Poco\+::\+U\+Int32 channel, Poco\+::\+U\+Int16 flags)
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_afdb86760e07662518d1591adfdc74cb2}{$\sim$\+Channel\+Stream\+Buf}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a600f75aca7d1538490c6dd13d2a3b5c8}{close}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1FrameQueue_a1757da0876b07de1ef9902a26003ba02}{Frame\+Queue\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a03b7857f5e5ba322cb5ce36c920b443f}{queue}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Connection_a2972ab11fc05d4be80329c78f018a8ee}{Connection\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a1ba77cb699a62bdbf7bd7bff50077a5d}{connection}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a363cbc64e67f3f58e45475e878bb2a28}{read\+From\+Device}} (char $\ast$buffer, std\+::streamsize length)
+\item 
+int \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a7206d0d1b3795a272872cfff1226acde}{write\+To\+Device}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$buffer, std\+::streamsize length)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is the streambuf class used for reading from and writing to channels. 
+
+Definition at line 38 of file Channel\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a0a9f1a2d3f98e6ee4bdbf2c099817ec0}\label{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a0a9f1a2d3f98e6ee4bdbf2c099817ec0}} 
+\index{Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}!ChannelStreamBuf@{ChannelStreamBuf}}
+\index{ChannelStreamBuf@{ChannelStreamBuf}!Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}}
+\doxysubsubsection{\texorpdfstring{ChannelStreamBuf()}{ChannelStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Channel\+Stream\+Buf\+::\+Channel\+Stream\+Buf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Connection_a2972ab11fc05d4be80329c78f018a8ee}{Connection\+::\+Ptr}}}]{p\+Connection,  }\item[{Poco\+::\+U\+Int32}]{frame\+Type,  }\item[{Poco\+::\+U\+Int32}]{channel,  }\item[{\mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}}}]{timeout }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a17937922f667b9f09a8e90da96d34f91}\label{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a17937922f667b9f09a8e90da96d34f91}} 
+\index{Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}!ChannelStreamBuf@{ChannelStreamBuf}}
+\index{ChannelStreamBuf@{ChannelStreamBuf}!Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}}
+\doxysubsubsection{\texorpdfstring{ChannelStreamBuf()}{ChannelStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Channel\+Stream\+Buf\+::\+Channel\+Stream\+Buf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Connection_a2972ab11fc05d4be80329c78f018a8ee}{Connection\+::\+Ptr}}}]{p\+Connection,  }\item[{Poco\+::\+U\+Int32}]{frame\+Type,  }\item[{Poco\+::\+U\+Int32}]{channel,  }\item[{Poco\+::\+U\+Int16}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_afdb86760e07662518d1591adfdc74cb2}\label{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_afdb86760e07662518d1591adfdc74cb2}} 
+\index{Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}!````~ChannelStreamBuf@{$\sim$ChannelStreamBuf}}
+\index{````~ChannelStreamBuf@{$\sim$ChannelStreamBuf}!Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}}
+\doxysubsubsection{\texorpdfstring{$\sim$ChannelStreamBuf()}{~ChannelStreamBuf()}}
+{\footnotesize\ttfamily Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Channel\+Stream\+Buf\+::$\sim$\+Channel\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a600f75aca7d1538490c6dd13d2a3b5c8}\label{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a600f75aca7d1538490c6dd13d2a3b5c8}} 
+\index{Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}!close@{close}}
+\index{close@{close}!Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Channel\+Stream\+Buf\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a1ba77cb699a62bdbf7bd7bff50077a5d}\label{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a1ba77cb699a62bdbf7bd7bff50077a5d}} 
+\index{Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}!connection@{connection}}
+\index{connection@{connection}!Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1Connection_a2972ab11fc05d4be80329c78f018a8ee}{Connection\+::\+Ptr}} Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Channel\+Stream\+Buf\+::connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a03b7857f5e5ba322cb5ce36c920b443f}\label{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a03b7857f5e5ba322cb5ce36c920b443f}} 
+\index{Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}!queue@{queue}}
+\index{queue@{queue}!Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}}
+\doxysubsubsection{\texorpdfstring{queue()}{queue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1TCP_1_1FrameQueue_a1757da0876b07de1ef9902a26003ba02}{Frame\+Queue\+::\+Ptr}} Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Channel\+Stream\+Buf\+::queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a363cbc64e67f3f58e45475e878bb2a28}\label{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a363cbc64e67f3f58e45475e878bb2a28}} 
+\index{Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}!readFromDevice@{readFromDevice}}
+\index{readFromDevice@{readFromDevice}!Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}}
+\doxysubsubsection{\texorpdfstring{readFromDevice()}{readFromDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Channel\+Stream\+Buf\+::read\+From\+Device (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a7206d0d1b3795a272872cfff1226acde}\label{classPoco_1_1RemotingNG_1_1TCP_1_1ChannelStreamBuf_a7206d0d1b3795a272872cfff1226acde}} 
+\index{Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}!writeToDevice@{writeToDevice}}
+\index{writeToDevice@{writeToDevice}!Poco::RemotingNG::TCP::ChannelStreamBuf@{Poco::RemotingNG::TCP::ChannelStreamBuf}}
+\doxysubsubsection{\texorpdfstring{writeToDevice()}{writeToDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Remoting\+N\+G\+::\+T\+C\+P\+::\+Channel\+Stream\+Buf\+::write\+To\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{buffer,  }\item[{std\+::streamsize}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Remoting\+N\+G/\+T\+C\+P/\mbox{\hyperlink{ChannelStream_8h}{Channel\+Stream.\+h}}\end{DoxyCompactItemize}

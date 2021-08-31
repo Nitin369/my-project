@@ -1,0 +1,196 @@
+\hypertarget{classIoT_1_1UDP_1_1IUDPEndpoint}{}\doxysection{IoT\+::U\+DP\+::I\+U\+D\+P\+Endpoint Class Reference}
+\label{classIoT_1_1UDP_1_1IUDPEndpoint}\index{IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}}
+
+
+The \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint}{U\+D\+P\+Endpoint}} is used to receive and send \mbox{\hyperlink{namespaceIoT_1_1UDP}{U\+DP}} packets.  
+
+
+
+
+{\ttfamily \#include $<$I\+U\+D\+P\+Endpoint.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::U\+DP\+::I\+U\+D\+P\+Endpoint\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::U\+DP\+::I\+U\+D\+P\+Endpoint\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint}{I\+U\+D\+P\+Endpoint}} $>$ \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint_ae4f71cfef0178cb678b9bca13f715cb2}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint_a35fd1e54aa3cd0447e3b4e871a3b6e82}{I\+U\+D\+P\+Endpoint}} ()
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint_a531789175d00a9a121896e5219787f97}{$\sim$\+I\+U\+D\+P\+Endpoint}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint}{I\+U\+D\+P\+Endpoint}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{structIoT_1_1UDP_1_1EndpointAddress}{Io\+T\+::\+U\+D\+P\+::\+Endpoint\+Address}} \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint_a6177d26a24e6de71387a6f7b3aeecb6c}{address}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint}{I\+U\+D\+P\+Endpoint}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint_a2747d67b3f91872870db8bb9439f0b53}{isA}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&other\+Type) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the socket address of this endpoint. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint_a1bae7a17c3c25da55cc78c3430fd3ed7}{remoting\+\_\+\+\_\+enable\+Events}} (\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}} p\+Listener, bool enable=bool(true))=0
+\begin{DoxyCompactList}\small\item\em Returns true if the class is a subclass of the class given by other\+Type. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint_ad127b09e788f17a3f426c0627fadc266}{send\+Packet}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ char $>$ \&payload, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1UDP_1_1EndpointAddress}{Io\+T\+::\+U\+D\+P\+::\+Endpoint\+Address}} \&destination=\mbox{\hyperlink{structIoT_1_1UDP_1_1EndpointAddress}{Io\+T\+::\+U\+D\+P\+::\+Endpoint\+Address}}())=0
+\begin{DoxyCompactList}\small\item\em Returns the Type\+Id of the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \& \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint_ae994a3afbd5bafafd824426b315c4ab6}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint_aaaf21f911ab4f68c822f097531b278d1}{remoting\+\_\+\+\_\+type\+Id}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1UDP_1_1Packet}{Packet}} $>$ \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint_a719970f58c24f26279305ba1f2ff98fb}{packet\+Received}}
+\begin{DoxyCompactList}\small\item\em Returns the type information for the object\textquotesingle{}s class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpoint}{U\+D\+P\+Endpoint}} is used to receive and send \mbox{\hyperlink{namespaceIoT_1_1UDP}{U\+DP}} packets. 
+
+Definition at line 33 of file I\+U\+D\+P\+Endpoint.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1IUDPEndpoint_ae4f71cfef0178cb678b9bca13f715cb2}\label{classIoT_1_1UDP_1_1IUDPEndpoint_ae4f71cfef0178cb678b9bca13f715cb2}} 
+\index{IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint}{I\+U\+D\+P\+Endpoint}}$>$ \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint_ae4f71cfef0178cb678b9bca13f715cb2}{Io\+T\+::\+U\+D\+P\+::\+I\+U\+D\+P\+Endpoint\+::\+Ptr}}}
+
+
+
+Definition at line 37 of file I\+U\+D\+P\+Endpoint.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1IUDPEndpoint_a35fd1e54aa3cd0447e3b4e871a3b6e82}\label{classIoT_1_1UDP_1_1IUDPEndpoint_a35fd1e54aa3cd0447e3b4e871a3b6e82}} 
+\index{IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}!IUDPEndpoint@{IUDPEndpoint}}
+\index{IUDPEndpoint@{IUDPEndpoint}!IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{IUDPEndpoint()}{IUDPEndpoint()}}
+{\footnotesize\ttfamily Io\+T\+::\+U\+D\+P\+::\+I\+U\+D\+P\+Endpoint\+::\+I\+U\+D\+P\+Endpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1IUDPEndpoint_a531789175d00a9a121896e5219787f97}\label{classIoT_1_1UDP_1_1IUDPEndpoint_a531789175d00a9a121896e5219787f97}} 
+\index{IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}!````~IUDPEndpoint@{$\sim$IUDPEndpoint}}
+\index{````~IUDPEndpoint@{$\sim$IUDPEndpoint}!IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{$\sim$IUDPEndpoint()}{~IUDPEndpoint()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+U\+D\+P\+::\+I\+U\+D\+P\+Endpoint\+::$\sim$\+I\+U\+D\+P\+Endpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint}{I\+U\+D\+P\+Endpoint}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1IUDPEndpoint_a6177d26a24e6de71387a6f7b3aeecb6c}\label{classIoT_1_1UDP_1_1IUDPEndpoint_a6177d26a24e6de71387a6f7b3aeecb6c}} 
+\index{IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}!address@{address}}
+\index{address@{address}!IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structIoT_1_1UDP_1_1EndpointAddress}{Io\+T\+::\+U\+D\+P\+::\+Endpoint\+Address}} Io\+T\+::\+U\+D\+P\+::\+I\+U\+D\+P\+Endpoint\+::address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1UDP_1_1IUDPEndpoint}{I\+U\+D\+P\+Endpoint}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpointRemoteObject_ac947e5d146ee609935e88689dffbf2f3}{Io\+T\+::\+U\+D\+P\+::\+U\+D\+P\+Endpoint\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1IUDPEndpoint_a2747d67b3f91872870db8bb9439f0b53}\label{classIoT_1_1UDP_1_1IUDPEndpoint_a2747d67b3f91872870db8bb9439f0b53}} 
+\index{IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}!isA@{isA}}
+\index{isA@{isA}!IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{isA()}{isA()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+U\+D\+P\+::\+I\+U\+D\+P\+Endpoint\+::isA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info \&}]{other\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the socket address of this endpoint. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a46c8cf8f6356230490f9ba59a5cb40e2}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1IUDPEndpoint_a1bae7a17c3c25da55cc78c3430fd3ed7}\label{classIoT_1_1UDP_1_1IUDPEndpoint_a1bae7a17c3c25da55cc78c3430fd3ed7}} 
+\index{IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}!remoting\_\_enableEvents@{remoting\_\_enableEvents}}
+\index{remoting\_\_enableEvents@{remoting\_\_enableEvents}!IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_enableEvents()}{remoting\_\_enableEvents()}}
+{\footnotesize\ttfamily virtual std\+::string Io\+T\+::\+U\+D\+P\+::\+I\+U\+D\+P\+Endpoint\+::remoting\+\_\+\+\_\+enable\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Listener_a871bbf06a6dec141f9c92d4b721bce47}{Poco\+::\+Remoting\+N\+G\+::\+Listener\+::\+Ptr}}}]{p\+Listener,  }\item[{bool}]{enable = {\ttfamily bool(true)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns true if the class is a subclass of the class given by other\+Type. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpointRemoteObject_a542af75c99c1e9f96a808ecf8909a091}{Io\+T\+::\+U\+D\+P\+::\+U\+D\+P\+Endpoint\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1IUDPEndpoint_aaaf21f911ab4f68c822f097531b278d1}\label{classIoT_1_1UDP_1_1IUDPEndpoint_aaaf21f911ab4f68c822f097531b278d1}} 
+\index{IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}}\& Io\+T\+::\+U\+D\+P\+::\+I\+U\+D\+P\+Endpoint\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Enable or disable delivery of remote events.
+
+The given Listener instance must implement the \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventListener}{Poco\+::\+Remoting\+N\+G\+::\+Event\+Listener}} interface, otherwise this method will fail with a Remoting\+Exception.
+
+This method is only used with Proxy objects; calling this method on a Remote\+Object will do nothing. Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1IUDPEndpoint_ad127b09e788f17a3f426c0627fadc266}\label{classIoT_1_1UDP_1_1IUDPEndpoint_ad127b09e788f17a3f426c0627fadc266}} 
+\index{IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}!sendPacket@{sendPacket}}
+\index{sendPacket@{sendPacket}!IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{sendPacket()}{sendPacket()}}
+{\footnotesize\ttfamily virtual void Io\+T\+::\+U\+D\+P\+::\+I\+U\+D\+P\+Endpoint\+::send\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ char $>$ \&}]{payload,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1UDP_1_1EndpointAddress}{Io\+T\+::\+U\+D\+P\+::\+Endpoint\+Address}} \&}]{destination = {\ttfamily \mbox{\hyperlink{structIoT_1_1UDP_1_1EndpointAddress}{Io\+T\+::\+U\+D\+P\+::\+Endpoint\+Address}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the Type\+Id of the class. 
+
+
+
+Implemented in \mbox{\hyperlink{classIoT_1_1UDP_1_1UDPEndpointRemoteObject_a6eaf9a557b66f0b236bbc44c99bbf18b}{Io\+T\+::\+U\+D\+P\+::\+U\+D\+P\+Endpoint\+Remote\+Object}}.
+
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1IUDPEndpoint_ae994a3afbd5bafafd824426b315c4ab6}\label{classIoT_1_1UDP_1_1IUDPEndpoint_ae994a3afbd5bafafd824426b315c4ab6}} 
+\index{IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}!type@{type}}
+\index{type@{type}!IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::type\+\_\+info\& Io\+T\+::\+U\+D\+P\+::\+I\+U\+D\+P\+Endpoint\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sends the given payload to the given destination address.
+
+If the endpoint is connected to a default destination address, the destination address can be omitted. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1OSP_1_1Service_a71ff82992f3ecfa2de28d647b15eede8}{Poco\+::\+O\+S\+P\+::\+Service}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1UDP_1_1IUDPEndpoint_a719970f58c24f26279305ba1f2ff98fb}\label{classIoT_1_1UDP_1_1IUDPEndpoint_a719970f58c24f26279305ba1f2ff98fb}} 
+\index{IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}!packetReceived@{packetReceived}}
+\index{packetReceived@{packetReceived}!IoT::UDP::IUDPEndpoint@{IoT::UDP::IUDPEndpoint}}
+\doxysubsubsection{\texorpdfstring{packetReceived}{packetReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1UDP_1_1Packet}{Packet}} $>$ Io\+T\+::\+U\+D\+P\+::\+I\+U\+D\+P\+Endpoint\+::packet\+Received}
+
+
+
+Returns the type information for the object\textquotesingle{}s class. 
+
+
+
+Definition at line 72 of file I\+U\+D\+P\+Endpoint.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+U\+D\+P/\mbox{\hyperlink{IUDPEndpoint_8h}{I\+U\+D\+P\+Endpoint.\+h}}\end{DoxyCompactItemize}

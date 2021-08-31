@@ -1,0 +1,173 @@
+\hypertarget{classPoco_1_1Net_1_1HostEntry}{}\doxysection{Poco\+::Net\+::Host\+Entry Class Reference}
+\label{classPoco_1_1Net_1_1HostEntry}\index{Poco::Net::HostEntry@{Poco::Net::HostEntry}}
+
+
+{\ttfamily \#include $<$Host\+Entry.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_ade3a8a7ec1246d5f5994975eba09779e}{Alias\+List}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress}{I\+P\+Address}} $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_a2a2a8425ba42b417951b298e667c348f}{Address\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_a67524eea8117e692ae0bf831cbf5dc00}{Host\+Entry}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_a4167aeb7c309b9fa7d610e9bc4d0247b}{Host\+Entry}} (struct hostent $\ast$entry)
+\begin{DoxyCompactList}\small\item\em Creates an empty \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_ae5733ead25954044feaa75bf0c1faa27}{Host\+Entry}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} \&entry)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} from the data in a hostent structure. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_aa04ca1c5c99dd11170d52ef4c80936c8}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} \&entry)
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} by copying another one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_a2eb0828be6ea794061d891590fdb0c47}{swap}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} \&host\+Entry)
+\begin{DoxyCompactList}\small\item\em Assigns another \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_aaf1719e507cd29648afa5631a76f88c5}{$\sim$\+Host\+Entry}} ()
+\begin{DoxyCompactList}\small\item\em Swaps the \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} with another one. ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_a96ead5ea18adb7e63362210b892202fa}{name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_ade3a8a7ec1246d5f5994975eba09779e}{Alias\+List}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_ac5c164b7820f82eaf215c31d7847d086}{aliases}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the canonical host name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_a2a2a8425ba42b417951b298e667c348f}{Address\+List}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_a5e8ba5c9104c1367036da9ee7d4d8958}{addresses}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class stores information about a host such as host name, alias names and a list of IP addresses. 
+
+Definition at line 33 of file Host\+Entry.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HostEntry_a2a2a8425ba42b417951b298e667c348f}\label{classPoco_1_1Net_1_1HostEntry_a2a2a8425ba42b417951b298e667c348f}} 
+\index{Poco::Net::HostEntry@{Poco::Net::HostEntry}!AddressList@{AddressList}}
+\index{AddressList@{AddressList}!Poco::Net::HostEntry@{Poco::Net::HostEntry}}
+\doxysubsubsection{\texorpdfstring{AddressList}{AddressList}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classPoco_1_1Net_1_1IPAddress}{I\+P\+Address}}$>$ \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_a2a2a8425ba42b417951b298e667c348f}{Poco\+::\+Net\+::\+Host\+Entry\+::\+Address\+List}}}
+
+
+
+Definition at line 40 of file Host\+Entry.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HostEntry_ade3a8a7ec1246d5f5994975eba09779e}\label{classPoco_1_1Net_1_1HostEntry_ade3a8a7ec1246d5f5994975eba09779e}} 
+\index{Poco::Net::HostEntry@{Poco::Net::HostEntry}!AliasList@{AliasList}}
+\index{AliasList@{AliasList}!Poco::Net::HostEntry@{Poco::Net::HostEntry}}
+\doxysubsubsection{\texorpdfstring{AliasList}{AliasList}}
+{\footnotesize\ttfamily typedef std\+::vector$<$std\+::string$>$ \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_ade3a8a7ec1246d5f5994975eba09779e}{Poco\+::\+Net\+::\+Host\+Entry\+::\+Alias\+List}}}
+
+
+
+Definition at line 39 of file Host\+Entry.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HostEntry_a67524eea8117e692ae0bf831cbf5dc00}\label{classPoco_1_1Net_1_1HostEntry_a67524eea8117e692ae0bf831cbf5dc00}} 
+\index{Poco::Net::HostEntry@{Poco::Net::HostEntry}!HostEntry@{HostEntry}}
+\index{HostEntry@{HostEntry}!Poco::Net::HostEntry@{Poco::Net::HostEntry}}
+\doxysubsubsection{\texorpdfstring{HostEntry()}{HostEntry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Host\+Entry\+::\+Host\+Entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HostEntry_a4167aeb7c309b9fa7d610e9bc4d0247b}\label{classPoco_1_1Net_1_1HostEntry_a4167aeb7c309b9fa7d610e9bc4d0247b}} 
+\index{Poco::Net::HostEntry@{Poco::Net::HostEntry}!HostEntry@{HostEntry}}
+\index{HostEntry@{HostEntry}!Poco::Net::HostEntry@{Poco::Net::HostEntry}}
+\doxysubsubsection{\texorpdfstring{HostEntry()}{HostEntry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Host\+Entry\+::\+Host\+Entry (\begin{DoxyParamCaption}\item[{struct hostent $\ast$}]{entry }\end{DoxyParamCaption})}
+
+
+
+Creates an empty \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HostEntry_ae5733ead25954044feaa75bf0c1faa27}\label{classPoco_1_1Net_1_1HostEntry_ae5733ead25954044feaa75bf0c1faa27}} 
+\index{Poco::Net::HostEntry@{Poco::Net::HostEntry}!HostEntry@{HostEntry}}
+\index{HostEntry@{HostEntry}!Poco::Net::HostEntry@{Poco::Net::HostEntry}}
+\doxysubsubsection{\texorpdfstring{HostEntry()}{HostEntry()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Host\+Entry\+::\+Host\+Entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} \&}]{entry }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} from the data in a hostent structure. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HostEntry_aaf1719e507cd29648afa5631a76f88c5}\label{classPoco_1_1Net_1_1HostEntry_aaf1719e507cd29648afa5631a76f88c5}} 
+\index{Poco::Net::HostEntry@{Poco::Net::HostEntry}!````~HostEntry@{$\sim$HostEntry}}
+\index{````~HostEntry@{$\sim$HostEntry}!Poco::Net::HostEntry@{Poco::Net::HostEntry}}
+\doxysubsubsection{\texorpdfstring{$\sim$HostEntry()}{~HostEntry()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Host\+Entry\+::$\sim$\+Host\+Entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Swaps the \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} with another one. ~\newline
+ 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HostEntry_a5e8ba5c9104c1367036da9ee7d4d8958}\label{classPoco_1_1Net_1_1HostEntry_a5e8ba5c9104c1367036da9ee7d4d8958}} 
+\index{Poco::Net::HostEntry@{Poco::Net::HostEntry}!addresses@{addresses}}
+\index{addresses@{addresses}!Poco::Net::HostEntry@{Poco::Net::HostEntry}}
+\doxysubsubsection{\texorpdfstring{addresses()}{addresses()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_a2a2a8425ba42b417951b298e667c348f}{Host\+Entry\+::\+Address\+List}} \& Poco\+::\+Net\+::\+Host\+Entry\+::addresses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a vector containing alias names for the host name. 
+
+Definition at line 102 of file Host\+Entry.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HostEntry_ac5c164b7820f82eaf215c31d7847d086}\label{classPoco_1_1Net_1_1HostEntry_ac5c164b7820f82eaf215c31d7847d086}} 
+\index{Poco::Net::HostEntry@{Poco::Net::HostEntry}!aliases@{aliases}}
+\index{aliases@{aliases}!Poco::Net::HostEntry@{Poco::Net::HostEntry}}
+\doxysubsubsection{\texorpdfstring{aliases()}{aliases()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry_ade3a8a7ec1246d5f5994975eba09779e}{Host\+Entry\+::\+Alias\+List}} \& Poco\+::\+Net\+::\+Host\+Entry\+::aliases (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the canonical host name. 
+
+
+
+Definition at line 96 of file Host\+Entry.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HostEntry_a96ead5ea18adb7e63362210b892202fa}\label{classPoco_1_1Net_1_1HostEntry_a96ead5ea18adb7e63362210b892202fa}} 
+\index{Poco::Net::HostEntry@{Poco::Net::HostEntry}!name@{name}}
+\index{name@{name}!Poco::Net::HostEntry@{Poco::Net::HostEntry}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Net\+::\+Host\+Entry\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}}. 
+
+
+
+Definition at line 90 of file Host\+Entry.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HostEntry_aa04ca1c5c99dd11170d52ef4c80936c8}\label{classPoco_1_1Net_1_1HostEntry_aa04ca1c5c99dd11170d52ef4c80936c8}} 
+\index{Poco::Net::HostEntry@{Poco::Net::HostEntry}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Net::HostEntry@{Poco::Net::HostEntry}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}}\& Poco\+::\+Net\+::\+Host\+Entry\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} \&}]{entry }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} by copying another one. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HostEntry_a2eb0828be6ea794061d891590fdb0c47}\label{classPoco_1_1Net_1_1HostEntry_a2eb0828be6ea794061d891590fdb0c47}} 
+\index{Poco::Net::HostEntry@{Poco::Net::HostEntry}!swap@{swap}}
+\index{swap@{swap}!Poco::Net::HostEntry@{Poco::Net::HostEntry}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+Host\+Entry\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}} \&}]{host\+Entry }\end{DoxyParamCaption})}
+
+
+
+Assigns another \mbox{\hyperlink{classPoco_1_1Net_1_1HostEntry}{Host\+Entry}}. 
+
+Here is the caller graph for this function\+:
+% FIG 0
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{HostEntry_8h}{Host\+Entry.\+h}}\end{DoxyCompactItemize}

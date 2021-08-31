@@ -1,0 +1,137 @@
+\hypertarget{classPoco_1_1Event}{}\doxysection{Poco\+::Event Class Reference}
+\label{classPoco_1_1Event}\index{Poco::Event@{Poco::Event}}
+
+
+{\ttfamily \#include $<$Event.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Event\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Event\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Event_a04e703cf88e8d316f3a3ea384ff34d69}{Event}} (bool auto\+Reset=true)
+\item 
+\mbox{\hyperlink{classPoco_1_1Event_a775d557d64febee3e9eebaf5d6f49e03}{$\sim$\+Event}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Event_a99a0419c5b9481bfc28efb3fa21f7979}{set}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Event_a0da7c72337aab427cdd62307d1bb8769}{wait}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Event_a5c029fccc88ed039b94698286b3e7b68}{wait}} (long milliseconds)
+\begin{DoxyCompactList}\small\item\em Waits for the event to become signalled. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Event_a510fe07cd7bcf07144ec704d8f3c8740}{try\+Wait}} (long milliseconds)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Event_a0e7754286f35bea15589ea72027acd0a}{reset}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An \mbox{\hyperlink{classPoco_1_1Event}{Event}} is a synchronization object that allows one thread to signal one or more other threads that a certain event has happened. Usually, one thread signals an event, while one or more other threads wait for an event to become signalled. 
+
+Definition at line 39 of file Event.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Event_a04e703cf88e8d316f3a3ea384ff34d69}\label{classPoco_1_1Event_a04e703cf88e8d316f3a3ea384ff34d69}} 
+\index{Poco::Event@{Poco::Event}!Event@{Event}}
+\index{Event@{Event}!Poco::Event@{Poco::Event}}
+\doxysubsubsection{\texorpdfstring{Event()}{Event()}}
+{\footnotesize\ttfamily Poco\+::\+Event\+::\+Event (\begin{DoxyParamCaption}\item[{bool}]{auto\+Reset = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Event_a775d557d64febee3e9eebaf5d6f49e03}\label{classPoco_1_1Event_a775d557d64febee3e9eebaf5d6f49e03}} 
+\index{Poco::Event@{Poco::Event}!````~Event@{$\sim$Event}}
+\index{````~Event@{$\sim$Event}!Poco::Event@{Poco::Event}}
+\doxysubsubsection{\texorpdfstring{$\sim$Event()}{~Event()}}
+{\footnotesize\ttfamily Poco\+::\+Event\+::$\sim$\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the event. If auto\+Reset is true, the event is automatically reset after a \mbox{\hyperlink{classPoco_1_1Event_a0da7c72337aab427cdd62307d1bb8769}{wait()}} successfully returns. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Event_a0e7754286f35bea15589ea72027acd0a}\label{classPoco_1_1Event_a0e7754286f35bea15589ea72027acd0a}} 
+\index{Poco::Event@{Poco::Event}!reset@{reset}}
+\index{reset@{reset}!Poco::Event@{Poco::Event}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Poco\+::\+Event\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Waits for the event to become signalled. Returns true if the event became signalled within the specified time interval, false otherwise. 
+
+Definition at line 116 of file Event.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Event_a99a0419c5b9481bfc28efb3fa21f7979}\label{classPoco_1_1Event_a99a0419c5b9481bfc28efb3fa21f7979}} 
+\index{Poco::Event@{Poco::Event}!set@{set}}
+\index{set@{set}!Poco::Event@{Poco::Event}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Poco\+::\+Event\+::set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the event. 
+
+
+
+Definition at line 91 of file Event.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1Event_a510fe07cd7bcf07144ec704d8f3c8740}\label{classPoco_1_1Event_a510fe07cd7bcf07144ec704d8f3c8740}} 
+\index{Poco::Event@{Poco::Event}!tryWait@{tryWait}}
+\index{tryWait@{tryWait}!Poco::Event@{Poco::Event}}
+\doxysubsubsection{\texorpdfstring{tryWait()}{tryWait()}}
+{\footnotesize\ttfamily bool Poco\+::\+Event\+::try\+Wait (\begin{DoxyParamCaption}\item[{long}]{milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Waits for the event to become signalled. Throws a Timeout\+Exception if the event does not become signalled within the specified time interval. 
+
+Definition at line 110 of file Event.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1Event_a0da7c72337aab427cdd62307d1bb8769}\label{classPoco_1_1Event_a0da7c72337aab427cdd62307d1bb8769}} 
+\index{Poco::Event@{Poco::Event}!wait@{wait}}
+\index{wait@{wait}!Poco::Event@{Poco::Event}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Event\+::wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Signals the event. If auto\+Reset is true, only one thread waiting for the event can resume execution. If auto\+Reset is false, all waiting threads can resume execution. 
+
+Definition at line 97 of file Event.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1Event_a5c029fccc88ed039b94698286b3e7b68}\label{classPoco_1_1Event_a5c029fccc88ed039b94698286b3e7b68}} 
+\index{Poco::Event@{Poco::Event}!wait@{wait}}
+\index{wait@{wait}!Poco::Event@{Poco::Event}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Event\+::wait (\begin{DoxyParamCaption}\item[{long}]{milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Waits for the event to become signalled. 
+
+
+
+Definition at line 103 of file Event.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Event_8h}{Event.\+h}}\end{DoxyCompactItemize}

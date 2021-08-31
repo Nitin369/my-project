@@ -1,0 +1,95 @@
+\hypertarget{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory}{}\doxysection{Poco\+::O\+SP\+::Web\+::Web\+Request\+Handler\+Factory Class Reference}
+\label{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory}\index{Poco::OSP::Web::WebRequestHandlerFactory@{Poco::OSP::Web::WebRequestHandlerFactory}}
+
+
+{\ttfamily \#include $<$Web\+Request\+Handler\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::O\+SP\+::Web\+::Web\+Request\+Handler\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::O\+SP\+::Web\+::Web\+Request\+Handler\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_ac3f1d866e421a8d99160a616ab3351e9}{Web\+Request\+Handler\+Factory}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_af86ce8f36324be728dcb094c3ca01b8a}{$\sim$\+Web\+Request\+Handler\+Factory}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_a2511805e7427ffebd14c012b19909c53}{init}} (\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}} p\+Context)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory}{Web\+Request\+Handler\+Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_a7e8e676321b0d4dcd20f1d1a42f73399}{context}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Initializes the object with the given \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext}{Bundle\+Context}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_ad6fd9b71323e2995a54b112630b465d5}{init\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Returns the context. The pointer is guaranteed to be valid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory}{Web\+Request\+Handler\+Factory}} is a H\+T\+T\+P\+Request\+Handler\+Factory that was extended to allow Request\+Handlers easy access to the Session\+Manager and the owner\textquotesingle{}s \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext}{Bundle\+Context}}. 
+
+Definition at line 33 of file Web\+Request\+Handler\+Factory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_ac3f1d866e421a8d99160a616ab3351e9}\label{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_ac3f1d866e421a8d99160a616ab3351e9}} 
+\index{Poco::OSP::Web::WebRequestHandlerFactory@{Poco::OSP::Web::WebRequestHandlerFactory}!WebRequestHandlerFactory@{WebRequestHandlerFactory}}
+\index{WebRequestHandlerFactory@{WebRequestHandlerFactory}!Poco::OSP::Web::WebRequestHandlerFactory@{Poco::OSP::Web::WebRequestHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{WebRequestHandlerFactory()}{WebRequestHandlerFactory()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Request\+Handler\+Factory\+::\+Web\+Request\+Handler\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_af86ce8f36324be728dcb094c3ca01b8a}\label{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_af86ce8f36324be728dcb094c3ca01b8a}} 
+\index{Poco::OSP::Web::WebRequestHandlerFactory@{Poco::OSP::Web::WebRequestHandlerFactory}!````~WebRequestHandlerFactory@{$\sim$WebRequestHandlerFactory}}
+\index{````~WebRequestHandlerFactory@{$\sim$WebRequestHandlerFactory}!Poco::OSP::Web::WebRequestHandlerFactory@{Poco::OSP::Web::WebRequestHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$WebRequestHandlerFactory()}{~WebRequestHandlerFactory()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Request\+Handler\+Factory\+::$\sim$\+Web\+Request\+Handler\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the unintialized \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory}{Web\+Request\+Handler\+Factory}}. The default constructor is called by the classloader (which requires a default constructor) followed by a call to init. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_a7e8e676321b0d4dcd20f1d1a42f73399}\label{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_a7e8e676321b0d4dcd20f1d1a42f73399}} 
+\index{Poco::OSP::Web::WebRequestHandlerFactory@{Poco::OSP::Web::WebRequestHandlerFactory}!context@{context}}
+\index{context@{context}!Poco::OSP::Web::WebRequestHandlerFactory@{Poco::OSP::Web::WebRequestHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{context()}{context()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}} Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Request\+Handler\+Factory\+::context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Initializes the object with the given \mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext}{Bundle\+Context}}. 
+
+
+
+Definition at line 63 of file Web\+Request\+Handler\+Factory.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_a2511805e7427ffebd14c012b19909c53}\label{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_a2511805e7427ffebd14c012b19909c53}} 
+\index{Poco::OSP::Web::WebRequestHandlerFactory@{Poco::OSP::Web::WebRequestHandlerFactory}!init@{init}}
+\index{init@{init}!Poco::OSP::Web::WebRequestHandlerFactory@{Poco::OSP::Web::WebRequestHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Request\+Handler\+Factory\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1OSP_1_1BundleContext_a82e74940668c06c2dfee118e96d251bd}{Bundle\+Context\+::\+Ptr}}}]{p\+Context }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory}{Web\+Request\+Handler\+Factory}}. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_ad6fd9b71323e2995a54b112630b465d5}\label{classPoco_1_1OSP_1_1Web_1_1WebRequestHandlerFactory_ad6fd9b71323e2995a54b112630b465d5}} 
+\index{Poco::OSP::Web::WebRequestHandlerFactory@{Poco::OSP::Web::WebRequestHandlerFactory}!initImpl@{initImpl}}
+\index{initImpl@{initImpl}!Poco::OSP::Web::WebRequestHandlerFactory@{Poco::OSP::Web::WebRequestHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{initImpl()}{initImpl()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+O\+S\+P\+::\+Web\+::\+Web\+Request\+Handler\+Factory\+::init\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Returns the context. The pointer is guaranteed to be valid. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\+Web/\mbox{\hyperlink{WebRequestHandlerFactory_8h}{Web\+Request\+Handler\+Factory.\+h}}\end{DoxyCompactItemize}

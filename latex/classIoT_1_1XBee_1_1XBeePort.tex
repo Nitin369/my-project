@@ -1,0 +1,93 @@
+\hypertarget{classIoT_1_1XBee_1_1XBeePort}{}\doxysection{IoT\+::X\+Bee\+::X\+Bee\+Port Class Reference}
+\label{classIoT_1_1XBee_1_1XBeePort}\index{IoT::XBee::XBeePort@{IoT::XBee::XBeePort}}
+
+
+{\ttfamily \#include $<$X\+Bee\+Port.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeePort_a12d879cc52ab749f39d95e7c5a5188ea}{X\+Bee\+Port}} (\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ Poco\+::\+Serial\+::\+Serial\+Port $>$ p\+Serial\+Port)
+\item 
+\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeePort_a890ad4c1cc4b0700a955acf421a5e20e}{$\sim$\+X\+Bee\+Port}} ()
+\item 
+void \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeePort_a04bde1b7bd45b4d1b53e7dacbbe07830}{send\+Frame}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&frame)
+\begin{DoxyCompactList}\small\item\em Destroys the Z\+B\+Port. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeePort_a83d7dd093a0fc7ed03ca6e229b621e71}{receive\+Frame}} (\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&frame)
+\begin{DoxyCompactList}\small\item\em Sends an A\+PI frame to the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} ZB module. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeePort_a9789f4fc2c9a0cc88ff9a39f90a3e9e4}{receive\+Frame}} (\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&frame, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout)
+\item 
+bool \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeePort_ac7e367d1d7602eb85259c8d40f7506aa}{poll}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&timeout)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides an interface to a Digi \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} module using the Digi \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} A\+PI frame-\/based protocol. 
+
+Definition at line 37 of file X\+Bee\+Port.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeePort_a12d879cc52ab749f39d95e7c5a5188ea}\label{classIoT_1_1XBee_1_1XBeePort_a12d879cc52ab749f39d95e7c5a5188ea}} 
+\index{IoT::XBee::XBeePort@{IoT::XBee::XBeePort}!XBeePort@{XBeePort}}
+\index{XBeePort@{XBeePort}!IoT::XBee::XBeePort@{IoT::XBee::XBeePort}}
+\doxysubsubsection{\texorpdfstring{XBeePort()}{XBeePort()}}
+{\footnotesize\ttfamily Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Port\+::\+X\+Bee\+Port (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ Poco\+::\+Serial\+::\+Serial\+Port $>$}]{p\+Serial\+Port }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeePort_a890ad4c1cc4b0700a955acf421a5e20e}\label{classIoT_1_1XBee_1_1XBeePort_a890ad4c1cc4b0700a955acf421a5e20e}} 
+\index{IoT::XBee::XBeePort@{IoT::XBee::XBeePort}!````~XBeePort@{$\sim$XBeePort}}
+\index{````~XBeePort@{$\sim$XBeePort}!IoT::XBee::XBeePort@{IoT::XBee::XBeePort}}
+\doxysubsubsection{\texorpdfstring{$\sim$XBeePort()}{~XBeePort()}}
+{\footnotesize\ttfamily Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Port\+::$\sim$\+X\+Bee\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeePort}{X\+Bee\+Port}} using the given Serial\+Port.
+
+The Serial\+Port must be open and properly configured for communication with the Digi \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} module. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeePort_ac7e367d1d7602eb85259c8d40f7506aa}\label{classIoT_1_1XBee_1_1XBeePort_ac7e367d1d7602eb85259c8d40f7506aa}} 
+\index{IoT::XBee::XBeePort@{IoT::XBee::XBeePort}!poll@{poll}}
+\index{poll@{poll}!IoT::XBee::XBeePort@{IoT::XBee::XBeePort}}
+\doxysubsubsection{\texorpdfstring{poll()}{poll()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Port\+::poll (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Receives an A\+PI frame from the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} ZB module.
+
+Returns the number of bytes received, which may be 0 if the receive operation times out. 
+
+Definition at line 85 of file X\+Bee\+Port.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeePort_a83d7dd093a0fc7ed03ca6e229b621e71}\label{classIoT_1_1XBee_1_1XBeePort_a83d7dd093a0fc7ed03ca6e229b621e71}} 
+\index{IoT::XBee::XBeePort@{IoT::XBee::XBeePort}!receiveFrame@{receiveFrame}}
+\index{receiveFrame@{receiveFrame}!IoT::XBee::XBeePort@{IoT::XBee::XBeePort}}
+\doxysubsubsection{\texorpdfstring{receiveFrame()}{receiveFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Port\+::receive\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&}]{frame }\end{DoxyParamCaption})}
+
+
+
+Sends an A\+PI frame to the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} ZB module. 
+
+\mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeePort_a9789f4fc2c9a0cc88ff9a39f90a3e9e4}\label{classIoT_1_1XBee_1_1XBeePort_a9789f4fc2c9a0cc88ff9a39f90a3e9e4}} 
+\index{IoT::XBee::XBeePort@{IoT::XBee::XBeePort}!receiveFrame@{receiveFrame}}
+\index{receiveFrame@{receiveFrame}!IoT::XBee::XBeePort@{IoT::XBee::XBeePort}}
+\doxysubsubsection{\texorpdfstring{receiveFrame()}{receiveFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Port\+::receive\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&}]{frame,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Timespan}{Poco\+::\+Timespan}} \&}]{timeout }\end{DoxyParamCaption})}
+
+Receives an A\+PI frame from the \mbox{\hyperlink{namespaceIoT_1_1XBee}{X\+Bee}} ZB module.
+
+Blocks until data becomes available. \mbox{\Hypertarget{classIoT_1_1XBee_1_1XBeePort_a04bde1b7bd45b4d1b53e7dacbbe07830}\label{classIoT_1_1XBee_1_1XBeePort_a04bde1b7bd45b4d1b53e7dacbbe07830}} 
+\index{IoT::XBee::XBeePort@{IoT::XBee::XBeePort}!sendFrame@{sendFrame}}
+\index{sendFrame@{sendFrame}!IoT::XBee::XBeePort@{IoT::XBee::XBeePort}}
+\doxysubsubsection{\texorpdfstring{sendFrame()}{sendFrame()}}
+{\footnotesize\ttfamily void Io\+T\+::\+X\+Bee\+::\+X\+Bee\+Port\+::send\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classIoT_1_1XBee_1_1XBeeFrame}{X\+Bee\+Frame}} \&}]{frame }\end{DoxyParamCaption})}
+
+
+
+Destroys the Z\+B\+Port. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+X\+Bee/\mbox{\hyperlink{XBeePort_8h}{X\+Bee\+Port.\+h}}\end{DoxyCompactItemize}

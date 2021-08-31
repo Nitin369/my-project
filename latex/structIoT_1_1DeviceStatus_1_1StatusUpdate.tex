@@ -1,0 +1,110 @@
+\hypertarget{structIoT_1_1DeviceStatus_1_1StatusUpdate}{}\doxysection{IoT\+::Device\+Status\+::Status\+Update Struct Reference}
+\label{structIoT_1_1DeviceStatus_1_1StatusUpdate}\index{IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}}
+
+
+{\ttfamily \#include $<$Device\+Status\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate_ae08299e22d7b6c599a0705aea8bd9946}{Status\+Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate_a1e8d832cedf89a469a6bbb7a35dabd26}{message\+Class}}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate_aa3b4959e14c1c31d71fde44d8d0a2561}{source}}
+\item 
+bool \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate_a6f083e55c71a60285ddd9b0cbee80799}{acknowledgeable}}
+\item 
+\mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate_a3e3d5813c50ac1af705c1e4d638aad4f}{status}}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1DeviceStatus_1_1StatusUpdate_af78aba340d6045f26d091636e209c87d}{text}}
+\begin{DoxyCompactList}\small\item\em New device status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 72 of file Device\+Status\+Service.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structIoT_1_1DeviceStatus_1_1StatusUpdate_ae08299e22d7b6c599a0705aea8bd9946}\label{structIoT_1_1DeviceStatus_1_1StatusUpdate_ae08299e22d7b6c599a0705aea8bd9946}} 
+\index{IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}!StatusUpdate@{StatusUpdate}}
+\index{StatusUpdate@{StatusUpdate}!IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}}
+\doxysubsubsection{\texorpdfstring{StatusUpdate()}{StatusUpdate()}}
+{\footnotesize\ttfamily Io\+T\+::\+Device\+Status\+::\+Status\+Update\+::\+Status\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 74 of file Device\+Status\+Service.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structIoT_1_1DeviceStatus_1_1StatusUpdate_a6f083e55c71a60285ddd9b0cbee80799}\label{structIoT_1_1DeviceStatus_1_1StatusUpdate_a6f083e55c71a60285ddd9b0cbee80799}} 
+\index{IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}!acknowledgeable@{acknowledgeable}}
+\index{acknowledgeable@{acknowledgeable}!IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}}
+\doxysubsubsection{\texorpdfstring{acknowledgeable}{acknowledgeable}}
+{\footnotesize\ttfamily bool Io\+T\+::\+Device\+Status\+::\+Status\+Update\+::acknowledgeable}
+
+Optional source of the status update. Can be an application specific name of a subsystem or device. 
+
+Definition at line 96 of file Device\+Status\+Service.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1DeviceStatus_1_1StatusUpdate_a1e8d832cedf89a469a6bbb7a35dabd26}\label{structIoT_1_1DeviceStatus_1_1StatusUpdate_a1e8d832cedf89a469a6bbb7a35dabd26}} 
+\index{IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}!messageClass@{messageClass}}
+\index{messageClass@{messageClass}!IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}}
+\doxysubsubsection{\texorpdfstring{messageClass}{messageClass}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Device\+Status\+::\+Status\+Update\+::message\+Class}
+
+
+
+Definition at line 81 of file Device\+Status\+Service.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1DeviceStatus_1_1StatusUpdate_aa3b4959e14c1c31d71fde44d8d0a2561}\label{structIoT_1_1DeviceStatus_1_1StatusUpdate_aa3b4959e14c1c31d71fde44d8d0a2561}} 
+\index{IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}!source@{source}}
+\index{source@{source}!IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Device\+Status\+::\+Status\+Update\+::source}
+
+An string that identifies the message class.
+
+If non-\/empty, any previously posted message with the same class will be removed before the new message is added. Therefore, at most one message of a given non-\/empty message class is stored. 
+
+Definition at line 91 of file Device\+Status\+Service.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1DeviceStatus_1_1StatusUpdate_a3e3d5813c50ac1af705c1e4d638aad4f}\label{structIoT_1_1DeviceStatus_1_1StatusUpdate_a3e3d5813c50ac1af705c1e4d638aad4f}} 
+\index{IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}!status@{status}}
+\index{status@{status}!IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceIoT_1_1DeviceStatus_addbaefcae69af3f8a291648ee6e723af}{Device\+Status}} Io\+T\+::\+Device\+Status\+::\+Status\+Update\+::status}
+
+Optional flag denoting whether the status update can be acknowledged by the user. Once a status update has been acknowledged, it will no longer affect the global (or source-\/specific) device status.
+
+Defaults to true. 
+
+Definition at line 104 of file Device\+Status\+Service.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1DeviceStatus_1_1StatusUpdate_af78aba340d6045f26d091636e209c87d}\label{structIoT_1_1DeviceStatus_1_1StatusUpdate_af78aba340d6045f26d091636e209c87d}} 
+\index{IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}!text@{text}}
+\index{text@{text}!IoT::DeviceStatus::StatusUpdate@{IoT::DeviceStatus::StatusUpdate}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Device\+Status\+::\+Status\+Update\+::text}
+
+
+
+New device status. 
+
+
+
+Definition at line 107 of file Device\+Status\+Service.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Device\+Status/\mbox{\hyperlink{DeviceStatusService_8h}{Device\+Status\+Service.\+h}}\end{DoxyCompactItemize}

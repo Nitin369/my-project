@@ -1,0 +1,301 @@
+\hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4}{}\doxysection{Poco\+::Data\+::Extraction$<$ std\+::deque$<$ T $>$ $>$ Class Template Reference}
+\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4}\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+
+
+Deque \mbox{\hyperlink{namespacePoco_1_1Data}{Data}} Type specialization for extraction of values from a query result set.  
+
+
+
+
+{\ttfamily \#include $<$Extraction.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Data\+::Extraction$<$ std\+::deque$<$ T $>$ $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Data\+::Extraction$<$ std\+::deque$<$ T $>$ $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::deque$<$ T $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ae17be2083114054b51d7042b021cb8ea}{Val\+Type}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ae17be2083114054b51d7042b021cb8ea}{Val\+Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a1dbad045980f80bcecd4b29ee89468d3}{Val\+Ptr}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Extraction}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ae17be2083114054b51d7042b021cb8ea}{Val\+Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ac2ca1fb6fa2149c22076908a6bd05c67}{Type}}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ac2ca1fb6fa2149c22076908a6bd05c67}{Type}} $>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_acc64451574ef1d2721c1d5a640e77374}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a5386b68709edaa891a1dbf96692a93ef}{Extraction}} (std\+::deque$<$ T $>$ \&\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ac9da9f2fe4568da9b2497406c4f09609}{result}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}} \&pos=\mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}}(0))
+\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a5ef6018f53c8b91cfb729ad4732593b1}{Extraction}} (std\+::deque$<$ T $>$ \&\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ac9da9f2fe4568da9b2497406c4f09609}{result}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&def, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}} \&pos=\mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}}(0))
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_aae2c9bc5e965a68484ae6d9b8c7debe6}{$\sim$\+Extraction}} ()
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ae5744328782986a01031856e5484ffac}{num\+Of\+Columns\+Handled}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the extraction position. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a6b2c84a83e52d4e575a18bc6a535df0b}{num\+Of\+Rows\+Handled}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a224ae31f6e1205192d31b29e1ea2fc1a}{num\+Of\+Rows\+Allowed}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a4be4a37b4c2bf575ecca8cf5b2d74e21}{is\+Null}} (std\+::size\+\_\+t row) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Gets the limit. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a6997151de27077b7754fcc4fadedd328}{extract}} (std\+::size\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em Returns the upper limit on number of rows that the extraction will handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractPreparation_ab50d15b514d176d16fec386e4f369087}{Abstract\+Preparation\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a4967f3784235181cb00edecf6016c80e}{create\+Preparation}} (\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractPreparator_a93a2a279420ab875c6d2d989f912dc24}{Abstract\+Preparator\+::\+Ptr}} \&p\+Prep, std\+::size\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em Returns true. Implementations should override it for different behavior. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a009ea6ed19ae2a1327069ecc262b5ddd}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::deque$<$ T $>$ \& \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ac9da9f2fe4568da9b2497406c4f09609}{result}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Poco\+::\+Data\+::\+Extraction$<$ std\+::deque$<$ T $>$ $>$}
+
+Deque \mbox{\hyperlink{namespacePoco_1_1Data}{Data}} Type specialization for extraction of values from a query result set. 
+
+Definition at line 407 of file Extraction.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_acc64451574ef1d2721c1d5a640e77374}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_acc64451574ef1d2721c1d5a640e77374}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ac2ca1fb6fa2149c22076908a6bd05c67}{Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_a8bf4fe7842a0b54f205347f458beff12}{Ptr}}}
+
+
+
+Definition at line 414 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ac2ca1fb6fa2149c22076908a6bd05c67}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ac2ca1fb6fa2149c22076908a6bd05c67}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!Type@{Type}}
+\index{Type@{Type}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Extraction}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ae17be2083114054b51d7042b021cb8ea}{Val\+Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ac2ca1fb6fa2149c22076908a6bd05c67}{Type}}}
+
+
+
+Definition at line 413 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a1dbad045980f80bcecd4b29ee89468d3}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a1dbad045980f80bcecd4b29ee89468d3}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!ValPtr@{ValPtr}}
+\index{ValPtr@{ValPtr}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{ValPtr}{ValPtr}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ae17be2083114054b51d7042b021cb8ea}{Val\+Type}}$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a1dbad045980f80bcecd4b29ee89468d3}{Val\+Ptr}}}
+
+
+
+Definition at line 412 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ae17be2083114054b51d7042b021cb8ea}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ae17be2083114054b51d7042b021cb8ea}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!ValType@{ValType}}
+\index{ValType@{ValType}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{ValType}{ValType}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef std\+::deque$<$T$>$ \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ae17be2083114054b51d7042b021cb8ea}{Val\+Type}}}
+
+
+
+Definition at line 411 of file Extraction.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a5386b68709edaa891a1dbf96692a93ef}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a5386b68709edaa891a1dbf96692a93ef}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!Extraction@{Extraction}}
+\index{Extraction@{Extraction}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Extraction()}{Extraction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Extraction}} (\begin{DoxyParamCaption}\item[{std\+::deque$<$ T $>$ \&}]{result,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}} \&}]{pos = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}}(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 416 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a5ef6018f53c8b91cfb729ad4732593b1}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a5ef6018f53c8b91cfb729ad4732593b1}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!Extraction@{Extraction}}
+\index{Extraction@{Extraction}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{Extraction()}{Extraction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Extraction}} (\begin{DoxyParamCaption}\item[{std\+::deque$<$ T $>$ \&}]{result,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} T \&}]{def,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}} \&}]{pos = {\ttfamily \mbox{\hyperlink{classPoco_1_1Data_1_1Position}{Position}}(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 424 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_aae2c9bc5e965a68484ae6d9b8c7debe6}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_aae2c9bc5e965a68484ae6d9b8c7debe6}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!````~Extraction@{$\sim$Extraction}}
+\index{````~Extraction@{$\sim$Extraction}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Extraction()}{~Extraction()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Extraction}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 432 of file Extraction.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a4967f3784235181cb00edecf6016c80e}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a4967f3784235181cb00edecf6016c80e}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!createPreparation@{createPreparation}}
+\index{createPreparation@{createPreparation}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{createPreparation()}{createPreparation()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractPreparation_ab50d15b514d176d16fec386e4f369087}{Abstract\+Preparation\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::create\+Preparation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Data_1_1AbstractPreparator_a93a2a279420ab875c6d2d989f912dc24}{Abstract\+Preparator\+::\+Ptr}} \&}]{p\+Prep,  }\item[{std\+::size\+\_\+t}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns true. Implementations should override it for different behavior. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_ab56f98f75226fe295f8febf29e8266e8}{Poco\+::\+Data\+::\+Abstract\+Extraction}}.
+
+
+
+Definition at line 472 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a6997151de27077b7754fcc4fadedd328}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a6997151de27077b7754fcc4fadedd328}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!extract@{extract}}
+\index{extract@{extract}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{extract()}{extract()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::extract (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the upper limit on number of rows that the extraction will handle. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_afe527ed013427474ba30f207393aef71}{Poco\+::\+Data\+::\+Abstract\+Extraction}}.
+
+
+
+Definition at line 463 of file Extraction.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a4be4a37b4c2bf575ecca8cf5b2d74e21}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a4be4a37b4c2bf575ecca8cf5b2d74e21}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!isNull@{isNull}}
+\index{isNull@{isNull}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{isNull()}{isNull()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::is\+Null (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{row }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the limit. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_aaf78be0ef463fb21d25f15b573664eda}{Poco\+::\+Data\+::\+Abstract\+Extraction}}.
+
+
+
+Definition at line 451 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ae5744328782986a01031856e5484ffac}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ae5744328782986a01031856e5484ffac}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!numOfColumnsHandled@{numOfColumnsHandled}}
+\index{numOfColumnsHandled@{numOfColumnsHandled}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{numOfColumnsHandled()}{numOfColumnsHandled()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::num\+Of\+Columns\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the extraction position. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_a5910ad9b4bcaacefc7946ced15074828}{Poco\+::\+Data\+::\+Abstract\+Extraction}}.
+
+
+
+Definition at line 436 of file Extraction.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a224ae31f6e1205192d31b29e1ea2fc1a}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a224ae31f6e1205192d31b29e1ea2fc1a}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!numOfRowsAllowed@{numOfRowsAllowed}}
+\index{numOfRowsAllowed@{numOfRowsAllowed}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{numOfRowsAllowed()}{numOfRowsAllowed()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::num\+Of\+Rows\+Allowed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of rows that the extraction handles.
+
+The trivial case will be one single row but for collection data types (ie vector) it can be larger. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_acd83c1e080923fe73f38e6b9bd8e61f3}{Poco\+::\+Data\+::\+Abstract\+Extraction}}.
+
+
+
+Definition at line 446 of file Extraction.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a6b2c84a83e52d4e575a18bc6a535df0b}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a6b2c84a83e52d4e575a18bc6a535df0b}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!numOfRowsHandled@{numOfRowsHandled}}
+\index{numOfRowsHandled@{numOfRowsHandled}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{numOfRowsHandled()}{numOfRowsHandled()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::num\+Of\+Rows\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the number of columns that the extraction handles.
+
+The trivial case will be one single column but when complex types are used this value can be larger than one. 
+
+Implements \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_a4c8ac9a79279d30ba5cef2739a342a39}{Poco\+::\+Data\+::\+Abstract\+Extraction}}.
+
+
+
+Definition at line 441 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a009ea6ed19ae2a1327069ecc262b5ddd}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_a009ea6ed19ae2a1327069ecc262b5ddd}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!reset@{reset}}
+\index{reset@{reset}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Extracts a value from the param, starting at the given column position. Returns the number of rows extracted. 
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1Data_1_1AbstractExtraction_a708debad1766016567d622a993d635cb}{Poco\+::\+Data\+::\+Abstract\+Extraction}}.
+
+
+
+Definition at line 477 of file Extraction.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ac9da9f2fe4568da9b2497406c4f09609}\label{classPoco_1_1Data_1_1Extraction_3_01std_1_1deque_3_01T_01_4_01_4_ac9da9f2fe4568da9b2497406c4f09609}} 
+\index{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}!result@{result}}
+\index{result@{result}!Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$@{Poco::Data::Extraction$<$ std::deque$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{result()}{result()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::deque$<$T$>$\& \mbox{\hyperlink{classPoco_1_1Data_1_1Extraction}{Poco\+::\+Data\+::\+Extraction}}$<$ std\+::deque$<$ T $>$ $>$\+::result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 484 of file Extraction.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Data/\mbox{\hyperlink{Extraction_8h}{Extraction.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\hypertarget{PriorityDelegate_8h}{}\doxysection{App\+Frame\+Work/include/\+Poco/\+Priority\+Delegate.h File Reference}
+\label{PriorityDelegate_8h}\index{AppFrameWork/include/Poco/PriorityDelegate.h@{AppFrameWork/include/Poco/PriorityDelegate.h}}
+{\ttfamily \#include \char`\"{}Poco/\+Foundation.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Poco/\+Abstract\+Priority\+Delegate.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Poco/\+Priority\+Expire.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Poco/\+Function\+Priority\+Delegate.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Poco/\+Mutex.\+h\char`\"{}}\newline
+Include dependency graph for Priority\+Delegate.\+h\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1PriorityDelegate}{Poco\+::\+Priority\+Delegate$<$ T\+Obj, T\+Args, use\+Sender $>$}}
+\item 
+class \mbox{\hyperlink{classPoco_1_1PriorityDelegate_3_01TObj_00_01TArgs_00_01false_01_4}{Poco\+::\+Priority\+Delegate$<$ T\+Obj, T\+Args, false $>$}}
+\item 
+class \mbox{\hyperlink{classPoco_1_1PriorityDelegate_3_01TObj_00_01void_00_01true_01_4}{Poco\+::\+Priority\+Delegate$<$ T\+Obj, void, true $>$}}
+\item 
+class \mbox{\hyperlink{classPoco_1_1PriorityDelegate_3_01TObj_00_01void_00_01false_01_4}{Poco\+::\+Priority\+Delegate$<$ T\+Obj, void, false $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacePoco}{Poco}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T\+Obj , class T\+Args $>$ }\\static Priority\+Delegate$<$ T\+Obj, T\+Args, true $>$ \mbox{\hyperlink{namespacePoco_a2f48d7b2c7774e22e565fc0afb97218f}{Poco\+::priority\+Delegate}} (T\+Obj $\ast$p\+Obj, void(T\+Obj\+::$\ast$Notify\+Method)(\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, T\+Args \&), int prio)
+\item 
+{\footnotesize template$<$class T\+Obj , class T\+Args $>$ }\\static Priority\+Delegate$<$ T\+Obj, T\+Args, false $>$ \mbox{\hyperlink{namespacePoco_ac5660b291819311c5413cac1f4001d84}{Poco\+::priority\+Delegate}} (T\+Obj $\ast$p\+Obj, void(T\+Obj\+::$\ast$Notify\+Method)(T\+Args \&), int prio)
+\item 
+{\footnotesize template$<$class T\+Obj , class T\+Args $>$ }\\static Priority\+Expire$<$ T\+Args $>$ \mbox{\hyperlink{namespacePoco_acfba93015bdff0a2d764022a1cfe87a9}{Poco\+::priority\+Delegate}} (T\+Obj $\ast$p\+Obj, void(T\+Obj\+::$\ast$Notify\+Method)(\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, T\+Args \&), int prio, Timestamp\+::\+Time\+Diff expire\+Milli\+Sec)
+\item 
+{\footnotesize template$<$class T\+Obj , class T\+Args $>$ }\\static Priority\+Expire$<$ T\+Args $>$ \mbox{\hyperlink{namespacePoco_a6a99eee523965d9ac54cb47befa17b70}{Poco\+::priority\+Delegate}} (T\+Obj $\ast$p\+Obj, void(T\+Obj\+::$\ast$Notify\+Method)(T\+Args \&), int prio, Timestamp\+::\+Time\+Diff expire\+Milli\+Sec)
+\item 
+{\footnotesize template$<$class T\+Args $>$ }\\static Priority\+Expire$<$ T\+Args $>$ \mbox{\hyperlink{namespacePoco_a6d52c71ae549ee1217de376c66d11400}{Poco\+::priority\+Delegate}} (void($\ast$Notify\+Method)(\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, T\+Args \&), int prio, Timestamp\+::\+Time\+Diff expire\+Milli\+Sec)
+\item 
+{\footnotesize template$<$class T\+Args $>$ }\\static Priority\+Expire$<$ T\+Args $>$ \mbox{\hyperlink{namespacePoco_af7a3c992c737187440f5f53d5e6d372c}{Poco\+::priority\+Delegate}} (void($\ast$Notify\+Method)(void $\ast$, T\+Args \&), int prio, Timestamp\+::\+Time\+Diff expire\+Milli\+Sec)
+\item 
+{\footnotesize template$<$class T\+Args $>$ }\\static Priority\+Expire$<$ T\+Args $>$ \mbox{\hyperlink{namespacePoco_a3a87fb04ff1b7a39179365f0bcbfab1a}{Poco\+::priority\+Delegate}} (void($\ast$Notify\+Method)(T\+Args \&), int prio, Timestamp\+::\+Time\+Diff expire\+Milli\+Sec)
+\item 
+{\footnotesize template$<$class T\+Args $>$ }\\static Function\+Priority\+Delegate$<$ T\+Args, true, true $>$ \mbox{\hyperlink{namespacePoco_a2fc01719e6ed3354fba1a9ef372d9f03}{Poco\+::priority\+Delegate}} (void($\ast$Notify\+Method)(\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$, T\+Args \&), int prio)
+\item 
+{\footnotesize template$<$class T\+Args $>$ }\\static Function\+Priority\+Delegate$<$ T\+Args, true, false $>$ \mbox{\hyperlink{namespacePoco_ac872eb48c2cc79bd3106310f203c49fd}{Poco\+::priority\+Delegate}} (void($\ast$Notify\+Method)(void $\ast$, T\+Args \&), int prio)
+\item 
+{\footnotesize template$<$class T\+Args $>$ }\\static Function\+Priority\+Delegate$<$ T\+Args, false $>$ \mbox{\hyperlink{namespacePoco_ac3c746c81998b156182ba4fe29c68702}{Poco\+::priority\+Delegate}} (void($\ast$Notify\+Method)(T\+Args \&), int prio)
+\item 
+{\footnotesize template$<$class T\+Obj $>$ }\\static Priority\+Delegate$<$ T\+Obj, void, true $>$ \mbox{\hyperlink{namespacePoco_acef789df4245b0177d67a2a33228a89d}{Poco\+::priority\+Delegate}} (T\+Obj $\ast$p\+Obj, void(T\+Obj\+::$\ast$Notify\+Method)(\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$), int prio)
+\item 
+{\footnotesize template$<$class T\+Obj $>$ }\\static Priority\+Delegate$<$ T\+Obj, void, false $>$ \mbox{\hyperlink{namespacePoco_ada14dcccb7f8a437f283b1bece0be77a}{Poco\+::priority\+Delegate}} (T\+Obj $\ast$p\+Obj, void(T\+Obj\+::$\ast$Notify\+Method)(), int prio)
+\item 
+{\footnotesize template$<$class T\+Obj $>$ }\\static Priority\+Expire$<$ void $>$ \mbox{\hyperlink{namespacePoco_a30b9f7cc3a19bb027cdc84430c978131}{Poco\+::priority\+Delegate}} (T\+Obj $\ast$p\+Obj, void(T\+Obj\+::$\ast$Notify\+Method)(\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$), int prio, Timestamp\+::\+Time\+Diff expire\+Milli\+Sec)
+\item 
+{\footnotesize template$<$class T\+Obj $>$ }\\static Priority\+Expire$<$ void $>$ \mbox{\hyperlink{namespacePoco_a98b8d0891bfbbe7949678057a4d8c107}{Poco\+::priority\+Delegate}} (T\+Obj $\ast$p\+Obj, void(T\+Obj\+::$\ast$Notify\+Method)(), int prio, Timestamp\+::\+Time\+Diff expire\+Milli\+Sec)
+\item 
+Priority\+Expire$<$ void $>$ \mbox{\hyperlink{namespacePoco_ad4f78e1deccf6ce444ef6b1a592ef98c}{Poco\+::priority\+Delegate}} (void($\ast$Notify\+Method)(\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$), int prio, Timestamp\+::\+Time\+Diff expire\+Milli\+Sec)
+\item 
+Priority\+Expire$<$ void $>$ \mbox{\hyperlink{namespacePoco_a607cc058833729b0c154946902339119}{Poco\+::priority\+Delegate}} (void($\ast$Notify\+Method)(void $\ast$), int prio, Timestamp\+::\+Time\+Diff expire\+Milli\+Sec)
+\item 
+Priority\+Expire$<$ void $>$ \mbox{\hyperlink{namespacePoco_ae0a265aa8dcb386bf0fa7a2dd7212f08}{Poco\+::priority\+Delegate}} (void($\ast$Notify\+Method)(), int prio, Timestamp\+::\+Time\+Diff expire\+Milli\+Sec)
+\item 
+Function\+Priority\+Delegate$<$ void, true, true $>$ \mbox{\hyperlink{namespacePoco_a444d58854f05677bd82d416f18e6b2b4}{Poco\+::priority\+Delegate}} (void($\ast$Notify\+Method)(\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$), int prio)
+\item 
+Function\+Priority\+Delegate$<$ void, true, false $>$ \mbox{\hyperlink{namespacePoco_ab1267e84756354d462f6d66e579aaa1e}{Poco\+::priority\+Delegate}} (void($\ast$Notify\+Method)(void $\ast$), int prio)
+\item 
+Function\+Priority\+Delegate$<$ void, false $>$ \mbox{\hyperlink{namespacePoco_a9b8e2d0561eae0fd426bf2753a7132bb}{Poco\+::priority\+Delegate}} (void($\ast$Notify\+Method)(), int prio)
+\end{DoxyCompactItemize}

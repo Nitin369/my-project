@@ -1,0 +1,12 @@
+digraph "Poco::SynchronizedObject::wait"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Poco::SynchronizedObject\l::wait",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Waits for the object to become signalled."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Poco::Event::wait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Event.html#a0da7c72337aab427cdd62307d1bb8769",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Poco::EventImpl::waitImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1EventImpl.html#a2265d2d061554e8b3de926df9db83143",tooltip=" "];
+}

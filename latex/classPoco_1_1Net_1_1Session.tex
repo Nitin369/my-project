@@ -1,0 +1,110 @@
+\hypertarget{classPoco_1_1Net_1_1Session}{}\doxysection{Poco\+::Net\+::Session Class Reference}
+\label{classPoco_1_1Net_1_1Session}\index{Poco::Net::Session@{Poco::Net::Session}}
+
+
+{\ttfamily \#include $<$Session.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::Session\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::Session\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1Net_1_1Session}{Session}} $>$ \mbox{\hyperlink{classPoco_1_1Net_1_1Session_a0df3cd9d591b79ff2a15afe69d224ce2}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+S\+S\+L\+\_\+\+S\+E\+S\+S\+I\+ON $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1Session_aa297a98b3bd3d09902b9e9cdeedc9b27}{ssl\+Session}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1Session_a32bcee5a0881f8bc339749c90d08b6ad}{Session}} (S\+S\+L\+\_\+\+S\+E\+S\+S\+I\+ON $\ast$p\+Session)
+\begin{DoxyCompactList}\small\item\em Returns the stored Open\+S\+SL S\+S\+L\+\_\+\+S\+E\+S\+S\+I\+ON object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1Session_aa8844444d5c565c7040a98b69c396087}{$\sim$\+Session}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Net_1_1Session_ad27a4c334f7fe97bfae3c47080aafd4a}{Secure\+Socket\+Impl}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class encapsulates a S\+SL session object used with session caching on the client side.
+
+For session caching to work, a client must save the session object from an existing connection, if it wants to reuse it with a future connection. 
+
+Definition at line 33 of file Session.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1Session_a0df3cd9d591b79ff2a15afe69d224ce2}\label{classPoco_1_1Net_1_1Session_a0df3cd9d591b79ff2a15afe69d224ce2}} 
+\index{Poco::Net::Session@{Poco::Net::Session}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::Net::Session@{Poco::Net::Session}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1Net_1_1Session}{Session}}$>$ \mbox{\hyperlink{classPoco_1_1Net_1_1Session_a0df3cd9d591b79ff2a15afe69d224ce2}{Poco\+::\+Net\+::\+Session\+::\+Ptr}}}
+
+
+
+Definition at line 42 of file Session.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1Session_a32bcee5a0881f8bc339749c90d08b6ad}\label{classPoco_1_1Net_1_1Session_a32bcee5a0881f8bc339749c90d08b6ad}} 
+\index{Poco::Net::Session@{Poco::Net::Session}!Session@{Session}}
+\index{Session@{Session}!Poco::Net::Session@{Poco::Net::Session}}
+\doxysubsubsection{\texorpdfstring{Session()}{Session()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Session\+::\+Session (\begin{DoxyParamCaption}\item[{S\+S\+L\+\_\+\+S\+E\+S\+S\+I\+ON $\ast$}]{p\+Session }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the stored Open\+S\+SL S\+S\+L\+\_\+\+S\+E\+S\+S\+I\+ON object. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1Session_aa8844444d5c565c7040a98b69c396087}\label{classPoco_1_1Net_1_1Session_aa8844444d5c565c7040a98b69c396087}} 
+\index{Poco::Net::Session@{Poco::Net::Session}!````~Session@{$\sim$Session}}
+\index{````~Session@{$\sim$Session}!Poco::Net::Session@{Poco::Net::Session}}
+\doxysubsubsection{\texorpdfstring{$\sim$Session()}{~Session()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+Session\+::$\sim$\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates a new \mbox{\hyperlink{classPoco_1_1Net_1_1Session}{Session}} object, using the given S\+S\+L\+\_\+\+S\+E\+S\+S\+I\+ON object.
+
+The S\+S\+L\+\_\+\+S\+E\+S\+S\+I\+ON\textquotesingle{}s reference count is not changed. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1Session_aa297a98b3bd3d09902b9e9cdeedc9b27}\label{classPoco_1_1Net_1_1Session_aa297a98b3bd3d09902b9e9cdeedc9b27}} 
+\index{Poco::Net::Session@{Poco::Net::Session}!sslSession@{sslSession}}
+\index{sslSession@{sslSession}!Poco::Net::Session@{Poco::Net::Session}}
+\doxysubsubsection{\texorpdfstring{sslSession()}{sslSession()}}
+{\footnotesize\ttfamily S\+S\+L\+\_\+\+S\+E\+S\+S\+I\+ON $\ast$ Poco\+::\+Net\+::\+Session\+::ssl\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 72 of file Session.\+h.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1Session_ad27a4c334f7fe97bfae3c47080aafd4a}\label{classPoco_1_1Net_1_1Session_ad27a4c334f7fe97bfae3c47080aafd4a}} 
+\index{Poco::Net::Session@{Poco::Net::Session}!SecureSocketImpl@{SecureSocketImpl}}
+\index{SecureSocketImpl@{SecureSocketImpl}!Poco::Net::Session@{Poco::Net::Session}}
+\doxysubsubsection{\texorpdfstring{SecureSocketImpl}{SecureSocketImpl}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Net_1_1SecureSocketImpl}{Secure\+Socket\+Impl}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 65 of file Session.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{Net_2Session_8h}{Session.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,156 @@
+\hypertarget{classPoco_1_1DynamicFactory}{}\doxysection{Poco\+::Dynamic\+Factory$<$ Base $>$ Class Template Reference}
+\label{classPoco_1_1DynamicFactory}\index{Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}}
+
+
+A factory that creates objects by class name.  
+
+
+
+
+{\ttfamily \#include $<$Dynamic\+Factory.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AbstractInstantiator}{Abstract\+Instantiator}}$<$ Base $>$ \mbox{\hyperlink{classPoco_1_1DynamicFactory_a05c897901d795bf1053bddc15f6ab928}{Abstract\+Factory}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1DynamicFactory_a940f1ba826dba96422a1ba0854db1a63}{Dynamic\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Dynamic\+Factory}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1DynamicFactory_a2f5ccbf2ab7bbeeeba04ec34c7e9b74d}{$\sim$\+Dynamic\+Factory}} ()
+\item 
+Base $\ast$ \mbox{\hyperlink{classPoco_1_1DynamicFactory_a6da542eb45ebb4d1a7961a068f7b5ebf}{create\+Instance}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&class\+Name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+{\footnotesize template$<$class C $>$ }\\void \mbox{\hyperlink{classPoco_1_1DynamicFactory_ac40a218060ecbea42e8c41c6a09623fc}{register\+Class}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&class\+Name)
+\item 
+void \mbox{\hyperlink{classPoco_1_1DynamicFactory_a53b85fc61d2bb045d6e48ad04a376b99}{register\+Class}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&class\+Name, \mbox{\hyperlink{classPoco_1_1DynamicFactory_a05c897901d795bf1053bddc15f6ab928}{Abstract\+Factory}} $\ast$p\+Abstract\+Factory)
+\item 
+void \mbox{\hyperlink{classPoco_1_1DynamicFactory_aa7ce2bce7e060e314767e83d3007e1a0}{unregister\+Class}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&class\+Name)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1DynamicFactory_a3633f64578d432f5358e21a571a40c9b}{is\+Class}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&class\+Name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true iff the given class has been registered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Base$>$\newline
+class Poco\+::\+Dynamic\+Factory$<$ Base $>$}
+
+A factory that creates objects by class name. 
+
+Definition at line 35 of file Dynamic\+Factory.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1DynamicFactory_a05c897901d795bf1053bddc15f6ab928}\label{classPoco_1_1DynamicFactory_a05c897901d795bf1053bddc15f6ab928}} 
+\index{Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}!AbstractFactory@{AbstractFactory}}
+\index{AbstractFactory@{AbstractFactory}!Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}}
+\doxysubsubsection{\texorpdfstring{AbstractFactory}{AbstractFactory}}
+{\footnotesize\ttfamily template$<$class Base $>$ \\
+typedef \mbox{\hyperlink{classPoco_1_1AbstractInstantiator}{Abstract\+Instantiator}}$<$Base$>$ \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Poco\+::\+Dynamic\+Factory}}$<$ Base $>$\+::\mbox{\hyperlink{classPoco_1_1DynamicFactory_a05c897901d795bf1053bddc15f6ab928}{Abstract\+Factory}}}
+
+
+
+Definition at line 39 of file Dynamic\+Factory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1DynamicFactory_a940f1ba826dba96422a1ba0854db1a63}\label{classPoco_1_1DynamicFactory_a940f1ba826dba96422a1ba0854db1a63}} 
+\index{Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}!DynamicFactory@{DynamicFactory}}
+\index{DynamicFactory@{DynamicFactory}!Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}}
+\doxysubsubsection{\texorpdfstring{DynamicFactory()}{DynamicFactory()}}
+{\footnotesize\ttfamily template$<$class Base $>$ \\
+\mbox{\hyperlink{classPoco_1_1DynamicFactory}{Poco\+::\+Dynamic\+Factory}}$<$ Base $>$\+::\mbox{\hyperlink{classPoco_1_1DynamicFactory}{Dynamic\+Factory}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Dynamic\+Factory}}. 
+
+
+
+Definition at line 41 of file Dynamic\+Factory.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DynamicFactory_a2f5ccbf2ab7bbeeeba04ec34c7e9b74d}\label{classPoco_1_1DynamicFactory_a2f5ccbf2ab7bbeeeba04ec34c7e9b74d}} 
+\index{Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}!````~DynamicFactory@{$\sim$DynamicFactory}}
+\index{````~DynamicFactory@{$\sim$DynamicFactory}!Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$DynamicFactory()}{~DynamicFactory()}}
+{\footnotesize\ttfamily template$<$class Base $>$ \\
+\mbox{\hyperlink{classPoco_1_1DynamicFactory}{Poco\+::\+Dynamic\+Factory}}$<$ Base $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1DynamicFactory}{Dynamic\+Factory}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destroys the \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Dynamic\+Factory}} and deletes the instantiators for all registered classes. 
+
+Definition at line 46 of file Dynamic\+Factory.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1DynamicFactory_a6da542eb45ebb4d1a7961a068f7b5ebf}\label{classPoco_1_1DynamicFactory_a6da542eb45ebb4d1a7961a068f7b5ebf}} 
+\index{Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}!createInstance@{createInstance}}
+\index{createInstance@{createInstance}!Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}}
+\doxysubsubsection{\texorpdfstring{createInstance()}{createInstance()}}
+{\footnotesize\ttfamily template$<$class Base $>$ \\
+Base$\ast$ \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Poco\+::\+Dynamic\+Factory}}$<$ Base $>$\+::create\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{class\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new instance of the class with the given name. The class must have been registered with register\+Class. If the class name is unknown, a Not\+Found\+Exception is thrown. 
+
+Definition at line 56 of file Dynamic\+Factory.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DynamicFactory_a3633f64578d432f5358e21a571a40c9b}\label{classPoco_1_1DynamicFactory_a3633f64578d432f5358e21a571a40c9b}} 
+\index{Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}!isClass@{isClass}}
+\index{isClass@{isClass}!Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}}
+\doxysubsubsection{\texorpdfstring{isClass()}{isClass()}}
+{\footnotesize\ttfamily template$<$class Base $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Poco\+::\+Dynamic\+Factory}}$<$ Base $>$\+::is\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{class\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true iff the given class has been registered. 
+
+
+
+Definition at line 120 of file Dynamic\+Factory.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DynamicFactory_ac40a218060ecbea42e8c41c6a09623fc}\label{classPoco_1_1DynamicFactory_ac40a218060ecbea42e8c41c6a09623fc}} 
+\index{Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}!registerClass@{registerClass}}
+\index{registerClass@{registerClass}!Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}}
+\doxysubsubsection{\texorpdfstring{registerClass()}{registerClass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Base $>$ \\
+template$<$class C $>$ \\
+void \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Poco\+::\+Dynamic\+Factory}}$<$ Base $>$\+::register\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{class\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Registers the instantiator for the given class with the \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Dynamic\+Factory}}. The \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Dynamic\+Factory}} takes ownership of the instantiator and deletes it when it\textquotesingle{}s no longer used. If the class has already been registered, an Exists\+Exception is thrown and the instantiator is deleted. 
+
+Definition at line 71 of file Dynamic\+Factory.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1DynamicFactory_a53b85fc61d2bb045d6e48ad04a376b99}\label{classPoco_1_1DynamicFactory_a53b85fc61d2bb045d6e48ad04a376b99}} 
+\index{Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}!registerClass@{registerClass}}
+\index{registerClass@{registerClass}!Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}}
+\doxysubsubsection{\texorpdfstring{registerClass()}{registerClass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Base $>$ \\
+void \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Poco\+::\+Dynamic\+Factory}}$<$ Base $>$\+::register\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{class\+Name,  }\item[{\mbox{\hyperlink{classPoco_1_1DynamicFactory_a05c897901d795bf1053bddc15f6ab928}{Abstract\+Factory}} $\ast$}]{p\+Abstract\+Factory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Registers the instantiator for the given class with the \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Dynamic\+Factory}}. The \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Dynamic\+Factory}} takes ownership of the instantiator and deletes it when it\textquotesingle{}s no longer used. If the class has already been registered, an Exists\+Exception is thrown and the instantiator is deleted. 
+
+Definition at line 81 of file Dynamic\+Factory.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1DynamicFactory_aa7ce2bce7e060e314767e83d3007e1a0}\label{classPoco_1_1DynamicFactory_aa7ce2bce7e060e314767e83d3007e1a0}} 
+\index{Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}!unregisterClass@{unregisterClass}}
+\index{unregisterClass@{unregisterClass}!Poco::DynamicFactory$<$ Base $>$@{Poco::DynamicFactory$<$ Base $>$}}
+\doxysubsubsection{\texorpdfstring{unregisterClass()}{unregisterClass()}}
+{\footnotesize\ttfamily template$<$class Base $>$ \\
+void \mbox{\hyperlink{classPoco_1_1DynamicFactory}{Poco\+::\+Dynamic\+Factory}}$<$ Base $>$\+::unregister\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{class\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unregisters the given class and deletes the instantiator for the class. Throws a Not\+Found\+Exception if the class has not been registered. 
+
+Definition at line 104 of file Dynamic\+Factory.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{DynamicFactory_8h}{Dynamic\+Factory.\+h}}\end{DoxyCompactItemize}

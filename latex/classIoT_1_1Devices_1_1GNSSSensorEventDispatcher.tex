@@ -1,0 +1,102 @@
+\hypertarget{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher}{}\doxysection{IoT\+::Devices\+::G\+N\+S\+S\+Sensor\+Event\+Dispatcher Class Reference}
+\label{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher}\index{IoT::Devices::GNSSSensorEventDispatcher@{IoT::Devices::GNSSSensorEventDispatcher}}
+
+
+{\ttfamily \#include $<$G\+N\+S\+S\+Sensor\+Event\+Dispatcher.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::G\+N\+S\+S\+Sensor\+Event\+Dispatcher\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::G\+N\+S\+S\+Sensor\+Event\+Dispatcher\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_af67b922ad9f8b061aebac83deb845ea7}{G\+N\+S\+S\+Sensor\+Event\+Dispatcher}} (\mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorRemoteObject}{G\+N\+S\+S\+Sensor\+Remote\+Object}} $\ast$p\+Remote\+Object, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1RemotingNG_1_1EventDispatcher_a14d7bb586169695c72bd34e7b012903a}{protocol}})
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_a9d2a6e427d314e1dd15124c1e52461b2}{$\sim$\+G\+N\+S\+S\+Sensor\+Event\+Dispatcher}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher}{G\+N\+S\+S\+Sensor\+Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_a10c94aa7940ad37bd794219fad62ae91}{event\+\_\+\+\_\+position\+Lost}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher}{G\+N\+S\+S\+Sensor\+Event\+Dispatcher}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_aba6cd953570973b5c5fbe14db0d8b577}{event\+\_\+\+\_\+position\+Update}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$p\+Sender, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Devices_1_1PositionUpdate}{Io\+T\+::\+Devices\+::\+Position\+Update}} \&data)
+\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_ad377112b7badd9b1e36a55a595c59c77}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The interface for G\+N\+S\+S/\+G\+PS receivers. \begin{DoxyVerb}Implementations of this class should also support the
+following (optional) properties for configuration:
+
+  - positionChangedPeriod (int): the minimum time interval
+    in milliseconds between firings of the positionUpdate event.
+  - positionChangedDelta (int): the minimum distance (in meters)
+    the receiver must move before the positionUpdate event
+    is fired again.
+  - positionTimeout (int): Timeout in milliseconds after which the
+    positionLost event is fired if no valid position has been
+    received from the GNSS receiver. 
+\end{DoxyVerb}
+ 
+
+Definition at line 30 of file G\+N\+S\+S\+Sensor\+Event\+Dispatcher.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_af67b922ad9f8b061aebac83deb845ea7}\label{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_af67b922ad9f8b061aebac83deb845ea7}} 
+\index{IoT::Devices::GNSSSensorEventDispatcher@{IoT::Devices::GNSSSensorEventDispatcher}!GNSSSensorEventDispatcher@{GNSSSensorEventDispatcher}}
+\index{GNSSSensorEventDispatcher@{GNSSSensorEventDispatcher}!IoT::Devices::GNSSSensorEventDispatcher@{IoT::Devices::GNSSSensorEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{GNSSSensorEventDispatcher()}{GNSSSensorEventDispatcher()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Event\+Dispatcher\+::\+G\+N\+S\+S\+Sensor\+Event\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorRemoteObject}{G\+N\+S\+S\+Sensor\+Remote\+Object}} $\ast$}]{p\+Remote\+Object,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{protocol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_a9d2a6e427d314e1dd15124c1e52461b2}\label{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_a9d2a6e427d314e1dd15124c1e52461b2}} 
+\index{IoT::Devices::GNSSSensorEventDispatcher@{IoT::Devices::GNSSSensorEventDispatcher}!````~GNSSSensorEventDispatcher@{$\sim$GNSSSensorEventDispatcher}}
+\index{````~GNSSSensorEventDispatcher@{$\sim$GNSSSensorEventDispatcher}!IoT::Devices::GNSSSensorEventDispatcher@{IoT::Devices::GNSSSensorEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$GNSSSensorEventDispatcher()}{~GNSSSensorEventDispatcher()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Event\+Dispatcher\+::$\sim$\+G\+N\+S\+S\+Sensor\+Event\+Dispatcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher}{G\+N\+S\+S\+Sensor\+Event\+Dispatcher}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_a10c94aa7940ad37bd794219fad62ae91}\label{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_a10c94aa7940ad37bd794219fad62ae91}} 
+\index{IoT::Devices::GNSSSensorEventDispatcher@{IoT::Devices::GNSSSensorEventDispatcher}!event\_\_positionLost@{event\_\_positionLost}}
+\index{event\_\_positionLost@{event\_\_positionLost}!IoT::Devices::GNSSSensorEventDispatcher@{IoT::Devices::GNSSSensorEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_positionLost()}{event\_\_positionLost()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Event\+Dispatcher\+::event\+\_\+\+\_\+position\+Lost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher}{G\+N\+S\+S\+Sensor\+Event\+Dispatcher}}. 
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_aba6cd953570973b5c5fbe14db0d8b577}\label{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_aba6cd953570973b5c5fbe14db0d8b577}} 
+\index{IoT::Devices::GNSSSensorEventDispatcher@{IoT::Devices::GNSSSensorEventDispatcher}!event\_\_positionUpdate@{event\_\_positionUpdate}}
+\index{event\_\_positionUpdate@{event\_\_positionUpdate}!IoT::Devices::GNSSSensorEventDispatcher@{IoT::Devices::GNSSSensorEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{event\_\_positionUpdate()}{event\_\_positionUpdate()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Event\+Dispatcher\+::event\+\_\+\+\_\+position\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{p\+Sender,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structIoT_1_1Devices_1_1PositionUpdate}{Io\+T\+::\+Devices\+::\+Position\+Update}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_ad377112b7badd9b1e36a55a595c59c77}\label{classIoT_1_1Devices_1_1GNSSSensorEventDispatcher_ad377112b7badd9b1e36a55a595c59c77}} 
+\index{IoT::Devices::GNSSSensorEventDispatcher@{IoT::Devices::GNSSSensorEventDispatcher}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Devices::GNSSSensorEventDispatcher@{IoT::Devices::GNSSSensorEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+Devices\+::\+G\+N\+S\+S\+Sensor\+Event\+Dispatcher\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 68 of file G\+N\+S\+S\+Sensor\+Event\+Dispatcher.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{GNSSSensorEventDispatcher_8h}{G\+N\+S\+S\+Sensor\+Event\+Dispatcher.\+h}}\end{DoxyCompactItemize}

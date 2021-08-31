@@ -1,0 +1,125 @@
+\hypertarget{classPoco_1_1CppParser_1_1Utility}{}\doxysection{Poco\+::Cpp\+Parser\+::Utility Class Reference}
+\label{classPoco_1_1CppParser_1_1Utility}\index{Poco::CppParser::Utility@{Poco::CppParser::Utility}}
+
+
+Various helpers for parsing and analyzing C++ header files.  
+
+
+
+
+{\ttfamily \#include $<$Utility.\+h$>$}
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1CppParser_1_1Utility_1_1FwdDeclBlock}{Fwd\+Decl\+Block}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Utility_a268e57f8bff3fef3e87f2977276c9ac9}{parse}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&file, \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Name\+Space\+::\+Symbol\+Table}} \&st, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&exec, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&options, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Utility_a033895c07cb2fad590d8e2fbdb90e248}{parse\+Dir}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ std\+::string $>$ \&include\+Pattern, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ std\+::string $>$ \&exclude\+Pattern, \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Name\+Space\+::\+Symbol\+Table}} \&st, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&exec, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&options, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Preprocesses and parses the file. The resulting symboltable has base class references already fixed,. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Utility_a22777c45bc1064f25497f2ac12d6ace5}{fixup}} (\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Name\+Space\+::\+Symbol\+Table}} \&st)
+\begin{DoxyCompactList}\small\item\em Preprocesses and parses all files specified by the include pattern (e.\+g.\+: p\+:/poco/\+Foundation/include/$\ast$/$\ast$.h) minus the ones defined in the exclude pattern. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Utility_a7476901aa6c6cb928fe474b31ffa72f0}{detect\+Prefix\+And\+Includes}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&orig\+H\+File, std\+::vector$<$ std\+::string $>$ \&lines, std\+::string \&prefix)
+\begin{DoxyCompactList}\small\item\em Fixes all base pointers in the symbol table. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Utility_ab4de0eb4bd6e3931b0494f36496f24a4}{remove\+File}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&preprocessedfile)
+\begin{DoxyCompactList}\small\item\em This method is poco coding style specific! It looks for a \+\_\+\+B\+E\+G\+IN and extracts from it a prefix, also include files and fwd declarations are extracted from the h file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1CppParser_1_1Utility_ab0e0ac0f7a796d10549186d48863b958}{preprocess\+File}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&file, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&exec, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&options, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Tries to remove the file. If it fails, the error is silently ignored. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Utility_ae1659a43a877d346272f11f3d041399a}{parse\+Only}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&file, \mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Name\+Space\+::\+Symbol\+Table}} \&st, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&preprocessed\+File, bool remove\+Preprocessed\+File=true)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1CppParser_1_1Utility_aa269b00cd4090dc58b17144153a00ad9}{build\+File\+List}} (std\+::set$<$ std\+::string $>$ \&files, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ std\+::string $>$ \&include\+Pattern, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ std\+::string $>$ \&exclude\+Pattern)
+\begin{DoxyCompactList}\small\item\em Parses the file, throws an exception if anything goes wrong. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Various helpers for parsing and analyzing C++ header files. 
+
+Definition at line 33 of file Utility.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Utility_aa269b00cd4090dc58b17144153a00ad9}\label{classPoco_1_1CppParser_1_1Utility_aa269b00cd4090dc58b17144153a00ad9}} 
+\index{Poco::CppParser::Utility@{Poco::CppParser::Utility}!buildFileList@{buildFileList}}
+\index{buildFileList@{buildFileList}!Poco::CppParser::Utility@{Poco::CppParser::Utility}}
+\doxysubsubsection{\texorpdfstring{buildFileList()}{buildFileList()}}
+{\footnotesize\ttfamily static void Poco\+::\+Cpp\+Parser\+::\+Utility\+::build\+File\+List (\begin{DoxyParamCaption}\item[{std\+::set$<$ std\+::string $>$ \&}]{files,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ std\+::string $>$ \&}]{include\+Pattern,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ std\+::string $>$ \&}]{exclude\+Pattern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Parses the file, throws an exception if anything goes wrong. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Utility_a7476901aa6c6cb928fe474b31ffa72f0}\label{classPoco_1_1CppParser_1_1Utility_a7476901aa6c6cb928fe474b31ffa72f0}} 
+\index{Poco::CppParser::Utility@{Poco::CppParser::Utility}!detectPrefixAndIncludes@{detectPrefixAndIncludes}}
+\index{detectPrefixAndIncludes@{detectPrefixAndIncludes}!Poco::CppParser::Utility@{Poco::CppParser::Utility}}
+\doxysubsubsection{\texorpdfstring{detectPrefixAndIncludes()}{detectPrefixAndIncludes()}}
+{\footnotesize\ttfamily static void Poco\+::\+Cpp\+Parser\+::\+Utility\+::detect\+Prefix\+And\+Includes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{orig\+H\+File,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{lines,  }\item[{std\+::string \&}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fixes all base pointers in the symbol table. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Utility_a22777c45bc1064f25497f2ac12d6ace5}\label{classPoco_1_1CppParser_1_1Utility_a22777c45bc1064f25497f2ac12d6ace5}} 
+\index{Poco::CppParser::Utility@{Poco::CppParser::Utility}!fixup@{fixup}}
+\index{fixup@{fixup}!Poco::CppParser::Utility@{Poco::CppParser::Utility}}
+\doxysubsubsection{\texorpdfstring{fixup()}{fixup()}}
+{\footnotesize\ttfamily static void Poco\+::\+Cpp\+Parser\+::\+Utility\+::fixup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Name\+Space\+::\+Symbol\+Table}} \&}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Preprocesses and parses all files specified by the include pattern (e.\+g.\+: p\+:/poco/\+Foundation/include/$\ast$/$\ast$.h) minus the ones defined in the exclude pattern. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Utility_a268e57f8bff3fef3e87f2977276c9ac9}\label{classPoco_1_1CppParser_1_1Utility_a268e57f8bff3fef3e87f2977276c9ac9}} 
+\index{Poco::CppParser::Utility@{Poco::CppParser::Utility}!parse@{parse}}
+\index{parse@{parse}!Poco::CppParser::Utility@{Poco::CppParser::Utility}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily static void Poco\+::\+Cpp\+Parser\+::\+Utility\+::parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{file,  }\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Name\+Space\+::\+Symbol\+Table}} \&}]{st,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{exec,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{options,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Utility_a033895c07cb2fad590d8e2fbdb90e248}\label{classPoco_1_1CppParser_1_1Utility_a033895c07cb2fad590d8e2fbdb90e248}} 
+\index{Poco::CppParser::Utility@{Poco::CppParser::Utility}!parseDir@{parseDir}}
+\index{parseDir@{parseDir}!Poco::CppParser::Utility@{Poco::CppParser::Utility}}
+\doxysubsubsection{\texorpdfstring{parseDir()}{parseDir()}}
+{\footnotesize\ttfamily static void Poco\+::\+Cpp\+Parser\+::\+Utility\+::parse\+Dir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ std\+::string $>$ \&}]{include\+Pattern,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::vector$<$ std\+::string $>$ \&}]{exclude\+Pattern,  }\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Name\+Space\+::\+Symbol\+Table}} \&}]{st,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{exec,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{options,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Preprocesses and parses the file. The resulting symboltable has base class references already fixed,. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Utility_ae1659a43a877d346272f11f3d041399a}\label{classPoco_1_1CppParser_1_1Utility_ae1659a43a877d346272f11f3d041399a}} 
+\index{Poco::CppParser::Utility@{Poco::CppParser::Utility}!parseOnly@{parseOnly}}
+\index{parseOnly@{parseOnly}!Poco::CppParser::Utility@{Poco::CppParser::Utility}}
+\doxysubsubsection{\texorpdfstring{parseOnly()}{parseOnly()}}
+{\footnotesize\ttfamily static void Poco\+::\+Cpp\+Parser\+::\+Utility\+::parse\+Only (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{file,  }\item[{\mbox{\hyperlink{classPoco_1_1CppParser_1_1NameSpace_a6243a6a037d1e3b151473ecaedef18d9}{Name\+Space\+::\+Symbol\+Table}} \&}]{st,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{preprocessed\+File,  }\item[{bool}]{remove\+Preprocessed\+File = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Preprocess the include file with name file. \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter}{Parameter}} exec must contain the name of the preprocessor binary (e.\+g.\+: \char`\"{}cl\char`\"{} for Visual Studio). \mbox{\hyperlink{classPoco_1_1CppParser_1_1Parameter}{Parameter}} options contains the flag for the preprocessor, and parameter path sets the environment P\+A\+TH settings during preprocessing. Returns the name of the created file or throws an exception. \mbox{\Hypertarget{classPoco_1_1CppParser_1_1Utility_ab0e0ac0f7a796d10549186d48863b958}\label{classPoco_1_1CppParser_1_1Utility_ab0e0ac0f7a796d10549186d48863b958}} 
+\index{Poco::CppParser::Utility@{Poco::CppParser::Utility}!preprocessFile@{preprocessFile}}
+\index{preprocessFile@{preprocessFile}!Poco::CppParser::Utility@{Poco::CppParser::Utility}}
+\doxysubsubsection{\texorpdfstring{preprocessFile()}{preprocessFile()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+Cpp\+Parser\+::\+Utility\+::preprocess\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{file,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{exec,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{options,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Tries to remove the file. If it fails, the error is silently ignored. 
+
+\mbox{\Hypertarget{classPoco_1_1CppParser_1_1Utility_ab4de0eb4bd6e3931b0494f36496f24a4}\label{classPoco_1_1CppParser_1_1Utility_ab4de0eb4bd6e3931b0494f36496f24a4}} 
+\index{Poco::CppParser::Utility@{Poco::CppParser::Utility}!removeFile@{removeFile}}
+\index{removeFile@{removeFile}!Poco::CppParser::Utility@{Poco::CppParser::Utility}}
+\doxysubsubsection{\texorpdfstring{removeFile()}{removeFile()}}
+{\footnotesize\ttfamily static void Poco\+::\+Cpp\+Parser\+::\+Utility\+::remove\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{preprocessedfile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method is poco coding style specific! It looks for a \+\_\+\+B\+E\+G\+IN and extracts from it a prefix, also include files and fwd declarations are extracted from the h file. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Cpp\+Parser/\mbox{\hyperlink{CppParser_2Utility_8h}{Utility.\+h}}\end{DoxyCompactItemize}

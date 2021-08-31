@@ -1,0 +1,221 @@
+\hypertarget{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4}{}\doxysection{Poco\+::Function\+Priority\+Delegate$<$ T\+Args, true, false $>$ Class Template Reference}
+\label{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4}\index{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}}
+
+
+{\ttfamily \#include $<$Function\+Priority\+Delegate.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Function\+Priority\+Delegate$<$ T\+Args, true, false $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Function\+Priority\+Delegate$<$ T\+Args, true, false $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_ac0445927a362ecb22a1914a4de6f2077}{Notify\+Function}}) (void $\ast$, T\+Args \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a400a9353d2c19d741db58ea27a6a9aec}{Function\+Priority\+Delegate}} (\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_ac0445927a362ecb22a1914a4de6f2077}{Notify\+Function}} function, int prio)
+\item 
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_ad94e990f8133da5e61543272b867574d}{Function\+Priority\+Delegate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}} \&\mbox{\hyperlink{namespacePoco_a3c92b935465d543414d807c7884396ff}{delegate}})
+\item 
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}} \& \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a85ad8e34efe434d6ee24a10b64bdafcf}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}} \&\mbox{\hyperlink{namespacePoco_a3c92b935465d543414d807c7884396ff}{delegate}})
+\item 
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a5c3205923871090600b666b8d94f5d16}{$\sim$\+Function\+Priority\+Delegate}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_acaa1598b122d7eece2dd0171185b0988}{notify}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$sender, T\+Args \&arguments)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a0f42ac3e7de4159c5db76d4b4b27ec71}{equals}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}$<$ T\+Args $>$ \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}$<$ T\+Args $>$ $\ast$ \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a8d07919b9a6da62ef9ca9b33e4f622ec}{clone}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Compares the \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}} with the other one for equality. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a6952d3a05d8cfdfc06038aa135c826b0}{disable}} ()
+\begin{DoxyCompactList}\small\item\em Returns a deep copy of the \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_ac0445927a362ecb22a1914a4de6f2077}{Notify\+Function}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a51c7ac50303493de6021fe548d5f4ad5}{\+\_\+function}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a4d29e135ef37c8d1231cbff335efb8a6}{\+\_\+mutex}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Args$>$\newline
+class Poco\+::\+Function\+Priority\+Delegate$<$ T\+Args, true, false $>$}
+
+
+
+Definition at line 103 of file Function\+Priority\+Delegate.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_ac0445927a362ecb22a1914a4de6f2077}\label{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_ac0445927a362ecb22a1914a4de6f2077}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}!NotifyFunction@{NotifyFunction}}
+\index{NotifyFunction@{NotifyFunction}!Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}}
+\doxysubsubsection{\texorpdfstring{NotifyFunction}{NotifyFunction}}
+{\footnotesize\ttfamily template$<$class T\+Args $>$ \\
+typedef void($\ast$ \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$\+::Notify\+Function) (void $\ast$, T\+Args \&)}
+
+
+
+Definition at line 106 of file Function\+Priority\+Delegate.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a400a9353d2c19d741db58ea27a6a9aec}\label{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a400a9353d2c19d741db58ea27a6a9aec}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}!FunctionPriorityDelegate@{FunctionPriorityDelegate}}
+\index{FunctionPriorityDelegate@{FunctionPriorityDelegate}!Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}}
+\doxysubsubsection{\texorpdfstring{FunctionPriorityDelegate()}{FunctionPriorityDelegate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Args $>$ \\
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$\+::\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_ac0445927a362ecb22a1914a4de6f2077}{Notify\+Function}}}]{function,  }\item[{int}]{prio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 108 of file Function\+Priority\+Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_ad94e990f8133da5e61543272b867574d}\label{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_ad94e990f8133da5e61543272b867574d}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}!FunctionPriorityDelegate@{FunctionPriorityDelegate}}
+\index{FunctionPriorityDelegate@{FunctionPriorityDelegate}!Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}}
+\doxysubsubsection{\texorpdfstring{FunctionPriorityDelegate()}{FunctionPriorityDelegate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Args $>$ \\
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$\+::\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$ \&}]{delegate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 114 of file Function\+Priority\+Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a5c3205923871090600b666b8d94f5d16}\label{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a5c3205923871090600b666b8d94f5d16}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}!````~FunctionPriorityDelegate@{$\sim$FunctionPriorityDelegate}}
+\index{````~FunctionPriorityDelegate@{$\sim$FunctionPriorityDelegate}!Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$FunctionPriorityDelegate()}{~FunctionPriorityDelegate()}}
+{\footnotesize\ttfamily template$<$class T\+Args $>$ \\
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 130 of file Function\+Priority\+Delegate.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a8d07919b9a6da62ef9ca9b33e4f622ec}\label{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a8d07919b9a6da62ef9ca9b33e4f622ec}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}!clone@{clone}}
+\index{clone@{clone}!Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class T\+Args $>$ \\
+\mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}$<$T\+Args$>$$\ast$ \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Compares the \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}} with the other one for equality. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractDelegate_a393d3875965620d28bd33d0aff121a45}{Poco\+::\+Abstract\+Delegate$<$ T\+Args $>$}}.
+
+
+
+Definition at line 151 of file Function\+Priority\+Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a6952d3a05d8cfdfc06038aa135c826b0}\label{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a6952d3a05d8cfdfc06038aa135c826b0}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}!disable@{disable}}
+\index{disable@{disable}!Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily template$<$class T\+Args $>$ \\
+void \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$\+::disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns a deep copy of the \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractDelegate_a71bbaf832bc6020519606e557d3d0583}{Poco\+::\+Abstract\+Delegate$<$ T\+Args $>$}}.
+
+
+
+Definition at line 156 of file Function\+Priority\+Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a0f42ac3e7de4159c5db76d4b4b27ec71}\label{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a0f42ac3e7de4159c5db76d4b4b27ec71}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}!equals@{equals}}
+\index{equals@{equals}!Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily template$<$class T\+Args $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}$<$ T\+Args $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Invokes the delegate\textquotesingle{}s callback function. Returns true if successful, or false if the delegate has been disabled or has expired. 
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractDelegate_a405a001017c3a763b81968ab2e3eb793}{Poco\+::\+Abstract\+Delegate$<$ T\+Args $>$}}.
+
+
+
+Definition at line 145 of file Function\+Priority\+Delegate.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_acaa1598b122d7eece2dd0171185b0988}\label{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_acaa1598b122d7eece2dd0171185b0988}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}!notify@{notify}}
+\index{notify@{notify}!Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily template$<$class T\+Args $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{sender,  }\item[{T\+Args \&}]{arguments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractDelegate_ac42cac397911b41a4a79f33b62d0f569}{Poco\+::\+Abstract\+Delegate$<$ T\+Args $>$}}.
+
+
+
+Definition at line 134 of file Function\+Priority\+Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a85ad8e34efe434d6ee24a10b64bdafcf}\label{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a85ad8e34efe434d6ee24a10b64bdafcf}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T\+Args $>$ \\
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}}\& \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$ \&}]{delegate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 120 of file Function\+Priority\+Delegate.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a51c7ac50303493de6021fe548d5f4ad5}\label{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a51c7ac50303493de6021fe548d5f4ad5}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}!\_function@{\_function}}
+\index{\_function@{\_function}!Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}}
+\doxysubsubsection{\texorpdfstring{\_function}{\_function}}
+{\footnotesize\ttfamily template$<$class T\+Args $>$ \\
+\mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_ac0445927a362ecb22a1914a4de6f2077}{Notify\+Function}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$\+::\+\_\+function\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 163 of file Function\+Priority\+Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a4d29e135ef37c8d1231cbff335efb8a6}\label{classPoco_1_1FunctionPriorityDelegate_3_01TArgs_00_01true_00_01false_01_4_a4d29e135ef37c8d1231cbff335efb8a6}} 
+\index{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}!\_mutex@{\_mutex}}
+\index{\_mutex@{\_mutex}!Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$@{Poco::FunctionPriorityDelegate$<$ TArgs, true, false $>$}}
+\doxysubsubsection{\texorpdfstring{\_mutex}{\_mutex}}
+{\footnotesize\ttfamily template$<$class T\+Args $>$ \\
+\mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}} \mbox{\hyperlink{classPoco_1_1FunctionPriorityDelegate}{Poco\+::\+Function\+Priority\+Delegate}}$<$ T\+Args, true, false $>$\+::\+\_\+mutex\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 164 of file Function\+Priority\+Delegate.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{FunctionPriorityDelegate_8h}{Function\+Priority\+Delegate.\+h}}\end{DoxyCompactItemize}

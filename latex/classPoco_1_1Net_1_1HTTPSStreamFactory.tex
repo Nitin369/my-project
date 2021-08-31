@@ -1,0 +1,114 @@
+\hypertarget{classPoco_1_1Net_1_1HTTPSStreamFactory}{}\doxysection{Poco\+::Net\+::H\+T\+T\+P\+S\+Stream\+Factory Class Reference}
+\label{classPoco_1_1Net_1_1HTTPSStreamFactory}\index{Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}}
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+S\+Stream\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::H\+T\+T\+P\+S\+Stream\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::H\+T\+T\+P\+S\+Stream\+Factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory_a43daf304ca4c2d1d5d83f2228c8026e0}{H\+T\+T\+P\+S\+Stream\+Factory}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory_aa7094104f4fbb4e270fe65968bffdf89}{H\+T\+T\+P\+S\+Stream\+Factory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&proxy\+Host, Poco\+::\+U\+Int16 proxy\+Port=\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a4bb8d1f27a6a2cfdb30dfa32775ba27ca7bc48abc88c649b13f10ea2acd5eb40e}{H\+T\+T\+P\+Session\+::\+H\+T\+T\+P\+\_\+\+P\+O\+RT}})
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory}{H\+T\+T\+P\+S\+Stream\+Factory}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory_a4a056237f50d905c110a3bc3f774b51d}{H\+T\+T\+P\+S\+Stream\+Factory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&proxy\+Host, Poco\+::\+U\+Int16 proxy\+Port, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&proxy\+Username, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&proxy\+Password)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory_aca28d43acc108bd7d313aa6ba58d018b}{$\sim$\+H\+T\+T\+P\+S\+Stream\+Factory}} ()
+\item 
+std\+::istream $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory_a6fc656265030de94e634e7e7ee944eab}{open}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{Poco\+::\+U\+RI}} \&uri)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory}{H\+T\+T\+P\+S\+Stream\+Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory_a3a3a4b7dc12e2e71ba999cd064a9e42b}{register\+Factory}} ()
+\item 
+static void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory_a49bb83c848511e85917a30b6c55b049f}{unregister\+Factory}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An implementation of the \mbox{\hyperlink{classPoco_1_1URIStreamFactory}{U\+R\+I\+Stream\+Factory}} interface that handles secure Hyper-\/\+Text Transfer Protocol (https) U\+R\+Is. 
+
+Definition at line 32 of file H\+T\+T\+P\+S\+Stream\+Factory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSStreamFactory_a43daf304ca4c2d1d5d83f2228c8026e0}\label{classPoco_1_1Net_1_1HTTPSStreamFactory_a43daf304ca4c2d1d5d83f2228c8026e0}} 
+\index{Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}!HTTPSStreamFactory@{HTTPSStreamFactory}}
+\index{HTTPSStreamFactory@{HTTPSStreamFactory}!Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}}
+\doxysubsubsection{\texorpdfstring{HTTPSStreamFactory()}{HTTPSStreamFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Stream\+Factory\+::\+H\+T\+T\+P\+S\+Stream\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSStreamFactory_aa7094104f4fbb4e270fe65968bffdf89}\label{classPoco_1_1Net_1_1HTTPSStreamFactory_aa7094104f4fbb4e270fe65968bffdf89}} 
+\index{Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}!HTTPSStreamFactory@{HTTPSStreamFactory}}
+\index{HTTPSStreamFactory@{HTTPSStreamFactory}!Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}}
+\doxysubsubsection{\texorpdfstring{HTTPSStreamFactory()}{HTTPSStreamFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Stream\+Factory\+::\+H\+T\+T\+P\+S\+Stream\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{proxy\+Host,  }\item[{Poco\+::\+U\+Int16}]{proxy\+Port = {\ttfamily \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSession_a4bb8d1f27a6a2cfdb30dfa32775ba27ca7bc48abc88c649b13f10ea2acd5eb40e}{H\+T\+T\+P\+Session\+::\+H\+T\+T\+P\+\_\+\+P\+O\+RT}}} }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory}{H\+T\+T\+P\+S\+Stream\+Factory}}. 
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSStreamFactory_a4a056237f50d905c110a3bc3f774b51d}\label{classPoco_1_1Net_1_1HTTPSStreamFactory_a4a056237f50d905c110a3bc3f774b51d}} 
+\index{Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}!HTTPSStreamFactory@{HTTPSStreamFactory}}
+\index{HTTPSStreamFactory@{HTTPSStreamFactory}!Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}}
+\doxysubsubsection{\texorpdfstring{HTTPSStreamFactory()}{HTTPSStreamFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Stream\+Factory\+::\+H\+T\+T\+P\+S\+Stream\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{proxy\+Host,  }\item[{Poco\+::\+U\+Int16}]{proxy\+Port,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{proxy\+Username,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{proxy\+Password }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory}{H\+T\+T\+P\+S\+Stream\+Factory}}.
+
+H\+T\+T\+PS connections will use the given proxy. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSStreamFactory_aca28d43acc108bd7d313aa6ba58d018b}\label{classPoco_1_1Net_1_1HTTPSStreamFactory_aca28d43acc108bd7d313aa6ba58d018b}} 
+\index{Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}!````~HTTPSStreamFactory@{$\sim$HTTPSStreamFactory}}
+\index{````~HTTPSStreamFactory@{$\sim$HTTPSStreamFactory}!Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$HTTPSStreamFactory()}{~HTTPSStreamFactory()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Stream\+Factory\+::$\sim$\+H\+T\+T\+P\+S\+Stream\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory}{H\+T\+T\+P\+S\+Stream\+Factory}}.
+
+H\+T\+T\+PS connections will use the given proxy and will be authorized against the proxy using Basic authentication with the given proxy\+Username and proxy\+Password. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSStreamFactory_a6fc656265030de94e634e7e7ee944eab}\label{classPoco_1_1Net_1_1HTTPSStreamFactory_a6fc656265030de94e634e7e7ee944eab}} 
+\index{Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}!open@{open}}
+\index{open@{open}!Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily std\+::istream$\ast$ Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Stream\+Factory\+::open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1URI}{Poco\+::\+U\+RI}} \&}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory}{H\+T\+T\+P\+S\+Stream\+Factory}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1URIStreamFactory_a0768071cef5d26530977d4fd23a8abc8}{Poco\+::\+U\+R\+I\+Stream\+Factory}}.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSStreamFactory_a3a3a4b7dc12e2e71ba999cd064a9e42b}\label{classPoco_1_1Net_1_1HTTPSStreamFactory_a3a3a4b7dc12e2e71ba999cd064a9e42b}} 
+\index{Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}!registerFactory@{registerFactory}}
+\index{registerFactory@{registerFactory}!Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}}
+\doxysubsubsection{\texorpdfstring{registerFactory()}{registerFactory()}}
+{\footnotesize\ttfamily static void Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Stream\+Factory\+::register\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates and opens a H\+T\+T\+PS stream for the given \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}. The \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}} must be a \href{https://..}{\texttt{ https\+://..}}. \mbox{\hyperlink{classPoco_1_1URI}{U\+RI}}.
+
+Throws a Net\+Exception if anything goes wrong. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPSStreamFactory_a49bb83c848511e85917a30b6c55b049f}\label{classPoco_1_1Net_1_1HTTPSStreamFactory_a49bb83c848511e85917a30b6c55b049f}} 
+\index{Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}!unregisterFactory@{unregisterFactory}}
+\index{unregisterFactory@{unregisterFactory}!Poco::Net::HTTPSStreamFactory@{Poco::Net::HTTPSStreamFactory}}
+\doxysubsubsection{\texorpdfstring{unregisterFactory()}{unregisterFactory()}}
+{\footnotesize\ttfamily static void Poco\+::\+Net\+::\+H\+T\+T\+P\+S\+Stream\+Factory\+::unregister\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPSStreamFactory}{H\+T\+T\+P\+S\+Stream\+Factory}} with the default \mbox{\hyperlink{classPoco_1_1URIStreamOpener}{U\+R\+I\+Stream\+Opener}} instance. ~\newline
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{HTTPSStreamFactory_8h}{H\+T\+T\+P\+S\+Stream\+Factory.\+h}}\end{DoxyCompactItemize}

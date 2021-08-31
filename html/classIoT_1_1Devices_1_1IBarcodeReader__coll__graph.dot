@@ -1,0 +1,32 @@
+digraph "IoT::Devices::IBarcodeReader"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="IoT::Devices::IBarcodeReader",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="IoT::Devices::IDevice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classIoT_1_1Devices_1_1IDevice.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Poco::OSP::Service",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1OSP_1_1Service.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Poco::RefCountedObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1RefCountedObject.html",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ConstPtr" ,fontname="Helvetica"];
+  Node5 [label="Poco::AutoPtr\< C \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AutoPtr.html",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" barcodeRead" ,fontname="Helvetica"];
+  Node6 [label="Poco::BasicEvent\< const\l IoT::Devices::BarcodeReadEvent \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1BasicEvent.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Poco::AbstractEvent\l\< const IoT::Devices\l::BarcodeReadEvent, Default\lStrategy\< const IoT::Devices\l::BarcodeReadEvent, AbstractDelegate\l\< const IoT::Devices::BarcodeReadEvent\l \> \>, AbstractDelegate\< const IoT::Devices\l::BarcodeReadEvent \>, FastMutex \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AbstractEvent.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _strategy" ,fontname="Helvetica"];
+  Node8 [label="Poco::DefaultStrategy\l\< const IoT::Devices\l::BarcodeReadEvent, Abstract\lDelegate\< const IoT::Devices\l::BarcodeReadEvent \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1DefaultStrategy.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Poco::NotificationStrategy\l\< const IoT::Devices::BarcodeRead\lEvent, AbstractDelegate\< const\l IoT::Devices::BarcodeReadEvent \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1NotificationStrategy.html",tooltip=" "];
+  Node10 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _executeAsync" ,fontname="Helvetica"];
+  Node10 [label="Poco::ActiveMethod\l\< const IoT::Devices\l::BarcodeReadEvent, Poco\l::AbstractEvent::NotifyAsyncParams,\l Poco::AbstractEvent \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveMethod.html",tooltip=" "];
+  Node11 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _mutex" ,fontname="Helvetica"];
+  Node11 [label="Poco::FastMutex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1FastMutex.html",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Poco::FastMutexImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1FastMutexImpl.html",tooltip=" "];
+  Node13 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Poco::MutexImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1MutexImpl.html",tooltip=" "];
+}

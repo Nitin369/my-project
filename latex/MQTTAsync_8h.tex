@@ -1,0 +1,1016 @@
+\hypertarget{MQTTAsync_8h}{}\doxysection{App\+Frame\+Work/include/\+Io\+T/\+M\+Q\+T\+T/\+Paho/\+M\+Q\+T\+T\+Async.h File Reference}
+\label{MQTTAsync_8h}\index{AppFrameWork/include/IoT/MQTT/Paho/MQTTAsync.h@{AppFrameWork/include/IoT/MQTT/Paho/MQTTAsync.h}}
+{\ttfamily \#include \char`\"{}M\+Q\+T\+T\+Client\+Persistence.\+h\char`\"{}}\newline
+Include dependency graph for M\+Q\+T\+T\+Async.\+h\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structMQTTAsync__message}{M\+Q\+T\+T\+Async\+\_\+message}}
+\item 
+struct \mbox{\hyperlink{structMQTTAsync__failureData}{M\+Q\+T\+T\+Async\+\_\+failure\+Data}}
+\item 
+struct \mbox{\hyperlink{structMQTTAsync__successData}{M\+Q\+T\+T\+Async\+\_\+success\+Data}}
+\item 
+struct \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}}
+\item 
+struct \mbox{\hyperlink{structMQTTAsync__createOptions}{M\+Q\+T\+T\+Async\+\_\+create\+Options}}
+\item 
+struct \mbox{\hyperlink{structMQTTAsync__willOptions}{M\+Q\+T\+T\+Async\+\_\+will\+Options}}
+\item 
+struct \mbox{\hyperlink{structMQTTAsync__SSLOptions}{M\+Q\+T\+T\+Async\+\_\+\+S\+S\+L\+Options}}
+\item 
+struct \mbox{\hyperlink{structMQTTAsync__connectOptions}{M\+Q\+T\+T\+Async\+\_\+connect\+Options}}
+\item 
+struct \mbox{\hyperlink{structMQTTAsync__disconnectOptions}{M\+Q\+T\+T\+Async\+\_\+disconnect\+Options}}
+\item 
+struct \mbox{\hyperlink{structMQTTAsync__nameValue}{M\+Q\+T\+T\+Async\+\_\+name\+Value}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}}~0
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a7c8230fef85fc04b8a1035501f3be406}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+F\+A\+I\+L\+U\+RE}}~-\/1
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a4edf1249c75abd4975fec8ddeae2cdc9}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+E\+R\+R\+OR}}~-\/2
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a66c0f30b329bc770145c2f04b3929df6}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}}~-\/3
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_ad577286d43c72fbc49818aac42f4e24a}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+M\+A\+X\+\_\+\+M\+E\+S\+S\+A\+G\+E\+S\+\_\+\+I\+N\+F\+L\+I\+G\+HT}}~-\/4
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a80cbe091930c11b67ca719b3e385aa26}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+B\+A\+D\+\_\+\+U\+T\+F8\+\_\+\+S\+T\+R\+I\+NG}}~-\/5
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_ab88e1ebcee991099a72429e52a8253fd}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+N\+U\+L\+L\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER}}~-\/6
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a77a7106d97ff60be3fe70f90b1867800}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+O\+P\+I\+C\+N\+A\+M\+E\+\_\+\+T\+R\+U\+N\+C\+A\+T\+ED}}~-\/7
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a241fc8db46dca132d591bc2be92247ba}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+B\+A\+D\+\_\+\+S\+T\+R\+U\+C\+T\+U\+RE}}~-\/8
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a64d111778ce4e0d3a62808f6db11f224}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+B\+A\+D\+\_\+\+Q\+OS}}~-\/9
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_ab0f54d0bae2c74849022a8009e5d6ff7}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+N\+O\+\_\+\+M\+O\+R\+E\+\_\+\+M\+S\+G\+I\+DS}}~-\/10
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_aee1b79d0632bec0fe49eb7ea1abd3b2e}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE}}~-\/11
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a4e338072cfd5291b579e4f0c99a6e773}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+E\+D\+\_\+\+M\+E\+S\+S\+A\+G\+ES}}~-\/12
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a75b80b01f98d5a1ffa2a4d42995a8397}{M\+Q\+T\+T\+V\+E\+R\+S\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+LT}}~0
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a4603b988e76872e1f23f135d225ce2fb}{M\+Q\+T\+T\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1}}~3
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_ac79cc6fdeaa9e3f4ee12c3418898b1ef}{M\+Q\+T\+T\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1\+\_\+1}}~4
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_ade337b363b7f4bc7c1a7b2858e0380bd}{M\+Q\+T\+T\+\_\+\+B\+A\+D\+\_\+\+S\+U\+B\+S\+C\+R\+I\+BE}}~0x80
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a6a85061dadab532f28e96e5ab3c600e9}{M\+Q\+T\+T\+Async\+\_\+message\+\_\+initializer}}~\{ \{\textquotesingle{}M\textquotesingle{}, \textquotesingle{}Q\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}M\textquotesingle{}\}, 0, 0, N\+U\+LL, 0, 0, 0, 0 \}
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a3f8b408243b5c2369bc9758f2edf0878}{M\+Q\+T\+T\+Async\+\_\+response\+Options\+\_\+initializer}}~\{ \{\textquotesingle{}M\textquotesingle{}, \textquotesingle{}Q\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}R\textquotesingle{}\}, 0, N\+U\+LL, N\+U\+LL, 0, 0 \}
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a5fedeafef4753f09b1bcb92773564786}{M\+Q\+T\+T\+Async\+\_\+create\+Options\+\_\+initializer}}~\{ \{\textquotesingle{}M\textquotesingle{}, \textquotesingle{}Q\textquotesingle{}, \textquotesingle{}C\textquotesingle{}, \textquotesingle{}O\textquotesingle{}\}, 0, 0, 100 \}
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a6c45768e1b28844f2ac0f6ac68709730}{M\+Q\+T\+T\+Async\+\_\+will\+Options\+\_\+initializer}}~\{ \{\textquotesingle{}M\textquotesingle{}, \textquotesingle{}Q\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}W\textquotesingle{}\}, 0, N\+U\+LL, N\+U\+LL, 0, 0 \}
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_aac935e2e9d770a53ee8189f128530511}{M\+Q\+T\+T\+Async\+\_\+\+S\+S\+L\+Options\+\_\+initializer}}~\{ \{\textquotesingle{}M\textquotesingle{}, \textquotesingle{}Q\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}S\textquotesingle{}\}, 0, N\+U\+LL, N\+U\+LL, N\+U\+LL, N\+U\+LL, N\+U\+LL, 1 \}
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_ae18b51f22784a43803eb809d6a0c2492}{M\+Q\+T\+T\+Async\+\_\+connect\+Options\+\_\+initializer}}
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a2fd5d6df31928ae468f3f2e522b9c707}{M\+Q\+T\+T\+Async\+\_\+disconnect\+Options\+\_\+initializer}}~\{ \{\textquotesingle{}M\textquotesingle{}, \textquotesingle{}Q\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}D\textquotesingle{}\}, 0, 0, N\+U\+LL, N\+U\+LL, N\+U\+LL \}
+\item 
+\#define \mbox{\hyperlink{MQTTAsync_8h_a61e6ee632e63312d382e2fcbe427f01a}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+UE}}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$ \mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}
+\item 
+typedef int \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}}
+\item 
+typedef int \mbox{\hyperlink{MQTTAsync_8h_a3918ead59b56816a8d7544def184e48e}{M\+Q\+T\+T\+Async\+\_\+message\+Arrived}}(void $\ast$context, char $\ast$topic\+Name, int topic\+Len, \mbox{\hyperlink{structMQTTAsync__message}{M\+Q\+T\+T\+Async\+\_\+message}} $\ast$message)
+\item 
+typedef void \mbox{\hyperlink{MQTTAsync_8h_ab10296618e266b3c02fd117d6616b15d}{M\+Q\+T\+T\+Async\+\_\+delivery\+Complete}}(void $\ast$context, \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} token)
+\item 
+typedef void \mbox{\hyperlink{MQTTAsync_8h_a3900a98d7b1d58ad6e686bfce298bb6c}{M\+Q\+T\+T\+Async\+\_\+connection\+Lost}}(void $\ast$context, char $\ast$cause)
+\item 
+typedef void \mbox{\hyperlink{MQTTAsync_8h_a34bb8d321e9d368780b5c832c058f223}{M\+Q\+T\+T\+Async\+\_\+connected}}(void $\ast$context, char $\ast$cause)
+\item 
+typedef void \mbox{\hyperlink{MQTTAsync_8h_a7b0c18a0e29e2ce73f3ea109bc32617b}{M\+Q\+T\+T\+Async\+\_\+on\+Success}}(void $\ast$context, \mbox{\hyperlink{structMQTTAsync__successData}{M\+Q\+T\+T\+Async\+\_\+success\+Data}} $\ast$response)
+\item 
+typedef void \mbox{\hyperlink{MQTTAsync_8h_a6060c25c2641e878803aef76fefb31ee}{M\+Q\+T\+T\+Async\+\_\+on\+Failure}}(void $\ast$context, \mbox{\hyperlink{structMQTTAsync__failureData}{M\+Q\+T\+T\+Async\+\_\+failure\+Data}} $\ast$response)
+\item 
+typedef void \mbox{\hyperlink{MQTTAsync_8h_a65aba1caeae9b5af5d5b6c5598a75b02}{M\+Q\+T\+T\+Async\+\_\+trace\+Callback}}(enum \mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+L\+E\+V\+E\+LS}} level, char $\ast$message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+L\+E\+V\+E\+LS}} \{ \newline
+\mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5af684f42971cced68693ce993703548c1}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+M\+A\+X\+I\+M\+UM}} = 1, 
+\mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a133c380b84d75477ff31a2ad732133ce}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+M\+E\+D\+I\+UM}}, 
+\mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a7a45c26816b1cac1fde02d79a9f4337b}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+M\+I\+N\+I\+M\+UM}}, 
+\mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a6a719b2b7fc4dfc41494370ff96fec3e}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+P\+R\+O\+T\+O\+C\+OL}}, 
+\newline
+\mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5ac428f74ca453dacb7b8271ca741266e8}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+E\+R\+R\+OR}}, 
+\mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a3084770185f384398cefe4aaba533d40}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+S\+E\+V\+E\+RE}}, 
+\mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a0b91d2213ebb6655e41a7f6ce1a42295}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+F\+A\+T\+AL}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_a03f7cb8b9e6de062d408169a19c6b16f}{M\+Q\+T\+T\+Async\+\_\+set\+Callbacks}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, void $\ast$context, \mbox{\hyperlink{MQTTAsync_8h_a3900a98d7b1d58ad6e686bfce298bb6c}{M\+Q\+T\+T\+Async\+\_\+connection\+Lost}} $\ast$cl, \mbox{\hyperlink{MQTTAsync_8h_a3918ead59b56816a8d7544def184e48e}{M\+Q\+T\+T\+Async\+\_\+message\+Arrived}} $\ast$ma, \mbox{\hyperlink{MQTTAsync_8h_ab10296618e266b3c02fd117d6616b15d}{M\+Q\+T\+T\+Async\+\_\+delivery\+Complete}} $\ast$dc)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_aec0e988552226926f3ad371ce6cf101d}{M\+Q\+T\+T\+Async\+\_\+set\+Connected}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, void $\ast$context, \mbox{\hyperlink{MQTTAsync_8h_a34bb8d321e9d368780b5c832c058f223}{M\+Q\+T\+T\+Async\+\_\+connected}} $\ast$co)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_a5b379fe6b9c2cc1f07132a83342a7a22}{M\+Q\+T\+T\+Async\+\_\+reconnect}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} $\ast$handle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$server\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$client\+Id, int persistence\+\_\+type, void $\ast$persistence\+\_\+context)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_a0d3078be2c93601b4142d74b5dfd7638}{M\+Q\+T\+T\+Async\+\_\+create\+With\+Options}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} $\ast$handle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$server\+U\+RI, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$client\+Id, int persistence\+\_\+type, void $\ast$persistence\+\_\+context, \mbox{\hyperlink{structMQTTAsync__createOptions}{M\+Q\+T\+T\+Async\+\_\+create\+Options}} $\ast$options)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_aa9b699c1ae22eedf8351d3762ccb27ff}{M\+Q\+T\+T\+Async\+\_\+connect}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structMQTTAsync__connectOptions}{M\+Q\+T\+T\+Async\+\_\+connect\+Options}} $\ast$options)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_a15172c5f1864dcbc76b1694b23bc0b35}{M\+Q\+T\+T\+Async\+\_\+disconnect}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structMQTTAsync__disconnectOptions}{M\+Q\+T\+T\+Async\+\_\+disconnect\+Options}} $\ast$options)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_a7f6fda39ae60f5c60124c014ef0c7e77}{M\+Q\+T\+T\+Async\+\_\+is\+Connected}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_a74a450434eb74d7a3852291abaf7232c}{M\+Q\+T\+T\+Async\+\_\+subscribe}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$topic, int qos, \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} $\ast$response)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_ae8a2ec2b28e1e407fc8bbd813d43a15c}{M\+Q\+T\+T\+Async\+\_\+subscribe\+Many}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, int count, char $\ast$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} $\ast$topic, int $\ast$qos, \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} $\ast$response)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_a7ffb0920387a12089cd232111285886b}{M\+Q\+T\+T\+Async\+\_\+unsubscribe}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$topic, \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} $\ast$response)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_ac0ddbf624bf689cdf5bdb7c9e805d75e}{M\+Q\+T\+T\+Async\+\_\+unsubscribe\+Many}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, int count, char $\ast$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} $\ast$topic, \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} $\ast$response)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_a05aa12f3f1c810479120bb3d967fc31a}{M\+Q\+T\+T\+Async\+\_\+send}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$destination\+Name, int payloadlen, void $\ast$payload, int qos, int retained, \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} $\ast$response)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_ac9c3d013ff61c1255942863b7a9136da}{M\+Q\+T\+T\+Async\+\_\+send\+Message}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$destination\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structMQTTAsync__message}{M\+Q\+T\+T\+Async\+\_\+message}} $\ast$msg, \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} $\ast$response)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_a4a96669ed2f7a8efa87b20016b51ff8e}{M\+Q\+T\+T\+Async\+\_\+get\+Pending\+Tokens}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} $\ast$$\ast$tokens)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_a374ea6f5be72fc025c9e18c1ffe7c90f}{M\+Q\+T\+T\+Async\+\_\+is\+Complete}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} token)
+\item 
+D\+L\+L\+Export int \mbox{\hyperlink{MQTTAsync_8h_a724de81f75052f3fb024f1ebb9b40848}{M\+Q\+T\+T\+Async\+\_\+wait\+For\+Completion}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle, \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} token, unsigned long timeout)
+\item 
+D\+L\+L\+Export void \mbox{\hyperlink{MQTTAsync_8h_a6735249a7efcda11b5b2c574eaa44766}{M\+Q\+T\+T\+Async\+\_\+free\+Message}} (\mbox{\hyperlink{structMQTTAsync__message}{M\+Q\+T\+T\+Async\+\_\+message}} $\ast$$\ast$msg)
+\item 
+D\+L\+L\+Export void \mbox{\hyperlink{MQTTAsync_8h_a8b8ed450ed11e17f2841544d76d4f03a}{M\+Q\+T\+T\+Async\+\_\+free}} (void $\ast$ptr)
+\item 
+D\+L\+L\+Export void \mbox{\hyperlink{MQTTAsync_8h_aec27b3ef37b5a9d6a3c8e91d4f7a118a}{M\+Q\+T\+T\+Async\+\_\+destroy}} (\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} $\ast$handle)
+\item 
+D\+L\+L\+Export void \mbox{\hyperlink{MQTTAsync_8h_af22a1edd266e92ded5fb0e02541ab8c0}{M\+Q\+T\+T\+Async\+\_\+set\+Trace\+Level}} (enum \mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+L\+E\+V\+E\+LS}} level)
+\item 
+D\+L\+L\+Export void \mbox{\hyperlink{MQTTAsync_8h_aabe2b97a990323631f5e137237be2adc}{M\+Q\+T\+T\+Async\+\_\+set\+Trace\+Callback}} (\mbox{\hyperlink{MQTTAsync_8h_a65aba1caeae9b5af5d5b6c5598a75b02}{M\+Q\+T\+T\+Async\+\_\+trace\+Callback}} $\ast$callback)
+\item 
+D\+L\+L\+Export \mbox{\hyperlink{structMQTTAsync__nameValue}{M\+Q\+T\+T\+Async\+\_\+name\+Value}} $\ast$ \mbox{\hyperlink{MQTTAsync_8h_a65b71c0e4b7289eb49b3344d67e928ac}{M\+Q\+T\+T\+Async\+\_\+get\+Version\+Info}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{MQTTAsync_8h_ade337b363b7f4bc7c1a7b2858e0380bd}\label{MQTTAsync_8h_ade337b363b7f4bc7c1a7b2858e0380bd}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTT\_BAD\_SUBSCRIBE@{MQTT\_BAD\_SUBSCRIBE}}
+\index{MQTT\_BAD\_SUBSCRIBE@{MQTT\_BAD\_SUBSCRIBE}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTT\_BAD\_SUBSCRIBE}{MQTT\_BAD\_SUBSCRIBE}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+B\+A\+D\+\_\+\+S\+U\+B\+S\+C\+R\+I\+BE~0x80}
+
+Bad return code from subscribe, as defined in the 3.\+1.\+1 specification 
+
+Definition at line 178 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a64d111778ce4e0d3a62808f6db11f224}\label{MQTTAsync_8h_a64d111778ce4e0d3a62808f6db11f224}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_BAD\_QOS@{MQTTASYNC\_BAD\_QOS}}
+\index{MQTTASYNC\_BAD\_QOS@{MQTTASYNC\_BAD\_QOS}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_BAD\_QOS}{MQTTASYNC\_BAD\_QOS}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+B\+A\+D\+\_\+\+Q\+OS~-\/9}
+
+Return code\+: A qos parameter is not 0, 1 or 2 
+
+Definition at line 149 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a241fc8db46dca132d591bc2be92247ba}\label{MQTTAsync_8h_a241fc8db46dca132d591bc2be92247ba}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_BAD\_STRUCTURE@{MQTTASYNC\_BAD\_STRUCTURE}}
+\index{MQTTASYNC\_BAD\_STRUCTURE@{MQTTASYNC\_BAD\_STRUCTURE}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_BAD\_STRUCTURE}{MQTTASYNC\_BAD\_STRUCTURE}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+B\+A\+D\+\_\+\+S\+T\+R\+U\+C\+T\+U\+RE~-\/8}
+
+Return code\+: A structure parameter does not have the correct eyecatcher and version number. 
+
+Definition at line 145 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a80cbe091930c11b67ca719b3e385aa26}\label{MQTTAsync_8h_a80cbe091930c11b67ca719b3e385aa26}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_BAD\_UTF8\_STRING@{MQTTASYNC\_BAD\_UTF8\_STRING}}
+\index{MQTTASYNC\_BAD\_UTF8\_STRING@{MQTTASYNC\_BAD\_UTF8\_STRING}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_BAD\_UTF8\_STRING}{MQTTASYNC\_BAD\_UTF8\_STRING}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+B\+A\+D\+\_\+\+U\+T\+F8\+\_\+\+S\+T\+R\+I\+NG~-\/5}
+
+Return code\+: An invalid U\+T\+F-\/8 string has been detected. 
+
+Definition at line 130 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_ae18b51f22784a43803eb809d6a0c2492}\label{MQTTAsync_8h_ae18b51f22784a43803eb809d6a0c2492}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_connectOptions\_initializer@{MQTTAsync\_connectOptions\_initializer}}
+\index{MQTTAsync\_connectOptions\_initializer@{MQTTAsync\_connectOptions\_initializer}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_connectOptions\_initializer}{MQTTAsync\_connectOptions\_initializer}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+Async\+\_\+connect\+Options\+\_\+initializer}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{ \{\textcolor{charliteral}{'M'}, \textcolor{charliteral}{'Q'}, \textcolor{charliteral}{'T'}, \textcolor{charliteral}{'C'}\}, 4, 60, 1, 10, NULL, NULL, NULL, 30, 0,\(\backslash\)}
+\DoxyCodeLine{NULL, NULL, NULL, NULL, 0, NULL, 0, 0, 1, 60\}}
+
+\end{DoxyCode}
+
+
+Definition at line 780 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a5fedeafef4753f09b1bcb92773564786}\label{MQTTAsync_8h_a5fedeafef4753f09b1bcb92773564786}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_createOptions\_initializer@{MQTTAsync\_createOptions\_initializer}}
+\index{MQTTAsync\_createOptions\_initializer@{MQTTAsync\_createOptions\_initializer}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_createOptions\_initializer}{MQTTAsync\_createOptions\_initializer}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+Async\+\_\+create\+Options\+\_\+initializer~\{ \{\textquotesingle{}M\textquotesingle{}, \textquotesingle{}Q\textquotesingle{}, \textquotesingle{}C\textquotesingle{}, \textquotesingle{}O\textquotesingle{}\}, 0, 0, 100 \}}
+
+
+
+Definition at line 551 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a66c0f30b329bc770145c2f04b3929df6}\label{MQTTAsync_8h_a66c0f30b329bc770145c2f04b3929df6}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_DISCONNECTED@{MQTTASYNC\_DISCONNECTED}}
+\index{MQTTASYNC\_DISCONNECTED@{MQTTASYNC\_DISCONNECTED}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_DISCONNECTED}{MQTTASYNC\_DISCONNECTED}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED~-\/3}
+
+Return code\+: The client is disconnected. 
+
+Definition at line 121 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a2fd5d6df31928ae468f3f2e522b9c707}\label{MQTTAsync_8h_a2fd5d6df31928ae468f3f2e522b9c707}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_disconnectOptions\_initializer@{MQTTAsync\_disconnectOptions\_initializer}}
+\index{MQTTAsync\_disconnectOptions\_initializer@{MQTTAsync\_disconnectOptions\_initializer}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_disconnectOptions\_initializer}{MQTTAsync\_disconnectOptions\_initializer}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+Async\+\_\+disconnect\+Options\+\_\+initializer~\{ \{\textquotesingle{}M\textquotesingle{}, \textquotesingle{}Q\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}D\textquotesingle{}\}, 0, 0, N\+U\+LL, N\+U\+LL, N\+U\+LL \}}
+
+
+
+Definition at line 837 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a7c8230fef85fc04b8a1035501f3be406}\label{MQTTAsync_8h_a7c8230fef85fc04b8a1035501f3be406}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_FAILURE@{MQTTASYNC\_FAILURE}}
+\index{MQTTASYNC\_FAILURE@{MQTTASYNC\_FAILURE}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_FAILURE}{MQTTASYNC\_FAILURE}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+F\+A\+I\+L\+U\+RE~-\/1}
+
+Return code\+: A generic error code indicating the failure of an M\+Q\+TT client operation. 
+
+Definition at line 112 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a4e338072cfd5291b579e4f0c99a6e773}\label{MQTTAsync_8h_a4e338072cfd5291b579e4f0c99a6e773}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_MAX\_BUFFERED\_MESSAGES@{MQTTASYNC\_MAX\_BUFFERED\_MESSAGES}}
+\index{MQTTASYNC\_MAX\_BUFFERED\_MESSAGES@{MQTTASYNC\_MAX\_BUFFERED\_MESSAGES}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_MAX\_BUFFERED\_MESSAGES}{MQTTASYNC\_MAX\_BUFFERED\_MESSAGES}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+E\+D\+\_\+\+M\+E\+S\+S\+A\+G\+ES~-\/12}
+
+Return code\+: no more messages can be buffered 
+
+Definition at line 161 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_ad577286d43c72fbc49818aac42f4e24a}\label{MQTTAsync_8h_ad577286d43c72fbc49818aac42f4e24a}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_MAX\_MESSAGES\_INFLIGHT@{MQTTASYNC\_MAX\_MESSAGES\_INFLIGHT}}
+\index{MQTTASYNC\_MAX\_MESSAGES\_INFLIGHT@{MQTTASYNC\_MAX\_MESSAGES\_INFLIGHT}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_MAX\_MESSAGES\_INFLIGHT}{MQTTASYNC\_MAX\_MESSAGES\_INFLIGHT}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+M\+A\+X\+\_\+\+M\+E\+S\+S\+A\+G\+E\+S\+\_\+\+I\+N\+F\+L\+I\+G\+HT~-\/4}
+
+Return code\+: The maximum number of messages allowed to be simultaneously in-\/flight has been reached. 
+
+Definition at line 126 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a6a85061dadab532f28e96e5ab3c600e9}\label{MQTTAsync_8h_a6a85061dadab532f28e96e5ab3c600e9}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_message\_initializer@{MQTTAsync\_message\_initializer}}
+\index{MQTTAsync\_message\_initializer@{MQTTAsync\_message\_initializer}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_message\_initializer}{MQTTAsync\_message\_initializer}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+Async\+\_\+message\+\_\+initializer~\{ \{\textquotesingle{}M\textquotesingle{}, \textquotesingle{}Q\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}M\textquotesingle{}\}, 0, 0, N\+U\+LL, 0, 0, 0, 0 \}}
+
+
+
+Definition at line 258 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_ab0f54d0bae2c74849022a8009e5d6ff7}\label{MQTTAsync_8h_ab0f54d0bae2c74849022a8009e5d6ff7}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_NO\_MORE\_MSGIDS@{MQTTASYNC\_NO\_MORE\_MSGIDS}}
+\index{MQTTASYNC\_NO\_MORE\_MSGIDS@{MQTTASYNC\_NO\_MORE\_MSGIDS}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_NO\_MORE\_MSGIDS}{MQTTASYNC\_NO\_MORE\_MSGIDS}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+N\+O\+\_\+\+M\+O\+R\+E\+\_\+\+M\+S\+G\+I\+DS~-\/10}
+
+Return code\+: All 65535 M\+Q\+TT msgids are being used 
+
+Definition at line 153 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_ab88e1ebcee991099a72429e52a8253fd}\label{MQTTAsync_8h_ab88e1ebcee991099a72429e52a8253fd}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_NULL\_PARAMETER@{MQTTASYNC\_NULL\_PARAMETER}}
+\index{MQTTASYNC\_NULL\_PARAMETER@{MQTTASYNC\_NULL\_PARAMETER}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_NULL\_PARAMETER}{MQTTASYNC\_NULL\_PARAMETER}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+N\+U\+L\+L\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER~-\/6}
+
+Return code\+: A N\+U\+LL parameter has been supplied when this is invalid. 
+
+Definition at line 134 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_aee1b79d0632bec0fe49eb7ea1abd3b2e}\label{MQTTAsync_8h_aee1b79d0632bec0fe49eb7ea1abd3b2e}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_OPERATION\_INCOMPLETE@{MQTTASYNC\_OPERATION\_INCOMPLETE}}
+\index{MQTTASYNC\_OPERATION\_INCOMPLETE@{MQTTASYNC\_OPERATION\_INCOMPLETE}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_OPERATION\_INCOMPLETE}{MQTTASYNC\_OPERATION\_INCOMPLETE}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE~-\/11}
+
+Return code\+: the request is being discarded when not complete 
+
+Definition at line 157 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a4edf1249c75abd4975fec8ddeae2cdc9}\label{MQTTAsync_8h_a4edf1249c75abd4975fec8ddeae2cdc9}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_PERSISTENCE\_ERROR@{MQTTASYNC\_PERSISTENCE\_ERROR}}
+\index{MQTTASYNC\_PERSISTENCE\_ERROR@{MQTTASYNC\_PERSISTENCE\_ERROR}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_PERSISTENCE\_ERROR}{MQTTASYNC\_PERSISTENCE\_ERROR}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+E\+R\+R\+OR~-\/2}
+
+
+
+Definition at line 116 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a3f8b408243b5c2369bc9758f2edf0878}\label{MQTTAsync_8h_a3f8b408243b5c2369bc9758f2edf0878}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_responseOptions\_initializer@{MQTTAsync\_responseOptions\_initializer}}
+\index{MQTTAsync\_responseOptions\_initializer@{MQTTAsync\_responseOptions\_initializer}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_responseOptions\_initializer}{MQTTAsync\_responseOptions\_initializer}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+Async\+\_\+response\+Options\+\_\+initializer~\{ \{\textquotesingle{}M\textquotesingle{}, \textquotesingle{}Q\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}R\textquotesingle{}\}, 0, N\+U\+LL, N\+U\+LL, 0, 0 \}}
+
+
+
+Definition at line 432 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_aac935e2e9d770a53ee8189f128530511}\label{MQTTAsync_8h_aac935e2e9d770a53ee8189f128530511}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_SSLOptions\_initializer@{MQTTAsync\_SSLOptions\_initializer}}
+\index{MQTTAsync\_SSLOptions\_initializer@{MQTTAsync\_SSLOptions\_initializer}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_SSLOptions\_initializer}{MQTTAsync\_SSLOptions\_initializer}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+Async\+\_\+\+S\+S\+L\+Options\+\_\+initializer~\{ \{\textquotesingle{}M\textquotesingle{}, \textquotesingle{}Q\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}S\textquotesingle{}\}, 0, N\+U\+LL, N\+U\+LL, N\+U\+LL, N\+U\+LL, N\+U\+LL, 1 \}}
+
+
+
+Definition at line 641 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}\label{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_SUCCESS@{MQTTASYNC\_SUCCESS}}
+\index{MQTTASYNC\_SUCCESS@{MQTTASYNC\_SUCCESS}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_SUCCESS}{MQTTASYNC\_SUCCESS}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS~0}
+
+Return code\+: No error. Indicates successful completion of an M\+Q\+TT client operation. 
+
+Definition at line 107 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a77a7106d97ff60be3fe70f90b1867800}\label{MQTTAsync_8h_a77a7106d97ff60be3fe70f90b1867800}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_TOPICNAME\_TRUNCATED@{MQTTASYNC\_TOPICNAME\_TRUNCATED}}
+\index{MQTTASYNC\_TOPICNAME\_TRUNCATED@{MQTTASYNC\_TOPICNAME\_TRUNCATED}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_TOPICNAME\_TRUNCATED}{MQTTASYNC\_TOPICNAME\_TRUNCATED}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+O\+P\+I\+C\+N\+A\+M\+E\+\_\+\+T\+R\+U\+N\+C\+A\+T\+ED~-\/7}
+
+Return code\+: The topic has been truncated (the topic string includes embedded N\+U\+LL characters). String functions will not access the full topic. Use the topic length value to access the full topic. 
+
+Definition at line 140 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a61e6ee632e63312d382e2fcbe427f01a}\label{MQTTAsync_8h_a61e6ee632e63312d382e2fcbe427f01a}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_TRUE@{MQTTASYNC\_TRUE}}
+\index{MQTTASYNC\_TRUE@{MQTTASYNC\_TRUE}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_TRUE}{MQTTASYNC\_TRUE}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+UE~1}
+
+Tests whether a request corresponding to a token is complete.
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em token} & An \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} associated with a request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the request has been completed, 0 if not. 
+\end{DoxyReturn}
+
+
+Definition at line 1004 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a6c45768e1b28844f2ac0f6ac68709730}\label{MQTTAsync_8h_a6c45768e1b28844f2ac0f6ac68709730}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_willOptions\_initializer@{MQTTAsync\_willOptions\_initializer}}
+\index{MQTTAsync\_willOptions\_initializer@{MQTTAsync\_willOptions\_initializer}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_willOptions\_initializer}{MQTTAsync\_willOptions\_initializer}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+Async\+\_\+will\+Options\+\_\+initializer~\{ \{\textquotesingle{}M\textquotesingle{}, \textquotesingle{}Q\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}W\textquotesingle{}\}, 0, N\+U\+LL, N\+U\+LL, 0, 0 \}}
+
+
+
+Definition at line 590 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a4603b988e76872e1f23f135d225ce2fb}\label{MQTTAsync_8h_a4603b988e76872e1f23f135d225ce2fb}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTVERSION\_3\_1@{MQTTVERSION\_3\_1}}
+\index{MQTTVERSION\_3\_1@{MQTTVERSION\_3\_1}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTVERSION\_3\_1}{MQTTVERSION\_3\_1}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1~3}
+
+M\+Q\+TT version to connect with\+: 3.\+1 
+
+Definition at line 170 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_ac79cc6fdeaa9e3f4ee12c3418898b1ef}\label{MQTTAsync_8h_ac79cc6fdeaa9e3f4ee12c3418898b1ef}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTVERSION\_3\_1\_1@{MQTTVERSION\_3\_1\_1}}
+\index{MQTTVERSION\_3\_1\_1@{MQTTVERSION\_3\_1\_1}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTVERSION\_3\_1\_1}{MQTTVERSION\_3\_1\_1}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1\+\_\+1~4}
+
+M\+Q\+TT version to connect with\+: 3.\+1.\+1 
+
+Definition at line 174 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a75b80b01f98d5a1ffa2a4d42995a8397}\label{MQTTAsync_8h_a75b80b01f98d5a1ffa2a4d42995a8397}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTVERSION\_DEFAULT@{MQTTVERSION\_DEFAULT}}
+\index{MQTTVERSION\_DEFAULT@{MQTTVERSION\_DEFAULT}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTVERSION\_DEFAULT}{MQTTVERSION\_DEFAULT}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+V\+E\+R\+S\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+LT~0}
+
+Default M\+Q\+TT version to connect with. Use 3.\+1.\+1 then fall back to 3.\+1 
+
+Definition at line 166 of file M\+Q\+T\+T\+Async.\+h.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}\label{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync@{MQTTAsync}}
+\index{MQTTAsync@{MQTTAsync}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync}{MQTTAsync}}
+{\footnotesize\ttfamily typedef void$\ast$ \mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}
+
+A handle representing an M\+Q\+TT client. A valid client handle is available following a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. 
+
+Definition at line 184 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a34bb8d321e9d368780b5c832c058f223}\label{MQTTAsync_8h_a34bb8d321e9d368780b5c832c058f223}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_connected@{MQTTAsync\_connected}}
+\index{MQTTAsync\_connected@{MQTTAsync\_connected}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_connected}{MQTTAsync\_connected}}
+{\footnotesize\ttfamily typedef void M\+Q\+T\+T\+Async\+\_\+connected(void $\ast$context, char $\ast$cause)}
+
+This is a callback function, which will be called when the client library successfully connects. This is superfluous when the connection is made in response to a M\+Q\+T\+T\+Async\+\_\+connect call, because the on\+Success callback can be used. It is intended for use when automatic reconnect is enabled, so that when a reconnection attempt succeeds in the background, the application is notified and can take any required actions. 
+\begin{DoxyParams}{Parameters}
+{\em context} & A pointer to the {\itshape context} value originally passed to \mbox{\hyperlink{MQTTAsync_8h_a03f7cb8b9e6de062d408169a19c6b16f}{M\+Q\+T\+T\+Async\+\_\+set\+Callbacks()}}, which contains any application-\/specific context. \\
+\hline
+{\em cause} & The reason for the disconnection. Currently, {\itshape cause} is always set to N\+U\+LL. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 338 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a3900a98d7b1d58ad6e686bfce298bb6c}\label{MQTTAsync_8h_a3900a98d7b1d58ad6e686bfce298bb6c}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_connectionLost@{MQTTAsync\_connectionLost}}
+\index{MQTTAsync\_connectionLost@{MQTTAsync\_connectionLost}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_connectionLost}{MQTTAsync\_connectionLost}}
+{\footnotesize\ttfamily typedef void M\+Q\+T\+T\+Async\+\_\+connection\+Lost(void $\ast$context, char $\ast$cause)}
+
+This is a callback function. The client application must provide an implementation of this function to enable asynchronous notification of the loss of connection to the server. The function is registered with the client library by passing it as an argument to ~\newline
+ \mbox{\hyperlink{MQTTAsync_8h_a03f7cb8b9e6de062d408169a19c6b16f}{M\+Q\+T\+T\+Async\+\_\+set\+Callbacks()}}. It is called by the client library if the client loses its connection to the server. The client application must take appropriate action, such as trying to reconnect or reporting the problem. This function is executed on a separate thread to the one on which the client application is running. 
+\begin{DoxyParams}{Parameters}
+{\em context} & A pointer to the {\itshape context} value originally passed to \mbox{\hyperlink{MQTTAsync_8h_a03f7cb8b9e6de062d408169a19c6b16f}{M\+Q\+T\+T\+Async\+\_\+set\+Callbacks()}}, which contains any application-\/specific context. \\
+\hline
+{\em cause} & The reason for the disconnection. Currently, {\itshape cause} is always set to N\+U\+LL. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 323 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_ab10296618e266b3c02fd117d6616b15d}\label{MQTTAsync_8h_ab10296618e266b3c02fd117d6616b15d}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_deliveryComplete@{MQTTAsync\_deliveryComplete}}
+\index{MQTTAsync\_deliveryComplete@{MQTTAsync\_deliveryComplete}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_deliveryComplete}{MQTTAsync\_deliveryComplete}}
+{\footnotesize\ttfamily typedef void M\+Q\+T\+T\+Async\+\_\+delivery\+Complete(void $\ast$context, \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} token)}
+
+This is a callback function. The client application must provide an implementation of this function to enable asynchronous notification of delivery of messages to the server. The function is registered with the client library by passing it as an argument to \mbox{\hyperlink{MQTTAsync_8h_a03f7cb8b9e6de062d408169a19c6b16f}{M\+Q\+T\+T\+Async\+\_\+set\+Callbacks()}}. It is called by the client library after the client application has published a message to the server. It indicates that the necessary handshaking and acknowledgements for the requested quality of service (see \mbox{\hyperlink{structMQTTAsync__message_a6e0971dbde0f04b6dd3bfab97ad5cdb7}{M\+Q\+T\+T\+Async\+\_\+message.\+qos}}) have been completed. This function is executed on a separate thread to the one on which the client application is running. 
+\begin{DoxyParams}{Parameters}
+{\em context} & A pointer to the {\itshape context} value originally passed to \mbox{\hyperlink{MQTTAsync_8h_a03f7cb8b9e6de062d408169a19c6b16f}{M\+Q\+T\+T\+Async\+\_\+set\+Callbacks()}}, which contains any application-\/specific context. \\
+\hline
+{\em token} & The \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} associated with the published message. Applications can check that all messages have been correctly published by matching the tokens returned from calls to \mbox{\hyperlink{MQTTAsync_8h_a05aa12f3f1c810479120bb3d967fc31a}{M\+Q\+T\+T\+Async\+\_\+send()}} and \mbox{\hyperlink{MQTTAsync_8h_ac9c3d013ff61c1255942863b7a9136da}{M\+Q\+T\+T\+Async\+\_\+send\+Message()}} with the tokens passed to this callback. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 306 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a3918ead59b56816a8d7544def184e48e}\label{MQTTAsync_8h_a3918ead59b56816a8d7544def184e48e}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_messageArrived@{MQTTAsync\_messageArrived}}
+\index{MQTTAsync\_messageArrived@{MQTTAsync\_messageArrived}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_messageArrived}{MQTTAsync\_messageArrived}}
+{\footnotesize\ttfamily typedef int M\+Q\+T\+T\+Async\+\_\+message\+Arrived(void $\ast$context, char $\ast$topic\+Name, int topic\+Len, \mbox{\hyperlink{structMQTTAsync__message}{M\+Q\+T\+T\+Async\+\_\+message}} $\ast$message)}
+
+This is a callback function. The client application must provide an implementation of this function to enable asynchronous receipt of messages. The function is registered with the client library by passing it as an argument to \mbox{\hyperlink{MQTTAsync_8h_a03f7cb8b9e6de062d408169a19c6b16f}{M\+Q\+T\+T\+Async\+\_\+set\+Callbacks()}}. It is called by the client library when a new message that matches a client subscription has been received from the server. This function is executed on a separate thread to the one on which the client application is running. 
+\begin{DoxyParams}{Parameters}
+{\em context} & A pointer to the {\itshape context} value originally passed to \mbox{\hyperlink{MQTTAsync_8h_a03f7cb8b9e6de062d408169a19c6b16f}{M\+Q\+T\+T\+Async\+\_\+set\+Callbacks()}}, which contains any application-\/specific context. \\
+\hline
+{\em topic\+Name} & The topic associated with the received message. \\
+\hline
+{\em topic\+Len} & The length of the topic if there are one more N\+U\+LL characters embedded in {\itshape topic\+Name}, otherwise {\itshape topic\+Len} is 0. If {\itshape topic\+Len} is 0, the value returned by {\itshape strlen(topic\+Name)} can be trusted. If {\itshape topic\+Len} is greater than 0, the full topic name can be retrieved by accessing {\itshape topic\+Name} as a byte array of length {\itshape topic\+Len}. \\
+\hline
+{\em message} & The \mbox{\hyperlink{structMQTTAsync__message}{M\+Q\+T\+T\+Async\+\_\+message}} structure for the received message. This structure contains the message payload and attributes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function must return a boolean value indicating whether or not the message has been safely received by the client application. Returning true indicates that the message has been successfully handled. ~\newline
+ Returning false indicates that there was a problem. In this case, the client library will reinvoke \mbox{\hyperlink{MQTTAsync_8h_a3918ead59b56816a8d7544def184e48e}{M\+Q\+T\+T\+Async\+\_\+message\+Arrived()}} to attempt to deliver the message to the application again. 
+\end{DoxyReturn}
+
+
+Definition at line 286 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a6060c25c2641e878803aef76fefb31ee}\label{MQTTAsync_8h_a6060c25c2641e878803aef76fefb31ee}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_onFailure@{MQTTAsync\_onFailure}}
+\index{MQTTAsync\_onFailure@{MQTTAsync\_onFailure}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_onFailure}{MQTTAsync\_onFailure}}
+{\footnotesize\ttfamily typedef void M\+Q\+T\+T\+Async\+\_\+on\+Failure(void $\ast$context, \mbox{\hyperlink{structMQTTAsync__failureData}{M\+Q\+T\+T\+Async\+\_\+failure\+Data}} $\ast$response)}
+
+This is a callback function. The client application must provide an implementation of this function to enable asynchronous notification of the unsuccessful completion of an A\+PI call. The function is registered with the client library by passing it as an argument in ~\newline
+ \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}}. 
+\begin{DoxyParams}{Parameters}
+{\em context} & A pointer to the {\itshape context} value originally passed to \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}}, which contains any application-\/specific context. \\
+\hline
+{\em response} & Any failure data associated with the A\+PI completion. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 403 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a7b0c18a0e29e2ce73f3ea109bc32617b}\label{MQTTAsync_8h_a7b0c18a0e29e2ce73f3ea109bc32617b}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_onSuccess@{MQTTAsync\_onSuccess}}
+\index{MQTTAsync\_onSuccess@{MQTTAsync\_onSuccess}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_onSuccess}{MQTTAsync\_onSuccess}}
+{\footnotesize\ttfamily typedef void M\+Q\+T\+T\+Async\+\_\+on\+Success(void $\ast$context, \mbox{\hyperlink{structMQTTAsync__successData}{M\+Q\+T\+T\+Async\+\_\+success\+Data}} $\ast$response)}
+
+This is a callback function. The client application must provide an implementation of this function to enable asynchronous notification of the successful completion of an A\+PI call. The function is registered with the client library by passing it as an argument in ~\newline
+ \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}}. 
+\begin{DoxyParams}{Parameters}
+{\em context} & A pointer to the {\itshape context} value originally passed to \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}}, which contains any application-\/specific context. \\
+\hline
+{\em response} & Any success data associated with the A\+PI completion. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 391 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}\label{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_token@{MQTTAsync\_token}}
+\index{MQTTAsync\_token@{MQTTAsync\_token}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_token}{MQTTAsync\_token}}
+{\footnotesize\ttfamily typedef int \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}}}
+
+A value representing an M\+Q\+TT message. A token is returned to the client application when a message is published. The token can then be used to check that the message was successfully delivered to its destination (see M\+Q\+T\+T\+Async\+\_\+publish(), M\+Q\+T\+T\+Async\+\_\+publish\+Message(), \mbox{\hyperlink{MQTTAsync_8h_ab10296618e266b3c02fd117d6616b15d}{M\+Q\+T\+T\+Async\+\_\+delivery\+Complete()}}, and \mbox{\hyperlink{MQTTAsync_8h_a4a96669ed2f7a8efa87b20016b51ff8e}{M\+Q\+T\+T\+Async\+\_\+get\+Pending\+Tokens()}}). 
+
+Definition at line 194 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{MQTTAsync_8h_a65aba1caeae9b5af5d5b6c5598a75b02}\label{MQTTAsync_8h_a65aba1caeae9b5af5d5b6c5598a75b02}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_traceCallback@{MQTTAsync\_traceCallback}}
+\index{MQTTAsync\_traceCallback@{MQTTAsync\_traceCallback}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_traceCallback}{MQTTAsync\_traceCallback}}
+{\footnotesize\ttfamily typedef void M\+Q\+T\+T\+Async\+\_\+trace\+Callback(enum \mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+L\+E\+V\+E\+LS}} level, char $\ast$message)}
+
+This is a callback function prototype which must be implemented if you want to receive trace information. 
+\begin{DoxyParams}{Parameters}
+{\em level} & the trace level of the message returned \\
+\hline
+{\em meesage} & the trace message. This is a pointer to a static buffer which will be overwritten on each call. You must copy the data if you want to keep it for later. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1082 of file M\+Q\+T\+T\+Async.\+h.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5}\label{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_TRACE\_LEVELS@{MQTTASYNC\_TRACE\_LEVELS}}
+\index{MQTTASYNC\_TRACE\_LEVELS@{MQTTASYNC\_TRACE\_LEVELS}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTASYNC\_TRACE\_LEVELS}{MQTTASYNC\_TRACE\_LEVELS}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+L\+E\+V\+E\+LS}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MQTTASYNC\_TRACE\_MAXIMUM@{MQTTASYNC\_TRACE\_MAXIMUM}!MQTTAsync.h@{MQTTAsync.h}}\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_TRACE\_MAXIMUM@{MQTTASYNC\_TRACE\_MAXIMUM}}}\mbox{\Hypertarget{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5af684f42971cced68693ce993703548c1}\label{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5af684f42971cced68693ce993703548c1}} 
+M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+M\+A\+X\+I\+M\+UM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MQTTASYNC\_TRACE\_MEDIUM@{MQTTASYNC\_TRACE\_MEDIUM}!MQTTAsync.h@{MQTTAsync.h}}\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_TRACE\_MEDIUM@{MQTTASYNC\_TRACE\_MEDIUM}}}\mbox{\Hypertarget{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a133c380b84d75477ff31a2ad732133ce}\label{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a133c380b84d75477ff31a2ad732133ce}} 
+M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+M\+E\+D\+I\+UM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MQTTASYNC\_TRACE\_MINIMUM@{MQTTASYNC\_TRACE\_MINIMUM}!MQTTAsync.h@{MQTTAsync.h}}\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_TRACE\_MINIMUM@{MQTTASYNC\_TRACE\_MINIMUM}}}\mbox{\Hypertarget{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a7a45c26816b1cac1fde02d79a9f4337b}\label{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a7a45c26816b1cac1fde02d79a9f4337b}} 
+M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+M\+I\+N\+I\+M\+UM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MQTTASYNC\_TRACE\_PROTOCOL@{MQTTASYNC\_TRACE\_PROTOCOL}!MQTTAsync.h@{MQTTAsync.h}}\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_TRACE\_PROTOCOL@{MQTTASYNC\_TRACE\_PROTOCOL}}}\mbox{\Hypertarget{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a6a719b2b7fc4dfc41494370ff96fec3e}\label{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a6a719b2b7fc4dfc41494370ff96fec3e}} 
+M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+P\+R\+O\+T\+O\+C\+OL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MQTTASYNC\_TRACE\_ERROR@{MQTTASYNC\_TRACE\_ERROR}!MQTTAsync.h@{MQTTAsync.h}}\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_TRACE\_ERROR@{MQTTASYNC\_TRACE\_ERROR}}}\mbox{\Hypertarget{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5ac428f74ca453dacb7b8271ca741266e8}\label{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5ac428f74ca453dacb7b8271ca741266e8}} 
+M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MQTTASYNC\_TRACE\_SEVERE@{MQTTASYNC\_TRACE\_SEVERE}!MQTTAsync.h@{MQTTAsync.h}}\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_TRACE\_SEVERE@{MQTTASYNC\_TRACE\_SEVERE}}}\mbox{\Hypertarget{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a3084770185f384398cefe4aaba533d40}\label{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a3084770185f384398cefe4aaba533d40}} 
+M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+S\+E\+V\+E\+RE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MQTTASYNC\_TRACE\_FATAL@{MQTTASYNC\_TRACE\_FATAL}!MQTTAsync.h@{MQTTAsync.h}}\index{MQTTAsync.h@{MQTTAsync.h}!MQTTASYNC\_TRACE\_FATAL@{MQTTASYNC\_TRACE\_FATAL}}}\mbox{\Hypertarget{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a0b91d2213ebb6655e41a7f6ce1a42295}\label{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5a0b91d2213ebb6655e41a7f6ce1a42295}} 
+M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+F\+A\+T\+AL&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 1054 of file M\+Q\+T\+T\+Async.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{MQTTAsync_8h_aa9b699c1ae22eedf8351d3762ccb27ff}\label{MQTTAsync_8h_aa9b699c1ae22eedf8351d3762ccb27ff}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_connect@{MQTTAsync\_connect}}
+\index{MQTTAsync\_connect@{MQTTAsync\_connect}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_connect()}{MQTTAsync\_connect()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structMQTTAsync__connectOptions}{M\+Q\+T\+T\+Async\+\_\+connect\+Options}} $\ast$}]{options }\end{DoxyParamCaption})}
+
+This function attempts to connect a previously-\/created client (see \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}) to an M\+Q\+TT server using the specified options. If you want to enable asynchronous message and status notifications, you must call \mbox{\hyperlink{MQTTAsync_8h_a03f7cb8b9e6de062d408169a19c6b16f}{M\+Q\+T\+T\+Async\+\_\+set\+Callbacks()}} prior to \mbox{\hyperlink{MQTTAsync_8h_aa9b699c1ae22eedf8351d3762ccb27ff}{M\+Q\+T\+T\+Async\+\_\+connect()}}. 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em options} & A pointer to a valid \mbox{\hyperlink{structMQTTAsync__connectOptions}{M\+Q\+T\+T\+Async\+\_\+connect\+Options}} structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the client connect request was accepted. If the client was unable to connect to the server, an error code is returned via the on\+Failure callback, if set. Error codes greater than 0 are returned by the M\+Q\+TT protocol\+:~\newline
+~\newline
+ {\bfseries{1}}\+: Connection refused\+: Unacceptable protocol version~\newline
+ {\bfseries{2}}\+: Connection refused\+: Identifier rejected~\newline
+ {\bfseries{3}}\+: Connection refused\+: Server unavailable~\newline
+ {\bfseries{4}}\+: Connection refused\+: Bad user name or password~\newline
+ {\bfseries{5}}\+: Connection refused\+: Not authorized~\newline
+ {\bfseries{6-\/255}}\+: Reserved for future use~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}\label{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_create@{MQTTAsync\_create}}
+\index{MQTTAsync\_create@{MQTTAsync\_create}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_create()}{MQTTAsync\_create()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} $\ast$}]{handle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{server\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{client\+Id,  }\item[{int}]{persistence\+\_\+type,  }\item[{void $\ast$}]{persistence\+\_\+context }\end{DoxyParamCaption})}
+
+This function creates an M\+Q\+TT client ready for connection to the specified server and using the specified persistent storage (see M\+Q\+T\+T\+Async\+\_\+persistence). See also \mbox{\hyperlink{MQTTAsync_8h_aec27b3ef37b5a9d6a3c8e91d4f7a118a}{M\+Q\+T\+T\+Async\+\_\+destroy()}}. 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A pointer to an \mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} handle. The handle is populated with a valid client reference following a successful return from this function. ~\newline
+ \\
+\hline
+{\em server\+U\+RI} & A null-\/terminated string specifying the server to which the client will connect. It takes the form {\itshape protocol\+://host\+:port}. {\itshape protocol} must be {\itshape tcp} or {\itshape ssl}. For {\itshape host}, you can specify either an IP address or a host name. For instance, to connect to a server running on the local machines with the default M\+Q\+TT port, specify {\itshape tcp\+://localhost\+:1883}. \\
+\hline
+{\em client\+Id} & The client identifier passed to the server when the client connects to it. It is a null-\/terminated U\+T\+F-\/8 encoded string. Client\+I\+Ds must be no longer than 23 characters according to the M\+Q\+TT specification. \\
+\hline
+{\em persistence\+\_\+type} & The type of persistence to be used by the client\+: ~\newline
+ \mbox{\hyperlink{MQTTClientPersistence_8h_ae01e089313a65ac4661ed216b6ac00fa}{M\+Q\+T\+T\+C\+L\+I\+E\+N\+T\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+N\+O\+NE}}\+: Use in-\/memory persistence. If the device or system on which the client is running fails or is switched off, the current state of any in-\/flight messages is lost and some messages may not be delivered even at Qo\+S1 and Qo\+S2. ~\newline
+ \mbox{\hyperlink{MQTTClientPersistence_8h_aaa948291718a9c06369b854b0f64bc32}{M\+Q\+T\+T\+C\+L\+I\+E\+N\+T\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+D\+E\+F\+A\+U\+LT}}\+: Use the default (file system-\/based) persistence mechanism. Status about in-\/flight messages is held in persistent storage and provides some protection against message loss in the case of unexpected failure. ~\newline
+ \mbox{\hyperlink{MQTTClientPersistence_8h_a5dc68b8616e4041e037bad94ce07681b}{M\+Q\+T\+T\+C\+L\+I\+E\+N\+T\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+U\+S\+ER}}\+: Use an application-\/specific persistence implementation. Using this type of persistence gives control of the persistence mechanism to the application. The application has to implement the \mbox{\hyperlink{structMQTTClient__persistence}{M\+Q\+T\+T\+Client\+\_\+persistence}} interface. \\
+\hline
+{\em persistence\+\_\+context} & If the application uses \mbox{\hyperlink{MQTTClientPersistence_8h_ae01e089313a65ac4661ed216b6ac00fa}{M\+Q\+T\+T\+C\+L\+I\+E\+N\+T\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+N\+O\+NE}} persistence, this argument is unused and should be set to N\+U\+LL. For \mbox{\hyperlink{MQTTClientPersistence_8h_aaa948291718a9c06369b854b0f64bc32}{M\+Q\+T\+T\+C\+L\+I\+E\+N\+T\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+D\+E\+F\+A\+U\+LT}} persistence, it should be set to the location of the persistence directory (if set to N\+U\+LL, the persistence directory used is the working directory). Applications that use \mbox{\hyperlink{MQTTClientPersistence_8h_a5dc68b8616e4041e037bad94ce07681b}{M\+Q\+T\+T\+C\+L\+I\+E\+N\+T\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+U\+S\+ER}} persistence set this argument to point to a valid \mbox{\hyperlink{structMQTTClient__persistence}{M\+Q\+T\+T\+Client\+\_\+persistence}} structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the client is successfully created, otherwise an error code is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_a0d3078be2c93601b4142d74b5dfd7638}\label{MQTTAsync_8h_a0d3078be2c93601b4142d74b5dfd7638}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_createWithOptions@{MQTTAsync\_createWithOptions}}
+\index{MQTTAsync\_createWithOptions@{MQTTAsync\_createWithOptions}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_createWithOptions()}{MQTTAsync\_createWithOptions()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+create\+With\+Options (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} $\ast$}]{handle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{server\+U\+RI,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{client\+Id,  }\item[{int}]{persistence\+\_\+type,  }\item[{void $\ast$}]{persistence\+\_\+context,  }\item[{\mbox{\hyperlink{structMQTTAsync__createOptions}{M\+Q\+T\+T\+Async\+\_\+create\+Options}} $\ast$}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{MQTTAsync_8h_aec27b3ef37b5a9d6a3c8e91d4f7a118a}\label{MQTTAsync_8h_aec27b3ef37b5a9d6a3c8e91d4f7a118a}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_destroy@{MQTTAsync\_destroy}}
+\index{MQTTAsync\_destroy@{MQTTAsync\_destroy}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_destroy()}{MQTTAsync\_destroy()}}
+{\footnotesize\ttfamily D\+L\+L\+Export void M\+Q\+T\+T\+Async\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} $\ast$}]{handle }\end{DoxyParamCaption})}
+
+This function frees the memory allocated to an M\+Q\+TT client (see \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}). It should be called when the client is no longer required. 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A pointer to the handle referring to the \mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}} structure to be freed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{MQTTAsync_8h_a15172c5f1864dcbc76b1694b23bc0b35}\label{MQTTAsync_8h_a15172c5f1864dcbc76b1694b23bc0b35}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_disconnect@{MQTTAsync\_disconnect}}
+\index{MQTTAsync\_disconnect@{MQTTAsync\_disconnect}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_disconnect()}{MQTTAsync\_disconnect()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+disconnect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structMQTTAsync__disconnectOptions}{M\+Q\+T\+T\+Async\+\_\+disconnect\+Options}} $\ast$}]{options }\end{DoxyParamCaption})}
+
+This function attempts to disconnect the client from the M\+Q\+TT server. In order to allow the client time to complete handling of messages that are in-\/flight when this function is called, a timeout period is specified. When the timeout period has expired, the client disconnects even if there are still outstanding message acknowledgements. The next time the client connects to the same server, any QoS 1 or 2 messages which have not completed will be retried depending on the cleansession settings for both the previous and the new connection (see \mbox{\hyperlink{structMQTTAsync__connectOptions_ac4addd2c4614cfc12c9dd7e199a989ff}{M\+Q\+T\+T\+Async\+\_\+connect\+Options.\+cleansession}} and \mbox{\hyperlink{MQTTAsync_8h_aa9b699c1ae22eedf8351d3762ccb27ff}{M\+Q\+T\+T\+Async\+\_\+connect()}}). 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em options} & The client delays disconnection for up to this time (in milliseconds) in order to allow in-\/flight message transfers to complete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the client successfully disconnects from the server. An error code is returned if the client was unable to disconnect from the server 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_a8b8ed450ed11e17f2841544d76d4f03a}\label{MQTTAsync_8h_a8b8ed450ed11e17f2841544d76d4f03a}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_free@{MQTTAsync\_free}}
+\index{MQTTAsync\_free@{MQTTAsync\_free}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_free()}{MQTTAsync\_free()}}
+{\footnotesize\ttfamily D\+L\+L\+Export void M\+Q\+T\+T\+Async\+\_\+free (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+This function frees memory allocated by the M\+Q\+TT C client library, especially the topic name. This is needed on Windows when the client libary and application program have been compiled with different versions of the C compiler. It is thus good policy to always use this function when freeing any M\+Q\+TT C client-\/ allocated memory. 
+\begin{DoxyParams}{Parameters}
+{\em ptr} & The pointer to the client library storage to be freed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{MQTTAsync_8h_a6735249a7efcda11b5b2c574eaa44766}\label{MQTTAsync_8h_a6735249a7efcda11b5b2c574eaa44766}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_freeMessage@{MQTTAsync\_freeMessage}}
+\index{MQTTAsync\_freeMessage@{MQTTAsync\_freeMessage}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_freeMessage()}{MQTTAsync\_freeMessage()}}
+{\footnotesize\ttfamily D\+L\+L\+Export void M\+Q\+T\+T\+Async\+\_\+free\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMQTTAsync__message}{M\+Q\+T\+T\+Async\+\_\+message}} $\ast$$\ast$}]{msg }\end{DoxyParamCaption})}
+
+This function frees memory allocated to an M\+Q\+TT message, including the additional memory allocated to the message payload. The client application calls this function when the message has been fully processed. {\bfseries{Important note\+:}} This function does not free the memory allocated to a message topic string. It is the responsibility of the client application to free this memory using the \mbox{\hyperlink{MQTTAsync_8h_a8b8ed450ed11e17f2841544d76d4f03a}{M\+Q\+T\+T\+Async\+\_\+free()}} library function. 
+\begin{DoxyParams}{Parameters}
+{\em msg} & The address of a pointer to the \mbox{\hyperlink{structMQTTAsync__message}{M\+Q\+T\+T\+Async\+\_\+message}} structure to be freed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{MQTTAsync_8h_a4a96669ed2f7a8efa87b20016b51ff8e}\label{MQTTAsync_8h_a4a96669ed2f7a8efa87b20016b51ff8e}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_getPendingTokens@{MQTTAsync\_getPendingTokens}}
+\index{MQTTAsync\_getPendingTokens@{MQTTAsync\_getPendingTokens}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_getPendingTokens()}{MQTTAsync\_getPendingTokens()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+get\+Pending\+Tokens (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{\mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} $\ast$$\ast$}]{tokens }\end{DoxyParamCaption})}
+
+This function sets a pointer to an array of tokens for messages that are currently in-\/flight (pending completion).
+
+{\bfseries{Important note\+:}} The memory used to hold the array of tokens is malloc()\textquotesingle{}d in this function. The client application is responsible for freeing this memory when it is no longer required. 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em tokens} & The address of a pointer to an \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}}. When the function returns successfully, the pointer is set to point to an array of tokens representing messages pending completion. The last member of the array is set to -\/1 to indicate there are no more tokens. If no tokens are pending, the pointer is set to N\+U\+LL. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the function returns successfully. An error code is returned if there was a problem obtaining the list of pending tokens. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_a65b71c0e4b7289eb49b3344d67e928ac}\label{MQTTAsync_8h_a65b71c0e4b7289eb49b3344d67e928ac}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_getVersionInfo@{MQTTAsync\_getVersionInfo}}
+\index{MQTTAsync\_getVersionInfo@{MQTTAsync\_getVersionInfo}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_getVersionInfo()}{MQTTAsync\_getVersionInfo()}}
+{\footnotesize\ttfamily D\+L\+L\+Export \mbox{\hyperlink{structMQTTAsync__nameValue}{M\+Q\+T\+T\+Async\+\_\+name\+Value}}$\ast$ M\+Q\+T\+T\+Async\+\_\+get\+Version\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function returns version information about the library. ~\newline
+ no trace information will be returned. The default trace level is M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+M\+I\+N\+I\+M\+UM \begin{DoxyReturn}{Returns}
+an array of strings describing the library. The last entry is a N\+U\+LL pointer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_a374ea6f5be72fc025c9e18c1ffe7c90f}\label{MQTTAsync_8h_a374ea6f5be72fc025c9e18c1ffe7c90f}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_isComplete@{MQTTAsync\_isComplete}}
+\index{MQTTAsync\_isComplete@{MQTTAsync\_isComplete}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_isComplete()}{MQTTAsync\_isComplete()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+is\+Complete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{\mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}}}]{token }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{MQTTAsync_8h_a7f6fda39ae60f5c60124c014ef0c7e77}\label{MQTTAsync_8h_a7f6fda39ae60f5c60124c014ef0c7e77}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_isConnected@{MQTTAsync\_isConnected}}
+\index{MQTTAsync\_isConnected@{MQTTAsync\_isConnected}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_isConnected()}{MQTTAsync\_isConnected()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+is\+Connected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle }\end{DoxyParamCaption})}
+
+This function allows the client application to test whether or not a client is currently connected to the M\+Q\+TT server. 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean true if the client is connected, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_a5b379fe6b9c2cc1f07132a83342a7a22}\label{MQTTAsync_8h_a5b379fe6b9c2cc1f07132a83342a7a22}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_reconnect@{MQTTAsync\_reconnect}}
+\index{MQTTAsync\_reconnect@{MQTTAsync\_reconnect}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_reconnect()}{MQTTAsync\_reconnect()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+reconnect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle }\end{DoxyParamCaption})}
+
+Reconnects a client with the previously used connect options. Connect must have previously been called for this to work. 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the callbacks were correctly set, \mbox{\hyperlink{MQTTAsync_8h_a7c8230fef85fc04b8a1035501f3be406}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+F\+A\+I\+L\+U\+RE}} if an error occurred. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_a05aa12f3f1c810479120bb3d967fc31a}\label{MQTTAsync_8h_a05aa12f3f1c810479120bb3d967fc31a}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_send@{MQTTAsync\_send}}
+\index{MQTTAsync\_send@{MQTTAsync\_send}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_send()}{MQTTAsync\_send()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{destination\+Name,  }\item[{int}]{payloadlen,  }\item[{void $\ast$}]{payload,  }\item[{int}]{qos,  }\item[{int}]{retained,  }\item[{\mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} $\ast$}]{response }\end{DoxyParamCaption})}
+
+This function attempts to publish a message to a given topic (see also \mbox{\hyperlink{MQTTAsync_8h_ac9c3d013ff61c1255942863b7a9136da}{M\+Q\+T\+T\+Async\+\_\+send\+Message()}}). An \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} is issued when this function returns successfully. If the client application needs to test for successful delivery of messages, a callback should be set ~\newline
+ (see \mbox{\hyperlink{MQTTAsync_8h_a7b0c18a0e29e2ce73f3ea109bc32617b}{M\+Q\+T\+T\+Async\+\_\+on\+Success()}} and \mbox{\hyperlink{MQTTAsync_8h_ab10296618e266b3c02fd117d6616b15d}{M\+Q\+T\+T\+Async\+\_\+delivery\+Complete()}}). 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em destination\+Name} & The topic associated with this message. \\
+\hline
+{\em payloadlen} & The length of the payload in bytes. \\
+\hline
+{\em payload} & A pointer to the byte array payload of the message. \\
+\hline
+{\em qos} & The qos of the message. \\
+\hline
+{\em retained} & The retained flag for the message. \\
+\hline
+{\em response} & A pointer to an \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} structure. Used to set callback functions. This is optional and can be set to N\+U\+LL. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the message is accepted for publication. An error code is returned if there was a problem accepting the message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_ac9c3d013ff61c1255942863b7a9136da}\label{MQTTAsync_8h_ac9c3d013ff61c1255942863b7a9136da}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_sendMessage@{MQTTAsync\_sendMessage}}
+\index{MQTTAsync\_sendMessage@{MQTTAsync\_sendMessage}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_sendMessage()}{MQTTAsync\_sendMessage()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+send\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{destination\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{structMQTTAsync__message}{M\+Q\+T\+T\+Async\+\_\+message}} $\ast$}]{msg,  }\item[{\mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} $\ast$}]{response }\end{DoxyParamCaption})}
+
+This function attempts to publish a message to a given topic (see also M\+Q\+T\+T\+Async\+\_\+publish()). An \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} is issued when this function returns successfully. If the client application needs to test for successful delivery of messages, a callback should be set ~\newline
+ (see \mbox{\hyperlink{MQTTAsync_8h_a7b0c18a0e29e2ce73f3ea109bc32617b}{M\+Q\+T\+T\+Async\+\_\+on\+Success()}} and \mbox{\hyperlink{MQTTAsync_8h_ab10296618e266b3c02fd117d6616b15d}{M\+Q\+T\+T\+Async\+\_\+delivery\+Complete()}}). 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em destination\+Name} & The topic associated with this message. \\
+\hline
+{\em msg} & A pointer to a valid \mbox{\hyperlink{structMQTTAsync__message}{M\+Q\+T\+T\+Async\+\_\+message}} structure containing the payload and attributes of the message to be published. \\
+\hline
+{\em response} & A pointer to an \mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} structure. Used to set callback functions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the message is accepted for publication. An error code is returned if there was a problem accepting the message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_a03f7cb8b9e6de062d408169a19c6b16f}\label{MQTTAsync_8h_a03f7cb8b9e6de062d408169a19c6b16f}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_setCallbacks@{MQTTAsync\_setCallbacks}}
+\index{MQTTAsync\_setCallbacks@{MQTTAsync\_setCallbacks}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_setCallbacks()}{MQTTAsync\_setCallbacks()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+set\+Callbacks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{void $\ast$}]{context,  }\item[{\mbox{\hyperlink{MQTTAsync_8h_a3900a98d7b1d58ad6e686bfce298bb6c}{M\+Q\+T\+T\+Async\+\_\+connection\+Lost}} $\ast$}]{cl,  }\item[{\mbox{\hyperlink{MQTTAsync_8h_a3918ead59b56816a8d7544def184e48e}{M\+Q\+T\+T\+Async\+\_\+message\+Arrived}} $\ast$}]{ma,  }\item[{\mbox{\hyperlink{MQTTAsync_8h_ab10296618e266b3c02fd117d6616b15d}{M\+Q\+T\+T\+Async\+\_\+delivery\+Complete}} $\ast$}]{dc }\end{DoxyParamCaption})}
+
+This function sets the global callback functions for a specific client. If your client application doesn\textquotesingle{}t use a particular callback, set the relevant parameter to N\+U\+LL. Any necessary message acknowledgements and status communications are handled in the background without any intervention from the client application. If you do not set a message\+Arrived callback function, you will not be notified of the receipt of any messages as a result of a subscription.
+
+{\bfseries{Note\+:}} The M\+Q\+TT client must be disconnected when this function is called. 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em context} & A pointer to any application-\/specific context. The the {\itshape context} pointer is passed to each of the callback functions to provide access to the context information in the callback. \\
+\hline
+{\em cl} & A pointer to an \mbox{\hyperlink{MQTTAsync_8h_a3900a98d7b1d58ad6e686bfce298bb6c}{M\+Q\+T\+T\+Async\+\_\+connection\+Lost()}} callback function. You can set this to N\+U\+LL if your application doesn\textquotesingle{}t handle disconnections. \\
+\hline
+{\em ma} & A pointer to an \mbox{\hyperlink{MQTTAsync_8h_a3918ead59b56816a8d7544def184e48e}{M\+Q\+T\+T\+Async\+\_\+message\+Arrived()}} callback function. You can set this to N\+U\+LL if your application doesn\textquotesingle{}t handle receipt of messages. \\
+\hline
+{\em dc} & A pointer to an \mbox{\hyperlink{MQTTAsync_8h_ab10296618e266b3c02fd117d6616b15d}{M\+Q\+T\+T\+Async\+\_\+delivery\+Complete()}} callback function. You can set this to N\+U\+LL if you do not want to check for successful delivery. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the callbacks were correctly set, \mbox{\hyperlink{MQTTAsync_8h_a7c8230fef85fc04b8a1035501f3be406}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+F\+A\+I\+L\+U\+RE}} if an error occurred. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_aec0e988552226926f3ad371ce6cf101d}\label{MQTTAsync_8h_aec0e988552226926f3ad371ce6cf101d}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_setConnected@{MQTTAsync\_setConnected}}
+\index{MQTTAsync\_setConnected@{MQTTAsync\_setConnected}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_setConnected()}{MQTTAsync\_setConnected()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+set\+Connected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{void $\ast$}]{context,  }\item[{\mbox{\hyperlink{MQTTAsync_8h_a34bb8d321e9d368780b5c832c058f223}{M\+Q\+T\+T\+Async\+\_\+connected}} $\ast$}]{co }\end{DoxyParamCaption})}
+
+Sets the \mbox{\hyperlink{MQTTAsync_8h_a34bb8d321e9d368780b5c832c058f223}{M\+Q\+T\+T\+Async\+\_\+connected()}} callback function for a client. 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em context} & A pointer to any application-\/specific context. The the {\itshape context} pointer is passed to each of the callback functions to provide access to the context information in the callback. \\
+\hline
+{\em co} & A pointer to an \mbox{\hyperlink{MQTTAsync_8h_a34bb8d321e9d368780b5c832c058f223}{M\+Q\+T\+T\+Async\+\_\+connected()}} callback function. N\+U\+LL removes the callback setting. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the callbacks were correctly set, \mbox{\hyperlink{MQTTAsync_8h_a7c8230fef85fc04b8a1035501f3be406}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+F\+A\+I\+L\+U\+RE}} if an error occurred. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_aabe2b97a990323631f5e137237be2adc}\label{MQTTAsync_8h_aabe2b97a990323631f5e137237be2adc}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_setTraceCallback@{MQTTAsync\_setTraceCallback}}
+\index{MQTTAsync\_setTraceCallback@{MQTTAsync\_setTraceCallback}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_setTraceCallback()}{MQTTAsync\_setTraceCallback()}}
+{\footnotesize\ttfamily D\+L\+L\+Export void M\+Q\+T\+T\+Async\+\_\+set\+Trace\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a65aba1caeae9b5af5d5b6c5598a75b02}{M\+Q\+T\+T\+Async\+\_\+trace\+Callback}} $\ast$}]{callback }\end{DoxyParamCaption})}
+
+This function sets the trace callback if needed. If set to N\+U\+LL, no trace information will be returned. The default trace level is M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+M\+I\+N\+I\+M\+UM. ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em callback} & a pointer to the function which will handle the trace information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{MQTTAsync_8h_af22a1edd266e92ded5fb0e02541ab8c0}\label{MQTTAsync_8h_af22a1edd266e92ded5fb0e02541ab8c0}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_setTraceLevel@{MQTTAsync\_setTraceLevel}}
+\index{MQTTAsync\_setTraceLevel@{MQTTAsync\_setTraceLevel}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_setTraceLevel()}{MQTTAsync\_setTraceLevel()}}
+{\footnotesize\ttfamily D\+L\+L\+Export void M\+Q\+T\+T\+Async\+\_\+set\+Trace\+Level (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{MQTTAsync_8h_a5de816f986b318947709a34e0787eda5}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+T\+R\+A\+C\+E\+\_\+\+L\+E\+V\+E\+LS}}}]{level }\end{DoxyParamCaption})}
+
+This function sets the level of trace information which will be returned in the trace callback. 
+\begin{DoxyParams}{Parameters}
+{\em level} & the trace level required \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{MQTTAsync_8h_a74a450434eb74d7a3852291abaf7232c}\label{MQTTAsync_8h_a74a450434eb74d7a3852291abaf7232c}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_subscribe@{MQTTAsync\_subscribe}}
+\index{MQTTAsync\_subscribe@{MQTTAsync\_subscribe}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_subscribe()}{MQTTAsync\_subscribe()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+subscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{topic,  }\item[{int}]{qos,  }\item[{\mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} $\ast$}]{response }\end{DoxyParamCaption})}
+
+This function attempts to subscribe a client to a single topic, which may contain wildcards (see wildcard). This call also specifies the qos requested for the subscription (see also \mbox{\hyperlink{MQTTAsync_8h_ae8a2ec2b28e1e407fc8bbd813d43a15c}{M\+Q\+T\+T\+Async\+\_\+subscribe\+Many()}}). 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em topic} & The subscription topic, which may include wildcards. \\
+\hline
+{\em qos} & The requested quality of service for the subscription. \\
+\hline
+{\em response} & A pointer to a response options structure. Used to set callback functions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the subscription request is successful. An error code is returned if there was a problem registering the subscription. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_ae8a2ec2b28e1e407fc8bbd813d43a15c}\label{MQTTAsync_8h_ae8a2ec2b28e1e407fc8bbd813d43a15c}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_subscribeMany@{MQTTAsync\_subscribeMany}}
+\index{MQTTAsync\_subscribeMany@{MQTTAsync\_subscribeMany}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_subscribeMany()}{MQTTAsync\_subscribeMany()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+subscribe\+Many (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{int}]{count,  }\item[{char $\ast$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} $\ast$}]{topic,  }\item[{int $\ast$}]{qos,  }\item[{\mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} $\ast$}]{response }\end{DoxyParamCaption})}
+
+This function attempts to subscribe a client to a list of topics, which may contain wildcards (see wildcard). This call also specifies the qos requested for each topic (see also \mbox{\hyperlink{MQTTAsync_8h_a74a450434eb74d7a3852291abaf7232c}{M\+Q\+T\+T\+Async\+\_\+subscribe()}}). 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em count} & The number of topics for which the client is requesting subscriptions. \\
+\hline
+{\em topic} & An array (of length {\itshape count}) of pointers to topics, each of which may include wildcards. \\
+\hline
+{\em qos} & An array (of length {\itshape count}) of qos values. qos\mbox{[}n\mbox{]} is the requested QoS for topic\mbox{[}n\mbox{]}. \\
+\hline
+{\em response} & A pointer to a response options structure. Used to set callback functions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the subscription request is successful. An error code is returned if there was a problem registering the subscriptions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_a7ffb0920387a12089cd232111285886b}\label{MQTTAsync_8h_a7ffb0920387a12089cd232111285886b}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_unsubscribe@{MQTTAsync\_unsubscribe}}
+\index{MQTTAsync\_unsubscribe@{MQTTAsync\_unsubscribe}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_unsubscribe()}{MQTTAsync\_unsubscribe()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+unsubscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{topic,  }\item[{\mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} $\ast$}]{response }\end{DoxyParamCaption})}
+
+This function attempts to remove an existing subscription made by the specified client. 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em topic} & The topic for the subscription to be removed, which may include wildcards (see wildcard). \\
+\hline
+{\em response} & A pointer to a response options structure. Used to set callback functions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the subscription is removed. An error code is returned if there was a problem removing the subscription. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_ac0ddbf624bf689cdf5bdb7c9e805d75e}\label{MQTTAsync_8h_ac0ddbf624bf689cdf5bdb7c9e805d75e}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_unsubscribeMany@{MQTTAsync\_unsubscribeMany}}
+\index{MQTTAsync\_unsubscribeMany@{MQTTAsync\_unsubscribeMany}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_unsubscribeMany()}{MQTTAsync\_unsubscribeMany()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+unsubscribe\+Many (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{int}]{count,  }\item[{char $\ast$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} $\ast$}]{topic,  }\item[{\mbox{\hyperlink{structMQTTAsync__responseOptions}{M\+Q\+T\+T\+Async\+\_\+response\+Options}} $\ast$}]{response }\end{DoxyParamCaption})}
+
+This function attempts to remove existing subscriptions to a list of topics made by the specified client. 
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em count} & The number subscriptions to be removed. \\
+\hline
+{\em topic} & An array (of length {\itshape count}) of pointers to the topics of the subscriptions to be removed, each of which may include wildcards. \\
+\hline
+{\em response} & A pointer to a response options structure. Used to set callback functions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the subscriptions are removed. An error code is returned if there was a problem removing the subscriptions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{MQTTAsync_8h_a724de81f75052f3fb024f1ebb9b40848}\label{MQTTAsync_8h_a724de81f75052f3fb024f1ebb9b40848}} 
+\index{MQTTAsync.h@{MQTTAsync.h}!MQTTAsync\_waitForCompletion@{MQTTAsync\_waitForCompletion}}
+\index{MQTTAsync\_waitForCompletion@{MQTTAsync\_waitForCompletion}!MQTTAsync.h@{MQTTAsync.h}}
+\doxysubsubsection{\texorpdfstring{MQTTAsync\_waitForCompletion()}{MQTTAsync\_waitForCompletion()}}
+{\footnotesize\ttfamily D\+L\+L\+Export int M\+Q\+T\+T\+Async\+\_\+wait\+For\+Completion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MQTTAsync_8h_a0db1d736cdc0c864fe41abb3afd605bd}{M\+Q\+T\+T\+Async}}}]{handle,  }\item[{\mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}}}]{token,  }\item[{unsigned long}]{timeout }\end{DoxyParamCaption})}
+
+Waits for a request corresponding to a token to complete.
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & A valid client handle from a successful call to \mbox{\hyperlink{MQTTAsync_8h_a4c84d33c72c0eb1a60b690cb6c46edd7}{M\+Q\+T\+T\+Async\+\_\+create()}}. \\
+\hline
+{\em token} & An \mbox{\hyperlink{MQTTAsync_8h_a7ca6d2a1813f2bbd0bc3af2771e46ba4}{M\+Q\+T\+T\+Async\+\_\+token}} associated with a request. \\
+\hline
+{\em timeout} & the maximum time to wait for completion, in milliseconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MQTTAsync_8h_afe0cffcce8efe25186f79c51ac44e16f}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}} if the request has been completed in the time allocated, \mbox{\hyperlink{MQTTAsync_8h_a7c8230fef85fc04b8a1035501f3be406}{M\+Q\+T\+T\+A\+S\+Y\+N\+C\+\_\+\+F\+A\+I\+L\+U\+RE}} if not. 
+\end{DoxyReturn}

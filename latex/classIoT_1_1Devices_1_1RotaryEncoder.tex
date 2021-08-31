@@ -1,0 +1,136 @@
+\hypertarget{classIoT_1_1Devices_1_1RotaryEncoder}{}\doxysection{IoT\+::Devices\+::Rotary\+Encoder Class Reference}
+\label{classIoT_1_1Devices_1_1RotaryEncoder}\index{IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}}
+
+
+A rotary encoder with an optional push button.  
+
+
+
+
+{\ttfamily \#include $<$Rotary\+Encoder.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::Rotary\+Encoder\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::Rotary\+Encoder\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1RotaryEncoder_a5b1d1bd6eeb3c3410d1fffd5418ab887}{Rotary\+Encoder}} ()
+\begin{DoxyCompactList}\small\item\em Fired when the button has been pressed or released. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1RotaryEncoder_ac59cd91357ac361f5ee352f7fb019107}{$\sim$\+Rotary\+Encoder}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1RotaryEncoder}{Rotary\+Encoder}}. \end{DoxyCompactList}\item 
+virtual Poco\+::\+Int32 \mbox{\hyperlink{classIoT_1_1Devices_1_1RotaryEncoder_a7d732eaf0f54b68cb753d75dc4d1fbf7}{count}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1RotaryEncoder}{Rotary\+Encoder}}. \end{DoxyCompactList}\item 
+virtual Poco\+::\+Int32 \mbox{\hyperlink{classIoT_1_1Devices_1_1RotaryEncoder_ab65dfaab83f319712016666cb7d4e00a}{reset}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the current value of the counter. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1RotaryEncoder_a340b9817d152654da619031919563605}{button\+State}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+Int32 $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1RotaryEncoder_a29d6255b35b608899a87d26f5c692e3b}{count\+Changed}}
+\item 
+\mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1RotaryEncoder_a98d120882ef5c66f61c95a3488261230}{button\+State\+Changed}}
+\begin{DoxyCompactList}\small\item\em Fired when the counter of the encoder has changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A rotary encoder with an optional push button. 
+
+Definition at line 32 of file Rotary\+Encoder.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1RotaryEncoder_a5b1d1bd6eeb3c3410d1fffd5418ab887}\label{classIoT_1_1Devices_1_1RotaryEncoder_a5b1d1bd6eeb3c3410d1fffd5418ab887}} 
+\index{IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}!RotaryEncoder@{RotaryEncoder}}
+\index{RotaryEncoder@{RotaryEncoder}!IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}}
+\doxysubsubsection{\texorpdfstring{RotaryEncoder()}{RotaryEncoder()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Rotary\+Encoder\+::\+Rotary\+Encoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fired when the button has been pressed or released. 
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1RotaryEncoder_ac59cd91357ac361f5ee352f7fb019107}\label{classIoT_1_1Devices_1_1RotaryEncoder_ac59cd91357ac361f5ee352f7fb019107}} 
+\index{IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}!````~RotaryEncoder@{$\sim$RotaryEncoder}}
+\index{````~RotaryEncoder@{$\sim$RotaryEncoder}!IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}}
+\doxysubsubsection{\texorpdfstring{$\sim$RotaryEncoder()}{~RotaryEncoder()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+Rotary\+Encoder\+::$\sim$\+Rotary\+Encoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classIoT_1_1Devices_1_1RotaryEncoder}{Rotary\+Encoder}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1RotaryEncoder_a340b9817d152654da619031919563605}\label{classIoT_1_1Devices_1_1RotaryEncoder_a340b9817d152654da619031919563605}} 
+\index{IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}!buttonState@{buttonState}}
+\index{buttonState@{buttonState}!IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}}
+\doxysubsubsection{\texorpdfstring{buttonState()}{buttonState()}}
+{\footnotesize\ttfamily virtual bool Io\+T\+::\+Devices\+::\+Rotary\+Encoder\+::button\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the current value of the counter and sets the counter to 0. Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1RotaryEncoder_a7d732eaf0f54b68cb753d75dc4d1fbf7}\label{classIoT_1_1Devices_1_1RotaryEncoder_a7d732eaf0f54b68cb753d75dc4d1fbf7}} 
+\index{IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}!count@{count}}
+\index{count@{count}!IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Int32 Io\+T\+::\+Devices\+::\+Rotary\+Encoder\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1RotaryEncoder}{Rotary\+Encoder}}. 
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1RotaryEncoder_ab65dfaab83f319712016666cb7d4e00a}\label{classIoT_1_1Devices_1_1RotaryEncoder_ab65dfaab83f319712016666cb7d4e00a}} 
+\index{IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}!reset@{reset}}
+\index{reset@{reset}!IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Int32 Io\+T\+::\+Devices\+::\+Rotary\+Encoder\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the current value of the counter. 
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1RotaryEncoder_a98d120882ef5c66f61c95a3488261230}\label{classIoT_1_1Devices_1_1RotaryEncoder_a98d120882ef5c66f61c95a3488261230}} 
+\index{IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}!buttonStateChanged@{buttonStateChanged}}
+\index{buttonStateChanged@{buttonStateChanged}!IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}}
+\doxysubsubsection{\texorpdfstring{buttonStateChanged}{buttonStateChanged}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool$>$ Io\+T\+::\+Devices\+::\+Rotary\+Encoder\+::button\+State\+Changed}
+
+
+
+Fired when the counter of the encoder has changed. 
+
+
+
+Definition at line 39 of file Rotary\+Encoder.\+h.
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1RotaryEncoder_a29d6255b35b608899a87d26f5c692e3b}\label{classIoT_1_1Devices_1_1RotaryEncoder_a29d6255b35b608899a87d26f5c692e3b}} 
+\index{IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}!countChanged@{countChanged}}
+\index{countChanged@{countChanged}!IoT::Devices::RotaryEncoder@{IoT::Devices::RotaryEncoder}}
+\doxysubsubsection{\texorpdfstring{countChanged}{countChanged}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1BasicEvent}{Poco\+::\+Basic\+Event}}$<$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} Poco\+::\+Int32$>$ Io\+T\+::\+Devices\+::\+Rotary\+Encoder\+::count\+Changed}
+
+
+
+Definition at line 36 of file Rotary\+Encoder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{RotaryEncoder_8h}{Rotary\+Encoder.\+h}}\end{DoxyCompactItemize}

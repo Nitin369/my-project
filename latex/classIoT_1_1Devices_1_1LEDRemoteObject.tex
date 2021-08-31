@@ -1,0 +1,448 @@
+\hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject}{}\doxysection{IoT\+::Devices\+::L\+E\+D\+Remote\+Object Class Reference}
+\label{classIoT_1_1Devices_1_1LEDRemoteObject}\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+
+
+{\ttfamily \#include $<$L\+E\+D\+Remote\+Object.\+h$>$}
+
+
+
+Inheritance diagram for IoT\+::Devices\+::L\+E\+D\+Remote\+Object\+:
+% FIG 0
+
+
+Collaboration diagram for IoT\+::Devices\+::L\+E\+D\+Remote\+Object\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject}{L\+E\+D\+Remote\+Object}} $>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_af99d9769fdcc1681cb041ecb5fcffb9a}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a2c674f5df5afe46d3ad491e25c3a4d67}{L\+E\+D\+Remote\+Object}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&oid, \mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} $>$ p\+Service\+Object)
+\item 
+virtual \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a4092524e21177d8af3b161d46e87f467}{$\sim$\+L\+E\+D\+Remote\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject}{L\+E\+D\+Remote\+Object}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a9d914d1217359cad4f0fbdd9bbadde19}{blink}} (int on\+Milliseconds, int off\+Milliseconds)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject}{L\+E\+D\+Remote\+Object}}. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_aa302feca1cbad5d3b9ff4f94b9188285}{get\+Brightness}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a7dbac2f6a2c689b832b875cf1999169e}{get\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_adeaec63f8de5148ca014a48c60b428de}{get\+Property\+Bool}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual double \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_ab1ed9f29083b55e8c4c0b322c4b0e51c}{get\+Property\+Double}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual int \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_ab79b4c2797b564c9266a47b35a1186dd}{get\+Property\+Int}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual std\+::string \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a44c3d109761578f0e2b90f72d8e80521}{get\+Property\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_ae252671c36cc30c560ed5c0912bba07c}{has\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual bool \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_afac08d8852234eec448d2c580994486d}{has\+Property}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a4b140aba8a1260b9a45b7d4437a9edd8}{off}} ()
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a8dc5b9d363f4b57589e51ac9abde8a99}{on}} ()
+\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a7de8b455db313f3f70be7a54c4e2bc58}{remoting\+\_\+\+\_\+type\+Id}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_aff8ef303e9b1c04e24caa42ccdad528c}{set\+Brightness}} (double brightness)
+\begin{DoxyCompactList}\small\item\em Returns the Type\+Id of the class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_af7d0285995d46d775102f86a0e115ef8}{set\+Feature}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool enable)
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a1afc5ff99c402f3340b08e9a9de33a14}{set\+Property\+Bool}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool value)
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a48cfe2dbb2957c8ec2365e9eaf0e6881}{set\+Property\+Double}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, double value)
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_a8fc3b6e4f8294c4d6427de9173d133f7}{set\+Property\+Int}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, int value)
+\item 
+virtual void \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_af4fe6952faf16270a3d5ee5ec30772e9}{set\+Property\+String}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The base class for L\+E\+Ds. \begin{DoxyVerb}Each instance of the LED class represents a single physical
+LED. Some LED devices support different brightness levels,
+this is accounted for by allowing to specify a brightness
+level in range 0.0 to 1.0, where 0.0 turns the LED off and
+1.0 is the maximum brightness. 
+
+Some implementations may also support blinking LEDs.
+This is exposed via the "blinkOn" and "blinkOff" properties,
+which take as values the time in milliseconds the LED should
+be on, or off, respectively. There is also a shortcut
+method, blink(), which allows setting both properties at once.
+
+To turn on blinking, both "blinkOn" and "blinkOff" must be 
+set to a non-zero value. Furthermore, the brightness must
+be non-zero. 
+\end{DoxyVerb}
+ 
+
+Definition at line 32 of file L\+E\+D\+Remote\+Object.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_af99d9769fdcc1681cb041ecb5fcffb9a}\label{classIoT_1_1Devices_1_1LEDRemoteObject_af99d9769fdcc1681cb041ecb5fcffb9a}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1AutoPtr}{Poco\+::\+Auto\+Ptr}}$<$\mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject}{L\+E\+D\+Remote\+Object}}$>$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject_af99d9769fdcc1681cb041ecb5fcffb9a}{Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::\+Ptr}}}
+
+
+
+Definition at line 52 of file L\+E\+D\+Remote\+Object.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_a2c674f5df5afe46d3ad491e25c3a4d67}\label{classIoT_1_1Devices_1_1LEDRemoteObject_a2c674f5df5afe46d3ad491e25c3a4d67}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!LEDRemoteObject@{LEDRemoteObject}}
+\index{LEDRemoteObject@{LEDRemoteObject}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{LEDRemoteObject()}{LEDRemoteObject()}}
+{\footnotesize\ttfamily Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::\+L\+E\+D\+Remote\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_abc9ff6010b61874bf23d0ed160bac983}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Object\+Id}} \&}]{oid,  }\item[{\mbox{\hyperlink{classPoco_1_1SharedPtr}{Poco\+::\+Shared\+Ptr}}$<$ \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{Io\+T\+::\+Devices\+::\+L\+ED}} $>$}]{p\+Service\+Object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_a4092524e21177d8af3b161d46e87f467}\label{classIoT_1_1Devices_1_1LEDRemoteObject_a4092524e21177d8af3b161d46e87f467}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!````~LEDRemoteObject@{$\sim$LEDRemoteObject}}
+\index{````~LEDRemoteObject@{$\sim$LEDRemoteObject}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$LEDRemoteObject()}{~LEDRemoteObject()}}
+{\footnotesize\ttfamily virtual Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::$\sim$\+L\+E\+D\+Remote\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject}{L\+E\+D\+Remote\+Object}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_a9d914d1217359cad4f0fbdd9bbadde19}\label{classIoT_1_1Devices_1_1LEDRemoteObject_a9d914d1217359cad4f0fbdd9bbadde19}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!blink@{blink}}
+\index{blink@{blink}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{blink()}{blink()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::blink (\begin{DoxyParamCaption}\item[{int}]{on\+Milliseconds,  }\item[{int}]{off\+Milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classIoT_1_1Devices_1_1LEDRemoteObject}{L\+E\+D\+Remote\+Object}}. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a8aaa0f5303c392c53877f6569402f984}{Io\+T\+::\+Devices\+::\+I\+L\+ED}}.
+
+
+
+Definition at line 168 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_aa302feca1cbad5d3b9ff4f94b9188285}\label{classIoT_1_1Devices_1_1LEDRemoteObject_aa302feca1cbad5d3b9ff4f94b9188285}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!getBrightness@{getBrightness}}
+\index{getBrightness@{getBrightness}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{getBrightness()}{getBrightness()}}
+{\footnotesize\ttfamily double Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::get\+Brightness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Turns on blinking of the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}}.
+
+May not be supported by all implementations. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a3905564465a0b8486825dcd3a8fe74bf}{Io\+T\+::\+Devices\+::\+I\+L\+ED}}.
+
+
+
+Definition at line 174 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_a7dbac2f6a2c689b832b875cf1999169e}\label{classIoT_1_1Devices_1_1LEDRemoteObject_a7dbac2f6a2c689b832b875cf1999169e}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!getFeature@{getFeature}}
+\index{getFeature@{getFeature}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{getFeature()}{getFeature()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::get\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the current brightness of the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} in range 0.\+0 to 1.\+0.
+
+0.\+0 means off, every value $>$ 0.\+0 means on, with 1.\+0 being the maximum brightness level.
+
+Note that most \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} devices do not support different brightness levels and can only be turned on or off. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a4bff6fb174c55a8685f29849bcf39720}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 180 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_adeaec63f8de5148ca014a48c60b428de}\label{classIoT_1_1Devices_1_1LEDRemoteObject_adeaec63f8de5148ca014a48c60b428de}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!getPropertyBool@{getPropertyBool}}
+\index{getPropertyBool@{getPropertyBool}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{getPropertyBool()}{getPropertyBool()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::get\+Property\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns true if the feature with the given name is enabled, or false otherwise. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_ab40fcd1b1c7a509f0634ebf803a91a85}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 186 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_ab1ed9f29083b55e8c4c0b322c4b0e51c}\label{classIoT_1_1Devices_1_1LEDRemoteObject_ab1ed9f29083b55e8c4c0b322c4b0e51c}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!getPropertyDouble@{getPropertyDouble}}
+\index{getPropertyDouble@{getPropertyDouble}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{getPropertyDouble()}{getPropertyDouble()}}
+{\footnotesize\ttfamily double Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::get\+Property\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the value of the device property with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the property with the given name is unknown. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_afc1bb68b11e1bec202c85e51ad678dfd}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 192 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_ab79b4c2797b564c9266a47b35a1186dd}\label{classIoT_1_1Devices_1_1LEDRemoteObject_ab79b4c2797b564c9266a47b35a1186dd}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!getPropertyInt@{getPropertyInt}}
+\index{getPropertyInt@{getPropertyInt}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{getPropertyInt()}{getPropertyInt()}}
+{\footnotesize\ttfamily int Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::get\+Property\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the value of the device property with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the property with the given name is unknown. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_ad3c499a6564552a70785ded52a757ebe}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 198 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_a44c3d109761578f0e2b90f72d8e80521}\label{classIoT_1_1Devices_1_1LEDRemoteObject_a44c3d109761578f0e2b90f72d8e80521}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!getPropertyString@{getPropertyString}}
+\index{getPropertyString@{getPropertyString}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{getPropertyString()}{getPropertyString()}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::get\+Property\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the value of the device property with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the property with the given name is unknown. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a62106fa596032646dfd2546f643bf5fc}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 204 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_ae252671c36cc30c560ed5c0912bba07c}\label{classIoT_1_1Devices_1_1LEDRemoteObject_ae252671c36cc30c560ed5c0912bba07c}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!hasFeature@{hasFeature}}
+\index{hasFeature@{hasFeature}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{hasFeature()}{hasFeature()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::has\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the value of the device property with the given name.
+
+Throws a Poco\+::\+Not\+Found\+Exception if the property with the given name is unknown. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a79ed836b828b696f247d2e420f166cee}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 210 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_afac08d8852234eec448d2c580994486d}\label{classIoT_1_1Devices_1_1LEDRemoteObject_afac08d8852234eec448d2c580994486d}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!hasProperty@{hasProperty}}
+\index{hasProperty@{hasProperty}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{hasProperty()}{hasProperty()}}
+{\footnotesize\ttfamily bool Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::has\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns true if the feature with the given name is known, or false otherwise. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a64e805fa1a310921fddc14b1dbf6eaab}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 216 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_a4b140aba8a1260b9a45b7d4437a9edd8}\label{classIoT_1_1Devices_1_1LEDRemoteObject_a4b140aba8a1260b9a45b7d4437a9edd8}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!off@{off}}
+\index{off@{off}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{off()}{off()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns true if the property with the given name exists, or false otherwise. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a39ffc821084bc75a93acacd72fb666b4}{Io\+T\+::\+Devices\+::\+I\+L\+ED}}.
+
+
+
+Definition at line 222 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_a8dc5b9d363f4b57589e51ac9abde8a99}\label{classIoT_1_1Devices_1_1LEDRemoteObject_a8dc5b9d363f4b57589e51ac9abde8a99}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!on@{on}}
+\index{on@{on}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{on()}{on()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::on (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Convenience method that turns the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} off by calling set\+Brightness(0.\+0). 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_a2d9e720373d2d169c65177cce8232f79}{Io\+T\+::\+Devices\+::\+I\+L\+ED}}.
+
+
+
+Definition at line 228 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_a7de8b455db313f3f70be7a54c4e2bc58}\label{classIoT_1_1Devices_1_1LEDRemoteObject_a7de8b455db313f3f70be7a54c4e2bc58}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!remoting\_\_typeId@{remoting\_\_typeId}}
+\index{remoting\_\_typeId@{remoting\_\_typeId}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{remoting\_\_typeId()}{remoting\_\_typeId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_ac1cc05db319c3b6c7b9e58466677e0c3}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable\+::\+Type\+Id}} \& Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::remoting\+\_\+\+\_\+type\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Convenience method that turns the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} on by calling set\+Brightness(1.\+0). 
+
+Implements \mbox{\hyperlink{classPoco_1_1RemotingNG_1_1Identifiable_a1c3bd470be79d79803cbcf674fd5a049}{Poco\+::\+Remoting\+N\+G\+::\+Identifiable}}.
+
+
+
+Definition at line 234 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_aff8ef303e9b1c04e24caa42ccdad528c}\label{classIoT_1_1Devices_1_1LEDRemoteObject_aff8ef303e9b1c04e24caa42ccdad528c}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!setBrightness@{setBrightness}}
+\index{setBrightness@{setBrightness}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{setBrightness()}{setBrightness()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::set\+Brightness (\begin{DoxyParamCaption}\item[{double}]{brightness }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the Type\+Id of the class. 
+
+
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1ILED_aca6e44f9bd3cfcf2af8f6c808c423b12}{Io\+T\+::\+Devices\+::\+I\+L\+ED}}.
+
+
+
+Definition at line 240 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_af7d0285995d46d775102f86a0e115ef8}\label{classIoT_1_1Devices_1_1LEDRemoteObject_af7d0285995d46d775102f86a0e115ef8}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!setFeature@{setFeature}}
+\index{setFeature@{setFeature}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{setFeature()}{setFeature()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::set\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the brightness of the \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}}.
+
+0.\+0 means off, every value $>$ 0.\+0 means on, with 1.\+0 being the maximum brightness level.
+
+Note that most \mbox{\hyperlink{classIoT_1_1Devices_1_1LED}{L\+ED}} devices do not support different brightness levels and can only be turned on or off. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a532161c927139ec8efd1c0ac2b0a0d3a}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 246 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_a1afc5ff99c402f3340b08e9a9de33a14}\label{classIoT_1_1Devices_1_1LEDRemoteObject_a1afc5ff99c402f3340b08e9a9de33a14}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!setPropertyBool@{setPropertyBool}}
+\index{setPropertyBool@{setPropertyBool}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{setPropertyBool()}{setPropertyBool()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::set\+Property\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Enables or disables the feature with the given name.
+
+Which features are supported is defined by the actual device implementation. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a75ed5e013bb0ea879b629874259a4aca}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 252 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_a48cfe2dbb2957c8ec2365e9eaf0e6881}\label{classIoT_1_1Devices_1_1LEDRemoteObject_a48cfe2dbb2957c8ec2365e9eaf0e6881}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!setPropertyDouble@{setPropertyDouble}}
+\index{setPropertyDouble@{setPropertyDouble}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{setPropertyDouble()}{setPropertyDouble()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::set\+Property\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets a device property.
+
+Which properties are supported is defined by the actual device implementation. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_ad03cf412585420d2327c0f7e9957df55}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 258 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_a8fc3b6e4f8294c4d6427de9173d133f7}\label{classIoT_1_1Devices_1_1LEDRemoteObject_a8fc3b6e4f8294c4d6427de9173d133f7}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!setPropertyInt@{setPropertyInt}}
+\index{setPropertyInt@{setPropertyInt}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{setPropertyInt()}{setPropertyInt()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::set\+Property\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets a device property.
+
+Which properties are supported is defined by the actual device implementation. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a39b711acf95036aaeb4722a1639d73e4}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 264 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 18
+\mbox{\Hypertarget{classIoT_1_1Devices_1_1LEDRemoteObject_af4fe6952faf16270a3d5ee5ec30772e9}\label{classIoT_1_1Devices_1_1LEDRemoteObject_af4fe6952faf16270a3d5ee5ec30772e9}} 
+\index{IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}!setPropertyString@{setPropertyString}}
+\index{setPropertyString@{setPropertyString}!IoT::Devices::LEDRemoteObject@{IoT::Devices::LEDRemoteObject}}
+\doxysubsubsection{\texorpdfstring{setPropertyString()}{setPropertyString()}}
+{\footnotesize\ttfamily void Io\+T\+::\+Devices\+::\+L\+E\+D\+Remote\+Object\+::set\+Property\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets a device property.
+
+Which properties are supported is defined by the actual device implementation. 
+
+Implements \mbox{\hyperlink{classIoT_1_1Devices_1_1IDevice_a410ca0acb30c45cfa9adbfb8a2ad7a4e}{Io\+T\+::\+Devices\+::\+I\+Device}}.
+
+
+
+Definition at line 270 of file L\+E\+D\+Remote\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 19
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+Devices/\mbox{\hyperlink{LEDRemoteObject_8h}{L\+E\+D\+Remote\+Object.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+digraph "IoT::BtLE::Peripheral"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="IoT::BtLE::Peripheral",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" notificationReceived" ];
+  Node2 [label="Poco::BasicEvent\< const\l IoT::BtLE::Notification \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1BasicEvent.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Poco::AbstractEvent\l\< const IoT::BtLE::Notification,\l DefaultStrategy\< const IoT\l::BtLE::Notification, AbstractDelegate\l\< const IoT::BtLE::Notification \>\l \>, AbstractDelegate\< const IoT::BtLE\l::Notification \>, FastMutex \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AbstractEvent.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _executeAsync" ];
+  Node4 [label="Poco::ActiveMethod\l\< const IoT::BtLE::Notification,\l Poco::AbstractEvent::NotifyAsyncParams,\l Poco::AbstractEvent \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveMethod.html",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _strategy" ];
+  Node5 [label="Poco::DefaultStrategy\l\< const IoT::BtLE::Notification,\l AbstractDelegate\< const IoT\l::BtLE::Notification \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1DefaultStrategy.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Poco::NotificationStrategy\l\< const IoT::BtLE::Notification,\l AbstractDelegate\< const IoT\l::BtLE::Notification \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1NotificationStrategy.html",tooltip=" "];
+  Node7 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _mutex" ];
+  Node7 [label="Poco::FastMutex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1FastMutex.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="firebrick4",fontsize="10",style="solid"];
+  Node8 [label="Poco::FastMutexImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1FastMutexImpl.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Poco::MutexImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1MutexImpl.html",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" disconnected\nconnected" ];
+  Node10 [label="Poco::BasicEvent\< void \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1BasicEvent.html",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Poco::AbstractEvent\l\< void, DefaultStrategy\l\< void, AbstractDelegate\l\< void \> \>, AbstractDelegate\l\< void \>, FastMutex \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AbstractEvent.html",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _strategy" ];
+  Node12 [label="Poco::DefaultStrategy\l\< void, AbstractDelegate\l\< void \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1DefaultStrategy.html",tooltip=" "];
+  Node13 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Poco::NotificationStrategy\l\< void, AbstractDelegate\l\< void \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1NotificationStrategy.html",tooltip=" "];
+  Node14 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _executeAsync" ];
+  Node14 [label="Poco::ActiveMethod\l\< void, Poco::AbstractEvent\l::NotifyAsyncParams, Poco\l::AbstractEvent \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveMethod.html",tooltip=" "];
+  Node7 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _mutex" ];
+  Node15 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" indicationReceived" ];
+  Node15 [label="Poco::BasicEvent\< const\l IoT::BtLE::Indication \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1BasicEvent.html",tooltip=" "];
+  Node16 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="Poco::AbstractEvent\l\< const IoT::BtLE::Indication,\l DefaultStrategy\< const IoT\l::BtLE::Indication, AbstractDelegate\l\< const IoT::BtLE::Indication \> \>\l, AbstractDelegate\< const IoT::BtLE\l::Indication \>, FastMutex \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AbstractEvent.html",tooltip=" "];
+  Node17 -> Node16 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _strategy" ];
+  Node17 [label="Poco::DefaultStrategy\l\< const IoT::BtLE::Indication,\l AbstractDelegate\< const IoT\l::BtLE::Indication \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1DefaultStrategy.html",tooltip=" "];
+  Node18 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="Poco::NotificationStrategy\l\< const IoT::BtLE::Indication,\l AbstractDelegate\< const IoT\l::BtLE::Indication \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1NotificationStrategy.html",tooltip=" "];
+  Node19 -> Node16 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _executeAsync" ];
+  Node19 [label="Poco::ActiveMethod\l\< const IoT::BtLE::Indication,\l Poco::AbstractEvent::NotifyAsyncParams,\l Poco::AbstractEvent \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveMethod.html",tooltip=" "];
+  Node7 -> Node16 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _mutex" ];
+  Node20 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" error" ];
+  Node20 [label="Poco::BasicEvent\< const\l std::string \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1BasicEvent.html",tooltip=" "];
+  Node21 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node21 [label="Poco::AbstractEvent\l\< const std::string,\l DefaultStrategy\< const\l std::string, AbstractDelegate\l\< const std::string \> \>, AbstractDelegate\l\< const std::string \>, FastMutex \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AbstractEvent.html",tooltip=" "];
+  Node22 -> Node21 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _executeAsync" ];
+  Node22 [label="Poco::ActiveMethod\l\< const std::string,\l Poco::AbstractEvent\l::NotifyAsyncParams, Poco\l::AbstractEvent \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveMethod.html",tooltip=" "];
+  Node23 -> Node21 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _strategy" ];
+  Node23 [label="Poco::DefaultStrategy\l\< const std::string,\l AbstractDelegate\< const\l std::string \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1DefaultStrategy.html",tooltip=" "];
+  Node24 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node24 [label="Poco::NotificationStrategy\l\< const std::string, AbstractDelegate\l\< const std::string \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1NotificationStrategy.html",tooltip=" "];
+  Node7 -> Node21 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _mutex" ];
+}

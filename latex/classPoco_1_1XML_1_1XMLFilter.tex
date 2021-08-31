@@ -1,0 +1,82 @@
+\hypertarget{classPoco_1_1XML_1_1XMLFilter}{}\doxysection{Poco\+::X\+ML\+::X\+M\+L\+Filter Class Reference}
+\label{classPoco_1_1XML_1_1XMLFilter}\index{Poco::XML::XMLFilter@{Poco::XML::XMLFilter}}
+
+
+{\ttfamily \#include $<$X\+M\+L\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::X\+ML\+::X\+M\+L\+Filter\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::X\+ML\+::X\+M\+L\+Filter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} $\ast$ \mbox{\hyperlink{classPoco_1_1XML_1_1XMLFilter_a8b8fba1aa8829f13af8b1591befc860b}{get\+Parent}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1XML_1_1XMLFilter_a862b703c769199b2650198f4b92c73f8}{set\+Parent}} (\mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} $\ast$p\+Parent)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1XML_1_1XMLFilter_a2e189254c0e3f3bc9be050279d2718e0}{$\sim$\+X\+M\+L\+Filter}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Interface for an \mbox{\hyperlink{namespacePoco_1_1XML}{X\+ML}} filter. \begin{DoxyVerb}An XML filter is like an XML reader, except that it obtains its events from another XML reader 
+rather than a primary source like an XML document or database. Filters can modify a stream of 
+events as they pass on to the final application.
+
+The XMLFilterImpl helper class provides a convenient base for creating SAX2 filters, by passing on 
+all EntityResolver, DTDHandler, ContentHandler and ErrorHandler events automatically. 
+\end{DoxyVerb}
+ 
+
+Definition at line 31 of file X\+M\+L\+Filter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1XMLFilter_a2e189254c0e3f3bc9be050279d2718e0}\label{classPoco_1_1XML_1_1XMLFilter_a2e189254c0e3f3bc9be050279d2718e0}} 
+\index{Poco::XML::XMLFilter@{Poco::XML::XMLFilter}!````~XMLFilter@{$\sim$XMLFilter}}
+\index{````~XMLFilter@{$\sim$XMLFilter}!Poco::XML::XMLFilter@{Poco::XML::XMLFilter}}
+\doxysubsubsection{\texorpdfstring{$\sim$XMLFilter()}{~XMLFilter()}}
+{\footnotesize\ttfamily virtual Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Filter\+::$\sim$\+X\+M\+L\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Get the parent reader.
+
+This method allows the application to query the parent reader (which may be another filter). It is generally a bad idea to perform any operations on the parent reader directly\+: they should all pass through this filter. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1XML_1_1XMLFilter_a8b8fba1aa8829f13af8b1591befc860b}\label{classPoco_1_1XML_1_1XMLFilter_a8b8fba1aa8829f13af8b1591befc860b}} 
+\index{Poco::XML::XMLFilter@{Poco::XML::XMLFilter}!getParent@{getParent}}
+\index{getParent@{getParent}!Poco::XML::XMLFilter@{Poco::XML::XMLFilter}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}}$\ast$ Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Filter\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1XML_1_1XMLFilterImpl_acef8217f4859c52fd382d69bb732c509}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Filter\+Impl}}.
+
+\mbox{\Hypertarget{classPoco_1_1XML_1_1XMLFilter_a862b703c769199b2650198f4b92c73f8}\label{classPoco_1_1XML_1_1XMLFilter_a862b703c769199b2650198f4b92c73f8}} 
+\index{Poco::XML::XMLFilter@{Poco::XML::XMLFilter}!setParent@{setParent}}
+\index{setParent@{setParent}!Poco::XML::XMLFilter@{Poco::XML::XMLFilter}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily virtual void Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Filter\+::set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1XML_1_1XMLReader}{X\+M\+L\+Reader}} $\ast$}]{p\+Parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set the parent reader.
+
+This method allows the application to link the filter to a parent reader (which may be another filter). The argument may not be null. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1XML_1_1XMLFilterImpl_a4000e4612dcf25dad1ce9a06849289b4}{Poco\+::\+X\+M\+L\+::\+X\+M\+L\+Filter\+Impl}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+S\+A\+X/\mbox{\hyperlink{XMLFilter_8h}{X\+M\+L\+Filter.\+h}}\end{DoxyCompactItemize}

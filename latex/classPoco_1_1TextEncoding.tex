@@ -1,0 +1,293 @@
+\hypertarget{classPoco_1_1TextEncoding}{}\doxysection{Poco\+::Text\+Encoding Class Reference}
+\label{classPoco_1_1TextEncoding}\index{Poco::TextEncoding@{Poco::TextEncoding}}
+
+
+{\ttfamily \#include $<$Text\+Encoding.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Text\+Encoding\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{classPoco_1_1TextEncoding_a6060d644bf0391e65f34ffba2e677a1ea2add20503785de3c42ea25b166397b99}{M\+A\+X\+\_\+\+S\+E\+Q\+U\+E\+N\+C\+E\+\_\+\+L\+E\+N\+G\+TH}} = 6
+ \}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} $>$ \mbox{\hyperlink{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}{Ptr}}
+\item 
+typedef int \mbox{\hyperlink{classPoco_1_1TextEncoding_ac61121651a57a139cd625b1d23a42d09}{Character\+Map}}\mbox{[}256\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1TextEncoding_aaf5550aac0c6cb4bdb32fdb1881457e0}{$\sim$\+Text\+Encoding}} ()
+\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{classPoco_1_1TextEncoding_a128efbeb06e5b102704633d3d8565ea3}{canonical\+Name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\begin{DoxyCompactList}\small\item\em Destroys the encoding. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classPoco_1_1TextEncoding_aa199506fe71af0bb8bef4b735880ba48}{isA}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&encoding\+Name) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TextEncoding_ac61121651a57a139cd625b1d23a42d09}{Character\+Map}} \& \mbox{\hyperlink{classPoco_1_1TextEncoding_a7c3e03c076147725384737ec0a4471ae}{character\+Map}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} =0
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1TextEncoding_a318ff7d0d0dfc8419d2358bc68145531}{convert}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} unsigned char $\ast$bytes) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1TextEncoding_a4bc2b918f47f5f705b827418ab6d222f}{query\+Convert}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} unsigned char $\ast$bytes, int length) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1TextEncoding_abed5d214bf61c2596ccd5bf4dc80f89e}{sequence\+Length}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} unsigned char $\ast$bytes, int length) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual int \mbox{\hyperlink{classPoco_1_1TextEncoding_afd06a207525c358bd8e3ade92393acf5}{convert}} (int ch, unsigned char $\ast$bytes, int length) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} \& \mbox{\hyperlink{classPoco_1_1TextEncoding_a692cfa762f2ffe37998126dfb0ea4e3b}{by\+Name}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&encoding\+Name)
+\item 
+static \mbox{\hyperlink{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}{Text\+Encoding\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1TextEncoding_aa7bfe79c429b4db12209ce43511c25e8}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&encoding\+Name)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1TextEncoding_ac9f264cd9b8408f8f424559aac564969}{add}} (\mbox{\hyperlink{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}{Text\+Encoding\+::\+Ptr}} encoding)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1TextEncoding_a7b6fa47ee7d0db456a77ed7c30f97216}{add}} (\mbox{\hyperlink{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}{Text\+Encoding\+::\+Ptr}} encoding, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+static void \mbox{\hyperlink{classPoco_1_1TextEncoding_a14ffc4ec7564c0387e3835aa6fa07c25}{remove}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&encoding\+Name)
+\item 
+static \mbox{\hyperlink{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}{Text\+Encoding\+::\+Ptr}} \mbox{\hyperlink{classPoco_1_1TextEncoding_aa63fca18ba67b616ce17cf9448d497b4}{global}} (\mbox{\hyperlink{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}{Text\+Encoding\+::\+Ptr}} encoding)
+\item 
+static \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} \& \mbox{\hyperlink{classPoco_1_1TextEncoding_a3c13a27371bddf520833a119cd902fd7}{global}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \mbox{\hyperlink{classPoco_1_1TextEncoding_a61e68007a0df4782f2984b6fe43c4015}{G\+L\+O\+B\+AL}}
+\begin{DoxyCompactList}\small\item\em Return the current global \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Text\+Encoding\+Manager \& \mbox{\hyperlink{classPoco_1_1TextEncoding_abc5ef93c0fe78d3a9dba02a542b1f620}{manager}} ()
+\begin{DoxyCompactList}\small\item\em Name of the global \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}}, which is the empty string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract base class for implementing text encodings like U\+T\+F-\/8 or I\+SO 8859-\/1.
+
+Subclasses must override the \mbox{\hyperlink{classPoco_1_1TextEncoding_a128efbeb06e5b102704633d3d8565ea3}{canonical\+Name()}}, \mbox{\hyperlink{classPoco_1_1TextEncoding_aa199506fe71af0bb8bef4b735880ba48}{is\+A()}}, \mbox{\hyperlink{classPoco_1_1TextEncoding_a7c3e03c076147725384737ec0a4471ae}{character\+Map()}} and \mbox{\hyperlink{classPoco_1_1TextEncoding_a318ff7d0d0dfc8419d2358bc68145531}{convert()}} methods and need to be thread safe and stateless.
+
+\mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} also provides static member functions for managing mappings from encoding names to \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} objects. 
+
+Definition at line 33 of file Text\+Encoding.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_ac61121651a57a139cd625b1d23a42d09}\label{classPoco_1_1TextEncoding_ac61121651a57a139cd625b1d23a42d09}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!CharacterMap@{CharacterMap}}
+\index{CharacterMap@{CharacterMap}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{CharacterMap}{CharacterMap}}
+{\footnotesize\ttfamily typedef int Poco\+::\+Text\+Encoding\+::\+Character\+Map\mbox{[}256\mbox{]}}
+
+
+
+Definition at line 53 of file Text\+Encoding.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}\label{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1SharedPtr}{Shared\+Ptr}}$<$\mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}}$>$ \mbox{\hyperlink{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}{Poco\+::\+Text\+Encoding\+::\+Ptr}}}
+
+
+
+Definition at line 46 of file Text\+Encoding.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_a6060d644bf0391e65f34ffba2e677a1e}\label{classPoco_1_1TextEncoding_a6060d644bf0391e65f34ffba2e677a1e}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAX\_SEQUENCE\_LENGTH@{MAX\_SEQUENCE\_LENGTH}!Poco::TextEncoding@{Poco::TextEncoding}}\index{Poco::TextEncoding@{Poco::TextEncoding}!MAX\_SEQUENCE\_LENGTH@{MAX\_SEQUENCE\_LENGTH}}}\mbox{\Hypertarget{classPoco_1_1TextEncoding_a6060d644bf0391e65f34ffba2e677a1ea2add20503785de3c42ea25b166397b99}\label{classPoco_1_1TextEncoding_a6060d644bf0391e65f34ffba2e677a1ea2add20503785de3c42ea25b166397b99}} 
+M\+A\+X\+\_\+\+S\+E\+Q\+U\+E\+N\+C\+E\+\_\+\+L\+E\+N\+G\+TH&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 48 of file Text\+Encoding.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_aaf5550aac0c6cb4bdb32fdb1881457e0}\label{classPoco_1_1TextEncoding_aaf5550aac0c6cb4bdb32fdb1881457e0}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!````~TextEncoding@{$\sim$TextEncoding}}
+\index{````~TextEncoding@{$\sim$TextEncoding}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{$\sim$TextEncoding()}{~TextEncoding()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Text\+Encoding\+::$\sim$\+Text\+Encoding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The map\mbox{[}b\mbox{]} member gives information about byte sequences whose first byte is b. If map\mbox{[}b\mbox{]} is c where c is $>$= 0, then b by itself encodes the \mbox{\hyperlink{classPoco_1_1Unicode}{Unicode}} scalar value c. If map\mbox{[}b\mbox{]} is -\/1, then the byte sequence is malformed. If map\mbox{[}b\mbox{]} is -\/n, where n $>$= 2, then b is the first byte of an n-\/byte sequence that encodes a single \mbox{\hyperlink{classPoco_1_1Unicode}{Unicode}} scalar value. Byte sequences up to 6 bytes in length are supported. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_ac9f264cd9b8408f8f424559aac564969}\label{classPoco_1_1TextEncoding_ac9f264cd9b8408f8f424559aac564969}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!add@{add}}
+\index{add@{add}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+Text\+Encoding\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}{Text\+Encoding\+::\+Ptr}}}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a pointer to the \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} object for the given encoding\+Name, or N\+U\+LL if no such \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} object exists. \mbox{\Hypertarget{classPoco_1_1TextEncoding_a7b6fa47ee7d0db456a77ed7c30f97216}\label{classPoco_1_1TextEncoding_a7b6fa47ee7d0db456a77ed7c30f97216}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!add@{add}}
+\index{add@{add}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Poco\+::\+Text\+Encoding\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}{Text\+Encoding\+::\+Ptr}}}]{encoding,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Adds the given \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} to the table of text encodings, under the encoding\textquotesingle{}s canonical name.
+
+If an encoding with the given name is already registered, it is replaced. \mbox{\Hypertarget{classPoco_1_1TextEncoding_a692cfa762f2ffe37998126dfb0ea4e3b}\label{classPoco_1_1TextEncoding_a692cfa762f2ffe37998126dfb0ea4e3b}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!byName@{byName}}
+\index{byName@{byName}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{byName()}{byName()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}}\& Poco\+::\+Text\+Encoding\+::by\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{encoding\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Transform the \mbox{\hyperlink{classPoco_1_1Unicode}{Unicode}} character ch into the encoding\textquotesingle{}s byte sequence. The method returns the number of bytes used. The method must not use more than length characters. Bytes and length can also be null -\/ in this case only the number of bytes required to represent ch is returned. If the character cannot be converted, 0 is returned and the byte sequence remains unchanged. The default implementation simply returns 0. \mbox{\Hypertarget{classPoco_1_1TextEncoding_a128efbeb06e5b102704633d3d8565ea3}\label{classPoco_1_1TextEncoding_a128efbeb06e5b102704633d3d8565ea3}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!canonicalName@{canonicalName}}
+\index{canonicalName@{canonicalName}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{canonicalName()}{canonicalName()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Poco\+::\+Text\+Encoding\+::canonical\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the encoding. 
+
+
+
+Implemented in \mbox{\hyperlink{classPoco_1_1UTF16Encoding_a4ae946bca594efb9b3d04cffaedd556b}{Poco\+::\+U\+T\+F16\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF32Encoding_a49cd3913b988dba2d511d687b3fd7e19}{Poco\+::\+U\+T\+F32\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin2Encoding_a8d0e637b5737c99df5e1fe64601d5af6}{Poco\+::\+Latin2\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin9Encoding_a83876ebaac584760eb5adca15fd97768}{Poco\+::\+Latin9\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1250Encoding_a1a71901e6a03b0a17b97c255b2aa2340}{Poco\+::\+Windows1250\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1251Encoding_abd7b66d0162697368a471a6bdbcb5b78}{Poco\+::\+Windows1251\+Encoding}}, \mbox{\hyperlink{classPoco_1_1ASCIIEncoding_a8dd3e71660942b4278fc7499928d65fa}{Poco\+::\+A\+S\+C\+I\+I\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin1Encoding_aa23263e92931b0a1287f517ec5903a3c}{Poco\+::\+Latin1\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF8Encoding_af91565bf3736e43ab5637afd7536567f}{Poco\+::\+U\+T\+F8\+Encoding}}, and \mbox{\hyperlink{classPoco_1_1Windows1252Encoding_ac304932d5d2f38dcf40344e869e30121}{Poco\+::\+Windows1252\+Encoding}}.
+
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_a7c3e03c076147725384737ec0a4471ae}\label{classPoco_1_1TextEncoding_a7c3e03c076147725384737ec0a4471ae}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!characterMap@{characterMap}}
+\index{characterMap@{characterMap}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{characterMap()}{characterMap()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1TextEncoding_ac61121651a57a139cd625b1d23a42d09}{Character\+Map}}\& Poco\+::\+Text\+Encoding\+::character\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the given name is one of the names of this encoding. For example, the \char`\"{}\+I\+S\+O-\/8859-\/1\char`\"{} encoding is also known as \char`\"{}\+Latin-\/1\char`\"{}.
+
+Encoding name comparision are be case insensitive. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1UTF16Encoding_ac5b801122daf79dbe7ecaef0c2ba8d37}{Poco\+::\+U\+T\+F16\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF32Encoding_a8da66d84f88454c11b04b52f33afba72}{Poco\+::\+U\+T\+F32\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin2Encoding_ab6cf2545f5d136ef0dd80acc02cc5067}{Poco\+::\+Latin2\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin9Encoding_a134cdfd3785b5da2df6182601d559e49}{Poco\+::\+Latin9\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1250Encoding_aba0838662ff29dffc38d5ff2fc2570a3}{Poco\+::\+Windows1250\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1251Encoding_afe063d980ce54d9037e9fa0c35929427}{Poco\+::\+Windows1251\+Encoding}}, \mbox{\hyperlink{classPoco_1_1ASCIIEncoding_a5d91b111dbe774eee29436b42ceed259}{Poco\+::\+A\+S\+C\+I\+I\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin1Encoding_a096d712b67ea4d7e73ea8bb1cf60bc2c}{Poco\+::\+Latin1\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF8Encoding_ab2e8643cd0644fc49ea0336e36bcbdff}{Poco\+::\+U\+T\+F8\+Encoding}}, and \mbox{\hyperlink{classPoco_1_1Windows1252Encoding_a59b69917fc04c30b336eddee92f1ff96}{Poco\+::\+Windows1252\+Encoding}}.
+
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_a318ff7d0d0dfc8419d2358bc68145531}\label{classPoco_1_1TextEncoding_a318ff7d0d0dfc8419d2358bc68145531}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!convert@{convert}}
+\index{convert@{convert}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Text\+Encoding\+::convert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} unsigned char $\ast$}]{bytes }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the Character\+Map for the encoding. The Character\+Map should be kept in a static member. As \mbox{\hyperlink{classPoco_1_1TextEncoding_a7c3e03c076147725384737ec0a4471ae}{character\+Map()}} can be called frequently, it should be implemented in such a way that it just returns a static map. If the map is built at runtime, this should be done in the constructor. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1UTF16Encoding_aeea1e524b492f03c7078dc97c8165405}{Poco\+::\+U\+T\+F16\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF32Encoding_a103db0c9bcfeeee4b194b9154a9802e6}{Poco\+::\+U\+T\+F32\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin2Encoding_a1d88f2d11228af58df3b900add444853}{Poco\+::\+Latin2\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin9Encoding_aeadad256a68cec3aab57483b2eaa943a}{Poco\+::\+Latin9\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1250Encoding_ac66d2d3822b14a1b5fa5489a6b2a1337}{Poco\+::\+Windows1250\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1251Encoding_a7f338b69c9ff4c2cc5276b4016c394eb}{Poco\+::\+Windows1251\+Encoding}}, \mbox{\hyperlink{classPoco_1_1ASCIIEncoding_a3651d94f019a9a0e3706719c19238bce}{Poco\+::\+A\+S\+C\+I\+I\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin1Encoding_a8cd837ae557177dbccd8ae3b241c1d8e}{Poco\+::\+Latin1\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF8Encoding_a460bb1e6f935d5db8dbc6087f14c5724}{Poco\+::\+U\+T\+F8\+Encoding}}, and \mbox{\hyperlink{classPoco_1_1Windows1252Encoding_a5893a8708a9628ca9e6b71b9ef0d30ea}{Poco\+::\+Windows1252\+Encoding}}.
+
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_afd06a207525c358bd8e3ade92393acf5}\label{classPoco_1_1TextEncoding_afd06a207525c358bd8e3ade92393acf5}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!convert@{convert}}
+\index{convert@{convert}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Text\+Encoding\+::convert (\begin{DoxyParamCaption}\item[{int}]{ch,  }\item[{unsigned char $\ast$}]{bytes,  }\item[{int}]{length }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The sequence\+Length function is used to get the lenth of the sequence pointed by bytes. The length paramater should be greater or equal to the length of the sequence.
+
+The sequence\+Length function must return the lenght of the sequence represented by this byte sequence or a negative value -\/n if length is shorter than the sequence, where n is the number of byte requested to determine the length of the sequence. The length of the sequence might not be determined by the first byte, in which case the conversion becomes an iterative process as long as the result is negative\+: First call with length == 1 might return -\/2, Then a second call with lenght == 2 might return -\/4 Eventually, the third call with length == 4 should return 4. The default implementation returns 1. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1UTF16Encoding_aab2b720f8c5e151b5296093f8a226fee}{Poco\+::\+U\+T\+F16\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF32Encoding_a18b1517a296f8ba796cf1276ec26dbe8}{Poco\+::\+U\+T\+F32\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin2Encoding_a2b00aa4c5e0b0e9e72ca218699fa5e11}{Poco\+::\+Latin2\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin9Encoding_ac057eee502d8bf475477e317096c9b27}{Poco\+::\+Latin9\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1250Encoding_a24904d12e0d871956d2977a8a3fbd11b}{Poco\+::\+Windows1250\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1251Encoding_ab27d73909e0512aaae5c47b1243436cd}{Poco\+::\+Windows1251\+Encoding}}, \mbox{\hyperlink{classPoco_1_1ASCIIEncoding_aa978e770fd02e5b7b61f0393a14ede56}{Poco\+::\+A\+S\+C\+I\+I\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin1Encoding_ae995fbb7fb534708696e61324b6f879c}{Poco\+::\+Latin1\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF8Encoding_a488f6571f79805e72f4420a39bc987b4}{Poco\+::\+U\+T\+F8\+Encoding}}, and \mbox{\hyperlink{classPoco_1_1Windows1252Encoding_a0b743287bdf9ad13548a25c5ed87aac3}{Poco\+::\+Windows1252\+Encoding}}.
+
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_aa7bfe79c429b4db12209ce43511c25e8}\label{classPoco_1_1TextEncoding_aa7bfe79c429b4db12209ce43511c25e8}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!find@{find}}
+\index{find@{find}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}{Text\+Encoding\+::\+Ptr}} Poco\+::\+Text\+Encoding\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{encoding\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} object for the given encoding name.
+
+Throws a Not\+Found\+Exception if the encoding with given name is not available. \mbox{\Hypertarget{classPoco_1_1TextEncoding_a3c13a27371bddf520833a119cd902fd7}\label{classPoco_1_1TextEncoding_a3c13a27371bddf520833a119cd902fd7}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!global@{global}}
+\index{global@{global}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{global()}{global()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}}\& Poco\+::\+Text\+Encoding\+::global (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets global \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} object.
+
+This function sets the global encoding to the argument and returns a reference of the previous global encoding. \mbox{\Hypertarget{classPoco_1_1TextEncoding_aa63fca18ba67b616ce17cf9448d497b4}\label{classPoco_1_1TextEncoding_aa63fca18ba67b616ce17cf9448d497b4}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!global@{global}}
+\index{global@{global}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{global()}{global()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}{Text\+Encoding\+::\+Ptr}} Poco\+::\+Text\+Encoding\+::global (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1TextEncoding_ac3f8a98d778ac1dc2e6e6020f303d229}{Text\+Encoding\+::\+Ptr}}}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Removes the encoding with the given name from the table of text encodings. \mbox{\Hypertarget{classPoco_1_1TextEncoding_aa199506fe71af0bb8bef4b735880ba48}\label{classPoco_1_1TextEncoding_aa199506fe71af0bb8bef4b735880ba48}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!isA@{isA}}
+\index{isA@{isA}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{isA()}{isA()}}
+{\footnotesize\ttfamily virtual bool Poco\+::\+Text\+Encoding\+::isA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{encoding\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the canonical name of this encoding, e.\+g. \char`\"{}\+I\+S\+O-\/8859-\/1\char`\"{}. Encoding name comparisons are case insensitive. 
+
+Implemented in \mbox{\hyperlink{classPoco_1_1UTF16Encoding_a81b7aad2d6db3b7d097fa50fb66eed4f}{Poco\+::\+U\+T\+F16\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF32Encoding_a2ab3cc0bbf4f06e7e3db259b3f9a59a7}{Poco\+::\+U\+T\+F32\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin2Encoding_a94834dee014f90802e4e7f344d22442f}{Poco\+::\+Latin2\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin9Encoding_a5c5777676327068f73cf4fc275a21c9b}{Poco\+::\+Latin9\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1250Encoding_a848c8a7e63f5887b115a2c20d2bdeb65}{Poco\+::\+Windows1250\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1251Encoding_ae746307ca46528ba2bb278c14b4f4db1}{Poco\+::\+Windows1251\+Encoding}}, \mbox{\hyperlink{classPoco_1_1ASCIIEncoding_a851608ec089de84f2c1ce2cc3b35e0ba}{Poco\+::\+A\+S\+C\+I\+I\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin1Encoding_ad9ff7de0e7db8c7be9e7d3cc55050433}{Poco\+::\+Latin1\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF8Encoding_a727d510cbe03fafca5f6c890ae812c38}{Poco\+::\+U\+T\+F8\+Encoding}}, and \mbox{\hyperlink{classPoco_1_1Windows1252Encoding_ae22fc552a985570c47a1c166fc6afe2b}{Poco\+::\+Windows1252\+Encoding}}.
+
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_abc5ef93c0fe78d3a9dba02a542b1f620}\label{classPoco_1_1TextEncoding_abc5ef93c0fe78d3a9dba02a542b1f620}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!manager@{manager}}
+\index{manager@{manager}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{manager()}{manager()}}
+{\footnotesize\ttfamily static Text\+Encoding\+Manager\& Poco\+::\+Text\+Encoding\+::manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Name of the global \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}}, which is the empty string. 
+
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_a4bc2b918f47f5f705b827418ab6d222f}\label{classPoco_1_1TextEncoding_a4bc2b918f47f5f705b827418ab6d222f}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!queryConvert@{queryConvert}}
+\index{queryConvert@{queryConvert}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{queryConvert()}{queryConvert()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Text\+Encoding\+::query\+Convert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} unsigned char $\ast$}]{bytes,  }\item[{int}]{length }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The convert function is used to convert multibyte sequences; bytes will point to a byte sequence of n bytes where sequence\+Length(bytes, length) == -\/n, with length $>$= n.
+
+The convert function must return the \mbox{\hyperlink{classPoco_1_1Unicode}{Unicode}} scalar value represented by this byte sequence or -\/1 if the byte sequence is malformed. The default implementation returns (int) bytes\mbox{[}0\mbox{]}. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1UTF16Encoding_a7e0e0b47450c40a23ef5ee7a7574f1cd}{Poco\+::\+U\+T\+F16\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF32Encoding_aa27f5c5f0f6be2034abb6dfd4b733071}{Poco\+::\+U\+T\+F32\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin2Encoding_ad8834e34e5723af96df96fd9a16ebb4b}{Poco\+::\+Latin2\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin9Encoding_a981c7d44c686b056bf9f9f2b8a7b0ab3}{Poco\+::\+Latin9\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1250Encoding_a10bdec4acd0d29fdd6052216f4e82006}{Poco\+::\+Windows1250\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1251Encoding_a426d0bc034aa99f1d95329e9544d19a4}{Poco\+::\+Windows1251\+Encoding}}, \mbox{\hyperlink{classPoco_1_1ASCIIEncoding_aea9908c5824f3f28c86ccb23bd2bff49}{Poco\+::\+A\+S\+C\+I\+I\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin1Encoding_a183bd05f2575963b560a00a1d25635c7}{Poco\+::\+Latin1\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF8Encoding_a33b728fa2d1ecc533e1afc1047861441}{Poco\+::\+U\+T\+F8\+Encoding}}, and \mbox{\hyperlink{classPoco_1_1Windows1252Encoding_a8b403985641b2dfd29c9a545bb4909a7}{Poco\+::\+Windows1252\+Encoding}}.
+
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_a14ffc4ec7564c0387e3835aa6fa07c25}\label{classPoco_1_1TextEncoding_a14ffc4ec7564c0387e3835aa6fa07c25}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!remove@{remove}}
+\index{remove@{remove}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily static void Poco\+::\+Text\+Encoding\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{encoding\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Adds the given \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} to the table of text encodings, under the given name.
+
+If an encoding with the given name is already registered, it is replaced. \mbox{\Hypertarget{classPoco_1_1TextEncoding_abed5d214bf61c2596ccd5bf4dc80f89e}\label{classPoco_1_1TextEncoding_abed5d214bf61c2596ccd5bf4dc80f89e}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!sequenceLength@{sequenceLength}}
+\index{sequenceLength@{sequenceLength}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{sequenceLength()}{sequenceLength()}}
+{\footnotesize\ttfamily virtual int Poco\+::\+Text\+Encoding\+::sequence\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} unsigned char $\ast$}]{bytes,  }\item[{int}]{length }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The query\+Convert function is used to convert single byte characters or multibyte sequences; bytes will point to a byte sequence of length bytes.
+
+The query\+Convert function must return the \mbox{\hyperlink{classPoco_1_1Unicode}{Unicode}} scalar value represented by this byte sequence or -\/1 if the byte sequence is malformed or -\/n where n is number of bytes requested for the sequence, if lenght is shorter than the sequence. The length of the sequence might not be determined by the first byte, in which case the conversion becomes an iterative process\+: First call with length == 1 might return -\/2, Then a second call with lenght == 2 might return -\/4 Eventually, the third call with length == 4 should return either a \mbox{\hyperlink{classPoco_1_1Unicode}{Unicode}} scalar value, or -\/1 if the byte sequence is malformed. The default implementation returns (int) bytes\mbox{[}0\mbox{]}. 
+
+Reimplemented in \mbox{\hyperlink{classPoco_1_1UTF16Encoding_ad25fa5a3759dce1b4d03c24d9748da71}{Poco\+::\+U\+T\+F16\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF32Encoding_a0fd3880a464957e2b6c8c481a9cf16ee}{Poco\+::\+U\+T\+F32\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin2Encoding_a3328ce642d13e21ff584192d79639fac}{Poco\+::\+Latin2\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin9Encoding_ac29b5cd1128b02442c97f6e3c29a308d}{Poco\+::\+Latin9\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1250Encoding_a3c57fd50a8033dd823b1d0ce556cd15f}{Poco\+::\+Windows1250\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Windows1251Encoding_ab88408e8db8a9c74c40862d17a7b8430}{Poco\+::\+Windows1251\+Encoding}}, \mbox{\hyperlink{classPoco_1_1ASCIIEncoding_a2b46a0c8ab7d06c6c30909162f499c04}{Poco\+::\+A\+S\+C\+I\+I\+Encoding}}, \mbox{\hyperlink{classPoco_1_1Latin1Encoding_a7c537f09e0587f68cd705e59f517d12f}{Poco\+::\+Latin1\+Encoding}}, \mbox{\hyperlink{classPoco_1_1UTF8Encoding_ad607c55f2b48c645f51483453221802d}{Poco\+::\+U\+T\+F8\+Encoding}}, and \mbox{\hyperlink{classPoco_1_1Windows1252Encoding_a599d8ca635864a75a4ad98345a62b74c}{Poco\+::\+Windows1252\+Encoding}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1TextEncoding_a61e68007a0df4782f2984b6fe43c4015}\label{classPoco_1_1TextEncoding_a61e68007a0df4782f2984b6fe43c4015}} 
+\index{Poco::TextEncoding@{Poco::TextEncoding}!GLOBAL@{GLOBAL}}
+\index{GLOBAL@{GLOBAL}!Poco::TextEncoding@{Poco::TextEncoding}}
+\doxysubsubsection{\texorpdfstring{GLOBAL}{GLOBAL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string Poco\+::\+Text\+Encoding\+::\+G\+L\+O\+B\+AL\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return the current global \mbox{\hyperlink{classPoco_1_1TextEncoding}{Text\+Encoding}} object. 
+
+
+
+Definition at line 173 of file Text\+Encoding.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{TextEncoding_8h}{Text\+Encoding.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,240 @@
+\hypertarget{classPoco_1_1Random}{}\doxysection{Poco\+::Random Class Reference}
+\label{classPoco_1_1Random}\index{Poco::Random@{Poco::Random}}
+
+
+{\ttfamily \#include $<$Random.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5}{Type}} \{ \newline
+\mbox{\hyperlink{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5a118cacfbab61bd685e193e4a6ab12974}{R\+N\+D\+\_\+\+S\+T\+A\+T\+E\+\_\+0}} = 8, 
+\mbox{\hyperlink{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5aad36ca358150e9435eba4f4dff42cf5d}{R\+N\+D\+\_\+\+S\+T\+A\+T\+E\+\_\+32}} = 32, 
+\mbox{\hyperlink{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5ab8d22dfcb645e72dd4548ecd5a69f3d0}{R\+N\+D\+\_\+\+S\+T\+A\+T\+E\+\_\+64}} = 64, 
+\mbox{\hyperlink{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5a6d1baa183902c11c75d1a31d491168aa}{R\+N\+D\+\_\+\+S\+T\+A\+T\+E\+\_\+128}} = 128, 
+\newline
+\mbox{\hyperlink{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5a03fc8a35c2d676b5be688841b3ac2282}{R\+N\+D\+\_\+\+S\+T\+A\+T\+E\+\_\+256}} = 256
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Random_ab51f2efec7f7bc201ffec014a8ae9125}{Random}} (int state\+Size=256)
+\item 
+\mbox{\hyperlink{classPoco_1_1Random_aed8607fd1b09b9eba28506ae9a698ac1}{$\sim$\+Random}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Random_a32828c7ba7786ed06296271ec966f430}{seed}} (U\+Int32 seed)
+\begin{DoxyCompactList}\small\item\em Destroys the P\+R\+NG. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Random_a0e89d98144e97518cdcff3b5fed984f8}{seed}} ()
+\begin{DoxyCompactList}\small\item\em Seeds the pseudo random generator with the given seed. \end{DoxyCompactList}\item 
+U\+Int32 \mbox{\hyperlink{classPoco_1_1Random_a7c3e5c02a214985b912188c139de61ff}{next}} ()
+\item 
+U\+Int32 \mbox{\hyperlink{classPoco_1_1Random_a92ca17d59c6d48471af255e7794de552}{next}} (U\+Int32 n)
+\begin{DoxyCompactList}\small\item\em Returns the next 31-\/bit pseudo random number. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classPoco_1_1Random_ad53a933ea29de911183196c9a27c66b2}{next\+Char}} ()
+\begin{DoxyCompactList}\small\item\em Returns the next 31-\/bit pseudo random number modulo n. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1Random_a8b8193a990e186ef5bf6fc4eefb5cff1}{next\+Bool}} ()
+\begin{DoxyCompactList}\small\item\em Returns the next pseudo random character. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPoco_1_1Random_a988b5d0cb8d50f8c63a1e7547797917b}{next\+Float}} ()
+\begin{DoxyCompactList}\small\item\em Returns the next boolean pseudo random value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classPoco_1_1Random_a48350733703e6c3d80c692e0405c5cf9}{next\+Double}} ()
+\begin{DoxyCompactList}\small\item\em Returns the next float pseudo random number between 0.\+0 and 1.\+0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Random_a9cec34c3e37a4c502d499e1b21c92e39}{init\+State}} (U\+Int32 \mbox{\hyperlink{classPoco_1_1Random_a32828c7ba7786ed06296271ec966f430}{seed}}, char $\ast$arg\+\_\+state, Int32 n)
+\begin{DoxyCompactList}\small\item\em Returns the next double pseudo random number between 0.\+0 and 1.\+0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static U\+Int32 \mbox{\hyperlink{classPoco_1_1Random_a6d557d0c8b42bfa6bf8dec79192aff62}{good\+Rand}} (Int32 x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A better random number generator. \mbox{\hyperlink{classPoco_1_1Random}{Random}} implements a pseudo random number generator (P\+R\+NG). The P\+R\+NG is a nonlinear additive feedback random number generator using 256 bytes of state information and a period of up to 2$^\wedge$69. 
+
+Definition at line 59 of file Random.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5}\label{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5}} 
+\index{Poco::Random@{Poco::Random}!Type@{Type}}
+\index{Type@{Type}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5}{Poco\+::\+Random\+::\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RND\_STATE\_0@{RND\_STATE\_0}!Poco::Random@{Poco::Random}}\index{Poco::Random@{Poco::Random}!RND\_STATE\_0@{RND\_STATE\_0}}}\mbox{\Hypertarget{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5a118cacfbab61bd685e193e4a6ab12974}\label{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5a118cacfbab61bd685e193e4a6ab12974}} 
+R\+N\+D\+\_\+\+S\+T\+A\+T\+E\+\_\+0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RND\_STATE\_32@{RND\_STATE\_32}!Poco::Random@{Poco::Random}}\index{Poco::Random@{Poco::Random}!RND\_STATE\_32@{RND\_STATE\_32}}}\mbox{\Hypertarget{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5aad36ca358150e9435eba4f4dff42cf5d}\label{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5aad36ca358150e9435eba4f4dff42cf5d}} 
+R\+N\+D\+\_\+\+S\+T\+A\+T\+E\+\_\+32&linear congruential \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RND\_STATE\_64@{RND\_STATE\_64}!Poco::Random@{Poco::Random}}\index{Poco::Random@{Poco::Random}!RND\_STATE\_64@{RND\_STATE\_64}}}\mbox{\Hypertarget{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5ab8d22dfcb645e72dd4548ecd5a69f3d0}\label{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5ab8d22dfcb645e72dd4548ecd5a69f3d0}} 
+R\+N\+D\+\_\+\+S\+T\+A\+T\+E\+\_\+64&x$\ast$$\ast$7 + x$\ast$$\ast$3 + 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RND\_STATE\_128@{RND\_STATE\_128}!Poco::Random@{Poco::Random}}\index{Poco::Random@{Poco::Random}!RND\_STATE\_128@{RND\_STATE\_128}}}\mbox{\Hypertarget{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5a6d1baa183902c11c75d1a31d491168aa}\label{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5a6d1baa183902c11c75d1a31d491168aa}} 
+R\+N\+D\+\_\+\+S\+T\+A\+T\+E\+\_\+128&x$\ast$$\ast$15 + x + 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RND\_STATE\_256@{RND\_STATE\_256}!Poco::Random@{Poco::Random}}\index{Poco::Random@{Poco::Random}!RND\_STATE\_256@{RND\_STATE\_256}}}\mbox{\Hypertarget{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5a03fc8a35c2d676b5be688841b3ac2282}\label{classPoco_1_1Random_adf5b42b11d8c253fdab90bf47d82def5a03fc8a35c2d676b5be688841b3ac2282}} 
+R\+N\+D\+\_\+\+S\+T\+A\+T\+E\+\_\+256&x$\ast$$\ast$31 + x$\ast$$\ast$3 + 1 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 67 of file Random.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Random_ab51f2efec7f7bc201ffec014a8ae9125}\label{classPoco_1_1Random_ab51f2efec7f7bc201ffec014a8ae9125}} 
+\index{Poco::Random@{Poco::Random}!Random@{Random}}
+\index{Random@{Random}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{Random()}{Random()}}
+{\footnotesize\ttfamily Poco\+::\+Random\+::\+Random (\begin{DoxyParamCaption}\item[{int}]{state\+Size = {\ttfamily 256} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Random_aed8607fd1b09b9eba28506ae9a698ac1}\label{classPoco_1_1Random_aed8607fd1b09b9eba28506ae9a698ac1}} 
+\index{Poco::Random@{Poco::Random}!````~Random@{$\sim$Random}}
+\index{````~Random@{$\sim$Random}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{$\sim$Random()}{~Random()}}
+{\footnotesize\ttfamily Poco\+::\+Random\+::$\sim$\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates and initializes the P\+R\+NG. Specify either a state buffer size (8 to 256 bytes) or one of the Type values. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Random_a6d557d0c8b42bfa6bf8dec79192aff62}\label{classPoco_1_1Random_a6d557d0c8b42bfa6bf8dec79192aff62}} 
+\index{Poco::Random@{Poco::Random}!goodRand@{goodRand}}
+\index{goodRand@{goodRand}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{goodRand()}{goodRand()}}
+{\footnotesize\ttfamily static U\+Int32 Poco\+::\+Random\+::good\+Rand (\begin{DoxyParamCaption}\item[{Int32}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPoco_1_1Random_a9cec34c3e37a4c502d499e1b21c92e39}\label{classPoco_1_1Random_a9cec34c3e37a4c502d499e1b21c92e39}} 
+\index{Poco::Random@{Poco::Random}!initState@{initState}}
+\index{initState@{initState}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{initState()}{initState()}}
+{\footnotesize\ttfamily void Poco\+::\+Random\+::init\+State (\begin{DoxyParamCaption}\item[{U\+Int32}]{seed,  }\item[{char $\ast$}]{arg\+\_\+state,  }\item[{Int32}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the next double pseudo random number between 0.\+0 and 1.\+0. 
+
+\mbox{\Hypertarget{classPoco_1_1Random_a7c3e5c02a214985b912188c139de61ff}\label{classPoco_1_1Random_a7c3e5c02a214985b912188c139de61ff}} 
+\index{Poco::Random@{Poco::Random}!next@{next}}
+\index{next@{next}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily U\+Int32 Poco\+::\+Random\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Seeds the pseudo random generator with a random seed obtained from a \mbox{\hyperlink{classPoco_1_1RandomInputStream}{Random\+Input\+Stream}}. Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Random_a92ca17d59c6d48471af255e7794de552}\label{classPoco_1_1Random_a92ca17d59c6d48471af255e7794de552}} 
+\index{Poco::Random@{Poco::Random}!next@{next}}
+\index{next@{next}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily U\+Int32 Poco\+::\+Random\+::next (\begin{DoxyParamCaption}\item[{U\+Int32}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the next 31-\/bit pseudo random number. 
+
+
+
+Definition at line 134 of file Random.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Random_a8b8193a990e186ef5bf6fc4eefb5cff1}\label{classPoco_1_1Random_a8b8193a990e186ef5bf6fc4eefb5cff1}} 
+\index{Poco::Random@{Poco::Random}!nextBool@{nextBool}}
+\index{nextBool@{nextBool}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{nextBool()}{nextBool()}}
+{\footnotesize\ttfamily bool Poco\+::\+Random\+::next\+Bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the next pseudo random character. 
+
+
+
+Definition at line 146 of file Random.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Random_ad53a933ea29de911183196c9a27c66b2}\label{classPoco_1_1Random_ad53a933ea29de911183196c9a27c66b2}} 
+\index{Poco::Random@{Poco::Random}!nextChar@{nextChar}}
+\index{nextChar@{nextChar}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{nextChar()}{nextChar()}}
+{\footnotesize\ttfamily char Poco\+::\+Random\+::next\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the next 31-\/bit pseudo random number modulo n. 
+
+
+
+Definition at line 140 of file Random.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Random_a48350733703e6c3d80c692e0405c5cf9}\label{classPoco_1_1Random_a48350733703e6c3d80c692e0405c5cf9}} 
+\index{Poco::Random@{Poco::Random}!nextDouble@{nextDouble}}
+\index{nextDouble@{nextDouble}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{nextDouble()}{nextDouble()}}
+{\footnotesize\ttfamily double Poco\+::\+Random\+::next\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the next float pseudo random number between 0.\+0 and 1.\+0. 
+
+
+
+Definition at line 158 of file Random.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Random_a988b5d0cb8d50f8c63a1e7547797917b}\label{classPoco_1_1Random_a988b5d0cb8d50f8c63a1e7547797917b}} 
+\index{Poco::Random@{Poco::Random}!nextFloat@{nextFloat}}
+\index{nextFloat@{nextFloat}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{nextFloat()}{nextFloat()}}
+{\footnotesize\ttfamily float Poco\+::\+Random\+::next\+Float (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the next boolean pseudo random value. 
+
+
+
+Definition at line 152 of file Random.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1Random_a0e89d98144e97518cdcff3b5fed984f8}\label{classPoco_1_1Random_a0e89d98144e97518cdcff3b5fed984f8}} 
+\index{Poco::Random@{Poco::Random}!seed@{seed}}
+\index{seed@{seed}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{seed()}{seed()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Random\+::seed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Seeds the pseudo random generator with the given seed. 
+
+\mbox{\Hypertarget{classPoco_1_1Random_a32828c7ba7786ed06296271ec966f430}\label{classPoco_1_1Random_a32828c7ba7786ed06296271ec966f430}} 
+\index{Poco::Random@{Poco::Random}!seed@{seed}}
+\index{seed@{seed}!Poco::Random@{Poco::Random}}
+\doxysubsubsection{\texorpdfstring{seed()}{seed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Random\+::seed (\begin{DoxyParamCaption}\item[{U\+Int32}]{seed }\end{DoxyParamCaption})}
+
+
+
+Destroys the P\+R\+NG. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Random_8h}{Random.\+h}}\end{DoxyCompactItemize}

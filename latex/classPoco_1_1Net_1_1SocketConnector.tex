@@ -1,0 +1,274 @@
+\hypertarget{classPoco_1_1Net_1_1SocketConnector}{}\doxysection{Poco\+::Net\+::Socket\+Connector$<$ Service\+Handler $>$ Class Template Reference}
+\label{classPoco_1_1Net_1_1SocketConnector}\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+
+
+{\ttfamily \#include $<$Socket\+Connector.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_ab5fe50730b3e798c3dd423a31eaf5add}{Socket\+Connector}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&address)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a9b7d6fe690168ab82daf0dc686154411}{Socket\+Connector}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&address, \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a8ff94535206363744b2f930e6568d6e5}{reactor}})
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a3a68b6c365cd90390044f908c5ad2f90}{$\sim$\+Socket\+Connector}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a39c92ed2fce8bc2621bd7a6833b756f3}{register\+Connector}} (\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a8ff94535206363744b2f930e6568d6e5}{reactor}})
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a5b619fe915ad996bd58a269a22a9cd6f}{unregister\+Connector}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a12e00a6bcd972a757e65863a618a54a5}{on\+Readable}} (\mbox{\hyperlink{classPoco_1_1Net_1_1ReadableNotification}{Readable\+Notification}} $\ast$p\+Notification)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_ab23670beee6258fadda3924cfc52e461}{on\+Writable}} (\mbox{\hyperlink{classPoco_1_1Net_1_1WritableNotification}{Writable\+Notification}} $\ast$p\+Notification)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a5143983ae4a55e8cc6a035b3974ea72c}{on\+Connect}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a47a147e5e311816f8d387cf3111a05a2}{on\+Error}} (\mbox{\hyperlink{classPoco_1_1Net_1_1ErrorNotification}{Error\+Notification}} $\ast$p\+Notification)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Service\+Handler $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a5d73c2ca2b15c754a4672d2b5c107bf5}{create\+Service\+Handler}} ()
+\item 
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a4214bc6b6624991e92b9114144a511fc}{on\+Error}} (int error\+Code)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} $\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a8ff94535206363744b2f930e6568d6e5}{reactor}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} \& \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a4b9054c571abe04aa87ab8d475a09a43}{socket}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}}\textquotesingle{}s socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Service\+Handler$>$\newline
+class Poco\+::\+Net\+::\+Socket\+Connector$<$ Service\+Handler $>$}
+
+This class implements the Connector part of the Acceptor-\/\+Connector design pattern.
+
+The Acceptor-\/\+Connector pattern has been described in the book \char`\"{}\+Pattern Languages of Program Design 3\char`\"{}, edited by Robert Martin, Frank Buschmann and Dirk Riehle (Addison Wesley, 1997).
+
+The Acceptor-\/\+Connector design pattern decouples connection establishment and service initialization in a distributed system from the processing performed once a service is initialized. This decoupling is achieved with three components\+: Acceptors, Connectors and Service Handlers. The Connector actively establishes a connection with a remote server socket (usually managed by an Acceptor) and initializes a Service Handler to manage the connection.
+
+The \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}} sets up a \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}}, initiates a non-\/blocking connect operation and registers itself for \mbox{\hyperlink{classPoco_1_1Net_1_1ReadableNotification}{Readable\+Notification}}, \mbox{\hyperlink{classPoco_1_1Net_1_1WritableNotification}{Writable\+Notification}} and \mbox{\hyperlink{classPoco_1_1Net_1_1ErrorNotification}{Error\+Notification}}. \mbox{\hyperlink{classPoco_1_1Net_1_1ReadableNotification}{Readable\+Notification}} or \mbox{\hyperlink{classPoco_1_1Net_1_1WritableNotification}{Writable\+Notification}} denote the successful establishment of the connection.
+
+When the \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} becomes readable or writeable, the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}} creates a Service\+Handler to service the connection and unregisters itself.
+
+In case of an error (\mbox{\hyperlink{classPoco_1_1Net_1_1ErrorNotification}{Error\+Notification}}), the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}} unregisters itself and calls the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a47a147e5e311816f8d387cf3111a05a2}{on\+Error()}} method, which can be overridden by subclasses to perform custom error handling.
+
+The Service\+Handler class must provide a constructor that takes a \mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}} and a \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} as arguments, e.\+g.\+: My\+Service\+Handler(const Stream\+Socket\& socket, Service\+Reactor\& reactor)
+
+When the Service\+Handler is done, it must destroy itself.
+
+Subclasses can override the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector_a5d73c2ca2b15c754a4672d2b5c107bf5}{create\+Service\+Handler()}} factory method if special steps are necessary to create a Service\+Handler object. 
+
+Definition at line 35 of file Socket\+Connector.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_ab5fe50730b3e798c3dd423a31eaf5add}\label{classPoco_1_1Net_1_1SocketConnector_ab5fe50730b3e798c3dd423a31eaf5add}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!SocketConnector@{SocketConnector}}
+\index{SocketConnector@{SocketConnector}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{SocketConnector()}{SocketConnector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::\mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 76 of file Socket\+Connector.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_a9b7d6fe690168ab82daf0dc686154411}\label{classPoco_1_1Net_1_1SocketConnector_a9b7d6fe690168ab82daf0dc686154411}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!SocketConnector@{SocketConnector}}
+\index{SocketConnector@{SocketConnector}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{SocketConnector()}{SocketConnector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::\mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketAddress}{Socket\+Address}} \&}]{address,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} \&}]{reactor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates an acceptor, using the given \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}}. The \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}} registers itself with the given \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}. 
+
+Definition at line 83 of file Socket\+Connector.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_a3a68b6c365cd90390044f908c5ad2f90}\label{classPoco_1_1Net_1_1SocketConnector_a3a68b6c365cd90390044f908c5ad2f90}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!````~SocketConnector@{$\sim$SocketConnector}}
+\index{````~SocketConnector@{$\sim$SocketConnector}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$SocketConnector()}{~SocketConnector()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+virtual \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}}. 
+
+
+
+Definition at line 92 of file Socket\+Connector.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_a5d73c2ca2b15c754a4672d2b5c107bf5}\label{classPoco_1_1Net_1_1SocketConnector_a5d73c2ca2b15c754a4672d2b5c107bf5}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!createServiceHandler@{createServiceHandler}}
+\index{createServiceHandler@{createServiceHandler}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{createServiceHandler()}{createServiceHandler()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+virtual Service\+Handler$\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::create\+Service\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Create and initialize a new Service\+Handler instance.
+
+Subclasses can override this method. 
+
+Definition at line 171 of file Socket\+Connector.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_a5143983ae4a55e8cc6a035b3974ea72c}\label{classPoco_1_1Net_1_1SocketConnector_a5143983ae4a55e8cc6a035b3974ea72c}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!onConnect@{onConnect}}
+\index{onConnect@{onConnect}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{onConnect()}{onConnect()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::on\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 156 of file Socket\+Connector.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_a47a147e5e311816f8d387cf3111a05a2}\label{classPoco_1_1Net_1_1SocketConnector_a47a147e5e311816f8d387cf3111a05a2}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!onError@{onError}}
+\index{onError@{onError}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{onError()}{onError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::on\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1ErrorNotification}{Error\+Notification}} $\ast$}]{p\+Notification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 163 of file Socket\+Connector.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_a4214bc6b6624991e92b9114144a511fc}\label{classPoco_1_1Net_1_1SocketConnector_a4214bc6b6624991e92b9114144a511fc}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!onError@{onError}}
+\index{onError@{onError}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{onError()}{onError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::on\+Error (\begin{DoxyParamCaption}\item[{int}]{error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called when the socket cannot be connected.
+
+Subclasses can override this method. 
+
+Definition at line 179 of file Socket\+Connector.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_a12e00a6bcd972a757e65863a618a54a5}\label{classPoco_1_1Net_1_1SocketConnector_a12e00a6bcd972a757e65863a618a54a5}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!onReadable@{onReadable}}
+\index{onReadable@{onReadable}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{onReadable()}{onReadable()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::on\+Readable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1ReadableNotification}{Readable\+Notification}} $\ast$}]{p\+Notification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 135 of file Socket\+Connector.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_ab23670beee6258fadda3924cfc52e461}\label{classPoco_1_1Net_1_1SocketConnector_ab23670beee6258fadda3924cfc52e461}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!onWritable@{onWritable}}
+\index{onWritable@{onWritable}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{onWritable()}{onWritable()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::on\+Writable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1WritableNotification}{Writable\+Notification}} $\ast$}]{p\+Notification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 150 of file Socket\+Connector.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_a8ff94535206363744b2f930e6568d6e5}\label{classPoco_1_1Net_1_1SocketConnector_a8ff94535206363744b2f930e6568d6e5}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!reactor@{reactor}}
+\index{reactor@{reactor}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{reactor()}{reactor()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}$\ast$ \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::reactor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns a pointer to the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} where this \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}} is registered.
+
+The pointer may be null. 
+
+Definition at line 186 of file Socket\+Connector.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_a39c92ed2fce8bc2621bd7a6833b756f3}\label{classPoco_1_1Net_1_1SocketConnector_a39c92ed2fce8bc2621bd7a6833b756f3}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!registerConnector@{registerConnector}}
+\index{registerConnector@{registerConnector}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{registerConnector()}{registerConnector()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::register\+Connector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}} \&}]{reactor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Registers the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}} with a \mbox{\hyperlink{classPoco_1_1Net_1_1SocketReactor}{Socket\+Reactor}}.
+
+A subclass can override this and, for example, also register an event handler for a timeout event.
+
+The overriding method must call the baseclass implementation first. 
+
+Definition at line 105 of file Socket\+Connector.\+h.
+
+Here is the call graph for this function\+:
+% FIG 13
+Here is the caller graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_a4b9054c571abe04aa87ab8d475a09a43}\label{classPoco_1_1Net_1_1SocketConnector_a4b9054c571abe04aa87ab8d475a09a43}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!socket@{socket}}
+\index{socket@{socket}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{socket()}{socket()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+\mbox{\hyperlink{classPoco_1_1Net_1_1StreamSocket}{Stream\+Socket}}\& \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returns a reference to the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}}\textquotesingle{}s socket. 
+
+
+
+Definition at line 195 of file Socket\+Connector.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1SocketConnector_a5b619fe915ad996bd58a269a22a9cd6f}\label{classPoco_1_1Net_1_1SocketConnector_a5b619fe915ad996bd58a269a22a9cd6f}} 
+\index{Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}!unregisterConnector@{unregisterConnector}}
+\index{unregisterConnector@{unregisterConnector}!Poco::Net::SocketConnector$<$ ServiceHandler $>$@{Poco::Net::SocketConnector$<$ ServiceHandler $>$}}
+\doxysubsubsection{\texorpdfstring{unregisterConnector()}{unregisterConnector()}}
+{\footnotesize\ttfamily template$<$class Service\+Handler $>$ \\
+virtual void \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Poco\+::\+Net\+::\+Socket\+Connector}}$<$ Service\+Handler $>$\+::unregister\+Connector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Unregisters the \mbox{\hyperlink{classPoco_1_1Net_1_1SocketConnector}{Socket\+Connector}}.
+
+A subclass can override this and, for example, also unregister its event handler for a timeout event.
+
+The overriding method must call the baseclass implementation first. 
+
+Definition at line 119 of file Socket\+Connector.\+h.
+
+Here is the call graph for this function\+:
+% FIG 15
+Here is the caller graph for this function\+:
+% FIG 16
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{SocketConnector_8h}{Socket\+Connector.\+h}}\end{DoxyCompactItemize}

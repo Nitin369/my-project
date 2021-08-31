@@ -1,0 +1,107 @@
+\hypertarget{classPoco_1_1TeeStreamBuf}{}\doxysection{Poco\+::Tee\+Stream\+Buf Class Reference}
+\label{classPoco_1_1TeeStreamBuf}\index{Poco::TeeStreamBuf@{Poco::TeeStreamBuf}}
+
+
+{\ttfamily \#include $<$Tee\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Tee\+Stream\+Buf\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Tee\+Stream\+Buf\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1TeeStreamBuf_a004012846e44095d7901f55523454e56}{Tee\+Stream\+Buf}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1TeeStreamBuf_a382880066c5eb510d09123fdde788296}{Tee\+Stream\+Buf}} (std\+::istream \&istr)
+\item 
+\mbox{\hyperlink{classPoco_1_1TeeStreamBuf_aa24397b7758e2c83f48858646ab102c9}{Tee\+Stream\+Buf}} (std\+::ostream \&ostr)
+\item 
+\mbox{\hyperlink{classPoco_1_1TeeStreamBuf_a14f0ba3bded2512b3ced2eda606e64ec}{$\sim$\+Tee\+Stream\+Buf}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1TeeStreamBuf_a35c665d487b24aef8cbc84390f8d989c}{add\+Stream}} (std\+::ostream \&ostr)
+\begin{DoxyCompactList}\small\item\em Destroys the Counting\+Stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPoco_1_1TeeStreamBuf_a8f0c08757642c17a8fe0832c97098021}{read\+From\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Adds the given output stream. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1TeeStreamBuf_ab90aa9890754b5cc02bf7719186cffc8}{write\+To\+Device}} (char c)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This stream buffer copies all data written to or read from it to one or multiple output streams. 
+
+Definition at line 33 of file Tee\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1TeeStreamBuf_a004012846e44095d7901f55523454e56}\label{classPoco_1_1TeeStreamBuf_a004012846e44095d7901f55523454e56}} 
+\index{Poco::TeeStreamBuf@{Poco::TeeStreamBuf}!TeeStreamBuf@{TeeStreamBuf}}
+\index{TeeStreamBuf@{TeeStreamBuf}!Poco::TeeStreamBuf@{Poco::TeeStreamBuf}}
+\doxysubsubsection{\texorpdfstring{TeeStreamBuf()}{TeeStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Tee\+Stream\+Buf\+::\+Tee\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1TeeStreamBuf_a382880066c5eb510d09123fdde788296}\label{classPoco_1_1TeeStreamBuf_a382880066c5eb510d09123fdde788296}} 
+\index{Poco::TeeStreamBuf@{Poco::TeeStreamBuf}!TeeStreamBuf@{TeeStreamBuf}}
+\index{TeeStreamBuf@{TeeStreamBuf}!Poco::TeeStreamBuf@{Poco::TeeStreamBuf}}
+\doxysubsubsection{\texorpdfstring{TeeStreamBuf()}{TeeStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Tee\+Stream\+Buf\+::\+Tee\+Stream\+Buf (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})}
+
+Creates an unconnected \mbox{\hyperlink{classPoco_1_1CountingStreamBuf}{Counting\+Stream\+Buf}}. Use \mbox{\hyperlink{classPoco_1_1TeeStreamBuf_a35c665d487b24aef8cbc84390f8d989c}{add\+Stream()}} to attach output streams. \mbox{\Hypertarget{classPoco_1_1TeeStreamBuf_aa24397b7758e2c83f48858646ab102c9}\label{classPoco_1_1TeeStreamBuf_aa24397b7758e2c83f48858646ab102c9}} 
+\index{Poco::TeeStreamBuf@{Poco::TeeStreamBuf}!TeeStreamBuf@{TeeStreamBuf}}
+\index{TeeStreamBuf@{TeeStreamBuf}!Poco::TeeStreamBuf@{Poco::TeeStreamBuf}}
+\doxysubsubsection{\texorpdfstring{TeeStreamBuf()}{TeeStreamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Tee\+Stream\+Buf\+::\+Tee\+Stream\+Buf (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1CountingStreamBuf}{Counting\+Stream\+Buf}} and connects it to the given input stream. \mbox{\Hypertarget{classPoco_1_1TeeStreamBuf_a14f0ba3bded2512b3ced2eda606e64ec}\label{classPoco_1_1TeeStreamBuf_a14f0ba3bded2512b3ced2eda606e64ec}} 
+\index{Poco::TeeStreamBuf@{Poco::TeeStreamBuf}!````~TeeStreamBuf@{$\sim$TeeStreamBuf}}
+\index{````~TeeStreamBuf@{$\sim$TeeStreamBuf}!Poco::TeeStreamBuf@{Poco::TeeStreamBuf}}
+\doxysubsubsection{\texorpdfstring{$\sim$TeeStreamBuf()}{~TeeStreamBuf()}}
+{\footnotesize\ttfamily Poco\+::\+Tee\+Stream\+Buf\+::$\sim$\+Tee\+Stream\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1CountingStreamBuf}{Counting\+Stream\+Buf}} and connects it to the given output stream. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1TeeStreamBuf_a35c665d487b24aef8cbc84390f8d989c}\label{classPoco_1_1TeeStreamBuf_a35c665d487b24aef8cbc84390f8d989c}} 
+\index{Poco::TeeStreamBuf@{Poco::TeeStreamBuf}!addStream@{addStream}}
+\index{addStream@{addStream}!Poco::TeeStreamBuf@{Poco::TeeStreamBuf}}
+\doxysubsubsection{\texorpdfstring{addStream()}{addStream()}}
+{\footnotesize\ttfamily void Poco\+::\+Tee\+Stream\+Buf\+::add\+Stream (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption})}
+
+
+
+Destroys the Counting\+Stream. 
+
+\mbox{\Hypertarget{classPoco_1_1TeeStreamBuf_a8f0c08757642c17a8fe0832c97098021}\label{classPoco_1_1TeeStreamBuf_a8f0c08757642c17a8fe0832c97098021}} 
+\index{Poco::TeeStreamBuf@{Poco::TeeStreamBuf}!readFromDevice@{readFromDevice}}
+\index{readFromDevice@{readFromDevice}!Poco::TeeStreamBuf@{Poco::TeeStreamBuf}}
+\doxysubsubsection{\texorpdfstring{readFromDevice()}{readFromDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Tee\+Stream\+Buf\+::read\+From\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Adds the given output stream. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classPoco_1_1BasicUnbufferedStreamBuf}{Poco\+::\+Basic\+Unbuffered\+Stream\+Buf$<$ ch, tr $>$}}.
+
+\mbox{\Hypertarget{classPoco_1_1TeeStreamBuf_ab90aa9890754b5cc02bf7719186cffc8}\label{classPoco_1_1TeeStreamBuf_ab90aa9890754b5cc02bf7719186cffc8}} 
+\index{Poco::TeeStreamBuf@{Poco::TeeStreamBuf}!writeToDevice@{writeToDevice}}
+\index{writeToDevice@{writeToDevice}!Poco::TeeStreamBuf@{Poco::TeeStreamBuf}}
+\doxysubsubsection{\texorpdfstring{writeToDevice()}{writeToDevice()}}
+{\footnotesize\ttfamily int Poco\+::\+Tee\+Stream\+Buf\+::write\+To\+Device (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{TeeStream_8h}{Tee\+Stream.\+h}}\end{DoxyCompactItemize}

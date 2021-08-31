@@ -1,0 +1,230 @@
+\hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4}{}\doxysection{Poco\+::Delegate$<$ T\+Obj, void, false $>$ Class Template Reference}
+\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4}\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+
+
+{\ttfamily \#include $<$Delegate.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Delegate$<$ T\+Obj, void, false $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Delegate$<$ T\+Obj, void, false $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(T\+Obj\+::$\ast$ \mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_af29d54d2feed1d55b9295112cd055939}{Notify\+Method}}) ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_aadc40cc39f73e961f0f39dd668bb149b}{Delegate}} (T\+Obj $\ast$obj, \mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_af29d54d2feed1d55b9295112cd055939}{Notify\+Method}} method)
+\item 
+\mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a7b127e43b75e2c7af03bdd406d85946e}{Delegate}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Delegate}{Delegate}} \&\mbox{\hyperlink{namespacePoco_a3c92b935465d543414d807c7884396ff}{delegate}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a5ee4fe6406102cea164b755ef1ebe040}{$\sim$\+Delegate}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Delegate}{Delegate}} \& \mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a666cd3855b3b6f26dc94f2b1776ccfbd}{operator=}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Delegate}{Delegate}} \&\mbox{\hyperlink{namespacePoco_a3c92b935465d543414d807c7884396ff}{delegate}})
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a035c2762c5fda3c815a11cd50d2ff6fd}{notify}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$)
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a7ada7809bc1d721d5ed05a57fb74deb6}{equals}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}$<$ void $>$ \&other) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}$<$ void $>$ $\ast$ \mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a494accf39de20f56fbcc668c5e2dbe39}{clone}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Compares the \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}} with the other one for equality. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_ae47282656081425edb1946f3588cba49}{disable}} ()
+\begin{DoxyCompactList}\small\item\em Returns a deep copy of the \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\+Obj $\ast$ \mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a38d1802470c388010130455bb1932b06}{\+\_\+receiver\+Object}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_af29d54d2feed1d55b9295112cd055939}{Notify\+Method}} \mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a464a4e5767b7df96190b9d34b1e551b9}{\+\_\+receiver\+Method}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}} \mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a6f3d770e6c2e3291989884d35366efd0}{\+\_\+mutex}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T\+Obj$>$\newline
+class Poco\+::\+Delegate$<$ T\+Obj, void, false $>$}
+
+
+
+Definition at line 317 of file Delegate.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_af29d54d2feed1d55b9295112cd055939}\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_af29d54d2feed1d55b9295112cd055939}} 
+\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}!NotifyMethod@{NotifyMethod}}
+\index{NotifyMethod@{NotifyMethod}!Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+\doxysubsubsection{\texorpdfstring{NotifyMethod}{NotifyMethod}}
+{\footnotesize\ttfamily template$<$class T\+Obj $>$ \\
+typedef void(T\+Obj\+::$\ast$ \mbox{\hyperlink{classPoco_1_1Delegate}{Poco\+::\+Delegate}}$<$ T\+Obj, void, false $>$\+::Notify\+Method) ()}
+
+
+
+Definition at line 320 of file Delegate.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_aadc40cc39f73e961f0f39dd668bb149b}\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_aadc40cc39f73e961f0f39dd668bb149b}} 
+\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}!Delegate@{Delegate}}
+\index{Delegate@{Delegate}!Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+\doxysubsubsection{\texorpdfstring{Delegate()}{Delegate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Obj $>$ \\
+\mbox{\hyperlink{classPoco_1_1Delegate}{Poco\+::\+Delegate}}$<$ T\+Obj, void, false $>$\+::\mbox{\hyperlink{classPoco_1_1Delegate}{Delegate}} (\begin{DoxyParamCaption}\item[{T\+Obj $\ast$}]{obj,  }\item[{\mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_af29d54d2feed1d55b9295112cd055939}{Notify\+Method}}}]{method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 322 of file Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a7b127e43b75e2c7af03bdd406d85946e}\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a7b127e43b75e2c7af03bdd406d85946e}} 
+\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}!Delegate@{Delegate}}
+\index{Delegate@{Delegate}!Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+\doxysubsubsection{\texorpdfstring{Delegate()}{Delegate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Obj $>$ \\
+\mbox{\hyperlink{classPoco_1_1Delegate}{Poco\+::\+Delegate}}$<$ T\+Obj, void, false $>$\+::\mbox{\hyperlink{classPoco_1_1Delegate}{Delegate}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Delegate}{Delegate}}$<$ T\+Obj, void, false $>$ \&}]{delegate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 328 of file Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a5ee4fe6406102cea164b755ef1ebe040}\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a5ee4fe6406102cea164b755ef1ebe040}} 
+\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}!````~Delegate@{$\sim$Delegate}}
+\index{````~Delegate@{$\sim$Delegate}!Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Delegate()}{~Delegate()}}
+{\footnotesize\ttfamily template$<$class T\+Obj $>$ \\
+\mbox{\hyperlink{classPoco_1_1Delegate}{Poco\+::\+Delegate}}$<$ T\+Obj, void, false $>$\+::$\sim$\mbox{\hyperlink{classPoco_1_1Delegate}{Delegate}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 335 of file Delegate.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a494accf39de20f56fbcc668c5e2dbe39}\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a494accf39de20f56fbcc668c5e2dbe39}} 
+\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}!clone@{clone}}
+\index{clone@{clone}!Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class T\+Obj $>$ \\
+\mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}$<$void$>$$\ast$ \mbox{\hyperlink{classPoco_1_1Delegate}{Poco\+::\+Delegate}}$<$ T\+Obj, void, false $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Compares the \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}} with the other one for equality. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractDelegate_3_01void_01_4_a6c99f86e2807d9ec980b9a1cd887e101}{Poco\+::\+Abstract\+Delegate$<$ void $>$}}.
+
+
+
+Definition at line 366 of file Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_ae47282656081425edb1946f3588cba49}\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_ae47282656081425edb1946f3588cba49}} 
+\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}!disable@{disable}}
+\index{disable@{disable}!Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily template$<$class T\+Obj $>$ \\
+void \mbox{\hyperlink{classPoco_1_1Delegate}{Poco\+::\+Delegate}}$<$ T\+Obj, void, false $>$\+::disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns a deep copy of the \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractDelegate_3_01void_01_4_a5298e8481e8c29c255f7be494eab9b0c}{Poco\+::\+Abstract\+Delegate$<$ void $>$}}.
+
+
+
+Definition at line 371 of file Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a7ada7809bc1d721d5ed05a57fb74deb6}\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a7ada7809bc1d721d5ed05a57fb74deb6}} 
+\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}!equals@{equals}}
+\index{equals@{equals}!Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily template$<$class T\+Obj $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Delegate}{Poco\+::\+Delegate}}$<$ T\+Obj, void, false $>$\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1AbstractDelegate}{Abstract\+Delegate}}$<$ void $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 360 of file Delegate.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a035c2762c5fda3c815a11cd50d2ff6fd}\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a035c2762c5fda3c815a11cd50d2ff6fd}} 
+\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}!notify@{notify}}
+\index{notify@{notify}!Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily template$<$class T\+Obj $>$ \\
+bool \mbox{\hyperlink{classPoco_1_1Delegate}{Poco\+::\+Delegate}}$<$ T\+Obj, void, false $>$\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} void $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1AbstractDelegate_3_01void_01_4_ac8c9f27bb492da593093df42a8d46231}{Poco\+::\+Abstract\+Delegate$<$ void $>$}}.
+
+
+
+Definition at line 349 of file Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a666cd3855b3b6f26dc94f2b1776ccfbd}\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a666cd3855b3b6f26dc94f2b1776ccfbd}} 
+\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T\+Obj $>$ \\
+\mbox{\hyperlink{classPoco_1_1Delegate}{Delegate}}\& \mbox{\hyperlink{classPoco_1_1Delegate}{Poco\+::\+Delegate}}$<$ T\+Obj, void, false $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Delegate}{Delegate}}$<$ T\+Obj, void, false $>$ \&}]{delegate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 339 of file Delegate.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a6f3d770e6c2e3291989884d35366efd0}\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a6f3d770e6c2e3291989884d35366efd0}} 
+\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}!\_mutex@{\_mutex}}
+\index{\_mutex@{\_mutex}!Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+\doxysubsubsection{\texorpdfstring{\_mutex}{\_mutex}}
+{\footnotesize\ttfamily template$<$class T\+Obj $>$ \\
+\mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}} \mbox{\hyperlink{classPoco_1_1Delegate}{Poco\+::\+Delegate}}$<$ T\+Obj, void, false $>$\+::\+\_\+mutex\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 380 of file Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a464a4e5767b7df96190b9d34b1e551b9}\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a464a4e5767b7df96190b9d34b1e551b9}} 
+\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}!\_receiverMethod@{\_receiverMethod}}
+\index{\_receiverMethod@{\_receiverMethod}!Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+\doxysubsubsection{\texorpdfstring{\_receiverMethod}{\_receiverMethod}}
+{\footnotesize\ttfamily template$<$class T\+Obj $>$ \\
+\mbox{\hyperlink{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_af29d54d2feed1d55b9295112cd055939}{Notify\+Method}} \mbox{\hyperlink{classPoco_1_1Delegate}{Poco\+::\+Delegate}}$<$ T\+Obj, void, false $>$\+::\+\_\+receiver\+Method\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 379 of file Delegate.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a38d1802470c388010130455bb1932b06}\label{classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4_a38d1802470c388010130455bb1932b06}} 
+\index{Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}!\_receiverObject@{\_receiverObject}}
+\index{\_receiverObject@{\_receiverObject}!Poco::Delegate$<$ TObj, void, false $>$@{Poco::Delegate$<$ TObj, void, false $>$}}
+\doxysubsubsection{\texorpdfstring{\_receiverObject}{\_receiverObject}}
+{\footnotesize\ttfamily template$<$class T\+Obj $>$ \\
+T\+Obj$\ast$ \mbox{\hyperlink{classPoco_1_1Delegate}{Poco\+::\+Delegate}}$<$ T\+Obj, void, false $>$\+::\+\_\+receiver\+Object\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 378 of file Delegate.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{Delegate_8h}{Delegate.\+h}}\end{DoxyCompactItemize}

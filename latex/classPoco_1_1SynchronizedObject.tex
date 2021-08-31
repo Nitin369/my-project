@@ -1,0 +1,171 @@
+\hypertarget{classPoco_1_1SynchronizedObject}{}\doxysection{Poco\+::Synchronized\+Object Class Reference}
+\label{classPoco_1_1SynchronizedObject}\index{Poco::SynchronizedObject@{Poco::SynchronizedObject}}
+
+
+{\ttfamily \#include $<$Synchronized\+Object.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1ScopedLock}{Poco\+::\+Scoped\+Lock}}$<$ \mbox{\hyperlink{classPoco_1_1SynchronizedObject}{Synchronized\+Object}} $>$ \mbox{\hyperlink{classPoco_1_1SynchronizedObject_aa5ff409f2ead76f373913a5f433535b3}{Scoped\+Lock}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1SynchronizedObject_a9593bf2162cc52fd99ee41b3809d6876}{Synchronized\+Object}} ()
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1SynchronizedObject_ab8ad08322b9441a9e59dc7f9b6868be3}{$\sim$\+Synchronized\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Creates the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1SynchronizedObject_a8dc4750698a640b3508281059fab46e9}{lock}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1SynchronizedObject_a62611b93195531ea18bf8479707ef994}{try\+Lock}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1SynchronizedObject_a53d7ac5b1bbb4226f9f468594c98b6d1}{unlock}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1SynchronizedObject_a0812822a50f1b3bdf5bfff61d027a73d}{notify}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1SynchronizedObject_aafdb756036b9954a17f39f647be2e3e1}{wait}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1SynchronizedObject_a5c78a6a04f47ec9463e4481519ecc0cb}{wait}} (long milliseconds) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Waits for the object to become signalled. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoco_1_1SynchronizedObject_ac5403c7e078a330da055fc7a736f8c7e}{try\+Wait}} (long milliseconds) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class aggregates a \mbox{\hyperlink{classPoco_1_1Mutex}{Mutex}} and an \mbox{\hyperlink{classPoco_1_1Event}{Event}} and can act as a base class for all objects requiring synchronization in a multithreaded scenario. 
+
+Definition at line 31 of file Synchronized\+Object.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1SynchronizedObject_aa5ff409f2ead76f373913a5f433535b3}\label{classPoco_1_1SynchronizedObject_aa5ff409f2ead76f373913a5f433535b3}} 
+\index{Poco::SynchronizedObject@{Poco::SynchronizedObject}!ScopedLock@{ScopedLock}}
+\index{ScopedLock@{ScopedLock}!Poco::SynchronizedObject@{Poco::SynchronizedObject}}
+\doxysubsubsection{\texorpdfstring{ScopedLock}{ScopedLock}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1ScopedLock}{Poco\+::\+Scoped\+Lock}}$<$\mbox{\hyperlink{classPoco_1_1SynchronizedObject}{Synchronized\+Object}}$>$ \mbox{\hyperlink{classPoco_1_1SynchronizedObject_aa5ff409f2ead76f373913a5f433535b3}{Poco\+::\+Synchronized\+Object\+::\+Scoped\+Lock}}}
+
+
+
+Definition at line 38 of file Synchronized\+Object.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1SynchronizedObject_a9593bf2162cc52fd99ee41b3809d6876}\label{classPoco_1_1SynchronizedObject_a9593bf2162cc52fd99ee41b3809d6876}} 
+\index{Poco::SynchronizedObject@{Poco::SynchronizedObject}!SynchronizedObject@{SynchronizedObject}}
+\index{SynchronizedObject@{SynchronizedObject}!Poco::SynchronizedObject@{Poco::SynchronizedObject}}
+\doxysubsubsection{\texorpdfstring{SynchronizedObject()}{SynchronizedObject()}}
+{\footnotesize\ttfamily Poco\+::\+Synchronized\+Object\+::\+Synchronized\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1SynchronizedObject_ab8ad08322b9441a9e59dc7f9b6868be3}\label{classPoco_1_1SynchronizedObject_ab8ad08322b9441a9e59dc7f9b6868be3}} 
+\index{Poco::SynchronizedObject@{Poco::SynchronizedObject}!````~SynchronizedObject@{$\sim$SynchronizedObject}}
+\index{````~SynchronizedObject@{$\sim$SynchronizedObject}!Poco::SynchronizedObject@{Poco::SynchronizedObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$SynchronizedObject()}{~SynchronizedObject()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Synchronized\+Object\+::$\sim$\+Synchronized\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1SynchronizedObject_a8dc4750698a640b3508281059fab46e9}\label{classPoco_1_1SynchronizedObject_a8dc4750698a640b3508281059fab46e9}} 
+\index{Poco::SynchronizedObject@{Poco::SynchronizedObject}!lock@{lock}}
+\index{lock@{lock}!Poco::SynchronizedObject@{Poco::SynchronizedObject}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily void Poco\+::\+Synchronized\+Object\+::lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the object. 
+
+
+
+Definition at line 88 of file Synchronized\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1SynchronizedObject_a0812822a50f1b3bdf5bfff61d027a73d}\label{classPoco_1_1SynchronizedObject_a0812822a50f1b3bdf5bfff61d027a73d}} 
+\index{Poco::SynchronizedObject@{Poco::SynchronizedObject}!notify@{notify}}
+\index{notify@{notify}!Poco::SynchronizedObject@{Poco::SynchronizedObject}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Poco\+::\+Synchronized\+Object\+::notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unlocks the object so that it can be locked by other threads. 
+
+Definition at line 106 of file Synchronized\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1SynchronizedObject_a62611b93195531ea18bf8479707ef994}\label{classPoco_1_1SynchronizedObject_a62611b93195531ea18bf8479707ef994}} 
+\index{Poco::SynchronizedObject@{Poco::SynchronizedObject}!tryLock@{tryLock}}
+\index{tryLock@{tryLock}!Poco::SynchronizedObject@{Poco::SynchronizedObject}}
+\doxysubsubsection{\texorpdfstring{tryLock()}{tryLock()}}
+{\footnotesize\ttfamily bool Poco\+::\+Synchronized\+Object\+::try\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Locks the object. Blocks if the object is locked by another thread. 
+
+Definition at line 94 of file Synchronized\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1SynchronizedObject_ac5403c7e078a330da055fc7a736f8c7e}\label{classPoco_1_1SynchronizedObject_ac5403c7e078a330da055fc7a736f8c7e}} 
+\index{Poco::SynchronizedObject@{Poco::SynchronizedObject}!tryWait@{tryWait}}
+\index{tryWait@{tryWait}!Poco::SynchronizedObject@{Poco::SynchronizedObject}}
+\doxysubsubsection{\texorpdfstring{tryWait()}{tryWait()}}
+{\footnotesize\ttfamily bool Poco\+::\+Synchronized\+Object\+::try\+Wait (\begin{DoxyParamCaption}\item[{long}]{milliseconds }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Waits for the object to become signalled. Throws a Timeout\+Exception if the object does not become signalled within the specified time interval. 
+
+Definition at line 124 of file Synchronized\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1SynchronizedObject_a53d7ac5b1bbb4226f9f468594c98b6d1}\label{classPoco_1_1SynchronizedObject_a53d7ac5b1bbb4226f9f468594c98b6d1}} 
+\index{Poco::SynchronizedObject@{Poco::SynchronizedObject}!unlock@{unlock}}
+\index{unlock@{unlock}!Poco::SynchronizedObject@{Poco::SynchronizedObject}}
+\doxysubsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily void Poco\+::\+Synchronized\+Object\+::unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tries to lock the object. Returns false immediately if the object is already locked by another thread Returns true if the object was successfully locked. 
+
+Definition at line 100 of file Synchronized\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1SynchronizedObject_aafdb756036b9954a17f39f647be2e3e1}\label{classPoco_1_1SynchronizedObject_aafdb756036b9954a17f39f647be2e3e1}} 
+\index{Poco::SynchronizedObject@{Poco::SynchronizedObject}!wait@{wait}}
+\index{wait@{wait}!Poco::SynchronizedObject@{Poco::SynchronizedObject}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Synchronized\+Object\+::wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Signals the object. Exactly only one thread waiting for the object can resume execution. 
+
+Definition at line 112 of file Synchronized\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1SynchronizedObject_a5c78a6a04f47ec9463e4481519ecc0cb}\label{classPoco_1_1SynchronizedObject_a5c78a6a04f47ec9463e4481519ecc0cb}} 
+\index{Poco::SynchronizedObject@{Poco::SynchronizedObject}!wait@{wait}}
+\index{wait@{wait}!Poco::SynchronizedObject@{Poco::SynchronizedObject}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poco\+::\+Synchronized\+Object\+::wait (\begin{DoxyParamCaption}\item[{long}]{milliseconds }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Waits for the object to become signalled. 
+
+
+
+Definition at line 118 of file Synchronized\+Object.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{SynchronizedObject_8h}{Synchronized\+Object.\+h}}\end{DoxyCompactItemize}

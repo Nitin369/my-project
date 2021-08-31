@@ -1,0 +1,111 @@
+\hypertarget{classPoco_1_1Net_1_1HTTPServer}{}\doxysection{Poco\+::Net\+::H\+T\+T\+P\+Server Class Reference}
+\label{classPoco_1_1Net_1_1HTTPServer}\index{Poco::Net::HTTPServer@{Poco::Net::HTTPServer}}
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+Server.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Net\+::H\+T\+T\+P\+Server\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Net\+::H\+T\+T\+P\+Server\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer_a78326f49689a23d73d6df2885a015a44}{H\+T\+T\+P\+Server}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandlerFactory_a81e58cdba1c795a65506e8ef950a85d1}{H\+T\+T\+P\+Request\+Handler\+Factory\+::\+Ptr}} p\+Factory, Poco\+::\+U\+Int16 port\+Number=80, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams_a1a215b5a26295406cd76c6a41b4fcbdb}{H\+T\+T\+P\+Server\+Params\+::\+Ptr}} p\+Params=new \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams}{H\+T\+T\+P\+Server\+Params}})
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer_acb7ba96f0438f76acc1709cc8259efc6}{H\+T\+T\+P\+Server}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandlerFactory_a81e58cdba1c795a65506e8ef950a85d1}{H\+T\+T\+P\+Request\+Handler\+Factory\+::\+Ptr}} p\+Factory, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a6ee6be81654b293141abc25e9bd0d30f}{socket}}, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams_a1a215b5a26295406cd76c6a41b4fcbdb}{H\+T\+T\+P\+Server\+Params\+::\+Ptr}} p\+Params)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer_aab96e13e4c6214da02d3539123306954}{H\+T\+T\+P\+Server}} (\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandlerFactory_a81e58cdba1c795a65506e8ef950a85d1}{H\+T\+T\+P\+Request\+Handler\+Factory\+::\+Ptr}} p\+Factory, \mbox{\hyperlink{classPoco_1_1ThreadPool}{Poco\+::\+Thread\+Pool}} \&thread\+Pool, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&\mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer_a6ee6be81654b293141abc25e9bd0d30f}{socket}}, \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams_a1a215b5a26295406cd76c6a41b4fcbdb}{H\+T\+T\+P\+Server\+Params\+::\+Ptr}} p\+Params)
+\item 
+\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer_a04125f9853ecff8741b99cdbdf8818d4}{$\sim$\+H\+T\+T\+P\+Server}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer_a3f27df8139fc269fcb445023b5dcbb91}{stop\+All}} (bool abort\+Current=false)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer}{H\+T\+T\+P\+Server}} and its \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandlerFactory}{H\+T\+T\+P\+Request\+Handler\+Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A subclass of \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer}{T\+C\+P\+Server}} that implements a full-\/featured multithreaded H\+T\+TP server.
+
+A \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandlerFactory}{H\+T\+T\+P\+Request\+Handler\+Factory}} must be supplied. The \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} must be bound and in listening state.
+
+To configure various aspects of the server, a \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams}{H\+T\+T\+P\+Server\+Params}} object can be passed to the constructor.
+
+The server supports\+:
+\begin{DoxyItemize}
+\item H\+T\+T\+P/1.\+0 and H\+T\+T\+P/1.\+1
+\item automatic handling of persistent connections.
+\item automatic decoding/encoding of request/response message bodies using chunked transfer encoding.
+\end{DoxyItemize}
+
+Please see the \mbox{\hyperlink{classPoco_1_1Net_1_1TCPServer}{T\+C\+P\+Server}} class for information about connection and thread handling.
+
+See R\+FC 2616 \href{http://www.faqs.org/rfcs/rfc2616.html}{\texttt{ http\+://www.\+faqs.\+org/rfcs/rfc2616.\+html}} for more information about the H\+T\+TP protocol. 
+
+Definition at line 33 of file H\+T\+T\+P\+Server.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServer_a78326f49689a23d73d6df2885a015a44}\label{classPoco_1_1Net_1_1HTTPServer_a78326f49689a23d73d6df2885a015a44}} 
+\index{Poco::Net::HTTPServer@{Poco::Net::HTTPServer}!HTTPServer@{HTTPServer}}
+\index{HTTPServer@{HTTPServer}!Poco::Net::HTTPServer@{Poco::Net::HTTPServer}}
+\doxysubsubsection{\texorpdfstring{HTTPServer()}{HTTPServer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+::\+H\+T\+T\+P\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandlerFactory_a81e58cdba1c795a65506e8ef950a85d1}{H\+T\+T\+P\+Request\+Handler\+Factory\+::\+Ptr}}}]{p\+Factory,  }\item[{Poco\+::\+U\+Int16}]{port\+Number = {\ttfamily 80},  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams_a1a215b5a26295406cd76c6a41b4fcbdb}{H\+T\+T\+P\+Server\+Params\+::\+Ptr}}}]{p\+Params = {\ttfamily new~\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams}{H\+T\+T\+P\+Server\+Params}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServer_acb7ba96f0438f76acc1709cc8259efc6}\label{classPoco_1_1Net_1_1HTTPServer_acb7ba96f0438f76acc1709cc8259efc6}} 
+\index{Poco::Net::HTTPServer@{Poco::Net::HTTPServer}!HTTPServer@{HTTPServer}}
+\index{HTTPServer@{HTTPServer}!Poco::Net::HTTPServer@{Poco::Net::HTTPServer}}
+\doxysubsubsection{\texorpdfstring{HTTPServer()}{HTTPServer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+::\+H\+T\+T\+P\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandlerFactory_a81e58cdba1c795a65506e8ef950a85d1}{H\+T\+T\+P\+Request\+Handler\+Factory\+::\+Ptr}}}]{p\+Factory,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&}]{socket,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams_a1a215b5a26295406cd76c6a41b4fcbdb}{H\+T\+T\+P\+Server\+Params\+::\+Ptr}}}]{p\+Params }\end{DoxyParamCaption})}
+
+Creates \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer}{H\+T\+T\+P\+Server}} listening on the given port (default 80).
+
+The server takes ownership of the H\+T\+T\+P\+Requst\+Handler\+Factory and deletes it when it\textquotesingle{}s no longer needed.
+
+New threads are taken from the default thread pool. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServer_aab96e13e4c6214da02d3539123306954}\label{classPoco_1_1Net_1_1HTTPServer_aab96e13e4c6214da02d3539123306954}} 
+\index{Poco::Net::HTTPServer@{Poco::Net::HTTPServer}!HTTPServer@{HTTPServer}}
+\index{HTTPServer@{HTTPServer}!Poco::Net::HTTPServer@{Poco::Net::HTTPServer}}
+\doxysubsubsection{\texorpdfstring{HTTPServer()}{HTTPServer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+::\+H\+T\+T\+P\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandlerFactory_a81e58cdba1c795a65506e8ef950a85d1}{H\+T\+T\+P\+Request\+Handler\+Factory\+::\+Ptr}}}]{p\+Factory,  }\item[{\mbox{\hyperlink{classPoco_1_1ThreadPool}{Poco\+::\+Thread\+Pool}} \&}]{thread\+Pool,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}} \&}]{socket,  }\item[{\mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams_a1a215b5a26295406cd76c6a41b4fcbdb}{H\+T\+T\+P\+Server\+Params\+::\+Ptr}}}]{p\+Params }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer}{H\+T\+T\+P\+Server}}, using the given \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}}.
+
+The server takes ownership of the H\+T\+T\+P\+Requst\+Handler\+Factory and deletes it when it\textquotesingle{}s no longer needed.
+
+The server also takes ownership of the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams}{H\+T\+T\+P\+Server\+Params}} object.
+
+New threads are taken from the default thread pool. \mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServer_a04125f9853ecff8741b99cdbdf8818d4}\label{classPoco_1_1Net_1_1HTTPServer_a04125f9853ecff8741b99cdbdf8818d4}} 
+\index{Poco::Net::HTTPServer@{Poco::Net::HTTPServer}!````~HTTPServer@{$\sim$HTTPServer}}
+\index{````~HTTPServer@{$\sim$HTTPServer}!Poco::Net::HTTPServer@{Poco::Net::HTTPServer}}
+\doxysubsubsection{\texorpdfstring{$\sim$HTTPServer()}{~HTTPServer()}}
+{\footnotesize\ttfamily Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+::$\sim$\+H\+T\+T\+P\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer}{H\+T\+T\+P\+Server}}, using the given \mbox{\hyperlink{classPoco_1_1Net_1_1ServerSocket}{Server\+Socket}}.
+
+The server takes ownership of the H\+T\+T\+P\+Requst\+Handler\+Factory and deletes it when it\textquotesingle{}s no longer needed.
+
+The server also takes ownership of the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServerParams}{H\+T\+T\+P\+Server\+Params}} object.
+
+New threads are taken from the given thread pool. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Net_1_1HTTPServer_a3f27df8139fc269fcb445023b5dcbb91}\label{classPoco_1_1Net_1_1HTTPServer_a3f27df8139fc269fcb445023b5dcbb91}} 
+\index{Poco::Net::HTTPServer@{Poco::Net::HTTPServer}!stopAll@{stopAll}}
+\index{stopAll@{stopAll}!Poco::Net::HTTPServer@{Poco::Net::HTTPServer}}
+\doxysubsubsection{\texorpdfstring{stopAll()}{stopAll()}}
+{\footnotesize\ttfamily void Poco\+::\+Net\+::\+H\+T\+T\+P\+Server\+::stop\+All (\begin{DoxyParamCaption}\item[{bool}]{abort\+Current = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPServer}{H\+T\+T\+P\+Server}} and its \mbox{\hyperlink{classPoco_1_1Net_1_1HTTPRequestHandlerFactory}{H\+T\+T\+P\+Request\+Handler\+Factory}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Net/\mbox{\hyperlink{HTTPServer_8h}{H\+T\+T\+P\+Server.\+h}}\end{DoxyCompactItemize}

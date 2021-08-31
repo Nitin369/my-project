@@ -1,0 +1,158 @@
+\hypertarget{classPoco_1_1OSP_1_1CodeCache}{}\doxysection{Poco\+::O\+SP\+::Code\+Cache Class Reference}
+\label{classPoco_1_1OSP_1_1CodeCache}\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+
+
+{\ttfamily \#include $<$Code\+Cache.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classPoco_1_1ScopedLock}{Poco\+::\+Scoped\+Lock}}$<$ \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}} $>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_af355b0359050f551bb457c1f7b257d23}{Lock}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_af5dedcac18f29feabb4acccfa14d162e}{Code\+Cache}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path, bool is\+Shared=false)
+\item 
+\mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_ab1cb0b84e2b4c6d3b724905b7a3882b3}{$\sim$\+Code\+Cache}} ()
+\item 
+bool \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_a4001ca4afa9063b6473fd8920d92d431}{has\+Library}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_a8ebdfae0474bcdcd01e903ab230ab308}{library\+Timestamp}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_ad19c4aebf50e420b1d9584722a9f2fb7}{install\+Library}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, std\+::istream \&istr)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_ac5edbfef1d8c9ccd72ff988822399a15}{uninstall\+Library}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name)
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_a4a450e667335c0cec6b3b1a997353a74}{path\+For}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&name, bool append\+Suffix=true)
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_ada316e1216f5988e197bd96db6fe2e33}{clear}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_ad77cfe5030f2689161a7ba35caeba227}{lock}} ()
+\item 
+void \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_a74d69296bde13e01e8931454cd6d904d}{unlock}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_aad87d7483d9a0251797da156dec48571}{mutex\+Name}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}} is a utility class that manages the code cache directory where the shared libraries of resolved bundles are kept.
+
+Under certain circumstances, multiple \mbox{\hyperlink{namespacePoco_1_1OSP}{O\+SP}} processes can shared the same code cache directory. This is not recommended, but may be done to optimize a system\textquotesingle{}s resource usage. If the code\+Cache is shared between multiple processes, all processes must use the same versions of common bundles. In other words, while different processes can run different sets of bundles, all bundles used by multiple processes must be the same, in order to prevent conflicts caused by incompatible shared libraries in the common code cache.
+
+See the \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}} constructor for enabling support for a shared code cache. 
+
+Definition at line 36 of file Code\+Cache.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1CodeCache_af355b0359050f551bb457c1f7b257d23}\label{classPoco_1_1OSP_1_1CodeCache_af355b0359050f551bb457c1f7b257d23}} 
+\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}!Lock@{Lock}}
+\index{Lock@{Lock}!Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+\doxysubsubsection{\texorpdfstring{Lock}{Lock}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classPoco_1_1ScopedLock}{Poco\+::\+Scoped\+Lock}}$<$\mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}}$>$ \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache_af355b0359050f551bb457c1f7b257d23}{Poco\+::\+O\+S\+P\+::\+Code\+Cache\+::\+Lock}}}
+
+
+
+Definition at line 56 of file Code\+Cache.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1CodeCache_af5dedcac18f29feabb4acccfa14d162e}\label{classPoco_1_1OSP_1_1CodeCache_af5dedcac18f29feabb4acccfa14d162e}} 
+\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}!CodeCache@{CodeCache}}
+\index{CodeCache@{CodeCache}!Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+\doxysubsubsection{\texorpdfstring{CodeCache()}{CodeCache()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Code\+Cache\+::\+Code\+Cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path,  }\item[{bool}]{is\+Shared = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1CodeCache_ab1cb0b84e2b4c6d3b724905b7a3882b3}\label{classPoco_1_1OSP_1_1CodeCache_ab1cb0b84e2b4c6d3b724905b7a3882b3}} 
+\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}!````~CodeCache@{$\sim$CodeCache}}
+\index{````~CodeCache@{$\sim$CodeCache}!Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+\doxysubsubsection{\texorpdfstring{$\sim$CodeCache()}{~CodeCache()}}
+{\footnotesize\ttfamily Poco\+::\+O\+S\+P\+::\+Code\+Cache\+::$\sim$\+Code\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}}, using the given path.
+
+If is\+Shared is true, the code\+Cache is considered shared among multiple processes and a named mutex is used to guard access to it.
+
+If the cache directory does not exist, it is created. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1CodeCache_ada316e1216f5988e197bd96db6fe2e33}\label{classPoco_1_1OSP_1_1CodeCache_ada316e1216f5988e197bd96db6fe2e33}} 
+\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}!clear@{clear}}
+\index{clear@{clear}!Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Code\+Cache\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the full path for the library with the given name. ~\newline
+ If append\+Suffix is true (default), appends the appropriate suffix for debug version and OS dynamic library extension. \mbox{\Hypertarget{classPoco_1_1OSP_1_1CodeCache_a4001ca4afa9063b6473fd8920d92d431}\label{classPoco_1_1OSP_1_1CodeCache_a4001ca4afa9063b6473fd8920d92d431}} 
+\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}!hasLibrary@{hasLibrary}}
+\index{hasLibrary@{hasLibrary}!Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+\doxysubsubsection{\texorpdfstring{hasLibrary()}{hasLibrary()}}
+{\footnotesize\ttfamily bool Poco\+::\+O\+S\+P\+::\+Code\+Cache\+::has\+Library (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}}. 
+
+\mbox{\Hypertarget{classPoco_1_1OSP_1_1CodeCache_ad19c4aebf50e420b1d9584722a9f2fb7}\label{classPoco_1_1OSP_1_1CodeCache_ad19c4aebf50e420b1d9584722a9f2fb7}} 
+\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}!installLibrary@{installLibrary}}
+\index{installLibrary@{installLibrary}!Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+\doxysubsubsection{\texorpdfstring{installLibrary()}{installLibrary()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Code\+Cache\+::install\+Library (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})}
+
+Returns library last modification timestamp.
+
+The name must not contain an filename extension. \mbox{\Hypertarget{classPoco_1_1OSP_1_1CodeCache_a8ebdfae0474bcdcd01e903ab230ab308}\label{classPoco_1_1OSP_1_1CodeCache_a8ebdfae0474bcdcd01e903ab230ab308}} 
+\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}!libraryTimestamp@{libraryTimestamp}}
+\index{libraryTimestamp@{libraryTimestamp}!Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+\doxysubsubsection{\texorpdfstring{libraryTimestamp()}{libraryTimestamp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Poco\+::\+Timestamp}} Poco\+::\+O\+S\+P\+::\+Code\+Cache\+::library\+Timestamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Returns true if a library with the given name is stored in the code cache.
+
+The name must not contain an filename extension. \mbox{\Hypertarget{classPoco_1_1OSP_1_1CodeCache_ad77cfe5030f2689161a7ba35caeba227}\label{classPoco_1_1OSP_1_1CodeCache_ad77cfe5030f2689161a7ba35caeba227}} 
+\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}!lock@{lock}}
+\index{lock@{lock}!Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Code\+Cache\+::lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears the cache by removing the entire cache directory. ~\newline
+ \mbox{\Hypertarget{classPoco_1_1OSP_1_1CodeCache_aad87d7483d9a0251797da156dec48571}\label{classPoco_1_1OSP_1_1CodeCache_aad87d7483d9a0251797da156dec48571}} 
+\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}!mutexName@{mutexName}}
+\index{mutexName@{mutexName}!Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+\doxysubsubsection{\texorpdfstring{mutexName()}{mutexName()}}
+{\footnotesize\ttfamily static std\+::string Poco\+::\+O\+S\+P\+::\+Code\+Cache\+::mutex\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+For a shared \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}}, unlocks the code cache directory.
+
+Does nothing if the code\+Cache is not shared. \mbox{\Hypertarget{classPoco_1_1OSP_1_1CodeCache_a4a450e667335c0cec6b3b1a997353a74}\label{classPoco_1_1OSP_1_1CodeCache_a4a450e667335c0cec6b3b1a997353a74}} 
+\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}!pathFor@{pathFor}}
+\index{pathFor@{pathFor}!Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+\doxysubsubsection{\texorpdfstring{pathFor()}{pathFor()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+O\+S\+P\+::\+Code\+Cache\+::path\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name,  }\item[{bool}]{append\+Suffix = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Removes the library with the given name from the cache directory. \mbox{\Hypertarget{classPoco_1_1OSP_1_1CodeCache_ac5edbfef1d8c9ccd72ff988822399a15}\label{classPoco_1_1OSP_1_1CodeCache_ac5edbfef1d8c9ccd72ff988822399a15}} 
+\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}!uninstallLibrary@{uninstallLibrary}}
+\index{uninstallLibrary@{uninstallLibrary}!Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+\doxysubsubsection{\texorpdfstring{uninstallLibrary()}{uninstallLibrary()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Code\+Cache\+::uninstall\+Library (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Installs the library with the given name, which must not contain an extension, into the code cache. \mbox{\Hypertarget{classPoco_1_1OSP_1_1CodeCache_a74d69296bde13e01e8931454cd6d904d}\label{classPoco_1_1OSP_1_1CodeCache_a74d69296bde13e01e8931454cd6d904d}} 
+\index{Poco::OSP::CodeCache@{Poco::OSP::CodeCache}!unlock@{unlock}}
+\index{unlock@{unlock}!Poco::OSP::CodeCache@{Poco::OSP::CodeCache}}
+\doxysubsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily void Poco\+::\+O\+S\+P\+::\+Code\+Cache\+::unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+For a shared \mbox{\hyperlink{classPoco_1_1OSP_1_1CodeCache}{Code\+Cache}}, locks the code cache directory.
+
+Does nothing if the code\+Cache is not shared. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+O\+S\+P/\mbox{\hyperlink{CodeCache_8h}{Code\+Cache.\+h}}\end{DoxyCompactItemize}

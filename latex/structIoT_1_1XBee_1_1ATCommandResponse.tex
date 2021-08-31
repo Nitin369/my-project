@@ -1,0 +1,89 @@
+\hypertarget{structIoT_1_1XBee_1_1ATCommandResponse}{}\doxysection{IoT\+::X\+Bee\+::A\+T\+Command\+Response Struct Reference}
+\label{structIoT_1_1XBee_1_1ATCommandResponse}\index{IoT::XBee::ATCommandResponse@{IoT::XBee::ATCommandResponse}}
+
+
+{\ttfamily \#include $<$X\+Bee\+Node.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+Poco\+::\+U\+Int8 \mbox{\hyperlink{structIoT_1_1XBee_1_1ATCommandResponse_a19996aaa181f82ac00b3c733a1ab8f9b}{frame\+ID}}
+\item 
+std\+::string \mbox{\hyperlink{structIoT_1_1XBee_1_1ATCommandResponse_a282905c79a5048c0f6a8b602cf386568}{command}}
+\begin{DoxyCompactList}\small\item\em Correlates response frame with command frame. \end{DoxyCompactList}\item 
+Poco\+::\+U\+Int8 \mbox{\hyperlink{structIoT_1_1XBee_1_1ATCommandResponse_a391be963f84e383e42e2b9df84edfd72}{status}}
+\begin{DoxyCompactList}\small\item\em Two character AT command. \end{DoxyCompactList}\item 
+std\+::vector$<$ Poco\+::\+U\+Int8 $>$ \mbox{\hyperlink{structIoT_1_1XBee_1_1ATCommandResponse_a342c8845066de079a6d103534a023320}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The response to an issued AT command. \begin{DoxyVerb}Frame Type: 0x88 
+\end{DoxyVerb}
+ 
+
+Definition at line 379 of file X\+Bee\+Node.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1ATCommandResponse_a282905c79a5048c0f6a8b602cf386568}\label{structIoT_1_1XBee_1_1ATCommandResponse_a282905c79a5048c0f6a8b602cf386568}} 
+\index{IoT::XBee::ATCommandResponse@{IoT::XBee::ATCommandResponse}!command@{command}}
+\index{command@{command}!IoT::XBee::ATCommandResponse@{IoT::XBee::ATCommandResponse}}
+\doxysubsubsection{\texorpdfstring{command}{command}}
+{\footnotesize\ttfamily std\+::string Io\+T\+::\+X\+Bee\+::\+A\+T\+Command\+Response\+::command}
+
+
+
+Correlates response frame with command frame. 
+
+
+
+Definition at line 387 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1ATCommandResponse_a342c8845066de079a6d103534a023320}\label{structIoT_1_1XBee_1_1ATCommandResponse_a342c8845066de079a6d103534a023320}} 
+\index{IoT::XBee::ATCommandResponse@{IoT::XBee::ATCommandResponse}!data@{data}}
+\index{data@{data}!IoT::XBee::ATCommandResponse@{IoT::XBee::ATCommandResponse}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily std\+::vector$<$Poco\+::\+U\+Int8$>$ Io\+T\+::\+X\+Bee\+::\+A\+T\+Command\+Response\+::data}
+
+Command status\+:
+\begin{DoxyItemize}
+\item 0 = OK
+\item 1 = E\+R\+R\+OR
+\item 2 = Invalid Command
+\item 3 = Invalid Parameter
+\item 4 = Tx Failure 
+\end{DoxyItemize}
+
+Definition at line 398 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1ATCommandResponse_a19996aaa181f82ac00b3c733a1ab8f9b}\label{structIoT_1_1XBee_1_1ATCommandResponse_a19996aaa181f82ac00b3c733a1ab8f9b}} 
+\index{IoT::XBee::ATCommandResponse@{IoT::XBee::ATCommandResponse}!frameID@{frameID}}
+\index{frameID@{frameID}!IoT::XBee::ATCommandResponse@{IoT::XBee::ATCommandResponse}}
+\doxysubsubsection{\texorpdfstring{frameID}{frameID}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int8 Io\+T\+::\+X\+Bee\+::\+A\+T\+Command\+Response\+::frame\+ID}
+
+
+
+Definition at line 384 of file X\+Bee\+Node.\+h.
+
+\mbox{\Hypertarget{structIoT_1_1XBee_1_1ATCommandResponse_a391be963f84e383e42e2b9df84edfd72}\label{structIoT_1_1XBee_1_1ATCommandResponse_a391be963f84e383e42e2b9df84edfd72}} 
+\index{IoT::XBee::ATCommandResponse@{IoT::XBee::ATCommandResponse}!status@{status}}
+\index{status@{status}!IoT::XBee::ATCommandResponse@{IoT::XBee::ATCommandResponse}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int8 Io\+T\+::\+X\+Bee\+::\+A\+T\+Command\+Response\+::status}
+
+
+
+Two character AT command. 
+
+
+
+Definition at line 390 of file X\+Bee\+Node.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+X\+Bee/\mbox{\hyperlink{XBeeNode_8h}{X\+Bee\+Node.\+h}}\end{DoxyCompactItemize}

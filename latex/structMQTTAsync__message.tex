@@ -1,0 +1,131 @@
+\hypertarget{structMQTTAsync__message}{}\doxysection{M\+Q\+T\+T\+Async\+\_\+message Struct Reference}
+\label{structMQTTAsync__message}\index{MQTTAsync\_message@{MQTTAsync\_message}}
+
+
+{\ttfamily \#include $<$M\+Q\+T\+T\+Async.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{structMQTTAsync__message_a4621b522c9923c68003d30e9dba9aa4e}{struct\+\_\+id}} \mbox{[}4\mbox{]}
+\item 
+int \mbox{\hyperlink{structMQTTAsync__message_af79efdfc9a4e082cbbafaed8fd333ce1}{struct\+\_\+version}}
+\item 
+int \mbox{\hyperlink{structMQTTAsync__message_a9271900e2789ff81e382a47842aaee8f}{payloadlen}}
+\item 
+void $\ast$ \mbox{\hyperlink{structMQTTAsync__message_a13d88e9c871b5b39b73370a0784331af}{payload}}
+\item 
+int \mbox{\hyperlink{structMQTTAsync__message_a6e0971dbde0f04b6dd3bfab97ad5cdb7}{qos}}
+\item 
+int \mbox{\hyperlink{structMQTTAsync__message_a680f5368d5a13ff605466ab6a3d881bd}{retained}}
+\item 
+int \mbox{\hyperlink{structMQTTAsync__message_aa9da73253863089ee90033c7f0dd28bf}{dup}}
+\item 
+int \mbox{\hyperlink{structMQTTAsync__message_a2c8572ec595842768848982321835bfe}{msgid}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A structure representing the payload and attributes of an M\+Q\+TT message. The message topic is not part of this structure (see M\+Q\+T\+T\+Async\+\_\+publish\+Message(), M\+Q\+T\+T\+Async\+\_\+publish(), M\+Q\+T\+T\+Async\+\_\+receive(), \mbox{\hyperlink{MQTTAsync_8h_a6735249a7efcda11b5b2c574eaa44766}{M\+Q\+T\+T\+Async\+\_\+free\+Message()}} and \mbox{\hyperlink{MQTTAsync_8h_a3918ead59b56816a8d7544def184e48e}{M\+Q\+T\+T\+Async\+\_\+message\+Arrived()}}). 
+
+Definition at line 202 of file M\+Q\+T\+T\+Async.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structMQTTAsync__message_aa9da73253863089ee90033c7f0dd28bf}\label{structMQTTAsync__message_aa9da73253863089ee90033c7f0dd28bf}} 
+\index{MQTTAsync\_message@{MQTTAsync\_message}!dup@{dup}}
+\index{dup@{dup}!MQTTAsync\_message@{MQTTAsync\_message}}
+\doxysubsubsection{\texorpdfstring{dup}{dup}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Async\+\_\+message\+::dup}
+
+The dup flag indicates whether or not this message is a duplicate. It is only meaningful when receiving Qo\+S1 messages. When true, the client application should take appropriate action to deal with the duplicate message. 
+
+Definition at line 251 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__message_a2c8572ec595842768848982321835bfe}\label{structMQTTAsync__message_a2c8572ec595842768848982321835bfe}} 
+\index{MQTTAsync\_message@{MQTTAsync\_message}!msgid@{msgid}}
+\index{msgid@{msgid}!MQTTAsync\_message@{MQTTAsync\_message}}
+\doxysubsubsection{\texorpdfstring{msgid}{msgid}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Async\+\_\+message\+::msgid}
+
+The message identifier is normally reserved for internal use by the M\+Q\+TT client and server. 
+
+Definition at line 255 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__message_a13d88e9c871b5b39b73370a0784331af}\label{structMQTTAsync__message_a13d88e9c871b5b39b73370a0784331af}} 
+\index{MQTTAsync\_message@{MQTTAsync\_message}!payload@{payload}}
+\index{payload@{payload}!MQTTAsync\_message@{MQTTAsync\_message}}
+\doxysubsubsection{\texorpdfstring{payload}{payload}}
+{\footnotesize\ttfamily void$\ast$ M\+Q\+T\+T\+Async\+\_\+message\+::payload}
+
+A pointer to the payload of the M\+Q\+TT message. 
+
+Definition at line 211 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__message_a9271900e2789ff81e382a47842aaee8f}\label{structMQTTAsync__message_a9271900e2789ff81e382a47842aaee8f}} 
+\index{MQTTAsync\_message@{MQTTAsync\_message}!payloadlen@{payloadlen}}
+\index{payloadlen@{payloadlen}!MQTTAsync\_message@{MQTTAsync\_message}}
+\doxysubsubsection{\texorpdfstring{payloadlen}{payloadlen}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Async\+\_\+message\+::payloadlen}
+
+The length of the M\+Q\+TT message payload in bytes. 
+
+Definition at line 209 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__message_a6e0971dbde0f04b6dd3bfab97ad5cdb7}\label{structMQTTAsync__message_a6e0971dbde0f04b6dd3bfab97ad5cdb7}} 
+\index{MQTTAsync\_message@{MQTTAsync\_message}!qos@{qos}}
+\index{qos@{qos}!MQTTAsync\_message@{MQTTAsync\_message}}
+\doxysubsubsection{\texorpdfstring{qos}{qos}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Async\+\_\+message\+::qos}
+
+The quality of service (QoS) assigned to the message. There are three levels of QoS\+: 
+\begin{DoxyDescription}
+\item[{\bfseries{Qo\+S0}} ]Fire and forget -\/ the message may not be delivered 
+\item[{\bfseries{Qo\+S1}} ]At least once -\/ the message will be delivered, but may be delivered more than once in some circumstances. 
+\item[{\bfseries{Qo\+S2}} ]Once and one only -\/ the message will be delivered exactly once. 
+\end{DoxyDescription}
+
+Definition at line 225 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__message_a680f5368d5a13ff605466ab6a3d881bd}\label{structMQTTAsync__message_a680f5368d5a13ff605466ab6a3d881bd}} 
+\index{MQTTAsync\_message@{MQTTAsync\_message}!retained@{retained}}
+\index{retained@{retained}!MQTTAsync\_message@{MQTTAsync\_message}}
+\doxysubsubsection{\texorpdfstring{retained}{retained}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Async\+\_\+message\+::retained}
+
+The retained flag serves two purposes depending on whether the message it is associated with is being published or received.
+
+{\bfseries{retained = true}}~\newline
+ For messages being published, a true setting indicates that the M\+Q\+TT server should retain a copy of the message. The message will then be transmitted to new subscribers to a topic that matches the message topic. For subscribers registering a new subscription, the flag being true indicates that the received message is not a new one, but one that has been retained by the M\+Q\+TT server.
+
+{\bfseries{retained = false}} ~\newline
+ For publishers, this ndicates that this message should not be retained by the M\+Q\+TT server. For subscribers, a false setting indicates this is a normal message, received as a result of it being published to the server. 
+
+Definition at line 244 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__message_a4621b522c9923c68003d30e9dba9aa4e}\label{structMQTTAsync__message_a4621b522c9923c68003d30e9dba9aa4e}} 
+\index{MQTTAsync\_message@{MQTTAsync\_message}!struct\_id@{struct\_id}}
+\index{struct\_id@{struct\_id}!MQTTAsync\_message@{MQTTAsync\_message}}
+\doxysubsubsection{\texorpdfstring{struct\_id}{struct\_id}}
+{\footnotesize\ttfamily char M\+Q\+T\+T\+Async\+\_\+message\+::struct\+\_\+id\mbox{[}4\mbox{]}}
+
+The eyecatcher for this structure. must be M\+Q\+TM. 
+
+Definition at line 205 of file M\+Q\+T\+T\+Async.\+h.
+
+\mbox{\Hypertarget{structMQTTAsync__message_af79efdfc9a4e082cbbafaed8fd333ce1}\label{structMQTTAsync__message_af79efdfc9a4e082cbbafaed8fd333ce1}} 
+\index{MQTTAsync\_message@{MQTTAsync\_message}!struct\_version@{struct\_version}}
+\index{struct\_version@{struct\_version}!MQTTAsync\_message@{MQTTAsync\_message}}
+\doxysubsubsection{\texorpdfstring{struct\_version}{struct\_version}}
+{\footnotesize\ttfamily int M\+Q\+T\+T\+Async\+\_\+message\+::struct\+\_\+version}
+
+The version number of this structure. Must be 0 
+
+Definition at line 207 of file M\+Q\+T\+T\+Async.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Io\+T/\+M\+Q\+T\+T/\+Paho/\mbox{\hyperlink{MQTTAsync_8h}{M\+Q\+T\+T\+Async.\+h}}\end{DoxyCompactItemize}

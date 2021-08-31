@@ -1,0 +1,99 @@
+\hypertarget{classPoco_1_1ConsoleChannel}{}\doxysection{Poco\+::Console\+Channel Class Reference}
+\label{classPoco_1_1ConsoleChannel}\index{Poco::ConsoleChannel@{Poco::ConsoleChannel}}
+
+
+{\ttfamily \#include $<$Console\+Channel.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Console\+Channel\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Console\+Channel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ConsoleChannel_ae4ba4b333bd67c8270cac58dbebe9594}{Console\+Channel}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1ConsoleChannel_aea7e44af4ac4da53948442246741354c}{Console\+Channel}} (std\+::ostream \&str)
+\begin{DoxyCompactList}\small\item\em Creates the channel and attaches std\+::clog. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1ConsoleChannel_a3295d3aa0fb7905d5c1967c8dd5fb779}{log}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&msg)
+\begin{DoxyCompactList}\small\item\em Creates the channel using the given stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1ConsoleChannel_a3b18190f322212205ef01eea989a0581}{$\sim$\+Console\+Channel}} ()
+\begin{DoxyCompactList}\small\item\em Logs the given message to the channel\textquotesingle{}s stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A channel that writes to an ostream. \begin{DoxyVerb}Only the message's text is written, followed
+by a newline.
+
+Chain this channel to a FormattingChannel with an
+appropriate Formatter to control what is contained 
+in the text.
+
+Similar to StreamChannel, except that a static
+mutex is used to protect against multiple
+console channels concurrently writing to the
+same stream. 
+\end{DoxyVerb}
+ 
+
+Definition at line 32 of file Console\+Channel.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1ConsoleChannel_ae4ba4b333bd67c8270cac58dbebe9594}\label{classPoco_1_1ConsoleChannel_ae4ba4b333bd67c8270cac58dbebe9594}} 
+\index{Poco::ConsoleChannel@{Poco::ConsoleChannel}!ConsoleChannel@{ConsoleChannel}}
+\index{ConsoleChannel@{ConsoleChannel}!Poco::ConsoleChannel@{Poco::ConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{ConsoleChannel()}{ConsoleChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Console\+Channel\+::\+Console\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1ConsoleChannel_aea7e44af4ac4da53948442246741354c}\label{classPoco_1_1ConsoleChannel_aea7e44af4ac4da53948442246741354c}} 
+\index{Poco::ConsoleChannel@{Poco::ConsoleChannel}!ConsoleChannel@{ConsoleChannel}}
+\index{ConsoleChannel@{ConsoleChannel}!Poco::ConsoleChannel@{Poco::ConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{ConsoleChannel()}{ConsoleChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Console\+Channel\+::\+Console\+Channel (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{str }\end{DoxyParamCaption})}
+
+
+
+Creates the channel and attaches std\+::clog. 
+
+\mbox{\Hypertarget{classPoco_1_1ConsoleChannel_a3b18190f322212205ef01eea989a0581}\label{classPoco_1_1ConsoleChannel_a3b18190f322212205ef01eea989a0581}} 
+\index{Poco::ConsoleChannel@{Poco::ConsoleChannel}!````~ConsoleChannel@{$\sim$ConsoleChannel}}
+\index{````~ConsoleChannel@{$\sim$ConsoleChannel}!Poco::ConsoleChannel@{Poco::ConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{$\sim$ConsoleChannel()}{~ConsoleChannel()}}
+{\footnotesize\ttfamily Poco\+::\+Console\+Channel\+::$\sim$\+Console\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Logs the given message to the channel\textquotesingle{}s stream. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1ConsoleChannel_a3295d3aa0fb7905d5c1967c8dd5fb779}\label{classPoco_1_1ConsoleChannel_a3295d3aa0fb7905d5c1967c8dd5fb779}} 
+\index{Poco::ConsoleChannel@{Poco::ConsoleChannel}!log@{log}}
+\index{log@{log}!Poco::ConsoleChannel@{Poco::ConsoleChannel}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Poco\+::\+Console\+Channel\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Message}{Message}} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the channel using the given stream. 
+
+
+
+Implements \mbox{\hyperlink{classPoco_1_1Channel_aeafdcc5ce2e0e38d96f15a60a563da4e}{Poco\+::\+Channel}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{ConsoleChannel_8h}{Console\+Channel.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,516 @@
+\hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader}{}\doxysection{Poco\+::Zip\+::Zip\+Local\+File\+Header Class Reference}
+\label{classPoco_1_1Zip_1_1ZipLocalFileHeader}\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+
+
+Stores a \mbox{\hyperlink{namespacePoco_1_1Zip}{Zip}} local file header.  
+
+
+
+
+{\ttfamily \#include $<$Zip\+Local\+File\+Header.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_adffb1c991409c2b285e55ce556b5dd16}{Zip\+Local\+File\+Header}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Poco\+::\+Path}} \&file\+Name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DateTime}{Poco\+::\+Date\+Time}} \&\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_aef71c3fc311de320ca5aeab87297e101}{last\+Modified\+At}}, \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_a54ba98943ed4b0c4be2d3835514b81ff}{Zip\+Common\+::\+Compression\+Method}} cm, \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_aafbfb627b08375fd0bc9d2fd5152b263}{Zip\+Common\+::\+Compression\+Level}} cl)
+\item 
+\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a5ac8a449835c1031ea6ce2bb06293c3a}{Zip\+Local\+File\+Header}} (std\+::istream \&inp, bool assume\+Header\+Read, \mbox{\hyperlink{classPoco_1_1Zip_1_1ParseCallback}{Parse\+Callback}} \&callback)
+\item 
+virtual \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a6273b166e1bbfb5d2322140e8c8e229b}{$\sim$\+Zip\+Local\+File\+Header}} ()
+\item 
+\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_a299b20f2ba299cd25c9d7e6131c9a58f}{Zip\+Common\+::\+Host\+System}} \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_aef39550c659c9dd9e3e466f6c0b6ef9c}{get\+Host\+System}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader}{Zip\+Local\+File\+Header}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a0bf528deb89e2d770a947c5f7e0ee0ce}{get\+Major\+Version\+Number}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a84ba19c65e4a467fbf851192a09fca16}{get\+Minor\+Version\+Number}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_ad2b9854a19419f78e960d8a827ffae58}{get\+Required\+Version}} (int \&major, int \&minor)
+\item 
+Poco\+::\+U\+Int32 \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a4923f8f1b97e81ae8345d1eb4d9f2c7b}{get\+Header\+Size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em The minimum version required to extract the data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a11a606071a5e23bf4881f658237aa271}{set\+Start\+Pos}} (std\+::streamoff start)
+\begin{DoxyCompactList}\small\item\em Returns the total size of the header including filename + extra field size. \end{DoxyCompactList}\item 
+std\+::streamoff \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_ae07093cf64847b39a2fe67e5ca9f9132}{get\+Start\+Pos}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Sets the start position to start and the end position to start+compressed\+Size. \end{DoxyCompactList}\item 
+std\+::streamoff \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a801921f757104e8b72cdf864df6038a9}{get\+End\+Pos}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the position of the first byte of the header in the file stream. \end{DoxyCompactList}\item 
+std\+::streamoff \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_ac7238265ac006bc097ea10f0fb743ce7}{get\+Data\+Start\+Pos}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Points past the last byte of the file entry (ie. either the first byte of the next header, or the directory) \end{DoxyCompactList}\item 
+std\+::streamoff \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_acf9e0f497ae2be262f3b6492d10ac1d2}{get\+Data\+End\+Pos}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the streamoffset for the very first byte of data. Will be equal to Data\+End\+Pos if no data present. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_a54ba98943ed4b0c4be2d3835514b81ff}{Zip\+Common\+::\+Compression\+Method}} \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a8ecb4f2275a240aef26eb242339da41c}{get\+Compression\+Method}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_aafbfb627b08375fd0bc9d2fd5152b263}{Zip\+Common\+::\+Compression\+Level}} \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a6922118324af51c13861f0bbc45f2a39}{get\+Compression\+Level}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_af076953451364288875dfe0bd4888c6c}{is\+Encrypted}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the compression level used. Only valid when the compression method is C\+M\+\_\+\+D\+E\+F\+L\+A\+TE. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DateTime}{Poco\+::\+Date\+Time}} \& \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_aef71c3fc311de320ca5aeab87297e101}{last\+Modified\+At}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+Poco\+::\+U\+Int32 \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_aa8bca7d5a019783b26da2306053578c1}{get\+C\+RC}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+Poco\+::\+U\+Int32 \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_ae22c77a33dcdcf553b84d8bb91479731}{get\+Compressed\+Size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+Poco\+::\+U\+Int32 \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_aaae2d1aeec007340a5cd2799190b511b}{get\+Uncompressed\+Size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a55ee84a417bae58223328085eb3adc47}{set\+C\+RC}} (Poco\+::\+U\+Int32 val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a03f7e1b32b240b599dd15b41b2f99133}{set\+Compressed\+Size}} (Poco\+::\+U\+Int32 val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a36170653281ca2212baca8fb93288626}{set\+Uncompressed\+Size}} (Poco\+::\+U\+Int32 val)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a73c859f98ca9adbd0de2511017abd114}{get\+File\+Name}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_ac3a29be99b9b795d912e6b9f30bcd32a}{is\+File}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_ab8548a0d765db6cb6e4356970674a6af}{is\+Directory}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a5b21866ec600b5a3e0fc30a44fe88454}{has\+Extra\+Field}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a96da329005084279081d93b7ee0bc670}{get\+Extra\+Field}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a9207f246264f3223db65ac85e81b9551}{has\+Data}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+bool \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_ac73ce85dec6072aa91538231fdd7d80e}{search\+C\+R\+C\+And\+Sizes\+After\+Data}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_aa35b96549e06a3c4d832d87e551115ee}{set\+Search\+C\+R\+C\+And\+Sizes\+After\+Data}} (bool val)
+\item 
+void \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_af037365cbc112680230c0f604b7ddddc}{set\+File\+Name}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&file\+Name, bool \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_ab8548a0d765db6cb6e4356970674a6af}{is\+Directory}})
+\item 
+std\+::string \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a1267f4f3ebd6a0cbe967f809f9af79b4}{create\+Header}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a13ccc4c641cc902928069b9c6fea6762}{H\+E\+A\+D\+ER}} \mbox{[}\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_adfba223ce2ad38630cd0697c73117966aa2463694cbc86ed9e42878ddcc229192}{Zip\+Common\+::\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader_a5d0918f3d1014c8c4ee79bf84fddfe62}{Zip\+Stream\+Buf}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores a \mbox{\hyperlink{namespacePoco_1_1Zip}{Zip}} local file header. 
+
+Definition at line 38 of file Zip\+Local\+File\+Header.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_adffb1c991409c2b285e55ce556b5dd16}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_adffb1c991409c2b285e55ce556b5dd16}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!ZipLocalFileHeader@{ZipLocalFileHeader}}
+\index{ZipLocalFileHeader@{ZipLocalFileHeader}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{ZipLocalFileHeader()}{ZipLocalFileHeader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::\+Zip\+Local\+File\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1Path}{Poco\+::\+Path}} \&}]{file\+Name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DateTime}{Poco\+::\+Date\+Time}} \&}]{last\+Modified\+At,  }\item[{\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_a54ba98943ed4b0c4be2d3835514b81ff}{Zip\+Common\+::\+Compression\+Method}}}]{cm,  }\item[{\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_aafbfb627b08375fd0bc9d2fd5152b263}{Zip\+Common\+::\+Compression\+Level}}}]{cl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a5ac8a449835c1031ea6ce2bb06293c3a}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a5ac8a449835c1031ea6ce2bb06293c3a}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!ZipLocalFileHeader@{ZipLocalFileHeader}}
+\index{ZipLocalFileHeader@{ZipLocalFileHeader}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{ZipLocalFileHeader()}{ZipLocalFileHeader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::\+Zip\+Local\+File\+Header (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{inp,  }\item[{bool}]{assume\+Header\+Read,  }\item[{\mbox{\hyperlink{classPoco_1_1Zip_1_1ParseCallback}{Parse\+Callback}} \&}]{callback }\end{DoxyParamCaption})}
+
+Creates a zip file header from an absolute\+File. file\+Name is the name of the file in the zip, output\+Is\+Seekable determines if we write C\+RC and file sizes to the Local\+File\+Header or after data compression into a \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipDataInfo}{Zip\+Data\+Info}} \mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a6273b166e1bbfb5d2322140e8c8e229b}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a6273b166e1bbfb5d2322140e8c8e229b}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!````~ZipLocalFileHeader@{$\sim$ZipLocalFileHeader}}
+\index{````~ZipLocalFileHeader@{$\sim$ZipLocalFileHeader}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{$\sim$ZipLocalFileHeader()}{~ZipLocalFileHeader()}}
+{\footnotesize\ttfamily virtual Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::$\sim$\+Zip\+Local\+File\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates the \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader}{Zip\+Local\+File\+Header}} by parsing the input stream. If assume\+Header\+Read is true we assume that the first 4 bytes were already read outside. If skip\+Over\+Data\+Block is true we position the stream after the data block (either at the next File\+Header or the Directory Entry) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a1267f4f3ebd6a0cbe967f809f9af79b4}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a1267f4f3ebd6a0cbe967f809f9af79b4}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!createHeader@{createHeader}}
+\index{createHeader@{createHeader}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{createHeader()}{createHeader()}}
+{\footnotesize\ttfamily std\+::string Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::create\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_ae22c77a33dcdcf553b84d8bb91479731}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_ae22c77a33dcdcf553b84d8bb91479731}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getCompressedSize@{getCompressedSize}}
+\index{getCompressedSize@{getCompressedSize}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getCompressedSize()}{getCompressedSize()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int32 Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Compressed\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 365 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a6922118324af51c13861f0bbc45f2a39}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a6922118324af51c13861f0bbc45f2a39}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getCompressionLevel@{getCompressionLevel}}
+\index{getCompressionLevel@{getCompressionLevel}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getCompressionLevel()}{getCompressionLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_aafbfb627b08375fd0bc9d2fd5152b263}{Zip\+Common\+::\+Compression\+Level}} Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Compression\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 304 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a8ecb4f2275a240aef26eb242339da41c}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a8ecb4f2275a240aef26eb242339da41c}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getCompressionMethod@{getCompressionMethod}}
+\index{getCompressionMethod@{getCompressionMethod}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getCompressionMethod()}{getCompressionMethod()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_a54ba98943ed4b0c4be2d3835514b81ff}{Zip\+Common\+::\+Compression\+Method}} Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Compression\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 298 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_aa8bca7d5a019783b26da2306053578c1}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_aa8bca7d5a019783b26da2306053578c1}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getCRC@{getCRC}}
+\index{getCRC@{getCRC}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getCRC()}{getCRC()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int32 Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+C\+RC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 359 of file Zip\+Local\+File\+Header.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_acf9e0f497ae2be262f3b6492d10ac1d2}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_acf9e0f497ae2be262f3b6492d10ac1d2}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getDataEndPos@{getDataEndPos}}
+\index{getDataEndPos@{getDataEndPos}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getDataEndPos()}{getDataEndPos()}}
+{\footnotesize\ttfamily std\+::streamoff Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Data\+End\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the streamoffset for the very first byte of data. Will be equal to Data\+End\+Pos if no data present. 
+
+
+
+Definition at line 459 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_ac7238265ac006bc097ea10f0fb743ce7}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_ac7238265ac006bc097ea10f0fb743ce7}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getDataStartPos@{getDataStartPos}}
+\index{getDataStartPos@{getDataStartPos}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getDataStartPos()}{getDataStartPos()}}
+{\footnotesize\ttfamily std\+::streamoff Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Data\+Start\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Points past the last byte of the file entry (ie. either the first byte of the next header, or the directory) 
+
+
+
+Definition at line 453 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a801921f757104e8b72cdf864df6038a9}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a801921f757104e8b72cdf864df6038a9}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getEndPos@{getEndPos}}
+\index{getEndPos@{getEndPos}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getEndPos()}{getEndPos()}}
+{\footnotesize\ttfamily std\+::streamoff Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+End\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the position of the first byte of the header in the file stream. 
+
+
+
+Definition at line 279 of file Zip\+Local\+File\+Header.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a96da329005084279081d93b7ee0bc670}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a96da329005084279081d93b7ee0bc670}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getExtraField@{getExtraField}}
+\index{getExtraField@{getExtraField}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getExtraField()}{getExtraField()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Extra\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 441 of file Zip\+Local\+File\+Header.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a73c859f98ca9adbd0de2511017abd114}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a73c859f98ca9adbd0de2511017abd114}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getFileName@{getFileName}}
+\index{getFileName@{getFileName}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getFileName()}{getFileName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 416 of file Zip\+Local\+File\+Header.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a4923f8f1b97e81ae8345d1eb4d9f2c7b}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a4923f8f1b97e81ae8345d1eb4d9f2c7b}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getHeaderSize@{getHeaderSize}}
+\index{getHeaderSize@{getHeaderSize}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getHeaderSize()}{getHeaderSize()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int32 Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Header\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The minimum version required to extract the data. 
+
+
+
+Definition at line 260 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_aef39550c659c9dd9e3e466f6c0b6ef9c}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_aef39550c659c9dd9e3e466f6c0b6ef9c}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getHostSystem@{getHostSystem}}
+\index{getHostSystem@{getHostSystem}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getHostSystem()}{getHostSystem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_a299b20f2ba299cd25c9d7e6131c9a58f}{Zip\+Common\+::\+Host\+System}} Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Host\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipLocalFileHeader}{Zip\+Local\+File\+Header}}. 
+
+
+
+Definition at line 210 of file Zip\+Local\+File\+Header.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a0bf528deb89e2d770a947c5f7e0ee0ce}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a0bf528deb89e2d770a947c5f7e0ee0ce}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getMajorVersionNumber@{getMajorVersionNumber}}
+\index{getMajorVersionNumber@{getMajorVersionNumber}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getMajorVersionNumber()}{getMajorVersionNumber()}}
+{\footnotesize\ttfamily int Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Major\+Version\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 222 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a84ba19c65e4a467fbf851192a09fca16}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a84ba19c65e4a467fbf851192a09fca16}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getMinorVersionNumber@{getMinorVersionNumber}}
+\index{getMinorVersionNumber@{getMinorVersionNumber}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getMinorVersionNumber()}{getMinorVersionNumber()}}
+{\footnotesize\ttfamily int Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Minor\+Version\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 228 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_ad2b9854a19419f78e960d8a827ffae58}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_ad2b9854a19419f78e960d8a827ffae58}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getRequiredVersion@{getRequiredVersion}}
+\index{getRequiredVersion@{getRequiredVersion}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getRequiredVersion()}{getRequiredVersion()}}
+{\footnotesize\ttfamily void Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Required\+Version (\begin{DoxyParamCaption}\item[{int \&}]{major,  }\item[{int \&}]{minor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 234 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_ae07093cf64847b39a2fe67e5ca9f9132}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_ae07093cf64847b39a2fe67e5ca9f9132}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getStartPos@{getStartPos}}
+\index{getStartPos@{getStartPos}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getStartPos()}{getStartPos()}}
+{\footnotesize\ttfamily std\+::streamoff Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Start\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the start position to start and the end position to start+compressed\+Size. 
+
+
+
+Definition at line 266 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_aaae2d1aeec007340a5cd2799190b511b}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_aaae2d1aeec007340a5cd2799190b511b}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!getUncompressedSize@{getUncompressedSize}}
+\index{getUncompressedSize@{getUncompressedSize}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{getUncompressedSize()}{getUncompressedSize()}}
+{\footnotesize\ttfamily Poco\+::\+U\+Int32 Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::get\+Uncompressed\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 371 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a9207f246264f3223db65ac85e81b9551}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a9207f246264f3223db65ac85e81b9551}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!hasData@{hasData}}
+\index{hasData@{hasData}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{hasData()}{hasData()}}
+{\footnotesize\ttfamily bool Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::has\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 447 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a5b21866ec600b5a3e0fc30a44fe88454}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a5b21866ec600b5a3e0fc30a44fe88454}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!hasExtraField@{hasExtraField}}
+\index{hasExtraField@{hasExtraField}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{hasExtraField()}{hasExtraField()}}
+{\footnotesize\ttfamily bool Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::has\+Extra\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 435 of file Zip\+Local\+File\+Header.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_ab8548a0d765db6cb6e4356970674a6af}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_ab8548a0d765db6cb6e4356970674a6af}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!isDirectory@{isDirectory}}
+\index{isDirectory@{isDirectory}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{isDirectory()}{isDirectory()}}
+{\footnotesize\ttfamily bool Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::is\+Directory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 428 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 14
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_af076953451364288875dfe0bd4888c6c}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_af076953451364288875dfe0bd4888c6c}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!isEncrypted@{isEncrypted}}
+\index{isEncrypted@{isEncrypted}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{isEncrypted()}{isEncrypted()}}
+{\footnotesize\ttfamily bool Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::is\+Encrypted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the compression level used. Only valid when the compression method is C\+M\+\_\+\+D\+E\+F\+L\+A\+TE. 
+
+
+
+Definition at line 327 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_ac3a29be99b9b795d912e6b9f30bcd32a}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_ac3a29be99b9b795d912e6b9f30bcd32a}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!isFile@{isFile}}
+\index{isFile@{isFile}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{isFile()}{isFile()}}
+{\footnotesize\ttfamily bool Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::is\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 422 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_aef71c3fc311de320ca5aeab87297e101}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_aef71c3fc311de320ca5aeab87297e101}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!lastModifiedAt@{lastModifiedAt}}
+\index{lastModifiedAt@{lastModifiedAt}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{lastModifiedAt()}{lastModifiedAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{classPoco_1_1DateTime}{Poco\+::\+Date\+Time}} \& Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::last\+Modified\+At (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 353 of file Zip\+Local\+File\+Header.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_ac73ce85dec6072aa91538231fdd7d80e}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_ac73ce85dec6072aa91538231fdd7d80e}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!searchCRCAndSizesAfterData@{searchCRCAndSizesAfterData}}
+\index{searchCRCAndSizesAfterData@{searchCRCAndSizesAfterData}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{searchCRCAndSizesAfterData()}{searchCRCAndSizesAfterData()}}
+{\footnotesize\ttfamily bool Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::search\+C\+R\+C\+And\+Sizes\+After\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a03f7e1b32b240b599dd15b41b2f99133}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a03f7e1b32b240b599dd15b41b2f99133}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!setCompressedSize@{setCompressedSize}}
+\index{setCompressedSize@{setCompressedSize}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{setCompressedSize()}{setCompressedSize()}}
+{\footnotesize\ttfamily void Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::set\+Compressed\+Size (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int32}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 384 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 18
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a55ee84a417bae58223328085eb3adc47}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a55ee84a417bae58223328085eb3adc47}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!setCRC@{setCRC}}
+\index{setCRC@{setCRC}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{setCRC()}{setCRC()}}
+{\footnotesize\ttfamily void Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::set\+C\+RC (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int32}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 377 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 19
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_af037365cbc112680230c0f604b7ddddc}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_af037365cbc112680230c0f604b7ddddc}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!setFileName@{setFileName}}
+\index{setFileName@{setFileName}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{setFileName()}{setFileName()}}
+{\footnotesize\ttfamily void Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::set\+File\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{file\+Name,  }\item[{bool}]{is\+Directory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_aa35b96549e06a3c4d832d87e551115ee}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_aa35b96549e06a3c4d832d87e551115ee}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!setSearchCRCAndSizesAfterData@{setSearchCRCAndSizesAfterData}}
+\index{setSearchCRCAndSizesAfterData@{setSearchCRCAndSizesAfterData}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{setSearchCRCAndSizesAfterData()}{setSearchCRCAndSizesAfterData()}}
+{\footnotesize\ttfamily void Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::set\+Search\+C\+R\+C\+And\+Sizes\+After\+Data (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 343 of file Zip\+Local\+File\+Header.\+h.
+
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a11a606071a5e23bf4881f658237aa271}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a11a606071a5e23bf4881f658237aa271}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!setStartPos@{setStartPos}}
+\index{setStartPos@{setStartPos}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{setStartPos()}{setStartPos()}}
+{\footnotesize\ttfamily void Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::set\+Start\+Pos (\begin{DoxyParamCaption}\item[{std\+::streamoff}]{start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the total size of the header including filename + extra field size. 
+
+
+
+Definition at line 272 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 20
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a36170653281ca2212baca8fb93288626}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a36170653281ca2212baca8fb93288626}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!setUncompressedSize@{setUncompressedSize}}
+\index{setUncompressedSize@{setUncompressedSize}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{setUncompressedSize()}{setUncompressedSize()}}
+{\footnotesize\ttfamily void Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::set\+Uncompressed\+Size (\begin{DoxyParamCaption}\item[{Poco\+::\+U\+Int32}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 391 of file Zip\+Local\+File\+Header.\+h.
+
+Here is the call graph for this function\+:
+% FIG 21
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a5d0918f3d1014c8c4ee79bf84fddfe62}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a5d0918f3d1014c8c4ee79bf84fddfe62}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!ZipStreamBuf@{ZipStreamBuf}}
+\index{ZipStreamBuf@{ZipStreamBuf}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{ZipStreamBuf}{ZipStreamBuf}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classPoco_1_1Zip_1_1ZipStreamBuf}{Zip\+Stream\+Buf}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 194 of file Zip\+Local\+File\+Header.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classPoco_1_1Zip_1_1ZipLocalFileHeader_a13ccc4c641cc902928069b9c6fea6762}\label{classPoco_1_1Zip_1_1ZipLocalFileHeader_a13ccc4c641cc902928069b9c6fea6762}} 
+\index{Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}!HEADER@{HEADER}}
+\index{HEADER@{HEADER}!Poco::Zip::ZipLocalFileHeader@{Poco::Zip::ZipLocalFileHeader}}
+\doxysubsubsection{\texorpdfstring{HEADER}{HEADER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char Poco\+::\+Zip\+::\+Zip\+Local\+File\+Header\+::\+H\+E\+A\+D\+ER\mbox{[}\mbox{\hyperlink{classPoco_1_1Zip_1_1ZipCommon_adfba223ce2ad38630cd0697c73117966aa2463694cbc86ed9e42878ddcc229192}{Zip\+Common\+::\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 42 of file Zip\+Local\+File\+Header.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\+Zip/\mbox{\hyperlink{ZipLocalFileHeader_8h}{Zip\+Local\+File\+Header.\+h}}\end{DoxyCompactItemize}

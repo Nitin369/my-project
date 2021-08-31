@@ -1,0 +1,125 @@
+\hypertarget{classPoco_1_1LogFile}{}\doxysection{Poco\+::Log\+File Class Reference}
+\label{classPoco_1_1LogFile}\index{Poco::LogFile@{Poco::LogFile}}
+
+
+{\ttfamily \#include $<$Log\+File.\+h$>$}
+
+
+
+Inheritance diagram for Poco\+::Log\+File\+:
+% FIG 0
+
+
+Collaboration diagram for Poco\+::Log\+File\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoco_1_1LogFile_a944e877cb8631bfba80b587108ac2208}{Log\+File}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&\mbox{\hyperlink{classPoco_1_1LogFile_af1ce469c70625ea798d6c4cb27ff5207}{path}})
+\item 
+\mbox{\hyperlink{classPoco_1_1LogFile_ad16e4b7dc1498e3f2b7d71b48c29e5d7}{$\sim$\+Log\+File}} ()
+\begin{DoxyCompactList}\small\item\em Creates the \mbox{\hyperlink{classPoco_1_1LogFile}{Log\+File}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoco_1_1LogFile_a52798eb4783705529618a0af3a1b0f85}{write}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&text, bool flush=true)
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPoco_1_1LogFile}{Log\+File}}. \end{DoxyCompactList}\item 
+U\+Int64 \mbox{\hyperlink{classPoco_1_1LogFile_a404298d158c2337eeb1920d6085a898d}{size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} \mbox{\hyperlink{classPoco_1_1LogFile_a9c605fadf752689a84cb006502878744}{creation\+Date}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the current size in bytes of the log file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& \mbox{\hyperlink{classPoco_1_1LogFile_af1ce469c70625ea798d6c4cb27ff5207}{path}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the date and time the log file was created. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used by \mbox{\hyperlink{classPoco_1_1FileChannel}{File\+Channel}} to work with a log file. 
+
+Definition at line 40 of file Log\+File.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoco_1_1LogFile_a944e877cb8631bfba80b587108ac2208}\label{classPoco_1_1LogFile_a944e877cb8631bfba80b587108ac2208}} 
+\index{Poco::LogFile@{Poco::LogFile}!LogFile@{LogFile}}
+\index{LogFile@{LogFile}!Poco::LogFile@{Poco::LogFile}}
+\doxysubsubsection{\texorpdfstring{LogFile()}{LogFile()}}
+{\footnotesize\ttfamily Poco\+::\+Log\+File\+::\+Log\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPoco_1_1LogFile_ad16e4b7dc1498e3f2b7d71b48c29e5d7}\label{classPoco_1_1LogFile_ad16e4b7dc1498e3f2b7d71b48c29e5d7}} 
+\index{Poco::LogFile@{Poco::LogFile}!````~LogFile@{$\sim$LogFile}}
+\index{````~LogFile@{$\sim$LogFile}!Poco::LogFile@{Poco::LogFile}}
+\doxysubsubsection{\texorpdfstring{$\sim$LogFile()}{~LogFile()}}
+{\footnotesize\ttfamily Poco\+::\+Log\+File\+::$\sim$\+Log\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the \mbox{\hyperlink{classPoco_1_1LogFile}{Log\+File}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoco_1_1LogFile_a9c605fadf752689a84cb006502878744}\label{classPoco_1_1LogFile_a9c605fadf752689a84cb006502878744}} 
+\index{Poco::LogFile@{Poco::LogFile}!creationDate@{creationDate}}
+\index{creationDate@{creationDate}!Poco::LogFile@{Poco::LogFile}}
+\doxysubsubsection{\texorpdfstring{creationDate()}{creationDate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoco_1_1Timestamp}{Timestamp}} Poco\+::\+Log\+File\+::creation\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the current size in bytes of the log file. 
+
+
+
+Definition at line 82 of file Log\+File.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classPoco_1_1LogFile_af1ce469c70625ea798d6c4cb27ff5207}\label{classPoco_1_1LogFile_af1ce469c70625ea798d6c4cb27ff5207}} 
+\index{Poco::LogFile@{Poco::LogFile}!path@{path}}
+\index{path@{path}!Poco::LogFile@{Poco::LogFile}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \& Poco\+::\+Log\+File\+::path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the date and time the log file was created. 
+
+
+
+Definition at line 88 of file Log\+File.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classPoco_1_1LogFile_a404298d158c2337eeb1920d6085a898d}\label{classPoco_1_1LogFile_a404298d158c2337eeb1920d6085a898d}} 
+\index{Poco::LogFile@{Poco::LogFile}!size@{size}}
+\index{size@{size}!Poco::LogFile@{Poco::LogFile}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily U\+Int64 Poco\+::\+Log\+File\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Writes the given text to the log file. If flush is true, the text will be immediately flushed to the file. 
+
+Definition at line 76 of file Log\+File.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classPoco_1_1LogFile_a52798eb4783705529618a0af3a1b0f85}\label{classPoco_1_1LogFile_a52798eb4783705529618a0af3a1b0f85}} 
+\index{Poco::LogFile@{Poco::LogFile}!write@{write}}
+\index{write@{write}!Poco::LogFile@{Poco::LogFile}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Poco\+::\+Log\+File\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} std\+::string \&}]{text,  }\item[{bool}]{flush = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys the \mbox{\hyperlink{classPoco_1_1LogFile}{Log\+File}}. 
+
+
+
+Definition at line 70 of file Log\+File.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App\+Frame\+Work/include/\+Poco/\mbox{\hyperlink{LogFile_8h}{Log\+File.\+h}}\end{DoxyCompactItemize}
