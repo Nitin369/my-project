@@ -1,0 +1,11 @@
+digraph "Poco::ExpireStrategy&lt; TKey, TValue &gt;"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Poco::ExpireStrategy\l\< TKey, TValue \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="An ExpireStrategy implements time based expiration of cache entries."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Poco::AbstractStrategy\l\< TKey, TValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AbstractStrategy.html",tooltip="An AbstractStrategy is the interface for all strategies."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Poco::AccessExpireStrategy\l\< TKey, TValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AccessExpireStrategy.html",tooltip="An AccessExpireStrategy implements time and access based expiration of cache entries."];
+}

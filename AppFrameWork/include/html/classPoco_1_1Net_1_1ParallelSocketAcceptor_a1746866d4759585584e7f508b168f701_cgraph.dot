@@ -1,0 +1,32 @@
+digraph "Poco::Net::ParallelSocketAcceptor::setReactor"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Poco::Net::ParallelSocket\lAcceptor::setReactor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sets the reactor for this acceptor."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Poco::Net::SocketReactor\l::hasEventHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1SocketReactor.html#abfb5ea7e2378c999495e294bb1a9ef01",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Poco::Net::ParallelSocket\lAcceptor::onAccept",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ParallelSocketAcceptor.html#a38f858babc9853692aa2da749ce886bf",tooltip="Accepts connection and creates event handler."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Poco::Net::ServerSocket\l::acceptConnection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ServerSocket.html#abca3758150ac51011ab0fcec6c31ad39",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Poco::Net::ParallelSocket\lAcceptor::createServiceHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ParallelSocketAcceptor.html#a6dc105fc3a7187e40c5784fcf24714fc",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Poco::Net::ParallelSocket\lAcceptor::next",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ParallelSocketAcceptor.html#a354e396e861bdaf4d2639444591ea643",tooltip="Returns reference to the next reactor index."];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Poco::Net::ParallelSocket\lAcceptor::socket",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ParallelSocketAcceptor.html#a195fd32427d16fc04bba78c34c766d2f",tooltip="Returns a reference to the SocketAcceptor's socket."];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Poco::RefCountedObject\l::release",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1RefCountedObject.html#a14bf204923a6ba4b97df6f8fdb9deb72",tooltip="Increments the object's reference count."];
+  Node3 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Poco::Net::SocketReactor\l::wakeUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1SocketReactor.html#aac64524d1d1ee6148262e472768fd710",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Poco::Net::ParallelSocket\lAcceptor::reactor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ParallelSocketAcceptor.html#a59af64f08e6e93bba7dd393373534446",tooltip=" "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Poco::Net::ParallelSocket\lAcceptor::registerAcceptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ParallelSocketAcceptor.html#a5a87b01e93a0cb5c0646246f2a4bcfde",tooltip=" "];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Poco::Net::SocketReactor\l::addEventHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1SocketReactor.html#af6d366d0de6f903709f61a07e21ab508",tooltip="Returns the timeout."];
+  Node11 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

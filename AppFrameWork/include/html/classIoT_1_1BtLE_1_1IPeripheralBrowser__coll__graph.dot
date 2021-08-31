@@ -1,0 +1,41 @@
+digraph "IoT::BtLE::IPeripheralBrowser"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="IoT::BtLE::IPeripheralBrowser",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This class provides browsing for available Bluetooth LE devices."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Poco::OSP::Service",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1OSP_1_1Service.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Poco::RefCountedObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1RefCountedObject.html",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ConstPtr" ,fontname="Helvetica"];
+  Node4 [label="Poco::AutoPtr\< C \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AutoPtr.html",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" browseComplete" ,fontname="Helvetica"];
+  Node5 [label="Poco::BasicEvent\< void \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1BasicEvent.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Poco::AbstractEvent\l\< void, DefaultStrategy\l\< void, AbstractDelegate\l\< void \> \>, AbstractDelegate\l\< void \>, FastMutex \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AbstractEvent.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _strategy" ,fontname="Helvetica"];
+  Node7 [label="Poco::DefaultStrategy\l\< void, AbstractDelegate\l\< void \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1DefaultStrategy.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Poco::NotificationStrategy\l\< void, AbstractDelegate\l\< void \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1NotificationStrategy.html",tooltip=" "];
+  Node9 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _executeAsync" ,fontname="Helvetica"];
+  Node9 [label="Poco::ActiveMethod\l\< void, Poco::AbstractEvent\l::NotifyAsyncParams, Poco\l::AbstractEvent \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveMethod.html",tooltip=" "];
+  Node10 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _mutex" ,fontname="Helvetica"];
+  Node10 [label="Poco::FastMutex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1FastMutex.html",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Poco::FastMutexImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1FastMutexImpl.html",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Poco::MutexImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1MutexImpl.html",tooltip=" "];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" peripheralFound" ,fontname="Helvetica"];
+  Node13 [label="Poco::BasicEvent\< const\l IoT::BtLE::PeripheralInfo \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1BasicEvent.html",tooltip=" "];
+  Node14 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Poco::AbstractEvent\l\< const IoT::BtLE::Peripheral\lInfo, DefaultStrategy\< const\l IoT::BtLE::PeripheralInfo,\l AbstractDelegate\< const IoT\l::BtLE::PeripheralInfo \> \>, AbstractDelegate\l\< const IoT::BtLE::PeripheralInfo \>, FastMutex \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1AbstractEvent.html",tooltip=" "];
+  Node15 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _executeAsync" ,fontname="Helvetica"];
+  Node15 [label="Poco::ActiveMethod\l\< const IoT::BtLE::Peripheral\lInfo, Poco::AbstractEvent\l::NotifyAsyncParams, Poco\l::AbstractEvent \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1ActiveMethod.html",tooltip=" "];
+  Node16 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _strategy" ,fontname="Helvetica"];
+  Node16 [label="Poco::DefaultStrategy\l\< const IoT::BtLE::Peripheral\lInfo, AbstractDelegate\< const\l IoT::BtLE::PeripheralInfo \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1DefaultStrategy.html",tooltip=" "];
+  Node17 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="Poco::NotificationStrategy\l\< const IoT::BtLE::PeripheralInfo,\l AbstractDelegate\< const IoT::\lBtLE::PeripheralInfo \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1NotificationStrategy.html",tooltip=" "];
+  Node10 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _mutex" ,fontname="Helvetica"];
+}

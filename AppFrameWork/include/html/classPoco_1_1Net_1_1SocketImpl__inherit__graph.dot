@@ -1,0 +1,26 @@
+digraph "Poco::Net::SocketImpl"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Poco::Net::SocketImpl",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Poco::RefCountedObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1RefCountedObject.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Poco::Net::DatagramSocketImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1DatagramSocketImpl.html",tooltip="This class implements an UDP socket."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Poco::Net::RawSocketImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1RawSocketImpl.html",tooltip="This class implements a raw socket."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Poco::Net::ICMPSocketImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ICMPSocketImpl.html",tooltip="This class implements an ICMP socket."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Poco::Net::ServerSocketImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1ServerSocketImpl.html",tooltip="This class implements a TCP server socket."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Poco::Net::SecureServerSocketImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1SecureServerSocketImpl.html",tooltip="The SocketImpl class for SecureServerSocket."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Poco::Net::StreamSocketImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1StreamSocketImpl.html",tooltip="This class implements a TCP socket."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Poco::Net::SecureStreamSocketImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1SecureStreamSocketImpl.html",tooltip="This class implements a SSL stream socket."];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Poco::Net::WebSocketImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Net_1_1WebSocketImpl.html",tooltip=" "];
+}

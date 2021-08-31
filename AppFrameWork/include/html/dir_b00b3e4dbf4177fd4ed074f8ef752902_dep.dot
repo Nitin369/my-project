@@ -1,0 +1,17 @@
+digraph "IoT/MQTT" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_5a19812182fae01863a0d0253d29ed78 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="IoT" fontname="Helvetica", fontsize="10", URL="dir_5a19812182fae01863a0d0253d29ed78.html"]
+  subgraph clusterdir_b00b3e4dbf4177fd4ed074f8ef752902 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_b00b3e4dbf4177fd4ed074f8ef752902.html"];
+    dir_b00b3e4dbf4177fd4ed074f8ef752902 [shape=plaintext label="MQTT"];
+    dir_0b95acd9fd967ad5d498c1091f108b5b [shape=box label="MQTTClientImpl" color="black" fillcolor="white" style="filled" URL="dir_0b95acd9fd967ad5d498c1091f108b5b.html"];
+    dir_d425da8e03985a3f1d54cc86ba537a33 [shape=box label="Paho" color="black" fillcolor="white" style="filled" URL="dir_d425da8e03985a3f1d54cc86ba537a33.html"];
+  }
+  }
+  dir_81ff493427341218f455ba9892fb114f [shape=box label="Poco" fillcolor="white" style="filled" color="red" URL="dir_81ff493427341218f455ba9892fb114f.html"];
+  dir_b00b3e4dbf4177fd4ed074f8ef752902->dir_81ff493427341218f455ba9892fb114f [headlabel="39", labeldistance=1.5 headhref="dir_000005_000013.html"];
+  dir_0b95acd9fd967ad5d498c1091f108b5b->dir_81ff493427341218f455ba9892fb114f [headlabel="4", labeldistance=1.5 headhref="dir_000007_000013.html"];
+}

@@ -1,0 +1,20 @@
+digraph "Poco::Zip::ZipOperation"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Poco::Zip::ZipOperation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Abstract super class for operations on individual zip entries."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Poco::RefCountedObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1RefCountedObject.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Poco::Zip::Add",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Zip_1_1Add.html",tooltip="Operation Add adds a new file entry to an existing Zip File."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Poco::Zip::Delete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Zip_1_1Delete.html",tooltip="Delete Operation removes an entry from a Zip."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Poco::Zip::Keep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Zip_1_1Keep.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Poco::Zip::Rename",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Zip_1_1Rename.html",tooltip="Renames an existing Zip Entry."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Poco::Zip::Replace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoco_1_1Zip_1_1Replace.html",tooltip="Operation Replace replaces the content of an existing entry with a new one."];
+}
