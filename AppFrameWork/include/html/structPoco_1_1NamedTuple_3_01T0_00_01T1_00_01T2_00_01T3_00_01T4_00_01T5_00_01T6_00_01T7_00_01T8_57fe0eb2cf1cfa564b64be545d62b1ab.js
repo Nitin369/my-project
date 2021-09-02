@@ -1,0 +1,25 @@
+var structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab =
+[
+    [ "NameVec", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#adb661bd47e13ec19c393dabbc814de98", null ],
+    [ "NameVecPtr", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a77e33148b1260b08eac379095b263443", null ],
+    [ "TupleType", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a90873ce62a4a0633b403f5d32bd30e92", null ],
+    [ "Type", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a0bbfd3a9055a779cda21aaf13f09a841", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a01ff2f8d6c2920b1b64615df5847940e", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a9c78a93d50f0a3f2c9017f3812d4bb2a", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#abeb8ea2c43902d26829ab01d412ef108", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#aedfa8d0856cce0e82764eb1d057f6196", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a33d94b7b7a9c27d227f409756accc641", null ],
+    [ "get", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a4d11a2a958893130deb961ec9cbd9fb3", null ],
+    [ "get", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a8f71d345f1e2150f72954617d25f0ce4", null ],
+    [ "get", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a146da7b381ec2ddd33d6e299be2773e1", null ],
+    [ "getName", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a06af9acee09eb5ce38c507fe5ca938e9", null ],
+    [ "init", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a420f0cfb7b68ce86f93ee002d6ec5e33", null ],
+    [ "names", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a00900aa9900d712b9d1b43df040a64ba", null ],
+    [ "operator!=", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a1f8ddce8bf3febe3fe5bc8132f8484eb", null ],
+    [ "operator<", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a9845a0f7029bebd75d08c8d60a88c8d5", null ],
+    [ "operator==", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a4d8bca858c2a0eba1032915df1b78079", null ],
+    [ "operator[]", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#ae4de77dc7c1ac8b3291f5623b56f9a93", null ],
+    [ "set", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a5bee272bbc34d185922f069ab791d65e", null ],
+    [ "setName", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a597bf0e97db9af104e6f0443a3ad666f", null ],
+    [ "_pNames", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_57fe0eb2cf1cfa564b64be545d62b1ab.html#a2a73aa55fc42f48b1efd3478e1f37ee4", null ]
+];

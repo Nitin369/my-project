@@ -1,0 +1,5 @@
+var classPoco_1_1RemotingNG_1_1TypeSerializer_3_01IoT_1_1XBee_1_1ExplicitAddressingZigBeeTransmitRequest_01_4 =
+[
+    [ "serialize", "classPoco_1_1RemotingNG_1_1TypeSerializer_3_01IoT_1_1XBee_1_1ExplicitAddressingZigBeeTransmitRequest_01_4.html#a1cee4f32f15e765e035b553f76bfab05", null ],
+    [ "serializeImpl", "classPoco_1_1RemotingNG_1_1TypeSerializer_3_01IoT_1_1XBee_1_1ExplicitAddressingZigBeeTransmitRequest_01_4.html#aa5a1af8104302e821fb1d3b2c8c8ac11", null ]
+];

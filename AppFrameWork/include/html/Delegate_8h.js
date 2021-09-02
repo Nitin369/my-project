@@ -1,0 +1,27 @@
+var Delegate_8h =
+[
+    [ "Delegate", "classPoco_1_1Delegate.html", "classPoco_1_1Delegate" ],
+    [ "Delegate< TObj, TArgs, false >", "classPoco_1_1Delegate_3_01TObj_00_01TArgs_00_01false_01_4.html", "classPoco_1_1Delegate_3_01TObj_00_01TArgs_00_01false_01_4" ],
+    [ "Delegate< TObj, void, true >", "classPoco_1_1Delegate_3_01TObj_00_01void_00_01true_01_4.html", "classPoco_1_1Delegate_3_01TObj_00_01void_00_01true_01_4" ],
+    [ "Delegate< TObj, void, false >", "classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4.html", "classPoco_1_1Delegate_3_01TObj_00_01void_00_01false_01_4" ],
+    [ "delegate", "Delegate_8h.html#a3c92b935465d543414d807c7884396ff", null ],
+    [ "delegate", "Delegate_8h.html#a44383255eb577fd50702f85256d175da", null ],
+    [ "delegate", "Delegate_8h.html#ab3092e421092e932b52186ff82cf20eb", null ],
+    [ "delegate", "Delegate_8h.html#abb14a10568fda0d9ee13d2b34b96f94f", null ],
+    [ "delegate", "Delegate_8h.html#acc401e8aad29e065f9a7715bc28ddef5", null ],
+    [ "delegate", "Delegate_8h.html#a21023467e31eda2209d56c98301caf37", null ],
+    [ "delegate", "Delegate_8h.html#ae7f4f52611f78d14f9f5487b1a7cd3e4", null ],
+    [ "delegate", "Delegate_8h.html#a97ab2640dd56e2aa199c5f8132a6417b", null ],
+    [ "delegate", "Delegate_8h.html#a10221ee61b240e5ec790b3d6be1f39e5", null ],
+    [ "delegate", "Delegate_8h.html#a87e513a339460fec64579a58c43c844c", null ],
+    [ "delegate", "Delegate_8h.html#aa217f5754d36bee0a428c6d2e5f8ac1b", null ],
+    [ "delegate", "Delegate_8h.html#a31b23e1c785d926398617b541966cc11", null ],
+    [ "delegate", "Delegate_8h.html#aab0d2413d70d1d77a2acbfe5323704cd", null ],
+    [ "delegate", "Delegate_8h.html#a2cf329b15b2cb65c60f115d47978328c", null ],
+    [ "delegate", "Delegate_8h.html#a955a7c580cbe3647679dbecb97d2289b", null ],
+    [ "delegate", "Delegate_8h.html#a10327bf7abadf67ae29a56a49c847115", null ],
+    [ "delegate", "Delegate_8h.html#a0f039f7142533b17580d38d597637e3b", null ],
+    [ "delegate", "Delegate_8h.html#a0a823757aed4056ea5462fa996e97898", null ],
+    [ "delegate", "Delegate_8h.html#a4f20385d318c7c5ece69eb5062d0f4bc", null ],
+    [ "delegate", "Delegate_8h.html#a45bea9b2b76af2bd71ecb45fa87d5d9d", null ]
+];

@@ -1,0 +1,25 @@
+var classIoT_1_1Devices_1_1MagnetometerRemoteObject =
+[
+    [ "Ptr", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#a4673ab4e2f1027c9b697f48b785e42f7", null ],
+    [ "MagnetometerRemoteObject", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#aa3752648225348783078a0558da257b1", null ],
+    [ "~MagnetometerRemoteObject", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#aa127c2d7772d49fd16f76373864366be", null ],
+    [ "event__fieldStrengthChanged", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#afca1d3b33ed29853b1f34b37da0bac84", null ],
+    [ "fieldStrength", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#a1c77c467bb9820ecdddd15ffbbb8d3b8", null ],
+    [ "getFeature", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#a162f93294fbb7fa29c44b99607171d73", null ],
+    [ "getPropertyBool", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#ad372c857cbcba50c0ecbc3f3ac990cbd", null ],
+    [ "getPropertyDouble", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#a5f6455e1e71ed30fd600680416874f01", null ],
+    [ "getPropertyInt", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#a3396bf2a07500b20ec344ece1879dbc9", null ],
+    [ "getPropertyString", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#af1f4e5f6c7af67ec04ab73c9073a3060", null ],
+    [ "hasFeature", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#abc206976499723f35c0b05adfb655d7e", null ],
+    [ "hasProperty", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#a20023d7520716434a4b36e3a610e3339", null ],
+    [ "remoting__enableEvents", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#ac5f485b764949461e9ae9862c70e0052", null ],
+    [ "remoting__enableRemoteEvents", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#a2020d810d596c55c82cab348b376f065", null ],
+    [ "remoting__hasEvents", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#add9245c2d6a9322bc2dbc082c6196465", null ],
+    [ "remoting__typeId", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#a145eecc302168cf72cfc51248c671613", null ],
+    [ "setFeature", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#a81e2aaaa8d72c57516573f2ea0e41cf9", null ],
+    [ "setPropertyBool", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#af772e9fe90b53f5a10722e787d01f62a", null ],
+    [ "setPropertyDouble", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#af035552e874183b1ea7280e268a941d6", null ],
+    [ "setPropertyInt", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#a98771f96ea1814e66cdde271f1237133", null ],
+    [ "setPropertyString", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#ac2b710db88465b9a9ac351cc4fceed3f", null ],
+    [ "_pServiceObject", "classIoT_1_1Devices_1_1MagnetometerRemoteObject.html#a25f96d269b49cbb91b6c82ad274cc3bd", null ]
+];

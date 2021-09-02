@@ -1,0 +1,25 @@
+var structPoco_1_1NamedTuple =
+[
+    [ "NameVec", "structPoco_1_1NamedTuple.html#a30a878166c661f6d48aa8ebf33e5eda2", null ],
+    [ "NameVecPtr", "structPoco_1_1NamedTuple.html#aca379995653a73d31e20b00290a114bf", null ],
+    [ "TupleType", "structPoco_1_1NamedTuple.html#a0e2c564a0889e5b861078a105c3da5af", null ],
+    [ "Type", "structPoco_1_1NamedTuple.html#ae2b3dc3467e12c8a27d4907062e63e2a", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple.html#a05ec6ef9bb183b6d184cacacbe7759f0", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple.html#a6a10530f247b5f66dd6190524200847b", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple.html#a95947dc5051be55bef97169d0a6b1b63", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple.html#ac00c1ca14c6537a12f34d5b335749ee8", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple.html#ad5946252c53c170863f2e06af9ffcdd5", null ],
+    [ "get", "structPoco_1_1NamedTuple.html#af1c3a132fdf21f3db7caeae213d016f5", null ],
+    [ "get", "structPoco_1_1NamedTuple.html#a92a9310abbe41d4177a7a7b4c07030fe", null ],
+    [ "get", "structPoco_1_1NamedTuple.html#aa36245716361d0939f2a19254c21f0d3", null ],
+    [ "getName", "structPoco_1_1NamedTuple.html#a129fa81a85609ebce209edd881c95548", null ],
+    [ "init", "structPoco_1_1NamedTuple.html#a6c2a28d56bd9ee709a599e6694db2de8", null ],
+    [ "names", "structPoco_1_1NamedTuple.html#afa2efe4159ee598b9106201a20acdbc8", null ],
+    [ "operator!=", "structPoco_1_1NamedTuple.html#a640fc23fa86131492a5c00f1ff24e8a7", null ],
+    [ "operator<", "structPoco_1_1NamedTuple.html#ad95e0cdfe2de6dc50c4c962de080692b", null ],
+    [ "operator==", "structPoco_1_1NamedTuple.html#acb4b99217a594d80d0998053990d2718", null ],
+    [ "operator[]", "structPoco_1_1NamedTuple.html#a0064c11273bb901d81904e168dacac68", null ],
+    [ "set", "structPoco_1_1NamedTuple.html#aa479aa6a6a82f1383ce779cafcefb127", null ],
+    [ "setName", "structPoco_1_1NamedTuple.html#aa9b7dc7c8f83c522c4401b603e4979ae", null ],
+    [ "_pNames", "structPoco_1_1NamedTuple.html#aeccd1845a93fc57227224c51297344f8", null ]
+];

@@ -1,0 +1,28 @@
+var classPoco_1_1Data_1_1PooledSessionImpl =
+[
+    [ "PooledSessionImpl", "classPoco_1_1Data_1_1PooledSessionImpl.html#a406ea67724480ccabde93f2eb9e7f06b", null ],
+    [ "~PooledSessionImpl", "classPoco_1_1Data_1_1PooledSessionImpl.html#a6466bfec8b537526eb876b7cad71e155", null ],
+    [ "access", "classPoco_1_1Data_1_1PooledSessionImpl.html#a6d47bbd87bb43df8af5fc07cfcfe60e5", null ],
+    [ "begin", "classPoco_1_1Data_1_1PooledSessionImpl.html#a94effd6569c4826afc858bb3e580e34d", null ],
+    [ "canTransact", "classPoco_1_1Data_1_1PooledSessionImpl.html#aff94d397b146824f367a5261312054cc", null ],
+    [ "close", "classPoco_1_1Data_1_1PooledSessionImpl.html#a107cac845d9513de04d4dd95939109c5", null ],
+    [ "commit", "classPoco_1_1Data_1_1PooledSessionImpl.html#aac50d5fec2883140f40d8ca95eef290e", null ],
+    [ "connectorName", "classPoco_1_1Data_1_1PooledSessionImpl.html#aa7dfe67859bdd57d4bf4f8132c1371be", null ],
+    [ "createStatementImpl", "classPoco_1_1Data_1_1PooledSessionImpl.html#a1567cd572a4c132375aff5d63cb5b7bf", null ],
+    [ "getConnectionTimeout", "classPoco_1_1Data_1_1PooledSessionImpl.html#a53ad7742a642a9f11f63172b6386a68d", null ],
+    [ "getFeature", "classPoco_1_1Data_1_1PooledSessionImpl.html#a0aac3b4187c912ac390cd68181dccf48", null ],
+    [ "getProperty", "classPoco_1_1Data_1_1PooledSessionImpl.html#a1e1d77f546c853691d4ec7d4e3fa4e28", null ],
+    [ "getTransactionIsolation", "classPoco_1_1Data_1_1PooledSessionImpl.html#a9aafa072a66b67ccba412bb7d2347de7", null ],
+    [ "hasTransactionIsolation", "classPoco_1_1Data_1_1PooledSessionImpl.html#ab63b46055ed5e5ec1de7785600344c87", null ],
+    [ "impl", "classPoco_1_1Data_1_1PooledSessionImpl.html#a212cb1e2890283ec1ba0377171e1053b", null ],
+    [ "isConnected", "classPoco_1_1Data_1_1PooledSessionImpl.html#a44f203fced98eaac1bafdfa0b829effa", null ],
+    [ "isTransaction", "classPoco_1_1Data_1_1PooledSessionImpl.html#a46e33f35885eb022b1939e012c762afa", null ],
+    [ "isTransactionIsolation", "classPoco_1_1Data_1_1PooledSessionImpl.html#ad84006c73815e39d757584214a51d72a", null ],
+    [ "open", "classPoco_1_1Data_1_1PooledSessionImpl.html#ae9093e890331c9c927dc39585e7a7404", null ],
+    [ "rollback", "classPoco_1_1Data_1_1PooledSessionImpl.html#a9728d427d833afcffa8f1f8c3d789a40", null ],
+    [ "setConnectionTimeout", "classPoco_1_1Data_1_1PooledSessionImpl.html#adc56650a233b5575a090a5e5beff35d0", null ],
+    [ "setFeature", "classPoco_1_1Data_1_1PooledSessionImpl.html#a44650e1ccc780864b3b104d523355bb6", null ],
+    [ "setProperty", "classPoco_1_1Data_1_1PooledSessionImpl.html#a21ed28dcbe6624abf87306751aaefade", null ],
+    [ "setTransactionIsolation", "classPoco_1_1Data_1_1PooledSessionImpl.html#a29c0428b5d9d356a70f6255a4a9a98a9", null ],
+    [ "_pHolder", "classPoco_1_1Data_1_1PooledSessionImpl.html#a9067cdc7bb1d76507a88d734b575fbd1", null ]
+];

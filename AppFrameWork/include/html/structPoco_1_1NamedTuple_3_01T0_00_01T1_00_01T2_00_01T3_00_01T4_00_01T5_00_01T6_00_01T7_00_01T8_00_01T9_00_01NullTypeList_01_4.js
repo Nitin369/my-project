@@ -1,0 +1,25 @@
+var structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4 =
+[
+    [ "NameVec", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#accda0ca6412e50cd2139ffd7d9e56789", null ],
+    [ "NameVecPtr", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#ac6fbabb8e6c86d52a56a06231096d498", null ],
+    [ "TupleType", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#a4a3f941394f6bfe1bce182c99e77abb4", null ],
+    [ "Type", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#a5d7972d66b564abcb94bb44cf9441b2d", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#a3de0f55958c8a6b9cf3e4a8f199f50d5", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#aefd865de74227202c8d21ce35c918681", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#a5fb6e70638a2c65823ef1f4e743d797b", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#afa51626f274289720d2fa104cc98248d", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#a723df8704f45a4294f9b4866baf760cc", null ],
+    [ "get", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#a7f8a63061f76e83258e331be36e98b8b", null ],
+    [ "get", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#af76c9b5936b83d3a374b53ca9f3a562d", null ],
+    [ "get", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#af9abc4a8eeb01f9befe64a65ea000852", null ],
+    [ "getName", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#a0d919a8d75f79269c282a12847848078", null ],
+    [ "init", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#aea4f4546411a5a2bd0ae1ce2df1624bd", null ],
+    [ "names", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#aac5b02b9360be814ea11362162c94aeb", null ],
+    [ "operator!=", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#abd1689bbbb0a23f9046d40f410f7f356", null ],
+    [ "operator<", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#ae52803240ab3ebc17967c137c0739660", null ],
+    [ "operator==", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#aa11b62ed153add56b3fb9af56c6261f3", null ],
+    [ "operator[]", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#ad72f149379fcff3fe528de5c6c331ccf", null ],
+    [ "set", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#a417ed157ef276861ceb3d024a8694356", null ],
+    [ "setName", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#aa51f292b75b20073c44ad17e35916d46", null ],
+    [ "_pNames", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01T2_00_01T3_00_01T4_00_01T5_00_01T6_00_01T7_00_01T8_00_01T9_00_01NullTypeList_01_4.html#a1126409f1df97af53c9fb73d20bf5ef7", null ]
+];

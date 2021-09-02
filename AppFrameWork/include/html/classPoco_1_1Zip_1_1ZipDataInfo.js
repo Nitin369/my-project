@@ -1,0 +1,26 @@
+var classPoco_1_1Zip_1_1ZipDataInfo =
+[
+    [ "HEADER_POS", "classPoco_1_1Zip_1_1ZipDataInfo.html#ab4c757e3fe554c1f67e526573ad43541a33e6bd597df6cc757ba44e2d3018aab1", null ],
+    [ "CRC32_POS", "classPoco_1_1Zip_1_1ZipDataInfo.html#ab4c757e3fe554c1f67e526573ad43541a7ba60fb6a02a0f769e6f27b11c6aa616", null ],
+    [ "CRC32_SIZE", "classPoco_1_1Zip_1_1ZipDataInfo.html#ab4c757e3fe554c1f67e526573ad43541ab9e7666ca5cc9aa4d5286f2ef69727f6", null ],
+    [ "COMPRESSED_POS", "classPoco_1_1Zip_1_1ZipDataInfo.html#ab4c757e3fe554c1f67e526573ad43541ac4e76260684dbf87c27fa66b11710365", null ],
+    [ "COMPRESSED_SIZE", "classPoco_1_1Zip_1_1ZipDataInfo.html#ab4c757e3fe554c1f67e526573ad43541a77a0695ca53bad4d63052aeccf4cf1a7", null ],
+    [ "UNCOMPRESSED_POS", "classPoco_1_1Zip_1_1ZipDataInfo.html#ab4c757e3fe554c1f67e526573ad43541a07d6699e59084bd9c3858d428732b5e3", null ],
+    [ "UNCOMPRESSED_SIZE", "classPoco_1_1Zip_1_1ZipDataInfo.html#ab4c757e3fe554c1f67e526573ad43541a0d83217ec1ce3affd0d448d9708ced8b", null ],
+    [ "FULLHEADER_SIZE", "classPoco_1_1Zip_1_1ZipDataInfo.html#ab4c757e3fe554c1f67e526573ad43541abcb86c64bef306018b2e3960c13e444e", null ],
+    [ "ZipDataInfo", "classPoco_1_1Zip_1_1ZipDataInfo.html#a7116990ef314a37e8682ad4354f0ceec", null ],
+    [ "ZipDataInfo", "classPoco_1_1Zip_1_1ZipDataInfo.html#a4b30cb8c635e724458cb61863591d84d", null ],
+    [ "~ZipDataInfo", "classPoco_1_1Zip_1_1ZipDataInfo.html#a254f5c7b9e2872019629bb3b888fc969", null ],
+    [ "getCompressedSize", "classPoco_1_1Zip_1_1ZipDataInfo.html#a4acb527fb822b2c0cdddfc90035151db", null ],
+    [ "getCRC32", "classPoco_1_1Zip_1_1ZipDataInfo.html#a9c2f0c20381e0ac82a7492076a8bccef", null ],
+    [ "getFullHeaderSize", "classPoco_1_1Zip_1_1ZipDataInfo.html#ac6fa0d8708eca9274948a8708169b1ba", null ],
+    [ "getRawHeader", "classPoco_1_1Zip_1_1ZipDataInfo.html#addc03c4c51690a9dd019a40123998075", null ],
+    [ "getUncompressedSize", "classPoco_1_1Zip_1_1ZipDataInfo.html#a1179b1767f30d644b8d4fb4aa94a6716", null ],
+    [ "isValid", "classPoco_1_1Zip_1_1ZipDataInfo.html#a835390ced5ad4c3a328b7708d446cd83", null ],
+    [ "setCompressedSize", "classPoco_1_1Zip_1_1ZipDataInfo.html#a68ba8632832637a6790515a806174b3c", null ],
+    [ "setCRC32", "classPoco_1_1Zip_1_1ZipDataInfo.html#a59e472d7846ae538f3d1e19f2ec9448c", null ],
+    [ "setUncompressedSize", "classPoco_1_1Zip_1_1ZipDataInfo.html#ab2246e41437ccae85e8fc3e2c12631eb", null ],
+    [ "_rawInfo", "classPoco_1_1Zip_1_1ZipDataInfo.html#a46355b0b0e1d36527942a355b0081582", null ],
+    [ "_valid", "classPoco_1_1Zip_1_1ZipDataInfo.html#ad5be9806e4dc2820f9a799efc2425f08", null ],
+    [ "HEADER", "classPoco_1_1Zip_1_1ZipDataInfo.html#a9e5130bad6433bc4eb68187ae8db02a6", null ]
+];

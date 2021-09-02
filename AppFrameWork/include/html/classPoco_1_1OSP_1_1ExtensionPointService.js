@@ -1,0 +1,36 @@
+var classPoco_1_1OSP_1_1ExtensionPointService =
+[
+    [ "BundleMap", "classPoco_1_1OSP_1_1ExtensionPointService.html#a2dda812b5ce54654a525970719b45f1d", null ],
+    [ "ConstPtr", "classPoco_1_1OSP_1_1ExtensionPointService.html#acc49a338a1465abce30ebe9ca2608aff", null ],
+    [ "GenericHandler", "classPoco_1_1OSP_1_1ExtensionPointService.html#a08ca4aa3eca840df81fc0485382ec00d", null ],
+    [ "Ptr", "classPoco_1_1OSP_1_1ExtensionPointService.html#a4020470afb10a2053a3b390641e5f233", null ],
+    [ "XPMap", "classPoco_1_1OSP_1_1ExtensionPointService.html#ac27112ea6a793bbbe392c4b3a3852b76", null ],
+    [ "Direction", "classPoco_1_1OSP_1_1ExtensionPointService.html#a1349c8aedb78dc26c16799c74beef11f", [
+      [ "DIR_FORWARD", "classPoco_1_1OSP_1_1ExtensionPointService.html#a1349c8aedb78dc26c16799c74beef11fa7d776fa32ef4d0b6545c96b5cb73f911", null ],
+      [ "DIR_REVERSE", "classPoco_1_1OSP_1_1ExtensionPointService.html#a1349c8aedb78dc26c16799c74beef11fa3301765f7cf04f9bffa25bc3c71ca1b8", null ]
+    ] ],
+    [ "ExtensionPointService", "classPoco_1_1OSP_1_1ExtensionPointService.html#a1dfc58201a9ee916a7abd0d692b901b5", null ],
+    [ "~ExtensionPointService", "classPoco_1_1OSP_1_1ExtensionPointService.html#ae4266ddb38882963fcb74aa669a35653", null ],
+    [ "ExtensionPointService", "classPoco_1_1OSP_1_1ExtensionPointService.html#ac41d041a4e2f434f987aabc45457d4ce", null ],
+    [ "findExtensionPoint", "classPoco_1_1OSP_1_1ExtensionPointService.html#ac9a3f6cb1aecec76862ae752bbdaba93", null ],
+    [ "handleExtension", "classPoco_1_1OSP_1_1ExtensionPointService.html#a59b9f3e7bdfcf5f7cc6325849f8c4594", null ],
+    [ "handleExtensions", "classPoco_1_1OSP_1_1ExtensionPointService.html#a38d5b45b2aca6729d9071d040785e6df", null ],
+    [ "handleExtensions", "classPoco_1_1OSP_1_1ExtensionPointService.html#a470e45b0f9f4dd10afd685c10b14ae44", null ],
+    [ "isA", "classPoco_1_1OSP_1_1ExtensionPointService.html#adf9d950e7659656a11d84309f495b922", null ],
+    [ "onBundleStarted", "classPoco_1_1OSP_1_1ExtensionPointService.html#ad452b7d2763353913e9e655a7560bb23", null ],
+    [ "onBundleStopped", "classPoco_1_1OSP_1_1ExtensionPointService.html#a33c5866c2ee95b72f878e20ee9965fdc", null ],
+    [ "registerExtensionPoint", "classPoco_1_1OSP_1_1ExtensionPointService.html#a4f751f17003614a9738cfea5db0afe94", null ],
+    [ "removeExtension", "classPoco_1_1OSP_1_1ExtensionPointService.html#a9e15e01d48aa2806914558fea43536d5", null ],
+    [ "type", "classPoco_1_1OSP_1_1ExtensionPointService.html#af091f0f94793d50faf04c4b1327689f4", null ],
+    [ "unregisterExtensionPoint", "classPoco_1_1OSP_1_1ExtensionPointService.html#aa969dfcdcc57a0ddb76c5cd24a0ffe6d", null ],
+    [ "_bundleMap", "classPoco_1_1OSP_1_1ExtensionPointService.html#a36db192c44af91a4b48f5ebc3a3484e3", null ],
+    [ "_events", "classPoco_1_1OSP_1_1ExtensionPointService.html#a958b4647ad1be18a6b2eb4d2b0bb0a75", null ],
+    [ "_logger", "classPoco_1_1OSP_1_1ExtensionPointService.html#a51bdf3d0a9a2dd8e932d0e7144a1a785", null ],
+    [ "_mutex", "classPoco_1_1OSP_1_1ExtensionPointService.html#a59256089774dcbfa77e2de0c0fa23f13", null ],
+    [ "_xpMap", "classPoco_1_1OSP_1_1ExtensionPointService.html#aaf878a7d5b365d098b9712d1ae3025b6", null ],
+    [ "EXTENSION_ELEM", "classPoco_1_1OSP_1_1ExtensionPointService.html#a812bfa2d2ace789dbdb71c371ca44189", null ],
+    [ "EXTENSIONS_ELEM", "classPoco_1_1OSP_1_1ExtensionPointService.html#a4e403f2644d5d8a5851f2af9050e7541", null ],
+    [ "EXTENSIONS_XML", "classPoco_1_1OSP_1_1ExtensionPointService.html#af29ac88b373627b0d8bc3109dff5ba41", null ],
+    [ "POINT_ATTR", "classPoco_1_1OSP_1_1ExtensionPointService.html#a0e9db1673fe6d3b4c108f70828e51854", null ],
+    [ "SERVICE_NAME", "classPoco_1_1OSP_1_1ExtensionPointService.html#a0ea022340003aeaf286e3f269a0b2c64", null ]
+];

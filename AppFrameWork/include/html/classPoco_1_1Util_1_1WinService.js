@@ -1,0 +1,37 @@
+var classPoco_1_1Util_1_1WinService =
+[
+    [ "Startup", "classPoco_1_1Util_1_1WinService.html#ab8e2757ddbb4c95127a3311a539a7149", [
+      [ "SVC_AUTO_START", "classPoco_1_1Util_1_1WinService.html#ab8e2757ddbb4c95127a3311a539a7149a92efb6a6840aa16afaa8737413249db6", null ],
+      [ "SVC_MANUAL_START", "classPoco_1_1Util_1_1WinService.html#ab8e2757ddbb4c95127a3311a539a7149ad1418a2c60eb19bad6c3b4ece22036d6", null ],
+      [ "SVC_DISABLED", "classPoco_1_1Util_1_1WinService.html#ab8e2757ddbb4c95127a3311a539a7149a9081f0334e0e779ec52f0a77333133c6", null ]
+    ] ],
+    [ "WinService", "classPoco_1_1Util_1_1WinService.html#a26c81adfd1825765e45b3a932fc55f5c", null ],
+    [ "~WinService", "classPoco_1_1Util_1_1WinService.html#a0ea1b3738b40e8f030e5137bee0d93ba", null ],
+    [ "WinService", "classPoco_1_1Util_1_1WinService.html#ace34a74757e2c96be0cf2dcf59a3fff4", null ],
+    [ "WinService", "classPoco_1_1Util_1_1WinService.html#af16b8f0032d61b1c8393e33f16658ec6", null ],
+    [ "close", "classPoco_1_1Util_1_1WinService.html#ad41db15d66e154a413aff55ba5c7f45f", null ],
+    [ "config", "classPoco_1_1Util_1_1WinService.html#ab65c29a9535c7a8981e128d14798d88f", null ],
+    [ "displayName", "classPoco_1_1Util_1_1WinService.html#abc12e9d2ff11e6441805e3976f771cfc", null ],
+    [ "getDescription", "classPoco_1_1Util_1_1WinService.html#a69c92aa1796319036396f41cafef147c", null ],
+    [ "getStartup", "classPoco_1_1Util_1_1WinService.html#acc7c215a451c9305e8a71bddff923a51", null ],
+    [ "isRegistered", "classPoco_1_1Util_1_1WinService.html#af595f2a7a21d86429a6191585363374b", null ],
+    [ "isRunning", "classPoco_1_1Util_1_1WinService.html#af743fce7a60994d595b6a618c6178114", null ],
+    [ "name", "classPoco_1_1Util_1_1WinService.html#a0a75cfcb4ae33dfe7a8c7c642c908620", null ],
+    [ "open", "classPoco_1_1Util_1_1WinService.html#acc4c1ed23f8a46fdd97d24eefdc6f57d", null ],
+    [ "operator=", "classPoco_1_1Util_1_1WinService.html#ade29ce4708112d92ba49bbab472e76db", null ],
+    [ "path", "classPoco_1_1Util_1_1WinService.html#aba760c992460cfce566d7cf8023d7dcf", null ],
+    [ "registerService", "classPoco_1_1Util_1_1WinService.html#a058249f5a8d75d6a49fc3e40259bf87c", null ],
+    [ "registerService", "classPoco_1_1Util_1_1WinService.html#a4b21e8c4b83ba568876b29768520547a", null ],
+    [ "setDescription", "classPoco_1_1Util_1_1WinService.html#a3d45170c89b62bd5bb213f616269a01d", null ],
+    [ "setStartup", "classPoco_1_1Util_1_1WinService.html#a228bc40272eca54ba74211e9a4886906", null ],
+    [ "start", "classPoco_1_1Util_1_1WinService.html#a5c35e5cefa98b200abc43f53309a5fbd", null ],
+    [ "stop", "classPoco_1_1Util_1_1WinService.html#a3557d4f296196c35d43e9f1e40f7d0c2", null ],
+    [ "tryOpen", "classPoco_1_1Util_1_1WinService.html#a2ff8919fa408eef9966b03862a980d8b", null ],
+    [ "unregisterService", "classPoco_1_1Util_1_1WinService.html#ac2ca7b55443e8f1713cfd9c9b8da9135", null ],
+    [ "_name", "classPoco_1_1Util_1_1WinService.html#a5e04655edb49abcd8bfd05befacb1520", null ],
+    [ "_scmHandle", "classPoco_1_1Util_1_1WinService.html#a0490295f217e96b0871cfe8ec7e9d02f", null ],
+    [ "_svcHandle", "classPoco_1_1Util_1_1WinService.html#ae529002a42f2718c54c74fd7941e24ab", null ],
+    [ "REGISTRY_DESCRIPTION", "classPoco_1_1Util_1_1WinService.html#a65cc7f4848d58f30efc4e1832645c5ca", null ],
+    [ "REGISTRY_KEY", "classPoco_1_1Util_1_1WinService.html#ae8c34c3b27ca91c976311d8b99991e46", null ],
+    [ "STARTUP_TIMEOUT", "classPoco_1_1Util_1_1WinService.html#a8da235bbff1db94f1945932fb8226af3", null ]
+];

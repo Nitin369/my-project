@@ -1,0 +1,28 @@
+var classPoco_1_1TaskManager =
+[
+    [ "TaskList", "classPoco_1_1TaskManager.html#abb1c384f5fbf56ba1761cb20857fac6b", null ],
+    [ "TaskPtr", "classPoco_1_1TaskManager.html#a431d40f8cb3fdb17a48d916a6cfa57df", null ],
+    [ "TaskManager", "classPoco_1_1TaskManager.html#a15a253d75b99924bc83d40dc5742f51d", null ],
+    [ "TaskManager", "classPoco_1_1TaskManager.html#a2cf79fb1d336d135edb842cf965b37c0", null ],
+    [ "~TaskManager", "classPoco_1_1TaskManager.html#a468fdf25caf71461d01cec77d4d26e28", null ],
+    [ "addObserver", "classPoco_1_1TaskManager.html#ad68254d2c820203f04c9eb1c1845883f", null ],
+    [ "cancelAll", "classPoco_1_1TaskManager.html#abcbbe15ca080ce3a9cdf6f133312f625", null ],
+    [ "count", "classPoco_1_1TaskManager.html#a91ee9cbd27a0280599c4699a4331b473", null ],
+    [ "joinAll", "classPoco_1_1TaskManager.html#afd962887bf3270ab327b419790faaf45", null ],
+    [ "postNotification", "classPoco_1_1TaskManager.html#ad8d035378fd814d8dff93f28eb5efda3", null ],
+    [ "removeObserver", "classPoco_1_1TaskManager.html#a6b4e721de886766005409c0dea3df80f", null ],
+    [ "start", "classPoco_1_1TaskManager.html#a5fc6d977ecdbea270b9dfb5a7b3ac934", null ],
+    [ "taskCancelled", "classPoco_1_1TaskManager.html#aca539d2ef95885882ca0c2c5aa1bb70b", null ],
+    [ "taskFailed", "classPoco_1_1TaskManager.html#a8026cdd475fd777cc319876b9621a357", null ],
+    [ "taskFinished", "classPoco_1_1TaskManager.html#a3ec315eec67929fcc1cd7d561346374d", null ],
+    [ "taskList", "classPoco_1_1TaskManager.html#a79ff7d34894ae1f71dc7f3124af67aab", null ],
+    [ "taskProgress", "classPoco_1_1TaskManager.html#a6836221b9b667d7016d8df1b1c104225", null ],
+    [ "taskStarted", "classPoco_1_1TaskManager.html#a0ac897fcbd831db1ac41451759803d8c", null ],
+    [ "Task", "classPoco_1_1TaskManager.html#aaa7728226b6ce66782e8816b1658dd9a", null ],
+    [ "_lastProgressNotification", "classPoco_1_1TaskManager.html#abd1a1e131e63c22c2d96c71e5990dd0a", null ],
+    [ "_mutex", "classPoco_1_1TaskManager.html#a35c3548daee10e9a12a1a9c138acf212", null ],
+    [ "_nc", "classPoco_1_1TaskManager.html#ae2297fc6f31a1721588b23563663e3e5", null ],
+    [ "_taskList", "classPoco_1_1TaskManager.html#af481de8d74932979c8754ae0b83fc404", null ],
+    [ "_threadPool", "classPoco_1_1TaskManager.html#a2ebfb5b5448d5c84fadaaa9407d75cd6", null ],
+    [ "MIN_PROGRESS_NOTIFICATION_INTERVAL", "classPoco_1_1TaskManager.html#a16e8584c5bfd46355e1e1e0854f8ef08", null ]
+];

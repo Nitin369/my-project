@@ -1,0 +1,4 @@
+var structPoco_1_1Util_1_1Units_1_1Internal_1_1OutputUnit2_3_01Power_3_01U_00_01Num_00_01Den_01_4_01_4 =
+[
+    [ "fn", "structPoco_1_1Util_1_1Units_1_1Internal_1_1OutputUnit2_3_01Power_3_01U_00_01Num_00_01Den_01_4_01_4.html#a8b653f2f10ad83326c9033c50fbc1215", null ]
+];

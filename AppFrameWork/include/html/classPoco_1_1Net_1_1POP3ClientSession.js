@@ -1,0 +1,26 @@
+var classPoco_1_1Net_1_1POP3ClientSession =
+[
+    [ "MessageInfo", "structPoco_1_1Net_1_1POP3ClientSession_1_1MessageInfo.html", "structPoco_1_1Net_1_1POP3ClientSession_1_1MessageInfo" ],
+    [ "MessageInfoVec", "classPoco_1_1Net_1_1POP3ClientSession.html#ad9670360f2f3abde38ea4ecd61fd19eb", null ],
+    [ "POP3_PORT", "classPoco_1_1Net_1_1POP3ClientSession.html#a051c9013607393b95f0192804f8bc60ba1d10d7364906cd53a056b3408c17da6b", null ],
+    [ "POP3ClientSession", "classPoco_1_1Net_1_1POP3ClientSession.html#aff82778805ac5fd4c6c546c34e23b644", null ],
+    [ "POP3ClientSession", "classPoco_1_1Net_1_1POP3ClientSession.html#aec195669bc1c79efd35ee14c3fb0001b", null ],
+    [ "~POP3ClientSession", "classPoco_1_1Net_1_1POP3ClientSession.html#a7dbacfc05344d0d051e1956ed1f79a29", null ],
+    [ "close", "classPoco_1_1Net_1_1POP3ClientSession.html#a9fb7d95eb3d2743c60625857717c6b34", null ],
+    [ "deleteMessage", "classPoco_1_1Net_1_1POP3ClientSession.html#aaf8482c1bf7016321185d04cd8560a2c", null ],
+    [ "getTimeout", "classPoco_1_1Net_1_1POP3ClientSession.html#a43ab34349e5e22cc890a1b7883d73e1f", null ],
+    [ "isPositive", "classPoco_1_1Net_1_1POP3ClientSession.html#ac6156fdea5d8c33d7933e2f9a160227b", null ],
+    [ "listMessages", "classPoco_1_1Net_1_1POP3ClientSession.html#a4497873766e3c4d1b7d1e5c9fbc8fac2", null ],
+    [ "login", "classPoco_1_1Net_1_1POP3ClientSession.html#a14373f6ca69b904c27f63ea132095d8b", null ],
+    [ "messageCount", "classPoco_1_1Net_1_1POP3ClientSession.html#a22af73ca80d9a3a3361455ed5fb4e27e", null ],
+    [ "retrieveHeader", "classPoco_1_1Net_1_1POP3ClientSession.html#a0439383788061d9abe7110312c909262", null ],
+    [ "retrieveMessage", "classPoco_1_1Net_1_1POP3ClientSession.html#ae825e8a504136fd01cb84232d8b131cd", null ],
+    [ "retrieveMessage", "classPoco_1_1Net_1_1POP3ClientSession.html#ae3330014db7ddbf65b1be0a67decbaaf", null ],
+    [ "retrieveMessage", "classPoco_1_1Net_1_1POP3ClientSession.html#ae1b401e94f0a944a13418239755f0736", null ],
+    [ "sendCommand", "classPoco_1_1Net_1_1POP3ClientSession.html#ae309ffc4189a14216aeb70d6f7edcb1e", null ],
+    [ "sendCommand", "classPoco_1_1Net_1_1POP3ClientSession.html#a92fa8d135c822a886c8cd1d63aa37f81", null ],
+    [ "sendCommand", "classPoco_1_1Net_1_1POP3ClientSession.html#a710c797b7eef70d6eadff6d77a33ca9f", null ],
+    [ "setTimeout", "classPoco_1_1Net_1_1POP3ClientSession.html#aa9f3e8073b77e0cbb3e8471183e3ba66", null ],
+    [ "_isOpen", "classPoco_1_1Net_1_1POP3ClientSession.html#ab92e60ac4bf8e47169d8fefd2a04b48f", null ],
+    [ "_socket", "classPoco_1_1Net_1_1POP3ClientSession.html#a574469bf0f3ef20eb09992b63b75ef95", null ]
+];

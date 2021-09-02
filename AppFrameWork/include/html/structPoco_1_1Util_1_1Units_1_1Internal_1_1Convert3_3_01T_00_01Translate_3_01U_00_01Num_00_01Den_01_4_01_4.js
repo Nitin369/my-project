@@ -1,0 +1,4 @@
+var structPoco_1_1Util_1_1Units_1_1Internal_1_1Convert3_3_01T_00_01Translate_3_01U_00_01Num_00_01Den_01_4_01_4 =
+[
+    [ "fn", "structPoco_1_1Util_1_1Units_1_1Internal_1_1Convert3_3_01T_00_01Translate_3_01U_00_01Num_00_01Den_01_4_01_4.html#a8135390ebedc9a0853cb7c86104ff060", null ]
+];

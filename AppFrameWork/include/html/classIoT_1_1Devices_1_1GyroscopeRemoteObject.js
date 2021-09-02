@@ -1,0 +1,25 @@
+var classIoT_1_1Devices_1_1GyroscopeRemoteObject =
+[
+    [ "Ptr", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a29f29fca341d213afd16e92130d78ba6", null ],
+    [ "GyroscopeRemoteObject", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a89c0d7431a9fa07b01d72c906fbba936", null ],
+    [ "~GyroscopeRemoteObject", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a0d9455a766403a3cd8c7cfd473265fef", null ],
+    [ "event__rotationChanged", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a2bb6fbac787b62ff8617ce6d2f809bf0", null ],
+    [ "getFeature", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a92e86857dd20d0eefc79de9111888a5d", null ],
+    [ "getPropertyBool", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a005b8d2a44729a582c4e14f351d963b8", null ],
+    [ "getPropertyDouble", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a6cd4307610f7b7b0d1b92efdceb0969d", null ],
+    [ "getPropertyInt", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#ae3019357344f6ed21adf2a5fae557712", null ],
+    [ "getPropertyString", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#aefb5b706512a7a6d87a372860fb1942c", null ],
+    [ "hasFeature", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a3bdd240858e8caad6b5f475a929e6aaf", null ],
+    [ "hasProperty", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#ad4d9d7d174a0753e33723ace54bcc464", null ],
+    [ "remoting__enableEvents", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a0d9d8725222e0c180fe2aff8d198bab2", null ],
+    [ "remoting__enableRemoteEvents", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a39830b77d48ac4dbe4b8feacf09ad2f1", null ],
+    [ "remoting__hasEvents", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#ab06dda83e65c7e1016f6720b62e32614", null ],
+    [ "remoting__typeId", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a3144130b603a80fd003f07d9178f2371", null ],
+    [ "rotation", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a42d6ad21525f2e3da15b9d72e2f23e5e", null ],
+    [ "setFeature", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#aaf8d95ad0efd410a34d08c6d2abd39ec", null ],
+    [ "setPropertyBool", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a82dec2945decf416b68f85ae63541364", null ],
+    [ "setPropertyDouble", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a2fb66a790d4121d8fb322674b174fc5c", null ],
+    [ "setPropertyInt", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a3a218680c5e02638ffb9edad02764e3b", null ],
+    [ "setPropertyString", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a1a9d7746140b730d05ccaf9b4dfe7708", null ],
+    [ "_pServiceObject", "classIoT_1_1Devices_1_1GyroscopeRemoteObject.html#a0a175ffe268ccb89d2c2947765845a3d", null ]
+];

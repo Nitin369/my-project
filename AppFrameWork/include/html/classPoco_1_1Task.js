@@ -1,0 +1,36 @@
+var classPoco_1_1Task =
+[
+    [ "TaskState", "classPoco_1_1Task.html#a33beaf1923b417e4b6f36ebbd9175638", [
+      [ "TASK_IDLE", "classPoco_1_1Task.html#a33beaf1923b417e4b6f36ebbd9175638a9f12518d661d805562d45b36c7bd66dd", null ],
+      [ "TASK_STARTING", "classPoco_1_1Task.html#a33beaf1923b417e4b6f36ebbd9175638a1b9487d33116467203a52c70e7e8ecdc", null ],
+      [ "TASK_RUNNING", "classPoco_1_1Task.html#a33beaf1923b417e4b6f36ebbd9175638ab634a74a9c4acb696893d939714e980a", null ],
+      [ "TASK_CANCELLING", "classPoco_1_1Task.html#a33beaf1923b417e4b6f36ebbd9175638ae9c7439c3e2d62a255f052bcc60a0b0c", null ],
+      [ "TASK_FINISHED", "classPoco_1_1Task.html#a33beaf1923b417e4b6f36ebbd9175638a73f3315270374ab970dccfc28025231f", null ]
+    ] ],
+    [ "Task", "classPoco_1_1Task.html#a88621c0a73d968abb7cb2e7a9384bb75", null ],
+    [ "~Task", "classPoco_1_1Task.html#a0170662ba6fa9796a0d4fb38aa1bc2a3", null ],
+    [ "Task", "classPoco_1_1Task.html#aeaf9728671da56479e0e334b82f5e0a5", null ],
+    [ "Task", "classPoco_1_1Task.html#aee5cc35a9b50def4ab684d89e81e3847", null ],
+    [ "cancel", "classPoco_1_1Task.html#ac87407ae165f324e1c7def5cf835fa4b", null ],
+    [ "getOwner", "classPoco_1_1Task.html#a35f766e7e683c55169bf879dcfbf597e", null ],
+    [ "isCancelled", "classPoco_1_1Task.html#a003efcd76afb8ffcefd1b18ba96dc6be", null ],
+    [ "name", "classPoco_1_1Task.html#aa83801fbaa3bd395c1f9258a2b9dd6ed", null ],
+    [ "operator=", "classPoco_1_1Task.html#a9a3a85a385af05e86d24171ca56d8f35", null ],
+    [ "postNotification", "classPoco_1_1Task.html#ac7621f464ce3f21346fb355cd7e4357c", null ],
+    [ "progress", "classPoco_1_1Task.html#a63ca5c6ab5b381dc47ed7eafdb1026c3", null ],
+    [ "reset", "classPoco_1_1Task.html#a976e559f54b9786c72f873f7332e9dca", null ],
+    [ "run", "classPoco_1_1Task.html#a5a26fa436cba1413a5480480d5c59ac2", null ],
+    [ "runTask", "classPoco_1_1Task.html#af9c9915eedbcf83716c944b708779b52", null ],
+    [ "setOwner", "classPoco_1_1Task.html#a4cced4e05c40e8ff30798f1303956223", null ],
+    [ "setProgress", "classPoco_1_1Task.html#a4ebfdca601211aa33dba16d1037ef6f7", null ],
+    [ "setState", "classPoco_1_1Task.html#ac72f92221edce825709ceb0587f8ffaa", null ],
+    [ "sleep", "classPoco_1_1Task.html#a7230f204b58c41d30cb4c465487c6c4b", null ],
+    [ "state", "classPoco_1_1Task.html#a7f6d1958f8206a7577207a5c4b68f282", null ],
+    [ "TaskManager", "classPoco_1_1Task.html#abfd65c2d85c5faff5c12fd032cc5cf0a", null ],
+    [ "_cancelEvent", "classPoco_1_1Task.html#ac34cb18756330ff3d48a9756cee6ab9d", null ],
+    [ "_mutex", "classPoco_1_1Task.html#afa5bf40d4f16639977fc0b1c276eed28", null ],
+    [ "_name", "classPoco_1_1Task.html#aa92766eeec9f277a34f22c606f484994", null ],
+    [ "_pOwner", "classPoco_1_1Task.html#a4f99cafb4d7c7749d38556e586482262", null ],
+    [ "_progress", "classPoco_1_1Task.html#a7ea38a4a8fdab91a40db0a985c68f314", null ],
+    [ "_state", "classPoco_1_1Task.html#add936c521693420c7e4f9f7c4e33aec1", null ]
+];

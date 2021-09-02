@@ -1,0 +1,28 @@
+var classPoco_1_1XML_1_1NamespaceSupport =
+[
+    [ "Context", "classPoco_1_1XML_1_1NamespaceSupport.html#a0040d124fedcb59c318ada747117613e", null ],
+    [ "ContextVec", "classPoco_1_1XML_1_1NamespaceSupport.html#a591c62a290611859d0781a5e5d5a6c42", null ],
+    [ "PrefixSet", "classPoco_1_1XML_1_1NamespaceSupport.html#a37dea4b34fa9968f747d638f2574f51c", null ],
+    [ "NamespaceSupport", "classPoco_1_1XML_1_1NamespaceSupport.html#ad97b1c66fc07e276ed0a74431292c71a", null ],
+    [ "~NamespaceSupport", "classPoco_1_1XML_1_1NamespaceSupport.html#aec30b18ca74d48c066c61e34f6f003e3", null ],
+    [ "NamespaceSupport", "classPoco_1_1XML_1_1NamespaceSupport.html#a53c5708c57a2d6c36d4af210dd841250", null ],
+    [ "declarePrefix", "classPoco_1_1XML_1_1NamespaceSupport.html#ac9e276820bc3e0d8c5f8a099bdf1d0eb", null ],
+    [ "getDeclaredPrefixes", "classPoco_1_1XML_1_1NamespaceSupport.html#a13e28051b75062d057904df82096472c", null ],
+    [ "getPrefix", "classPoco_1_1XML_1_1NamespaceSupport.html#ac9f0cd761bdadd6c4f86ecae245e4d0c", null ],
+    [ "getPrefixes", "classPoco_1_1XML_1_1NamespaceSupport.html#ab8bc4063903e4113ef02ff30e27d6ca1", null ],
+    [ "getPrefixes", "classPoco_1_1XML_1_1NamespaceSupport.html#a3c21d0df1bb024575b681800b7ee9956", null ],
+    [ "getURI", "classPoco_1_1XML_1_1NamespaceSupport.html#a4760f7ce83e804da610c3222ccc2d76c", null ],
+    [ "isMapped", "classPoco_1_1XML_1_1NamespaceSupport.html#a6833dc453fea755e765b074053d3f02f", null ],
+    [ "operator=", "classPoco_1_1XML_1_1NamespaceSupport.html#a5258a43ed6842f7adf87b47fb700447d", null ],
+    [ "popContext", "classPoco_1_1XML_1_1NamespaceSupport.html#ae21b82a36feeb119fe02f6fbb38a1ff9", null ],
+    [ "processName", "classPoco_1_1XML_1_1NamespaceSupport.html#aaf31a8794dd2c284b42ed72458c9d3fd", null ],
+    [ "pushContext", "classPoco_1_1XML_1_1NamespaceSupport.html#acc259135d04cf0d07f736def4cdb7ad2", null ],
+    [ "reset", "classPoco_1_1XML_1_1NamespaceSupport.html#adde90955cffcdfb5bdcbe66cab1e23a0", null ],
+    [ "undeclarePrefix", "classPoco_1_1XML_1_1NamespaceSupport.html#a0c163840f96e29db3d75524f90078e34", null ],
+    [ "_contexts", "classPoco_1_1XML_1_1NamespaceSupport.html#a7fea9ef996cc0d6325e304c0f6fe6f39", null ],
+    [ "EMPTY_STRING", "classPoco_1_1XML_1_1NamespaceSupport.html#a9df691b78cd10ccf0f7343937b4f2b86", null ],
+    [ "XML_NAMESPACE", "classPoco_1_1XML_1_1NamespaceSupport.html#ad52337f4a1a927fa052e6e82a822a4ab", null ],
+    [ "XML_NAMESPACE_PREFIX", "classPoco_1_1XML_1_1NamespaceSupport.html#a217f77ee1f9355a11fe1face64559a4b", null ],
+    [ "XMLNS_NAMESPACE", "classPoco_1_1XML_1_1NamespaceSupport.html#ac08f1391da7fe504a73beb6659caea4a", null ],
+    [ "XMLNS_NAMESPACE_PREFIX", "classPoco_1_1XML_1_1NamespaceSupport.html#a04e470f9c5bffef7338ebf6028ece619", null ]
+];

@@ -1,0 +1,25 @@
+var structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4 =
+[
+    [ "NameVec", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#a6bcd029d9f3ba9ea268bb6871d5e03a2", null ],
+    [ "NameVecPtr", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#a4dc5c7c9b9e6bd1bf002eb562d3894c2", null ],
+    [ "TupleType", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#a3bca23209babe6b533f069fcd0582d2d", null ],
+    [ "Type", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#a1f014c27169f9d244a334dda37ec1c70", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#af232124fe727307dc5d42611408463c8", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#af52619b7322f87d6a2298d1c678c6d21", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#ab4151bc404925ddd3ca67d9c54bc4b1e", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#a4d366807baabf4ccb174c206bf55966b", null ],
+    [ "NamedTuple", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#aa6b982082308c4960a574a8a4600e550", null ],
+    [ "get", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#a8df7fa5feae764d20a262d2e6a8cf43a", null ],
+    [ "get", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#ac556327bb6cc01efc424fca5380f75dd", null ],
+    [ "get", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#af6d2a6644ec7d96faf001ba98f2022d9", null ],
+    [ "getName", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#a39b998e5516d10c129a3b61fa2817557", null ],
+    [ "init", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#afcd3c9628c0026f6241cf312123da89d", null ],
+    [ "names", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#a253d9625c9a4347d6d2d08e66ffa7bbd", null ],
+    [ "operator!=", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#af9537ef8dea5026bec51bcb797270e12", null ],
+    [ "operator<", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#aa10a4073b97c7f74cdf6c3937ec5d53a", null ],
+    [ "operator==", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#aeecd8f645462bf146980ed0dccb63571", null ],
+    [ "operator[]", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#a5f5cdcc3bf26e0f1b07e1258e7a77434", null ],
+    [ "set", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#a63a37f85309b3c69f09e343f81ffa2bf", null ],
+    [ "setName", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#ab28dd5312afffad68d5dc5d17e9fda0a", null ],
+    [ "_pNames", "structPoco_1_1NamedTuple_3_01T0_00_01T1_00_01NullTypeList_01_4.html#aeb22e138aaa33870cbeb5eaf2dfc3d7f", null ]
+];

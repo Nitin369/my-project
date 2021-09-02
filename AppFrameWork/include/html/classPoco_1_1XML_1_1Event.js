@@ -1,0 +1,37 @@
+var classPoco_1_1XML_1_1Event =
+[
+    [ "PhaseType", "classPoco_1_1XML_1_1Event.html#a72c471b4464b252dee1ca04c13e45e3c", [
+      [ "CAPTURING_PHASE", "classPoco_1_1XML_1_1Event.html#a72c471b4464b252dee1ca04c13e45e3ca2f8f0038eb575a70a0428ceb4287c717", null ],
+      [ "AT_TARGET", "classPoco_1_1XML_1_1Event.html#a72c471b4464b252dee1ca04c13e45e3cab6f2f018327fcac4a7f43a7e9bb6c727", null ],
+      [ "BUBBLING_PHASE", "classPoco_1_1XML_1_1Event.html#a72c471b4464b252dee1ca04c13e45e3caf4c3772bd1116329cb3bb0eb590a418f", null ]
+    ] ],
+    [ "Event", "classPoco_1_1XML_1_1Event.html#a92ece9da8c147253b11e1979a4d421fe", null ],
+    [ "Event", "classPoco_1_1XML_1_1Event.html#ac41680380ac4e41db4758505a77de415", null ],
+    [ "~Event", "classPoco_1_1XML_1_1Event.html#aa788447d52828e77b95146dea38a9cda", null ],
+    [ "autoRelease", "classPoco_1_1XML_1_1Event.html#a53b52cb95ee5861cdd2bc2d76ed75018", null ],
+    [ "bubbles", "classPoco_1_1XML_1_1Event.html#afb11ad153277460b59c5e91386099755", null ],
+    [ "cancelable", "classPoco_1_1XML_1_1Event.html#a34bc813e77d6a8b859ecf8566cac09c5", null ],
+    [ "currentTarget", "classPoco_1_1XML_1_1Event.html#acc35332dd61d23e747d9ffda0c9beb63", null ],
+    [ "eventPhase", "classPoco_1_1XML_1_1Event.html#ad90055ef506a9a9795b298d7ae1a0f82", null ],
+    [ "initEvent", "classPoco_1_1XML_1_1Event.html#a4add643eb83bdf3f418c497341726c00", null ],
+    [ "isCanceled", "classPoco_1_1XML_1_1Event.html#a590b5ae7fd1a29f5f2c585c5433caf55", null ],
+    [ "isStopped", "classPoco_1_1XML_1_1Event.html#a7dfe09dd1d69961a832bf9b9d06eaf48", null ],
+    [ "preventDefault", "classPoco_1_1XML_1_1Event.html#a7bb70080eddd05adbabf1d5d67357e36", null ],
+    [ "setCurrentPhase", "classPoco_1_1XML_1_1Event.html#aaefe629e80fe4cfa074d78faefdd1a0c", null ],
+    [ "setCurrentTarget", "classPoco_1_1XML_1_1Event.html#ae632e1713db104a3d117cd7a20cf8057", null ],
+    [ "setTarget", "classPoco_1_1XML_1_1Event.html#a2c1747d68875b25165f21b4b397d16c8", null ],
+    [ "stopPropagation", "classPoco_1_1XML_1_1Event.html#a149de1634a27306411486cb70199d582", null ],
+    [ "target", "classPoco_1_1XML_1_1Event.html#a692351ea4869d0265404bdc339709c4c", null ],
+    [ "timeStamp", "classPoco_1_1XML_1_1Event.html#a10bc1cefb1bbe591bbbc05f95eaa36d1", null ],
+    [ "type", "classPoco_1_1XML_1_1Event.html#a28f089cab706c9999fb326fd879bff21", null ],
+    [ "AbstractNode", "classPoco_1_1XML_1_1Event.html#ac34827723212e57cadf597d4436fd432", null ],
+    [ "_bubbles", "classPoco_1_1XML_1_1Event.html#a0c23f31493e75aa4d0f2b9aba2793e30", null ],
+    [ "_cancelable", "classPoco_1_1XML_1_1Event.html#abf321c57285ccb7bb89f0e9681f61bcb", null ],
+    [ "_canceled", "classPoco_1_1XML_1_1Event.html#af6a0a08b2b0fb5b20abdd7ec69378e0f", null ],
+    [ "_currentPhase", "classPoco_1_1XML_1_1Event.html#ab14e2e2b86012626728ead23760be885", null ],
+    [ "_pCurrentTarget", "classPoco_1_1XML_1_1Event.html#a7181544f763e0cea5d53af47b41d183f", null ],
+    [ "_pOwner", "classPoco_1_1XML_1_1Event.html#ac96644c881dc1d13cc6e618245654667", null ],
+    [ "_pTarget", "classPoco_1_1XML_1_1Event.html#aaf24e5fb9caa1f55e943d14bd90c956a", null ],
+    [ "_stopped", "classPoco_1_1XML_1_1Event.html#a668ddee2ffb57b6ada0d258bf95f2c99", null ],
+    [ "_type", "classPoco_1_1XML_1_1Event.html#a99c6a99176849b001838e49e695697f0", null ]
+];

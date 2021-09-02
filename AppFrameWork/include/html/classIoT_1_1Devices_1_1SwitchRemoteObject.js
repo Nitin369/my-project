@@ -1,0 +1,27 @@
+var classIoT_1_1Devices_1_1SwitchRemoteObject =
+[
+    [ "Ptr", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a7d528898a09578fd4cd82c0966f45004", null ],
+    [ "SwitchRemoteObject", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a7af72941585474c1fd0e1e1b3b6e105e", null ],
+    [ "~SwitchRemoteObject", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#aa36bf5d5da7a707ad383951afeacd39c", null ],
+    [ "event__stateChanged", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#af12f3cd2369b88ee703b3ba1b52962ad", null ],
+    [ "getFeature", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a9e468e6220e3e71e9b60b38b176bbe0d", null ],
+    [ "getPropertyBool", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#af81ade078ad887365d02830efa1a26d1", null ],
+    [ "getPropertyDouble", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a2b4fa4cf70e7c692f6d46868d07f30ad", null ],
+    [ "getPropertyInt", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a04bb45a2d46597251acc80b2e7faa635", null ],
+    [ "getPropertyString", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a117fad67b8264ed0b270aa62236b6404", null ],
+    [ "getTargetState", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a64bff181aa5331ef9af86db2822fe04a", null ],
+    [ "hasFeature", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a3d5d51a0d0088b7fa4f2223fc5df4b29", null ],
+    [ "hasProperty", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#af8a3b0710987c288695d1f4488ce9fd8", null ],
+    [ "remoting__enableEvents", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a78b03879b9a25a5c53122a4bec747485", null ],
+    [ "remoting__enableRemoteEvents", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a16396d4782babc08a158465d5cc21f94", null ],
+    [ "remoting__hasEvents", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a1dfa30e74d612a5d5ae954e855ca8008", null ],
+    [ "remoting__typeId", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a019dfb01f5b4c0b49da965ab8e636150", null ],
+    [ "setFeature", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#af57a92adea83878850caaf57cec39621", null ],
+    [ "setPropertyBool", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#ab95d4cb7f504c83b4672c34cc804b852", null ],
+    [ "setPropertyDouble", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a850eed229018b482ae2fb5f178467fcb", null ],
+    [ "setPropertyInt", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a0a076c3fd5d6b315c935193515005808", null ],
+    [ "setPropertyString", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#ac0524f9803db751be1fd6704dad67701", null ],
+    [ "setTargetState", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a61b698c86031b5590e760921bfe84e8f", null ],
+    [ "state", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a8e83090172d263c84fc4f203eadeaee5", null ],
+    [ "_pServiceObject", "classIoT_1_1Devices_1_1SwitchRemoteObject.html#a91d67447c5555193740c10d135376cef", null ]
+];
